@@ -18,4 +18,5 @@ Prompt engineering is opaque. Lets make it transparent.
 
    chain_of_thought.rst
    zero_shot_chain_of_thought.rst
+   bibliography.rst
 
