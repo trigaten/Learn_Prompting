@@ -9,7 +9,7 @@ const config = {
   title: 'Promptgineering',
   tagline: 'Prompt engineering is opaque. Lets make it transparent.',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/promptgineering/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
