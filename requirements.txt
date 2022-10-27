@@ -1,4 +1,0 @@
-sphinx
-renku-sphinx-theme
-# for adjusting the width of page
-sphinx-rtd-size
