@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Promptgineering',
   tagline: 'Prompt engineering is opaque. Lets make it transparent.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://trigaten.github.io/promptgineering/',
   baseUrl: '/promptgineering/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
