@@ -1,0 +1,286 @@
+/**
+  CHANGES FOR CUSTOM.CSS SHOULD BE MADE INSIDE CUSTOM.SCSS
+  
+  Requirements:
+  - pip install compile-scss https://pypi.org/project/compile-scss/
+
+To make changes to styling, first run the following in the root of the project:
+    - pip install -e .[dev]
+
+Then you can edit and make changes to this file and see the results by doing the following:
+  Steps:
+  - Run:  compile_scss --watch from inside /renku_sphinx_theme
+  - That command will compile scss changes into css.
+  - After doing changes commit scss and css files.
+*/
+
+$rk-blue: #01192d;
+$rk-green: #009568;
+$rk-green-lighter: hsl(162, 100%, 37%);
+$rk-background: #f5f5f5;
+$rk-white: #f5f5f5;
+$rk-dark: #3d3d3d;
+$rk-warning-background: #fcf4cc;
+$rk-warning-font: #605000;
+$rk-info-background: #ccddf3;
+$rk-info-font: #003274;
+$rk-light-blue: #566673;
+$rk-gray: #838383;
+$rk-light-gray: #e4e7ea;
+$rk-pink: #d26a98;
+
+//side background
+.wy-nav-content-wrap {
+  background: $rk-blue;
+}
+
+//all links are green
+a {
+  color: $rk-green;
+  &:hover {
+    color: $rk-green-lighter;
+  }
+  &:visited {
+    color: $rk-green;
+  }
+}
+
+// right content -- docs
+.rst-content {
+  color: $rk-dark;
+
+  // code color
+  code.literal {
+    color: $rk-pink;
+  }
+
+  tt.literal {
+    color: $rk-pink;
+  }
+
+  // note style
+  .note {
+    .admonition-title {
+      display: none;
+    }
+    color: $rk-info-font;
+    background: $rk-info-background;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  // warning style
+  .warning {
+    .admonition-title {
+      display: none;
+    }
+    color: $rk-warning-font;
+    background: $rk-warning-background;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+	// code blocks
+  .highlight {
+    background: $rk-background;
+  }
+}
+
+// menu background
+.wy-side-scroll {
+  background-color: $rk-blue;
+}
+
+// side nav
+.wy-side-nav-search {
+  background-color: $rk-blue;
+  input[type="text"] {
+    width: 100%;
+    border-radius: 0px;
+    padding: 6px 12px;
+    border-color: $rk-blue;
+  }
+}
+
+// Vertical menu
+.wy-menu-vertical {
+  a {
+    font-size: 100%;
+    color: #d9d9d9;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    background-color: inherit;
+    &:hover {
+      background-color: unset;
+      opacity: 1;
+    }
+  }
+
+  // all links inside the menu
+  li.current {
+    > a {
+      background-color: $rk-blue;
+      color: white;
+      span.toctree-expand {
+        display: block;
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        &:before {
+          display: block;
+          font-size: inherit;
+          line-height: inherit;
+          color: inherit;
+        }
+        &:hover {
+          color: white;
+        }
+      }
+      &:hover {
+        background-color: $rk-blue;
+        color: white;
+        span.toctree-expand {
+          color: white;
+        }
+      }
+    }
+  }
+
+	// level 1 link
+  .toctree-l1 {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      background-color: inherit;
+    }
+  }
+
+	// selected level 1 link
+  li.toctree-l1.current {
+		opacity: 1;
+    background-color: inherit;
+    > a {
+      border: 0px;
+    }
+  }
+
+  .toctree-l2 {
+    &:hover {
+      background-color: #566673;
+    }
+  }
+
+  li.toctree-l2.current {
+    > a {
+      background-color: $rk-light-blue;
+      color: white;
+    }
+    li.toctree-l3 {
+      > a {
+        background-color: $rk-light-gray;
+        color: $rk-gray;
+        &:hover {
+          color: $rk-dark;
+          span.toctree-expand {
+            color: $rk-dark;
+          }
+        }
+      }
+    }
+    li.toctree-l3.current {
+      > a {
+        color: $rk-dark;
+      }
+    }
+  }
+
+  li.toctree-l2 {
+    a {
+      border: 0px;
+      background-color: $rk-light-blue;
+      color: #d9d9d9;
+      //
+      span.toctree-expand {
+        display: block;
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        &:before {
+          display: block;
+          font-size: inherit;
+          line-height: inherit;
+          color: inherit;
+        }
+        &:hover {
+          color: white;
+        }
+      }
+      //
+      &:hover {
+        color: white;
+        background-color: $rk-light-blue;
+        ///
+        span.toctree-expand {
+          color: white;
+        }
+        ///
+      }
+    }
+  }
+
+  li.toctree-l3.current {
+    > a {
+      background-color: $rk-light-gray;
+      color: $rk-gray;
+    }
+    li.toctree-l4 {
+      > a {
+        background-color: $rk-light-gray;
+        color: $rk-gray;
+      }
+      &.current {
+        > a {
+          color: $rk-dark;
+        }
+      }
+    }
+  }
+}
+
+// Responsive small navigation
+.wy-nav-top {
+  background-color: $rk-blue;
+}
+
+// Button
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $rk-dark;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: unset;
+}
+
+// Neutral button - prev next
+.btn-neutral {
+  background: unset !important;
+  color: $rk-gray !important;
+  &:active {
+    padding: 0.375rem 0.75rem;
+    box-shadow: unset;
+  }
+}
