@@ -3,18 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Promptgineering's documentation!
-===========================================
+Promptgineering: A course on--you guessed it--prompt engineering
+======================================================================================
+
+Prompt engineering is opaque. Lets make it transparent.
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   chain_of_thought.rst
+   zero_shot_chain_of_thought.rst
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
