@@ -18,7 +18,7 @@ jobs:
         pip install -r requirements.txt  && pip install -e .
       
       - name: Build
-        run: sphinx-build -b dirhtml -v docs/source build
+        run: sphinx-build -b dirhtml -v source build
 
       - name: Upload to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
