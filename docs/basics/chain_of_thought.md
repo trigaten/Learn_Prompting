@@ -1,6 +1,5 @@
 ---
-sidebar_position: 1
-bibliography: example.json
+sidebar_position: 2
 locale: en-us
 style: chicago
 ---
