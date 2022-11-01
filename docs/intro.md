@@ -64,6 +64,3 @@ replaced with a word from the vocabulary. The model then predicts the word that
 was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
 will predict "chasing" with high probability.
 
-## References
-
-

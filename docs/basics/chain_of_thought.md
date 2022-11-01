@@ -14,3 +14,5 @@ import myImageUrl from '../assets/chain_of_thought.png';
 
 Chain of Thought (CoT) prompting (@wei2022chain) is a recently developed prompting
 method which encourages the LLM to explain its reasoning.
+
+Coming soon!
