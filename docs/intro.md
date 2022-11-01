@@ -52,12 +52,12 @@ is the focus of the field of Prompt Engineering, as well as this course.
 Although familiarity with LLMs and MLMs is mostly assumed,
 we provide a short introduct to each concept here:
 
-## Large Language Models (LLMs)
+- Large Language Models (LLMs)
 
 LLMs are models which have a large amount of weights, and have usually been trained 
 on a large amount of text.
 
-## Masked Language Models (MLMs)
+- Masked Language Models (MLMs)
 
 MLMs are a type of NLP model, which have a special token, usually `[MASK]`, which is
 replaced with a word from the vocabulary. The model then predicts the word that
