@@ -35,3 +35,7 @@ With this additional context/examples LLMs are often able to perform better on t
 
 Prompts inside of prompts, or self-augmented prompts (@kojima2022large) will be 
 covered in the next few sections.
+
+# A "Standard" Prompt
+
+Following (@kojima2022large)
