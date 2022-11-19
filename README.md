@@ -1,9 +1,17 @@
 # Website
+https://trigaten.github.io/promptgineering/
 
 This website is a free, open-source guide on prompt engineering. Contributions are welcome!
 Harsh criticism is welcome too!
 
-### Local Development
+## Contribution Guidelines
+
+We welcome contributions in any form. If you find any problems (typos, logical errors, etc.), please open an issue. If you have text content/art to contribute, please create a PR! We are also looking for suggestions on what content to research next :)
+
+
+
+
+# Local Development
 
 ```
 $ npm start
