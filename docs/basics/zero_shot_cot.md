@@ -45,7 +45,7 @@ chosen tasks.
 ## Notes
 
 The extraction step often must be task specific, making Zero-Shot-CoT less
-generalizable than it appears it first.
+generalizable than it appears at first.
 
 Anecdotally, I've found that Zero-shot-CoT style prompts are sometimes effective 
 in improving the length of completions for generative tasks. For example, consider
