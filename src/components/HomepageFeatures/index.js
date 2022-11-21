@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/astronaut.png').default,
     description: (
       <>
         Built for beginners
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/computer.png').default,
     description: (
       <>
         Spend less time for better LLM results
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Shoot for the Moon',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/rocket.png').default,
     description: (
       <>
         Learn advanced prompt engineering
@@ -36,7 +36,7 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Svg} alt="horse" width="250px"/>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

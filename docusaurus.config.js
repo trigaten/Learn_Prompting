@@ -58,7 +58,7 @@ async function createConfig() {
           title: 'Promptgineering',
           logo: {
             alt: 'My Site Logo',
-            src: 'img/logo.svg',
+            src: 'img/simple_ai.png',
           },
           items: [
             {
