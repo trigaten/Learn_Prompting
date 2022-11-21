@@ -6,14 +6,19 @@ Harsh criticism is welcome too!
 
 ## Contribution Guidelines
 
-We welcome contributions in any form. If you find any problems (typos, logical errors, etc.), please open an issue. If you have text content/art to contribute, please create a PR! We are also looking for suggestions on what content to research next :)
+We welcome contributions in any form. If you find any problems (typos, logical errors, etc.), please open an issue. 
 
+We are actively looking for:
+
+- content suggestions
+- content/art contributions
 
 
 
 # Local Development
 
 ```
+$ npm i
 $ npm start
 ```
 
