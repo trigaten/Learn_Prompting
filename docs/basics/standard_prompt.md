@@ -7,14 +7,17 @@ sidebar_position: 2
 We have heard of a few different formats of prompts thus far. 
 Following Kojima et al. (@kojima2022large), we will refer to prompts that consist 
 solely of a question as "standard" prompts. We also consider prompts that consist solely of
-a question and the QA format to be "standard" prompts.
+a question and in the QA format to be "standard" prompts.
 
 Two examples of standard prompts:
 
+
+_Standard Prompt_
 ```
 What is the capital of France?
 ```
 
+_Standard Prompt in QA format_
 ```
 Q: What is the capital of France?
 
@@ -25,9 +28,12 @@ A:
 
 Few shot standard prompts are just standard prompts that have _exemplars_
 in them. Exemplars are examples of the task that the prompt is trying to solve, 
-which are included in the prompt itself (@wei2022chain).
+which are included in the prompt itself (@wei2022chain). Few shot standard prompts 
+are sometimes referred to as standard prompts.
 
-Two examples of few shot standard prompts with exemplars:
+Two examples of few shot standard prompts:
+
+_Standard Few Shot Prompt_
 
 ```
 What is the capital of Spain?
@@ -37,6 +43,7 @@ Rome
 What is the capital of France?
 ```
 
+_Standard Few Shot Prompt in QA format_
 ```
 Q: What is the capital of Spain?
 A: Madrid
@@ -47,4 +54,4 @@ A:
 ```
 
 We will mainly refer to standard prompts in contrast to new types of prompts we 
-discuss throughout this guide. 
+discuss throughout this course. 
