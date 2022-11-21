@@ -13,8 +13,8 @@ import CoTImage from '../assets/chain_of_thought.png';
 </div>
 
 Chain of Thought (CoT) prompting (@wei2022chain) is a recently developed prompting
-method which encourages the LLM to explain its reasoning. The below image(@wei2022chain) 
-shows a standard prompt (left) compared to a chain of thought prompt (right).
+method, which encourages the LLM to explain its reasoning. The below image(@wei2022chain) 
+shows a standard few shot prompt (left) compared to a chain of thought prompt (right).
 
 
 import CoTExample from '../assets/chain_of_thought_example.png';
@@ -28,7 +28,7 @@ Regular Prompting vs CoT (Wei et al.)
 </div>
 
 The main idea of CoT is that by showing the LLM few shot examples where the reasoning
-process is explained by in the example, the LLM will also show the reasoning process
+process is explained in the example, the LLM will also show the reasoning process
 when answering the prompt. This explanation of reasoning often leads to more accurate
 results.
 
@@ -53,7 +53,7 @@ Additionally, according to Wei et al., "CoT only yields performance gains when u
 
 ## Experiments
 
-🚧
+🚧 Under Construction 🚧
 
 ## Notes
 

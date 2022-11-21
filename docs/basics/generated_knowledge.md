@@ -8,7 +8,7 @@ sidebar_position: 5
 
 
 The generated knowledge approach(@liu2021generated) asks the LLM to generate
-potentially useful information about the input before generating a response.
+potentially useful information about the question before generating a response.
 This approach is composed of two intermediate steps, knowledge generation and 
 knolwedge intregration. 
 
@@ -36,7 +36,8 @@ Next, we generate "knowledge augmented" questions and prompt the LLM with them
 to get final answers. The easiest way to understand this is to go through an example.
 
 Let's assume we are attempting to answer the **question** 
-"Most Kangaroos have <mask\> limbs", and have generated 2 knowledges (M=2):
+"Most Kangaroos have <mask\> limbs". Assume that at the knowledge generation step 
+we generated 2 knowledges (M=2):
 
 - Knowledge 1: "Kangaroos are marsupials that live in Australia."
 
@@ -64,3 +65,5 @@ log probability of the answer token(s).
 This method shows improvements on various commonsense datasets.
 
 ## Notes
+
+The knowledge corresponding to the selected answer is called the _selected knowledge_.
