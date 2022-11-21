@@ -6,12 +6,13 @@ Harsh criticism is welcome too!
 
 ## Contribution Guidelines
 
-We welcome contributions in any form. If you find any problems (typos, logical errors, etc.), please open an issue. 
+We welcome contributions in any form.
 
 We are actively looking for:
 
 - content suggestions
 - content/art contributions
+- typos :)
 
 
 
