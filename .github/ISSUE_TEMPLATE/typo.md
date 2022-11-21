@@ -1,7 +1,7 @@
 ---
-name: New topic request
-about: Suggest an idea for this project
-title: New Topic Request
+name: Typo
+about: Typo
+title: Typo
 labels: ''
 assignees: 'trigaten'
 ---
