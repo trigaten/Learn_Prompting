@@ -1,4 +1,4 @@
-# Website
+# Promptgineering
 https://trigaten.github.io/promptgineering/
 
 This website is a free, open-source guide on prompt engineering. Contributions are welcome!
