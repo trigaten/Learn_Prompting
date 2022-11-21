@@ -1,8 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Zero Shot Chain of Thought
+
 
 Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) is a 
 follow up to CoT prompting (@wei2022chain) which introduces an incredibly 
@@ -20,7 +21,7 @@ import ZSImage from '../assets/zero_shot.png';
 The full Zero-shot-CoT process involves two separate prompts/completions. 
 The top bubble on the left generates a chain of thought, while the top bubble on
 the right takes in the output from the first prompt (including the first prompt itself),
-and extracts the answer from the chain of thought.
+and extracts the answer from the chain of thought. This second prompt is a _self augmented_ prompt.
 
 import ZSProcessImage from '../assets/zero_shot_example.png';
 
