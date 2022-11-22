@@ -2,7 +2,7 @@
 name: Typo
 about: Typo
 title: Typo
-labels: ''
+labels: 'typo'
 assignees: 'trigaten'
 ---
 
