@@ -27,6 +27,16 @@ async function createConfig() {
       defaultLocale: 'en',
       locales: ['en'],
     },
+
+    plugins: [
+      [
+        '@docusaurus/plugin-google-analytics',
+        {
+          trackingID: 'G-FV0C417KS8',
+          anonymizeIP: true,
+        },
+      ],
+    ],
   
     presets: [
       [
