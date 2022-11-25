@@ -27,21 +27,10 @@ async function createConfig() {
       defaultLocale: 'en',
       locales: ['en'],
     },
-
-    plugins: [
-      [
-        '@docusaurus/plugin-google-analytics',
-        {
-          trackingID: 'G-FV0C417KS8',
-          anonymizeIP: true,
-        },
-      ],
-    ],
   
     presets: [
       [
         'classic',
-        /** @type {import('@docusaurus/preset-classic').Options} */
         ({
           docs: {
             sidebarPath: require.resolve('./sidebars.js'),
@@ -57,12 +46,15 @@ async function createConfig() {
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
           },
+          googleAnalytics: {
+            trackingID: 'G-FV0C417KS8',
+            anonymizeIP: true,
+          },
         }),
       ],
     ],
   
     themeConfig:
-      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         navbar: {
           title: 'Promptgineering',
