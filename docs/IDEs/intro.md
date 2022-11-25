@@ -18,7 +18,7 @@ See the final article in this chapter for my recommendations on tools to use.
 
 Here is a table of the tools we will be discussing in this chapter:
 
-| Name | Web Interface | Open Source | Research Focused| Business Model| Launched | Modalities |
+| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- |
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart) | ✅ | ❌ | ❌ | Freemium | ✅ | Text |
 | [Dust](https://dust.tt/)                   | ✅ | ✅ | ❌|  | ✅ | Text |
@@ -26,19 +26,18 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Dyno](https://trydyno.com/login)          | ✅ | ❌ | ❌|  | ✅ | Text |
 | [Everyprompt](https://www.everyprompt.com) | ✅ | |    ❌| Freemium | ✅ | Text |
 | [PromptIDE](https://prompt.vizhub.ai)      | ✅ | Code TBD |✅ | None | ✅ | Text |
-| [Prompts.ai](https://prompts.ai/)           | ✅ | ✅ | ❌|  | ✅ | Text |
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | None | ✅ |  Text |
+| [Prompts.ai](https://prompts.ai/)           | ✅ | ✅ | ❌|  | ✅ | Text |
 | [Snorkel](https://snorkel.ai/data-centric-foundation-model-development-bridging-the-gap-between-foundation-models-and-enterprise-ai/)              | ✅ | ❌ | ❌|  | ✅ | Text |
 | [Multi](https://www.multi.tech) |  |  | ❌ |  | Wait list | Text, Image |
 | [Human Loop](https://humanloop.com) | ✅ |  | ❌ |  | Wait list| Text |
-| [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅|  | ✅ | Text |
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio |
-
-
-
+| [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text |
 
 \* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.
+
+**Hosted Solution**: The tool is hosted on a website and can be used without installing anything.
 
 **Research Focused**: The tool is designed for research purposes, and may not be as
 user friendly as other tools.

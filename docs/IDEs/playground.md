@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # GPT-3 Playground
 
-GPT-3 Playground is the web interface for OpenAI's GPT-3 API. It is likely the 
+[GPT-3 Playground](https://beta.openai.com/docs/quickstart) is the web interface for OpenAI's GPT-3 API. It is likely the 
 original prompt engineering tool that most people have used. As such, it is 
 extremely well known.
 
