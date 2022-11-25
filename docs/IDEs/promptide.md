@@ -15,4 +15,4 @@ import Image from '../assets/IDEs/promptide.png';
 
 ## Features
 
-Prompt IDE allows for automated testing on datasets, 
+Prompt IDE allows for automated testing on datasets.

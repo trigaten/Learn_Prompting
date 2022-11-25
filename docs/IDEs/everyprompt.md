@@ -18,4 +18,4 @@ import Image from '../assets/IDEs/everyprompt.png';
 
 Everyprompt has a varied feature set, including different GPT models, datasets, 
 and stats. Note that support for some of these features requires emailing the developers,
-so it is unclear how well they are implemented thus far. They provides **50k free** tokens. 
+so it is unclear how thoroughly they are implemented thus far. They also provide **50k free** tokens. 

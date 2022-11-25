@@ -24,3 +24,11 @@ the usse of datasets and automateically testing prompts against datasets.
 
 Current Dust functionality focuses on chaining prompts rather than iterating on a single prompt.
 
+Dust supports multiple model providers: (OpenAI, Cohere), and has planned support for HuggingFace and Replicate. API keys are required for all providers.
+
+You can deploy LLM apps built in Dust.
+
+## Notes
+
+Dust has recently reached 1,000 active users.
+

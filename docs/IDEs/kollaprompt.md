@@ -2,7 +2,10 @@
 sidebar_position: 14
 ---
 
-# Kolla Prompt
+# Kolla Prompt 🚧
+
+[Kolla Prompt](https://kollaprompt.com) is a tool for graphically chaining 
+prompts. 
 
 import Image from '../assets/IDEs/kollaprompt.png';
 
@@ -11,3 +14,6 @@ import Image from '../assets/IDEs/kollaprompt.png';
 </div>
 
 ## Features
+
+Kolla features draggable blocks that are piped together to form a pipeline. It 
+also allows for chaining language models to image models.
