@@ -47,8 +47,7 @@ async function createConfig() {
             customCss: require.resolve('./src/css/custom.css'),
           },
           googleAnalytics: {
-            trackingID: 'G-FV0C417KS8',
-            anonymizeIP: true,
+            trackingID: 'G-FV0C417KS8'
           },
         }),
       ],
