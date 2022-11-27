@@ -4,5 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-We have seen a number of prompt engineering methods thus far. Now we well cover
-some of the more advanced applications of prompt engineering.
+We have seen a number of prompting/prompt engineering methods thus far. 
+Now we well cover some advanced applications of prompting that can solve
+complex reasoning tasks by performing searches for information via the internet,
+or other external sources.
