@@ -1,3 +1,5 @@
+% Prompt Engineering Strategies
+
 % CoT
 @misc{wei2022chain,
     title={Chain of Thought Prompting Elicits Reasoning in Large Language Models},
@@ -28,6 +30,48 @@
     primaryClass={cs.CL}
 }
 
+% showing similar training examples
+@misc{liu2021makes,
+    title={What Makes Good In-Context Examples for GPT-3?},
+    author={Jiachang Liu and Dinghan Shen and Yizhe Zhang and Bill Dolan and Lawrence Carin and Weizhu Chen},
+    year={2021},
+    eprint={2101.06804},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% generated knowledge
+@misc{liu2021generated,
+    title={Generated Knowledge Prompting for Commonsense Reasoning},
+    author={Jiacheng Liu and Alisa Liu and Ximing Lu and Sean Welleck and Peter West and Ronan Le Bras and Yejin Choi and Hannaneh Hajishirzi},
+    year={2021},
+    eprint={2110.08387},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% structure over content in prompts
+@misc{min2022rethinking,
+    title={Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?},
+    author={Sewon Min and Xinxi Lyu and Ari Holtzman and Mikel Artetxe and Mike Lewis and Hannaneh Hajishirzi and Luke Zettlemoyer},
+    year={2022},
+    eprint={2202.12837},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% scratchpads
+@misc{nye2021work,
+    title={Show Your Work: Scratchpads for Intermediate Computation with Language Models},
+    author={Maxwell Nye and Anders Johan Andreassen and Guy Gur-Ari and Henryk Michalewski and Jacob Austin and David Bieber and David Dohan and Aitor Lewkowycz and Maarten Bosma and David Luan and Charles Sutton and Augustus Odena},
+    year={2021},
+    eprint={2112.00114},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+% Reliability
+
 % unreliable CoT
 @misc{ye2022unreliability,
     title={The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning},
@@ -38,6 +82,58 @@
     primaryClass={cs.CL}
 }
 
+% analyzing harm
+@misc{si2022prompting,
+    title={Prompting GPT-3 To Be Reliable},
+    author={Chenglei Si and Zhe Gan and Zhengyuan Yang and Shuohang Wang and Jianfeng Wang and Jordan Boyd-Graber and Lijuan Wang},
+    year={2022},
+    eprint={2210.09150},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% diverse prompts
+@misc{li2022advance,
+    title={On the Advance of Making Language Models Better Reasoners},
+    author={Yifei Li and Zeqi Lin and Shizhuo Zhang and Qiang Fu and Bei Chen and Jian-Guang Lou and Weizhu Chen},
+    year={2022},
+    eprint={2206.02336},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% problems with biases
+@misc{zhao2021calibrate,
+    title={Calibrate Before Use: Improving Few-Shot Performance of Language Models},
+    author={Tony Z. Zhao and Eric Wallace and Shi Feng and Dan Klein and Sameer Singh},
+    year={2021},
+    eprint={2102.09690},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% augment with search results
+@misc{livin2022large,
+    title={Can large language models reason about medical questions?},
+    author={Valentin Liévin and Christoffer Egeberg Hother and Ole Winther},
+    year={2022},
+    eprint={2207.08143},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% enhanced self consistency
+@misc{mitchell2022enhancing,
+    title={Enhancing Self-Consistency and Performance of Pre-Trained Language Models through Natural Language Inference},
+    author={Eric Mitchell and Joseph J. Noh and Siyan Li and William S. Armstrong and Ananth Agarwal and Patrick Liu and Chelsea Finn and Christopher D. Manning},
+    year={2022},
+    eprint={2211.11875},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% Automated Prompt Engineering
+
 % definition of prompting
 @article{shin2020autoprompt,
    title={AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts},
@@ -47,6 +143,20 @@
    publisher={Association for Computational Linguistics},
    author={Shin, Taylor and Razeghi, Yasaman and Logan IV, Robert L. and Wallace, Eric and Singh, Sameer},
    year={2020} }
+
+% automatic prompt engineer
+@misc{zhou2022large,
+    title={Large Language Models Are Human-Level Prompt Engineers},
+    author={Yongchao Zhou and Andrei Ioan Muresanu and Ziwen Han and Keiran Paster and Silviu Pitis and Harris Chan and Jimmy Ba},
+    year={2022},
+    eprint={2211.01910},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+% Models
+
+% Language Models
 
 % gpt3
 @misc{brown2020language,
@@ -68,66 +178,6 @@
     primaryClass={cs.CL}
 }
 
-% showing similar training examples
-@misc{liu2021makes,
-    title={What Makes Good In-Context Examples for GPT-$3$?},
-    author={Jiachang Liu and Dinghan Shen and Yizhe Zhang and Bill Dolan and Lawrence Carin and Weizhu Chen},
-    year={2021},
-    eprint={2101.06804},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-
-% soft prompting
-@misc{lester2021power,
-    title={The Power of Scale for Parameter-Efficient Prompt Tuning},
-    author={Brian Lester and Rami Al-Rfou and Noah Constant},
-    year={2021},
-    eprint={2104.08691},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-
-% discretized soft promting (interpreting)
-@misc{khashabi2021prompt,
-    title={Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts},
-    author={Daniel Khashabi and Shane Lyu and Sewon Min and Lianhui Qin and Kyle Richardson and Sean Welleck and Hannaneh Hajishirzi and Tushar Khot and Ashish Sabharwal and Sameer Singh and Yejin Choi},
-    year={2021},
-    eprint={2112.08348},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-
-% generated knowledge
-@misc{liu2021generated,
-    title={Generated Knowledge Prompting for Commonsense Reasoning},
-    author={Jiacheng Liu and Alisa Liu and Ximing Lu and Sean Welleck and Peter West and Ronan Le Bras and Yejin Choi and Hannaneh Hajishirzi},
-    year={2021},
-    eprint={2110.08387},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-
-% analyzing harm
-@misc{si2022prompting,
-    title={Prompting GPT-3 To Be Reliable},
-    author={Chenglei Si and Zhe Gan and Zhengyuan Yang and Shuohang Wang and Jianfeng Wang and Jordan Boyd-Graber and Lijuan Wang},
-    year={2022},
-    eprint={2210.09150},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-
-% GSM8K
-@misc{cobbe2021training,
-    title={Training Verifiers to Solve Math Word Problems},
-    author={Karl Cobbe and Vineet Kosaraju and Mohammad Bavarian and Mark Chen and Heewoo Jun and Lukasz Kaiser and Matthias Plappert and Jerry Tworek and Jacob Hilton and Reiichiro Nakano and Christopher Hesse and John Schulman},
-    year={2021},
-    eprint={2110.14168},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
-}
-
 % PaLM
 @misc{chowdhery2022palm,
     title={PaLM: Scaling Language Modeling with Pathways},
@@ -138,25 +188,47 @@
     primaryClass={cs.CL}
 }
 
-% images vocab
-@misc{oppenlaender2022taxonomy,
-    title={A Taxonomy of Prompt Modifiers for Text-To-Image Generation},
-    author={Jonas Oppenlaender},
+% bloom
+@misc{scao2022bloom,
+    title={BLOOM: A 176B-Parameter Open-Access Multilingual Language Model},
+    author={Teven Le Scao and Angela Fan and Christopher Akiki and Ellie Pavlick and Suzana Ilić and Daniel Hesslow and Roman Castagné and Alexandra Sasha Luccioni and François Yvon and Matthias Gallé and Jonathan Tow and Alexander M. Rush and Stella Biderman and Albert Webson and Pawan Sasanka Ammanamanchi and Thomas Wang and Benoît Sagot and Niklas Muennighoff and Albert Villanova del Moral and Olatunji Ruwase and Rachel Bawden and Stas Bekman and Angelina McMillan-Major and Iz Beltagy and Huu Nguyen and Lucile Saulnier and Samson Tan and Pedro Ortiz Suarez and Victor Sanh and Hugo Laurençon and Yacine Jernite and Julien Launay and Margaret Mitchell and Colin Raffel and Aaron Gokaslan and Adi Simhi and Aitor Soroa and Alham Fikri Aji and Amit Alfassy and Anna Rogers and Ariel Kreisberg Nitzav and Canwen Xu and Chenghao Mou and Chris Emezue and Christopher Klamm and Colin Leong and Daniel van Strien and David Ifeoluwa Adelani and Dragomir Radev and Eduardo González Ponferrada and Efrat Levkovizh and Ethan Kim and Eyal Bar Natan and Francesco De Toni and Gérard Dupont and Germán Kruszewski and Giada Pistilli and Hady Elsahar and Hamza Benyamina and Hieu Tran and Ian Yu and Idris Abdulmumin and Isaac Johnson and Itziar Gonzalez-Dios and Javier de la Rosa and Jenny Chim and Jesse Dodge and Jian Zhu and Jonathan Chang and Jörg Frohberg and Joseph Tobing and Joydeep Bhattacharjee and Khalid Almubarak and Kimbo Chen and Kyle Lo and Leandro Von Werra and Leon Weber and Long Phan and Loubna Ben allal and Ludovic Tanguy and Manan Dey and Manuel Romero Muñoz and Maraim Masoud and María Grandury and Mario Šaško and Max Huang and Maximin Coavoux and Mayank Singh and Mike Tian-Jian Jiang and Minh Chien Vu and Mohammad A. Jauhar and Mustafa Ghaleb and Nishant Subramani and Nora Kassner and Nurulaqilla Khamis and Olivier Nguyen and Omar Espejel and Ona de Gibert and Paulo Villegas and Peter Henderson and Pierre Colombo and Priscilla Amuok and Quentin Lhoest and Rheza Harliman and Rishi Bommasani and Roberto Luis López and Rui Ribeiro and Salomey Osei and Sampo Pyysalo and Sebastian Nagel and Shamik Bose and Shamsuddeen Hassan Muhammad and Shanya Sharma and Shayne Longpre and Somaieh Nikpoor and Stanislav Silberberg and Suhas Pai and Sydney Zink and Tiago Timponi Torrent and Timo Schick and Tristan Thrush and Valentin Danchev and Vassilina Nikoulina and Veronika Laippala and Violette Lepercq and Vrinda Prabhu and Zaid Alyafeai and Zeerak Talat and Arun Raja and Benjamin Heinzerling and Chenglei Si and Elizabeth Salesky and Sabrina J. Mielke and Wilson Y. Lee and Abheesht Sharma and Andrea Santilli and Antoine Chaffin and Arnaud Stiegler and Debajyoti Datta and Eliza Szczechla and Gunjan Chhablani and Han Wang and Harshit Pandey and Hendrik Strobelt and Jason Alan Fries and Jos Rozen and Leo Gao and Lintang Sutawika and M Saiful Bari and Maged S. Al-shaibani and Matteo Manica and Nihal Nayak and Ryan Teehan and Samuel Albanie and Sheng Shen and Srulik Ben-David and Stephen H. Bach and Taewoon Kim and Tali Bers and Thibault Fevry and Trishala Neeraj and Urmish Thakker and Vikas Raunak and Xiangru Tang and Zheng-Xin Yong and Zhiqing Sun and Shaked Brody and Yallow Uri and Hadar Tojarieh and Adam Roberts and Hyung Won Chung and Jaesung Tae and Jason Phang and Ofir Press and Conglong Li and Deepak Narayanan and Hatim Bourfoune and Jared Casper and Jeff Rasley and Max Ryabinin and Mayank Mishra and Minjia Zhang and Mohammad Shoeybi and Myriam Peyrounette and Nicolas Patry and Nouamane Tazi and Omar Sanseviero and Patrick von Platen and Pierre Cornette and Pierre François Lavallée and Rémi Lacroix and Samyam Rajbhandari and Sanchit Gandhi and Shaden Smith and Stéphane Requena and Suraj Patil and Tim Dettmers and Ahmed Baruwa and Amanpreet Singh and Anastasia Cheveleva and Anne-Laure Ligozat and Arjun Subramonian and Aurélie Névéol and Charles Lovering and Dan Garrette and Deepak Tunuguntla and Ehud Reiter and Ekaterina Taktasheva and Ekaterina Voloshina and Eli Bogdanov and Genta Indra Winata and Hailey Schoelkopf and Jan-Christoph Kalo and Jekaterina Novikova and Jessica Zosa Forde and Jordan Clive and Jungo Kasai and Ken Kawamura and Liam Hazan and Marine Carpuat and Miruna Clinciu and Najoung Kim and Newton Cheng and Oleg Serikov and Omer Antverg and Oskar van der Wal and Rui Zhang and Ruochen Zhang and Sebastian Gehrmann and Shani Pais and Tatiana Shavrina and Thomas Scialom and Tian Yun and Tomasz Limisiewicz and Verena Rieser and Vitaly Protasov and Vladislav Mikhailov and Yada Pruksachatkun and Yonatan Belinkov and Zachary Bamberger and Zdeněk Kasner and Alice Rueda and Amanda Pestana and Amir Feizpour and Ammar Khan and Amy Faranak and Ana Santos and Anthony Hevia and Antigona Unldreaj and Arash Aghagol and Arezoo Abdollahi and Aycha Tammour and Azadeh HajiHosseini and Bahareh Behroozi and Benjamin Ajibade and Bharat Saxena and Carlos Muñoz Ferrandis and Danish Contractor and David Lansky and Davis David and Douwe Kiela and Duong A. Nguyen and Edward Tan and Emi Baylor and Ezinwanne Ozoani and Fatima Mirza and Frankline Ononiwu and Habib Rezanejad and Hessie Jones and Indrani Bhattacharya and Irene Solaiman and Irina Sedenko and Isar Nejadgholi and Jesse Passmore and Josh Seltzer and Julio Bonis Sanz and Karen Fort and Livia Dutra and Mairon Samagaio and Maraim Elbadri and Margot Mieskes and Marissa Gerchick and Martha Akinlolu and Michael McKenna and Mike Qiu and Muhammed Ghauri and Mykola Burynok and Nafis Abrar and Nazneen Rajani and Nour Elkott and Nour Fahmy and Olanrewaju Samuel and Ran An and Rasmus Kromann and Ryan Hao and Samira Alizadeh and Sarmad Shubber and Silas Wang and Sourav Roy and Sylvain Viguier and Thanh Le and Tobi Oyebade and Trieu Le and Yoyo Yang and Zach Nguyen and Abhinav Ramesh Kashyap and Alfredo Palasciano and Alison Callahan and Anima Shukla and Antonio Miranda-Escalada and Ayush Singh and Benjamin Beilharz and Bo Wang and Caio Brito and Chenxi Zhou and Chirag Jain and Chuxin Xu and Clémentine Fourrier and Daniel León Periñán and Daniel Molano and Dian Yu and Enrique Manjavacas and Fabio Barth and Florian Fuhrimann and Gabriel Altay and Giyaseddin Bayrak and Gully Burns and Helena U. Vrabec and Imane Bello and Ishani Dash and Jihyun Kang and John Giorgi and Jonas Golde and Jose David Posada and Karthik Rangasai Sivaraman and Lokesh Bulchandani and Lu Liu and Luisa Shinzato and Madeleine Hahn de Bykhovetz and Maiko Takeuchi and Marc Pàmies and Maria A Castillo and Marianna Nezhurina and Mario Sänger and Matthias Samwald and Michael Cullan and Michael Weinberg and Michiel De Wolf and Mina Mihaljcic and Minna Liu and Moritz Freidank and Myungsun Kang and Natasha Seelam and Nathan Dahlberg and Nicholas Michio Broad and Nikolaus Muellner and Pascale Fung and Patrick Haller and Ramya Chandrasekhar and Renata Eisenberg and Robert Martin and Rodrigo Canalli and Rosaline Su and Ruisi Su and Samuel Cahyawijaya and Samuele Garda and Shlok S Deshmukh and Shubhanshu Mishra and Sid Kiblawi and Simon Ott and Sinee Sang-aroonsiri and Srishti Kumar and Stefan Schweter and Sushil Bharati and Tanmay Laud and Théo Gigant and Tomoya Kainuma and Wojciech Kusa and Yanis Labrak and Yash Shailesh Bajaj and Yash Venkatraman and Yifan Xu and Yingxin Xu and Yu Xu and Zhe Tan and Zhongli Xie and Zifan Ye and Mathilde Bras and Younes Belkada and Thomas Wolf},
     year={2022},
-    eprint={2204.13988},
-    archivePrefix={arXiv},
-    primaryClass={cs.MM}
-}
-
-% structure over content in prompts
-@misc{min2022rethinking,
-    title={Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?},
-    author={Sewon Min and Xinxi Lyu and Ari Holtzman and Mikel Artetxe and Mike Lewis and Hannaneh Hajishirzi and Luke Zettlemoyer},
-    year={2022},
-    eprint={2202.12837},
+    eprint={2211.05100},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
+
+% Jurassic 1
+@article{lieberjurassic,
+  title={Jurassic-1: Technical Details and Evaluation, White paper, AI21 Labs, 2021},
+  author={Lieber, O and Sharir, O and Lentz, B and Shoham, Y},
+  year={2021},
+  journal={URL: https://uploads-ssl. webflow. com/60fd4503684b466578c0d307/61138924626a6981ee09caf6\_jurassic\_ tech\_paper. pdf}
+}
+
+% Image models
+
+% stable diffusion
+@misc{rombach2021highresolution,
+      title={High-Resolution Image Synthesis with Latent Diffusion Models}, 
+      author={Robin Rombach and Andreas Blattmann and Dominik Lorenz and Patrick Esser and Björn Ommer},
+      year={2021},
+      eprint={2112.10752},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+% dalle
+@misc{ramesh2022hierarchical,
+    title={Hierarchical Text-Conditional Image Generation with CLIP Latents},
+    author={Aditya Ramesh and Prafulla Dhariwal and Alex Nichol and Casey Chu and Mark Chen},
+    year={2022},
+    eprint={2204.06125},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+
+% Prompt Engineering IDEs
 
 % prompt ide
 @misc{strobelt2022promptide,
@@ -179,62 +251,59 @@
       primaryClass={cs.LG}
 }
 
-% bloom
-@misc{scao2022bloom,
-    title={BLOOM: A 176B-Parameter Open-Access Multilingual Language Model},
-    author={Teven Le Scao and Angela Fan and Christopher Akiki and Ellie Pavlick and Suzana Ilić and Daniel Hesslow and Roman Castagné and Alexandra Sasha Luccioni and François Yvon and Matthias Gallé and Jonathan Tow and Alexander M. Rush and Stella Biderman and Albert Webson and Pawan Sasanka Ammanamanchi and Thomas Wang and Benoît Sagot and Niklas Muennighoff and Albert Villanova del Moral and Olatunji Ruwase and Rachel Bawden and Stas Bekman and Angelina McMillan-Major and Iz Beltagy and Huu Nguyen and Lucile Saulnier and Samson Tan and Pedro Ortiz Suarez and Victor Sanh and Hugo Laurençon and Yacine Jernite and Julien Launay and Margaret Mitchell and Colin Raffel and Aaron Gokaslan and Adi Simhi and Aitor Soroa and Alham Fikri Aji and Amit Alfassy and Anna Rogers and Ariel Kreisberg Nitzav and Canwen Xu and Chenghao Mou and Chris Emezue and Christopher Klamm and Colin Leong and Daniel van Strien and David Ifeoluwa Adelani and Dragomir Radev and Eduardo González Ponferrada and Efrat Levkovizh and Ethan Kim and Eyal Bar Natan and Francesco De Toni and Gérard Dupont and Germán Kruszewski and Giada Pistilli and Hady Elsahar and Hamza Benyamina and Hieu Tran and Ian Yu and Idris Abdulmumin and Isaac Johnson and Itziar Gonzalez-Dios and Javier de la Rosa and Jenny Chim and Jesse Dodge and Jian Zhu and Jonathan Chang and Jörg Frohberg and Joseph Tobing and Joydeep Bhattacharjee and Khalid Almubarak and Kimbo Chen and Kyle Lo and Leandro Von Werra and Leon Weber and Long Phan and Loubna Ben allal and Ludovic Tanguy and Manan Dey and Manuel Romero Muñoz and Maraim Masoud and María Grandury and Mario Šaško and Max Huang and Maximin Coavoux and Mayank Singh and Mike Tian-Jian Jiang and Minh Chien Vu and Mohammad A. Jauhar and Mustafa Ghaleb and Nishant Subramani and Nora Kassner and Nurulaqilla Khamis and Olivier Nguyen and Omar Espejel and Ona de Gibert and Paulo Villegas and Peter Henderson and Pierre Colombo and Priscilla Amuok and Quentin Lhoest and Rheza Harliman and Rishi Bommasani and Roberto Luis López and Rui Ribeiro and Salomey Osei and Sampo Pyysalo and Sebastian Nagel and Shamik Bose and Shamsuddeen Hassan Muhammad and Shanya Sharma and Shayne Longpre and Somaieh Nikpoor and Stanislav Silberberg and Suhas Pai and Sydney Zink and Tiago Timponi Torrent and Timo Schick and Tristan Thrush and Valentin Danchev and Vassilina Nikoulina and Veronika Laippala and Violette Lepercq and Vrinda Prabhu and Zaid Alyafeai and Zeerak Talat and Arun Raja and Benjamin Heinzerling and Chenglei Si and Elizabeth Salesky and Sabrina J. Mielke and Wilson Y. Lee and Abheesht Sharma and Andrea Santilli and Antoine Chaffin and Arnaud Stiegler and Debajyoti Datta and Eliza Szczechla and Gunjan Chhablani and Han Wang and Harshit Pandey and Hendrik Strobelt and Jason Alan Fries and Jos Rozen and Leo Gao and Lintang Sutawika and M Saiful Bari and Maged S. Al-shaibani and Matteo Manica and Nihal Nayak and Ryan Teehan and Samuel Albanie and Sheng Shen and Srulik Ben-David and Stephen H. Bach and Taewoon Kim and Tali Bers and Thibault Fevry and Trishala Neeraj and Urmish Thakker and Vikas Raunak and Xiangru Tang and Zheng-Xin Yong and Zhiqing Sun and Shaked Brody and Yallow Uri and Hadar Tojarieh and Adam Roberts and Hyung Won Chung and Jaesung Tae and Jason Phang and Ofir Press and Conglong Li and Deepak Narayanan and Hatim Bourfoune and Jared Casper and Jeff Rasley and Max Ryabinin and Mayank Mishra and Minjia Zhang and Mohammad Shoeybi and Myriam Peyrounette and Nicolas Patry and Nouamane Tazi and Omar Sanseviero and Patrick von Platen and Pierre Cornette and Pierre François Lavallée and Rémi Lacroix and Samyam Rajbhandari and Sanchit Gandhi and Shaden Smith and Stéphane Requena and Suraj Patil and Tim Dettmers and Ahmed Baruwa and Amanpreet Singh and Anastasia Cheveleva and Anne-Laure Ligozat and Arjun Subramonian and Aurélie Névéol and Charles Lovering and Dan Garrette and Deepak Tunuguntla and Ehud Reiter and Ekaterina Taktasheva and Ekaterina Voloshina and Eli Bogdanov and Genta Indra Winata and Hailey Schoelkopf and Jan-Christoph Kalo and Jekaterina Novikova and Jessica Zosa Forde and Jordan Clive and Jungo Kasai and Ken Kawamura and Liam Hazan and Marine Carpuat and Miruna Clinciu and Najoung Kim and Newton Cheng and Oleg Serikov and Omer Antverg and Oskar van der Wal and Rui Zhang and Ruochen Zhang and Sebastian Gehrmann and Shani Pais and Tatiana Shavrina and Thomas Scialom and Tian Yun and Tomasz Limisiewicz and Verena Rieser and Vitaly Protasov and Vladislav Mikhailov and Yada Pruksachatkun and Yonatan Belinkov and Zachary Bamberger and Zdeněk Kasner and Alice Rueda and Amanda Pestana and Amir Feizpour and Ammar Khan and Amy Faranak and Ana Santos and Anthony Hevia and Antigona Unldreaj and Arash Aghagol and Arezoo Abdollahi and Aycha Tammour and Azadeh HajiHosseini and Bahareh Behroozi and Benjamin Ajibade and Bharat Saxena and Carlos Muñoz Ferrandis and Danish Contractor and David Lansky and Davis David and Douwe Kiela and Duong A. Nguyen and Edward Tan and Emi Baylor and Ezinwanne Ozoani and Fatima Mirza and Frankline Ononiwu and Habib Rezanejad and Hessie Jones and Indrani Bhattacharya and Irene Solaiman and Irina Sedenko and Isar Nejadgholi and Jesse Passmore and Josh Seltzer and Julio Bonis Sanz and Karen Fort and Livia Dutra and Mairon Samagaio and Maraim Elbadri and Margot Mieskes and Marissa Gerchick and Martha Akinlolu and Michael McKenna and Mike Qiu and Muhammed Ghauri and Mykola Burynok and Nafis Abrar and Nazneen Rajani and Nour Elkott and Nour Fahmy and Olanrewaju Samuel and Ran An and Rasmus Kromann and Ryan Hao and Samira Alizadeh and Sarmad Shubber and Silas Wang and Sourav Roy and Sylvain Viguier and Thanh Le and Tobi Oyebade and Trieu Le and Yoyo Yang and Zach Nguyen and Abhinav Ramesh Kashyap and Alfredo Palasciano and Alison Callahan and Anima Shukla and Antonio Miranda-Escalada and Ayush Singh and Benjamin Beilharz and Bo Wang and Caio Brito and Chenxi Zhou and Chirag Jain and Chuxin Xu and Clémentine Fourrier and Daniel León Periñán and Daniel Molano and Dian Yu and Enrique Manjavacas and Fabio Barth and Florian Fuhrimann and Gabriel Altay and Giyaseddin Bayrak and Gully Burns and Helena U. Vrabec and Imane Bello and Ishani Dash and Jihyun Kang and John Giorgi and Jonas Golde and Jose David Posada and Karthik Rangasai Sivaraman and Lokesh Bulchandani and Lu Liu and Luisa Shinzato and Madeleine Hahn de Bykhovetz and Maiko Takeuchi and Marc Pàmies and Maria A Castillo and Marianna Nezhurina and Mario Sänger and Matthias Samwald and Michael Cullan and Michael Weinberg and Michiel De Wolf and Mina Mihaljcic and Minna Liu and Moritz Freidank and Myungsun Kang and Natasha Seelam and Nathan Dahlberg and Nicholas Michio Broad and Nikolaus Muellner and Pascale Fung and Patrick Haller and Ramya Chandrasekhar and Renata Eisenberg and Robert Martin and Rodrigo Canalli and Rosaline Su and Ruisi Su and Samuel Cahyawijaya and Samuele Garda and Shlok S Deshmukh and Shubhanshu Mishra and Sid Kiblawi and Simon Ott and Sinee Sang-aroonsiri and Srishti Kumar and Stefan Schweter and Sushil Bharati and Tanmay Laud and Théo Gigant and Tomoya Kainuma and Wojciech Kusa and Yanis Labrak and Yash Shailesh Bajaj and Yash Venkatraman and Yifan Xu and Yingxin Xu and Yu Xu and Zhe Tan and Zhongli Xie and Zifan Ye and Mathilde Bras and Younes Belkada and Thomas Wolf},
-    year={2022},
-    eprint={2211.05100},
+% Soft Prompting
+
+% soft prompting
+@misc{lester2021power,
+    title={The Power of Scale for Parameter-Efficient Prompt Tuning},
+    author={Brian Lester and Rami Al-Rfou and Noah Constant},
+    year={2021},
+    eprint={2104.08691},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
 
-% MRKL
-@misc{karpas2022mrkl,
-    title={MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning},
-    author={Ehud Karpas and Omri Abend and Yonatan Belinkov and Barak Lenz and Opher Lieber and Nir Ratner and Yoav Shoham and Hofit Bata and Yoav Levine and Kevin Leyton-Brown and Dor Muhlgay and Noam Rozen and Erez Schwartz and Gal Shachaf and Shai Shalev-Shwartz and Amnon Shashua and Moshe Tenenholtz},
-    year={2022},
-    eprint={2205.00445},
+% discretized soft promting (interpreting)
+@misc{khashabi2021prompt,
+    title={Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts},
+    author={Daniel Khashabi and Shane Lyu and Sewon Min and Lianhui Qin and Kyle Richardson and Sean Welleck and Hannaneh Hajishirzi and Tushar Khot and Ashish Sabharwal and Sameer Singh and Yejin Choi},
+    year={2021},
+    eprint={2112.08348},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
 
-% stable diffusion
-@misc{rombach2021highresolution,
-      title={High-Resolution Image Synthesis with Latent Diffusion Models}, 
-      author={Robin Rombach and Andreas Blattmann and Dominik Lorenz and Patrick Esser and Björn Ommer},
-      year={2021},
-      eprint={2112.10752},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+% Image Prompt Engineering
+
+% images vocab
+@misc{oppenlaender2022taxonomy,
+    title={A Taxonomy of Prompt Modifiers for Text-To-Image Generation},
+    author={Jonas Oppenlaender},
+    year={2022},
+    eprint={2204.13988},
+    archivePrefix={arXiv},
+    primaryClass={cs.MM}
 }
 
-% dalle
-@misc{ramesh2022hierarchical,
-    title={Hierarchical Text-Conditional Image Generation with CLIP Latents},
-    author={Aditya Ramesh and Prafulla Dhariwal and Alex Nichol and Casey Chu and Mark Chen},
+@misc{wang2022diffusiondb,
+    title={DiffusionDB: A Large-scale Prompt Gallery Dataset for Text-to-Image Generative Models},
+    author={Zijie J. Wang and Evan Montoya and David Munechika and Haoyang Yang and Benjamin Hoover and Duen Horng Chau},
     year={2022},
-    eprint={2204.06125},
+    eprint={2210.14896},
     archivePrefix={arXiv},
     primaryClass={cs.CV}
 }
 
-% ReAct
-@misc{yao2022react,
-    title={ReAct: Synergizing Reasoning and Acting in Language Models},
-    author={Shunyu Yao and Jeffrey Zhao and Dian Yu and Nan Du and Izhak Shafran and Karthik Narasimhan and Yuan Cao},
-    year={2022},
-    eprint={2210.03629},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
+% Datasets
 
-% Jurassic 1
-@article{lieberjurassic,
-  title={Jurassic-1: Technical Details and Evaluation, White paper, AI21 Labs, 2021},
-  author={Lieber, O and Sharir, O and Lentz, B and Shoham, Y},
-  year={2021},
-  journal={URL: https://uploads-ssl. webflow. com/60fd4503684b466578c0d307/61138924626a6981ee09caf6\_jurassic\_ tech\_paper. pdf}
+% GSM8K
+@misc{cobbe2021training,
+    title={Training Verifiers to Solve Math Word Problems},
+    author={Karl Cobbe and Vineet Kosaraju and Mohammad Bavarian and Mark Chen and Heewoo Jun and Lukasz Kaiser and Matthias Plappert and Jerry Tworek and Jacob Hilton and Reiichiro Nakano and Christopher Hesse and John Schulman},
+    year={2021},
+    eprint={2110.14168},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
 }
 
 % hotpotQA
@@ -255,4 +324,106 @@
     eprint={1803.05355},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
+}
+
+% Applied Prompt Engineering
+
+% cascades
+@misc{dohan2022language,
+    title={Language Model Cascades},
+    author={David Dohan and Winnie Xu and Aitor Lewkowycz and Jacob Austin and David Bieber and Raphael Gontijo Lopes and Yuhuai Wu and Henryk Michalewski and Rif A. Saurous and Jascha Sohl-dickstein and Kevin Murphy and Charles Sutton},
+    year={2022},
+    eprint={2207.10342},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% MRKL
+@misc{karpas2022mrkl,
+    title={MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning},
+    author={Ehud Karpas and Omri Abend and Yonatan Belinkov and Barak Lenz and Opher Lieber and Nir Ratner and Yoav Shoham and Hofit Bata and Yoav Levine and Kevin Leyton-Brown and Dor Muhlgay and Noam Rozen and Erez Schwartz and Gal Shachaf and Shai Shalev-Shwartz and Amnon Shashua and Moshe Tenenholtz},
+    year={2022},
+    eprint={2205.00445},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% ReAct
+@misc{yao2022react,
+    title={ReAct: Synergizing Reasoning and Acting in Language Models},
+    author={Shunyu Yao and Jeffrey Zhao and Dian Yu and Nan Du and Izhak Shafran and Karthik Narasimhan and Yuan Cao},
+    year={2022},
+    eprint={2210.03629},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% User Interface Design
+
+@inproceedings{liu2022design,
+author = {Liu, Vivian and Chilton, Lydia B},
+title = {Design Guidelines for Prompt Engineering Text-to-Image Generative Models},
+year = {2022},
+isbn = {9781450391573},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3491102.3501825},
+doi = {10.1145/3491102.3501825},
+abstract = {Text-to-image generative models are a new and powerful way to generate visual artwork. However, the open-ended nature of text as interaction is double-edged; while users can input anything and have access to an infinite range of generations, they also must engage in brute-force trial and error with the text prompt when the result quality is poor. We conduct a study exploring what prompt keywords and model hyperparameters can help produce coherent outputs. In particular, we study prompts structured to include subject and style keywords and investigate success and failure modes of these prompts. Our evaluation of 5493 generations over the course of five experiments spans 51 abstract and concrete subjects as well as 51 abstract and figurative styles. From this evaluation, we present design guidelines that can help people produce better outcomes from text-to-image generative models.},
+booktitle = {Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems},
+articleno = {384},
+numpages = {23},
+keywords = {computational creativity, multimodal generative models, AI co-creation, prompt engineering., text-to-image, design guidelines},
+location = {New Orleans, LA, USA},
+series = {CHI '22}
+}
+
+% Surveys
+
+@article{liu2021pretrain,
+   title={Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing},
+   ISSN={1557-7341},
+   url={http://dx.doi.org/10.1145/3560815},
+   DOI={10.1145/3560815},
+   journal={ACM Computing Surveys},
+   publisher={Association for Computing Machinery (ACM)},
+   author={Liu, Pengfei and Yuan, Weizhe and Fu, Jinlan and Jiang, Zhengbao and Hayashi, Hiroaki and Neubig, Graham},
+   year={2022},
+   month={Sep} }
+
+% Miscl
+@misc{bursztyn2022learning,
+    title={Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models},
+    author={Victor S. Bursztyn and David Demeter and Doug Downey and Larry Birnbaum},
+    year={2022},
+    eprint={2210.12607},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+@misc{wang2022supernaturalinstructions,
+    title={Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks},
+    author={Yizhong Wang and Swaroop Mishra and Pegah Alipoormolabashi and Yeganeh Kordi and Amirreza Mirzaei and Anjana Arunkumar and Arjun Ashok and Arut Selvan Dhanasekaran and Atharva Naik and David Stap and Eshaan Pathak and Giannis Karamanolakis and Haizhi Gary Lai and Ishan Purohit and Ishani Mondal and Jacob Anderson and Kirby Kuznia and Krima Doshi and Maitreya Patel and Kuntal Kumar Pal and Mehrad Moradshahi and Mihir Parmar and Mirali Purohit and Neeraj Varshney and Phani Rohitha Kaza and Pulkit Verma and Ravsehaj Singh Puri and Rushang Karia and Shailaja Keyur Sampat and Savan Doshi and Siddhartha Mishra and Sujan Reddy and Sumanta Patro and Tanay Dixit and Xudong Shen and Chitta Baral and Yejin Choi and Noah A. Smith and Hannaneh Hajishirzi and Daniel Khashabi},
+    year={2022},
+    eprint={2204.07705},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+@article{gao2021making,
+   title={Making Pre-trained Language Models Better Few-shot Learners},
+   url={http://dx.doi.org/10.18653/v1/2021.acl-long.295},
+   DOI={10.18653/v1/2021.acl-long.295},
+   journal={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+   publisher={Association for Computational Linguistics},
+   author={Gao, Tianyu and Fisch, Adam and Chen, Danqi},
+   year={2021} }
+
+@misc{dang2022prompt,
+    title={How to Prompt? Opportunities and Challenges of Zero- and Few-Shot Learning for Human-AI Interaction in Creative Applications of Generative Models},
+    author={Hai Dang and Lukas Mecke and Florian Lehmann and Sven Goller and Daniel Buschek},
+    year={2022},
+    eprint={2209.01390},
+    archivePrefix={arXiv},
+    primaryClass={cs.HC}
 }
