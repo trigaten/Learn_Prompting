@@ -1,4 +1,9 @@
 # Promptgineering
+
+[![](https://dcbadge.vercel.app/api/server/7enStJXQzD?compact=true&style=flat)](https://discord.gg/7enStJXQzD)
+
+
+
 https://trigaten.github.io/promptgineering/
 
 This website is a free, open-source guide on prompt engineering. Contributions are welcome!
