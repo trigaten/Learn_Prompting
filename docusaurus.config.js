@@ -30,8 +30,15 @@ async function createConfig() {
   
     presets: [
       [
+        
         'classic',
         ({
+          gtag: {
+            trackingID: 'G-FV0C417KS8',
+          },
+          googleAnalytics: {
+            trackingID: 'G-FV0C417KS8',
+          },
           docs: {
             sidebarPath: require.resolve('./sidebars.js'),
             // Please change this to your repo.
@@ -46,13 +53,9 @@ async function createConfig() {
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
           },
-          googleAnalytics: {
-            trackingID: 'G-FV0C417KS8'
-          },
         }),
       ],
     ],
-  
     themeConfig:
       ({
         navbar: {
