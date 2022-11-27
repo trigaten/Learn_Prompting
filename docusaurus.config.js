@@ -44,7 +44,7 @@ async function createConfig() {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/trigaten/promptgineering',
+              'https://github.com/trigaten/promptgineering/tree/v0.0.2',
             remarkPlugins: [
               (await import("remark-gfm")).default,
               [(await import("@benchmark-urbanism/remark-bibtex")).default, { bibtexFile: 'bibliography.bib' }]
