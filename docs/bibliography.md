@@ -97,9 +97,9 @@ The papers are organized by topic.
 
 #### ReAct(@yao2022react) 🔵
 
-## User Interface Design(@liu2022design)
+## User Interface Design
 
-#### Design Guidelines for Prompt Engineering Text-to-Image Generative Models
+#### Design Guidelines for Prompt Engineering Text-to-Image Generative Models(@liu2022design)
 
 ## Surveys
 
