@@ -8,8 +8,11 @@ MRKL Systems(@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, pronou
 are a **neuro-symbolic architecture** that combine LLMs (neural computation) and external 
 tools like calculators (symbolic computation), to solve complex problems. 
 
+A MRKL system is composed of a set of modules (e.g. a calculator, weather API, database, etc.) and a router that decides how to 'route' incoming natural language queries to the appropriate module.
+
 A simple example of a MRKL system is a LLM that can 
-use a calculator app. When asked, `What is 100*100?`, the LLM can choose to
+use a calculator app. This is a single module system, where the LLM is the router.
+When asked, `What is 100*100?`, the LLM can choose to
 extract the numbers from the prompt, and then use a calculator app to compute
 the result. This might look like the following:
 
@@ -20,7 +23,7 @@ the result. This might look like the following:
 </pre>
 
 The MRKL system would see the word `CALCULATOR` and plug `100*100` into the calculator app.
-This simple idea could easily be expanded to various symbolic computing tools (Calculator, Weather API, Database, etc.).
+This simple idea could easily be expanded to various symbolic computing tools.
 
 Consider the following additional examples of applications: 
 
@@ -64,7 +67,7 @@ I have reproduced an example a MRKL System from the original paper, but using Du
 linked [here](https://dust.tt/trigaten/a/98bdd65cb7). 
 The system reads a math problem (e.g. `What is 20 times 5^6?`), extracts the numbers and the operations,
 and reformats them for a calculator app (e.g. `20*5^6`). It then sends the reformatted equation 
-to Google's calculator app, and returns the result. Let's walk through how this works:
+to Google's calculator app, and returns the result. Note that the original paper performs fine tuning on the router, but I do not in this example. Let's walk through how this works:
 
 First, I made a simple dataset in the Dust `Datasets` tab (don't forget to hit update!).
 
