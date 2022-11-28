@@ -101,6 +101,10 @@ The papers are organized by topic.
 
 #### Design Guidelines for Prompt Engineering Text-to-Image Generative Models(@liu2022design)
 
+## Prompt Injection
+
+#### Machine Generated Text: A Comprehensive Survey of Threat Models and Detection Methods(@crothers2022machine)
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
