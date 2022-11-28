@@ -17,7 +17,7 @@ The papers are organized by topic.
 
 #### Self Consistency(@wang2022selfconsistency) 🔵
 
-#### What Makes Good In-Context Examples for GPT-$3$?(liu2021makes) 🔵
+#### What Makes Good In-Context Examples for GPT-3?(@liu2021makes) 🔵
 
 #### Generated Knowledge(@liu2021generated) 🔵
 
