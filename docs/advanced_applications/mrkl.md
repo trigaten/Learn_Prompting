@@ -63,7 +63,7 @@ import final from '../assets/mrkl/final.png';
 
 ## An Example
 
-I have reproduced an example a MRKL System from the original paper, but using Dust.tt, 
+I have reproduced an example MRKL System from the original paper, using Dust.tt, 
 linked [here](https://dust.tt/trigaten/a/98bdd65cb7). 
 The system reads a math problem (e.g. `What is 20 times 5^6?`), extracts the numbers and the operations,
 and reformats them for a calculator app (e.g. `20*5^6`). It then sends the reformatted equation 
