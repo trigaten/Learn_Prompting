@@ -41,7 +41,7 @@ Kojima et al. experiment with a number of different Zero-shot-CoT prompts
 (e.g. "Let’s solve this problem by splitting it into steps." or "Let’s think about this logically."), but they find that "Let's think step by step" is most effective for their
 chosen tasks.
 
-## Experiments
+## Example
 🚧 Under Construction 🚧
 
 ## Notes
