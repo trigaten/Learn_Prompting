@@ -13,8 +13,8 @@ A MRKL system is composed of a set of modules (e.g. a calculator, weather API, d
 A simple example of a MRKL system is a LLM that can 
 use a calculator app. This is a single module system, where the LLM is the router.
 When asked, `What is 100*100?`, the LLM can choose to
-extract the numbers from the prompt, and then use a calculator app to compute
-the result. This might look like the following:
+extract the numbers from the prompt, and then telling the MRKL System to use a calculator 
+app to compute the result. This might look like the following:
 
 <pre>
 <p>What is 100*100?</p>
@@ -23,7 +23,7 @@ the result. This might look like the following:
 </pre>
 
 The MRKL system would see the word `CALCULATOR` and plug `100*100` into the calculator app.
-This simple idea could easily be expanded to various symbolic computing tools.
+This simple idea can easily be expanded to various symbolic computing tools.
 
 Consider the following additional examples of applications: 
 
@@ -33,7 +33,7 @@ extracting information to form a SQL query from a users' text.
 <pre>
 <p>What is the price of Apple stock right now?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"]</span>
+<span style={{backgroundColor: '#d2f4d3'}}>The current price is DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"].</span>
 </pre>
 
 - A chatbot that is able to respond to questions about the weather by extracting
@@ -42,7 +42,7 @@ information from the prompt and using a weather API to retrieve the information.
 <pre>
 <p>What is the weather like in New York?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>WEATHER API[New York]</span>
+<span style={{backgroundColor: '#d2f4d3'}}>The weather is WEATHER_API[New York].</span>
 </pre>
 
 - Or even much more complex tasks that depend on multiple datasources such as the
@@ -67,9 +67,9 @@ I have reproduced an example MRKL System from the original paper, using Dust.tt,
 linked [here](https://dust.tt/trigaten/a/98bdd65cb7). 
 The system reads a math problem (e.g. `What is 20 times 5^6?`), extracts the numbers and the operations,
 and reformats them for a calculator app (e.g. `20*5^6`). It then sends the reformatted equation 
-to Google's calculator app, and returns the result. Note that the original paper performs fine tuning on the router, but I do not in this example. Let's walk through how this works:
+to Google's calculator app, and returns the result. Note that the original paper performs fine tuning on the router (the LLM), but I do not in this example. Let's walk through how this works:
 
-First, I made a simple dataset in the Dust `Datasets` tab (don't forget to hit update!).
+First, I made a simple dataset in the Dust `Datasets` tab.
 
 
 <div style={{textAlign: 'center'}}>
@@ -84,13 +84,13 @@ Then, I switched to the `Specification` tab and loaded the dataset using a `data
 
 Next, I created a `llm` block that extracts the numbers and operations. Notice how
 in the prompt I told it we would be using Google's calculator. The model I use (GPT-3)
-likely has some idea of Google's calculator from pretraining.
+likely has some knowledge of Google's calculator from pretraining.
 
 <div style={{textAlign: 'center'}}>
   <img src={model} style={{width: "750px"}} />
 </div>
 
-Then, I made a `code` block which runs some simple javascript code to remove 
+Then, I made a `code` block, which runs some simple javascript code to remove 
 spaces from the completion.
 
 <div style={{textAlign: 'center'}}>
@@ -103,7 +103,7 @@ Finally, I made a `search` block that sends the reformatted equation to Google's
   <img src={search} style={{width: "750px"}} />
 </div>
 
-We can see the final results, which are all correct!
+Below we can see the final results, which are all correct!
 
 <div style={{textAlign: 'center'}}>
   <img src={final} style={{width: "750px"}} />
