@@ -8,8 +8,8 @@ async function createConfig() {
   return {
     title: 'Promptgineering',
     tagline: 'Prompt engineering is opaque. Lets make it transparent.',
-    url: 'https://trigaten.github.io/',
-    baseUrl: '/promptgineering/',
+    url: 'https://trigaten.github.io',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
