@@ -89,6 +89,8 @@ The papers are organized by topic.
 
 #### Prompt Source(@bach2022promptsource) 🔵
 
+#### PromptChainer(@wu2022promptchainer) 🔵
+
 ## Applied Prompt Engineering
 
 #### Language Model Cascades(@dohan2022language)
