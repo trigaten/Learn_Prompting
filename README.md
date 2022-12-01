@@ -4,7 +4,7 @@
 
 
 
-https://trigaten.github.io/promptgineering/
+https://learnprompting.org
 
 This website is a free, open-source guide on prompt engineering. Contributions are welcome!
 Harsh criticism is welcome too!
