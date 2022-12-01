@@ -37,7 +37,7 @@ few shot examples for CoT prompting is difficult.
 
 ## Example
 
-Here are a few demos provided courtesy of [Try Dyno](https://trydyno.com). This first
+Here are a few demos provided courtesy of [Dyno](https://trydyno.com). This first
 demo shows GPT-3 failing a simple math question, while the second demo uses a 
 Zero-shot-CoT prompt and successfully solves the problem. Feel free to enter your
 OpenAI API key (Click Generate) and play around with the examples.
