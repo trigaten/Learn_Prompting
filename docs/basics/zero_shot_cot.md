@@ -29,12 +29,6 @@ import ZSProcessImage from '../assets/zero_shot_example.png';
   <img src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 
-## Results
-Zero-shot-CoT was also effective in improving results on arithmetic, commonsense, 
-and symbolic reasoning tasks. However, unsurprisingly, it was usually not as 
-effective as CoT prompting. An important use case for Zero-shot-CoT is when obtaining
-few shot examples for CoT prompting is difficult. 
-
 ## Example
 
 Here are a few demos provided courtesy of [Dyno](https://trydyno.com). This first
@@ -50,6 +44,12 @@ OpenAI API key (Click Generate) and play around with the examples.
 #### Correct
 
 <iframe src="https://embed.trydyno.com/embed?model=text-davinci-003&promptText=If%20John%20has%205%20pears%2C%20then%20eats%202%2C%20and%20buys%205%20more%2C%20then%20gives%203%20to%20his%20friend%2C%20how%20many%20pears%20does%20he%20have%3F%0A%0ALet's%20think%20step%20by%20step.&response=John%20starts%20with%205%20pears.%20He%20eats%202%20pears%2C%20leaving%20him%20with%203%20pears.%20He%20buys%205%20more%20pears%2C%20giving%20him%20a%20total%20of%208%20pears.%20He%20gives%203%20pears%20to%20his%20friend%2C%20leaving%20him%20with%20only%205%20pears.&maxTokens=256&boxRows=5&uid=f4e70980-25bd-4276-827f-9efb952b9e43" frameBorder="0" style={{overflow:"hidden",width:"100%"}} width="100%" onLoad={e=>{let t=e.currentTarget;window.addEventListener("message",e=>{"frameheight-f4e70980-25bd-4276-827f-9efb952b9e43"==e.data[0]&&(t.height=e.data[1]+"px")},!1)}}></iframe>
+
+## Results
+Zero-shot-CoT was also effective in improving results on arithmetic, commonsense, 
+and symbolic reasoning tasks. However, unsurprisingly, it was usually not as 
+effective as CoT prompting. An important use case for Zero-shot-CoT is when obtaining
+few shot examples for CoT prompting is difficult. 
 
 ## Ablations of Interest
 
