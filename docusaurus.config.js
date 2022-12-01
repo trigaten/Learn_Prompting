@@ -8,8 +8,8 @@ async function createConfig() {
   return {
     title: 'Learn Prompting',
     tagline: 'Prompting LLMs is opaque. Lets make it transparent.',
-    url: 'https://trigaten.github.io/',
-    baseUrl: '/promptgineering/',
+    url: 'https://trigaten.github.io',
+    baseUrl: '/promptgineering',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
