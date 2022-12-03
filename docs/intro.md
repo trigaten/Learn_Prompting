@@ -58,10 +58,10 @@ is the focus of the field of Prompt Engineering, as well as this course.
 Although familiarity with LLMs and MLMs is mostly assumed,
 we provide a short introduct to each concept here:
 
-- Large Language Models (LLMs)
+- Large Language Models (LLMs), Pretrained Language Models (PLMs)(@branch2022evaluating), Language Models (LMs), and foundation models
 
-LLMs are models which have a large amount of weights, and have usually been trained 
-on a large amount of text.
+These terms all refer to the same thing: large neural networks, which have usually been trained 
+on a huge amount of text.
 
 - Masked Language Models (MLMs)
 

@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 async function createConfig() {
   return {
-    title: 'Promptgineering',
-    tagline: 'Prompt engineering is opaque. Lets make it transparent.',
-    url: 'https://trigaten.github.io/',
-    baseUrl: '/promptgineering/',
+    title: 'Learn Prompting',
+    tagline: 'Prompting LLMs is opaque. Lets make it transparent.',
+    url: 'https://learnprompting.org',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -59,7 +59,7 @@ async function createConfig() {
     themeConfig:
       ({
         navbar: {
-          title: 'Promptgineering',
+          title: 'Learn Prompting',
           logo: {
             alt: 'My Site Logo',
             src: 'img/simple_ai.png',
@@ -74,7 +74,7 @@ async function createConfig() {
         },
         footer: {
           style: 'dark',
-          copyright: `Copyright © ${new Date().getFullYear()} Promptgineering.`,
+          copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting.`,
         },
         prism: {
           theme: lightCodeTheme,
