@@ -1,4 +1,4 @@
-# Promptgineering
+# Learn Prompting
 
 [![](https://dcbadge.vercel.app/api/server/7enStJXQzD?compact=true&style=flat)](https://discord.gg/7enStJXQzD)
 
