@@ -93,6 +93,8 @@ The papers are organized by topic.
 
 #### PromptChainer(@wu2022promptchainer) 🔵
 
+#### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
+
 ## Applied Prompt Engineering
 
 #### Language Model Cascades(@dohan2022language)
