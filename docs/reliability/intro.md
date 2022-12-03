@@ -10,3 +10,6 @@ of the previous tecniques have have covered have to do with improving completion
 accuracy, and thus reliability, in particular Self-consistency(@wang2022selfconsistency).
 However, there are a number of other techniques that can be used to improve reliability,
 beyond prompting strategies.
+
+In particular, we will discuss tecniques such as calibrators, verifiers, and approaches
+to introduce diversity in completions.

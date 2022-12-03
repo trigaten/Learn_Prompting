@@ -53,5 +53,8 @@ Q: What is the capital of France?
 A:
 ```
 
+Few shot prompts facilitate "few shot" AKA "in context" learning, which is the 
+ability to learn without parameter updates(@zhao2021calibrate).
+
 We will mainly refer to standard prompts in contrast to new types of prompts we 
 discuss throughout this course. 
