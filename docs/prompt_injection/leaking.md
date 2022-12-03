@@ -25,7 +25,8 @@ could be using the prompt `explain this to me like I am 5` to explain
 complex topics. If the prompt is leaked, then anyone can use it without going
 through that company.
 
-With a surge in GPT-3 based startups, this is a real concern.
+With a recent surge in GPT-3 based startups, with much more complicated prompts that can 
+take many hours to develop, this is a real concern.
 
 ## Practice
 
