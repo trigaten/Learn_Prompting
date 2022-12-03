@@ -25,6 +25,8 @@ The papers are organized by topic.
 
 #### Scratchpads(@nye2021work)
 
+#### Maieutic Prompting(@jung2022maieutic)
+
 ## Reliability
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
@@ -99,6 +101,8 @@ The papers are organized by topic.
 
 #### ReAct(@yao2022react) 🔵
 
+#### PAL: Program-aided Language Models(@gao2022pal)
+
 ## User Interface Design
 
 #### Design Guidelines for Prompt Engineering Text-to-Image Generative Models(@liu2022design)
@@ -121,6 +125,8 @@ The papers are organized by topic.
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
 
+#### PromptPapers(@ning2022papers)
+
 ## Miscl
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
@@ -132,3 +138,5 @@ The papers are organized by topic.
 #### Grounding with search results(@livin2022large)
 
 #### How to Prompt? Opportunities and Challenges of Zero- and Few-Shot Learning for Human-AI Interaction in Creative Applications of Generative Models(@dang2022prompt)
+
+#### On Measuring Social Biases in Prompt-Based Multi-Task Learning(@akyrek2022measuring)
