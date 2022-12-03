@@ -105,7 +105,17 @@ The papers are organized by topic.
 
 ## Prompt Injection
 
-#### Machine Generated Text: A Comprehensive Survey of Threat Models and Detection Methods(@crothers2022machine)
+#### Machine Generated Text: A Comprehensive Survey of Threat Models and Detection Methods(@crothers2022machine) 🔵
+
+#### Evaluating the Susceptibility of Pre-Trained Language Models via Handcrafted Adversarial Examples(@branch2022evaluating) 🔵
+
+#### Prompt injection attacks against GPT-3(@simon2022inject) 🔵
+
+#### Exploiting GPT-3 prompts with malicious inputs that order the model to ignore its previous directions(@goodside2022inject) 🔵
+
+#### adversarial-prompts(@chase2021adversarial) 🔵
+
+#### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
 ## Surveys
 
