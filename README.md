@@ -1,7 +1,6 @@
 # Promptgineering
 
 [![](https://dcbadge.vercel.app/api/server/7enStJXQzD?compact=true&style=flat)](https://discord.gg/7enStJXQzD)
-
 [![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40LearnPrompting&style=social&url=https%3A%2F%2Ftwitter.com%2FLearnPrompting)](https://twitter.com/learn_prompting)
 
 
