@@ -39,8 +39,12 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
+| [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
+
 
 \* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.
+
+\* OpenPrompt is also a Python library for prompt engineering. It's main interface is the terminal or a Jupyter notebook.
 
 **Hosted Solution**: The tool is hosted on a website and can be used without installing anything.
 
