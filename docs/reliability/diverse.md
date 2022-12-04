@@ -5,8 +5,8 @@ sidebar_position: 5
 # DiVeRSe
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") is
-a method that improves the reliability of answers in a threefold manner. They do this by
-1) using multiple prompts to generate diverse completions, 2) use a verifier to distinguish good answers from bad answers, and 3) use a verifier to check the correctness of reasoning steps.
+a method that improves the reliability of answers in a threefold manner. It does this by
+1) using multiple prompts to generate diverse completions, 2) using a verifier to distinguish good answers from bad answers, and 3) using a verifier to check the correctness of reasoning steps.
 
 
 import diverse from '../assets/diverse.png';
@@ -80,7 +80,7 @@ However, DiVeRSe proposes a much more complicated method, which they call a _vot
 
 At test time, using the voting verifier is a two step process. First, the verifier (a neural network)
 assigns a 0-1 score to each completion based on how likely it is to be correct. Then, the 'voting'
-component sums all of the scores over different final answers and yields the final answer.
+component sums all of the scores over different answers and yields the final answer.
 
 Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
 
@@ -119,8 +119,8 @@ the scores: 0.9, 0.1, 0.2, 0.8, 0.3. Then, the voting component will sum the sco
 answer.
 
 ```
-score(4) = 0.9 + 0.8
-score(5) = 0.1 + 0.3
+score(4) = 0.9 + 0.8 = 1.7
+score(5) = 0.1 + 0.3 = 0.4
 score(6) = 0.2
 ```
 
@@ -131,7 +131,7 @@ The final answer is 4, since it has the highest score.
 The verifier is trained with a slightly complex loss function, which 
 I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
 
-## Takaways
+## Takeaways
 
 The main take away here is to use multiple prompts to generate diverse completions. 
 In practice, majority voting will likely work well compared to the voting verifier.

@@ -9,7 +9,7 @@ distributions**(@zhao2021calibrate).
 
 **What exactly does it mean to calibrate an output distribution?**
 
-Consider an example of a sentiment analysis task with two possible labels, `Positive` and `Negative`.
+Say we have a sentiment analysis task with two possible labels, `Positive` and `Negative`.
 Consider what happens when the LLM is prompted with `Input: N/A Sentiment: `. 
 This input doesn't contain any _context_ which the LLM can use to make a sentiment 
 prediction, so it is called a **context-free** input.
@@ -28,7 +28,8 @@ for all inputs, even if the input is not positive.
 
 If we can somehow **calibrate** the output distribution, such that context-free 
 inputs are assigned a probability of 0.5 for both "Positive" and "Negative", 
-then we can often remove the bias towards "Positive" and the LLM will be more reliable.
+then we can often remove the bias towards "Positive" and the LLM will be more reliable
+on inputs with context.
 
 ## Non-Technical Solution
 
@@ -56,7 +57,7 @@ calibration is trying to achieve.
 
 Another solution to this is __contextual calibration__(@zhao2021calibrate), where we 
 adjust special calibration parameters, which ensure that context-free inputs like 
-`Input: N/A Sentiment: ` are assigned a probability of 0.5 for both labels. 
+`Input: N/A Sentiment: `  are assigned a probability of 0.5 for both labels. 
 
 Consider again the above example where the LLM assigns the following probabilities to the labels 
 for a context-free input:
@@ -74,8 +75,8 @@ q("Positive") = 0.5
 q("Negative") = 0.5
 ```
 
-We will do so by creating a linear transformation that adjusts the probabilities 
-of $p$ to be calibrated. 
+We will do so by creating a linear transformation that adjusts (calibrates) the probabilities 
+of $p$. 
 
 $\^{q} = \text{Softmax}(W\^{p} + b)$
 
@@ -122,7 +123,8 @@ better on generation rather than classification tasks(@zhao2021calibrate).
 
 ## In practice
 
-In practice, a few context-free examples are used to compute $W$ and $b$ (their average is used).
+In practice, a few context-free examples are used to compute $W$ and $b$ 
+(the average of their calibration parameters is used).
 
 ## Takeaways
 
