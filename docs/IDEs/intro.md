@@ -41,6 +41,12 @@ Here is a table of the tools we will be discussing in this chapter:
 | [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
 | [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 
+| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+| ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
+| [DALL·E](https://labs.openai.com) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | OpenAI DALLE|
+| [Dream Studio](https://beta.dreamstudio.ai/dream) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion |
+| [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
+
 
 \* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.
 
