@@ -123,3 +123,7 @@ better on generation rather than classification tasks(@zhao2021calibrate).
 ## In practice
 
 In practice, a few context-free examples are used to compute $W$ and $b$ (their average is used).
+
+## Takeaways
+
+LLMs are often predisposed (biased) towards certain labels. Calibration can be used to counteract this bias.

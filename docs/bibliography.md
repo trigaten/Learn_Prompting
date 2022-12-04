@@ -33,9 +33,9 @@ The papers are organized by topic.
 
 #### Prompting GPT-3 to be reliable(@si2022prompting)
 
-#### Diverse Prompts(@li2022advance)
+#### Diverse Prompts(@li2022advance) 🔵
 
-#### Problems with biases(@zhao2021calibrate)
+#### Calibrate Before Use: Improving Few-Shot Performance of Language Models(@zhao2021calibrate) 🔵
 
 #### Enhanced Self Consistency(@mitchell2022enhancing)
 
