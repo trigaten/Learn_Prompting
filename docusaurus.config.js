@@ -3,8 +3,10 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require('remark-math');
 
 async function createConfig() {
+  const katex = (await import('rehype-katex')).default;
   return {
     title: 'Learn Prompting',
     tagline: 'Prompting LLMs is opaque. Lets make it transparent.',
@@ -46,15 +48,26 @@ async function createConfig() {
             editUrl:
               'https://github.com/trigaten/promptgineering/tree/v0.0.2',
             remarkPlugins: [
+              math,
               (await import("remark-gfm")).default,
               [(await import("@benchmark-urbanism/remark-bibtex")).default, { bibtexFile: 'bibliography.bib' }]
-            ]
+            ],
+            rehypePlugins: [katex],
           },
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
           },
         }),
       ],
+    ],
+    stylesheets: [
+      {
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+        type: 'text/css',
+        integrity:
+          'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+        crossorigin: 'anonymous',
+      },
     ],
     themeConfig:
       ({
