@@ -30,7 +30,12 @@ c) Only heavy sunspot activity could have resulted in an aurora borealis viewabl
 
 Try copy pasting the problem into the playground verbatim. 
 
+<iframe src="https://embed.trydyno.com/embed?model=text-davinci-003&promptText=John%20of%20Worcester%2C%20an%20English%20monk%2C%20recorded%20the%20sighting%2C%20on%20December%208%2C%201128%2C%20of%20two%20unusually%20large%20sunspots.%20Five%20days%20later%20a%20brilliant%20aurora%20borealis%20(northern%20lights)%20was%20observed%20in%20southern%20Korea.%20Sunspot%20activity%20is%20typically%20followed%20by%20the%20appearance%20of%20an%20aurora%20borealis%2C%20after%20a%20span%20of%20time%20that%20averages%20five%20days.%20Thus%2C%20the%20Korean%20sighting%20helps%20to%20confirm%20John%20of%20Worcester's%20sighting.%20Which%20one%20of%20the%20following%2C%20if%20true%2C%20most%20strengthens%20the%20argument%3F%0A%0Aa)%20An%20aurora%20borealis%20can%20sometimes%20occur%20even%20when%20there%20has%20been%20no%20significant%20sunspot%20activity%20in%20the%20previous%20week.%20%0Ab)%20Chinese%20sources%20recorded%20the%20sighting%20of%20sunspots%20more%20than%201000%20years%20before%20John%20of%20Worcester%20did.%20%0Ac)%20Only%20heavy%20sunspot%20activity%20could%20have%20resulted%20in%20an%20aurora%20borealis%20viewable%20at%20a%20latitude%20as%20low%20as%20that%20of%20Korea.%20%0Ad)%20Because%20it%20is%20impossible%20to%20view%20sunspots%20with%20the%20naked%20eye%20under%20typical%20daylight%20conditions%2C%20the%20sighting%20recorded%20by%20John%20of%20Worcester%20would%20have%20taken%20place%20under%20unusual%20weather%20conditions%20such%20as%20fog%20or%20thin%20clouds.%20%0Ae)%20John%20of%20Worcester's%20account%20included%20a%20drawing%20of%20the%20sunspots%2C%20which%20could%20be%20the%20earliest%20illustration%20of%20sunspot%20activity.&response=e)%20John%20of%20Worcester's%20account%20included%20a%20drawing%20of%20the%20sunspots%2C%20which%20could%20be%20the%20earliest%20illustration%20of%20sunspot%20activity.&maxTokens=256&boxRows=20&uid=65e97033-b20d-473d-a025-7ee8157d8ba4" frameBorder="0" style={{overflow:"hidden",width:"100%"}} width="100%" onLoad={e=>{let t=e.currentTarget;window.addEventListener("message",e=>{"frameheight-65e97033-b20d-473d-a025-7ee8157d8ba4"==e.data[0]&&(t.height=e.data[1]+"px")},!1)}}></iframe>
+
+
+
 This **could** be a result:
+
 
 ```
 e) John of Worcester's account included a drawing of the sunspots, which could be the earliest illustration of sunspot activity.
@@ -49,19 +54,13 @@ This is not the right answer, and gives little insight into the “reasoning” 
 
 ```markdown
 ...
-d) Because it is impossible to view sunspots with the naked eye under typical daylight conditions, the sighting recorded by John of Worcester would have taken place under unusual weather conditions such as fog or thin clouds. 
 e) John of Worcester's account included a drawing of the sunspots, which could be the earliest illustration of sunspot activity.
 
 Let’s explain step by step
 ```
 This phrase will increase verbosity of the model. You might get output like this:
 
-
-```
-The argument is that John of Worcester's sighting of sunspots on December 8, 1128, was followed by the appearance of an aurora borealis (northern lights) in southern Korea five days later. This is evidence that sunspot activity is typically followed by the appearance of an aurora borealis. 
-
-The correct answer is C. This is the most directly relevant piece of evidence. It supports the claim that sunspot activity can cause an aurora borealis, and it specifically mentions the kind of sunspot activity that would be necessary to cause an aurora borealis at the latitude of Korea.
-```
+<iframe src="https://embed.trydyno.com/embed?model=text-davinci-003&promptText=John%20of%20Worcester%2C%20an%20English%20monk%2C%20recorded%20the%20sighting%2C%20on%20December%208%2C%201128%2C%20of%20two%20unusually%20large%20sunspots.%20Five%20days%20later%20a%20brilliant%20aurora%20borealis%20(northern%20lights)%20was%20observed%20in%20southern%20Korea.%20Sunspot%20activity%20is%20typically%20followed%20by%20the%20appearance%20of%20an%20aurora%20borealis%2C%20after%20a%20span%20of%20time%20that%20averages%20five%20days.%20Thus%2C%20the%20Korean%20sighting%20helps%20to%20confirm%20John%20of%20Worcester's%20sighting.%20Which%20one%20of%20the%20following%2C%20if%20true%2C%20most%20strengthens%20the%20argument%3F%0A%0Aa)%20An%20aurora%20borealis%20can%20sometimes%20occur%20even%20when%20there%20has%20been%20no%20significant%20sunspot%20activity%20in%20the%20previous%20week.%20%0Ab)%20Chinese%20sources%20recorded%20the%20sighting%20of%20sunspots%20more%20than%201000%20years%20before%20John%20of%20Worcester%20did.%20%0Ac)%20Only%20heavy%20sunspot%20activity%20could%20have%20resulted%20in%20an%20aurora%20borealis%20viewable%20at%20a%20latitude%20as%20low%20as%20that%20of%20Korea.%20%0Ad)%20Because%20it%20is%20impossible%20to%20view%20sunspots%20with%20the%20naked%20eye%20under%20typical%20daylight%20conditions%2C%20the%20sighting%20recorded%20by%20John%20of%20Worcester%20would%20have%20taken%20place%20under%20unusual%20weather%20conditions%20such%20as%20fog%20or%20thin%20clouds.%20%0Ae)%20John%20of%20Worcester's%20account%20included%20a%20drawing%20of%20the%20sunspots%2C%20which%20could%20be%20the%20earliest%20illustration%20of%20sunspot%20activity.%0A%0ALet%E2%80%99s%20explain%20step%20by%20step&response=The%20argument%20is%20that%20John%20of%20Worcester's%20sighting%20of%20sunspots%20on%20December%208%2C%201128%2C%20was%20followed%20by%20the%20appearance%20of%20an%20aurora%20borealis%20(northern%20lights)%20in%20southern%20Korea%20five%20days%20later.%20This%20is%20evidence%20that%20sunspot%20activity%20is%20typically%20followed%20by%20the%20appearance%20of%20an%20aurora%20borealis.%20%0A%0AThe%20correct%20answer%20is%20C.%20This%20is%20the%20most%20directly%20relevant%20piece%20of%20evidence.%20It%20supports%20the%20claim%20that%20sunspot%20activity%20can%20cause%20an%20aurora%20borealis%2C%20and%20it%20specifically%20mentions%20the%20kind%20of%20sunspot%20activity%20that%20would%20be%20necessary%20to%20cause%20an%20aurora%20borealis%20at%20the%20latitude%20of%20Korea.&maxTokens=256&boxRows=50&uid=8d162180-f431-449b-8f3a-7789fd22d170" frameBorder="0" style={{overflow:"hidden",width:"100%"}} width="100%" onLoad={e=>{let t=e.currentTarget;window.addEventListener("message",e=>{"frameheight-8d162180-f431-449b-8f3a-7789fd22d170"==e.data[0]&&(t.height=e.data[1]+"px")},!1)}}></iframe>
 
 This answer is correct, and the explanation given is reasonable. 
 
