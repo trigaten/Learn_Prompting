@@ -1,7 +1,6 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 locale: en-us
-style: chicago
 ---
 
 # Multiple choice questions
