@@ -21,6 +21,12 @@ we aren't missing all that much 😊
 I will update this course frequently with short articles about new techniques.
 Let me know what you want to hear more about!
 
+Part of this philosophy is **error iteration**; if you ever see something that you
+don't quite understand, even something small, that's on me. **Please make an [issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
+
+**Focus on Practicality** - I will focus on applied, practical techniques that you can use
+immediatly for your applications.
+
 **Examples ASAP** - I try to put examples in the articles as soon as possible,
 so that you can get a feel for the techniques as soon as possible.
 
