@@ -43,7 +43,7 @@ Notice that different executions could lead to different outputs. Text generatio
 
 The model likely failed. Does that mean the model is incapable for answering this type of question? Not necessarily. We will dive into techniques we can use to improve model results.
 
-### The Magic Phrase
+## The Magic Phrase
 This is not the right answer, and gives little insight into the “reasoning” of the decision. We can try adding the phrase `let's explain step by step` like so:
 
 
@@ -71,25 +71,6 @@ Our model is autoregressive: prior text, the original prompt text and additional
 
 The specific term for this behavior is Chain of Thought: the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from Thinking Fast and Slow): the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
 
-```mermaid
-graph LR
-
-
-A[A<br>Level#1] 
-    A --> B
-    B --> C
-    C --> D
-    A --> C
-    A --> D
-    B --> D
-A(The)
-B(answer)
-C(is)
-D(...)
-
-classDef SkipLevel width:0px;
-class X1,X2-1,X2-2 SkipLevel
-```
 :::
 
 We can view the probabilities of the model like so:
@@ -103,14 +84,97 @@ import PlayProbImage from '../assets/playground_probability_2.png';
 
 Notice that probabilities at critical decision points are much lower, such as the word “irrelevant”. 
 
+## Improvements
 
-Another technique to increase consistency is to synthesize prompt templates for outputs that are effective. By guiding the model with a particular template, it is more likely to pattern match that particular mode. 
+Here are some variations on our basic prompt for multiple choice questions:
 
-Here are some additional changes:
+### Reordering
+
+We can reorder the item in the question
 
 ```
-[Multiple choice data]
-Let’s explain step by step for each answer choice.
-1)
+...
+a) John of Worcester's account included a drawing of the sunspots, which could be the earliest illustration of sunspot activity.
+b) Because it is impossible to view sunspots with the naked eye under typical daylight conditions, the sighting recorded by John of Worcester would have taken place under unusual weather conditions such as fog or thin clouds. 
+...
 ```
+
+### Increase specificity of the Question
+
+
+Recall the original prompt was this:
+```
+Which one of the following, if true, most strengthens the argument?
+```
+
+We can change the prompt to this:
+```
+Identify each choice as strengthens, weakens or doesn't impact the argument.
+```
+to gain further insight to it answer choice. 
+
+```
+John of Worcester, an English monk, recorded the sighting, on December 8, 1128, of two unusually large sunspots. Five days later a brilliant aurora borealis (northern lights) was observed in southern Korea. Sunspot activity is typically followed by the appearance of an aurora borealis, after a span of time that averages five days. Thus, the Korean sighting helps to confirm John of Worcester's sighting. Which one of the following, if true, most strengthens the argument? 
+
+a) An aurora borealis can sometimes occur even when there has been no significant sunspot activity in the previous week. 
+b) Chinese sources recorded the sighting of sunspots more than 1000 years before John of Worcester did. 
+c) Only heavy sunspot activity could have resulted in an aurora borealis viewable at a latitude as low as that of Korea. 
+d) Because it is impossible to view sunspots with the naked eye under typical daylight conditions, the sighting recorded by John of Worcester would have taken place under unusual weather conditions such as fog or thin clouds. 
+e) John of Worcester's account included a drawing of the sunspots, which could be the earliest illustration of sunspot activity.
+
+Identify each choice as strengthens, weakens or doesn't impact the argument and explain step by step.
+
+A) Weakens - This option weakens the argument because it implies that the aurora borealis did not necessarily need to be caused by sunspot activity, which is the argument the author is trying to make.
+
+B) Doesn't Impact - This option does not impact the argument because it is unrelated to the connection between the sunspots and the appearance of the aurora borealis.
+
+C) Strengthens - This option strengthens the argument because it suggests that the only way an aurora borealis could be seen in Korea is if there had been heavy sunspot activity, which is what John of Worcester observed.
+
+D) Weakens - This option weakens the argument because it implies that the conditions under which John of Worcester observed the sunspots may not have been reliable, which could cast doubt on the accuracy of his sighting.
+
+E) Doesn't Impact - This option does not impact the argument because it is unrelated to the connection between the sunspots and the appearance of the aurora borealis.
+```
+
+
+### Additional Context
+
+Here is a standard bayes problem:
+
+```
+Consider two medical tests, A and B, for a virus. Test A is 90% effective at recognizing the virus when it is
+present, but has a 5% false positive rate (indicating that the virus is present, when it is not). Test B is 95%
+effective at recognizing the virus, but has a 10% false positive rate. The two tests use independent methods
+of identifying the virus. The virus is carried by 2% of all people.
+(a) Say that a person is tested for the virus using only Test A. What is the probability that the person
+is really carrying the virus given that Test A came back positive? (2 points)
+(b) Say that a person is tested for the virus using only Test B. What is the probability that the person
+is really carrying the virus given that Test B came back positive? (2 points)
+(c) Say that a person is tested for the virus using both tests. What is the probability that the person is
+really carrying the virus given that both tests came back positive? (2 points)
+```
+
+Directly feeding GPT this prompt returns the following:
+
+```
+(a) The probability that the person is really carrying the virus given that Test A came back positive is 90%. 
+
+(b) The probability that the person is really carrying the virus given that Test B came back positive is 95%.
+
+(c) The probability that the person is really carrying the virus given that both tests came back positive is 99.9%.
+```
+which is **incorrect**!
+
+If we add a bit of context, like so:
+
+```
+...
+Let's explain step by step. The formula for bayes is 
+```
+the model will approach using the right formula, Bayes.
+
+:::warning
+GPT model doesn't perform arithmetic operations well. You might notice that while the expression written is corrected, the computed number is not.
+
+Try adding the phrase: `Give the expression as answer, not a number` to disable computation.
+:::
 
