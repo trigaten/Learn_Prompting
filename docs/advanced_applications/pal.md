@@ -23,7 +23,7 @@ that they are interpreted as comments by the programmatic runtime.
 ## Example
 
 Let's look at an example of PAL solving a math question. I use a 3-shot prompt, 
-which is a simplified version of [this one](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal).
+which is a simplified version of [this one](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
 
 I will use langchain, a Python package for chaining LLM functionality for this. First, a few installations are needed:
 
@@ -113,6 +113,8 @@ print(result)
 ```
 
 The output is **210**, which is correct.
+
+See the Jupyter notebook for this example [here](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
 
 ## More
 
