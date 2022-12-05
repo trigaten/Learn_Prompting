@@ -103,7 +103,7 @@ The papers are organized by topic.
 
 #### ReAct(@yao2022react) 🔵
 
-#### PAL: Program-aided Language Models(@gao2022pal)
+#### PAL: Program-aided Language Models(@gao2022pal) 🔵
 
 ## User Interface Design
 
