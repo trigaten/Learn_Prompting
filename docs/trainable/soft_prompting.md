@@ -4,8 +4,7 @@ sidebar_position: 1
 
 # Soft Prompts
 
-Prompt tuning(@lester2021power) is a model training technique which freezes the model weights,
-and instead updates the parameters of a prompt. This yields a 'soft prompt'.
+Prompt tuning(@lester2021power) an alternative to model fine tuning(@khashabi2021prompt), which freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
 
 
 import Image from '../assets/prompt_tuning.png';
@@ -42,6 +41,3 @@ longer correspond to actual embeddings from the vocabulary.
 
 Prompt tuning performs better with larger models. Larger models also require less
 tokens. Regardless, more than 20 tokens does not yield significant performance gains.
-
-
-🚧 Under Construction 🚧
