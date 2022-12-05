@@ -28,6 +28,10 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Everyprompt](https://www.everyprompt.com) | ✅ | |    ❌| Freemium | ✅ | Text | OpenAI |
 | [PromptIDE](https://prompt.vizhub.ai)      | ✅ | Code TBD |✅ | None | ✅ | Text | |
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | None | ✅ |  Text | |
+| [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf) | ❌ |  | ✅ | None | ✅ |  Text | |
+
+| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+| ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [Prompts.ai](https://prompts.ai/)           | ✅ | ✅ | ❌| None | ✅ | Text | OpenAI |
 | [Snorkel](https://snorkel.ai/snorkel-flow-platform/foundation-model/) | ✅ | ❌ | ❌|  | ✅ | Text | |
 | [Multi](https://www.multi.tech) |  |  | ❌ |  | Wait list | Text, Image | |
@@ -35,8 +39,18 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
+| [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
+
+| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+| ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
+| [DALL·E](https://labs.openai.com) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | OpenAI DALLE|
+| [Dream Studio](https://beta.dreamstudio.ai/dream) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion |
+| [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
+
 
 \* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.
+
+\* OpenPrompt is also a Python library for prompt engineering. It's main interface is the terminal or a Jupyter notebook.
 
 **Hosted Solution**: The tool is hosted on a website and can be used without installing anything.
 
