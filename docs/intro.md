@@ -36,5 +36,5 @@ I'll philosophize more about this when I have time to 😊
 
 It is not necessary to read all chapters in order. Read what interests you!
 
-That being said, [Basics](/docs/category/tutorial---basics-) is a good place to start,
+That being said, Basics is a good place to start,
 and it discusses some very simple, but powerful, prompt engineering techniques.
