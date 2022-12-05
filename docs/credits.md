@@ -10,3 +10,4 @@ Here is a growing list of people who have been instrumental in the creation of t
 - [WesJD](https://wesleysmith.dev), Javascript pains, domain
 - Sulu, Docusaurus
 - [snpranav](https://twitter.com/snpranav), domain
+- [jayo78](https://github.com/jayo78), prefers his emojis on the left
