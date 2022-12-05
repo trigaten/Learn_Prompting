@@ -2,7 +2,7 @@
 sidebar_position: 1000
 ---
 
-# Bibliography 📚
+# 📚 Bibliography
 
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.

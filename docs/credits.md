@@ -2,7 +2,7 @@
 sidebar_position: 2000
 ---
 
-# Credits ✨
+# ✨ Credits
 
 Here is a growing list of people who have been instrumental in the creation of this course:
 
