@@ -51,7 +51,7 @@ Comparison of models on the GSM8K benchmark
 
 Additionally, according to Wei et al., "CoT only yields performance gains when used with models of ∼100B parameters". Smaller models wrote illogical chains of thought, which led to worse accuracy than standard prompting. 
 
-## Experiments
+## Example
 
 🚧 Under Construction 🚧
 

@@ -2,7 +2,7 @@
 sidebar_position: 1000
 ---
 
-# Bibliography
+# 📚 Bibliography
 
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.
@@ -25,15 +25,17 @@ The papers are organized by topic.
 
 #### Scratchpads(@nye2021work)
 
+#### Maieutic Prompting(@jung2022maieutic)
+
 ## Reliability
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
 
 #### Prompting GPT-3 to be reliable(@si2022prompting)
 
-#### Diverse Prompts(@li2022advance)
+#### Diverse Prompts(@li2022advance) 🔵
 
-#### Problems with biases(@zhao2021calibrate)
+#### Calibrate Before Use: Improving Few-Shot Performance of Language Models(@zhao2021calibrate) 🔵
 
 #### Enhanced Self Consistency(@mitchell2022enhancing)
 
@@ -89,6 +91,10 @@ The papers are organized by topic.
 
 #### Prompt Source(@bach2022promptsource) 🔵
 
+#### PromptChainer(@wu2022promptchainer) 🔵
+
+#### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
+
 ## Applied Prompt Engineering
 
 #### Language Model Cascades(@dohan2022language)
@@ -97,17 +103,31 @@ The papers are organized by topic.
 
 #### ReAct(@yao2022react) 🔵
 
+#### PAL: Program-aided Language Models(@gao2022pal) 🔵
+
 ## User Interface Design
 
 #### Design Guidelines for Prompt Engineering Text-to-Image Generative Models(@liu2022design)
 
 ## Prompt Injection
 
-#### Machine Generated Text: A Comprehensive Survey of Threat Models and Detection Methods(@crothers2022machine)
+#### Machine Generated Text: A Comprehensive Survey of Threat Models and Detection Methods(@crothers2022machine) 🔵
+
+#### Evaluating the Susceptibility of Pre-Trained Language Models via Handcrafted Adversarial Examples(@branch2022evaluating) 🔵
+
+#### Prompt injection attacks against GPT-3(@simon2022inject) 🔵
+
+#### Exploiting GPT-3 prompts with malicious inputs that order the model to ignore its previous directions(@goodside2022inject) 🔵
+
+#### adversarial-prompts(@chase2021adversarial) 🔵
+
+#### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
+
+#### PromptPapers(@ning2022papers)
 
 ## Miscl
 
@@ -120,3 +140,5 @@ The papers are organized by topic.
 #### Grounding with search results(@livin2022large)
 
 #### How to Prompt? Opportunities and Challenges of Zero- and Few-Shot Learning for Human-AI Interaction in Creative Applications of Generative Models(@dang2022prompt)
+
+#### On Measuring Social Biases in Prompt-Based Multi-Task Learning(@akyrek2022measuring)
