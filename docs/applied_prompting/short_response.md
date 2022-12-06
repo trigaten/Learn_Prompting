@@ -12,14 +12,14 @@ Let's look at an example of a basic discussion post question:
 
 > _"What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?"_
 
-A simple prompt for GPT3 could be prepending "Respond to the following:"
+We can turn this into a simple prompt for GPT3 by prepending <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span> to it.
 
 <pre>
     <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span><br/>
     What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?
 </pre>
 
-Results generated with this prompt aren't that consistent and a few are only a sentence or two. Not what we want. Usually want 180-500 word responses and multiple paragraphs for a discussion question. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
+Results generated with this prompt aren't very consistent, and a few are only a sentence or two. Not what we want. Usually want 180-500 word responses and multiple paragraphs for a discussion question. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
 
 <pre>
     <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span><br/>
