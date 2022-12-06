@@ -75,7 +75,7 @@ async function createConfig() {
         crossorigin: 'anonymous',
       },
       {
-        href: 'https://embed.trydyno.com/embedder.csss',
+        href: 'https://embed.trydyno.com/embedder.css',
         type: "text/css",
         crossorigin: 'anonymous',
       }
