@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Welcome
 
-Welcome to this course on Prompt Engineering! 
+Welcome to this course on Prompt Engineering (PE)! 
 
 I like to think of PE as "**How to talk 
 to AI to get it to do what you want**". With many of the recent advances in AI,
