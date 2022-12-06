@@ -144,3 +144,5 @@ The papers are organized by topic.
 #### How to Prompt? Opportunities and Challenges of Zero- and Few-Shot Learning for Human-AI Interaction in Creative Applications of Generative Models(@dang2022prompt)
 
 #### On Measuring Social Biases in Prompt-Based Multi-Task Learning(@akyrek2022measuring)
+
+#### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵

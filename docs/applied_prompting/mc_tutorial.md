@@ -179,3 +179,4 @@ Try adding the phrase: `Give the expression as answer, not a number` to disable 
 You may be interested in [MRKL](https://learnprompting.org/docs/advanced_applications/mrkl)(@karpas2022mrkl), the paradigm of combining GPT with external tools like calculators, to solve this problem.
 :::
 
+Written by [zeyuzhao](https://github.com/Zeyuzhao).
