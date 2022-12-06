@@ -19,7 +19,7 @@ We can turn this into a simple prompt for GPT3 by prepending <span style={{backg
     What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?
 </pre>
 
-Results generated with this prompt aren't very consistent, and a few are only a sentence or two. Not what we want. Usually want 180-500 word responses and multiple paragraphs for a discussion question. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
+Results generated with this prompt aren't consistent and a few are only a sentence or two. A typical discussion response is 180-500 words and has multiple paragraphs so these results aren't ideal. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
 
 <pre>
     <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span><br/>
@@ -29,18 +29,13 @@ Results generated with this prompt aren't very consistent, and a few are only a 
 
 <iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="example"></iframe>
 
-<!-- <div style={{width: "100%", height: 0, paddingBottom: "57%", position: "relative"}}>
-    <iframe src="https://giphy.com/embed/khdUf3ZC5HYTnR1avI" width="100%" height="100%" style={{position: "absolute", frameBorder: "0", class: "giphy-embed"}}>
-    </iframe>
-</div> -->
+The second prompt generates longer outputs with better structure on average. The use of the term ‘essay’ in the prompt was intentional, as GPT-3 can comprehend the definition of an essay and is thus more likely to generate coherent, structured responses. 
 
-On average, the results of the second prompt are longer in length and have better structure. I put the word essay in the prompt because GPT-3 can understand what an essay is and essays have good structure for the responses we want.
-
-### Most discussion questions suck for prompting
+### Many discussion questions are not effective for prompting.
 
 > _"The Civil War a conflict over expansion? Agree our Disagree and why?"_
 
-This is an old discussion question I got for a history class I took. Super open ended, not even worded correctly, barely English. **To get good discussion responses you need to rewrite the question into a well defined prompt.** A well defined prompt for the discussion question above could be:
+Here is a real discussion question from a college history course. It is not worded correctly and far too open ended. **To get good discussion responses you need to rewrite the question into a well defined prompt.** A well defined prompt for the discussion question above could be:
 
 > _"Explain the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument."_
 
@@ -51,12 +46,6 @@ Now we can add formatting and context directions.
     <p>Expalin the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument.</p>
 </pre>
 
-Overview: steps for generating optimal and consistent discussion posts:
-
-- Reformat discussion question into a well defined prompt
-- Add formatting directions
-- Generate the post
-
 ### Automate well defined prompt rewriting with GPT3
 
 The rewriting example above was generated with OpenAI's ChatGPT.
@@ -65,21 +54,13 @@ The rewriting example above was generated with OpenAI's ChatGPT.
   <img src={Auto} style={{width: "500px"}} />
 </div>
 
-So now the steps could be:
-
-- Generate a reformat of the discussion question
-- Add formatting directions
-- Generate the post
-
-You can also probably automate the second step.
-
 ### Iteration
 
-After creating an optimal prompt for your discussion question, you still need to iterate on the results that GPT-3 generates. This could mean modifying to align with constrains like word count, or producing several results and stitching together concepts from each.
+After crafting an effective prompt for your discussion question, you now need to refine the results GPT-3 generates. This may involve adjusting the output to adhere to constraints such as word count, or combining concepts from different generated results. 
 
-A simple approach to iteration is to just generate a bunch. You can then go through and get a gist of what concepts GPT-3 picks up on and the overall structure it conforms to. You can then **select different outputs and merge them into a single dicsussion response**.
+A simple method for iterating is to generate multiple outputs and review them to gain an understanding of the concepts GPT-3 is utilizing and the structure it adheres to. Once the outputs have been evaluated, you can select the most suitable outputs and combine them into a cohesive response. 
 
-Another way to iterate is to start and then **expand step by step**. This would require more than one prompt: A starter prompt to write the intitial paragraph or so and then other prompts to expand on what was already written.
+Another way to iterate is to start and then **expand step by step**. This requires more than one prompt: A starter prompt to write the intitial paragraph or so and then other prompts to expand on what was already written.
 
 Here is a potential philosophical discussion question:
 
