@@ -3,7 +3,7 @@ sidebar_position: 0
 locale: en-us
 ---
 
-# Multiple choice questions
+# LSAT (Multiple Choice)
 
 Let's use GPT to solve a LSAT[^1] question!
 
