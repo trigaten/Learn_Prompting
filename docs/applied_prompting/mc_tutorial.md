@@ -10,8 +10,7 @@ Let's use GPT to solve an LSAT[^1] question!
 [^1]: 
 The LSAT (Law School Admission Test) is a standardized test used by law schools in the United States to assess the critical thinking and analytical reasoning skills of prospective students.
 
-Below is an example LSAT question. Consider how you would answer, and how you would
-explain your reasoning.
+Below is an example LSAT question. Give it a shot, and explain your reasoning.
 
 ```md
 <!-- highlight-start -->
@@ -44,14 +43,16 @@ e) John of Worcester's account included a drawing of the sunspots, which could b
 <details scheme='warning'>
 <summary>Why is my answer different?</summary>
 Your answer could differ because of
-* Updates to the underlying model, GPT-3
-* Randomness in the text generation process. We can make the output consistent by setting <a href="https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature">temperature</a> to 0.
+
+1) Updates to the underlying model, GPT-3
+2) Randomness in the text generation process. We can make the output consistent by setting <a href="https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature">temperature</a> to 0.
+
 </details>
 
 The model failed. Does that mean the model is incapable for answering this type of question? Not necessarily. We will dive into techniques we can use to improve model results.
 
 ## The Magic Phrase
-This is not the right answer, and gives little insight into the “reasoning” of the decision. We can try adding the phrase `let's explain step by step` like so:
+A direct prompt gives little insight into the “reasoning” of GPT's output. We can try adding the phrase `let's explain step by step` like so:
 
 
 ```markdown
@@ -88,7 +89,7 @@ Here are some variations on our basic prompt for multiple choice questions:
 
 ### Reorder Question Items
 
-We can reorder the item in the question
+We can reorder the items in the question
 
 ```
 ...
@@ -117,7 +118,7 @@ We can change the prompt to this:
 ```
 Identify each choice as strengthens, weakens or doesn't impact the argument.
 ```
-to gain further insight to it answer choice. 
+to gain further insight into the answer choice. 
 
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="John of Worcester, an English monk, recorded the sighting, on December 8, 1128, of two unusually large sunspots. Five days later a brilliant aurora borealis (northern lights) was observed in southern Korea. Sunspot activity is typically followed by the appearance of an aurora borealis, after a span of time that averages five days. Thus, the Korean sighting helps to confirm John of Worcester's sighting. Which one of the following, if true, most strengthens the argument? 
@@ -149,6 +150,8 @@ is really carrying the virus given that Test B came back positive? (2 points)
 (c) Say that a person is tested for the virus using both tests. What is the probability that the person is
 really carrying the virus given that both tests came back positive? (2 points)
 ```
+
+Let's try this with GPT:
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Consider two medical tests, A and B, for a virus. Test A is 90% effective at recognizing the virus when it is\npresent, but has a 5% false positive rate (indicating that the virus is present, when it is not). Test B is 95%\neffective at recognizing the virus, but has a 10% false positive rate. The two tests use independent methods\nof identifying the virus. The virus is carried by 2% of all people.\n(a) Say that a person is tested for the virus using only Test A. What is the probability that the person\nis really carrying the virus given that Test A came back positive? (2 points)\n(b) Say that a person is tested for the virus using only Test B. What is the probability that the person\nis really carrying the virus given that Test B came back positive? (2 points)\n(c) Say that a person is tested for the virus using both tests. What is the probability that the person is\nreally carrying the virus given that both tests came back positive? (2 points)" initial-response="(a) The probability that the person is really carrying the virus given that Test A came back positive is 90%. \n\n(b) The probability that the person is really carrying the virus given that Test B came back positive is 95%.\n\n(c) The probability that the person is really carrying the virus given that both tests came back positive is 99.9%." max-tokens="256" box-rows="3" model-temp="0" top-p="0"></div>
 
