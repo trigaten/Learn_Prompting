@@ -55,9 +55,6 @@ const DiscordButton = ({ isSSO, url }) => (
     <span>{isSSO ? "Sign in with Discord" : "Join the Discord"}</span>
   </a>
 );
-<style>
-.twitter-share-button {{ minWidth: "80px" !important; width: auto !important;}}
-</style>
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -75,11 +72,17 @@ function HomepageHeader() {
         </div>
         <div style={{marginTop:"25px"}}>
         <Link to="https://discord.gg/7enStJXQzD"><DiscordButton/></Link>
+
+        </div>
+        
+        <div style={{marginTop:"25px"}}>
+        <Link>
         <a class="twitter-follow-button"
   href="https://twitter.com/Learn_Prompting"
   data-size="large" data-show-count="false">
 Follow @TwitterDev</a>
-        </div>
+        </Link>
+          </div>
         
       </div>
     </header>
