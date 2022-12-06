@@ -94,6 +94,11 @@ Pretty good start. I then followed this up with another prompt to expand:
 <br/>and studied in a systematic way. <p/><span style={{backgroundColor: '#FFF2CC'}}>Write the next paragraph of my essay.</span>
 </pre>
 
+Try this expansion prompt out with the demo below (you will need your OpenAI API key)
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="I am writing a detailed short essay responding to the following prompt: \nIs math invented or discovered? Use careful reasoning to explain your answer. \n\nHere is what I have so far: There is much debate among philosophers and mathematicians as to whether math is invented or discovered. Some argue that mathematical concepts and principles exist independently of human minds and can therefore be considered as discovered rather than invented. For example, the concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted and studied in a systematic way. \n\nWrite the next paragraph of my essay." initial-response="On the other hand, some argue that math is largely an invention of the human mind. Mathematical principles are based on logical reasoning, which is a feature of the human mind. For instance, Euclidean geometry is based on abstract axioms and postulates, which are accepted as true without proof. As such, it can be argued that geometry is an invention of the human mind rather than a discovery. Similarly, mathematical formulas and equations are used to model and predict physical phenomena, which are again the result of human reasoning." max-tokens="256" box-rows="11" model-temp="0.7" top-p="1"></div>
+<br/>
+
 I generated a few expansions with this prompt and selected one I liked to end up with the following final result:
 
 <pre>
