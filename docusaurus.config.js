@@ -105,6 +105,10 @@ async function createConfig() {
           darkTheme: darkCodeTheme,
         },
       }),
+      markdown: {
+        mermaid: true,
+      },
+      themes: ['@docusaurus/theme-mermaid'],
   };
 }
 
