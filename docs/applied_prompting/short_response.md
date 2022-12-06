@@ -27,10 +27,12 @@ Results generated with this prompt aren't that consistent and a few are only a s
     <br/>and what steps can individuals take to help address these issues?</p>
 </pre>
 
-<div style={{width: "100%", height: 0, paddingBottom: "57%", position: "relative"}}>
+<iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="example"></iframe>
+
+<!-- <div style={{width: "100%", height: 0, paddingBottom: "57%", position: "relative"}}>
     <iframe src="https://giphy.com/embed/khdUf3ZC5HYTnR1avI" width="100%" height="100%" style={{position: "absolute", frameBorder: "0", class: "giphy-embed"}}>
     </iframe>
-</div>
+</div> -->
 
 On average the results of the second prompt are longer in length and have better structure. I put the word essay in the prompt because GPT-3 can understand what an essay is and essays have good structure for the responses we want.
 
