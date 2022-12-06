@@ -10,7 +10,8 @@ Let's use GPT to solve an LSAT[^1] question!
 [^1]: 
 The LSAT (Law School Admission Test) is a standardized test used by law schools in the United States to assess the critical thinking and analytical reasoning skills of prospective students.
 
-Below is an example LSAT question. Give it a shot, and explain your reasoning.
+Below is an example LSAT question. Consider how you would answer it, as well
+as your reasoning.
 
 ```md
 <!-- highlight-start -->
@@ -52,7 +53,7 @@ Your answer could differ because of
 The model failed. Does that mean the model is incapable for answering this type of question? Not necessarily. We will dive into techniques we can use to improve model results.
 
 ## The Magic Phrase
-A direct prompt gives little insight into the “reasoning” of GPT's output. We can try adding the phrase `let's explain step by step` like so:
+The standard prompt we used above gives little insight into the “reasoning” of GPT's output. We can try adding the phrase `let's explain step by step` like so:
 
 
 ```markdown
