@@ -5,14 +5,13 @@ locale: en-us
 
 # LSAT (Multiple Choice)
 
-Let's use GPT to solve a LSAT[^1] question!
+Let's use GPT to solve an LSAT[^1] question!
 
 [^1]: 
 The LSAT (Law School Admission Test) is a standardized test used by law schools in the United States to assess the critical thinking and analytical reasoning skills of prospective students.
 
-Here is a LSAT question:
-
-Give it a try, and do your best to explain your reasoning.
+Below is an example LSAT question. Consider how you would answer, and how you would
+explain your reasoning.
 
 ```md
 <!-- highlight-start -->
