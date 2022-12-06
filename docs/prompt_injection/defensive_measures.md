@@ -16,3 +16,5 @@ field is in early stages, and is mostly being done by the community rather than
 researchers.
 
 Fine tuning the model (and thus not needing the prompt) is a highly effective defense(@goodside2021gpt).
+
+Soft prompting might also be effective.

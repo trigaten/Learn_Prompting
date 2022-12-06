@@ -2,7 +2,7 @@
 sidebar_position: 1000
 ---
 
-# Bibliography
+# 📚 Bibliography
 
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.
@@ -67,9 +67,9 @@ The papers are organized by topic.
 
 ## Soft Prompting
 
-#### Soft Prompting(@lester2021power)
+#### Soft Prompting(@lester2021power) 🔵
 
-#### Interpretable Discretized Soft Prompts(@khashabi2021prompt)
+#### Interpretable Discretized Soft Prompts(@khashabi2021prompt) 🔵
 
 ## Datasets
 
@@ -103,7 +103,7 @@ The papers are organized by topic.
 
 #### ReAct(@yao2022react) 🔵
 
-#### PAL: Program-aided Language Models(@gao2022pal)
+#### PAL: Program-aided Language Models(@gao2022pal) 🔵
 
 ## User Interface Design
 

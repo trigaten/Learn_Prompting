@@ -2,7 +2,7 @@
 sidebar_position: 3000
 ---
 
-# More
+# 🛸 More
 
 ## Resource
 

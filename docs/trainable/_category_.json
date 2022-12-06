@@ -1,6 +1,6 @@
 {
-  "label": "Trainable 🚧",
-  "position": 3,
+  "label": "💪 Trainable",
+  "position": 6,
   "link": {
     "type": "generated-index",
     "description": "Prompt engineering that can be trained on data"
