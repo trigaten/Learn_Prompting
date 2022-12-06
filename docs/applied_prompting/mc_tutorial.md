@@ -5,7 +5,10 @@ locale: en-us
 
 # Multiple choice questions
 
-Let's use GPT to solve an LSAT question!
+Let's use GPT to solve an LSAT[^1] question!
+
+[^1]: 
+The LSAT (Law School Admission Test) is a standardized test used by law schools in the United States to assess the critical thinking and analytical reasoning skills of prospective students.
 
 Here is LSAT question:
 
@@ -40,7 +43,7 @@ e) John of Worcester's account included a drawing of the sunspots, which could b
 
 <details scheme='warning'>
 <summary>Why is my answer different?</summary>
-Notice that different executions could lead to different outputs. Text generation process has two components: a deterministic model that estimates different probabilities for different words, and a sampling process that selects a word. While the model is deterministic, the sampling process is not. 
+Notice that different executions could lead to different outputs. Text generation process has two components: a deterministic model that estimates different probabilities for different words, and a sampling process that selects a word. The sampling process introduces randomness. We can make the output consistent by setting <a href="https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature">temperature</a> to 0.
 </details>
 
 The model likely failed. Does that mean the model is incapable for answering this type of question? Not necessarily. We will dive into techniques we can use to improve model results.
@@ -64,14 +67,13 @@ This phrase will increase verbosity of the model. You might get output like this
 Our model is autoregressive: prior text, the original prompt text and additional model-generated text, affects the next output. In this case, the step-by-step keyword makes the model more verbose. The model may choose to summarize a question, or synthesize new information from the question before supplying an answer.
 
 The specific term for this behavior is Chain of Thought: the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from Thinking Fast and Slow): the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
-
 :::
 
 ## Improvements
 
 Here are some variations on our basic prompt for multiple choice questions:
 
-### Reordering
+### Reorder Question Items
 
 We can reorder the item in the question
 
@@ -82,7 +84,7 @@ b) Because it is impossible to view sunspots with the naked eye under typical da
 ...
 ```
 
-### Increase specificity of the Question
+### Reword the Question
 
 
 Recall the original prompt was this:
@@ -119,7 +121,7 @@ E) Doesn't Impact - This option does not impact the argument because it is unrel
 ```
 
 
-### Additional Context
+### Add Additional Context
 
 Here is a standard bayes problem:
 
@@ -159,5 +161,7 @@ the model will approach using the right formula, Bayes.
 GPT model doesn't perform arithmetic operations well. You might notice that while the expression written is corrected, the computed number is not.
 
 Try adding the phrase: `Give the expression as answer, not a number` to disable computation.
+
+You may be interested in [MRKL](../advanced_applications/mrkl.md), the paradigm of combining GPT with external tools like calculators, to solve this problem.
 :::
 
