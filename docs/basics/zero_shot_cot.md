@@ -38,12 +38,12 @@ OpenAI API key (Click Generate) and play around with the examples.
 
 #### Incorrect
 
-<iframe src="https://embed.trydyno.com/embed?model=text-davinci-003&promptText=If%20John%20has%205%20pears%2C%20then%20eats%202%2C%20and%20buys%205%20more%2C%20then%20gives%203%20to%20his%20friend%2C%20how%20many%20pears%20does%20he%20have%3F&response=John%20has%208%20pears.&maxTokens=256&boxRows=3&uid=304a7d27-536c-4d36-af9f-69b9787a9c6d" frameBorder="0" style={{overflow:"hidden",width:"100%"}} width="100%" onLoad={e=>{let t=e.currentTarget;window.addEventListener("message",e=>{"frameheight-304a7d27-536c-4d36-af9f-69b9787a9c6d"==e.data[0]&&(t.height=e.data[1]+"px")},!1)}}></iframe>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="If John has 5 pears, then eats 2, and buys 5 more, then gives 3 to his friend, how many pears does he have?" initial-response="John has 8 pears." max-tokens="256" box-rows="3" model-temp="0.7" top-p="1"></div>
 
 
 #### Correct
 
-<iframe src="https://embed.trydyno.com/embed?model=text-davinci-003&promptText=If%20John%20has%205%20pears%2C%20then%20eats%202%2C%20and%20buys%205%20more%2C%20then%20gives%203%20to%20his%20friend%2C%20how%20many%20pears%20does%20he%20have%3F%0A%0ALet's%20think%20step%20by%20step.&response=John%20starts%20with%205%20pears.%20He%20eats%202%20pears%2C%20leaving%20him%20with%203%20pears.%20He%20buys%205%20more%20pears%2C%20giving%20him%20a%20total%20of%208%20pears.%20He%20gives%203%20pears%20to%20his%20friend%2C%20leaving%20him%20with%20only%205%20pears.&maxTokens=256&boxRows=5&uid=f4e70980-25bd-4276-827f-9efb952b9e43" frameBorder="0" style={{overflow:"hidden",width:"100%"}} width="100%" onLoad={e=>{let t=e.currentTarget;window.addEventListener("message",e=>{"frameheight-f4e70980-25bd-4276-827f-9efb952b9e43"==e.data[0]&&(t.height=e.data[1]+"px")},!1)}}></iframe>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="If John has 5 pears, then eats 2, and buys 5 more, then gives 3 to his friend, how many pears does he have?\n\nLet's think step by step." initial-response="John starts with 5 pears. He eats 2 pears, leaving him with 3 pears. He buys 5 more pears, giving him a total of 8 pears. He gives 3 pears to his friend, leaving him with only 5 pears." max-tokens="256" box-rows="5" model-temp="0.7" top-p="1"></div>
 
 ## Results
 Zero-shot-CoT was also effective in improving results on arithmetic, commonsense, 
