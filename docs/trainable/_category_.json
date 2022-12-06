@@ -3,6 +3,6 @@
   "position": 70,
   "link": {
     "type": "generated-index",
-    "description": "Prompt engineering that can be trained on data"
+    "description": "Prompt engineering that you can fine tune with gradients"
   }
 }
