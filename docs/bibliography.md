@@ -85,6 +85,8 @@ The papers are organized by topic.
 
 #### DiffusionDB(@wang2022diffusiondb)
 
+#### The DALLE 2 Prompt Book(@parsons2022dalleprompt)
+
 ## Prompt Engineering IDEs
 
 #### Prompt IDE(@strobelt2022promptide) 🔵
