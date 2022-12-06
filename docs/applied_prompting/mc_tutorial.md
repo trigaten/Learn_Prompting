@@ -81,7 +81,7 @@ The correct answer is C) Only heavy sunspot activity could have resulted in an a
 :::info
 Notice how the model reasons through the problem step-by-step.
 
-The specific term for this behavior is Chain of Thought: the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from Thinking Fast and Slow): the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
+The specific term for this behavior is Chain of Thought(@wei2022chain); the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)); the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
 :::
 
 ## Improvements
@@ -137,7 +137,7 @@ E) Doesn't Impact - This option does not impact the argument because it is unrel
 
 ### Add Additional Context
 
-Here is a standard bayes problem:
+Here is an example of a problem which can be easily solved by using Bayes' theorum:
 
 ```
 Consider two medical tests, A and B, for a virus. Test A is 90% effective at recognizing the virus when it is
@@ -164,7 +164,7 @@ If we add a bit of context, like so:
 ...
 Let's explain step by step. The formula for bayes is 
 ```
-the model will approach using the right formula, Bayes.
+The model will use the right formula, Bayes.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Consider two medical tests, A and B, for a virus. Test A is 90% effective at recognizing the virus when it is\npresent, but has a 5% false positive rate (indicating that the virus is present, when it is not). Test B is 95%\neffective at recognizing the virus, but has a 10% false positive rate. The two tests use independent methods\nof identifying the virus. The virus is carried by 2% of all people.\n(a) Say that a person is tested for the virus using only Test A. What is the probability that the person\nis really carrying the virus given that Test A came back positive? (2 points)\n(b) Say that a person is tested for the virus using only Test B. What is the probability that the person\nis really carrying the virus given that Test B came back positive? (2 points)\n(c) Say that a person is tested for the virus using both tests. What is the probability that the person is\nreally carrying the virus given that both tests came back positive? (2 points)\n\nLet's explain step by step. Give the numerical expression as answer, do not return a number. The formula for bayes is" initial-response="P(A|B) = P(B|A) * P(A) / P(B)\n\n\n(a) P(Virus|Test A Positive) = P(Test A Positive|Virus) * P(Virus) / P(Test A Positive) = (0.9 * 0.02) / (0.9 * 0.02 + 0.05 * 0.98)\n\n(b) P(Virus|Test B Positive) = P(Test B Positive|Virus) * P(Virus) / P(Test B Positive) = (0.95 * 0.02) / (0.95 * 0.02 + 0.1 * 0.98)\n\n(c) P(Virus|Test A Positive and Test B Positive) = P(Test A Positive and Test B Positive|Virus) * P(Virus) / P(Test A Positive and Test B Positive) = (0.9 * 0.95 * 0.02) / (0.9 * 0.95 * 0.02 + 0.05 * 0.1 * 0.98)" max-tokens="256" box-rows="10" model-temp="0" top-p="0"></div>
 
@@ -176,6 +176,6 @@ GPT model doesn't perform arithmetic operations well. You might notice that whil
 Try adding the phrase: `Give the expression as answer, not a number` to disable computation.
 
 
-You may be interested in [MRKL](../advanced_applications/mrkl.md), the paradigm of combining GPT with external tools like calculators, to solve this problem.
+You may be interested in [MRKL](https://learnprompting.org/docs/advanced_applications/mrkl)(@karpas2022mrkl), the paradigm of combining GPT with external tools like calculators, to solve this problem.
 :::
 
