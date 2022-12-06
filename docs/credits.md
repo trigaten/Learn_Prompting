@@ -11,4 +11,4 @@ Here is a growing list of people who have been instrumental in the creation of t
 - Sulu, Docusaurus
 - [snpranav](https://twitter.com/snpranav), domain setup
 - [jayo78](https://github.com/jayo78), prefers his emojis on the left
-- [zeyuzhao](https://github.com/Zeyuzhao), 
+- [zeyuzhao](https://github.com/Zeyuzhao), prompter-in-training
