@@ -4,10 +4,9 @@ sidebar_position: 2
 
 # Short form responses
 
-<!-- import Example from '../assets/short_content_example.gif'; -->
 import Auto from '../assets/short_content_auto.png';
 
-In this article I overview producing short form content with GPT-3, specifically looking at **solving discussion prompts**, a common weekly assignment in a lot of college courses. Short form content is about 100-700 words. Longer content can be bit more tricky as LLMs have limited memory.
+GPT-3 can be really good at short form responses with the right prompting. To demonstrate I will be looking at **solving discussion questions**, a common weekly assignment in a lot of college courses. A response to a discussion question is usually about 100-700 words. Longer content can be bit more tricky as LLMs have limited memory.
 
 Let's look at an example of a basic discussion post question:
 
@@ -15,25 +14,23 @@ Let's look at an example of a basic discussion post question:
 
 A simple prompt for GPT3 could be prepending "Respond to the following:"
 
-> _"<span style={{backgroundColor: '#FFF2CC'}}>Respond to the following:</span> What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?"_
+<pre>
+    <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span>
+    <p>What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?</p>
+</pre>
 
 Results generated with this prompt aren't that consistent and a few are only a sentence or two. Not what we want. Usually want 180-500 word responses and multiple paragraphs for a discussion question. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
 
-> _"<span style={{backgroundColor: '#FFF2CC'}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span> What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?"_
+<pre>
+    <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span>
+    <p>What are the most pressing environmental issues facing our planet today,
+    <br/>and what steps can individuals take to help address these issues?</p>
+</pre>
 
 <div style={{width: "100%", height: 0, paddingBottom: "57%", position: "relative"}}>
     <iframe src="https://giphy.com/embed/khdUf3ZC5HYTnR1avI" width="100%" height="100%" style={{position: "absolute", frameBorder: "0", class: "giphy-embed"}}>
     </iframe>
 </div>
-
-<!-- <div style={{textAlign: 'left'}}>
-  <img src={Example} style={{width: "700px"}} />
-
-<sup> -->
-
-<!-- _First prompt results on left, improved on right_
-</sup>
-</div> -->
 
 On average the results of the second prompt are longer in length and have better structure. I put the word essay in the prompt because GPT-3 can understand what an essay is and essays have good structure for the responses we want.
 
@@ -47,7 +44,10 @@ This is an old discussion question I got for a history class I took. Super open 
 
 Now we can add formatting and context directions.
 
-> _"<span style={{backgroundColor: '#FFF2CC'}}>Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span> Explain the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument."_
+<pre>
+    <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span>
+    <p>Expalin the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument.</p>
+</pre>
 
 Overview: steps for generating optimal and consistent discussion posts:
 
@@ -85,18 +85,51 @@ Here is a potential philosophical discussion question:
 
 Add it into a start prompt like this:
 
-> _"<span style={{backgroundColor: '#FFF2CC'}}>Write a beginning paragraph responding to the following:</span> Is math invented or discovered? Use careful reasoning to explain your answer."_
+<pre>
+    <span style={{backgroundColor: "#FFF2CC"}}>Write a beginning paragraph responding to the following:</span>
+    <p>Is math invented or discovered? Use careful reasoning to explain your answer</p>
+</pre>
 
 I generated a few responses and found one I liked:
 
-> _"<span style={{backgroundColor: '#d2f4d3'}}>There is much debate among philosophers and mathematicians as to whether math is invented or discovered. Some argue that mathematical concepts and principles exist independently of human minds and can therefore be considered as discovered rather than invented. For example, the concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted and studied in a systematic way.</span>"_
+<pre>
+    <span style={{backgroundColor: "#D2F4D3"}}>There is much debate among philosophers and mathematicians as to whether 
+    <br/>math is invented or discovered. Some argue that mathematical concepts and principles exist 
+    <br/>independently of human minds and can therefore be considered as discovered rather than invented. 
+    <br/>For example, the concept of numbers, ratios, and geometric shapes are observed in the natural 
+    <br/>world and can be abstracted and studied in a systematic way.</span>
+</pre>
 
 Pretty good start. I then followed this up with another prompt to expand:
 
-> _"<span style={{backgroundColor: '#FFF2CC'}}>I am writing a detailed short essay responding to the following prompt:</span> Is math invented or discovered? Use careful reasoning to explain your answer. <span style={{backgroundColor: '#FFF2CC'}}><p/>Here is what I have so far:</span> There is much debate among philosophers and mathematicians as to whether math is invented or discovered. Some argue that mathematical concepts and principles exist independently of human minds and can therefore be considered as discovered rather than invented. For example, the concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted and studied in a systematic way. <p/> <span style={{backgroundColor: '#FFF2CC'}}>Write the next paragraph of my essay.</span>"_
+<pre>
+<span style={{backgroundColor: '#FFF2CC'}}>I am writing a detailed short essay responding to the following prompt:</span> 
+<br/>Is math invented or discovered? Use careful reasoning to explain your answer. <span style={{backgroundColor: '#FFF2CC'}}><p/>Here is what I have so far:</span> There is much debate among philosophers and mathematicians as to whether 
+<br/>math is invented or discovered. Some argue that mathematical concepts and principles exist independently
+<br/>of human minds and can therefore be considered as discovered rather than invented. For example, the
+<br/>concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted
+<br/>and studied in a systematic way. <p/><span style={{backgroundColor: '#FFF2CC'}}>Write the next paragraph of my essay.</span>
+</pre>
 
 I generated a few expansions with this prompt and selected one I liked to end up with the following final result:
 
-> _"There is much debate among philosophers and mathematicians as to whether math is invented or discovered. Some argue that mathematical concepts and principles exist independently of human minds and can therefore be considered as discovered rather than invented. For example, the concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted and studied in a systematic way. <p/> <span style={{backgroundColor: '#d2f4d3'}}>On the other hand, some argue that math is largely an invention of the human mind. Mathematical principles are based on logical reasoning, which is a feature of the human mind. For instance, Euclidean geometry is based on abstract axioms and postulates, which are accepted as true without proof. As such, it can be argued that geometry is an invention of the human mind rather than a discovery. Similarly, mathematical formulas and equations are used to model and predict physical phenomena, which are again the result of human reasoning.</span>"_
+<pre>
+    <p>
+        There is much debate among philosophers and mathematicians as to whether 
+        <br/>math is invented or discovered. Some argue that mathematical concepts and principles exist 
+        <br/>independently of human minds and can therefore be considered as discovered rather than invented. 
+        <br/>For example, the concept of numbers, ratios, and geometric shapes are observed in the natural 
+        <br/>world and can be abstracted and studied in a systematic way.
+        <span style={{backgroundColor: "#D2F4D3"}}>
+        <br/>
+        <br/>On the other hand, some argue that math is largely an invention of the human mind. Mathematical
+        <br/>principles are based on logical reasoning, which is a feature of the human mind. For instance,
+        <br/>Euclidean geometry is based on abstract axioms and postulates, which are accepted as true without
+        <br/>proof. As such, it can be argued that geometry is an invention of the human mind rather than 
+        <br/>a discovery. Similarly, mathematical formulas and equations are used to model and predict physical
+        <br/>phenomena, which are again the result of human reasoning. 
+        </span>
+    </p>
+</pre>
 
 Using expansion prompts, we can write more incrementally and iterate at each step. This is useful for when you need to **produce a higher quality output and want to modify the incremental steps**.
