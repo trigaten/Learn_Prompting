@@ -60,7 +60,7 @@ function HomepageHeader() {
     
         </div>
         <center>
-        <div style={{marginTop:"15px"}} height="50px" width="75px">
+        <div style={{marginTop:"15px", lineHeight: "10px" }} height="50px" width="75px">
         <TwitterFollowButton
     screenName={'Learn_Prompting'}
   />
