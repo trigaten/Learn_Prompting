@@ -2,13 +2,13 @@
 sidebar_position: 2
 ---
 
-# Solve Discussion Posts
+# Solve Discussion Questions
 
 import Auto from '../assets/short_content_auto.png';
 
 With the right prompting, GPT-3 is very capable of writing short form responses. To demonstrate this, I will be looking at **solving discussion questions**, a common weekly assignment in many college courses. A response to a discussion question is usually about 100-700 words. Longer content can be bit more tricky as LLMs have limited memory and have difficulty understanding the global picture of what they are writing(@jin2022plot).
 
-Let's look at an example of a basic discussion post question:
+Let's look at an example of a basic discussion question:
 
 > _"What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?"_
 
@@ -19,7 +19,7 @@ We can turn this into a simple prompt for GPT3 by prepending <span style={{backg
     What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?
 </pre>
 
-Results generated with this prompt aren't consistent and a few are only a sentence or two. A typical discussion response is 180-500 words and has multiple paragraphs so these results aren't ideal. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
+Results generated with this prompt aren't consistent, and a few are only a sentence or two. A typical discussion response should have multiple paragraphs, so these results aren't ideal. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
 
 <pre>
     <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span><br/>
@@ -29,26 +29,26 @@ Results generated with this prompt aren't consistent and a few are only a senten
 
 <iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="example"></iframe>
 
-The second prompt generates longer outputs with better structure on average. The use of the term ‘essay’ in the prompt was intentional, as GPT-3 can comprehend the definition of an essay and is thus more likely to generate coherent, structured responses. 
+The second prompt generates longer outputs with better structure on average. The use of the term ‘essay’ in the prompt was intentional, as GPT-3 can comprehend the definition of an essay, and is thus more likely to generate coherent, structured responses. 
 
 ### Many discussion questions are not effective for prompting.
 
 > _"The Civil War a conflict over expansion? Agree our Disagree and why?"_
 
-Here is a real discussion question from a college history course. It is not worded correctly and far too open ended. **To get good discussion responses you need to rewrite the question into a well defined prompt.** A well defined prompt for the discussion question above could be:
+Here is a real discussion question from a college history course. It is not worded correctly and is far too open ended. **To get good discussion responses, you need to rewrite the question into a well defined prompt.** A well defined prompt for the discussion question above could be:
 
 > _"Explain the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument."_
 
 Now we can add formatting and context directions.
 
 <pre>
-    <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span>
-    <p>Expalin the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument.</p>
+    <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span><br/>
+    Expalin the causes of the Civil War and whether expansion played a role in the conflict. <br/>Include evidence to support your argument.
 </pre>
 
 ### Automate well defined prompt rewriting with GPT3
 
-The rewriting example above was generated with OpenAI's ChatGPT.
+The rewriting example above was generated with OpenAI's [ChatGPT](https://openai.com/blog/chatgpt/).
 
 <div style={{textAlign: 'left'}}>
   <img src={Auto} style={{width: "500px"}} />
@@ -66,11 +66,11 @@ Here is a potential philosophical discussion question:
 
 > _"Is math invented or discovered? Use careful reasoning to explain your answer."_
 
-Add it into a start prompt like this:
+Add it into a simple prompt like this:
 
 <pre>
     <span style={{backgroundColor: "#FFF2CC"}}>Write a beginning paragraph responding to the following:</span>
-    <p>Is math invented or discovered? Use careful reasoning to explain your answer</p>
+    <br/>Is math invented or discovered? Use careful reasoning to explain your answer
 </pre>
 
 I generated a few responses and found one I liked:
@@ -83,7 +83,7 @@ I generated a few responses and found one I liked:
     <br/>world and can be abstracted and studied in a systematic way.</span>
 </pre>
 
-Pretty good start. I then followed this up with another prompt to expand:
+This is a pretty good start. I then followed this up with another prompt to expand:
 
 <pre>
 <span style={{backgroundColor: '#FFF2CC'}}>I am writing a detailed short essay responding to the following prompt:</span> 
@@ -102,22 +102,22 @@ Try this expansion prompt out with the demo below (you will need your OpenAI API
 I generated a few expansions with this prompt and selected one I liked to end up with the following final result:
 
 <pre>
-    <p>
-        There is much debate among philosophers and mathematicians as to whether 
-        <br/>math is invented or discovered. Some argue that mathematical concepts and principles exist 
-        <br/>independently of human minds and can therefore be considered as discovered rather than invented. 
-        <br/>For example, the concept of numbers, ratios, and geometric shapes are observed in the natural 
-        <br/>world and can be abstracted and studied in a systematic way.
-        <span style={{backgroundColor: "#D2F4D3"}}>
-        <br/>
-        <br/>On the other hand, some argue that math is largely an invention of the human mind. Mathematical
-        <br/>principles are based on logical reasoning, which is a feature of the human mind. For instance,
-        <br/>Euclidean geometry is based on abstract axioms and postulates, which are accepted as true without
-        <br/>proof. As such, it can be argued that geometry is an invention of the human mind rather than 
-        <br/>a discovery. Similarly, mathematical formulas and equations are used to model and predict physical
-        <br/>phenomena, which are again the result of human reasoning. 
-        </span>
-    </p>
+    There is much debate among philosophers and mathematicians as to whether 
+    <br/>math is invented or discovered. Some argue that mathematical concepts and principles exist 
+    <br/>independently of human minds and can therefore be considered as discovered rather than invented. 
+    <br/>For example, the concept of numbers, ratios, and geometric shapes are observed in the natural 
+    <br/>world and can be abstracted and studied in a systematic way.
+    <span style={{backgroundColor: "#D2F4D3"}}>
+    <br/>
+    <br/>On the other hand, some argue that math is largely an invention of the human mind. Mathematical
+    <br/>principles are based on logical reasoning, which is a feature of the human mind. For instance,
+    <br/>Euclidean geometry is based on abstract axioms and postulates, which are accepted as true without
+    <br/>proof. As such, it can be argued that geometry is an invention of the human mind rather than 
+    <br/>a discovery. Similarly, mathematical formulas and equations are used to model and predict physical
+    <br/>phenomena, which are again the result of human reasoning. 
+    </span>
 </pre>
 
 Using expansion prompts, we can write more incrementally and iterate at each step. This is useful for when you need to **produce a higher quality output and want to modify the incremental steps**.
+
+Written by [jayo78](https://github.com/jayo78).
