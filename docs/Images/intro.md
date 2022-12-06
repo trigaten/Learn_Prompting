@@ -8,7 +8,7 @@ Figuring our the best prompt to create a perfect image is a particular challenge
 Research into methods to do so is not quite as developed as text prompting. This
 may be due to inherent challenges in creating things which are fundamentally subjective
 and often lack good accuracy metrics. However, fear not, as the image prompting 
-community has made great discoveries about how to prompt image models(@rombach2021highresolution)(@ramesh2022hierarchical).
+community(@parsons2022dalleprompt) has made great discoveries about how to prompt various image models(@rombach2021highresolution)(@ramesh2022hierarchical).
 
 
 ## Example
@@ -20,7 +20,7 @@ for this course's images.
 
 I needed an astronaut, a rocket, and a computer for the images on the front page.
 
-I did a bunch of research into how to create low poly images, on r/StableDiffusion 
+I did a bunch of research into how to create low poly images, on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/)
 and other sites, but couldn't find anything super helpful.
 
 I decided to just start with DALLE and the prompt `Low poly white and blue rocket shooting to the moon in front of a sparse green meadow` and see what happened.
@@ -69,7 +69,7 @@ Now I had an astronaut, a rocket, and a computer. I was happy with them,
 so I put them on the front page. After a few days and input from my friends I
 realized the style just wasn't consistent.
 
-I did some more research on r/StableDiffusion and found people using the word isometric.
+I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric.
 I also realized that I needed to add more modifiers to my prompt
 to constrain the style. I tried this prompt:
 `A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
@@ -138,3 +138,7 @@ Finally, I was on to the astronaut.
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_final} style={{width: "250px"}} />
 </div>
+
+At this point, I was sufficiently happy with the style consistency between my three images to use them
+on the website. The main takeaways for me were that this was a very iterative, research heavy process,
+and I had to modify my expectations and ideas as I experimented with different models.
