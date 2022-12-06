@@ -1,12 +1,6 @@
-import React from 'react';
-import ReactDOM from "react-dom";
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import { TwitterFollowButton } from 'react-twitter-embed';
 /* React Component Version */
+import React from "react";
+import ReactDOM from "react-dom";
 
 const DiscordButton = ({ isSSO, url }) => (
   <a
@@ -38,44 +32,4 @@ const DiscordButton = ({ isSSO, url }) => (
   </a>
 );
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Get Started 🏃
-          </Link>
-          
-        </div>
-        <div style={{marginTop:"25px"}}>
-        <Link to="https://discord.gg/7enStJXQzD"><DiscordButton></DiscordButton></Link>
-        </div>
-        <div style={{marginTop:"25px", lineHeight: "10px"}}>
-        <TwitterFollowButton screenName={'Learn_Prompting'}></TwitterFollowButton>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Learn Prompt Engineering">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
-}
+export default DiscordButton;
