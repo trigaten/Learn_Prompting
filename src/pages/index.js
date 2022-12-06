@@ -58,9 +58,6 @@ function HomepageHeader() {
         <div style={{marginTop:"25px"}}>
         <Link to="https://discord.gg/7enStJXQzD"><DiscordButton></DiscordButton></Link>
         </div>
-        <div style={{marginTop:"25px", lineHeight: "10px"}}>
-        <TwitterFollowButton screenName={'Learn_Prompting'}></TwitterFollowButton>
-        </div>
       </div>
     </header>
   );
