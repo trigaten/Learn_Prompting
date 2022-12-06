@@ -73,11 +73,6 @@ async function createConfig() {
         integrity:
           'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
         crossorigin: 'anonymous',
-      },
-      {
-        href: 'https://embed.trydyno.com/embedder.css',
-        type: "text/css",
-        crossorigin: 'anonymous',
       }
     ],
     themeConfig:
