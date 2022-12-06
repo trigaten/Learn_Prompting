@@ -5,25 +5,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { TwitterFollowButton } from 'react-twitter-embed';
 
 import styles from './index.module.css';
-
-window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));
 
 // https://codepen.io/croc/details/NWqzGYd
 const DiscordButton = ({ isSSO, url }) => (
@@ -75,14 +59,14 @@ function HomepageHeader() {
         <Link to="https://discord.gg/7enStJXQzD"><DiscordButton/></Link>
     
         </div>
-        <div style={{marginTop:"15px"}}>
-        <Link>
-        <a class="twitter-follow-button"
-  href="https://twitter.com/Learn_Prompting"
-  data-size="large" data-show-count="false">
-Follow @TwitterDev</a>
-        </Link>
-        </div>
+        <center>
+        <div style={{marginTop:"15px"}} height="50px" width="75px">
+        <TwitterFollowButton
+    screenName={'Learn_Prompting'}
+  />
+  </div>
+        </center>
+        
       </div>
     </header>
   );
