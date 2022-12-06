@@ -37,7 +37,7 @@ function Feature({Svg, title, description}) {
     <div className={clsx('col col--4')}>
       <center>
       <div className="text--center">
-        <img src={Svg} alt="img" width="251px"/>
+        <img src={Svg} alt="img" width="251px" style={{ alignSelf: 'center' }}/>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
