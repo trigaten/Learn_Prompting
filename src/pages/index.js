@@ -6,10 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { TwitterFollowButton } from 'react-twitter-embed';
+/* React Component Version */
 
-import styles from './index.module.css';
-
-// https://codepen.io/croc/details/NWqzGYd
 const DiscordButton = ({ isSSO, url }) => (
   <a
     href={url}
@@ -40,6 +38,7 @@ const DiscordButton = ({ isSSO, url }) => (
   </a>
 );
 
+import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -49,24 +48,16 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-        <Link
+          <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
             Get Started 🏃
           </Link>
+          
         </div>
         <div style={{marginTop:"25px"}}>
-        <Link to="https://discord.gg/7enStJXQzD"><DiscordButton/></Link>
-    
+        <Link to="https://discord.gg/7enStJXQzD"><DiscordButton></DiscordButton></Link>
         </div>
-        <center>
-        <div style={{marginTop:"15px", lineHeight: "10px" }} height="50px" width="75px">
-        <TwitterFollowButton
-    screenName={'Learn_Prompting'}
-  />
-  </div>
-        </center>
-        
       </div>
     </header>
   );
