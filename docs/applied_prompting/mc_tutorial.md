@@ -45,7 +45,7 @@ e) John of Worcester's account included a drawing of the sunspots, which could b
 Your answer could differ because of
 
 1) Updates to the underlying model, GPT-3
-2) Randomness in the text generation process. We can make the output consistent by setting <a href="https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature">temperature</a> to 0.
+2) Randomness in the text generation process. We can make the output more consistent by setting <a href="https://beta.openai.com/docs/api-reference/completions/create#completions/create-temperature">temperature</a> to 0.
 
 </details>
 
@@ -104,7 +104,7 @@ b) Because it is impossible to view sunspots with the naked eye under typical da
 c) An aurora borealis can sometimes occur even when there has been no significant sunspot activity in the previous week. 
 d) Chinese sources recorded the sighting of sunspots more than 1000 years before John of Worcester did. 
 e) Only heavy sunspot activity could have resulted in an aurora borealis viewable at a latitude as low as that of Korea. 
-Let’s explain step by step" initial-response="" max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+Let’s explain step by step" initial-response="A) Weakens - This option weakens the argument because it implies that the aurora borealis did not necessarily need to be caused by sunspot activity, which is the argument the author is trying to make. B) Doesn't Impact - This option does not impact the argument because it is unrelated to the connection between the sunspots and the appearance of the aurora borealis. C) Strengthens - This option strengthens the argument because it suggests that the only way an aurora borealis could be seen in Korea is if there had been heavy sunspot activity, which is what John of Worcester observed. D) Weakens - This option weakens the argument because it implies that the conditions under which John of Worcester observed the sunspots may not have been reliable, which could cast doubt on the accuracy of his sighting. E) Doesn't Impact - This option does not impact the argument because it is unrelated to the connection between the sunspots and the appearance of the aurora borealis." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
 
 ### Reword the Question
 
