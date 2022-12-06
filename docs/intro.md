@@ -38,3 +38,23 @@ It is not necessary to read all chapters in order. Read what interests you!
 
 That being said, Basics is a good place to start,
 and it discusses some very simple, but powerful, prompt engineering techniques.
+
+## Chapters
+
+Here is a quick summary of each chapter:
+
+**Basics**: Intro to PE and simple PE tecniques
+
+**Advanced Applications**: Some very powerful, but more advanced applications of PE
+
+**Applied Prompting**: Some complete walkthroughs of the PE process written by community memebers
+
+**Reliability**: How to make LLMs more reliable
+
+**Images**: PE for text to image models like DALLE and Stable Diffusion!
+
+**Prompt Injection**: Hacking, but for PE
+
+**Prompting IDEs**: Different PE tools
+
+**Trainable**: PE that you can fine tune with gradients
