@@ -56,6 +56,7 @@ const DiscordButton = ({ isSSO, url }) => (
   </a>
 );
 
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -64,7 +65,7 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
+        <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
             Get Started 🏃
@@ -72,18 +73,16 @@ function HomepageHeader() {
         </div>
         <div style={{marginTop:"25px"}}>
         <Link to="https://discord.gg/7enStJXQzD"><DiscordButton/></Link>
-
+    
         </div>
-        
-        <div style={{marginTop:"25px"}}>
+        <div style={{marginTop:"15px"}}>
         <Link>
         <a class="twitter-follow-button"
   href="https://twitter.com/Learn_Prompting"
   data-size="large" data-show-count="false">
 Follow @TwitterDev</a>
         </Link>
-          </div>
-        
+        </div>
       </div>
     </header>
   );
