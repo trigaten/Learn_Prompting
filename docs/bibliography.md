@@ -67,9 +67,9 @@ The papers are organized by topic.
 
 ## Soft Prompting
 
-#### Soft Prompting(@lester2021power)
+#### Soft Prompting(@lester2021power) 🔵
 
-#### Interpretable Discretized Soft Prompts(@khashabi2021prompt)
+#### Interpretable Discretized Soft Prompts(@khashabi2021prompt) 🔵
 
 ## Datasets
 

@@ -60,6 +60,12 @@ async function createConfig() {
         }),
       ],
     ],
+    scripts: [
+      {
+        src: "https://embed.trydyno.com/embedder.js",
+        defer: true
+      }
+    ],
     stylesheets: [
       {
         href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -68,6 +74,11 @@ async function createConfig() {
           'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
         crossorigin: 'anonymous',
       },
+      {
+        href: 'https://embed.trydyno.com/embedder.css',
+        type: "text/css",
+        crossorigin: 'anonymous',
+      }
     ],
     themeConfig:
       ({
