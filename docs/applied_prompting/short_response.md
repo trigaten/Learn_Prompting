@@ -15,16 +15,16 @@ Let's look at an example of a basic discussion post question:
 A simple prompt for GPT3 could be prepending "Respond to the following:"
 
 <pre>
-    <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span>
-    <p>What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?</p>
+    <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span><br/>
+    What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?
 </pre>
 
 Results generated with this prompt aren't that consistent and a few are only a sentence or two. Not what we want. Usually want 180-500 word responses and multiple paragraphs for a discussion question. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
 
 <pre>
-    <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span>
-    <p>What are the most pressing environmental issues facing our planet today,
-    <br/>and what steps can individuals take to help address these issues?</p>
+    <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span><br/>
+    What are the most pressing environmental issues facing our planet today,
+    <br/>and what steps can individuals take to help address these issues?
 </pre>
 
 <iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="example"></iframe>
@@ -34,7 +34,7 @@ Results generated with this prompt aren't that consistent and a few are only a s
     </iframe>
 </div> -->
 
-On average the results of the second prompt are longer in length and have better structure. I put the word essay in the prompt because GPT-3 can understand what an essay is and essays have good structure for the responses we want.
+On average, the results of the second prompt are longer in length and have better structure. I put the word essay in the prompt because GPT-3 can understand what an essay is and essays have good structure for the responses we want.
 
 ### Most discussion questions suck for prompting
 
