@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Short form responses
+# Solve Discussion Posts
 
 import Auto from '../assets/short_content_auto.png';
 
