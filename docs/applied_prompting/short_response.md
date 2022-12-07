@@ -43,7 +43,7 @@ Now we can add formatting and context directions.
 
 <pre>
     <span style={{backgroundColor: "#FFF2CC"}}>Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span><br/>
-    Expalin the causes of the Civil War and whether expansion played a role in the conflict. <br/>Include evidence to support your argument.
+    Explain the causes of the Civil War and whether expansion played a role in the conflict. <br/>Include evidence to support your argument.
 </pre>
 
 ### Automate well defined prompt rewriting with GPT3
