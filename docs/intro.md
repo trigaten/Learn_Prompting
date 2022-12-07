@@ -14,6 +14,12 @@ who often fall somewhere in between. As such, this course focuses on applied tec
 expense of some of the more mathematical aspects of PE. Since PE is such an applied field,
 we aren't missing all that much 😊
 
+
+### THE SINGLE MOST IMPORTANT OF THIS COURSE IS YOUR FEEDBACK
+If you have any questions, comments, or suggestions, please make an **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, email me at learnprompting@gmail.com, or reach out over Discord/Twitter.
+
+Even the smallest amount of feedback is very helpful!
+
 ## Course Philosophy
 
 **Quick Iterations** - Since new PE content is published almost daily, 
