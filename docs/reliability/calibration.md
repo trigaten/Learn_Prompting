@@ -23,22 +23,22 @@ p("Negative" | "Input: nothing Sentiment:") = 0.1
 
 Given these label probabilites for a context-free input, we know that the LLM's 
 **output distribution** is likely biased
-towards the label "Positive". This will likely cause the LLM to favor "Positive"
+towards the label `Positive`. This may cause the LLM to favor `Positive`
 for all inputs, even if the input is not actually positive.
 
 If we can somehow **calibrate** the output distribution, such that context-free 
-inputs are assigned a probability of 0.5 for both "Positive" and "Negative", 
-then we can often remove the bias towards "Positive" and the LLM will be more reliable
-on inputs with context.
+inputs are assigned a probability of 0.5 for both `Positive` and `Negative`, 
+then we can often remove the bias towards `Positive` and the LLM will be more reliable
+on both context-free inputs and inputs with context.
 
 ## Non-Technical Solution
 
 A non-technical solution to this problem is to simply provide few shot examples where
 context-free exemplars are effectively assigned a probability of 0.5 for both 
-"Positive" and "Negative".
+`Positive` and `Negative`.
 
 For example, we could provide the following few shot examples which show each context-free
-exemplar being classified as both "Positive" and "Negative":
+exemplar being classified as both `Positive` and `Negative`:
 ```
 Input: I hate this movie. Sentiment: Negative
 Input: I love this movie. Sentiment: Positive
@@ -58,10 +58,13 @@ calibration is trying to achieve.
 Another solution to this is __contextual calibration__(@zhao2021calibrate), where we 
 adjust special calibration parameters, which ensure that context-free inputs like 
 `Input: nothing Sentiment: `  are assigned a probability of about 0.5 for both labels. 
-Note that this method performs calibration over multiple different context free inputs (e.g. `Input: N/A Sentiment: `, `Input: [MASK] Sentiment: `). It averages the calibration parameters that
+Note that in practice this method performs calibration over multiple different context free inputs (e.g. `Input: N/A Sentiment: `, `Input: [MASK] Sentiment: `). It averages the calibration parameters that
 work best for each context-free input to find the best calibration parameters for the LLM.
 
-Let's go through an example of computing the calibration parameters for one context-free input.
+### Example
+
+Let's go through an example of computing the calibration parameters for one context-free input. Note that
+this example is not reproducible with GPT-3 due to the fact that it can't be restricted to the labels `Positive` and `Negative`.
 
 Consider again the above example where the LLM assigns the following probabilities to the labels 
 for a context-free input:
@@ -88,7 +91,7 @@ This equation takes the original probabilities $\^{p}$ and applies the weights $
 them. The weights $W$ and bias $b$ are the calibration parameters, which, when applied to the 
 context-free example's probabilites, will yield $\^{q}$ = [0.5, 0.5].
 
-### Computing W and b
+#### Computing W and b
 
 We need to somehow compute the weights $W$ and bias $b$. One way to do this is: 
 
@@ -96,8 +99,7 @@ $W = \text{diag}(\^{p})^{-1}$
 
 $b = 0$
 
-Although the definition of $W$ may seem a bit strange at first, it is just finding
-a $W$ that will transform the original probabilities $\^{p}$ into the calibrated probabilities [0.5, 0.5].
+Although the definition of $W$ may seem a bit strange at first, but it is just taking the inverse of each value in $\^{p}$ in order to find a $W$ that will transform the original probabilities $\^{p}$ into the calibrated probabilities [0.5, 0.5].
 
 Let's verify that this works for the example above:
 
@@ -120,15 +122,12 @@ $\^{q} = \text{Softmax}(W\^{p} + b) = \text{Softmax}(\begin{bmatrix}
 = \text{Softmax}([1, 1])
 =[0.5, 0.5]$
 
+As mentioned above, we would perform this same process for multiple different context-free inputs, and average the calibration parameters that work best for each context-free input to find the best calibration parameters for the LLM. This means that the final calibration parameters willl probably not map any of the context-free inputs to exactly [0.5, 0.5].
+
 ### Another method
 
-$b$ could also be set to -p, and $W$ to the identity matrix. This method performs
+$b$ could also be set to $-\^{p}$, and $W$ to the identity matrix. This method performs
 better on generation rather than classification tasks(@zhao2021calibrate).
-
-## In practice
-
-In practice, a few context-free examples are used to compute $W$ and $b$ 
-(the average of their calibration parameters is used).
 
 ## Takeaways
 
