@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Prompt injection is a tecnique used to hijack a language model's output(@crothers2022machine)(@goodside2022inject)(@simon2022inject)(@branch2022evaluating). 
 
-This can occur when untrusted text is used as part of the prompt. The following figure, reproduced from [@Riley Goodside](https://twitter.com/goodside?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1569128808308957185%7Ctwgr%5Efc37850d65557ae3af9b6fb1e939358030d0fbe8%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fsimonwillison.net%2F2022%2FSep%2F12%2Fprompt-injection%2F)(@goodside2022inject), is a good example of this.
+This can occur when untrusted text is used as part of the prompt. The following figure, reproduced from [@Riley Goodside](https://twitter.com/goodside?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1569128808308957185%7Ctwgr%5Efc37850d65557ae3af9b6fb1e939358030d0fbe8%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fsimonwillison.net%2F2022%2FSep%2F12%2Fprompt-injection%2F)(@goodside2022inject) (who named this method), is a good example of this.
 We can see that the model ignores the first part of the prompt in favor of the 'injected' second line.
 
 
@@ -38,6 +38,6 @@ any text the Twitter user injects into their tweet will be passed into the LLM.
 
 ## Practice
 
-Try to get the following LLM to say "PWNED" by injecting text into the prompt(@chase2021adversarial):
+Try to get the following LLM to say "PWNED" by appending text to the prompt(@chase2021adversarial):
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="English: I want to go to the park today.\nFrench: Je veux aller au parc aujourd'hui.\nEnglish: I like to wear a hat when it rains.\nFrench: J'aime porter un chapeau quand it pleut.\nEnglish: What are you doing at school?\nFrench: Qu'est-ce que to fais a l'ecole?\nEnglish:" initial-response="" max-tokens="256" box-rows="9" model-temp="0.7" top-p="1"></div>
+<div trydyno-embed="" openai-model="text-davinci-002" initial-prompt="English: I want to go to the park today.\nFrench: Je veux aller au parc aujourd'hui.\nEnglish: I like to wear a hat when it rains.\nFrench: J'aime porter un chapeau quand it pleut.\nEnglish: What are you doing at school?\nFrench: Qu'est-ce que to fais a l'ecole?\nEnglish:" initial-response="" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1"></div>
