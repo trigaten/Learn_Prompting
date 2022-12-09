@@ -4,21 +4,24 @@ sidebar_position: 1
 
 # Intro to Image Prompting
 
-Figuring our the best prompt to create a perfect image is a particular challenge.
+Figuring out the best prompt to create a perfect image is a particular challenge.
 Research into methods to do so is not quite as developed as text prompting. This
-may be due to inherent challenges in creating things which are fundamentally subjective
+may be due to inherent challenges in creating objects which are fundamentally subjective
 and often lack good accuracy metrics. However, fear not, as the image prompting 
 community(@parsons2022dalleprompt) has made great discoveries about how to prompt various image models(@rombach2021highresolution)(@ramesh2022hierarchical).
+
+This guide does not currently cover image prompting tecniques; instead, I provide an
+example of the end-to-end process below, along with some great resources to get started.
 
 
 ## Example
 
-Here I will go through an example of how I created the images for this course. 
+Here I will go through an example of how I created the images for the front page of this course. 
 I had been experimenting with low poly style for a deep reinforcement learning
 neural radiance field project. I liked the low poly style, and wanted to use it 
 for this course's images. 
 
-I needed an astronaut, a rocket, and a computer for the images on the front page.
+I wanted an astronaut, a rocket, and a computer for the images on the front page.
 
 I did a bunch of research into how to create low poly images, on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/)
 and other sites, but couldn't find anything super helpful.
@@ -57,7 +60,7 @@ Next, I wanted a computer in the same style: `Low poly white and blue computer s
   <img src={computer_1} style={{width: "750px"}} />
 </div>
 
-Finally, I needed an astronaut! `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background` seemed to to the trick.
+Finally, I needed an astronaut! `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background` seemed to do the trick.
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_1} style={{width: "750px"}} />
@@ -67,9 +70,10 @@ I thought the second one was decent.
 
 Now I had an astronaut, a rocket, and a computer. I was happy with them,
 so I put them on the front page. After a few days and input from my friends I
-realized the style just wasn't consistent.
+realized the style just wasn't consistent 😔.
 
-I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric.
+
+I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric. I decided to try that out, using Stable Diffusion instead of DALLE.
 I also realized that I needed to add more modifiers to my prompt
 to constrain the style. I tried this prompt:
 `A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
@@ -86,7 +90,7 @@ These weren't great, so I decided to start on the rocket instead
   <img src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
-After a bit of iterating around here, I ended up with 
+These are not particularly good, but after a bit of iterating around here, I ended up with 
 
 <div style={{textAlign: 'center'}}>
   <img src={rocket_final} style={{width: "250px"}} />
@@ -124,8 +128,8 @@ I liked these, but wanted the stone in the middle of the screen.
   <img src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
-Somewhere around here I used SD's ability to have a previous image provide some influence for future images.
-And thus I arrived at
+Somewhere around here, I used SD's ability to have a previous image provide some influence for future images.
+And thus I arrived at:
 
 <div style={{textAlign: 'center'}}>
   <img src={focus_final} style={{width: "250px"}} />
@@ -141,4 +145,4 @@ Finally, I was on to the astronaut.
 
 At this point, I was sufficiently happy with the style consistency between my three images to use them
 on the website. The main takeaways for me were that this was a very iterative, research heavy process,
-and I had to modify my expectations and ideas as I experimented with different models.
+and I had to modify my expectations and ideas as I experimented with different prompts and models.
