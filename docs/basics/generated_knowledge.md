@@ -59,8 +59,6 @@ We select the answer with the highest probability as the final answer. The
 highest probability could be the softmax probability of the answer token, or the
 log probability of the answer token(s).
 
-## Example
-
 ## Results
 
 This method shows improvements on various commonsense datasets.
