@@ -88,7 +88,7 @@ cite them as such.
 
 #### DiffusionDB(@wang2022diffusiondb)
 
-#### The DALLE 2 Prompt Book(@parsons2022dalleprompt)
+#### The DALLE 2 Prompt Book(@parsons2022dalleprompt) 🔵
 
 ## Prompt Engineering IDEs
 

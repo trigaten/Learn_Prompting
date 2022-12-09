@@ -10,3 +10,4 @@ assembling a list of good resources before writing a guide myself.
 - [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery
 - [Stable Diffusion Prompt Book](https://stability.ai/sdv2-prompt-book)
 - [Traveler's Guide to Latent Space](https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f)
+- [The DALLE 2 Prompt Book](https://dallery.gallery/the-dalle-2-prompt-book/)(@parsons2022dalleprompt)
