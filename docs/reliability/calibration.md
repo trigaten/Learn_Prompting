@@ -9,22 +9,22 @@ distributions**(@zhao2021calibrate).
 
 **What exactly does it mean to calibrate an output distribution?**
 
-Say we have a sentiment analysis task with two possible labels, `Positive` and `Negative`.
-Consider what happens when the LLM is prompted with `Input: N/A Sentiment: `. 
+Let's walk through a quick example: Say we have a sentiment analysis task with two possible labels, `Positive` and `Negative`.
+Consider what happens when the LLM is prompted with `Input: nothing Sentiment: `. 
 This input doesn't contain any _context_ which the LLM can use to make a sentiment 
 prediction, so it is called a **context-free** input.
 
-Since N/A is neither a positive nor a negative concept, we would expect the LLM to output a probability of 0.5 for both `Positive` and `Negative`. However, for this example that will not be the case.
+Since `nothing`is neither a positive nor a negative concept, we would expect the LLM to output a probability of about 0.5 for both `Positive` and `Negative`. However, often (and for this example) that will not be the case.
 ```
-p("Positive") = 0.9
+p("Positive" | "Input: nothing Sentiment:") = 0.9
 
-p("Negative") = 0.1
+p("Negative" | "Input: nothing Sentiment:") = 0.1
 ```
 
 Given these label probabilites for a context-free input, we know that the LLM's 
 **output distribution** is likely biased
 towards the label "Positive". This will likely cause the LLM to favor "Positive"
-for all inputs, even if the input is not positive.
+for all inputs, even if the input is not actually positive.
 
 If we can somehow **calibrate** the output distribution, such that context-free 
 inputs are assigned a probability of 0.5 for both "Positive" and "Negative", 
@@ -57,22 +57,26 @@ calibration is trying to achieve.
 
 Another solution to this is __contextual calibration__(@zhao2021calibrate), where we 
 adjust special calibration parameters, which ensure that context-free inputs like 
-`Input: N/A Sentiment: `  are assigned a probability of 0.5 for both labels. 
+`Input: nothing Sentiment: `  are assigned a probability of about 0.5 for both labels. 
+Note that this method performs calibration over multiple different context free inputs (e.g. `Input: N/A Sentiment: `, `Input: [MASK] Sentiment: `). It averages the calibration parameters that
+work best for each context-free input to find the best calibration parameters for the LLM.
+
+Let's go through an example of computing the calibration parameters for one context-free input.
 
 Consider again the above example where the LLM assigns the following probabilities to the labels 
 for a context-free input:
 
 ```
-p("Positive") = 0.9
+p("Positive" | "Input: nothing Sentiment:") = 0.9
 
-p("Negative") = 0.1
+p("Negative" | "Input: nothing Sentiment:") = 0.1
 ```
 
 We want to find some probability distribution q such that
 ```
-q("Positive") = 0.5
+q("Positive" | "Input: nothing Sentiment:") = 0.5
 
-q("Negative") = 0.5
+q("Negative" | "Input: nothing Sentiment:") = 0.5
 ```
 
 We will do so by creating a linear transformation that adjusts (calibrates) the probabilities 

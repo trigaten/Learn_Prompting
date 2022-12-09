@@ -59,4 +59,4 @@ Here is a quick summary of each chapter:
 
 **Prompting IDEs**: Different PE tools
 
-**Trainable**: PE that you can fine tune with gradients
+**Prompt Tuning**: Fine tune prompts with gradients
