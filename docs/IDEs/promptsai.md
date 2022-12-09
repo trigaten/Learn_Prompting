@@ -5,7 +5,7 @@ sidebar_position: 8
 # Prompts.ai
 
 [Prompts.ai](https://prompts.ai/) provides a playground similar to the GPT-3 Playground, but with some
-added features.
+added features. It is no lonnger being developed.
 
 import Image from '../assets/IDEs/promptsai.png';
 

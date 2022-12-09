@@ -26,10 +26,10 @@ import GoldUn from '../assets/gold_unimportant.png';
 
 Even though the gold labels in the exemplars are not important, the labelspace 
 (all of the possible labels for the task) is.
-Providing random labels from the labelspace helps the LLM get a better understanding
+Even providing random labels from the labelspace helps the LLM get a better understanding
 of the labelspace, and improves results. Additionally, properly representing the 
 distribution of the labelspace in the exemplars is important. Rather than uniformly
-sampling from the labelspace, it is better to sample from the distribution of the
+sampling from the labelspace in the exemplars, it is better to sample from the distribution of the
 labels.
 
 ## Format Matters

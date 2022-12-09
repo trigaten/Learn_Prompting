@@ -18,5 +18,5 @@ import Image from '../assets/IDEs/GPT3.png';
 
 GPT-3 Playground provides a clean interface with a few different dials for 
 modifying GPT-3's behavior. It also provides access to different GPT models
-of varying parameter sizes and prices. They provide free credits which expire 
+of varying parameter sizes and prices. They provide free credits, which expire 
 after 3 months. 

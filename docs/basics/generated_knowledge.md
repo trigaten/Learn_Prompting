@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # Generated Knowledge
@@ -58,8 +58,6 @@ We then prompt the LLM with these knowledge augmented questions and get the fina
 We select the answer with the highest probability as the final answer. The 
 highest probability could be the softmax probability of the answer token, or the
 log probability of the answer token(s).
-
-## Example
 
 ## Results
 

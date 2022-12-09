@@ -10,6 +10,7 @@ import { TwitterFollowButton } from 'react-twitter-embed';
 
 import styles from './index.module.css';
 
+// https://codepen.io/croc/details/NWqzGYd
 const DiscordButton = ({ isSSO, url }) => (
   <a
     href={url}

@@ -3,20 +3,17 @@ sidebar_position: 1
 ---
 # Welcome
 
-Welcome to this course on Prompt Engineering (PE)! 
+Welcome to this course on Prompt Engineering! 
 
-I like to think of PE as "**How communicate with AI to get it to do what you want**". With many of the recent advances in AI,
+I like to think of Prompt Engineering (PE) as "**How communicate with AI to get it to do what you want**". 
+
+With many of the recent advances in AI,
 this has become a particularly important skill.
+This course focuses on applied prompt engineering techniques. Minimal knowledge of 
+machine learning is expected.
 
-This course is designed for both 
-ML (machine learning) hobbyists and researchers, with a particular focus on undergraduate researchers
-who often fall somewhere in between. As such, this course focuses on applied techniques, at the 
-expense of some of the more mathematical aspects of PE. Since PE is such an applied field,
-we aren't missing all that much 😊
-
-
-### THE SINGLE MOST IMPORTANT PART OF THIS COURSE IS YOUR FEEDBACK
-If you have any questions, comments, or suggestions, please make an **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, email me at learnprompting@gmail.com, or reach out over Discord/Twitter.
+## The single most important part of this course is your feedback!
+If you have any questions, comments, or suggestions, please make an **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, email me at learnprompting@gmail.com, or reach out over [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
 
 Even the smallest amount of feedback is very helpful!
 
@@ -48,11 +45,11 @@ and it discusses some very simple, but powerful, prompt engineering techniques.
 
 Here is a quick summary of each chapter:
 
-**Basics**: Intro to PE and simple PE tecniques
+**Basics**: Intro to PE and simple PE techniques
 
 **Advanced Applications**: Some very powerful, but more advanced applications of PE
 
-**Applied Prompting**: Some complete walkthroughs of the PE process written by community memebers
+**Applied Prompting**: Some complete walkthroughs of the PE process written by community members
 
 **Reliability**: How to make LLMs more reliable
 
@@ -62,4 +59,4 @@ Here is a quick summary of each chapter:
 
 **Prompting IDEs**: Different PE tools
 
-**Trainable**: PE that you can fine tune with gradients
+**Prompt Tuning**: Fine tune prompts with gradients

@@ -19,8 +19,6 @@ import SCImage from '../assets/self_consistency.png';
   <img src={SCImage} style={{width: "750px"}} />
 </div>
 
-## Example
-
 ## Results
 
 Self-consistency has been shown to improve results on arithmetic, commonsense and symbolic reasoning tasks.
@@ -31,6 +29,6 @@ was still able to improve results.
 ## Notes
 
 Wang et al. discuss a more complex method for marginalizing out reasoning paths,
-which deals with the LLM probabilities for each chain of thought. However, they
-do not use this method in their experiments and majority voting seems to usually
-have the same or better performance anyways.
+which deals with the LLM generated probabilities for each chain of thought. However, they
+do not use this method in their experiments, and majority voting seems to usually
+have the same or better performance regardless.

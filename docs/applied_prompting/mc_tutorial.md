@@ -50,7 +50,7 @@ Your answer could differ because of
 
 </details>
 
-The model failed. Does that mean the model is incapable for answering this type of question? Not necessarily. We will dive into techniques we can use to improve model results.
+The model failed. Does that mean the model is incapable for answering this type of question? Not necessarily. We will dive into techniques that we can use to improve model results.
 
 ## The Magic Phrase
 The standard prompt we used above gives little insight into the “reasoning” of GPT's output. We can try adding the phrase `let's explain step by step` like so:
@@ -62,7 +62,7 @@ e) John of Worcester's account included a drawing of the sunspots, which could b
 
 Let’s explain step by step
 ```
-This phrase will increase verbosity of the model. You might get an output like this:
+This phrase will increase the verbosity of the model. You might get an output like this:
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="John of Worcester, an English monk, recorded the sighting, on December 8, 1128, of two unusually large sunspots. Five days later a brilliant aurora borealis (northern lights) was observed in southern Korea. Sunspot activity is typically followed by the appearance of an aurora borealis, after a span of time that averages five days. Thus, the Korean sighting helps to confirm John of Worcester's sighting. Which one of the following, if true, most strengthens the argument?
 a) An aurora borealis can sometimes occur even when there has been no significant sunspot activity in the previous week. 
@@ -81,7 +81,7 @@ The correct answer is C) Only heavy sunspot activity could have resulted in an a
 :::info
 Notice how the model reasons through the problem step-by-step.
 
-The specific term for this behavior is Chain of Thought(@wei2022chain); the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)); the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
+The specific term for this behaviour is Chain of Thought(@wei2022chain); the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)); the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
 :::
 
 ## Improvements
@@ -137,7 +137,7 @@ E) Doesn't Impact - This option does not impact the argument because it is unrel
 
 ### Add Additional Context
 
-Here is an example of a problem which can be easily solved by using Bayes' theorum:
+Here is an example of a problem which can be easily solved by using Bayes' theorem:
 
 ```
 Consider two medical tests, A and B, for a virus. Test A is 90% effective at recognizing the virus when it is

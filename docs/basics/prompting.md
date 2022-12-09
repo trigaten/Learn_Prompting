@@ -13,6 +13,7 @@ can be answered by a language model. Here are two examples of this:
 If you are performing sentiment analysis on Tweets with the binary labels "positive" and "negative",
 you can convert this into a language model format by posing the question "Is this tweet positive or negative?"
 
+For example, the sentence "I love this movie!" is positive, while the sentence "I hate this movie!" is negative.
 Your full prompt could look like this:
 
 ```
@@ -34,7 +35,7 @@ What is 100*100?
 
 # Intro to Prompt Engineering
 
-For this last prompt, GPT-3 (text-davinci-002) (@brown2020language) will actually answer 1,000 (incorrect). This is where
+For this last prompt, GPT-3 (text-davinci-002) sometimes answers 1,000 (incorrect). This is where
 prompt engineering comes in. If, instead of asking `"What is 100*100?"`, we ask 
 `"What is 100*100? Make sure your answer has the correct number of 0s:"`, GPT-3 will
 answer 10,000 (correct). Why is this the case? Why is the additional specification 
@@ -44,7 +45,7 @@ is the focus of the field of Prompt Engineering, as well as this course.
 
 # Vocabulary 
 
-We will cover basic vocabularly here, but frequently assume basic ML/NLP (natural language processing) knowledge. 
+We will cover basic vocabulary here, but frequently assume basic ML/NLP (natural language processing) knowledge. 
 
 Although familiarity with LLMs and MLMs is mostly assumed,
 we provide a short introduct to each concept here:
@@ -61,3 +62,6 @@ replaced with a word from the vocabulary. The model then predicts the word that
 was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
 will predict "chasing" with high probability.
 
+- Sentiment Analysis
+
+Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 

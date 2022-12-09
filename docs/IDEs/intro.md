@@ -8,8 +8,8 @@ Prompt engineering is an iterative design task. More formalized iterative design
 fields (e.g. logo design) have well established tooling which allows designers to
 be more efficient. Similar tooling exists in the prompt engineering space, with
 a variety of prompt engineering IDEs (integrated development environments) having 
-been recently created. There exists a surprising range of such tooling, with everything
-from research interfaces to professionally designs IDEs coming into existence recently.
+recently been created. There exists a surprising range of such tooling, with everything
+from research interfaces to professionally designed IDEs.
 This chapter will provide an overview of some of the tools which may be of interest to
 you as a prompt engineer.
 
@@ -57,7 +57,7 @@ Here is a table of the tools we will be discussing in this chapter:
 **Research Focused**: The tool is designed for research purposes, and may not be as
 user friendly as other tools.
 
-**Business Model**: Type of business model. Left blank if unknown.
+**Business Model**: Type of business model.
 
 
 

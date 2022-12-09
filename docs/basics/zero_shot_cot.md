@@ -6,7 +6,7 @@ sidebar_position: 4
 
 
 Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) is a 
-follow up to CoT prompting (@wei2022chain) which introduces an incredibly 
+follow up to CoT prompting (@wei2022chain), which introduces an incredibly 
 simple zero shot prompt. They find that by appending the words "**Let's think step
 by step.**" to the end of a question, LLMs are able to generate a chain of
 thought that answers the question. From this chain of thought, they are able to
@@ -18,7 +18,7 @@ import ZSImage from '../assets/zero_shot.png';
   <img src={ZSImage} style={{width: "500px"}} />
 </div>
 
-The full Zero-shot-CoT process involves two separate prompts/completions. 
+Technically, the full Zero-shot-CoT process involves two separate prompts/completions. 
 In the below image, the top bubble on the left generates a chain of thought, while the top bubble on
 the right takes in the output from the first prompt (including the first prompt itself),
 and extracts the answer from the chain of thought. This second prompt is a _self augmented_ prompt.
@@ -31,10 +31,11 @@ import ZSProcessImage from '../assets/zero_shot_example.png';
 
 ## Example
 
-Here are a few demos provided courtesy of [Dyno](https://trydyno.com). This first
+Here are a few demos (which only perform reasoning extraction). This first
 demo shows GPT-3 (davinci-003) failing a simple math question, while the second demo uses a 
 Zero-shot-CoT prompt and successfully solves the problem. Feel free to enter your
-OpenAI API key (Click Generate) and play around with the examples.
+OpenAI API key (Click Generate) and play around with the examples. Note how much simpler
+the Zero-shot-CoT prompt is compared to the CoT prompt.
 
 #### Incorrect
 
