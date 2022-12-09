@@ -10,8 +10,12 @@ can be answered by a language model. Here are two examples of this:
 
 #### 1) Sentiment Analysis
 
-If you are performing sentiment analysis on Tweets with the binary labels "positive" and "negative",
+If you are performing sentiment analysis[^1] on Tweets with the binary labels "positive" and "negative",
 you can convert this into a language model format by posing the question "Is this tweet positive or negative?"
+
+[^1]: 
+Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
+For example, the sentence "I love this movie!" is positive, while the sentence "I hate this movie!" is negative.
 
 Your full prompt could look like this:
 
@@ -34,7 +38,7 @@ What is 100*100?
 
 # Intro to Prompt Engineering
 
-For this last prompt, GPT-3 (text-davinci-002) (@brown2020language) will actually answer 1,000 (incorrect). This is where
+For this last prompt, GPT-3 (text-davinci-002) (@brown2020language) sometimes answers 1,000 (incorrect). This is where
 prompt engineering comes in. If, instead of asking `"What is 100*100?"`, we ask 
 `"What is 100*100? Make sure your answer has the correct number of 0s:"`, GPT-3 will
 answer 10,000 (correct). Why is this the case? Why is the additional specification 
