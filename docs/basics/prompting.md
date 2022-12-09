@@ -35,7 +35,7 @@ What is 100*100?
 
 # Intro to Prompt Engineering
 
-For this last prompt, GPT-3 (text-davinci-002) (@brown2020language) sometimes answers 1,000 (incorrect). This is where
+For this last prompt, GPT-3 (text-davinci-002) sometimes answers 1,000 (incorrect). This is where
 prompt engineering comes in. If, instead of asking `"What is 100*100?"`, we ask 
 `"What is 100*100? Make sure your answer has the correct number of 0s:"`, GPT-3 will
 answer 10,000 (correct). Why is this the case? Why is the additional specification 
