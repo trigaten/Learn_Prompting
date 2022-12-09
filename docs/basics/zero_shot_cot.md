@@ -31,10 +31,11 @@ import ZSProcessImage from '../assets/zero_shot_example.png';
 
 ## Example
 
-Here are a few demos provided courtesy of [Dyno](https://trydyno.com). This first
+Here are a few demos. This first
 demo shows GPT-3 (davinci-003) failing a simple math question, while the second demo uses a 
 Zero-shot-CoT prompt and successfully solves the problem. Feel free to enter your
-OpenAI API key (Click Generate) and play around with the examples.
+OpenAI API key (Click Generate) and play around with the examples. Note how much simpler
+the Zero-shot-CoT prompt is compared to the CoT prompt.
 
 #### Incorrect
 
