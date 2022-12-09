@@ -9,7 +9,7 @@ The papers are organized by topic.
 
 🔵 = Paper directly cited in this course. Other papers have informed my understanding of the topic.
 
-Note: since [neither the GPT-3 nor the GPT-3 Instruct paper correspond to davinci models](https://twitter.com/janleike/status/1584618242756132864), I attempt not cite
+Note: since [neither the GPT-3 nor the GPT-3 Instruct paper correspond to davinci models](https://twitter.com/janleike/status/1584618242756132864), I attempt not to
 cite them as such.
 
 ## Prompt Engineering Strategies
