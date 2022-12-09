@@ -17,9 +17,10 @@ import diverse from '../assets/diverse.png';
 
 ## Diverse Prompts
 
-DiVeRSe uses 5 different prompts for tasks. To construct each prompt, they randomly
+DiVeRSe uses 5 different prompts a given input. To construct each prompt, they randomly
 sample a few exemplars from the training set. Here is an example of one such few-shot
-prompt (k=2), with exemplars taken from the [GSM8K benchmark](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). In practice, 5 exemplars are used in prompts for this benchmark.
+prompt (k=2), with exemplars taken from the [GSM8K benchmark](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). In practice, DiVeRSe uses
+5 exemplars in prompts for this benchmark.
 
 
 ```
@@ -82,6 +83,8 @@ At test time, using the voting verifier is a two step process. First, the verifi
 assigns a 0-1 score to each completion based on how likely it is to be correct. Then, the 'voting'
 component sums all of the scores over different answers and yields the final answer.
 
+### Example
+
 Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
 
 <pre>
@@ -115,7 +118,7 @@ Here is a small example. Say we have the following completions for the prompt `W
 </pre>
 
 The verifier will read each completion and assign a score to it. For example, it might assign
-the scores: 0.9, 0.1, 0.2, 0.8, 0.3. Then, the voting component will sum the scores for each
+the scores: 0.9, 0.1, 0.2, 0.8, 0.3 respectively. Then, the voting component will sum the scores for each
 answer.
 
 ```
