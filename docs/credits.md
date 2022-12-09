@@ -12,3 +12,4 @@ Here is a growing list of people who have been instrumental in the creation of t
 - [snpranav](https://twitter.com/snpranav), domain setup
 - [jayo78](https://github.com/jayo78), prefers his emojis on the left
 - [zeyuzhao](https://github.com/Zeyuzhao), prompter-in-training
+- [UMD CLIP Lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), lots of questions answered :)
