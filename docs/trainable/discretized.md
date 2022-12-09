@@ -15,7 +15,7 @@ For example, if we are training on math questions like GSM8K(@cobbe2021training)
 we might start with the prompt `You are a mathematician. Solve this question:`. 
 If we perform prompt tuning on it, then project that back into tokenspace, we might 
 be left with something nonsensical like `A bus is a bus. Do thing here:`. It is often the
-case that this nonsensical prompt can provide better performance on the task!
+case that the soft prompt which maps to this nonsensical prompt can provide better performance on the task!
 
 ## The Waywardness Hypothesis
 
@@ -24,7 +24,7 @@ that given a task, for any discrete target prompt, there exists a
 continuous prompt that projects to it, while performing well on the task.
 
 This means that given 1000 different tasks, there exist 1000 different
-soft performant prompts (one for each task) which map to the same discrete prompt.
+performant soft prompts (one for each task) which map to the same discrete prompt.
 
 ## Interpretability Risks
 
@@ -34,7 +34,7 @@ a discrete prompt which gives a misleading intent.
 
 Consider a soft prompt for ranking resumes. When projected into tokenspace, it might
 be `You hiring manager. Rank good resumes:`. This seems decent, perhaps a bit lacking
-in grammar. However, the token good might have a similar projection as the token for white, and there
+in grammaticality. However, the token `good` might have a similar projection as the token for `white`, and there
 could exist implicit bias in the prompt. Using a slightly different projection method,
 we could end up with `You hiring manager. Rank white resumes:`. This is obviously quite
 different, and could have significant implications.
