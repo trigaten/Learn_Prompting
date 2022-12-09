@@ -6,12 +6,6 @@ style: chicago
 
 # Chain of Thought Prompting
 
-import CoTImage from '../assets/chain_of_thought.png';
-
-<div style={{textAlign: 'center'}}>
-  <img src={CoTImage} style={{width: "250px"}} />
-</div>
-
 Chain of Thought (CoT) prompting (@wei2022chain) is a recently developed prompting
 method, which encourages the LLM to explain its reasoning. The below image(@wei2022chain) 
 shows a standard few shot prompt (left) compared to a chain of thought prompt (right).
