@@ -26,7 +26,7 @@ A:
 
 ## Few Shot Standard Prompts
 
-Few shot standard prompts are just standard prompts that have _exemplars_
+Few shot standard prompts(@liu2021pretrain) are just standard prompts that have _exemplars_
 in them. Exemplars are examples of the task that the prompt is trying to solve, 
 which are included in the prompt itself (@wei2022chain). Few shot standard prompts 
 are sometimes referred to as standard prompts.
