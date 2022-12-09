@@ -15,7 +15,7 @@ expense of some of the more mathematical aspects of PE. Since PE is such an appl
 we aren't missing all that much 😊
 
 
-### THE SINGLE MOST IMPORTANT PART OF THIS COURSE IS YOUR FEEDBACK
+## The single most important part of this course is your feedback!
 If you have any questions, comments, or suggestions, please make an **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, email me at learnprompting@gmail.com, or reach out over Discord/Twitter.
 
 Even the smallest amount of feedback is very helpful!

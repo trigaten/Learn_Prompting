@@ -81,7 +81,7 @@ The correct answer is C) Only heavy sunspot activity could have resulted in an a
 :::info
 Notice how the model reasons through the problem step-by-step.
 
-The specific term for this behavior is Chain of Thought(@wei2022chain); the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)); the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
+The specific term for this behaviour is Chain of Thought(@wei2022chain); the model sequentially generates statements to reach an answer. This is similar to the concept of System 2 thinking (from [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)); the model defaults to system 1 thinking, but can chain system 1 thinking to arrive at a more methodological answer. 
 :::
 
 ## Improvements
@@ -137,7 +137,7 @@ E) Doesn't Impact - This option does not impact the argument because it is unrel
 
 ### Add Additional Context
 
-Here is an example of a problem which can be easily solved by using Bayes' theorum:
+Here is an example of a problem which can be easily solved by using Bayes' theorem:
 
 ```
 Consider two medical tests, A and B, for a virus. Test A is 90% effective at recognizing the virus when it is

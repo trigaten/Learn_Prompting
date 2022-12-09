@@ -12,7 +12,7 @@ Let's look at an example of a basic discussion question:
 
 > _"What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?"_
 
-We can turn this into a simple prompt for GPT3 by prepending <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span> to it.
+We can turn this into a simple prompt for GPT-3 by prepending <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span> to it.
 
 <pre>
     <span style={{backgroundColor: "#FFF2CC"}}>Respond to the following:</span><br/>
@@ -46,7 +46,7 @@ Now we can add formatting and context directions.
     Explain the causes of the Civil War and whether expansion played a role in the conflict. <br/>Include evidence to support your argument.
 </pre>
 
-### Automate well defined prompt rewriting with GPT3
+### Automate well defined prompt rewriting with GPT-3
 
 The rewriting example above was generated with OpenAI's [ChatGPT](https://openai.com/blog/chatgpt/).
 
@@ -60,7 +60,7 @@ After crafting an effective prompt for your discussion question, you now need to
 
 A simple method for iterating is to generate multiple outputs and review them to gain an understanding of the concepts GPT-3 is utilizing and the structure it adheres to. Once the outputs have been evaluated, you can select the most suitable outputs and combine them into a cohesive response. 
 
-Another way to iterate is to start and then **expand step by step**. This requires more than one prompt: A starter prompt to write the intitial paragraph or so and then other prompts to expand on what was already written.
+Another way to iterate is to start and then **expand step by step**. This requires more than one prompt: A starter prompt to write the initial paragraph or so and then other prompts to expand on what was already written.
 
 Here is a potential philosophical discussion question:
 
