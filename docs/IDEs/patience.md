@@ -16,4 +16,4 @@ import Image from '../assets/IDEs/patience.png';
 ## Features
 
 Patience has folder creation, collections/history saving, and a few different models to choose from.
-It also allows modifying various diffusion settings like size and sampling method.
+It also allows for the modification of various diffusion settings like size and sampling method.

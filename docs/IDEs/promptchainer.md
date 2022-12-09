@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # PromptChainer
 
-[PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)(@wu2022promptchainer) is a research tool for prompt engineering. It focuses on chaining prompts together, and the most
+[PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)(@wu2022promptchainer) is a research tool for prompt engineering. It focuses on chaining prompts together, and is the most
 refined research IDE that I have found.
 
 
