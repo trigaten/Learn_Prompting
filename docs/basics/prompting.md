@@ -48,7 +48,7 @@ is the focus of the field of Prompt Engineering, as well as this course.
 We will cover basic vocabulary here, but frequently assume basic ML/NLP (natural language processing) knowledge. 
 
 Although familiarity with LLMs and MLMs is mostly assumed,
-we provide a short introduct to each concept here:
+we provide a short introduction to each concept here:
 
 - Large Language Models (LLMs), Pretrained Language Models (PLMs)(@branch2022evaluating), Language Models (LMs), and foundation models
 
