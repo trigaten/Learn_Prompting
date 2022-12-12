@@ -1,6 +1,6 @@
 {
-  "label": "⚙️ Automated Prompt Engineering",
-  "position": 30,
+  "label": "⚙️ Automated Prompting",
+  "position": 35,
   "link": {
     "type": "generated-index",
     "description": "Methods that automate prompt engineering"
