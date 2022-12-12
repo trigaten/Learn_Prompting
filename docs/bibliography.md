@@ -30,6 +30,10 @@ cite them as such.
 
 #### Maieutic Prompting(@jung2022maieutic)
 
+#### STaR(@zelikman2022star)
+
+#### Least to Most(@zhou2022leasttomost)
+
 ## Reliability
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
@@ -62,6 +66,10 @@ cite them as such.
 
 #### Jurassic 1(@lieberjurassic) 🔵
 
+#### GPT-J-6B(@wange2021gptj)
+
+#### Roberta(@liu2019roberta)
+
 ### Image Models
 
 #### Stable Diffusion(@rombach2021highresolution) 🔵
@@ -89,6 +97,8 @@ cite them as such.
 #### DiffusionDB(@wang2022diffusiondb)
 
 #### The DALLE 2 Prompt Book(@parsons2022dalleprompt) 🔵
+
+#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt)
 
 ## Prompt Engineering IDEs
 
@@ -149,3 +159,9 @@ cite them as such.
 #### On Measuring Social Biases in Prompt-Based Multi-Task Learning(@akyrek2022measuring)
 
 #### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵
+
+#### Examples(@2022examples)
+
+#### Wordcraft(@yuan2022wordcraft)
+
+#### PainPoints(@fadnavis2022pain)
