@@ -61,6 +61,11 @@ import final from '../assets/mrkl/final.png';
   <img src={mrkl_task} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+Example MRKL System (AI21)
+</div>
+
+
 ## An Example
 
 I have reproduced an example MRKL System from the original paper, using Dust.tt, 

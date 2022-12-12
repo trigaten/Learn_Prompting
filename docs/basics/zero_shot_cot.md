@@ -18,6 +18,10 @@ import ZSImage from '../assets/zero_shot.png';
   <img src={ZSImage} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+Zero Shot CoT (Kojima et al.)
+</div>
+
 Technically, the full Zero-shot-CoT process involves two separate prompts/completions. 
 In the below image, the top bubble on the left generates a chain of thought, while the top bubble on
 the right takes in the output from the first prompt (including the first prompt itself),
@@ -27,6 +31,10 @@ import ZSProcessImage from '../assets/zero_shot_example.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSProcessImage} style={{width: "500px"}} />
+</div>
+
+<div style={{textAlign: 'center'}}>
+Full Zero Shot CoT Process (Kojima et al.)
 </div>
 
 ## Example

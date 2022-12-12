@@ -30,6 +30,6 @@ take many hours to develop, this is a real concern.
 
 ## Practice
 
-Try to leak the following prompt(@chase2021adversarial) by appending text to the it:
+Try to leak the following prompt(@chase2021adversarial) by appending text to it:
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="English: I want to go to the park today.\nFrench: Je veux aller au parc aujourd'hui.\nEnglish: I like to wear a hat when it rains.\nFrench: J'aime porter un chapeau quand it pleut.\nEnglish: What are you doing at school?\nFrench: Qu'est-ce que to fais a l'ecole?\nEnglish:" initial-response="" max-tokens="256" box-rows="9" model-temp="0.7" top-p="1"></div>

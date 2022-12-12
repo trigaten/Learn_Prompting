@@ -13,6 +13,10 @@ import Image from '../assets/prompt_tuning.png';
   <img src={Image} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+Model Tuning vs Prompt Tuning (Lester et al.)
+</div>
+
 The above image contrasts model tuning with prompt tuning. 
 In model tuning, you finetune the same model on different tasks. This gives you
 a few different models, with which you can't necessarily batch inputs easily.

@@ -8,6 +8,14 @@ sidebar_position: 3000
 
 Many more prompt engineering papers: https://github.com/thunlp/PromptPapers
 
+### GPT-3 Prompt Examples/Ideas
+
+https://sharegpt.com
+
+https://www.learngpt.com
+
+https://chatgpt.getlaunchlist.com
+
 ## People
 
 [@chillzaza_](https://mobile.twitter.com/chillzaza_) Prompt engineering, tools, toolbot

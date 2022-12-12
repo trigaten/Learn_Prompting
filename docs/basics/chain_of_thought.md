@@ -53,7 +53,7 @@ import PromptedPaLM from '../assets/prompted_palm.png';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Comparison of models on the GSM8K benchmark
+Comparison of models on the GSM8K benchmark (Wei et al.)
 </div>
 
 ## Limitations
