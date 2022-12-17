@@ -15,7 +15,9 @@ you as a prompt engineer.
 
 See the final article in this chapter for my recommendations on tools to use.
 
-🚧 I have not yet been able to access all IDEs mentioned here, so these pages are under construction 🚧
+Due to waitlists, I have not yet been able to access all IDEs mentioned here. 
+Additionally, due to the number of tools coming out, not all have a dedicated page.
+
 
 Here is a table of the tools we will be discussing in this chapter:
 
@@ -38,6 +40,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Human Loop](https://humanloop.com) | ✅ |  | ❌ |  | Wait list| Text | |
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
+| [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
 | [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
 | [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 
