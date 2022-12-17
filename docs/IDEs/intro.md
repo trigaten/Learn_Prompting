@@ -21,6 +21,7 @@ Additionally, due to the number of tools coming out, not all have a dedicated pa
 
 Here is a table of the tools we will be discussing in this chapter:
 
+## Text Prompt IDEs
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart) | ✅ | ❌ | ❌ | Pay per tokens | ✅ | Text | OpenAI|
@@ -41,8 +42,18 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
+| [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
+
+
+## Python Library IDEs
+
+| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+| ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
 | [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
+
+
+## Image Only IDEs
 
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
