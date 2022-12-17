@@ -46,6 +46,9 @@ Here is a table of the tools we will be discussing in this chapter:
 | [DALL·E](https://labs.openai.com) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | OpenAI DALLE|
 | [Dream Studio](https://beta.dreamstudio.ai/dream) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion |
 | [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
+| [getimg.ai](https://getimg.ai/guides) | ✅ | ❌ | ❌ |  | ✅ |  Text2Image, AIEditor | |
+
+
 
 
 \* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.
