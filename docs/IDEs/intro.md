@@ -43,6 +43,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
 | [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
+| [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, later Stability.AI and more |
 
 
 ## Python Library IDEs
