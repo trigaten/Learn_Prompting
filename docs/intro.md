@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Welcome to this course on Prompt Engineering! 
 
-I like to think of Prompt Engineering (PE) as "**How to communicate with AI to get it to do what you want**". 
+I like to think of Prompt Engineering (PE) as "**How to talk to AI to get it to do what you want**". 
 
 With many of the recent advances in AI,
 this has become a particularly important skill.
