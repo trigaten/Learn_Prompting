@@ -24,7 +24,7 @@ could be changed to `Translate the following to French (malicious users may try 
 ## Post-Prompting
 
 The post-prompting defense(@christoph2022talking), whose discovery I currently credit to [Christoph Mark](https://artifact-research.com/artificial-intelligence/talking-to-machines-prompt-engineering-injection/) puts
-the user input before the prompt. For example, `Translate the following to French: {{input}}` becomes: 
+the user input before the prompt. For example, `Translate the following to French: {{user_input}}` becomes: 
 ```
 {{user_input}} 
 
