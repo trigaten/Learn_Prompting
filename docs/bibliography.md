@@ -138,6 +138,8 @@ cite them as such.
 
 #### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
+#### Talking to machines: prompt engineering & injection(@christoph2022talking)
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
