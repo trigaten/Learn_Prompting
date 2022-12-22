@@ -167,3 +167,5 @@ cite them as such.
 #### Wordcraft(@yuan2022wordcraft)
 
 #### PainPoints(@fadnavis2022pain)
+
+#### Self-Instruct: Aligning Language Model with Self Generated Instructions(@wang2022selfinstruct)
