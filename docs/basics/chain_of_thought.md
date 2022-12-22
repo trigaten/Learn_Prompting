@@ -28,7 +28,7 @@ results.
 
 ## Example
 
-Here are a few demos provided courtesy of [Dyno](https://trydyno.com). The first shows GPT-3 (davinci-002)
+Here are a few demos provided courtesy of [Dyno](https://trydyno.com) (below the word **Incorrect**, you should see an interactive embed. If you do not, make sure to turn Javascript on in your browser). The first shows GPT-3 (davinci-002)
 failing to solve a simple word problem. The second shows GPT-3 (davinci-002) succesfully solving the same problem, by using CoT prompting.
 
 #### Incorrect
