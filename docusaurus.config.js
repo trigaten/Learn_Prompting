@@ -9,7 +9,7 @@ async function createConfig() {
   const katex = (await import('rehype-katex')).default;
   return {
     title: 'Learn Prompting',
-    tagline: 'Prompting LLMs is opaque. Lets make it transparent.',
+    tagline: 'Communicate with Artificial Intelligence',
     url: 'https://learnprompting.org',
     baseUrl: '/',
     onBrokenLinks: 'throw',
