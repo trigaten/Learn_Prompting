@@ -89,11 +89,13 @@ async function createConfig() {
             src: 'img/simple_ai.png',
           },
           items: [
+            {to: 'docs/intro', label:"Learn", position:"left"},
             {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
             },
+            
           ],
         },
         footer: {
