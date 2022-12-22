@@ -6,6 +6,8 @@ sidebar_position: 3000
 
 ## Resource
 
+A great prompt engineering intro: https://humanloop.com/blog/prompt-engineering-101
+
 Many more prompt engineering papers: https://github.com/thunlp/PromptPapers
 
 ### GPT-3 Prompt Examples/Ideas
