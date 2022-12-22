@@ -22,3 +22,7 @@ Here is a growing list of LLM products. If you have a product that you would lik
 ## Powerpoint Generation
 
 - [Tome](https://beta.tome.app)
+
+## Games
+
+- [Prompt Monkeys](https://beginnings.prompt-monkeys.ai/game/4)

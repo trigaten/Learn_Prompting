@@ -64,6 +64,8 @@ cite them as such.
 
 #### BLOOM(@scao2022bloom) 🔵
 
+#### BLOOM+1 (more languages/ 0 shot improvements)(@yong2022bloom1)
+
 #### Jurassic 1(@lieberjurassic) 🔵
 
 #### GPT-J-6B(@wange2021gptj)
