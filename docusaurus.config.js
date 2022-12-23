@@ -9,7 +9,7 @@ async function createConfig() {
   const katex = (await import('rehype-katex')).default;
   return {
     title: 'Learn Prompting',
-    tagline: 'Communicate with Artificial Intelligence',
+    tagline: 'A Free, Open Source Course on Communicating with Artificial Intelligence',
     url: 'https://learnprompting.org',
     baseUrl: '/',
     onBrokenLinks: 'throw',
