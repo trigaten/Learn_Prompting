@@ -1,13 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 locale: en-us
 style: chicago
 ---
 
 # More on Prompting
 
-Prompts that we saw in the prior examples consisted solely of a question. However, prompts can be much more complex than this; they can include context, instructions, multiple questions-answer
-examples, and even other prompts (what!?).
+As noted on the previous page, prompts can have varying complexity. They can include context, instructions, multiple questions-answer examples, and even other prompts (what!?).
 
 Given the twitter sentiment analysis example, we could provide additional context,
 as well as examples of positive and negative tweets:
