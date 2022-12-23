@@ -64,6 +64,8 @@ cite them as such.
 
 #### BLOOM(@scao2022bloom) 🔵
 
+#### BLOOM+1 (more languages/ 0 shot improvements)(@yong2022bloom1)
+
 #### Jurassic 1(@lieberjurassic) 🔵
 
 #### GPT-J-6B(@wange2021gptj)
@@ -167,3 +169,7 @@ cite them as such.
 #### Wordcraft(@yuan2022wordcraft)
 
 #### PainPoints(@fadnavis2022pain)
+
+#### Self-Instruct: Aligning Language Model with Self Generated Instructions(@wang2022selfinstruct)
+
+#### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)

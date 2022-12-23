@@ -14,3 +14,4 @@ assembling a list of good resources before writing a guide myself.
 - [Dall-E 2 Prompt Engineering Guide by /u/thequiet and /u/therundy1](https://docs.google.com/document/d/11WlzjBT0xRpQhP9tFMtxzd0q6ANIdHPUBkMV-YB043U/edit)
 - [/r/PromptSharing on Reddit](https://www.reddit.com/r/PromptSharing/)
 - [StableDiffusion Prompt Wiki](https://www.reddit.com/r/StableDiffusion/wiki/tutorials)
+- [Thread of Cool Images](https://twitter.com/ivonatau/status/1605681809680830464)
