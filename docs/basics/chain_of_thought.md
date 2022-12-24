@@ -36,7 +36,7 @@ results.
 
 CoT has been shown to be effective in improving results on tasks like 
 arithmetic, commonsense, and symbolic reasoning tasks (@wei2022chain). 
-In particular, prompted PaLM 540B(@chowdhery2022palm) acheives 57% solve 
+In particular, prompted PaLM 540B(@chowdhery2022palm) achieves 57% solve 
 rate accuracy on GSM8K(@cobbe2021training) (SOTA at the time).
 
 import PromptedPaLM from '../assets/prompted_palm.png';
