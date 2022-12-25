@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Introduction
 
-This article is built for people will little no know experience with prompt engineering
+This article is built for people will little to no experience with prompt engineering
 or even artificial intelligence (AI). The target audience here is everyone from non-technical 
 business students to non-technical adults. We will cover the basics of AI, and why you should 
 care about prompt engineering. 
