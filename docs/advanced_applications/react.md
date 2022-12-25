@@ -27,6 +27,11 @@ import react_qa from '../assets/react_qa.png';
   <img src={react_qa} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+ReAct System (Yao et al.)
+</div>
+
+
 Readers with knowledge of reinforcement learning may recognize this process as similar to the classic
 RL loop of state, action, reward, state,... ReAct provides some formalization for 
 this in their paper.
@@ -37,7 +42,7 @@ this in their paper.
 Google used the PaLM(@chowdhery2022palm) LLM in experiments with ReAct. 
 Comparisons to standard prompting (question only), CoT, and other configurations
 show that ReAct's performance is promising for complex reasoning tasks. Google 
-also performs studies on the fever dataet(@thorne2018fever), which covers
+also performs studies on the fever dataset(@thorne2018fever), which covers
 fact extraction and verification. 
 
 import react_performance from '../assets/react_performance.png';
@@ -46,6 +51,7 @@ import react_performance from '../assets/react_performance.png';
   <img src={react_performance} style={{width: "500px"}} />
 </div>
 
-
-
+<div style={{textAlign: 'center'}}>
+ReAct Results (Yao et al.)
+</div>
 

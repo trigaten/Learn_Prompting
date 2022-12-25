@@ -5,8 +5,8 @@ sidebar_position: 3
 # Soaked 
 
 [Soaked](https://soaked-prompts.vercel.app) is a prompt engineering IDE that
-focuses on visual prompt chaing with a graphical interface. It is currently in
-beta, and is still under active development.
+focuses on visual prompt chaining with a graphical interface. It is currently in
+beta, but active development has ceased.
 
 import Image from '../assets/IDEs/soaked.png';
 
@@ -19,4 +19,4 @@ import Image from '../assets/IDEs/soaked.png';
 Soaked provides a graphical interface for chaining prompts together, 
 where you can easily see how different components flow together. It also 
 provides a lower level prompt view with the option to generate multiple
-completions at once. It also provides a cost estimate for completions. They currently support GPT3 and require an OpenAI key to use.
+completions at once. It also provides a cost estimate for completions. It currently supports GPT3 and requires an OpenAI key to use.

@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Spellbook 🚧
 
-[Spellbook](https://scale.com/spellbook) is a professional prompt IDE.
+[Spellbook](https://scale.com/spellbook) is a professional prompting IDE built by Scale AI.
 
 import Image from '../assets/IDEs/spellbook.png';
 
