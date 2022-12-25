@@ -27,6 +27,11 @@ import react_qa from '../assets/react_qa.png';
   <img src={react_qa} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+ReAct System (Yao et al.)
+</div>
+
+
 Readers with knowledge of reinforcement learning may recognize this process as similar to the classic
 RL loop of state, action, reward, state,... ReAct provides some formalization for 
 this in their paper.
@@ -46,6 +51,7 @@ import react_performance from '../assets/react_performance.png';
   <img src={react_performance} style={{width: "500px"}} />
 </div>
 
-
-
+<div style={{textAlign: 'center'}}>
+ReAct Results (Yao et al.)
+</div>
 

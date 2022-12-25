@@ -3,70 +3,87 @@ sidebar_position: 1
 ---
 # Welcome
 
-Welcome to this course on Prompt Engineering! This course is designed for both 
-ML (machine learning) hobbyists and researchers, with a particular focus on undergraduate researchers
-who often fall somewhere in between. We will cover basic vocabularly below, but
-frequently assume basic ML/NLP (natural language processing) knowledge. Feel free
-to skip this page if you already know what prompt engineering is.
+Welcome to this course on Prompt Engineering! 
 
+I like to think of Prompt Engineering (PE) as "**How to talk to AI to get it to do what you want**". 
 
-# Intro to Prompting
+With many of the recent advances in AI,
+this has become a particularly important skill.
+This course focuses on applied prompt engineering techniques. Minimal knowledge of 
+machine learning is expected; if you have no idea what any of this stuff means, read [this](#novices).
 
-Before we get to Prompt Engineering, what is prompting? It can be defined as 
-"converting tasks into a language model format"(@shin2020autoprompt). Slightly less
-formally, it is the process of taking a task and converting it into a question that
-can be answered by a language model. Here are two examples of this:
+## The single most important part of this course is your feedback!
+If you have any questions, comments, or suggestions, please make an **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, email me at learnprompting@gmail.com, or reach out over [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
 
-#### 1) Sentiment Analysis
+Even the smallest amount of feedback is very helpful!
 
-If you are performing sentiment analysis on Tweets with the binary labels "positive" and "negative",
-you can convert this into a language model format by posing the question "Is this tweet positive or negative?"
+## Course Philosophy
 
-Your full prompt could look like this:
+**Quick Iterations** - Since new PE content is published almost daily, 
+I will update this course frequently with short articles about new techniques.
+Let me know what you want to hear more about!
 
-```
-Tweet: "What a beautiful day!"
+Part of this philosophy is **error iteration**; if you ever see something that you
+don't quite understand, even something small, that's on me. **Please make an [issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
 
-Is this tweet positive or negative?
-```
+**Focus on Practicality** - I will focus on applied, practical techniques that you can use
+immediately for your applications.
 
-#### 2) Math Word Problem Solving
+**Examples ASAP** - I try to put examples in the articles as soon as possible,
+so that you can get a feel for the techniques as soon as possible.
 
-If you have a dataset of mathematical equations that you would like a language model to solve,
-you can convert this into a language model format by posing the question "What is EQUATION"
+I'll philosophize more about this when I have time to 😊
 
-Your full prompt could look like this:
+## How to read
 
-```
-What is 100*100?
-```
+It is not necessary to read all chapters in order. Read what interests you!
 
-# Intro to Prompt Engineering
+That being said, Basics is a good place to start,
+and it discusses some very simple, but powerful, prompt engineering techniques.
 
-For this last prompt, GPT-3 (text-davinci-002) (@brown2020language) will actually answer 1,000 (incorrect). This is where
-prompt engineering comes in. If, instead of asking `"What is 100*100?"`, we ask 
-`"What is 100*100? Make sure your answer has the correct number of 0s:"`, GPT-3 will
-answer 10,000 (correct). Why is this the case? Why is the additional specification 
-of the number of zeros necessary for the AI to get the right answer? How can we create
-prompts which yield optimal results on our task? This last question, in particular,
-is the focus of the field of Prompt Engineering, as well as this course.
+## Chapters
 
-# Vocabulary 
+Here is a quick summary of each chapter:
 
-🚧 Under Construction 🚧
+**Basics**: Intro to PE and simple PE techniques
 
-Although familiarity with LLMs and MLMs is mostly assumed,
-we provide a short introduct to each concept here:
+**Advanced Applications**: Some very powerful, but more advanced applications of PE
 
-- Large Language Models (LLMs)
+**Applied Prompting**: Some complete walkthroughs of the PE process written by community members
 
-LLMs are models which have a large amount of weights, and have usually been trained 
-on a large amount of text.
+**Reliability**: How to make LLMs more reliable
 
-- Masked Language Models (MLMs)
+**Images**: PE for text to image models like DALLE and Stable Diffusion!
 
-MLMs are a type of NLP model, which have a special token, usually `[MASK]`, which is
-replaced with a word from the vocabulary. The model then predicts the word that
-was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
-will predict "chasing" with high probability.
+**Prompt Injection**: Hacking, but for PE
 
+**Prompting IDEs**: Different PE tools
+
+**Prompt Tuning**: Fine tune prompts with gradients
+
+## Novices
+
+If you already have a general idea of prompt engineering, you can skip this section.
+
+Otherwise, here is a quick introduction to AI and prompt engineering. Before we get into that,
+it is important to note that you don't need any technical background to do prompt engineering.
+Most of it is trial and error, and you can learn as you go.
+
+In recent years, researchers have developed a new class of AI models called **Language Models** (LMs).
+These models are trained on large amounts of text, and can be used to generate text. Humans can also interact
+with these models by typing in a some text (a prompt) and seeing what the model says in response. 
+[This website](https://beta.openai.com/playground) is a good place 
+to experiment with talking to a language model. Here is a screengrab from the website:
+
+import diverse from './assets/novice.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={diverse} style={{width: "750px"}} />
+</div>
+
+I just typed in "What is the opposite of the word start?" and the AI said "Stop". 
+Pretty cool! Try asking it to write a story, solve a math problem, or philosophize about the meaning of life.
+
+Sometimes when you ask questions in a better way, the AI will give you a better answer. 
+The process of figuring out these good ways of asking questions is called **prompt engineering**.
+That is the focus of the rest of this guide. 

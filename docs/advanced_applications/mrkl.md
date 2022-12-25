@@ -6,64 +6,119 @@ sidebar_position: 2
 
 MRKL Systems(@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, pronounced "miracle") 
 are a **neuro-symbolic architecture** that combine LLMs (neural computation) and external 
-tools like calculators (symbolic computation) 
-to solve complex problems. 
+tools like calculators (symbolic computation), to solve complex problems. 
+
+A MRKL system is composed of a set of modules (e.g. a calculator, weather API, database, etc.) and a router that decides how to 'route' incoming natural language queries to the appropriate module.
 
 A simple example of a MRKL system is a LLM that can 
-use a calculator app. When asked, "What is 100*100?", the LLM can choose to
-extract the numbers from the prompt, and then use the calculator app to compute
-the result. This might look like the following:
+use a calculator app. This is a single module system, where the LLM is the router.
+When asked, `What is 100*100?`, the LLM can choose to
+extract the numbers from the prompt, and then tell the MRKL System to use a calculator 
+app to compute the result. This might look like the following:
 
-```
-Q: What is 100*100?
+<pre>
+<p>What is 100*100?</p>
 
-A: CALCULATOR[100*100]
-```
+<span style={{backgroundColor: '#d2f4d3'}}>CALCULATOR[100*100]</span>
+</pre>
 
 The MRKL system would see the word `CALCULATOR` and plug `100*100` into the calculator app.
-This simple idea could easily be expanded to various symbolic computing tools (Calculator, Weather API, Database, etc.).
+This simple idea can easily be expanded to various symbolic computing tools.
 
 Consider the following additional examples of applications: 
 
 - A chatbot that is able to respond to questions about a financial database by 
 extracting information to form a SQL query from a users' text.
 
-```
-Q: What is the price of Apple stock right now?
+<pre>
+<p>What is the price of Apple stock right now?</p>
 
-A: DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"]
-```
+<span style={{backgroundColor: '#d2f4d3'}}>The current price is DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"].</span>
+</pre>
 
 - A chatbot that is able to respond to questions about the weather by extracting
 information from the prompt and using a weather API to retrieve the information.
 
-```
-Q: What is the weather like in New York?
+<pre>
+<p>What is the weather like in New York?</p>
 
-A: WEATHER API[New York]
-```
+<span style={{backgroundColor: '#d2f4d3'}}>The weather is WEATHER_API[New York].</span>
+</pre>
 
-- Or even much more complex tasks that depend on multiple datasources such as the
+- Or even much more complex tasks that depend on multiple datasources, such as the
 following:
 
 
 import mrkl_task from '../assets/mrkl_task.png';
+import dataset from '../assets/mrkl/dataset.png';
+import load_dataset from '../assets/mrkl/load_dataset.png';
+import model from '../assets/mrkl/model.png';
+import extract from '../assets/mrkl/extract.png';
+import search from '../assets/mrkl/search.png';
+import final from '../assets/mrkl/final.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={mrkl_task} style={{width: "500px"}} />
 </div>
 
-
-## Notes
-MRKL was developed by [AI21](https://www.ai21.com/) and originally used their 
-J-1 (Jurassic 1)(@lieberjurassic) LLM.
+<div style={{textAlign: 'center'}}>
+Example MRKL System (AI21)
+</div>
 
 
 ## An Example
 
+I have reproduced an example MRKL System from the original paper, using Dust.tt, 
+linked [here](https://dust.tt/trigaten/a/98bdd65cb7). 
+The system reads a math problem (e.g. `What is 20 times 5^6?`), extracts the numbers and the operations,
+and reformats them for a calculator app (e.g. `20*5^6`). It then sends the reformatted equation 
+to Google's calculator app, and returns the result. Note that the original paper performs prompt tuning on the router (the LLM), but I do not in this example. Let's walk through how this works:
+
+First, I made a simple dataset in the Dust `Datasets` tab.
 
 
+<div style={{textAlign: 'center'}}>
+  <img src={dataset} style={{width: "750px"}} />
+</div>
 
+Then, I switched to the `Specification` tab and loaded the dataset using a `data` block.
+
+<div style={{textAlign: 'center'}}>
+  <img src={load_dataset} style={{width: "750px"}} />
+</div>
+
+Next, I created a `llm` block that extracts the numbers and operations. Notice how
+in the prompt I told it we would be using Google's calculator. The model I use (GPT-3)
+likely has some knowledge of Google's calculator from pretraining.
+
+<div style={{textAlign: 'center'}}>
+  <img src={model} style={{width: "750px"}} />
+</div>
+
+Then, I made a `code` block, which runs some simple javascript code to remove 
+spaces from the completion.
+
+<div style={{textAlign: 'center'}}>
+  <img src={extract} style={{width: "750px"}} />
+</div>
+
+Finally, I made a `search` block that sends the reformatted equation to Google's calculator.
+
+<div style={{textAlign: 'center'}}>
+  <img src={search} style={{width: "750px"}} />
+</div>
+
+Below we can see the final results, which are all correct!
+
+<div style={{textAlign: 'center'}}>
+  <img src={final} style={{width: "750px"}} />
+</div>
+
+Feel free to clone and experiment with this playground [here](https://dust.tt/trigaten/a/98bdd65cb7).
+
+## Notes
+MRKL was developed by [AI21](https://www.ai21.com/) and originally used their 
+J-1 (Jurassic 1)(@lieberjurassic) LLM.
 
 ## More
 
