@@ -1,67 +1,56 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 # Prompting
 
-Before we get to Prompt Engineering, what is prompting? It can be defined as 
-"converting tasks into a language model format"(@shin2020autoprompt). Slightly less
-formally, it is the process of taking a task and converting it into a question that
-can be answered by a language model. Here are two examples of this:
+In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
+The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
+a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a question, or
+as complex as multiple paragraphs. 
 
-#### 1) Sentiment Analysis
+Here are two examples of prompts:
 
-If you are performing sentiment analysis on Tweets with the binary labels "positive" and "negative",
-you can convert this into a language model format by posing the question "Is this tweet positive or negative?"
+#### 1) Summarizing an Article
 
-For example, the sentence "I love this movie!" is positive, while the sentence "I hate this movie!" is negative.
-Your full prompt could look like this:
+Say you are reading an article about snowfall in Florida. You want to quickly get the main ideas of the article, so you show the AI what you are reading, and ask for a summary[^2]:
 
 ```
-Tweet: "What a beautiful day!"
+It is very rare for snow to fall in the U.S. state of Florida, especially in the central and southern portions of the state. With the exception of the far northern areas of the state, most of the major cities in Florida have never recorded measurable snowfall, though trace amounts have been recorded, or flurries in the air observed few times each century. According to the National Weather Service, in the Florida Keys and Key West there is no known occurrence of snow flurries since the European colonization of the region more than 300 years ago. In Miami, Fort Lauderdale, and Palm Beach there has been only one known report of snow flurries observed in the air in more than 200 years; this occurred in January 1977. In any event, Miami, Fort Lauderdale, and Palm Beach have not seen snow flurries before or since this 1977 event.
 
-Is this tweet positive or negative?
+Summarize this paragraph in a single sentence:
 ```
+
+Here is the AI's response. It is a much shorter read!
+
+<pre>
+<div style={{backgroundColor: '#d2f4d3'}}>
+Snowfall is extremely rare in Florida, with the exception of the far northern areas, <br/>and only one instance of snow flurries in the air has been recorded in the major cities <br/>of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
+</div>
+</pre>
 
 #### 2) Math Word Problem Solving
 
 If you have a dataset of mathematical equations that you would like a language model to solve,
-you can convert this into a language model format by posing the question "What is EQUATION"
+you can create a prompt by posing the question "What is EQUATION".
 
-Your full prompt could look like this:
+For a given question, your full prompt could look like this:
 
 ```
 What is 100*100?
 ```
 
-# Intro to Prompt Engineering
+For this prompt, GPT-3 (text-davinci-002) (An AI) sometimes answers 1,000 (incorrect). This is where
+prompt engineering comes in.
 
-For this last prompt, GPT-3 (text-davinci-002) sometimes answers 1,000 (incorrect). This is where
-prompt engineering comes in. If, instead of asking `"What is 100*100?"`, we ask 
-`"What is 100*100? Make sure your answer has the correct number of 0s:"`, GPT-3 will
+# Prompt Engineering
+
+If, instead of asking `What is 100*100?`, we ask 
+`What is 100*100? Make sure your answer has the correct number of 0s:`, GPT-3 will
 answer 10,000 (correct). Why is this the case? Why is the additional specification 
 of the number of zeros necessary for the AI to get the right answer? How can we create
 prompts which yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.
 
-# Vocabulary 
+Read on to learn how to engineer good prompts!
 
-We will cover basic vocabulary here, but frequently assume basic ML/NLP (natural language processing) knowledge. 
-
-Although familiarity with LLMs and MLMs is mostly assumed,
-we provide a short introduction to each concept here:
-
-#### Large Language Models (LLMs), Pretrained Language Models (PLMs)(@branch2022evaluating), Language Models (LMs), and foundation models
-
-These terms all refer to the same thing: large neural networks, which have usually been trained 
-on a huge amount of text.
-
-#### Masked Language Models (MLMs)
-
-MLMs are a type of NLP model, which have a special token, usually `[MASK]`, which is
-replaced with a word from the vocabulary. The model then predicts the word that
-was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
-will predict "chasing" with high probability.
-
-#### Sentiment Analysis
-
-Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
+[^2]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida
