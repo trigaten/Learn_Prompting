@@ -24,25 +24,27 @@ Here is the AI's response. It is a much shorter read!
 
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-Snowfall is extremely rare in Florida, with the exception of the far northern areas, and only one instance of snow flurries in the air has been recorded in the major cities of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
+Snowfall is extremely rare in Florida, with the exception of the far northern areas, <br/>and only one instance of snow flurries in the air has been recorded in the major cities <br/>of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
 </div>
 </pre>
 
 #### 2) Math Word Problem Solving
 
 If you have a dataset of mathematical equations that you would like a language model to solve,
-you can convert this into a language model format by posing the question "What is EQUATION".
+you can create a prompt by posing the question "What is EQUATION".
 
-Your full prompt could look like this:
+For a given question, your full prompt could look like this:
 
 ```
 What is 100*100?
 ```
 
+For this prompt, GPT-3 (text-davinci-002) (An AI) sometimes answers 1,000 (incorrect). This is where
+prompt engineering comes in.
+
 # Prompt Engineering
 
-For the prompt `What is 100*100?`, GPT-3 (text-davinci-002) (An AI) sometimes answers 1,000 (incorrect). This is where
-prompt engineering comes in. If, instead of asking `What is 100*100?`, we ask 
+If, instead of asking `What is 100*100?`, we ask 
 `What is 100*100? Make sure your answer has the correct number of 0s:`, GPT-3 will
 answer 10,000 (correct). Why is this the case? Why is the additional specification 
 of the number of zeros necessary for the AI to get the right answer? How can we create

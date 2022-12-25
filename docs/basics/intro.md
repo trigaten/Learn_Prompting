@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Introduction
 
-This chapter is built for people will little no know experience with prompt engineering
+This article is built for people will little no know experience with prompt engineering
 or even artificial intelligence (AI). The target audience here is everyone from non-technical 
 business students to non-technical adults. We will cover the basics of AI, and why you should 
 care about prompt engineering. 
@@ -54,9 +54,10 @@ to an AI, it can likely either do it for you or at least give you a starting poi
 This course will teach you how to communicate with AIs. 
 Read the rest of this chapter, then check out other chapters that interest you.
 In particular, the applied prompting section may be of interest if you would like
-to see how professionals use AI to automate their work.
+to see how professionals use AI to automate their work. You can experiment with AIs
+using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds which you will see throughout this site.
 
-
+Before reading the next articles, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
 
 
 [^1]: Technically, they are not "thinking" like humans, but this is a simple way to explain it.
