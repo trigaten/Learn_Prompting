@@ -52,7 +52,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Get Started 🏃
+            Start Learning 🏃
           </Link>
         </div>
         <div style={{marginTop:"25px"}}>
@@ -78,6 +78,28 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <div class="text--center padding-horiz--md">
+          <hr/>
+          <h1>Media on Learn Prompting</h1>
+          <div className="container" style={{marginBottom:"20px"}}>
+          <div className="row">
+              <div className={clsx('col col--6')}>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pZsJbYIFCCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div className={clsx('col col--6')}>
+                <h3>Stay tuned for a competition with <a href='https://community.towardsai.net/'>Towards AI</a></h3>
+                <img src={require('@site/static/img/towards_ai.png').default} alt="img" height="275px" style={{ alignSelf: 'center' }}/>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className={clsx('col col--12')}>
+              <h4>News Letters</h4>
+              <a href="https://bensbites.beehiiv.com/p/bens-bites-hackathon-win-15k"><img src={require('@site/static/img/bens_bites.webp').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
+              <a href="https://towardsai.net/p/newsletter/this-ai-newsletter-is-all-you-need-25" style={{marginLeft:"20px"}}><img src={require('@site/static/img/towards_ai_small.png').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   );

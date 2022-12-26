@@ -11,7 +11,7 @@ This page will offer some general advice about what is actually important in a p
 ## "Ground Truth Matters Little"
 
 
-Surprisingly, when providing few shot exemplars to in prompts, the actual answers (gold)
+Surprisingly, when providing few shot exemplars in prompts, the actual answers (gold)
 in the exemplars are not important. As shown in the figure below, providing random
 labels in the exemplars barely hurts performance(@min2022rethinking). "Demo" is synonymous
 with exemplar in this image.

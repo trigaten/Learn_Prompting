@@ -9,7 +9,7 @@ async function createConfig() {
   const katex = (await import('rehype-katex')).default;
   return {
     title: 'Learn Prompting',
-    tagline: 'Prompting LLMs is opaque. Lets make it transparent.',
+    tagline: 'A Free, Open Source Course on Communicating with Artificial Intelligence',
     url: 'https://learnprompting.org',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -89,11 +89,13 @@ async function createConfig() {
             src: 'img/simple_ai.png',
           },
           items: [
+            {to: 'docs/intro', label:"Learn", position:"left"},
             {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
             },
+            
           ],
         },
         footer: {

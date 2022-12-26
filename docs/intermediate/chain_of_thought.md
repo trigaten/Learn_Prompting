@@ -28,7 +28,7 @@ results.
 
 ## Example
 
-Here are a few demos provided courtesy of [Dyno](https://trydyno.com). The first shows GPT-3 (davinci-002)
+Here are a few demos. The first shows GPT-3 (davinci-002)
 failing to solve a simple word problem. The second shows GPT-3 (davinci-002) succesfully solving the same problem, by using CoT prompting.
 
 #### Incorrect
@@ -42,8 +42,8 @@ failing to solve a simple word problem. The second shows GPT-3 (davinci-002) suc
 ## Results
 
 CoT has been shown to be effective in improving results on tasks like 
-arithmetic, commonsense, and symbolic reasoning (@wei2022chain). 
-In particular, CoT prompted PaLM 540B(@chowdhery2022palm) acheives 57% solve 
+arithmetic, commonsense, and symbolic reasoning tasks (@wei2022chain). 
+In particular, prompted PaLM 540B(@chowdhery2022palm) achieves 57% solve 
 rate accuracy on GSM8K(@cobbe2021training) (SOTA at the time).
 
 import PromptedPaLM from '../assets/prompted_palm.png';
@@ -53,7 +53,7 @@ import PromptedPaLM from '../assets/prompted_palm.png';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Comparison of models on the GSM8K benchmark
+Comparison of models on the GSM8K benchmark (Wei et al.)
 </div>
 
 ## Limitations

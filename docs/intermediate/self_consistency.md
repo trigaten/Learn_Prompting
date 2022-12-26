@@ -19,6 +19,10 @@ import SCImage from '../assets/self_consistency.png';
   <img src={SCImage} style={{width: "750px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+Self Consistency (Wang et al.)
+</div>
+
 ## Results
 
 Self-consistency has been shown to improve results on arithmetic, commonsense and symbolic reasoning tasks.

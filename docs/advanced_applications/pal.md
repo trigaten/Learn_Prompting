@@ -15,6 +15,11 @@ import image from '../assets/pal.png';
   <img src={image} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+PAL Example (Gao et al.)
+</div>
+
+
 One important thing to note it that PAL actually interleaves natural language (NL) and code.
 In the above image, in blue are natural language reasoning that PAL generates. Although it
 is not shown in the image, PAL actually generates '\#' before each line of NL reasoning, so

@@ -30,6 +30,10 @@ cite them as such.
 
 #### Maieutic Prompting(@jung2022maieutic)
 
+#### STaR(@zelikman2022star)
+
+#### Least to Most(@zhou2022leasttomost)
+
 ## Reliability
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
@@ -62,7 +66,13 @@ cite them as such.
 
 #### BLOOM(@scao2022bloom) 🔵
 
+#### BLOOM+1 (more languages/ 0 shot improvements)(@yong2022bloom1)
+
 #### Jurassic 1(@lieberjurassic) 🔵
+
+#### GPT-J-6B(@wange2021gptj)
+
+#### Roberta(@liu2019roberta)
 
 ### Image Models
 
@@ -84,6 +94,8 @@ cite them as such.
 
 #### Fever(@thorne2018fever) 🔵
 
+#### BBQ: A Hand-Built Bias Benchmark for Question Answering(@parrish2021bbq) 🔵
+
 ## Image Prompt Engineering
 
 #### Taxonomy of prompt modifiers(@oppenlaender2022taxonomy)
@@ -91,6 +103,8 @@ cite them as such.
 #### DiffusionDB(@wang2022diffusiondb)
 
 #### The DALLE 2 Prompt Book(@parsons2022dalleprompt) 🔵
+
+#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt)
 
 ## Prompt Engineering IDEs
 
@@ -130,6 +144,8 @@ cite them as such.
 
 #### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
+#### Talking to machines: prompt engineering & injection(@christoph2022talking)
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
@@ -151,3 +167,13 @@ cite them as such.
 #### On Measuring Social Biases in Prompt-Based Multi-Task Learning(@akyrek2022measuring)
 
 #### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵
+
+#### Examples(@2022examples)
+
+#### Wordcraft(@yuan2022wordcraft)
+
+#### PainPoints(@fadnavis2022pain)
+
+#### Self-Instruct: Aligning Language Model with Self Generated Instructions(@wang2022selfinstruct)
+
+#### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)

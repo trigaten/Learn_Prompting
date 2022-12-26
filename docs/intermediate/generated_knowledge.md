@@ -18,6 +18,10 @@ import KGImage from '../assets/knowledge_generation.png';
   <img src={KGImage} style={{width: "750px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+Generated Knowledge (Liu et al.)
+</div>
+
 ## Knowledge Generation
 
 In the knowledge generation step, the LLM is asked to generate a set of facts
@@ -29,6 +33,11 @@ import KGP1Image from '../assets/gen_k_p1.png';
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
 </div>
+
+<div style={{textAlign: 'center'}}>
+Generated Knowledge Example (Liu et al.)
+</div>
+
 
 ## Knowledge Integration
 

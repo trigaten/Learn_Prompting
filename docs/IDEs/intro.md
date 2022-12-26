@@ -15,10 +15,13 @@ you as a prompt engineer.
 
 See the final article in this chapter for my recommendations on tools to use.
 
-🚧 I have not yet been able to access all IDEs mentioned here, so these pages are under construction 🚧
+Due to waitlists, I have not yet been able to access all IDEs mentioned here. 
+Additionally, due to the number of tools coming out, not all have a dedicated page.
+
 
 Here is a table of the tools we will be discussing in this chapter:
 
+## Text Prompt IDEs
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart) | ✅ | ❌ | ❌ | Pay per tokens | ✅ | Text | OpenAI|
@@ -38,14 +41,29 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Human Loop](https://humanloop.com) | ✅ |  | ❌ |  | Wait list| Text | |
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
+| [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
+| [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
+| [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, later Stability.AI and more |
+
+
+## Python Library IDEs
+
+| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+| ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
 | [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
+
+
+## Image Only IDEs
 
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [DALL·E](https://labs.openai.com) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | OpenAI DALLE|
 | [Dream Studio](https://beta.dreamstudio.ai/dream) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion |
 | [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
+| [getimg.ai](https://getimg.ai/guides) | ✅ | ❌ | ❌ |  | ✅ |  Text2Image, AIEditor | |
+
+
 
 
 \* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.

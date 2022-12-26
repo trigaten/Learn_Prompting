@@ -15,6 +15,11 @@ import diverse from '../assets/diverse.png';
   <img src={diverse} style={{width: "750px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+DiVeRSe (Li et al.)
+</div>
+
+
 ## Diverse Prompts
 
 DiVeRSe uses 5 different prompts a given input. To construct each prompt, they randomly
