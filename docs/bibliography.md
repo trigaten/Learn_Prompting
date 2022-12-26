@@ -92,6 +92,8 @@ cite them as such.
 
 #### Fever(@thorne2018fever) 🔵
 
+#### BBQ: A Hand-Built Bias Benchmark for Question Answering(@parrish2021bbq) 🔵
+
 ## Image Prompt Engineering
 
 #### Taxonomy of prompt modifiers(@oppenlaender2022taxonomy)
