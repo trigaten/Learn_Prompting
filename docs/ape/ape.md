@@ -12,7 +12,7 @@ a few shot exemplars, and ask it generate a prompt that would create these exemp
 
 For example, if we give the LLM the following prompt:
 
-```
+```text
 Is a banana a fruit?
 Yes
 Is a tomato a fruit?
@@ -21,10 +21,9 @@ Is a fish a fruit?
 No
 
 What would be a good prompt to generate an answer to the above questions?
-
 ```
 
-<pre>
+```text
 banana
 Yes
 
@@ -38,8 +37,7 @@ watermelon
 Yes
 
 What would be a good prompt to generate an answer to the above questions?
-
-    <span style={{backgroundColor: "#D2F4D3"}}>
-    Is the following item a fruit:
-    </span>
-</pre>
+// highlight-start
+Is the following item a fruit:
+// highlight-end
+```

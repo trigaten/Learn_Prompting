@@ -54,6 +54,8 @@ cite them as such.
 
 #### TEMPERA(@zhang2022tempera) 🔵
 
+#### RLPrompt(@deng2022rlprompt)
+
 ## Models
 
 ### Language Models
