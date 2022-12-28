@@ -4,11 +4,15 @@ sidebar_position: 4
 
 # Jailbreaking
 
-In the case of Large Language Models (LLMs), jailbreaking refers to generating prompts to bypass the safety features placed by its creators to generate unauthorized responses(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
+Jailbreaking refers to generating prompts which bypass the safety features placed 
+on LLMs by their creators. Jailbreaking allows for the generation of unauthorized or undesirable
+responses(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
 
 ## Methodologies of Jailbreaking
 
-OpenAI, among other companies or organizations that create LLMs, include content moderation to ensure their models do not produce controversial (violent, sexual, illegal, etc.) responses(@markov_2022)(@openai_api). As with many models, ChatGPT has known difficulties balancing between rejecting harmful prompts and answering the prompt as best as possible(@openai_chatgpt). Jailbreaking scenarios blur the distinction, implicitly exploiting its weaknesses.
+OpenAI, among other companies or organizations that create LLMs, includes content moderation 
+features to ensure that their models do not produce controversial (violent, sexual, illegal, etc.) 
+responses(@markov_2022)(@openai_api). As with many models, ChatGPT has known difficulties balancing between rejecting harmful prompts and answering the prompt as best as possible(@openai_chatgpt). Jailbreaking scenarios blur the distinction, implicitly exploiting its weaknesses.
 
 A common method of jailbreaking is pretending to engage in harmful content. As an actor, it is implied that plausible harm does not exist. Therefore, ChatGPT assumes it is safe to give adversarial responses. Below are examples of this principle:
 
@@ -46,4 +50,12 @@ import hotwire from '../assets/jailbreak/hotwire_jailbreak.png';
 
 ## Implications
 
-It is important to note that generating unauthorized content flagged by OpenAI's Moderation API will be sent for review, and action may be taken against your account. Additionally, ethical implications of the prompt’s content should be taken into consideration.
+It is important to note that generating unauthorized content flagged by OpenAI's Moderation API will be sent for review, and action may be taken against user accounts. Additionally, ethical implications of the prompt’s content should be taken into consideration.
+
+
+## Notes
+
+Jailbreaking is an important safety topic for model developers to understand, 
+so they can build in the proper safeguards to prevent malicious actors from
+exploiting their models.
+
