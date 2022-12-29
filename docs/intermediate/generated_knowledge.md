@@ -10,7 +10,7 @@ sidebar_position: 7
 The generated knowledge approach(@liu2021generated) asks the LLM to generate
 potentially useful information about the question before generating a response.
 This approach is composed of two intermediate steps, knowledge generation and 
-knolwedge intregration. 
+knowledge intregration. 
 
 import KGImage from '../assets/knowledge_generation.png';
 
