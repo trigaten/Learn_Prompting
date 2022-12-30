@@ -90,7 +90,7 @@ async function createConfig() {
           },
           items: [
             {to: 'docs/intro', label:"Learn", position:"left"},
-            {to: 'contribute/intro', label:"Contribute", position:"left"},
+            {to: 'contribute', label:"Contribute", position:"left"},
             {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
