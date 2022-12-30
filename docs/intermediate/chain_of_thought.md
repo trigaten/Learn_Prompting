@@ -4,7 +4,7 @@ locale: en-us
 style: chicago
 ---
 
-# Chain of Thought Prompting
+# 🟢 Chain of Thought Prompting
 
 Chain of Thought (CoT) prompting (@wei2022chain) is a recently developed prompting
 method, which encourages the LLM to explain its reasoning. The below image(@wei2022chain) 

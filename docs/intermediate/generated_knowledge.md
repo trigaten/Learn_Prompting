@@ -2,9 +2,7 @@
 sidebar_position: 7
 ---
 
-# Generated Knowledge
-
-
+# 🟡 Generated Knowledge
 
 
 The generated knowledge approach(@liu2021generated) asks the LLM to generate

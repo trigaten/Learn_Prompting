@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Resources
+# 🟢 Resources
 
 The image prompt engineering field is so diverse that I'm currently focusing on 
 assembling a list of good resources before writing a guide myself.

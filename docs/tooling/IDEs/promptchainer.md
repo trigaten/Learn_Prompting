@@ -8,7 +8,7 @@ sidebar_position: 8
 refined research IDE that I have found.
 
 
-import Image from '../assets/IDEs/promptchainer.png';
+import Image from '../../assets/tooling/promptchainer.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

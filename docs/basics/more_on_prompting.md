@@ -4,7 +4,7 @@ locale: en-us
 style: chicago
 ---
 
-# More on Prompting
+# 🟢 More on Prompting
 
 As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, multiple questions-answer examples, and even other prompts (what!?).
 

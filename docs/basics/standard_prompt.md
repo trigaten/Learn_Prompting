@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# A "Standard" Prompt
+# 🟢 A "Standard" Prompt
 
 We have heard of a few different formats of prompts thus far. 
 Following Kojima et al. (@kojima2022large), we will refer to prompts that consist 
@@ -11,7 +11,8 @@ a question that are in the QA format to be "standard" prompts.
 
 #### Why should I care?
 
-Many articles which we reference use this term; We are defining it so that we can discuss new types of prompts in contrast to standard prompts. 
+Many articles that we reference use this term. We are defining it so we can discuss 
+new types of prompts in contrast to standard prompts. 
 
 ### Two examples of standard prompts:
 
