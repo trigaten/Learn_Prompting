@@ -2,7 +2,8 @@
 
 This site is **open source** and contributions are extremely welcome. 
 You can find the source code on [GitHub](https://github.com/trigaten/Learn_Prompting),
-along with many [open issues](https://github.com/trigaten/Learn_Prompting/issues).
+along with many [open issues](https://github.com/trigaten/Learn_Prompting/issues). 
+Please reach out at learnprompting@gmail.com if you have any questions.
 
 In particular, we are looking for help with:
 
@@ -20,3 +21,4 @@ issues for papers we have yet to add.
 
 Everything from fixing typos to recommendations for the site (suggest papers, 
 layout changes, tell us what you want to learn about, etc.)
+
