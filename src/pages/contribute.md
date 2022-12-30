@@ -17,8 +17,15 @@ This could be reading new prompt engineering papers and writing pages about them
 or writing articles on more anecdotal topics. Most all content is welcome. See open
 issues for papers we have yet to add.
 
+Something important to not when adding content is that we try to write articles 
+on techniques rather than papers. This means that multiple techniques used in a paper
+could be spread across multiple articles. The reasoning for this is, in part, that
+papers often reuse techniques, and we want to avoid repeating ourselves. Additionally,
+articles on bite sized, single techniques are easier to read and understand.
+
 ## 3. Miscl.
 
 Everything from fixing typos to recommendations for the site (suggest papers, 
 layout changes, tell us what you want to learn about, etc.)
 
+We need help maintaining the list of prompt engineering tools and products that use prompting.
