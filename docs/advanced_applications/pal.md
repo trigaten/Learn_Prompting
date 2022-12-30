@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 🟡 PAL
+# 🟡 Code as Reasoning
 
 [Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) are another example of a MRKL system.
 When given a question, PALs are able to **write code** that solves this question. They send the

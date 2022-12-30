@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 🟡 DiVeRSe
+# 🟡 Diverse Prompts
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") is
 a method that improves the reliability of answers in a threefold manner. It does this by
