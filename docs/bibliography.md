@@ -46,6 +46,8 @@ cite them as such.
 
 #### Enhanced Self Consistency(@mitchell2022enhancing)
 
+#### Bias and Toxicity in Zero-Shot CoT(@shaikh2022second) 🔵
+
 ## Automated Prompt Engineering
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
