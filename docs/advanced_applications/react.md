@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# ReAct
+# 🟡 ReAct
 
 ReAct(@yao2022react)(reason, act) is a paradigm for enabling language models to solve complex 
 tasks using natural language reasoning. ReAct is designed for tasks in which the LLM is 

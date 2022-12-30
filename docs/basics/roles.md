@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Role Prompting
+# 🟢 Role Prompting
 
 Another prompting technique is to assign a role to the AI. For example, your 
 prompt could start off with "You are a doctor" or "You are a lawyer" and then 

@@ -40,8 +40,21 @@ I'll philosophize more about this when I have time to 😊
 
 It is not necessary to read all chapters in order. Read what interests you!
 
-That being said, Basics is a good place to start,
-and it discusses some very simple, but powerful, prompt engineering techniques.
+If you are a complete novice, read below then start with the Basics section.
+If not, starting with the Intermediate section may be more useful.
+
+Articles are rated by difficulty, and are labeled with the following:
+
+🟢 Very easy; no programming required
+
+🟡 Easy; simple programming required, but no domain expertise
+
+🔴 Medium; programming required, and some domain expertise to implement (e.g. computing log probs)
+
+🟣 Hard; programming required, and robust domain expertise to implement (e.g. reinforcement learning approaches)
+
+Note: even though for 🔴🟣 problems domain expertise is helpful, usually you will still
+be able to understand the article.
 
 ## Chapters
 

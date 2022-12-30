@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Introduction
+# 🟢 Introduction
 
 This article is built for people will little to no experience with prompt engineering
 or even artificial intelligence (AI). The target audience here is everyone from non-technical 

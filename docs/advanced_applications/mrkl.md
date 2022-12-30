@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# MRKL
+# 🟡 MRKL
 
 MRKL Systems(@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, pronounced "miracle") 
 are a **neuro-symbolic architecture** that combine LLMs (neural computation) and external 

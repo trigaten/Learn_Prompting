@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Interpretable Soft Prompts
+# 🔴 Interpretable Soft Prompts
 
 Soft prompts are a sequence of vectors which
 don't correspond to any actual tokens in the vocabulary. This makes it difficult

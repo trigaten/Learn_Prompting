@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Calibration
+# 🔴 Calibration
 
 It is possible to counteract some of the biases LLMs exhibit via calibrating **output 
 distributions**(@zhao2021calibrate). 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Prompting
+# 🟢 Prompting
 
 In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
 The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
