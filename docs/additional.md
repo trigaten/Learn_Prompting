@@ -14,9 +14,7 @@ Many more prompt engineering papers: https://github.com/thunlp/PromptPapers
 
 CMU class on prompt engineering: https://youtu.be/5ef83Wljm-M
 
-## Facts
-
-GPT-3 is *NOT* deterministic: https://twitter.com/BorisMPower/status/1608522707372740609
+How Copilot works: https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html
 
 ### GPT-3 Prompt Examples/Ideas
 
@@ -25,6 +23,10 @@ https://sharegpt.com
 https://www.learngpt.com
 
 https://chatgpt.getlaunchlist.com
+
+## Facts
+
+GPT-3 is *NOT* deterministic: https://twitter.com/BorisMPower/status/1608522707372740609
 
 ## People
 
