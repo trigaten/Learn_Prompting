@@ -6,7 +6,7 @@ sidebar_position: 11
 
 [Spellbook](https://scale.com/spellbook) is a professional prompting IDE built by Scale AI.
 
-import Image from '../assets/IDEs/spellbook.png';
+import Image from '../../assets/IDEs/spellbook.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

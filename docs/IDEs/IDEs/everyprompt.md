@@ -8,7 +8,7 @@ sidebar_position: 5
 that provides a professional interface for single prompt iteration.
 
 
-import Image from '../assets/IDEs/everyprompt.png';
+import Image from '../../assets/IDEs/everyprompt.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
