@@ -22,7 +22,7 @@ We are actively looking for:
 
 
 
-# Local Development
+## Local Development
 
 ```
 $ npm i
@@ -30,3 +30,16 @@ $ npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Cite
+
+```
+@misc{schulhoff2022learnprompting,
+    title={Learn Prompting},
+    author={Sander Schulhoff and Community Contributors},
+    url={https://learnprompting.org}
+    year={2022},
+    month={Dec},
+    day={1}
+}
+```
