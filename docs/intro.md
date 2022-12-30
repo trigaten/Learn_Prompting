@@ -3,38 +3,38 @@ sidebar_position: 1
 ---
 # Welcome
 
-Welcome to this course on Prompt Engineering! 
+Welcome to this course on prompt engineering! 
 
-I like to think of Prompt Engineering (PE) as "**How to talk to AI to get it to do what you want**". 
+I like to think of prompt engineering (PE) as: **How to talk to AI to get it to do what you want**. 
 
 
 
-With many of the recent advances in AI,
+With many of the recent advances in artificial intelligence (AI),
 this has become a particularly important skill.
-This course focuses on applied prompt engineering techniques. Minimal knowledge of 
-machine learning is expected; if you have no idea what any of this stuff means, read the next page.
+This course focuses on applied PE techniques. Minimal knowledge of 
+machine learning is expected. If you have no idea what any of this stuff means, read the Introduction in Basics.
 
 ## The single most important part of this course is your feedback!
 If you have any questions, comments, or suggestions, please make an **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, email me at learnprompting@gmail.com, or reach out over [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
 
 Even the smallest amount of feedback is very helpful!
 
-## Course Philosophy
+## Course philosophy
 
 **Quick Iterations** - Since new PE content is published almost daily, 
 I will update this course frequently with short articles about new techniques.
 Let me know what you want to hear more about!
 
-Part of this philosophy is **error iteration**; if you ever see something that you
+Part of this philosophy is **error iteration**. If you ever see something that you
 don't quite understand, even something small, that's on me. **Please make an [issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
 
 **Focus on Practicality** - I will focus on applied, practical techniques that you can use
 immediately for your applications.
 
 **Examples ASAP** - I try to put examples in the articles as soon as possible,
-so that you can get a feel for the techniques as soon as possible.
+so you can get a feel for the techniques as soon as possible.
 
-I'll philosophize more about this when I have time to 😊
+I'll philosophize more about this when I have time 😊
 
 ## How to read
 

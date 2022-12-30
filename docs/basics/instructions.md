@@ -7,7 +7,7 @@ One of the simplest prompting methods is just giving instructions. We already sa
 in a previous section (`What is 100*100? Make sure your answer has the correct number of 0s:`). However,
 modern AIs can follow much more complex instructions. 
 
-Below is an example (It is a Dyno interactive embed. If you do not see it, make sure to turn Javascript on in your browser). Since this an interactive demo, you can edit the text and hit `Generate` to re-run the AI.
+Below is an example that is a Dyno interactive embed. If you do not see it, make sure to turn Javascript on in your browser. Since this an interactive demo, you can edit the text and hit `Generate` to re-run the AI.
 
 #### Example 1
 
