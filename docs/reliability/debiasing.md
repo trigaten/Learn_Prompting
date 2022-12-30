@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Prompt Debiasing
+# 🟢 Prompt Debiasing
 
 This page covers a few simple techniques to debias your prompts.
 

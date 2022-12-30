@@ -114,6 +114,8 @@ cite them as such.
 
 #### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
 
+#### PromptMaker(@jiang2022promptmaker) 🔵
+
 ## Applied Prompt Engineering
 
 #### Language Model Cascades(@dohan2022language)

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Role Prompting
+# 🟢 Role Prompting
 
 Another prompting technique is to assign a role to the AI. For example, your 
 prompt could start off with "You are a doctor" or "You are a lawyer" and then 
@@ -26,13 +26,13 @@ This is a correct answer, but if the AI had simply been prompted with `What is 1
 it would have answered `280` (incorrect). 
 
 When assigning a role to the AI, we are giving it some context. This context
-helps the AI to understand the question better. With better understanding of the question,
+helps the AI understand the question better. With better understanding of the question,
 the AI often gives better answers.
 
 ## Notes
 
 This technique is no longer as effective with more modern AIs (e.g. GPT-3 davinci-003).
-That being said, I did use GPT-3 davinci-003 for this example, so it seems that 
+However, I did use GPT-3 davinci-003 for this example, so it seems that 
 role prompting is still at least a somewhat effective tool.
 
 🚧 This page needs citations 🚧
