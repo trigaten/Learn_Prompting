@@ -154,6 +154,10 @@ cite them as such.
 
 #### PromptPapers(@ning2022papers)
 
+## Dataset Generation
+
+#### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
+
 ## Miscl
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
