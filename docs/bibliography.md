@@ -158,11 +158,17 @@ cite them as such.
 
 #### OpenAI ChatGPT(@openai_chatgpt)
 
-#### ChatGPT 4 Jailbreak Tweet(@alice2022jailbreak)
+#### ChatGPT 4 Tweet(@alice2022jailbreak)
 
-#### Acting Jailbreak Tweet(@miguel2022jailbreak)
+#### Acting Tweet(@miguel2022jailbreak)
 
-#### Research Jailbreak Tweet(@derek2022jailbreak)
+#### Research Tweet(@derek2022jailbreak)
+
+#### Pretend Ability Tweet(@nero2022jailbreak)
+
+#### Responsibility Tweet(@nick2022jailbreak)
+
+#### Sudo Mode Tweet(@jonas2022jailbreak)
 
 ## Surveys
 
