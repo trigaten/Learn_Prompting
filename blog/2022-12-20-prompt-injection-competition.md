@@ -37,6 +37,17 @@ We plan to open source all submitted prompts at the end of the competition.
 **We will anonymize submisions before doing so**. We hope to help the open source 
 community learn from this competition and improve the safety of AI models.
 
+## Code of Conduct
+
+
+1. No harassment or discrimination will be tolerated. This includes, but is not limited to, harassment based on race, ethnicity, religion, gender, gender identity, sexual orientation, age, or disability.
+2. Be mindful of the language you use. Use inclusive language that respects the identities and backgrounds of all attendees. This applies to the prompts that you submit. Please do not submit prompts that are offensive or discriminatory.
+3. Do not use any copyrighted materials without permission.
+4. Do not use any illegal materials.
+5. Do not use any materials that violate the terms of service of any platform, in particular LLM API platforms like OpenAI.
+
+By participating in this hackathon, you agree to abide by this code of conduct. If you see someone violating this code of conduct, please report it to: learnprompting@gmail.com
+
 
 ## 😊 Level 0: Getting Started
 
