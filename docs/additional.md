@@ -28,7 +28,7 @@ https://chatgpt.getlaunchlist.com
 
 GPT-3 is *NOT* deterministic: https://twitter.com/BorisMPower/status/1608522707372740609
 
-## People
+## People to follow
 
 [@chillzaza_](https://mobile.twitter.com/chillzaza_) Prompt engineering, tools, toolbot
 
@@ -37,3 +37,5 @@ GPT-3 is *NOT* deterministic: https://twitter.com/BorisMPower/status/16085227073
 [@goodside](https://twitter.com/goodside/status/1588247865503010816) Prompt Injection, PE tooling
 
 [@hwchase17](https://twitter.com/hwchase17) Core dev of langchain
+
+[@omarsar0](https://twitter.com/omarsar0) DAIR AI lead
