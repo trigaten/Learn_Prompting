@@ -38,3 +38,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 ## Games
 
 - [Prompt Monkeys](https://beginnings.prompt-monkeys.ai/game/4)
+
+## Programming tools
+
+- [Code GPT -  VSCode Extension](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt) 
