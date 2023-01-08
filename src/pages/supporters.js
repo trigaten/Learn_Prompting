@@ -27,8 +27,7 @@ function Feature({Svg, title, link}) {
         
       </div>
       <div className="text--center padding-horiz--md">
-        <a href="link"><h3>{title}</h3></a>
-        
+        <a href={link}><h3>{title}</h3></a> 
       </div>
       </center>
     </div>
