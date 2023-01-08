@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# What's in a Prompt?
+# 🟢 What's in a Prompt?
 
 We have gone through a few different prompting strategies in the previous pages.
 This page will offer some general advice about what is actually important in a prompt.

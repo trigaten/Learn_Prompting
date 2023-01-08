@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Self-Consistency
+# 🟡 Self-Consistency
 
 Self-consistency(@wang2022selfconsistency) is a follow up to CoT that generates
 multiple chains of thought instead of just one, then takes the majority answer

@@ -2,10 +2,10 @@
 sidebar_position: 0
 ---
 
-# Introduction
+# 🟢 Introduction
 
-This article is built for people will little to no experience with prompt engineering
-or even artificial intelligence (AI). The target audience here is everyone from non-technical 
+This article is built for people with little to no experience with prompt engineering
+or even AI. The target audience here is everyone from non-technical 
 business students to non-technical adults. We will cover the basics of AI, and why you should 
 care about prompt engineering. 
 
@@ -13,20 +13,20 @@ If you already know the basics of prompt engineering/AI, feel free to skip to th
 
 ## What is AI?
 
-For our purposes, Artificial Intelligence (AI) is a field in which people have created
-"smart" algorithms which "think" like humans[^1]. These algorithms can write **essays**, 
+For our purposes, artificial intelligence (AI) is a field in which people have created
+"smart" algorithms that "think" like humans[^1]. These algorithms can write **essays**, 
 solve **math problems**, and create **art**. Recent advances in the field have created AIs
 so advanced that they can write convincing **sales emails**, **news articles**, and even 
 **win [art competitions](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
 
 AI is currently revolutionizing many industries, including **journalism**, **healthcare**, and
-**education**. You will likely see them employed in your workplace/classroom soon if you have not
-already. Although they are extremely useful, they require humans to direct them on what to do.
-Often AIs are like very smart five year olds. They can do a lot of things, but they need 
+**education**. You will likely see it deployed in your workplace/classroom soon if you have not
+already. Although AI is extremely useful, it requires humans to direct it on what to do.
+Often AIs are like very smart five-year-olds. They can do a lot of things, but they need 
 careful instruction to do them well.
 
-Being able to properly direct AIs is a very powerful skill. But how do you actually 
-communicate with them? The AIs this course discusses understand English (and other languages),
+Being able to properly direct AIs is a very powerful skill. But how do you communicate with them? 
+The AIs this course discusses understand English (and other languages),
 so we can usually just describe tasks that we want done. For example, we can tell an AI to
 `Write an essay about the benefits of AI` and it would say[^2]:
 
@@ -45,7 +45,7 @@ Overall, AI has the potential to revolutionize many aspects of our lives. From a
 ## Why should I care?
 
 AI can be used to automate tasks that you spend countless hours doing *right now*.
-We mentioned a number of examples above, but consider any slightly repetitive task you do.
+We mentioned several examples above, but you can also consider any slightly repetitive task you do.
 It could be writing emails, writing reports, or even writing code. If you can describe the task
 to an AI, it can likely either do it for you or at least give you a starting point. 
 
@@ -55,9 +55,9 @@ This course will teach you how to communicate with AIs.
 Read the rest of this chapter, then check out other chapters that interest you.
 In particular, the applied prompting section may be of interest if you would like
 to see how professionals use AI to automate their work. You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds which you will see throughout this site.
+using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds that you will see throughout this site.
 
-Before reading the next articles, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
+Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
 
 
 [^1]: Technically, they are not "thinking" like humans, but this is a simple way to explain it.

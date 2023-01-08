@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Prompting
+# 🟢 Prompting
 
 In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
 The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
@@ -39,7 +39,7 @@ For a given question, your full prompt could look like this:
 What is 100*100?
 ```
 
-For this prompt, GPT-3 (text-davinci-002) (An AI) sometimes answers 1,000 (incorrect). This is where
+For this prompt, GPT-3 (text-davinci-002) (an AI) sometimes answers 1,000 (incorrect). This is where
 prompt engineering comes in.
 
 # Prompt Engineering
@@ -48,7 +48,7 @@ If, instead of asking `What is 100*100?`, we ask
 `What is 100*100? Make sure your answer has the correct number of 0s:`, GPT-3 will
 answer 10,000 (correct). Why is this the case? Why is the additional specification 
 of the number of zeros necessary for the AI to get the right answer? How can we create
-prompts which yield optimal results on our task? This last question, in particular,
+prompts that yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.
 
 Read on to learn how to engineer good prompts!

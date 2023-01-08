@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Solve Discussion Questions
+# 🟢 Solve Discussion Questions
 
 import Auto from '../assets/short_content_auto.png';
 
