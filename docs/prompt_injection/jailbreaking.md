@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Jailbreaking
+# 🟢 Jailbreaking
 
 Jailbreaking refers to generating prompts which bypass the safety features placed 
 on LLMs by their creators. Jailbreaking allows for the generation of unauthorized or undesirable
