@@ -30,3 +30,7 @@ Here is a growing list of LLM products. If you have a product that you would lik
 ## Games
 
 - [Prompt Monkeys](https://beginnings.prompt-monkeys.ai/game/4)
+
+## Programming tools
+
+- [Code GPT -  VSCode Extension](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt) 
