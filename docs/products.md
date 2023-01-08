@@ -15,6 +15,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Perplexity](https://www.perplexity.ai/)
 - [you.com](https://you.com/)
 - [Neeva](https://neeva.com/index)
+- [Phind](https://phind.com/)
 
 
 ## Personal Assistants
