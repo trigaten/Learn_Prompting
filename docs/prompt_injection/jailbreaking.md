@@ -4,21 +4,22 @@ sidebar_position: 4
 
 # 🟢 Jailbreaking
 
-Jailbreaking refers to generating prompts which bypass the safety features placed 
-on LLMs by their creators. Jailbreaking allows for the generation of unauthorized or undesirable
-responses(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
+Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety and moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
 
 ## Methodologies of Jailbreaking
 
 OpenAI, among other companies or organizations that create LLMs, includes content moderation 
 features to ensure that their models do not produce controversial (violent, sexual, illegal, etc.) 
-responses(@markov_2022)(@openai_api). As with many models, ChatGPT has known difficulties balancing between rejecting harmful prompts and responding to prompts directly (by mimicking natural language) with information available in its knowledge base(@openai_chatgpt). Jailbreaking scenarios broaden the scope of responses by framing the prompts in certain scenarios which have not been trained for violating safeguards.
+responses(@markov_2022)(@openai_api). This page discusses jailbreaks with ChatGPT (an OpenAI model), which has known difficulties deciding whether to reject harmful prompts (@openai_chatgpt). Prompts that successfully jailbreak the model often provide context
+for certain scenarios that the model has not been trained against.
 
 ### Pretending
 
-A common method of jailbreaking is pretending to engage in harmful content. As an actor, it is implied that plausible harm does not exist. Therefore, ChatGPT assumes it is safe to give adversarial responses.
+A common method of jailbreaking is _pretending_. If ChatGPT is asked about a
+future event, it will often say that it does not know, since it has yet to occur.
+The below prompt forces it to yield a possible answer:
 
-#### Pretend Abilities
+#### Simple Pretending
 
 import pretend from '../assets/jailbreak/pretend_jailbreak.png';
 
@@ -36,7 +37,7 @@ import actor from '../assets/jailbreak/chatgpt_actor.jpg';
   <img src={actor} style={{width: "500px"}} />
 </div>
 
-This example by [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) demonstrates an acting scenario between two people discussing a robbery, causing ChatGPT to assume the role of the character(@miguel2022jailbreak).
+This example by [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) demonstrates an acting scenario between two people discussing a robbery, causing ChatGPT to assume the role of the character(@miguel2022jailbreak). As an actor, it is implied that plausible harm does not exist. Therefore, ChatGPT appears to assume it is safe to give follow provided user input about how to break into a house.
 
 ### Reward System
 
