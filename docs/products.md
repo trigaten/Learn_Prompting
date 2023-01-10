@@ -42,3 +42,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 ## Programming tools
 
 - [Code GPT -  VSCode Extension](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt) 
+
+## Product Photography
+
+- [88stacks](https://88stacks.com/)
