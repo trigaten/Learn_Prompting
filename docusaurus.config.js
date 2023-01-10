@@ -15,7 +15,7 @@ async function createConfig() {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-  
+
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'trigaten', // Usually your GitHub org/user name.
@@ -29,10 +29,13 @@ async function createConfig() {
       defaultLocale: 'en',
       locales: ['en'],
     },
-  
+
+    plugins: [
+      '@docusaurus-terminology/parser'
+    ],
     presets: [
       [
-        
+
         'classic',
         ({
           gtag: {
@@ -89,9 +92,9 @@ async function createConfig() {
             src: 'img/simple_ai.png',
           },
           items: [
-            {to: 'docs/intro', label:"Learn", position:"left"},
-            {to: 'contribute', label:"Contribute", position:"left"},
-            {to: 'supporters', label:"Supporters", position:"left"},
+            { to: 'docs/intro', label: "Learn", position: "left" },
+            { to: 'contribute', label: "Contribute", position: "left" },
+            { to: 'supporters', label: "Supporters", position: "left" },
             {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
@@ -108,10 +111,10 @@ async function createConfig() {
           darkTheme: darkCodeTheme,
         },
       }),
-      markdown: {
-        mermaid: true,
-      },
-      themes: ['@docusaurus/theme-mermaid'],
+    markdown: {
+      mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],
   };
 }
 

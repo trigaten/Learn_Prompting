@@ -30,3 +30,14 @@ $ npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Tooltips
+Using https://gitlab.grnet.gr/terminology/docusaurus-terminology
+
+If new terms get added to the glossary, you need to run this:
+
+````
+$ yarn docusaurus parse
+$ yarn docusaurus glossary
+````
+

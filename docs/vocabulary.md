@@ -2,6 +2,9 @@
 sidebar_position: 90
 ---
 
+import Term from "@docusaurus-terminology/term";
+
+
 # 📙 Vocabulary Reference
 
 Please refer to this page for a list of terms and concepts that we will use throughout this course.
@@ -13,7 +16,7 @@ on a huge amount of text.
 
 #### Masked Language Models (MLMs)
 
-MLMs are a type of NLP model, which have a special token, usually `[MASK]`, which is
+<Term popup="MLMs are a type of NLP model, which have a special token, which is replaced with a word from the vocabulary. The model then predicts the word that was masked." reference="/docs/terms/mlms">MLMs</Term> are a type of NLP model, which have a special token, usually `[MASK]`, which is
 replaced with a word from the vocabulary. The model then predicts the word that
 was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
 will predict "chasing" with high probability.
