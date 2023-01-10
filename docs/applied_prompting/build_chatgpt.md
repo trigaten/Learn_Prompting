@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# 🟢 Build ChatGPT with GPT-3
+# 🟢 Build ChatGPT from GPT-3
 
 import Skippy from '../assets/skippy_chatbot.png'    
 import SkippyHeader from '../assets/skippy_chatbot_header.png'    
@@ -33,8 +33,7 @@ Both ChatGPT and models in the GPT 3.5 series use RL and human feedback to optim
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chat bot prompt from article header</p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a>    
-Prompting is the process of instructing an AI to do something. As you have probably seen in ChatGPT examples online, you can prompt GPT-3 with just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more.
+<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt GPT-3 with just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more.
 
 <p></p>
 
