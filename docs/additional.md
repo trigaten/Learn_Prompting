@@ -39,3 +39,7 @@ GPT-3 is *NOT* deterministic: https://twitter.com/BorisMPower/status/16085227073
 [@hwchase17](https://twitter.com/hwchase17) Core dev of langchain
 
 [@omarsar0](https://twitter.com/omarsar0) DAIR AI lead
+
+## Even More
+
+Check [open issues](https://github.com/trigaten/Learn_Prompting/issues) :)
