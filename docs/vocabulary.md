@@ -16,7 +16,7 @@ on a huge amount of text.
 
 #### Masked Language Models (MLMs)
 
-<Term popup="MLMs are a type of NLP model, which have a special token, which is replaced with a word from the vocabulary. The model then predicts the word that was masked." reference="/docs/terms/mlms">MLMs</Term> are a type of NLP model, which have a special token, usually `[MASK]`, which is
+MLMs are a type of NLP model, which have a special token, usually `[MASK]`, which is
 replaced with a word from the vocabulary. The model then predicts the word that
 was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
 will predict "chasing" with high probability.
