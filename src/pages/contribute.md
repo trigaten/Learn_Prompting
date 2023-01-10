@@ -40,3 +40,6 @@ Everything from fixing typos to recommendations for the site (suggest papers,
 layout changes, tell us what you want to learn about, etc.)
 
 We need help maintaining the list of prompt engineering tools and products that use prompting.
+
+
+Email learnprompting@gmail.com with any questions.
