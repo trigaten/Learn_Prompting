@@ -14,18 +14,18 @@ import Therapy from '../assets/therapy_chatbot.gif'
 
 ## Introduction
 
-ChatGPT has blown up in the past month, gaining a million users in just a week. What's crazy is that the underlying model, GPT-3 was debuted in 2020 and released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
+[ChatGPT](chat.openai.com) has blown up in the past month, gaining a million users in just a week. Surprisingly, the underlying model, GPT-3 was debuted in 2020 and released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
 
-For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a nice chat bot interface where you can give input and get a response from an AI assistant. Check it out at chat.openai.com. 
+For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a user-friendly chat interface, where you can give input and get a response from an AI assistant. Check it out at chat.openai.com. 
 
-While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain parameters and test out prompts. GPT-3 certainly gained a lot of traction, but it was no where near the virality of ChatGPT. 
+While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT. 
 
-What makes ChatGPT so successful, comparatively, is its accessibility as a straightforward product for the average person, regardless of their knowledge of data science, language models, or AI.  
+What makes ChatGPT so successful, comprared to GPT-3, is it's accessibility as a straightforward AI assistant for the average person, regardless of their knowledge of data science, language models, or AI.  
 
-In this article I overview how chat bots like ChatGPT can be implemented using a large language model like GPT-3.
+In this article, I overview how chat bots like ChatGPT can be implemented using a large language model like GPT-3.
 
 ## Motivation
-This article was written in part because of a tweet by <a href="https://twitter.com/goodside">Riley Goodside</a> explaining how ChatGPT was probably implemented. 
+This article was written in part because of a tweet by <a href="https://twitter.com/goodside">Riley Goodside</a>, noting how ChatGPT could have been implemented.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
