@@ -14,9 +14,9 @@ import Therapy from '../assets/therapy_chatbot.gif'
 
 ## Introduction
 
-[ChatGPT](chat.openai.com) has blown up in the past month, gaining a million users in just a week. Surprisingly, the underlying model, GPT-3 was debuted in 2020 and released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
+[ChatGPT](https://chat.openai.com/chat) has blown up in the past month, gaining a million users in just a week. Surprisingly, the underlying model, GPT-3 was debuted in 2020 and released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
 
-For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a user-friendly chat interface, where you can give input and get a response from an AI assistant. Check it out at chat.openai.com. 
+For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a user-friendly chat interface, where you can give input and get a response from an AI assistant. Check it out at https://chat.openai.com/chat. 
 
 While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT. 
 
