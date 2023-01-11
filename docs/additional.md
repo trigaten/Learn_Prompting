@@ -16,6 +16,8 @@ CMU class on prompt engineering: https://youtu.be/5ef83Wljm-M
 
 How Copilot works: https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html
 
+A Beginners Guide to Prompt Writing by Zapier https://zapier.com/blog/gpt-3-prompt/ 
+
 ### GPT-3 Prompt Examples/Ideas
 
 https://sharegpt.com
