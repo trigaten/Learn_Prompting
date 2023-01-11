@@ -42,3 +42,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 ## Programming tools
 
 - [Code GPT -  VSCode Extension](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt) 
+
+## Workflow Automation
+
+- [OpenAI - GPT-3 Zapier App](https://zapier.com/apps/openai/integrations) 
