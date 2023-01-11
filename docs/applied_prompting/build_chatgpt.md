@@ -38,7 +38,7 @@ Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https:
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chat bot prompt from article header</p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt GPT-3 with just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more.
+<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more.
 
 <p></p>
 
