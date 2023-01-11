@@ -96,6 +96,10 @@ async function createConfig() {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
+            },
+            {
+              type: 'localeDropdown',
+              position: 'left',
             }
           ],
         },
