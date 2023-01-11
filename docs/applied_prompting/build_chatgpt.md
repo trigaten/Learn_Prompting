@@ -20,7 +20,7 @@ For those who don't know, ChatGPT is a new language model from OpenAI that was f
 
 While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain parameters and test out prompts. GPT-3 certainly gained a lot of traction, but it was no where near the virality of ChatGPT. 
 
-What makes ChatGPT so successful, comparatively, is its accessibility as a straighforward product for the average person, regardless of their knowledge of data science, language models, or AI.  
+What makes ChatGPT so successful, comparatively, is its accessibility as a straightforward product for the average person, regardless of their knowledge of data science, language models, or AI.  
 
 In this article I overview how chat bots like ChatGPT can be implemented using a large language model like GPT-3.
 
