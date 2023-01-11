@@ -29,9 +29,7 @@ This article was written in part because of a tweet by <a href="https://twitter.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-To summarize: ChatGPT is designed specifically for chat bots and it incorporates tuning and mitigations to make outputs "safer." Chat bots like ChatGPT can be built using a prompt that includes a transcript of previous exchanges.
-
-Both ChatGPT and models in the GPT 3.5 series use RL and human feedback to optimize outputs. ChatGPT is by no means leaps and bounds better than the core GPT models. **It largely relies on a good prompt.**
+ChatGPT, like other models in the GPT-3.5 series, utilizes reinforcement learning and human feedback for optimization. Its **effectiveness is primarily due a good prompt.**
 
 ## The Prompt
 
@@ -44,7 +42,7 @@ Both ChatGPT and models in the GPT 3.5 series use RL and human feedback to optim
 
 <p></p>
 
-**The core abstraction to this process is input/output.** You input information and then the model uses the data it was trained on to predict the best completion to your input. An important thing to note is that an LLM like GPT-3 isn't responding to a prompt, it is determining what tokens come next based on a probability distribution of tokens is has seen during pre-training(@jurafsky2009). Put simply, it is figuring out what words comes next given some previous words. 
+When you input a prompt, the model uses the data it was trained on to predict the best completion to your input. An important thing to note is that an LLM like GPT-3 isn't responding to a prompt, it is determining what tokens come next based on a probability distribution of tokens it has seen during pre-training(@jurafsky2009). Put simply, it is figuring out what words comes next given some previous words. 
 
 <p></p>
 
