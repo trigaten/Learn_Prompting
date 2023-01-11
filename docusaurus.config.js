@@ -27,7 +27,7 @@ async function createConfig() {
     // to replace "en" with "zh-Hans".
     i18n: {
       defaultLocale: 'en',
-      locales: ['en'],
+      locales: ['en', 'es'],
     },
   
     presets: [
@@ -96,6 +96,10 @@ async function createConfig() {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
+            },
+            {
+              type: 'localeDropdown',
+              position: 'left',
             }
           ],
         },
