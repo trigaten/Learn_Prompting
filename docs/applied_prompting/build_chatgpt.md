@@ -68,7 +68,7 @@ There are many different use cases of this expanding prompt technique. In my exp
 #### Talk to your younger self using old journal entries
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-The prompt behind this uses some context (old journal entries) paired with a chatbot style back and forth. Here GPT-3 uses the journal entries to mimic a specific personality. 
+The prompt behind this uses some context (old journal entries) paired with a chatbot style back and forth. Here GPT-3 is able to mimic a personality based on journal entries. 
 
 From the Tweet:
 ```markdown
@@ -80,7 +80,7 @@ Young Michelle has written the following journal entries:
 Present Michelle: [type your questions here]
 ```
 
-This is again using a few shot prompt, just now with added context. The author, <a href="https://twitter.com/michellehuang42">Michelle Huang</a>, does note that diary entries reach token limit. In this case you could pick a select few entries or try and summarize several entries.
+This is again using a few shot prompt, just now with added context. The author, <a href="https://twitter.com/michellehuang42">Michelle Huang</a>, does note that diary entries can reach token limit. In this case you could pick a select few entries or try and summarize several entries.
 
 ## Implementation
 
