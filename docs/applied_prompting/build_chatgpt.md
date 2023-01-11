@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# 🟢 Build ChatGPT with GPT-3
+# 🟢 Build ChatGPT from GPT-3
 
 import Skippy from '../assets/skippy_chatbot.png'    
 import SkippyHeader from '../assets/skippy_chatbot_header.png'    
