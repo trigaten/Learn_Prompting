@@ -16,7 +16,7 @@ import Therapy from '../assets/therapy_chatbot.gif'
 
 ChatGPT has blown up in the past month, gaining a million users in just a week. What's crazy is that the underlying model, GPT-3 was debuted in 2020 and released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
 
-For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be <a href="https://openai.com/blog/chatgpt/">optimized for conversation.</a> It has a nice chat bot interface where you can give input and get a response from an AI assistant. Check it out at chat.openai.com. 
+For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a nice chat bot interface where you can give input and get a response from an AI assistant. Check it out at chat.openai.com. 
 
 While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain parameters and test out prompts. GPT-3 certainly gained a lot of traction, but it was no where near the virality of ChatGPT. 
 
@@ -44,7 +44,7 @@ Both ChatGPT and models in the GPT 3.5 series use RL and human feedback to optim
 
 <p></p>
 
-**The core abstraction to this process is input/output.** You input information and then the model uses the data it was trained on to predict the best completion to your input. An important thing to note is that an LLM like GPT-3 isn't responding to a prompt, it is determining what tokens come next based on a probability distribution of tokens is has seen during pre-training(@jurafsky2009). Put simply, it is figuring out what words comes next given some previous text. 
+**The core abstraction to this process is input/output.** You input information and then the model uses the data it was trained on to predict the best completion to your input. An important thing to note is that an LLM like GPT-3 isn't responding to a prompt, it is determining what tokens come next based on a probability distribution of tokens is has seen during pre-training(@jurafsky2009). Put simply, it is figuring out what words comes next given some previous words. 
 
 <p></p>
 
@@ -56,12 +56,33 @@ Past exchanges between Skippy and User get appended to  the next prompt. Each ti
 
 Prompts can get massive after several exchanges, especially if we are using the chat bot to generate long responses like blog posts. Prompts sent to GPT-3 are converted into tokens, which are numerical representations of words or parts of words. This allows GPT-3 to efficiently process large amounts of text. There is a limit of <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (about 3000 words)</a> for the combined prompt and generated response for GPT-3 models, including ChatGPT. 
 
+### A Few Examples
+
+#### Therapy chat bot that asks about your day
+
 There are many different use cases of this expanding prompt technique. In my experience, ChatGPT will only ask follow ups if absolutely necessary or prompted to do so. **It is good at coming up with answer with little context.** It can sometimes, however, be helpful to have an AI chat bot ask follow ups. Below is an example prompt for a therapy chatbot that asks about the user's day.
 
 <div style={{textAlign: 'left'}}>
   <img src={Therapy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Therapy chatbot prompt</p>
 </div>
+
+#### Talk to your younger self using old journal entries
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+The prompt behind this uses some context (old journal entries) paired with a chatbot style back and forth. Here GPT-3 uses the journal entries to mimic a specific personality. 
+
+From the Tweet:
+```markdown
+The following is a conversation with Present Michelle (age [redacted]) and Young Michelle (age 14).
+
+Young Michelle has written the following journal entries:
+[diary entries here]
+
+Present Michelle: [type your questions here]
+```
+
+This is again using a few shot prompt, just now with added context. The author, <a href="https://twitter.com/michellehuang42">Michelle Huang</a>, does note that diary entries reach token limit. In this case you could pick a select few entries or try and summarize several entries.
 
 ## Implementation
 
