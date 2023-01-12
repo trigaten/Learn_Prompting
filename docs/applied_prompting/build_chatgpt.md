@@ -22,7 +22,7 @@ While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 ser
 
 What makes ChatGPT so successful, comprared to GPT-3, is it's accessibility as a straightforward AI assistant for the average person, regardless of their knowledge of data science, language models, or AI.  
 
-In this article, I overview how chat bots like ChatGPT can be implemented using a large language model like GPT-3.
+In this article, I overview how chatbots like ChatGPT can be implemented using a large language model like GPT-3.
 
 ## Motivation
 This article was written in part because of a tweet by <a href="https://twitter.com/goodside">Riley Goodside</a>, noting how ChatGPT could have been implemented.
@@ -35,7 +35,7 @@ Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https:
 
 <div style={{textAlign: 'left'}}>
   <img src={Skippy} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chat bot prompt from article header</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chatbot prompt from article header</p>
 </div>
 
 <a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more.
@@ -46,19 +46,19 @@ When you input a prompt, the model uses the data it was trained on to predict th
 
 <p></p>
 
-GPT-3 is able to learn from a simple intruction or a few examples in the prompt. This is called few-shot, or in context learning (@brown2020language). In the chat bot prompt above, I create a fictitious chat bot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chat bot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
+GPT-3 is able to learn from a simple intruction or a few examples in the prompt. This is called few-shot, or in context learning (@brown2020language). In the chatbot prompt above, I create a fictitious chatbot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chatbot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
 
 ### Memorization
 
-Past exchanges between Skippy and the user get appended to the next prompt. Each time we give more user input and get more chatbot output, the prompt expands to incorporate this new exchange. This is how chatbots like Skippy and ChatGPT can **remember previous inputs.** There is a limit, however, to how much a GPT-3 chat bot can remember.
+Past exchanges between Skippy and the user get appended to the next prompt. Each time we give more user input and get more chatbot output, the prompt expands to incorporate this new exchange. This is how chatbots like Skippy and ChatGPT can **remember previous inputs.** There is a limit, however, to how much a GPT-3 chatbot can remember.
 
-Prompts can get massive after several exchanges, especially if we are using the chat bot to generate long responses like blog posts. Prompts sent to GPT-3 are converted into tokens, which are numerical representations of words or parts of words. This allows GPT-3 to efficiently process large amounts of text. There is a limit of <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (about 3000 words)</a> for the combined prompt and generated response for GPT-3 models, including ChatGPT. 
+Prompts can get massive after several exchanges, especially if we are using the chatbot to generate long responses like blog posts. Prompts sent to GPT-3 are converted into tokens, which are numerical representations of words or parts of words. This allows GPT-3 to efficiently process large amounts of text. There is a limit of <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (about 3000 words)</a> for the combined prompt and generated response for GPT-3 models, including ChatGPT. 
 
 ### A Few Examples
 
-#### Therapy chat bot that asks about your day
+#### Therapy chatbot that asks about your day
 
-There are many different use cases of this expanding prompt technique. In my experience, ChatGPT will only ask follow ups if absolutely necessary or prompted to do so. **It is good at coming up with answer with little context.** It can sometimes, however, be helpful to have an AI chat bot ask follow ups. Below is an example prompt for a therapy chatbot that asks about the user's day.
+There are many different use cases of this expanding prompt technique. In my experience, ChatGPT will only ask follow ups if absolutely necessary or prompted to do so. **It is good at coming up with answer with little context.** It can sometimes, however, be helpful to have an AI chatbot ask follow ups. Below is an example prompt for a therapy chatbot that asks about the user's day.
 
 <div style={{textAlign: 'left'}}>
   <img src={Therapy} style={{width: "700px"}} />
@@ -84,7 +84,7 @@ This is again using a few shot prompt, just now with added context. The author, 
 
 ## Implementation
 
-I will walk through coding a simple GPT-3 powered chat bot in Python. Implementing GPT-3 into an app you are building is incredibly easy because OpenAI has an API. You will need to create an account on OpenAI and get an API key. Check out their docs <a href="https://beta.openai.com/docs/introduction">here.</a>
+I will walk through coding a simple GPT-3 powered chatbot in Python. Implementing GPT-3 into an app you are building is incredibly easy because OpenAI has an API. You will need to create an account on OpenAI and get an API key. Check out their docs <a href="https://beta.openai.com/docs/introduction">here.</a>
 
 Overview of what we need to do:
 
@@ -151,7 +151,7 @@ main()
 ```
 
 
-<a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">Here is a link</a> to the full code for a simple chat bot.
+<a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">Here is a link</a> to the full code for a simple chatbot.
 
 <p></p>
 
