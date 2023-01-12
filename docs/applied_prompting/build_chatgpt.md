@@ -56,9 +56,11 @@ Prompts can get massive after several exchanges, especially if we are using the 
 
 ### A Few Examples
 
-#### Therapy chatbot that asks about your day
+There are many different use cases of chat bot prompts that store previous conversations. In my experience, ChatGPT will only ask follow ups if absolutely necessary or prompted to do so.
 
-There are many different use cases of this expanding prompt technique. In my experience, ChatGPT will only ask follow ups if absolutely necessary or prompted to do so. **It is good at coming up with answer with little context.** It can sometimes, however, be helpful to have an AI chatbot ask follow ups. Below is an example prompt for a therapy chatbot that asks about the user's day.
+#### Therapy chat bot that asks about your day
+
+It can be helpful to have a chat bot that actively asks questions and gets feedback from the user. Below is an example therapy chat bot prompt that will ask questions and follow ups to help a user think about their day.
 
 <div style={{textAlign: 'left'}}>
   <img src={Therapy} style={{width: "700px"}} />
@@ -67,10 +69,13 @@ There are many different use cases of this expanding prompt technique. In my exp
 
 #### Talk to your younger self using old journal entries
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-The prompt behind this uses some context (old journal entries) paired with a chatbot style back and forth. Here GPT-3 is able to mimic a personality based on journal entries. 
+<a href="https://twitter.com/michellehuang42">Michelle Huang</a> used GPT-3 to have a chat with her younger self. The prompt uses some context, in this case old journal entries, paired with a chat bot style back and forth format. GPT-3 is able to mimic a personality based on these entries. 
 
-From the Tweet:
+<p></p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+Prompt from the Tweet:
 ```markdown
 The following is a conversation with Present Michelle (age [redacted]) and Young Michelle (age 14).
 
@@ -80,7 +85,7 @@ Young Michelle has written the following journal entries:
 Present Michelle: [type your questions here]
 ```
 
-This is again using a few shot prompt, just now with added context. The author, <a href="https://twitter.com/michellehuang42">Michelle Huang</a>, does note that diary entries can reach token limit. In this case you could pick a select few entries or try and summarize several entries.
+This is again using a few shot prompt, just now with added context. The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try and summarize several entries.
 
 ## Implementation
 
