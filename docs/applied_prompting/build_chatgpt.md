@@ -42,15 +42,15 @@ Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https:
 
 <p></p>
 
-When you input a prompt, the model uses the data it was trained on to predict the best completion to your input. An important thing to note is that an LLM like GPT-3 isn't responding to a prompt, it is determining what tokens come next based on a probability distribution of tokens it has seen during pre-training(@jurafsky2009). Put simply, it is figuring out what words comes next given some previous words. 
+When you input a prompt, the model uses the data it was trained on to predict the best completion to your input. Technically, it is determining what tokens come next conditioned on tokens it has seen during pre-training(@jurafsky2009), as well as the prompt. Put simply, it is figuring out what words comes next given the previous words. 
 
 <p></p>
 
-GPT-3 is able to learn in context based on a few examples or a simple instruction. This is called few-shot learning (@brown2020language). In the chat bot prompt above, I instruct Skippy to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chat bot and the previous exchanges are a conversation so that when we provide the next user input, "Skippy" will respond.
+GPT-3 is able to learn from a simple intruction or a few examples in the prompt. This is called few-shot, or in context learning (@brown2020language). In the chat bot prompt above, I create a fictitious chat bot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chat bot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
 
 ### Memorization
 
-Past exchanges between Skippy and User get appended to  the next prompt. Each time we give more user input and get more chatbot output, the prompt expands to incorporate this new exchange. This is how chatbots like Skippy and ChatGPT can **remember previous inputs.** There is a limit, however, to how much a GPT-3 chat bot can remember.
+Past exchanges between Skippy and the user get appended to the next prompt. Each time we give more user input and get more chatbot output, the prompt expands to incorporate this new exchange. This is how chatbots like Skippy and ChatGPT can **remember previous inputs.** There is a limit, however, to how much a GPT-3 chat bot can remember.
 
 Prompts can get massive after several exchanges, especially if we are using the chat bot to generate long responses like blog posts. Prompts sent to GPT-3 are converted into tokens, which are numerical representations of words or parts of words. This allows GPT-3 to efficiently process large amounts of text. There is a limit of <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (about 3000 words)</a> for the combined prompt and generated response for GPT-3 models, including ChatGPT. 
 
