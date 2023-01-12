@@ -7,6 +7,7 @@ sidebar_position: 4
 import Skippy from '../assets/skippy_chatbot.png'    
 import SkippyHeader from '../assets/skippy_chatbot_header.png'    
 import Therapy from '../assets/therapy_chatbot.gif'
+import ChatGPT from '../assets/chatgpt_ui_diagram.png'
 
 <div style={{textAlign: 'left'}}>
   <img src={SkippyHeader} style={{width: "700px"}} />
@@ -38,11 +39,18 @@ Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https:
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chatbot prompt from article header</p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more.
+<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more. 
 
 <p></p>
 
-When you input a prompt, the model uses the data it was trained on to predict the best completion to your input. Technically, it is determining what tokens come next conditioned on tokens it has seen during pre-training(@jurafsky2009), as well as the prompt. Put simply, it is figuring out what words comes next given the previous words. 
+ChatGPT is both a language model and user interface. The prompt input by a user to the interface is actually inserted into a larger prompt that contains the enitre conversation between the user and ChatGPT. This allows the underlying language model to understand the context of the conversation and respond appropriately.
+
+<div style={{textAlign: 'left'}}>
+  <img src={ChatGPT} style={{width: "500px"}} />
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Example insertion of user prompt before sending to model</p>
+</div>
+
+The model uses the data it was trained on to predict the best completion to this larger prompt that includes both new input and the previous conversation. It's important to note that the language model isn't responding to the prompt but rather figuring out what words come next based on probabilities it learned during pre-training(@jurafsky2009).
 
 <p></p>
 
