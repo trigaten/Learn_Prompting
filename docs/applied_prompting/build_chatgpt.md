@@ -46,7 +46,7 @@ Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https:
 ChatGPT is both a language model and user interface. The prompt input by a user to the interface is actually inserted into a larger prompt that contains the entire conversation between the user and ChatGPT. This allows the underlying language model to understand the context of the conversation and respond appropriately.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ChatGPT} style={{width: "500px"}} />
+  <img src={ChatGPT} style={{width: "600px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Example insertion of user prompt before sending to model</p>
 </div>
 
