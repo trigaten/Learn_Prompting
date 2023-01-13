@@ -64,11 +64,11 @@ Prompts can get massive after several exchanges, especially if we are using the 
 
 ### A Few Examples
 
-There are many different use cases of chat bot prompts that store previous conversations. ChatGPT is meant to be an all purpose general assistant and in my experience, it rarely asks follow ups.
+There are many different use cases of chatbot prompts that store previous conversations. ChatGPT is meant to be an all purpose general assistant and in my experience, it rarely asks follow ups.
 
-#### Therapy chat bot that asks about your day
+#### Therapy chatbot that asks about your day
 
-It can be helpful to have a chat bot that actively asks questions and gets feedback from the user. Below is an example therapy chat bot prompt that will ask questions and follow ups to help a user think about their day.
+It can be helpful to have a chatbot that actively asks questions and gets feedback from the user. Below is an example therapy chatbot prompt that will ask questions and follow ups to help a user think about their day.
 
 <div style={{textAlign: 'left'}}>
   <img src={Therapy} style={{width: "700px"}} />
@@ -77,7 +77,7 @@ It can be helpful to have a chat bot that actively asks questions and gets feedb
 
 #### Talk to your younger self using old journal entries
 
-<a href="https://twitter.com/michellehuang42">Michelle Huang</a> used GPT-3 to have a chat with her younger self. The prompt uses some context, in this case old journal entries, paired with a chat bot style back and forth format. GPT-3 is able to mimic a personality based on these entries. 
+<a href="https://twitter.com/michellehuang42">Michelle Huang</a> used GPT-3 to have a chat with her younger self. The prompt uses some context, in this case old journal entries, paired with a chatbot style back and forth format. GPT-3 is able to mimic a personality based on these entries. 
 
 <p></p>
 
