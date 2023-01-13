@@ -10,6 +10,11 @@ import styles from '../components/HomepageFeatures/styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Towards AI',
+    Svg: require('@site/static/img/towards-ai-logo.png').default,
+    link: "https://towardsai.net",
+  },
+  {
     title: 'DAIR AI',
     Svg: require('@site/static/img/dair.png').default,
     link: "https://dair.ai/",
@@ -22,7 +27,7 @@ function Feature({Svg, title, link}) {
       <center>
       <div className="text--center">
         <a href="docs/intro">
-        <img src={Svg} alt="img" width="251px" style={{ alignSelf: 'center' }}/>
+        <img src={Svg} alt="img" height="251px" style={{ alignSelf: 'center' }}/>
         </a>
         
       </div>
