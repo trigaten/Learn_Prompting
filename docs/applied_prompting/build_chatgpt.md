@@ -168,6 +168,6 @@ main()
 
 <p></p>
 
-Now all that's left is to build a nice front-end that users can interact with! I implemented this example in Python for ease of understanding.
+Now all that's left is to build a nice front-end that users can interact with!
 
 Written by [jayo78](https://twitter.com/jayo782).
