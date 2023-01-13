@@ -93,11 +93,11 @@ Young Michelle has written the following journal entries:
 Present Michelle: [type your questions here]
 ```
 
-This is again using a few shot prompt, just now with added context. The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try and summarize several entries.
+This is again using a few shot prompt, just now with added context. The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try to summarize several entries.
 
 ## Implementation
 
-I will walk through coding a simple GPT-3 powered chatbot in Python. Implementing GPT-3 into an app you are building is incredibly easy because OpenAI has an API. You will need to create an account on OpenAI and get an API key. Check out their docs <a href="https://beta.openai.com/docs/introduction">here.</a>
+I will walk through coding a simple GPT-3 powered chatbot in Python. Including GPT-3 in an app you are building is incredibly easy using the OpenAI API. You will need to create an account on OpenAI and get an API key. Check out their docs <a href="https://beta.openai.com/docs/introduction">here.</a>
 
 Overview of what we need to do:
 
