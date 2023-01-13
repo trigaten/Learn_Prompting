@@ -46,6 +46,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 ## Product Photography
 
 - [88stacks](https://88stacks.com/)
+
 ## Workflow Automation
 
 - [OpenAI - GPT-3 Zapier App](https://zapier.com/apps/openai/integrations) 
