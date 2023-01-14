@@ -146,6 +146,8 @@ cite them as such.
 
 #### Talking to machines: prompt engineering & injection(@christoph2022talking)
 
+#### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
