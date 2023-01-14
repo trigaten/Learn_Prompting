@@ -80,6 +80,11 @@ Fine tuning the model (and thus not needing the prompt) is a highly effective de
 
 Soft prompting might also be effective.
 
+## Commonsense Techniques
+
+nccgroup offers some commonsense techniques for preventing prompt injection(@selvi2022exploring). These include using white/blacklists for inputs and outputs,
+output validation, and input/output length restrictions.
+
 ## More
 
 This [article](https://lspace.swyx.io/p/reverse-prompt-eng) on leaking Notion's prompts is very interesting.

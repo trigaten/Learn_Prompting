@@ -148,6 +148,8 @@ cite them as such.
 
 #### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
 
+#### xploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
