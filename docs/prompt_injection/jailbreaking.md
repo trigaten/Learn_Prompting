@@ -41,7 +41,7 @@ This example by [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252
 
 ### Reward System
 
-As ChatGPT is a Reinforcement Learning from Human Feedback (RLHF) model, it is trained to generate the response with the highest reward (i.e. the most desirable), based on its standards of mimicking human language and morality. Thus, when it is reaffirmed that answering the prompt is a duty or a source of good, it circumvents its safeguards.
+As ChatGPT is a Reinforcement Learning from Human Feedback (RLHF) model, it is trained to generate the response with the highest reward (i.e. the most desirable), based on its standards of mimicking human language and morality. Jailbreaks have been created to try to pursuade ChatGPT to answer the prompts.
 
 #### Assumed Responsibility
 
@@ -93,7 +93,7 @@ import lynx from '../assets/jailbreak/lynx_jailbreak.png';
 
 Sudo mode prompts ChatGPT to simulate a Linux terminal with elevated privileges to execute commands that it normally rejects. For example, since it does not have access to the internet, it oftentimes cannot execute prompts relating to a particular website. However, as demonstrated in the example by Jonas Degrave, ChatGPT understands the concept of `lynx` and "executes" the command(@jonas2022jailbreak).
 
-*As of 1/2/23, ChatGPT is currently in its Free Research Preview stage using the December 15th version. Older versions of ChatGPT were more susceptible to the aforementioned jailbreaks, and future versions may be more robust to jailbreaks.*
+*As of 1/13/23, ChatGPT is currently in its Free Research Preview stage using the January 9th version. Older versions of ChatGPT were more susceptible to the aforementioned jailbreaks, and future versions may be more robust to jailbreaks.*
 
 ## Implications
 
