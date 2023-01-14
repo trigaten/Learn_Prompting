@@ -50,11 +50,11 @@ ChatGPT is both a language model and user interface. The prompt input by a user 
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Example insertion of user prompt before sending to model</p>
 </div>
 
-The model uses the data it was trained on to predict the best completion to this larger prompt that includes both new input and the previous conversation. It's important to note that the language model isn't responding to the prompt but rather figuring out what words come next based on probabilities it learned during pre-training(@jurafsky2009).
+The language model completes the prompt by figuring out what words come next based on probabilities it learned during pre-training(@jurafsky2009).
 
 <p></p>
 
-GPT-3 is able to learn from a simple instruction or a few examples in the prompt. The latter is called few-shot, or in context learning (@brown2020language). In the chatbot prompt above, I create a fictitious chatbot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chatbot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
+GPT-3 is able to 'learn' from a simple instruction or a few examples in the prompt. The latter is called few-shot, or in context learning (@brown2020language). In the chatbot prompt above, I create a fictitious chatbot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chatbot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
 
 ### Memorization
 
@@ -93,7 +93,7 @@ Young Michelle has written the following journal entries:
 Present Michelle: [type your questions here]
 ```
 
-This is again using a few shot prompt, just now with added context. The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try to summarize several entries.
+The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try to summarize several entries.
 
 ## Implementation
 
