@@ -80,3 +80,6 @@ Fine tuning the model (and thus not needing the prompt) is a highly effective de
 
 Soft prompting might also be effective.
 
+## More
+
+This [article](https://lspace.swyx.io/p/reverse-prompt-eng) on leaking Notion's prompts is very interesting.
