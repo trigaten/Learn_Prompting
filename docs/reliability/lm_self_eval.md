@@ -112,3 +112,6 @@ again for undesirable content.
 
 Bai et al.(@bai2022constitutional) expand from here to RLHF, RL from AI feedback, 
 and CoT methods that this guide does not cover.
+
+Perez et al.(@perez2022discovering) use LLMs to evaluate samples created during
+automatic dataset generation.
