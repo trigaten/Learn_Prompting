@@ -118,6 +118,8 @@ cite them as such.
 
 #### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
 
+#### PromptMaker(@jiang2022promptmaker) 🔵
+
 ## Applied Prompt Engineering
 
 #### Language Model Cascades(@dohan2022language)
@@ -147,6 +149,10 @@ cite them as such.
 #### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
 #### Talking to machines: prompt engineering & injection(@christoph2022talking)
+
+#### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
+
+#### xploring Prompt Injection Attacks(@selvi2022exploring) 🔵
 
 ## Surveys
 

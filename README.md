@@ -22,7 +22,7 @@ We are actively looking for:
 
 
 
-# Local Development
+## Local Development
 
 ```
 $ npm i

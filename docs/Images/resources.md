@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Resources
+# 🟢 Resources
 
 The image prompt engineering field is so diverse that I'm currently focusing on 
 assembling a list of good resources before writing a guide myself.
@@ -15,3 +15,5 @@ assembling a list of good resources before writing a guide myself.
 - [/r/PromptSharing on Reddit](https://www.reddit.com/r/PromptSharing/)
 - [StableDiffusion Prompt Wiki](https://www.reddit.com/r/StableDiffusion/wiki/tutorials)
 - [Thread of Cool Images](https://twitter.com/ivonatau/status/1605681809680830464)
+- [Lexica, a database of AI images](https://lexica.art)
+- [Playground another database of AI images](https://playgroundai.com)

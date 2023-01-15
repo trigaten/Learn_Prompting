@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Soft Prompts
+# 🔴 Soft Prompts
 
 Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi2021prompt), freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
 
