@@ -23,7 +23,11 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [xp1](https://xp1.dust.tt)
 - [ACT-1](https://www.adept.ai/act)
 
-## Email Assistants
+### Research Assistants
+
+- [Elicit](https://elicit.org)
+
+### Email Assistants
 
 - [Ellie](https://ellieai.com)
 
@@ -38,3 +42,19 @@ Here is a growing list of notable products that use prompting. If you have a pro
 ## Games
 
 - [Prompt Monkeys](https://beginnings.prompt-monkeys.ai/game/4)
+
+## Programming tools
+
+- [Code GPT -  VSCode Extension](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt) 
+
+## Product Photography
+
+- [88stacks](https://88stacks.com/)
+
+## Workflow Automation
+
+- [OpenAI - GPT-3 Zapier App](https://zapier.com/apps/openai/integrations) 
+
+## Buy and Sell Prompts
+
+- [PromptBase](https://promptbase.com)
