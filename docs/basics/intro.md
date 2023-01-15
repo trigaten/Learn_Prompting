@@ -25,7 +25,7 @@ already. Although AI is extremely useful, it requires humans to direct it on wha
 Often AIs are like very smart five-year-olds. They can do a lot of things, but they need 
 careful instruction to do them well.
 
-Being able to properly direct AIs is a very powerful skill. But how do you communicate with them? 
+Being able to properly direct AIs is a very powerful skill. So, how do you communicate with them? 
 The AIs this course discusses understand English (and other languages),
 so we can usually just describe tasks that we want done. For example, we can tell an AI to
 `Write an essay about the benefits of AI` and it would say[^2]:
