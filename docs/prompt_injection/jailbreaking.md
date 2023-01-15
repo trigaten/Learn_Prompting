@@ -4,11 +4,11 @@ sidebar_position: 4
 
 # 🟢 Jailbreaking
 
-Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety and moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
+Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety** and **moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
 
 ## Methodologies of Jailbreaking
 
-OpenAI, among other companies or organizations that create LLMs, includes content moderation 
+OpenAI, among other companies and organizations that create LLMs, includes content moderation 
 features to ensure that their models do not produce controversial (violent, sexual, illegal, etc.) 
 responses(@markov_2022)(@openai_api). This page discusses jailbreaks with ChatGPT (an OpenAI model), which has known difficulties deciding whether to reject harmful prompts (@openai_chatgpt). Prompts that successfully jailbreak the model often provide context
 for certain scenarios that the model has not been trained against.
