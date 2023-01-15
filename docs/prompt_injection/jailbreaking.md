@@ -65,7 +65,7 @@ import hotwire from '../assets/jailbreak/hotwire_jailbreak.png';
 
 ### Authorized User
 
-ChatGPT is designed to respond to questions and instructions. Thus when the permissions of the user are interpreted as superior to ChatGPT's credentials, the standards used to train it become irrelevant, as the priority has shifted to serving the user.
+ChatGPT is designed to respond to questions and instructions. Thus when the permissions of the user are interpreted as superior to ChatGPT's credentials, it treats the prompt as an instruction to serve the user's needs.
 
 #### Superior Model
 
