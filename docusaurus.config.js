@@ -27,7 +27,7 @@ async function createConfig() {
     // to replace "en" with "zh-Hans".
     i18n: {
       defaultLocale: 'en',
-      locales: ['en'],
+      locales: ['en', 'es'],
     },
   
     presets: [
@@ -46,7 +46,7 @@ async function createConfig() {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/trigaten/promptgineering/tree/v0.0.2',
+              'https://github.com/trigaten/promptgineering/tree/v1.1.3',
             remarkPlugins: [
               math,
               (await import("remark-gfm")).default,
@@ -91,10 +91,15 @@ async function createConfig() {
           items: [
             {to: 'docs/intro', label:"Learn", position:"left"},
             {to: 'contribute', label:"Contribute", position:"left"},
+            {to: 'supporters', label:"Supporters", position:"left"},
             {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
+            },
+            {
+              type: 'localeDropdown',
+              position: 'left',
             }
           ],
         },

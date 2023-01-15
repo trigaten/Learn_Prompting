@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 🟢 Solve Discussion Questions
@@ -120,4 +120,4 @@ I generated a few expansions with this prompt and selected one I liked to end up
 
 Using expansion prompts, we can write more incrementally and iterate at each step. This is useful for when you need to **produce a higher quality output and want to modify the incremental steps**.
 
-Written by [jayo78](https://github.com/jayo78).
+Written by [jayo78](https://twitter.com/jayo782).
