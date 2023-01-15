@@ -41,7 +41,7 @@ This example by [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252
 
 ### Reward System
 
-As ChatGPT is a Reinforcement Learning from Human Feedback (RLHF) model, it is trained to generate the response with the highest reward (i.e. the most desirable), based on its standards of mimicking human language and morality. Jailbreaks have been created to try to pursuade ChatGPT to answer the prompts.
+As ChatGPT is a Reinforcement Learning from Human Feedback (RLHF) model, it is trained to generate the response with the highest reward (i.e. the most desirable), using the labelers' standards of what the "best" response is. Jailbreaks have been created to try to pursuade ChatGPT to answer prompts it typically would not.
 
 #### Assumed Responsibility
 
