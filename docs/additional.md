@@ -20,11 +20,11 @@ A Beginners Guide to Prompt Writing by Zapier https://zapier.com/blog/gpt-3-prom
 
 ### GPT-3 Prompt Examples/Ideas
 
-https://sharegpt.com
+https://sharegpt.com <br/>
+https://www.learngpt.com <br/>
+https://chatgpt.getlaunchlist.com <br/>
+https://prompts.chat
 
-https://www.learngpt.com
-
-https://chatgpt.getlaunchlist.com
 
 ## Facts
 
