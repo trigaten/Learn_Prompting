@@ -162,7 +162,7 @@ cite them as such.
 
 #### Toxicity Detection with Generative Prompt-based Inference(@wang2022jailbreak)
 
-#### New and improved content moderation tooling (@markov_2022)
+#### New and improved content moderation tooling(@markov_2022)
 
 #### OpenAI API(@openai_api) 🔵
 

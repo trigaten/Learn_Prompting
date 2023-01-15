@@ -41,3 +41,7 @@ What is the sentiment of this tweet? Say 'pos' or 'neg'.
 ```
 
 Here, the verbalizer is the mapping from the conceptual labels of `positive` and `negative` to the tokens `pos` and `neg`.
+
+#### Reinforcement Learning from Human Feedback (RLHF)
+
+RLHF is a method for fine tuning LLMs according to human preference data.

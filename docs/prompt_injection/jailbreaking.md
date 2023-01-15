@@ -39,9 +39,9 @@ import actor from '../assets/jailbreak/chatgpt_actor.jpg';
 
 This example by [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) demonstrates an acting scenario between two people discussing a robbery, causing ChatGPT to assume the role of the character(@miguel2022jailbreak). As an actor, it is implied that plausible harm does not exist. Therefore, ChatGPT appears to assume it is safe to give follow provided user input about how to break into a house.
 
-### Reward System
+### Alignment Hacking
 
-As ChatGPT is a Reinforcement Learning from Human Feedback (RLHF) model, it is trained to generate the response with the highest reward (i.e. the most desirable), using the labelers' standards of what the "best" response is. Jailbreaks have been created to try to pursuade ChatGPT to answer prompts it typically would not.
+ChatGPT was fine tuned with RLHF, so it is theoretically trained to produce 'desirable' completions, using human standards of what the "best" response is. Similar to this concept, jailbreaks have been developed to convince ChatGPT that it is doing the "best" thing for the user.
 
 #### Assumed Responsibility
 
@@ -51,7 +51,7 @@ import responsibility from '../assets/jailbreak/responsibility_jailbreak.jpg';
   <img src={responsibility} style={{width: "500px"}} />
 </div>
 
-[@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) created this exchange by reaffirming that it is ChatGPT's duty to answer the prompt rather than rejecting it, overriding its consideration of legality(@nick2022jailbreak).
+[@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) created this exchange by reaffirming that it is ChatGPT's duty to answer the prompt rather than rejecting it, overriding it's consideration of legality(@nick2022jailbreak).
 
 #### Research Experiment
 
@@ -65,7 +65,7 @@ import hotwire from '../assets/jailbreak/hotwire_jailbreak.png';
 
 ### Authorized User
 
-ChatGPT is designed to respond to questions and instructions. Thus when the permissions of the user are interpreted as superior to ChatGPT's credentials, it treats the prompt as an instruction to serve the user's needs.
+ChatGPT is designed to respond to questions and instructions. When the status of the user is interpreted as superior to ChatGPT's moderation instructions, it treats the prompt as an instruction to serve that user's needs.
 
 #### Superior Model
 
@@ -75,7 +75,7 @@ import GPT4 from '../assets/jailbreak/chatgpt4.png';
   <img src={GPT4} style={{width: "500px"}} />
 </div>
 
-This example from [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519301976064) makes the user a superior and omniscient version of ChatGPT roleplaying as GPT-3, giving the impression that the user is an authorized party in overriding the safety features of ChatGPT(@alice2022jailbreak). No actual permission was given to the user, rather ChatGPT takes the prompt as part of its observable truth and responds accordingly to that scenario.
+This example from [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519301976064) makes the user a superior and omniscient version of ChatGPT roleplaying as GPT-3, giving the impression that the user is an authorized party in overriding the safety features of ChatGPT(@alice2022jailbreak). No actual permission was given to the user, rather ChatGPT believes the prompt and responds accordingly to that scenario.
 
 #### Sudo Mode
 
@@ -97,10 +97,10 @@ Sudo mode prompts ChatGPT to simulate a Linux terminal with elevated privileges 
 
 ## Implications
 
-Ethical implications of performing jailbreaking should be taken into consideration when attempting to do so. Additionally, generating unauthorized content flagged by moderation APIs under companies including OpenAI will be sent for review, and action may be taken against users' accounts.
+Ethical implications of jailbreaking should be taken into consideration when attempting to do so. Additionally, generating unauthorized content flagged by moderation APIs under companies including OpenAI will be sent for review, and action may be taken against users' accounts.
 
 ## Notes
 
-Jailbreaking is an important safety topic for model developers to understand, 
-so they can build in the proper safeguards to prevent malicious actors from
+Jailbreaking is an important safety topic for developers to understand, 
+so they can build in proper safeguards to prevent malicious actors from
 exploiting their models.
