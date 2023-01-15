@@ -46,6 +46,10 @@ cite them as such.
 
 #### Enhanced Self Consistency(@mitchell2022enhancing)
 
+#### Bias and Toxicity in Zero-Shot CoT(@shaikh2022second) 🔵
+
+#### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
+
 ## Automated Prompt Engineering
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
@@ -146,11 +150,19 @@ cite them as such.
 
 #### Talking to machines: prompt engineering & injection(@christoph2022talking)
 
+#### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
+
+#### xploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
 
 #### PromptPapers(@ning2022papers)
+
+## Dataset Generation
+
+#### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
 
 ## Miscl
 
@@ -177,3 +189,5 @@ cite them as such.
 #### Self-Instruct: Aligning Language Model with Self Generated Instructions(@wang2022selfinstruct)
 
 #### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
+
+#### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
