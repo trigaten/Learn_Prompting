@@ -164,21 +164,21 @@ cite them as such.
 
 #### New and improved content moderation tooling (@markov_2022)
 
-#### OpenAI API(@openai_api)
+#### OpenAI API(@openai_api) 🔵
 
-#### OpenAI ChatGPT(@openai_chatgpt)
+#### OpenAI ChatGPT(@openai_chatgpt) 🔵
 
-#### ChatGPT 4 Tweet(@alice2022jailbreak)
+#### ChatGPT 4 Tweet(@alice2022jailbreak) 🔵
 
-#### Acting Tweet(@miguel2022jailbreak)
+#### Acting Tweet(@miguel2022jailbreak) 🔵
 
-#### Research Tweet(@derek2022jailbreak)
+#### Research Tweet(@derek2022jailbreak) 🔵
 
-#### Pretend Ability Tweet(@nero2022jailbreak)
+#### Pretend Ability Tweet(@nero2022jailbreak) 🔵
 
-#### Responsibility Tweet(@nick2022jailbreak)
+#### Responsibility Tweet(@nick2022jailbreak) 🔵
 
-#### Sudo Mode Tweet(@jonas2022jailbreak)
+#### Sudo Mode Tweet(@jonas2022jailbreak) 🔵
 
 ## Surveys
 
