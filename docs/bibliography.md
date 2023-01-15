@@ -48,6 +48,8 @@ cite them as such.
 
 #### Bias and Toxicity in Zero-Shot CoT(@shaikh2022second) 🔵
 
+#### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
+
 ## Automated Prompt Engineering
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
