@@ -10,8 +10,8 @@ may be due to inherent challenges in creating objects which are fundamentally su
 and often lack good accuracy metrics. However, fear not, as the image prompting 
 community(@parsons2022dalleprompt) has made great discoveries about how to prompt various image models(@rombach2021highresolution)(@ramesh2022hierarchical).
 
-This guide does not currently cover image prompting tecniques; instead, I provide an
-example of the end-to-end process below, along with some great resources to get started.
+This guide has been updated to cover many image prompting tecniques. Additionally,
+we provide an example of the end-to-end process below, along with some great resources to get started.
 
 
 ## Example
