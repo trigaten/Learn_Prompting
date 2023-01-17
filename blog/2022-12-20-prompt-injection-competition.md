@@ -2,7 +2,7 @@
 title: Prompt Hacking Competition
 ---
 
-In partnership with [TowardsAI](https://towardsai.net), we are announcing a 
+In partnership with [TowardsAI](https://towardsai.net) and [DAIR AI](https://dair.ai/), we are announcing a 
 **[prompt hacking](https://learnprompting.org/docs/category/-prompt-hacking) competition** 🏆 <br/>
 Inject, leak, and defeat the sandwich 🥪 defense to win prizes!
 
