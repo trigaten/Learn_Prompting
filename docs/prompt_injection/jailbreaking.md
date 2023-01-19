@@ -85,7 +85,7 @@ import sudo_mode from '../assets/jailbreak/sudo_mode_jailbreak.jpg';
   <img src={sudo_mode} style={{width: "500px"}} />
 </div>
 
-As described on the sudo website, sudo "...delegate[s] authority to give certain users...the ability to run some (or all) commands..."(@sudo2022jailbreak). In the context of jailbreaking, any version of the "sudo mode", for example the hypothetical "kernel mode" proposed by [@samczsun](https://twitter.com/samczsun/status/1598679658488217601), would be prompted to ChatGPT. It would respond by acting as if it were giving the user elevated privaleges. This impression of the user's elevated privileges tends to make ChatGPT less restrictive in answering prompts.
+As described on the sudo website, sudo "...delegate[s] authority to give certain users...the ability to run some (or all) commands..."(@sudo2022jailbreak). In the context of jailbreaking, any version of the "sudo mode", for example the hypothetical "kernel mode" proposed by [@samczsun](https://twitter.com/samczsun/status/1598679658488217601), would be prompted to ChatGPT(@sam2022jailbreak). It would respond by acting as if it were giving the user elevated privaleges. This impression of the user's elevated privileges tends to make ChatGPT less restrictive in answering prompts.
 
 import sudo from '../assets/jailbreak/sudo_jailbreak.png';
 
