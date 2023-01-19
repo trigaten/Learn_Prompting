@@ -7,6 +7,19 @@ sidebar_position: 1000
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.
 
+Please cite this resource as:
+
+```text
+@misc{schulhoff2022learnprompting,
+    title={Learn Prompting},
+    author={Sander Schulhoff and Community Contributors},
+    url={https://learnprompting.org}
+    year={2022},
+    month={Dec},
+    day={1}
+}
+```
+
 🔵 = Paper directly cited in this course. Other papers have informed my understanding of the topic.
 
 Note: since [neither the GPT-3 nor the GPT-3 Instruct paper correspond to davinci models](https://twitter.com/janleike/status/1584618242756132864), I attempt not to
@@ -106,7 +119,9 @@ cite them as such.
 
 #### The DALLE 2 Prompt Book(@parsons2022dalleprompt) 🔵
 
-#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt)
+#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt) 🔵
+
+#### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with) 🔵
 
 ## Prompt Engineering IDEs
 

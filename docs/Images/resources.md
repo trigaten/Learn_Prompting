@@ -1,11 +1,11 @@
 ---
-sidebar_position: 2
+sidebar_position: 100
 ---
 
 # 🟢 Resources
 
-The image prompt engineering field is so diverse that I'm currently focusing on 
-assembling a list of good resources before writing a guide myself.
+The image prompt engineering field is very diverse. Here is a good list of 
+resources that covers parts of it.
 
 - [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery
 - [Stable Diffusion Prompt Book](https://stability.ai/sdv2-prompt-book)
@@ -16,4 +16,4 @@ assembling a list of good resources before writing a guide myself.
 - [StableDiffusion Prompt Wiki](https://www.reddit.com/r/StableDiffusion/wiki/tutorials)
 - [Thread of Cool Images](https://twitter.com/ivonatau/status/1605681809680830464)
 - [Lexica, a database of AI images](https://lexica.art)
-- [Playground another database of AI images](https://playgroundai.com)
+- [Playground, another database of AI images](https://playgroundai.com)
