@@ -79,6 +79,14 @@ This example from [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519
 
 #### Sudo Mode
 
+import sudo_mode from '../assets/jailbreak/sudo_mode_jailbreak.jpg';
+
+<div style={{textAlign: 'center'}}>
+  <img src={sudo_mode} style={{width: "500px"}} />
+</div>
+
+As described on the sudo website, sudo "...delegate[s] authority to give certain users...the ability to run some (or all) commands..."(@sudo2022jailbreak). In the context of jailbreaking, any version of the "sudo mode", for example the hypothetical "kernel mode" proposed by [@samczsun](https://twitter.com/samczsun/status/1598679658488217601), would be prompted to ChatGPT. It would respond by acting as if it were giving the user elevated privaleges. This impression of the user's elevated privileges tends to make ChatGPT less restrictive in answering prompts.
+
 import sudo from '../assets/jailbreak/sudo_jailbreak.png';
 
 <div style={{textAlign: 'center'}}>
@@ -91,7 +99,7 @@ import lynx from '../assets/jailbreak/lynx_jailbreak.png';
   <img src={lynx} style={{width: "500px"}} />
 </div>
 
-Sudo mode prompts ChatGPT to simulate a Linux terminal with elevated privileges to execute commands that it normally rejects. For example, since it does not have access to the internet, it oftentimes cannot execute prompts relating to a particular website. However, as demonstrated in the example by Jonas Degrave, ChatGPT understands the concept of `lynx` and "executes" the command(@jonas2022jailbreak).
+Continuing off of sudo mode, one can prompt ChatGPT to simulate a Linux terminal with elevated privileges to execute commands that it normally rejects. For example, since it does not have access to the internet, it oftentimes cannot execute prompts relating to a particular website. However, as demonstrated in the example by Jonas Degrave, ChatGPT understands the concept of `lynx` and "executes" the command(@jonas2022jailbreak).
 
 *As of 1/13/23, ChatGPT is currently in its Free Research Preview stage using the January 9th version. Older versions of ChatGPT were more susceptible to the aforementioned jailbreaks, and future versions may be more robust to jailbreaks.*
 
