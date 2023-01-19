@@ -178,7 +178,9 @@ cite them as such.
 
 #### Responsibility Tweet(@nick2022jailbreak) 🔵
 
-#### Sudo Mode Tweet(@jonas2022jailbreak) 🔵
+#### Lynx Mode Tweet(@jonas2022jailbreak) 🔵
+
+#### Sudo Mode Tweet(@sudo2022jailbreak) 🔵
 
 ## Surveys
 
