@@ -119,7 +119,9 @@ cite them as such.
 
 #### The DALLE 2 Prompt Book(@parsons2022dalleprompt) 🔵
 
-#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt)
+#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt) 🔵
+
+#### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with) 🔵
 
 ## Prompt Engineering IDEs
 
