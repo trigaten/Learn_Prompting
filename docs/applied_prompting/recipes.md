@@ -12,7 +12,9 @@ Let's look at a basic example to get a taste of what ChatGPT is capable of:
     Please create a recipe for a sauce that can be served with steak.
 </pre>
 
-<pre>
+<details>
+    <summary>ChatGPT response</summary>
+    ```md
     Sure! Here is a recipe for a simple and delicious steak sauce:
 
     Ingredients:
@@ -32,7 +34,8 @@ Let's look at a basic example to get a taste of what ChatGPT is capable of:
     3. Season the sauce with salt and pepper to taste.
     4. Serve the sauce with your favorite grilled or pan-fried steak. Enjoy!
     This sauce has a savory and slightly tangy flavor that goes well with a variety of steaks. You can also adjust the seasoning to taste if you prefer a more piquant or sweet sauce.
-</pre>
+    ```
+</details>
 
 In the example I asked ChatGPT create a recipe for a sauce that can be served over steak. ChatGPT responded in three sections: first listing out the ingredients for the recipes, then listing the instructions for the dish, and finally writing a few sentences about the recipe. This is the general format that ChatGPT will always use when it is asked to create a recipe.
 The prompt is broad, and the possibilities for this recipe are countless. If you're unsatisfied with the recipe, you can generate new ones with the regenerate button until you find the one you like!
