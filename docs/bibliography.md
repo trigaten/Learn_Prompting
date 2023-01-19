@@ -165,9 +165,37 @@ cite them as such.
 
 #### Talking to machines: prompt engineering & injection(@christoph2022talking)
 
+#### Exploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+
 #### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
 
-#### xploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+## Jailbreaking
+
+#### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
+
+#### Lessons learned on Language Model Safety and misuse(@brundage_2022)
+
+#### Toxicity Detection with Generative Prompt-based Inference(@wang2022jailbreak)
+
+#### New and improved content moderation tooling(@markov_2022)
+
+#### OpenAI API(@openai_api) 🔵
+
+#### OpenAI ChatGPT(@openai_chatgpt) 🔵
+
+#### ChatGPT 4 Tweet(@alice2022jailbreak) 🔵
+
+#### Acting Tweet(@miguel2022jailbreak) 🔵
+
+#### Research Tweet(@derek2022jailbreak) 🔵
+
+#### Pretend Ability Tweet(@nero2022jailbreak) 🔵
+
+#### Responsibility Tweet(@nick2022jailbreak) 🔵
+
+#### Lynx Mode Tweet(@jonas2022jailbreak) 🔵
+
+#### Sudo Mode Tweet(@sudo2022jailbreak) 🔵
 
 ## Surveys
 
