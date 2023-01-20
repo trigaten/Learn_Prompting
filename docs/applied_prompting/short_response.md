@@ -6,7 +6,7 @@ sidebar_position: 3
 
 import Auto from '../assets/short_content_auto.png';
 
-With the right prompting, GPT-3 is very capable of writing short form responses. To demonstrate this, I will be looking at **solving discussion questions**, a common weekly assignment in many college courses. A response to a discussion question is usually about 100-700 words. Longer content can be bit more tricky as LLMs have limited memory and have difficulty understanding the global picture of what they are writing(@jin2022plot).
+With the right prompting, GPT-3 is very capable of writing short form responses. To demonstrate this, I will be looking at **solving discussion questions**, a common weekly assignment in many college courses. A response to a discussion question is usually about 100-700 words. Longer content can a be bit more tricky as LLMs have limited memory and have difficulty understanding the global picture of what they are writing(@jin2022plot).
 
 Let's look at an example of a basic discussion question:
 
