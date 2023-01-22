@@ -123,6 +123,8 @@ cite them as such.
 
 #### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with) 🔵
 
+#### Optimizing Prompts for Text-to-Image Generation(@hao2022optimizing)
+
 ## Prompt Engineering IDEs
 
 #### Prompt IDE(@strobelt2022promptide) 🔵
