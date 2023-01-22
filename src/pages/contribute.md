@@ -3,7 +3,7 @@
 This site is **open source** and contributions are extremely welcome. 
 You can find the source code on [GitHub](https://github.com/trigaten/Learn_Prompting),
 along with many [open issues](https://github.com/trigaten/Learn_Prompting/issues). 
-Please reach out at learnprompting@gmail.com if you have any questions.
+If you want to get involved, but don't know how, reach out to learnprompting@gmail.com and I will help you get started.
 
 In particular, we are looking for help with:
 

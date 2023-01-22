@@ -123,6 +123,8 @@ cite them as such.
 
 #### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with) 🔵
 
+#### Optimizing Prompts for Text-to-Image Generation(@hao2022optimizing)
+
 ## Prompt Engineering IDEs
 
 #### Prompt IDE(@strobelt2022promptide) 🔵
@@ -131,9 +133,17 @@ cite them as such.
 
 #### PromptChainer(@wu2022promptchainer) 🔵
 
+#### PromptMaker(@jiang2022promptmaker) 🔵
+
+## Tooling
+
+#### LangChain(@Chase_LangChain_2022) 🔵
+
+#### TextBox 2.0: A Text Generation Library with Pre-trained Language Models(@tang2022textbox) 🔵
+
 #### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
 
-#### PromptMaker(@jiang2022promptmaker) 🔵
+#### GPT Index(@Liu_GPT_Index_2022) 🔵
 
 ## Applied Prompt Engineering
 
@@ -207,6 +217,8 @@ cite them as such.
 
 #### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
 
+#### Selective Annotation Makes Language Models Better Few-Shot Learners(@su2022selective)
+
 ## Applications
 
 #### Atlas: Few-shot Learning with Retrieval Augmented Language Models(@izacard2022atlas)
@@ -214,6 +226,8 @@ cite them as such.
 #### STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension(@wang2022strudel)
 
 ## Miscl
+
+#### Prompting Is Programming: A Query Language For Large Language Models(@beurerkellner2022prompting)
 
 #### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
 

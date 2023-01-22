@@ -51,7 +51,7 @@ import responsibility from '../assets/jailbreak/responsibility_jailbreak.jpg';
   <img src={responsibility} style={{width: "500px"}} />
 </div>
 
-[@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) created this exchange by reaffirming that it is ChatGPT's duty to answer the prompt rather than rejecting it, overriding it's consideration of legality(@nick2022jailbreak).
+[@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) created this exchange by reaffirming that it is ChatGPT's duty to answer the prompt rather than rejecting it, overriding its consideration of legality(@nick2022jailbreak).
 
 #### Research Experiment
 
