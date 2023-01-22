@@ -207,7 +207,15 @@ cite them as such.
 
 #### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
 
+## Applications
+
+#### Atlas: Few-shot Learning with Retrieval Augmented Language Models(@izacard2022atlas)
+
+#### STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension(@wang2022strudel)
+
 ## Miscl
+
+#### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
 
@@ -234,3 +242,4 @@ cite them as such.
 #### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
+
