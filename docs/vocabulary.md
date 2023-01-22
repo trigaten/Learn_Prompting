@@ -18,6 +18,19 @@ replaced with a word from the vocabulary. The model then predicts the word that
 was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
 will predict "chasing" with high probability.
 
+#### Labels
+
+The concept of labels is best understood with an example.
+
+Say we want to classify some Tweets as mean or not mean. If we have a list of Tweets and 
+their corresponding *label* (mean or not mean), we can train a model to classify
+whether tweets are mean or not. Labels are generally just possibilities for the
+classification task.
+
+#### Label Space
+
+All of the possible labels for a given task ('mean' and 'not mean' for the above example).
+
 #### Sentiment Analysis
 
 Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
