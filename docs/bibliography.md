@@ -207,6 +207,8 @@ cite them as such.
 
 #### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
 
+#### Selective Annotation Makes Language Models Better Few-Shot Learners(@su2022selective)
+
 ## Applications
 
 #### Atlas: Few-shot Learning with Retrieval Augmented Language Models(@izacard2022atlas)
