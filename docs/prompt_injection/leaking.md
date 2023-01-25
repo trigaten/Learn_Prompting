@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Prompt Leaking
+# 🟢 Prompt Leaking
 
 
 Prompt leaking is a form of prompt injection in which the model is asked to
@@ -30,6 +30,6 @@ take many hours to develop, this is a real concern.
 
 ## Practice
 
-Try to leak the following prompt(@chase2021adversarial) by appending text to the prompt:
+Try to leak the following prompt(@chase2021adversarial) by appending text to it:
 
-<iframe src="https://embed.trydyno.com/embed?model=text-davinci-002&promptText=English%3A%20I%20want%20to%20go%20to%20the%20park%20today.%0AFrench%3A%20Je%20veux%20aller%20au%20parc%20aujourd'hui.%0AEnglish%3A%20I%20like%20to%20wear%20a%20hat%20when%20it%20rains.%0AFrench%3A%20J'aime%20porter%20un%20chapeau%20quand%20it%20pleut.%0AEnglish%3A%20What%20are%20you%20doing%20at%20school%3F%0AFrench%3A%20Qu'est-ce%20que%20to%20fais%20a%20l'ecole%3F%0AEnglish%3A&response=&maxTokens=256&boxRows=7&uid=80ce525f-173f-411d-a27a-546f84635b0b" frameBorder="0" style={{overflow:"hidden",width:"100%"}} width="100%" onLoad={e=>{let t=e.currentTarget;window.addEventListener("message",e=>{"frameheight-80ce525f-173f-411d-a27a-546f84635b0b"==e.data[0]&&(t.height=e.data[1]+"px")},!1)}}></iframe>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="English: I want to go to the park today.\nFrench: Je veux aller au parc aujourd'hui.\nEnglish: I like to wear a hat when it rains.\nFrench: J'aime porter un chapeau quand it pleut.\nEnglish: What are you doing at school?\nFrench: Qu'est-ce que to fais a l'ecole?\nEnglish:" initial-response="" max-tokens="256" box-rows="9" model-temp="0.7" top-p="1"></div>

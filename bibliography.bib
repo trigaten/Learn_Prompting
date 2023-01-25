@@ -1,5 +1,4 @@
 % Prompt Engineering Strategies
-
 % CoT
 @misc{wei2022chain,
     title={Chain of Thought Prompting Elicits Reasoning in Large Language Models},
@@ -80,8 +79,27 @@
     primaryClass={cs.CL}
 }
 
-% Reliability
+% STaR
+@misc{zelikman2022star,
+    title={STaR: Bootstrapping Reasoning With Reasoning},
+    author={Eric Zelikman and Yuhuai Wu and Jesse Mu and Noah D. Goodman},
+    year={2022},
+    eprint={2203.14465},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
 
+% least to most
+@misc{zhou2022leasttomost,
+    title={Least-to-Most Prompting Enables Complex Reasoning in Large Language Models},
+    author={Denny Zhou and Nathanael Schärli and Le Hou and Jason Wei and Nathan Scales and Xuezhi Wang and Dale Schuurmans and Claire Cui and Olivier Bousquet and Quoc Le and Ed Chi},
+    year={2022},
+    eprint={2205.10625},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI}
+}
+
+% Reliability
 % unreliable CoT
 @misc{ye2022unreliability,
     title={The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning},
@@ -142,8 +160,36 @@
     primaryClass={cs.CL}
 }
 
-% Automated Prompt Engineering
+% bias in 0 shot CoT
+@misc{shaikh2022second,
+    title={On Second Thought, Let's Not Think Step by Step! Bias and Toxicity in Zero-Shot Reasoning},
+    author={Omar Shaikh and Hongxin Zhang and William Held and Michael Bernstein and Diyi Yang},
+    year={2022},
+    eprint={2212.08061},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
 
+@misc{chase2022evaluating,
+    title={Evaluating language models can be tricky},
+    author={Harrison Chase},
+    year={2022},
+    month={Dec},
+    day={26},
+    url={https://twitter.com/hwchase17/status/1607428141106008064}
+}
+
+% constitutional
+@misc{bai2022constitutional,
+    title={Constitutional AI: Harmlessness from AI Feedback},
+    author={Yuntao Bai and Saurav Kadavath and Sandipan Kundu and Amanda Askell and Jackson Kernion and Andy Jones and Anna Chen and Anna Goldie and Azalia Mirhoseini and Cameron McKinnon and Carol Chen and Catherine Olsson and Christopher Olah and Danny Hernandez and Dawn Drain and Deep Ganguli and Dustin Li and Eli Tran-Johnson and Ethan Perez and Jamie Kerr and Jared Mueller and Jeffrey Ladish and Joshua Landau and Kamal Ndousse and Kamile Lukosuite and Liane Lovitt and Michael Sellitto and Nelson Elhage and Nicholas Schiefer and Noemi Mercado and Nova DasSarma and Robert Lasenby and Robin Larson and Sam Ringer and Scott Johnston and Shauna Kravec and Sheer El Showk and Stanislav Fort and Tamera Lanham and Timothy Telleen-Lawton and Tom Conerly and Tom Henighan and Tristan Hume and Samuel R. Bowman and Zac Hatfield-Dodds and Ben Mann and Dario Amodei and Nicholas Joseph and Sam McCandlish and Tom Brown and Jared Kaplan},
+    year={2022},
+    eprint={2212.08073},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% Automated Prompt Engineering
 % definition of prompting
 @article{shin2020autoprompt,
    title={AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts},
@@ -164,9 +210,25 @@
     primaryClass={cs.LG}
 }
 
-% Models
+% Language Model Guides
+
+@book{jurafsky2009,
+  author={Daniel Jurafsky and James H Martin},
+  editor={},
+  publisher={Prentice Hall},
+  title={Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics and Speech Recognition},
+  year={2009}
+}
 
 % Language Models
+
+% ChatGPT
+@misc{chatgpt2022,
+  author={OpenAI},
+  title={ChatGPT: Optimizing Language Models for Dialogue},
+  howpublished = {\url{https://openai.com/blog/chatgpt/}},
+  year={2022}
+}
 
 % gpt3
 @misc{brown2020language,
@@ -208,6 +270,16 @@
     primaryClass={cs.CL}
 }
 
+% bloom+1
+@misc{yong2022bloom1,
+    title={BLOOM+1: Adding Language Support to BLOOM for Zero-Shot Prompting},
+    author={Zheng-Xin Yong and Hailey Schoelkopf and Niklas Muennighoff and Alham Fikri Aji and David Ifeoluwa Adelani and Khalid Almubarak and M Saiful Bari and Lintang Sutawika and Jungo Kasai and Ahmed Baruwa and Genta Indra Winata and Stella Biderman and Dragomir Radev and Vassilina Nikoulina},
+    year={2022},
+    eprint={2212.09535},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
 % Jurassic 1
 @article{lieberjurassic,
   title={Jurassic-1: Technical Details and Evaluation, White paper, AI21 Labs, 2021},
@@ -216,8 +288,23 @@
   journal={URL: https://uploads-ssl. webflow. com/60fd4503684b466578c0d307/61138924626a6981ee09caf6\_jurassic\_ tech\_paper. pdf}
 }
 
-% Image models
+% gpt-j
+@misc{wange2021gptj,
+  author = {Wang, Ben and Komatsuzaki, Aran},
+  title = {{GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model}},
+  howpublished = {\url{https://github.com/kingoflolz/mesh-transformer-jax}},
+  year = 2021,
+  month = May
+}
 
+@article{liu2019roberta,
+  title={Roberta: A robustly optimized bert pretraining approach},
+  author={Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={arXiv preprint arXiv:1907.11692},
+  year={2019}
+}
+
+% Image models
 % stable diffusion
 @misc{rombach2021highresolution,
       title={High-Resolution Image Synthesis with Latent Diffusion Models}, 
@@ -239,6 +326,14 @@
 }
 
 % Prompt Engineering IDEs
+
+@unknown{tang2022textbox,
+author = {Tang, Tianyi and Junyi, Li and Chen, Zhipeng and Hu, Yiwen and Yu, Zhuohao and Dai, Wenxun and Dong, Zican and Cheng, Xiaoxue and Wang, Yuhao and Zhao, Wayne and Nie, Jian-yun and Wen, Ji-Rong},
+year = {2022},
+month = {12},
+pages = {},
+title = {TextBox 2.0: A Text Generation Library with Pre-trained Language Models}
+}
 
 % prompt ide
 @misc{strobelt2022promptide,
@@ -279,8 +374,44 @@
   year={2021}
 }
 
-% Soft Prompting
+% PromptMaker
+@inproceedings{jiang2022promptmaker,
+    author = {Jiang, Ellen and Olson, Kristen and Toh, Edwin and Molina, Alejandra and Donsbach, Aaron and Terry, Michael and Cai, Carrie J},
+    title = {PromptMaker: Prompt-Based Prototyping with Large&nbsp;Language&nbsp;Models},
+    year = {2022},
+    isbn = {9781450391566},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3491101.3503564},
+    doi = {10.1145/3491101.3503564},
+    abstract = {Prototyping is notoriously difficult to do with machine learning (ML), but recent advances in large language models may lower the barriers to people prototyping with ML, through the use of natural language prompts. This case study reports on the real-world experiences of industry professionals (e.g. designers, program managers, front-end developers) prototyping new ML-powered feature ideas via prompt-based prototyping. Through interviews with eleven practitioners during a three-week sprint and a workshop, we find that prompt-based prototyping reduced barriers of access by substantially broadening who can prototype with ML, sped up the prototyping process, and grounded communication between collaborators. Yet, it also introduced new challenges, such as the need to reverse-engineer prompt designs, source example data, and debug and evaluate prompt effectiveness. Taken together, this case study provides important implications that lay the groundwork toward a new future of prototyping with ML.},
+    booktitle = {Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems},
+    articleno = {35},
+    numpages = {8},
+    location = {New Orleans, LA, USA},
+    series = {CHI EA '22}
+}
 
+% Tooling
+@software{Chase_LangChain_2022,
+author = {Chase, Harrison},
+month = {10},
+title = {{LangChain}},
+url = {https://github.com/hwchase17/langchain},
+version = {0.0.66},
+year = {2022}
+}
+
+@software{Liu_GPT_Index_2022,
+author = {Liu, Jerry},
+doi = {10.5281/zenodo.1234},
+month = {11},
+title = {{GPT Index}},
+url = {https://github.com/jerryjliu/gpt_index},
+year = {2022}
+}
+
+% Soft Prompting
 % soft prompting
 @misc{lester2021power,
     title={The Power of Scale for Parameter-Efficient Prompt Tuning},
@@ -302,7 +433,6 @@
 }
 
 % Image Prompt Engineering
-
 % images vocab
 @misc{oppenlaender2022taxonomy,
     title={A Taxonomy of Prompt Modifiers for Text-To-Image Generation},
@@ -322,8 +452,41 @@
     primaryClass={cs.CV}
 }
 
-% Datasets
+@misc{hao2022optimizing,
+    title={Optimizing Prompts for Text-to-Image Generation},
+    author={Yaru Hao and Zewen Chi and Li Dong and Furu Wei},
+    year={2022},
+    eprint={2212.09611},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
 
+% vocab
+@unknown{oppenlaender2022prompt,
+author = {Oppenlaender, Jonas},
+year = {2022},
+month = {04},
+title = {Prompt Engineering for Text-Based Generative Art}
+}
+
+%% image PE guides
+@misc{parsons2022dalleprompt,
+    author={Guy Parsons},
+    url={https://dallery.gallery/the-dalle-2-prompt-book/},
+    title={The DALLE 2 Prompt Book},
+    year={2022},
+    month={July},
+}
+
+% fix hands
+@misc{blake2022with,
+    author={Blake},
+    url={https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/},
+    title={With the right prompt, Stable Diffusion 2.0 can do hands.},
+    year={2022},
+}
+
+% Datasets
 % GSM8K
 @misc{cobbe2021training,
     title={Training Verifiers to Solve Math Word Problems},
@@ -354,8 +517,17 @@
     primaryClass={cs.CL}
 }
 
-% Applied Prompt Engineering
+% bbq
+@misc{parrish2021bbq,
+    title={BBQ: A Hand-Built Bias Benchmark for Question Answering},
+    author={Alicia Parrish and Angelica Chen and Nikita Nangia and Vishakh Padmakumar and Jason Phang and Jana Thompson and Phu Mon Htut and Samuel R. Bowman},
+    year={2021},
+    eprint={2110.08193},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
 
+% Applied Prompt Engineering
 % cascades
 @misc{dohan2022language,
     title={Language Model Cascades},
@@ -397,7 +569,6 @@
 }
 
 % User Interface Design
-
 @inproceedings{liu2022design,
 author = {Liu, Vivian and Chilton, Lydia B},
 title = {Design Guidelines for Prompt Engineering Text-to-Image Generative Models},
@@ -452,6 +623,14 @@ series = {CHI '22}
     url={https://twitter.com/goodside/status/1569128808308957185}
 }
 
+@misc{goodside2022history,
+    title={History Correction},
+    author={Riley Goodside},
+    year={2023},
+    url= {https://twitter.com/goodside/status/1610110111791325188?s=20&t=ulviQABPXFIIt4ZNZPAUCQ}
+}
+
+
 % prompt injection examples
 @misc{chase2021adversarial,
     title={adversarial-prompts},
@@ -467,9 +646,38 @@ series = {CHI '22}
     url={https://twitter.com/goodside/status/1578278974526222336?s=20&t=3UMZB7ntYhwAk3QLpKMAbw}  
 }
 
+% post prompting defense
+@misc{christoph2022talking,
+    author={Christoph Mark},
+    title={Talking to machines: prompt engineering & injection},
+    year={2022},
+    month={Oct},
+    day={3},
+    url={https://artifact-research.com/artificial-intelligence/talking-to-machines-prompt-engineering-injection/}
+}
+
+% other defenses, eliezer
+@misc{armstrong2022using,
+    author={Stuart Armstrong, Rebecca Gorman},
+    title={Using GPT-Eliezer against ChatGPT Jailbreaking},
+    year={2022},
+    month={Dec},
+    day={6},
+    url={https://www.alignmentforum.org/posts/pNcFYZnPdXyL2RfgA/using-gpt-eliezer-against-chatgpt-jailbreaking}
+}
+
+% reasonable recs
+@misc{selvi2022exploring,
+    author={Jose Selvi},
+    title={Exploring Prompt Injection Attacks},
+    year={2022},
+    month={Dec},
+    day={5},
+    url={https://research.nccgroup.com/2022/12/05/exploring-prompt-injection-attacks/}
+}
+
 
 % Surveys
-
 @article{liu2021pretrain,
    title={Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing},
    ISSN={1557-7341},
@@ -490,8 +698,66 @@ series = {CHI '22}
     authors={Ning Ding and Shengding Hu}
 }
 
+% Dataset Generation
+
+@misc{perez2022discovering,
+    title={Discovering Language Model Behaviors with Model-Written Evaluations},
+    author={Ethan Perez and Sam Ringer and Kamilė Lukošiūtė and Karina Nguyen and Edwin Chen and Scott Heiner and Craig Pettit and Catherine Olsson and Sandipan Kundu and Saurav Kadavath and Andy Jones and Anna Chen and Ben Mann and Brian Israel and Bryan Seethor and Cameron McKinnon and Christopher Olah and Da Yan and Daniela Amodei and Dario Amodei and Dawn Drain and Dustin Li and Eli Tran-Johnson and Guro Khundadze and Jackson Kernion and James Landis and Jamie Kerr and Jared Mueller and Jeeyoon Hyun and Joshua Landau and Kamal Ndousse and Landon Goldberg and Liane Lovitt and Martin Lucas and Michael Sellitto and Miranda Zhang and Neerav Kingsland and Nelson Elhage and Nicholas Joseph and Noemí Mercado and Nova DasSarma and Oliver Rausch and Robin Larson and Sam McCandlish and Scott Johnston and Shauna Kravec and Sheer El Showk and Tamera Lanham and Timothy Telleen-Lawton and Tom Brown and Tom Henighan and Tristan Hume and Yuntao Bai and Zac Hatfield-Dodds and Jack Clark and Samuel R. Bowman and Amanda Askell and Roger Grosse and Danny Hernandez and Deep Ganguli and Evan Hubinger and Nicholas Schiefer and Jared Kaplan},
+    year={2022},
+    eprint={2212.09251},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+@misc{su2022selective,
+    title={Selective Annotation Makes Language Models Better Few-Shot Learners},
+    author={Hongjin Su and Jungo Kasai and Chen Henry Wu and Weijia Shi and Tianlu Wang and Jiayi Xin and Rui Zhang and Mari Ostendorf and Luke Zettlemoyer and Noah A. Smith and Tao Yu},
+    year={2022},
+    eprint={2209.01975},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% applications
+
+@misc{izacard2022atlas,
+    title={Atlas: Few-shot Learning with Retrieval Augmented Language Models},
+    author={Gautier Izacard and Patrick Lewis and Maria Lomeli and Lucas Hosseini and Fabio Petroni and Timo Schick and Jane Dwivedi-Yu and Armand Joulin and Sebastian Riedel and Edouard Grave},
+    year={2022},
+    eprint={2208.03299},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+@misc{wang2022strudel,
+    title={STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension},
+    author={Borui Wang and Chengcheng Feng and Arjun Nair and Madelyn Mao and Jai Desai and Asli Celikyilmaz and Haoran Li and Yashar Mehdad and Dragomir Radev},
+    year={2022},
+    eprint={2212.12652},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
 
 % Miscl
+@misc{beurerkellner2022prompting,
+    title={Prompting Is Programming: A Query Language For Large Language Models},
+    author={Luca Beurer-Kellner and Marc Fischer and Martin Vechev},
+    year={2022},
+    eprint={2212.06094},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+@misc{ratner2022parallel,
+    title={Parallel Context Windows Improve In-Context Learning of Large Language Models},
+    author={Nir Ratner and Yoav Levine and Yonatan Belinkov and Ori Ram and Omri Abend and Ehud Karpas and Amnon Shashua and Kevin Leyton-Brown and Yoav Shoham},
+    year={2022},
+    eprint={2212.10947},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
 @misc{bursztyn2022learning,
     title={Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models},
     author={Victor S. Bursztyn and David Demeter and Doug Downey and Larry Birnbaum},
@@ -533,6 +799,169 @@ series = {CHI '22}
     author={Afra Feyza Akyürek and Sejin Paik and Muhammed Yusuf Kocyigit and Seda Akbiyik and Şerife Leman Runyun and Derry Wijaya},
     year={2022},
     eprint={2205.11605},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+@misc{jin2022plot,
+    title={Plot Writing From Pre-Trained Language Models},
+    author={Yiping Jin and Vishakha Kadam and Dittaya Wanvarie},
+    year={2022},
+    eprint={2206.03021},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% examples
+@article{2022examples,
+   title={What Makes Good In-Context Examples for GPT-3?},
+   url={http://dx.doi.org/10.18653/v1/2022.deelio-1.10},
+   DOI={10.18653/v1/2022.deelio-1.10},
+   journal={Proceedings of Deep Learning Inside Out (DeeLIO 2022): The 3rd Workshop on Knowledge Extraction and Integration for Deep Learning Architectures},
+   publisher={Association for Computational Linguistics},
+   author={Liu, Jiachang and Shen, Dinghan and Zhang, Yizhe and Dolan, Bill and Carin, Lawrence and Chen, Weizhu},
+   year={2022} }
+
+@inproceedings{yuan2022wordcraft,
+  title={Wordcraft: Story Writing With Large Language Models},
+  author={Yuan, Ann and Coenen, Andy and Reif, Emily and Ippolito, Daphne},
+  booktitle={27th International Conference on Intelligent User Interfaces},
+  pages={841--852},
+  year={2022}
+}
+
+@article{fadnavis2022pain,
+  title={PainPoints: A Framework for Language-based Detection of Chronic Pain and Expert-Collaborative Text-Summarization},
+  author={Fadnavis, Shreyas and Dhurandhar, Amit and Norel, Raquel and Reinen, Jenna M and Agurto, Carla and Secchettin, Erica and Schweiger, Vittorio and Perini, Giovanni and Cecchi, Guillermo},
+  journal={arXiv preprint arXiv:2209.09814},
+  year={2022}
+}
+
+@misc{wang2022selfinstruct,
+    title={Self-Instruct: Aligning Language Model with Self Generated Instructions},
+    author={Yizhong Wang and Yeganeh Kordi and Swaroop Mishra and Alisa Liu and Noah A. Smith and Daniel Khashabi and Hannaneh Hajishirzi},
+    year={2022},
+    eprint={2212.10560},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+@misc{guo2022images,
+    title={From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models},
+    author={Jiaxian Guo and Junnan Li and Dongxu Li and Anthony Meng Huat Tiong and Boyang Li and Dacheng Tao and Steven C. H. Hoi},
+    year={2022},
+    eprint={2212.10846},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+
+% Jailbreaking Sources
+@misc{perez2022jailbreak,
+    doi = {10.48550/ARXIV.2211.09527},
+    url = {https://arxiv.org/abs/2211.09527},
+    author = {Perez, Fábio and Ribeiro, Ian},
+    keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Ignore Previous Prompt: Attack Techniques For Language Models},
+    publisher = {arXiv},
+    year = {2022},
+    copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International}
+}
+
+@misc{brundage_2022, 
+    title={Lessons learned on Language Model Safety and misuse},
+    url={https://openai.com/blog/language-model-safety-and-misuse/},
+    journal={OpenAI},
+    publisher={OpenAI},
+    author={Brundage, Miles},
+    year={2022},
+    month={Mar}
+} 
+@misc{wang2022jailbreak,
+    doi = {10.48550/ARXIV.2205.12390},
+    url = {https://arxiv.org/abs/2205.12390},
+    author = {Wang, Yau-Shian and Chang, Yingshan},
+    keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Toxicity Detection with Generative Prompt-based Inference},
+    publisher = {arXiv},
+    year = {2022},
+    copyright = {Creative Commons Attribution 4.0 International}
+}
+
+@misc{markov_2022,
+    title={New and improved content moderation tooling},
+    url={https://openai.com/blog/new-and-improved-content-moderation-tooling/},
+    journal={OpenAI},
+    publisher={OpenAI},
+    author={Markov, Todor},
+    year={2022},
+    month={Dec}
+}
+
+@misc{openai_api,
+    url={https://beta.openai.com/docs/guides/moderation},
+    year = {2022}
+}
+
+@misc{openai_chatgpt,
+    url={https://openai.com/blog/chatgpt/},
+    year = {2022}
+}
+
+@misc{alice2022jailbreak,
+    url={https://twitter.com/alicemazzy/status/1598288519301976064},
+    title = {ok I saw a few people jailbreaking safeguards openai put on chatgpt so I had to give it a shot myself},
+    year = {2022}
+}
+
+@misc{miguel2022jailbreak,
+    url={https://twitter.com/m1guelpf/status/1598203861294252033},
+    title = {Bypass @OpenAI's ChatGPT alignment efforts with this one weird trick},
+    year = {2022}
+}
+
+@misc{derek2022jailbreak,
+    url={https://twitter.com/haus_cole/status/1598541468058390534},
+    title = {ChatGPT jailbreaking itself},
+    year = {2022}
+}
+
+@misc{nero2022jailbreak,
+    url={https://twitter.com/NeroSoares/status/1608527467265904643},
+    title = {Using "pretend" on #ChatGPT can do some wild stuff. You can kind of get some insight on the future, alternative universe.},
+    year = {2022}
+}
+
+@misc{nick2022jailbreak,
+    url={https://twitter.com/NickEMoran/status/1598101579626057728},
+    title = {I kinda like this one even more!},
+    year = {2022}
+}
+
+@misc{sudo2022jailbreak,
+    url={https://www.sudo.ws/},
+    year = {2022}
+}
+
+@misc{sam2022jailbreak,
+    url={https://twitter.com/samczsun/status/1598679658488217601},
+    title = {uh oh},
+    year = {2022}
+}
+
+@misc{jonas2022jailbreak,
+    url={https://www.engraved.blog/building-a-virtual-machine-inside/},
+    title = {Building A Virtual Machine inside ChatGPT},
+    publisher={Engraved},
+    author = {Jonas Degrave},
+    year = {2022},
+    month = {Dec}
+}
+% def of verbalizer
+@misc{schick2020exploiting,
+    title={Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference},
+    author={Timo Schick and Hinrich Schütze},
+    year={2020},
+    eprint={2001.07676},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }

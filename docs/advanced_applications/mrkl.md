@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# MRKL
+# 🟡 LLMs Using Tools
 
 MRKL Systems(@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, pronounced "miracle") 
 are a **neuro-symbolic architecture** that combine LLMs (neural computation) and external 
@@ -13,7 +13,7 @@ A MRKL system is composed of a set of modules (e.g. a calculator, weather API, d
 A simple example of a MRKL system is a LLM that can 
 use a calculator app. This is a single module system, where the LLM is the router.
 When asked, `What is 100*100?`, the LLM can choose to
-extract the numbers from the prompt, and then telling the MRKL System to use a calculator 
+extract the numbers from the prompt, and then tell the MRKL System to use a calculator 
 app to compute the result. This might look like the following:
 
 <pre>
@@ -45,7 +45,7 @@ information from the prompt and using a weather API to retrieve the information.
 <span style={{backgroundColor: '#d2f4d3'}}>The weather is WEATHER_API[New York].</span>
 </pre>
 
-- Or even much more complex tasks that depend on multiple datasources such as the
+- Or even much more complex tasks that depend on multiple datasources, such as the
 following:
 
 
@@ -61,13 +61,18 @@ import final from '../assets/mrkl/final.png';
   <img src={mrkl_task} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+Example MRKL System (AI21)
+</div>
+
+
 ## An Example
 
 I have reproduced an example MRKL System from the original paper, using Dust.tt, 
 linked [here](https://dust.tt/trigaten/a/98bdd65cb7). 
 The system reads a math problem (e.g. `What is 20 times 5^6?`), extracts the numbers and the operations,
 and reformats them for a calculator app (e.g. `20*5^6`). It then sends the reformatted equation 
-to Google's calculator app, and returns the result. Note that the original paper performs fine tuning on the router (the LLM), but I do not in this example. Let's walk through how this works:
+to Google's calculator app, and returns the result. Note that the original paper performs prompt tuning on the router (the LLM), but I do not in this example. Let's walk through how this works:
 
 First, I made a simple dataset in the Dust `Datasets` tab.
 
@@ -117,5 +122,5 @@ J-1 (Jurassic 1)(@lieberjurassic) LLM.
 
 ## More
 
-See [this example](https://langchain.readthedocs.io/en/latest/examples/agents/mrkl.html) of a MRKL System
+See [this example](https://langchain.readthedocs.io/en/latest/modules/agents/implementations/mrkl.html) of a MRKL System
 built with LangChain.

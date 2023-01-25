@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Soft Prompts
+# 🔴 Soft Prompts
 
-Prompt tuning(@lester2021power) an alternative to model fine tuning(@khashabi2021prompt), which freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
+Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi2021prompt), freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
 
 
 import Image from '../assets/prompt_tuning.png';
@@ -13,14 +13,19 @@ import Image from '../assets/prompt_tuning.png';
   <img src={Image} style={{width: "500px"}} />
 </div>
 
+<div style={{textAlign: 'center'}}>
+Model Tuning vs Prompt Tuning (Lester et al.)
+</div>
+
 The above image contrasts model tuning with prompt tuning. 
 In model tuning, you finetune the same model on different tasks. This gives you
-a few different models, which you can't necessarily batch inputs into together.
+a few different models, with which you can't necessarily batch inputs easily.
 
-On the other hand, prompt tuning let's you use the same model for all tasks. You 
+On the other hand, prompt tuning lets you use the same model for all tasks. You 
 just need to append the proper prompts at inference time, which makes batching across
-different tasks easier. Additionally, soft prompts will usually be of the same token 
-length.
+different tasks easier. This is pretty much the same advantage that regular prompting
+has. Additionally, soft prompts trained for a single model across
+multiple tasks will often be of the same token length.
 
 ## How it works
 
@@ -31,7 +36,7 @@ on a given prompt: `What's 2+2?`.
 
 2) Then, each token will be converted to a vector of values.
 
-3) This vectors of values can be then considered to be parameters. The model can be further
+3) This vectors of values can be considered as model parameters. The model can be further
 trained, only adjusting the weights of these prompts.
 
 Note that as soon as we start updating these weights, the vectors of the tokens no
@@ -40,4 +45,4 @@ longer correspond to actual embeddings from the vocabulary.
 # Results 
 
 Prompt tuning performs better with larger models. Larger models also require less
-tokens. Regardless, more than 20 tokens does not yield significant performance gains.
+soft prompt tokens. Regardless, more than 20 tokens does not yield significant performance gains.

@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# PAL
+# 🟡 Code as Reasoning
 
 [Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) are another example of a MRKL system.
 When given a question, PALs are able to **write code** that solves this question. They send the
@@ -14,6 +14,11 @@ import image from '../assets/pal.png';
 <div style={{textAlign: 'center'}}>
   <img src={image} style={{width: "500px"}} />
 </div>
+
+<div style={{textAlign: 'center'}}>
+PAL Example (Gao et al.)
+</div>
+
 
 One important thing to note it that PAL actually interleaves natural language (NL) and code.
 In the above image, in blue are natural language reasoning that PAL generates. Although it

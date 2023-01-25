@@ -1,0 +1,22 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+GPT
+LSAT
+borealis
+GPT-3
+wei2022chain
+MRKL
+karpas2022mrkl
+zeyuzhao
+short_content_auto.png
+100-700
+LLMs
+jin2022plot
+OpenAI's
+ChatGPT
+math
+OpenAI
+jayo78

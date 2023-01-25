@@ -1,8 +1,8 @@
 {
-  "label": "😃 Tutorial - Basics",
-  "position": 2,
+  "label": "😃 Basics",
+  "position": 10,
   "link": {
     "type": "generated-index",
-    "description": "Prompt engineering from scratch"
+    "description": "Intro to PE and simple PE techniques."
   }
 }

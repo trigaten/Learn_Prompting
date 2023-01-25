@@ -9,7 +9,7 @@ async function createConfig() {
   const katex = (await import('rehype-katex')).default;
   return {
     title: 'Learn Prompting',
-    tagline: 'Prompting LLMs is opaque. Lets make it transparent.',
+    tagline: 'A Free, Open Source Course on Communicating with Artificial Intelligence',
     url: 'https://learnprompting.org',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -27,7 +27,7 @@ async function createConfig() {
     // to replace "en" with "zh-Hans".
     i18n: {
       defaultLocale: 'en',
-      locales: ['en'],
+      locales: ['en', 'es'],
     },
   
     presets: [
@@ -46,7 +46,7 @@ async function createConfig() {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/trigaten/promptgineering/tree/v0.0.2',
+              'https://github.com/trigaten/promptgineering/tree/v1.1.3',
             remarkPlugins: [
               math,
               (await import("remark-gfm")).default,
@@ -60,6 +60,12 @@ async function createConfig() {
         }),
       ],
     ],
+    scripts: [
+      {
+        src: "https://embed.trydyno.com/embedder.js",
+        defer: true
+      }
+    ],
     stylesheets: [
       {
         href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -68,6 +74,11 @@ async function createConfig() {
           'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
         crossorigin: 'anonymous',
       },
+      {
+        href: 'https://embed.trydyno.com/embedder.css',
+        type: "text/css",
+        crossorigin: 'anonymous',
+      }
     ],
     themeConfig:
       ({
@@ -78,11 +89,18 @@ async function createConfig() {
             src: 'img/simple_ai.png',
           },
           items: [
+            {to: 'docs/intro', label:"Learn", position:"left"},
+            {to: 'contribute', label:"Contribute", position:"left"},
+            {to: 'supporters', label:"Supporters", position:"left"},
             {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
             },
+            {
+              type: 'localeDropdown',
+              position: 'left',
+            }
           ],
         },
         footer: {
@@ -94,6 +112,10 @@ async function createConfig() {
           darkTheme: darkCodeTheme,
         },
       }),
+      markdown: {
+        mermaid: true,
+      },
+      themes: ['@docusaurus/theme-mermaid'],
   };
 }
 

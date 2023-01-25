@@ -7,7 +7,23 @@ sidebar_position: 1000
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.
 
+Please cite this resource as:
+
+```text
+@misc{schulhoff2022learnprompting,
+    title={Learn Prompting},
+    author={Sander Schulhoff and Community Contributors},
+    url={https://learnprompting.org}
+    year={2022},
+    month={Dec},
+    day={1}
+}
+```
+
 🔵 = Paper directly cited in this course. Other papers have informed my understanding of the topic.
+
+Note: since [neither the GPT-3 nor the GPT-3 Instruct paper correspond to davinci models](https://twitter.com/janleike/status/1584618242756132864), I attempt not to
+cite them as such.
 
 ## Prompt Engineering Strategies
 
@@ -27,6 +43,10 @@ The papers are organized by topic.
 
 #### Maieutic Prompting(@jung2022maieutic)
 
+#### STaR(@zelikman2022star)
+
+#### Least to Most(@zhou2022leasttomost)
+
 ## Reliability
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
@@ -38,6 +58,10 @@ The papers are organized by topic.
 #### Calibrate Before Use: Improving Few-Shot Performance of Language Models(@zhao2021calibrate) 🔵
 
 #### Enhanced Self Consistency(@mitchell2022enhancing)
+
+#### Bias and Toxicity in Zero-Shot CoT(@shaikh2022second) 🔵
+
+#### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
 
 ## Automated Prompt Engineering
 
@@ -57,7 +81,13 @@ The papers are organized by topic.
 
 #### BLOOM(@scao2022bloom) 🔵
 
+#### BLOOM+1 (more languages/ 0 shot improvements)(@yong2022bloom1)
+
 #### Jurassic 1(@lieberjurassic) 🔵
+
+#### GPT-J-6B(@wange2021gptj)
+
+#### Roberta(@liu2019roberta)
 
 ### Image Models
 
@@ -79,11 +109,21 @@ The papers are organized by topic.
 
 #### Fever(@thorne2018fever) 🔵
 
+#### BBQ: A Hand-Built Bias Benchmark for Question Answering(@parrish2021bbq) 🔵
+
 ## Image Prompt Engineering
 
 #### Taxonomy of prompt modifiers(@oppenlaender2022taxonomy)
 
 #### DiffusionDB(@wang2022diffusiondb)
+
+#### The DALLE 2 Prompt Book(@parsons2022dalleprompt) 🔵
+
+#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt) 🔵
+
+#### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with) 🔵
+
+#### Optimizing Prompts for Text-to-Image Generation(@hao2022optimizing)
 
 ## Prompt Engineering IDEs
 
@@ -93,7 +133,17 @@ The papers are organized by topic.
 
 #### PromptChainer(@wu2022promptchainer) 🔵
 
+#### PromptMaker(@jiang2022promptmaker) 🔵
+
+## Tooling
+
+#### LangChain(@Chase_LangChain_2022) 🔵
+
+#### TextBox 2.0: A Text Generation Library with Pre-trained Language Models(@tang2022textbox) 🔵
+
 #### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
+
+#### GPT Index(@Liu_GPT_Index_2022) 🔵
 
 ## Applied Prompt Engineering
 
@@ -123,13 +173,63 @@ The papers are organized by topic.
 
 #### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
+#### Talking to machines: prompt engineering & injection(@christoph2022talking)
+
+#### Exploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+
+#### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
+
+## Jailbreaking
+
+#### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
+
+#### Lessons learned on Language Model Safety and misuse(@brundage_2022)
+
+#### Toxicity Detection with Generative Prompt-based Inference(@wang2022jailbreak)
+
+#### New and improved content moderation tooling(@markov_2022)
+
+#### OpenAI API(@openai_api) 🔵
+
+#### OpenAI ChatGPT(@openai_chatgpt) 🔵
+
+#### ChatGPT 4 Tweet(@alice2022jailbreak) 🔵
+
+#### Acting Tweet(@miguel2022jailbreak) 🔵
+
+#### Research Tweet(@derek2022jailbreak) 🔵
+
+#### Pretend Ability Tweet(@nero2022jailbreak) 🔵
+
+#### Responsibility Tweet(@nick2022jailbreak) 🔵
+
+#### Lynx Mode Tweet(@jonas2022jailbreak) 🔵
+
+#### Sudo Mode Tweet(@sudo2022jailbreak) 🔵
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
 
 #### PromptPapers(@ning2022papers)
 
+## Dataset Generation
+
+#### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
+
+#### Selective Annotation Makes Language Models Better Few-Shot Learners(@su2022selective)
+
+## Applications
+
+#### Atlas: Few-shot Learning with Retrieval Augmented Language Models(@izacard2022atlas)
+
+#### STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension(@wang2022strudel)
+
 ## Miscl
+
+#### Prompting Is Programming: A Query Language For Large Language Models(@beurerkellner2022prompting)
+
+#### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
 
@@ -142,3 +242,18 @@ The papers are organized by topic.
 #### How to Prompt? Opportunities and Challenges of Zero- and Few-Shot Learning for Human-AI Interaction in Creative Applications of Generative Models(@dang2022prompt)
 
 #### On Measuring Social Biases in Prompt-Based Multi-Task Learning(@akyrek2022measuring)
+
+#### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵
+
+#### Examples(@2022examples)
+
+#### Wordcraft(@yuan2022wordcraft)
+
+#### PainPoints(@fadnavis2022pain)
+
+#### Self-Instruct: Aligning Language Model with Self Generated Instructions(@wang2022selfinstruct)
+
+#### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
+
+#### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
+
