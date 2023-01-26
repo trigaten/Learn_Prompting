@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2000
+sidebar_position: 20000
 ---
 
 # ✨ Credits
