@@ -97,6 +97,11 @@ async function createConfig() {
               position: 'right',
             },
             {
+              href: 'https://github.com/trigaten/Learn_Prompting/releases',
+              label: 'Change Log',
+              position: 'right',
+            },
+            {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
