@@ -100,7 +100,13 @@ async function createConfig() {
             {
               type: 'localeDropdown',
               position: 'left',
-            }
+            },
+            {
+              to: 'consulting', 
+              label:"Consulting", 
+              position:"left",          
+              className: 'consulting-gradient',
+            },
           ],
         },
         footer: {

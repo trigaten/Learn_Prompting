@@ -32,3 +32,7 @@
 :root {
   --docusaurus-highlighted-code-line-bg: #d2f4d3;
 }
+
+.consulting-gradient {
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
