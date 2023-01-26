@@ -93,13 +93,13 @@ async function createConfig() {
             {to: 'contribute', label:"Contribute", position:"left"},
             {to: 'supporters', label:"Supporters", position:"left"},
             {
-              href: 'https://github.com/trigaten/promptgineering',
-              label: 'GitHub',
+              type: 'localeDropdown',
               position: 'right',
             },
             {
-              type: 'localeDropdown',
-              position: 'left',
+              href: 'https://github.com/trigaten/promptgineering',
+              label: 'GitHub',
+              position: 'right',
             }
           ],
         },
