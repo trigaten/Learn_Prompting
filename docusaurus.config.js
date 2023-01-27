@@ -93,20 +93,25 @@ async function createConfig() {
             {to: 'contribute', label:"Contribute", position:"left"},
             {to: 'supporters', label:"Supporters", position:"left"},
             {
-              href: 'https://github.com/trigaten/promptgineering',
-              label: 'GitHub',
-              position: 'right',
-            },
-            {
-              type: 'localeDropdown',
-              position: 'left',
-            },
-            {
               to: 'consulting', 
               label:"Consulting", 
               position:"left",          
               className: 'consulting-gradient',
             },
+            {
+              type: 'localeDropdown',
+              position: 'right',
+            },
+            {
+              href: 'https://github.com/trigaten/Learn_Prompting/releases',
+              label: 'Change Log',
+              position: 'right',
+            },
+            {
+              href: 'https://github.com/trigaten/promptgineering',
+              label: 'GitHub',
+              position: 'right',
+            }
           ],
         },
         footer: {
