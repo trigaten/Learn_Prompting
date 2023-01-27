@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 🟢 Build Chatbot from a KB
+# 🟢 Build Chatbot from Knowledge Base
 
 import ImageIntents from '../assets/chatbot_from_kb_intents.png'
 import ImageGPT3 from '../assets/chatbot_from_kb_gpt3.png'
@@ -25,7 +25,9 @@ However, intent-based chatbots have their own set of problems. One issue is that
 
 ## How GPT-3 Can Help
 
-This is where GPT-3 can be particularly useful. Instead of having many very specific intents, each intent can be broader and leverage a [Knowledge Base](https://en.wikipedia.org/wiki/Knowledge_base) document (e.g. one intent for “login problems,” one intent for “how to subscribe,” etc.). Each intent is associated with a document instead of a list of questions and a specific answer. When a user asks a question about login, we can pass the “login problems” document to GPT-3 as context information and generate a specific response to the user’s question.
+This is where GPT-3 can be particularly useful. Instead of having many very specific intents, each intent can be broader and leverage a document from your [Knowledge Base](https://en.wikipedia.org/wiki/Knowledge_base). A Knowledge Base (KB) is information stored as structured and unstructured data, ready to be used for analysis or inference. Your KB may be composed of a series of documents explaining how to use your products.
+
+This way, each intent is associated with a document instead of a list of questions and a specific answer, e.g. one intent for “login problems,” one intent for “how to subscribe,” etc. When a user asks a question about login, we can pass the “login problems” document to GPT-3 as context information and generate a specific response to the user’s question.
 
 
 <div style={{textAlign: 'left'}}>
