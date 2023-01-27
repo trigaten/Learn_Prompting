@@ -34,5 +34,15 @@
 }
 
 .consulting-gradient {
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background: -webkit-linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.consulting-gradient:hover {
+  background: -webkit-linear-gradient(90deg, #ff0037 0%, #002aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
