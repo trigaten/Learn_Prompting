@@ -17,3 +17,5 @@ resources that covers parts of it.
 - [Thread of Cool Images](https://twitter.com/ivonatau/status/1605681809680830464)
 - [Lexica, a database of AI images](https://lexica.art)
 - [Playground, another database of AI images](https://playgroundai.com)
+- [Open Library Of Styles](https://docs.google.com/spreadsheets/d/1cm6239gw1XvvDMRtazV6txa9pnejpKkM5z24wRhhFz0/edit#gid=1057933666)
+- 
