@@ -18,6 +18,19 @@ replaced with a word from the vocabulary. The model then predicts the word that
 was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
 will predict "chasing" with high probability.
 
+#### Labels
+
+The concept of labels is best understood with an example.
+
+Say we want to classify some Tweets as mean or not mean. If we have a list of Tweets and 
+their corresponding *label* (mean or not mean), we can train a model to classify
+whether tweets are mean or not. Labels are generally just possibilities for the
+classification task.
+
+#### Label Space
+
+All of the possible labels for a given task ('mean' and 'not mean' for the above example).
+
 #### Sentiment Analysis
 
 Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
@@ -28,3 +41,20 @@ These terms are used somewhat interchangeably throughout this course, but they d
 not always mean the same thing. LLMs are a type of AI, as noted above, but not all AIs are LLMs.
 When we mentioned models in this course, we are referring to AI models. As such, in this course,
 you can consider the terms "model" and "AI" to be interchangeable.
+
+#### Verbalizer
+
+In the classification setting, verbalizers are mappings from labels to words in
+a language model's vocabulary(@schick2020exploiting). For example, consider 
+performing sentiment classification with the following prompt:
+
+```text
+Tweet: "I love hotpockets"
+What is the sentiment of this tweet? Say 'pos' or 'neg'.
+```
+
+Here, the verbalizer is the mapping from the conceptual labels of `positive` and `negative` to the tokens `pos` and `neg`.
+
+#### Reinforcement Learning from Human Feedback (RLHF)
+
+RLHF is a method for fine tuning LLMs according to human preference data.

@@ -33,11 +33,13 @@ failing to solve a simple word problem. The second shows GPT-3 (davinci-002) suc
 
 #### Incorrect
 
-<div trydyno-embed="" openai-model="text-davinci-002" initial-prompt="Which is a faster way to get to work?\nOption 1: Take a 1000 minute bus, then a half hour train, and finally a 10 minute bike ride.\nOption 2: Take an 800 minute bus, then an hour train, and finally a 30 minute bike ride." initial-response="Option 1 is a faster way to get to work." max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Which is a faster way to get to work?\nOption 1: Take a 1000 minute bus, then a half hour train, and finally a 10 minute bike ride.\nOption 2: Take an 800 minute bus, then an hour train, and finally a 30 minute bike ride." initial-response="Option 1 is a faster way to get to work." max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
 
 #### Correct
 
-<div trydyno-embed="" openai-model="text-davinci-002" initial-prompt="Which is a faster way to get home?\nOption 1: Take an 10 minutes bus, then an 40 minute bus, and finally a 10 minute train.\nOption 2: Take a 90 minutes train, then a 45 minute bike ride, and finally a 10 minute bus.\nOption 1 will take 10+40+10 = 60 minutes.\nOption 2 will take 90+45+10=145 minutes.\nSince Option 1 takes 60 minutes and Option 2 takes 145 minutes, Option 1 is faster.\n\nWhich is a faster way to get to work?\nOption 1: Take a 1000 minute bus, then a half hour train, and finally a 10 minute bike ride.\nOption 2: Take an 800 minute bus, then an hour train, and finally a 30 minute bike ride." initial-response="Option 1 will take 1000+30+10=1040 minutes. Option 2 will take 800+60+30=890 minutes. Since Option 2 takes 890 minutes and Option 1 takes 1040 minutes, Option 2 is faster." max-tokens="256" box-rows="18" model-temp="0" top-p="0"></div>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Which is a faster way to get home?\nOption 1: Take an 10 minutes bus, then an 40 minute bus, and finally a 10 minute train.\nOption 2: Take a 90 minutes train, then a 45 minute bike ride, and finally a 10 minute bus.\nOption 1 will take 10+40+10 = 60 minutes.\nOption 2 will take 90+45+10=145 minutes.\nSince Option 1 takes 60 minutes and Option 2 takes 145 minutes, Option 1 is faster.\n\nWhich is a faster way to get to work?\nOption 1: Take a 1000 minute bus, then a half hour train, and finally a 10 minute bike ride.\nOption 2: Take an 800 minute bus, then an hour train, and finally a 30 minute bike ride." initial-response="Option 1 will take 1000+30+10 = 1040 minutes.
+Option 2 will take 800+60+30 = 890 minutes.
+Since Option 2 takes 890 minutes and Option 1 takes 1040 minutes, Option 2 is faster." max-tokens="256" box-rows="18" model-temp="0" top-p="0"></div>
 
 ## Results
 

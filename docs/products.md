@@ -17,6 +17,10 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Neeva](https://neeva.com/index)
 - [Phind](https://phind.com/)
 
+## Chatbots
+
+- [http://poe.com][Poe]
+- [jasper.ai/chat](Jasper Chat)
 
 ## Personal Assistants
 
@@ -34,6 +38,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 ## Image Generation
 
 - [Astria](https://www.astria.ai)
+- [Prompt Hunt](https://www.prompthunt.com)
 
 ## Powerpoint Generation
 

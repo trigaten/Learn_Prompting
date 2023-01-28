@@ -25,7 +25,7 @@ already. Although AI is extremely useful, it requires humans to direct it on wha
 Often AIs are like very smart five-year-olds. They can do a lot of things, but they need 
 careful instruction to do them well.
 
-Being able to properly direct AIs is a very powerful skill. But how do you communicate with them? 
+Being able to properly direct AIs is a very powerful skill. So, how do you communicate with them? 
 The AIs this course discusses understand English (and other languages),
 so we can usually just describe tasks that we want done. For example, we can tell an AI to
 `Write an essay about the benefits of AI` and it would say[^2]:
@@ -55,7 +55,7 @@ This course will teach you how to communicate with AIs.
 Read the rest of this chapter, then check out other chapters that interest you.
 In particular, the applied prompting section may be of interest if you would like
 to see how professionals use AI to automate their work. You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds that you will see throughout this site.
+using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds that you will see throughout this site.
 
 Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
 
