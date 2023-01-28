@@ -41,3 +41,7 @@ What would be a good prompt to generate an answer to the above questions?
 Is the following item a fruit:
 // highlight-end
 ```
+
+## Notes
+
+Another simple automatic prompt engineering strategy is to simply give GPT-3 your improved and ask GPT-3 to improve it.
