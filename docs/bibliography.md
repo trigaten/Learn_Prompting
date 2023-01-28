@@ -7,18 +7,7 @@ sidebar_position: 1000
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.
 
-Please cite this resource as:
-
-```text
-@misc{schulhoff2022learnprompting,
-    title={Learn Prompting},
-    author={Sander Schulhoff and Community Contributors},
-    url={https://learnprompting.org}
-    year={2022},
-    month={Dec},
-    day={1}
-}
-```
+**To cite this course, use the provided citation in the Github repository.**
 
 🔵 = Paper directly cited in this course. Other papers have informed my understanding of the topic.
 

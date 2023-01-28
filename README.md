@@ -39,13 +39,4 @@ This command starts a local development server and opens up a browser window. Mo
 
 ## Cite
 
-```text
-@misc{schulhoff2022learnprompting,
-    title={Learn Prompting},
-    author={Sander Schulhoff and Community Contributors},
-    url={https://learnprompting.org}
-    year={2022},
-    month={Dec},
-    day={1}
-}
-```
+Use the provided Github citation in this repository.
