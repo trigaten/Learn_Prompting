@@ -245,6 +245,10 @@ cite them as such.
 
 #### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵
 
+#### StereoSet: Measuring stereotypical bias in pretrained language models(@nadeem-etal-2021-stereoset)
+
+#### Survey of Hallucination in Natural Language Generation(@Ji_2022)
+
 #### Examples(@2022examples)
 
 #### Wordcraft(@yuan2022wordcraft)
