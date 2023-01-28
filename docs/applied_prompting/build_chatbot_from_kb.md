@@ -2,7 +2,7 @@
 sidebar_position: 40
 ---
 
-# 🟢 Build Chatbot from Knowledge Base
+# 🟢 Chatbot + Knowledge Base
 
 import ImageIntents from '../assets/chatbot_from_kb_intents.png'
 import ImageGPT3 from '../assets/chatbot_from_kb_gpt3.png'
@@ -192,7 +192,7 @@ The previous examples worked well. However, there are several ways in which this
 
 If we ask “Is the mobile app free?” to GPT-3 passing the login document as context, you’d often get an answer like “Yes, the VideoGram mobile app is free to download and use”, even if such information is not contained in the context information. Generating false information is very bad for customer service chatbots!
 
-GPT-3 rarely generates false information when the answer to the user question can be found in the context. As user questions are often short and ambiguous texts, we can’t rely on the semantic search step to always retrieve a correct document, and so we are always vulnerable to false information generated.
+GPT-3 rarely generates false information when the answer to the user question can be found in the context. As user questions are often short and ambiguous texts, we can’t rely on the semantic search step to always retrieve a correct document, and so we are always vulnerable to false information generation.
 
 ## Conclusion
 
