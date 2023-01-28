@@ -1,8 +1,8 @@
 ---
-sidebar_position: 10
+sidebar_position: 1
 ---
 
-# APE
+# 🟢 APE
 
 Automatic Prompt Engineering (APE)(@zhou2022large) is an approach to automating the generation and
 selection of prompts. The basic idea of APE is to give a LLM a prompt containing
