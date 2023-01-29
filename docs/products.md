@@ -21,6 +21,8 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Poe](http://poe.com)
 - [Jasper Chat](https://www.jasper.ai/chat)
+- [Super Power Chat GPT](https://chrome.google.com/webstore/detail/superpower-chatgpt/amhmeenmapldpjdedekalnfifgnpfnkc)
+- [WebChatGPT](https://chrome.google.com/webstore/detail/webchatgpt/lpfemeioodjbpieminkklglpmhlngfcn)
 
 ## Personal Assistants
 
