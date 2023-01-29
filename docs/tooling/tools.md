@@ -1,8 +1,8 @@
 ---
-sidebar_position: 110
+sidebar_position: 50
 ---
 
-# Tools
+# Prompt Engineering Tools
 
 This section contains a list of non-IDE tools that are useful for prompting.
 
