@@ -19,8 +19,8 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Chatbots
 
-- [http://poe.com][Poe]
-- [jasper.ai/chat](Jasper Chat)
+- [Poe](http://poe.com)
+- [Jasper Chat](https://www.jasper.ai/chat)
 
 ## Personal Assistants
 
