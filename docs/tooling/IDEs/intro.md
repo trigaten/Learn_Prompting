@@ -43,16 +43,10 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
+| [DiscuroAI](http://www.discuro.com) | ✅ | ❌ | ❌|  | ✅ | Text, Image | OpenAI|
 | [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, later Stability.AI and more |
 
-
-## Python Library IDEs
-
-| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
-| ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
-| [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
-| [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 
 
 ## Image Only IDEs
@@ -63,13 +57,6 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Dream Studio](https://beta.dreamstudio.ai/dream) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion |
 | [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
 | [getimg.ai](https://getimg.ai/guides) | ✅ | ❌ | ❌ |  | ✅ |  Text2Image, AIEditor | |
-
-
-
-
-\* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.
-
-\* OpenPrompt is also a Python library for prompt engineering. It's main interface is the terminal or a Jupyter notebook.
 
 **Hosted Solution**: The tool is hosted on a website and can be used without installing anything.
 

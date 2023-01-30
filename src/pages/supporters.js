@@ -15,7 +15,7 @@ const FeatureList = [
     link: "https://towardsai.net",
   },
   {
-    title: 'DAIR AI',
+    title: 'DAIR.AI',
     Svg: require('@site/static/img/dair.png').default,
     link: "https://dair.ai/",
   },

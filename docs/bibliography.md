@@ -7,6 +7,8 @@ sidebar_position: 1000
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.
 
+**To cite this course, use the provided citation in the Github repository.**
+
 🔵 = Paper directly cited in this course. Other papers have informed my understanding of the topic.
 
 Note: since [neither the GPT-3 nor the GPT-3 Instruct paper correspond to davinci models](https://twitter.com/janleike/status/1584618242756132864), I attempt not to
@@ -106,7 +108,11 @@ cite them as such.
 
 #### The DALLE 2 Prompt Book(@parsons2022dalleprompt) 🔵
 
-#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt)
+#### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt) 🔵
+
+#### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with) 🔵
+
+#### Optimizing Prompts for Text-to-Image Generation(@hao2022optimizing)
 
 ## Prompt Engineering IDEs
 
@@ -116,9 +122,17 @@ cite them as such.
 
 #### PromptChainer(@wu2022promptchainer) 🔵
 
+#### PromptMaker(@jiang2022promptmaker) 🔵
+
+## Tooling
+
+#### LangChain(@Chase_LangChain_2022) 🔵
+
+#### TextBox 2.0: A Text Generation Library with Pre-trained Language Models(@tang2022textbox) 🔵
+
 #### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
 
-#### PromptMaker(@jiang2022promptmaker) 🔵
+#### GPT Index(@Liu_GPT_Index_2022) 🔵
 
 ## Applied Prompt Engineering
 
@@ -150,9 +164,37 @@ cite them as such.
 
 #### Talking to machines: prompt engineering & injection(@christoph2022talking)
 
+#### Exploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+
 #### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
 
-#### xploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+## Jailbreaking
+
+#### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
+
+#### Lessons learned on Language Model Safety and misuse(@brundage_2022)
+
+#### Toxicity Detection with Generative Prompt-based Inference(@wang2022jailbreak)
+
+#### New and improved content moderation tooling(@markov_2022)
+
+#### OpenAI API(@openai_api) 🔵
+
+#### OpenAI ChatGPT(@openai_chatgpt) 🔵
+
+#### ChatGPT 4 Tweet(@alice2022jailbreak) 🔵
+
+#### Acting Tweet(@miguel2022jailbreak) 🔵
+
+#### Research Tweet(@derek2022jailbreak) 🔵
+
+#### Pretend Ability Tweet(@nero2022jailbreak) 🔵
+
+#### Responsibility Tweet(@nick2022jailbreak) 🔵
+
+#### Lynx Mode Tweet(@jonas2022jailbreak) 🔵
+
+#### Sudo Mode Tweet(@sudo2022jailbreak) 🔵
 
 ## Surveys
 
@@ -164,7 +206,19 @@ cite them as such.
 
 #### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
 
+#### Selective Annotation Makes Language Models Better Few-Shot Learners(@su2022selective)
+
+## Applications
+
+#### Atlas: Few-shot Learning with Retrieval Augmented Language Models(@izacard2022atlas)
+
+#### STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension(@wang2022strudel)
+
 ## Miscl
+
+#### Prompting Is Programming: A Query Language For Large Language Models(@beurerkellner2022prompting)
+
+#### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
 
@@ -180,6 +234,10 @@ cite them as such.
 
 #### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵
 
+#### StereoSet: Measuring stereotypical bias in pretrained language models(@nadeem-etal-2021-stereoset)
+
+#### Survey of Hallucination in Natural Language Generation(@Ji_2022)
+
 #### Examples(@2022examples)
 
 #### Wordcraft(@yuan2022wordcraft)
@@ -191,3 +249,4 @@ cite them as such.
 #### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
+
