@@ -16,7 +16,6 @@ import Image from '../../assets/tooling/dreamstudio.png';
 ## Features
 
 Dream studio's main feature is the ability to adjust various configuration parameters
-of the model, such as height/width of the generated image and steps/sampling algorithm. It allows
-allows for in/outpainting.
+of the model, such as height/width of the generated image and steps/sampling algorithm. It allows for in/outpainting.
 
 It currently has an underdeveloped history view (it appears to save pixelated versions of the images to a browser cache, but there is no way to view them).
