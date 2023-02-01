@@ -30,7 +30,11 @@ This section contains a list of non-IDE tools that are useful for prompting.
 
 > TextBox 2.0 is an up-to-date text generation library based on Python and PyTorch focusing on building a unified and standardized pipeline for applying pre-trained language models to text generation:
 
-## Miscl
+### [ThoughtSource](https://github.com/OpenBioLink/ThoughtSource)
+
+> "ThoughtSource is a central, open resource and community centered on data and tools for chain-of-thought reasoning in large language models (Wei 2022). Our long-term goal is to enable trustworthy and robust reasoning in advanced AI systems for driving scientific research and medical practice."
+
+## Misc.
 
 ### [GPT Index](https://gpt-index.readthedocs.io/en/latest/)(@Liu_GPT_Index_2022)
 
