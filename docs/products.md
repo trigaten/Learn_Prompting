@@ -21,9 +21,12 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Poe](http://poe.com)
 - [Jasper Chat](https://www.jasper.ai/chat)
+
+## Browser Extensions
+
 - [Super Power Chat GPT](https://chrome.google.com/webstore/detail/superpower-chatgpt/amhmeenmapldpjdedekalnfifgnpfnkc)
-> Add extra functionality to ChatGPT user interface including prompt library, export chats, safe mode control, history, copy full chat
-Add the following improvements to the ChatGPT user interface.
+> Adds extra functionality to ChatGPT user interface including prompt library, export chats, safe mode control, history, copy full chat
+
 - [WebChatGPT](https://chrome.google.com/webstore/detail/webchatgpt/lpfemeioodjbpieminkklglpmhlngfcn)
 > Augment your ChatGPT prompts with relevant results from the web.
 
