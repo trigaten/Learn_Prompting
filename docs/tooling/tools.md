@@ -14,6 +14,19 @@ This section contains a list of non-IDE tools that are useful for prompting.
 
 > This library is aimed at assisting in the development of those types of applications.
 
+### [Dust.tt](https://dust.tt)
+
+> The Dust platform helps build large language model applications as a series of prompted calls
+to external models. It provides an easy to use graphical UI to build chains of prompts, as well as a set of standard blocks and a custom programming language to parse and process language model outputs.
+
+> It provides a series of features to make development of applications faster,
+easier and more robust:
+- running multiple completions in parallel
+- inspecting execution outputs
+- versioning prompt chains 
+- custom programming language to process data and text
+- API integration for various models and external services
+
 ### [OpenPrompt](https://thunlp.github.io/OpenPrompt/)(@ding2021openprompt)
 
 > Prompt-learning is the latest paradigm to adapt pre-trained language models (PLMs) to downstream NLP tasks, which modifies the input text with a textual template and directly uses PLMs to conduct pre-trained tasks. OpenPrompt is a library built upon PyTorch and provides a standard, flexible and extensible framework to deploy the prompt-learning pipeline. OpenPrompt supports loading PLMs directly from huggingface transformers. In the future, we will also support PLMs implemented by other libraries.
