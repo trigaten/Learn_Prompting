@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 🟢 A "Standard" Prompt
 
-We have heard of a few different formats of prompts thus far. 
+We have heard of a few different formats of prompts this far. 
 Following Kojima et al. (@kojima2022large), we will refer to prompts that consist 
 solely of a question as "standard" prompts. We also consider prompts that consist solely of
 a question that are in the QA format to be "standard" prompts.
