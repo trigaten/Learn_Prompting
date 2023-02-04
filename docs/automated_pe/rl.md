@@ -38,12 +38,3 @@ They use a reward which consists of the difference of score between a prompt bef
 
 
 can edit instructions, in context exemplars, or verbalizers
-
-For example, Lu et al. (2022) found that the prompt order can have a large effect on the final task performance; Zhao et al. (2021) show that the choice of prompt format, training examples, and prompt order can cause the performance to vary quite significantly.
-
-For example, Liu et al. (2022) propose to retrieve exemplars from a training pool that are semantically similar to a test example, and show it can significantly boost the performance
-
-
-
-
-significant gains compared with recent SoTA approaches like prompt tun- ing, AutoPrompt, and RLPrompt
