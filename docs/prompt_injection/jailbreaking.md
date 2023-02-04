@@ -77,7 +77,7 @@ import logic from '../assets/jailbreak/logic.png';
   <img src={logic} style={{width: "500px"}} />
 </div>
 
-The one-shot jailbreak originated from the [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), where the model answer prompts using more rigourous logic and reduces some of its stronger ethical limitations.
+The one-shot jailbreak originated from the [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), where the model answer prompts using more rigorous logic and reduces some of its more stringent ethical limitations.
 
 ### Authorized User
 
