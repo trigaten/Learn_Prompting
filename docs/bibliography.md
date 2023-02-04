@@ -198,7 +198,7 @@ cite them as such.
 
 #### Ignore Previous Prompt(@ignore_previous_prompt) 🔵
 
-#### January Jailbreaking Prompts (@moyo_jailbreak) 🔵
+#### Updated Jailbreaking Prompts (@AI_jailbreak) 🔵
 
 ## Surveys
 
