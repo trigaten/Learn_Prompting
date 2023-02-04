@@ -37,7 +37,7 @@ RLPrompt embeds a task specific MLP inside a frozen LM. The MLP is trained with 
 (TEMPERA)(@zhang2022tempera) is a method for automatically generating
 interpretable prompts.
 
-At a high level, TEMPERA takes a starting prompt and modifies different parts of it in order to see what changes help most.
+At a high level, instead of building a prompt from scratch like RLPrompt, TEMPERA takes a starting prompt and modifies different parts of it in order to see what changes help most.
 
 ## Action Space
 
