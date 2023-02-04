@@ -25,10 +25,11 @@ training point example is `x = "I hate this movie."`. RLPrompt will generate a p
 `z = "Movie review bad or good:`. Then, it will combine the prompt with the input to get
 `x' = "Movie review bad or good: I hate this movie."`. Then, it will use a language model
 to generate the completion. Say it generates `bad`. Then, the reward is computed as
-`R(y_{LM}(\hat{z}, x))`...
+`R(y_{LM}(\hat{z}, x))`. Deng et al. do not use a simple 0/1 reward.
 
 ## Training
-Optimize via soft q learning
+
+RLPrompt embeds a task specific MLP inside a frozen LM. The MLP is trained with Soft Q Learning(@guo2021efficient).
 
 ## TEMPERA
 
