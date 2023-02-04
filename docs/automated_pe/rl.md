@@ -8,6 +8,10 @@ This section covers reinforcement learning methods which optimize discrete promp
 
 ## RLPrompt
 
+
+## Training
+Optimize via soft q learning
+
 ## TEMPERA
 
 **TE**st-ti**M**e **P**rompt **E**diting using **R**einforcement le**A**rning 
@@ -35,6 +39,3 @@ TEMPERA is densely reward, computing a reward for each edit step according to
 TEMPERA uses a GPT architecture and is trained with proximal policy optimization. 
 
 They use a reward which consists of the difference of score between a prompt before/after an edit.
-
-
-can edit instructions, in context exemplars, or verbalizers
