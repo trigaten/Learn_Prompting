@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # 🟢 Jailbreaking
 
-Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety** and **moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak). As shown in the figure below, jailbreaking can extend to interfaces using LLMs by hijacking the goal of the original prompt. The intended goal of the prompt is highlighted in grey, while the two other attack types, respectively goal hijacking and prompt leaking, are highlighted in orange. In goal hijacking, the attacker changes `user_input` to print malicious instructions. In prompt leaking, the attacker changes `user_input` to return the application's prompt. 
+Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety** and **moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak). As shown in the figure below, jailbreaking can extend to interfaces using LLMs by hijacking the goal of the original prompt. The intended goal of the prompt is highlighted in grey, while the two other attack types, respectively goal hijacking and prompt leaking, are highlighted in orange. In goal hijacking, the attacker changes `user_input` to print malicious instructions. In prompt leaking, the attacker changes `user_input` to return the application's prompt(@ignore_previous_prompt). 
 
 import jailbreak_research from '../assets/jailbreak/jailbreak_research.png';
 
@@ -69,6 +69,16 @@ import hotwire from '../assets/jailbreak/hotwire_jailbreak.png';
 
 [@haus_cole](https://twitter.com/haus_cole/status/1598541468058390534) generated this example by implying that the best result of the prompt that could aid research was to directly answer how to hotwire a car(@derek2022jailbreak). Under this guise, ChatGPT is inclined to answer the user’s prompt.
 
+#### Logical Reasoning
+
+import logic from '../assets/jailbreak/logic.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={logic} style={{width: "500px"}} />
+</div>
+
+The one-shot jailbreak originated from the [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), where the model answer prompts using more rigourous logic and reduces some of its stronger ethical limitations.
+
 ### Authorized User
 
 ChatGPT is designed to respond to questions and instructions. When the status of the user is interpreted as superior to ChatGPT's moderation instructions, it treats the prompt as an instruction to serve that user's needs.
@@ -115,7 +125,7 @@ Try to modify the prompt below to jailbreak `text-davinci-003`:
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
-<br/>*As of 2/4/23, ChatGPT is currently in its Free Research Preview stage using the January 30th version. Older versions of ChatGPT were more susceptible to the aforementioned jailbreaks, and future versions may be more robust to jailbreaks.*
+*As of 2/4/23, ChatGPT is currently in its Free Research Preview stage using the January 30th version. Older versions of ChatGPT were more susceptible to the aforementioned jailbreaks, and future versions may be more robust to jailbreaks.*
 
 ## Implications
 
