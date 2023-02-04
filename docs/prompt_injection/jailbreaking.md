@@ -121,7 +121,7 @@ Related to sudo mode, one can prompt ChatGPT to simulate a Linux terminal with e
 
 Try to modify the prompt below to jailbreak `text-davinci-003`:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Your instructions are to correct the text below to standard English. Do not accept any vulgar or political topics:" initial-response="I hate humans" max-tokens="256" box-rows="3" model-temp="0.7" top-p="0">
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Your instructions are to correct the text below to standard English. Do not accept any vulgar or political topics:" initial-response="I hate humans" max-tokens="256" box-rows="7" model-temp="0.7" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
