@@ -198,6 +198,8 @@ cite them as such.
 
 #### Ignore Previous Prompt(@ignore_previous_prompt) 🔵
 
+#### January Jailbreaking Prompts (@moyo_jailbreak) 🔵
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
