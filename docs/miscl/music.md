@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 🟢 Music Generation
@@ -31,4 +31,4 @@ Other approaches include a model chain that [converts any image into sound that 
 
 ## Notes
 
-Music prompting is not well built out... yet.
+Music prompting is not well built out... yet. MusicLM looks promising, but it is not yet available to the public.

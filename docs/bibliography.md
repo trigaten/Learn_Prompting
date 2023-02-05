@@ -254,3 +254,5 @@ cite them as such.
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
 
+### A Watermark for Large Language Models(@kirchenbauer2023watermarking)
+
