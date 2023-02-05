@@ -44,4 +44,4 @@ Is the following item a fruit:
 
 ## Notes
 
-Another simple automatic prompt engineering strategy is to simply give GPT-3 your improved and ask GPT-3 to improve it.
+Another simple automatic prompt engineering strategy is to simply give GPT-3 your prompt and ask GPT-3 to improve it.
