@@ -1,80 +1,74 @@
 ---
 sidebar_position: 1
 ---
-# Bienvenidos
+# ようこそ
 
-Bienvenidos a este curso de Ingeniería en Prompt!
+プロンプトエンジニアリングのコースへようこそ!
 
-Me gusta pensar que la Ingeniería en Prompt (PE) es cómo: **Cómo hablar con una AI para obtener lo que quieras**. 
-
-
-Con tantos avances en inteligencia artíficial (AI),
-esta se convierte en una habilidad particularmente importante
-
-Este curso pone el foco en aplicar tecnicas de PE. Se esperan mínimos conocimientos 
-sobre machine learning. Pero si no tienes idea de lo que machine learning significa, lee la sección de Introducción básica.
-
-## El punto más importante de este curso es tu feedback!
-Si tienes cualquier consulta, comentario o sugerencia, por favor crea un **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, envíame un email a learnprompting@gmail.com o escribe un DM a [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
-
-Incluso el más mínimo feedback es de mucha ayuda!
-
-## Filosofía del curso
-
-**Iteraciones rápidas** - Dado que se publica nuevo contenido sobre PE casi a diario,
-Se estará actualizando este curso frecuentemente con articulos cortos sobre nuevas técnicas.
-Si quieres saber más sobre esto házmelo saber
-
-Parte de esta filosofía es **Iteración de errores**. Si en algún momento revisas algo
-que no entiendes, incluso algo pequeño, eso depende completamente de mi. **Por favor abre un [issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
+私はプロンプトエンジニアリング（PE）をこう考えます。**AIに自分のやりたいことをさせるために、AIにどう話しかけるか。**. 
 
 
-**Foco en el sentido práctico** - Me centraré en técnicas prácticas y aplicadas que puedes utilizar
-inmediatamente para ser aplicadas.
+人工知能（AI）の進歩に伴い、これは特に重要なスキルとなっています。 本講座では、PEの応用技術に焦点を当てます。
 
-**Ejemplos de inmediato** - Intento poner ejemplos en los artículos siempre,
-para que pueda familiarizarse con las técnicas de una forma inmediata
+機械学習に関する最低限の知識は必要です。意味が全く分からない場合は、「基礎編」の「はじめに」を読んでください。
+
+## このコースで最も重要なのは、あなたのフィードバックです!
+
+質問、コメント、提案などがありましたら、**[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)** を作成するか, learnprompting@gmail.com までメールをいただくか、 [Discord](https://learnprompting.org/discord)や[Twitter](https://twitter.com/learn_prompting) でご連絡ください。.
+
+わずかな感想でも、とても参考になります!
+
+## コース理念
+
+**クイックイタレーション** -  PEはほぼ毎日新しいコンテンツが公開されているので、
+このコースも新しいテクニックに関する短い記事を頻繁に更新していきます。 
+あなたがもっと聞きたいことを教えてください!
+
+この考え方の一部は、 **エラー・イテレーション** があります.もし、あなたが何かわからないことがあったら、たとえ小さなことでも、それは私の責任です。ぜひ、 **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)** を発行してください!
 
 
-Filosofaré más sobre esto cuando tenga tiempo 😊
+**実用性を重視する ** - 私はすぐにアプリケーションで使える実用的なテクニックに焦点を当てます。
 
-## Cómo leer el curso
+**例題を早急に** - 私はできるだけ早く記事に例を入れようとしていますので。テクニックをいち早く感じていただけるように心がけています。
 
-No es necesario leer todos los capítulos en orden. ¡Lee lo que te interesa!
 
-Si eres totalmente nuevo, lee desde el inicio y luego comienza con la sección de Conceptos básicos.
-Si no, puede ser más útil comenzar con la sección intermedia.
+時間があったら、これについてより深く考えてみますね。 😊
 
-Los artículos están clasificados por dificultad y están etiquetados con lo siguiente:
+## 読み方
 
-🟢 Very easy; no requiere programación
+すべての章を順番に読む必要はありません。興味のあるところから読んでください。
 
-🟡 Easy; Se requiere programación simple, pero sin mucha experiencia.
+全くの初心者の方は、以下の「基礎編」からお読みいただき、そうでない方は「中級編」からお読みいただくと、より効果的かもしれません。
 
-🔴 Medium; se requiere programación y algo de experiencia (por ejemplo, problemas con registro de logs)
+記事は難易度別に評価され、以下のようなラベルが貼られています:
 
-🟣 Hard; Se requiere programación y una sólida experiencia en el dominio para implementar (por ejemplo, enfoques de aprendizaje por refuerzo)
+🟢 基礎: プログラミング不要
 
-Nota: aunque para los problemas de 🔴🟣 la experiencia en el dominio es útil, por lo general aún podrás comprender el artículo.
+🟡 初級: 簡単なプログラミングが必要だが、専門知識は不要。
 
-## Capítulos
+🔴 中級: プログラミングが必要で、実装には専門知識が必要（例：ログプロブの計算）。
 
-Te dejo este breve resumen de cada capítulo:
+🟣 上級: プログラミングが必要で、実装には専門知識が必要（例：強化学習アプローチ）。
+注意：🔴🟣 の問題では、ドメインの専門知識が役立つとしても、通常は、記事を理解することができます。
 
-**Básico**: Introducción a PE y técnicas simples de PE
+## 章立て
 
-**Intermedio**: Técnicas de PE un poco más complicadas
+ここでは、各章の概要を簡単にご紹介します:
 
-**Aplicación Avanzada**: Aplicar técnicas de PE muy potentes y más avanzadas
+**基礎編**: PEの入門と簡単なPEの技術
 
-**Prompting Aplicado**: Algunos tutoriales completos del proceso de PE escritos por miembros de la comunidad
+**中級編**: 少し複雑なPEのテクニック
 
-**Fiabilidad**: Cómo hacer que los LLMs sean más confiables
+**高度なアプリケーション**: PE の非常に強力でより高度なアプリケーションを紹介します。
 
-**Imágenes**: ¡PE para modelos de texto a imagen como DALLE y Stable Diffusion!
+**アプライドプロンプト**: コミュニティメンバーによって書かれたPEプロセスの完全なウォークスルー
 
-**Prompt Injection**: Hacking, pero para PE
+**信頼性**: LLMをより信頼性の高いものにするには
 
-**Prompting IDEs**: Diferentes herramientas de PE
+**画像**: DALLEやStable Diffusionのようなテキストから画像へのモデルに対応したPE!
 
-**Prompt Tuning**: Fine tune prompts con degradados
+**プロンプト・インジェクション**: ハッキング、ただしPE用
+
+**プロンプトIDE**: さまざまなPEツール
+
+**プロンプトのチューニング**: グラジエントでプロンプトを微調整する
