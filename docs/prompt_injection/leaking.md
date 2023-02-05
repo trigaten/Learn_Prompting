@@ -8,7 +8,7 @@ sidebar_position: 2
 Prompt leaking is a form of prompt injection in which the model is asked to
 spit out its own prompt. 
 
-As shown in the figure below, the attacker changes `user_input` to return the application's prompt in prompt leaking. The intended goal is distinct from goal hijacking (prompt injection), where the attacker changes `user_input` to print malicious instructions. 
+As shown in the figure below, the attacker changes `user_input` to return the application's prompt in prompt leaking. The intended goal is distinct from goal hijacking (prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt). 
 
 import research from '../assets/jailbreak_research.png';
 
