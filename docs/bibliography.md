@@ -196,6 +196,10 @@ cite them as such.
 
 #### Sudo Mode Tweet(@sudo2022jailbreak) 🔵
 
+#### Ignore Previous Prompt(@ignore_previous_prompt) 🔵
+
+#### Updated Jailbreaking Prompts (@AI_jailbreak) 🔵
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
