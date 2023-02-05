@@ -3,7 +3,7 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
-Unlike Stable Diffusion, [Midjourney](www.midjourney.com) uses Discord for AI image generation. While image prompting with the Midjourney Bot follows the same basic principles, there are a slight differences in prompt structuring as well as some midjourney-specific parameters that can be used.
+Unlike Stable Diffusion, [Midjourney](www.midjourney.com) uses a Discord bot as an interface for AI image generation. However, using the Midjourney Bot follows the same basic principles for image prompting.
 
 import midjourney_astronaut from '../assets/midjourney_astronaut.png';
 import midjourney_astronaut_params from '../assets/midjourney_astronaut_params.png';
@@ -20,15 +20,7 @@ The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--
   <img src={midjourney_astronaut} style={{width: "750px"}} />
 </div>
 
-The available image prompt parameters are:
-
-```text
---ar to set Aspect Ratio
---chaos or -c to set Chaos value
---quality or -q to set Quality value
---seed to set a Seed Number
---sytlize to set a Stylize value
-```
+More information about image prompt parameters can be found here: [Midjourney Documentation - Parameter List](https://docs.midjourney.com/docs/parameter-list)
 
 Example:
 
@@ -40,7 +32,33 @@ Example:
   <img src={midjourney_astronaut_params} style={{width: "750px"}} />
 </div>
 
-## Notes
+# Advanced Prompts
+## Multi Prompts
+Midjourney interprets your prompt holistically by default. Using a double colon `::` tells Midjourney to interpret each part of a prompt separately.
+Example:
+```text
+/imagine prompt: astronaut and horse
+```
+<div style={{textAlign: 'center'}}>
+  <img src={midjourney_astronaut_multi1} style={{width: "750px"}} />
+</div>
 
-Oppenlaender et al.(@oppenlaender2022taxonomy) describe the `rendered in ...` descriptor 
-as a quality booster, but our working definition differs, since that modifier does consistently generate the specific Unity (or other render engine) style. As such, we will call that descriptor a style modifier.
+```text
+/imagine prompt: astronaut:: and horse
+```
+<div style={{textAlign: 'center'}}>
+  <img src={midjourney_astronaut_multi2} style={{width: "750px"}} />
+</div>
+
+
+## Image Prompts
+By uploading an image to Discord and using its URL in a prompt, you can instruct Midjourney to use that image to influence the content, style and composition of your results. 
+Example:
+[Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).jpg)
+
+```text
+/imagine prompt: [image URL], impressionist painting
+```
+<div style={{textAlign: 'center'}}>
+  <img src={midjourney_astronaut_ip2} style={{width: "750px"}} />
+</div>
