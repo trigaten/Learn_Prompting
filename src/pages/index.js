@@ -95,7 +95,11 @@ export default function Home() {
           <div className="row">
             <div className={clsx('col col--12')}>
               <h4>News Letters</h4>
+              
+              <a href="https://startupshell.substack.com/i/91962649/learn-prompting"><img src={require('@site/static/img/shell.png').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
               <a href="https://bensbites.beehiiv.com/p/bens-bites-hackathon-win-15k"><img src={require('@site/static/img/bens_bites.webp').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
+              <a href="https://unwindai.substack.com/p/navigating-through-the-innov-ai-tion"><img src={require('@site/static/img/unwind.png').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
+              
               <a href="https://towardsai.net/p/newsletter/this-ai-newsletter-is-all-you-need-25" style={{marginLeft:"20px"}}><img src={require('@site/static/img/towards_ai_small.png').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
             </div>
           </div>
