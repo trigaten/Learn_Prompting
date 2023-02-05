@@ -57,4 +57,4 @@ TWENTY-ONE
 Between 4-8 exemplars is a good number to use for few shot prompts(@min2022rethinking),
 but it can often be helpful to put as many as possible.
 
-[^labelspace]: See the [vocabulary reference](http://localhost:3000/docs/vocabulary#labels) for more info.
+[^labelspace]: See the [vocabulary reference](https://learnprompting.org/docs/vocabulary#labels) for more info.
