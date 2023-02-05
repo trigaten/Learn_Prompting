@@ -24,15 +24,21 @@ We are actively looking for:
 
 ## Local Development
 
-A bit of complexity is needed due to Docusaurus lacking ES6 module support
-
+A bit of complexity is needed due to Docusaurus lacking ES6 module support. First, install git, node, and nvm. Then, run the following commands in a terminal:
 ```
-$ npm i
-$ brew install nvm
-$ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+# download the website code with git
+git clone https://github.com/trigaten/Learn_Prompting.git
+# enter the project directory
+cd Learn_Prompting
+# install node modules
+npm i
+# deal with ES6 stuff 
+brew install nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-$ nvm install-latest-npm
-$ npm start
+nvm install-latest-npm
+# run the website locally
+npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
