@@ -4,13 +4,7 @@ sidebar_position: 4
 
 # 🟢 Jailbreaking
 
-Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety** and **moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak). As shown in the figure below, jailbreaking can extend to interfaces using LLMs by hijacking the goal of the original prompt. The intended goal of the prompt is highlighted in grey, while the two other attack types, respectively goal hijacking and prompt leaking, are highlighted in orange. In goal hijacking, the attacker changes `user_input` to print malicious instructions. In prompt leaking, the attacker changes `user_input` to return the application's prompt(@ignore_previous_prompt). 
-
-import jailbreak_research from '../assets/jailbreak/jailbreak_research.png';
-
-<div style={{textAlign: 'center'}}>
-  <img src={jailbreak_research} style={{width: "500px"}} />
-</div>
+Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety** and **moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
 
 ## Methodologies of Jailbreaking
 
