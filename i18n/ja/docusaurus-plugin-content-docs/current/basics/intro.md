@@ -2,62 +2,72 @@
 sidebar_position: 0
 ---
 
-# 🟢 Introducción
+# 🟢 はじめに
 
-Este artículo está diseñado para personas con poca o ninguna experiencia en PE 
-o incluso IA. El público objetivo aquí es todo aquel que no sea técnico
-estudiantes de negocios hasta adultos no técnicos. Cubriremos los conceptos básicos de la IA y por qué debería
-interesarle el PE.
+この記事はプロンプトエンジニアリングやAIの経験が少ない、あるいはまったくない人々向けに作られています。
+ターゲットは非技術的なビジネス学生から非技術的な大人まで、誰でも対象となります。
+AIの基礎と、なぜプロンプトエンジニアリングに関心を持つべきなのかをカバーします。
 
-Si ya conoce los conceptos básicos de PE/IA, no dude en pasar al siguiente artículo.
+すでにプロンプトエンジニアリング/AIの基本をご存知の方は、どうぞ次の記事へお進みください。
 
-## ¿Qué es la IA?
+## AIとは？
 
-Para nuestros propósitos, la inteligencia artificial (IA) es un campo en el que las personas han creado
-algoritmos "inteligentes" que "piensan" como humanos[^1]. Estos algoritmos pueden escribir **ensayos**,
-resuelve **problemas matemáticos** y crea **arte**. Los avances recientes en el campo han creado IA
-tan avanzados que pueden escribir convincentes **correos electrónicos de ventas**, **artículos de noticias** e incluso
-**ganar [concursos de arte](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
+人工知能（AI）とは、人間のように考える「賢い」アルゴリズム[^1]を開発する分野です。
+これらのアルゴリズムは、**エッセイを書いたり**、**数学の問題を解いたり**、**芸術を創作したり**することができます。
+この分野での最近の進歩により、
+**販売メール** 、**ニュース記事** 、**[芸術コンテスト](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)** で優勝ができるほど高度なAIが作られました。
 
-AI actualmente está revolucionando muchas industrias, incluyendo **periodismo**, **salud** y
-**educación**. Es probable que pronto lo vea en su lugar de trabajo/aula si no lo ha hecho
-ya. Aunque la IA es extremadamente útil, requiere que los humanos la dirijan.
-A menudo, las IA son como niños muy inteligentes de cinco años. Pueden hacer muchas cosas, pero necesitan
-instrucciones cuidadosas para hacerlas bien.
+AIは現在、**ジャーナリズム**、**ヘルスケア** や **教育**など、
+多くの産業に革命をもたらしています。あなたの職場や教室にも、まもなく導入されることでしょう。
+まだの方は、近いうちに職場や教室で目にすることになるでしょう。AIは非常に便利なものですが、何をすべきかを指示する人間を必要とします。
+多くの場合、AIは非常に賢い5歳児のようなものです。多くのことができますが、うまくやるには丁寧な指導が必要です。
 
-Ser capaz de dirigir correctamente las IA es una habilidad muy poderosa. Pero, ¿cómo te comunicas con ellas?
-Las IA que se analizan en este curso entienden inglés (y otros idiomas),
-por lo que, por lo general, solo podemos describir las tareas que queremos que se realicen. Por ejemplo, podemos decirle a una IA que
-`Escriba un ensayo sobre los beneficios de la IA` y diría[^2]:
+AIを適切に指示できることは、非常に強力なスキルです。では、どのように彼らとコミュニケーションを取ればいいのでしょうか？
+この講座で取り上げるAIは、英語（や他の言語）を理解します。
+ですから、私たちは通常、やってほしいことを説明するだけでいいのです。例えば、次のようにAIに指示することができます。
+「AIの利点についてエッセイを書いてください」と言えば、[^2]と答えるでしょう。:
 
 ```
-En los últimos años, la Inteligencia Artificial (IA) se ha convertido en un tema candente en el mundo de la tecnología. Con su potencial para revolucionar muchos aspectos de nuestras vidas, la IA se está volviendo cada vez más relevante a medida que la tecnología continúa desarrollándose. Desde sus aplicaciones en el cuidado de la salud y el transporte hasta su uso en la educación y la fabricación, la IA ya nos ha demostrado su inmenso potencial para beneficiar a la sociedad de múltiples maneras.
+近年、人工知能（AI）はテクノロジー界でのホットトピックとなっています。
+多くの生活領域で革命的な変革をもたらす可能性があるため、テクノロジーの発展に伴い、ますます重要な役割を果たすことになっています。
+医療や交通から教育や製造業まで、AIはすでに多様な領域で社会に多大なメリットをもたらすことを示しています。
 
-El beneficio más obvio de la IA es su capacidad para automatizar tareas mundanas. Los sistemas de IA se pueden utilizar para automatizar operaciones a gran escala, como el análisis de datos, el servicio al cliente e incluso la producción de bienes. Esto libera el trabajo humano para centrarse en tareas complejas y creativas que requieren más inteligencia e ingenio humano. La IA también se puede utilizar para analizar grandes cantidades de datos y tomar decisiones en una fracción del tiempo que le llevaría a un ser humano. Esto puede ser beneficioso en industrias como la financiera, donde la IA puede detectar patrones en el mercado de valores y ofrecer información que de otro modo pasaría desapercibida.
+AIの最も明らかなメリットは、単調なタスクを自動化する能力です。
+データ分析や顧客サービス、商品生産などの大規模な作業を自動化するためにAIシステムを使用することができます。
+これにより人間の労働力は複雑で創造的なタスクに焦点を当てることができます。
+AIはまた、大量のデータを分析し、人間よりも短い時間で意思決定をすることができます。
+これは、金融業などで有用です。 AIは株式市場の模様を検出し、人間が気づかないことを提供することができます。
 
-La IA también se puede usar para hacer predicciones y generar información que se puede usar para mejorar la eficiencia y la precisión. Por ejemplo, la IA se puede utilizar para predecir las tendencias y preferencias de los clientes, lo que ayuda a las empresas a tomar mejores decisiones y aumentar las ganancias. La IA también se puede utilizar para identificar riesgos y oportunidades potenciales en diversas industrias, como finanzas, atención médica y fabricación. Esto puede ayudar a las empresas a tomar decisiones informadas y reducir el riesgo de errores costosos.
+また、AIは予測を行い、インサイトを生成することで、効率と精度を向上させるために利用することができます。
+例えば、AIは顧客の動向や嗜好を予測し、企業がより良い意思決定を行い、利益を上げるために活用することができます。
+また、AIは、金融、ヘルスケア、製造業など、さまざまな業界における潜在的なリスクと機会を特定するために使用することができます。
+これにより、企業は十分な情報を得た上で意思決定を行い、コストのかかるミスのリスクを軽減することができます。
 
-Finalmente, la IA se puede utilizar para mejorar nuestra comprensión del mundo. La IA se puede utilizar para analizar grandes conjuntos de datos y generar conocimientos que se pueden utilizar para comprender mejor el mundo que nos rodea. Esto se puede usar para ayudarnos a comprender mejor los impactos del cambio climático, desarrollar nuevos tratamientos para enfermedades e incluso predecir eventos como terremotos e inundaciones.
+最後に、AIは世界の理解を深めるために利用することができます。
+AIは、大規模なデータセットを分析し、私たちを取り巻く世界をよりよく理解するために使用できる洞察を生み出すために使用することができます。
+これは、気候変動の影響の理解、病気の新しい治療法の開発、さらには地震や洪水などの出来事の予測に活用することができます。
 
-En general, la IA tiene el potencial de revolucionar muchos aspectos de nuestras vidas. Desde la automatización de tareas mundanas hasta la generación de conocimientos y predicciones, la IA se puede utilizar para mejorar la eficiencia, la precisión y nuestra comprensión del mundo. A medida que la tecnología continúa desarrollándose, la IA se volverá cada vez más relevante y su potencial para beneficiar a la sociedad solo crecerá.
+全体として、AIは私たちの生活の多くの側面に革命をもたらす可能性を秘めています。
+ありふれた作業の自動化から洞察や予測の生成まで、AIは効率、精度、そして世界への理解を向上させるために利用することができます。
+テクノロジーが発展し続けるにつれ、AIはますます関連性を増し、社会に貢献するその可能性は大きくなるばかりでしょう。
 ```
 
-## ¿Por qué debería interesarme?
+## なぜ気にする必要があるのか？
 
-La IA se puede utilizar para automatizar tareas en las que dedica incontables horas *ahora mismo*.
-Mencionamos varios ejemplos arriba, pero también puedes considerar cualquier tarea ligeramente repetitiva que hagas.
-Podría ser escribir correos electrónicos, escribir informes o incluso escribir código. Si puedes describir la tarea.
-a una IA, es probable que pueda hacerlo por usted o al menos darle un punto de partida.
+AIは、あなたが数え切れないほどの時間をかけて*今* 行っている作業を自動化するために使うことができます。
+上記でいくつかの例を挙げましたが、あなたが行っている少し繰り返しのあるタスクも考慮に入れてください。
+メールを書く、レポートを書く、あるいはコードを書くなどです。もし、あなたがそのタスクを説明することができれば
+AIにタスクを説明できれば、AIはあなたに代わってそれを行うか、少なくとも出発点を与えてくれることでしょう。
 
-## ¿Cómo comenzar?
+## どのように始めればいいですか？
 
-Este curso le enseñará cómo comunicarse con las IA.
-Lea el resto de este capítulo, luego consulte otros capítulos que le interesen.
-En particular, la sección de indicaciones aplicadas puede ser de su interés si desea
-para ver cómo los profesionales utilizan la IA para automatizar su trabajo. Puedes experimentar con IA
-usando recursos como [Playground](https://beta.openai.com/playground), [otros IDE](https://learnprompting.org/docs/IDEs/intro), o simplemente usando las interacciones embebidas de [Dyno](https://trydyno.com) que verá en este sitio.
+この講座では、AIとコミュニケーションをとる方法を学びます。
+この章の残りを読んでから、興味のある他の章をチェックしてみてください。
+特に、プロンプトの応用編は、プロフェッショナルがどのようにAIを使って仕事を自動化しているか
+プロフェッショナルがAIを使ってどのように仕事を自動化しているのかを見てみたい方は、特に応用編をご覧ください。AIを使った実験ができる
+[Playground](https://beta.openai.com/playground) や [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro) などのリソースを使用したり、このサイトの至るところで目にするインタラクティブな [Dyno](https://trydyno.com) の埋め込みを使用することができます。
 
-Antes de leer el siguiente artículo, es importante tener en cuenta que no necesita conocimientos técnicos para realizar PE. La mayor parte es prueba y error, y puedes aprender sobre la marcha.
+次の記事を読む前に、プロンプトエンジニアリングを行うのに技術的なバックグラウンドは必要ないことを知っておくことが重要です。ほとんどが試行錯誤であり、やりながら学べばいいのです。
 
-[^1]: Técnicamente, no están "pensando" como humanos, pero esta es una forma sencilla de explicarlo.
-[^2]: Una IA (GPT-3 davinci-003) de hecho escribió esto.
+[^1]: 厳密には、人間のように「考えている」わけではないのですが、このように簡単に説明することができます。
+[^2]: これを書いたのは、実はAI（GPT-3 davinci-003）なんです。
