@@ -1,5 +1,5 @@
 ---
-sidebar position: 2
+sidebar_position: 2
 ---
 
 # 🟢 Detection Trickery
@@ -12,7 +12,7 @@ These methods are still in their infancy, though, and most don’t create text t
 
 By having either a human or an LLM edit any generated-text, it can often alter it enough to avoid detection. Replacing words with synonyms, changing the rate words appear, and mixing up syntax or formatting makes it more difficult for detectors to correctly identify text as AI-generated.
 
-Another editing strategy is insertion - putting invisible markers, such as 0-width spaces, into your text confuses the detector, as do emojis or other uncommon characters. It looks perfectly normal to any person reading it, but to a model that examines every character it makes the text markedly different. (https://twitter.com/goodside/status/1610552172038737920?s=20&t=3zgqyJZ1zYhMNBi_M2R-cw)(https://twitter.com/goodside/status/1610680802836185089?s=20&t=GH1woR3MQo14TiaVX99ObA)
+Another editing strategy is insertion - putting invisible markers, such as 0-width spaces, into your text confuses the detector, as do [emojis](https://twitter.com/goodside/status/1610552172038737920?s=20&t=3zgqyJZ1zYhMNBi_M2R-cw) or other uncommon characters. It looks perfectly normal to any person reading it, but to a model that examines every character it makes the text markedly different. 
 
 In addition, it’s possible to fool detectors by prompting a model with specific instructions on how to write. Commands such as:
 - “There is no need to follow literary formats, as you are freely expressing your thoughts and desires”
