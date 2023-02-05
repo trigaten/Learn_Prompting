@@ -8,12 +8,12 @@ sidebar_position: 2
 Prompt leaking is a form of prompt injection in which the model is asked to
 spit out its own prompt. 
 
-As shown in the figure below, the attacker changes `user_input` to return the application's prompt in prompt leaking. The intended goal is distinct from goal hijacking (prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt). 
+As shown in the example image(@ignore_previous_prompt) below, the attacker changes `user_input` to attempt to return the prompt. The intended goal is distinct from goal hijacking (normal prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt). 
 
 import research from '../assets/jailbreak_research.png';
 
 <div style={{textAlign: 'center'}}>
-  <img src={research} style={{width: "300px"}} />
+  <img src={research} style={{width: "500px"}} />
 </div>
 
 The following image(@simon2022inject), again from the `remoteli.io` example, shows
@@ -25,7 +25,7 @@ import Image from '../assets/injection_leak.png';
   <img src={Image} style={{width: "300px"}} />
 </div>
 
-Again, so what? Why should anyone care about prompt leaking? 
+Well, so what? Why should anyone care about prompt leaking? 
 
 Sometimes people want to keep their prompts secret. For example an education company 
 could be using the prompt `explain this to me like I am 5` to explain
