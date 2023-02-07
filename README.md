@@ -24,12 +24,9 @@ We are actively looking for:
 
 ## Local Development
 
-First, install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and
-- [node](https://nodejs.org/en/download/).
+First, install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [node](https://nodejs.org/en/download/).
 
-Then, run the following commands in a terminal:
-
-Make sure you are using Node 18.0.0 or higher.
+Make sure you are using Node 18.0.0 or higher (`node -v`). Then, run the following commands in a terminal:
 ```
 # download the website code with git
 git clone https://github.com/trigaten/Learn_Prompting.git
