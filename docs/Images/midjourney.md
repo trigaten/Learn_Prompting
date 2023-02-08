@@ -7,8 +7,8 @@ Unlike Stable Diffusion, [Midjourney](www.midjourney.com) uses a Discord bot as 
 
 import midjourney_astronaut from '../assets/midjourney_astronaut.png';
 import midjourney_astronaut_params from '../assets/midjourney_astronaut_params.png';
-import midjourney_astronaut_multi1 from "../assets/midjourney_astronaut_multi1.png';
-import midjourney_astronaut_multi2 from "../assets/midjourney_astronaut_multi2.png';
+import midjourney_astronaut_multi1 from '../assets/midjourney_astronaut_multi1.png';
+import midjourney_astronaut_multi2 from '../assets/midjourney_astronaut_multi2.png';
 
 
 # Basic Usage
