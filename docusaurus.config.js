@@ -50,7 +50,8 @@ async function createConfig() {
             remarkPlugins: [
               math,
               (await import("remark-gfm")).default,
-              [(await import("@benchmark-urbanism/remark-bibtex")).default, { bibtexFile: 'bibliography.bib' }]
+              [(await import("@benchmark-urbanism/remark-bibtex")).default, { bibtexFile: 'bibliography.bib' }],
+              [(await import("@renatonagliati/remark-auto-glossary")).default, { yamlFile: 'glossary.yml' }]
             ],
             rehypePlugins: [katex],
           },

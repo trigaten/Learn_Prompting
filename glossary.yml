@@ -1,0 +1,4 @@
+api:
+  term: API
+  def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
+  link: See <a href='https://www.redhat.com/en/topics/api/what-is-a-rest-api'>What is a REST API?</a>
