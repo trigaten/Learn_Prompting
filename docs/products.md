@@ -19,8 +19,16 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Chatbots
 
-- [http://poe.com][Poe]
-- [jasper.ai/chat](Jasper Chat)
+- [Poe](http://poe.com)
+- [Jasper Chat](https://www.jasper.ai/chat)
+
+## Browser Extensions
+
+- [Super Power Chat GPT](https://chrome.google.com/webstore/detail/superpower-chatgpt/amhmeenmapldpjdedekalnfifgnpfnkc)
+> Adds extra functionality to ChatGPT user interface including prompt library, export chats, safe mode control, history, copy full chat
+
+- [WebChatGPT](https://chrome.google.com/webstore/detail/webchatgpt/lpfemeioodjbpieminkklglpmhlngfcn)
+> Augment your ChatGPT prompts with relevant results from the web.
 
 ## Personal Assistants
 

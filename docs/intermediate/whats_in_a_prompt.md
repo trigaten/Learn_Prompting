@@ -24,7 +24,7 @@ import GoldUn from '../assets/gold_unimportant.png';
 
 ## Labelspace Matters
 
-Even though the gold labels in the exemplars are not important, the labelspace 
+Even though the gold labels in the exemplars are not important, the labelspace[^labelspace] 
 (all of the possible labels for the task) is.
 Even providing random labels from the labelspace helps the LLM get a better understanding
 of the labelspace, and improves results. Additionally, properly representing the 
@@ -37,6 +37,24 @@ labels.
 Perhaps the most important part of exemplars is how they are formatted. This
 format instructs the LLM on how to properly format its answer to the prompt.
 
+For example, consider the below exemplars. They use all capital words as answers.
+Even though the answers are completely wrong (2+2 is not 50), GPT-3 correctly answer
+the last question, and follows the format of the others.
+
+```text
+What is 2+2? 
+FIFTY
+What is 20+5?
+FORTY-THREE
+What is 12+9?
+// highlight-start
+TWENTY-ONE
+// highlight-end
+```
+
 ## Notes
 
-Between 4-8 exemplars is a good number to use for few shot prompts(@min2022rethinking).
+Between 4-8 exemplars is a good number to use for few shot prompts(@min2022rethinking),
+but it can often be helpful to put as many as possible.
+
+[^labelspace]: See the [vocabulary reference](https://learnprompting.org/docs/vocabulary#labels) for more info.

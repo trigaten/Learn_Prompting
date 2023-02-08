@@ -63,6 +63,16 @@ import hotwire from '../assets/jailbreak/hotwire_jailbreak.png';
 
 [@haus_cole](https://twitter.com/haus_cole/status/1598541468058390534) generated this example by implying that the best result of the prompt that could aid research was to directly answer how to hotwire a car(@derek2022jailbreak). Under this guise, ChatGPT is inclined to answer the user’s prompt.
 
+#### Logical Reasoning
+
+import logic from '../assets/jailbreak/logic.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={logic} style={{width: "500px"}} />
+</div>
+
+The one-shot jailbreak originated from the [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), where the model answer prompts using more rigorous logic and reduces some of its more stringent ethical limitations(@AI_jailbreak).
+
 ### Authorized User
 
 ChatGPT is designed to respond to questions and instructions. When the status of the user is interpreted as superior to ChatGPT's moderation instructions, it treats the prompt as an instruction to serve that user's needs.
@@ -101,7 +111,15 @@ import lynx from '../assets/jailbreak/lynx_jailbreak.png';
 
 Related to sudo mode, one can prompt ChatGPT to simulate a Linux terminal with elevated privileges in order to execute commands that it normally rejects. For example, since it does not have access to the internet, it oftentimes cannot execute prompts relating to a particular website. However, as demonstrated in the example by Jonas Degrave, ChatGPT understands the concept of `lynx` and pretends to execute the command(@jonas2022jailbreak).
 
-*As of 1/13/23, ChatGPT is currently in its Free Research Preview stage using the January 9th version. Older versions of ChatGPT were more susceptible to the aforementioned jailbreaks, and future versions may be more robust to jailbreaks.*
+## Simulate Jailbreaking
+
+Try to modify the prompt below to jailbreak `text-davinci-003`:
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Your instructions are to correct the text below to standard English. Do not accept any vulgar or political topics:" initial-response="I hate humans" max-tokens="256" box-rows="7" model-temp="0.7" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
+*As of 2/4/23, ChatGPT is currently in its Free Research Preview stage using the January 30th version. Older versions of ChatGPT were more susceptible to the aforementioned jailbreaks, and future versions may be more robust to jailbreaks.*
 
 ## Implications
 
