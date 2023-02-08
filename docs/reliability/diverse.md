@@ -142,16 +142,17 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
 ## Ask Me Anything (AMA) Prompts
 
 ![My Remote Image](https://user-images.githubusercontent.com/69173676/217629041-a73a19b3-722d-4dcf-8c07-07f9d2eddfba.jpg)
+(@arora2022ama)
 
-In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted perfect prompt.
+In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted perfect prompt.
 
-The *AMA* prompting strategy combinds the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers to get an effective best answer. 
+The *AMA* prompting strategy combinds the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
 
-Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` 
+Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
 
 *Weak supervision* is a procedure for combining the noisy, imperfect predictions of the prompts to produce refinded final predictions. 
 
-This strategy enables large language models to match and exceed the performance of few-shot prompt GPT3 on popular benchmarks, with as much as 40x less computing costs. This approach is applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters.
+This strategy enables large language models to match and exceed the performance of few-shot prompt GPT3 on popular benchmarks, with as much as 40x less computing costs(@arora2022ama). This approach is applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters.
 
 ### Example
 
