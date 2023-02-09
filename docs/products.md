@@ -276,8 +276,3 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [PromptLayer](https://promptlayer.com/)
 - [Promptextend](https://www.promptextend.com/)
 - [Thomas IO](https://www.thomas.io/stable-diffusion-prompt-generator)
-
-
-
-
-
