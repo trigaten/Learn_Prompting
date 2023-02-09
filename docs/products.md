@@ -10,7 +10,6 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Simplified](https://simplified.com/ai-writer/)
 - [Frase](https://www.frase.io/)
-- [Requstory](https://requstory.com/)
 - [Letterdrop](https://letterdrop.com/)
 - [AI21 Labs](https://www.ai21.com/)
 - [Novel AI](https://novelai.net/)
@@ -85,8 +84,6 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [xp1](https://xp1.dust.tt)
 - [ACT-1](https://www.adept.ai/act)
-- [Yoodli](https://app.yoodli.ai/signup)
-- [Soul Machines](https://www.soulmachines.com/)
 - [MealsAI](https://www.mealsai.com/)
 - [Vowel](https://www.vowel.com/)
 - [Mathly](https://mathly.webflow.io/)
@@ -94,7 +91,6 @@ Here is a growing list of notable products that use prompting. If you have a pro
 ### Research Assistants
 
 - [Elicit](https://elicit.org)
-- [Case Text](https://casetext.com/)
 - [ValidatorAI](https://www.validatorai.com/)
 - [HoustonAI](https://houston.astro.build/)
 - [SciSpace](https://typeset.io/)
@@ -118,9 +114,6 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Research AI](https://research-ai.io/)
 - [Mutiny](https://www.mutinyhq.com/)
-- [Symbl AI](https://symbl.ai/)
-- [Ango Hub](https://ango.ai/)
-- [Tonic.ai](https://www.tonic.ai/)
 - [Viable](https://www.askviable.com/)
 - [Akkio](https://www.akkio.com/)
 - [Olli](https://www.olli.ai/)
@@ -139,7 +132,6 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [GauGAN](http://gaugan.org/gaugan2/)
 - [Deep AI](https://deepai.org/)
 - [Artbreeder](https://www.artbreeder.com/)
-- [Pixray](https://replicate.com/pixray/text2image)
 - [Wonder AI](https://linktr.ee/wonder_ai)
 - [Neural Love](https://neural.love/)
 - [Alpace](https://www.getalpaca.io/)
@@ -174,7 +166,6 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Prompt Monkeys](https://beginnings.prompt-monkeys.ai/game/4)
 - [Character AI](https://beta.character.ai/)
 - [Scenario](https://www.scenario.gg/)
-- [Sefi AI](https://www.sefirot.io/)
 - [Leonardo](https://leonardo.ai/)
 - [Asset AI](https://www.assetsai.art/)
 
@@ -183,15 +174,12 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Code GPT - VSCode Extension](https://marketplace.visualstudio.com/items?itemName=DanielSanMedium.dscodegpt)
 - [Goose AI](https://goose.ai/)
 - [Cohere](https://cohere.ai/generate)
-- [Labelf AI](https://www.labelf.ai/)
-- [Obviously AI](https://www.obviously.ai/demo)
 - [Codeium](https://www.codeium.com/)
 - [Github Copilot](https://github.com/features/copilot)
 - [Tabnine](https://www.tabnine.com/)
 - [Adept](https://www.adept.ai/)
 - [Built](https://www.buildt.ai/)
 - [Trudo](https://www.trudo.ai/)
-- [Petals](https://petals.ml/)
 - [Figstack](https://www.figstack.com/)
 - [SourceAI](https://sourceai.dev/)
 - [Coadfiller](https://coadfiller.biz/)
@@ -209,22 +197,17 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Sales and Marketing
 
-- [MarketMuse](https://www.marketmuse.com/)
 - [GhostWriter](https://www.tailwindapp.com/?optimize-exp=index_ghostwriter_control)
 - [Daydrm AI](https://www.daydrm.ai/)
 - [NeuralText Smart Writer](https://www.neuraltext.com/)
-- [Howler AI](https://www.howler.media/)
 - [Ernest](https://imernest.ai/)
 - [Humantic AI Sales Assistant](https://humantic.ai/solutions/revenue)
 - [Lavender](https://chrome.google.com/webstore/detail/lavender/necbalcggglceeioaehdbkpbldmoabii)
 - [Pulley](https://www.pulley.ai/)
 - [Nanos instant marketing](https://nanos.ai/)
-- [Influencity](https://influencity.com/)
-- [Reachout.ai](https://reachout.ai/)
 - [RegisAI](https://regisai.com/)
 - [Flair](https://withflair.ai/)
 - [Mentioned](https://mentioned.ai/)
-- [Bool](https://boolvideoinvite.carrd.co/)
 - [Barua AI](https://baruaai.com/)
 - [Superflow](https://www.superflows.ai/)
 - [Robin](https://www.hellorobin.ai/)
@@ -237,13 +220,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Phenaki](https://phenaki.video/)
 - [Runway](https://runwayml.com/)
-- [Fliki](https://fliki.ai/)
-- [Synthesia](https://www.synthesia.io/)
-- [Meta AI](https://makeavideo.studio/)
-- [Colossyan Creator](https://www.colossyan.com/)
-- [Plasmic.ai](https://plasmic.ai/)
-- [Movio](https://app.movio.la/guest/templates)
-- [Lumen5](https://lumen5.com/)
+- [Make a Video](https://makeavideo.studio/)
 - [Kaiber](https://kaiber.ai/)
 
 ## Web Design
@@ -260,11 +237,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [OpenAI - GPT-3 Zapier App](https://zapier.com/apps/openai/integrations)
 - [Forethought](https://forethought.ai/)
-- [OnLoop](https://www.onloop.com/)
-- [Converz AI](https://www.converzai.com/)
-- [Velents](https://www.velents.com/)
 - [Job Description AI](https://www.jobdescription.ai/)
-- [Bardeen](https://www.bardeen.ai/)
 
 ## Buy and Sell Prompts
 
