@@ -167,6 +167,7 @@ Here is a small example.
 <div>Claim: "The capital of France is Paris." 
 Question: "What is the capital of France?" 
 Answer: "Paris" </div>
+</div>
 </pre>
 `Input: "The United States is a country in North America"` 
 
@@ -176,6 +177,7 @@ Answer: "Paris" </div>
 <div>Claim: "The population of the United States is 330 million." 
 Question: "What is the population of the United States?" 
 Answer: "330 million"</div>
+</div>
 </pre>
 `Input: "Canada is a country in North America"` 
 
@@ -184,6 +186,7 @@ Answer: "330 million"</div>
 <div style={{backgroundColor: '#d2f4d3'}}>
 <div>Claim: "The average temperature in Canada in the summer is 20 degrees Celsius." Question: "What is the average temperature in Canada in the summer?" 
 Answer: "20 degrees Celsius"</div>
+</div>
 </pre>
 
 ## Takeaways
