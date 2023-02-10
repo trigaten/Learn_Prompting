@@ -185,6 +185,6 @@ Answer: "330 million"</div>
 Answer: "20 degrees Celsius"</div>
 </pre>
 
-## Takeaways
+# Takeaways
 
 The main take-aways are these approaches are applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters by using multiple input prompts to generate diverse completions. In practice, majority voting or weak supervision will likely work well compared to the voting verifier.
