@@ -8,7 +8,6 @@ DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**p
 a method that improves the reliability of answers in a threefold manner. It does this by
 1) using multiple prompts to generate diverse completions, 2) using a verifier to distinguish good answers from bad answers, and 3) using a verifier to check the correctness of reasoning steps.
 
-
 import diverse from '../assets/diverse.png';
 
 <div style={{textAlign: 'center'}}>
@@ -139,7 +138,53 @@ The final answer is 4, since it has the highest score.
 The verifier is trained with a slightly complex loss function, which 
 I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
 
+## Ask Me Anything (AMA) Prompts
+
+![My Remote Image](https://user-images.githubusercontent.com/69173676/217629041-a73a19b3-722d-4dcf-8c07-07f9d2eddfba.jpg)
+(@arora2022ama)
+
+In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted perfect prompt.
+
+The *AMA* prompting strategy combinds the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
+
+Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
+
+*Weak supervision* is a procedure for combining the noisy, imperfect predictions of the prompts to produce refinded final predictions. 
+
+This strategy enables large language models to match and exceed the performance of few-shot prompt GPT3 on popular benchmarks, with as much as 40x less computing costs(@arora2022ama). This approach is applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters.
+
+### Example
+
+Here is a small example. 
+
+`Input:"France is a country in Europe"`:
+
+`Context: "France is a country in Europe with a population of over 67 million people."`
+
+<pre>
+<div style={{backgroundColor: '#d2f4d3'}}>
+<div>Claim: "The capital of France is Paris." 
+Question: "What is the capital of France?" 
+Answer: "Paris" </div>
+</pre>
+`Input: "The United States is a country in North America"` 
+
+`Context: "The United States is a country in North America with a population of over 330 million people."` 
+<pre>
+<div style={{backgroundColor: '#d2f4d3'}}>
+<div>Claim: "The population of the United States is 330 million." 
+Question: "What is the population of the United States?" 
+Answer: "330 million"</div>
+</pre>
+`Input: "Canada is a country in North America"` 
+
+`Context: "Canada is a country in North America with an average summer temperature of 20 degrees Celsius.`
+<pre>
+<div style={{backgroundColor: '#d2f4d3'}}>
+<div>Claim: "The average temperature in Canada in the summer is 20 degrees Celsius." Question: "What is the average temperature in Canada in the summer?" 
+Answer: "20 degrees Celsius"</div>
+</pre>
+
 ## Takeaways
 
-The main take away here is to use multiple prompts to generate diverse completions. 
-In practice, majority voting will likely work well compared to the voting verifier.
+The main take-aways are these approaches are applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters by using multiple input prompts to generate diverse completions. In practice, majority voting or weak supervision will likely work well compared to the voting verifier.
