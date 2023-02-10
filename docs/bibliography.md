@@ -256,3 +256,4 @@ cite them as such.
 
 ### A Watermark for Large Language Models(@kirchenbauer2023watermarking)
 
+### Ask-Me-Anything Prompting(@arora2022ama)
