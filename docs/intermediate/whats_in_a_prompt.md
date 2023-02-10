@@ -11,10 +11,10 @@ This page will offer some general advice about what is actually important in a p
 ## "Ground Truth Matters Little"
 
 
-Surprisingly, when providing few shot exemplars in prompts, the actual answers (gold)
+Surprisingly, when providing few shot %%exemplars|exemplars%% in prompts, the actual answers (%%gold|gold_labels%%)
 in the exemplars are not important. As shown in the figure below, providing random
 labels in the exemplars barely hurts performance(@min2022rethinking). "Demo" is synonymous
-with exemplar in this image.
+with exemplar in this image. %%gold|gold_labels%%
 
 import GoldUn from '../assets/gold_unimportant.png';
 
@@ -24,8 +24,8 @@ import GoldUn from '../assets/gold_unimportant.png';
 
 ## Labelspace Matters
 
-Even though the gold labels in the exemplars are not important, the labelspace[^labelspace] 
-(all of the possible labels for the task) is.
+Even though the gold labels in the exemplars are not important, the %%labelspace|labelspace%%
+is.
 Even providing random labels from the labelspace helps the LLM get a better understanding
 of the labelspace, and improves results. Additionally, properly representing the 
 distribution of the labelspace in the exemplars is important. Rather than uniformly
@@ -56,5 +56,3 @@ TWENTY-ONE
 
 Between 4-8 exemplars is a good number to use for few shot prompts(@min2022rethinking),
 but it can often be helpful to put as many as possible.
-
-[^labelspace]: See the [vocabulary reference](http://localhost:3000/docs/vocabulary#labels) for more info.

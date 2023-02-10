@@ -2,3 +2,21 @@ api:
   term: API
   def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
   link: See <a href='https://www.redhat.com/en/topics/api/what-is-a-rest-api'>What is a REST API?</a>
+labelspace:
+  term: Label space
+  def: All of the possible labels for a given task.
+few shot standard prompt:
+  term: few shot standard prompt
+  def: Standard prompts that have exemplars in them. Exemplars are examples of the task that the prompt is trying to solve, which are included in the prompt itself.
+exemplars:
+  term: exemplars
+  def: Examples of the task that the prompt is trying to solve, which are included in the prompt itself.
+CoT prompting:
+  term: CoT prompting
+  def: The main idea of CoT is that by showing the LLM some few shot exemplars where the reasoning process is explained in the exemplars, the LLM will also show the reasoning process when answering the prompt.
+LLM:
+  term: LLM
+  def: Language Language Model. A model that is trained to predict the next word in a sentence.
+gold_labels:
+  term: gold_labels
+  def: The correct labels for a given task.
