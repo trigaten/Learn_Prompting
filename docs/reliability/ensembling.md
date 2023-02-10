@@ -2,7 +2,12 @@
 sidebar_position: 5
 ---
 
-# 🟡 Diverse Prompts
+# 🟡 Prompt Ensembling
+
+Prompt ensembling is the concept of using multiple different prompts to try to 
+answer the same question. There are many different approaches to this.
+
+## Diverse Prompts
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") is
 a method that improves the reliability of answers in a threefold manner. It does this by
@@ -78,7 +83,7 @@ Note that the answers are not always correct.
 
 At this point, DiVeRSe has generated 100 different completions.
 
-## Voting Verifier
+### Voting Verifier
 
 Now, we could just take the majority answer, like Self-Consistency(@mitchell2022enhancing) does.
 
@@ -88,7 +93,7 @@ At test time, using the voting verifier is a two step process. First, the verifi
 assigns a 0-1 score to each completion based on how likely it is to be correct. Then, the 'voting'
 component sums all of the scores over different answers and yields the final answer.
 
-### Example
+#### Example
 
 Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
 
@@ -139,14 +144,14 @@ The final answer is 4, since it has the highest score.
 The verifier is trained with a slightly complex loss function, which 
 I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
 
-## Ask Me Anything (AMA) Prompts
+### Ask Me Anything (AMA) Prompts
 
 ![My Remote Image](https://user-images.githubusercontent.com/69173676/217629041-a73a19b3-722d-4dcf-8c07-07f9d2eddfba.jpg)
 (@arora2022ama)
 
 In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted perfect prompt.
 
-The *AMA* prompting strategy combinds the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
+The *AMA* prompting strategy combines the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
 
 Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
 
@@ -154,7 +159,7 @@ Effective yet imperfect prompts are questions that can be classified as zero-sho
 
 This strategy enables large language models to match and exceed the performance of few-shot prompt GPT3 on popular benchmarks, with as much as 40x less computing costs(@arora2022ama). This approach is applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters.
 
-### Example
+#### Example
 
 Here is a small example. 
 
