@@ -151,7 +151,7 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
 
 In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted perfect prompt.
 
-The *AMA* prompting strategy combines the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
+The *AMA* prompting strategy combines the results from the different prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
 
 Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
 
