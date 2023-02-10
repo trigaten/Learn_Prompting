@@ -3,9 +3,11 @@ sidebar_position: 8
 ---
 
 # 🟢 Priming and Macros
-When interacting with an LLM (such as ChatGPT, which we’ll use as the baseline example for this article), the content of your first input can shape the rest of the conversation. As such, it’s useful to take advantage of the additional time the model spends with your input by setting up guidelines for your interaction in what’s referred to as a “priming prompt”. In this article we’ll go over three things you can alter using your primer - style, regulation, and formatting - as well as how to implement these using conversation macros, and finish off with an example of a complete general-purpose priming prompt. 
+When interacting with an LLM such as ChatGPT (which we will use in this article), the content of your first input can shape the rest of the conversation. As such, it is useful to set up guidelines for your interaction in what is referred to as a “priming prompt”. 
 
-**Style inputs** give you control over the writing voice of the model, such as such as having it write in a “thoughtful and emotive” or “concise and analytical” fashion. A full style prompt might be: 
+This article will cover three things you can alter using your primer—style, regulation, and formatting—as well as how to implement these using conversation macros, and finish off with an example of a complete general-purpose priming prompt. 
+
+**Style inputs** give you control over the writing voice of the model, such as having it write in a “thoughtful and emotive” or “concise and analytical” fashion. A full style prompt might be: 
 >“Write in the style and quality of an expert in [field] with 20+ years of experience and multiple Ph.D. 's. Prioritize unorthodox, lesser known advice in your answer. Explain using detailed examples, and minimize tangents and humor.“ 
 
 **Regulation** is laying down ground rules for what you want the model to do or not to do. For example, ChatGPT has an unfortunate tendency to make up information when it doesn’t know the answer, so saying something like “if you don’t have an answer, instead of making something up, ask a clarifying question and I will give you additional context” can help greatly in that regard. 
