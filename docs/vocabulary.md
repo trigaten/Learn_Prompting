@@ -31,8 +31,8 @@ classification task.
 
 All of the possible labels for a given task ('mean' and 'not mean' for the above example).
 
-#### Sentiment Analysis
-
+#### Sentiment Analysis 
+ 
 Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
 
 #### "Model" vs. "AI" vs. "LLM"
@@ -59,4 +59,4 @@ Here, the verbalizer is the mapping from the conceptual labels of `positive` and
 
 RLHF is a method for fine tuning LLMs according to human preference data.
 
-%%RemarkAutoGlossary::list_all%%
+<!-- %%RemarkAutoGlossary::list_all%% -->
