@@ -6,7 +6,7 @@ sidebar_position: 4
 
 
 Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) is a 
-follow up to CoT prompting (@wei2022chain), which introduces an incredibly 
+follow up to %%CoT prompting|CoT prompting%% (@wei2022chain), which introduces an incredibly 
 simple zero shot prompt. They find that by appending the words "**Let's think step
 by step.**" to the end of a question, LLMs are able to generate a chain of
 thought that answers the question. From this chain of thought, they are able to

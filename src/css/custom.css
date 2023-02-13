@@ -46,3 +46,15 @@
 }
 
 
+/* Glossary and Tooltips */
+div[role="tooltip"] {
+  width: 450px;
+  max-width: 90vw;
+}
+div[role="tooltip"] a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+div[itemscope][itemtype*="DefinedTerm"] span[itemprop="description"] {
+  color: var(--ifm-toc-link-color);
+}
