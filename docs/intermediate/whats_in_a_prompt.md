@@ -11,10 +11,10 @@ This page will offer some general advice about what is actually important in a p
 ## "Ground Truth Matters Little"
 
 
-Surprisingly, when providing few shot %%exemplars|exemplars%% in prompts, the actual answers (%%gold|gold_labels%%)
+Surprisingly, when providing few shot %%exemplars|exemplars%% in prompts, the actual answers (%%gold|gold_labels%%) 
 in the exemplars are not important. As shown in the figure below, providing random
 labels in the exemplars barely hurts performance(@min2022rethinking). "Demo" is synonymous
-with exemplar in this image. %%gold|gold_labels%%
+with exemplar in this image.
 
 import GoldUn from '../assets/gold_unimportant.png';
 
