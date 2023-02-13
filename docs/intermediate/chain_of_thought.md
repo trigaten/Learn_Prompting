@@ -28,8 +28,8 @@ results.
 
 ## Example
 
-Here are a few demos. The first shows GPT-3 (davinci-002)
-failing to solve a simple word problem. The second shows GPT-3 (davinci-002) succesfully solving the same problem, by using CoT prompting.
+Here are a few demos. The first shows GPT-3 (davinci-003)
+failing to solve a simple word problem. The second shows GPT-3 (davinci-003) succesfully solving the same problem, by using CoT prompting.
 
 #### Incorrect
 
