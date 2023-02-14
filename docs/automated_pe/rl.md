@@ -43,9 +43,17 @@ At a high level, instead of building a prompt from scratch like RLPrompt, TEMPER
 
 TEMPERA is allowed to edit 3 parts of the prompt:
 
-1) The instruction: given the instruction $i$, one could parse it through `nltk.tokenize.treebank` into a set of phrases. Then the actions allow swapping, addition and deletion between current set of phrases. For example, this will first parse the sentence `"Given text, classify whether it is good or bad."` to `["Given text", "classify", "whether", "it is", "good", "or", "bad"]`. Then we can perform different editing strategies (e.g., swapping two phrases, delete one phrase or repeat one phrase) on this set of phrases.
-2) in-context examples: given a example pool of $K$ examples, we want to select $k$ from them to formulate the final prompt. The action space allows change position of examples $i, j$ with $0 < i < j < k$. It also supports replacing example $0 < i < k$ with any candidate from the pool $k < j < K+1$. 
-3) The verbalizers: the editing space simply allows changing the current verbalizer to any other verbalizer from the `promptsource` collections. For examples, changing from `["positive", "negative"]` to `["great", "terrible"]`.
+### 1) The instruction
+
+Given the instruction $i$, one could parse it through `nltk.tokenize.treebank` into a set of phrases. Then the actions allow swapping, addition and deletion between current set of phrases. For example, this will first parse the sentence `"Given text, classify whether it is good or bad."` to `["Given text", "classify", "whether", "it is", "good", "or", "bad"]`. Then we can perform different editing strategies (e.g., swapping two phrases, delete one phrase or repeat one phrase) on this set of phrases.
+
+### 2) In-context examples
+
+Given a example pool of $K$ examples (aka %%exemplars|exemplars%%), we want to select $k$ from them to formulate the final prompt. The action space allows change position of examples $i, j$ with $0 < i < j < k$. It also supports replacing example $0 < i < k$ with any candidate from the pool $k < j < K+1$. 
+
+### 3) The verbalizers
+
+The editing space simply allows changing the current verbalizer to any other verbalizer from the `promptsource` collections. For examples, changing from `["positive", "negative"]` to `["great", "terrible"]`.
 
 ## Reward
 
