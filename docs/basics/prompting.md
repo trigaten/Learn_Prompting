@@ -36,17 +36,17 @@ you can create a prompt by posing the question "What is EQUATION".
 For a given question, your full prompt could look like this:
 
 ```
-What is 100*100?
+What is 1,000,000 * 9,000?
 ```
 
-For this prompt, GPT-3 (text-davinci-002) (an AI) sometimes answers 1,000 (incorrect). This is where
+For this prompt, GPT-3 (text-davinci-002) (an AI) sometimes answers 9,000,000 (incorrect). This is where
 prompt engineering comes in.
 
 # Prompt Engineering
 
-If, instead of asking `What is 100*100?`, we ask 
-`What is 100*100? Make sure your answer has the correct number of 0s:`, GPT-3 will
-answer 10,000 (correct). Why is this the case? Why is the additional specification 
+If, instead of asking `What is 1,000,000 * 9,000?`, we ask 
+`What is 1,000,000 * 9,000? Make sure to put the right amount of zeros, even if there are many:`, GPT-3 will
+answer 9,000,000,000 (correct). Why is this the case? Why is the additional specification 
 of the number of zeros necessary for the AI to get the right answer? How can we create
 prompts that yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.

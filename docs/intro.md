@@ -64,9 +64,9 @@ Here is a quick summary of each chapter:
 
 **Intermediate**: Slightly more complicated PE techniques
 
-**Advanced Applications**: Some very powerful, but more advanced applications of PE
-
 **Applied Prompting**: Some complete walkthroughs of the PE process written by community members
+
+**Advanced Applications**: Some very powerful, but more advanced applications of PE
 
 **Reliability**: How to make LLMs more reliable
 
