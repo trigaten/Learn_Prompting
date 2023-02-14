@@ -58,3 +58,10 @@ div[role="tooltip"] a {
 div[itemscope][itemtype*="DefinedTerm"] span[itemprop="description"] {
   color: var(--ifm-toc-link-color);
 }
+a[data-tooltip-html] {
+  border-bottom: 1px dashed;
+  cursor: help;
+}
+a[data-tooltip-html]:hover {
+  text-decoration: none;
+}
