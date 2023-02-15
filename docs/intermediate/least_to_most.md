@@ -10,6 +10,17 @@ Least to Most Prompting (@zhou2022leasttomost) builds upon the idea of Chain-of-
 
 As in CoT-Prompting, the problem to be solved is decomposed in a set of subproblems that build upon each other. In a second step, these subproblems are solved individually and in sequence. However, contrary to chain of thought, the solution of previous subproblems is fed into the next question.
 
+import leastToMost from '../assets/least-to-most.png'
+
+<div style={{textAlign: 'center'}}>
+  <img src={leastToMost} style={{width: "300px"}}
+        alt="A diagram of a least to most prompt showing how the prompt is composed of multiple steps whose answers are concatenated with the next step" />
+</div>
+
+<div style={{textAlign: 'center'}}>
+   Diagram of a Least to Most prompt
+</div>
+
 This leads to multiple improvements:
 - improved accuracy over Chain of Thought
 - increased generalization on problems harder than those in the prompt
@@ -48,9 +59,10 @@ With Least to Most prompting, we augment the Chain of Thought concept by reducin
      max-tokens="256" box-rows="18"
      model-temp="0.2" ></div>
      
+
 ### Results
 
-While Chain of Thought breaks down to an accuracy of 34% word 12 words, Least to Most prompting manages to keep performance up at 74%.
+While Chain of Thought breaks down to an accuracy of 34% word 12 words, Least to Most prompting manages to keep performance up at 74% (the paper uses text-davinci-002 as a model).
 
 ## Example: compositional generalization (SCAN)
 
@@ -58,7 +70,7 @@ The SCAN benchmark requires the model to convert natural language to sequences o
 
 ### First attempt: Standard prompting
 
-Using simple standard prompts, text-davinci-002 gets impressively far, but still fails.
+Using simple standard prompts, text-davinci-003 gets impressively far, but still fails.
 
 <div trydyno-embed="" openai-model="text-davinci-003"
      initial-prompt="Q: turn left\nA: TURN LEFT\n\nQ: turn right\nA: TURN RIGHT\n\nQ: jump left\nA: TURN LEFT &#43; JUMP\n\nQ: run right\nA: TURN RIGHT &#43; RUN\n\nQ: look twice\nA: LOOK * 2\n\nQ: run and look twice\nA: RUN &#43; LOOK * 2\n\nQ: jump right thrice\nA: (TURN RIGHT &#43; JUMP) * 3\n\nQ: walk after run\nA: RUN &#43; WALK\n\nQ: turn opposite left\nA: TURN LEFT * 2\n\nQ: turn around left\nA: TURN LEFT * 4\n\nQ: turn opposite right\nA: TURN RIGHT * 2\n\nQ: turn around right\nA: TURN RIGHT * 4\n\nQ: walk opposite left\nA: TURN LEFT * 2 &#43; WALK\n\nQ: walk around left\nA: (TURN LEFT &#43; WALK) * 4\n\nQ: &#34;jump around left twice after walk opposite left thrice&#34; \nA:"
@@ -99,4 +111,4 @@ into the LLM.
 
 ### Results
 
-Standard prompting with text-davinci-002 results in 6% of successful SCAN problems solved, while Least to Most prompting results in an impressive 76% success rate. The results are event more significant with code-davinci-002, where Least to Most prompting achieves a 99.7% success rate.
+Standard prompting with text-davinci-002 (the model used in the paper) results in 6% of successful SCAN problems solved, while Least to Most prompting results in an impressive 76% success rate. The results are event more significant with code-davinci-002, where Least to Most prompting achieves a 99.7% success rate.
