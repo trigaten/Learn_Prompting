@@ -3,7 +3,7 @@ sidebar_position: 8
 ---
 
 # 🟢 Priming
-When interacting with an LLM such as ChatGPT (which we will use in this article), the content of your first input can shape the rest of the conversation. As such, it can be useful to set up guidelines for your interaction in what is referred to as a “priming prompt”. 
+When interacting with an LLM such as ChatGPT, the content of your first input can shape the rest of the conversation. As such, it can be useful to set up guidelines for your interaction in what is referred to as a “priming prompt”. 
 
 This article will cover three things you can alter using your primer—style, regulation, and formatting—as well as how to implement these using conversation macros, and finish off with an example of a complete general-purpose priming prompt. 
 
@@ -14,7 +14,7 @@ This article will cover three things you can alter using your primer—style, re
 
 **Formatting** is specifying how you want the model to return its answers - a bulleted list, a detailed syllabus, a long-winded presidential address, et cetera. 
 
-***Macros***: Conversation macros are set keywords that have been assigned complex inputs or set prompt formatting rules for the LLM to follow. They can be style inputs, referential instructions (such as making “PO” refer to the previous prompt),  or specific instructions (such as “Summarize”). 
+**Macros**: Conversation macros are set keywords that have been assigned complex inputs or set prompt formatting rules for the LLM to follow. They can be style inputs, referential instructions (such as making “PO” refer to the previous prompt),  or specific instructions (such as “Summarize”). 
 
 ### Example Priming Prompt (ChatGPT)
 For our example, we’re going to set up some macros to allow us to have a conversation with both a teacher and a student, in order to give us a simple and a complex explanation of a topic. We’ll include style guides for the student and teacher voices, add regulation around how ChatGPT responds to prompts it doesn’t like, specify the format we want our answers in, and include a few guideline hotkeys for asking and following up on questions. 
@@ -39,20 +39,20 @@ Using this primer, we're able to get far higher-quality results from ChatGPT.
 import unprimed_question from '../assets/unprimed_question.png';
 import primed_question from '../assets/primed_question.png';
 
-This first image is an example of an unprimed question to ChatGPT about the most interesting areas of philosophy. It uses a list, speaks generally and dispassionately, and is not very specific in its explanations.  
+This first example is an example of an unprimed question to ChatGPT about the most interesting areas of philosophy. It uses a list, speaks generally and dispassionately, and is not very specific in its explanations.  
 
 <div style={{textAlign: 'center'}}>
-  <img src={unprimed_question} style={{width: "750px"}} />
+  <img src={unprimed_question} style={{width: "650px"}} />
 </div>
 
-In this image, we asked the question after providing a priming prompt to ChatGPT and providing the question in the correct form. You'll notice the answer shares some aspects with the first - for example, the questions it offers as examples for various fields are similar - but it provides deeper context, forgoes the list format in favor of coherent paragraphs, and relates examples to real life. 
+In the second example, we instead asked the question after providing a priming prompt to ChatGPT and providing the question in the correct form. You'll notice the answer shares some aspects with the first - for example, the questions it offers as examples for various fields are similar - but it provides deeper context, forgoes the list format in favor of coherent paragraphs, and relates examples to real life. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={primed_question} style={{width: "750px"}} />
+  <img src={primed_question} style={{width: "650px"}} />
 </div>
 
 ## Discussion
-As a general rule, a priming prompt will be less effective than typing out precise instructions at the beginning of each successive prompt. Priming's main use is in casual conversation with chatbots in order to set up context. Something as simple as "You are an alien from Mars. If you are ready to go, introduce yourself." can mean a great deal for the rest of your discussion. Priming prompts can enable chatbots to be increasingly opinionated, speak in vastly different ways, and use a more readable and interactive tone. 
+As a general rule, a priming prompt will be less effective than typing out precise instructions at the beginning of each successive prompt. A priming's main use is in casual conversation with chatbots in order to set up context. Something as simple as "You are an alien from Mars. If you are ready to go, introduce yourself." can help the model stay in character and provide better results for the entirety of a discussion. Priming prompts can enable chatbots to be increasingly opinionated, speak in vastly different ways, and use a more readable and interactive tone. 
 
 ## Notes
 Need more citations.
