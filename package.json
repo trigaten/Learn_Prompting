@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "react-tooltip": "^5.7.4",
-    "@renatonagliati/remark-auto-glossary": "git://github.com/renatonagliati/remark-auto-glossary.git#4fe9231d47dbc5c54966baa83a9d7ef50075057d",
+    "@renatonagliati/remark-auto-glossary": "git://github.com/renatonagliati/remark-auto-glossary.git#fed3f0983592ea15298b54b82fc92acc53359c25",
     "@benchmark-urbanism/remark-bibtex": "https://github.com/trigaten/remark-bibtex.git",
     "@benrbray/micromark-extension-cite": "^1.0.0",
     "@docusaurus/core": "^2.2.0",
