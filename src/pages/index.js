@@ -58,7 +58,6 @@ function HomepageHeader() {
           <Link to="https://discord.gg/7enStJXQzD">
             <DiscordButton></DiscordButton>
           </Link>
-          <TwitterFollowButton screenName={"Learn_Prompting"} />
           <Link
             className="button button--primary button--lg"
             style={{ marginLeft: "1rem" }}
@@ -66,6 +65,9 @@ function HomepageHeader() {
           >
             Start Learning
           </Link>
+        </div>
+        <div style={{ marginTop: "1rem" }}>
+          <TwitterFollowButton screenName={"Learn_Prompting"} />
         </div>
       </div>
     </header>
@@ -91,6 +93,7 @@ export default function Home() {
                 <iframe
                   width="560"
                   height="315"
+                  style={{ maxWidth: "calc(100vw - 4rem)" }}
                   src="https://www.youtube.com/embed/pZsJbYIFCCw"
                   title="YouTube video player"
                   frameborder="0"

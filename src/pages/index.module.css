@@ -28,8 +28,8 @@
   margin: 1rem auto 2rem auto;
   background: -webkit-linear-gradient(
     315deg,
-    #647eff 25%,
-    var(--ifm-color-primary)
+    #647eff 15%,
+    var(--ifm-color-primary) 85%
   );
   /* background: -webkit-linear-gradient(315deg, #647eff 25%, #2e8555); */
   -webkit-text-fill-color: transparent;
