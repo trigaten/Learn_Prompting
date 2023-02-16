@@ -55,16 +55,20 @@ function HomepageHeader() {
         <h1 className={styles.mytitle}>{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons} style={{ marginTop: "2.5rem" }}>
-          <Link to="https://discord.gg/7enStJXQzD">
-            <DiscordButton></DiscordButton>
-          </Link>
-          <Link
-            className="button button--primary button--lg"
-            style={{ marginLeft: "1rem" }}
-            to="/docs/intro"
-          >
-            Start Learning
-          </Link>
+          <div>
+            <Link to="https://discord.gg/7enStJXQzD">
+              <DiscordButton></DiscordButton>
+            </Link>
+          </div>
+          <div>
+            <Link
+              className="button button--primary button--lg"
+              style={{ marginLeft: "1rem" }}
+              to="/docs/intro"
+            >
+              Start Learning
+            </Link>
+          </div>
         </div>
         <div style={{ marginTop: "1rem" }}>
           <TwitterFollowButton screenName={"Learn_Prompting"} />
