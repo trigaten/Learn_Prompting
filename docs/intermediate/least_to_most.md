@@ -13,7 +13,7 @@ As in CoT-Prompting, the problem to be solved is decomposed in a set of subprobl
 import leastToMost from '../assets/least-to-most.png'
 
 <div style={{textAlign: 'center'}}>
-  <img src={leastToMost} style={{width: "300px"}}
+  <img src={leastToMost} style={{width: "600px"}}
         alt="A diagram of a least to most prompt showing how the prompt is composed of multiple steps whose answers are concatenated with the next step" />
 </div>
 
@@ -24,6 +24,7 @@ import leastToMost from '../assets/least-to-most.png'
 This leads to multiple improvements:
 - improved accuracy over Chain of Thought
 - increased generalization on problems harder than those in the prompt
+- dramatically improved performance in compositional generalization, in particular the SCAN problem set (@lake2018scan)
 
 ## Example: letter concatenation
 
@@ -40,8 +41,7 @@ The standard prompt with few-shot examples performs very poorly, even with a mor
      model-temp="0.2" ></div>
 
 ### Second attempt: Chain of Thought
-Chain of Thought is significantly better. This is because it now allows the model
-to consider extracting the last letter of each word on its own, reducing the complexity down to the operation of grouping letters it has previously collected. However, this starts to break down at larger sizes.
+Chain of Thought performs significantly better than standard prompting. This is because it now allows the model to consider extracting the last letter of each word on its own, reducing the complexity down to the operation of grouping letters it has previously collected. However, this starts to break down at larger sizes.
 
 <div trydyno-embed="" openai-model="text-davinci-003"
      initial-prompt="Q: think, machine\nA: The last letter of &#34;think&#34; is &#34;k&#34;. The last letter of &#34;machine&#34; is &#34;e&#34;. So &#34;think, machine&#34; is &#34;ke&#34;.\n\nQ: learning, reasoning, generalization\nA: The last letter of &#34;learning&#34; is &#34;g&#34;. The last letter of &#34;reasoning&#34; is &#34;n&#34;. The last letter of &#34;generalization&#34; is &#34;n&#34;. So &#34;learning, reasoning, generalization&#34; is &#34;ggn&#34;.\n\nQ: artificial, intelligence\nA: The last letter of &#34;artificial&#34; is &#34;l&#34;. The last letter of &#34;intelligence&#34; is &#34;e&#34;. So &#34;artificial, intelligence&#34; is &#34;le&#34;.\n\nQ: transformer, language, vision\nA: The last letter of &#34;transformer&#34; is &#34;r&#34;. The last letter of &#34;language&#34; is &#34;e&#34;. The last letter of &#34;vision&#34; is &#34;n&#34;. So &#34;transformer, language, vision&#34; is &#34;ren&#34;.\n\nQ: foo,bar,baz,blip\nA:"
@@ -51,10 +51,12 @@ to consider extracting the last letter of each word on its own, reducing the com
 
 ### Third attempt: Least to Most
 
-With Least to Most prompting, we augment the Chain of Thought concept by reducing the steps to concatenating a single new letter to all the previously concatenated letters. This leads to good performance all the way to word 12 or more words.
+With Least to Most prompting, we augment the Chain of Thought concept by reformulating the individual steps to restate the previously concatenated result. This simplifies each step to concatenating only a single new letter. This leads to good performance all the way to word 12 or more words.
+
+This approach may look very similar to Chain of Thought, but it is conceptually very different. Here, at every step, we introduce the previous concatenation. In the case of "think, machine, learning", instead of concatenating the letters "k", "e", "g" individually, it will concatenate "k" and "e", then "ke" and "g". As a result of this reintroduction of the previous step, the model can now generalize to much longer chains because it now carries the result incrementally along and only needs to do a small amount of work at each step.
 
 <div trydyno-embed="" openai-model="text-davinci-003"
-     initial-prompt="Q: think, machine\nA: The last letter of &#34;think&#34; is &#34;k&#34;. The last letter of &#34;machine&#34; is &#34;e&#34;. Concatenating &#34;k&#34; and &#34;e&#34; gives &#34;ke&#34;. So &#34;think, machine&#34; output &#34;ke&#34;.\n\nQ: think, machine, learning\nA: &#34;think, machine&#34; outputs &#34;ke&#34;. The last letter of &#34;learning&#34; is &#34;g&#34;. Concatenating &#34;ke&#34; and &#34;g&#34; gives &#34;keg&#34;. So &#34;think, machine, keg&#34; is &#34;keg&#34;.\n\nQ: transformer, language\nA: The last letter of &#34;transformer&#34; is &#34;r&#34;. The last letter of &#34;language&#34; is &#34;e&#34;. Concatenating &#34;r&#34; and &#34;e&#34; gives &#34;re&#34;. So &#34;transformer, language&#34; is &#34;re&#34;.\n\nQ: transformer, language, vision\nA: &#34;transformer, language&#34; outputs &#34;re&#34;. The last letter of &#34;vision&#34; is &#34;n&#34;. Concatenating &#34;re&#34; and &#34;n&#34; gives &#34;ren&#34;. So &#34;transformer, language, vision&#34; is &#34;ren&#34;.\n\nQ: foo,bar,baz,blip,learn,prompting,world,shaking,event,dancefloor,prisma,giraffe\nA:"
+     initial-prompt="Q: think, machine\nA: The last letter of &#34;think&#34; is &#34;k&#34;. The last letter of &#34;machine&#34; is &#34;e&#34;. Concatenating &#34;k&#34; and &#34;e&#34; gives &#34;ke&#34;. So &#34;think, machine&#34; output &#34;ke&#34;.\n\nQ: think, machine, learning\nA: &#34;think, machine&#34; outputs &#34;ke&#34;. The last letter of &#34;learning&#34; is &#34;g&#34;. Concatenating &#34;ke&#34; and &#34;g&#34; gives &#34;keg&#34;. So &#34;think, machine, learning&#34; is &#34;keg&#34;.\n\nQ: transformer, language\nA: The last letter of &#34;transformer&#34; is &#34;r&#34;. The last letter of &#34;language&#34; is &#34;e&#34;. Concatenating &#34;r&#34; and &#34;e&#34; gives &#34;re&#34;. So &#34;transformer, language&#34; is &#34;re&#34;.\n\nQ: transformer, language, vision\nA: &#34;transformer, language&#34; outputs &#34;re&#34;. The last letter of &#34;vision&#34; is &#34;n&#34;. Concatenating &#34;re&#34; and &#34;n&#34; gives &#34;ren&#34;. So &#34;transformer, language, vision&#34; is &#34;ren&#34;.\n\nQ: foo,bar,baz,blip,learn,prompting,world,shaking,event,dancefloor,prisma,giraffe\nA:"
      initial-response="The last letter of &#34;foo&#34; is &#34;o&#34;. The last letter of &#34;bar&#34; is &#34;r&#34;. Concatenating &#34;o&#34; and &#34;r&#34; gives &#34;or&#34;. The last letter of &#34;baz&#34; is &#34;z&#34;. Concatenating &#34;or&#34; and &#34;z&#34; gives &#34;orz&#34;. The last letter of &#34;blip&#34; is &#34;p&#34;. Concatenating &#34;orz&#34; and &#34;p&#34; gives &#34;orzp&#34;. The last letter of &#34;learn&#34; is &#34;n&#34;. Concatenating &#34;orzp&#34; and &#34;n&#34; gives &#34;orzpn&#34;. The last letter of &#34;prompting&#34; is &#34;g&#34;. Concatenating &#34;orzpn&#34; and &#34;g&#34; gives &#34;orzpng&#34;. The last letter of &#34;world&#34; is &#34;d&#34;. Concatenating &#34;orzpng&#34; and &#34;d&#34; gives &#34;orzpngd&#34;. The last letter of &#34;shaking&#34; is &#34;g&#34;. Concatenating &#34;orzpngd&#34; and &#34;g&#34; gives &#34;orzpngdg&#34;. The last letter of &#34;event&#34; is &#34;t&#34;. Concatenating &#34;orzpngdg&#34; and &#34;t&#34; gives &#34;orzpngdgt&#34;."
      max-tokens="256" box-rows="18"
      model-temp="0.2" ></div>
@@ -66,7 +68,7 @@ While Chain of Thought breaks down to an accuracy of 34% word 12 words, Least to
 
 ## Example: compositional generalization (SCAN)
 
-The SCAN benchmark requires the model to convert natural language to sequences of actions. For example, the sentence "run left and walk twice" would be translated to "TURN_LEFT + RUN + WALK * 2." Language models perform especially poorly when confronted with sequences that are longer than those in the training set.
+The SCAN benchmark (@lake2018scan) requires the model to convert natural language to sequences of actions. For example, the sentence "run left and walk twice" would be translated to "TURN_LEFT + RUN + WALK * 2." Language models perform especially poorly when confronted with sequences that are longer than those in the training set.
 
 ### First attempt: Standard prompting
 
