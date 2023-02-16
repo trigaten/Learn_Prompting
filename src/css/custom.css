@@ -45,6 +45,19 @@
   -webkit-text-fill-color: transparent;
 }
 
+[data-theme="dark"] .consulting-gradient {
+  transition: all 0.5s ease;
+  background: -webkit-linear-gradient(90deg, #ff668b 0%, #5f7eff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+[data-theme="dark"] .consulting-gradient:hover {
+  background: -webkit-linear-gradient(90deg, #ffaaaa 0%, #aaaaff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 /* Glossary and Tooltips */
 div[role="tooltip"] {
   width: 450px;
