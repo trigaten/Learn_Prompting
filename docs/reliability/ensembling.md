@@ -149,19 +149,23 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
 ![My Remote Image](https://user-images.githubusercontent.com/69173676/217629041-a73a19b3-722d-4dcf-8c07-07f9d2eddfba.jpg)
 (@arora2022ama)
 
-In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted prompt.
+In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted perfect prompt.
 
-The *AMA* prompting strategy combines the results from the different prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
+The *AMA* prompting strategy combinds the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
 
 Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
 
 *Weak supervision* is a procedure for combining the noisy, imperfect predictions of the prompts to produce refinded final predictions. 
 
-This strategy enables large language models to match and exceed the performance of few-shot prompt GPT3 on popular benchmarks, with as much as 40x less computing costs(@arora2022ama). This approach is applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters.
+To further clarify what we mean by *Weak Supervision*, this type of output supervison allows for quickly creating large sets of training data so the LLM can learn and interpret what our desired eventual output
+should be, and what information it needs to contain. This is useful if we need the model to output a response inclusive of varied and detailed information. So even if they aren't completely perfect and overly simplistic, we can feed the model 25 "pretty good" zero-shot easy to generate open-ended prompts, instead instead of iteratively searching for the 1 perfect prompt that outputs everything needed for our use case.
+
+This method is also great when we need to change and improve our the output to our prompts regularly and quickly. If the data we're working with changes and calls for additions,
+or is unpredictable, weak supervision can help us add new information to our outputs.
 
 #### Example
 
-Here is a small example. 
+Here is a small simplified example. Let's say we'd like a to create a prompt that includes population and weather data when querying the model for travel information about a specific country. Here's how AMA prompting might be applied:
 
 `Input:"France is a country in Europe"`:
 
@@ -169,31 +173,48 @@ Here is a small example.
 
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The capital of France is Paris." 
-Question: "What is the capital of France?" 
-Answer: "Paris" </div>
-</div>
+<div>Claim: "The capital of France is Paris." </div>
+<div>Question: "What is the capital of France?" </div>
+<div>Answer: "Paris" </div>
 </pre>
 `Input: "The United States is a country in North America"` 
 
 `Context: "The United States is a country in North America with a population of over 330 million people."` 
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The population of the United States is 330 million." 
-Question: "What is the population of the United States?" 
-Answer: "330 million"</div>
-</div>
+<div>Claim: "The population of the United States is 330 million." </div>
+<div>Question: "What is the population of the United States?" </div>
+<div>Answer: "330 million"</div>
 </pre>
 `Input: "Canada is a country in North America"` 
 
 `Context: "Canada is a country in North America with an average summer temperature of 20 degrees Celsius.`
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The average temperature in Canada in the summer is 20 degrees Celsius." Question: "What is the average temperature in Canada in the summer?" 
-Answer: "20 degrees Celsius"</div>
-</div>
+<div>Claim: "The average temperature in Canada in the summer is 20 degrees Celsius." </div>
+<div>Question: "What is the average temperature in Canada in the summer?"</div>
+<div>Answer: "20 degrees Celsius"</div>
 </pre>
+
+Now that the model is trained using several imperfect but effective prompts, we can 
+use it to produce an output that will include details the model has learned from the 
+answers to each of the seperate imperfection prompt chains.
+
+<pre>
+<div style={{backgroundColor: '#d2f4d3'}}>
+<div>Prompt: "Is England a nice place to visit in July?"</div>
+<div>Response: "With a population of 56 million and an average summer temperature of 19 degrees Celsius, England 
+is a great place to visit in July with warmer weather, historical sites, music festivals, outdoor events, parks, 
+and gardens to explore.</div>
+</pre>
+
+Without the imperfect AMA prompts training the model to include population size and average summer temperatures, a large language model replying to the question
+"Is England a nice place to visit in the summer?" would likely contain no information about the summer climate or population data in its response.
+This strategy enables large language models to match and exceed the performance of few-shot prompt GPT3 on popular benchmarks, with as much as 40x less 
+computing costs(@arora2022ama). This approach is applicable to a variety of tasks and model types, and can be scaled and used to improve the performance of language 
+models with fewer parameters initial input parameters. 
 
 ## Takeaways
 
-The main take-aways are these approaches are applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer parameters by using multiple input prompts to generate diverse completions. In practice, majority voting or weak supervision will likely work well compared to the voting verifier.
+The main take-aways are these approaches are applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer 
+parameters by using multiple input prompts to generate diverse completions. In practice, majority voting or weak supervision will likely work well compared to the voting verifier.
