@@ -16,7 +16,7 @@ CoT prompting:
   def: The main idea of CoT is that by showing the LLM some few shot exemplars where the reasoning process is explained in the exemplars, the LLM will also show the reasoning process when answering the prompt.
 LLM:
   term: LLM
-  def: Language Language Model. A model that is trained to predict the next word in a sentence.
+  def: Large Language Model. A model that is trained to predict the next word in a sentence.
 gold_labels:
   term: Gold Labels
   def: The correct labels for a given task.
