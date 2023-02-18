@@ -167,33 +167,33 @@ or is unpredictable, weak supervision can help us add new information to our out
 
 Here is a small simplified example. Let's say we'd like a to create a prompt that includes population and weather data when querying the model for travel information about a specific country. Here's how AMA prompting might be applied:
 
-`Input:"France is a country in Europe"`:
+Input:"France is a country in Europe"
 
-`Context: "France is a country in Europe with a population of over 67 million people."`
-
+Context: "France is a country in Europe with a population of over 67 million people."
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The capital of France is Paris." </div>
-<div>Question: "What is the capital of France?" </div>
-<div>Answer: "Paris" </div>
+<div>Claim: "The capital of France is Paris."</div>
+<div>Question: "What is the capital of France?"</div>
+<div>Answer: "Paris"</div>
 </pre>
-`Input: "The United States is a country in North America"` 
 
-`Context: "The United States is a country in North America with a population of over 330 million people."` 
+Input: "The United States is a country in North America"
+Context: "The United States is a country in North America with a population of over 330 million people."
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
 <div>Claim: "The population of the United States is 330 million." </div>
 <div>Question: "What is the population of the United States?" </div>
 <div>Answer: "330 million"</div>
 </pre>
-`Input: "Canada is a country in North America"` 
 
-`Context: "Canada is a country in North America with an average summer temperature of 20 degrees Celsius.`
+Input: "Canada is a country in North America"
+Context: "Canada is a country in North America with an average summer temperature of 20 degrees Celsius."
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
 <div>Claim: "The average temperature in Canada in the summer is 20 degrees Celsius." </div>
 <div>Question: "What is the average temperature in Canada in the summer?"</div>
 <div>Answer: "20 degrees Celsius"</div>
+</div>
 </pre>
 
 Now that the model is trained using several imperfect but effective prompts, we can 
@@ -206,6 +206,7 @@ answers to each of the seperate imperfection prompt chains.
 <div>Response: "With a population of 56 million and an average summer temperature of 19 degrees Celsius, England 
 is a great place to visit in July with warmer weather, historical sites, music festivals, outdoor events, parks, 
 and gardens to explore.</div>
+</div>
 </pre>
 
 Without the imperfect AMA prompts training the model to include population size and average summer temperatures, a large language model replying to the question
