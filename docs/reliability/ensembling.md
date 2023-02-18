@@ -149,15 +149,15 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
 ![My Remote Image](https://user-images.githubusercontent.com/69173676/217629041-a73a19b3-722d-4dcf-8c07-07f9d2eddfba.jpg)
 (@arora2022ama)
 
-In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted perfect prompt.
+In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted prompt.
 
-The *AMA* prompting strategy combinds the results from the multiple effective yet imperfect prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
+The *AMA* prompting strategy combinds the results from the multiple different prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
 
 Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
 
 *Weak supervision* is a procedure for combining the noisy, imperfect predictions of the prompts to produce refinded final predictions. 
 
-To further clarify what we mean by *Weak Supervision*, this type of output supervison allows for quickly creating large sets of training data so the LLM can learn and interpret what our desired eventual output
+To further clarify what we mean by *weak supervision*, this type of output supervison allows for quickly creating large sets of training data so the LLM can learn and interpret what our desired eventual output
 should be, and what information it needs to contain. This is useful if we need the model to output a response inclusive of varied and detailed information. So even if they aren't completely perfect and overly simplistic, we can feed the model 25 "pretty good" zero-shot easy to generate open-ended prompts, instead instead of iteratively searching for the 1 perfect prompt that outputs everything needed for our use case.
 
 This method is also great when we need to change and improve our the output to our prompts regularly and quickly. If the data we're working with changes and calls for additions,
@@ -175,6 +175,7 @@ Context: "France is a country in Europe with a population of over 67 million peo
 <div>Claim: "The capital of France is Paris."</div>
 <div>Question: "What is the capital of France?"</div>
 <div>Answer: "Paris"</div>
+</div>
 </pre>
 
 Input: "The United States is a country in North America"
@@ -182,9 +183,10 @@ Input: "The United States is a country in North America"
 Context: "The United States is a country in North America with a population of over 330 million people."
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The population of the United States is 330 million." </div>
-<div>Question: "What is the population of the United States?" </div>
+<div>Claim: "The population of the United States is 330 million."</div>
+<div>Question: "What is the population of the United States?"</div>
 <div>Answer: "330 million"</div>
+</div>
 </pre>
 
 Input: "Canada is a country in North America"
