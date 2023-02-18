@@ -178,6 +178,7 @@ Context: "France is a country in Europe with a population of over 67 million peo
 </pre>
 
 Input: "The United States is a country in North America"
+
 Context: "The United States is a country in North America with a population of over 330 million people."
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
@@ -187,6 +188,7 @@ Context: "The United States is a country in North America with a population of o
 </pre>
 
 Input: "Canada is a country in North America"
+
 Context: "Canada is a country in North America with an average summer temperature of 20 degrees Celsius."
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
