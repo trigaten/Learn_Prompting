@@ -144,7 +144,7 @@ The final answer is 4, since it has the highest score.
 The verifier is trained with a slightly complex loss function, which 
 I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
 
-### Ask Me Anything (AMA) Prompts
+## Ask Me Anything (AMA) Prompts
 
 ![My Remote Image](https://user-images.githubusercontent.com/69173676/217629041-a73a19b3-722d-4dcf-8c07-07f9d2eddfba.jpg)
 (@arora2022ama)
