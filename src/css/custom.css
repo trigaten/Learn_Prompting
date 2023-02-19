@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -34,7 +34,7 @@
 }
 
 .consulting-gradient {
-  background: -webkit-linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background: -webkit-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -45,6 +45,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+[data-theme="dark"] .consulting-gradient {
+  transition: all 0.5s ease;
+  background: -webkit-linear-gradient(90deg, #ff668b 0%, #5f7eff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+[data-theme="dark"] .consulting-gradient:hover {
+  background: -webkit-linear-gradient(90deg, #ffaaaa 0%, #aaaaff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
 /* Glossary and Tooltips */
 div[role="tooltip"] {
