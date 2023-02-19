@@ -60,3 +60,22 @@
 .bluegreen-highlight {
   background-color: var(--bluegreen-highlight);
 }
+/* Glossary and Tooltips */
+div[role="tooltip"] {
+  width: 450px;
+  max-width: 90vw;
+}
+div[role="tooltip"] a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+div[itemscope][itemtype*="DefinedTerm"] span[itemprop="description"] {
+  color: var(--ifm-toc-link-color);
+}
+a[data-tooltip-html] {
+  border-bottom: 1px dashed;
+  cursor: help;
+}
+a[data-tooltip-html]:hover {
+  text-decoration: none;
+}
