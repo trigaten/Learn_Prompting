@@ -73,10 +73,10 @@ To craft the prompt, we’ll experiment using:
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Information used to craft our GPT-3 prompt. Image by the author.</p>
 </div>
 
-Let’s start our prompt using the <span style={{backgroundColor: "#FFF2CC"}}>role-prompting</span> technique.
+Let’s start our prompt using the <span className="yellow-highlight">role-prompting</span> technique.
 
 <pre>
-    <span style={{backgroundColor: "#FFF2CC"}}>As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.</span><br/>
+    <span className="yellow-highlight">As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.</span><br/>
 </pre>
 
 Then, suppose the semantic search step extracts the following document from our knowledge base. All the documents describe how the VideoGram product works, which is an imaginary product similar to Instagram, but only for videos.
@@ -86,12 +86,12 @@ Then, suppose the semantic search step extracts the following document from our 
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>A document explaining how login to VideoGram works. Image by the author.</p>
 </div>
 
-We can add <span style={{backgroundColor: "#FFF2CC"}}>its content</span> inside the prompt in this way.
+We can add <span className="yellow-highlight">its content</span> inside the prompt in this way.
 
 <pre>
     As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/><br/>
 
-    <span style={{backgroundColor: "#FFF2CC"}}>
+    <span className="yellow-highlight">
     START CONTEXT<br/>
     Login to VideoGram from Website<br/>
     1. Open your web browser and go to the VideoGram website.<br/>
@@ -109,7 +109,7 @@ We can add <span style={{backgroundColor: "#FFF2CC"}}>its content</span> inside 
     </span>
 </pre>
 
-Last, we need to add <span style={{backgroundColor: "#FFF2CC"}}>the conversation and the user question</span> to the end of the prompt, like in the following example.
+Last, we need to add <span className="yellow-highlight">the conversation and the user question</span> to the end of the prompt, like in the following example.
 
 <pre>
     As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/>
@@ -129,7 +129,7 @@ Last, we need to add <span style={{backgroundColor: "#FFF2CC"}}>the conversation
     5. You should now be logged in to your VideoGram account.<br/>
     END CONTEXT<br/>
     <br/>
-    <span style={{backgroundColor: "#FFF2CC"}}>SKIPPY: Hello, I’m Skippy! How can I help you?<br/>
+    <span className="yellow-highlight">SKIPPY: Hello, I’m Skippy! How can I help you?<br/>
     USER: I can’t find the login button.<br/>
     SKIPPY:</span><br/>
 </pre>
@@ -137,14 +137,14 @@ Last, we need to add <span style={{backgroundColor: "#FFF2CC"}}>the conversation
 Passing this prompt to GPT-3, I got the following generated answer.
 
 <pre>
-    <span style={{backgroundColor: "#D2F4D3"}}>No problem! On the website, the login button is located in the top right corner of the page. On the mobile app, the login button is located in the bottom right corner. Let me know if you need any further assistance!</span>
+    <span className="bluegreen-highlight">No problem! On the website, the login button is located in the top right corner of the page. On the mobile app, the login button is located in the bottom right corner. Let me know if you need any further assistance!</span>
 </pre>
 
 Notice how the information in the generated answer comes from the knowledge base document.
 
 ## Disambiguating Questions with GPT-3
 
-Let’s try with a more vague user utterance, like <span style={{backgroundColor: "#FFF2CC"}}>“can’t login”</span>. Here’s the complete prompt.
+Let’s try with a more vague user utterance, like <span className="yellow-highlight">“can’t login”</span>. Here’s the complete prompt.
 
 <pre>
     As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/>
@@ -165,14 +165,14 @@ Let’s try with a more vague user utterance, like <span style={{backgroundColor
     END CONTEXT<br/>
     <br/>
     SKIPPY: Hello, I’m Skippy! How can I help you?<br/>
-    USER: <span style={{backgroundColor: "#FFF2CC"}}>Can’t login</span><br/>
+    USER: <span className="yellow-highlight">Can’t login</span><br/>
     SKIPPY:<br/>
 </pre>
 
 GPT-3 answers trying to understand better what’s the problem of the user.
 
 <pre>
-    <span style={{backgroundColor: "#D2F4D3"}}>I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?</span>
+    <span className="bluegreen-highlight">I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?</span>
 </pre>
 
 Next, here’s how the complete conversation goes. The whole prompt is hidden for better visibility.
@@ -181,7 +181,7 @@ Next, here’s how the complete conversation goes. The whole prompt is hidden fo
     USER: Can’t login<br/>
     SKIPPY: I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?<br/>
     USER: Mobile app<br/>
-    <span style={{backgroundColor: "#D2F4D3"}}>SKIPPY: OK, no problem. To login via the mobile app, open the VideoGram app on your mobile device. On the main page, tap the “Login” button located in the bottom right corner. On the login page, enter your VideoGram username and password. Once you have entered your credentials, tap the “Login” button. You should now be logged in to your VideoGram account. Please let me know if you need any further assistance.</span><br/>
+    <span className="bluegreen-highlight">SKIPPY: OK, no problem. To login via the mobile app, open the VideoGram app on your mobile device. On the main page, tap the “Login” button located in the bottom right corner. On the login page, enter your VideoGram username and password. Once you have entered your credentials, tap the “Login” button. You should now be logged in to your VideoGram account. Please let me know if you need any further assistance.</span><br/>
 </pre>
 
 GPT-3 can manage disambiguation, provided that it has the right contextual information.
