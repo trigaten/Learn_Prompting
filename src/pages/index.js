@@ -53,8 +53,10 @@ function HomepageHeader() {
     <header className={clsx(" hero--primary", styles.heroBanner)}>
       <div className="container">
         <h1 className={styles.mytitle}>{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons} style={{ marginTop: "2.5rem" }}>
+        <p className="hero__subtitle" style={{ paddingBottom: "25px" }}>
+          {siteConfig.tagline}
+        </p>
+        <div className={styles.buttons}>
           <div>
             <Link to="https://discord.gg/7enStJXQzD">
               <DiscordButton></DiscordButton>
@@ -63,7 +65,6 @@ function HomepageHeader() {
           <div>
             <Link
               className="button button--primary button--lg"
-              style={{ marginLeft: "1rem" }}
               to="/docs/intro"
             >
               Start Learning
