@@ -27,10 +27,17 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --yellow-highlight: #bb8e0c7a;
+  --text-color: white;
 }
+[data-theme='light'] {
+  --yellow-highlight: rgb(255, 242, 204);
+
+} 
 
 :root {
   --docusaurus-highlighted-code-line-bg: #d2f4d3;
+  --bluegreen-highlight:  rgba(159, 238, 162, 0.67);
 }
 
 .consulting-gradient {
@@ -46,3 +53,10 @@
 }
 
 
+.yellow-highlight {
+  background-color: var(--yellow-highlight);
+  color: var(--text-color);
+}
+.bluegreen-highlight {
+  background-color: var(--bluegreen-highlight);
+}

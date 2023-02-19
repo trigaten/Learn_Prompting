@@ -12,17 +12,17 @@ Let's look at an example of a basic discussion question:
 
 > _"What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?"_
 
-We can turn this into a simple prompt for GPT-3 by prepending <span style={{backgroundColor: "#bb8e0c7a"}}>Respond to the following:</span> to it.
+We can turn this into a simple prompt for GPT-3 by prepending <span className="yellow-highlight">Respond to the following:</span> to it.
 
 <pre>
-    <span style={{backgroundColor: "#bb8e0c7a"}}>Respond to the following:</span><br/>
+    <span className="yellow-highlight">Respond to the following:</span><br/>
     What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?
 </pre>
 
 Results generated with this prompt aren't consistent, and a few are only a sentence or two. A typical discussion response should have multiple paragraphs, so these results aren't ideal. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
 
 <pre>
-    <span style={{backgroundColor: "#bb8e0c7a"}}>Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span><br/>
+    <span className="yellow-highlight">Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span><br/>
     What are the most pressing environmental issues facing our planet today,
     <br/>and what steps can individuals take to help address these issues?
 </pre>
@@ -42,7 +42,7 @@ Here is a real discussion question from a college history course. It is not word
 Now we can add formatting and context directions.
 
 <pre>
-    <span style={{backgroundColor: "#bb8e0c7a"}}>Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span><br/>
+    <span className="yellow-highlight">Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span><br/>
     Explain the causes of the Civil War and whether expansion played a role in the conflict. <br/>Include evidence to support your argument.
 </pre>
 
@@ -69,14 +69,14 @@ Here is a potential philosophical discussion question:
 Add it into a simple prompt like this:
 
 <pre>
-    <span style={{backgroundColor: "#bb8e0c7a"}}>Write a beginning paragraph responding to the following:</span>
+    <span className="yellow-highlight">Write a beginning paragraph responding to the following:</span>
     <br/>Is math invented or discovered? Use careful reasoning to explain your answer
 </pre>
 
 I generated a few responses and found one I liked:
 
 <pre>
-    <span style={{backgroundColor: "#9feea2ab"}}>There is much debate among philosophers and mathematicians as to whether 
+    <span className="bluegreen-highlight">There is much debate among philosophers and mathematicians as to whether 
     <br/>math is invented or discovered. Some argue that mathematical concepts and principles exist 
     <br/>independently of human minds and can therefore be considered as discovered rather than invented. 
     <br/>For example, the concept of numbers, ratios, and geometric shapes are observed in the natural 
@@ -107,7 +107,7 @@ I generated a few expansions with this prompt and selected one I liked to end up
     <br/>independently of human minds and can therefore be considered as discovered rather than invented. 
     <br/>For example, the concept of numbers, ratios, and geometric shapes are observed in the natural 
     <br/>world and can be abstracted and studied in a systematic way.
-    <span style={{backgroundColor: "#9feea2ab"}}>
+    <span className="bluegreen-highlight">
     <br/>
     <br/>On the other hand, some argue that math is largely an invention of the human mind. Mathematical
     <br/>principles are based on logical reasoning, which is a feature of the human mind. For instance,
