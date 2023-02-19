@@ -4,9 +4,9 @@ locale: en-us
 style: chicago
 ---
 
-# 🟢 Least to Most Prompting
+# 🟡 Least to Most Prompting
 
-Least to Most Prompting (@zhou2022leasttomost) builds upon the idea of Chain-of-Thought prompting and takes it a step further. It is a technique inspired by real-world educational strategies for children.  
+Least to Most Prompting (LtM)(@zhou2022leasttomost) takes %%CoT prompting|CoT prompting%% a step further by breaking a problem into sub problems then solving each one. It is a technique inspired by real-world educational strategies for children.  
 
 As in CoT-Prompting, the problem to be solved is decomposed in a set of subproblems that build upon each other. In a second step, these subproblems are solved individually and in sequence. However, contrary to chain of thought, the solution of previous subproblems is fed into the next question.
 
