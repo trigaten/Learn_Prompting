@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # Simplifying Email Management with GPT-3
@@ -98,64 +98,16 @@ There are a few easy ways to get the result that you want.
 For practical reasons, it is useful to give instruction, followed by telling GPT-3 when the email follows by simply adding "Email: " and ending with ""Summary": ". This avoids GPT-3 answering with "Sure! I can summarize it for you".
 Role prompting can come in useful here as well. Asking GPT-3 to act as a personal assistant helps increase the quality of the summary.
 Simply adding the role you have gives GPT-3 context to work with. It acts as if it assumes some level of knowledge from the reader, which helps filtering out the non-relevant parts. 
-As to how extensive you want it to be is up to you, and you can simply request it in the prompt. 
+As to how extensive you want it to be is up to you, and you can simply request it in the prompt.  
 
 You can ask it to summarize a simple email in bullet points, which already does a decent enough job. However, this might not be all that useful depending on how you would like to use it. For quick skimming of email exchanges you might want it to be short and concise. Simply asking so in the prompt already does a good job. Below is an example of this prompt. 
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Act as my personal assistant. I am an office administrator. Summarize the following email as concise as you can, ignore the footer and header and any previous emails. 
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Act as my personal assistant. I am an office administrator. Summarize the following email as concise as you can, ignore the footer and header and any previous emails. Email: Request for Additional Office Supplies Dear Office Administrator, I hope this email finds you well. I am writing to request additional office supplies for our team. As you know, we have been experiencing a high volume of work lately and have been using our supplies at a faster rate than usual. We would greatly appreciate it if you could provide us with the following items: Printer paper Ink cartridges for the HP printer in the conference room Sticky notes Binder clips Highlighters Please let me know if there are any questions or concerns, and when we can expect the supplies to be delivered. Thank you for your help. Best regards, Your Name Summary:" initial-response="The email requests additional office supplies including printer paper, ink cartridges, sticky notes, binder clips, and highlighters, due to high workload. They ask for delivery time and express appreciation for the help." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
 
-Email:
-
-Request for Additional Office Supplies
-
-Dear Office Administrator,
-
-I hope this email finds you well. I am writing to request additional office supplies for our team. As you know, we have been experiencing a high volume of work lately and have been using our supplies at a faster rate than usual.
-
-We would greatly appreciate it if you could provide us with the following items:
-
-Printer paper
-Ink cartridges for the HP printer in the conference room
-Sticky notes
-Binder clips
-Highlighters
-Please let me know if there are any questions or concerns, and when we can expect the supplies to be delivered. Thank you for your help.
-
-Best regards,
-
-
-Summary:" initial-response="The email requests additional office supplies including printer paper, ink cartridges, sticky notes, binder clips, and highlighters, due to high workload. They ask for delivery time and express appreciation for the help." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
-
-<p></p>
 
 The response here is acceptable, and would be useful. However, with some further finetuning you can get a better result. As the reader of the summaries you don't care that it's an email, and you don't care about appreciation. By simply adding that the goal of the summary is for you to skim the contents, it removes those unnessecary parts.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Act as my personal assistant. I am an office administrator. Summarize the following email as concise as you can, ignore the footer and header and any previous emails. I want to use the summary to skim emails.
-
-Email:
-
-Request for Additional Office Supplies
-
-Dear Office Administrator,
-
-I hope this email finds you well. I am writing to request additional office supplies for our team. As you know, we have been experiencing a high volume of work lately and have been using our supplies at a faster rate than usual.
-
-We would greatly appreciate it if you could provide us with the following items:
-
-Printer paper
-Ink cartridges for the HP printer in the conference room
-Sticky notes
-Binder clips
-Highlighters
-Please let me know if there are any questions or concerns, and when we can expect the supplies to be delivered. Thank you for your help.
-
-Best regards,
-Your Name
-
-Summary:" initial-response="Request for additional office supplies including printer paper, ink cartridges, sticky notes, binder clips, and highlighters due to high volume of work. Asks for information on delivery timeline and any concerns." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
-
-<p></p>
-
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Act as my personal assistant. I am an office administrator. Summarize the following email as concise as you can, ignore the footer and header and any previous emails. I want to use the summary to skim emails. Email: Request for Additional Office Supplies Dear Office Administrator, I hope this email finds you well. I am writing to request additional office supplies for our team. As you know, we have been experiencing a high volume of work lately and have been using our supplies at a faster rate than usual.We would greatly appreciate it if you could provide us with the Following items: Printer paper Ink cartridges for the HP printer in the conference room Sticky notes Binder clips Highlighters Please let me know if there are any questions or concerns, and when we can expect the supplies to be delivered. Thank you for your help. Best regards, [Your Name] Summary:" initial-response="Request for additional office supplies including printer paper, ink cartridges, sticky notes, binder clips, and highlighters due to high volume of work. Asks for information on delivery timeline and any concerns." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
 
 Now you're left with only the most important parts of the summary.
 
