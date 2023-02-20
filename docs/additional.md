@@ -16,12 +16,6 @@ How Copilot works: https://thakkarparth007.github.io/copilot-explorer/posts/copi
 A Beginners Guide to Prompt Writing by Zapier https://zapier.com/blog/gpt-3-prompt/<br/>
 Awesome A-Z Prompt-Engineering Resources list  https://github.com/promptslab/Awesome-Prompt-Engineering
 
-## Tools & Libraries
-
-GPT Index https://github.com/jerryjliu/gpt_index<br/>
-Promptify https://github.com/promptslab/Promptify<br/>
-LangChainx https://github.com/hwchase17/langchain
-
 
 ### GPT-3 Prompt Examples/Ideas
 
