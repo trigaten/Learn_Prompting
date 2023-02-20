@@ -8,6 +8,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Content Writing
 
+- [ID-Assist™](https://id-assist.co/)
+> An eLearning and classroom training storyboard automation tool, to help Instructional Designers automate creation of Course Outline, Learning Objecives, Assessments, Scenarios, and lot more.
+
 - [Simplified](https://simplified.com/ai-writer/)
 > Generate copy with text prompts for business bios, facebook ads, product descriptions, emails, landing pages, YouTube descriptions, taglines, and more.
 
