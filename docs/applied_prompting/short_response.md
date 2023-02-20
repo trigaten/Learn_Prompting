@@ -86,12 +86,12 @@ I generated a few responses and found one I liked:
 This is a pretty good start. I then followed this up with another prompt to expand:
 
 <pre>
-<span style={{backgroundColor: '#FFF2CC'}}>I am writing a detailed short essay responding to the following prompt:</span> 
-<br/>Is math invented or discovered? Use careful reasoning to explain your answer. <span style={{backgroundColor: '#FFF2CC'}}><p/>Here is what I have so far:</span> There is much debate among philosophers and mathematicians as to whether 
+<span className="yellow-highlight">I am writing a detailed short essay responding to the following prompt:</span> 
+<br/>Is math invented or discovered? Use careful reasoning to explain your answer. <span className="yellow-highlight"><p/>Here is what I have so far:</span> There is much debate among philosophers and mathematicians as to whether 
 <br/>math is invented or discovered. Some argue that mathematical concepts and principles exist independently
 <br/>of human minds and can therefore be considered as discovered rather than invented. For example, the
 <br/>concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted
-<br/>and studied in a systematic way. <p/><span style={{backgroundColor: '#FFF2CC'}}>Write the next paragraph of my essay.</span>
+<br/>and studied in a systematic way. <p/><span className="yellow-highlight">Write the next paragraph of my essay.</span>
 </pre>
 
 Try this expansion prompt out with the demo below (you will need your OpenAI API key)
