@@ -102,18 +102,26 @@ export default function Home() {
           <h1 class="margin-vert--xl">Media on Learn Prompting</h1>
           <div className="container" style={{ marginBottom: "20px" }}>
             <div className="row">
+            <div className={clsx("col col--6")}>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/k13v8jp8H5o?start=216&;" title="This Odd ChatGPT Skill Pays 335,000$/year" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
               <div className={clsx("col col--6")}>
                 <iframe
                   width="560"
                   height="315"
                   style={{ maxWidth: "calc(100vw - 4rem)" }}
-                  src="https://www.youtube.com/embed/pZsJbYIFCCw"
+                  src="https://www.youtube.com/embed/pZsJbYIFCCw?start=205&;"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
               </div>
+              <div className={clsx("col col--6")}>              
+              <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/4kp7oVTu9Ck?start=486&;" title="300.000$ por un trabajo que puedes APRENDER GRATIS ▶ Curso OPEN SOURCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
               <div className={clsx("col col--6")}>
                 <h3>
                   Stay tuned for a competition with{" "}
