@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,14 +27,21 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --yellow-highlight: #bb8e0c7a;
+  --text-color: white;
 }
+[data-theme='light'] {
+  --yellow-highlight: rgb(255, 242, 204);
+
+} 
 
 :root {
-  --docusaurus-highlighted-code-line-bg: #d2f4d3;
+  --docusaurus-highlighted-code-line-bg: rgba(159, 238, 162, 0.67);
+  --bluegreen-highlight:  rgba(159, 238, 162, 0.67);
 }
 
 .consulting-gradient {
-  background: -webkit-linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  background: -webkit-linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -58,6 +65,13 @@
   -webkit-background-clip: text;
 }
 
+.yellow-highlight {
+  background-color: var(--yellow-highlight);
+  color: var(--text-color);
+}
+.bluegreen-highlight {
+  background-color: var(--bluegreen-highlight);
+}
 /* Glossary and Tooltips */
 div[role="tooltip"] {
   width: 450px;

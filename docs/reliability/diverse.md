@@ -48,7 +48,7 @@ Note that the answers are not always correct.
 
 <pre>
 
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 <div>Betty has 0.5*100 = $50.</div>
 
 <div>Then she gets 15 more = $65.</div>
@@ -63,7 +63,7 @@ Note that the answers are not always correct.
 
 <pre>
 
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 <div>A: Betty has 0.5*100 = $500.</div>
 
 <div>Then she gets 15 more = $650.</div>
@@ -93,31 +93,31 @@ component sums all of the scores over different answers and yields the final ans
 Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
 
 <pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 <div>4</div>
 </div>
 </pre>
 
 <pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 <div>two + 2 = 5</div>
 </div>
 </pre>
 
 <pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 <div>I think 2+2 = 6</div>
 </div>
 </pre>
 
 <pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 <div>two plus two = 4</div>
 </div>
 </pre>
 
 <pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 <div>It is 5</div>
 </div>
 </pre>
