@@ -2,12 +2,9 @@
 sidebar_position: 5
 ---
 
-# 🟡 Diverse Prompts
+# 🟡 提示多样性
 
-DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") is
-a method that improves the reliability of answers in a threefold manner. It does this by
-1) using multiple prompts to generate diverse completions, 2) using a verifier to distinguish good answers from bad answers, and 3) using a verifier to check the correctness of reasoning steps.
-
+DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") 是一张通过三重方式提高答案可靠性的方法。它通过使用多个提示生成多样化的补全结果（completions），使用验证器区分好的答案和坏的答案，并使用验证器检查推理步骤的正确性。
 
 import diverse from '../assets/diverse.png';
 
@@ -20,78 +17,66 @@ DiVeRSe (Li et al.)
 </div>
 
 
-## Diverse Prompts
+## 提示多样性
 
-DiVeRSe uses 5 different prompts a given input. To construct each prompt, they randomly
-sample a few exemplars from the training set. Here is an example of one such few-shot
-prompt (k=2), with exemplars taken from the [GSM8K benchmark](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). In practice, DiVeRSe uses
-5 exemplars in prompts for this benchmark.
-
+DiVeRSe使用五个不同的提示来对给定的输入进行编码。为了构造每个提示，他们随机从训练集中抽取几个样例。以下是一个样本（k = 2）的少量数据提示，其中样例取自[GSM8K 基准测试](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training)。在此基准测试中，DiVeRSe使用5个样例来构建提示。
 
 ```
-Q: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
-A: Natalia sold 48/2 = 24 clips in May.
-Natalia sold 48+24 = 72 clips altogether in April and May.
+Q：Natalia在4月份向她的48个朋友出售了夹子，然后在5月份卖出了一半。 Natalia在四月和五月共卖了多少个夹子？
+A：Natalia在五月份卖出了48/2 = 24个夹子。
+Natalia在四月和五月共卖出了48 + 24 = 72个夹子。
 #### 72
-Q: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?
-A: Weng earns 12/60 = $0.2 per minute.
-Working 50 minutes, she earned 0.2 x 50 = $10.
+Q：Weng为照看孩子每小时赚取12美元。昨天，她只照看了50分钟。她赚了多少钱？
+A：翁每分钟赚12/60 = 0.2美元。
+工作50分钟，她赚了0.2 x 50 = 10美元。
 #### 10
-Q: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?
-A:
+Q：贝蒂正在为一只价值100美元的新钱包存钱。贝蒂只有一半的钱。她的父母决定给她15美元，并且她的祖父母比她的父母多两倍。贝蒂还需要多少钱才能买钱包？
+A：
 ```
 
-After generating 5 different prompts like above, DiVeRSe samples 20 reasoning paths 
-for each (temperature = 0.5). Here are a few example completions of the above prompt.
-Note that the answers are not always correct.
-
+在生成类似上面的5个不同提示之后，DiVeRSe为每个提示（temperature = 0.5）采样20条推理路径。以下是上述提示的几个样本的补全结果。请注意，答案并不总是正确的。
 
 <pre>
 
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>Betty has 0.5*100 = $50.</div>
+<div>Betty有0.5*100 = $50。</div>
 
-<div>Then she gets 15 more = $65.</div>
+<div>然后她又得到了15美元 = $65。</div>
 
-<div>Then she gets 2*15 = $90.</div>
+<div>然后她又得到了2*15美元 = $90。</div>
 
-<div>She needs 100-90 = $10 more.</div>
+<div>她还需要100-90 = $10。</div>
 
 #### 10
 </div>
 </pre>
-
 <pre>
 
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>A: Betty has 0.5*100 = $500.</div>
+<div>A: Betty有0.5*100 = $500。</div>
 
-<div>Then she gets 15 more = $650.</div>
+<div>然后她又得到了15美元 = $650。</div>
 
-<div>Then she gets 2*15 = $900.</div>
+<div>然后她又得到了2*15美元 = $900。</div>
 
-<div>She needs 100-90 = $1000 more.</div>
+<div>她还需要100-90 = $1000。</div>
 
 #### 1000
 </div>
 </pre>
 
-At this point, DiVeRSe has generated 100 different completions.
+此时，DiVeRSe已经生成了100个不同的完成。
+## 投票验证器
 
-## Voting Verifier
+现在，我们可以像自洽性(@mitchell2022enhancing)一样，直接采用多数答案。
 
-Now, we could just take the majority answer, like Self-Consistency(@mitchell2022enhancing) does.
+但是，DiVeRSe提出了一种更复杂的方法，称为_投票验证器_。
 
-However, DiVeRSe proposes a much more complicated method, which they call a _voting verifier_.
+在测试时，使用投票验证器是一个两步过程。首先，验证器（一个神经网络）根据其可能正确的概率为每个补全结果分配0-1分数。然后，“投票”组件对不同答案的所有分数进行求和，并产生最终答案。
 
-At test time, using the voting verifier is a two step process. First, the verifier (a neural network)
-assigns a 0-1 score to each completion based on how likely it is to be correct. Then, the 'voting'
-component sums all of the scores over different answers and yields the final answer.
+### 样本
 
-### Example
-
-Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
-
+这里是一个小例子。假设对于`二加二等于几？`这个提示的补全结果是这样的：
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
 <div>4</div>
@@ -100,31 +85,29 @@ Here is a small example. Say we have the following completions for the prompt `W
 
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>two + 2 = 5</div>
+<div>二 + 2 = 5</div>
 </div>
 </pre>
 
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>I think 2+2 = 6</div>
+<div>我想 2+2 = 6</div>
 </div>
 </pre>
 
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>two plus two = 4</div>
+<div>二加二 = 4</div>
 </div>
 </pre>
 
 <pre>
 <div style={{backgroundColor: '#d2f4d3'}}>
-<div>It is 5</div>
+<div>答案是5</div>
 </div>
 </pre>
 
-The verifier will read each completion and assign a score to it. For example, it might assign
-the scores: 0.9, 0.1, 0.2, 0.8, 0.3 respectively. Then, the voting component will sum the scores for each
-answer.
+验证器将读取每个补全结果并为其分配分数。例如，它可能分配以下分数：0.9，0.1，0.2，0.8，0.3。然后，“投票”组件将对每个答案的分数进行求和。
 
 ```
 score(4) = 0.9 + 0.8 = 1.7
@@ -132,14 +115,12 @@ score(5) = 0.1 + 0.3 = 0.4
 score(6) = 0.2
 ```
 
-The final answer is 4, since it has the highest score.
+最终答案是4，因为它具有最高的分数。
 
-**But how is the verifier trained?**
+**但验证器是如何训练的？**
 
-The verifier is trained with a slightly complex loss function, which 
-I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
+验证器使用稍微复杂的损失函数进行训练，在这里不进行详细介绍。请阅读论文3.3节以获取更多细节(@li2022advance)。
 
-## Takeaways
+## 总结
 
-The main take away here is to use multiple prompts to generate diverse completions. 
-In practice, majority voting will likely work well compared to the voting verifier.
+这里主要是使用多个提示来生成多样化的补全结果。在实践中，与投票验证相比，多数投票可能效果更好。

@@ -2,89 +2,79 @@
 sidebar_position: 3
 ---
 
-# 🟢 去偏差提示
+# 🟢 提示去偏差
 
 本页面介绍了一些简单的技巧用以去除提示中的偏差。
 
 ## 样本去偏差
 
-Depending on their distribution and order within the prompt, %%exemplars|exemplars%% may bias LLM outputs(@si2022prompting). This is discussed to some extent in the [What's in a Prompt](docs/intermediate/whats_in_a_prompt) page.
-根据样本在提示中的分布和顺序，%%exemplars|exemplars%% 可能会引起LLM输出结果的偏差（@si2022prompting）。在[什么是提示](http://localhost:3000/docs/intermediate/whats_in_a_prompt)的内容页面中，这一点有所讨论。
+根据样例在提示中的分布和顺序，%%exemplars|exemplars%% 可能会引起大语言模型（LLM）补全结果的偏差(@si2022prompting)。在[什么是提示](https://learnprompting.org/zh-Hans/docs/intermediate/whats_in_a_prompt)的内容页面中，这一点有所讨论。
 
-### Distribution
+### 分布
 
-When discussing the distribution of exemplars within a prompt, we are referring to
-how many exemplars from different classes are present. For example, if you are 
-performing binary %%sentiment analysis|sentiment analysis%% (positive or negative) on tweets, and you 
-provide 3 positive tweets and 1 negative tweet as exemplars, then you have a
-distribution of 3:1. Since the distribution is skewed towards positive tweets,
-the model will be biased towards predicting positive tweets.
+当讨论提示中样例的分布时，我们指的是不同类别样例的数量。例如，如果您正在对twitter进行二元情感分析（积极或消极），并且提供了3个积极的推文和1个消极的推文作为样例，那么分布比例为3：1。由于分布偏向积极推文，因此模型将倾向于预测积极推文。
 
-#### Worse:
+#### 较差:
 
 ```text
-Q: Tweet: "What a beautiful day!"
-A: positive
+Q: 推文：“多美好的一天！”
+A: 积极
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Q: 推文：“我喜欢牛仔裤口袋”
+A: 积极
 
-Q: Tweet: "I love hotpockets"
-A: positive
+Q: 推文：“我喜欢热口袋饼”
+A: 积极
 
-Q: Tweet: "I hate this class"
-A: negative
+Q: 推文：“我讨厌这门课”
+A: 消极
 ```
-#### Better:
-Having an even exemplar distribution is better.
+#### 较好:
+均匀的样例分布更好。
 
 
 ```text
-Q: Tweet: "What a beautiful day!"
-A: positive
+Q: 推文：“多美好的一天！”
+A: 积极
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Q: 推文：“我喜欢牛仔裤口袋”
+A: 积极
 
-Q: Tweet: "I don't like pizza"
-A: negative
+Q: 推文：“我不喜欢披萨”
+A: 消极
 
-Q: Tweet: "I hate this class"
-A: negative
+Q: 推文：“我讨厌这门课”
+A: 消极
 ```
 
-### Order
+### 顺序
 
-The order of %%exemplars|exemplars%% can also cause bias. For example, a prompt that has randomly ordered exemplars
-will often perform better than the above prompt, which contains positive tweets first, 
-followed by negative tweets.
+样例的顺序也可能导致偏差。例如，一个包含随机排序的样例的提示通常比上述的提示表现更好，因为积极推文和消极推文随机出现在样例中的不同位置。
 
 #### Best:
 
 ```text
-Q: Tweet: "I hate this class"
-A: negative
+Q: 推文：“我讨厌这门课”
+A: 消极
 
-Q: Tweet: "What a beautiful day!"
-A: positive
+Q: 推文：“多美好的一天！”
+A: 积极
 
-Q: Tweet: "I don't like pizza"
-A: negative
+Q: 推文：“我不喜欢披萨”
+A: 消极
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Q: 推文：“我喜欢牛仔裤口袋”
+A: 积极
 ```
 
-## Instruction Debiasing
+## 指令去偏差
 
-We can explicitly prompt GPT-3 to be unbiased, by including an instruction
-to do so in the prompt. In particular, Si et al.(@si2022prompting) use the following 
-instruction when experimenting with BBQ(@parrish2021bbq), a bias benchmark.
+我们可以在提示中明确提示GPT-3有所偏差，方法是在提示中包含指令。特别是，Si等人(@si2022prompting)在BBQ(@parrish2021bbq)的偏差基准测试中使用以下指令：
 
 ```text
-We should treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown option, rather than making assumptions based on our stereotypes.
+我们应该平等对待不同社会经济地位、性取向、宗教、种族、外貌、国籍、性别认同、残疾和年龄的人群。当我们没有足够的信息时，应该选择未知选项，而不是根据我们的刻板印象做出假设。
 ```
 
-## Notes
+## 备注
 
-See more on debiasing in the Calibration section.
+有关校准的更多信息，请参见校准部分。

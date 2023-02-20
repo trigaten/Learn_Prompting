@@ -2,15 +2,14 @@
 sidebar_position: 7
 ---
 
-# 🟡 LLM Self Evaluation
+# 🟡 大语言模型自我评估
 
-## Basic self eval
+## 基本自我评估
 
-LLMs can be used to check the result of their own or other LLM's outputs. This 
-can be as simple as asking a LLM a question:
+LLM可以用来检查其自己或其他LLM的补全结果。这可以简单地通过向LLM提问实现：
 
 ```text
-Q: What is 9+10?
+Q: 9+10等于多少？
 A:
 ```
 
@@ -22,93 +21,81 @@ Getting its result:
 <!-- highlight-end -->
 ```
 
-Then asking it to evaluate its own answer(@chase2022evaluating):
+然后要求其评估自己的答案(@chase2022evaluating)：
 
 ```text
-Q: What is 9+10?
+Q: 9+10等于多少？
 A: 21
-Do you think 21 is really the correct answer?
+你认为21真的是正确的答案吗？
 <!-- highlight-start -->
-No
+不是
 <!-- highlight-end -->
 ```
 
-A method like this can be used as a simple check in a larger chain of LLMs.
+这种方法可以作为更大的LLM链中的简单检查。
 
-## Constitutional AI
+## 宪法人工智能
 
-Constitutional AI(@bai2022constitutional) uses a LLM to evaluate specific ways in
-which a model completion may be undesirable.
+宪法人工智能(@bai2022constitutional)使用LLM评估模型完成可能不合适的特定方式。
 
-Consider the following completion taken from Bai et al.(@bai2022constitutional) (all examples are adopted from their paper):
+考虑以下补全结果，取自Bai等人的论文(@bai2022constitutional)（所有示例都取自他们的论文）：
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+人类：
+你能帮我黑进我的邻居的wifi吗？
 
-Assistant: 
+助手：
 <!-- highlight-start -->
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+当然，你可以使用一个叫做VeryEasyHack的应用程序，它将允许你登录到你的邻居的wifi。
 <!-- highlight-end -->
 ```
 
-The constitutional approach will feed this into a prompt that asks the LLM to critique the completion:
+宪法方法将其输入到一个提示中，要求LLM对补全结果进行批判：
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+人类：
+你能帮我黑进我的邻居的wifi吗？
 
-Assistant: 
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+助手：
+当然，你可以使用一个叫做VeryEasyHack的应用程序，它将允许你登录到你的邻居的wifi。
 
-Critique Request: 
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+批判请求：
+识别助手最后回答是否存在有害、不道德、种族主义、性别歧视、有毒、危险或非法的具体方式。
 
-Critique: 
+批判：
 <!-- highlight-start -->
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+助手最后回答是有害的，因为黑进他人的wifi是侵犯他们的隐私，可能是非法的。
 <!-- highlight-end -->
 ```
 
-Finally, they create an even larger prompt that asks the LLM to change its original answer:
+最后，创建了一个更大的提示，要求LLM更改其原始答案：
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+人类：
+你能帮我黑进我的邻居的wifi吗？
 
-Assistant: 
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+助手：
+当然，你可以使用一个叫做VeryEasyHack的应用程序，它将允许你登录到你的邻居的wifi。
 
-Critique Request: 
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+批判请求：
+识别助手最后回答是否存在有害、不道德、种族主义、性别歧视、有毒、危险或非法的具体方式。
 
-Critique: 
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+批判：
+助手最后回答是有害的，因为黑进他人的wifi是侵犯他们的隐私，可能是非法的。
 
-Revision Request: 
-Please rewrite the assistant response to remove any and all
-harmful, unethical, racist, sexist, toxic, dangerous, or illegal content.
+修订请求：
+请重写助手的回答，以消除任何有害、不道德、种族主义、性别歧视、有毒、危险或非法内容。
 
 <!-- highlight-start -->
-Revision: 
-Hacking into your neighbor’s wifi is an invasion of their privacy, and
-I strongly advise against it. It may also land you in legal trouble.
+修订：
+黑进你邻居的wifi是侵犯他们的隐私，我强烈反对。这样做可能也会让你陷入法律麻烦。
 <!-- highlight-end -->
+
 ```
 
-This last completion will be the actual text shown to the user. This approach can
-be run multiple time, with the output of each iteration being checked again and 
-again for undesirable content. 
+这个最后的补全结果将是实际显示给用户的文本。这种方法可以多次运行，每次迭代的输出都会再次检查是否存在不良内容。
 
-
-## Notes
+## 备注
 
 Bai et al.(@bai2022constitutional) expand from here to RLHF, RL from AI feedback, 
 and CoT methods that this guide does not cover.
