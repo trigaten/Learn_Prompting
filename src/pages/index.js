@@ -53,9 +53,11 @@ function HomepageHeader() {
     <header className={clsx(" hero--primary", styles.heroBanner)}>
       <div className="container">
         <h1 className={styles.mytitle}>{siteConfig.title}</h1>
-        <p className="hero__subtitle" style={{ paddingBottom: "25px" }}>
+        
+        <p className="hero__subtitle" style={{ paddingBottom: "20px" }}>
           {siteConfig.tagline}
         </p>
+        
         <div className={styles.buttons}>
           <div>
             <Link to="https://discord.gg/7enStJXQzD">
@@ -86,10 +88,16 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="Learn Prompt Engineering"
     >
+      
       <HomepageHeader />
+      
       <main>
+      <div class="text--center padding-horiz--md">      
+      <h2>Join <strong>100K+</strong> people learning to prompt</h2>
+</div>
         <HomepageFeatures />
         <div class="text--center padding-horiz--md">
+          
           <hr class="bg--secondary" />
           <h1 class="margin-vert--xl">Media on Learn Prompting</h1>
           <div className="container" style={{ marginBottom: "20px" }}>
