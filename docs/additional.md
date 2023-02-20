@@ -13,13 +13,13 @@ A nice collection of prompt engineering papers: https://github.com/dair-ai/Promp
 Many more prompt engineering papers: https://github.com/thunlp/PromptPapers<br/>
 CMU class on prompt engineering: https://youtu.be/5ef83Wljm-M<br/>
 How Copilot works: https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html<br/>
-A Beginners Guide to Prompt Writing by Zapier https://zapier.com/blog/gpt-3-prompt/
+A Beginners Guide to Prompt Writing by Zapier https://zapier.com/blog/gpt-3-prompt/<br/>
 Awesome A-Z Prompt-Engineering Resources list  https://github.com/promptslab/Awesome-Prompt-Engineering
 
 ## Tools & Libraries
 
-GPT Index https://github.com/jerryjliu/gpt_index
-Promptify https://github.com/promptslab/Promptify
+GPT Index https://github.com/jerryjliu/gpt_index<br/>
+Promptify https://github.com/promptslab/Promptify<br/>
 LangChainx https://github.com/hwchase17/langchain
 
 
