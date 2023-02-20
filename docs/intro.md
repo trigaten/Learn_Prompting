@@ -11,15 +11,15 @@ I like to think of prompt engineering (PE) as: **How to talk to AI to get it to 
 
 With many recent advances in artificial intelligence (AI), 
 prompt engineering has become a sought-after and valuable skill for getting AI to do what you want. 
-This course focuses on applied PE techniques with an expectation for minimal knowledge of machine learning. However, if you are new to these concepts (AI, machine learning, programming etc.) I recommend starting with the [Basics](https://learnprompting.org/docs/category/-basics) section and reading [Instructions](http://localhost:3000/docs/basics/intro) first. 
+This course focuses on applied PE techniques, and we expect readers to have minimal knowledge of machine learning. If you are new to these concepts (AI, machine learning, programming etc.) I recommend starting with the [Basics](https://learnprompting.org/docs/category/-basics) section and reading [Instructions](https://learnprompting.org/docs/basics/intro) first. 
 
 ## The single most important part of this course is your feedback!
 If you have any questions, comments, or suggestions, you can:
   - Make an **[issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**
-  - [Email me learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+  - [Email us learnprompting@gmail.com](mailto:learnprompting@gmail.com)
   - Join [Discord](https://learnprompting.org/discord) community
   - Follow us on [Twitter](https://twitter.com/learn_prompting)
-  - We also have [Consulting Interest Form](https://learnprompting.org/consulting)
+  - We also have a [Consulting Interest Form](https://learnprompting.org/consulting)
 
 Even the smallest amount of feedback is very helpful!
 
@@ -32,17 +32,17 @@ Let me know what you want to hear more about!
 Part of this philosophy is **error iteration**. If you ever see something that you
 don't quite understand, even something small, that's on me. **Please make an [issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
 
-**Focus on Practicality** - I will focus on applied, practical techniques that you can use immediately for your applications.
+**Focus on Practicality** - We will focus on applied, practical techniques that you can use immediately for your applications.
 
-**Examples ASAP** - I will put examples in the articles as soon as possible so you can get a feel for the techniques as quickly as possible.
+**Examples ASAP** - We will put examples in the articles as soon as possible so you can get a feel for the techniques as quickly as possible.
 
-I'll philosophize more about this when I have time 😊
+We'll philosophize more about this when we have time 😊
 
 ## How to read
 
 It is not necessary to read all chapters in order. Read what interests you!
 
-If you are new to artificial intelligence (AI) and prompt engineering (PE), [Basics](https://learnprompting.org/docs/category/-basics) section. If you are already familiar with these concepts, you will be off to a good start with an [Intermediate](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate) section.  
+If you are new to artificial intelligence (AI) and prompt engineering (PE), start with the [Basics](https://learnprompting.org/docs/category/-basics) section. If you are already familiar with these concepts, you will be off to a good start with the [Intermediate](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate) section.  
 
 Articles have a rating system based on the difficulty of a topic and if programming knowledge is required:
 
@@ -54,8 +54,7 @@ Articles have a rating system based on the difficulty of a topic and if programm
 
 🟣 Hard; programming required, and robust domain expertise to implement (e.g. reinforcement learning approaches)
 
-Note: even though for 🔴🟣 domain expertise is helpful. Usually, you will still
-be able to understand the article without prior knowledge.
+Note: even though for 🔴🟣 domain expertise is helpful, usually you will still be able to understand the article without prior knowledge.
 
 ## Chapters
 
