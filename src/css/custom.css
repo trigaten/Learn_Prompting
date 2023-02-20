@@ -29,15 +29,16 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --yellow-highlight: #bb8e0c7a;
   --text-color: white;
+  --docusaurus-highlighted-code-line-bg: rgba(104, 156, 106, 0.67);
+  --bluegreen-highlight:  rgba(104, 156, 106, 0.67);
 }
 [data-theme='light'] {
   --yellow-highlight: rgb(255, 242, 204);
-
+  --docusaurus-highlighted-code-line-bg: rgba(159, 238, 162, 0.67);
+  --bluegreen-highlight:  rgba(159, 238, 162, 0.67);
 } 
 
 :root {
-  --docusaurus-highlighted-code-line-bg: rgba(159, 238, 162, 0.67);
-  --bluegreen-highlight:  rgba(159, 238, 162, 0.67);
 }
 
 .consulting-gradient {
