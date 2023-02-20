@@ -13,7 +13,9 @@ A nice collection of prompt engineering papers: https://github.com/dair-ai/Promp
 Many more prompt engineering papers: https://github.com/thunlp/PromptPapers<br/>
 CMU class on prompt engineering: https://youtu.be/5ef83Wljm-M<br/>
 How Copilot works: https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html<br/>
-A Beginners Guide to Prompt Writing by Zapier https://zapier.com/blog/gpt-3-prompt/ 
+A Beginners Guide to Prompt Writing by Zapier: https://zapier.com/blog/gpt-3-prompt/<br/>
+Awesome A-Z Prompt-Engineering Resources list: https://github.com/promptslab/Awesome-Prompt-Engineering
+
 
 ### GPT-3 Prompt Examples/Ideas
 
