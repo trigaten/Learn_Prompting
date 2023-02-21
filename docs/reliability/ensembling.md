@@ -151,11 +151,11 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
 
 In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted prompt.
 
-The *AMA* prompting strategy combinds the results from the multiple different prompts by utilizing weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer. 
+The *AMA* prompting strategy considers the results from the multiple different prompts through a process called weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer and trained model. 
 
 Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
 
-*Weak supervision* is a procedure for combining the noisy, imperfect predictions of the prompts to produce refinded final predictions. 
+*Weak supervision* is a procedure for employing the noisy, imperfect predictions of the prompts to produce refinded final predictions. 
 
 To further clarify what we mean by *weak supervision*, this type of output supervison allows for quickly creating large sets of training data so the LLM can learn and interpret what our desired eventual output
 should be, and what information it needs to contain. This is useful if we need the model to output a response inclusive of varied and detailed information. So even if they aren't completely perfect and overly simplistic, we can feed the model 25 "pretty good" zero-shot easy to generate open-ended prompts, instead instead of iteratively searching for the 1 perfect prompt that outputs everything needed for our use case.
