@@ -16,7 +16,7 @@ This course focuses on applied PE techniques, and we expect readers to have mini
 ## The single most important part of this course is your feedback!
 If you have any questions, comments, or suggestions, you can:
   - Make an **[issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**
-  - [Email us learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+  - Email us at [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
   - Join [Discord](https://learnprompting.org/discord) community
   - Follow us on [Twitter](https://twitter.com/learn_prompting)
   - We also have a [Consulting Interest Form](https://learnprompting.org/consulting)
