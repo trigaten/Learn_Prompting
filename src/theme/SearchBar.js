@@ -5,10 +5,6 @@ import { SearchModal } from "@kailualabs/multimodal-search";
 
 export default function SearchBarWrapper() {
   return (
-    <SearchModal
-      apiHostname="api.kailualabs.com"
-      apiKey="learn-prompting-demo"
-      catalogId="learn-prompting"
-    />
+    <SearchModal apiKey="learn-prompting-demo" catalogId="learn-prompting" />
   );
 }
