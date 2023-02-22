@@ -12,3 +12,10 @@ import Image from '../../assets/tooling/humanloop.png';
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
 </div>
+
+## Features
+1. Provides a simple SDK to log the GPT-3 requests and user feedback.
+2. Provides feedback on the user inputs and discovers issues user is missing.
+3. Users will be able to log explicit and implicit signals through SDK.
+4. Users will be easily A/B test models and prompts with the improvement engine built for GPT-3. 
+5. Users will be able to Compare prompts on different models and find the best model and reduce cost.

@@ -39,6 +39,13 @@ easier and more robust:
 
 > NPM utility library for creating and maintaining prompts for Large Language Models (LLMs).
 
+### [Promptify](https://github.com/promptslab/Promptify)
+
+> Relying solely on LLMs is often insufficient to build applications & tools. To unlock their full potential, it's necessary to integrate LLMs with other sources of computation or knowledge and get the pipeline ready for production.
+
+> This library is aimed at assisting in developing a pipeline for using LLMs APIs in production, solving NLP Tasks such as NER, Classification, Question, Answering, Summarization, Text2Graph etc. and providing powerful agents for building chat agents for different tasks.
+
+
 ### [TextBox](https://github.com/RUCAIBox/TextBox)(@tang2022textbox)
 
 > TextBox 2.0 is an up-to-date text generation library based on Python and PyTorch focusing on building a unified and standardized pipeline for applying pre-trained language models to text generation:

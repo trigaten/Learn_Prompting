@@ -5,10 +5,10 @@ sidebar_position: 7
 # 🟡 Generated Knowledge
 
 
-The generated knowledge approach(@liu2021generated) asks the LLM to generate
+The generated knowledge approach(@liu2021generated) asks the %%LLM|LLM%% to generate
 potentially useful information about the question before generating a response.
 This approach is composed of two intermediate steps, knowledge generation and 
-knowledge intregration. 
+knowledge integration. 
 
 import KGImage from '../assets/knowledge_generation.png';
 
@@ -22,7 +22,7 @@ Generated Knowledge (Liu et al.)
 
 ## Knowledge Generation
 
-In the knowledge generation step, the LLM is asked to generate a set of facts
+In the knowledge generation step, the %%LLM|LLM%% is asked to generate a set of facts
 about the **question**. The LLM is prompted in few-shot fashion as seen below. 
 M different completions are generated using this same prompt.
 
@@ -39,7 +39,7 @@ Generated Knowledge Example (Liu et al.)
 
 ## Knowledge Integration
 
-Next, we generate "knowledge augmented" questions and prompt the LLM with them
+Next, we generate "knowledge augmented" questions and prompt the %%LLM|LLM%% with them
 to get final answers. The easiest way to understand this is to go through an example.
 
 Let's assume we are attempting to answer the **question** 

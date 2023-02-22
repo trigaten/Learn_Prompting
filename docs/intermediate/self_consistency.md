@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # 🟡 Self-Consistency
 
-Self-consistency(@wang2022selfconsistency) is a follow up to CoT that generates
+Self-consistency(@wang2022selfconsistency) is a follow up to %%CoT|CoT prompting%% that generates
 multiple chains of thought instead of just one, then takes the majority answer
 as the final answer.
 

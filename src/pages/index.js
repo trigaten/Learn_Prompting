@@ -1,32 +1,38 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from "react-dom";
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import { TwitterFollowButton } from 'react-twitter-embed';
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import { TwitterFollowButton } from "react-twitter-embed";
 /* React Component Version */
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 // https://codepen.io/croc/details/NWqzGYd
 const DiscordButton = ({ isSSO, url }) => (
   <a
     href={url}
+    className={styles.discord}
     style={{
-      color: "white",
       fontWeight: "bold",
       borderRadius: 8,
       display: "inline-flex",
       alignItems: "center",
       padding: "10px 15px",
-      backgroundColor: "#7289da",
-      textDecoration: "none"
+      backgroundColor: "#647eff",
+      textDecoration: "none",
+      whiteSpace: "nowrap",
     }}
   >
     <div style={{ width: 25, height: 25, marginRight: 15 }}>
-      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
+      <svg
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 245 240"
+        fill="currentColor"
+      >
         <path
           class="st0"
           d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"
@@ -42,65 +48,137 @@ const DiscordButton = ({ isSSO, url }) => (
 );
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx(" hero--primary", styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons} style={{marginTop:"25px"}}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Start Learning 🏃
-          </Link>
+        <h1 className={styles.mytitle}>{siteConfig.title}</h1>
+        
+        <p className="hero__subtitle" style={{ paddingBottom: "20px" }}>
+          {siteConfig.tagline}
+        </p>
+        
+        <div className={styles.buttons}>
+          <div>
+            <Link to="https://discord.gg/7enStJXQzD">
+              <DiscordButton></DiscordButton>
+            </Link>
+          </div>
+          <div>
+            <Link
+              className="button button--primary button--lg"
+              to="/docs/intro"
+            >
+              Start Learning
+            </Link>
+          </div>
         </div>
-        <div style={{marginTop:"25px"}}>
-        <Link to="https://discord.gg/7enStJXQzD"><DiscordButton></DiscordButton></Link>
+        <div style={{ marginTop: "1rem" }}>
+          <TwitterFollowButton screenName={"Learn_Prompting"} />
         </div>
-<div style={{marginTop:"25px"}}>
-<TwitterFollowButton 
-    screenName={'Learn_Prompting'}
-  />
-</div>
-
       </div>
     </header>
   );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Learn Prompt Engineering">
+      description="Learn Prompt Engineering"
+    >
+      
       <HomepageHeader />
+      
       <main>
+      <div class="text--center padding-horiz--md">      
+      <h2>Join <strong>100K+</strong> people learning prompting</h2>
+</div>
         <HomepageFeatures />
         <div class="text--center padding-horiz--md">
-          <hr/>
-          <h1>Media on Learn Prompting</h1>
-          <div className="container" style={{marginBottom:"20px"}}>
-          <div className="row">
-              <div className={clsx('col col--6')}>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pZsJbYIFCCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <hr class="bg--secondary" />
+          <h1 class="margin-vert--xl">Media on Learn Prompting</h1>
+          <div className="container" style={{ marginBottom: "20px" }}>
+            <div className="row">
+            <div className={clsx("col col--6")}>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/k13v8jp8H5o?start=216&;" title="This Odd ChatGPT Skill Pays 335,000$/year" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
-              <div className={clsx('col col--6')}>
-                <h3>Stay tuned for a competition with <a href='https://community.towardsai.net/'>Towards AI</a></h3>
-                <img src={require('@site/static/img/towards_ai.png').default} alt="img" height="275px" style={{ alignSelf: 'center' }}/>
+              <div className={clsx("col col--6")}>
+                <iframe
+                  width="560"
+                  height="315"
+                  style={{ maxWidth: "calc(100vw - 4rem)" }}
+                  src="https://www.youtube.com/embed/pZsJbYIFCCw?start=205&;"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div className={clsx("col col--6")}>              
+              <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/4kp7oVTu9Ck?start=486&;" title="300.000$ por un trabajo que puedes APRENDER GRATIS ▶ Curso OPEN SOURCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+              <div className={clsx("col col--6")}>
+                <h3>
+                  Stay tuned for a competition with{" "}
+                  <a href="https://community.towardsai.net/">Towards AI</a>
+                </h3>
+                <img
+                  src={require("@site/static/img/towards_ai.png").default}
+                  alt="img"
+                  height="275px"
+                  style={{ alignSelf: "center" }}
+                />
               </div>
             </div>
           </div>
           <div className="row">
-            <div className={clsx('col col--12')}>
-              <h4>News Letters</h4>
-              
-              <a href="https://startupshell.substack.com/i/91962649/learn-prompting"><img src={require('@site/static/img/shell.png').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
-              <a href="https://bensbites.beehiiv.com/p/bens-bites-hackathon-win-15k"><img src={require('@site/static/img/bens_bites.webp').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
-              <a style={{marginLeft:"10px"}} href="https://unwindai.substack.com/p/navigating-through-the-innov-ai-tion"><img src={require('@site/static/img/unwind.jpg').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
-              
-              <a href="https://towardsai.net/p/newsletter/this-ai-newsletter-is-all-you-need-25" style={{marginLeft:"10px"}}><img src={require('@site/static/img/towards_ai_small.png').default} alt="img" height="40px" style={{ alignSelf: 'center' }}/></a>
+            <div className={clsx("col col--12")}>
+              <h4>Newsletters</h4>
+
+              <a href="https://startupshell.substack.com/i/91962649/learn-prompting">
+                <img
+                  src={require("@site/static/img/shell.png").default}
+                  alt="img"
+                  height="40px"
+                  style={{ alignSelf: "center" }}
+                />
+              </a>
+              <a href="https://bensbites.beehiiv.com/p/bens-bites-hackathon-win-15k">
+                <img
+                  src={require("@site/static/img/bens_bites.webp").default}
+                  alt="img"
+                  height="40px"
+                  style={{ alignSelf: "center" }}
+                />
+              </a>
+              <a
+                style={{ marginLeft: "10px" }}
+                href="https://unwindai.substack.com/p/navigating-through-the-innov-ai-tion"
+              >
+                <img
+                  src={require("@site/static/img/unwind.jpg").default}
+                  alt="img"
+                  height="40px"
+                  style={{ alignSelf: "center" }}
+                />
+              </a>
+
+              <a
+                href="https://towardsai.net/p/newsletter/this-ai-newsletter-is-all-you-need-25"
+                style={{ marginLeft: "10px" }}
+              >
+                <img
+                  src={require("@site/static/img/towards_ai_small.png").default}
+                  alt="img"
+                  height="40px"
+                  style={{ alignSelf: "center" }}
+                />
+              </a>
             </div>
           </div>
         </div>
