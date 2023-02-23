@@ -19,6 +19,11 @@ const FeatureList = [
     Svg: require('@site/static/img/dair.png').default,
     link: "https://dair.ai/",
   },
+  {
+    title: 'D&M',
+    Svg: require('@site/static/img/dm.jpg').default,
+    link: "https://socialedigitalmedia.com/en/",
+  },
 ];
 
 function Feature({Svg, title, link}) {

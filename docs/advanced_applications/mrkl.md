@@ -19,7 +19,7 @@ app to compute the result. This might look like the following:
 <pre>
 <p>What is 100*100?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>CALCULATOR[100*100]</span>
+<span className="bluegreen-highlight">CALCULATOR[100*100]</span>
 </pre>
 
 The MRKL system would see the word `CALCULATOR` and plug `100*100` into the calculator app.
@@ -33,7 +33,7 @@ extracting information to form a SQL query from a users' text.
 <pre>
 <p>What is the price of Apple stock right now?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>The current price is DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"].</span>
+<span className="bluegreen-highlight">The current price is DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"].</span>
 </pre>
 
 - A chatbot that is able to respond to questions about the weather by extracting
@@ -42,7 +42,7 @@ information from the prompt and using a weather API to retrieve the information.
 <pre>
 <p>What is the weather like in New York?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>The weather is WEATHER_API[New York].</span>
+<span className="bluegreen-highlight">The weather is WEATHER_API[New York].</span>
 </pre>
 
 - Or even much more complex tasks that depend on multiple datasources, such as the
