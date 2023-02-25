@@ -32,11 +32,15 @@ Parte desta filosofia é **iteração errática**. Se você encontrar algo que v
 
 Abra um tópico no [GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)!
 
-**Focus on Practicality** - We will focus on applied, practical techniques that you can use immediately for your applications.
+### Foco na Praticidade
 
-**Examples ASAP** - We will put examples in the articles as soon as possible so you can get a feel for the techniques as quickly as possible.
+Nós vamos focar em aplicabilidade, técnicas práticas que você pode usar imediatamente em seu dia a dia.
 
-We'll philosophize more about this when we have time 😊
+### Constantes Exemplos
+
+Nós vamos colocar exemplos nos artigos o mais cedo possível para que você possa conhecer e utilizar as técnicas o mais rápido possível.
+
+Nós vamos filosofar mais sobre isso quando chegar a hora. 😊
 
 ## How to read
 
