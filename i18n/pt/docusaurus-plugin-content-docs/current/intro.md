@@ -8,17 +8,17 @@ Bem-Vindo(a) a este curso de engenharia de comando!
 Você pode pensar na engenharia de comando (EC), em um campo de estudo que visa aprender **como falar com uma inteligência artifical para conseguir o que se deseja**. 
 
 Com os últimos avanços feitos em inteligência artifical (IA), a engenharia de comando vem cada vez mais se tornando uma habilidade valorizada e procurada para fazer com que a IA faça o que você deseja.
-Este curso foca em técnicas aplicadas de engenharia de comandos, e esperamos que os leitores tenham um conhecimento mínimo de aprendizado de máquina. Se estes conceitos são novos para você, recomendo começar pela seção de [Fundamentos](https://learnprompting.org/pt/docs/category/-basics) e lendo as [Intruções](https://learnprompting.org/pt/docs/basics/intro) primeiro.
+Este curso foca em técnicas aplicadas de engenharia de comando, e esperamos que os leitores tenham um conhecimento mínimo de aprendizado de máquina. Se estes conceitos são novos para você, recomendamos começar pela seção de [Fundamentos](https://learnprompting.org/pt/docs/category/-basics) e lendo as [Intruções](https://learnprompting.org/pt/docs/basics/intro) primeiro.
 
-## The single most important part of this course is your feedback!
-If you have any questions, comments, or suggestions, you can:
-  - Make an **[issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**
-  - Email us at [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
-  - Join [Discord](https://learnprompting.org/discord) community
-  - Follow us on [Twitter](https://twitter.com/learn_prompting)
-  - We also have a [Consulting Interest Form](https://learnprompting.org/consulting)
+## A parte mais importante deste curso é o seu feedback!
+Se você tiver quaisquer dúvidas, comentários ou sugestões, você pode:
+  - Abrir um tópico no [GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
+  - Enviar um e-mail para [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+  - Entrar em nossa comunidade no [Discord](https://learnprompting.org/discord)
+  - Seguir o repositório no [Twitter](https://twitter.com/learn_prompting)
+  - Temos também um [Formulário de Interesse em Consultoria](https://learnprompting.org/consulting)
 
-Even the smallest amount of feedback is very helpful!
+Até mesmo a mais simples opinião nos ajuda muito!
 
 ## Course philosophy
 
