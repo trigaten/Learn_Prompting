@@ -44,26 +44,21 @@ Nós vamos filosofar mais sobre isso quando chegar a hora. 😊
 
 ## Como Ler
 
-Não é necessário ler todos os capítulos em ordem. Leia o que te interessa!
+Não é necessário ler todos os capítulos em ordem. Leia o que é de seu interesse!
 
 Se você está dando os primeiros passos em inteligência artificial e engenharia de comando, comece pela seção de [Fundamentos](https://learnprompting.org/pt/docs/category/-basics). Se você já está familiarizado com esses conceitos, você está pronto para começar pelo nível [Intermediário](https://learnprompting.org/ptdocs/category/%EF%B8%8F-intermediate).
 
 ### Iconografia
 
-🟢 Muito fácil, não requer programação
+🟢 Muito fácil, não requer programação.
 
-🟡 Fácil, requer conhecimento elementar de programação, mas não precisa dominar nenhuma área em específico
+🟡 Fácil, requer conhecimento elementar de programação, mas não precisa dominar nenhuma área em específico.
 
 🔴 Médio, programação necessária e domínio de algumas áreas para implementação, por exemplo: cálculo de probabilidades logarítmicas.
 
 🟣 Difícil, requer programação e vasto domínio de certas áreas para implementação, por exemplo: aprendizagem por reforço de máquina.
 
-Tenha em mente que empora o domínio de certas áreas seja útil para 🔴 e 🟣, você ainda será capaz de entender o artigo sem conhecimento prévio.
-
-**Applied Prompting**: Some complete walkthroughs of the PE process written by community members
-
-**Advanced Applications**: Some very powerful, but more advanced applications of PE
-
+Tenha em mente que embora o domínio de certas áreas seja útil para 🔴 e 🟣, você ainda será capaz de entender os artigos sem conhecimento prévio.
 
 ## Capítulos
 
@@ -83,11 +78,11 @@ Leia guias completos de como aplicar a engenharia de comando escritos por membro
 
 ### Aplicação Avançada
 
-Familiarize-se com poderosas e eficazes aplicações  de engenharia de comando avançadas
+Familiarize-se com poderosas e eficazes aplicações de engenharia de comando avançadas.
 
 ### Confiabilidade
 
-Descubra como fazer os modelos grandes modelos de linguagem (LLMs na sigla em inglês) ficarem mais confiáveis
+Descubra como fazer os modelos grandes modelos de linguagem (LLMs na sigla em inglês) ficarem mais confiáveis.
 
 ### Imagens
 
@@ -95,11 +90,11 @@ Saiba como utilizar a engenharia de comando para converter textos em imagens uti
 
 ### Injeção de Comando
 
-Explore as vulnerabilidades utilizando engenharia de comando
+Explore as vulnerabilidades utilizando engenharia de comando.
 
 ### Ambientes de Comando
 
-Conheça as diferentes ferramentas para se trabalhar com engenharia de comando
+Conheça as diferentes ferramentas para se trabalhar com engenharia de comando.
 
 ### Aprimoramento de Comando
 
