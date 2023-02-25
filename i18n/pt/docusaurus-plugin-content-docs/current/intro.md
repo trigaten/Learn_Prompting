@@ -24,7 +24,7 @@ Até mesmo a mais simples opinião nos ajuda muito!
 
 ### Iterações Rápidas
 
-Já que novos conteúdos de EC são publicados quase que diariamente, vamos atualizar este curso frequentemente com pequenos artigos falando sobre novas técnicas.
+Já que novos conteúdos de engenharia de comando são publicados quase que diariamente, vamos atualizar este curso frequentemente com pequenos artigos falando sobre novas técnicas.
 
 Nos dê sua opinião sobre o que você tem mais interesse em aprender!
 
@@ -42,23 +42,23 @@ Nós vamos colocar exemplos nos artigos o mais cedo possível para que você pos
 
 Nós vamos filosofar mais sobre isso quando chegar a hora. 😊
 
-## How to read
+## Como Ler
 
-It is not necessary to read all chapters in order. Read what interests you!
+Não é necessário ler todos os capítulos em ordem. Leia o que te interessa!
 
-If you are new to artificial intelligence (AI) and prompt engineering (PE), start with the [Basics](https://learnprompting.org/docs/category/-basics) section. If you are already familiar with these concepts, you will be off to a good start with the [Intermediate](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate) section.  
+Se você está dando os primeiros passos em inteligência artificial e engenharia de comando, comece pela seção de [Fundamentos](https://learnprompting.org/pt/docs/category/-basics). Se você já está familiarizado com esses conceitos, você está pronto para começar pelo nível [Intermediário](https://learnprompting.org/ptdocs/category/%EF%B8%8F-intermediate).
 
-Articles have a rating system based on the difficulty of a topic and if programming knowledge is required:
+### Iconografia
 
-🟢 Very easy; no programming required
+🟢 Muito fácil, não requer programação
 
-🟡 Easy; simple programming required, but no domain expertise
+🟡 Fácil, requer conhecimento elementar de programação, mas não precisa dominar nenhuma área em específico
 
-🔴 Medium; programming required, and some domain expertise to implement (e.g. calculating logarithmic probabilities)
+🔴 Médio, programação necessária e domínio de algumas áreas para implementação, por exemplo: cálculo de probabilidades logarítmicas.
 
-🟣 Hard; programming required, and robust domain expertise to implement (e.g. reinforcement learning approaches)
+🟣 Difícil, requer programação e vasto domínio de certas áreas para implementação, por exemplo: aprendizagem por reforço de máquina.
 
-Note: even though for 🔴🟣 domain expertise is helpful, usually you will still be able to understand the article without prior knowledge.
+Tenha em mente que empora o domínio de certas áreas seja útil para 🔴 e 🟣, você ainda será capaz de entender o artigo sem conhecimento prévio.
 
 ## Chapters
 
