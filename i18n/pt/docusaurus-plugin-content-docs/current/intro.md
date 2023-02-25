@@ -60,24 +60,47 @@ Se você está dando os primeiros passos em inteligência artificial e engenhari
 
 Tenha em mente que empora o domínio de certas áreas seja útil para 🔴 e 🟣, você ainda será capaz de entender o artigo sem conhecimento prévio.
 
-## Chapters
-
-Here is a quick summary of each chapter:
-
-**Basics**: Intro to PE and simple PE techniques
-
-**Intermediate**: Slightly more complicated research-backed PE techniques
-
 **Applied Prompting**: Some complete walkthroughs of the PE process written by community members
 
 **Advanced Applications**: Some very powerful, but more advanced applications of PE
 
-**Reliability**: How to make LLMs more reliable
 
-**Images**: PE for text to image models like DALLE and Stable Diffusion!
+## Capítulos
 
-**Prompt Injection**: Hacking, but for PE
+Aqui está um breve resumo de cada capítulo.
 
-**Prompting IDEs**: Different PE tools
+### Fundamentos
 
-**Prompt Tuning**: Fine tune prompts with gradients
+Comece com uma introdução a engenharia de comando e técnicas básicas.
+
+### Intermediário
+
+Aprenda técnicas levemente mais complicadas de engenharia de comando apoiadas em pesquisa.
+
+### Aplicação de Comando
+
+Leia guias completos de como aplicar a engenharia de comando escritos por membros da comunidade.
+
+### Aplicação Avançada
+
+Familiarize-se com poderosas e eficazes aplicações  de engenharia de comando avançadas
+
+### Confiabilidade
+
+Descubra como fazer os modelos grandes modelos de linguagem (LLMs na sigla em inglês) ficarem mais confiáveis
+
+### Imagens
+
+Saiba como utilizar a engenharia de comando para converter textos em imagens utilizando moledos como o DALL-E, Stable Difusion, dentre outros.
+
+### Injeção de Comando
+
+Explore as vulnerabilidades utilizando engenharia de comando
+
+### Ambientes de Comando
+
+Conheça as diferentes ferramentas para se trabalhar com engenharia de comando
+
+### Aprimoramento de Comando
+
+Aprenda a fazer ajustes finos de comando utilizando gradientes.
