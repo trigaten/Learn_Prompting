@@ -20,14 +20,17 @@ Se você tiver quaisquer dúvidas, comentários ou sugestões, você pode:
 
 Até mesmo a mais simples opinião nos ajuda muito!
 
-## Course philosophy
+## Filosofia do Curso
 
-**Quick Iterations** - Since new PE content is published almost daily, 
-I will update this course frequently with short articles about new techniques.
-Let me know what you want to hear more about!
+### Iterações Rápidas
 
-Part of this philosophy is **error iteration**. If you ever see something that you
-don't quite understand, even something small, that's on me. **Please make an [issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
+Já que novos conteúdos de EC são publicados quase que diariamente, vamos atualizar este curso frequentemente com pequenos artigos falando sobre novas técnicas.
+
+Nos dê sua opinião sobre o que você tem mais interesse em aprender!
+
+Parte desta filosofia é **iteração errática**. Se você encontrar algo que você não entendeu, mesmo que seja algo pequeno, avise-nos.
+
+Abra um tópico no [GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)!
 
 **Focus on Practicality** - We will focus on applied, practical techniques that you can use immediately for your applications.
 
