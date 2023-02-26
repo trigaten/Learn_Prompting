@@ -26,7 +26,7 @@ The figure above illustrates a typical ICL process each step on the figure plays
  
 ### **1. Prompt Design (Demonstration design)**
 
-Now let's talk about another step of ICL which is prompt design, or demonstration design as shown in the figure above. This step is very important and can make or break your model's performance. There are two main areas of prompt design
+Now let's talk about Major step of ICL which is prompt design, or demonstration design as shown in the figure above. This step is very important and can make or break your model's performance. There are two main areas of prompt design
 
   - Demonstration organization 
    
