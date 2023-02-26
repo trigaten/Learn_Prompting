@@ -14,35 +14,31 @@ sinta-se à vontade para pular para o próximo artigo.
 
 ## O que é IA?
 
-## What is AI?
+Para nossos propósitos, IA é um campo no qual pessoas criaram algorítmos "inteligentes" que "pensam" como humanos[^1].
+Estes algorítmos podem escrever **dissertações**, resolver **problemas matemáticos**, e criar **arte**. Recentes avanços no
+campo criaram IAs tão avançadas que elas podem escrever convincentes **e-mails de vendas**, **novos artigos**, e até
+mesmo **vencer [competições de arte](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
 
-For our purposes, artificial intelligence (AI) is a field in which people have created
-"smart" algorithms that "think" like humans[^1]. These algorithms can write **essays**, 
-solve **math problems**, and create **art**. Recent advances in the field have created AIs
-so advanced that they can write convincing **sales emails**, **news articles**, and even 
-**win [art competitions](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
+IA está atualmente revolucionando muitas indústrias, incluindo jornalismo, saúde, e educação. Você provavelmente verá
+ela sendo aplicada em seu ambiente de trabalho ou sala de aula em breve, se é que já não está. Embora a IA seja
+extremamente útil, requer humanos para direcionar o que fazer. Muitas IAs são como astutas crianças de 5 anos de idade.
+Elas podem fazer várias coisas, mas precisam de orientação para fazê-las bem.
 
-AI is currently revolutionizing many industries, including **journalism**, **healthcare**, and
-**education**. You will likely see it deployed in your workplace/classroom soon if you have not
-already. Although AI is extremely useful, it requires humans to direct it on what to do.
-Often AIs are like very smart five-year-olds. They can do a lot of things, but they need 
-careful instruction to do them well.
+Ser capaz de conduzir IAs é uma habilidade muito poderosa. Como você deve se comunicar com elas? As IAs que este curso
+discute entendem inglês, português e outros idiomas, dessa forma nós geralmente podemos apenas descrever quais tarefas
+nós queremos feitas. Por exemplo, nós podemos pedir que a IA `Escreva uma dissertação sobre os benefícios da IA` e ela
+diria[^2]:
 
-Being able to properly direct AIs is a very powerful skill. So, how do you communicate with them? 
-The AIs this course discusses understand English (and other languages),
-so we can usually just describe tasks that we want done. For example, we can tell an AI to
-`Write an essay about the benefits of AI` and it would say[^2]:
+```txt
+A Inteligência Artificial (IA) está revolucionando a forma como entendemos, tratamos e prevenimos doenças. É uma tecnologia que proporciona inúmeros benefícios à saúde, desde o diagnóstico precoce de doenças até o desenvolvimento de medicamentos mais eficazes.
 
-```
-In recent years, Artificial Intelligence (AI) has become a hot topic among the tech world. With its potential to revolutionize many aspects of our lives, AI is becoming increasingly relevant as technology continues to develop. From its applications in healthcare and transportation to its use in education and manufacturing, AI has already shown us its immense potential to benefit society in multiple ways.
+Uma das principais vantagens da IA na saúde é o diagnóstico precoce. A IA pode ser usada para monitorar os sinais vitais dos pacientes, detectando possíveis problemas antes que se tornem graves. Além disso, a IA também pode analisar um grande número de exames médicos, como ressonâncias magnéticas, tomografias computadorizadas e exames de sangue, para identificar precocemente problemas de saúde subjacentes. Isso permite que os médicos tomem medidas preventivas antes que a doença piore.
 
-The most obvious benefit of AI is its ability to automate mundane tasks. AI systems can be used to automate large-scale operations, such as data analysis, customer service, and even the production of goods. This frees up human labor to focus on complex, creative tasks that require more human intelligence and ingenuity. AI can also be used to analyze large amounts of data and make decisions in a fraction of the time it would take a human. This can be beneficial in industries such as finance, where AI can detect patterns in the stock market and offer insights that would otherwise go unnoticed.
+Outro benefício importante da IA na saúde é o desenvolvimento de medicamentos mais eficazes. A IA pode ser usada para analisar grandes quantidades de dados sobre substâncias químicas e seus efeitos no corpo humano. Isso permite que os cientistas descubram novas combinações químicas com propriedades terapêuticas potenciais para tratar uma variedade de condições médicas. Além disso, a AI também pode melhorar a produção em massa desses medicamentos, tornando-se um processo mais rápido e custo-efetivo do que nunca.
 
-AI can also be used to make predictions and generate insights that can be used to improve efficiency and accuracy. For instance, AI can be used to predict customer trends and preferences, helping businesses make better decisions and increase profits. AI can also be used to identify potential risks and opportunities in various industries, such as finance, healthcare, and manufacturing. This can help companies make informed decisions and reduce the risk of costly mistakes.
+Por fim, a AI também tem sido usada para melhorar os cuidados prestados a pacientes hospitalizados. Por exemplo, algumas empresas estão usando algoritmos avançados para monitorar sinais vitais dos pacientes hospitalizados em tempo real e alertar imediatamente os profissionais da área da saúde caso haja algum problema relacionado à respiração ou frequência cardíaca dos pacientes. Essa tecnologia contribui significativamente para reduzir os tempos de espera nos hospitais e melhorar drasticamente as taxas de sobrevivência dos pacientes internados por complicações crônicas ou agudas.
 
-Finally, AI can be used to improve our understanding of the world. AI can be used to analyze large datasets and generate insights that can be used to better understand the world around us. This can be used to help us better understand the impacts of climate change, develop new treatments for diseases, and even predict events such as earthquakes and floods.
-
-Overall, AI has the potential to revolutionize many aspects of our lives. From automating mundane tasks to generating insights and predictions, AI can be used to improve efficiency, accuracy, and our understanding of the world. As technology continues to develop, AI will become increasingly relevant and its potential to benefit society will only grow.
+Em suma, há inúmeros benefícios da Inteligência Artificial na área da saúde - desde diagnósticos precoces até o desenvolvimento de medicamentos mais eficazes - tornando-se assim uma tecnologia essencial no setor da saúde moderna.. Combinada às práticas tradicionais da medicina humana, ela tem o potencial de salvar milhões de vidas humanas e transformar drasticamente nossa compreensão sobre prevenção e tratamento diferentes condições clínicas complexass
 ```
 
 ## Why should I care?
