@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# 🟡 Advanced ICL
+# 🟡 Advanced In-Context Learning (ICL)
 
-ICL is an exciting new paradigm in NLP where large language models LLMS make predictions based on contexts augmented with just a few training examples. LLM are able to extract patterns from the examples provided in the context and use them to perform many complex NLP tasks. We'll be discussing recent optimizations of ICL covering methods for fine-tuning LLM for ICL, how to pick good training examples for ICL and how to design great prompts.
+ICL is an exciting new paradigm in NLP where large language models LLMs make predictions based on contexts augmented with just a few training examples. LLMs are able to extract patterns from the examples provided in the context and use them to perform many complex NLP tasks. We'll be discussing recent optimizations of ICL covering methods for fine-tuning LLM for ICL, how to pick good training examples for ICL and how to design great prompts.
 
 The key idea of in-context learning is to learn from analogy. First, ICL requires a few examples to form a demonstration context. These examples are usually written in natural language templates. Then, ICL concatenates a query question and a piece of demonstration context together to form a prompt, which is then fed into the language model for prediction. Different from supervised learning requiring a training stage that uses backward gradients to update model parameters, ICL does not conduct parameter updates and directly performs predictions on the pretrained language models. The model is expected to learn the pattern hidden in the demonstration and accordingly make the right prediction.
 
