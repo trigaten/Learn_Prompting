@@ -1,15 +1,19 @@
 ---
-sidebar_position: 8
+sidebar_position: 80
 ---
 
 # 🟢 Chatbot Basics
-One of the most common ways prompting can be useful is when interacting with the numerous chatbots available to the public, such as [ChatGPT](http://chat.openai.com). Chatbots can answer questions, provide writing summary and analysis, write text or code, and more at a high level, which is an exciting prospect—but the real value of chatbots is only accessible when you get specific with your prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots such as style guidance, descriptors, and priming. 
 
-## Editing Your Prompts
+One of the most common ways prompting can be useful is when interacting with the numerous chatbots available to the public, such as [ChatGPT](http://chat.openai.com). Note that ChatGPT is different from GPT-3. The main difference is that chatbots can remember your conversation history. Just like GPT-3, they can also answer questions, provide writing summary and analysis, write text or code, and more at a high level, which is an exciting prospect—but the real value of chatbots is only accessible when you get specific with your prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots, such as using style guidance, descriptors, and priming. 
+
+## Modifing Your Prompt
+
+### Style Guidance
+
 import unguided_question from '../assets/unguided_question.png';
 import limerick_question from '../assets/limerick_question.png';
 
-When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally increasing the length if a longer response is needed: 
+Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
 
 <div style={{textAlign: 'center'}}>
   <img src={unguided_question} style={{width: "500px"}} />
@@ -25,7 +29,9 @@ An example of a more detailed style prompt might look something like:
 >[Question] “Write in the style and quality of an expert in [field] with 20+ years of experience and multiple Ph.D.'s. Prioritize unorthodox, lesser known advice in your answer. Explain using detailed examples, and minimize tangents and humor.“ 
 Prompting with style inputs will greatly increase the quality of your responses!
 
-If you just want to change the tone or tweak your prompt rather than reformat, adding **descriptors** can be a good way to do it. Simply sticking a word or two onto prompt can change how the chatbot interprets or responds to your message. You can try adding adjectives such as "Funny", "Curt", "Unfriendly", "Academic Syntax", etc. to the end of prompts to see how your responses change! 
+### Descriptors
+
+If you just want to change the tone or tweak your prompt rather than reformat, adding **descriptors** can be a good way to do it. Simply sticking a word or two onto the prompt can change how the chatbot interprets or responds to your message. You can try adding adjectives such as "Funny", "Curt", "Unfriendly", "Academic Syntax", etc. to the end of prompts to see how your responses change! 
 
 ## Priming Prompt
 Because of the structure of a chatbot conversation, the form of the first prompt you give the LLM can affect the remainder of the conversation, allowing you to add an additional level of structure and specification.
@@ -64,4 +70,5 @@ In the second example, we instead asked the question after providing a priming p
 Incorporating primers into your prompting is a more advanced way of interacting with chatbots. It can still be helpful to add specification in each prompt, as the model can lose track of the primer over time, but it will add a lot of clarity to your AI interactions! 
 
 ## Notes
-Need more citations.
+
+Need citations.
