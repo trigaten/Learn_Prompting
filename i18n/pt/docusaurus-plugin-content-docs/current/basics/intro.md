@@ -4,13 +4,15 @@ sidebar_position: 0
 
 # 🟢 Introdução
 
-Este artigo foi pensado para pessoas com pouca ou nenhuma experiência com engenharia de *prompt* e inteligência artificial.
+Este artigo foi pensado para pessoas com pouca ou nenhuma experiência com engenharia de *prompt* e inteligência
+artificial. O público-alvo aqui são todos aqueles que possuem interesse nesse campo de estudo, sejam estudantes ou
+adultos sem conhecimento técnico na área. Iremos cobrir os fundamentos da inteligência artificial (IA) e por que
+devemos nos importar e aprender engenharia de *prompt* (EP).
 
-O público-alvo aqui são todos aqueles que possuem interesse nesse campo de estudo, sejam estudantes ou adultos sem conhecimento técnico na área.
+Se você já está familiarizado com os conceitos elementares da engenharia de *prompt* e de inteligência artificial,
+sinta-se à vontade para pular para o próximo artigo.
 
-Iremos cobrir os fundamentos da inteligência artificial (IA) e por que devemos nos importar e aprender engenharia de *prompt* (EP).
-
-Se você já está familiarizado com os conceitos elementares da engenharia de *prompt* e de inteligência artificial, sinta-se à vontade para pular para o próximo artigo.
+## O que é IA?
 
 ## What is AI?
 
