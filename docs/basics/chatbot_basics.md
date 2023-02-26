@@ -3,7 +3,7 @@ sidebar_position: 8
 ---
 
 # 🟢 Chatbot Basics
-One of the most common ways prompting can be useful is when interacting with the numerous chatbots available to the public, such as ChatGPT (link). Chatbots can answer questions, provide writing summary and analysis, write text or code, and more at a high level, which is an exciting prospect - but the real value of chatbots is only accessible when you get specific with your prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots such as style guidance, descriptors, and priming. 
+One of the most common ways prompting can be useful is when interacting with the numerous chatbots available to the public, such as [ChatGPT](http://chat.openai.com). Chatbots can answer questions, provide writing summary and analysis, write text or code, and more at a high level, which is an exciting prospect—but the real value of chatbots is only accessible when you get specific with your prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots such as style guidance, descriptors, and priming. 
 
 ## Editing Your Prompts
 import unguided_question from '../assets/unguided_question.png';
@@ -15,7 +15,7 @@ When asking a question with no style guidance, ChatGPT will generally return one
   <img src={unguided_question} style={{width: "500px"}} />
 </div>
 
-It speaks in a moderately formal tone and gives a couple details - pretty good! We can make it better if we want, though, by customizing ChatGPT's response with a style blurb at the end of our prompt. If we want a more conversational response, we can ask it to speak in a friendly or informal tone; if we want a more readable format, we can give it the same question but ask for a bulleted list; if we want an amusing response, we can ask it to give its answer in the form of a series of limericks (a personal favorite of mine).
+It speaks in a moderately formal tone and gives a couple details—pretty good! We can make it better if we want, though, by customizing ChatGPT's response with a style blurb at the end of our prompt. If we want a more conversational response, we can ask it to speak in a friendly or informal tone; if we want a more readable format, we can give it the same question but ask for a bulleted list; if we want an amusing response, we can ask it to give its answer in the form of a series of limericks (a personal favorite of mine).
 
 <div style={{textAlign: 'center'}}>
   <img src={limerick_question} style={{width: "450px"}} />
