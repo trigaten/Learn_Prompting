@@ -8,10 +8,6 @@ ICL is an exciting new paradigm in NLP where large language models LLMS make pre
 
 The key idea of in-context learning is to learn from analogy. First, ICL requires a few examples to form a demonstration context. These examples are usually written in natural language templates. Then, ICL concatenates a query question and a piece of demonstration context together to form a prompt, which is then fed into the language model for prediction. Different from supervised learning requiring a training stage that uses backward gradients to update model parameters, ICL does not conduct parameter updates and directly performs predictions on the pretrained language models. The model is expected to learn the pattern hidden in the demonstration and accordingly make the right prediction.
 
-<p align="center">
-  <img width="800" height="400" src="https://user-images.githubusercontent.com/68178214/218291704-b92d26ce-c472-491d-8dbd-a4e7500c439c.png" />
-</p>
-
 ## **ICL Methods**
 
 The figure above illustrates a typical ICL process each step on the figure plays a factor in ICL and can be optimized to yield better performance we're going to discuss a few of those steps.
