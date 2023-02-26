@@ -56,7 +56,7 @@ Se você está dando os primeiros passos em inteligência artificial e engenhari
 
 🔴 Médio, requer programação e domínio de algumas áreas para implementação, por exemplo: cálculo de probabilidades logarítmicas.
 
-🟣 Difícil, requer programação e vasto domínio de certas áreas para implementação, por exemplo: aprendizagem por reforço de máquina.
+🟣 Difícil, requer programação e vasto domínio de certas áreas para implementação, por exemplo: aprendizagem por reforço.
 
 Tenha em mente que embora o domínio de certas áreas seja útil para 🔴 e 🟣, você ainda será capaz de entender os artigos sem conhecimento prévio.
 
@@ -68,7 +68,7 @@ Aqui está uma breve descrição de cada capítulo.
 
 **Intermediário**: técnicas levemente mais complicadas de engenharia de *prompt* apoiadas em pesquisa.
 
-**Aplicação de Comando**: guias completos de como aplicar a engenharia de *prompt* escritos por membros da comunidade.
+**Aplicação de *Prompt***: guias completos de como aplicar a engenharia de *prompt* escritos por membros da comunidade.
 
 **Aplicação Avançada**: algumas técnicas poderosas e avançadas de engenharia de *prompt*.
 
@@ -76,8 +76,8 @@ Aqui está uma breve descrição de cada capítulo.
 
 **Imagens**: como utilizar a engenharia de *prompt* para converter textos em imagens utilizando modelos de *Stable Difusion* (Difusão Estável), como o DALL-E e outros.
 
-**Injeção de Comando**: técnicas de hacking utilizando engenharia de *prompt*.
+**Injeção de *Prompt***: técnicas de *hacking* utilizando engenharia de *prompt*.
 
-**Ambientes de Comando (IDEs)**: apresentação de diferentes ferramentas para se trabalhar com engenharia de *prompt*.
+**Ambientes de *Prompt* (IDEs)**: apresentação de diferentes ferramentas para se trabalhar com engenharia de *prompt*.
 
-**Tunelamento de *Prompt***: Aprenda a fazer tunelamento (ajustes finos) de comando utilizando gradientes.
+**Tunelamento de *Prompt***: Aprenda a fazer tunelamento (ajustes finos) de *prompt* utilizando gradientes.
