@@ -59,5 +59,5 @@ using resources like [Playground](https://beta.openai.com/playground), [other ID
 Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
 
 
-[^1]: Technically, they are not "thinking" like humans, but this is a simple way to explain it.
-[^2]: An AI (GPT-3 davinci-003) did in fact write this.
+[^1]: Tecnicamente, elas não "pensam" como humanos, mas essa é uma maneira simples de explicar.
+[^2]: Uma IA (GPT-3, davinci-003) de fato escreveu isso.
