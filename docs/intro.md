@@ -18,7 +18,7 @@ If you have any questions, comments, or suggestions, you can:
   - Make an **[issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**
   - Email us at [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
   - Join [Discord](https://learnprompting.org/discord) community
-  - Follow us on [Twitter](https://twitter.com/learn_prompting)
+  - Follow us on [Twitter](https://twitter.com/learnprompting)
   - We also have a [Consulting Interest Form](https://learnprompting.org/consulting)
 
 Even the smallest amount of feedback is very helpful!
