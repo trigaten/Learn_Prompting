@@ -16,10 +16,11 @@ The key idea of in-context learning is to learn from analogy. First, ICL require
 
 The figure above illustrates a typical ICL process each step on the figure plays a factor in ICL and can be optimized to yield better performance we're going to discuss a few of those steps.
 
-  - **LLM Selections and warmup**
   
   - **Prompt Design (Demonstration design)**
   
+  - **LLM Selections and warmup**
+    
   - **Scoring Function**
 
 <p align="center">
@@ -27,26 +28,7 @@ The figure above illustrates a typical ICL process each step on the figure plays
 </p>
 
  
-
-### **1. LLM Selections and warmup**
-
-The first step is of course the pre-training of the LLM or selecting a pre-trained model to be used out of the box such as GPT 3 or Bloom. it's important to note that the ICL capacity of LLM seems to increase as the number of model parameters or the number of pre-training steps increases so keep that in mind. Once you have a pre-trained LLM you want to use you can either use it as it is or you can optionally do something called Model warm-up model warm-up fine tunes the LLM to specifically increase its capacity for in-context learning during inference.
-
-Let's look at two ways to do model warm-up
-
-   - Supervised in context training
-   
-   -  Self-supervised in-context training
-
-### Supervised in context training
-
-Supervised in-context training fine tunes the LLM on a data set containing a broad range of tasks prepared in ICL formats similar to the format you would like to use for your task. The training improves the overall few shot ICL abilities of the model because it learns to process diverse ICL examples. Supervised in-context training works best when the tasks and data sets used are close to the domain of the target task the LM will ultimately be used for.
-
-### Self-supervised in-context training
-
-Self-supervised in-context training on the other hand involves constructing self-supervised training data based on the ICL formats of Downstream tasks. Basically, you use the Frozen LLM to generate some synthetic training data for your Target task in the Target ICL format then you fine-tune the LLM on that synthetic training data, this approach has been shown to improve the ICL capacity of the model since it becomes more focused on the specific format that will be presented during Inference. In overall model warm-up has the benefit that the model becomes more sensitive towards ICL, leading to better ICL performance. However keep in mind that model warm-up requires updating the model weights or adding additional weights to the model this is prohibitive for LLM since it might require having multiple versions of the LLM for each Target task.
-
-### **2. Prompt Design (Demonstration design)**
+### **1. Prompt Design (Demonstration design)**
 
 Now let's talk about another step of ICL which is prompt design, or demonstration design as shown in the figure above. This step is very important and can make or break your model's performance. There are two main areas of prompt design
 
@@ -79,6 +61,25 @@ This involves the design of the prompt itself, including its language and struct
 #### Reasoning Steps Formatting
 
 Adding intermediate reasoning steps between inputs and outputs to construct demonstrations, which are called chain-of-thoughts (CoT). With chain-of-thought prompting, LLMs predict chain-of-thoughts context and then give the final answer. CoT prompting can learn complex reasoning by decomposing input-output mappings into many intermediate steps. As input-output mappings are decomposed into step-by-step reasoning, some researchers apply multi-stage ICL for CoT prompting and design CoT demonstrations for each step. Multi-stage ICL queries LLMs with different prompts in each reasoning step. Self-Ask allows LLMs to generate follow-up questions for the input and ask themselves these questions. Then the questions and intermediate answers will be added to CoTs.
+
+
+### **2. LLM Selections and warmup**
+
+The first step is of course the pre-training of the LLM or selecting a pre-trained model to be used out of the box such as GPT 3 or Bloom. it's important to note that the ICL capacity of LLM seems to increase as the number of model parameters or the number of pre-training steps increases so keep that in mind. Once you have a pre-trained LLM you want to use you can either use it as it is or you can optionally do something called Model warm-up model warm-up fine tunes the LLM to specifically increase its capacity for in-context learning during inference.
+
+Let's look at two ways to do model warm-up
+
+   - Supervised in context training
+   
+   -  Self-supervised in-context training
+
+### Supervised in context training
+
+Supervised in-context training fine tunes the LLM on a data set containing a broad range of tasks prepared in ICL formats similar to the format you would like to use for your task. The training improves the overall few shot ICL abilities of the model because it learns to process diverse ICL examples. Supervised in-context training works best when the tasks and data sets used are close to the domain of the target task the LM will ultimately be used for.
+
+### Self-supervised in-context training
+
+Self-supervised in-context training on the other hand involves constructing self-supervised training data based on the ICL formats of Downstream tasks. Basically, you use the Frozen LLM to generate some synthetic training data for your Target task in the Target ICL format then you fine-tune the LLM on that synthetic training data, this approach has been shown to improve the ICL capacity of the model since it becomes more focused on the specific format that will be presented during Inference. In overall model warm-up has the benefit that the model becomes more sensitive towards ICL, leading to better ICL performance. However keep in mind that model warm-up requires updating the model weights or adding additional weights to the model this is prohibitive for LLM since it might require having multiple versions of the LLM for each Target task.
 
 ### **3. Scoring Function**
 
