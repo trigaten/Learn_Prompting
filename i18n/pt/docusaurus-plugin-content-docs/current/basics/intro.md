@@ -59,12 +59,12 @@ custos. É evidente que a IA tem o potencial de mudar o mundo e as pessoas devem
 desses benefícios.
 ```
 
-## Why should I care?
+## Por que devo me importar?
 
-AI can be used to automate tasks that you spend countless hours doing *right now*.
-We mentioned several examples above, but you can also consider any slightly repetitive task you do.
-It could be writing emails, writing reports, or even writing code. If you can describe the task
-to an AI, it can likely either do it for you or at least give you a starting point. 
+IAs podem ser utilizadas para automatizar tarefas que você leva incontáveis horas fazendo *agora mesmo*.  Nós
+mencionamos diversos exemplos acima, mas você pode considerar qualquer mínima tarefa repetitiva que você faz. Pode ser
+escrever e-mails, relatórios ou até mesmo código. Se você pode descrever a tarefa para uma IA, ela provavelmente pode
+fazê-la para você ou ao menos lhe dar um ponto de partida.
 
 ## How do I get started?
 
