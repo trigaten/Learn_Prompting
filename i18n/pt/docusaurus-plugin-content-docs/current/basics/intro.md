@@ -66,16 +66,14 @@ mencionamos diversos exemplos acima, mas você pode considerar qualquer mínima 
 escrever e-mails, relatórios ou até mesmo código. Se você pode descrever a tarefa para uma IA, ela provavelmente pode
 fazê-la para você ou ao menos lhe dar um ponto de partida.
 
-## How do I get started?
+## Por onde eu começo?
 
-This course will teach you how to communicate with AIs. 
-Read the rest of this chapter, then check out other chapters that interest you.
-In particular, the applied prompting section may be of interest if you would like
-to see how professionals use AI to automate their work. You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds that you will see throughout this site.
-
-Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
-
+Este curso ensinará você a como se comunicar com IAs. Leia o restante deste capítulo, e então verifique os outros
+capítulos que te interessam. A seção de aplicação de *prompt* em particular pode ser de interesse caso você queira ver
+como profissionais usam IA para automatizar seus trabalhos. Você pode praticar com IAs usando recursos como
+[OpenAI Playground](https://beta.openai.com/playground),
+[outros ambientes](https://learnprompting.org/docs/tooling/IDEs/intro), ou simplesmente utilizando o interativo
+[Dyno](https://trydyno.com). Ferramentas que você verá por todo este site.
 
 [^1]: Tecnicamente, elas não "pensam" como humanos, mas essa é uma maneira simples de explicar.
 [^2]: Uma IA (GPT-3, davinci-003) de fato escreveu isso.
