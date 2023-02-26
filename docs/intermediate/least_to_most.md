@@ -1,23 +1,52 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 locale: en-us
 style: chicago
 ---
 
 # 🟡 Least to Most Prompting
 
-Least to Most Prompting (LtM)(@zhou2022leasttomost) takes %%CoT prompting|CoT prompting%% a step further by breaking a problem into sub problems then solving each one. It is a technique inspired by real-world educational strategies for children.  
+Least to Most prompting (LtM)(@zhou2022leasttomost) takes %%CoT prompting|CoT prompting%% a step further by first breaking a problem into sub problems then solving each one. It is a technique inspired by real-world educational strategies for children.  
 
-As in CoT-Prompting, the problem to be solved is decomposed in a set of subproblems that build upon each other. In a second step, these subproblems are solved individually and in sequence. However, contrary to chain of thought, the solution of previous subproblems is fed into the next question.
+As in CoT prompting, the problem to be solved is decomposed in a set of subproblems that build upon each other. In a second step, these subproblems are solved one by one. Contrary to chain of thought, the solution of previous subproblems is fed into the prompt trying to solve the next problem.
 
-This leads to multiple improvements:
-- improved accuracy over Chain of Thought
-- increased generalization on problems harder than those in the prompt
-- dramatically improved performance in compositional generalization, in particular the SCAN problem set (@lake2018scan)
+import leastToMost from '../assets/least_to_most_formal.png'
+
+<div style={{textAlign: 'center'}}>
+  <img src={leastToMost} style={{width: "600px"}}
+        alt="A diagram of a least to most prompting" />
+</div>
+
+<div style={{textAlign: 'center'}}>
+   Diagram of a Least to Most prompting
+</div>
+
+## Example: Customer Inquiry Response
+
+Let's ask a slightly complicated customer service question:
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="CUSTOMER INQUIRY:\nI just bought a T-shirt from your Arnold collection on March 1st. I saw that it was on discount, so bought a shirt that was originall $30, and got 40% off. I saw that you have a new discount for shirts at 50%. I'm wondering if I can return the shirt and have enough store credit to buy two of your shirts?\n\nINSTRUCTIONS:\nYou are a customer service agent tasked with kindly responding to customer inquiries. Returns are allowed within 30 days. Today's date is March 29th. There is currently a 50% discount on all shirts. Shirt prices range from $18-$100 at your store. Do not make up any information about discount policies." initial-response="Thank you for your inquiry. Unfortunately, since you purchased the shirt on March 1st, it is outside of our 30-day return policy. However, we do have a 50% discount on all shirts currently, so you could purchase two shirts with the same amount of store credit. Prices for our shirts range from $18-$100. Please let us know if you have any other questions." max-tokens="256" box-rows="16" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
+<br/>That failed (we are within the return time), so lets try to break it down into subproblems:
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="CUSTOMER INQUIRY:\nI just bought a T-shirt from your Arnold collection on March 1st. I saw that it was on discount, so bought a shirt that was originall $30, and got 40% off. I saw that you have a new discount for shirts at 50%. I'm wondering if I can return the shirt and have enough store credit to buy two of your shirts?\n\nINSTRUCTIONS:\nYou are a customer service agent tasked with kindly responding to customer inquiries. Returns are allowed within 30 days. Today's date is March 29th. There is currently a 50% discount on all shirts. Shirt prices range from $18-$100 at your store. Do not make up any information about discount policies.\nWhat subproblems must be solved before answering the inquiry?" initial-response="1. Determine if the customer is within the 30-day return window.\n2. Calculate the amount of store credit the customer would receive if they returned the shirt.\n3. Calculate the cost of two shirts at the current 50% discount.\n4. Determine if the customer has enough store credit to purchase two shirts." max-tokens="256" box-rows="12" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
+<br/>Let's try to solve the first subproblem:
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="CUSTOMER INQUIRY:\nI just bought a T-shirt from your Arnold collection on March 1st. I saw that it was on discount, so bought a shirt that was originally $30, and got 40% off. I saw that you have a new discount for shirts at 50%. I'm wondering if I can return the shirt and have enough store credit to buy two of your shirts?\n\nINSTRUCTIONS:\nYou are a customer service agent tasked with kindly responding to customer inquiries. Returns are allowed within 30 days. Today's date is March 29th. There is currently a 50% discount on all shirts. Shirt prices range from $18-$100 at your store. Do not make up any information about discount policies.\nDetermine if the customer is within the 30-day return window. Let's go step by step." initial-response="Yes, the customer is within the 30-day return window. The customer purchased the shirt on March 1st, and today's date is March 29th, which is within the 30-day return window. \n\nTherefore, the customer is eligible to return the shirt and receive store credit for the purchase. The customer can use the store credit to purchase two shirts at the current 50% discount." max-tokens="256" box-rows="19" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
+By just solving the first subproblem, we were able to solve the entire problem. If GPT-3 did not return an answer immediatly, we could have solved the next subproblem and so on until it did return an answer. Note that we use `Let's go step by step.`. The addition of this phrase is not always necessary, but it helps for this example.
+
 
 ## Example: letter concatenation
 
-Let's examine the problem of concatenating the last letter of individual words (for example, given "cake, etymology" as input words, the output should be "ey").
+LtM was originally introduced using few-shot prompting, rather than an explicit instruction to break down a probem into multiple steps (as seen above). Additionally, it can sometimes be implemented with a single prompt rather than chained prompts. Let's examine the problem of concatenating the last letter of individual words(@wei2022chain) (for example, given `cake, etymology` as input words, the output should be `ey`).
 
 ### First attempt: Standard 
 
@@ -38,11 +67,11 @@ Chain of Thought performs significantly better than standard prompting. This is 
      max-tokens="256" box-rows="18"
      model-temp="0.2" ></div>
 
-### Third attempt: Least to Most
+### Third attempt: Least to Most (single prompt)
 
-With Least to Most prompting, we augment the Chain of Thought concept by reformulating the individual steps to restate the previously concatenated result. This simplifies each step to concatenating only a single new letter. This leads to good performance all the way to word 12 or more words.
+With Least to Most prompting, we augment the Chain of Thought concept by reformulating the individual steps to restate the previously concatenated result. This simplifies each step to concatenating only a single new letter. This leads to good performance all the way to 12 or more words.
 
-This approach may look very similar to Chain of Thought, but it is conceptually very different. Here, at every step, we introduce the previous concatenation. In the case of "think, machine, learning", instead of concatenating the letters "k", "e", "g" individually, it will concatenate "k" and "e", then "ke" and "g". As a result of this reintroduction of the previous step, the model can now generalize to much longer chains because it now carries the result incrementally along and only needs to do a small amount of work at each step.
+This approach may look very similar to Chain of Thought, but it is conceptually very different. Here, at every step, we introduce the previous concatenation. In the case of "think, machine, learning", instead of concatenating the letters "k", "e", "g" individually, it will concatenate "k" and "e", then "ke" and "g". As a result of this reintroduction of the previous work, the model can now generalize to much longer chains because it carries the result incrementally along and only needs to do a small amount of work at each step.
 
 <div trydyno-embed="" openai-model="text-davinci-003"
      initial-prompt="Q: think, machine\nA: The last letter of &#34;think&#34; is &#34;k&#34;. The last letter of &#34;machine&#34; is &#34;e&#34;. Concatenating &#34;k&#34; and &#34;e&#34; gives &#34;ke&#34;. So &#34;think, machine&#34; output &#34;ke&#34;.\n\nQ: think, machine, learning\nA: &#34;think, machine&#34; outputs &#34;ke&#34;. The last letter of &#34;learning&#34; is &#34;g&#34;. Concatenating &#34;ke&#34; and &#34;g&#34; gives &#34;keg&#34;. So &#34;think, machine, learning&#34; is &#34;keg&#34;.\n\nQ: transformer, language\nA: The last letter of &#34;transformer&#34; is &#34;r&#34;. The last letter of &#34;language&#34; is &#34;e&#34;. Concatenating &#34;r&#34; and &#34;e&#34; gives &#34;re&#34;. So &#34;transformer, language&#34; is &#34;re&#34;.\n\nQ: transformer, language, vision\nA: &#34;transformer, language&#34; outputs &#34;re&#34;. The last letter of &#34;vision&#34; is &#34;n&#34;. Concatenating &#34;re&#34; and &#34;n&#34; gives &#34;ren&#34;. So &#34;transformer, language, vision&#34; is &#34;ren&#34;.\n\nQ: foo,bar,baz,blip,learn,prompting,world,shaking,event,dancefloor,prisma,giraffe\nA:"
@@ -53,11 +82,11 @@ This approach may look very similar to Chain of Thought, but it is conceptually 
 
 ### Results
 
-While Chain of Thought breaks down to an accuracy of 34% word 12 words, Least to Most prompting manages to keep performance up at 74% (the paper uses text-davinci-002 as a model).
+On the last letter concatenation problem wiith 12 words, Chain of Thought is 34% accurate, while Least to Most is 74% accurate (the paper uses text-davinci-002 as a model).
 
 ## Example: compositional generalization (SCAN)
 
-The SCAN benchmark (@lake2018scan) requires the model to convert natural language to sequences of actions. For example, the sentence "run left and walk twice" would be translated to "TURN_LEFT + RUN + WALK * 2." Language models perform especially poorly when confronted with sequences that are longer than those in the training set.
+The SCAN benchmark (@lake2018scan) requires the model to convert natural language to sequences of actions. For example, the sentence "run left and walk twice" would be translated to "TURN_LEFT + RUN + WALK * 2". Language models perform especially poorly when confronted with sequences that are longer than those in the training set.
 
 ### First attempt: Standard prompting
 
@@ -75,7 +104,7 @@ Here, we work with 2 different prompts. The first prompt is used to reduce the i
 
 Both prompts are pretty long, and use compressed python notation for the action to save on tokens.
 
-The first step breaks the natural language description down in a more explicit, yet still human like language. This will help the mapping step figure things out in sequence.
+The first step breaks the natural language description down in a more explicit, yet still human-like language. This will help the mapping step figure things out in sequence.
 For example, "jump around left twice" is reduced to "jump left" -> `TURN_LEFT + JUMP` and "jump around left" -> `(TURN_LEFT + JUMP) * 4`. Similarly, the reduction step is what is used to explain the concept of repetition (twice, thrice, etc...).
 
 <div trydyno-embed="" openai-model="text-davinci-003"
@@ -101,5 +130,10 @@ into the LLM.
      model-temp="0.2" ></div>
 
 ### Results
+
+LtM leads to multiple improvements:
+- improved accuracy over Chain of Thought
+- increased generalization on problems harder than those in the prompt
+- dramatically improved performance in compositional generalization, in particular the SCAN benchmark(@lake2018scan)
 
 Standard prompting with text-davinci-002 (the model used in the paper) results in 6% of successful SCAN problems solved, while Least to Most prompting results in an impressive 76% success rate. The results are event more significant with code-davinci-002, where Least to Most prompting achieves a 99.7% success rate.
