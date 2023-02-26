@@ -10,17 +10,6 @@ Least to Most Prompting (LtM)(@zhou2022leasttomost) takes %%CoT prompting|CoT pr
 
 As in CoT-Prompting, the problem to be solved is decomposed in a set of subproblems that build upon each other. In a second step, these subproblems are solved individually and in sequence. However, contrary to chain of thought, the solution of previous subproblems is fed into the next question.
 
-import leastToMost from '../assets/least-to-most.png'
-
-<div style={{textAlign: 'center'}}>
-  <img src={leastToMost} style={{width: "600px"}}
-        alt="A diagram of a least to most prompt showing how the prompt is composed of multiple steps whose answers are concatenated with the next step" />
-</div>
-
-<div style={{textAlign: 'center'}}>
-   Diagram of a Least to Most prompt
-</div>
-
 This leads to multiple improvements:
 - improved accuracy over Chain of Thought
 - increased generalization on problems harder than those in the prompt
