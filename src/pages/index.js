@@ -74,7 +74,7 @@ function HomepageHeader() {
           </div>
         </div>
         <div style={{ marginTop: "1rem" }}>
-          <TwitterFollowButton screenName={"Learn_Prompting"} />
+          <TwitterFollowButton screenName={"learnprompting"} />
         </div>
       </div>
     </header>
