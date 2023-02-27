@@ -10,7 +10,7 @@ One of the most common ways prompting can be useful is when interacting with the
 
 ### Style Guidance
 
-import unguided_question from '../assets/unguided_question.png';
+import unguided_question from '(https://github.com/DimaGutierrez/Learn_Prompting/edit/main/docs/assets/unguided_question.png');
 import limerick_question from '../assets/limerick_question.png';
 
 Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
