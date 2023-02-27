@@ -42,6 +42,11 @@ not always mean the same thing. LLMs are a type of AI, as noted above, but not a
 When we mentioned models in this course, we are referring to AI models. As such, in this course,
 you can consider the terms "model" and "AI" to be interchangeable.
 
+#### Machine Learning (ML)
+
+ML is a field of study that focuses on algorithms that
+can learn from data. ML is a subfield of AI.
+
 #### Verbalizer
 
 In the classification setting, verbalizers are mappings from labels to words in
