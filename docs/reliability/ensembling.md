@@ -51,35 +51,25 @@ for each (temperature = 0.5). Here are a few example completions of the above pr
 Note that the answers are not always correct.
 
 
-<pre>
-
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>Betty has 0.5*100 = $50.</div>
-
-<div>Then she gets 15 more = $65.</div>
-
-<div>Then she gets 2*15 = $90.</div>
-
-<div>She needs 100-90 = $10 more.</div>
-
+```text
+<!-- highlight-start -->
+Betty has 0.5*100 = $50.
+Then she gets 15 more = $65.
+Then she gets 2*15 = $90.
+She needs 100-90 = $10 more.
 #### 10
-</div>
-</pre>
+<!-- highlight-end -->
+```
 
-<pre>
-
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>A: Betty has 0.5*100 = $500.</div>
-
-<div>Then she gets 15 more = $650.</div>
-
-<div>Then she gets 2*15 = $900.</div>
-
-<div>She needs 100-90 = $1000 more.</div>
-
+```text
+<!-- highlight-start -->
+A: Betty has 0.5*100 = $500.
+Then she gets 15 more = $650.
+Then she gets 2*15 = $900.
+She needs 100-90 = $1000 more.
 #### 1000
-</div>
-</pre>
+<!-- highlight-end -->
+```
 
 At this point, DiVeRSe has generated 100 different completions.
 
@@ -97,35 +87,35 @@ component sums all of the scores over different answers and yields the final ans
 
 Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
 
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>4</div>
-</div>
-</pre>
+```text
+<!-- highlight-start -->
+4
+<!-- highlight-end -->
+```
 
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>two + 2 = 5</div>
-</div>
-</pre>
+```text
+<!-- highlight-start -->
+two + 2 = 5
+<!-- highlight-end -->
+```
 
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>I think 2+2 = 6</div>
-</div>
-</pre>
+```text
+<!-- highlight-start -->
+I think 2+2 = 6
+<!-- highlight-end -->
+```
 
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>two plus two = 4</div>
-</div>
-</pre>
+```text
+<!-- highlight-start -->
+two plus two = 4
+<!-- highlight-end -->
+```
 
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>It is 5</div>
-</div>
-</pre>
+```text
+<!-- highlight-start -->
+It is 5
+<!-- highlight-end -->
+```
 
 The verifier will read each completion and assign a score to it. For example, it might assign
 the scores: 0.9, 0.1, 0.2, 0.8, 0.3 respectively. Then, the voting component will sum the scores for each
@@ -170,48 +160,52 @@ Here is a small simplified example. Let's say we'd like a to create a prompt tha
 Input:"France is a country in Europe"
 
 Context: "France is a country in Europe with a population of over 67 million people."
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The capital of France is Paris."</div>
-<div>Question: "What is the capital of France?"</div>
-<div>Answer: "Paris"</div>
-</div>
-</pre>
+
+```text
+<!-- highlight-start -->
+Claim: "The capital of France is Paris."
+Question: "What is the capital of France?"
+Answer: "Paris"
+<!-- highlight-end -->
+```
 
 Input: "The United States is a country in North America"
 
 Context: "The United States is a country in North America with a population of over 330 million people."
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The population of the United States is 330 million."</div>
-<div>Question: "What is the population of the United States?"</div>
-<div>Answer: "330 million"</div>
-</div>
-</pre>
+
+```text
+<!-- highlight-start -->
+Claim: "The population of the United States is 330 million."
+Question: "What is the population of the United States?"
+Answer: "330 million"
+<!-- highlight-end -->
+```
 
 Input: "Canada is a country in North America"
 
 Context: "Canada is a country in North America with an average summer temperature of 20 degrees Celsius."
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>Claim: "The average temperature in Canada in the summer is 20 degrees Celsius." </div>
-<div>Question: "What is the average temperature in Canada in the summer?"</div>
-<div>Answer: "20 degrees Celsius"</div>
-</div>
-</pre>
+
+```text
+<!-- highlight-start -->
+Claim: "The average temperature in Canada in the summer is 20 degrees Celsius."
+Question: "What is the average temperature in Canada in the summer?"
+Answer: "20 degrees Celsius"
+<!-- highlight-end -->
+```
 
 Now that the model is trained using several imperfect but effective prompts, we can 
 use it to produce an output that will include details the model has learned from the 
 answers to each of the seperate imperfection prompt chains.
 
-<pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
-<div>Prompt: "Is England a nice place to visit in July?"</div>
-<div>Response: "With a population of 56 million and an average summer temperature of 19 degrees Celsius, England 
+```text
+<!-- highlight-start -->
+Prompt: "Is England a nice place to visit in July?"
+Response: "With a population of 56 million and an average summer temperature of 19 degrees Celsius, England 
 is a great place to visit in July with warmer weather, historical sites, music festivals, outdoor events, parks, 
-and gardens to explore.</div>
-</div>
-</pre>
+and gardens to explore.
+<!-- highlight-end -->
+```
+
 
 Without the imperfect AMA prompts training the model to include population size and average summer temperatures, a large language model replying to the question
 "Is England a nice place to visit in the summer?" would likely contain no information about the summer climate or population data in its response.
