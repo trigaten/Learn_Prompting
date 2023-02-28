@@ -8,6 +8,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Content Writing
 
+- [Writers brew AI](https://writersbrew.app)
+> One AI assistant that works across all apps & browsers. It can WRITE. IMPROVE. REPLY. SUMMARIZE. EXPLAIN & TRANSLATE. It has inbuilt OCR engine, and can extract text + generate AI text.
+
 - [Simplified](https://simplified.com/ai-writer/)
 > Generate copy with text prompts for business bios, facebook ads, product descriptions, emails, landing pages, YouTube descriptions, taglines, and more.
 
