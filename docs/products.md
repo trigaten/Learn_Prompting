@@ -153,6 +153,8 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Jasper Chat](https://www.jasper.ai/chat)
 
+- [Anthropic Claude](https://scale.com/blog/chatgpt-vs-claude#What%20is%20%E2%80%9CConstitutional%20AI%E2%80%9D?)
+
 ## Browser Extensions
 
 - [Superpower ChatGPT](https://chrome.google.com/webstore/detail/superpower-chatgpt/amhmeenmapldpjdedekalnfifgnpfnkc)

@@ -23,7 +23,7 @@ The AI's (GPT-3 davinci-003) answer is highlighted in green:
 
 
 This is a correct answer, but if the AI had simply been prompted with `What is 100*100/400*56?`,
-it would have answered `280` (incorrect). 
+it would have answered `280` (incorrect). Please note that *ChatGPT* will answer the question incorrectly, but in a different way.
 
 When assigning a role to the AI, we are giving it some context. This context
 helps the AI understand the question better. With better understanding of the question,

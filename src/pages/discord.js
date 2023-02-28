@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Link from '@docusaurus/Link';
 
 export default function Discord() {
-    let url = "https://discord.gg/4Kq46MKFpH"
+    let url = "https://discord.gg/9ZmkngXZ9H"
     useEffect(() => {
         window.location.href = url;
     }, []);
