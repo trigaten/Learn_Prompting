@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Summarizing text with GPT-3
+# 🟢 Summarizing text with GPT-3
 
 ChatGPT is notorious for producing content in the blink of an eye, and has proven to be a huge time saver.
 For content already written, ChatGPT can also save us time by helping us digest long torturous texts.  

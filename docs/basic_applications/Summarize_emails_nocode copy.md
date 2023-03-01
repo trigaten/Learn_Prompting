@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Simplifying Email Management with GPT-3
+# 🟢 Simplifying Email Management with GPT-3
 
 import Basic from '../assets/Zapiermail/Basic.png';
 import Diagram from '../assets/Zapiermail/Diagram.png';
