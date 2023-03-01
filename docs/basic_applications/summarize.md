@@ -48,4 +48,4 @@ The following is ChatGPT’s outline on the Wikipedia page on “rope,” specif
 We’ve just covered some of the very basics of using ChatGPT to handle long texts. 
 Next, we’ll tackle using ChatGPT to handle hard or difficult texts.   
 
-By languagenoodle
+By [languagenoodle](https://twitter.com/languagenoodle).
