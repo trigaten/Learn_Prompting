@@ -7,7 +7,7 @@ sidebar_position: 5
 Prompt ensembling is the concept of using multiple different prompts to try to 
 answer the same question. There are many different approaches to this.
 
-## Diverse Prompts
+## DiVeRSe
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") is
 a method that improves the reliability of answers in a threefold manner. It does this by
@@ -25,7 +25,7 @@ DiVeRSe (Li et al.)
 </div>
 
 
-## Diverse Prompts
+### Diverse Prompts
 
 DiVeRSe uses 5 different prompts a given input. To construct each prompt, they randomly
 sample a few exemplars from the training set. Here is an example of one such few-shot
@@ -134,86 +134,114 @@ The final answer is 4, since it has the highest score.
 The verifier is trained with a slightly complex loss function, which 
 I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
 
-## Ask Me Anything (AMA) Prompts
+## Ask Me Anything (AMA) Prompting
 
-![My Remote Image](https://user-images.githubusercontent.com/69173676/217629041-a73a19b3-722d-4dcf-8c07-07f9d2eddfba.jpg)
-(@arora2022ama)
+import ama from '../assets/AMA_Prompting.jpg';
 
-In the same multi-input style as DiVeRSe prompting, *Ask Me Anything (AMA)* prompting(@arora2022ama) is an approach that uses multiple imperfect prompts—rather than one painstakingly crafted prompt.
+<div style={{textAlign: 'center'}}>
+  <img src={ama} style={{width: "750px"}} />
+</div>
 
-The *AMA* prompting strategy considers the results from the multiple different prompts through a process called weak supervision to aggregate their output answers(@arora2022ama) to get an effective best answer and trained model. 
+Ask Me Anything (AMA) prompting(@arora2022ama) is a similar approach to DiVeRSe. However, both its multiple prompt step and its answer aggregation step differ signifigantly. The core idea of AMA is to use a LLM to generate multiple prompts, instead of just using different few-shot exemplars.
 
-Effective yet imperfect prompts are questions that can be classified as zero-shot prompts, that encourage open-ended generation, such as `Who went to the Park?` (@arora2022ama)
+### Multiple Prompts
 
-*Weak supervision* is a procedure for employing the noisy, imperfect predictions of the prompts to produce refinded final predictions. 
+AMA shows that you can take a question and reformat it in multiple ways to create different prompts. For example, say you are scraping a bunch of websites for information on animals and want to only record ones that live in North America.
 
-To further clarify what we mean by *weak supervision*, this type of output supervison allows for quickly creating large sets of training data so the LLM can learn and interpret what our desired eventual output
-should be, and what information it needs to contain. This is useful if we need the model to output a response inclusive of varied and detailed information. So even if they aren't completely perfect and overly simplistic, we can feed the model 25 "pretty good" zero-shot easy to generate open-ended prompts, instead instead of iteratively searching for the 1 perfect prompt that outputs everything needed for our use case.
-
-This method is also great when we need to change and improve our the output to our prompts regularly and quickly. If the data we're working with changes and calls for additions,
-or is unpredictable, weak supervision can help us add new information to our outputs.
-
-#### Example
-
-Here is a small simplified example. Let's say we'd like a to create a prompt that includes population and weather data when querying the model for travel information about a specific country. Here's how AMA prompting might be applied:
-
-Input:"France is a country in Europe"
-
-Context: "France is a country in Europe with a population of over 67 million people."
+Given the following passage from Wikipedia:
 
 ```text
-<!-- highlight-start -->
-Claim: "The capital of France is Paris."
-Question: "What is the capital of France?"
-Answer: "Paris"
-<!-- highlight-end -->
+The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
 ```
 
-Input: "The United States is a country in North America"
-
-Context: "The United States is a country in North America with a population of over 330 million people."
+You can format this task into a prompt like so:
 
 ```text
-<!-- highlight-start -->
-Claim: "The population of the United States is 330 million."
-Question: "What is the population of the United States?"
-Answer: "330 million"
-<!-- highlight-end -->
+Is the following claim True or False given the context?
+
+Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
+Claim: This animal lives in North America
+Answer:
 ```
 
-Input: "Canada is a country in North America"
-
-Context: "Canada is a country in North America with an average summer temperature of 20 degrees Celsius."
+This is a bit of an odd formulation. Why not just use the following simpler prompt?
 
 ```text
-<!-- highlight-start -->
-Claim: "The average temperature in Canada in the summer is 20 degrees Celsius."
-Question: "What is the average temperature in Canada in the summer?"
-Answer: "20 degrees Celsius"
-<!-- highlight-end -->
+Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
+Question: Does this animal lives in North America?
 ```
 
-Now that the model is trained using several imperfect but effective prompts, we can 
-use it to produce an output that will include details the model has learned from the 
-answers to each of the seperate imperfection prompt chains.
+Well, by formulating the question in this special way, more easily generate different prompts.
+Our first step here will be to take the claim `This animal lives in North America` and reformat it into different questions, which are basically asking the same thing. To do this, we will pass the claim through prompts like those in the below image.
+
+import ama_multi from '../assets/AMA_multiprompting.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={ama_multi} style={{width: "800px"}} />
+</div>
+
+This might output:
+1. Was the animal living in North America?
+2. Does the animal live in North America?
+3. Where does the animal live?
+
+The idea behind this is to create different *views* of the task. We then apply each to the given context like so:
 
 ```text
-<!-- highlight-start -->
-Prompt: "Is England a nice place to visit in July?"
-Response: "With a population of 56 million and an average summer temperature of 19 degrees Celsius, England 
-is a great place to visit in July with warmer weather, historical sites, music festivals, outdoor events, parks, 
-and gardens to explore.
-<!-- highlight-end -->
+Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
+Question: Was the animal living in North America?
 ```
 
+Then, we can generate answers for each:
 
-Without the imperfect AMA prompts training the model to include population size and average summer temperatures, a large language model replying to the question
-"Is England a nice place to visit in the summer?" would likely contain no information about the summer climate or population data in its response.
-This strategy enables large language models to match and exceed the performance of few-shot prompt GPT3 on popular benchmarks, with as much as 40x less 
-computing costs(@arora2022ama). This approach is applicable to a variety of tasks and model types, and can be scaled and used to improve the performance of language 
-models with fewer parameters initial input parameters. 
+1. `Yes it was`
+2. `Yes it does`
+3. `North America`
+
+These are *intermediate* answers. We need to map them to task labels (e.g. Yes or No).
+
+We can do this by passing the intermediate answers through a prompt like the following:
+
+```text
+Select the correct category.
+
+"Categories":
+- Yes, North America
+- No, not North America
+
+"Yes it was" fits category:
+```
+
+Now we can get our output answers.
+
+1. `Yes, North America`
+2. `Yes, North America`
+3. `Yes, North America`
+
+Here, they all agree, so we can just take the first answer. However, if they disagreed, we could use the AMA aggregation step to get a final answer.
+
+### Answer Aggregation
+
+AMA uses a very complicated strategy for aggregating answers (more so than DiVeRSe's voting verified). AMA suggests not simply taking the most common answer for a few reasons. Recall two of the questions we generated before:
+
+1. Was the animal living in North America?
+2. Does the animal live in North America?
+
+They are extremely similar, so will likely generate the same result. AMA relies on weak supervision and complex mathematics in order to estimate dependencies between different prompts it creates, and then uses this to aggregate answers.
+
+So, for the three questions we generated, it might assign weights of 25%, 25%, and 50%, since the first two are so similar.
+
+Although their aggregation strategy is powerful, it is so complicated that I will not cover it here. Read section 3.4 of the paper for more details(@arora2022ama).
+
+### Results
+
+- With this prompting strategy, AMA is able to use GPT-J-6B(@wange2021gptj) to outperform GPT-3. 
+
+- AMA is better on questions where given context contains the answer.
 
 ## Takeaways
 
-The main take-aways are these approaches are applicable to a variety of tasks and model types, and can be used to improve the performance of language models with fewer 
-parameters by using multiple input prompts to generate diverse completions. In practice, majority voting or weak supervision will likely work well compared to the voting verifier.
+Ensembling methods are very powerful. They can be used to improve the performance of any model, and can be used to improve the performance of a model on a specific task.
+
+In practice, majority voting should be your go to strategy.
+
