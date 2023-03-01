@@ -33,7 +33,7 @@ This section describes aspects of popular generative **text** AIs. These AIs hav
 3. These AIs predict the next word/token in the sentence based on the previous words/tokens (e.g. the AI might predict `apples` after `I don't like`). Each token they write is based on the previous tokens they have seen and written; every time they write a new token, they pause to think about what the next token should be.
 4. These AIs look at every token at the same time. They don't read left to right, or right to left like humans do. 
 
-Please understand that the words "think", "brain", and "neuron" are zoomorphisms, which are essentially metaphors for what the model is actually doing. These models are not really thinking, they are just math functions. They are not actually brains, they are just artificial neural networks. They are not actually biological neurons, they are just numbers.
+Please understand that the words `"think", "brain", and "neuron"` are zoomorphisms, which are essentially metaphors for what the model is actually doing. These models are not really thinking, they are just math functions. They are not actually brains, they are just artificial neural networks. They are not actually biological neurons, they are just numbers.
 
 This is an area of active research and philosophizing. This description is rather cynical about their nature and is meant to temper popular media depiction of AIs as beings that think/act like humans. This being said, if you want to anthropomorphize the AI, go ahead! It seems that most people do this and it may even be helpful for learning.
 

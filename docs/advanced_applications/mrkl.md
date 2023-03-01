@@ -49,13 +49,13 @@ information from the prompt and using a weather API to retrieve the information.
 following:
 
 
-import mrkl_task from '../assets/mrkl_task.png';
-import dataset from '../assets/mrkl/dataset.png';
-import load_dataset from '../assets/mrkl/load_dataset.png';
-import model from '../assets/mrkl/model.png';
-import extract from '../assets/mrkl/extract.png';
-import search from '../assets/mrkl/search.png';
-import final from '../assets/mrkl/final.png';
+import mrkl_task from '../docs/assets/mrkl_task.png';
+import dataset from '../docs/assets/mrkl/dataset.png';
+import load_dataset from '../docs/assets/mrkl/load_dataset.png';
+import model from '../docs/assets/mrkl/model.png';
+import extract from '../docs/assets/mrkl/extract.png';
+import search from '../docs/assets/mrkl/search.png';
+import final from '../docs/assets/mrkl/final.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={mrkl_task} style={{width: "500px"}} />
