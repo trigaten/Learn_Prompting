@@ -28,9 +28,9 @@ Aqui está a resposta da IA. É uma leitura muito mais curta!
 
 <pre>
   <div className="bluegreen-highlight">
-    Em 30 de setembro de 1985, uma chuva de granizo e chuvas intensas afetaram severamente áreas dos vales do Rio Doce e
-    Mucuri em Minas Gerais, deixando cerca de 4 mil pessoas desabrigadas e causando vinte mortes e seiscentos feridos
-    somente na cidade de Itabirinha.
+    Em 30 de setembro de 1985, uma chuva de granizo e chuvas intensas atingiu severamente as áreas dos vales do Rio Doce
+    e Mucuri no leste de Minas Gerais, resultando em 20 vítimas fatais e 600 feridos em Itabirinha, o município mais
+    afetado.
   </div>
 </pre>
 
