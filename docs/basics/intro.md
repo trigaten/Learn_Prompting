@@ -55,7 +55,7 @@ This course will teach you how to communicate with AIs.
 Read the rest of this chapter, then check out other chapters that interest you.
 In particular, the applied prompting section may be of interest if you would like
 to see how professionals use AI to automate their work. You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds that you will see throughout this site.
+using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds that you will see throughout this site (it will ask you to provide an OpenAI API key).
 
 Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
 
