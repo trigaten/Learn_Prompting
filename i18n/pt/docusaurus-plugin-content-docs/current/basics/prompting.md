@@ -34,18 +34,19 @@ Aqui está a resposta da IA. É uma leitura muito mais curta!
   </div>
 </pre>
 
-#### 2) Math Word Problem Solving
+#### 2) Resolvendo um Problema Matemático
 
-If you have a dataset of mathematical equations that you would like a language model to solve,
-you can create a prompt by posing the question "What is EQUATION".
+Se você tiver uma lista de equações matemáticas que você gostaria de resolver através de um modelo de linguagem, você
+pode criar um *prompt* utilizando a pergunda "Quanto é {{EQUAÇÃO}}".
 
-For a given question, your full prompt could look like this:
+Para uma certa questão, seu *prompt* completo pode ser algo como:
 
+```txt
+Quanto é 965*590?
 ```
-What is 965*590?
-```
 
-For this prompt, GPT-3 (text-davinci-003) (an AI) sometimes answers 569,050 (incorrect). This is where prompt engineering comes in.
+Para esse *prompt*, a IA GPT-3 (text-davinci-003) algumas vezes responde incorretamente `572,850`. É aqui onde a
+engenharia de *prompt* entra em ação.
 
 # Prompt Engineering
 
