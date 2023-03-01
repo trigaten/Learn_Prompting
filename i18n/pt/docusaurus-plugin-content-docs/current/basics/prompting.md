@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# 🟢 *Prompting* - A arte de escrever comandos
+# 🟢 *Prompting*
 
 No capítulo anterior, nós dicutimos sobre IA e como os humanos podem ensinar IAs a realizar tarefas. O processo de
 instruir uma IA a fazer uma tarefa é chamado de prompting(@shin2020autoprompt). Nós enviamos para a IA uma série de
@@ -10,22 +10,28 @@ texto de vários parágrafos.
 
 Abaixo, alguns exemplos de *prompts*:
 
-#### 1) Summarizing an Article
+#### 1) Resumindo um Artigo
 
-Say you are reading an article about snowfall in Florida. You want to quickly get the main ideas of the article, so you show the AI what you are reading, and ask for a summary[^2]:
+Digamos que você está lendo um artigo sobre chuva de granizo em Minas Gerais. Você quer rapidamente capturar as ideias
+principais do artigo, então você mostra para a IA o que você está lendo e pede um resumo[^2]:
 
+```txt
+A chuva de granizo no leste de Minas Gerais em 1985 foi um evento de queda de granizo e chuvas intensas que afetou
+severamente áreas dos vales do Rio Doce e Mucuri, no interior mineiro, em 30 de setembro de 1985. O município de
+Itabirinha, então denominado Itabirinha de Mantena, foi o mais afetado. Contava com cerca de 10 mil habitantes em 1985,
+dos quais 4 mil ficaram desabrigados. Somente nessa cidade foram registradas vinte vítimas fatais e seiscentos feridos.
+
+Resuma esse parágrafo em uma única sentença.
 ```
-It is very rare for snow to fall in the U.S. state of Florida, especially in the central and southern portions of the state. With the exception of the far northern areas of the state, most of the major cities in Florida have never recorded measurable snowfall, though trace amounts have been recorded, or flurries in the air observed few times each century. According to the National Weather Service, in the Florida Keys and Key West there is no known occurrence of snow flurries since the European colonization of the region more than 300 years ago. In Miami, Fort Lauderdale, and Palm Beach there has been only one known report of snow flurries observed in the air in more than 200 years; this occurred in January 1977. In any event, Miami, Fort Lauderdale, and Palm Beach have not seen snow flurries before or since this 1977 event.
 
-Summarize this paragraph in a single sentence:
-```
-
-Here is the AI's response. It is a much shorter read!
+Aqui está a resposta da IA. É uma leitura muito mais curta!
 
 <pre>
-<div className="bluegreen-highlight">
-Snowfall is extremely rare in Florida, with the exception of the far northern areas, <br/>and only one instance of snow flurries in the air has been recorded in the major cities <br/>of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
-</div>
+  <div className="bluegreen-highlight">
+    Em 30 de setembro de 1985, uma chuva de granizo e chuvas intensas afetaram severamente áreas dos vales do Rio Doce e
+    Mucuri em Minas Gerais, deixando cerca de 4 mil pessoas desabrigadas e causando vinte mortes e seiscentos feridos
+    somente na cidade de Itabirinha.
+  </div>
 </pre>
 
 #### 2) Math Word Problem Solving
