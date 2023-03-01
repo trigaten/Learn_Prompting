@@ -37,7 +37,7 @@ on different tasks. The next chapter covers slightly more advanced prompting tec
 ## Notes
 
 In the next chapters, you may see the words **AI, model, and LLM
-used interchangeably**. See the vocabulary reference for more information.
+used interchangeably**. See the [vocabulary reference](https://learnprompting.org/docs/vocabulary) for more information.
 
 Prompts inside of prompts, or self-augmented prompts(@kojima2022large), will be 
 covered in the next few sections.

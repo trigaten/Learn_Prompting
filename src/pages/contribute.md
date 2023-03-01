@@ -34,7 +34,13 @@ found a good paper, synthesize it's different techniques into short articles, an
 
 We are always looking for more content. If you have a story to tell, or a product to recommend, please make a PR! We are also looking for more content on the applied side of prompt engineering, such as how to use prompts in your own research. [Here](https://learnprompting.org/docs/applied_prompting/build_chatgpt).
 
-## 3. Miscl.
+## 3. Translation
+
+We are looking for help translating the site into other languages. If you are interested, please join the [Discord](https://learnprompting.org/discord) and mention you are interested in the respective language channel. If the channel does not exist, please message @Trigaten.
+
+Make sure to read the Docusaurus [translation guide](https://docusaurus.io/docs/i18n/introduction). Translations will go [here](https://github.com/trigaten/Learn_Prompting/tree/main/i18n). Around 7 languages are currently being translated, so you will likely find people to work with!
+
+## 4. Miscl.
 
 Everything from fixing typos to recommendations for the site (suggest papers, 
 layout changes, tell us what you want to learn about, etc.)
