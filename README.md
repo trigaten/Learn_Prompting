@@ -54,4 +54,4 @@ nvm install-latest-npm
 
 ## Cite
 
-Use the provided Github citation in this repository.
+Use the provided GitHub citation in this repository.
