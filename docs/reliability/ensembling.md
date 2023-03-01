@@ -146,7 +146,7 @@ Ask Me Anything (AMA) prompting(@arora2022ama) is a similar approach to DiVeRSe.
 
 ### Multiple Prompts
 
-AMA shows that you can take a question and reformat it in multiple ways to create different prompts. For example, say you are scraping a bunch of websites for information on animals and want to only record ones that live in North America.
+AMA shows that you can take a question and reformat it in multiple ways to create different prompts. For example, say you are scraping a bunch of websites for information on animals and want to only record ones that live in North America. Let's construct a prompt to determine this.
 
 Given the following passage from Wikipedia:
 
@@ -171,7 +171,7 @@ Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus ke
 Question: Does this animal lives in North America?
 ```
 
-Well, by formulating the question in this special way, more easily generate different prompts.
+Well, by formulating the question in this special way, we can generate different prompts.
 Our first step here will be to take the claim `This animal lives in North America` and reformat it into different questions, which are basically asking the same thing. To do this, we will pass the claim through prompts like those in the below image.
 
 import ama_multi from '../assets/AMA_multiprompting.png';
@@ -222,16 +222,16 @@ Here, they all agree, so we can just take the first answer. However, if they dis
 
 ### Answer Aggregation
 
-AMA uses a very complicated strategy for aggregating answers (more so than DiVeRSe's voting verified). AMA suggests not simply taking the most common answer for a few reasons. Recall two of the questions we generated before:
+AMA uses a very complicated strategy for aggregating answers (more so than DiVeRSe) instead of simply taking the majority answer. To understand why the majority answer may be a poor choice, consider two of the questions we generated before:
 
 1. Was the animal living in North America?
 2. Does the animal live in North America?
 
-They are extremely similar, so will likely generate the same result. AMA relies on weak supervision and complex mathematics in order to estimate dependencies between different prompts it creates, and then uses this to aggregate answers.
+They are extremely similar, so will likely generate the same result. Since the questions are so similar, they will effectively bias the end result. To deal with this, AMA relies on weak supervision and complex mathematics in order to estimate dependencies between different prompts it creates, and then uses this to weight them appropriately.
 
 So, for the three questions we generated, it might assign weights of 25%, 25%, and 50%, since the first two are so similar.
 
-Although their aggregation strategy is powerful, it is so complicated that I will not cover it here. Read section 3.4 of the paper for more details(@arora2022ama).
+Although AMA's aggregation strategy is powerful, it is so complicated that I will not cover it here. Read section 3.4 of the paper for more details(@arora2022ama).
 
 ### Results
 
