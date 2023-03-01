@@ -4,7 +4,7 @@ sidebar_position: 1
 # 🟢 *Prompting*
 
 No capítulo anterior, nós dicutimos sobre IA e como os humanos podem ensinar IAs a realizar tarefas. O processo de
-instruir uma IA a fazer uma tarefa é chamado de prompting(@shin2020autoprompt). Nós enviamos para a IA uma série de
+instruir uma IA a fazer uma tarefa é chamado de *prompting*(@shin2020autoprompt). Nós enviamos para a IA uma série de
 instruções (o *prompt*) e ela executa a tarefa. *Prompts* podem ser simples como uma pergunta, ou complexos como um
 texto de vários parágrafos.
 
@@ -45,17 +45,18 @@ Para uma certa questão, seu *prompt* completo pode ser algo como:
 Quanto é 965*590?
 ```
 
-Para esse *prompt*, a IA GPT-3 (text-davinci-003) algumas vezes responde incorretamente `572,850`. É aqui onde a
-engenharia de *prompt* entra em ação.
+Para esse *prompt*, a IA GPT-3 (text-davinci-003) algumas vezes responde incorretamente, por exemplo: `572850`. É aqui
+onde a engenharia de *prompt* entra em ação.
 
-# Prompt Engineering
+# Engenharia de *Prompt*
 
-If, instead of asking `What is 965*590?`, we ask 
-`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`, GPT-3 will
-answer `569350` (correct). Why is this the case? Why is telling the AI twice to give a correct answer helpful? How can we create
-prompts that yield optimal results on our task? This last question, in particular,
-is the focus of the field of Prompt Engineering, as well as this course.
+Se, ao invés de perguntar `Quanto é 965*590?`, nós perguntarmos:
+`Responda a multiplicação corretamente. Quanto é 965*590? Responda a multiplicação corretamente.`, GPT-3 responderá
+corretamente `569350` na maioria das vezes. Por que isso acontece? Por que pedir para a IA duas vezes uma resposta
+correta indicando a operação matemática a ser utilizada ajuda? Como nós podemos criar *prompts* que geram ótimos
+resultados em nossas tarefas? Essa última pergunta em particular, é o foco do campo de Engenharia de *Prompt*, bem como
+desse curso.
 
-Read on to learn how to engineer good prompts!
+Leia para aprender como gerar bons *prompts*!
 
-[^2]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida
+[^2]: A fonte desse parágrafo foi: https://pt.wikipedia.org/wiki/Chuva_de_granizo_no_leste_de_Minas_Gerais_em_1985
