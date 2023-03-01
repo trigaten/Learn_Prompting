@@ -57,6 +57,9 @@ correta indicando a operação matemática a ser utilizada ajuda? Como nós pode
 resultados em nossas tarefas? Essa última pergunta em particular, é o foco do campo de Engenharia de *Prompt*, bem como
 desse curso.
 
-Leia para aprender como gerar bons *prompts*!
+Uma coisa a mais: já que você está esperando uma resposta exata para a pergunta acima, você pode melhorar ainda mais os
+resultados apenas reduzindo a temperatura (randomicidade) da sua requisição.
+
+Leia o conteúdo do curso para aprender como gerar bons *prompts*!
 
 [^2]: A fonte desse parágrafo foi: https://pt.wikipedia.org/wiki/Chuva_de_granizo_no_leste_de_Minas_Gerais_em_1985

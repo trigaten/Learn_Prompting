@@ -49,6 +49,9 @@ answer `569350` (correct). Why is this the case? Why is telling the AI twice to 
 prompts that yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.
 
+One more thing, since you are expecting an exact answer for the aforementioned question, you can improve your results even
+more just reducing the temperature (randomness) of your request. 
+
 Read on to learn how to engineer good prompts!
 
 [^2]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida
