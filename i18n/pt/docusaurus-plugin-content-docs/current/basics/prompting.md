@@ -1,14 +1,14 @@
 ---
 sidebar_position: 1
 ---
-# 🟢 Prompting
+# 🟢 *Prompting* - A arte de escrever comandos
 
-In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
-The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
-a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a question, or
-as complex as multiple paragraphs. 
+No capítulo anterior, nós dicutimos sobre IA e como os humanos podem ensinar IAs a realizar tarefas. O processo de
+instruir uma IA a fazer uma tarefa é chamado de prompting(@shin2020autoprompt). Nós enviamos para a IA uma série de
+instruções (o *prompt*) e ela executa a tarefa. *Prompts* podem ser simples como uma pergunta, ou complexos como um
+texto de vários parágrafos.
 
-Here are two examples of prompts:
+Abaixo, alguns exemplos de *prompts*:
 
 #### 1) Summarizing an Article
 
