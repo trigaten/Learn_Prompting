@@ -17,7 +17,31 @@
 }
 
 .buttons {
+  gap: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.mytitle {
+  font-size: 3rem;
+  max-width: max-content;
+  margin: 1rem auto 2rem auto;
+  background: -webkit-linear-gradient(
+    315deg,
+    #647eff 15%,
+    var(--ifm-color-primary) 85%
+  );
+  /* background: -webkit-linear-gradient(315deg, #647eff 25%, #2e8555); */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.discord {
+  color: white;
+}
+
+[data-theme="dark"] .discord {
+  color: black;
 }

@@ -31,8 +31,8 @@ classification task.
 
 All of the possible labels for a given task ('mean' and 'not mean' for the above example).
 
-#### Sentiment Analysis
-
+#### Sentiment Analysis 
+ 
 Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
 
 #### "Model" vs. "AI" vs. "LLM"
@@ -41,6 +41,11 @@ These terms are used somewhat interchangeably throughout this course, but they d
 not always mean the same thing. LLMs are a type of AI, as noted above, but not all AIs are LLMs.
 When we mentioned models in this course, we are referring to AI models. As such, in this course,
 you can consider the terms "model" and "AI" to be interchangeable.
+
+#### Machine Learning (ML)
+
+ML is a field of study that focuses on algorithms that
+can learn from data. ML is a subfield of AI.
 
 #### Verbalizer
 
@@ -58,3 +63,5 @@ Here, the verbalizer is the mapping from the conceptual labels of `positive` and
 #### Reinforcement Learning from Human Feedback (RLHF)
 
 RLHF is a method for fine tuning LLMs according to human preference data.
+
+<!-- %%RemarkAutoGlossary::list_all%% -->
