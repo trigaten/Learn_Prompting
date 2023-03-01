@@ -9,8 +9,8 @@ distributions**(@zhao2021calibrate).
 
 **What exactly does it mean to calibrate an output distribution?**
 
-Let's walk through a quick example: Say we have a sentiment analysis task with two possible labels, `Positive` and `Negative`.
-Consider what happens when the LLM is prompted with `Input: nothing Sentiment: `. 
+Let's walk through a quick example: Say we have a %%sentiment analysis|sentiment analysis%% task with two possible labels, `Positive` and `Negative`.
+Consider what happens when the %%LLM|LLM%% is prompted with `Input: nothing Sentiment: `. 
 This input doesn't contain any _context_ which the LLM can use to make a sentiment 
 prediction, so it is called a **context-free** input.
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 🟢 Intro to Image Prompting
+# 🟢 Introduction
 
 Figuring out the best prompt to create a perfect image is a particular challenge.
 Research into methods to do so is not quite as developed as text prompting. This

@@ -36,6 +36,7 @@ cite them as such.
 
 #### Least to Most(@zhou2022leasttomost)
 
+
 ## Reliability
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
@@ -52,6 +53,7 @@ cite them as such.
 
 #### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
 
+#### Compositional Generalization - SCAN(@lake2018scan)
 ## Automated Prompt Engineering
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
