@@ -205,8 +205,7 @@ Example: `astronaut on a horse --video --v 3`
 
 <div style={{textAlign: 'center'}}>
  <video width="320" height="240" autoplay muted>
-  <source src="https://i.mj.run/27c89699-d96d-4834-b6fa-b022a453eb28/video.mp4
-" type="video/mp4">
+  <source src="https://i.mj.run/27c89699-d96d-4834-b6fa-b022a453eb28/video.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </div>
