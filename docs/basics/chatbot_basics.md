@@ -72,3 +72,5 @@ Incorporating primers into your prompting is a more advanced way of interacting 
 ## Notes
 
 Need citations.
+
+By [Dastardi](https://twitter.com/lukescurrier)
