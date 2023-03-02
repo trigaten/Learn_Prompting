@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # 🟢 检测AI生成的文本
 
-对于安全研究人员和教育工作者等人来说，检测AI生成的文本是一个大问题。像[GPTZero](https://gptzero.me)、[GPT2检测器](https://openai-openai-detector.hf.space)和[双语检测器](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection)等工具已经取得了显著的成功，但是它们还是可以被[欺骗]((https://learnprompting.org/docs/miscl/trickery)。
+对于安全研究人员和教育工作者等人来说，检测AI生成的文本是一个大问题。像[GPTZero](https://gptzero.me)、[GPT2检测器](https://openai-openai-detector.hf.space)和[双语检测器](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection)等工具已经取得了显著的成功，但是它们还是可以被[欺骗](https://learnprompting.org/docs/miscl/trickery)。
 
 OpenAI和其他研究人员(@bansal2022certified)(@gu2022watermarking) 正在努力将统计数字水印引入它们生成的文本中，但这也可能被修改大量文本的方法欺骗。
 

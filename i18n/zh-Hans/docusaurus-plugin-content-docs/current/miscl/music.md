@@ -2,33 +2,33 @@
 sidebar_position: 3
 ---
 
-# 🟢 Music Generation
+# 🟢 音乐生成
 
-Music generation models are becoming increasingly popular, and will eventually have a large impact on the music industry. 
+音乐生成模型越来越受欢迎，将最终对音乐产业产生巨大影响。
 
-Music generation models can create chord progressions, melodies, or full songs. They can structure and create music in specific genres and compose or improvise in the style of specific artists.
+音乐生成模型可以创作和生成和弦、旋律或完整歌曲，它们可以按特定类型构造和创建音乐，并以特定艺术家的风格进行作曲或即兴演奏。
 
-However, despite the enormous potential of music models, they are currently difficult to prompt. Generated output is often not thoroughly customizable by prompts, unlike image or text generation models.
+然而，尽管音乐模型的潜力巨大，但目前难以进行详细的提示，生成的输出通常不像图像或文本生成模型那样可以进行彻底的自定义。
 
 ## Riffusion
-import riffusion from '../assets/riffusion_phonk.png';
+import riffusion from '@site/docs/assets/riffusion_phonk.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={riffusion} style={{width: "500px"}} />
 </div>
 
-Riffusion(@Forsgren_Martiros_2022), a fine tuned version of Stable Diffusion, can be controlled with prompts to generate instruments and pseudo styles, but it has a limited number of beats available.
+Riffusion（@Forsgren_Martiros_2022）是 Stable Diffusion 的精细调整版本，可以通过提示进行控制，生成乐器和伪风格，但拥有的节拍数量有限。
 
 ## Mubert
 
-[Mubert](https://mubert.com/) seems to interpret prompts through sentiment analysis that links appropriate musical stylistics to the prompt (controlling the musical parameters in detail via prompts is not possible). It is unclear how much of the resultant generation is done by AI.
+[Mubert](https://mubert.com/) 似乎通过情感分析来解释提示，并将适当的音乐风格与提示相关联（无法通过提示详细控制音乐参数）。目前尚不清楚多少结果是由 AI 完成的。
 
-## Other
+## 其他
 
-There are attempts to use GPT-3 as a Text-2-Music tool with actual prompting for musical elements on the "micro-level" of notes (instead of the rather vague prompt-style-analogies mubert & riffusion produce) (e.g. `write the notes for a folk song that only uses A, B, C#, F#, and G`). However, at present those attempts are limited to single instruments.
+有尝试将 GPT-3 作为 Text-2-Music 工具，并进行实际提示以获取音乐元素的“微观”级别（而不是 mubert & riffusion 产生的相当模糊的提示样式类比）（例如，`写一个只使用 A、B、C＃、F＃和 G 的民歌曲目的音符`）。但是，目前这些尝试仅限于单个乐器。
 
-Other approaches include a model chain that [converts any image into sound that represents it](https://huggingface.co/spaces/fffiloni/img-to-music) and prompting ChatGPT to generate code for [Python libraries that create sound](https://twitter.com/teropa/status/1598713756074246145).
+其他方法包括模型链，[将任何图像转换为代表其的声音](https://huggingface.co/spaces/fffiloni/img-to-music)，以及提示 ChatGPT 生成[创建声音的 Python 库](https://twitter.com/teropa/status/1598713756074246145)的代码。
 
-## Notes
+## 备注
 
-Music prompting is not well built out... yet. MusicLM looks promising, but it is not yet available to the public.
+音乐提示功能尚未完全发展...... MusicLM 看起来很有前途，但尚未向公众开放。
