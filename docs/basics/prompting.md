@@ -23,7 +23,7 @@ Summarize this paragraph in a single sentence:
 Here is the AI's response. It is a much shorter read!
 
 <pre>
-<div style={{backgroundColor: '#d2f4d3'}}>
+<div className="bluegreen-highlight">
 Snowfall is extremely rare in Florida, with the exception of the far northern areas, <br/>and only one instance of snow flurries in the air has been recorded in the major cities <br/>of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
 </div>
 </pre>
@@ -36,20 +36,20 @@ you can create a prompt by posing the question "What is EQUATION".
 For a given question, your full prompt could look like this:
 
 ```
-What is 1,000,000 * 9,000?
+What is 965*590?
 ```
 
-For this prompt, GPT-3 (text-davinci-002) (an AI) sometimes answers 9,000,000 (incorrect). This is where
-prompt engineering comes in.
+For this prompt, GPT-3 (text-davinci-003) (an AI) sometimes answers 569,050 (incorrect). This is where prompt engineering comes in.
 
 # Prompt Engineering
 
-If, instead of asking `What is 1,000,000 * 9,000?`, we ask 
-`What is 1,000,000 * 9,000? Make sure to put the right amount of zeros, even if there are many:`, GPT-3 will
-answer 9,000,000,000 (correct). Why is this the case? Why is the additional specification 
-of the number of zeros necessary for the AI to get the right answer? How can we create
+If, instead of asking `What is 965*590?`, we ask 
+`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`, GPT-3 will
+answer `569350` (correct). Why is this the case? Why is telling the AI twice to give a correct answer helpful? How can we create
 prompts that yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.
+
+One more thing, if you are running the above prompt in GPT-3, you should set temperature to 0 to remove randomness. 
 
 Read on to learn how to engineer good prompts!
 

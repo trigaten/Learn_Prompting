@@ -11,6 +11,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [ID-Assist™](https://id-assist.co/)
 > An eLearning and classroom training storyboard automation tool, to help Instructional Designers automate creation of Course Outline, Learning Objecives, Assessments, Scenarios, and lot more.
 
+- [Writers brew AI](https://writersbrew.app)
+> One AI assistant that works across all apps & browsers. It can WRITE. IMPROVE. REPLY. SUMMARIZE. EXPLAIN & TRANSLATE. It has inbuilt OCR engine, and can extract text + generate AI text.
+
 - [Simplified](https://simplified.com/ai-writer/)
 > Generate copy with text prompts for business bios, facebook ads, product descriptions, emails, landing pages, YouTube descriptions, taglines, and more.
 
@@ -155,6 +158,8 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Poe](http://poe.com)
 
 - [Jasper Chat](https://www.jasper.ai/chat)
+
+- [Anthropic Claude](https://scale.com/blog/chatgpt-vs-claude#What%20is%20%E2%80%9CConstitutional%20AI%E2%80%9D?)
 
 ## Browser Extensions
 
