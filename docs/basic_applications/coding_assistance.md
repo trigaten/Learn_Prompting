@@ -24,10 +24,27 @@ ChatGPT can generate code in over 40 programming languages, which can be used fo
 
 ## Code Generation
 Instructing ChatGPT to generate code is as simple as this:
+
+>\>Act as a Python programmer. Please generate the Python code to output a single cycle of a sine wave using text characters and newlines.
+
+---
+The output will be something like:
+```
+import math
+
+amplitude = 30
+frequency = 2
+num_points = 50
+
+for i in range(num_points):
+    y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
+        print(' ' * (amplitude + y) + '*')
+```
+
 <div 
 trydyno-embed="" 
 openai-model="text-davinci-003" 
-initial-prompt="Act as a junior Python programmer. Please generate the Python code to output a single cycle of a sine wave using text characters and newlines." 
+initial-prompt="Act as a Python programmer. Please generate the Python code to output a single cycle of a sine wave using text characters and newlines." 
 initial-response="import math\n\namplitude = 10\nfrequency = 10\nnum_points = 100\n\nfor i in range(num_points):\n    y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))\n    print(' ' * (amplitude + y) + '*')\n" 
 max-tokens="256" 
 box-rows="3" 
@@ -39,9 +56,9 @@ top-p="1">
 ## Commenting Code
 To get ChatGPT to add comments to your code, prompt it with that assignment, followed by three hashmarks and then the code you'd like to comment:
 
->Please add comments to this code:
+>\>Please add comments to this code:
 >\#\#\#
->
+>```
 >import math
 >
 >amplitude = 30
@@ -51,9 +68,9 @@ To get ChatGPT to add comments to your code, prompt it with that assignment, fol
 >for i in range(num_points):
 >    y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
 >    print(' ' * (amplitude + y) + '*')
-
+>```
 ---
-The output will be:
+The output will be something like:
 ```
 # Import the math module
 import math
