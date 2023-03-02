@@ -7,18 +7,7 @@ sidebar_position: 1000
 The page contains an organized list of all papers used by this course. 
 The papers are organized by topic.
 
-Please cite this resource as:
-
-```text
-@misc{schulhoff2022learnprompting,
-    title={Learn Prompting},
-    author={Sander Schulhoff and Community Contributors},
-    url={https://learnprompting.org}
-    year={2022},
-    month={Dec},
-    day={1}
-}
-```
+**To cite this course, use the provided citation in the Github repository.**
 
 🔵 = Paper directly cited in this course. Other papers have informed my understanding of the topic.
 
@@ -47,6 +36,7 @@ cite them as such.
 
 #### Least to Most(@zhou2022leasttomost)
 
+
 ## Reliability
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
@@ -63,6 +53,7 @@ cite them as such.
 
 #### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
 
+#### Compositional Generalization - SCAN(@lake2018scan)
 ## Automated Prompt Engineering
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
@@ -207,6 +198,10 @@ cite them as such.
 
 #### Sudo Mode Tweet(@sudo2022jailbreak) 🔵
 
+#### Ignore Previous Prompt(@ignore_previous_prompt) 🔵
+
+#### Updated Jailbreaking Prompts (@AI_jailbreak) 🔵
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
@@ -245,6 +240,10 @@ cite them as such.
 
 #### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵
 
+#### StereoSet: Measuring stereotypical bias in pretrained language models(@nadeem-etal-2021-stereoset)
+
+#### Survey of Hallucination in Natural Language Generation(@Ji_2022)
+
 #### Examples(@2022examples)
 
 #### Wordcraft(@yuan2022wordcraft)
@@ -257,3 +256,6 @@ cite them as such.
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
 
+### A Watermark for Large Language Models(@kirchenbauer2023watermarking)
+
+### Ask-Me-Anything Prompting(@arora2022ama)

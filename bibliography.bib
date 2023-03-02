@@ -99,6 +99,18 @@
     primaryClass={cs.AI}
 }
 
+% SCAN dataset (compositional generalization)
+@misc{lake2018scan,
+  title = {Generalization without Systematicity: {{On}} the Compositional Skills of Sequence-to-Sequence Recurrent Networks},
+  author = {Lake, Brenden M. and Baroni, Marco},
+  year = {2018},
+  eprint = {1711.00350},
+  archivePrefix = {arxiv},
+  primaryclass = {cs.AI},
+  doi = {10.48550/arXiv.1711.00350},
+}
+
+
 % Reliability
 % unreliable CoT
 @misc{ye2022unreliability,
@@ -128,6 +140,17 @@
     eprint={2206.02336},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
+}
+
+% Ask-Me-Anything Prompting
+@misc{arora2022ama,
+  title = {Ask Me Anything: A simple strategy for prompting language models},
+  author = {Arora, Simran and Narayan, Avanika and Chen, Mayee F. and Orr, Laurel and Guha, Neel and Bhatia, Kush and Chami, Ines and Sala, Frederic and Ré, Christopher},
+  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  year = {2022},
+  eprint={2210.02441},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
 }
 
 % problems with biases
@@ -812,6 +835,35 @@ series = {CHI '22}
     primaryClass={cs.CL}
 }
 
+% bias in llms
+@inproceedings{nadeem-etal-2021-stereoset,
+    title = "{S}tereo{S}et: Measuring stereotypical bias in pretrained language models",
+    author = "Nadeem, Moin  and
+      Bethke, Anna  and
+      Reddy, Siva",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.416",
+    doi = "10.18653/v1/2021.acl-long.416",
+    pages = "5356--5371",
+    abstract = "A stereotype is an over-generalized belief about a particular group of people, e.g., Asians are good at math or African Americans are athletic. Such beliefs (biases) are known to hurt target groups. Since pretrained language models are trained on large real-world data, they are known to capture stereotypical biases. It is important to quantify to what extent these biases are present in them. Although this is a rapidly growing area of research, existing literature lacks in two important aspects: 1) they mainly evaluate bias of pretrained language models on a small set of artificial sentences, even though these models are trained on natural data 2) current evaluations focus on measuring bias without considering the language modeling ability of a model, which could lead to misleading trust on a model even if it is a poor language model. We address both these problems. We present StereoSet, a large-scale natural English dataset to measure stereotypical biases in four domains: gender, profession, race, and religion. We contrast both stereotypical bias and language modeling ability of popular models like BERT, GPT-2, RoBERTa, and XLnet. We show that these models exhibit strong stereotypical biases. Our data and code are available at https://stereoset.mit.edu.",
+}
+
+% hallucinations in llms
+@article{Ji_2022,
+	doi = {10.1145/3571730},
+	url = {https://doi.org/10.1145%2F3571730},
+	year = 2022,
+	month = {nov},
+	publisher = {Association for Computing Machinery ({ACM})},
+	author = {Ziwei Ji and Nayeon Lee and Rita Frieske and Tiezheng Yu and Dan Su and Yan Xu and Etsuko Ishii and Yejin Bang and Andrea Madotto and Pascale Fung},
+	title = {Survey of Hallucination in Natural Language Generation},
+	journal = {{ACM} Computing Surveys}
+}
+
 % examples
 @article{2022examples,
    title={What Makes Good In-Context Examples for GPT-3?},
@@ -956,6 +1008,24 @@ series = {CHI '22}
     year = {2022},
     month = {Dec}
 }
+
+@misc{ignore_previous_prompt,
+    doi = {10.48550/ARXIV.2211.09527},
+    url = {https://arxiv.org/abs/2211.09527},
+    author = {Perez, Fábio and Ribeiro, Ian},
+    keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {Ignore Previous Prompt: Attack Techniques For Language Models},
+    publisher = {arXiv},
+    year = {2022}
+}
+
+@misc{AI_jailbreak,
+    url = {https://chatgpt-jailbreak.super.site/},
+    author = {AIWithVibes},
+    title = {7 ChatGPT JailBreaks and Content Filters Bypass that work},
+    year = {2023}
+}
+
 % def of verbalizer
 @misc{schick2020exploiting,
     title={Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference},
@@ -964,4 +1034,76 @@ series = {CHI '22}
     eprint={2001.07676},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
+}
+
+% detection of LLM writing
+
+@article{roose2022dont,
+    title={Don't ban chatgpt in schools. teach with it.},
+    author={Kevin Roose},
+    day={12},
+    month={jan},
+    year={2022},
+    url={https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html}
+}
+
+@article{lipman2022gpt,
+    title={Schools Shouldn't Ban Access to ChatGPT},
+    author={Joanne Lipman and Rebecca Distler},
+    day={11},
+    month={jan},
+    year={2023},
+    url={https://time.com/6246574/schools-shouldnt-ban-access-to-chatgpt/}
+}
+
+@misc{bansal2022certified,
+    title={Certified Neural Network Watermarks with Randomized Smoothing},
+    author={Arpit Bansal and Ping-yeh Chiang and Michael Curry and Rajiv Jain and Curtis Wigington and Varun Manjunatha and John P Dickerson and Tom Goldstein},
+    year={2022},
+    eprint={2207.07972},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
+
+@misc{gu2022watermarking,
+    title={Watermarking Pre-trained Language Models with Backdooring},
+    author={Chenxi Gu and Chengsong Huang and Xiaoqing Zheng and Kai-Wei Chang and Cho-Jui Hsieh},
+    year={2022},
+    eprint={2210.07543},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+@misc{noonan2023gw,
+    title={GW preparing disciplinary response to AI programs as faculty explore educational use},
+    author={Eoighan Noonan and Owen Averill},
+    year={2023},
+    month={jan},
+    day={17},
+    url={https://www.gwhatchet.com/2023/01/17/gw-preparing-disciplinary-response-to-ai-programs-as-faculty-explore-educational-use/}
+}
+
+@misc{kirchenbauer2023watermarking,
+    title={A Watermark for Large Language Models},
+    author={John Kirchenbauer and Jonas Geiping and Yuxin Wen and Jonathan Katz and Ian Miers and Tom Goldstein},
+    year={2023},
+    month={jan},
+    day={27},
+    url={https://arxiv.org/abs/2301.10226}
+}
+
+@unknown{mitchell2023detectgpt,
+author = {Mitchell, Eric and Lee, Yoonho and Khazatsky, Alexander and Manning, Christopher and Finn, Chelsea},
+year = {2023},
+month = {01},
+pages = {},
+title = {DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature},
+doi = {10.48550/arXiv.2301.11305}
+}
+
+% music
+@software{Forsgren_Martiros_2022,
+  author = {Forsgren, Seth* and Martiros, Hayk*},
+  title = {{Riffusion - Stable diffusion for real-time music generation}},
+  url = {https://riffusion.com/about},
+  year = {2022}
 }
