@@ -3,7 +3,11 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
-[Midjourney](https://www.midjourney.com) is another AI image generator Unlike Stable Diffusion, Midjourney uses a Discord bot as an interface for AI image generation (join the Discord [here](https://discord.gg/midjourney) or experiment with the bot in the [Learn Prompting Discord](http://learnprompting.org/discord)). However, using the Midjourney Bot follows the same basic principles for image prompting.
+[Midjourney](https://www.midjourney.com) is an AI image generator that operates through a Discord bot interface as well as a web app (an API version of Midjourney is planned). The process for generating images with Midjourney follows the same fundamental principles as other AI image generators, including the use of prompts to guide the generation process. 
+
+One of the unique features of Midjourney compared to other AI image generators is its ability to create visually striking and artisticly composed images. This is attributed to the model's specialized training, which enables it to produce high-quality images with specific artistic parameters (more about this in "Advanced Prompts" > "Parameters").
+
+You can experiment with the Midjourney Bot in the [Learn Prompting Discord](http://learnprompting.org/discord) or in the [official Midjourney Discord server](https://discord.gg/midjourney).
 
 import midjourney_astronaut from '../assets/midjourney_astronaut.png';
 import midjourney_astronaut_params from '../assets/midjourney_astronaut_params.png';
@@ -28,29 +32,34 @@ import midjourney_astronaut_params_seed123 from '../assets/midjourney_astronaut_
 
 import midjourney_astronaut_params_tile from '../assets/midjourney_astronaut_params_tile.png';
 import midjourney_astronaut_params_tilegrid from '../assets/midjourney_astronaut_params_tilegrid.png';
-import midjourney_astronaut_params_tilecomplete from '../assets/midjourney_astronaut_params_tilecomplete.png';
+import midjourney_astronaut_params_tilecomplete from '../assets/midjourney_astronaut_params_tilecomplete.jpeg';
+
+import midjourney_astronaut_params_v1 from '../assets/midjourney_astronaut_params_v1.png';
+import midjourney_astronaut_params_v2 from '../assets/midjourney_astronaut_params_v2.png';
+import midjourney_astronaut_params_v3 from '../assets/midjourney_astronaut_params_v3.png';
+
 
 
 # Basic Usage
 
-The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAMETERS]`. For example:
+The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAMETERS]`. 
 
-```text
-/imagine prompt: astronaut on a horse
-```
+For example: `/imagine prompt: astronaut on a horse`
+
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut} style={{width: "750px"}} />
+  <img src={midjourney_astronaut} style={{width: "350px"}} />
 </div>
 
-Example with parameters:
 
-```text
-/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000 
-```
+Example with parameters: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000 `
+
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
+
+In this basic example the following parameters have been used:
+
 
 `--ar 3:2` sets the aspect ratio of the image to 3:2
 
@@ -58,10 +67,13 @@ Example with parameters:
 
 `--seed 100` sets an arbitrary seed value which can be used to re-render or re-work an image later
 
-(see the "Parameters" section under "Advanced Prompts" for more information on parameter usage)
+
+(learn more about Midjourney parameters in "Advanced Prompts" > "Parameters")
 
 
 # Advanced Prompts
+Advanced prompts in Midjourney make use of parameters and special prompting techniques supported by the Midjourney algorithm.
+
 ## Multi Prompts
 Midjourney interprets your prompt holistically by default. Using a double colon `::` tells Midjourney to interpret each part of a prompt separately.
 
@@ -71,14 +83,14 @@ Example:
 /imagine prompt: astronaut and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi1} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
 ```text
 /imagine prompt: astronaut:: and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi2} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
 
@@ -91,7 +103,7 @@ Example:
 /imagine prompt: [image URL], impressionist painting
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_ip2} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
 ## Parameters (v4)
@@ -105,8 +117,9 @@ The following parameters are supported by Midjourney's latest model (v4).
 Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_a169} style={{width: "750px"}} />
-   <img src={midjourney_astronaut_params_a12} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
+  &nbsp;
+   <img src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
 </div>
 
 
@@ -117,8 +130,9 @@ Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_c20} style={{width: "750px"}} />
-   <img src={midjourney_astronaut_params_c80} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
+  &nbsp;
+   <img src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
 </div>
 
 
@@ -129,8 +143,9 @@ Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_q05} style={{width: "750px"}} />
-   <img src={midjourney_astronaut_params_q2} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
+  &nbsp;
+   <img src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
 </div>
 
 
@@ -141,8 +156,9 @@ Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 Example: `astronaut on a horse --seed 123`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_seed123} style={{width: "750px"}} />
-   <img src={midjourney_astronaut_params_seed123} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+  &nbsp;
+   <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
 </div>
 
 
@@ -154,8 +170,9 @@ Example: `astronaut on a horse --seed 123`
 Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_s50} style={{width: "750px"}} />
-   <img src={midjourney_astronaut_params_s900} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
+  &nbsp;
+   <img src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
 </div>
 
 
@@ -165,9 +182,11 @@ Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 Example: `--v 1`, `--v 2`, and `--v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_v1} style={{width: "750px"}} />
-   <img src={midjourney_astronaut_params_v2} style={{width: "750px"}} />
-      <img src={midjourney_astronaut_params_v3} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
+  &nbsp;
+   <img src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
+   &nbsp;
+      <img src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
 </div>
 
 
@@ -180,7 +199,7 @@ Example: `--v 1`, `--v 2`, and `--v 3`
 Example: `astronaut on a horse --sameseed --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_sameseed} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
 </div>
 
 
@@ -191,9 +210,11 @@ Example: `astronaut on a horse --sameseed --v 3`
 Example: `astronaut on a horse --tile --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_tilegrid} style={{width: "750px"}} />
-  <img src={midjourney_astronaut_params_tile} style={{width: "750px"}} />
-  <img src={midjourney_astronaut_params_tilecomplete} style={{width: "750px"}} />
+  <img src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
+  &nbsp;
+  <img src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
+  &nbsp;
+  <img src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
 </div>
 
 
@@ -206,12 +227,12 @@ Example: `astronaut on a horse --video --v 3`
 <div style={{textAlign: 'center'}}>
  <video width="320" height="240" autoplay muted>
   <source src="https://i.mj.run/27c89699-d96d-4834-b6fa-b022a453eb28/video.mp4" type="video/mp4">
-Your browser does not support the video tag.
+</source>
 </video>
 </div>
 
 
 
-## Useful Links
+## Links
 
-More information about image prompt parameters can be found here: [Midjourney Documentation - Parameter List](https://docs.midjourney.com/docs/parameter-list)
+[Official Midjourney Documentation](https://docs.midjourney.com/)
