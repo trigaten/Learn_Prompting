@@ -2,10 +2,9 @@
 sidebar_position: 100
 ---
 
-# 🟢 Resources
+# 🟢 资源
 
-The image prompt engineering field is very diverse. Here is a good list of 
-resources that covers parts of it.
+图像提示工程领域非常多样化。以下是一份涵盖了其中部分内容的资源清单。
 
 - [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery
 - [Stable Diffusion Prompt Book](https://cdn.openart.ai/assets/Stable%20Diffusion%20Prompt%20Book%20From%20OpenArt%2010-28.pdf)

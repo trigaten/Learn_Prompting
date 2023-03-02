@@ -3,7 +3,7 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
-[Midjourney](https://www.midjourney.com) is another AI image generator Unlike Stable Diffusion, Midjourney uses a Discord bot as an interface for AI image generation (join the Discord [here](https://discord.gg/midjourney) or experiment with the bot in the [Learn Prompting Discord](http://learnprompting.org/discord)). However, using the Midjourney Bot follows the same basic principles for image prompting.
+[Midjourney](https://www.midjourney.com) 是另一个 AI 图像生成器。与 Stable Diffusion 不同，Midjourney 使用 Discord Bot 作为 AI 图像生成的接口（[在此](https://discord.gg/midjourney)加入 Discord，或在 [Learn Prompting Discord](http://learnprompting.org/discord) 中尝试该 Bot）。不过，使用 Midjourney Bot 的遵循相同的图像提示基本原则。
 
 import midjourney_astronaut from '@site/docs/assets/midjourney_astronaut.png';
 import midjourney_astronaut_params from '@site/docs/assets/midjourney_astronaut_params.png';
@@ -12,9 +12,9 @@ import midjourney_astronaut_multi2 from '@site/docs/assets/midjourney_astronaut_
 import midjourney_astronaut_ip2 from '@site/docs/assets/midjourney_astronaut_ip2.png';
 
 
-# Basic Usage
+# 基本用法
 
-The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAMETERS]`. For example:
+Midjourney 的基本结构是 `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAMETERS]`. 例如:
 
 ```text
 /imagine prompt: astronaut on a horse
@@ -24,9 +24,9 @@ The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--
   <img src={midjourney_astronaut} style={{width: "750px"}} />
 </div>
 
-More information about image prompt parameters can be found here: [Midjourney Documentation - Parameter List](https://docs.midjourney.com/docs/parameter-list)
+更多关于图像提示参数的信息可以在这里找到：[Midjourney Documentation - Parameter List](https://docs.midjourney.com/docs/parameter-list)
 
-Example:
+例如:
 
 ```text
 /imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000 
@@ -36,10 +36,9 @@ Example:
   <img src={midjourney_astronaut_params} style={{width: "750px"}} />
 </div>
 
-# Advanced Prompts
-## Multi Prompts
-Midjourney interprets your prompt holistically by default. Using a double colon `::` tells Midjourney to interpret each part of a prompt separately.
-Example:
+# 进阶用法
+## 多重提示
+Midjourney 默认情况下会整体理解你的提示语。使用双冒号 :: 可以让 Midjourney 分别理解提示语的每个部分。例如：
 ```text
 /imagine prompt: astronaut and horse
 ```
@@ -55,9 +54,8 @@ Example:
 </div>
 
 
-## Image Prompts
-By uploading an image to Discord and using its URL in a prompt, you can instruct Midjourney to use that image to influence the content, style and composition of your results. 
-Example:
+## 图像提示
+通过将一个图片上传到 Discord，并在提示语中使用它的 URL，你可以指示 Midjourney 使用该图片来影响你的结果的内容、样式和构成。例如：
 [Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).jpg)
 
 ```text

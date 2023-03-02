@@ -8,7 +8,7 @@ sidebar_position: 5
 import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
 import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.png';
 
-# Example
+# 例子
 
 回想一下前面一页中使用 DALLE 生成的金字塔以及这个提示语 `pyramid`。
 
