@@ -1,80 +1,78 @@
 ---
 sidebar_position: 1
 ---
-# Bienvenidos
+# Добро пожаловать
 
-Bienvenidos a este curso de Ingeniería en Prompt!
+Добро пожаловать на курс, по Prompt-инженерии!
 
-Me gusta pensar que la Ingeniería en Prompt (PE) es cómo: **Cómo hablar con una AI para obtener lo que quieras**. 
-
-
-Con tantos avances en inteligencia artíficial (AI),
-esta se convierte en una habilidad particularmente importante
-
-Este curso pone el foco en aplicar tecnicas de PE. Se esperan mínimos conocimientos 
-sobre machine learning. Pero si no tienes idea de lo que machine learning significa, lee la sección de Introducción básica.
-
-## El punto más importante de este curso es tu feedback!
-Si tienes cualquier consulta, comentario o sugerencia, por favor crea un **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, envíame un email a learnprompting@gmail.com o escribe un DM a [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
-
-Incluso el más mínimo feedback es de mucha ayuda!
-
-## Filosofía del curso
-
-**Iteraciones rápidas** - Dado que se publica nuevo contenido sobre PE casi a diario,
-Se estará actualizando este curso frecuentemente con articulos cortos sobre nuevas técnicas.
-Si quieres saber más sobre esto házmelo saber
-
-Parte de esta filosofía es **Iteración de errores**. Si en algún momento revisas algo
-que no entiendes, incluso algo pequeño, eso depende completamente de mi. **Por favor abre un [issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
+Мне нравится думать о Prompt-Инженерии (PE): **О том, как разговаривать с искуственным интеллектом, чтобы заставить его делать то, что вы хотите**.
 
 
-**Foco en el sentido práctico** - Me centraré en técnicas prácticas y aplicadas que puedes utilizar
-inmediatamente para ser aplicadas.
+Благодаря многочисленным недавним достижениям в области искусственного интеллекта (ИИ)
+оперативная разработка стала востребованным и ценным навыком для того, чтобы заставить ИИ делать то, что вы хотите. 
+Этот курс посвящен прикладным методам PE, и мы ожидаем, что читатели будут обладать минимальными знаниями о машинном обучении. Econ вы новичок в этих концепциях (искусственный интеллект, машинное обучение, программирование и т.д.) Я рекомендую начать с [Основ](https://learn prompting.org/docs/category/-basics ) раздел и чтение [Инструкций](https://learnprompting.org/docs/basics/intro ) во-первых.
 
-**Ejemplos de inmediato** - Intento poner ejemplos en los artículos siempre,
-para que pueda familiarizarse con las técnicas de una forma inmediata
+## The single most important part of this course is your feedback!
+If you have any questions, comments, or suggestions, you can:
+  - Make an **[issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**
+  - Email us at [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+  - Join [Discord](https://learnprompting.org/discord) community
+  - Follow us on [Twitter](https://twitter.com/learnprompting)
+  - We also have a [Consulting Interest Form](https://learnprompting.org/consulting)
 
+Even the smallest amount of feedback is very helpful!
 
-Filosofaré más sobre esto cuando tenga tiempo 😊
+## Course philosophy
 
-## Cómo leer el curso
+**Quick Iterations** - Since new PE content is published almost daily, 
+I will update this course frequently with short articles about new techniques.
+Let me know what you want to hear more about!
 
-No es necesario leer todos los capítulos en orden. ¡Lee lo que te interesa!
+Part of this philosophy is **error iteration**. If you ever see something that you
+don't quite understand, even something small, that's on me. **Please make an [issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
 
-Si eres totalmente nuevo, lee desde el inicio y luego comienza con la sección de Conceptos básicos.
-Si no, puede ser más útil comenzar con la sección intermedia.
+**Focus on Practicality** - We will focus on applied, practical techniques that you can use immediately for your applications.
 
-Los artículos están clasificados por dificultad y están etiquetados con lo siguiente:
+**Examples ASAP** - We will put examples in the articles as soon as possible so you can get a feel for the techniques as quickly as possible.
 
-🟢 Very easy; no requiere programación
+We'll philosophize more about this when we have time 😊
 
-🟡 Easy; Se requiere programación simple, pero sin mucha experiencia.
+## How to read
 
-🔴 Medium; se requiere programación y algo de experiencia (por ejemplo, problemas con registro de logs)
+It is not necessary to read all chapters in order. Read what interests you!
 
-🟣 Hard; Se requiere programación y una sólida experiencia en el dominio para implementar (por ejemplo, enfoques de aprendizaje por refuerzo)
+If you are new to artificial intelligence (AI) and prompt engineering (PE), start with the [Basics](https://learnprompting.org/docs/category/-basics) section. If you are already familiar with these concepts, you will be off to a good start with the [Intermediate](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate) section.  
 
-Nota: aunque para los problemas de 🔴🟣 la experiencia en el dominio es útil, por lo general aún podrás comprender el artículo.
+Articles have a rating system based on the difficulty of a topic and if programming knowledge is required:
 
-## Capítulos
+🟢 Very easy; no programming required
 
-Te dejo este breve resumen de cada capítulo:
+🟡 Easy; simple programming required, but no domain expertise
 
-**Básico**: Introducción a PE y técnicas simples de PE
+🔴 Medium; programming required, and some domain expertise to implement (e.g. calculating logarithmic probabilities)
 
-**Intermedio**: Técnicas de PE un poco más complicadas
+🟣 Hard; programming required, and robust domain expertise to implement (e.g. reinforcement learning approaches)
 
-**Aplicación Avanzada**: Aplicar técnicas de PE muy potentes y más avanzadas
+Note: even though for 🔴🟣 domain expertise is helpful, usually you will still be able to understand the article without prior knowledge.
 
-**Prompting Aplicado**: Algunos tutoriales completos del proceso de PE escritos por miembros de la comunidad
+## Chapters
 
-**Fiabilidad**: Cómo hacer que los LLMs sean más confiables
+Here is a quick summary of each chapter:
 
-**Imágenes**: ¡PE para modelos de texto a imagen como DALLE y Stable Diffusion!
+**Basics**: Intro to PE and simple PE techniques
 
-**Prompt Injection**: Hacking, pero para PE
+**Intermediate**: Slightly more complicated research-backed PE techniques
 
-**Prompting IDEs**: Diferentes herramientas de PE
+**Applied Prompting**: Some complete walkthroughs of the PE process written by community members
 
-**Prompt Tuning**: Fine tune prompts con degradados
+**Advanced Applications**: Some very powerful, but more advanced applications of PE
+
+**Reliability**: How to make LLMs more reliable
+
+**Images**: PE for text to image models like DALLE and Stable Diffusion!
+
+**Prompt Injection**: Hacking, but for PE
+
+**Prompting IDEs**: Different PE tools
+
+**Prompt Tuning**: Fine tune prompts with gradients
