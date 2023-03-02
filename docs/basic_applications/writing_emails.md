@@ -4,15 +4,13 @@ sidebar_position: 2
 
 # 🟢 Writing An Email
 
-This tutorial is designed to be approachable for beginners. I will include basic tips on how to use GPT playground & ChatGPT effectively.
+Writing emails can be a time consuming task, especially when you need to read through an email you received first. This section will cover use cases ranging from a simple email telling your boss you are sick today to more complex cold lead emails.
 
-## Working Example
+## Sick Day Email
 
-```
-I'm Zach. Email boss John about out of office today. Be concise. Do not include subject.
-```
+Imagine that you wake up sick one day and can't go into work (or just don't want to 😈). Here is a simple prompt that writes an email to your boss telling them you are sick.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="I am Zach. Write me an email to my boss, John, about being out office. Do not include brackets.\nBe concise and funny. Include a funny reason:" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nZach" max-tokens="256" box-rows="3" model-temp="0.7" top-p="1">
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Zach\nBoss's name: John\n\nWrite a humorous yet professional email to my boss saying that I will be out of office today since I am sick. \nBe concise and funny. Include a funny reason:" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nZach" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
