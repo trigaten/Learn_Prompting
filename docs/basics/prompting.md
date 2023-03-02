@@ -49,6 +49,8 @@ answer `569350` (correct). Why is this the case? Why is telling the AI twice to 
 prompts that yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.
 
+One more thing, if you are running the above prompt in GPT-3, you should set temperature to 0 to remove randomness. 
+
 Read on to learn how to engineer good prompts!
 
 [^2]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida
