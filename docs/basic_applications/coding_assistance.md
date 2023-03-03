@@ -119,14 +119,9 @@ Not only can ChatGPT detect syntax errors in code, but it can also find logical 
 >    partygoers -= 2
 
 
-The output will be something like this, with the while loop corrected to ensure the denominator variable stays positive:
+The output will include the while loop corrected to ensure the denominator variable stays positive:
 ```
-pizza_cost = 100
-partygoers = 10
 while partygoers > 0:
-    cost_per_person = pizza_cost / partygoers
-    print("the cost per person is $", "{:.2f}".format(cost_per_person))
-    partygoers -= 2
 ```
 
 For more nuanced errors, you may need to add jmore specifics: the error message, environment variables, included libraries or variations in inputs.
@@ -139,6 +134,10 @@ Coming soon
 
 Coming soon
 
-## Acting as a Python Interpreter
+## Executing Code
+
+Coming soon
+
+## Translating Between Programming Languages
 
 Coming soon
