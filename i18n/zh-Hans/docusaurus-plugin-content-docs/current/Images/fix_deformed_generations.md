@@ -25,11 +25,6 @@ import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
   <img src={good_pitt} style={{width: "250px"}} />
 </div>
 
-Using a similar negative prompt can help with other body parts as well. Unfortunately, this technique is not consistent, so you may need to attempt multiple generations
-before getting a good result.
-In the future, this type of prompting should be unnecessary since models will improve. 
-Howevever, currently it is a very useful technique.
-
 使用类似的反向提示语也可以帮助处理其他身体部位。不幸的是，这个技术并不是一直奏效，因此您可能需要多次尝试才能获得满意的结果。 未来，这种提示技术应该是不必要的，因为模型会不断改进。然而，目前这是一种非常有用的技术。
 
 # 注释
