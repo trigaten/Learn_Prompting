@@ -156,11 +156,26 @@ We select the answer with the highest probability as the final answer. The
 highest probability could be the softmax probability of the answer token, or the
 log probability of the answer token(s).
 
-## Results
+## Recitation-Augmented Language Models
 
-This method shows improvements on various commonsense datasets.
+The recitation-augmented(@sun2022recitationaugmented) approach it is similar to generated knowledge (basically the same). However, is much less complex than the formal implementation of generated knowledge.
+
+
+import RImage from '../assets/recitation.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={RImage} style={{width: "250px"}} />
+</div>
+
+The idea here is to few shot prompt the LLM to generate information *and* answer in the *same* step. The fact that it is reciting/generating knowledge and answering the question in the same step is the main difference from the generated knowledge approach.
+
+To reiterate, this approach prompts the model with multiple (question, recitation, answer) exemplars, then asks the question. The authors note that this approach can be combined with self consistency or multiple completion paths.
+
+
 
 ## Notes
+
+- Generated knowledge shows improvements on various commonsense datasets.
 
 - The knowledge corresponding to the selected answer is called the _selected knowledge_.
 
