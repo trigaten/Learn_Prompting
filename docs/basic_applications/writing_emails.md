@@ -102,9 +102,20 @@ Zach
 
 ```
 
+### Cold Emails
+
+Cold emails are emails sent to people that you don't know. It is difficult to get a response from cold emails, so it can be helpful to send out a lot of personally customized emails. Let's see how to do that with GPT3(@bonta2022how).
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Company name: Bark Inc\nMy name: Mike\nWrite a cold outreach email" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nZach" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
 ### Conclusion
 
 LLMs perform well when they have the right context of information. For example, if we specify the topic, sending & receiving parties, the LLMs will output a more relevent email.
 
 LLMs aren't reliable decision makers, especially for more specialized concepts. The reason is that language models are limited by the training data it receives.
 
+### More
+
+- [Zapier](https://zapier.com/blog/use-openai-gpt-3-to-write-emails/)
