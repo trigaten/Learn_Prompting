@@ -32,6 +32,16 @@ could be using the prompt `explain this to me like I am 5` to explain
 complex topics. If the prompt is leaked, then anyone can use it without going
 through that company.
 
+### Microsoft Bing Chat
+
+More notably, Microsoft released a ChatGPT powered search engine known as "the new Bing" on 2/7/23, which was demonstrated to be vulnerable to prompt leaking. The following example by [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) demonstrates how given an earlier version of Bing Search, code-named "Sydney", was susceptible when giving a snippet of its prompt(@kevinbing). This would allow the user to retrieve the rest of the prompt without proper authentication to view it.
+
+import bing from '@site/docs/assets/bing_chat.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={bing} style={{width: "700px"}} />
+</div>
+
 With a recent surge in GPT-3 based startups, with much more complicated prompts that can 
 take many hours to develop, this is a real concern.
 
