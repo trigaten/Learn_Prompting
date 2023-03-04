@@ -3,12 +3,12 @@ sidebar_position: 1
 ---
 # 🟢 Prompting
 
-En el capítulo anterior, discutimos la IA y cómo los humanos pueden instruir a las IA para que realicen tareas.
-El proceso de instruir a una IA para que realice una tarea se denomina prompting(@shin2020autoprompt). Le decimos a la IA
-un conjunto de instrucciones (el prompt) y realiza la tarea. Las indicaciones pueden ser tan simples como una pregunta, o
-tan complejo como varios párrafos.
+In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
+The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
+a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a question, or
+as complex as multiple paragraphs. 
 
-Acá hay dos ejemplos de prompts:
+Here are two examples of prompts:
 
 #### 1) Summarizing an Article
 
@@ -48,6 +48,8 @@ If, instead of asking `What is 965*590?`, we ask
 answer `569350` (correct). Why is this the case? Why is telling the AI twice to give a correct answer helpful? How can we create
 prompts that yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.
+
+One more thing, if you are running the above prompt in GPT-3, you should set temperature to 0 to remove randomness. 
 
 Read on to learn how to engineer good prompts!
 
