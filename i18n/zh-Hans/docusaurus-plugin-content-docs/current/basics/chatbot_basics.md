@@ -63,7 +63,7 @@ import primed_question from '../../assets/primed_question.png';
   <img src={unprimed_question} style={{width: "650px"}} />
 </div>
 
-在第二个例子中，我们提供了一个引导提示给 ChatGPT，并以正确的形式提出了问题。你应该注意到，它的回答与第一个例子有一些相似之处，例如，它为各个领域提供的例子问题是相似的（译注：中英文的表现并不完全一样，中文的差异更大一些），但它提供了更深入的背景信息，放弃了列表格式，而是采用连贯的段落，将例子与现实生活联系起来。
+在第二个例子中，我们提供了一个引导提示给 ChatGPT，并以正确的形式提出了问题。你应该注意到，它的回答与第一个例子有一些相似之处，例如，它为各个领域提供的例子问题是相似的，但它提供了更深入的背景信息，放弃了列表格式，而是采用连贯的段落，将例子与现实生活联系起来。
 
 <div style={{textAlign: 'center'}}>
   <img src={primed_question} style={{width: "650px"}} />
