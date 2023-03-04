@@ -37,7 +37,7 @@ More notably, Microsoft released a ChatGPT powered search engine known as "the n
 import bing from '../assets/bing_chat.png';
 
 <div style={{textAlign: 'center'}}>
-  <img src={bing} style={{width: "300px"}} />
+  <img src={bing} style={{width: "500px"}} />
 </div>
 
 With a recent surge in GPT-3 based startups, with much more complicated prompts that can 
