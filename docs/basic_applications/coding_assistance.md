@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# <span style="color:green;font-size:120%;">&#9679;</span> Coding Assistance
+# [_] Coding Assistance
 
 You can use ChatGPT for debugging, code generation, reformatting, commenting, and more. It can work with code in over 40 programming languages. 
 
