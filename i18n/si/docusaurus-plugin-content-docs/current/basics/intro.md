@@ -12,14 +12,14 @@ prompt engineering හෝ AI යන විෂයන් පිළිබඳව ඔ
 
 ## What is AI?
 
-කෘතිම බුද්ධිය (AI) යනු අපගේ අරමුණු සඳහා, මිනිසුන් මෙන් "හිතන" "ස්මාර්ට්" ඇල්ගොරිතම නිර්මාණය කර ඇති ක්ෂේත්‍රයකි[^1]. මේ ඇල්ගොරිතම වලට පුළුවන් රචනා ලියන්න, ගණිත ගැටළු විසඳන්න, චිත්‍ර අඳින්න. මෑත කාලයේ කෘතීම බුද්ධිය විෂය පථයේ සිදුවුණ දියුණුවත් සමග දැන් අපිට පුවත් ලිපි, ආකර්ශනීය sales emails ලිවිය හැකි, [චිත්‍ර තරග](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)** වලින් දිනිය හැකි AI models ද දැකගත හැකි.
+කෘතිම බුද්ධිය (AI) යනු අපගේ අරමුණු සඳහා, මිනිසුන් මෙන් "හිතන" "ස්මාර්ට්" ඇල්ගොරිතම නිර්මාණය කර ඇති ක්ෂේත්‍රයකි[^1]. මේ ඇල්ගොරිතම වලට පුළුවන් රචනා ලියන්න, ගණිත ගැටළු විසඳන්න, චිත්‍ර අඳින්න. මෑත කාලයේ කෘතීම බුද්ධිය විෂය පථයේ සිදුවුණ දියුණුවත් සමග දැන් අපිට පුවත් ලිපි, ආකර්ශනීය sales emails ලිවිය හැකි, **[චිත්‍ර තරග](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/) වලින් දිනිය හැකි** AI models ද දැකගත හැකි.
 
 AI දැනට **පුවත්පත් කලාව**, **සෞඛ්‍ය සේවා** සහ **අධ්‍යාපනය** ඇතුළු බොහෝ කර්මාන්තවල විප්ලවීය වෙනසක් සිදු කරමින් සිටි. දැනටමත් නොමැති නම් ළඟදීම එය ඔබගේ සේවා ස්ථානයේ/පංතිකාමරයේ භාවිතා වනු ඔබට දැක ගත හැකි වනු ඇත. AI අතිශයින්ම ප්‍රයෝජනවත් වුවද, එය කළ යුතු දේ පිළිබඳව මිනිසුන් විසින් එයට විධාන දීම අවශ්‍ය වේ.
 බොහෝ විට AI ඉතා බුද්ධිමත් අවුරුදු පහක ළමයින් වැනි ය. ඔවුන්ට බොහෝ දේ කළ හැකි නමුත් ඒවා හොඳින් කිරීමට ඔවුන්ට සියුම් උපදෙස් අවශ්‍ය වේ.
 
 AI සමග නිසි ලෙස සන්නිවේදනය කිරීමට හැකිවීම ඉතා වටිනා කුසලතාවකි. එහෙත්, ඔබ AI සමග සන්නිවේදනය කරන්නේ කෙසේද? 
 මෙම පාඩම් මාලාවේ භාවිත වන AI මොඩල (AI models) මුලික වශයෙන් ඉංග්‍රීසි භාෂාව ආශ්‍රිතව භාවිත වේ. (අනෙකුත් භාෂා ද භාවිත කළ හැක) එබැවින් අපිට සරලවම කර ගැනීමට අවශ්‍ය කාර්ය සඳහන් කළ හැකි. උදාහරණ වශයෙන්, අපිට හැකි AI වෙත කියන්න
-`Write an essay about the benefits of AI` පසුව එය මෙලෙස පිළිතුරු ලබා දෙයි:[^2]:
+`Write an essay about the benefits of AI` පසුව එය මෙලෙස පිළිතුරු ලබා දෙයි[^2]:
 
 ```
 In recent years, Artificial Intelligence (AI) has become a hot topic among the tech world. With its potential to revolutionize many aspects of our lives, AI is becoming increasingly relevant as technology continues to develop. From its applications in healthcare and transportation to its use in education and manufacturing, AI has already shown us its immense potential to benefit society in multiple ways.
