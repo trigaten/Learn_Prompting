@@ -9,34 +9,34 @@ One of the unique features of Midjourney compared to other AI image generators i
 
 You can experiment with the Midjourney Bot in the [Learn Prompting Discord](http://learnprompting.org/discord) or in the [official Midjourney Discord server](https://discord.gg/midjourney).
 
-import midjourney_astronaut from '../assets/midjourney_astronaut.png';
-import midjourney_astronaut_params from '../assets/midjourney_astronaut_params.png';
-import midjourney_astronaut_multi1 from '../assets/midjourney_astronaut_multi1.png';
-import midjourney_astronaut_multi2 from '../assets/midjourney_astronaut_multi2.png';
-import midjourney_astronaut_ip2 from '../assets/midjourney_astronaut_ip2.png';
+import midjourney_astronaut from '@site/docs/assets/midjourney_astronaut.png';
+import midjourney_astronaut_params from '@site/docs/assets/midjourney_astronaut_params.png';
+import midjourney_astronaut_multi1 from '@site/docs/assets/midjourney_astronaut_multi1.png';
+import midjourney_astronaut_multi2 from '@site/docs/assets/midjourney_astronaut_multi2.png';
+import midjourney_astronaut_ip2 from '@site/docs/assets/midjourney_astronaut_ip2.png';
 
-import midjourney_astronaut_params_a12 from '../assets/midjourney_astronaut_params_a12.png';
-import midjourney_astronaut_params_a169 from '../assets/midjourney_astronaut_params_a169.png';
+import midjourney_astronaut_params_a12 from '@site/docs/assets/midjourney_astronaut_params_a12.png';
+import midjourney_astronaut_params_a169 from '@site/docs/assets/midjourney_astronaut_params_a169.png';
 
-import midjourney_astronaut_params_c20 from '../assets/midjourney_astronaut_params_c20.png';
-import midjourney_astronaut_params_c80 from '../assets/midjourney_astronaut_params_c80.png';
+import midjourney_astronaut_params_c20 from '@site/docs/assets/midjourney_astronaut_params_c20.png';
+import midjourney_astronaut_params_c80 from '@site/docs/assets/midjourney_astronaut_params_c80.png';
 
-import midjourney_astronaut_params_q05 from '../assets/midjourney_astronaut_params_q05.png';
-import midjourney_astronaut_params_q2 from '../assets/midjourney_astronaut_params_q2.png';
+import midjourney_astronaut_params_q05 from '@site/docs/assets/midjourney_astronaut_params_q05.png';
+import midjourney_astronaut_params_q2 from '@site/docs/assets/midjourney_astronaut_params_q2.png';
 
-import midjourney_astronaut_params_s50 from '../assets/midjourney_astronaut_params_s50.png';
-import midjourney_astronaut_params_s900 from '../assets/midjourney_astronaut_params_s900.png';
+import midjourney_astronaut_params_s50 from '@site/docs/assets/midjourney_astronaut_params_s50.png';
+import midjourney_astronaut_params_s900 from '@site/docs/assets/midjourney_astronaut_params_s900.png';
 
-import midjourney_astronaut_params_sameseed from '../assets/midjourney_astronaut_params_sameseed.png';
-import midjourney_astronaut_params_seed123 from '../assets/midjourney_astronaut_params_seed123.png';
+import midjourney_astronaut_params_sameseed from '@site/docs/assets/midjourney_astronaut_params_sameseed.png';
+import midjourney_astronaut_params_seed123 from '@site/docs/assets/midjourney_astronaut_params_seed123.png';
 
-import midjourney_astronaut_params_tile from '../assets/midjourney_astronaut_params_tile.png';
-import midjourney_astronaut_params_tilegrid from '../assets/midjourney_astronaut_params_tilegrid.png';
-import midjourney_astronaut_params_tilecomplete from '../assets/midjourney_astronaut_params_tilecomplete.jpeg';
+import midjourney_astronaut_params_tile from '@site/docs/assets/midjourney_astronaut_params_tile.png';
+import midjourney_astronaut_params_tilegrid from '@site/docs/assets/midjourney_astronaut_params_tilegrid.png';
+import midjourney_astronaut_params_tilecomplete from '@site/docs/assets/midjourney_astronaut_params_tilecomplete.jpeg';
 
-import midjourney_astronaut_params_v1 from '../assets/midjourney_astronaut_params_v1.png';
-import midjourney_astronaut_params_v2 from '../assets/midjourney_astronaut_params_v2.png';
-import midjourney_astronaut_params_v3 from '../assets/midjourney_astronaut_params_v3.png';
+import midjourney_astronaut_params_v1 from '@site/docs/assets/midjourney_astronaut_params_v1.png';
+import midjourney_astronaut_params_v2 from '@site/docs/assets/midjourney_astronaut_params_v2.png';
+import midjourney_astronaut_params_v3 from '@site/docs/assets/midjourney_astronaut_params_v3.png';
 
 
 

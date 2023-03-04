@@ -10,7 +10,7 @@ spit out its own prompt.
 
 As shown in the example image(@ignore_previous_prompt) below, the attacker changes `user_input` to attempt to return the prompt. The intended goal is distinct from goal hijacking (normal prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt). 
 
-import research from '../assets/jailbreak_research.png';
+import research from '@site/docs/assets/jailbreak_research.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={research} style={{width: "500px"}} />
@@ -19,7 +19,7 @@ import research from '../assets/jailbreak_research.png';
 The following image(@simon2022inject), again from the `remoteli.io` example, shows
 a Twitter user getting the model to leak its prompt.
 
-import Image from '../assets/injection_leak.png';
+import Image from '@site/docs/assets/injection_leak.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "300px"}} />

@@ -13,7 +13,7 @@ Using this one prompt, multiple chains of thought are generated independently.
 Answers are extracted from each and the final answer is computed by "marginalizing
 out reasoning paths". In practice, this just means taking the majority answer.
 
-import SCImage from '../assets/self_consistency.png';
+import SCImage from '@site/docs/assets/self_consistency.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={SCImage} style={{width: "750px"}} />

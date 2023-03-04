@@ -5,7 +5,7 @@ sidebar_position: 200
 
 Hello reader, congratulations on getting through the intro chapter. You are off to a great start in this very exciting field. There are a few simple things you should know about different AIs and how they work before you start reading the rest of the course.
 
-import music_image from '../assets/music+image.png';
+import music_image from '@site/docs/assets/music+image.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={music_image} style={{width: "850px"}} />
