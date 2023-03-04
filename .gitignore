@@ -25,3 +25,5 @@ node_modules
 
 .history/
 .vscode/
+
+docs/code_examples/scrape.ipynb
