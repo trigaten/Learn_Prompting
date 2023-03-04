@@ -170,6 +170,10 @@ cite them as such.
 
 #### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
 
+## Prompt Leaking
+
+#### Microsoft Bing Chat Prompt(@kevinbing)
+
 ## Jailbreaking
 
 #### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
