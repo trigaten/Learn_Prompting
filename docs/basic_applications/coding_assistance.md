@@ -23,7 +23,7 @@ You can use ChatGPT for debugging, code generation, reformatting, commenting, an
 
 Instructing ChatGPT to generate code is as simple as this:
 
->\>Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
+>Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
 
 The output will be something like:
 
@@ -61,7 +61,7 @@ top-p="1">
 
 You can ask ChatGPT to add comments to your code, and reformat it for legibility. After your prompt instruction, add three hashmarks and then paste in the code you'd like it to clean up:
 
->\>Please add line comments to this Python code and reformat it for legibility:  
+>Please add line comments to this Python code and reformat it for legibility:  
 >\#\#\#
 >```
 >import math
@@ -97,7 +97,7 @@ for i in range(num_points):
 
 Not only can ChatGPT detect syntax errors in code, but it can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error one line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
 
->\>Please debug this Python code:  
+>Please debug this Python code:  
 >\#\#\#
 >```
 >1. pizza_cost = 100
@@ -121,7 +121,7 @@ For more nuanced errors, you may need to add more specifics: the error message, 
 
 If your script is taking too long to execute, ChatGPT can optimize it. Here's an example of optimizing an inefficient script that finds prime numbers:
 
->\>Act like a very senior python developer. Please optimize this script:  
+>Act like a very senior python developer. Please optimize this script:  
 >\#\#\#
 >```
 >for num in range(1, 101):
@@ -151,7 +151,7 @@ Note that we asked the bot to "act like a _senior_ developer" to optimize the sc
 
 A very useful feature ChatGPT offers is the ability to port programs from one language to another. A typical use for this might be upgrading code in an older language to a more modern one:
 
->\>Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
+>Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
 >\#\#\#
 >```
 >IDENTIFICATION DIVISION.
@@ -186,7 +186,7 @@ print("Social Security tax is: $", round(ss_tax, 2))
 
 What if you want ChatGPT to evaluate **multiple** files? Simply supply the filenames and paste the code for each:
 
->\>My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
+>My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
 >
 >```
 >BEGIN FILE 1: ./phrases/coming_and_going.py
@@ -214,7 +214,7 @@ Using this technique, you can submit multiple files to ChatGPT in a single promp
 
 Not only can ChatGPT work with code, but it can simulate server environments like databases, web and email servers. Consider this prompt:
 
->\>Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
+>Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
 
 The output will be something like:
 
@@ -241,7 +241,7 @@ CREATE TABLE politicians (
 
 From there, you can add columns, indexes and more:
 
->\>Add a column to the politicians table for the second-in-command and update it for each row.
+>Add a column to the politicians table for the second-in-command and update it for each row.
 
 The output might be something like:
 
@@ -265,7 +265,7 @@ SET second_in_command =
 
 ChatGPT can simulate many other servers and APIs. Here's an example of a prompt that simulates an Apache server response to specific browser request headers:
 
->\>Act as an Apache web server. How would you respond to these HTTP headers?
+>Act as an Apache web server. How would you respond to these HTTP headers?
 >
 >```
 >GET /example HTTP/1.1
@@ -303,7 +303,7 @@ Here are just some of the types of servers and APIs that ChatGPT can emulate:
 
 Since a shell within Linux (or Windows PowerShell) is also a programming language, you can interact with it using ChatGPT, and build an environment for your filesystem:
 
->\>Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
+>Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
 
 The output will be something like:
 
