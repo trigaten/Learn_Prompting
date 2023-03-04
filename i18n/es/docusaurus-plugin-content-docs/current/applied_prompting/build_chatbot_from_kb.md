@@ -4,11 +4,11 @@ sidebar_position: 40
 
 # 🟢 Chatbot + Base de Conocimiento
 
-import ImageIntents from '../assets/chatbot_from_kb_intents.png'
-import ImageGPT3 from '../assets/chatbot_from_kb_gpt3.png'
-import ImageGPT3Organized from '../assets/chatbot_from_kb_gpt3_organized.png'
-import ImagePrompt from '../assets/chatbot_from_kb_prompt.png'
-import ImageLogin from '../assets/chatbot_from_kb_login.png'
+import ImageIntents from '@site/docs/assets/chatbot_from_kb_intents.png'
+import ImageGPT3 from '@site/docs/assets/chatbot_from_kb_gpt3.png'
+import ImageGPT3Organized from '@site/docs/assets/chatbot_from_kb_gpt3_organized.png'
+import ImagePrompt from '@site/docs/assets/chatbot_from_kb_prompt.png'
+import ImageLogin from '@site/docs/assets/chatbot_from_kb_login.png'
 
 Los avances recientes en modelos de lenguaje grandes (LLMs, por sus siglas en inglés) como [GPT-3](https://arxiv.org/abs/2005.14165) y [ChatGPT](https://chat.openai.com/chat) han creado mucha expectación en la industria tecnológica. Estos modelos son increíblemente poderosos para la generación de contenido, pero también tienen algunas desventajas, como el sesgo(@nadeem-etal-2021-stereoset) y las alucinaciones(@Ji_2022). Una área en la que estos LLMs pueden ser particularmente útiles es en el desarrollo de chatbots.
 

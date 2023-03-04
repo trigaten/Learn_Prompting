@@ -7,7 +7,7 @@ sidebar_position: 4
 
 La cadena de pensamiento sin entrenamiento previo (Zero Shot Chain of Thought, Zero-shot-CoT) (@kojima2022large) es una continuación de la iniciativa de cadena de pensamiento (CoT prompting) (@wei2022chain), que introduce una simple frase inicial sin entrenamiento previo. Encuentran que al agregar las palabras "**Pensemos paso a paso.**" al final de una pregunta, las LM (lenguajes modelo) son capaces de generar una cadena de pensamiento que responde la pregunta. A partir de esta cadena de pensamiento, pueden extraer respuestas más precisas.
 
-import ZSImage from '../assets/zero_shot.png';
+import ZSImage from '@site/docs/assets/zero_shot.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSImage} style={{width: "500px"}} />
@@ -19,7 +19,7 @@ Zero Shot CoT (Kojima et al.)
 
 Técnicamente, el proceso completo de Zero-shot-CoT implica dos frases iniciales/completados separados. En la siguiente imagen, la burbuja superior de la izquierda genera una cadena de pensamiento, mientras que la burbuja superior de la derecha toma la salida del primer completado (incluyendo el propio completado) y extrae la respuesta de la cadena de pensamiento. Este segundo completado es un completado _auto-aumentado_.
 
-import ZSProcessImage from '../assets/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSProcessImage} style={{width: "500px"}} />

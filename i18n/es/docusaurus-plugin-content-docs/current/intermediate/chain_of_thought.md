@@ -8,7 +8,7 @@ style: chicago
 
 El Encadenamiento de pensamiento (CoT, por sus siglas en inglés "Chain of Thought") (@wei2022chain) es un método de indicaciones que se desarrolló recientemente y que alienta al LLM a explicar su razonamiento. La imagen a continuación (@wei2022chain) muestra una indicación estándar de "pocos ejemplos" (izquierda) en comparación con una indicación de encadenamiento de pensamiento (derecha).
 
-import CoTExample from '../assets/chain_of_thought_example.png';
+import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={CoTExample} style={{width: "750px"}} />
@@ -42,7 +42,7 @@ aritmética, sentido común y tareas de razonamiento simbólico (@wei2022chain).
 En particular, prompted PaLM 540B (@chowdhery2022palm) alcanza una precisión de 
 tasa de resolución del 57% en GSM8K (@cobbe2021training) (SOTA en ese momento).
 
-import PromptedPaLM from '../assets/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/prompted_palm.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={PromptedPaLM} style={{width: "300px"}} />

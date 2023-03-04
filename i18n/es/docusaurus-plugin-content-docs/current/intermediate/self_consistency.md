@@ -8,7 +8,7 @@ La autoconsistencia(@wang2022selfconsistency) (Self-consistency en ingles) es un
 
 En la figura a continuación, el prompt en la izquierda está escrito utilizando el paradigma Few-Shot-CoT. Usando este solo prompt, se generan múltiples cadenas de pensamiento de manera independiente. Las respuestas se extraen de cada una y la respuesta final se calcula "marginalizando los caminos de razonamiento". En la práctica, esto simplemente significa tomar la respuesta mayoritaria.
 
-import SCImage from '../assets/self_consistency.png';
+import SCImage from '@site/docs/assets/self_consistency.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={SCImage} style={{width: "750px"}} />

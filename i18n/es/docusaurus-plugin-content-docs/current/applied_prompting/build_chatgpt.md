@@ -4,10 +4,10 @@ sidebar_position: 4
 
 # 🟢 ChatGPT a partir de GPT-3
 
-import Skippy from '../assets/skippy_chatbot.png'    
-import SkippyHeader from '../assets/skippy_chatbot_header.png'    
-import Therapy from '../assets/therapy_chatbot.gif'
-import ChatGPT from '../assets/chatgpt_ui_diagram.png'
+import Skippy from '@site/docs/assets/skippy_chatbot.png'    
+import SkippyHeader from '@site/docs/assets/skippy_chatbot_header.png'    
+import Therapy from '@site/docs/assets/therapy_chatbot.gif'
+import ChatGPT from '@site/docs/assets/chatgpt_ui_diagram.png'
 
 <div style={{textAlign: 'left'}}>
   <img src={SkippyHeader} style={{width: "700px"}} />

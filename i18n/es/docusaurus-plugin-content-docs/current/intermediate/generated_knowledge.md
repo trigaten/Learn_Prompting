@@ -10,7 +10,7 @@ potencialmente útil sobre la pregunta antes de generar una respuesta. Este enfo
 compuesto por dos pasos intermedios, generación de conocimiento e integración de 
 conocimiento. 
 
-import KGImage from '../assets/knowledge_generation.png';
+import KGImage from '@site/docs/assets/knowledge_generation.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}} />
@@ -26,7 +26,7 @@ En el paso de generación de conocimiento, se le pide al LLM que genere un conju
 hechos sobre la **pregunta**. El LLM se solicita de manera few-shot como se ve a 
 continuación. Se generan M diferentes completados usando la misma solicitud.
 
-import KGP1Image from '../assets/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/gen_k_p1.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
