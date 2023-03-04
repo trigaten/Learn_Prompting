@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Snorkel 🚧
 
-import Image from '../../assets/tooling/snorkel.png';
+import Image from '@site/docs/assets/tooling/snorkel.png';
 
 [Snorkel](https://snorkel.ai/snorkel-flow-platform/foundation-model/) proporciona herramientas para construir prompts y ajustar modelos.
 
