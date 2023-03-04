@@ -3,52 +3,51 @@ sidebar_position: 1
 ---
 # 🟢 Prompting
 
-In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
-The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
-a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a question, or
-as complex as multiple paragraphs. 
+En el capítulo anterior, discutimos la IA y cómo los humanos pueden instruir a las IA para que realicen tareas.
+El proceso de instruir a una IA para que realice una tarea se denomina prompting(@shin2020autoprompt). Le decimos a la IA
+un conjunto de instrucciones (el prompt) y realiza la tarea. Las indicaciones pueden ser tan simples como una pregunta, o
+tan complejo como varios párrafos.
 
-Here are two examples of prompts:
+Acá hay dos ejemplos de prompts:
 
-#### 1) Summarizing an Article
+#### 1) Resumiendo un artículo
 
-Say you are reading an article about snowfall in Florida. You want to quickly get the main ideas of the article, so you show the AI what you are reading, and ask for a summary[^2]:
+Digamos que estás leyendo un artículo sobre nevadas en Florida. Desea obtener rápidamente las ideas principales del artículo, por lo que le muestras a la IA lo que estás leyendo y solicitas un resumen[^2]:
 
 ```
-It is very rare for snow to fall in the U.S. state of Florida, especially in the central and southern portions of the state. With the exception of the far northern areas of the state, most of the major cities in Florida have never recorded measurable snowfall, though trace amounts have been recorded, or flurries in the air observed few times each century. According to the National Weather Service, in the Florida Keys and Key West there is no known occurrence of snow flurries since the European colonization of the region more than 300 years ago. In Miami, Fort Lauderdale, and Palm Beach there has been only one known report of snow flurries observed in the air in more than 200 years; this occurred in January 1977. In any event, Miami, Fort Lauderdale, and Palm Beach have not seen snow flurries before or since this 1977 event.
+Es muy raro que caiga nieve en el estado de Florida, EEUU, especialmente en la parte central y sur del estado. Con la excepción de las áreas más al norte del estado, la mayoría de las principales ciudades de Florida nunca han registrado nevadas medibles, aunque se han registrado pequeñas cantidades o se han observado ráfagas en el aire pocas veces cada siglo. Según el Servicio Meteorológico Nacional, en los Cayos de Florida y Cayo Hueso no se conocen ráfagas de nieve desde la colonización europea de la región hace más de 300 años. En Miami, Fort Lauderdale y Palm Beach ha habido solo un informe conocido de ráfagas de nieve observadas en el aire en más de 200 años; esto ocurrió en enero de 1977. En cualquier caso, Miami, Fort Lauderdale y Palm Beach no han visto ráfagas de nieve antes o desde este evento de 1977.
 
-Summarize this paragraph in a single sentence:
+Resume este párrafo en una sola oración:
 ```
 
-Here is the AI's response. It is a much shorter read!
+Aquí está la respuesta de la IA. ¡Es una lectura mucho más corta!
 
 <pre>
 <div className="bluegreen-highlight">
-Snowfall is extremely rare in Florida, with the exception of the far northern areas, <br/>and only one instance of snow flurries in the air has been recorded in the major cities <br/>of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
+Las nevadas son extremadamente raras en Florida, con la excepción de las áreas más al norte, <br/>y solo se ha registrado un caso de ráfagas de nieve en el aire en las principales ciudades <br/>de Miami, Fort Lauderdale y Palm Beach en los últimos 200 años.
 </div>
 </pre>
 
-#### 2) Math Word Problem Solving
+#### 2) Resolución de problemas matemáticos
 
-If you have a dataset of mathematical equations that you would like a language model to solve,
-you can create a prompt by posing the question "What is EQUATION".
+Si tiene un conjunto de datos de ecuaciones matemáticas que le gustaría que un modelo de lenguaje resuelva,
+puede crear un aviso planteando la pregunta "¿Qué es ECUACIÓN?".
 
-For a given question, your full prompt could look like this:
+Para una pregunta dada, el prompt completo podría verse así:
 
 ```
-What is 965*590?
+¿Cuánto es 965*590?
 ```
 
-For this prompt, GPT-3 (text-davinci-003) (an AI) sometimes answers 569,050 (incorrect). This is where prompt engineering comes in.
+Para este prompt, GPT-3 (text-davinci-003) (una IA) a veces responde 569,050 (incorrecto). Aquí es donde entra la ingeniería en prompt (PE).
 
 # Prompt Engineering
 
-If, instead of asking `What is 965*590?`, we ask 
-`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`, GPT-3 will
-answer `569350` (correct). Why is this the case? Why is telling the AI twice to give a correct answer helpful? How can we create
-prompts that yield optimal results on our task? This last question, in particular,
-is the focus of the field of Prompt Engineering, as well as this course.
+Si, en lugar de preguntar `¿Cuánto es 965*590?`, preguntamos
+`Asegúrese de que su respuesta es exactamente correcta. ¿Cuánto es 965*590? Asegúrese de que su respuesta sea exactamente correcta:`, GPT-3 responderá `569350` (correcto). ¿Por qué es este el caso? ¿Por qué es útil decirle a la IA dos veces que dé una respuesta correcta? ¿Cómo podemos crear
+indicaciones que producen resultados óptimos en nuestra tarea? Esta última cuestión, en particular,
+es el enfoque del campo de PE, así como de este curso.
 
-Read on to learn how to engineer good prompts!
+¡Siga leyendo para aprender a diseñar buenos prompts!
 
-[^2]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida
+[^2]: Este parrafo es de https://en.wikipedia.org/wiki/Snow_in_Florida
