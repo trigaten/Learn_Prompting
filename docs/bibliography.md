@@ -174,6 +174,8 @@ cite them as such.
 
 #### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
 
+#### Microsoft Bing Chat Prompt(@kevinbing)
+
 ## Jailbreaking
 
 #### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
@@ -259,5 +261,7 @@ cite them as such.
 #### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
+
+### Ask-Me-Anything Prompting(@arora2022ama)
 
 ### A Watermark for Large Language Models(@kirchenbauer2023watermarking)

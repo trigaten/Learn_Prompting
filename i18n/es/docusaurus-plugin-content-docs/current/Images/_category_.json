@@ -1,0 +1,8 @@
+{
+  "label": "🖼️ Image Prompting",
+  "position": 40,
+  "link": {
+    "type": "generated-index",
+    "description": "¡Ingeniería de prompts para modelos de texto a imagen como DALLE y Stable Diffusion!"
+  }
+}
