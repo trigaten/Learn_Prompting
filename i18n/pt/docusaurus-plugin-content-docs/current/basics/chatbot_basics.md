@@ -64,7 +64,7 @@ Abaixo, tem-se o exemplo de uma pergunta sem estímulo prévio (*priming*) ao Ch
   <img src={pt_unprimed_question} style={{width: "650px"}} />
 </div>
 
-No segundo exemplo, por outro lado, foi feita a pergunta depois de fornecer um estímulo prévio (*priming*) e a pergunta no formato correto ao ChatGPT. Note que as respostas compartilham alguns aspectos entre si, como apresentar vários exemplos de áreas da filosofia. Contudo, na resposta com estímulo prévio, há uma contextualização mais profunda, o uso de parágrafos ao invés de listas e algumas relações com o dia.
+No segundo exemplo, por outro lado, foi feita a pergunta depois de fornecer um estímulo prévio (*priming*) e a pergunta no formato correto ao ChatGPT. Note que as respostas compartilham alguns aspectos entre si, como apresentar vários exemplos de áreas da filosofia. Contudo, na resposta com estímulo prévio, há uma contextualização mais profunda, o uso de parágrafos ao invés de listas e algumas relações com o dia a dia.
 
 <div style={{textAlign: 'center'}}>
   <img src={pt_primed_question} style={{width: "650px"}} />
