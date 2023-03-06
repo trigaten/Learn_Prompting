@@ -8,6 +8,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Content Writing
 
+- [ID-Assist™](https://id-assist.co/)
+> An eLearning and classroom training storyboard automation tool, to help Instructional Designers automate creation of Course Outline, Learning Objecives, Assessments, Scenarios, and lot more.
+
 - [Writers brew AI](https://writersbrew.app)
 > One AI assistant that works across all apps & browsers. It can WRITE. IMPROVE. REPLY. SUMMARIZE. EXPLAIN & TRANSLATE. It has inbuilt OCR engine, and can extract text + generate AI text.
 

@@ -24,7 +24,11 @@ cite them as such.
 
 #### What Makes Good In-Context Examples for GPT-3?(@liu2021makes) 🔵
 
+### Ask-Me-Anything Prompting(@arora2022ama) 🔵
+
 #### Generated Knowledge(@liu2021generated) 🔵
+
+#### Recitation-Augmented Language Models(@sun2022recitationaugmented) 🔵
 
 #### Rethinking the role of demonstrations(@min2022rethinking) 🔵
 
@@ -34,7 +38,7 @@ cite them as such.
 
 #### STaR(@zelikman2022star)
 
-#### Least to Most(@zhou2022leasttomost)
+#### Least to Most(@zhou2022leasttomost) 🔵
 
 
 ## Reliability
@@ -170,6 +174,8 @@ cite them as such.
 
 #### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
 
+#### Microsoft Bing Chat Prompt(@kevinbing)
+
 ## Jailbreaking
 
 #### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
@@ -256,6 +262,6 @@ cite them as such.
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
 
-### A Watermark for Large Language Models(@kirchenbauer2023watermarking)
-
 ### Ask-Me-Anything Prompting(@arora2022ama)
+
+### A Watermark for Large Language Models(@kirchenbauer2023watermarking)

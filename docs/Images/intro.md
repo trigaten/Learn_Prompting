@@ -29,17 +29,17 @@ and other sites, but couldn't find anything super helpful.
 
 I decided to just start with DALLE and the prompt `Low poly white and blue rocket shooting to the moon in front of a sparse green meadow` and see what happened.
 
-import rockets1 from '../assets/rockets_dalle_1.png';
-import rockets2 from '../assets/rockets_dalle_2.png';
-import computer_1 from '../assets/computer_dalle_1.png';
-import astronaut_1 from '../assets/astronaut_dalle_1.png';
-import astronaut_2 from '../assets/astronaut_sd_1.png';
-import rocket_sd_1 from '../assets/rocket_sd_1.png';
+import rockets1 from '@site/docs/assets/rockets_dalle_1.png';
+import rockets2 from '@site/docs/assets/rockets_dalle_2.png';
+import computer_1 from '@site/docs/assets/computer_dalle_1.png';
+import astronaut_1 from '@site/docs/assets/astronaut_dalle_1.png';
+import astronaut_2 from '@site/docs/assets/astronaut_sd_1.png';
+import rocket_sd_1 from '@site/docs/assets/rocket_sd_1.png';
 import rocket_final from '../../static/img/rocket.png';
-import laptop_sd_1 from '../assets/laptop_sd_1.png';
-import gemstone_sd_1 from '../assets/gemstone_sd_1.png';
-import gemstone_sd_2 from '../assets/gemstone_sd_2.png';
-import gemstone_sd_3 from '../assets/gemstone_sd_3.png';
+import laptop_sd_1 from '@site/docs/assets/laptop_sd_1.png';
+import gemstone_sd_1 from '@site/docs/assets/gemstone_sd_1.png';
+import gemstone_sd_2 from '@site/docs/assets/gemstone_sd_2.png';
+import gemstone_sd_3 from '@site/docs/assets/gemstone_sd_3.png';
 import focus_final from '../../static/img/computer.png';
 import astronaut_final from '../../static/img/astronaut.png';
 

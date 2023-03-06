@@ -10,8 +10,8 @@ One of the most common ways prompting can be useful is when interacting with the
 
 ### Style Guidance
 
-import unguided_question from '../assets/unguided_question.png';
-import limerick_question from '../assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/unguided_question.png';
+import limerick_question from '@site/docs/assets/limerick_question.png';
 
 Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
 
@@ -52,8 +52,8 @@ As an example, let's set up a system to allow us to have a conversation with a t
 
     If you understand and are ready to begin, respond with only “yes.”
     
-import unprimed_question from '../assets/unprimed_question.png';
-import primed_question from '../assets/primed_question.png';
+import unprimed_question from '@site/docs/assets/unprimed_question.png';
+import primed_question from '@site/docs/assets/primed_question.png';
 
 Below is an example of an unprimed question to ChatGPT about the most interesting areas of philosophy. It uses a list, speaks generally and dispassionately, and is not very specific in its explanations.  
 

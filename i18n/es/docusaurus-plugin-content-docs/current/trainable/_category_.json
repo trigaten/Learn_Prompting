@@ -1,0 +1,8 @@
+{
+  "label": "💪 Prompt Tuning",
+  "position": 70,
+  "link": {
+    "type": "generated-index",
+    "description": "La ingeniería de prompts que se pueden ajustar finamente con gradientes"
+  }
+}
