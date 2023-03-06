@@ -33,6 +33,24 @@ the AI often gives better answers.
 
 This technique is no longer as effective with more modern AIs (e.g. GPT-3 davinci-003).
 However, I did use GPT-3 davinci-003 for this example, so it seems that 
-role prompting is still at least a somewhat effective tool.
+role prompting is still at least a somewhat effective tool to interact with AIs.
 
-🚧 This page needs citations 🚧
+## Examples
+
+You can find some interesting prompts at [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts)
+repository on GitHub. They were thinking to interact with *ChatGPT*, but they might work with other AIs and you can also
+use them as inpiration to build your own prompts. Let's see two examples:
+
+> ### Act as a Etymologist
+> I want you to act as a etymologist. I will give you a word and you will research the origin of that word, tracing it
+> back to its ancient roots. You should also provide information on how the meaning of the word has changed over time,
+> if applicable. My first request is "I want to trace the origins of the word 'pizza'".
+
+> ### Act as a Lunatic
+> I want you to act as a lunatic. The lunatic's sentences are meaningless. The words used by lunatic are completely
+> arbitrary. The lunatic does not make logical sentences in any way. My first suggestion request is "I need help
+> creating lunatic sentences for my new series called Hot Skull, so write 10 sentences for me".
+
+---
+
+🚧 This page needs citations.
