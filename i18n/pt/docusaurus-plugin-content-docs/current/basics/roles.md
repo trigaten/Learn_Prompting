@@ -27,7 +27,7 @@ pergunta melhor. Com um melhor entendimento da pergunta, a IA geralmente fornece
 
 ## Observações
 
-Essa técnica não é mais tão efetiva nas mais modernas IAs, como por exemplo. a GPT-3 (text-davinci-003). No entanto,
+Essa técnica não é mais tão efetiva nas IAs mais modernas, como por exemplo. a GPT-3 (text-davinci-003). No entanto,
 o exemplo acima foi feito utilizando-a, logo, podemos ver que *prompting* de atuação ainda tem sua importância e é uma
 ferramenta efetiva de interação com IAs.
 
@@ -35,14 +35,14 @@ ferramenta efetiva de interação com IAs.
 
 Você pode encontrar *prompts* interessantes (em inglês) no repositório
 [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) do GitHub. Eles foram pensados para
-interagir com o *ChatGPT*, mais eles podem funcionar com outras IAs e você também pode utilizá-los como inspiração para
+interagir com o *ChatGPT*, mas eles podem funcionar com outras IAs e você também pode utilizá-los como inspiração para
 criar seus próprios *prompts*, vamos ver dois exemplos traduzidos:
 
 > ### Aja como um Etimologista
 > Eu quero que você aja como um etimologista. Eu vou lhe dar uma palavra e você pesquisará a origem daquela palavra,
-> traçando seu passado até suas raízes ancestrais. Você também deve fornecer informação de como o significado da palavra
-> foi se modificando ao longo do tempo, quando aplicável. Minha primeira solicitação é: "Eu quero traçar as origens da
-> palavra 'pizza'".
+> traçando seu passado até suas raízes ancestrais. Você também deve fornecer informações de como o significado da
+> palavra foi se modificando ao longo do tempo, quando aplicável. Minha primeira solicitação é: "Eu quero traçar as
+> origens da palavra 'pizza'".
 
 > ### Aja como um Lunático
 > Eu quero que você aja como um lunático. As frases do lunático são sem sentido. As palavras utilizadas pelo lunático
