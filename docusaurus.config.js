@@ -27,7 +27,7 @@ async function createConfig() {
     // to replace "en" with "zh-Hans".
     i18n: {
       defaultLocale: 'en',
-      locales: ['en', 'es', 'fr', 'ja', 'pt', 'zh-Hans', 'ko'],
+      locales: ['en', 'es', 'fr', 'ja', 'pt', 'zh-Hans', 'ko', 'si'],
     },
   
     presets: [
