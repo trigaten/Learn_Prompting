@@ -46,7 +46,7 @@ By just solving the first subproblem, we were able to solve the entire problem. 
 
 ## Example: letter concatenation
 
-LtM was originally introduced using few-shot prompting, rather than an explicit instruction to break down a probem into multiple steps (as seen above). Additionally, it can sometimes be implemented with a single prompt rather than chained prompts. Let's examine the problem of concatenating the last letter of individual words(@wei2022chain) (for example, given `cake, etymology` as input words, the output should be `ey`).
+LtM was originally introduced using few-shot prompting, rather than an explicit instruction to break down a problem into multiple steps (as seen above). Additionally, it can sometimes be implemented with a single prompt rather than chained prompts. Let's examine the problem of concatenating the last letter of individual words(@wei2022chain) (for example, given `cake, etymology` as input words, the output should be `ey`).
 
 ### First attempt: Standard 
 
