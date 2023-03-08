@@ -5,8 +5,7 @@ sidebar_position: 1
 
 프롬프트 엔지니어링 코스에 오신 것을 환영합니다!
 
-I like to think of prompt engineering (PE) as: **How to talk to AI to get it to do what you want**. 
-저는 프롬프트 엔지니어링을 이렇게 생각합니다: **우리가 원하는 것을 AI에게서 얻기 위해 어떻게 말해야 하는 지**.
+저는 프롬프트 엔지니어링을 이렇게 생각합니다: **우리가 원하는 것을 AI에게서 얻기 위해 어떻게 말해야 하는가**.
 
 최근 인공지능(AI)의 많은 발전과 함께,
 프롬프트 엔지니어링은 AI가 당신이 원하는 것을 하도록 하는 데 있어 인기 있고 가치 있는 기술이 되었습니다.
@@ -22,23 +21,23 @@ I like to think of prompt engineering (PE) as: **How to talk to AI to get it to 
   - [트위터](https://twitter.com/learnprompting)를 팔로우 해주세요
   - 또한 [Consulting Interest Form](https://learnprompting.org/consulting)도 있답니다.
 
-심지어 아주 작은 피드백이여도 굉장히 도움이 됩니다!
+작은 피드백도 굉장히 도움이 됩니다!
 
 ## 코스의 철학
 
 **빠른 반복** - 새로운 PE 콘텐츠가 거의 매일 올라오기 때문에,
 저는 새로운 기술에 대한 짧은 기사로 이 코스를 자주 업데이트 할 것입니다.
-저에게 여러분이 무엇에 대해 더 알고 싶은지 알려주세요!
+여러분이 무엇에 대해 더 알고 싶은지 저에게 알려주세요!
 
 
-이 철학의 일부는 **오류 반복**입니다. 만약 당신이 아주 조금이라도 이해가 안되는 것이 있다면, 그건 제 탓입니다. **[깃헙 이슈](https://github.com/trigaten/Learn_Prompting/issues/new/choose)를 올려주세요**!
+이 철학의 기본은 **오류 반복**입니다. 만약 당신이 아주 조금이라도 이해가 안되는 것이 있다면, 그건 제 탓입니다. **[깃헙 이슈](https://github.com/trigaten/Learn_Prompting/issues/new/choose)를 올려주세요**!
 
 **실용성에 집중** - 우리는 여러분이 자신의 앱에 바로 사용할 수 있도록 응용과 실용성에 집중할 것입니다.
 
 
 **최대한 많은 예제** - 우리는 여러분이 기술에 대한 감각을 최대한 빠르게 얻을 수 있도록 최대한 많은 예제를 넣을 것입니다.
 
-우리는 시간이 있을 때 이것에 대해 더 많이 철학할 것입니다. 😊
+우리는 시간이 있을 때마다 이것에 대해 더 많이 철학할 것입니다. 😊
 
 ## 어떻게 읽어야 하나
 
@@ -52,7 +51,6 @@ I like to think of prompt engineering (PE) as: **How to talk to AI to get it to 
 🟢 매우 쉬움; 프로그래밍 필요 없음 
 
 🟡 쉬움; 간단한 프로그래밍 필요, 하지만 도메인 전문 지식은 필요없음
-
 
 🔴 보통; 프로그래밍 필요, 그리고 개발을 위해서 조금의 도메인 전문 지식이 필요 (예: 로그 확률 계산)
 
