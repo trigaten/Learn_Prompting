@@ -1,9 +1,9 @@
 ---
 sidebar_position: 200
 ---
-# 🟢 Understanding AI Minds
+# 🟢 AI의 생각 이해하기
 
-Hello reader, congratulations on getting through the intro chapter. You are off to a great start in this very exciting field. There are a few simple things you should know about different AIs and how they work before you start reading the rest of the course.
+독자 여러분 반갑습니다. 인트로 챕터를 거의 다 마치신 것을 축하드립니다. 여러분은 굉장히 신나는 분야에 성공적으로 발을 들이게 되었습니다. 나머지 코스를 읽기 전에 여러분은 여러가지 AI들에 대해서 몇가지 알고 넘어가야 할 부분이 있습니다.
 
 import music_image from '@site/docs/assets/music+image.png';
 
@@ -15,31 +15,29 @@ import music_image from '@site/docs/assets/music+image.png';
   Audio being generated from an image.
 </div>
 
-## Different AIs
+## 여러가지 AI들
 
-Thousands, if not millions of AIs exist. Some are better than others. Different AIs can produce [images](https://openai.com/product/dall-e-2), [music](https://google-research.github.io/seanet/musiclm/examples/), [text](https://platform.openai.com/playground), and even [videos](https://makeavideo.studio/). Note that these are all *generative* AIs, basically AIs that *make* things. There are also *discriminative* AIs, which are AIs that *classify* things. For example, you can use an image classifier to tell if an image is a cat or a dog. We will not be using any discriminative AIs in this course.
+몇 천개의 AI들이 존재하고 있습니다. 몇몇은 다른 것들보다 더 낫습니다. 어떤 AI들은 [이미지](https://openai.com/product/dall-e-2), [음악](https://google-research.github.io/seanet/musiclm/examples/), [글](https://platform.openai.com/playground), 그리고 심지어 [비디오](https://makeavideo.studio/)까지 생성이 가능합니다. 그리고 이것들은 모두 무언가를 *만드는* *생성* AI들입니다. 무언가를 *분류*하는 데 쓰이는 *식별* AI들도 역시 존재합니다. 예를 들어 이 사진이 고양이인지 개인지 이미지 분류기에 물어볼 수 있습니다. 하지만 이 과정에서는 따로 *식별* AI들을 다루지 않습니다.  
 
+현재 프롬프트 엔지니어링에 특히 유용할 만큼 충분히 발전된 생성 AI는 몇 가지뿐입니다. 우리는 이 과정에서 GPT-3와 ChatGPT를 주로 사용할 것입니다. 이전에 언급했듯이, ChatGPT는 챗봇이고 GPT-3는 아닙니다. **이것들은 같은 질문에도 보통 다른 답변을 합니다**. 만약 개발자라면 저는 재생산이 손쉬운 GPT-3를 추천드리고 아니라면 더 쉬운 [ChatGPT](https://learnprompting.org/docs/category/%EF%B8%8F-image-prompting)를 추천드립니다. 이 과정에서 나오는 대부분의 기술들은 양쪽 모두에 적용이 가능합니다. 하지만 몇몇은 GPT-3에만 적용이 되기 때문에 이 과정에서 나오는 모든 기술을 사용하려면 GPT-3를 쓰시는 것을 추천드립니다.  
 
-Only a few generative AIs are currently advanced enough to be especially useful for prompt engineering. We mainly use GPT-3 and ChatGPT in this course. As we mentioned in the last page, ChatGPT is a chat bot, while GPT-3 is not. **They will usually produce different responses when asked the same question**. If you are a developer, I recommend using GPT-3, since it is more reproducible. If you are a non-developer, I recommend using [ChatGPT](https://learnprompting.org/docs/category/%EF%B8%8F-image-prompting), since it is easier to use. Most techniques in this course can be applied to both AIs. However, some of them will be GPT-3 only, so we encourage you to use GPT-3 if you want to use all of the techniques in this course.
+우리는 이미지 생성 섹션에서는 [Stable Diffusion](https://beta.dreamstudio.ai/home)과 [DALLE](https://openai.com/product/dall-e-2)를 사용합니다. 관련된 AI에 대해서 더 알고싶다면 [여기](https://learnprompting.org/docs/products#chatbots)를 클릭해주세요.
 
-We will also use [Stable Diffusion](https://beta.dreamstudio.ai/home) and [DALLE](https://openai.com/product/dall-e-2) in the image generation section. See more relevant AIs [here](https://learnprompting.org/docs/products#chatbots).
+## 이 AI들은 어떻게 일할까?
 
-## How these AIs work
+이 섹션에서는 대중적인 **글** 생성 AI에 대해서 설명할 것입니다. 이 AI들의 뇌는 수백만개 이상의 인공 뉴런들로 이루어져있습니다. 이 뉴런들의 구조를 우리는 트랜스포머 구조라고 부르고 이것은 완전히 복잡한 뉴럴 네트워크입니다. 여러분이 알아야 할 것은:
 
-This section describes aspects of popular generative **text** AIs. These AIs have brains that are made up of billions of artificial neurons. The way these neurons are structured is called a transformer architecture. It is a fairly complex type of neural network. What you should understand is:
+1. 이 AI들은 그냥 수학 함수일 뿐입니다. $f(x) = x^2$ 보다는 f(수천개의 변수) = 수천개의 가능한 출력에 가까운 형태입니다. 
+2. 이 AI들은 토큰이라고 부르는 단어나 하위 단어로 각각의 문장을 이해합니다(예를 들어 `나는 사람이다`를 `"나", "는" , "사람", "이다"`로 읽는다). 그리고 AI가 이해할 수 있도록 각 토큰들은 숫자의 배열로 바뀌게 됩니다.
+3. 이 AI들은 문장에서 이전의 단어나 토큰들로 다음 단어나 토큰을 예측한다(예를 들어 `나는 사과를`을 통해서 `싫어한다`를 예측한다). 그들이 작성한 각각의 토큰들은 그들이 이전에 읽거나 적었던 토큰들을 바탕으로 만들어진다. 그들이 새로운 토큰을 쓸 때마다, 그들은 다음 토큰이 무엇이어야 하는지 생각하기 위해 멈춥니다.
+4. 이 AI들은 모든 토큰을 동시에 보는 것처럼 보입니다. 그들은 인간처럼 왼쪽에서 오른쪽이나 오른쪽에서 왼쪽으로 읽지 않습니다.
 
-1. These AIs are just math functions. Instead of $f(x) = x^2$, they are more like f(thousands of variables) = thousands of possible outputs.
-2. These AIs understand sentences by breaking them into words/subwords called tokens (e.g. the AI might read `I don't like` as `"I", "don", "'t" "like"`). Each token is then converted into a list of numbers, so the AI can process it.
-3. These AIs predict the next word/token in the sentence based on the previous words/tokens (e.g. the AI might predict `apples` after `I don't like`). Each token they write is based on the previous tokens they have seen and written; every time they write a new token, they pause to think about what the next token should be.
-4. These AIs look at every token at the same time. They don't read left to right, or right to left like humans do. 
+"생각", "뇌", "뉴런" 등의 단어들이 모델들이 어떻게 작동하는 지를 은유적으로 표현한 것이라는 것을 알아두시길 바랍니다. 이 모델들은 실제로 생각하지는 않습니다 그저 수학 함수일 뿐입니다. 물론 실제 뇌도 아니고 그냥 인공 뉴럴 네트워크일 뿐입니다. 또 실제로 생물학적인 뉴런들도 아니고 그냥 숫자입니다.
 
-Please understand that the words "think", "brain", and "neuron" are zoomorphisms, which are essentially metaphors for what the model is actually doing. These models are not really thinking, they are just math functions. They are not actually brains, they are just artificial neural networks. They are not actually biological neurons, they are just numbers.
+이 부분은 적극적인 연구와 철학의 영역입니다. 이 설명은 그들의 본성에 대해서 다소 냉소적이고 AI들을 사람처럼 보이고자 하는 미디어의 묘사를 억제하고자 함입니다. 하지만 당신이 AI를 인격체로 만들길 원한다면 하시길 바랍니다. 많은 사람들이 그렇게 하고 있고 공부하는데에도 도움이 될 것입니다. 
 
-This is an area of active research and philosophizing. This description is rather cynical about their nature and is meant to temper popular media depiction of AIs as beings that think/act like humans. This being said, if you want to anthropomorphize the AI, go ahead! It seems that most people do this and it may even be helpful for learning.
+## 참고
 
+- AI가 어떻게 작동하는 지 아는데에는 [d2l.ai](https://www.d2l.ai)가 도움이 될 것입니다.
 
-## Notes
-
-- [d2l.ai](https://www.d2l.ai) is a good resource for learning about how AI works
-
-- Please note that the authors do, in fact, enjoy apples. They are delicious.
+- 저자들은 사실 사과를 즐긴다는 것을 알아두세요. 그것들은 맛있습니다.
