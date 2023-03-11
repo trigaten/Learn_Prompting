@@ -1,8 +1,0 @@
-{
-  "label": "🖼️ 图片提示词",
-  "position": 40,
-  "link": {
-    "type": "generated-index",
-    "description": "Prompt engineering for text to image models like DALLE and Stable Diffusion!"
-  }
-}
