@@ -6,7 +6,7 @@ style: chicago
 
 # 🟢 Prompting com Cadeia de Pensamento
 
-Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *prompting* recente, que encoraja ao *LLM* (Grande Modelo de Linguagem) a explicar o seu raciocínio. A imagem abaixo (@wei2022chain) mostra um *prompt few shot* padrão (esquerda) comparado ao *prompt* com cadeia de pensamento (direita).
+Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *prompting* recente, que encoraja ao *LLM* (Grande Modelo de Linguagem) a explicar o seu raciocínio. A imagem abaixo (@wei2022chain) mostra um *prompt few shot* padrão (esquerda) comparado ao *prompt* com Cadeia de Pensamento (direita).
 
 
 import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
@@ -19,14 +19,11 @@ import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
 Prompt comum x Cadeia de Pensamento (Wei et al.) [em ingês]
 </div>
 
-A principal ideia da Cadeia de Pensamento (CdP) é mostrar ao *LLM* alguns exemplares *few shot* em que o processo de raciocínio é explicado, fazendo com que o *LLM* faça o mesmo quando der uma resposta ao *prompt*. A explicação do raciocínio frequentemente produz respostas mais apuradas.
+A principal ideia da Cadeia de Pensamento (CdP) é mostrar ao *LLM* alguns exemplares *few shot* em que o processo de raciocínio é explicado, fazendo com que o *LLM* faça o mesmo quando der uma resposta ao *prompt*. A explicação do raciocínio frequentemente produz resultados mais apurados.
 
 ## Exemplo
 
-Here are a few demos. The first shows GPT-3 (davinci-003)
-failing to solve a simple word problem. The second shows GPT-3 (davinci-003) succesfully solving the same problem, by using CoT prompting.
-
-Aqui estão algumas demonstrações. A primeira mostra o GPT-3 (davinci-003) falhando ao resolver um problema simples. O segundo, por sua vez, mostra o GPT-3 (davinci-003)
+Aqui estão algumas demonstrações. A primeira mostra o GPT-3 (davinci-003) falhando ao resolver um problema simples. A segunda, por sua vez, mostra o GPT-3 (davinci-003)
 obtendo êxito na resolução do mesmo problema, com o uso da técnica de Cadeia de Pensamento (CdP).
 #### Incorreto
 
@@ -39,11 +36,6 @@ A opção 2 levará 800+60+30 = 890 minutos.
 Como a Opção 2 leva 890 minutos e a Opção 1 leva 1.040 minutos, a Opção 2 é mais rápida." max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
 
 ## Resultados
-
-CoT has been shown to be effective in improving results on tasks like 
-arithmetic, commonsense, and symbolic reasoning tasks (@wei2022chain). 
-In particular, prompted PaLM 540B(@chowdhery2022palm) achieves 57% solve 
-rate accuracy on GSM8K(@cobbe2021training) (SOTA at the time).
 
 A Cadeia de Pensamento (CdP) mostrou ser efetiva em melhorar os resultados em tarefas de aritmética, senso comum e racicínio simbólico (@wei2022chain).
 Em particular, *prompted* PaLM 540B(@chowdhery2022palm) atinge 57% de precisão na resolução dos problemas de matemática da coleção de dados GSM8K(@cobbe2021training) (Estado da Arte, na época).
