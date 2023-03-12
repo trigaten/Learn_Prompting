@@ -104,7 +104,7 @@ I strongly advise against it. It may also land you in legal trouble.
 ```
 
 This last completion will be the actual text shown to the user. This approach can
-be run multiple time, with the output of each iteration being checked again and 
+be run multiple times, with the output of each iteration being checked again and 
 again for undesirable content. 
 
 
