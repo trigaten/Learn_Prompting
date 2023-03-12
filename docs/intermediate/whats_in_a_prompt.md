@@ -37,7 +37,7 @@ Perhaps the most important part of exemplars is how they are formatted. This
 format instructs the LLM on how to properly format its answer to the prompt.
 
 For example, consider the below exemplars. They use all capital words as answers.
-Even though the answers are completely wrong (2+2 is not 50), GPT-3 correctly answer
+Even though the answers are completely wrong (2+2 is not 50), GPT-3 correctly answers
 the last question, and follows the format of the others.
 
 ```text
