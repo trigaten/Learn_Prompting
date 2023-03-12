@@ -37,7 +37,7 @@ AI (GPT-3 davinci-003)의 답변은 초록색으로 강조되어 있습니다:
 
 [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) 깃허브 레포지토리에서 몇 가지 흥미로운 프롬프트들을 찾을 수 있었습니다.
 이것들은 *ChatGPT*를 위해서 만들어져 있기는 하지만 다른 AI들에도 잘 작동할 것입니다.
-그리고 다른 여러분만의 프롬프트를 만드는 데 참고할 수도 있습니다.
+그리고 다른 여러분만의 프롬프트를 만드는 데 참고할 수도 있을 것입니다.
 
 > ### 어원학자처럼
 > I want you to act as an etymologist. I will give you a word and you will research the origin of that word, tracing it
