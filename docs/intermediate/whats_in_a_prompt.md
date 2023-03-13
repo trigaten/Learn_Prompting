@@ -16,7 +16,7 @@ in the exemplars are not important. As shown in the figure below, providing rand
 %%labels|labels%% in the exemplars barely hurts performance(@min2022rethinking). "Demo" is synonymous
 with exemplar in this image.
 
-import GoldUn from '../assets/gold_unimportant.png';
+import GoldUn from '@site/docs/assets/gold_unimportant.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={GoldUn} style={{width: "750px"}} />
@@ -37,7 +37,7 @@ Perhaps the most important part of exemplars is how they are formatted. This
 format instructs the LLM on how to properly format its answer to the prompt.
 
 For example, consider the below exemplars. They use all capital words as answers.
-Even though the answers are completely wrong (2+2 is not 50), GPT-3 correctly answer
+Even though the answers are completely wrong (2+2 is not 50), GPT-3 correctly answers
 the last question, and follows the format of the others.
 
 ```text

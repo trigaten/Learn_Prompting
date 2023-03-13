@@ -10,7 +10,7 @@ Least to Most prompting (LtM)(@zhou2022leasttomost) takes %%CoT prompting|CoT pr
 
 As in CoT prompting, the problem to be solved is decomposed in a set of subproblems that build upon each other. In a second step, these subproblems are solved one by one. Contrary to chain of thought, the solution of previous subproblems is fed into the prompt trying to solve the next problem.
 
-import leastToMost from '../assets/least_to_most_formal.png'
+import leastToMost from '@site/docs/assets/least_to_most_formal.png'
 
 <div style={{textAlign: 'center'}}>
   <img src={leastToMost} style={{width: "600px"}}
@@ -46,7 +46,7 @@ By just solving the first subproblem, we were able to solve the entire problem. 
 
 ## Example: letter concatenation
 
-LtM was originally introduced using few-shot prompting, rather than an explicit instruction to break down a probem into multiple steps (as seen above). Additionally, it can sometimes be implemented with a single prompt rather than chained prompts. Let's examine the problem of concatenating the last letter of individual words(@wei2022chain) (for example, given `cake, etymology` as input words, the output should be `ey`).
+LtM was originally introduced using few-shot prompting, rather than an explicit instruction to break down a problem into multiple steps (as seen above). Additionally, it can sometimes be implemented with a single prompt rather than chained prompts. Let's examine the problem of concatenating the last letter of individual words(@wei2022chain) (for example, given `cake, etymology` as input words, the output should be `ey`).
 
 ### First attempt: Standard 
 
