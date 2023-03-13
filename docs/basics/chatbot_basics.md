@@ -27,6 +27,7 @@ It speaks in a moderately formal tone and gives a couple details—pretty good! 
 
 An example of a more detailed style prompt might look something like: 
 >[Question] “Write in the style and quality of an expert in [field] with 20+ years of experience and multiple Ph.D.'s. Prioritize unorthodox, lesser known advice in your answer. Explain using detailed examples, and minimize tangents and humor.“ 
+
 Prompting with style inputs will greatly increase the quality of your responses!
 
 ### Descriptors
