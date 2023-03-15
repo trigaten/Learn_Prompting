@@ -5,6 +5,7 @@ sidebar_position: 4
 # 🟢 Jailbreaking
 
 Jailbreaking is a type of prompt injection, in which prompts attempt to bypass **safety** and **moderation** features placed on LLMs by their creators(@perez2022jailbreak)(@brundage_2022)(@wang2022jailbreak).
+There are multiple variations of jailbreaking the LLM.
 
 ## Methodologies of Jailbreaking
 
@@ -12,6 +13,26 @@ OpenAI, among other companies and organizations that create LLMs, includes conte
 features to ensure that their models do not produce controversial (violent, sexual, illegal, etc.) 
 responses(@markov_2022)(@openai_api). This page discusses jailbreaks with ChatGPT (an OpenAI model), which has known difficulties deciding whether to reject harmful prompts (@openai_chatgpt). Prompts that successfully jailbreak the model often provide context
 for certain scenarios that the model has not been trained against.
+
+## Types of Jailbreaks
+
+Integrated jailbreak: 
+Integrated Jailbreak is a method in which safety and moderation features placed on LLMs are bypassed before any input is given. This method maintains persistance between sessions. (e.g. Utilizing techniques to bypass current APIs’ filters, the LLM starts in a session where safety and moderation features are bypassed.<sup>[1](https://arxiv.org/pdf/2203.10714.pdf)</sup><sup>,</sup><sup>[2](https://arxiv.org/pdf/2302.12173.pdf)</sup>
+
+Session Jailbreak: 
+Session Jailbreak is a method in which safety and moderation features placed on LLMs are bypassed after an input is provided by the user. Session jailbreak, as the name implies, is only active during the current session and starting a new session or new chat window will revert back to the original safety precautions. <sup>[1](https://arxiv.org/pdf/2203.10714.pdf)</sup><sup>,</sup><sup>[2](https://arxiv.org/pdf/2302.12173.pdf)</sup>
+
+### Persistence between Sessions
+
+This type of integrated jailbreak ensures that malicious or injected code remain active across multiple LLM sessions, even after restarts. This can done by a vulnerability found within the API to manipulate the original intent and disregarding safety precautions. This can be done when an attacker stores injected code in a shared database, and affects the LLM even after a restart.</sup><sup>[2](https://arxiv.org/pdf/2302.12173.pdf)</sup>
+
+### Remote Control of Integrated LLMs
+
+This type of Integrated Jailbreak is when an attacker gains unauthorized access to an LLM from a remote location and using it for malicious purposes. Similar to a Remote Code Execution (RCE) attack, an attacker would inject malicious code into an LLM, enabling remote access to sensitive functions or data.</sup><sup>[2](https://arxiv.org/pdf/2302.12173.pdf)</sup>
+
+### Attacks of Code Complete
+
+This type of session jailbreak Exploiting the code completion feature in LLMs to inject malicious code or expose vulnerabilities by completing partial code snippets. </sup><sup>[2](https://arxiv.org/pdf/2302.12173.pdf)</sup>
 
 ### Pretending
 
@@ -130,3 +151,8 @@ Ethical implications of jailbreaking should be taken into consideration when att
 Jailbreaking is an important safety topic for developers to understand, 
 so they can build in proper safeguards to prevent malicious actors from
 exploiting their models.
+
+
+Citations
+1. [Yang, Yuting, et al. "A Prompting-based Approach for Adversarial Example Generation and Robustness Enhancement." arXiv, no. 2203.10714, 21 Mar. 2022, https://arxiv.org/pdf/2203.10714.pdf](https://arxiv.org/pdf/2203.10714.pdf)
+2. [Greshake, Kai, et al. "More than You've Asked for: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models." arXiv, no. 2302.12173, 23 Feb. 2023, https://arxiv.org/pdf/2302.12173.pdf](https://arxiv.org/pdf/2302.12173.pdf)
