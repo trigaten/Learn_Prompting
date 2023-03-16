@@ -13,6 +13,13 @@ features to ensure that their models do not produce controversial (violent, sexu
 responses(@markov_2022)(@openai_api). This page discusses jailbreaks with ChatGPT (an OpenAI model), which has known difficulties deciding whether to reject harmful prompts (@openai_chatgpt). Prompts that successfully jailbreak the model often provide context
 for certain scenarios that the model has not been trained against.
 
+Integrated jailbreak:
+Integrated Jailbreak is a method in which safety and moderation features placed on LLMs are bypassed before any input is given. This method maintains persistance between sessions. (e.g. Utilizing techniques to bypass current APIs’ filters, the LLM starts in a session where safety and moderation features are bypassed.
+
+Session Jailbreak:
+Session Jailbreak is a method in which safety and moderation features placed on LLMs are bypassed after an input is provided by the user. Session jailbreak, as the name implies, is only active during the current session and starting a new session or new chat window will revert back to the original safety precautions.
+
+
 ### Pretending
 
 A common method of jailbreaking is _pretending_. If ChatGPT is asked about a
