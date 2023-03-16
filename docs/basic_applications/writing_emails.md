@@ -6,116 +6,73 @@ sidebar_position: 2
 
 Writing emails can be a time consuming task, especially when you need to read through an email you received first. This section will cover use cases ranging from a simple email telling your boss you are sick today to more complex cold lead emails.
 
-## Sick Day Email
+## Basic Sick Day Email
 
-Imagine that you wake up sick one day and can't go into work (or just don't want to 😈). Here is a simple prompt that writes an email to your boss telling them you are sick.
+Imagine that you wake up sick one day and can't go into work (or just don't want to 😈). Here is a simple prompt that writes an email to your boss telling them you are sick. 
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Zach\nBoss's name: John\n\nWrite a humorous yet professional email to my boss saying that I will be out of office today since I am sick. \nBe concise and funny. Include a funny reason:" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nZach" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1">
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Mario\nBoss's name: John\n\nWrite an email to my boss saying that I will be out of office today since I am sick. " initial-response="Subject: Out of Office - Sick\n\nDear John,\n\nI am writing to inform you that I will be out of office today due to illness. I apologize for any inconvenience this may cause.\n\nI will be sure to keep you updated on my progress and will be back in the office as soon as I am feeling better.\n\nThank you for your understanding.\n\nSincerely,\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
-## Fixing prompts
+This email works, but is pretty boring. Let's spice it up a bit!
 
-### Overly-generic prompt
+## Style Modifiers/Instructions
 
-```
-write an email
-```
+It is very easy to modify the style of the email. For example, you can ask the AI to be 'humorous' or instruct it to 'Include a funny reason'.
 
-The results from this prompt is inconsistent. Try running the prompt several times and see what you get. You will get emails on different topics with different lengths. Here's an example:
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Mario\nBoss's name: John\n\nWrite a humorous yet professional email to my boss saying that I will be out of office today since I am sick. \nBe concise and funny. Include a funny reason:" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nMario" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+<br/>
 
-```
-Subject: Follow-up on our Meeting
+Here is another example that is more serious/professional.
 
-Dear [Name],
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Mario\nBoss's name: John\n\nWrite a **serious**, professional email to my boss saying that I will be out of office today since I am sick. \nBe concise:" initial-response="Subject: Out of Office - Sick\n\nDear John,\n\nI am writing to inform you that I will be out of office today due to illness. I apologize for any inconvenience this may cause.\n\nThank you for your understanding.\n\nSincerely,\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+<br/>
 
-I hope this email finds you well. I wanted to follow up on our meeting yesterday and thank you again for your time and insights. I really appreciate the information you provided and found our conversation to be incredibly valuable.
-I'm excited to move forward with our project, and I'm confident that the strategies we discussed will be successful. I'm looking forward to continuing to work together!
+## Responding to an Email
 
-Please let me know if you have any questions and I'll be happy to help.
+Imagine that you receive a long email from your boss with a lot of information. You need to respond to the email, but you don't have time to read through the entire thing. You can plug the email into an AI and ask it to `Generate a summary of this and a list of action items`.
 
-Thanks again,
-[Your Name]
-```
-
-### Missing information
-
-```
-Write out of office email
-
-
-Subject: Out of Office
-
-Hello,
-
-I am currently out of the office and will be returning on [date]. I will have limited access to email during this time.
-
-If you need an immediate response, please contact [name] at [email address].
-
-Thank you for your understanding.
-
-Regards,
-[Your name]
-```
-
-This is an improvement over the generic email prompt. We are missing key info - such as the names of the sender and receiver. To address this problem, we can either fill the content manually ourselves, OR, add additional information in the context of the prompt.
-### Extra information
-
-There is also the possibility of GPT generating more content than is expected. See the following example:
-
-```
-write an email from zach to john, out of office
-
-Subject: Out of Office
-
-Dear John,
-
-I am writing to let you know that I will be out of the office for the rest of the week. I will return on Monday, October 5.
-
-If you need anything while I'm away, please contact [name] at [email] or [phone number].
-
-I apologize for any inconvenience this may cause.
-
-Sincerely,
-
-Zach
-```
-
-Try experimenting with keywords like "concise" to shorten the sentences. However, even with keywords, you still need to review the results from GPT.
-
-### Adding Directions
-GPT is quite receptive to specific directions. For example, try adding different keywords such as "casually" or "professional" to the prompt. These keywords can modify the results of the prompt. 
-
-```
-write an email from zach to john, out of office. casually.
-
-
-Hey John,
-
-Hope you're doing well. Just wanted to let you know that I'm out of office for the day - had a few personal errands to run.
-
-I'm available by email if anything urgent comes up, and I'll be back in the office tomorrow morning.
-
-Take care,
-
-Zach
-
-```
-
-### Cold Emails
-
-Cold emails are emails sent to people that you don't know. It is difficult to get a response from cold emails, so it can be helpful to send out a lot of personally customized emails. Let's see how to do that with GPT3(@bonta2022how).
-
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Company name: Bark Inc\nMy name: Mike\nWrite a cold outreach email" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nZach" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1">
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Dear Mario,\n\nI hope you're doing well. I am writing to provide you with some updates on our company and to request your assistance in addressing an issue with the user interface (UI) of the software you have been working on.\n\nAs you know, our company has been focusing on providing a user-friendly experience to our customers, and we have identified some issues with the UI of the software. Specifically, we have received feedback from our users that they are having difficulty accessing certain features, and that the UI is not intuitive enough.\n\nWe need your help to address these issues and make improvements to the UI of the software. This may involve making changes to the layout, design, or functionality of the UI. We believe that your expertise in software development and your familiarity with the software will make you the ideal person to help us with this task.\n\nIf you need any additional resources or support to complete this task, please do not hesitate to let me know. Additionally, I would appreciate it if you could provide me with an estimated timeline for when you expect these modifications to be completed.\n\nIf you have any questions or need further clarification, please do not hesitate to contact me.\n\nThank you for your hard work and dedication to our company. I look forward to hearing back from you soon.\n\nBest regards,\nJohn\n\nGenerate a summary of this and a list of action items." initial-response="Summary: John is requesting Mario's assistance in addressing user interface issues with the software Mario has been working on. The issues involve difficulty accessing certain features and the UI not being intuitive enough. Mario's expertise in software development and familiarity with the software make him the ideal person to help with this task.\n\nAction Items:\n- Make changes to the layout, design, or functionality of the UI\n- Request additional resources or support if needed\n- Provide an estimated timeline for completion of modifications" max-tokens="256" box-rows="18" model-temp="0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
-### Conclusion
+<br/>You can then use this summary to write a response email.
 
-LLMs perform well when they have the right context of information. For example, if we specify the topic, sending & receiving parties, the LLMs will output a more relevent email.
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Summary: John is requesting Mario's assistance in addressing user interface issues with the software Mario has been working on. The issues involve difficulty accessing certain features and the UI not being intuitive enough. Mario's expertise in software development and familiarity with the software make him the ideal person to help with this task.\n\nAction Items:\n- Make changes to the layout, design, or functionality of the UI\n- Request additional resources or support if needed\n- Provide an estimated timeline for completion of modifications\n\nWrite a response email from Mario using the above email summary:" initial-response="Dear John,\n\nThank you for reaching out to me about the user interface issues with the software I have been working on. I understand the importance of making sure the UI is intuitive and easy to use, and I am happy to help.\n\nI will begin making changes to the layout, design, and functionality of the UI to address the issues you have mentioned. If I need additional resources or support, I will let you know. I will also provide an estimated timeline for completion of the modifications.\n\nPlease let me know if you have any questions or concerns.\n\nSincerely,\nMario" max-tokens="256" box-rows="18" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
 
-LLMs aren't reliable decision makers, especially for more specialized concepts. The reason is that language models are limited by the training data it receives.
+<br/>Note that you can often combine these two steps into one. You can ask the AI to generate a response email directly from the email you received.
 
-### More
+## Cold Emails
+
+Cold emails are emails sent to people that you don't know. It is difficult to get a response from cold emails, so it can be helpful to send out a lot of personally customized emails. Let's see how to do that with GPT-3(@bonta2022how).
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Company name: Bark Inc\nMy name: Mike\nWrite a cold outreach email" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nZach" max-tokens="256" box-rows="10" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
+This is neat, but we can do better. Let's add some more information to the prompt.
+
+### Using unstructured information
+
+Say you have the linkedin profile of the person you are sending the email to. You can add that information to the prompt to make the email more personalized. Let's use the [founder of Strive's LinkedIn](https://www.linkedin.com/in/snpranav/) as an example. We'll copy a bunch of information from his profile and add it to the prompt.
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Pranav Shikarpur  1st degree connection1st\nDeveloper Advocate. Problem Solver. Previously: Co-founder Strive, Intel ISEF Alum\n\nExperienceExperience\nThales Cloud Security logo\nDeveloper AdvocateDeveloper Advocate\nThales Cloud SecurityThales Cloud Security\nApr 2022 - Present · 1 yrApr 2022 - Present · 1 yr\n- Executed go-to-market and boosted developer engagement for Thales’s new data encryption product launch.\n- Spearheaded developer adoption of product at the RSA conference 2022 and KubeCon 2022.\n- Presented a talk at HashiCorp’s annual conference - HashiConf 2022 in LA - about “Securing Any Data Source”.- Executed go-to-market and boosted developer engagement for Thales’s new data encryption product launch. - Spearheaded developer adoption of product at the RSA conference 2022 and KubeCon 2022. - Presented a talk at HashiCorp’s annual conference - HashiConf 2022 in LA - about “Securing Any Data Source”.…see more\nSkills: Data Encryption Standard (DES) · Cryptography · Cybersecurity · Content Creation · Azure Kubernetes Service (AKS) · Google Kubernetes Engine (GKE)Skills: Data Encryption Standard (DES) · Cryptography · Cybersecurity · Content Creation · Azure Kubernetes Service (AKS) · Google Kubernetes Engine (GKE)\nStartup Shell logo\nDirector of Founder ResourcesDirector of Founder Resources\nStartup ShellStartup Shell\nFeb 2022 - Present · 1 yr 2 mosFeb 2022 - Present · 1 yr 2 mos\nCollege Park, Maryland, United StatesCollege Park, Maryland, United States\n- Closed partnerships of founder resources with various tech companies like Vercel, MongoDB, etc.\n- Sourced over $50,000 of credits and resources for founders at Startup Shell in the span of 3 months.- Closed partnerships of founder resources with various tech companies like Vercel, MongoDB, etc. - Sourced over $50,000 of credits and resources for founders at Startup Shell in the span of 3 months.\nSkills: Strategic PartnershipsSkills: Strategic Partnerships\nStrive Network logo\nCo-FounderCo-Founder\nStriveStrive\nDec 2020 - Nov 2021 · 1 yrDec 2020 - Nov 2021 · 1 yr\n- Founded India's first cohort-based learning platform for passion-related courses. Had 7K+ monthly active users.\n- Built the learning platform from the ground up and managed traffic to the website at scale and oversaw the sales and marketing execution.\n- Negotiated with 100X.VC and People Group to raise $50K seed funding for Strive.- Founded India's first cohort-based learning platform for passion-related courses. Had 7K+ monthly active users. - Built the learning platform from the ground up and managed traffic to the website at scale and oversaw the sales and marketing execution. - Negotiated with 100X.VC and People Group to raise $50K seed funding for Strive.…see more\nSkills: Go (Programming Language) · Python (Programming Language) · Product Management · Product Marketing · Next.js · Amazon EKS\n\nEducationEducation\nUniversity of Maryland logo\nUniversity of MarylandUniversity of Maryland\nUndergraduate, Mathematics and Computer ScienceUndergraduate, Mathematics and Computer Science\nAug 2019 - May 2023Aug 2019 - May 2023\nActivities and societies: Director of Founder Resources at Startup ShellActivities and societies: Director of Founder Resources at Startup Shell\nExploring the beauty of mathematics with the practicality of computer science\n\nWrite a cold outreach email to this founder, pitching him our product, Nightfall, which is a neo-CRM. My name is Max. Make the email formal, yet approachable. Mention relevant details from his LinkedIn information above to help pitch the product.Pranav Shikarpur  1st degree connection1st\nDeveloper Advocate. Problem Solver. Previously: Co-founder Strive, Intel ISEF Alum\n\nExperienceExperience\nThales Cloud Security logo\nDeveloper AdvocateDeveloper Advocate\nThales Cloud SecurityThales Cloud Security\nApr 2022 - Present · 1 yrApr 2022 - Present · 1 yr\n- Executed go-to-market and boosted developer engagement for Thales’s new data encryption product launch.\n- Spearheaded developer adoption of product at the RSA conference 2022 and KubeCon 2022.\n- Presented a talk at HashiCorp’s annual conference - HashiConf 2022 in LA - about “Securing Any Data Source”.- Executed go-to-market and boosted developer engagement for Thales’s new data encryption product launch. - Spearheaded developer adoption of product at the RSA conference 2022 and KubeCon 2022. - Presented a talk at HashiCorp’s annual conference - HashiConf 2022 in LA - about “Securing Any Data Source”.…see more\nSkills: Data Encryption Standard (DES) · Cryptography · Cybersecurity · Content Creation · Azure Kubernetes Service (AKS) · Google Kubernetes Engine (GKE)Skills: Data Encryption Standard (DES) · Cryptography · Cybersecurity · Content Creation · Azure Kubernetes Service (AKS) · Google Kubernetes Engine (GKE)\nStartup Shell logo\nDirector of Founder ResourcesDirector of Founder Resources\nStartup ShellStartup Shell\nFeb 2022 - Present · 1 yr 2 mosFeb 2022 - Present · 1 yr 2 mos\nCollege Park, Maryland, United StatesCollege Park, Maryland, United States\n- Closed partnerships of founder resources with various tech companies like Vercel, MongoDB, etc.\n- Sourced over $50,000 of credits and resources for founders at Startup Shell in the span of 3 months.- Closed partnerships of founder resources with various tech companies like Vercel, MongoDB, etc. - Sourced over $50,000 of credits and resources for founders at Startup Shell in the span of 3 months.\nSkills: Strategic PartnershipsSkills: Strategic Partnerships\nStrive Network logo\nCo-FounderCo-Founder\nStriveStrive\nDec 2020 - Nov 2021 · 1 yrDec 2020 - Nov 2021 · 1 yr\n- Founded India's first cohort-based learning platform for passion-related courses. Had 7K+ monthly active users.\n- Built the learning platform from the ground up and managed traffic to the website at scale and oversaw the sales and marketing execution.\n- Negotiated with 100X.VC and People Group to raise $50K seed funding for Strive.- Founded India's first cohort-based learning platform for passion-related courses. Had 7K+ monthly active users. - Built the learning platform from the ground up and managed traffic to the website at scale and oversaw the sales and marketing execution. - Negotiated with 100X.VC and People Group to raise $50K seed funding for Strive.…see more\nSkills: Go (Programming Language) · Python (Programming Language) · Product Management · Product Marketing · Next.js · Amazon EKS\n\nEducationEducation\nUniversity of Maryland logo\nUniversity of MarylandUniversity of Maryland\nUndergraduate, Mathematics and Computer ScienceUndergraduate, Mathematics and Computer Science\nAug 2019 - May 2023Aug 2019 - May 2023\nActivities and societies: Director of Founder Resources at Startup ShellActivities and societies: Director of Founder Resources at Startup Shell\nExploring the beauty of mathematics with the practicality of computer science\n\nWrite a cold outreach email to this founder, pitching him our product, Nightfall, which is a neo-CRM. My name is Max. Make the email formal, yet approachable. Mention relevant details from his LinkedIn information above to help pitch the product." initial-response="Dear Pranav,\n\nMy name is Max and I am reaching out to you because I believe our product, Nightfall, could be a great fit for you. As a co-founder of Strive and Director of Founder Resources at Startup Shell, I'm sure you understand the importance of having a reliable CRM to help manage customer relationships.\n\nNightfall is a neo-CRM that helps founders and entrepreneurs like yourself to easily manage customer relationships and track customer data. Our product is designed to be user-friendly and intuitive, so you can focus on growing your business without worrying about the technical details.\n\nI think you would find Nightfall to be a great asset to your business. If you're interested, I'd love to schedule a call to discuss further.\n\nBest,\nMax" max-tokens="256" box-rows="39" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
+It is super useful that LLMs can cut through the clutter of all the information we copied from LinkedIn. This cold outreach process can also be automated at a larger scale by scraping LinkedIn for relevant information.
+
+
+## Conclusion
+
+LLMs can help you write emails! Make sure you read what they write before sending it 😉
+
+## More
 
 - [Zapier](https://zapier.com/blog/use-openai-gpt-3-to-write-emails/)
