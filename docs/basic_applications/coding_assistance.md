@@ -320,7 +320,7 @@ Try experimenting with other commands:
 >\>echo "hello" > greeting.txt  
 >\>ls -l  
 
-ChatGPT should remember your changes (for a while, at least) and the final output should be something like:
+ChatGPT should remember your changes (for a while, at least) and the final output ought to be something like:
 
 ```
 -rw-r--r--  1 user  group   2048 Mar  3 14:23 file1.txt
