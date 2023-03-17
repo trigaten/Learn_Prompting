@@ -330,3 +330,7 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 ```
 
 A full discussion of using ChatGPT as a virtual machine can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
+
+---
+
+Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes).
