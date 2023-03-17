@@ -39,7 +39,7 @@ I source significant content from these people.
 [@hwchase17](https://twitter.com/hwchase17) Core dev of langchain<br/>
 [@omarsar0](https://twitter.com/omarsar0) DAIR AI lead
 
-Also check accounts that I follow: https://twitter.com/learn_prompting/following 
+Also check accounts that I follow: https://twitter.com/learnprompting/following 
 
 ## Even More
 
