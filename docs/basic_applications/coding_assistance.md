@@ -344,7 +344,7 @@ Try experimenting with other commands:
 >ls -l  
 ```
 
-ChatGPT should remember your changes (for a while, at least) and the final output should be something like:
+ChatGPT should remember your changes (for a while, at least) and the final output ought to something like:
 
 ```text
 // highlight-start
@@ -356,3 +356,7 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 ```
 
 A full discussion of using ChatGPT as a virtual machine can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
+
+---
+
+Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes).
