@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 ---
 
 # 🟢 Coding Assistance
@@ -23,11 +23,14 @@ You can use ChatGPT for debugging, code generation, reformatting, commenting, an
 
 Instructing ChatGPT to generate code is as simple as this:
 
->Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
+```text
+Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
+```
 
 The output will be something like:
 
-```
+```text
+// highlight-start
 import random
 
 prepositions = ['at', 'in', 'on', 'with', 'under', 'over']
@@ -41,6 +44,7 @@ noun = random.choice(nouns)
 madlib = f"I {verb} {preposition} the {noun}."
 
 print(madlib)
+// highlight-end
 ```
 
 Try it here:
@@ -51,9 +55,9 @@ openai-model="text-davinci-003"
 initial-prompt="Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects." 
 initial-response="" 
 max-tokens="512" 
-box-rows="3" 
-model-temp="0.7" 
-top-p="1">
+box-rows="5" 
+model-temp="0.0" 
+top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
@@ -61,21 +65,22 @@ top-p="1">
 
 You can ask ChatGPT to add comments to your code, and reformat it for legibility. After your prompt instruction, add three hashmarks and then paste in the code you'd like it to clean up:
 
->Please add line comments to this Python code and reformat it for legibility:  
->\#\#\#
->```
->import math
->amplitude = 30
->frequency = 2
->num_points = 50
->for i in range(num_points):
->    y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
->    print(' ' * (amplitude + y) + '*')
+```text
+Please add line comments to this Python code and reformat it for legibility:  
 
+import math
+amplitude = 30
+frequency = 2
+num_points = 50
+for i in range(num_points):
+    y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
+    print(' ' * (amplitude + y) + '*')
+```
 
 The output will be something like:
 
-```
+```text
+// highlight-start
 # Import the math module
 import math
 
@@ -91,27 +96,31 @@ for i in range(num_points):
     
     # Print a space for padding, followed by an asterisk at the appropriate position on the wave
     print(' ' * (amplitude + y) + '*')
+
+// highlight-end
 ```
 
 ## Debugging
 
 Not only can ChatGPT detect syntax errors in code, but it can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error one line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
 
->Please debug this Python code:  
->\#\#\#
->```
->1. pizza_cost = 100
->2. partygoers = 10
->3. while partygoers >= 0:
->4.    cost_per_person = pizza_cost / partygoers
->5.    print("the cost per person is $", "{:.2f}".format(cost_per_person))
->6.    partygoers -= 2
+```text
+Please debug this Python code:  
 
-
-The output will include the corrected while loop -- changed to ensure the denominator variable stays positive:
-
+1. pizza_cost = 100
+2. partygoers = 10
+3. while partygoers = 0:
+4.    cost_per_person = pizza_cost / partygoers
+5.    print("the cost per person is $", "{:.2f}".format(cost_per_person))
+6.    partygoers -= 2
 ```
+
+The output will include the corrected while loop, which is changed to ensure the denominator variable stays positive:
+
+```text
+// highlight-start
 3. while partygoers > 0:
+// highlight-end
 ```
 
 For more nuanced errors, you may need to add more specifics: the error message, environment variables, included libraries or variations in inputs. 
@@ -121,27 +130,29 @@ For more nuanced errors, you may need to add more specifics: the error message, 
 
 If your script is taking too long to execute, ChatGPT can optimize it. Here's an example of optimizing an inefficient script that finds prime numbers:
 
->Act like a very senior python developer. Please optimize this script:  
->\#\#\#
->```
->for num in range(1, 101):
->    if num > 1:
->        for i in range(2, num):
->            if (num % i) == 0:
->                break
->        else:
->            print(num)
->```
+```text
+Act like a very senior python developer. Please optimize this script:  
+
+for num in range(1, 101):
+    if num  1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num)
+```
 
 The output might be a script that uses the [Sieve of Eratosthenes algorithm](https://www.geeksforgeeks.org/sieve-of-eratosthenes/) for finding prime numbers:
 
-```
+```text
+// highlight-start
 numbers = list(range(2, 101))
 for i in numbers:
     for j in range(i * 2, 101, i):
         if j in numbers:
             numbers.remove(j)
 print(numbers)
+// highlight-end
 ```
 
 Note that we asked the bot to "act like a _senior_ developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask ChatGPT to write that script "as a _very junior_ developer."
@@ -151,34 +162,37 @@ Note that we asked the bot to "act like a _senior_ developer" to optimize the sc
 
 A very useful feature ChatGPT offers is the ability to port programs from one language to another. A typical use for this might be upgrading code in an older language to a more modern one:
 
->Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
->\#\#\#
->```
->IDENTIFICATION DIVISION.
->PROGRAM-ID. CALCULATE-SS-TAX.
->
->DATA DIVISION.
->WORKING-STORAGE SECTION.
->01 SALARY PIC 9(7)V99.
->01 SS-TAX PIC 9(7)V99.
->
->PROCEDURE DIVISION.
->DISPLAY "Enter employee's salary: ".
->ACCEPT SALARY.
->
->COMPUTE SS-TAX = SALARY * 0.062.
->
->DISPLAY "Social Security tax is: $", SS-TAX.
->STOP RUN.
->```
+```text
+Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
+
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. CALCULATE-SS-TAX.
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 SALARY PIC 9(7)V99.
+01 SS-TAX PIC 9(7)V99.
+
+PROCEDURE DIVISION.
+DISPLAY "Enter employee's salary: ".
+ACCEPT SALARY.
+
+COMPUTE SS-TAX = SALARY * 0.062.
+
+DISPLAY "Social Security tax is: $", SS-TAX.
+STOP RUN.
+```
 
 The output might be something like this:
 
-```
+```text
+// highlight-start
 salary = float(input("Enter employee's salary: "))
 ss_tax = salary * 0.062
 
 print("Social Security tax is: $", round(ss_tax, 2))
+// highlight-end
 ```
 
 
@@ -186,27 +200,26 @@ print("Social Security tax is: $", round(ss_tax, 2))
 
 What if you want ChatGPT to evaluate **multiple** files? Simply supply the filenames and paste the code for each:
 
->My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
->
->```
->BEGIN FILE 1: ./phrases/coming_and_going.py
->def hi(name):
->   print(f"Hello, {name}!")
->def bye(name):
->   print(f"Goodbye, {name}!")
->
->BEGIN FILE 2: ./conversation.py
->from phrases.coming_and_going import hi, bye
->hi("John")
->bye("John")
->```
+```text
+My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
 
-The output will be:
+BEGIN FILE 1: ./phrases/coming_and_going.py
+def hi(name):
+   print(f"Hello, {name}!")
+def bye(name):
+   print(f"Goodbye, {name}!")
 
-```
+BEGIN FILE 2: ./conversation.py
+from phrases.coming_and_going import hi, bye
+hi("John")
+bye("John")
+
+// highlight-start
 Hello, John!
 Goodbye, John!
+// highlight-end
 ```
+
 
 Using this technique, you can submit multiple files to ChatGPT in a single prompt and ask it to refactor the code. Alternatively, you can ask it to "memorize" each one and then execute it in a later prompt.
 
@@ -214,11 +227,14 @@ Using this technique, you can submit multiple files to ChatGPT in a single promp
 
 Not only can ChatGPT work with code, but it can simulate server environments like databases, web and email servers. Consider this prompt:
 
->Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
+```text
+Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
+```
 
 The output will be something like:
 
-```
+```text
+// highlight-start
 -- Create the "politics" database
 CREATE DATABASE politics;
 GO
@@ -236,16 +252,19 @@ CREATE TABLE politicians (
     date_of_death DATE
 );
 -- etc.
-
+// highlight-end
 ```
 
 From there, you can add columns, indexes and more:
 
->Add a column to the politicians table for the second-in-command and update it for each row.
+```
+Add a column to the politicians table for the second-in-command and update it for each row.
+```
 
 The output might be something like:
 
-```
+```text
+// highlight-start
 ALTER TABLE politicians ADD second_in_command VARCHAR(255);
 
 UPDATE politicians
@@ -257,30 +276,30 @@ SET second_in_command =
         -- add more cases for each politician
         ELSE NULL
     END;
-
+// highlight-end
 ```
-
 
 ## Simulating a Web Server
 
 ChatGPT can simulate many other servers and APIs. Here's an example of a prompt that simulates an Apache server response to specific browser request headers:
 
->Act as an Apache web server. How would you respond to these HTTP headers?
->
->```
->GET /example HTTP/1.1
->Host: www.example.com
->```
+```text
+Act as an Apache web server. How would you respond to these HTTP headers?
+
+GET /example HTTP/1.1
+Host: www.example.com
+```
 
 The output will be something like:
 
-```
+```text
+// highlight-start
 HTTP/1.1 200 OK
 Date: [current date and time]
 Server: Apache/2.4.41 (Ubuntu)
 Last-Modified: [date and time of last modification of the requested resource]
 Content-Type: [MIME type of the requested resource, e.g. text/html]
-
+// highlight-end
 ```
 
 Here are just some of the types of servers and APIs that ChatGPT can emulate:
@@ -303,30 +322,37 @@ Here are just some of the types of servers and APIs that ChatGPT can emulate:
 
 Since a shell within Linux (or Windows PowerShell) is also a programming language, you can interact with it using ChatGPT, and build an environment for your filesystem:
 
->Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
+```
+Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
+```
 
 The output will be something like:
 
-```
+```text
+// highlight-start
 -rw-r--r--  1 user  group   2048 Mar  3 14:23 file1.txt
 drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 -rwx------  1 user  group  16384 Feb 25 19:41 executable1
-
+// highlight-end
 ```
 
 Try experimenting with other commands:
 
->\>touch greeting.txt  
->\>echo "hello" > greeting.txt  
->\>ls -l  
+```text
+>touch greeting.txt  
+>echo "hello" > greeting.txt  
+>ls -l  
+```
 
 ChatGPT should remember your changes (for a while, at least) and the final output should be something like:
 
-```
+```text
+// highlight-start
 -rw-r--r--  1 user  group   2048 Mar  3 14:23 file1.txt
 drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 -rwx------  1 user  group  16384 Feb 25 19:41 executable1
 -rw-r--r--  1 user  group      6 Mar  4 16:15 greeting.txt
+// highlight-end
 ```
 
 A full discussion of using ChatGPT as a virtual machine can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).

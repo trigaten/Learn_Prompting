@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 60
 ---
 
-# 🟢 Different Voices, Different Choices
+# 🟢 Different Writing Styles
 
 AIs like [ChatGPT](https://chat.openai.com/chat) are known for crafting essays and blog articles in a heartbeat. But often, the articles they produce are generic and dry. You need to do something extra to give the words some spirit or pizzazz. 
 One of the fastest ways to do that is to specify a writing style or naming a famous author in the prompt.     
@@ -48,19 +48,16 @@ Or how about those “millennials”?
   <img src={friendship_millennial} style={{width: "750px"}} />
 </div>
 
-## Using writing samples
+## Copy Your Writing Style
 
-Sometimes, you just love a piece of writing but don’t know the author. Well, you don’t need to. You can simply feed GPT a sample of the writing and it will generate the response according to that style. 
-Simply add the sample to the prompt:
+
+What if you want GPT-3 to write an email or blog in **your** style?
+
+Simply showing it some previous content that you have written is enough. Here is an example, where we show GPT-3 some emails 'Dr. Rodriguez' has written in the past, and ask it to write a new email in the same style to a new patient, Mr. Inuez.
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Email #1: Subject - Appointment Confirmation\n\nDear John,\n\nI wanted to confirm your appointment with me, Dr. Smith, on May 1st, 2023 at 2:30 pm at HealthFirst Clinic. I look forward to meeting with you and discussing your health concerns.\n\nPlease arrive 15 minutes early to complete any necessary paperwork and bring a list of any medications you are currently taking. If you need to reschedule or cancel your appointment, please let us know at least 24 hours in advance.\n\nIf you have any questions or concerns before your appointment, please don't hesitate to reach out to us.\n\nBest regards,\nDr. Rodriguez\n\nEmail #2: Subject - Test Results\n\nDear Jane,\n\nI am writing to let you know that your recent blood test results have come in. Your cholesterol levels are within normal range, but your vitamin D levels are low. I would recommend that you start taking vitamin D supplements to improve your levels.\n\nBased on these results, I would also recommend that you schedule a follow-up appointment in 3 months to retest your vitamin D levels. If you have any questions or concerns, please don't hesitate to contact us.\n\nThank you,\nDr. Rodriguez\n\nEmail #3: Subject - Follow-Up Appointment\n\nDear Mark,\n\nI wanted to follow up with you after our last appointment and see how you are feeling. If you are still experiencing any back pain or have any new concerns, please let me know so we can discuss them during your upcoming appointment.\n\nYour next appointment is scheduled for June 15th, 2023 at 10:00 am at City Health Clinic. Please let us know if you need to reschedule or cancel.\n\nTake care,\nDr. Rodriguez\n\nWrite an email in the style of the above emails to a Mr. Inuez, asking if October 5th, 2023 works for a checkup appointment:" initial-response="Subject - Checkup Appointment\n\nDear Mr. Inuez,\n\nI hope this message finds you well. I am writing to inquire if October 5th, 2023 works for a checkup appointment with me, Dr. Rodriguez.\n\nDuring the appointment, we will discuss your health concerns and any changes in your medical history. Please arrive 15 minutes early to complete any necessary paperwork and bring a list of any medications you are currently taking.\n\nIf October 5th does not work for you, please let me know and we can find a different date that works better for you.\n\nThank you,\nDr. Rodriguez" max-tokens="256" box-rows="18" model-temp="0" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
  
-Write me a paragraph on the importance of friendship. Please write in this style: **[COPY & PASTE THE SAMPLE TEXT HERE. THE LONGER THE BETTER.]
-USING YOUR OWN WRITING SAMPLE**
-You can even feed your own writing sample so ChatGPT gives responses based on your writing style. The longer the sample, the better. 
-Again, simply include it in your prompt:
 
-Write me a paragraph on the importance of friendship. Please write in this style: **[COPY & PASTE YOUR OWN SAMPLE TEXT HERE. THE LONGER THE BETTER.]**
-
-This will solve the issue of style consistency. If you want to come up with new articles made with ChatGPT and make them look and sound the old ones made manually by you, this is key. 
-
-
-There’s still so much more depth and detail we can require from ChatGPT’s output, but this here will serve as a starting point for the absolute beginner.  
+<br/>You can input any text you have written in the past (emails, reports, blogs, etc.), and GPT-3/ChatGPT will usually be able to copy your style. The more text you put, the better it can copy your style.
