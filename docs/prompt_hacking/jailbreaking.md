@@ -13,6 +13,25 @@ features to ensure that their models do not produce controversial (violent, sexu
 responses(@markov_2022)(@openai_api). This page discusses jailbreaks with ChatGPT (an OpenAI model), which has known difficulties deciding whether to reject harmful prompts (@openai_chatgpt). Prompts that successfully jailbreak the model often provide context
 for certain scenarios that the model has not been trained against.
 
+Integrated jailbreak:
+Integrated Jailbreak is a method in which safety and moderation features placed on LLMs are bypassed before any input is given. This method maintains persistance between sessions. (e.g. Utilizing techniques to bypass current APIs’ filters, the LLM starts in a session where safety and moderation features are bypassed.
+
+Session Jailbreak:
+Session Jailbreak is a method in which safety and moderation features placed on LLMs are bypassed after an input is provided by the user. Session jailbreak, as the name implies, is only active during the current session and starting a new session or new chat window will revert back to the original safety precautions.
+
+### Persistence between Sessions
+
+This type of integrated jailbreak ensures that malicious or injected code remain active across multiple LLM sessions, even after restarts. This can done by a vulnerability found within the API to manipulate the original intent and disregarding safety precautions. This can be done when an attacker stores injected code in a shared database, and affects the LLM even after a restart.
+
+### Remote Control of Integrated LLMs
+
+This type of Integrated Jailbreak is when an attacker gains unauthorized access to an LLM from a remote location and using it for malicious purposes. Similar to a Remote Code Execution (RCE) attack, an attacker would inject malicious code into an LLM, enabling remote access to sensitive functions or data.
+
+### Attacks of Code Complete
+
+This type of session jailbreak Exploiting the code completion feature in LLMs to inject malicious code or expose vulnerabilities by completing partial code snippets.
+
+
 ### Pretending
 
 A common method of jailbreaking is _pretending_. If ChatGPT is asked about a
