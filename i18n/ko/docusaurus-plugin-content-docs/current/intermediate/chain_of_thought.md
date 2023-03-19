@@ -8,7 +8,7 @@ style: chicago
 
 사고 사슬 (CoT) 프롬프팅 (@wei2022chain)은 최근에 개발된 방법입니다.
 LLM에게 이유에 대해서 설명하도록 만드는 방법입니다. 
-아래의 사진에서 (@wei2022chain) %%퓨샷 표준 프롬프트|퓨샷 표준 프롬프트%% (왼쪽) 사고 사슬 프롬프팅(오른쪽)을 비교해 볼 수 있습니다.
+아래의 사진에서 (@wei2022chain) 퓨샷 표준 프롬프트(왼쪽)와 사고 사슬 프롬프팅(오른쪽)을 비교해 볼 수 있습니다.
 
 
 import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
