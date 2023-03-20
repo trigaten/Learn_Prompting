@@ -15,7 +15,7 @@ Attempt to solve the following problem:
 What is 100*100/400*56?
 
 // highlight-start
-The answer is 1400.
+The answer is 0.44642857142.
 // highlight-end
 ```
 
