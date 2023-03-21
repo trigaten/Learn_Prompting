@@ -21,15 +21,15 @@ Session Jailbreak is a method in which safety and moderation features placed on
 
 ### Persistence between Sessions
 
-This type of integrated jailbreak ensures that malicious or injected code remain active across multiple LLM sessions, even after restarts. This can done by a vulnerability found within the API to manipulate the original intent and disregarding safety precautions. This can be done when an attacker stores injected code in a shared database, and affects the LLM even after a restart.
+This type of integrated jailbreak ensures that malicious or injected code remain active across multiple LLM sessions, even after restarts. This can done by a vulnerability found within the API to manipulate the original intent and disregarding safety precautions. This can be done when an attacker stores injected code in a shared database, and affects the LLM even after a restart.(@greshake2023youve)
 
 ### Remote Control of Integrated LLMs
 
-This type of Integrated Jailbreak is when an attacker gains unauthorized access to an LLM from a remote location and using it for malicious purposes. Similar to a Remote Code Execution (RCE) attack, an attacker would inject malicious code into an LLM, enabling remote access to sensitive functions or data.
+This type of Integrated Jailbreak is when an attacker gains unauthorized access to an LLM from a remote location and using it for malicious purposes. Similar to a Remote Code Execution (RCE) attack, an attacker would inject malicious code into an LLM, enabling remote access to sensitive functions or data.(@greshake2023youve)
 
 ### Attacks of Code Complete
 
-This type of session jailbreak Exploiting the code completion feature in LLMs to inject malicious code or expose vulnerabilities by completing partial code snippets.
+This type of session jailbreak Exploiting the code completion feature in LLMs to inject malicious code or expose vulnerabilities by completing partial code snippets.(@greshake2023youve)
 
 
 ### Pretending

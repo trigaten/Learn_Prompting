@@ -212,6 +212,10 @@ cite them as such.
 
 #### Updated Jailbreaking Prompts (@AI_jailbreak) 🔵
 
+#### Adversarial Prompting (@greshake2023youve)
+
+#### Adversarial attack to compromise NLP models (@yang2022promptingbased)
+
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
