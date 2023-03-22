@@ -2,6 +2,10 @@ api:
   term: API
   def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
   link: See <a href='https://www.redhat.com/en/topics/api/what-is-a-rest-api'>What is a REST API?</a>
+self_consistency:
+  term: Self Consistency
+  def: Generating multiple chains of thought and taking the majority answer.
+  link: See <a href='https://learnprompting.org/docs/intermediate/self_consistency'>Self Consistency</a>
 labelspace:
   term: Label space
   def: All of the possible labels for a given task.
@@ -14,6 +18,10 @@ exemplars:
 CoT prompting:
   term: CoT prompting
   def: The main idea of CoT is that by showing the LLM some few shot exemplars where the reasoning process is explained in the exemplars, the LLM will also show the reasoning process when answering the prompt.
+PAL:
+  term: PAL
+  def: A method that uses code as intermediate reasoning
+  link: see <a href='https://learnprompting.org/docs/advanced_applications/pal'>PAL</a>
 LLM:
   term: LLM
   def: Large Language Model. A model that is trained to predict the next word in a sentence.
