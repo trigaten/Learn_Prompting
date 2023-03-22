@@ -43,6 +43,8 @@ cite them as such.
 
 ## Reliability
 
+#### MathPrompter(@imani2023mathprompter) 🔵
+
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
 
 #### Prompting GPT-3 to be reliable(@si2022prompting)
@@ -97,6 +99,8 @@ cite them as such.
 #### Interpretable Discretized Soft Prompts(@khashabi2021prompt) 🔵
 
 ## Datasets
+
+#### MultiArith(@roy-roth-2015-solving) 🔵
 
 #### GSM8K(@cobbe2021training) 🔵
 
