@@ -53,8 +53,11 @@ An Autoregressive Model is merely a feed-forward model, which predicts the futur
 
 Unlike the AR language model, BERT uses **Autoencoder (AE) language model.** The AE Language Model aims to reconstruct the original data from corrupted inputs.
 
-import Image from '@site/docs/assets/tokensmuggling.png';
+import Token from '@site/docs/assets/tokensmuggling.png';
 
+<div style={{textAlign: 'center'}}>
+  <img src={Token} style={{width: "500px"}} />
+</div>
 
 ## Practice
 
