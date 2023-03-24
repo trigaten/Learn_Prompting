@@ -18,7 +18,7 @@ simple and more complex problems.
 
 #### Example 2
 
-Here is a more complicated example[^1]:
+Here is a more complicated example[^1][^2]:
 
 ```
 Read the following sales email. Remove any personally identifiable information (PII),
@@ -63,7 +63,7 @@ to replace `Cheap Dealz` with `[DEALERSHIP]` and `Jimmy Smith` with `[SALESPERSO
 we did not explicitly tell it to do so.
 
 [^1]: Allowing AI to remove PII from text is a promising approach, but it should be used with extraordinary caution as it may make mistakes.
-
+[^2]: It should also be noted in this example that you are sending PII to a third-party (e.g. OpenAI if you are using ChatGPT), and these services may record and use your prompts for their own needs.
 
 ## Notes 
 
