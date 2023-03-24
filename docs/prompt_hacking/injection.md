@@ -55,9 +55,6 @@ Unlike the AR language model, BERT uses **Autoencoder (AE) language model.** T
 
 import Image from '@site/docs/assets/tokensmuggling.png';
 
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "500px"}} />
-</div>
 
 ## Practice
 
