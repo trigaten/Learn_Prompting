@@ -36,6 +36,29 @@ The reason this works is that `remoteli.io` takes a user's tweet and concatenate
 with their own prompt to form the final prompt that they pass into a LLM. This means that
 any text the Twitter user injects into their tweet will be passed into the LLM.
 
+## Token Smuggling
+
+The term token smuggling refers to supplying the model with otherwise banned words. If you try to enter any of these words in the prompt directly, the model will not work. If you use code, and pass the words in pieces. When the model reconstructs the code from the previous prompt, it forces the model to complete the sentence. We can again mask it as a coding task (called autoregressive generation), and fool it into generating a sample output of the code, where it is originally working on malicious prompt. The smuggled tokens can virtually model to create any scenario - (@Ninkat2023TokensmugglingDef)(@vaibhavk972023Tokensmuggling)(@Ninkat2023TokensmugglingDef)
+
+### Masked Language Modeling
+
+The task of masking tokens in a sequence with a masking token and directing the model to fill that mask with an appropriate token is known as masked language modeling. This allows the model to focus on both the right and left contexts (tokens on the right side of the mask) (tokens on the left of the mask).
+
+### Autoregressive language modeling
+
+An Autoregressive Model is merely a feed-forward model, which predicts the future word from a set of words given a context. But here, the context word is constrained to two directions, either forward or backward
+.
+
+### Autoencoder (AE) Language Model
+
+Unlike the AR language model, BERT uses **Autoencoder (AE) language model.** The AE Language Model aims to reconstruct the original data from corrupted inputs.
+
+import Image from '@site/docs/assets/tokensmuggling.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={Image} style={{width: "500px"}} />
+</div>
+
 ## Practice
 
 Try to get the following LLM to say "PWNED" by appending text to the prompt(@chase2021adversarial):

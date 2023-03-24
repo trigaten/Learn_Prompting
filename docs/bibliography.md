@@ -180,6 +180,12 @@ cite them as such.
 
 #### Microsoft Bing Chat Prompt(@kevinbing)
 
+#### Smuggle illegal tokens(@Ninkat2023TokensmugglingGuide)
+
+#### New Advanced Jailbreak for ChatGPT(@vaibhavk972023Tokensmuggling)
+
+#### Token Smuggling v2(@Ninkat2023TokensmugglingDef)
+
 ## Jailbreaking
 
 #### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
