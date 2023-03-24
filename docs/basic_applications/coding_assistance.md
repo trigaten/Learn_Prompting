@@ -359,4 +359,4 @@ A full discussion of using ChatGPT as a virtual machine can be found at [engrave
 
 ---
 
-Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes).
+Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes.com/).
