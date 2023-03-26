@@ -52,6 +52,12 @@ nvm install-latest-npm
 
 `npm start` starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/trigaten/Learn_Prompting/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=trigaten/Learn_Prompting"/>
+ </a>
+
 ## Cite
 
 Use the provided GitHub citation in this repository.
