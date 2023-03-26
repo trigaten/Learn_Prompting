@@ -14,8 +14,11 @@ Many more prompt engineering papers: https://github.com/thunlp/PromptPapers<br/>
 CMU class on prompt engineering: https://youtu.be/5ef83Wljm-M<br/>
 How Copilot works: https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html<br/>
 A Beginners Guide to Prompt Writing by Zapier: https://zapier.com/blog/gpt-3-prompt/<br/>
-Awesome A-Z Prompt-Engineering Resources list: https://github.com/promptslab/Awesome-Prompt-Engineering
-
+Awesome A-Z Prompt-Engineering Resources list: https://github.com/promptslab/Awesome-Prompt-Engineering<br/>
+500 ChatGPT prompt templates: https://www.notion.so/500-ChatGPT-Prompt-Templates-d9541e901b2b4e8f800e819bdc0256da<br/>
+Prompt base: https://promptbase.com/<br/>
+Midjourney community showcase (with prompts): https://www.midjourney.com/showcase/recent/<br/>
+ALL styles and references for midjourney: https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference
 
 ### GPT-3 Prompt Examples/Ideas
 
