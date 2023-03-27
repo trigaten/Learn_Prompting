@@ -39,7 +39,7 @@ role prompting is still at least a somewhat effective tool to interact with AIs.
 
 You can find some more interesting prompts in the [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts)
 repository on GitHub. These were built for *ChatGPT*, but they likely work with other AIs, and you can also
-use them as inpiration to build your own prompts. Let's see two examples:
+use them as inspiration to build your own prompts. Let's see two examples:
 
 > ### Act as an Etymologist
 > I want you to act as an etymologist. I will give you a word and you will research the origin of that word, tracing it
