@@ -451,7 +451,7 @@ Writes content, predicts outcomes or answers questions at your command.
 - [CodeSquire](https://codesquire.ai/)
 > AI code writing assistant for data scientists, engineers, and analysts. Get code completions and suggestions as you type.
 
-- [regex.ai] (https://regex.ai/)
+- [regex.ai](https://regex.ai/)
 - AI-Powered Regular Expression Solver
 
 ## Sales and Marketing
