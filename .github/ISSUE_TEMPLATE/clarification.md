@@ -5,7 +5,7 @@ title: Clarification
 labels: ''
 ---
 
-To assist us in addressing your concerns, please provide the following information:
+**To assist us in addressing your concerns, please provide the following information:**
 
 * Please describe the specific issue you are experiencing or the information you need clarification on.
 * Please indicate the page or location where you encountered the issue or require clarification.
