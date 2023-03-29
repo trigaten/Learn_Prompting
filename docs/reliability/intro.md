@@ -11,13 +11,14 @@ To a certain extent, most
 of the previous techniques covered have to do with improving completion
 accuracy, and thus reliability, in particular self-consistency(@wang2022selfconsistency).
 However, there are a number of other techniques that can be used to improve reliability,
-beyond basic prompting strategies.
+beyond basic prompting strategies. 
 
-%%LLMs|LLM%% exhibit various problems including hallucinations(@ye2022unreliability), 
+While %%LLMs|LLM%% display a high level of charitable reliability even in the face of actively misleading prompts(@webson2023itscomplicated), 
+they exhibit various problems including hallucinations(@ye2022unreliability), 
 flawed explanations with %%CoT|CoT prompting%% methods(@ye2022unreliability), and multiple biases
 including majority label bias, recency bias, and common token bias(@zhao2021calibrate). 
 Additionally, zero-shot CoT can be particularly biased when dealing with sensitive topics
-(@shaikh2022second).
+(@shaikh2022second). 
 
 Common solutions to some of these problems include calibrators to remove _a priori_ biases,
 and verifiers to score completions, as well as promoting diversity in completions.
