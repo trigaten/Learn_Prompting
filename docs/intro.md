@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Welcome to our introductory course on prompt engineering!
 
-Prompt engineering (PE) is the process of **communicating effectively with an AI to achieve desired results**. As artificial intelligence (AI) continues to advance rapidly, mastering prompt engineering has become an increasingly valuable and in-demand skill.
+Prompt engineering (PE) is the process of **communicating effectively with an AI to achieve desired results**. As progress in artificial intelligence (AI) continues to advance rapidly, mastering prompt engineering has become an increasingly valuable and in-demand skill.
 
 This course is tailored to **beginners**, making it the perfect starting point if you're new to AI and PE. However, even if you're not a beginner, you'll still find valuable insights within this course. This course is the **most comprehensive** prompt engineering course available, and the content ranges from an introduction to AI to advanced PE techniques.
 
