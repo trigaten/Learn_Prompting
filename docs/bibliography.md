@@ -40,6 +40,10 @@ cite them as such.
 
 #### Least to Most(@zhou2022leasttomost) 🔵
 
+#### Reframing Instructional Prompts to GPTk’s Language(@mishra2022reframing) 🔵
+
+#### The Turking Test: Can Language Models Understand Instructions?(@efrat2020turking) 🔵
+
 
 ## Reliability
 
