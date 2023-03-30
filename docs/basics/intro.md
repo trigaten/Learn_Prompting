@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
-We will begin by covering the basics of AI and describing why prompt engineering is so useful. If you already know about these topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
+This chapter introduces simple prompting techniques as well as terminology. In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. If you already know about the below topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
 
 ## What is AI?
 
