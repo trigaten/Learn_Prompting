@@ -4,7 +4,7 @@ sidebar_position: 2
 # 🟢 Giving Instructions
 
 One of the simplest prompting methods is just giving instructions. We already saw a simple instruction
-in a previous section (`What is 1,000,000 * 9,000? Make sure to put the right amount of zeros, even if there are many:`). However,
+in a previous section (`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`). However,
 modern AIs can follow much more complex instructions. 
 
 Below is an example that is a Dyno interactive embed. If you do not see it, make sure to turn Javascript on in your browser. Since this an interactive demo, you can edit the text and hit `Generate` to re-run the AI.
