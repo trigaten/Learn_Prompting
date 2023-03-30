@@ -4,12 +4,7 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
-This article is built for people with little to no experience with prompt engineering
-or even AI. The target audience here is everyone from non-technical 
-business students to non-technical adults. We will cover the basics of AI, and why you should 
-care about prompt engineering. 
-
-If you already know the basics of prompt engineering/AI, feel free to skip to the next article.
+We will begin by covering the basics of AI and describing why prompt engineering is so useful. If you already know about these topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
 
 ## What is AI?
 
@@ -51,9 +46,8 @@ to an AI, it can likely either do it for you or at least give you a starting poi
 
 ## How do I get started?
 
-This course will teach you how to communicate with AIs. 
 Read the rest of this chapter, then check out other chapters that interest you.
-In particular, the applied prompting section may be of interest if you would like
+In particular, the [applied prompting](https://learnprompting.org/docs/applied_prompting/overview) section may be of interest if you would like
 to see how professionals use AI to automate their work. You can experiment with AIs
 using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno embeds](https://learnprompting.org/docs/basics/intro#dyno-embeds) that you will see throughout this site.
 
@@ -61,7 +55,7 @@ Before reading the next article, it is important to note that you don't need any
 
 ### Dyno Embeds
 
-This course offers an interactive learning experience. You can practice the prompts and exercises discussed in the course using [Dyno](https://trydyno.com) embeds that are placed throughout the site.
+This course offers an interactive learning experience. You can experiment with exercises discussed in the course using [Dyno](https://trydyno.com) embeds that are placed throughout the site.
 
 Here is an **image** of what a Dyno embed looks like:
 
