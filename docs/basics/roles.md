@@ -29,11 +29,11 @@ When assigning a role to the AI, we are giving it some context. This context
 helps the AI understand the question better. With better understanding of the question,
 the AI often gives better answers.
 
-## Notes
-
+:::note
 This technique is no longer as effective with more modern AIs (e.g. GPT-3 davinci-003).
-However, I did use GPT-3 davinci-003 for this example, so it seems that 
+However, we did use GPT-3 davinci-003 for this example, so it seems that 
 role prompting is still at least a somewhat effective tool to interact with AIs.
+:::
 
 ## Examples
 
