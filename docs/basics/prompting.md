@@ -6,7 +6,7 @@ sidebar_position: 1
 In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
 The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
 a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a question, or
-as complex as multiple paragraphs. 
+as complex as huge chunks of text. 
 
 Here are two examples of prompts:
 
