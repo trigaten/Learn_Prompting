@@ -4,6 +4,13 @@ sidebar_position: 3
 
 # 🟢 Role Prompting
 
+import RolePrompt from '../assets/role_prompt.svg';
+
+<div style={{textAlign: 'center'}}>
+  <RolePrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>;
+</div>
+
+
 Another prompting technique is to assign a role to the AI. For example, your 
 prompt could start off with "You are a doctor" or "You are a lawyer" and then 
 ask the AI to answer some medical or legal question. Here is an example:
@@ -50,7 +57,3 @@ use them as inspiration to build your own prompts. Let's see two examples:
 > I want you to act as a lunatic. The lunatic's sentences are meaningless. The words used by lunatic are completely
 > arbitrary. The lunatic does not make logical sentences in any way. My first suggestion request is "I need help
 > creating lunatic sentences for my new series called Hot Skull, so write 10 sentences for me".
-
----
-
-🚧 This page needs citations.
