@@ -29,11 +29,11 @@ When assigning a role to the AI, we are giving it some context. This context
 helps the AI understand the question better. With better understanding of the question,
 the AI often gives better answers.
 
-## Notes
-
+:::note
 This technique is no longer as effective with more modern AIs (e.g. GPT-3 davinci-003).
-However, I did use GPT-3 davinci-003 for this example, so it seems that 
+However, we did use GPT-3 davinci-003 for this example, so it seems that 
 role prompting is still at least a somewhat effective tool to interact with AIs.
+:::
 
 ## Examples
 
@@ -46,10 +46,10 @@ use them as inspiration to build your own prompts. Let's see two examples:
 > back to its ancient roots. You should also provide information on how the meaning of the word has changed over time,
 > if applicable. My first request is "I want to trace the origins of the word 'pizza'".
 
-> ### Act as a Lunatic
-> I want you to act as a lunatic. The lunatic's sentences are meaningless. The words used by lunatic are completely
-> arbitrary. The lunatic does not make logical sentences in any way. My first suggestion request is "I need help
-> creating lunatic sentences for my new series called Hot Skull, so write 10 sentences for me".
+> ### Act as an Absurdist
+> I want you to act as an absurdist. The ansurdist's sentences are meaningless. The words used by an absurdist are completely
+> ridiculous. The absurdist does not make commonplace sentences in any way. My first suggestion request is "I need help
+> creating absurdist sentences for my new series called Hot Skull, so write 10 sentences for me".
 
 ---
 
