@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# 🟡 Generated Knowledge
+# 🟡 Conocimento Generado
 
 
 The idea behind the generated knowledge approach(@liu2021generated) is to ask the %%LLM|LLM%% to generate potentially useful information about a given question/prompt before generating a final response.
