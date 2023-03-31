@@ -2,15 +2,16 @@
 sidebar_position: 20000
 ---
 
-# ✨ Credits
+# ✨ Créditos
 
-Here is a growing list of people who have been instrumental in the creation of this course:
+He aquí una lista creciente de personas que han contribuido decisivamente a la creación de este curso:
 
-- [Chenglei Si](https://noviscl.github.io), many, many paper suggestions
-- [WesJD](https://wesleysmith.dev), Javascript pains, domain setup
+- [Chenglei Si](https://noviscl.github.io), muchas sugerencias
+- [WesJD](https://wesleysmith.dev), dolores javascript, configuración del dominio
 - Sulu, Docusaurus
-- [snpranav](https://twitter.com/snpranav), domain setup
-- [jayo78](https://github.com/jayo78), prefers his emojis on the left
-- [zeyuzhao](https://github.com/Zeyuzhao), prompter-in-training
-- [UMD CLIP Lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), lots of questions answered :)
+- [snpranav](https://twitter.com/snpranav), configuración del dominio
+- [jayo78](https://github.com/jayo78), prefiere sus emojis a la izquierda
+- [zeyuzhao](https://github.com/Zeyuzhao), Ingeniero de parámetros en práctica
+- [UMD CLIP Lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), muchas respuestas respondidas :)
 - [Wahub Ahmed](https://github.com/wahub-ahmed), jailbreaking
+- [dr-nefardio3058](https://github.com/dr-nefardio3058), tradució esta página a español

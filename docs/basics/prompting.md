@@ -6,7 +6,7 @@ sidebar_position: 1
 In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
 The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
 a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a question, or
-as complex as multiple paragraphs. 
+as complex as huge chunks of text. 
 
 Here are two examples of prompts:
 
@@ -49,7 +49,9 @@ answer `569350` (correct). Why is this the case? Why is telling the AI twice to 
 prompts that yield optimal results on our task? This last question, in particular,
 is the focus of the field of Prompt Engineering, as well as this course.
 
+:::caution
 One more thing, if you are running the above prompt in GPT-3, you should set temperature to 0 to remove randomness. 
+:::
 
 Read on to learn how to engineer good prompts!
 

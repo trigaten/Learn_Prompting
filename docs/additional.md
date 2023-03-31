@@ -25,7 +25,6 @@ sidebar_position: 3000
 * [Advanced Prompt Engineering](https://jamesbachini.com/advanced-midjourney-prompt-engineering/#midjourney-flags)
 * [Ordinary people prompts](https://www.ordinarypeopleprompts.com/)
 
-
 ### GPT-3 Prompt Examples/Ideas
 
 https://sharegpt.com <br/>
