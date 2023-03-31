@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# 🟡 Generated Knowledge
+# 🟡 Conocimento Generado
 
 
 El enfoque de conocimiento generado (@liu2021generated) pide al LLM que genere información 
