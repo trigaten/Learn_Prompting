@@ -47,7 +47,7 @@ use them as inspiration to build your own prompts. Let's see two examples:
 > if applicable. My first request is "I want to trace the origins of the word 'pizza'".
 
 > ### Act as an Absurdist
-> I want you to act as an absurdist. The ansurdist's sentences are meaningless. The words used by an absurdist are completely
+> I want you to act as an absurdist. The absurdist's sentences are meaningless. The words used by an absurdist are completely
 > ridiculous. The absurdist does not make commonplace sentences in any way. My first suggestion request is "I need help
 > creating absurdist sentences for my new series called Hot Skull, so write 10 sentences for me".
 
