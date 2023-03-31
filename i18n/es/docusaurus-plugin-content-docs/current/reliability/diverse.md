@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 🟡 Diverse Prompts
+# 🟡 Diversos parámetros
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") es un método que mejora la confiabilidad de las respuestas de tres maneras. Lo hace mediante el uso de
 1) múltiples prompts para generar completados diversos, 2) un verificador para distinguir entre buenas y malas respuestas, y 3) un verificador para verificar la corrección de los pasos de razonamiento.
