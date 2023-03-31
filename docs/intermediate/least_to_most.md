@@ -82,7 +82,7 @@ This approach may look very similar to Chain of Thought, but it is conceptually 
 
 ### Results
 
-On the last letter concatenation problem wiith 12 words, Chain of Thought is 34% accurate, while Least to Most is 74% accurate (the paper uses text-davinci-002 as a model).
+On the last letter concatenation problem with 12 words, Chain of Thought is 34% accurate, while Least to Most is 74% accurate (the paper uses text-davinci-002 as a model).
 
 ## Example: compositional generalization (SCAN)
 
