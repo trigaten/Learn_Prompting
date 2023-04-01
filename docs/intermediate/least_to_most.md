@@ -41,7 +41,7 @@ Let's ask a slightly complicated customer service question:
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
-By just solving the first subproblem, we were able to solve the entire problem. If GPT-3 did not return an answer immediatly, we could have solved the next subproblem and so on until it did return an answer. Note that we use `Let's go step by step.`. The addition of this phrase is not always necessary, but it helps for this example.
+By just solving the first subproblem, we were able to solve the entire problem. If GPT-3 did not return an answer immediately, we could have solved the next subproblem and so on until it did return an answer. Note that we use `Let's go step by step.`. The addition of this phrase is not always necessary, but it helps for this example.
 
 
 ## Example: letter concatenation
