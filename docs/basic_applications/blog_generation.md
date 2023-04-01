@@ -45,7 +45,7 @@ C. Suggestions for Care and Maintenance
 Wow, that's quite comprehensive. Maybe we want a slightly shorter post, so let's ask the AI to write a shorter version using this prompt:
 
 ```text
-That's a great outline, but a bit long. Consdense it to the main points:
+That's a great outline, but a bit long. Condense it to the main points:
 ```
 
 :::note
