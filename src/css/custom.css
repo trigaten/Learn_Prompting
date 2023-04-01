@@ -92,3 +92,6 @@ a[data-tooltip-html] {
 a[data-tooltip-html]:hover {
   text-decoration: none;
 }
+pre[class*="language-"] {
+  white-space: pre-wrap !important;
+}
