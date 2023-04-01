@@ -41,7 +41,7 @@ Here are some relevant emojis that you can use to convey the message and tone of
 // highlight-end
 ```
 
-These are good, but I like go sentence by sentence!
+These are good, but I like to go sentence by sentence!
 
 ## Sentence 1
 
