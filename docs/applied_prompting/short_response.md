@@ -33,7 +33,7 @@ The second prompt generates longer outputs with better structure on average. The
 
 ### Many discussion questions are not effective for prompting.
 
-> _"The Civil War a conflict over expansion? Agree our Disagree and why?"_
+> _"The Civil War a conflict over expansion? Agree or Disagree and why?"_
 
 Here is a real discussion question from a college history course. It is not worded correctly and is far too open ended. **To get good discussion responses, you need to rewrite the question into a well defined prompt.** A well defined prompt for the discussion question above could be:
 
