@@ -72,7 +72,9 @@ Build prompts, visually
 
 > ICE is a Python library and trace visualizer for language model programs.
 
+### [PTPT - Prompt To Plain Text](https://github.com/LeslieLeung/PTPT)
 
+> PTPT is an command-line tool that allows you to easily convert plain text files using pre-defined prompts with the help of ChatGPT. With PTPT, you can effortlessly create and share prompt formats, making collaboration and customization a breeze. Plus, by subscribing, you gain access to even more prompts to enhance your experience. If you're interested in prompt engineering, you can use PTPT to develop and share your prompts.
 
 
 ### Other
