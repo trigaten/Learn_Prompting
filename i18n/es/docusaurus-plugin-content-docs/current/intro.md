@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Bienvenidos
 
-Bienvenidos a este curso de Ingeniería en Prompt!
+Bienvenidos a este curso de Ingeniería de parámetros!
 
 Me gusta pensar que la Ingeniería en Prompt (PE) es cómo: **Cómo hablar con una AI para obtener lo que quieras**. 
 
