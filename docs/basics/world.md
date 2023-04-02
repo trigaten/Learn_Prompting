@@ -1,5 +1,5 @@
 ---
-sidebar_position: 200
+sidebar_position: 95
 ---
 # 🟢 Understanding AI Minds
 

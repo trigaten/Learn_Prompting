@@ -1,12 +1,12 @@
 ---
-sidebar_position: 10
+sidebar_position: 6
 locale: en-us
 style: chicago
 ---
 
-# 🟢 More on Prompting
+# 🟢 Combining Techniques
 
-As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, multiple questions-answer examples, and even other prompts (what!?).
+As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, and multiple input-output examples. However, thus far, we have only examined separate classes of prompts. Combining these different prompting techniques can lead to more powerful prompts. 
 
 Here is an example of a prompt that includes context, instructions, and multiple examples:
 

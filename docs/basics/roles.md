@@ -7,7 +7,7 @@ sidebar_position: 3
 import RolePrompt from '../assets/role_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <RolePrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>;
+  <RolePrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
 </div>
 
 

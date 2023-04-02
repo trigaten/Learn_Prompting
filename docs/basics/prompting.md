@@ -7,7 +7,7 @@ import Prompt from '../assets/prompt.svg';
 
 
 <div style={{textAlign: 'center'}}>
-  <Prompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>;
+  <Prompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
 </div>
 
 

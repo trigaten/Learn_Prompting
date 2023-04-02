@@ -7,7 +7,7 @@ import InstructionPrompt from '../assets/instruction_prompt.svg';
 
 
 <div style={{textAlign: 'center'}}>
-  <InstructionPrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>;
+  <InstructionPrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
 </div>
 
 
