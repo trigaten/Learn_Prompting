@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # 🟡 LLMs Utilizando Herramientas
 
-MRKL Systems (@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, siguiendo una logica fonetica inglesa, se prouncia "miracle") son una **arquitectura neuro-simbólica** que combina LLMs (computación neuronal) y herramientas externas como calculadoras (computación simbólica) para resolver problemas complejos.
+MRKL Systems (@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, siguiendo una lógica fonética inglesa, se prouncia "miracle") son una **arquitectura neuro-simbólica** que combina LLMs (computación neuronal) y herramientas externas como calculadoras (computación simbólica) para resolver problemas complejos.
 
 Un sistema MRKL está compuesto por un conjunto de módulos (por ejemplo, una calculadora, una API del clima, una base de datos, etc.) y un enrutador que decide cómo "enrutar" las consultas en lenguaje natural entrantes al módulo apropiado.
 
