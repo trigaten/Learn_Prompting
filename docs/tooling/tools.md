@@ -31,7 +31,7 @@ easier and more robust:
 
 > Prompt-learning is the latest paradigm to adapt pre-trained language models (PLMs) to downstream NLP tasks, which modifies the input text with a textual template and directly uses PLMs to conduct pre-trained tasks. OpenPrompt is a library built upon PyTorch and provides a standard, flexible and extensible framework to deploy the prompt-learning pipeline. OpenPrompt supports loading PLMs directly from huggingface transformers. In the future, we will also support PLMs implemented by other libraries.
 
-### [BetterPrompt](https://github.com/krrishdholakia/betterprompt)
+### [BetterPrompt](https://github.com/stjordanis/betterprompt)
 
 > ⚡ Test suite for LLM prompts before pushing them to PROD ⚡
 
