@@ -31,7 +31,7 @@ easier and more robust:
 
 > Prompt-learning is the latest paradigm to adapt pre-trained language models (PLMs) to downstream NLP tasks, which modifies the input text with a textual template and directly uses PLMs to conduct pre-trained tasks. OpenPrompt is a library built upon PyTorch and provides a standard, flexible and extensible framework to deploy the prompt-learning pipeline. OpenPrompt supports loading PLMs directly from huggingface transformers. In the future, we will also support PLMs implemented by other libraries.
 
-### [BetterPrompt](https://github.com/krrishdholakia/betterprompt)
+### [BetterPrompt](https://github.com/stjordanis/betterprompt)
 
 > ⚡ Test suite for LLM prompts before pushing them to PROD ⚡
 
@@ -72,7 +72,9 @@ Build prompts, visually
 
 > ICE is a Python library and trace visualizer for language model programs.
 
+### [PTPT - Prompt To Plain Text](https://github.com/LeslieLeung/PTPT)
 
+> PTPT is an command-line tool that allows you to easily convert plain text files using pre-defined prompts with the help of ChatGPT. With PTPT, you can effortlessly create and share prompt formats, making collaboration and customization a breeze. Plus, by subscribing, you gain access to even more prompts to enhance your experience. If you're interested in prompt engineering, you can use PTPT to develop and share your prompts.
 
 
 ### Other
