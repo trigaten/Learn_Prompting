@@ -348,6 +348,10 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Tome](https://beta.tome.app)
 > Unlock your best work with Tome's AI-powered storytelling format.
 
+
+- [Superus](https://www.superusapp.com)
+> AI-Powered Maps for Ultimate Visual Storytelling
+
 - [Superside](https://www.superside.com/)
 > DesignOps tech for persuasive pitch decks, sales decks, or PowerPoint presentations.
 
