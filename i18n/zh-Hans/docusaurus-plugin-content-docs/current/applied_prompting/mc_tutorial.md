@@ -152,10 +152,10 @@ e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是�
 
 输出是 **正确的**!
 
-::: 注意
+:::warning
 GPT模型在执行算术运算方面表现不佳。你可能会注意到，虽然表达式书写正确，但计算出的数字却不正确。请尝试添加短语：`将表达式作为答案，而不是数字`以禁用计算。
 
-你可能会对MRKL（https://learnprompting.org/docs/advanced_applications/mrkl）@karpas2022mrkl) 感兴趣，这是一种将GPT与计算器等外部工具结合起来解决这个问题的范例。
+你可能会对[MRKL](https://learnprompting.org/docs/advanced_applications/mrkl)(@karpas2022mrkl) 感兴趣，这是一种将GPT与计算器等外部工具结合起来解决这个问题的范例。
 :::
 
 Written by [zeyuzhao](https://github.com/Zeyuzhao).
