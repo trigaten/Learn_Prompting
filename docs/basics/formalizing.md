@@ -44,7 +44,7 @@ March 1, 2022: Sustained a concussion in a car accident. Admitted to the hospita
 You are a doctor. Read this medical history and predict risks for the patient:
 ```
 
-However, the second prompt is likely preferred since the instruction is the last part of the prompt. This is good since the LLM is less likely to simply write more context instead of following the instruction. For example, if given the first prompt, the LLM might add a new line: `March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`
+However, the second prompt is likely preferable since the instruction is the last part of the prompt. This is good since the LLM is less likely to simply write more context instead of following the instruction. For example, if given the first prompt, the LLM might add a new line: `March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`
 
 
 ## A "Standard" Prompt
