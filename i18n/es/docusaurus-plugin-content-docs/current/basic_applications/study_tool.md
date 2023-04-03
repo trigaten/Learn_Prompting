@@ -19,7 +19,7 @@ No tenía idea de lo que significaba **less derived woods** y Google solo mostra
 ```text
 Debido a las adaptaciones a condiciones xéricas y la presencia de maderas menos evolucionadas en Pereskioideae, la familia Cactaceae es una de las más interesantes tanto anatómica como morfológicamente.
 
-What do less derived woods mean?
+¿Qué significa la expresión "less derived woods"?
 
 // highlight-start
 En este contexto, "less derived woods" se refiere a la forma ancestral o primitiva de la madera que se encuentra en la evolución temprana de las plantas. Estas maderas carecen de estructuras y características especializadas que evolucionaron más tarde en las plantas más avanzadas o derivadas. En la subfamilia Pereskioideae de la familia Cactaceae, la madera es menos derivada en comparación con otras subfamilias y es más similar a la madera que se encuentra en las plantas no cactáceas. Se cree que la madera menos derivada en Pereskioideae es una adaptación a los ambientes más húmedos y menos xéricos en los que estas plantas crecen en comparación con otros cactus.
