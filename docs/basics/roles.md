@@ -4,6 +4,13 @@ sidebar_position: 3
 
 # 🟢 Role Prompting
 
+import RolePrompt from '../assets/role_prompt.svg';
+
+<div style={{textAlign: 'center'}}>
+  <RolePrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+</div>
+
+
 Another prompting technique is to assign a role to the AI. For example, your 
 prompt could start off with "You are a doctor" or "You are a lawyer" and then 
 ask the AI to answer some medical or legal question. Here is an example:

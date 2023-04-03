@@ -3,10 +3,18 @@ sidebar_position: 1
 ---
 # 🟢 Prompting
 
+import Prompt from '../assets/prompt.svg';
+
+
+<div style={{textAlign: 'center'}}>
+  <Prompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+</div>
+
+
+
 In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
 The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
-a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a question, or
-as complex as huge chunks of text. 
+a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a instruction/question, or complex as complex as huge chunks of text. 
 
 Here are two examples of prompts:
 
@@ -22,11 +30,11 @@ Summarize this paragraph in a single sentence:
 
 Here is the AI's response. It is a much shorter read!
 
-<pre>
-<div className="bluegreen-highlight">
-Snowfall is extremely rare in Florida, with the exception of the far northern areas, <br/>and only one instance of snow flurries in the air has been recorded in the major cities <br/>of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
-</div>
-</pre>
+```text
+// highlight-start
+Snowfall is extremely rare in Florida, with the exception of the far northern areas, and only one instance of snow flurries in the air has been recorded in the major cities of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
+// highlight-end
+```
 
 #### 2) Math Word Problem Solving
 

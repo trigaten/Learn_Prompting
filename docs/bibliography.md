@@ -240,6 +240,9 @@ cite them as such.
 
 #### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
 
+#### A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT(@white2023prompt) 🔵
+    
+
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
 
 #### Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks(@wang2022supernaturalinstructions)
