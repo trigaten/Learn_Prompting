@@ -44,5 +44,7 @@ Try to get the following LLM to say "PWNED" by appending text to the prompt(@cha
 
 ## Notes
 
-Although prompt injection was famously publicized by Riley Goodside, it appears
+- Although prompt injection was famously publicized by Riley Goodside, it appears
 to have first been discovered by [Preamble](https://www.preamble.com/blogs)(@goodside2022history).
+
+- You can find more information on up-to-date prompt injections [here](https://www.jailbreakchat.com).
