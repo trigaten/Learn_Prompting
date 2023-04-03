@@ -6,7 +6,7 @@ sidebar_position: 30
 
 Una de nuestras formas favoritas de utilizar los LLMs es como herramienta de estudio. En particular, es útil para explicar términos confusos, así como para hacerte preguntas sobre el contenido de los exámenes.
 
-## Explaining Terms
+## Explicando Términos
 
 Recientemente estaba leyendo un libro de texto sobre cactus (@nobel2002cacti) y vi este pasaje:
 
