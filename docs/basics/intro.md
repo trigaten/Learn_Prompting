@@ -4,6 +4,13 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
+import Techniques from '../assets/techniques.svg';
+
+<div style={{textAlign: 'center'}}>
+  <Techniques style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+</div>
+
+
 This chapter introduces simple prompting techniques as well as terminology. In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. If you already know about the below topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
 
 ## What is AI?

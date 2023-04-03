@@ -30,11 +30,11 @@ Summarize this paragraph in a single sentence:
 
 Here is the AI's response. It is a much shorter read!
 
-<pre>
-<div className="bluegreen-highlight">
-Snowfall is extremely rare in Florida, with the exception of the far northern areas, <br/>and only one instance of snow flurries in the air has been recorded in the major cities <br/>of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
-</div>
-</pre>
+```text
+// highlight-start
+Snowfall is extremely rare in Florida, with the exception of the far northern areas, and only one instance of snow flurries in the air has been recorded in the major cities of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
+// highlight-end
+```
 
 #### 2) Math Word Problem Solving
 
