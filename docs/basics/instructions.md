@@ -3,6 +3,14 @@ sidebar_position: 2
 ---
 # 🟢 Giving Instructions
 
+import InstructionPrompt from '../assets/instruction_prompt.svg';
+
+
+<div style={{textAlign: 'center'}}>
+  <InstructionPrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+</div>
+
+
 One of the simplest prompting methods is just giving instructions (sometimes called *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). We already saw a simple instruction
 in a previous section (`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`). However,
 modern AIs can follow much more complex instructions. 
