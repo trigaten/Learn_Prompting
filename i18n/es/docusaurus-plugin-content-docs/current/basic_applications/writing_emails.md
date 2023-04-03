@@ -2,11 +2,14 @@
 sidebar_position: 10
 ---
 
+
 # 🟢 Escribir un correo electrónico
 
 Escribir correos electrónicos puede ser una tarea que consume mucho tiempo, especialmente cuando necesitas leer primero un correo electrónico que recibiste. Esta sección cubrirá casos de uso que van desde un simple correo electrónico para informarle a tu jefe que estás enfermo hoy, hasta correos electrónicos más complejos para clientes potenciales sin relación previa.
 
 ## Correo electrónico básico de ausencia por enfermedad
+=======
+
 
 Imagina que un día te despiertas enfermo/a y no puedes ir a trabajar (o simplemente no quieres 😈). Aquí hay una guía simple que te ayuda a escribir un correo electrónico a tu jefe para informarle que estás enfermo/a.
 

@@ -21,7 +21,7 @@ p("Positive" | "Input: nothing Sentiment:") = 0.9
 p("Negative" | "Input: nothing Sentiment:") = 0.1
 ```
 
-Given these label probabilites for a context-free input, we know that the LLM's 
+Given these label probabilities for a context-free input, we know that the LLM's 
 **output distribution** is likely biased
 towards the label `Positive`. This may cause the LLM to favor `Positive`
 for all inputs, even if the input is not actually positive.
