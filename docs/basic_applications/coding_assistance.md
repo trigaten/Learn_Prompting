@@ -2,7 +2,7 @@
 sidebar_position: 40
 ---
 
-# 🟢 Coding Assistance
+# 🟡 Coding Assistance
 
 You can use ChatGPT for debugging, code generation, reformatting, commenting, and more. It can work with code in over 40 programming languages. 
 

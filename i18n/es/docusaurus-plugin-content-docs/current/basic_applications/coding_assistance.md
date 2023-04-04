@@ -2,7 +2,9 @@
 sidebar_position: 40
 ---
 
+
 # 🟢 Asistencia de código
+
 
 Puedes usar ChatGPT para depurar, generar código, reformatear, comentar y más. Puede trabajar con código en más de 40 lenguajes de programación.
 
