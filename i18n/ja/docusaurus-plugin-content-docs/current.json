@@ -1,0 +1,71 @@
+{
+  "sidebar.tutorialSidebar.category.😃 Basics": {
+    "message": "😃 基礎"
+  },
+  "sidebar.tutorialSidebar.category.😃 Basics.link.generated-index.description": {
+    "message": "プロンプトエンジニアリングの導入と基本的なテクニック"
+  },
+  "sidebar.tutorialSidebar.category.💼 Basic Applications": {
+    "message": "💼 アプリケーション基礎"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate": {
+    "message": "🧙‍♂️ 中級"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate.link.generated-index.description": {
+    "message": "プロンプトエンジニアリングの導入と基本的なテクニック"
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting": {
+    "message": "🧪 プロンプティング応用"
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting.link.generated-index.description": {
+    "message": "コミュニティメンバーによるプロンプトエンジニアリングプロセスの完全なウォークスルー"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications": {
+    "message": "🚀 アプリケーション上級"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications.link.generated-index.description": {
+    "message": "非常に強力でより高度なプロンプトエンジニアリングの応用"
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability": {
+    "message": "⚖️ 信頼性"
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability.link.generated-index.description": {
+    "message": "LLM の信頼性を高める方法"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting": {
+    "message": "🖼️ 画像プロンプティング"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting.link.generated-index.description": {
+    "message": "DALLE や Stable Diffusion などのテキストから画像を出力するモデルのプロンプト技術!"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking": {
+    "message": "🔓 プロンプトハッキング"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking.link.generated-index.description": {
+    "message": "ハッキング――プロンプトエンジニアリングのためのね"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling": {
+    "message": "🔨 ツール"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling.link.generated-index.description": {
+    "message": "プロンプトエンジニアリングのための IDE"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs": {
+    "message": "プロンプトエンジニアリングのための IDE"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs.link.generated-index.description": {
+    "message": "プロンプトエンジニアリングのための IDE."
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning": {
+    "message": "💪 プロンプトチューニング"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning.link.generated-index.description": {
+    "message": "漸進的に微調整可能なプロンプトエンジニアリング"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous": {
+    "message": "🎲 その他"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous.link.generated-index.description": {
+    "message": "その他"
+  }
+}
