@@ -6,9 +6,9 @@ sidebar_position: 3000
 
 ## Ressources
 
-Une vidéo d'introduction fantastique à PE : https://youtube.com/watch?v=dOxUroR57xs&feature=shares
+Une vidéo d'introduction fantastique sur le PE : https://youtube.com/watch?v=dOxUroR57xs&feature=shares
 
-Un très bon guide d'ingénierie de prompts courts : https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api
+Un très bon guide court sur le Prompt Engineering : https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api
 
 Une excellente introduction à l'ingénierie de prompts : https://humanloop.com/blog/prompt-engineering-101
 
@@ -47,7 +47,7 @@ Je trouve du contenu significatif auprès de ces personnes.
 
 [@chillzaza_](https://mobile.twitter.com/chillzaza_) Ingénierie de prompts, outils, toolbot
 
-[@mathemagic1an](https://mobile.twitter.com/mathemagic1an) Diverses incitations, informations sur PE, GPT3
+[@mathemagic1an](https://mobile.twitter.com/mathemagic1an) Prompts divers, informations sur PE, GPT3
 
 [@goodside](https://twitter.com/goodside/status/1588247865503010816) Injection de prompts, outillage PE
 
@@ -56,9 +56,9 @@ Je trouve du contenu significatif auprès de ces personnes.
 [@omarsar0](https://twitter.com/omarsar0) Lead DAIR AI
 
 
-Veuillez également vérifier les comptes que je suis : https://twitter.com/learnprompting/following 
+Voir aussi les comptes que je suis : https://twitter.com/learnprompting/following 
 
 
 ## Encore Plus
 
-Vérifiez les [problèmes ouverts](https://github.com/trigaten/Learn_Prompting/issues) et les [PRs](https://github.com/trigaten/Learn_Prompting/pulls) :)
+Consultez les [problèmes ouverts](https://github.com/trigaten/Learn_Prompting/issues) et les [PRs](https://github.com/trigaten/Learn_Prompting/pulls) :)
