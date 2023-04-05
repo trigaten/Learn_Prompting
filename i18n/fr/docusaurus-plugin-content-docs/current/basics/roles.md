@@ -1,3 +1,6 @@
+---
+sidebar_position: 100
+---
 # 🟢 Prompting de rôle
 
 Une autre technique de prompting consiste à attribuer un rôle à l'IA. Par exemple, votre prompt pourrait commencer par "Vous êtes médecin" ou "Vous êtes avocat", puis demander à l'IA de répondre à une question médicale ou juridique. Voici un exemple:

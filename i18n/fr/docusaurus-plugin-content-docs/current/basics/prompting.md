@@ -1,3 +1,6 @@
+---
+sidebar_position: 10
+---
 # 🟢 Prompting
 
 Dans le chapitre précédent, nous avons discuté de l'IA et de la manière dont les humains peuvent demander aux IA d'effectuer des tâches. Le processus consistant à demander à une IA d'effectuer une tâche est appelé prompting[1](https://learnprompting.org/docs/basics/prompting#fn-1). Nous donnons à l'IA un ensemble d'instructions (le prompt) et elle exécute la tâche. Les prompts peuvent être aussi simples qu'une question ou aussi complexes que plusieurs paragraphes.
