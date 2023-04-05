@@ -58,7 +58,7 @@ Les articles ont un système de notation basé sur la difficulté d'un sujet et 
 
 Remarque : même si pour 🔴🟣 l'expertise du domaine est utile, vous serez généralement toujours en mesure de comprendre l'article sans connaissance préalable.
 
-## Chapitres[](https://learnprompting.org/docs/intro#chapters)
+## [Chapitres](https://learnprompting.org/docs/intro#chapters)
 
 ---
 
