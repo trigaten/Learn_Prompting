@@ -1,6 +1,6 @@
 # Learn Prompting
 
-[![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40LearnPrompting&style=social&url=https%3A%2F%2Ftwitter.com%2FLearnPrompting)](https://twitter.com/learn_prompting)
+[![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40learnprompting&style=social&url=https%3A%2F%2Ftwitter.com%2Flearnprompting)](https://twitter.com/learnprompting)
 [![](https://dcbadge.vercel.app/api/server/7enStJXQzD?compact=true&style=flat)](https://discord.gg/7enStJXQzD)
 ![Website](https://img.shields.io/website?down_message=offline%20%3A%28&up_message=learnprompting.org&url=https%3A%2F%2Flearnprompting.org)
 
@@ -51,6 +51,12 @@ nvm install-latest-npm
 
 
 `npm start` starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/trigaten/Learn_Prompting/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=trigaten/Learn_Prompting"/>
+ </a>
 
 ## Cite
 

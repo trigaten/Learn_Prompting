@@ -135,7 +135,7 @@ Chatbot:"""
 
 def get_response(conversation_history, user_input):
     prompt = chatbot_prompt.replace(
-        "<conversation_history>", conversation_history).replace("<user input>", user_input)
+        "<conversation history>", conversation_history).replace("<user input>", user_input)
 
     # Get the response from GPT-3
     response = openai.Completion.create(

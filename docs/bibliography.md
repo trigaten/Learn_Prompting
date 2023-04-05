@@ -40,8 +40,14 @@ cite them as such.
 
 #### Least to Most(@zhou2022leasttomost) 🔵
 
+#### Reframing Instructional Prompts to GPTk’s Language(@mishra2022reframing) 🔵
+
+#### The Turking Test: Can Language Models Understand Instructions?(@efrat2020turking) 🔵
+
 
 ## Reliability
+
+#### MathPrompter(@imani2023mathprompter) 🔵
 
 #### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
 
@@ -97,6 +103,8 @@ cite them as such.
 #### Interpretable Discretized Soft Prompts(@khashabi2021prompt) 🔵
 
 ## Datasets
+
+#### MultiArith(@roy-roth-2015-solving) 🔵
 
 #### GSM8K(@cobbe2021training) 🔵
 
@@ -231,6 +239,9 @@ cite them as such.
 #### Prompting Is Programming: A Query Language For Large Language Models(@beurerkellner2022prompting)
 
 #### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
+
+#### A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT(@white2023prompt) 🔵
+    
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
 

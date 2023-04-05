@@ -5,7 +5,7 @@ sidebar_position: 99
 
 [Midjourney](https://www.midjourney.com) is an AI image generator that operates through a Discord bot interface as well as a web app (an API version of Midjourney is planned). The process for generating images with Midjourney follows the same fundamental principles as other AI image generators, including the use of prompts to guide the generation process. 
 
-One of the unique features of Midjourney compared to other AI image generators is its ability to create visually striking and artisticly composed images. This is attributed to the model's specialized training, which enables it to produce high-quality images with specific artistic parameters (more about this in "Advanced Prompts" > "Parameters").
+One of the unique features of Midjourney compared to other AI image generators is its ability to create visually striking and artistically composed images. This is attributed to the model's specialized training, which enables it to produce high-quality images with specific artistic parameters (more about this in "Advanced Prompts" > "Parameters").
 
 You can experiment with the Midjourney Bot in the [Learn Prompting Discord](http://learnprompting.org/discord) or in the [official Midjourney Discord server](https://discord.gg/midjourney).
 
@@ -151,7 +151,7 @@ Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 
 ### Seed:
 
-`--seed [value]` sets a seed number which defines the starting point (noise field) for the image generation. The seeds for each image are generated randomly when not specidfied with the seed parameter. Using the same seed number and prompt will produce similar images.
+`--seed [value]` sets a seed number which defines the starting point (noise field) for the image generation. The seeds for each image are generated randomly when not specified with the seed parameter. Using the same seed number and prompt will produce similar images.
 
 Example: `astronaut on a horse --seed 123`
 
