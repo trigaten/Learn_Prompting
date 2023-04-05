@@ -1,18 +1,12 @@
 # Bienvenue
 
-# Bienvenue
-
----
-
 Bienvenue dans ce cours sur le prompt engineering!
 
 Je préfère penser que l'Ingénierie d'invites (PE) est : **comment parler à l'IA pour qu'elle fasse ce que vous voulez**.
 
 Avec de nombreuses avancées récentes en matière d'intelligence artificielle (IA), cette compétence est devenue une compétence particulièrement importante. Ce cours se concentre sur les techniques de PE appliquées. Une connaissance minimale de l'apprentissage automatique est attendue. Si vous n'avez aucune idée de ce que signifie ces concepts (IA, apprentissage automatique, programmation, etc.), je vous recommande de commencer par la section [Bases](https://learnprompting.org/fr/docs/category/-basics).
 
-## La partie la plus importante de ce cours est votre rétroaction !
-
----
+## La partie la plus importante de ce cours est votre rétroaction!
 
 Si vous avez des questions, des commentaires ou des suggestions, vous pouvez : 
 
@@ -26,8 +20,6 @@ Même la plus petite quantité de commentaires est très utile !
 
 ## Philosophie du cours
 
----
-
 **Itérations rapides** - Étant donné que du nouveau contenu sur le PE est publié presque quotidiennement, je mettrai fréquemment à jour ce cours avec de courts articles sur les nouvelles techniques. Faites-moi savoir de quoi vous voulez en savoir plus !
 
 Une partie de cette philosophie est **l'itération d'erreur**. Si jamais vous voyez quelque chose que vous ne comprenez pas tout à fait, même quelque chose de petit, n’hésitez pas à me contacter en **créant un [rapport sur GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)!**
@@ -39,8 +31,6 @@ Une partie de cette philosophie est **l'itération d'erreur**. Si jamais vous vo
 On philosophera plus là-dessus quand on aura le temps 😊
 
 ## Comment lire
-
----
 
 Il ne faut pas lire tous les chapitres dans l'ordre. Lisez ce qui vous intéresse !
 
@@ -59,8 +49,6 @@ Les articles ont un système de notation basé sur la difficulté d'un sujet et 
 Remarque : même si pour 🔴🟣 l'expertise du domaine est utile, vous serez généralement toujours en mesure de comprendre l'article sans connaissance préalable.
 
 ## [Chapitres](https://learnprompting.org/docs/intro#chapters)
-
----
 
 Voici un résumé rapide de chaque chapitre :
 
@@ -83,7 +71,5 @@ Voici un résumé rapide de chaque chapitre :
 **Réglage de Prompt** : Ajustez et personnalisez vos prompts grâce à des grad
 
 ## Note
-
----
 
 Durant l’entièreté de la formation, la traduction française des pages ne va pas être appliquée à 100 %, les explications seront toutes entièrement traduites, cependant, les termes techniques tels que “Prompt Engineering” (qui pourrait être traduit par “Ingénierie d’invites”) seront laissés en anglais dans le but de vous donner les termes les plus utilisés dans les domaines étudiés et donc de vous permettre de plus facilement vous intégrer au sein de la communauté spécialisée dans le prompting.
