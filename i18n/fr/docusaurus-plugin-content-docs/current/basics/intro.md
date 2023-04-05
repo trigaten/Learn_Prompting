@@ -1,3 +1,6 @@
+---
+sidebar_position: 0
+---
 # 🟢 Introduction
 
 Cet article est conçu pour les personnes ayant peu ou pas d'expérience dans les secteurs de Prompt engineering ou même d'IA. Le public cible ici est tout le monde, des étudiants aux adultes non expérimentés dans ces secteurs. Nous couvrirons les bases de l'IA et pourquoi vous devriez vous soucier du prompt engineering.

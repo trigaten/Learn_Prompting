@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # 🟢 Donner des instructions
 
 L'une des méthodes les plus simples de prompting consiste simplement à donner des instructions. Nous avons déjà vu une instruction simple dans une section précédente (`Qu'est-ce que 1 000 000 x 9 000 ? Assurez-vous de mettre le bon nombre de zéros, même s'il y en a beaucoup :`). Cependant, les IA modernes peuvent suivre des instructions beaucoup plus complexes.

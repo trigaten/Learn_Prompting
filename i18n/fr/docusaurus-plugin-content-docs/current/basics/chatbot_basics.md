@@ -1,3 +1,6 @@
+---
+sidebar_position: 80
+---
 # 🟢 Les bases du chatbot
 
 import Chatbots from '@site/docs/assets/chatbot.svg';
@@ -56,6 +59,9 @@ Exemple : (Étudiant){Philosophie} [Répondre] Quel est l'avantage de choisir ce
 
 Si vous comprenez et êtes prêt à commencer, répondez uniquement par "oui".
 ```
+
+import unprimed_question from '@site/docs/assets/unprimed_question.png';
+import primed_question from '@site/docs/assets/primed_question.png';
 
 Vous trouverez ci-dessous un exemple de question non amorcée posée à ChatGPT sur les domaines les plus intéressants de la philosophie. Nous pouvons voir qu’il utilise une liste, parle de manière générale et dépassionnée, et n'est pas très précis dans ses explications.
 
