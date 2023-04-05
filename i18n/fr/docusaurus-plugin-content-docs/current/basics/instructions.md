@@ -54,10 +54,6 @@ E-mail : [ADRESSE E-MAIL]
 
 C'est très cool de voir comment le modèle peut extrapoler à partir des instructions. Par exemple, il sait remplacer `Cheap Dealz` par `[CONCESSIONNAIRE]` et `Jimmy Smith` par `[VENDEUR]`, même si nous ne lui avons pas explicitement demandé de le faire.
 
-# Notes[](https://learnprompting.org/docs/basics/instructions#notes)
-
-🚧 Cette page a besoin de citations 🚧
-
 ---
 
 1. Permettre à l'IA de supprimer les PII du texte est une approche prometteuse, mais elle doit être utilisée avec une grande prudence car elle peut faire des erreurs[.↩](https://learnprompting.org/docs/basics/instructions#fnref-1)
