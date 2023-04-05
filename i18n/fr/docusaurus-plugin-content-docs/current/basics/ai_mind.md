@@ -1,10 +1,14 @@
 # 🟢 Comprendre la pensée IA
 
+import Brain from '@site/docs/assets/brain.svg';
+
+
+<div style={{textAlign: 'center'}}>
+  <Brain style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+</div>
+
+
 Bonjour cher lecteur, félicitations d'avoir franchi le chapitre d'introduction. Vous avez pris un excellent départ dans ce domaine passionnant. Avant de commencer à lire le reste du cours, il y a quelques petites choses que vous devez savoir sur les différentes IA et leur fonctionnement.
-
-![Exemple d’un fichier texte de description généré avec une simple image](%F0%9F%9F%A2%20Comprendre%20la%20pense%CC%81e%20IA%20bad97b5a077d4e06a907bacc1e934e37/Untitled.png)
-
-Exemple d’un fichier texte de description généré avec une simple image
 
 ## Les différentes IA
 
