@@ -1,5 +1,5 @@
 ---
-sidebar_position: 100
+sidebar_position: 3
 ---
 # 🟢 Prompting de rôle
 
