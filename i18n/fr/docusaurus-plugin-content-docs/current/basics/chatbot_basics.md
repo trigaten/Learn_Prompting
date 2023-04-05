@@ -1,6 +1,6 @@
 # 🟢 Les bases du chatbot
 
-import Chatbots from '../assets/chatbot.svg';
+import Chatbots from '@site/docs/assets/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
   <Chatbots style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
