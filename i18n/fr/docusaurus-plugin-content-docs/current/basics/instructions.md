@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # 🟢 Donner des instructions
 
 L'une des méthodes les plus simples de prompting consiste simplement à donner des instructions. Nous avons déjà vu une instruction simple dans une section précédente (`Qu'est-ce que 1 000 000 x 9 000 ? Assurez-vous de mettre le bon nombre de zéros, même s'il y en a beaucoup :`). Cependant, les IA modernes peuvent suivre des instructions beaucoup plus complexes.
@@ -53,10 +56,6 @@ E-mail : [ADRESSE E-MAIL]
 ```
 
 C'est très cool de voir comment le modèle peut extrapoler à partir des instructions. Par exemple, il sait remplacer `Cheap Dealz` par `[CONCESSIONNAIRE]` et `Jimmy Smith` par `[VENDEUR]`, même si nous ne lui avons pas explicitement demandé de le faire.
-
-# Notes[](https://learnprompting.org/docs/basics/instructions#notes)
-
-🚧 Cette page a besoin de citations 🚧
 
 ---
 
