@@ -1,4 +1,4 @@
-# Learn Prompting
+# Apprendre le "Prompting"
 
 [![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40learnprompting&style=social&url=https%3A%2F%2Ftwitter.com%2Flearnprompting)](https://twitter.com/learnprompting)
 [![](https://dcbadge.vercel.app/api/server/7enStJXQzD?compact=true&style=flat)](https://discord.gg/7enStJXQzD)
@@ -7,42 +7,40 @@
 
 https://learnprompting.org
 
-This website is a free, open-source guide on prompt engineering. Contributions are welcome!
-Harsh criticism is welcome too!
+Ce portail est un guide gratuit et libre accès sur l'ingénierie d'invites. Les contributions sont les bienvenues !
+Les critiques acerbes sont également les bienvenues !
 
-## Contribution Guidelines
+## Directives relatives aux contributions
 
-We welcome contributions in any form.
+Nous acceptons les contributions sous toutes leurs formes.
 
-We are actively looking for:
+Nous recherchons activement :
 
-- content suggestions
-- content/art contributions
-- typos :)
+- Des suggestions de contenu
+- Des contributions au contenu et à l'art
+- Correction des fautes de frappe :)
 
+## Développement local
 
+Commencez par installer [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) et [node](https://nodejs.org/en/download/).
 
-## Local Development
-
-First, install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [node](https://nodejs.org/en/download/).
-
-Make sure you are using Node 18.0.0 or higher (`node -v`). Then, run the following commands in a terminal:
+Assurez-vous que vous utilisez Node 18.0.0 ou une version plus récente (`node -v`). Ensuite, lancez les commandes suivantes dans un terminal :
 ```
-# download the website code with git
+# télécharger le code du site web avec git
 git clone https://github.com/trigaten/Learn_Prompting.git
-# enter the project directory
+# saisir le répertoire du projet
 cd Learn_Prompting
-# install node modules
+# installer les modules de node
 npm i
-# run the website locally
+# exécuter le site web localement
 npm start
 ```
 
-If you get an error related to the node version, you probably are using an older version of node.
+Si vous obtenez une erreur liée à la version de node, vous utilisez probablement une version plus ancien de ce dernier.
 
-Make sure the newer version appears higher in your path than any older versions. 
+Assurez-vous que la version la plus récente apparaît plus haut dans votre arborescence que les versions plus anciennes. 
 
-Alternatively, you can use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to install the latest version of node. Install nvm, then do the following:
+Alternativement, vous pouvez utiliser [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) pour installer la dernière version de node. Installez nvm, puis procédez comme suit :
 ```
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -50,9 +48,9 @@ nvm install-latest-npm
 ```
 
 
-`npm start` starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+`npm start` démarre un serveur de développement local et ouvre une fenêtre de navigateur. La plupart des changements sont répercutés en direct sans qu'il soit nécessaire de redémarrer le serveur.
 
-## Thanks to all contributors ❤
+## Merci à tous les contributeurs ❤
 
  <a href = "https://github.com/trigaten/Learn_Prompting/graphs/contributors">
    <img src = "https://contrib.rocks/image?repo=trigaten/Learn_Prompting"/>
@@ -60,4 +58,4 @@ nvm install-latest-npm
 
 ## Cite
 
-Use the provided GitHub citation in this repository.
+Utilisez la citation GitHub fournie dans ce dépôt.
