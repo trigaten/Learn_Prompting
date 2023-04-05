@@ -11,60 +11,72 @@ import Techniques from '../assets/techniques.svg';
 </div>
 
 
-This chapter introduces simple prompting techniques as well as terminology. In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. If you already know about the below topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
+Ce chapitre présente des techniques simples de créations d'invites ainsi que la terminologie du domaine. Pour comprendre l'ingénierie des invites, vous devez d'abord comprendre quelques concepts de base relatifs à l'intelligence artificielle. Si vous maîtrisez déjà les sujets ci-dessous, n'hésitez pas à passer directement au chapitre suivant. [next article](https://learnprompting.org/docs/basics/prompting).
 
-## What is AI?
+## Qu'est-ce que l'IA ?
 
-For our purposes, artificial intelligence (AI) is a field in which people have created
-"smart" algorithms that "think" like humans[^1]. These algorithms can write **essays**, 
-solve **math problems**, and create **art**. Recent advances in the field have created AIs
-so advanced that they can write convincing **sales emails**, **news articles**, and even 
-**win [art competitions](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
+Pour ce qui nous concerne, l'intelligence artificielle (IA) est un domaine dans lequel 
+des personnes ont créé des algorithmes "intelligents" qui "pensent" comme des humains[^1]. 
+Ces algorithmes peuvent écrire des **exposés**, résoudre des **problèmes de mathématiques** 
+et créer de **l'art**. Des avancées récentes dans ce domaine ont permis de créer des IA si 
+avancées qu'elles peuvent écrire des **courriels de vente** convaincants, des **articles de presse**, 
+et même **gagner des [concours d'art](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
 
-AI is currently revolutionizing many industries, including **journalism**, **healthcare**, and
-**education**. You will likely see it deployed in your workplace/classroom soon if you have not
-already. Although AI is extremely useful, it requires humans to direct it on what to do.
-Often AIs are like very smart five-year-olds. They can do a lot of things, but they need 
-careful instruction to do them well.
+L'IA révolutionne actuellement de nombreux secteurs, notamment le **journalisme**, la **santé** et l'**éducation**. Si ce n'est pas déjà le cas, vous la verrez probablement bientôt déployée sur votre lieu de travail ou dans votre salle de classe. Bien que l'IA soit extrêmement efficace, elle a néanmoins besoin de l'aide des humains pour déterminer ce qu'elle doit faire.
+En général, les IA sont comparables à des enfants de cinq ans très intelligents. Elles sont capables de réaliser de nombreuses tâches, mais elles ont besoin d'instructions précises pour bien les accomplir.
 
-Being able to properly direct AIs is a very powerful skill. So, how do you communicate with them? 
-The AIs this course discusses understand English (and other languages),
-so we can usually just describe tasks that we want done. For example, we can tell an AI to
-`Write an essay about the benefits of AI` and it would say[^2]:
+Être capable de guider adéquatement les IA est une aptitude extrêmement précieuse. Alors, quelle est la marche à suivre pour bien communiquer avec elles ? 
+Les IA dont il est question dans ce cours maîtrisent l'anglais (et d'autres langues),
+nous pouvons donc généralement nous contenter de décrire les tâches que nous voulons accomplir en termes simples de la vie courrante. Par exemple, nous pouvons dire à une IA d'
+`Écrire un exposé sur les avantages de l'IA` et elle répondra[^2] :
 
 ```
-In recent years, Artificial Intelligence (AI) has become a hot topic among the tech world. With its potential to revolutionize many aspects of our lives, AI is becoming increasingly relevant as technology continues to develop. From its applications in healthcare and transportation to its use in education and manufacturing, AI has already shown us its immense potential to benefit society in multiple ways.
+Au cours des dernières années, l'intelligence artificielle (IA) est devenue un thème porteur dans le monde de la technologie. Pouvant révolutionner de
+nombreux aspects de notre vie, l'IA devient de plus en plus pertinente au fur et à mesure que la technologie évolue. Qu'il s'agisse d'applications dans
+le domaine de la santé, des transports, de l'éducation ou de la production industrielle, l'IA a déjà démontré son immense potentiel pour le bénéfice de
+la société, et ce de plusieurs manières.
 
-The most obvious benefit of AI is its ability to automate mundane tasks. AI systems can be used to automate large-scale operations, such as data analysis, customer service, and even the production of goods. This frees up human labor to focus on complex, creative tasks that require more human intelligence and ingenuity. AI can also be used to analyze large amounts of data and make decisions in a fraction of the time it would take a human. This can be beneficial in industries such as finance, where AI can detect patterns in the stock market and offer insights that would otherwise go unnoticed.
+L'avantage le plus évident de l'IA est sa capacité à automatiser des tâches courantes. Les systèmes d'IA peuvent être utilisés pour automatiser des 
+opérations à grande échelle, telles que l'analyse de données, le service à la clientèle et même la production de biens. Le travail humain est ainsi
+libéré et peut se concentrer sur des tâches complexes et créatives qui requièrent davantage d'intelligence et de génie humain. L'IA peut également être
+utilisée pour analyser de grandes quantités de données et prendre des décisions en une fraction du temps nécessaire à un humain. Cela peut être très
+utile dans des secteurs tels que la finance, où l'IA peut détecter des schémas dans le marché boursier et offrir des perspectives qui, autrement, passeraient inaperçues.
 
-AI can also be used to make predictions and generate insights that can be used to improve efficiency and accuracy. For instance, AI can be used to predict customer trends and preferences, helping businesses make better decisions and increase profits. AI can also be used to identify potential risks and opportunities in various industries, such as finance, healthcare, and manufacturing. This can help companies make informed decisions and reduce the risk of costly mistakes.
+L'IA peut également être utilisée pour faire des prédictions et générer des informations qui peuvent être utilisées pour améliorer l'efficacité et la
+précision. Par exemple, l'IA peut être utilisée pour prédire les tendances et les préférences des clients, ce qui permet aux entreprises de prendre de 
+meilleures décisions et d'augmenter leurs bénéfices. L'IA peut également être utilisée pour identifier les risques et les opportunités potentiels dans 
+différents secteurs, tels que la finance, les services de santé et l'industrie manufacturière. Les entreprises peuvent ainsi prendre des décisions 
+éclairées et réduire le risque d'erreurs coûteuses.
 
-Finally, AI can be used to improve our understanding of the world. AI can be used to analyze large datasets and generate insights that can be used to better understand the world around us. This can be used to help us better understand the impacts of climate change, develop new treatments for diseases, and even predict events such as earthquakes and floods.
+Enfin, l'IA peut être utilisée pour améliorer notre compréhension du monde. Elle peut être utilisée pour analyser de vastes ensembles de données et 
+générer des informations qui peuvent être utilisées pour mieux comprendre le monde qui nous entoure. Elle peut nous aider à mieux comprendre les effets 
+du changement climatique, à mettre au point de nouveaux traitements pour les maladies et même à prédire des événements tels que les tremblements de 
+terre et les inondations.
 
-Overall, AI has the potential to revolutionize many aspects of our lives. From automating mundane tasks to generating insights and predictions, AI can be used to improve efficiency, accuracy, and our understanding of the world. As technology continues to develop, AI will become increasingly relevant and its potential to benefit society will only grow.
+Dans l'ensemble, l'IA a le potentiel de révolutionner de nombreux aspects de notre vie. De l'automatisation de tâches courantes à la production 
+d'informations et de prédictions, l'IA peut être utilisée pour améliorer l'efficacité, la précision et notre compréhension du monde. Au fur et à mesure
+que la technologie se perfectionne, l'IA deviendra de plus en plus pertinente et son utilité pour la société ne fera que croître.
 ```
 
-## Why should I care?
+## Pourquoi devrais-je m'en préoccuper ?
 
-AI can be used to automate tasks that you spend countless hours doing *right now*.
-We mentioned several examples above, but you can also consider any slightly repetitive task you do.
-It could be writing emails, writing reports, or even writing code. If you can describe the task
-to an AI, it can likely either do it for you or at least give you a starting point. 
+L'IA peut être utilisée pour automatiser des tâches qui vous coûtent d'innombrables heures *en ce moment même*.
+Nous avons mentionné plusieurs exemples ci-dessus, mais vous pouvez également envisager n'importe quelle tâche quelque peu répétitive de votre quotidien.
+Il peut s'agir d'écrire des courriels, des rapports ou même du code. Si vous pouvez décrire cette tâche
+à une IA, celle-ci pourra probablement la réaliser à votre place ou au moins vous donner des pistes de travail ou un point de départ.
 
-## How do I get started?
+## Par où commencer ?
 
-Read the rest of this chapter, then check out other chapters that interest you.
-In particular, the [applied prompting](https://learnprompting.org/docs/applied_prompting/overview) section may be of interest if you would like
-to see how professionals use AI to automate their work. You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno embeds](https://learnprompting.org/docs/basics/intro#dyno-embeds) that you will see throughout this site.
+Vous pouvez commencer par lire le reste de ce chapitre, puis consulter d'autres chapitres qui vous intéressent.
+En particulier, la section sur les [invites appliquées] (https://learnprompting.org/docs/applied_prompting/overview) peut vous intéresser si vous souhaitez voir comment les professionnels utilisent l'IA pour automatiser leur travail. Vous pouvez expérimenter avec des IA en utilisant des ressources telles que [Playground](https://beta.openai.com/playground), [d'autres IDE](https://learnprompting.org/docs/tooling/IDEs/intro), ou simplement en utilisant les [Dyno embeds](https://learnprompting.org/docs/basics/intro#dyno-embeds) interactifs que vous verrez sur ce site.
 
-Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
+Avant de lire le prochain article, il est important de noter qu'il n'est pas nécessaire d'avoir des connaissances techniques pour faire de l'ingénierie d'invite. La plupart du temps, il s'agit de procéder par tâtonnements et d'apprendre tout au long du processus.
 
 ### Dyno Embeds
 
-This course offers an interactive learning experience. You can experiment with exercises discussed in the course using [Dyno](https://trydyno.com) embeds that are placed throughout the site.
+Ce cours offre une expérience d'apprentissage interactive. Vous pouvez expérimenter les exercices abordés dans le cours en utilisant les éléments [Dyno](https://trydyno.com) qui sont placés un peu partout sur le site.
 
-Here is an **image** of what a Dyno embed looks like:
+Voici une **illustration** de ce à quoi ressemble un Dyno Embed :
 
 import dyno from '../assets/dyno_example.png';
 import key from '../assets/API_key.png';
@@ -73,7 +85,7 @@ import key from '../assets/API_key.png';
   <img src={dyno} style={{width: "750px"}} />
 </div>
 
-You should be able to see an embed that looks exactly like this image right below this paragraph. If you can't, you may need to enable JavaScript or use a different browser.
+Vous devriez pouvoir voir un lien qui ressemble exactement à cette image juste en dessous de ce paragraphe. Si ce n'est pas le cas, il se peut que vous deviez activer Javascript sur votre navigateur ou que vous deviez changer de fureteur.
 
 <hr/>
 Embed here:
@@ -82,22 +94,22 @@ Embed here:
 </div>
 <hr/>
 
-Assuming that you can see it, click on the **Generate** button. If this is your first time using it (or you are in a new browser/have cleared cookies), it will ask you to input an [OpenAI API key](https://platform.openai.com/account/api-keys). You can get a free key by clicking [this link](https://platform.openai.com/account/api-keys) and signing up for an OpenAI account. This key allows you to use OpenAI's AIs to generate text in the Dyno embeds. 
+En supposant que vous puissiez le voir, cliquez sur le bouton **Generate**. Si c'est la première fois que vous l'utilisez (ou si vous utilisez un autre navigateur ou si vous avez effacé les cookies), il vous sera demandé d'entrer une [clé API OpenAI] (https://platform.openai.com/account/api-keys). Vous pouvez obtenir une clé gratuite en cliquant sur [ce lien] (https://platform.openai.com/account/api-keys) et en créant un compte OpenAI. Cette clé vous permet d'utiliser les IA d'OpenAI pour générer du texte dans les embeds Dyno sur ce site.
 
 :::note
-Although OpenAI provides free credits, you will eventually have to pay to use their AI. Fortunately, it is [relatively cheap](https://openai.com/pricing)!
+Bien qu'OpenAI fournisse des crédits gratuits, il vous faudra éventuellement payer pour utiliser leur IA une fois ces crédits épuisés. Heureusement, le prix d'utilisation est [relativement abordable] (https://openai.com/pricing) !
 :::
 
-When you navigate to the [OpenAI API key](https://platform.openai.com/account/api-keys) page, click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
+Lorsque vous naviguez sur la page [OpenAI API key](https://platform.openai.com/account/api-keys), cliquez sur le bouton **Create new secret key**. Une fenêtre contextuelle s'ouvrira, contenant une chaîne de texte comme celle-ci :
 
 <div style={{textAlign: 'center'}}>
   <img src={key} style={{width: "750px"}} />
 </div>
 
-Put this key into the Dyno embed and hit **Save**. You should now be able to use the Dyno embeds throughout this site.
+Insérez cette clé dans le Dyno embed et cliquez sur **Save**. Vous devriez maintenant pouvoir utiliser les éléments Dyno sur l'ensemble de ce site.
 
-Now you have all of the information that you need to get started. Happy Learning!
+Vous avez maintenant toutes les informations dont vous avez besoin pour démarrer votre aventure dans l'univers de l’ingénierie d’invites ! Bon apprentissage !
 
 
-[^1]: Technically, they are not "thinking" like humans, but this is a simple way to explain it.
-[^2]: An AI (GPT-3 davinci-003) did in fact write this.
+[^1] : Techniquement, les IA ne "pensent" pas comme les humains, mais c'est une façon simplifiée de l'expliquer.
+[^2] : C'est une IA (GPT-3 davinci-003) qui a écrit ce texte.
