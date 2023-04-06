@@ -51,7 +51,7 @@ GPT-3 *n'est* PAS déterministe : https://twitter.com/BorisMPower/status/1608522
 Je trouve du contenu significatif auprès de ces personnes.
 
 
-[@chillzaza_](https://mobile.twitter.com/chillzaza_) Ingénierie de prompts, outils, toolbot
+[@chillzaza_](https://mobile.twitter.com/chillzaza_) Prompt Engineering, outils, toolbot
 
 [@mathemagic1an](https://mobile.twitter.com/mathemagic1an) Prompts divers, informations sur PE, GPT3
 
