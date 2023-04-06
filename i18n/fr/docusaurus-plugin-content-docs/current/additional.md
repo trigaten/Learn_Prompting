@@ -22,7 +22,7 @@ Comment fonctionne Copilot : https://thakkarparth007.github.io/copilot-explorer/
 
 Un guide de débutants pour l'écriture de prompts de Zapier : https://zapier.com/blog/gpt-3-prompt/
 
-Une liste de ressources impressionnante sur l'ingénierie des prompts de A à Z : https://github.com/promptslab/Awesome-Prompt-Engineering
+Une liste de ressources impressionnante sur le Prompt Engineering de A à Z : https://github.com/promptslab/Awesome-Prompt-Engineering
 
 500 modèles de prompts ChatGPT : https://www.notion.so/500-ChatGPT-Prompt-Templates-d9541e901b2b4e8f800e819bdc0256da
 
