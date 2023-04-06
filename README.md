@@ -3,6 +3,8 @@
 [![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40learnprompting&style=social&url=https%3A%2F%2Ftwitter.com%2Flearnprompting)](https://twitter.com/learnprompting)
 [![](https://dcbadge.vercel.app/api/server/7enStJXQzD?compact=true&style=flat)](https://discord.gg/7enStJXQzD)
 ![Website](https://img.shields.io/website?down_message=offline%20%3A%28&up_message=learnprompting.org&url=https%3A%2F%2Flearnprompting.org)
+[![Version](https://img.shields.io/badge/version-v1.2.3-brightgreen.svg)](https://github.com/{trigaten}/{Learn_Prompting}/releases/tag/{version})
+[![License](https://img.shields.io/badge/License-CCA-blue.svg)](https://opensource.org/licenses/{license})
 [![Open Source Love png3](https://badges.frapsoft.com/os/v3/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 
