@@ -16,7 +16,7 @@ Une belle collection de documents de Prompt Engineering : https://github.com/dai
 
 De nombreux autres documents de Prompt Engineering : https://github.com/thunlp/PromptPapers
 
-Cours CMU sur l'ingénierie de prompts : https://youtu.be/5ef83Wljm-M
+Cours CMU sur le Prompt Engineering : https://youtu.be/5ef83Wljm-M
 
 Comment fonctionne Copilot : https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html
 
