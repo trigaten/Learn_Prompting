@@ -34,6 +34,7 @@ Is this tweet positive or negative?
 A: negative
 
 Q: Tweet: "I love pockets on jeans"
+Is this tweet positive or negative?
 
 A:
 ```
