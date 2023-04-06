@@ -24,7 +24,13 @@ Un guide de débutants pour l'écriture de prompts de Zapier : https://zapier.co
 
 Une liste de ressources impressionnante sur l'ingénierie des prompts de A à Z : https://github.com/promptslab/Awesome-Prompt-Engineering
 
+500 modèles de prompts ChatGPT : https://www.notion.so/500-ChatGPT-Prompt-Templates-d9541e901b2b4e8f800e819bdc0256da
 
+Prompt base: https://promptbase.com/
+
+Vitrine de la communauté Midjourney (avec prompts) : https://www.midjourney.com/showcase/recent/
+
+TOUS les styles et références pour Midjourney : https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference
 ### Exemples / Idées de prompts GPT-3
 
 https://sharegpt.com 
