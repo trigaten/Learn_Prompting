@@ -72,7 +72,7 @@ A:
 
 ## Few Shot Standard Prompts
 
-Los few shot standard prompts(@liu2021pretrain) son simplemente prompts estándar que tienen _ejemplares_ en ellas. Los ejemplares son ejemplos de la tarea que el prompt está tratando de resolver, los cuales se incluyen en el mismo prompt (@brown2020language). En investigación, a veces se hace referencia a los few shot standard prompts simplemente como prompts estándar (aunque intentamos no hacerlo en esta guía).
+Los few shot standard prompts(@liu2021pretrain) son simplemente prompts estándar que tienen _ejemplares_ en ellas. Los ejemplares son ejemplos de la tarea que el prompt está tratando de resolver, los cuales se incluyen en el mismo prompt (@brown2020language). En investigación, a veces se hace referencia a los few shot standard prompts simplemente como promts estándar (aunque intentamos no hacerlo en esta guía).
 
 ### Dos ejemplos de few shot standard prompts:
 
