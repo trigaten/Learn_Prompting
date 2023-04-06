@@ -10,7 +10,7 @@ Une vidéo d'introduction fantastique sur le PE : https://youtube.com/watch?v=dO
 
 Un très bon guide court sur le Prompt Engineering : https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api
 
-Une excellente introduction à l'ingénierie de prompts : https://humanloop.com/blog/prompt-engineering-101
+Une excellente introduction au Prompt Engineering : https://humanloop.com/blog/prompt-engineering-101
 
 Une belle collection de documents d'ingénierie de prompts : https://github.com/dair-ai/Prompt-Engineering-Guide
 
