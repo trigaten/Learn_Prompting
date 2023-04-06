@@ -4,7 +4,7 @@ sidebar_position: 15
 
 # Lang Chain
 
-[LangChain](https://github.com/hwchase17/langchain/) es una biblioteca de Python que proporciona varias funcionalidades para construir y encadenar promptps.
+[LangChain](https://github.com/hwchase17/langchain/) es una biblioteca de Python que proporciona varias funcionalidades para construir y encadenar prompt.
 
 import Image from '@site/docs/assets/tooling/langchain.png';
 
