@@ -14,7 +14,7 @@ Une excellente introduction au Prompt Engineering : https://humanloop.com/blog/p
 
 Une belle collection de documents d'ingénierie de prompts : https://github.com/dair-ai/Prompt-Engineering-Guide
 
-De nombreux autres documents d'ingénierie de prompts : https://github.com/thunlp/PromptPapers
+De nombreux autres documents de Prompt Engineering : https://github.com/thunlp/PromptPapers
 
 Cours CMU sur l'ingénierie de prompts : https://youtu.be/5ef83Wljm-M
 
