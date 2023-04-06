@@ -14,7 +14,6 @@ Ya hemos cubierto varios tipos de prompts, así como formas de combinarlas. Esta
 
 ## Partes de un Prompt
 
-There are a few different parts of a prompt that you will see over and over again. They are roughly:
 Hay algunas partes diferentes de un prompt que verá una y otra vez. Son aproximadamente:
 
 - Un rol
