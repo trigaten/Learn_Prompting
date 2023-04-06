@@ -13,7 +13,7 @@ import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
   <CombinedPrompt style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Como hemos visto en las páginas anteriores, los promts pueden tener distintos formatos y complejidad. Pueden incluir contexto, instrucciones y múltiples ejemplos de entrada-salida. Sin embargo, hasta ahora sólo hemos examinado distintos tipos de promts. La combinación de estas técnicas puede dar lugar a instrucciones más potentes.
+Como hemos visto en las páginas anteriores, los prompts pueden tener distintos formatos y complejidad. Pueden incluir contexto, instrucciones y múltiples ejemplos de entrada-salida. Sin embargo, hasta ahora sólo hemos examinado distintos tipos de prompts. La combinación de estas técnicas puede dar lugar a instrucciones más potentes.
 
 Aquí hay un ejemplo de pregunta que incluye contexto, instrucciones y varios ejemplos:
 
