@@ -57,7 +57,7 @@ Variantes:
 Suma 2+2:
 ```
 
-Este es 0-shot ya que no le hemos mostrado al modelo ningun ejemplo completo.
+Este es 0-shot ya que no le hemos mostrado al modelo ningún ejemplo completo.
 
 ### 1-shot prompting
 
