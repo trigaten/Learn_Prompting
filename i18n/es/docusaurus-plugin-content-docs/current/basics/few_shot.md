@@ -42,7 +42,7 @@ Aunque podría producir este mismo resultado usando un prompt, el few-shot promp
 
 ## Variantes del shot prompting
 
-La palabra "shot" es sinonimo de "ejemplo". Además del few-shot prompting, existen otros dos tipos de shot prompting. ¡No lo pienses tanto! La única diferencia entre esas variantes es cuantos ejemplos le muestras al modelo.
+La palabra "shot" es sinónimo de "ejemplo". Además del few-shot prompting, existen otros dos tipos de shot prompting. ¡No lo pienses tanto! La única diferencia entre esas variantes es cuantos ejemplos le muestras al modelo.
 
 Variantes:
 - 0 shot prompting: Sin mostrar ejemplos al modelo
