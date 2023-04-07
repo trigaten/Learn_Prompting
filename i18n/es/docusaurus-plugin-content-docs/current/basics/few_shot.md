@@ -80,7 +80,7 @@ Suma 5+5: 10
 Suma 2+2:
 ```
 
-Este es el caso ya que hemos mostrado al modelo al menos 2 ejemplos completos (`Suma 3+3: 6` y `Suma 5+5: 10`). Por lo general, cuantos más ejemplos se muestren al modelo, mejor será el resultado, por lo que en la mayoría de los casos es preferible usar few-shot prompting a 0-shot y 1-shot prompting en la mayoria de los casos.
+Este es el caso ya que hemos mostrado al modelo al menos 2 ejemplos completos (`Suma 3+3: 6` y `Suma 5+5: 10`). Por lo general, cuantos más ejemplos se muestren al modelo, mejor será el resultado, por lo que en la mayoría de los casos es preferible usar few-shot prompting a 0-shot y 1-shot prompting en la mayoría de los casos.
 
 
 ## Conclusión
