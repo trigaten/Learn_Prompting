@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 🔴 Soft Prompts Interpretables
+# 🔴 Parámetros suaves interpretables
 
 Los soft prompts son una secuencia de vectores que no corresponden a ningún token real del vocabulario. Esto dificulta la interpretación del prompt. Sin embargo, aún podemos intentar hacerlo mapeando los vectores a los tokens más cercanos en el vocabulario. Sin embargo, los soft prompts proyectados suelen ser desviados; pueden resolver tareas bien, pero proyectarse a tokens arbitrarios en el vocabulario(@khashabi2021prompt).
 

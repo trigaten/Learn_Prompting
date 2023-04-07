@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 🔴 Soft Prompts
+# 🔴 Parámetros suaves
 
 La sintonización de prompts (@lester2021power), una alternativa a la sintonización fina del modelo (@khashabi2021prompt), congela los pesos del modelo y actualiza los parámetros de un prompt. El prompt resultante es un 'prompt suave'.
 
