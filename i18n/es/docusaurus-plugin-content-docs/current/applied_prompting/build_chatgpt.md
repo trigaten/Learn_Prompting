@@ -19,7 +19,7 @@ import ChatGPT from '@site/docs/assets/chatgpt_ui_diagram.png'
 
 Para aquellos que no lo saben, ChatGPT es un nuevo modelo de lenguaje de OpenAI que fue ajustado a partir de GPT-3 para ser optimizado para la conversación (@chatgpt2022). Tiene una interfaz de chat fácil de usar, donde puedes ingresar una entrada y obtener una respuesta de un asistente de inteligencia artificial. Échale un vistazo en [chat.openai.com](https://chat.openai.com/chat).
 
-Si bien las primeras versiones de GPT-3 no eran tan avanzadas como la actual serie GPT-3.5, aún eran impresionantes. Estos modelos han estado disponibles a través de una API y una interfaz de usuario web de <a href="https://beta.openai.com/playground">playground</a> que te permite ajustar ciertos hiperparámetros de configuración y probar promts. GPT-3 ganó una tracción significativa, pero no se acercó a la viralidad de ChatGPT. 
+Si bien las primeras versiones de GPT-3 no eran tan avanzadas como la actual serie GPT-3.5, aún eran impresionantes. Estos modelos han estado disponibles a través de una API y una interfaz de usuario web de <a href="https://beta.openai.com/playground">playground</a> que te permite ajustar ciertos hiperparámetros de configuración y probar prompts. GPT-3 ganó una tracción significativa, pero no se acercó a la viralidad de ChatGPT. 
 
 Lo que hace que ChatGPT sea tan exitoso en comparación con GPT-3 es su accesibilidad como un asistente de IA sencillo para la persona promedio, independientemente de su conocimiento de la ciencia de datos, los modelos de lenguaje o la IA.
 

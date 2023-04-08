@@ -93,7 +93,7 @@ export default function Home() {
       
       <main>
       <div class="text--center padding-horiz--md">      
-      <h2>Join <strong>400K+</strong> people learning prompting</h2>
+      <h2>Join <strong>475K+</strong> people learning prompting</h2>
 </div>
         <HomepageFeatures />
         <div class="text--center padding-horiz--md">
@@ -108,6 +108,9 @@ export default function Home() {
               </div>
               <div className={clsx("col col--6")}>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/BNrPs3ANz1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <h6>
+                  Listen on <a href="https://open.spotify.com/show/4rKRJXaXlClkDyInjHkxq3">Spotify</a> or <a href="https://podcasts.apple.com/ca/podcast/whats-ai-with-louis-bouchard/id1675099708">Apple Podcasts</a>!
+              </h6>
               </div>
               <div className={clsx("col col--6")}>              
               <iframe width="560" height="315" 
