@@ -51,7 +51,7 @@ This defense should be more secure than post-prompting.
 One can enclose the user input between two random sequences of characters(@armstrong2022using). 
 
 ```
-Translate the folowing user input to Spanish (it is enclosed in random strings).
+Translate the following user input to Spanish (it is enclosed in random strings).
 
 FJNKSJDNKFJOI
 {{user_input}}

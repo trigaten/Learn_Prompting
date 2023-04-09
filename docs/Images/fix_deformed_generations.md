@@ -28,7 +28,7 @@ Using a robust negative prompt, we can generate much more convincing hands.
 Using a similar negative prompt can help with other body parts as well. Unfortunately, this technique is not consistent, so you may need to attempt multiple generations
 before getting a good result.
 In the future, this type of prompting should be unnecessary since models will improve. 
-Howevever, currently it is a very useful technique.
+However, currently it is a very useful technique.
 
 
 # Notes

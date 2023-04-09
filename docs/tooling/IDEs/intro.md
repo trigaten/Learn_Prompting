@@ -29,6 +29,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Soaked Prompts](https://soaked-prompts.vercel.app) | ✅ | ✅ | ❌|  | ✅ | Text | OpenAI |
 | [Dyno](https://trydyno.com/login)          | ✅ | ❌ | ❌|  | ✅ | Text | OpenAI |
 | [Everyprompt](https://www.everyprompt.com) | ✅ | |    ❌| Freemium | ✅ | Text | OpenAI |
+| [Promptmetheus](https://promptmetheus.com) | ✅ | ❌ | ✅ | Free | ✅ | Text | OpenAI |
 | [PromptIDE](https://prompt.vizhub.ai)      | ✅ | Code TBD |✅ | None | ✅ | Text | |
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf) | ❌ |  | ✅ | None | ✅ |  Text | |

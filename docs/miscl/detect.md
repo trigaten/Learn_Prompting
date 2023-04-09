@@ -31,7 +31,7 @@ This is an intriguing idea, but it requires a model’s creators to implement th
 
 ## DetectGPT
 
-The [DetectGPT](https://detectgpt.ericmitchell.ai/)(@mitchell2023detectgpt) method is able to detect AI-generated text with less setup than the previous concepts. Researchers have found that LLM text generations tend "occupy negative curvature regions of the model’s log probability function". Because of this, it is possible to create a curvature-based system for determining if a block of text was procedurally generated. 
+The [DetectGPT](https://detectgpt.ericmitchell.ai/)(@mitchell2023detectgpt) method is able to detect AI-generated text with less setup than the previous concepts. Researchers have found that LLM text generations tend to "occupy negative curvature regions of the model’s log probability function". Because of this, it is possible to create a curvature-based system for determining if a block of text was procedurally generated. 
 
 It works by computing log probabilities from the model that was thought to have generated the text and comparing them to random alterations of the text from another, pre-trained generic language model. In this way, DetectGPT is able to identify the likelihood of the passage being generated using probability curves alone!
 
