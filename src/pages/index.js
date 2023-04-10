@@ -93,7 +93,7 @@ export default function Home() {
       
       <main>
       <div class="text--center padding-horiz--md">      
-      <h2>Join <strong>475K+</strong> people learning prompting</h2>
+      <h2>Join <strong>500K+</strong> people learning prompting</h2>
 </div>
         <HomepageFeatures />
         <div class="text--center padding-horiz--md">
