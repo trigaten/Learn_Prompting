@@ -30,7 +30,7 @@ You might find [this one](https://prompts.chat/#act-as-a-text-based-adventure-ga
 
 ## Step 2: Experiment
 
-Now, we will put the prompt into ChatGPT and see what what happens.
+Now, we will put the prompt into ChatGPT and see what happens.
 
 import CSharp from '../assets/csharp.png';
 
