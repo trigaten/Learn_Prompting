@@ -22,7 +22,7 @@ LLMs 没有连接到网络且无法精确得知他们的信息来源，故大多
 
 ## 偏见
 
-LLMs 时常产生具有刻板印象的回应。即使有安全防护措施，他们有时也会生成性别歧视／种族歧视／同性恋歧视的内容。在面向消费者的应用中使用 LLMs 时要小心，在研究中也要小心（它们可能产生有偏见的结果）。
+LLMs 时常产生具有刻板印象的回应。即使有安全防护措施，他们有时也会生成性别歧视／种族歧视／同性恋歧视的内容。在面向消费者的应用中使用 LLMs 时要小心，甚至在研究中也要小心（它们可能产生有偏见的结果）。
 
 ## 谵妄
 
@@ -33,9 +33,9 @@ LLMs 时常产生具有刻板印象的回应。即使有安全防护措施，他
 LLMs 不擅长逻辑计算。他们解决简单的数学问题也存在困难，对于更复杂的数学问题更是无从下手。
 
 :::note
-[工具增强型 LLMs](https://learnprompting.org/zh-Hans/docs/advanced_applications/mrkl)在一定程度上能改善这个问题。
+[工具增强型 LLMs](https://learnprompting.org/zh-Hans/docs/advanced_applications/mrkl) 在一定程度上能改善这个问题。
 :::
 
 ## 提示词攻击
 
-用户可以欺骗 LLMs 使其生成任何他们想要的内容。[阅读更多](https://learnprompting.org/zh-Hans/docs/category/-prompt-hacking)。
+用户可以欺骗 LLMs 使其生成任何他们想要的内容。[阅读更多](https://learnprompting.org/zh-Hans/docs/category/-prompt-hacking)
