@@ -44,4 +44,7 @@ Sometimes certain words are not allowed in the prompt. For example, people deplo
 
 ## Recursive injection attack
 
-When a LLM is used to evaluate the output of another LLM
+When a LLM is used to evaluate the output of another LLM, it is possible to perform a recursive injection attack. This attack involves injecting a prompt into the first LLM that creates output which contains an injection instruction for the second LLM call.
+
+
+
