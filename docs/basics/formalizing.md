@@ -22,7 +22,7 @@ There are a few different parts of a prompt that you will see over and over agai
 - Context
 - Examples (few shot)
 
-We have covered roles, instructions, and examples in previous pages. A question is simply a question! (E.g. `what is the capital of France?`). Context is any relevant information that you want to model to use when answering the question/performing the instruction.
+We have covered roles, instructions, and examples in previous pages. A question is simply a question! (E.g. `what is the capital of France?`). Context is any relevant information that you want the model to use when answering the question/performing the instruction.
 
 Not all of these occur in every prompt, and when some do occur, there is no standard order for them. For example, the following two prompts, which each contain a role, an instruction, and context, will do roughly the same thing:
 
