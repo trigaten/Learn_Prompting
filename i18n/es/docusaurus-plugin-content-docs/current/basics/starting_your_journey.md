@@ -31,7 +31,7 @@ Puedes encontrar [este](https://prompts.chat/#act-as-a-text-based-adventure-game
 
 Ahora, vamos a poner un prompt en ChatGPT y ver qué pasa.
 
-import CSharp from '@site/docs/assets/csharp_es.png';
+import CSharp from '@site/i18n/es/docusaurus-plugin-content-docs/assets/csharp.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />
@@ -41,7 +41,7 @@ Podemos ver que ha generado una historia, pero que la ha escrito dentro de un bl
 
 > Quiero que actúes como un juego de aventuras basado en texto. Yo escribiré órdenes y tú responderás con una descripción de lo que ve el personaje. No escribas explicaciones. Mi primer comando es despierta
 
-**ChatGPT response**:
+**Respuesta de ChatGPT**:
 
 ```text
 // highlight-start
@@ -53,7 +53,7 @@ Bien, ahora sale la historia como texto plano. Sin embargo, a nuestro texto le f
 
 > Quiero que actúes como un juego de aventuras basado en texto. Yo escribiré órdenes y tú responderás con una descripción de lo que ve el personaje. No escribas explicaciones. Utiliza un lenguaje florido y palabras descriptivas. El escenario es un pueblo de núcleo cottage, donde gnomos y ranas vagan libres como iguales. Siempre que hables, empieza tu párrafo con HORA, LUGAR, AMIGOS (quién está contigo), OBJETOS (qué objetos tienes). Mi primer comando es despierta.
 
-**ChatGPT response**:
+**Respuesta de ChatGPT**:
 
 ```text
 // highlight-start
