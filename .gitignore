@@ -11,6 +11,9 @@ build
 .docusaurus
 .cache-loader
 
+#IDE
+.idea
+
 # Misc
 .DS_Store
 .env.local
