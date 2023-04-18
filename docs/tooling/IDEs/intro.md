@@ -34,6 +34,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf) | ❌ |  | ✅ | None | ✅ |  Text | |
 | [PromptMaker](https://dl.acm.org/doi/abs/10.1145/3491101.3503564) |❌ | | ✅| | | Text| |
+| [PromptSandbox](https://promptsandbox.io) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
 
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
