@@ -4,7 +4,7 @@ sidebar_position: 23
 
 # The Forge AI
 
-[The Forge AI](https://theforgeai.com/) is a powerful prompt IDE to build & monetize application. You can use varied types of configurable inputs, define conditional flows, generate text and images using different models. (Many more features to come). 
+[The Forge AI](https://theforgeai.com/) is a powerful prompt IDE to build & monetize applications. You can use varied types of configurable inputs, define conditional flows, generate text and images using different models. (Many more features to come).
 
 
 import Image from '@site/docs/assets/tooling/theforgeai.png';
