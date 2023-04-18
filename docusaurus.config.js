@@ -83,6 +83,7 @@ async function createConfig() {
     ],
     themeConfig:
       ({
+        metadata: [{name: 'keywords', content: 'prompting, prompt engineering, learn prompting, learn, prompt'}],
         navbar: {
           title: 'Learn Prompting',
           logo: {
