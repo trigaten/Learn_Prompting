@@ -4,11 +4,11 @@ sidebar_position: 22
 
 # PromptSandbox.io
 
-[PromptSandbox.io](https://PromptSandbox.io) is a node-based visual programming platform to design and execute workflows with OpenAI APIs
+[PromptSandbox.io](https://PromptSandbox.io) is a node-based visual programming platform to design and execute workflows with OpenAI APIs.
 
-Explore the repository on GitHub [Repository](https://github.com/eg9y/promptsandbox.io/)
+Explore the repository on [GitHub](https://github.com/eg9y/promptsandbox.io/).
 
-Watch the demo video for a guided tour: [Demo Video](https://www.youtube.com/watch?v=CBPw7FXtaEU)
+Watch the guided tour in this [demo video](https://www.youtube.com/watch?v=CBPw7FXtaEU).
 
 import Image from '@site/docs/assets/tooling/promptsandbox.png';
 
