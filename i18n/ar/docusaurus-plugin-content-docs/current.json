@@ -1,0 +1,71 @@
+{
+  "sidebar.tutorialSidebar.category.😃 Basics": {
+    "message": "😃 الأساسيات"
+  },
+  "sidebar.tutorialSidebar.category.😃 Basics.link.generated-index.description": {
+    "message": "مقدمة في التعامل مع الذكاء الاصطناعي  والتقنيات الأساسية"
+  },
+  "sidebar.tutorialSidebar.category.💼 Basic Applications": {
+    "message": "💼 التطبيقات الاساسية"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate": {
+    "message": "🧙‍♂️ المستوى المتوسط"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate.link.generated-index.description": {
+    "message": "مقدمة في التعامل مع الذكاء الاصطناعي  والتقنيات الأساسية"
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting": {
+    "message": "🧪تتطبيقات للتعامل مع الذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting.link.generated-index.description": {
+    "message": "بعض الإرشادات الكاملة للعملية التعامل مع الذكاء الاصطناعي التي كتبها أعضاء المجتمع."
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications": {
+    "message": "🚀 المستوى المتقدم"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications.link.generated-index.description": {
+    "message": "بعض التطبيقات القوية جدًا ، ولكنها أكثر تقدمًا للهندسة الذكاء الاصطناعي."
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability": {
+    "message": "⚖️ مصداقية"
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability.link.generated-index.description": {
+    "message": "كيفية جعل LLM أكثر موثوقية"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting": {
+    "message": "🖼️ الذكاء الاصطناعي للتحضير  الصور"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting.link.generated-index.description": {
+    "message": " الذكاء الاصطناعي للتحضير  الصور بواسطة Dalle  و Stable Diffusion "
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking": {
+    "message": "🔓 اختراق الذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking.link.generated-index.description": {
+    "message": "الاختراق و لكن للذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling": {
+    "message": "🔨 الادوات"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling.link.generated-index.description": {
+    "message": "ادوات يمكن استعمالها للتعامل مع الذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs": {
+    "message": "ادوات يمكن استعمالها للتعامل مع الذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs.link.generated-index.description": {
+    "message": "ادوات يمكن استعمالها للتعامل مع الذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning": {
+    "message": "💪 تعديل الذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning.link.generated-index.description": {
+    "message": "كيفية تعديل الذكاء الاصطناعي"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous": {
+    "message": "🎲 متنوع"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous.link.generated-index.description": {
+    "message": "متنوع"
+  }
+}
