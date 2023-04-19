@@ -15,5 +15,5 @@ import Image from '@site/docs/assets/tooling/theforgeai.png';
 
 ## Features
 
-When the App is done you can then share it privately or publically for anyone to run.
+When the App is done you can then share it privately or publicly for anyone to run.
 Applications can also be monetized on the marketplace by selling tokens or via subscription.
