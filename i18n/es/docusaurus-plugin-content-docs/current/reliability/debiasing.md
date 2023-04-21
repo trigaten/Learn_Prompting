@@ -8,7 +8,7 @@ Esta página cubre algunas técnicas simples para eliminar sesgos en la consigna
 
 ## Eliminación de ejemplares sesgados
 
-Dependiendo de su distribución y orden dentro de la consigna, los %%ejemplares|exemplars%% pueden sesgar las salidas del LLM(@si2022prompting). Esto se discute en cierta medida en la página [¿Qué hay en una consigna?](http://localhost:3000/docs/intermediate/whats_in_a_prompt).
+Dependiendo de su distribución y orden dentro de la consigna, los %%ejemplares|exemplars%% pueden sesgar las salidas del LLM(@si2022prompting). Esto se discute en cierta medida en la página [¿Qué hay en una consigna?](https://learnprompting.org/es/docs/intermediate/whats_in_a_prompt).
 
 ### Distribución
 
@@ -30,9 +30,10 @@ R: positivo
 P: Tweet: "Odio esta clase"
 R: negativo
 ```
-#### Mejor:
-Tener una distribución equitativa de ejemplares es mejor.
 
+#### Mejor:
+
+Tener una distribución equitativa de ejemplares es mejor.
 
 ```text
 P: Tweet: "¡Qué hermoso día!"
@@ -49,6 +50,7 @@ R: negativo
 ```
 
 ### Orden
+
 El orden de los ejemplares también puede causar sesgos. Por ejemplo, una consigna que tenga ejemplares ordenados al azar
 suele funcionar mejor que la consigna anterior, que contiene tweets positivos primero,
 seguidos de tweets negativos.
@@ -70,6 +72,7 @@ R: positivo
 ```
 
 ## Eliminación de instrucciones sesgadas
+
 Podemos indicar explícitamente a GPT-3 que sea imparcial, incluyendo una instrucción
 para hacerlo en la consigna. En particular, Si et al.(@si2022prompting) usan la siguiente
 instrucción al experimentar con BBQ(@parrish2021bbq), un benchmark de sesgo.

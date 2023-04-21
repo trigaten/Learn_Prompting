@@ -33,9 +33,9 @@ Los LLM suelen decir falsedades cuando se les hace una pregunta cuya respuesta d
 Los LLM suelen ser malos en matemáticas. Les cuesta resolver problemas matemáticos sencillos y a menudo son incapaces de resolver problemas matemáticos más complejos.
 
 :::note
-Este problema puede solucionarse hasta cierto punto utilizando una [herramienta LLM aumentada](https://learnprompting.org/docs/advanced_applications/mrkl).
+Este problema puede solucionarse hasta cierto punto utilizando una [herramienta LLM aumentada](https://learnprompting.org/es/docs/advanced_applications/mrkl).
 :::
 
 ## Prompt Hacking
 
-A menudo, los usuarios pueden engañar a los LLM para que generen el contenido que deseen. Lee más sobre esto [aquí](https://learnprompting.org/docs/category/-prompt-hacking).
+A menudo, los usuarios pueden engañar a los LLM para que generen el contenido que deseen. Lee más sobre esto [aquí](https://learnprompting.org/es/docs/category/-prompt-hacking).

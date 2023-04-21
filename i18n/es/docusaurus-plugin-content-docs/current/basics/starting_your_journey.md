@@ -82,4 +82,4 @@ Haz ingeniería prompts como quieras. Yo (el mantenedor de este curso) siempre e
 
 ## Notas
 
-- En los próximos capítulos, es posible que las palabras **IA, modelo y LLM se utilicen indistintamente**. Consulte la [referencia de vocabulario](https://learnprompting.org/docs/vocabulary) para más información.
+- En los próximos capítulos, es posible que las palabras **IA, modelo y LLM se utilicen indistintamente**. Consulte la [referencia de vocabulario](https://learnprompting.org/es/docs/vocabulary) para más información.
