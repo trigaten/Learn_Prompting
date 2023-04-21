@@ -14,7 +14,7 @@ import Prompt from '../assets/prompt.svg';
 
 In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
 The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
-a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a instruction/question, or complex as complex as huge chunks of text. 
+a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a instruction/question, or as complex as huge chunks of text. 
 
 Here are two examples of prompts:
 

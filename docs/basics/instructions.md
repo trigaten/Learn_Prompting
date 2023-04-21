@@ -21,7 +21,7 @@ Below is our first [Dyno embed](https://learnprompting.org/docs/basics/intro#dyn
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="A user has input their first and last name into a form. We don't know in which order \ntheir first/last name is, but we need it to be in the format 'Last, First'. Convert the following:\n\njohn doe" initial-response="Doe, John" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
 
-<br/>The AI is easily able to solve this problem. We can also ask it can solve many other
+<br/>The AI is easily able to solve this problem. We can also ask it to solve many other
 simple and more complex problems.
 
 #### Example 2

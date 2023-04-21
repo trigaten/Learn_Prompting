@@ -7,7 +7,7 @@ sidebar_position: 3000
 ## Resources
 
 * [A fantastic PE intro video](https://youtube.com/watch?v=dOxUroR57xs&feature=shares)<br/>
-* [A very nice, short prompt engineering guide](https://help.openai.com/en/articles6654000-best-practices-for-prompt-engineering-with-openai-api)<br/>
+* [A very nice, short prompt engineering guide](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)<br/>
 * [A great prompt engineering intro](https://humanloop.com/blog/prompt-engineering-101)<br/>
 * [A nice collection of prompt engineering papers](https://github.com/dair-ai/Prompt-Engineering-Guide)<br/>
 * [Many more prompt engineering papers](https://github.com/thunlp/PromptPapers)<br/>

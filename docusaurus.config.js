@@ -27,7 +27,7 @@ async function createConfig() {
     // to replace "en" with "zh-Hans".
     i18n: {
       defaultLocale: 'en',
-      locales: ['en', 'es', 'fr', 'ja', 'pt', 'zh-Hans', 'ko', 'si', 'ru'],
+      locales: ['en', 'es', 'fr', 'ja', 'pt', 'zh-Hans', 'ko', 'si', 'ru', 'ar'],
     },
   
     presets: [
@@ -83,6 +83,7 @@ async function createConfig() {
     ],
     themeConfig:
       ({
+        metadata: [{name: 'keywords', content: 'prompting, prompt engineering, learn prompting, learn, prompt'}],
         navbar: {
           title: 'Learn Prompting',
           logo: {
