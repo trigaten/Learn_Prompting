@@ -1,14 +1,18 @@
+---
+sidebar_position: 1
+---
+
 # Bienvenue
 
 Bienvenue dans ce cours sur le prompt engineering!
 
-Le Prompt Engineering (PE) peut être compris comme suit : **comment parler à une IA pour lui faire faire ce que l'on veut** 
+Le Prompt Engineering (PE) peut être compris comme suit : **comment parler à une IA pour lui faire faire ce que l'on veut**
 
 Avec de nombreuses avancées récentes en matière d'intelligence artificielle (IA), cette compétence est devenue une compétence particulièrement importante. Ce cours se concentre sur les techniques de PE appliquées. Une connaissance minimale de l'apprentissage automatique est attendue. Si vous n'avez aucune idée de ce que signifie ces concepts (IA, apprentissage automatique, programmation, etc.), je vous recommande de commencer par la section [Bases](https://learnprompting.org/fr/docs/category/-basics).
 
 ## La partie la plus importante de ce cours est votre rétroaction!
 
-Si vous avez des questions, des commentaires ou des suggestions, vous pouvez : 
+Si vous avez des questions, des commentaires ou des suggestions, vous pouvez :
 
 - créer un [**rapport sur GitHub**](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
 - nous envoyer un e-mail à [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
