@@ -2,41 +2,41 @@
 
 Bienvenue dans ce cours sur le prompt engineering!
 
-Le Prompt Engineering (PE) peut être compris comme suit : **comment parler à une IA pour lui faire faire ce que l'on veut** 
+Je préfère penser que l'Ingénierie d'invites (PE) est : **comment parler à l'IA pour qu'elle fasse ce que vous voulez**.
 
 Avec de nombreuses avancées récentes en matière d'intelligence artificielle (IA), cette compétence est devenue une compétence particulièrement importante. Ce cours se concentre sur les techniques de PE appliquées. Une connaissance minimale de l'apprentissage automatique est attendue. Si vous n'avez aucune idée de ce que signifie ces concepts (IA, apprentissage automatique, programmation, etc.), je vous recommande de commencer par la section [Bases](https://learnprompting.org/fr/docs/category/-basics).
 
-## La partie la plus importante de ce cours est votre rétroaction!
+## La partie la plus importante de ce cours est votre rétroaction !
 
-Si vous avez des questions, des commentaires ou des suggestions, vous pouvez : 
+Si vous avez des questions, des commentaires ou des suggestions, vous pouvez :
 
 - créer un [**rapport sur GitHub**](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
 - nous envoyer un e-mail à [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
 - vous joindre sur [Discord](https://learnprompting.org/discord)
 - nous suivre sur [Twitter](https://twitter.com/learn_prompting)
-- Nous avons aussi un [Formulaire de demande de consultation](https://learnprompting.org/consulting)
+- On a aussi un [Formulaire d'intéret de consultation](https://learnprompting.org/consulting)
 
-Tout retour sur ce cours sera le bienvenu !
+Même la plus petite quantité de commentaires est très utile !
 
 ## Philosophie du cours
 
-**Itérations rapides** - Étant donné que de nouveaux contenus sur le PE sont publiés presque quotidiennement, je mettrai fréquemment à jour ce cours avec de courts articles sur de nouvelles techniques. Faites-moi savoir quels sont les sujets sur lesquels vous voulez en savoir plus !
+**Itérations rapides** - Étant donné que du nouveau contenu sur le PE est publié presque quotidiennement, je mettrai fréquemment à jour ce cours avec de courts articles sur les nouvelles techniques. Faites-moi savoir de quoi vous voulez en savoir plus !
 
-Un élément important de la philosophie de ce cours est l’**itération d'erreur**. Si vous constatez quelque chose que vous ne comprenez pas tout à fait, la moindre petite chose, n'hésitez pas à me contacter en **créant un [rapport sur GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)!**
+Une partie de cette philosophie est **l'itération d'erreur**. Si jamais vous voyez quelque chose que vous ne comprenez pas tout à fait, même quelque chose de petit, n’hésitez pas à me contacter en **créant un [rapport sur GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)!**
 
-**Focus sur l'aspect pratique** - On se concentrera sur des techniques appliquées et pratiques que vous pourrez immédiatement mettre en pratique pour vos applications.
+**Focus sur l'aspect pratique** - On se concentrera sur des techniques appliquées et pratiques que vous pouvez utiliser immédiatement pour vos applications.
 
-**Exemples instantanés** - Nous tâchons d'inclure des exemples dans les articles aussi rapidement que possible, afin que vous puissiez immédiatement appréhender les techniques.
+**Exemples instantanés** - On essaie de mettre des exemples dans les articles dès que possible, afin que vous puissiez vous faire une idée des techniques à l’instant.
 
-Nous philosopherons davantage à ce sujet lorsque nous aurons le temps 😊
+On philosophera plus là-dessus quand on aura le temps 😊
 
-## Comment consulter ce cours
+## Comment lire
 
-Vous n'êtes pas tenu de lire tous les chapitres dans l'ordre. Lisez ce qui vous intéresse !
+Il ne faut pas lire tous les chapitres dans l'ordre. Lisez ce qui vous intéresse !
 
-Si vous êtes novice en matière d'intelligence artificielle (IA) et de prompt engineering (PE), commencez par la section [Bases](https://learnprompting.org/fr/docs/category/-basics). Si vous êtes déjà familiarisé avec ces concepts, il vous sera alors facile de vous familiariser avec la section [Intermédiaire](https://learnprompting.org/fr/docs/category/%EF%B8%8F-intermediate).
+Si vous débutez dans l'intelligence artificielle (IA) et l'ingénierie d'invites (PE), commencez par la section [Bases](https://learnprompting.org/fr/docs/category/-basics). Si vous êtes déjà familiarisé avec ces concepts, vous serez bien parti avec la section [Intermédiaire](https://learnprompting.org/fr/docs/category/%EF%B8%8F-intermediate).
 
-Les articles sont assortis d'un système d'évaluation basé sur la difficulté du sujet et sur la nécessité ou non de connaissances en programmation :
+Les articles ont un système de notation basé sur la difficulté d'un sujet et si des connaissances en programmation sont requises :
 
 🟢 Très facile ; aucune connaissance en programmation requise
 
