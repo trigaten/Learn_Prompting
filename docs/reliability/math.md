@@ -19,7 +19,7 @@ Q: At a restaurant, each adult meal costs $5 and kids eat free. If a group of 15
 people came in and 8 were kids, how much would it cost for the group to eat?
 ```
 
-## Step 1: Generate Algabraic Template
+## Step 1: Generate Algebraic Template
 
 The first step is to assign a variable to each number in the question. This helps because it allows easier translation of the question into an abstract math question, as well as into programming code.
 
@@ -31,7 +31,7 @@ This can be done via few shot prompting:
 
 ## Step 2: Math Prompts
 
-The point of this step is to formulate the problem as both an algabraic statement and as Python code. This step has two simultaneous prompts, which help to give diverse representations of the problem.
+The point of this step is to formulate the problem as both an algebraic statement and as Python code. This step has two simultaneous prompts, which help to give diverse representations of the problem.
 
 ### 2a: Algebraic Statement
 
@@ -57,7 +57,7 @@ Now, we can use the Mapping that we generated previously to automatically fill i
 Mapping: {A: 5, B: 15, C: 8}
 ```
 
-Algabraic: 
+Algebraic: 
 ```text
 Answer = 5 * 15 - 5 * 8
 ```
