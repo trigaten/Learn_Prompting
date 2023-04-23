@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 🟢 \*\*\*\*Génération musicale
+# 🟢 Génération musicale
 
 Les modèles de génération musicale sont de plus en plus populaires et finiront par avoir un impact important sur l'industrie de la musique.
 

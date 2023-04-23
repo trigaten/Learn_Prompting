@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 🟢 \*\*\*\*Détection de tricherie
+# 🟢 Détection de tricherie
 
 Le développement des détecteurs de texte généré par l'IA s'est accompagné d'une évolution des méthodes pour les contrer. Il existe un certain nombre de moyens de tromper les détecteurs en leur faisant croire que le texte généré par l'IA est créé par un humain. Un outil tel que [GPTMinus](https://gptminus1.vercel.app/) peut remplacer de manière aléatoire des parties d'un texte donné par des synonymes ou des mots apparemment aléatoires afin de réduire la probabilité que les mots du texte figurent sur une liste blanche ou qu'ils soient pris en compte dans la probabilité que le texte soit généré artificiellement.
 
