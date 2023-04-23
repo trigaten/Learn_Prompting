@@ -4,7 +4,7 @@ sidebar_position: 1000
 
 # 📚 Bibliography
 
-The page contains an organized list of all papers used by this course. 
+The page contains an organized list of all papers used by this course.
 The papers are organized by topic.
 
 **To cite this course, use the provided citation in the Github repository.**
@@ -44,7 +44,6 @@ cite them as such.
 
 #### The Turking Test: Can Language Models Understand Instructions?(@efrat2020turking) 🔵
 
-
 ## Reliability
 
 #### MathPrompter(@imani2023mathprompter) 🔵
@@ -64,6 +63,7 @@ cite them as such.
 #### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
 
 #### Compositional Generalization - SCAN(@lake2018scan)
+
 ## Automated Prompt Engineering
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
@@ -241,7 +241,6 @@ cite them as such.
 #### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
 
 #### A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT(@white2023prompt) 🔵
-    
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
 

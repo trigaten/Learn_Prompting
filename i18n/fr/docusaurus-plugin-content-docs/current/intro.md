@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Bienvenue
 
 Bienvenue dans ce cours sur le prompt engineering!
