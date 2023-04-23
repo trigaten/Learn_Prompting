@@ -93,89 +93,10 @@ export default function Home() {
       
       <main>
       <div class="text--center padding-horiz--md">      
-      <h2>Join <strong>500K+</strong> people learning prompting</h2>
-</div>
+        <h2>Join <strong>500K+</strong> people learning prompting</h2>
+      </div>
         <HomepageFeatures />
-        <div class="text--center padding-horiz--md">
-          
-          <hr class="bg--secondary" />
-          <h1 class="margin-vert--xl">Media on Learn Prompting</h1>
-          <div className="container" style={{ marginBottom: "20px" }}>
-            <div className="row">
-            <div className={clsx("col col--6")}>
-            <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/k13v8jp8H5o?start=216&;" title="This Odd ChatGPT Skill Pays 335,000$/year" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div className={clsx("col col--6")}>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/BNrPs3ANz1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <h6>
-                  Listen on <a href="https://open.spotify.com/show/4rKRJXaXlClkDyInjHkxq3">Spotify</a> or <a href="https://podcasts.apple.com/ca/podcast/whats-ai-with-louis-bouchard/id1675099708">Apple Podcasts</a>!
-              </h6>
-              </div>
-              <div className={clsx("col col--6")}>              
-              <iframe width="560" height="315" 
-              src="https://www.youtube.com/embed/4kp7oVTu9Ck?start=486&;" title="300.000$ por un trabajo que puedes APRENDER GRATIS ▶ Curso OPEN SOURCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-              <div className={clsx("col col--6")}>
-                <h3>
-                  Stay tuned for a competition with{" "}
-                  <a href="https://community.towardsai.net/">Towards AI</a>
-                </h3>
-                <img
-                  src={require("@site/static/img/towards_ai.png").default}
-                  alt="img"
-                  height="275px"
-                  style={{ alignSelf: "center" }}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className={clsx("col col--12")}>
-              <h4>Newsletters</h4>
-
-              <a href="https://startupshell.substack.com/i/91962649/learn-prompting">
-                <img
-                  src={require("@site/static/img/shell.png").default}
-                  alt="img"
-                  height="40px"
-                  style={{ alignSelf: "center" }}
-                />
-              </a>
-              <a href="https://bensbites.beehiiv.com/p/bens-bites-hackathon-win-15k">
-                <img
-                  src={require("@site/static/img/bens_bites.webp").default}
-                  alt="img"
-                  height="40px"
-                  style={{ alignSelf: "center" }}
-                />
-              </a>
-              <a
-                style={{ marginLeft: "10px" }}
-                href="https://unwindai.substack.com/p/navigating-through-the-innov-ai-tion"
-              >
-                <img
-                  src={require("@site/static/img/unwind.jpg").default}
-                  alt="img"
-                  height="40px"
-                  style={{ alignSelf: "center" }}
-                />
-              </a>
-
-              <a
-                href="https://towardsai.net/p/newsletter/this-ai-newsletter-is-all-you-need-25"
-                style={{ marginLeft: "10px" }}
-              >
-                <img
-                  src={require("@site/static/img/towards_ai_small.png").default}
-                  alt="img"
-                  height="40px"
-                  style={{ alignSelf: "center" }}
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+        
       </main>
     </Layout>
   );

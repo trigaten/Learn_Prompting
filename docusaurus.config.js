@@ -92,7 +92,6 @@ async function createConfig() {
           items: [
             {to: 'docs/intro', label:"Learn", position:"left"},
             {to: 'contribute', label:"Contribute", position:"left"},
-            {to: 'supporters', label:"Supporters", position:"left"},
             {
               to: 'certificate', 
               label:"Certificate", 
