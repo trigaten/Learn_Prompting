@@ -31,9 +31,3 @@ Si vous utilisez un modèle open source, il est possible de modifier les probabi
 L'un des domaines les plus controversés où ces types de techniques entrent en jeu est celui de l'éducation. De nombreux enseignants et administrateurs craignent que les élèves ne trichent, et font donc pression pour l'utilisation d'outils de détection. Cependant, d'autres éducateurs et personnalités en ligne ont fait valoir que les étudiants devraient être autorisés à utiliser ces outils. Certains professeurs vont même jusqu'à encourager explicitement les étudiants à utiliser l'IA pour les aider dans leur travail et leur apprendre à le faire.
 
 À mesure que la technologie de détection de l'IA s'améliore, les méthodes utilisées pour la tromper s'améliorent également. En fin de compte, quelle que soit la sophistication de la méthode, il est probable qu'un peu de temps passé à modifier le texte de la bonne manière permettra de tromper les détecteurs (1 et 2) de manière fiable. Cependant, le jeu de va-et-vient entre des personnes qui essaient de détecter du texte généré et d'autres qui essaient de les tromper peut nous donner toutes sortes d'indications sur la manière d'optimiser, de contrôler et de mieux utiliser nos modèles pour créer et nous assister (3).
-
----
-
-1. Roose, K. (2022). Don’t ban chatgpt in schools. teach with it. https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html [↩](https://learnprompting.org/docs/miscl/trickery#fnref-1)
-2. Lipman, J., & Distler, R. (2023). Schools Shouldn’t Ban Access to ChatGPT. https://time.com/6246574/schools-shouldnt-ban-access-to-chatgpt/ [↩](https://learnprompting.org/docs/miscl/trickery#fnref-2)
-3. Noonan, E., & Averill, O. (2023). GW preparing disciplinary response to AI programs as faculty explore educational use. https://www.gwhatchet.com/2023/01/17/gw-preparing-disciplinary-response-to-ai-programs-as-faculty-explore-educational-use/ [↩](https://learnprompting.org/docs/miscl/trickery#fnref-3)

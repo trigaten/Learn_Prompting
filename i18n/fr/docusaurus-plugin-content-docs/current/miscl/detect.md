@@ -35,10 +35,3 @@ Il fonctionne en calculant les probabilités logarithmiques du modèle censé av
 ## **Note**
 
 Pour une discussion supplémentaire sur le sujet des détecteurs et la façon dont les gens les trompent, voir [cet article](https://learnprompting.org/docs/miscl/trickery).
-
----
-
-1. Bansal, A., yeh Ping-Chiang, Curry, M., Jain, R., Wigington, C., Manjunatha, V., Dickerson, J. P., & Goldstein, T. (2022). Certified Neural Network Watermarks with Randomized Smoothing. [↩](https://learnprompting.org/docs/miscl/detect#fnref-1)
-2. Gu, C., Huang, C., Zheng, X., Chang, K.-W., & Hsieh, C.-J. (2022). Watermarking Pre-trained Language Models with Backdooring. [↩](https://learnprompting.org/docs/miscl/detect#fnref-2)
-3. Kirchenbauer, J., Geiping, J., Wen, Y., Katz, J., Miers, I., & Goldstein, T. (2023). A Watermark for Large Language Models. https://arxiv.org/abs/2301.10226 [↩](https://learnprompting.org/docs/miscl/detect#fnref-3)
-4. Mitchell, E., Lee, Y., Khazatsky, A., Manning, C., & Finn, C. (2023). DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature. https://doi.org/10.48550/arXiv.2301.11305 [↩](https://learnprompting.org/docs/miscl/detect#fnref-4)
