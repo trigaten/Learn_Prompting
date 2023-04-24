@@ -6,6 +6,7 @@ sidebar_position: 3000
 
 ## Resources
 
+* [A great article on applications](https://huyenchip.com/2023/04/11/llm-engineering.html)<br/>
 * [A fantastic PE intro video](https://youtube.com/watch?v=dOxUroR57xs&feature=shares)<br/>
 * [A very nice, short prompt engineering guide](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)<br/>
 * [A great prompt engineering intro](https://humanloop.com/blog/prompt-engineering-101)<br/>
