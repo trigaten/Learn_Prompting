@@ -23,7 +23,7 @@ La façon dont nous structurons les exemples est très importante. Étant donné
 <br/>
 
 :::note
-Chaque paire entrée-sortie est appelée un _exemplaire_.
+Chaque paire entrée-sortie est appelée un _exemple_.
 :::
 
 ## Plus sur la structure
