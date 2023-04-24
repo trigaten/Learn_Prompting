@@ -81,7 +81,7 @@ First, I made a simple dataset in the Dust `Datasets` tab.
   <img src={dataset} style={{width: "750px"}} />
 </div>
 
-Then, I switched to the `Specification` tab and loaded the dataset using a `data` block.
+Then, I switched to the `Specification` tab and loaded the dataset using an `input` block.
 
 <div style={{textAlign: 'center'}}>
   <img src={load_dataset} style={{width: "750px"}} />
