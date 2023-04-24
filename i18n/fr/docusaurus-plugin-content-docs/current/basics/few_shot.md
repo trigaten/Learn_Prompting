@@ -12,9 +12,9 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 
 Une autre stratégie de prompting est le _prompting en few-shot_, qui consiste essentiellement à montrer au modèle quelques exemples (appelés "shots" en anglais) de ce que vous voulez qu'il fasse.
 
-Considérons l'exemple ci-dessus, dans lequel nous essayons de classer les commentaires des clients comme positifs ou négatifs. Nous montrons au modèle 3 exemples de commentaires positifs/négatifs, puis nous lui montrons un nouveau commentaire qui n'a pas encore été classé (`Ça marche pas !:`). Le modèle voit que les 3 premiers exemples ont été classés comme étant `positifs` ou `négatifs`, et utilise ces informations pour classer le nouvel exemple comme `négatif`.
+Considérons l'exemple ci-dessus, dans lequel nous essayons de classer/classifier les commentaires des clients comme positifs ou négatifs. Nous montrons au modèle 3 exemples de commentaires positifs/négatifs, puis nous lui montrons un nouveau commentaire qui n'a pas encore été classé (`Ça marche pas !:`). Le modèle voit que les 3 premiers exemples ont été classés comme étant `positifs` ou `négatifs`, et utilise ces informations pour classer le nouvel exemple comme `négatif`.
 
-La façon dont nous structurons les exemples est très importante. Étant donné que nous avons structuré ces 3 exemples comme `entré e: classement`, le modèle produit un seul mot après la dernière ligne, au lieu de dire une phrase complète comme `cette critique est positive`.
+La façon dont nous structurons les exemples est très importante. Étant donné que nous avons structuré ces 3 exemples comme `entrée : classement/classification`, le modèle produit un seul mot après la dernière ligne, au lieu de dire une phrase complète comme `cette critique est positive`.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Super produit, 10/10 : positif\nN'a pas très bien fonctionné : négatif\nSuper utile, ça en vaut la peine : positif\nÇa ne fonctionne pas ! :" initial-response="negatif" max-tokens="256" box-rows="5" model-temp="0.0" top-p="0">
     <noscript>Impossible de charger Dyno Embed : JavaScript doit être activé</noscript>
