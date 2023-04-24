@@ -16,8 +16,10 @@ Quelle est la capitale de la France ?
 
 Prompt standard au format Q/A:
 
-```html
-Q: Quelle est la capitale de la France ? A:
+```
+Q: Quelle est la capitale de la France ?
+
+A:
 ```
 
 # Prompts standards argumentés:
@@ -28,16 +30,23 @@ Les prompts standards argumentés[2](https://learnprompting.org/docs/basics/stan
 
 Prompt Standard argumentés:
 
-```html
-Quelle est la capitale de l'Espagne ? Madrid Quelle est la capitale de l'Italie
-? Rome Quelle est la capitale de la France?
+```
+Quelle est la capitale de l'Espagne ?
+Madrid
+Quelle est la capitale de l'Italie ?
+Rome
+Quelle est la capitale de la France?
 ```
 
 Prompt standard argumentés au format Q/A:
 
-```html
-Q : Quelle est la capitale de l'Espagne ? A : Madrid Q : Quelle est la capitale
-de l'Italie ? A : Rome Q : Quelle est la capitale de la France ? A:
+```
+Q : Quelle est la capitale de l'Espagne ?
+A : Madrid
+Q : Quelle est la capitale de l'Italie ?
+A : Rome
+Q : Quelle est la capitale de la France ?
+A :
 ```
 
 Les prompts standards argumentés facilitent l'apprentissage "en contexte", c'est-à-dire la capacité d'apprendre sans mise à jour des paramètres[4](https://learnprompting.org/docs/basics/standard_prompt#fn-4).

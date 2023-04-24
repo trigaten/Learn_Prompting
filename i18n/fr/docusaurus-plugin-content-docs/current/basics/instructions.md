@@ -20,25 +20,39 @@ L'IA est facilement capable de résoudre ce problème. En utilisant le prompt en
 
 Voici un exemple plus compliqué[^A] :
 
-```html
-Lisez l'e-mail de vente suivant. Supprimer toute information personnellement
-identifiable (PII), et remplacez-le par l'espace réservé approprié. Par exemple,
-remplacez le nom "John Doe" avec "[NOM]". Salut John, Je vous écris parce que
-j'ai remarqué que vous avez récemment acheté une nouvelle voiture. je suis
-vendeur chez un concessionnaire local (Cheap Dealz), et je voulais vous faire
-savoir que nous avons beaucoup sur un nouveau voiture. Si vous êtes intéressé,
-merci de me le faire savoir. Merci, Jimmy Smith Téléphone : 410-805-2345
-Courriel : [jimmysmith@cheapdealz.com](mailto:jimmysmith@cheapdealz.com)
+```
+Lisez l'e-mail de vente suivant. Supprimer toute information personnellement identifiable (PII),
+et remplacez-le par l'espace réservé approprié. Par exemple, remplacez le nom "John Doe"
+avec "[NOM]".
+
+Salut John,
+
+Je vous écris parce que j'ai remarqué que vous avez récemment acheté une nouvelle voiture. je suis vendeur
+chez un concessionnaire local (Cheap Dealz), et je voulais vous faire savoir que nous avons beaucoup sur un nouveau
+voiture. Si vous êtes intéressé, merci de me le faire savoir.
+
+Merci,
+
+Jimmy Smith
+
+Téléphone : 410-805-2345
 ```
 
 Voici la [réponse de l'IA](https://beta.openai.com/playground/p/002o3gmji5jlwUfRq9d7KDHc?model=text-davinci-003) :
 
-```html
-Bonjour [NOM], Je vous écris parce que j'ai remarqué que vous avez récemment
-acheté une nouvelle voiture. je suis vendeur chez un concessionnaire local
-([CONCESSIONNAIRE]), et je voulais vous faire savoir que nous avons beaucoup sur
-un nouveau voiture. Si vous êtes intéressé, merci de me le faire savoir. Merci,
-[VENDEUR] Téléphone : [NUMÉRO DE TÉLÉPHONE] E-mail : [ADRESSE E-MAIL]
+```
+Bonjour [NOM],
+
+Je vous écris parce que j'ai remarqué que vous avez récemment acheté une nouvelle voiture. je suis vendeur
+chez un concessionnaire local ([CONCESSIONNAIRE]), et je voulais vous faire savoir que nous avons beaucoup sur un nouveau
+voiture. Si vous êtes intéressé, merci de me le faire savoir.
+
+Merci,
+
+[VENDEUR]
+
+Téléphone : [NUMÉRO DE TÉLÉPHONE]
+E-mail : [ADRESSE E-MAIL]
 ```
 
 C'est très cool de voir comment le modèle peut extrapoler à partir des instructions. Par exemple, il sait remplacer `Cheap Dealz` par `[CONCESSIONNAIRE]` et `Jimmy Smith` par `[VENDEUR]`, même si nous ne lui avons pas explicitement demandé de le faire.
