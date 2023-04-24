@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 ---
+
 # 🟢 Introduction
 
 Cet article est conçu pour les personnes ayant peu ou pas d'expérience dans les secteurs de Prompt engineering ou même d'IA. Le public cible ici est tout le monde, des étudiants aux adultes non expérimentés dans ces secteurs. Nous couvrirons les bases de l'IA et pourquoi vous devriez vous soucier du prompt engineering.
@@ -9,11 +10,11 @@ Si vous connaissez déjà les bases du prompt engineering/IA, n'hésitez pas à 
 
 ## Qu’est ce qu’une IA
 
-Pour nos besoins, l'intelligence artificielle (IA) est un domaine dans lequel les gens ont créé des algorithmes "intelligents" qui "pensent" comme les humains[1](https://learnprompting.org/docs/basics/intro#fn-1). Ces algorithmes peuvent rédiger des **dissertations**, résoudre **problèmes mathématiques** et créer de l’**art**. Les avancées récentes dans le domaine ont créé des IA si avancées qu'elles peuvent rédiger des **e-mails de vente** convaincants, des **articles d'actualité** et même **gagner des [concours d’art](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/).**
+Pour nos besoins, l'intelligence artificielle (IA) est un domaine dans lequel les gens ont créé des algorithmes "intelligents" qui "pensent" comme les humains[^1]. Ces algorithmes peuvent rédiger des **dissertations**, résoudre **problèmes mathématiques** et créer de l’**art**. Les avancées récentes dans le domaine ont créé des IA si avancées qu'elles peuvent rédiger des **e-mails de vente** convaincants, des **articles d'actualité** et même **gagner des [concours d’art](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/).**
 
 L'IA révolutionne actuellement de nombreux secteurs, notamment le **journalisme**, la **santé** et l' **éducation**. Vous le verrez probablement bientôt déployé sur votre lieu de travail/salle de classe si vous ne l'avez pas déjà fait. Bien que l'IA soit extrêmement utile, elle nécessite que les humains la dirigent sur ce qu'il faut faire. Souvent, les IA sont comme des enfants de cinq ans très intelligents. Ils peuvent faire beaucoup de choses, mais ils ont besoin d'instructions précises pour bien les faire.
 
-Être capable de diriger correctement les IA est une compétence très puissante. Alors, comment communiquez avec elles? Les IA abordées dans ce cours comprennent l'anglais (et d'autres langues), nous pouvons donc généralement simplement décrire les tâches que nous voulons accomplir. Par exemple, nous pouvons dire à une IA de `Rédiger un essai sur les avantages de l'IA` et elle dirait[2](https://learnprompting.org/docs/basics/intro#fn-2) :
+Être capable de diriger correctement les IA est une compétence très puissante. Alors, comment communiquez avec elles? Les IA abordées dans ce cours comprennent l'anglais (et d'autres langues), nous pouvons donc généralement simplement décrire les tâches que nous voulons accomplir. Par exemple, nous pouvons dire à une IA de `Rédiger un essai sur les avantages de l'IA` et elle dirait[^2] :
 
 ```
 Ces dernières années, l'intelligence artificielle (IA) est devenue un sujet brûlant dans le monde de la technologie. Avec son potentiel de révolutionner de nombreux aspects de nos vies, l'IA devient de plus en plus pertinente à mesure que la technologie continue de se développer. De ses applications dans les soins de santé et les transports à son utilisation dans l'éducation et la fabrication, l'IA nous a déjà montré son immense potentiel au profit de la société de multiples façons.
@@ -37,7 +38,5 @@ Ce cours vous apprendra à communiquer avec les IA. Lisez le reste de ce chapitr
 
 Avant de lire le prochain article, il est important de noter que vous n'avez besoin d'aucune formation technique pour faire du prompt engineering. La plupart sont des essais et des erreurs, et vous pouvez apprendre au fur et à mesure.
 
----
-
-1. Techniquement, ils ne "pensent" pas comme les humains, mais c'est une façon simple de l'expliquer.↩
-2. Une IA (GPT-3 davinci-003) a en fait écrit ceci.↩
+[^1] : Techniquement, ils ne "pensent" pas comme les humains, mais c'est une façon simple de l'expliquer.↩
+[^2] : Une IA (GPT-3 davinci-003) a en fait écrit ceci.↩
