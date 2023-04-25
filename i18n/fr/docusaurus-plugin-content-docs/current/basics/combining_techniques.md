@@ -12,7 +12,7 @@ import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
   <CombinedPrompt style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Comme nous l'avons vu dans les pages précédentes, les invites peuvent avoir des formats et des complexités variables. Elles peuvent inclure du contexte, des instructions, et plusieurs exemples d'entrée-sortie. Cependant, jusqu'à présent, nous n'avons examiné que des classes de prompts séparées. La combinaison de ces différentes techniques de prompt peut conduire à des prompts plus performants.
+Comme nous l'avons vu dans les pages précédentes, les prompts peuvent avoir des formats et des complexités variables. Elles peuvent inclure du contexte, des instructions, et plusieurs exemples d'entrée-sortie. Cependant, jusqu'à présent, nous n'avons examiné que des classes de prompts séparées. La combinaison de ces différentes techniques de prompt peut conduire à des prompts plus performants.
 
 Voici un exemple d'un prompt qui inclut du contexte, des instructions et plusieurs exemples :
 
