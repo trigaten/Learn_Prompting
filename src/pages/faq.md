@@ -4,6 +4,10 @@
 
 Yes, the [course](https://learnprompting.org/docs/intro) is completely free and open source. We do not charge for any of the content on this website.
 
+> Is prompt engineering a real job?
+
+Yes, **but** most prompt engineering jobs require other skills such as coding and teaching. We prefer to view prompt engineering as a very powerful skill that can be used in many different jobs.
+
 > I’ve never prompted before - can I still take this course?
 
 Yes! This course is designed to be accessible to everyone, regardless of prior experience. We recommend starting with the [basics](https://learnprompting.org/docs/intro) and working your way up from there.
