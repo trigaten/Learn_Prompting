@@ -4,7 +4,7 @@ sidebar_position: 1000
 
 # 🟢 Commencer votre parcours
 
-import Steps from '../assets/steps.svg';
+import Steps from '@site/docs/assets/steps.svg';
 
 <div style={{textAlign: 'center'}}>
   <Steps style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
