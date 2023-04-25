@@ -84,6 +84,8 @@ cite them as such.
 
 #### BLOOM+1 (more languages/ 0 shot improvements)(@yong2022bloom1)
 
+#### GPT-4 Technical Report(@openai2023gpt4) 🔵
+
 #### Jurassic 1(@lieberjurassic) 🔵
 
 #### GPT-J-6B(@wange2021gptj)
