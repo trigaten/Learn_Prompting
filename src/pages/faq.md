@@ -1,15 +1,26 @@
 # Hello
 
-From #Support:
+> Is this course free?
+
+Yes, the [course](https://learnprompting.org/docs/intro) is completely free and open source. We do not charge for any of the content on this website.
+
+> I’ve never prompted before - can I still take this course?
+
+Yes! This course is designed to be accessible to everyone, regardless of prior experience. We recommend starting with the [basics](https://learnprompting.org/docs/intro) and working your way up from there.
+
+> Do I need coding experience to take this course?
+
+Nope! However, coding is a great skill to learn alongside prompt engineering. We recommend learning Python, as it is a popular language for AI and machine learning.
+
+
 What is the point of prompting?
 
 Where can I ask more questions and talk to other people about prompting?
 
 How do I make or fix [x prompt]? (both text and images)
 
-I’ve never prompted before - can I still take this course?
 
-Do I need coding experience to take this course?
+
 
 How do I set up my OpenAI API key?
 

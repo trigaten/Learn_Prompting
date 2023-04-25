@@ -105,6 +105,11 @@ async function createConfig() {
               className: 'consulting-gradient',
             },
             {
+              to: 'faq', 
+              label:"FAQ", 
+              position:"left",          
+            },
+            {
               type: 'localeDropdown',
               position: 'right',
             },
