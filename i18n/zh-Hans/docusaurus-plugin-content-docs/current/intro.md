@@ -39,7 +39,7 @@ sidebar_position: 1
 
 ## 如何阅读
 
-无需按顺序阅读所有章节，随意探索您感兴趣的内容！如果您不熟悉 AI、机器学习和编程，我们建议您从[基础知识](https://learnprompting.org/zh-Hans/docs/category/-basics) 部分和[说明](https://learnprompting.org/zh-Hans/docs/basics/intro)指南。对于那些已经熟悉这些概念的人来说，[中级](https://learnprompting.org/zh-Hans/docs/category/%EF%B8%8F-intermediate) 部分是深入了解和扩展知识的好地方。
+无需按顺序阅读所有章节，随意探索您感兴趣的内容！如果您不熟悉 AI、机器学习和编程，我们建议您从[基础知识](https://learnprompting.org/zh-Hans/docs/category/-basics)部分和[说明](https://learnprompting.org/zh-Hans/docs/basics/intro)指南。对于那些已经熟悉这些概念的人来说，[中级](https://learnprompting.org/zh-Hans/docs/category/%EF%B8%8F-intermediate)部分是深入了解和扩展知识的好地方。
 
 ### 文章评分系统
 
