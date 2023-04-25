@@ -11,18 +11,18 @@ Una de nuestras formas favoritas de utilizar los LLMs es como herramienta de est
 Recientemente estaba leyendo un libro de texto sobre cactus (@nobel2002cacti) y vi este pasaje:
 
 ```text
-Debido a las adaptaciones a condiciones xéricas y la presencia de maderas menos evolucionadas en Pereskioideae, la familia Cactaceae es una de las más interesantes tanto anatómica como morfológicamente.
+Debido a las adaptaciones a condiciones xéricas y la presencia de **maderas menos evolucionadas** en Pereskioideae, la familia Cactaceae es una de las más interesantes tanto anatómica como morfológicamente.
 ```
 
-No tenía idea de lo que significaba **less derived woods** y Google solo mostraba artículos de investigación al respecto. Decidí usar ChatGPT para averiguar qué significaba. Le di la siguiente solicitud, que es simplemente el pasaje del libro y mi pregunta.
+No tenía idea de lo que significaba **maderas menos evolucionadas** y Google solo mostraba artículos de investigación al respecto. Decidí usar ChatGPT para averiguar qué significaba. Le di la siguiente solicitud, que es simplemente el pasaje del libro y mi pregunta.
 
 ```text
 Debido a las adaptaciones a condiciones xéricas y la presencia de maderas menos evolucionadas en Pereskioideae, la familia Cactaceae es una de las más interesantes tanto anatómica como morfológicamente.
 
-¿Qué significa la expresión "less derived woods"?
+¿Qué significa la expresión "maderas menos evolucionadas"?
 
 // highlight-start
-En este contexto, "less derived woods" se refiere a la forma ancestral o primitiva de la madera que se encuentra en la evolución temprana de las plantas. Estas maderas carecen de estructuras y características especializadas que evolucionaron más tarde en las plantas más avanzadas o derivadas. En la subfamilia Pereskioideae de la familia Cactaceae, la madera es menos derivada en comparación con otras subfamilias y es más similar a la madera que se encuentra en las plantas no cactáceas. Se cree que la madera menos derivada en Pereskioideae es una adaptación a los ambientes más húmedos y menos xéricos en los que estas plantas crecen en comparación con otros cactus.
+En este contexto, "maderas menos evolucionadas" se refiere a la forma ancestral o primitiva de la madera que se encuentra en la evolución temprana de las plantas. Estas maderas carecen de estructuras y características especializadas que evolucionaron más tarde en las plantas más avanzadas o derivadas. En la subfamilia Pereskioideae de la familia Cactaceae, la madera es menos derivada en comparación con otras subfamilias y es más similar a la madera que se encuentra en las plantas no cactáceas. Se cree que la madera menos derivada en Pereskioideae es una adaptación a los ambientes más húmedos y menos xéricos en los que estas plantas crecen en comparación con otros cactus.
 //highlight-end
 ```
 

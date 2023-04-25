@@ -1,69 +1,95 @@
 ---
 sidebar_position: 1
 ---
-
 # 欢迎
 
 欢迎来到提示工程课程！
 
-我会将提示工程（prompt engineering, PE）介绍为：**如何同人工智能交流，并得到你要的结果**。
+提示工程（PE）是**与 AI 进行有效沟通已实现预期结果**的过程。随着 AI 技术持续快速的发展，掌握提示工程技能变得尤为重要。提示工程技术可以应用于各种各样的任务，使其成为任何寻求提高日常和创新活动效率的人的有用工具。
 
-随着最近人工智能的不断进步，提示工程这项技能变得越来越重要。本课程会聚焦于如何使用提示工程。你不需要很多机器学习相关的知识。但如果你完全不知道上面的内容是什么意思，可以在基础部分看到一些介绍。
+本课程为不熟悉 AI 和 PE 的**初学者**量身打造，它将是你完美的起点。然而即使你不是初学者，你仍然会在本课程中找到有价值的见解。本课程是目前**最全面**的提示工程课程，内容涵盖 AI 简介到高级 PE 技术。
 
-## 本课程唯一且最重要的部分是你的反馈！
-
-如果你有任何问题、评论或者建议，可以提出一个**[问题](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**，或者发邮件给我，邮箱地址是learnprompting@gmail.com，或者在[Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting)上讨论。
-
-即使是最小的反馈也很有价值！
 
 ## 课程哲学
 
-**快速迭代**：因为提示工程的内容日新月异，所以我会经常更新本课程，用短文章来介绍新技术。让我知道你更想了解什么内容。
+本课程是开源的，由研究者、翻译人员和爱好者组成的多元化社区构建。我们相信每个人都可以使用人工智能，并且可以清楚客观地描述它。为此，我们努力制作一门全面而公正的课程，没有过多的行话和炒作。
 
-这其中包括**错误迭代**。如果你看到了一些你不太理解的内容，即使是很小的，也是我的问题。**请提出一个[问题](https://github.com/trigaten/Learn_Prompting/issues/new/choose)！**
 
-**关注实践**：我会聚焦于应用部分，特别是一些你可以直接使用的技巧。
+我们发现这种方法受到 PE 社区的赞赏：本课程被 [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15) 引用，并被[O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/)、Scale AI 和 OpenAI 等公司的人员使用。你可能还会注意到<a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>几乎</a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>每个</a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>其他</a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>提示</a> <a href="https://youtu.be /pZsJbYIFCCw?t=208" rel={"nofollow"}>工程</a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>视频</a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>和</a> <a href="https://youtu.be/f8PGV3T9w38 ?t=549" rel={"nofollow"}>指南</a>
+使用本课程的材料。我们很荣幸能够支持提示工程社区，其中包括我们的 620K 用户和 33K [Discord](https://discord.gg/learn-prompting) 成员。
 
-**尽早添加案例**：我会尽早在文章中添加例子，这样你便可以更早地感受到相关技术。
 
-如果有时间的话，我会再思考这一部分内容 😊。
+
+
+### 我们的教学方式
+
+我们教授提示工程的方法遵循以下原则：
+
+**快速迭代**—由于新的PE内容几乎每天都会发布，我们将通过定期发布简明扼要的文章介绍新兴技术，以保持本课程的最新性。请告诉我们您希望我们进一步探讨的主题！
+
+**强调实用性**——我们的重点是应用、实用的技术，你可以立即将这些技术融入你的项目和应用程序中。
+
+**可访问的示例**—为了帮助您快速掌握技术，我们将在文章中提供清晰的示例。
+
+**协作学习**——我们相信相互学习。如果您遇到不太理解的内容或发现错误，请通过创建[GitHub 上的问题](https://github.com/trigaten/Learn_Prompting/issues/new/choose) 告诉我们。你的反馈有助于我们改进课程。
+
+:::note
+本课程正在持续开发中。我们正在努力改善学习体验并添加更多内容。如果你有任何建议，请告诉我们！
+:::
 
 ## 如何阅读
 
-不用按照顺序阅读所有章节，你可以挑自己感兴趣的部分！
+无需按顺序阅读所有章节，随意探索您感兴趣的内容！如果您不熟悉 AI、机器学习和编程，我们建议您从[基础知识](https://learnprompting.org/zh-Hans/docs/category/-basics)部分和[说明](https://learnprompting.org/zh-Hans/docs/basics/intro)指南。对于那些已经熟悉这些概念的人来说，[中级](https://learnprompting.org/zh-Hans/docs/category/%EF%B8%8F-intermediate)部分是深入了解和扩展知识的好地方。
 
-如果你是一个新手，可以先读下面内容，然后从基础开始。如果你有一定的基础，可以直接从中级部分开始。
+### 文章评分系统
 
-文章有不同的难度等级，如下所示：
+我们已经根据文章的难度级别和所需的编程知识范围实施了一个评分系统：
 
-🟢 轻松：无需编程基础
+🟢 初学者友好，无需编程
 
-🟡 简单：只需简单编程基础，但不需要专业知识
+🟡 简单，需要基本的编程知识，但不需要专业知识
 
-🔴 中级：需要编程知识和一些专业知识（例如如何计算对数概率）
+🔴 中级，需要编程技能和一些领域知识（例如计算对数概率）
 
-🟣 困难：需要编程知识和一些高级的专业知识（例如强化学习相关的内容）
+🟣 进阶，需要编程专业知识和深入的领域理解（例如强化学习技术）
 
-提示：虽然对于 🔴🟣 部分来说，专业知识是有帮助的，但在没有专业知识的情况下，你仍然可以读懂文章。
+请注意，即使是标记为 🔴 和 🟣 文章，通常您也可以理解其内容，而无需先前的领域专业知识，尽管这可能对实现有所帮助。
 
-## 章节
+### 章节
 
-每章的大概内容如下：
+以下是章节的简要概述：
 
-**基础**：什么是提示工程和一些提示工程的简单技巧。
+**基础知识**：提示工程和基本技术介绍
 
-**中级**：稍微复杂一些的提示工程技术。
+**基本应用**：提示工程的简单、实用的应用
 
-**使用提示**：由社区成员编写的一些完整提示工程案例。
+**中级**：具有中等复杂性的基于研究的 PE 技术
 
-**进阶应用**：一些非常强大但更进阶的提示工程应用。
+**应用提示**：社区成员提供的综合 PE 流程案例
 
-**可靠性**：如何使语言模型（LLMs）更加可靠。
+**进阶应用**：强大且更复杂的提示工程应用
 
-**提示工程在图像方面的应用**: 用于文本到图像模型（如 DALLE 和 Stable Diffusion）的提示工程！
+**可靠性**：增强大型语言模型（LLMs）的可靠性
 
-**提示注入**：用于提示工程的黑客攻击。
+**图像**：文本到图像模型的快速工程，例如 DALLE 和 Stable Diffusion
 
-**提示工具**: 不同的提示工程的工具。
+**提示注入**：用于提示工程的黑客攻击
 
-**提示微调**：用梯度微调提示。
+**工具**：各种提示工程工具和 IDE 的介绍
+
+**提示微调**：使用基于梯度的技术优化提示
+
+**杂项**：与提示工程相关的其他主题和技术的集合
+
+## 反馈
+
+本课程最重要的部分是您的反馈！
+
+如果您有任何问题、意见或建议，您可以：
+  - [在 GitHub 上提出问题](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
+  - 发送电子邮件至 [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+  - 加入 [Discord 社区](https://learnprompting.org/discord)
+  - 在 [Twitter](https://twitter.com/learnprompting) 上关注我们
+  - 我们还有一个 [咨询意向表](https://learnprompting.org/consulting)
+
+即使是最小的反馈也非常有帮助！
