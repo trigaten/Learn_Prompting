@@ -20,34 +20,21 @@ Nope! However, coding is a great skill to learn alongside prompt engineering. We
 
 [Our Discord](https://discord.gg/learn-prompting) is a great place for this!
 
-
 > Can I help add to the site?
 
 Yes, we are always looking for more contributors! You can find more information [here](https://learnprompting.org/contribute).
 
+> What is the point of prompting?
 
-
-What is the point of prompting?
-
-
-
-
+Prompting is about effectively communicating with AI! The better you are at prompting, the more ways you'll have to use this new technology well. 
 
 How do I make or fix [x prompt]? (both text and images)
 
-
-
-
-How do I set up my OpenAI API key?
-
 What does it mean to be a prompt engineer?
 
-How do I find work prompting?
+> How universal is this course?
 
-How universal is this course?
-
-
-How can I access GPT-4?
+This course focuses in on prompting as a way to interact with AI, but the AI in turn can be applied to writing, coding, image generation, and much more!
 
 Misc questions: 
 Is there a Learn Prompting certificate you can earn?
@@ -56,11 +43,10 @@ Details about the prompting competition?
 
 How should I start?
 
-Has anyone used ChatGPT for [x purpose]? (answer is almost always yes)
+> I have an idea for a brand new prompt or project! Has it been done before?
 
-Can ChatGPT do [x thing]? (answer is almost always yes)
+With how fast the AI industry moves, any idea is likely to have been thought of. The best way to know is to ask in [our Discord](https://discord.gg/learn-prompting)!
 
-Other types of questions people might have:
-Questions about OpenAI?
-Questions about detection?
-Image prompting?
+> I want to use AI in a certain way... can learning prompting help me do it?
+
+With just about any project, various forms of AI will be helpful and relevant in different ways! Understanding how to interact with AI can supercharge almost any endeavor. 
