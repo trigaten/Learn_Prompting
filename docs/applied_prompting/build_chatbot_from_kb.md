@@ -76,7 +76,7 @@ To craft the prompt, we’ll experiment using:
 Let’s start our prompt using the <span className="yellow-highlight">role-prompting</span> technique.
 
 <pre>
-    <span className="yellow-highlight">As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.</span><br/>
+    <span className="yellow-highlight">As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.</span>
 </pre>
 
 Then, suppose the semantic search step extracts the following document from our knowledge base. All the documents describe how the VideoGram product works, which is an imaginary product similar to Instagram, but only for videos.
@@ -102,7 +102,8 @@ We can add <span className="yellow-highlight">its content</span> inside the prom
     <br/>
     Login to VideoGram from Mobile App<br/>
     1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner. 3. On the login page, enter your VideoGram username and password.<br/>
+    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
+    3. On the login page, enter your VideoGram username and password.<br/>
     4. Once you have entered your credentials, tap the “Login” button.<br/>
     5. You should now be logged in to your VideoGram account.<br/>
     END CONTEXT<br/>
@@ -124,7 +125,8 @@ Last, we need to add <span className="yellow-highlight">the conversation and the
     <br/>
     Login to VideoGram from Mobile App<br/>
     1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner. 3. On the login page, enter your VideoGram username and password.<br/>
+    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
+    3. On the login page, enter your VideoGram username and password.<br/>
     4. Once you have entered your credentials, tap the “Login” button.<br/>
     5. You should now be logged in to your VideoGram account.<br/>
     END CONTEXT<br/>
@@ -159,7 +161,8 @@ Let’s try with a more vague user utterance, like <span className="yellow-highl
     <br/>
     Login to VideoGram from Mobile App<br/>
     1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner. 3. On the login page, enter your VideoGram username and password.<br/>
+    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
+    3. On the login page, enter your VideoGram username and password.<br/>
     4. Once you have entered your credentials, tap the “Login” button.<br/>
     5. You should now be logged in to your VideoGram account.<br/>
     END CONTEXT<br/>
@@ -181,7 +184,7 @@ Next, here’s how the complete conversation goes. The whole prompt is hidden fo
     USER: Can’t login<br/>
     SKIPPY: I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?<br/>
     USER: Mobile app<br/>
-    <span className="bluegreen-highlight">SKIPPY: OK, no problem. To login via the mobile app, open the VideoGram app on your mobile device. On the main page, tap the “Login” button located in the bottom right corner. On the login page, enter your VideoGram username and password. Once you have entered your credentials, tap the “Login” button. You should now be logged in to your VideoGram account. Please let me know if you need any further assistance.</span><br/>
+    <span className="bluegreen-highlight">SKIPPY: OK, no problem. To login via the mobile app, open the VideoGram app on your mobile device. On the main page, tap the “Login” button located in the bottom right corner. On the login page, enter your VideoGram username and password. Once you have entered your credentials, tap the “Login” button. You should now be logged in to your VideoGram account. Please let me know if you need any further assistance.</span>
 </pre>
 
 GPT-3 can manage disambiguation, provided that it has the right contextual information.

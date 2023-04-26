@@ -40,6 +40,10 @@ We are looking for help translating the site into other languages. If you are in
 
 Make sure to read the Docusaurus [translation guide](https://docusaurus.io/docs/i18n/introduction). Translations will go [here](https://github.com/trigaten/Learn_Prompting/tree/main/i18n). Around 7 languages are currently being translated, so you will likely find people to work with!
 
+:::note
+When you run the website locally, make sure to follow [Docusaurus instructions](https://docusaurus.io/docs/i18n/tutorial#start-your-site) on running it in your language (e.g. `npm run start -- --locale fr`).
+:::
+
 ## 4. Miscl.
 
 Everything from fixing typos to recommendations for the site (suggest papers, 

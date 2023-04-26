@@ -2,6 +2,9 @@
   "sidebar.tutorialSidebar.category.😃 Basics": {
     "message": "😃 基础"
   },
+  "sidebar.tutorialSidebar.category.💼 Basic Applications": {
+    "message": "💼 基础应用"
+  },
   "sidebar.tutorialSidebar.category.😃 Basics.link.generated-index.description": {
     "message": "什么是提示工程和一些提示工程的简单技巧"
   },

@@ -4,7 +4,7 @@ sidebar_position: 1000
 
 # 📚 Bibliography
 
-The page contains an organized list of all papers used by this course. 
+The page contains an organized list of all papers used by this course.
 The papers are organized by topic.
 
 **To cite this course, use the provided citation in the Github repository.**
@@ -40,6 +40,9 @@ cite them as such.
 
 #### Least to Most(@zhou2022leasttomost) 🔵
 
+#### Reframing Instructional Prompts to GPTk’s Language(@mishra2022reframing) 🔵
+
+#### The Turking Test: Can Language Models Understand Instructions?(@efrat2020turking) 🔵
 
 ## Reliability
 
@@ -60,6 +63,7 @@ cite them as such.
 #### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
 
 #### Compositional Generalization - SCAN(@lake2018scan)
+
 ## Automated Prompt Engineering
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
@@ -79,6 +83,8 @@ cite them as such.
 #### BLOOM(@scao2022bloom) 🔵
 
 #### BLOOM+1 (more languages/ 0 shot improvements)(@yong2022bloom1)
+
+#### GPT-4 Technical Report(@openai2023gpt4) 🔵
 
 #### Jurassic 1(@lieberjurassic) 🔵
 
@@ -235,6 +241,8 @@ cite them as such.
 #### Prompting Is Programming: A Query Language For Large Language Models(@beurerkellner2022prompting)
 
 #### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
+
+#### A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT(@white2023prompt) 🔵
 
 #### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
 

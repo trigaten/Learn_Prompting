@@ -2,7 +2,7 @@
 sidebar_position: 40
 ---
 
-# 🟢 Coding Assistance
+# 🟡 Coding Assistance
 
 You can use ChatGPT for debugging, code generation, reformatting, commenting, and more. It can work with code in over 40 programming languages. 
 
@@ -359,4 +359,4 @@ A full discussion of using ChatGPT as a virtual machine can be found at [engrave
 
 ---
 
-Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes).
+Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes.com/).

@@ -4,35 +4,35 @@ sidebar_position: 1
 
 # Bienvenue
 
-Bienvenue à ce cours d'Ingénierie d'invites !
+Bienvenue dans ce cours sur le prompt engineering!
 
-Je préfère penser que l'Ingénierie d'invites (PE) est : **comment parler avec une IA pour la faire faire ce que vous voulez**.
+Je préfère penser que l'Ingénierie d'invites (PE) est : **comment parler à l'IA pour qu'elle fasse ce que vous voulez**.
 
-Avec les nombreuses avancées récentes de l'intelligence artificielle (IA), l'ingénierie d'invites est devenue une compétence recherchée et précieuse pour faire l'IA à faire ce que vous voulez. Ce cours se concentre sur les techniques de PE appliquées et nous attendons des lecteurs qu'ils aient une connaissance minimale de l'apprentissage automatique. Si vous êtes nouveau dans ces concepts (IA, apprentissage automatique, programmation, etc.), je vous recommande de commencer par la section [Bases](https://learnprompting.org/fr/docs/category/-basics) et de lire d'abord les [instructions](https://learnprompting.org/fr/docs/basics/intro).
+Avec de nombreuses avancées récentes en matière d'intelligence artificielle (IA), cette compétence est devenue une compétence particulièrement importante. Ce cours se concentre sur les techniques de PE appliquées. Une connaissance minimale de l'apprentissage automatique est attendue. Si vous n'avez aucune idée de ce que signifie ces concepts (IA, apprentissage automatique, programmation, etc.), je vous recommande de commencer par la section [Bases](https://learnprompting.org/fr/docs/category/-basics).
 
-## La partie la plus importante de ce cours, c'est vos commentaires !
+## La partie la plus importante de ce cours est votre rétroaction !
 
-Si vous avez des questions, des commentaires ou des suggestions, vous pouvez :
+Si vous avez des questions, des commentaires ou des suggestions, vous pouvez :
 
-- créer un **[issue sur GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**
-- nous envoyer un courriel à [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
-- vous joindre à notre communauté sur [Discord](https://learnprompting.org/discord)
+- créer un [**rapport sur GitHub**](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
+- nous envoyer un e-mail à [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+- vous joindre sur [Discord](https://learnprompting.org/discord)
 - nous suivre sur [Twitter](https://twitter.com/learn_prompting)
-- on a aussi un [Formulaire d'intéret de consultation](https://learnprompting.org/consulting)
+- On a aussi un [Formulaire d'intéret de consultation](https://learnprompting.org/consulting)
 
-Même la plus petite quantité de commentaires est très utile !
+Même la plus petite quantité de commentaires est très utile !
 
 ## Philosophie du cours
 
-**Itérations rapides** - Étant donné que le nouveau contenu PE est publié presque quotidiennement, je mettrai fréquemment à jour ce cours avec de courts articles sur les nouvelles techniques. Faites-moi savoir de quoi vous voulez en savoir plus !
+**Itérations rapides** - Étant donné que du nouveau contenu sur le PE est publié presque quotidiennement, je mettrai fréquemment à jour ce cours avec de courts articles sur les nouvelles techniques. Faites-moi savoir de quoi vous voulez en savoir plus !
 
-Une partie de cette philosophie est **l'itération sur les erreurs**. Si jamais vous voyez quelque chose que vous ne comprenez pas tout à fait, même quelque chose de petit, c'est sur moi. **Veuillez créer un [issue sur GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)** !
+Une partie de cette philosophie est **l'itération d'erreur**. Si jamais vous voyez quelque chose que vous ne comprenez pas tout à fait, même quelque chose de petit, n’hésitez pas à me contacter en **créant un [rapport sur GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)!**
 
-**Un accent sur l'aspect pratique** - On se concentrera sur des techniques appliquées et pratiques que vous pouvez utiliser immédiatement pour vos applications.
+**Focus sur l'aspect pratique** - On se concentrera sur des techniques appliquées et pratiques que vous pouvez utiliser immédiatement pour vos applications.
 
-**Exemples dès que possible** - On mettra des exemples dans les articles dès que possible afin que vous puissiez vous faire une idée des techniques le plus rapidement possible.
+**Exemples instantanés** - On essaie de mettre des exemples dans les articles dès que possible, afin que vous puissiez vous faire une idée des techniques à l’instant.
 
-On philosophera plus là-dessus quand on aura le temps. 😊
+On philosophera plus là-dessus quand on aura le temps 😊
 
 ## Comment lire
 
@@ -40,36 +40,40 @@ Il ne faut pas lire tous les chapitres dans l'ordre. Lisez ce qui vous intéress
 
 Si vous débutez dans l'intelligence artificielle (IA) et l'ingénierie d'invites (PE), commencez par la section [Bases](https://learnprompting.org/fr/docs/category/-basics). Si vous êtes déjà familiarisé avec ces concepts, vous serez bien parti avec la section [Intermédiaire](https://learnprompting.org/fr/docs/category/%EF%B8%8F-intermediate).
 
-Les articles ont un système de notation basé sur la difficulté d'un sujet et si des connaissances en programmation sont requises :
+Les articles ont un système de notation basé sur la difficulté d'un sujet et si des connaissances en programmation sont requises :
 
-🟢 Très facile ; aucune programmation requise
+🟢 Très facile ; aucune connaissance en programmation requise
 
-🟡 Facile ; programmation simple requise, mais aucune expertise dans le domaine
+🟡 Facile ; des connaissances programmation simple requises, mais aucune expertise dans le domaine
 
-🔴 Moyen ; programmation requise et une certaine expertise du domaine à mettre en œuvre (par exemple, calcul de probabilités logarithmiques)
+🔴 Moyen ; des connaissances en programmation requises et une certaine expertise du domaine à mettre en œuvre (par exemple, calcul de probabilités logarithmiques)
 
 🟣 Difficile ; programmation requise et solide expertise du domaine à mettre en œuvre (par exemple, approches d'apprentissage par renforcement)
 
-Remarque : même si pour 🔴🟣 l'expertise du domaine est utile, vous serez toujours en mesure de comprendre l'article sans connaissance préalable.
+Remarque : même si pour 🔴🟣 l'expertise du domaine est utile, vous serez généralement toujours en mesure de comprendre l'article sans connaissance préalable.
 
-## Chapitres
+## [Chapitres](https://learnprompting.org/docs/intro#chapters)
 
 Voici un résumé rapide de chaque chapitre :
 
-**Bases** : Introduction à la PE et aux techniques simples de la PE
+**Bases** : Introduction au PE et aux techniques simples du PE
 
-**Intermédiaire** : Techniques de la PE soutenues par la recherche légèrement plus compliquées
+**Intermédiaire** : Techniques de PE légèrement plus avancées, soutenues par la recherche
 
-**Invites appliquées** : Quelques procédures pas à pas complètes du processus de la PE écrites par des membres de la communauté
+**Prompting appliqué** : Quelques procédures pas à pas complètes du processus du PE écrites par des membres de la communauté
 
-**Applications avancées** : Quelques applications très puissantes, mais plus avancées de la PE
+**Applications avancées** : Quelques applications très puissantes, mais plus avancées du PE
 
 **Fiabilité** : Comment rendre les modèles de langue de grande taille (LLM) plus fiables
 
-**Images** : PE pour les modèles texte-image comme DALLE et _Stable Diffusion_ !
+**Images** : PE pour les modèles texte-image comme DALL-E et Stable Diffusion !
 
-**Injection des invites** : Le hacking, mais pour la PE
+**Hacking avec des Prompts** : Le piratage, mais pour le PE
 
-**Les IDE pour les invites** : Différents outils pour la PE
+**IDE de Prompt** : Différents outils pour le PE
 
-**Réglage des invites** : Ajustez les invites avec des gradients
+**Réglage de Prompt** : Ajustez et personnalisez vos prompts grâce à des grad
+
+## Note
+
+Durant l’entièreté de la formation, la traduction française des pages ne va pas être appliquée à 100 %, les explications seront toutes entièrement traduites, cependant, les termes techniques tels que “Prompt Engineering” (qui pourrait être traduit par “Ingénierie d’invites”) seront laissés en anglais dans le but de vous donner les termes les plus utilisés dans les domaines étudiés et donc de vous permettre de plus facilement vous intégrer au sein de la communauté spécialisée dans le prompting.

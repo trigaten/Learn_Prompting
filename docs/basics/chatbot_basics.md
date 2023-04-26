@@ -4,9 +4,19 @@ sidebar_position: 80
 
 # 🟢 Chatbot Basics
 
-One of the most common ways prompting can be useful is when interacting with the numerous chatbots available to the public, such as [ChatGPT](http://chat.openai.com). Note that ChatGPT is different from GPT-3. The main difference is that chatbots can remember your conversation history. Just like GPT-3, they can also answer questions, provide writing summary and analysis, write text or code, and more at a high level, which is an exciting prospect—but the real value of chatbots is only accessible when you get specific with your prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots, such as using style guidance, descriptors, and priming. 
 
-## Modifing Your Prompt
+import Chatbots from '../assets/chatbot.svg';
+
+<div style={{textAlign: 'center'}}>
+  <Chatbots style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+</div>
+
+
+Thus far, this course has mostly used GPT-3 for examples. GPT-3 is a LLM that has no memory. When you ask it a question (a prompt), it does not remember anything that you have previously asked it. In contrast, chatbots like [ChatGPT](http://chat.openai.com) are able to **remember your conversation history**. This can be useful for applications such as customer service or simply if you want to have a conversation with a LLM!
+
+Just like GPT-3, chatbots can answer questions, provide summaries, analysis, and write text or code. The real value of chatbots is only accessible when you use good prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots, such as using style guidance, descriptors, and priming. 
+
+## Modifying Your Prompt
 
 ### Style Guidance
 
@@ -69,9 +79,5 @@ In the second example, we instead asked the question after providing a priming p
 </div>
 
 Incorporating primers into your prompting is a more advanced way of interacting with chatbots. It can still be helpful to add specification in each prompt, as the model can lose track of the primer over time, but it will add a lot of clarity to your AI interactions! 
-
-## Notes
-
-Need citations.
 
 By [Dastardi](https://twitter.com/lukescurrier)

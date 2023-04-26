@@ -100,7 +100,7 @@ The output is:
 
 <pre>
 <span className="bluegreen-highlight">
-"""Emma took a 60 minute plane ride to seattle. She then took a 2 hour train ride to portland, and then a 30 minute bus ride to vancouver. How long did it take her to get to vancouver?"""<br/>
+Emma took a 60 minute plane ride to seattle. She then took a 2 hour train ride to portland, and then a 30 minute bus ride to vancouver. How long did it take her to get to vancouver?<br/><br/>
 
 plane_ride = 60<br/>
 train_ride = 2 * 60  # 2 hours in minutes<br/>

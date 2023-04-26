@@ -1,12 +1,19 @@
 ---
-sidebar_position: 10
+sidebar_position: 6
 locale: en-us
 style: chicago
 ---
 
-# 🟢 More on Prompting
+# 🟢 Combining Techniques
 
-As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, multiple questions-answer examples, and even other prompts (what!?).
+import CombinedPrompt from '../assets/combined_prompt.svg';
+
+
+<div style={{textAlign: 'center'}}>
+  <CombinedPrompt style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+</div>
+
+As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, and multiple input-output examples. However, thus far, we have only examined separate classes of prompts. Combining these different prompting techniques can lead to more powerful prompts. 
 
 Here is an example of a prompt that includes context, instructions, and multiple examples:
 
@@ -32,12 +39,5 @@ A:
 ```
 
 By adding additional context/examples, we can often improve the performance of AIs
-on different tasks. The next chapter covers slightly more advanced prompting techniques.
+on different tasks. 
 
-## Notes
-
-In the next chapters, you may see the words **AI, model, and LLM
-used interchangeably**. See the [vocabulary reference](https://learnprompting.org/docs/vocabulary) for more information.
-
-Prompts inside of prompts, or self-augmented prompts(@kojima2022large), will be 
-covered in the next few sections.

@@ -81,7 +81,7 @@ First, I made a simple dataset in the Dust `Datasets` tab.
   <img src={dataset} style={{width: "750px"}} />
 </div>
 
-Then, I switched to the `Specification` tab and loaded the dataset using a `data` block.
+Then, I switched to the `Specification` tab and loaded the dataset using an `input` block.
 
 <div style={{textAlign: 'center'}}>
   <img src={load_dataset} style={{width: "750px"}} />
@@ -122,5 +122,5 @@ J-1 (Jurassic 1)(@lieberjurassic) LLM.
 
 ## More
 
-See [this example](https://langchain.readthedocs.io/en/latest/modules/agents/implementations/mrkl.html) of a MRKL System
+See [this example](https://python.langchain.com/en/latest/modules/agents/agents/examples/mrkl.html) of a MRKL System
 built with LangChain.
