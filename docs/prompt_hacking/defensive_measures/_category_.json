@@ -1,0 +1,8 @@
+{
+  "label": "🟢 Defensive Measures",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+    "description": "Hacking, but for PE"
+  }
+}

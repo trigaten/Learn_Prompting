@@ -43,13 +43,13 @@ async function createConfig() {
     },
     plugins: [
       [
-        "@docusaurus/plugin-client-redirects",
+        '@docusaurus/plugin-client-redirects',
         {
           redirects: [
             // /docs/oldDoc -> /docs/newDoc
             {
-              to: "/docs/basics/formalizing",
-              from: "/docs/basics/standard_prompt",
+              to: '/docs/basics/formalizing',
+              from: '/docs/basics/standard_prompt',
             },
           ],
         },
@@ -95,6 +95,7 @@ async function createConfig() {
               ],
             ],
             rehypePlugins: [katex],
+            
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),

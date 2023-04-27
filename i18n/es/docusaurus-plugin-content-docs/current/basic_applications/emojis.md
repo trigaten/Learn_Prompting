@@ -8,7 +8,7 @@ sidebar_position: 40
 
 A veces es difícil recordar cuál de los miles de emojis sería el mejor. ¡Afortunadamente, la inteligencia artificial puede ayudar!
 
-Como ejemplo, intentemos encontrar los mejores emojis para agregar a este [this](https://twitter.com/learnprompting/status/1631786358330085382) tweet:
+Como ejemplo, intentemos encontrar los mejores emojis para agregar a [este](https://twitter.com/learnprompting/status/1631786358330085382) tweet:
 
 ```text
 ¿Listo para liberar tu creatividad con la IA?
@@ -103,7 +103,7 @@ Aquí hay algunos emojis relevantes que puedes usar para transmitir el mensaje y
 Ahora que tengo sugerencias de emojis para cada parte, ¡puedo agregar los que me gusten y twitear!
 
 ```text
-¿Listo para desatar tu creatividad con AI? 🔥🎨
+¿Listo para desatar tu creatividad con IA? 🔥🎨
 
 ¡Descubre el poder de Midjourney, el generador de imágenes de IA que produce imágenes impresionantes y artísticas! ✨
 
