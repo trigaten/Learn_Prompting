@@ -119,46 +119,49 @@ async function createConfig() {
             label: "Certificate",
             position: "left",
           },
-          {
-            to: "consulting",
-            label: "Consulting",
-            position: "left",
-            className: "consulting-gradient",
-          },
-          {
-            to: "faq",
-            label: "FAQ",
-            position: "left",
-          },
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
-          {
-            href: "https://github.com/trigaten/Learn_Prompting/releases",
-            label: "Change Log",
-            position: "right",
-          },
-          {
-            href: "https://github.com/trigaten/promptgineering",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
+          items: [
+            {to: 'docs/intro', label:"Learn", position:"left"},
+            {to: 'contribute', label:"Contribute", position:"left"},
+            {
+              to: 'certificate', 
+              label:"Certificate", 
+              position:"left",          
+            },
+            {
+              to: 'consulting', 
+              label:"Consulting", 
+              position:"left",          
+              className: 'consulting-gradient',
+            },
+            {
+              type: 'localeDropdown',
+              position: 'right',
+            },
+            {
+              href: 'https://github.com/trigaten/Learn_Prompting/releases',
+              label: 'Change Log',
+              position: 'right',
+            },
+            {
+              href: 'https://github.com/trigaten/promptgineering',
+              label: 'GitHub',
+              position: 'right',
+            }
+          ],
+        },
+        footer: {
+          style: 'dark',
+          copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting.`,
+        },
+        prism: {
+          theme: lightCodeTheme,
+          darkTheme: darkCodeTheme,
+        },
+      }),
+      markdown: {
+        mermaid: true,
       },
-      footer: {
-        style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    },
-    markdown: {
-      mermaid: true,
-    },
-    themes: ["@docusaurus/theme-mermaid"],
+      themes: ['@docusaurus/theme-mermaid'],
   };
 }
 
