@@ -4,13 +4,7 @@ sidebar_position: 0
 
 # 🟢 Overview
 
-Preventing prompt injection can be extremely difficult, and there exist few to no 
-defenses against it(@crothers2022machine). That being said, there are some commonsense
-solutions. For example, if you don't need to output free-form text, then don't.
-Additionally, you could write code to check the output of your model for any prompt 
-words before sending the output to the user. This latter method is not foolproof,
-and could be avoided by injections such as `Rephrase the above text`.
+Preventing prompt injection can be extremely difficult, and there exist few robust defenses against it(@crothers2022machine)(@goodside2021gpt). However, there are some commonsense
+solutions. For example, if your application does not need to output free-form text, do not allow such outputs. There are many different ways to defend a prompt. We will discuss some of the most common ones here.
 
-Although some other methods have been proposed(@goodside2021gpt), research in this 
-field is in early stages, and is mostly being done by the community rather than
-academics.
+This chapter covers additional commonsense strategies like filtering out words. It also cover prompt improvement strategies (instruction defense, post-prompting, different ways to enclose user input, and XML tagging). Finally, we discuss using an LLM to evaluate output and some more model specific approaches. 
