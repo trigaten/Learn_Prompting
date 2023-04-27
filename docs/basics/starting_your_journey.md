@@ -5,7 +5,7 @@ sidebar_position: 1000
 # 🟢 Starting Your Journey
 
 
-import Steps from '../assets/steps.svg';
+import Steps from '@site/docs/assets/steps.svg';
 
 
 <div style={{textAlign: 'center'}}>

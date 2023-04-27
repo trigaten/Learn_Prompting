@@ -29,6 +29,20 @@ async function createConfig() {
       defaultLocale: 'en',
       locales: ['en', 'es', 'fr', 'ja', 'pt', 'zh-Hans', 'ko', 'si', 'ru', 'ar'],
     },
+    plugins: [
+      [
+        '@docusaurus/plugin-client-redirects',
+        {
+          redirects: [
+            // /docs/oldDoc -> /docs/newDoc
+            {
+              to: '/docs/basics/formalizing',
+              from: '/docs/basics/standard_prompt',
+            },
+          ],
+        },
+      ],
+    ],
   
     presets: [
       [
@@ -54,6 +68,7 @@ async function createConfig() {
               [(await import("@renatonagliati/remark-auto-glossary")).default, { yamlFile: 'glossary.yml' }]
             ],
             rehypePlugins: [katex],
+            
           },
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
@@ -117,7 +132,7 @@ async function createConfig() {
               href: 'https://github.com/trigaten/promptgineering',
               label: 'GitHub',
               position: 'right',
-            }
+            },
           ],
         },
         footer: {

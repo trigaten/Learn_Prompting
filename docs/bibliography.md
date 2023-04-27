@@ -170,11 +170,17 @@ cite them as such.
 
 #### Evaluating the Susceptibility of Pre-Trained Language Models via Handcrafted Adversarial Examples(@branch2022evaluating) 🔵
 
+#### Exploiting Programmatic Behavior of LLMs: Dual-Use Through Standard Security Attacks(@kang2023exploiting) 🔵
+    
+#### More than you've asked for: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models(@greshake2023youve) 🔵
+
 #### Prompt injection attacks against GPT-3(@simon2022inject) 🔵
 
 #### Exploiting GPT-3 prompts with malicious inputs that order the model to ignore its previous directions(@goodside2022inject) 🔵
 
 #### adversarial-prompts(@chase2021adversarial) 🔵
+
+#### ChatGPT "DAN" (and other "Jailbreaks")(@kiho2023chatgpt) 🔵
 
 #### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
