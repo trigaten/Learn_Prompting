@@ -11,9 +11,9 @@ function Hero() {
 
   return (
     <ClassicPadding className={"pb-12"}>
-      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter md:px-28 pt-16">
+      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter md:px-8 pt-16">
         Your Guide to Communicating with Artifical Intelligence
-        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-10 md:px-28 pt-10">
+        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-10 md:px-10 lg:px-28 pt-10">
           Learn how to use ChatGPT and other AI tools to accomplish your goals
           using our free and open source curriculum, designed for all skill
           levels!
