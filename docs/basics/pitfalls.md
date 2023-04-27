@@ -4,7 +4,7 @@ sidebar_position: 90
 
 # 🟢 Pitfalls of LLMs
 
-import Pitfalls from '../assets/pitfalls.svg';
+import Pitfalls from '@site/docs/assets/pitfalls.svg';
 
 <div style={{textAlign: 'center'}}>
   <Pitfalls style={{width:"500px",height:"200px",verticalAlign:"top"}}/>

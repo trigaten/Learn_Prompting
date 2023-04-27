@@ -6,7 +6,7 @@ sidebar_position: 2
 
 
 Prompt leaking is a form of prompt injection in which the model is asked to
-spit out its own prompt. 
+spit out its *own prompt*. 
 
 As shown in the example image(@ignore_previous_prompt) below, the attacker changes `user_input` to attempt to return the prompt. The intended goal is distinct from goal hijacking (normal prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt). 
 
