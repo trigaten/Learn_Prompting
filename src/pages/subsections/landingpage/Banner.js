@@ -3,7 +3,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 
 function Banner() {
   return (
-    <div className="banner p-4 pt-6 flex items-center flex-col md:flex-row md:justify-center">
+    <div className="banner p-4 pt-4 flex items-center flex-col md:flex-row md:justify-center">
       <div className="text-center text-xs text-white opacity-80">
         Get ready for the HackAPrompt Competition starting on May 5
       </div>

@@ -5,7 +5,17 @@ import LargeCallout from "@site/src/components/layouts/LargeCallout";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ScrollingText from "@site/src/components/ScrollingText";
-import BeginnerMobile from "@site/static/img/advancedmobile.svg";
+import Arthur from "@site/static/img/arthur_logo.svg";
+import HuggingFace from "@site/static/img/huggingface_logo.svg";
+import HumanLoop from "@site/static/img/humanloop_logo.svg";
+import Preamble from "@site/static/img/preamble_logo.svg";
+import Scale from "@site/static/img/scale_logo.svg";
+import Snorkel from "@site/static/img/snorkel_logo.svg";
+import Stability from "@site/static/img/stability_logo.svg";
+import Towards from "@site/static/img/towards_logo.svg";
+import Trustible from "@site/static/img/trustible_logo.svg";
+import Voiceflow from "@site/static/img/voiceflow_logo.svg";
+import FiscalNote from "@site/static/img/fiscalnote_logo.svg";
 
 function Join() {
   const stats = [
@@ -69,26 +79,26 @@ function Join() {
               May 5th and May 26th!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
-            <a
-        target="_blank"
-        rel="noreferrer"
-        href={"https://www.aicrowd.com/challenges/hackaprompt-2023"}
-      >
-              <Button
-                text={"Register Now"}
-                type={"white"}
-                icon={
-                  <RxArrowTopRight className="inline-block text-green/300" />
-                }
-              />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={"https://www.aicrowd.com/challenges/hackaprompt-2023"}
+              >
+                <Button
+                  text={"Register Now"}
+                  type={"white"}
+                  icon={
+                    <RxArrowTopRight className="inline-block text-green/300" />
+                  }
+                />
               </a>
             </div>
           </div>
           <div className="w-[500px] h-[300px] mr-10 md:flex hidden">
             <img
-      src={require('@site/static/img/lock.png').default}
-      alt="Example banner"
-    />
+              src={require("@site/static/img/lock.png").default}
+              alt="Example banner"
+            />
           </div>
         </div>
         <div className="pt-20">
