@@ -16,7 +16,7 @@ class NewsletterSignupForm extends Component {
     event.preventDefault();
     fetch("https://hooks.zapier.com/hooks/catch/15160672/343aepr/", {
       method: "POST",
-      body: JSON.stringify([{ email: this.state.email }])
+      body: JSON.stringify([{ email: this.state.email }]),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -30,15 +30,14 @@ class NewsletterSignupForm extends Component {
 
     return (
       <div
+        id={"newsletter"}
         className={`largecallout w-screen flex flex-col justify-center items-center text-white md:p-20 pt-28 pb-28 ${
           submitted ? "form-submitted" : ""
         }`}
       >
         {submitted ? (
           <div className="font-semibold tracking-tight text-4xl md:text-6xl flex flex-col items-center">
-            <div>🎉</div>
             <div>Signed up!</div>
-            <div>🙌</div>
           </div>
         ) : (
           <>

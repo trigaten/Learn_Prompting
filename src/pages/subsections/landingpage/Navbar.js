@@ -10,7 +10,7 @@ function Navbar() {
     },
     {
       name: "Competition",
-      link: "https://learnprompting.org/docs/intro",
+      link: "#competition",
     },
     {
       name: "Contribute",
@@ -18,11 +18,11 @@ function Navbar() {
     },
     {
       name: "FAQ",
-      link: "https://learnprompting.org/docs/intro",
+      link: "#faq",
     },
     {
       name: "Newsletter",
-      link: "https://learnprompting.org/docs/intro",
+      link: "#newsletter",
     },
   ];
 

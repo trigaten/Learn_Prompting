@@ -49,15 +49,18 @@ function Join() {
         </div>
       </ClassicPadding>
       <LargeCallout className={"pt-20 tracking-tighter"}>
-        <div className="flex gap-4 justify-around flex-col md:flex-row">
+        <div
+          id={"competition"}
+          className="flex gap-4 justify-around flex-col md:flex-row"
+        >
           <div className="md:w-[45%] md:pl-28 md:ml-12">
-            <div className="opacity-70 text-center md:text-left">
+            <div className="opacity-80 text-center md:text-left text-lg">
               Introducing The
             </div>
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
               <span className="font-bold">HackAPrompt</span> Competition
             </div>
-            <div className="opacity-70 font-light pt-10 md:text-left text-center px-4">
+            <div className="opacity-70 font-light pt-10 md:text-left text-center px-4 md:px-0">
               A beginner-friendly competition that will challenge you to
               overcome 7 levels of prompt hacking defenses. Inject, leak and
               defeat the sandwich defense to claim your share of over $37,500 in

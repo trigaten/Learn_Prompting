@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
-function ScrollingText({ children, baseVelocity = 1, values = [] }) {
+function ScrollingText({ children, baseVelocity = 8000, values = [] }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);

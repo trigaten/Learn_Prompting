@@ -17,7 +17,7 @@ function FAQ() {
     },
     {
       icon: (
-        <RiBracesFill className="inline-block text-dark/500 text-lg mb-1" />
+        <RiBracesFill className="inline-block text-dark/500 text-lg mt-1 " />
       ),
       header: "Do I need to know how to code?",
       subtitle:
@@ -25,7 +25,7 @@ function FAQ() {
     },
     {
       icon: (
-        <TbCertificate className="inline-block text-dark/500 text-xl mb-1" />
+        <TbCertificate className="inline-block text-dark/500 text-xl mt-1" />
       ),
       header: "When is the certificate being released?",
       subtitle:
@@ -34,14 +34,14 @@ function FAQ() {
   ];
   const rightFaq = [
     {
-      icon: <FiLayers className="inline-block text-dark/500 text-lg mb-1" />,
+      icon: <FiLayers className="inline-block text-dark/500 text-lg mt-1" />,
       header: "Do I need previous experience?",
       subtitle:
         "Nope! This course is designed to be accessible to everyone, regardless of prior experience. ",
     },
     {
       icon: (
-        <RiSuitcaseFill className="inline-block text-dark/500 text-xl mb-1" />
+        <RiSuitcaseFill className="inline-block text-dark/500 text-xl mt-1" />
       ),
       header: "Is prompt engineering a real job?",
       subtitle:
@@ -49,7 +49,7 @@ function FAQ() {
     },
     {
       icon: (
-        <BsPencilFill className="inline-block text-dark/500 text-lg mb-1" />
+        <BsPencilFill className="inline-block text-dark/500 text-lg mt-1" />
       ),
       header: "Can I help add to the site?",
       subtitle:
@@ -58,7 +58,10 @@ function FAQ() {
   ];
   return (
     <ClassicPadding className={"pb-24"}>
-      <div className="text-left md:text-center text-3xl md:text-5xl font-vietnam font-medium tracking-tighter  md:px-32 pt-6 md:pt-20">
+      <div
+        id={"faq"}
+        lassName="text-left md:text-center text-3xl md:text-5xl font-vietnam font-medium tracking-tighter  md:px-32 pt-6 md:pt-20"
+      >
         Frequently Asked Questions
         <div className="md:hidden">
           <div className="text-left md:text-center text-default text-sm pt-2 font-vietnam font-light tracking-tight md:px-28 md:pt-10 md:text-md mb-4 md:mb-0 ">

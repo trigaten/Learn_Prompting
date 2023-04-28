@@ -43,13 +43,13 @@ async function createConfig() {
     },
     plugins: [
       [
-        '@docusaurus/plugin-client-redirects',
+        "@docusaurus/plugin-client-redirects",
         {
           redirects: [
             // /docs/oldDoc -> /docs/newDoc
             {
-              to: '/docs/basics/formalizing',
-              from: '/docs/basics/standard_prompt',
+              to: "/docs/basics/formalizing",
+              from: "/docs/basics/standard_prompt",
             },
           ],
         },
@@ -95,7 +95,6 @@ async function createConfig() {
               ],
             ],
             rehypePlugins: [katex],
-            
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
@@ -151,7 +150,11 @@ async function createConfig() {
         },
         items: [
           { to: "docs/intro", label: "Learn", position: "left" },
-          { to: "https://learnprompting.org/contribute", label: "Contribute", position: "left" },
+          {
+            to: "https://learnprompting.org/contribute",
+            label: "Contribute",
+            position: "left",
+          },
           {
             to: "https://learnprompting.org/certificate",
             label: "Certificate",

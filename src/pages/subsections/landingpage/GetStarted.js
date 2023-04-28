@@ -3,7 +3,7 @@ import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import { RxArrowTopRight } from "react-icons/rx";
 import Button from "@site/src/components/Button";
 import LPImage from "@site/src/components/LPImage";
-import Astro from "@site/src/css/astro.svg";
+import astro from "@site/src/css/astro.svg";
 
 function GetStarted() {
   return (
@@ -18,20 +18,27 @@ function GetStarted() {
           </div>
           <div className="flex justify-center md:justify-start pt-12 text-[1rem] tracking-tighter mb-12">
             <Button
+              onClick={() =>
+                window.location.replace(
+                  "https://learnprompting.org/docs/intro "
+                )
+              }
               text={"Start Learning"}
               icon={<RxArrowTopRight className="inline-block text-white" />}
             />
           </div>
         </div>
       </div>
-      <Astro />
-      {/* <LPImage
-        src={"css/astro.svg"}
-        alt={"astronaut"}
-        caption={
-          "An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"
-        }
-      /> */}
+      {/* <Astro /> */}
+      {
+        <LPImage
+          src={astro.src}
+          alt={"astronaut"}
+          caption={
+            "An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"
+          }
+        />
+      }
     </ClassicPadding>
   );
 }
