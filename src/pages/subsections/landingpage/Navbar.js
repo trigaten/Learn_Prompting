@@ -24,6 +24,10 @@ function Navbar() {
       name: "Newsletter",
       link: "https://learnprompting.org/docs/intro",
     },
+    {
+      name: "Blog",
+      link: "/blog",
+    },
   ];
 
   const rightLinks = [
