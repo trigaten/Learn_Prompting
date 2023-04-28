@@ -27,13 +27,13 @@ function GetStarted() {
           </div>
         </div>
       </div>
-      <img
-        src={require("@site/static/img/astronaut.png").default}
-        alt="Example banner"
-        caption={
-          "An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"
-        }
-      />
+
+      <div className="w-full md:w-1/2">
+        <img src={require("@site/static/img/astronaut.png").default} alt={"An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"} className=" md:ml-0"/>
+        <div className="text-default text-sm md:text-base font-medium md:pr-10 tracking-tight pt-4  text-center md:text-left">
+          <span className="font-bold text-dark/500">DALL·E 2 </span> "An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"
+      </div>
+    </div>
     </ClassicPadding>
   );
 }
