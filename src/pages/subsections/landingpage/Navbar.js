@@ -46,37 +46,40 @@ function Navbar(props) {
   ];
 
   const paddingClass = props.forDocs ? "py-0" : "py-12";
-
   return (
     <ClassicPadding>
       <div className={`md:flex hidden justify-between ${paddingClass}`}>
-        <div className="flex">
-          {leftLinks.map((link, idx) => (
-            <a
-              href={link.link}
-              className="text-default hover:text-dark/500 transition-all text-sm font-light font-vietnam mr-8 tracking-tight"
-              key={idx}
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
-        <div className="flex gap-4">
-          {rightLinks.map((link, idx) => (
-            <div
-              className="flex items-center text-default hover:text-dark/500"
-              key={idx}
-            >
+        {!props.forDocs && (
+          <div className="flex">
+            {leftLinks.map((link, idx) => (
               <a
                 href={link.link}
-                className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
+                className="text-default hover:text-dark/500 transition-all text-sm font-light font-vietnam mr-8 tracking-tight"
+                key={idx}
               >
                 {link.name}
               </a>
-              <RxArrowTopRight className="inline-block" />
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
+        {!props.forDocs && (
+          <div className="flex gap-4">
+            {rightLinks.map((link, idx) => (
+              <div
+                className="flex items-center text-default hover:text-dark/500"
+                key={idx}
+              >
+                <a
+                  href={link.link}
+                  className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
+                >
+                  {link.name}
+                </a>
+                <RxArrowTopRight className="inline-block" />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </ClassicPadding>
   );
