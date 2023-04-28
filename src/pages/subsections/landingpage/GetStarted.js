@@ -2,10 +2,6 @@ import React from "react";
 import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import { RxArrowTopRight } from "react-icons/rx";
 import Button from "@site/src/components/Button";
-import LPImage from "@site/src/components/LPImage";
-import Astro from "@site/src/css/code_snippet_1.svg";
-
-// "@site/src/css/astro.svg";
 
 function GetStarted() {
   return (
@@ -31,15 +27,10 @@ function GetStarted() {
           </div>
         </div>
       </div>
-
-      <LPImage
-        alt={"astronaut"}
-        caption={
-          "An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"
-        }
-      >
-        <Astro />
-      </LPImage>
+      <img
+        src={require("@site/static/img/astronaut.png").default}
+        alt="Example banner"
+      />
     </ClassicPadding>
   );
 }
