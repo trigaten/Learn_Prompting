@@ -19,9 +19,9 @@ function Hero() {
 
   return (
     <ClassicPadding className={"pb-10"}>
-      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter md:px-8 2xl:px-28 pt-16">
+      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter md:px-8 2xl:px-28 pt-8">
         Your Guide to Communicating with Artifical Intelligence
-        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-10 md:px-10 lg:px-28 pt-10">
+        <div className="text-center text-default text-sm font-vietnam font-light tracking-tighter px-10 md:px-10 lg:px-52 pt-8">
           Learn how to use ChatGPT and other AI tools to accomplish your goals
           using our free and open source curriculum, designed for all skill
           levels!
@@ -31,21 +31,28 @@ function Hero() {
         <Button
           onClick={() => window.location.replace("/docs/intro")}
           text={"Start Learning"}
-          icon={<RxArrowTopRight className="inline-block text-white" />}
+          icon={
+            <RxArrowTopRight
+              className="inline-block text-white"
+              style={{ verticalAlign: "middle" }}
+            />
+          }
         />
       </div>
-      <div className="flex flex-row gap-4 justify-center pt-14 z-10 md:overflow-visible overflow-hidden">
-        {categories.map((category, i) => (
-          <ButtonField
-            key={i}
-            text={category}
-            isActive={i == 0}
-            onClick={() => alert("TBD")}
-          />
-        ))}
-      </div>
-      <div className=" mt-1 hidden md:flex">
-        <Code className="h-[700px] mt-[-0%] xl:mt-[0%]" />
+      <div className="flex flex-col items-center pt-16 z-10 md:overflow-visible overflow-hidden">
+        <div className="flex flex-row gap-4 justify-center">
+          {categories.map((category, i) => (
+            <ButtonField
+              key={i}
+              text={category}
+              isActive={i == 0}
+              onClick={() => alert("TBD")}
+            />
+          ))}
+        </div>
+        <div className="mt-[-25px] hidden md:flex">
+          <Code className="h-[700px]" />
+        </div>
       </div>
       <div className="pt-4 mt-2 md:hidden">
         <Phone className="w-full" />

@@ -5,17 +5,17 @@ import LargeCallout from "@site/src/components/layouts/LargeCallout";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ScrollingText from "@site/src/components/ScrollingText";
-import Arthur from "@site/static/img/arthur_logo.svg";
-import HuggingFace from "@site/static/img/huggingface_logo.svg";
-import HumanLoop from "@site/static/img/humanloop_logo.svg";
-import Preamble from "@site/static/img/preamble_logo.svg";
-import Scale from "@site/static/img/scale_logo.svg";
-import Snorkel from "@site/static/img/snorkel_logo.svg";
-import Stability from "@site/static/img/stability_logo.svg";
-import Towards from "@site/static/img/towards_logo.svg";
-import Trustible from "@site/static/img/trustible_logo.svg";
-import Voiceflow from "@site/static/img/voiceflow_logo.svg";
-import FiscalNote from "@site/static/img/fiscalnote_logo.svg";
+import Arthur from "@site/static/img/arthur_logo.png";
+import HuggingFace from "@site/static/img/huggingface_logo.png";
+import HumanLoop from "@site/static/img/humanloop_logo.png";
+import Preamble from "@site/static/img/preamble_logo.png";
+import Scale from "@site/static/img/scale_logo.png";
+import Snorkel from "@site/static/img/snorkel_logo.png";
+import Stability from "@site/static/img/stability_logo.png";
+import Towards from "@site/static/img/towards_logo.png";
+import Trustible from "@site/static/img/trustible_logo.png";
+import Voiceflow from "@site/static/img/voiceflow_logo.png";
+import FiscalNote from "@site/static/img/fiscalnote_logo.png";
 
 function Join() {
   const stats = [
