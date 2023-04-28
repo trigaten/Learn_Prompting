@@ -149,38 +149,20 @@ async function createConfig() {
           src: "img/simple_ai.png",
         },
         items: [
-          { to: "docs/intro", label: "Learn", position: "left" },
           {
-            to: "https://learnprompting.org/contribute",
-            label: "Contribute",
+            type: 'custom-myAwesomeNavbarItem', 
             position: "left",
-          },
-          {
-            to: "https://learnprompting.org/certificate",
-            label: "Certificate",
-            position: "left",
-          },
-          {
-            to: "https://learnprompting.org/consulting",
-            label: "Consulting",
-            position: "left",
-            className: "consulting-gradient",
           },
           {
             type: "localeDropdown",
             position: "right",
           },
           {
-            href: "https://github.com/trigaten/Learn_Prompting/releases",
-            label: "Change Log",
-            position: "right",
+            href: 'https://github.com/trigaten/Learn_Prompting/releases',
+            label: 'Change Log',
+            position: 'right',
           },
-          {
-            href: "https://github.com/trigaten/promptgineering",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
+        ]
       },
       footer: {
         style: "dark",

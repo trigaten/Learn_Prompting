@@ -2,7 +2,7 @@ import React from "react";
 import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import { RxArrowTopRight } from "react-icons/rx";
 
-function Navbar() {
+function Navbar(props) {
   const leftLinks = [
     {
       name: "Learn",
@@ -44,9 +44,12 @@ function Navbar() {
       link: "mailto:learnprompting@gmail.com",
     },
   ];
+
+  const paddingClass = props.forDocs ? "py-0" : "py-12";
+
   return (
     <ClassicPadding>
-      <div className="md:flex hidden justify-between py-12">
+      <div className={`md:flex hidden justify-between ${paddingClass}`}>
         <div className="flex">
           {leftLinks.map((link, idx) => (
             <a
