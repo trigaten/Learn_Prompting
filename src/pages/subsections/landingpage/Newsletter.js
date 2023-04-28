@@ -16,7 +16,7 @@ class NewsletterSignupForm extends Component {
     event.preventDefault();
     fetch("https://hooks.zapier.com/hooks/catch/15160672/343aepr/", {
       method: "POST",
-      body: JSON.stringify({ email: this.state.email }),
+      body: JSON.stringify([{ email: this.state.email }])
     })
       .then((response) => response.json())
       .then((data) => {
