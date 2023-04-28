@@ -18,7 +18,7 @@ function GetStarted() {
             <Button
               onClick={() =>
                 window.location.replace(
-                  "https://learnprompting.org/docs/intro "
+                  "/docs/intro"
                 )
               }
               text={"Start Learning"}

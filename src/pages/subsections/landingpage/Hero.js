@@ -30,7 +30,7 @@ function Hero() {
       <div className="flex items-center justify-center pt-6">
         <Button
           onClick={() =>
-            window.location.replace("https://learnprompting.org/docs/intro ")
+            window.location.replace("/docs/intro")
           }
           text={"Start Learning"}
           icon={<RxArrowTopRight className="inline-block text-white" />}
