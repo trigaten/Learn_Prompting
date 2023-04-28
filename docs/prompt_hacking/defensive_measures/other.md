@@ -4,7 +4,11 @@ sidebar_position: 2000
 
 # 🟢 Other Approaches 
 
-Although the previous approaches can be very robust, a few other approaches, including fine tuning, soft prompting, and length restrictions, can also be effective.
+Although the previous approaches can be very robust, a few other approaches, such as using a different model, including fine tuning, soft prompting, and length restrictions, can also be effective.
+
+## Using a Different Model
+
+More modern models such as GPT-4 are more robust against prompt injection. Additionally, non-instruction tuned models may be difficult to prompt inject. 
 
 ## Fine Tuning
 
