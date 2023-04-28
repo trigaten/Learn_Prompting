@@ -72,6 +72,7 @@ function Navbar(props) {
                 <a
                   href={link.link}
                   className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
+                  style={{color:"black"}}
                 >
                   {link.name}
                 </a>
