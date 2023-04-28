@@ -3,8 +3,9 @@ import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import { RxArrowTopRight } from "react-icons/rx";
 import Button from "@site/src/components/Button";
 import LPImage from "@site/src/components/LPImage";
-import astro from "@site/src/css/astro.svg";
-import Astro from "@site/src/css/astro.svg";
+import Astro from "@site/src/css/code_snippet_1.svg";
+
+// "@site/src/css/astro.svg";
 
 function GetStarted() {
   return (
@@ -30,20 +31,15 @@ function GetStarted() {
           </div>
         </div>
       </div>
-      {/* <Astro /> */}
 
-      {/* 
       <LPImage
-        src={astro.src}
         alt={"astronaut"}
         caption={
           "An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"
         }
-      /> */}
-
-      <div className=" mt-2 hidden md:flex">
-        <Astro className="h-[700px] mt-[-5%] xl:mt-[0%]" />
-      </div>
+      >
+        <Astro />
+      </LPImage>
     </ClassicPadding>
   );
 }

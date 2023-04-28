@@ -6,6 +6,8 @@ import Lock from "@site/static/img/lock.svg";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ScrollingText from "@site/src/components/ScrollingText";
+import BeginnerMobile from "@site/static/img/advancedmobile.svg";
+
 function Join() {
   const stats = [
     {

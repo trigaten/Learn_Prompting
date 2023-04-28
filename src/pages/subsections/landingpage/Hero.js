@@ -5,14 +5,14 @@ import { RxArrowTopRight } from "react-icons/rx";
 import ButtonField from "@site/src/components/ButtonField";
 import Code from "@site/src/css/code_snippet_1.svg";
 import Phone from "@site/src/css/phonelp.svg";
-// import BeginnerMobile from "@site/src/css/beginnermobile.svg";
-// import BeginnerWeb from "@site/src/css/beginnerweb.svg";
-// import IntermediateMobile from "@site/src/css/intermediatemobile.svg";
-// import IntermediateWeb from "@site/src/css/intermediateweb.svg";
-// import AdvancedMobile from "@site/src/css/advancedmobile.svg";
-// import AdvancedWeb from "@site/src/css/advancedweb.svg";
-// import ApplicationsMobile from "@site/src/css/applicationsmobile.svg";
-// import ApplicationsWeb from "@site/src/css/applicationsweb.svg";
+import BeginnerMobile from "@site/static/img/advancedmobile.svg";
+import BeginnerWeb from "@site/static/img/beginnerweb.svg";
+import IntermediateMobile from "@site/static/img/intermediatemobile.svg";
+import IntermediateWeb from "@site/static/img/intermediateweb.svg";
+import AdvancedMobile from "@site/static/img/advancedmobile.svg";
+import AdvancedWeb from "@site/static/img/advancedweb.svg";
+import ApplicationsMobile from "@site/static/img/applicationsmobile.svg";
+import ApplicationsWeb from "@site/static/img/applicationsweb.svg";
 
 function Hero() {
   const categories = ["Beginner", "Intermediate", "Advanced", "Applications"];

@@ -17,10 +17,6 @@ function Navbar() {
       link: "https://learnprompting.org/contribute",
     },
     {
-      name: "FAQ",
-      link: "#faq",
-    },
-    {
       name: "Newsletter",
       link: "#newsletter",
     },
