@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 🟢 Role Prompting
 
-import RolePrompt from '../assets/role_prompt.svg';
+import RolePrompt from '@site/docs/assets/role_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <RolePrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>

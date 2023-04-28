@@ -41,6 +41,31 @@ async function createConfig() {
         "ar",
       ],
     },
+    plugins: [
+      [
+        '@docusaurus/plugin-client-redirects',
+        {
+          redirects: [
+            // /docs/oldDoc -> /docs/newDoc
+            {
+              to: '/docs/basics/formalizing',
+              from: '/docs/basics/standard_prompt',
+            },
+          ],
+        },
+      ],
+      async function myPlugin(context, options) {
+        return {
+          name: "docusaurus-tailwindcss",
+          configurePostCss(postcssOptions) {
+            // Appends TailwindCSS and AutoPrefixer.
+            postcssOptions.plugins.push(require("tailwindcss"));
+            postcssOptions.plugins.push(require("autoprefixer"));
+            return postcssOptions;
+          },
+        };
+      },
+    ],
 
     presets: [
       [
@@ -70,6 +95,7 @@ async function createConfig() {
               ],
             ],
             rehypePlugins: [katex],
+            
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
@@ -96,6 +122,18 @@ async function createConfig() {
         type: "text/css",
         crossorigin: "anonymous",
       },
+      {
+        href: "https://fonts.googleapis.com",
+        rel: "preconnect",
+      },
+      {
+        href: "https://fonts.gstatic.com",
+        rel: "preconnect",
+        crossorigin: "",
+      },
+      {
+        href: "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+      },
     ],
     themeConfig: {
       metadata: [
@@ -112,49 +150,48 @@ async function createConfig() {
           src: "img/simple_ai.png",
         },
         items: [
-          {to: 'docs/intro', label:"Learn", position:"left"},
-          {to: 'contribute', label:"Contribute", position:"left"},
+          { to: "docs/intro", label: "Learn", position: "left" },
+          { to: "https://learnprompting.org/contribute", label: "Contribute", position: "left" },
           {
-            to: 'certificate', 
-            label:"Certificate", 
-            position:"left",          
+            to: "https://learnprompting.org/certificate",
+            label: "Certificate",
+            position: "left",
           },
           {
-            to: 'consulting', 
-            label:"Consulting", 
-            position:"left",          
-            className: 'consulting-gradient',
+            to: "https://learnprompting.org/consulting",
+            label: "Consulting",
+            position: "left",
+            className: "consulting-gradient",
           },
           {
-            type: 'localeDropdown',
-            position: 'right',
+            type: "localeDropdown",
+            position: "right",
           },
           {
-            href: 'https://github.com/trigaten/Learn_Prompting/releases',
-            label: 'Change Log',
-            position: 'right',
+            href: "https://github.com/trigaten/Learn_Prompting/releases",
+            label: "Change Log",
+            position: "right",
           },
           {
-            href: 'https://github.com/trigaten/promptgineering',
-            label: 'GitHub',
-            position: 'right',
-          }
+            href: "https://github.com/trigaten/promptgineering",
+            label: "GitHub",
+            position: "right",
+          },
         ],
-          
-        },
-        footer: {
-          style: 'dark',
-          copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting.`,
-        },
-        prism: {
-          theme: lightCodeTheme,
-          darkTheme: darkCodeTheme,
-        },
       },
-      markdown: {
-        mermaid: true,
+      footer: {
+        style: "dark",
+        copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting.`,
       },
-      themes: ['@docusaurus/theme-mermaid'],
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    },
+    markdown: {
+      mermaid: true,
+    },
+    themes: ["@docusaurus/theme-mermaid"],
   };
 }
 

@@ -4,7 +4,7 @@ sidebar_position: 105
 # 🟢 Understanding AI Minds
 
 
-import Brain from '../assets/brain.svg';
+import Brain from '@site/docs/assets/brain.svg';
 
 
 <div style={{textAlign: 'center'}}>
