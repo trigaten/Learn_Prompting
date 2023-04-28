@@ -151,14 +151,14 @@ async function createConfig() {
         },
         items: [
           { to: "docs/intro", label: "Learn", position: "left" },
-          { to: "contribute", label: "Contribute", position: "left" },
+          { to: "https://learnprompting.org/contribute", label: "Contribute", position: "left" },
           {
-            to: "certificate",
+            to: "https://learnprompting.org/certificate",
             label: "Certificate",
             position: "left",
           },
           {
-            to: "consulting",
+            to: "https://learnprompting.org/consulting",
             label: "Consulting",
             position: "left",
             className: "consulting-gradient",
