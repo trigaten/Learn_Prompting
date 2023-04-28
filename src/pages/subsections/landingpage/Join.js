@@ -2,7 +2,6 @@ import React from "react";
 import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import StatPoint from "@site/src/components/StatPoint";
 import LargeCallout from "@site/src/components/layouts/LargeCallout";
-import Lock from "@site/static/img/lock.svg";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ScrollingText from "@site/src/components/ScrollingText";
@@ -80,7 +79,10 @@ function Join() {
             </div>
           </div>
           <div className="w-[500px] h-[300px] mr-10 md:flex hidden">
-            <Lock />
+            <img
+      src={require('@site/static/img/lock.png').default}
+      alt="Example banner"
+    />
           </div>
         </div>
         <div className="pt-20">
