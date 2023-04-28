@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  corePlugins: {
+    // this prevents tailwind from editing styles in the docs (https://stackoverflow.com/questions/75067324/docusaurus-and-tailwind-css)
+    preflight: false,
+  },
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
