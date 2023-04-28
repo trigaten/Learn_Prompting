@@ -6,23 +6,23 @@ function Navbar() {
   const leftLinks = [
     {
       name: "Learn",
-      link: "@site/docs/intro",
+      link: "https://learnprompting.org/docs/intro",
     },
     {
       name: "Competition",
-      link: "@site/docs/intro",
+      link: "https://learnprompting.org/docs/intro",
     },
     {
       name: "Contribute",
-      link: "@site/contribute",
+      link: "https://learnprompting.org/contribute",
     },
     {
       name: "FAQ",
-      link: "@site/docs/intro",
+      link: "https://learnprompting.org/docs/intro",
     },
     {
       name: "Newsletter",
-      link: "@site/docs/intro",
+      link: "https://learnprompting.org/docs/intro",
     },
   ];
 
