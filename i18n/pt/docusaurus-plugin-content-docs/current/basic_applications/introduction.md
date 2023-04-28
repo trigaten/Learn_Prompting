@@ -10,8 +10,4 @@ Os exemplos apresentados nos artigos a seguir demonstram a variedade de aplicaç
 
 :::note
 Nesses exemplos, utilizamos tanto o ChatGPT quanto o GPT-3. Normalmente não importa qual você utiliza.
-
-
-
-
 :::
