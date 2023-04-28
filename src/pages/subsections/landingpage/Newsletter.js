@@ -31,7 +31,7 @@ class NewsletterSignupForm extends Component {
     return (
       <div
         id={"newsletter"}
-        className={`largecallout w-screen flex flex-col justify-center items-center text-white md:p-20 pt-28 pb-28 ${
+        className={`largecallout w-screen flex flex-col justify-center items-center text-white md:p-20 pt-16 md:pt-24 pb-28 ${
           submitted ? "form-submitted" : ""
         }`}
       >
@@ -44,11 +44,11 @@ class NewsletterSignupForm extends Component {
             <div className="font-semibold tracking-tight text-4xl md:text-6xl">
               Join the Newsletter
             </div>
-            <div className="text-center text-white opacity-60 text-sm font-vietnam font-light tracking-tight px-16 md:px-28 pt-10">
+            <div className="text-center text-white opacity-60 text-sm font-vietnam font-light tracking-tight px-16 md:px-28 pt-4">
               Stay up to date with the latest content delivered to your inbox.
             </div>
             <div className="pt-10 flex flex-row">
-              <form onSubmit={this.handleSubmit}>
+              <form onSubmit={this.handleSubmit} className="flex">
                 <input
                   type="text"
                   id="email"
@@ -58,12 +58,12 @@ class NewsletterSignupForm extends Component {
                   required
                   style={{ color: "black" }}
                   placeholder="email@learnprompting.org"
-                  className="rounded-tl-md rounded-bl-md px-6 py-2  bg-white text-dark/500 text-sm font-medium tracking-tight ring-0 focus:outline-none w-[250px] md:w-[450px] focus:ring-0"
+                  className="rounded-l-md px-6 py-2 bg-white text-dark/500 text-sm font-medium tracking-tight ring-0 focus:outline-none w-[350px] md:w-[450px] focus:ring-0"
                 />
                 <button
                   type="submit"
-                  style={{ width: "100%" }}
-                  className="rounded-tr-md rounded-br-md bg-[#2A5F66] flex items-center font-semibold justify-center px-6 py-2 hover:bg-[#1F4A52] active:bg-[#2D6370]"
+                  style={{ width: "100px" }}
+                  className="rounded-r-md bg-[#2A5F66] flex items-center font-semibold justify-center px-3 py-2 hover:bg-[#1F4A52] active:bg-[#2D6370]"
                 >
                   Sign Up
                 </button>

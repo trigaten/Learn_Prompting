@@ -30,6 +30,9 @@ function GetStarted() {
       <img
         src={require("@site/static/img/astronaut.png").default}
         alt="Example banner"
+        caption={
+          "An oil painting of a small astronaut floating through the vastness of space depicted as the vibrant explosion of a nebula"
+        }
       />
     </ClassicPadding>
   );

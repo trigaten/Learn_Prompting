@@ -7,6 +7,7 @@ import { FiLayers } from "react-icons/fi";
 import { TbCertificate } from "react-icons/tb";
 import { BsPencilFill } from "react-icons/bs";
 import BulletPoint from "@site/src/components/BulletPoint";
+
 function FAQ() {
   const leftFaq = [
     {
