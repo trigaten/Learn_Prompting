@@ -6,23 +6,23 @@ function Navbar() {
   const leftLinks = [
     {
       name: "Learn",
-      link: "/docs/intro",
+      link: "@site/docs/intro",
     },
     {
       name: "Competition",
-      link: "/docs/intro",
+      link: "@site/docs/intro",
     },
     {
       name: "Contribute",
-      link: "/contribute",
+      link: "@site/contribute",
     },
     {
       name: "FAQ",
-      link: "/docs/intro",
+      link: "@site/docs/intro",
     },
     {
       name: "Newsletter",
-      link: "/docs/intro",
+      link: "@site/docs/intro",
     },
   ];
 
