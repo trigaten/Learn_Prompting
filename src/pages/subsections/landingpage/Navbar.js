@@ -6,42 +6,42 @@ function Navbar() {
   const leftLinks = [
     {
       name: "Learn",
-      link: "",
+      link: "/docs/intro",
     },
     {
       name: "Competition",
-      link: "",
+      link: "/docs/intro",
     },
     {
       name: "Contribute",
-      link: "",
+      link: "/contribute",
     },
     {
       name: "FAQ",
-      link: "",
+      link: "/docs/intro",
     },
     {
       name: "Newsletter",
-      link: "",
+      link: "/docs/intro",
     },
   ];
 
   const rightLinks = [
     {
       name: "Discord",
-      link: "",
+      link: "http://discord.gg/learn-prompting",
     },
     {
       name: "GitHub",
-      link: "",
+      link: "https://github.com/trigaten/Learn_Prompting",
     },
     {
       name: "Twitter",
-      link: "",
+      link: "https://twitter.com/learnprompting",
     },
     {
       name: "Contact",
-      link: "",
+      link: "mailto:learnprompting@gmail.com",
     },
   ];
   return (

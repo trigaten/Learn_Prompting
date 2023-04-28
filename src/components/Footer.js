@@ -6,19 +6,19 @@ function Footer() {
   const rightLinks = [
     {
       name: "Discord",
-      link: "",
+      link: "http://discord.gg/learn-prompting",
     },
     {
       name: "GitHub",
-      link: "",
+      link: "https://github.com/trigaten/Learn_Prompting",
     },
     {
       name: "Twitter",
-      link: "",
+      link: "https://twitter.com/learnprompting",
     },
     {
       name: "Contact",
-      link: "",
+      link: "mailto:learnprompting@gmail.com",
     },
   ];
 
