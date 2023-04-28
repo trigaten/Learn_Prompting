@@ -112,42 +112,35 @@ async function createConfig() {
           src: "img/simple_ai.png",
         },
         items: [
-          { to: "docs/intro", label: "Learn", position: "left" },
-          { to: "contribute", label: "Contribute", position: "left" },
+          {to: 'docs/intro', label:"Learn", position:"left"},
+          {to: 'contribute', label:"Contribute", position:"left"},
           {
-            to: "certificate",
-            label: "Certificate",
-            position: "left",
+            to: 'certificate', 
+            label:"Certificate", 
+            position:"left",          
           },
-          items: [
-            {to: 'docs/intro', label:"Learn", position:"left"},
-            {to: 'contribute', label:"Contribute", position:"left"},
-            {
-              to: 'certificate', 
-              label:"Certificate", 
-              position:"left",          
-            },
-            {
-              to: 'consulting', 
-              label:"Consulting", 
-              position:"left",          
-              className: 'consulting-gradient',
-            },
-            {
-              type: 'localeDropdown',
-              position: 'right',
-            },
-            {
-              href: 'https://github.com/trigaten/Learn_Prompting/releases',
-              label: 'Change Log',
-              position: 'right',
-            },
-            {
-              href: 'https://github.com/trigaten/promptgineering',
-              label: 'GitHub',
-              position: 'right',
-            }
-          ],
+          {
+            to: 'consulting', 
+            label:"Consulting", 
+            position:"left",          
+            className: 'consulting-gradient',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/trigaten/Learn_Prompting/releases',
+            label: 'Change Log',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/trigaten/promptgineering',
+            label: 'GitHub',
+            position: 'right',
+          }
+        ],
+          
         },
         footer: {
           style: 'dark',
@@ -157,7 +150,7 @@ async function createConfig() {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
         },
-      }),
+      },
       markdown: {
         mermaid: true,
       },
