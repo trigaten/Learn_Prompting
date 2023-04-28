@@ -24,6 +24,10 @@ function Navbar() {
       name: "Newsletter",
       link: "#newsletter",
     },
+    {
+      name: "Blog",
+      link: "/blog",
+    },
   ];
 
   const rightLinks = [
