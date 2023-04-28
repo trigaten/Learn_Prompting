@@ -451,4 +451,5 @@ Uma discussão completa sobre o uso do ChatGPT como uma máquina virtual pode se
 
 ---
 
-Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes.com/).
+Artigo escrito por Prompt Yes!, uma empresa que ensina Engenharia de Prompt [prompt engineering training](https://promptyes.com/). 
+Traduzido por [Gabi] (http://imgabi.com).
