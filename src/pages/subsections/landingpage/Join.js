@@ -69,6 +69,11 @@ function Join() {
               May 5th and May 26th!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
+            <a
+        target="_blank"
+        rel="noreferrer"
+        href={"https://www.aicrowd.com/challenges/hackaprompt-2023"}
+      >
               <Button
                 text={"Register Now"}
                 type={"white"}
@@ -76,6 +81,7 @@ function Join() {
                   <RxArrowTopRight className="inline-block text-green/300" />
                 }
               />
+              </a>
             </div>
           </div>
           <div className="w-[500px] h-[300px] mr-10 md:flex hidden">
