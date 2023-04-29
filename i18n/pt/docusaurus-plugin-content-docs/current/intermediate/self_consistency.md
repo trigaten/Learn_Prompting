@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # 🟡 Autoconsistência
 
-import SCImage from '@site/docs/assets/intermediate/pt_self_consistency.png';
+import SCImage from '../assets/intermediate/pt_self_consistency.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={SCImage} style={{width: "500px"}} />

@@ -106,7 +106,7 @@ Agora vamos usar essa informação para responder a pergunta corretamente. Esse 
 
 Embora o caso de uso acima tenha sido semelhante à forma como o conhecimento gerado foi originalmente introduzido, não é exatamente o mesmo processo. O conteúdo abaixo aborda o contexto mais técnico em que a abordagem foi introduzida. Ele segue o padrão de duas etapas intermediárias (geração de conhecimento e integração de conhecimento) que vimos acima.
 
-import KGImage from '@site/docs/assets/PT-knowledge_generation.png';
+import KGImage from '../assets/PT-knowledge_generation.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}} />
@@ -120,7 +120,7 @@ Conhecimento Gerado / Generated Knowledge (Liu et al.)
 
 Na etapa de geração de conhecimento, o %%LLM|LLM%% é solicitado a gerar um *conjunto de fatos sobre a pergunta*. O LLM é acionado de forma few-shot, como demonstrado exemplo abaixo. N etapas diferentes são gerados usando a mesma prompt (semelhante à abordagem de autoconsistência).
 
-import KGP1Image from '@site/docs/assets/PT_gen_k_p1.png';
+import KGP1Image from '../assets/PT_gen_k_p1.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
