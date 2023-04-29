@@ -76,12 +76,6 @@ async function createConfig() {
         }),
       ],
     ],
-    scripts: [
-      {
-        src: "https://embed.trydyno.com/embedder.js",
-        defer: true
-      }
-    ],
     stylesheets: [
       {
         href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
