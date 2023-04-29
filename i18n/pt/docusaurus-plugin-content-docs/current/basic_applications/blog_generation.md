@@ -16,11 +16,8 @@ Escreva uma estrutura para uma postagem de blog curta sobre por que as Cactos de
 
 Existem muitos produtos que tentam fazer isso, mas você pode obter resultados consistentes fazendo você mesmo.
 
-
 ```text
 Crie o esboço de um post de um post de blog curto sobre por que as Cactos de Natal são uma ótima compra.
-
-
 
 // highlight-start
 Título: Por que você deve comprar um Cacto de Natal neste Natal?
@@ -104,7 +101,6 @@ Os cactos de Natal são uma ótima escolha para quem quer uma planta bonita e f�
 //highlight-end
 ```
 Legal! Provavelmente você vai querer adicionar informações sobre sua empresa e os preços dos cactos de Natal que você vende, então vamos usar o seguint prompt:
-
 
 ```text
 Perfeito!  Inclua um parágrafo no fim do texto sobre nossa empresa e os preços dos nossos cactos de Natal.
