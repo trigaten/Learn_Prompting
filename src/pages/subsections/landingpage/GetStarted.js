@@ -30,7 +30,10 @@ function GetStarted() {
       </div>
 
       <div className="w-full md:w-1/2">
-        <img src={require("@site/static/img/sitting_astronaut.png").default} className="ml-0 md:ml-[80px]"/>
+        <img
+          src={require("@site/static/img/sitting_astronaut.png").default}
+          className="ml-0 md:ml-[80px]"
+        />
       </div>
     </ClassicPadding>
   );
