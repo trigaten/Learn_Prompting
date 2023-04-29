@@ -30,8 +30,7 @@ function GetStarted() {
       </div>
 
       <div className="w-full md:w-1/2">
-        <img src={require("@site/static/img/sitting_astronaut.png").default} className=" md:ml-0"/>
-        
+        <img src={require("@site/static/img/sitting_astronaut.png").default} className="md:ml-0" style={{marginLeft:"80px"}}/>
     </div>
     </ClassicPadding>
   );
