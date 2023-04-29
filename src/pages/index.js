@@ -18,12 +18,13 @@ function Home() {
       <div className="bg-gray/300">
         <Navbar />
         <Hero />
-      </div>
+      
       <Join />
       <FAQ />
       <Newsletter />
       <GetStarted />
       <Footer />
+      </div>
     </>
   );
 }
