@@ -71,7 +71,7 @@ function Join() {
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
               <span className="font-bold">HackAPrompt</span> Competition
             </div>
-            <div className="opacity-70 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
+            <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
               A beginner-friendly competition that will challenge you to beat 7
               levels of prompt hacking defenses. Inject, leak and defeat the
               sandwich defense to claim your share of over $37,500 in prizes.
