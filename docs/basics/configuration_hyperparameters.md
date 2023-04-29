@@ -50,7 +50,7 @@ Sometimes more randomness can be helpful on tasks where accuracy is necessary wh
 In summary, temperature, top p, and other model configuration hyperparameters are key factors to consider when working with language models. By understanding the relationship between these hyperparameters and the model output, practitioners can optimize their prompts for specific tasks and applications.
 
 :::warning
-Some models, like ChatGPT, **don't** let you adjust these configuration hyperparameters.
+Some models, like ChatGPT, **don't** let you adjust these configuration hyperparameters (unless you use the API).
 :::
 
 By jackdickens382
