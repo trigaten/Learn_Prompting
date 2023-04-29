@@ -4,7 +4,6 @@ import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ButtonField from "@site/src/components/ButtonField";
 import Code from "@site/src/css/code_snippet_1.svg";
-import Phone from "@site/src/css/phonelp.svg";
 import BeginnerMobile from "@site/static/img/advancedmobile.svg";
 import BeginnerWeb from "@site/static/img/beginnerweb.svg";
 import IntermediateMobile from "@site/static/img/intermediatemobile.svg";
@@ -39,8 +38,8 @@ function Hero() {
           }
         />
       </div>
-      <div className="flex flex-col items-center pt-16 z-10 md:overflow-visible overflow-hidden">
-        <div className="flex flex-row gap-4 justify-center">
+      <div className="flex flex-col items-center pt-16 z-10 overflow-hidden md:overflow-visible">
+        <div className="flex flex-row flex-wrap gap-4 md:gap-4 justify-center">
           {categories.map((category, i) => (
             <ButtonField
               key={i}
@@ -50,13 +49,16 @@ function Hero() {
             />
           ))}
         </div>
+
         <div className="mt-[-25px] hidden md:flex">
           <Code className="h-[700px]" />
         </div>
       </div>
-      <div className="pt-4 mt-2 md:hidden">
-        <Phone className="w-full" />
+
+      <div className="md:hidden">
+        <img src={require("@site/src/css/phonelp.png").default} className="w-full"/>
       </div>
+      
     </ClassicPadding>
   );
 }
