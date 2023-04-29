@@ -14,15 +14,16 @@ function GetStarted() {
           <div className="text-center md:text-left text-default text-sm font-vietnam font-light tracking-tight pt-4 px-12 md:px-0">
             Join the 650K learners mastering the skill of communicating with AI
           </div>
-          <div className="flex justify-center md:justify-start pt-12 text-[1rem] tracking-tighter mb-12">
+          <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12">
             <Button
-              onClick={() =>
-                window.location.replace(
-                  "/docs/intro"
-                )
-              }
+              onClick={() => window.location.replace("/docs/intro")}
               text={"Start Learning"}
-              icon={<RxArrowTopRight className="inline-block text-white" />}
+              icon={
+                <RxArrowTopRight
+                  className="inline-block text-white"
+                  style={{ verticalAlign: "middle" }}
+                />
+              }
             />
           </div>
         </div>
