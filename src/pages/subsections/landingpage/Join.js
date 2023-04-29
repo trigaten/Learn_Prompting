@@ -45,7 +45,7 @@ function Join() {
   return (
     <div className="w-screen font-vietnam">
       <ClassicPadding>
-        <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-20">
+        <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-15">
           Join our global community. Elevate your prompting skills.
           <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-28 pt-10">
             Become part of a worldwide network of learners from various
@@ -71,7 +71,6 @@ function Join() {
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
               <span className="font-bold">HackAPrompt</span> Competition
             </div>
-
             <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
               A beginner-friendly competition that will challenge you to beat 7
               levels of prompt hacking defenses. Inject, leak and defeat the
@@ -101,7 +100,7 @@ function Join() {
           </div>
           <div
             className="w-[550px] h-[325px] mr-[-100px] md:flex hidden"
-            style={{ paddingTop: "20px", marginTop: "-20px" }} // Added marginTop: "-20px" to move the lock up a bit
+            style={{ paddingTop: "20px", marginTop: "-20px" }}
           >
             <img
               src={require("@site/static/img/lock.png").default}
