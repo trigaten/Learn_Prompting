@@ -9,7 +9,7 @@ function GetStarted() {
       className={"flex flex-col md:flex-row gap-4 justify-between py-24"}
     >
       <div className="flex items-center md:w-[60%]">
-        <div className="text-center md:text-left text-6xl md:text-5xl font-vietnam font-medium tracking-tighter  pt-20">
+        <div className="text-center md:text-left text-7xl md:text-6xl font-vietnam font-medium tracking-tighter pt-15">
           Get Started.
           <div className="text-center md:text-left text-default text-sm font-vietnam font-light tracking-tight pt-4 px-12 md:px-0">
             Join the 650K learners mastering the skill of communicating with AI

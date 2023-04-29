@@ -23,7 +23,7 @@ function Footer() {
   ];
 
   return (
-    <ClassicPadding className="bg-gray/300 py-16 border-t-[gray/200] border flex flex-col md:flex-row justify-between font-vietnam tracking-tight text-default">
+    <ClassicPadding className="bg-gray-100 py-16 border-t-[gray/200] border flex flex-col md:flex-row justify-between font-vietnam tracking-tight text-default">
       <div className="hidden md:flex">© 2023 Learn Prompting</div>
       <div className="flex gap-4">
         {rightLinks.map((link, idx) => (
@@ -34,7 +34,7 @@ function Footer() {
             <a
               href={link.link}
               className=" transition-all mr-1 font-vietnam tracking-tight"
-              style={{color:"black"}}
+              style={{ color: "black" }}
             >
               {link.name}
             </a>

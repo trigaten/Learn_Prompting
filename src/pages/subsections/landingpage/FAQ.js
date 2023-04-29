@@ -76,7 +76,7 @@ function FAQ() {
             {" "}
             Contact Us
             <span className="ml-1">
-              <RxArrowTopRight className="inline-block text-default text-md mb-1" />
+              <RxArrowTopRight className="inline-block text-default text-md mt-1" />
             </span>
           </a>
         </span>
