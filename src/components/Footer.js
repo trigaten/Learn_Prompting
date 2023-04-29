@@ -34,6 +34,7 @@ function Footer() {
             <a
               href={link.link}
               className=" transition-all mr-1 font-vietnam tracking-tight"
+              style={{color:"black"}}
             >
               {link.name}
             </a>
