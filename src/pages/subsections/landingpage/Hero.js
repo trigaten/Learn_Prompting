@@ -51,14 +51,16 @@ function Hero() {
         </div>
 
         <div className="mt-[-25px] hidden md:flex">
-          <Code className="h-[700px]" />
+          <BeginnerWeb className="h-[700px]" />
         </div>
       </div>
 
       <div className="md:hidden">
-        <img src={require("@site/src/css/phonelp.png").default} className="w-full"/>
+        <img
+          src={require("@site/src/css/phonelp.png").default}
+          className="w-full"
+        />
       </div>
-      
     </ClassicPadding>
   );
 }
