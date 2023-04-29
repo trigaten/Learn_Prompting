@@ -18,12 +18,12 @@ function Home() {
       <div className="bg-gray/300">
         <Navbar />
         <Hero />
+        <Join />
+        <FAQ />
+        <Newsletter />
+        <GetStarted />
+        <Footer />
       </div>
-      <Join />
-      <FAQ />
-      <Newsletter />
-      <GetStarted />
-      <Footer />
     </>
   );
 }
