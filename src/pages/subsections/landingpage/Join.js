@@ -65,7 +65,7 @@ function Join() {
           className="flex gap-4 justify-around flex-col md:flex-row"
         >
           <div className="md:w-[45%] md:pl-28 md:ml-12">
-            <div className="opacity-80 text-center md:text-left text-lg">
+            <div className="opacity-81 text-center md:text-left text-lg">
               Introducing The
             </div>
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
@@ -79,22 +79,29 @@ function Join() {
               May 5th and May 26th!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={"https://www.aicrowd.com/challenges/hackaprompt-2023"}
-              >
-                <Button
-                  text={"Register Now"}
-                  type={"white"}
-                  icon={
-                    <RxArrowTopRight className="inline-block text-green/300" />
-                  }
-                />
-              </a>
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://www.aicrowd.com/challenges/hackaprompt-2023",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
+                text={"Register Now"}
+                type={"white"}
+                icon={
+                  <RxArrowTopRight
+                    className="inline-block text-green/300"
+                    style={{ position: "relative", top: "3px" }}
+                  />
+                }
+              />
             </div>
           </div>
-          <div className="w-[500px] h-[300px] mr-10 md:flex hidden">
+          <div
+            className="w-[500px] h-[300px] mr-[-90px] md:flex hidden"
+            style={{ paddingTop: "20px" }}
+          >
             <img
               src={require("@site/static/img/lock.png").default}
               alt="Example banner"
@@ -103,7 +110,7 @@ function Join() {
         </div>
         <div className="pt-20">
           <ScrollingText values={brands} />
-          <div className="text-center opacity-70 font-light pt-8 pb-8 text-xs md:text-lg">
+          <div className="text-center opacity-80 font-medium pt-8 pb-8 text-xs md:text-lg">
             Proudly Sponsored by Industry-Defining AI Companies
           </div>
         </div>
