@@ -71,12 +71,12 @@ function Join() {
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
               <span className="font-bold">HackAPrompt</span> Competition
             </div>
-            <div className="opacity-70 font-light pt-10 md:text-left text-center px-4 md:px-0">
-              A beginner-friendly competition that will challenge you to
-              overcome 7 levels of prompt hacking defenses. Inject, leak and
-              defeat the sandwich defense to claim your share of over $37,500 in
-              prizes. Ready to trick the AI? Hack our prompts anytime between
-              May 5th and May 26th!
+            <div className="opacity-70 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
+              A beginner-friendly competition that will challenge you to beat 7
+              levels of prompt hacking defenses. Inject, leak and defeat the
+              sandwich defense to claim your share of over $37,500 in prizes.
+              Ready to trick the AI? Hack our prompts anytime between May 5th
+              and May 26th!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
               <Button
@@ -99,7 +99,7 @@ function Join() {
             </div>
           </div>
           <div
-            className="w-[500px] h-[300px] mr-[-90px] md:flex hidden"
+            className="w-[550px] h-[325px] mr-[-100px] md:flex hidden"
             style={{ paddingTop: "20px" }}
           >
             <img

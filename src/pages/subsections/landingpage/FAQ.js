@@ -65,10 +65,14 @@ function FAQ() {
       >
         Frequently Asked Questions
       </div>
-      <div className="text-left md:text-center text-default text-sm pt-2 font-vietnam font-light tracking-tight md:px-28 md:pt-10 md:text-md mb-4 md:mb-0 ">
+      <div className="text-left md:text-center text-default text-sm pt-2 font-vietnam font-light tracking-tight md:px-28 md:pt-4 md:text-md mb-4 md:mb-0 ">
         Can't find what you are looking for?{" "}
         <span className={"underline"}>
-          <a href={"mailto:learnprompting@gmail.com"} className="underline" style={{color:"grey"}}>
+          <a
+            href={"mailto:learnprompting@gmail.com"}
+            className="underline"
+            style={{ color: "grey" }}
+          >
             {" "}
             Contact Us
             <span className="ml-1">
