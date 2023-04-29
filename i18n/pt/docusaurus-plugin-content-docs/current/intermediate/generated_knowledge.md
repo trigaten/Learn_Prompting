@@ -161,7 +161,7 @@ Selecionamos a resposta com a maior probabilidade como resposta final. A maior p
 
 A abordagem de recitação-aumentada (@sun2022recitationaugmented) é semelhante à geração de conhecimento (basicamente a mesma coisa). No entanto, é muito menos complexa do que a implementação formal de geração de conhecimento.
 
-import RImage from '@site/docs/assets/PT_recitation.png';
+import RImage from '../assets/PT_recitation.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={RImage} style={{width: "250px"}} />
