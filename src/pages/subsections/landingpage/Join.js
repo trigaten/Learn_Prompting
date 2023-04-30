@@ -145,7 +145,7 @@ function Join() {
               </motion.div>
             ))}
           </Marquee>
-          <div className="text-center opacity-80 font-medium pt-8 pb-8 text-xs md:text-lg">
+          <div className="text-center opacity-80 font-medium pt-4 pb-8 text-xs md:text-lg">
             Proudly Sponsored by Industry-Defining AI Companies
           </div>
         </div>
