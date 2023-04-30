@@ -5,9 +5,8 @@ sidebar_position: 2
 
 import InstructionPrompt from '@site/docs/assets/instruction_prompt.svg';
 
-
 <div style={{textAlign: 'center'}}>
-  <InstructionPrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 
