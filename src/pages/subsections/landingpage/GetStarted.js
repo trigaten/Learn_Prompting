@@ -29,10 +29,10 @@ function GetStarted() {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 flex items-center">
         <img
           src={require("@site/static/img/sitting_astronaut.png").default}
-          className="ml-20 md:ml-[80px] md:h-auto h-[300px]"
+          className="mx-auto md:ml-[80px] md:h-auto h-[300px]"
         />
       </div>
     </ClassicPadding>
