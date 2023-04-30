@@ -39,6 +39,10 @@ async function createConfig() {
               to: '/docs/basics/formalizing',
               from: '/docs/basics/standard_prompt',
             },
+            {
+              to: '/docs/tooling/IDEs/intro',
+              from: '/docs/IDEs/intro',
+            },
           ],
         },
       ],
