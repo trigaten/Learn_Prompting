@@ -1,6 +1,6 @@
 import React from "react";
 
-function ButtonField({ isActive, onClick, text, className }) {
+function ButtonField({ isActive, onClick, text, className, customStyle }) {
   return (
     <div
       onClick={onClick}
@@ -15,7 +15,7 @@ function ButtonField({ isActive, onClick, text, className }) {
       <div
         className={
           "rounded-full w-[10px] h-[10px] mr-2 " +
-          (isActive ? "bg-green/400" : "bg-gray/600")
+          (isActive ? customStyle || "bg-green/400" : "bg-gray/600")
         }
       />
       <div>{text}</div>
