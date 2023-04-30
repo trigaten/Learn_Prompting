@@ -1,6 +1,3 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const math = require("remark-math");
@@ -8,7 +5,7 @@ const math = require("remark-math");
 async function createConfig() {
   const katex = (await import("rehype-katex")).default;
   return {
-    title: "Learn Prompting",
+    title: "Learn Prompting: Your Guide to Communicating with AI",
     tagline:
       "A Free, Open Source Course on Communicating with Artificial Intelligence",
     url: "https://learnprompting.org",
@@ -16,16 +13,10 @@ async function createConfig() {
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
-
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: "trigaten", // Usually your GitHub org/user name.
-    projectName: "promptgineering", // Usually your repo name.
+    organizationName: "trigaten",
+    projectName: "promptgineering",
     deploymentBranch: "gh-pages",
     trailingSlash: false,
-    // Even if you don't use internalization, you can use this field to set useful
-    // metadata like html lang. For example, if your site is Chinese, you may want
-    // to replace "en" with "zh-Hans".
     i18n: {
       defaultLocale: "en",
       locales: [
@@ -46,7 +37,6 @@ async function createConfig() {
         "@docusaurus/plugin-client-redirects",
         {
           redirects: [
-            // /docs/oldDoc -> /docs/newDoc
             {
               to: "/docs/basics/formalizing",
               from: "/docs/basics/standard_prompt",
@@ -62,7 +52,6 @@ async function createConfig() {
         return {
           name: "docusaurus-tailwindcss",
           configurePostCss(postcssOptions) {
-            // Appends TailwindCSS and AutoPrefixer.
             postcssOptions.plugins.push(require("tailwindcss"));
             postcssOptions.plugins.push(require("autoprefixer"));
             return postcssOptions;
@@ -83,8 +72,6 @@ async function createConfig() {
           },
           docs: {
             sidebarPath: require.resolve("./sidebars.js"),
-            // Please change this to your repo.
-            // Remove this to remove the "edit this page" links.
             editUrl: "https://github.com/trigaten/promptgineering/tree/v1.2.3",
             remarkPlugins: [
               math,
@@ -133,11 +120,59 @@ async function createConfig() {
       },
     ],
     themeConfig: {
+      // Add metadata for SEO
       metadata: [
+        {
+          name: "description",
+          content:
+            "Learn Prompting is the largest and most comprehensive course in prompt engineering available on the internet, with over 60 content modules, translated into 9 languages, and a thriving community.",
+        },
         {
           name: "keywords",
           content:
-            "prompting, prompt engineering, learn prompting, learn, prompt",
+            "prompting, prompt engineering, learn prompting, learn, prompt, AI, chatGPT",
+        },
+        {
+          name: "og:title",
+          content: "Learn Prompting: Your Guide to Communicating with AI",
+        },
+        {
+          name: "og:description",
+          content:
+            "Learn Prompting is the largest and most comprehensive course in prompt engineering available on the internet, with over 60 content modules, translated into 9 languages, and a thriving community.",
+        },
+        {
+          name: "og:url",
+          content: "https://learnprompting.org",
+        },
+        {
+          name: "og:image",
+          content: "https://learnprompting.org/img/og-image.jpg", // Replace this with the actual path to your og-image.
+        },
+        {
+          name: "og:type",
+          content: "website",
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          name: "twitter:title",
+          content: "Learn Prompting: Your Guide to Communicating with AI",
+        },
+        {
+          name: "twitter:description",
+          content:
+            "Learn Prompting is the largest and most comprehensive course in prompt engineering available on the internet, with over 60 content modules, translated into 9 languages, and a thriving community.",
+        },
+        {
+          name: "twitter:url",
+          content: "https://learnprompting.org",
+        },
+        {
+          name: "twitter:image",
+          content: "https://learnprompting.org/img/twitter-image.jpg", // Replace this with the actual path to your twitter-image.
         },
       ],
       navbar: {
@@ -148,7 +183,7 @@ async function createConfig() {
         },
         items: [
           {
-            type: 'custom-myAwesomeNavbarItem', 
+            type: "custom-myAwesomeNavbarItem",
             position: "left",
           },
           {
@@ -156,11 +191,11 @@ async function createConfig() {
             position: "right",
           },
           {
-            href: 'https://github.com/trigaten/Learn_Prompting/releases',
-            label: 'Change Log',
-            position: 'right',
+            href: "https://github.com/trigaten/Learn_Prompting/releases",
+            label: "Change Log",
+            position: "right",
           },
-        ]
+        ],
       },
       footer: {
         style: "dark",
