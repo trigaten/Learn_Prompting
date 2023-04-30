@@ -6,7 +6,6 @@ import StatPoint from "@site/src/components/StatPoint";
 import LargeCallout from "@site/src/components/layouts/LargeCallout";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
-import ScrollingText from "@site/src/components/ScrollingText";
 import Arthur from "@site/static/img/arthur_logo.png";
 import HuggingFace from "@site/static/img/huggingface_logo.png";
 import HumanLoop from "@site/static/img/humanloop_logo.png";
@@ -66,7 +65,7 @@ function Join() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 lg:px-[190px] xl:px-24 2xl:px-32 text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-14 pb-10 max-w-screen-xl mx-auto">
+      <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 md:px-16 lg:px-20 xl:px-24 2xl:px-32 text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-14 pb-10 max-w-screen-xl mx-auto">
         {stats.map((stat, i) => (
           <StatPoint key={i} header={stat.header} subtitle={stat.subtitle} />
         ))}
