@@ -129,11 +129,18 @@ function Join() {
                 className="mx-4 flex items-center"
               >
                 <a href={brand.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="w-40 h-20 md:w-48 md:h-24 object-contain"
-                  />
+                  <div className="w-40 h-20 md:w-48 md:h-24 flex items-center justify-center">
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="object-contain"
+                      style={
+                        brand.name === "Scale"
+                          ? { width: "80%", height: "80%" }
+                          : {}
+                      }
+                    />
+                  </div>
                 </a>
               </motion.div>
             ))}
