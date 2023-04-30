@@ -8,7 +8,7 @@ function GetStarted() {
     <ClassicPadding className="flex flex-col md:flex-row gap-4 justify-between md:py-24">
       <div className="items-center md:w-[60%]">
         <div className="text-center md:text-left text-5xl md:text-6xl font-vietnam font-medium tracking-tighter pt-16">
-          Get Started.
+          <span style={{color:"black"}}>Get Started.</span>
           <div className="text-center md:text-left text-default text-base font-vietnam font-light tracking-tight pt-4 px-12 md:px-0">
             Join 700K+ learners mastering the skill of communicating with AI
           </div>

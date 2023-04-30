@@ -40,7 +40,7 @@ function Hero() {
 
   return (
     <ClassicPadding className={"pb-10"}>
-      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter lg:px-8 2xl:px-32 pt-8">
+      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter lg:px-8 2xl:px-32 pt-8" style={{color:"black"}}>
         Your Guide to Communicating with Artificial Intelligence
       </div>
       <div className="text-center text-default text-sm font-vietnam font-light tracking-tighter px-4 md:px-10 lg:px-20 xl:px-60 pt-8">
