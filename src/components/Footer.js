@@ -23,8 +23,8 @@ function Footer() {
   ];
 
   return (
-    <ClassicPadding className="bg-gray-100 py-16 border-t-[gray/200] border flex flex-col md:flex-row justify-between font-vietnam tracking-tight text-default">
-      <div className="hidden md:flex">© 2023 Learn Prompting</div>
+    <ClassicPadding className="bg-gray-100 py-12 sm:py-16 border-t-[gray/200] border flex flex-col sm:flex-row justify-between font-vietnam tracking-tight text-default">
+      <div className="hidden sm:flex">© 2023 Learn Prompting</div>
       <div className="flex gap-4">
         {rightLinks.map((link, idx) => (
           <div
@@ -33,7 +33,7 @@ function Footer() {
           >
             <a
               href={link.link}
-              className=" transition-all mr-1 font-vietnam tracking-tight"
+              className="transition-all mr-1 font-vietnam tracking-tight"
               style={{ color: "black" }}
             >
               {link.name}
@@ -42,7 +42,7 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className="flex md:hidden mt-6">© 2023 Learn Prompting</div>
+      <div className="flex sm:hidden mt-4 sm:mt-0">© 2023 Learn Prompting</div>
     </ClassicPadding>
   );
 }

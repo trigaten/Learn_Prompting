@@ -11,10 +11,10 @@ function GetStarted() {
       <div className="items-center md:w-[60%]">
         <div className="text-center md:text-left text-5xl md:text-6xl font-vietnam font-medium tracking-tighter pt-16">
           Get Started.
-          <div className="text-center md:text-left text-default text-sm font-vietnam font-light tracking-tight pt-4 px-12 md:px-0">
-            Join the 650K learners mastering the skill of communicating with AI
+          <div className="text-center md:text-left text-default text-base font-vietnam font-light tracking-tight pt-4 px-12 md:px-0">
+            Join 700K+ learners mastering the skill of communicating with AI
           </div>
-          <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12">
+          <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12 mt-1">
             <Button
               onClick={() => window.location.replace("/docs/intro")}
               text={"Start Learning"}

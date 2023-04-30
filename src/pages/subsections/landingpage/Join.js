@@ -21,7 +21,7 @@ import FiscalNote from "@site/static/img/fiscalnote_logo.png";
 function Join() {
   const stats = [
     {
-      header: "650K+",
+      header: "700K+",
       subtitle: "People Learning",
     },
     {

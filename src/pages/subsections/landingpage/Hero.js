@@ -3,13 +3,9 @@ import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ButtonField from "@site/src/components/ButtonField";
-import BeginnerMobile from "@site/static/img/advancedmobile.svg";
 import BeginnerWeb from "@site/static/img/beginnerweb.svg";
-import IntermediateMobile from "@site/static/img/intermediatemobile.svg";
 import IntermediateWeb from "@site/static/img/intermediateweb.svg";
-import AdvancedMobile from "@site/static/img/advancedmobile.svg";
 import AdvancedWeb from "@site/static/img/advancedweb.svg";
-import ApplicationsMobile from "@site/static/img/applicationsmobile.svg";
 import ApplicationsWeb from "@site/static/img/applicationsweb.svg";
 
 function Hero() {
