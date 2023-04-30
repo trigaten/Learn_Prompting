@@ -7,7 +7,7 @@ sidebar_position: 0
 import Techniques from '@site/docs/assets/techniques.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Techniques style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 

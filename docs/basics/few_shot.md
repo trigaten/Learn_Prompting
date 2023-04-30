@@ -7,7 +7,7 @@ sidebar_position: 4
 import FewShot from '@site/docs/assets/few_shot.svg';
 
 <div style={{textAlign: 'center'}}>
-  <FewShot style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
+  <FewShot style={{width:"100%",height:"200px",verticalAlign:"top"}}/>
 </div>
 
 

@@ -8,10 +8,10 @@ style: chicago
 
 import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
 
-
 <div style={{textAlign: 'center'}}>
-  <CombinedPrompt style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <CombinedPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+
 
 As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, and multiple input-output examples. However, thus far, we have only examined separate classes of prompts. Combining these different prompting techniques can lead to more powerful prompts. 
 
