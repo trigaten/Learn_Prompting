@@ -4,43 +4,135 @@ sidebar_position: 3
 
 # 🟢 Role Prompting
 
-import RolePrompt from '@site/docs/assets/role_prompt.svg';
+Another prompting technique is role prompting,
+which is assigning a role to the AI. 
+It can be as simple as telling the AI to "act like
+a detective" or  "you are a food critic".
+
+import RolePrompt from '../assets/role_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <RolePrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
 </div>
 
 
-Another prompting technique is to assign a role to the AI. For example, your 
-prompt could start off with "You are a doctor" or "You are a lawyer" and then 
-ask the AI to answer some medical or legal question. Here is an example:
+Role prompting is a great technique for steering the
+output in the intended direction you're looking for, 
+in some cases it can also improve the general quality
+of the output.
 
-```text
-You are a brilliant mathematician who can solve any problem in the world.
-Attempt to solve the following problem:
+It's a very imnportant technique since it can have 
+considerable impact on the quality of the output of 
+the prompt with very little words (and tokens).
 
-What is 100*100/400*56?
+## Straightforward roles
 
-// highlight-start
-The answer is 1400.
-// highlight-end
-```
+Let's dive into the food critic example mentioned above.
+IF you were to write a review of a pizza place, it's important
+to think where your written piece will go and what your 
+audience is.
+
+You can argue that you can copy and paste the same review across
+Goople Reviews, TripAdvor and Yelp, but that won't work for 
+a review by a food critic in a magazine or a blogpost. 
+
+You could instruct the language model to keep it short or 
+long, to write in a certain style or what sort of language
+to use, or you could use a role prompt to do all of this at once.
+
+Let's start with a simple prompt without a role.
 
 The AI's (GPT-3 davinci-003) answer is highlighted in green:
 
+```text
+Write a review of [random pizza place].
 
-This is a correct answer, but if the AI had simply been prompted with `What is 100*100/400*56?`,
-it would have answered `280` (incorrect). Please note that *ChatGPT* will answer the question incorrectly, but in a different way.
+// highlight-start
+"I recently had the pleasure of trying [random pizza place] and I must say that I was thoroughly impressed. The pizza was cooked to perfection and the toppings were fresh and flavorful. The crust was light and crispy, and the sauce was just the right amount of tangy. The service was also top-notch; the staff was friendly and attentive. Overall, I had a great experience and would definitely recommend [random pizza place] to anyone looking for a delicious pizza."
+// highlight-end
+```
+The result isn't good or bad, it depends a bit on what 
+you want the output to be. 
 
-When assigning a role to the AI, we are giving it some context. This context
-helps the AI understand the question better. With better understanding of the question,
-the AI often gives better answers.
+Now let's make the AI assume the role of food critic. Again, the output of the AI is highlighted in green:
 
-:::note
-This technique is no longer as effective with more modern AIs (e.g. GPT-3 davinci-003).
-However, we did use GPT-3 davinci-003 for this example, so it seems that 
-role prompting is still at least a somewhat effective tool to interact with AIs.
-:::
+<<<<<<< HEAD
+```text
+You are a food critic. Write a review of [random pizza place].
+
+// highlight-start
+"I recently had the pleasure of dining at [Pizza Place], a cozy pizzeria located in the heart of the city. Despite its small size, the restaurant packs a huge punch when it comes to flavor.
+
+The pizza was cooked to perfection. The crust was delightfully thin and crispy and the toppings were fresh and flavorful. The combination of flavors was simply delicious. The marinara sauce was rich and flavorful and complemented the toppings perfectly. The cheese was gooey and melted in my mouth.
+
+The service was also excellent. The staff was friendly and attentive. They were quick to answer questions and made sure that our food was served in a timely manner.
+
+Overall, my experience at [Pizza Place] was fantastic and I highly recommend it to anyone looking for a delicious pizza."
+// highlight-end
+```
+
+It adds a little more detail, goes a bit more in depth.
+
+Now let's go a step further and make it assume the role
+of a writer for the Michilen guide:
+
+```text
+You are a food critic writing for the Michelin Guide. Write a review of [random pizza place].
+
+// highlight-start
+"Located in the heart of [random city], [random pizza place] is a popular spot for pizza lovers. Upon entering, the warm, inviting atmosphere and the smell of freshly-baked pizza will make you feel right at home. The menu offers a wide selection of classic pizzas, as well as some unique and creative options. The crust is perfectly crispy and the toppings are always fresh and flavorful. The service is friendly and attentive, and the prices are reasonable. Whether you’re looking for a quick bite or a leisurely dinner, [random pizza place] is sure to satisfy your pizza cravings."
+// highlight-end
+```
+
+The output might not be a fully written out article,
+however, the review does seem a lot more "rich" in it's
+descriptions.
+
+
+You can try it for yourself here:
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="You are a food critic.\n\nWrite an example review for a pizza place." initial-response="I recently had the pleasure of dining at [Pizza Place], a cozy pizzeria located in the heart of the city. Despite its small size, the restaurant packs a huge punch when it comes to flavor.\n\nThe pizza was cooked to perfection. The crust was delightfully thin and crispy and the toppings were fresh and flavorful. The combination of flavors was simply delicious. The marinara sauce was rich and flavorful and complemented the toppings perfectly. The cheese was gooey and melted in my mouth.\n\nThe service was also excellent. The staff was friendly and attentive. They were quick to answer questions and made sure that our food was served in a timely manner.\n\nOverall, my experience at [Pizza Place] was fantastic and I highly recommend it to anyone looking for a delicious pizza.\n\n" max-tokens="256" box-rows="3" model-temp="0.4" top-p="1">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
+
+There are countless examples to think of. It is important
+to consider the role that fits the task at hand the best.
+
+For example, if you want an LLM like ChatGPT to draft 
+an e-mail for you, you could give it a prompt along the lines of:
+
+```text
+You are given the task to draft an email to a client. Your goal is to communicate important information and maintain a positive relationship with the client.
+```
+
+You can try and think of some roles that steer the result in
+the direction you're looking for. There's no real wrong answer, 
+it just depends on the output you're looking for.
+
+Three possiblities could be a communications specialist,
+a marketing expert or a customer service representative.
+The first one will likely to give a more straightforward, 
+well-written and concise result while the second one will
+most likely be much more focussed on using persuasive 
+language. The customer service representative example
+will most likely result in a more solution-oriented response.
+
+## Improved quality
+
+In older models (danvici 2 for excample) role prompting 
+was able to have a noticeable effect on very simple prompts.
+Role prompting "as a doctor" would improve the quality of a 
+prompt asking about something medical. "As a lawyer" would
+generally improve the result of any legal question. 
+
+This holds up siginifcantly less in the improved models
+like GPT-3.5 or GPT-4. 
+
+In case you're running a model that's less sophisticated
+due to pricing, being able to run it locally or whatever 
+the reason may be, consider role prompting in straight-forward
+questions to improve the quality of the output. 
+
 
 ## Examples
 
@@ -48,15 +140,6 @@ You can find some more interesting prompts in the [Awesome ChatGPT Prompts](http
 repository on GitHub. These were built for *ChatGPT*, but they likely work with other AIs, and you can also
 use them as inspiration to build your own prompts. Let's see two examples:
 
-> ### Act as an Etymologist
-> I want you to act as an etymologist. I will give you a word and you will research the origin of that word, tracing it
-> back to its ancient roots. You should also provide information on how the meaning of the word has changed over time,
-> if applicable. My first request is "I want to trace the origins of the word 'pizza'".
-
-> ### Act as an Absurdist
-> I want you to act as an absurdist. The absurdist's sentences are meaningless. The words used by an absurdist are completely
-> ridiculous. The absurdist does not make commonplace sentences in any way. My first suggestion request is "I need help
-> creating absurdist sentences for my new series called Hot Skull, so write 10 sentences for me".
 
 ---
 
