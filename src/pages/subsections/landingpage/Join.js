@@ -63,7 +63,7 @@ function Join() {
           using our curriculum
         </div>
       </div>
-      <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-16 pb-10">
+      <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 lg:px-[150px] text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-16 pb-10">
         {stats.map((stat, i) => (
           <StatPoint key={i} header={stat.header} subtitle={stat.subtitle} />
         ))}
