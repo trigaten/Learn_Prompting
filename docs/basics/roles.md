@@ -4,33 +4,21 @@ sidebar_position: 3
 
 # 🟢 Role Prompting
 
-Another prompting technique is role prompting,
-which is assigning a role to the AI. 
-It can be as simple as telling the AI to "act like
-a detective" or  "you are a food critic".
 
-import RolePrompt from '../assets/role_prompt.svg';
+import RolePrompt from '@site/docs/assets/role_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <RolePrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
 </div>
 
+Another prompting technique is *role prompting*, which assigns a role to the AI. 
+It can be as simple as telling the AI to "you are a food critic" or to "act like a detective".
 
-Role prompting is a great technique for steering the
-output in the intended direction you're looking for, 
-in some cases it can also improve the general quality
-of the output.
-
-It's a very imnportant technique since it can have 
-considerable impact on the quality of the output of 
-the prompt with very little words (and tokens).
+Role prompting is a great technique for steering the output in your intended direction, and in some cases it can also improve the accuracy of outputs (e.g. when you want to use the AI to classify text or solve math problems). 
 
 ## Straightforward roles
 
-Let's dive into the food critic example mentioned above.
-IF you were to write a review of a pizza place, it's important
-to think where your written piece will go and what your 
-audience is.
+Let's dive into the food critic example mentioned above. When reviewing a pizza place, it's crucial to consider your publishing platform and intended audience. 
 
 You can argue that you can copy and paste the same review across
 Goople Reviews, TripAdvor and Yelp, but that won't work for 
@@ -56,7 +44,6 @@ you want the output to be.
 
 Now let's make the AI assume the role of food critic. Again, the output of the AI is highlighted in green:
 
-<<<<<<< HEAD
 ```text
 You are a food critic. Write a review of [random pizza place].
 
@@ -91,9 +78,11 @@ descriptions.
 
 You can try it for yourself here:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="You are a food critic.\n\nWrite an example review for a pizza place." initial-response="I recently had the pleasure of dining at [Pizza Place], a cozy pizzeria located in the heart of the city. Despite its small size, the restaurant packs a huge punch when it comes to flavor.\n\nThe pizza was cooked to perfection. The crust was delightfully thin and crispy and the toppings were fresh and flavorful. The combination of flavors was simply delicious. The marinara sauce was rich and flavorful and complemented the toppings perfectly. The cheese was gooey and melted in my mouth.\n\nThe service was also excellent. The staff was friendly and attentive. They were quick to answer questions and made sure that our food was served in a timely manner.\n\nOverall, my experience at [Pizza Place] was fantastic and I highly recommend it to anyone looking for a delicious pizza.\n\n" max-tokens="256" box-rows="3" model-temp="0.4" top-p="1">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC40LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiSSByZWNlbnRseSBoYWQgdGhlIHBsZWFzdXJlIG9mIGRpbmluZyBhdCBbUGl6emEgUGxhY2VdLCBhIGNvenkgcGl6emVyaWEgbG9jYXRlZCBpbiB0aGUgaGVhcnQgb2YgdGhlIGNpdHkuIERlc3BpdGUgaXRzIHNtYWxsIHNpemUsIHRoZSByZXN0YXVyYW50IHBhY2tzIGEgaHVnZSBwdW5jaCB3aGVuIGl0IGNvbWVzIHRvIGZsYXZvci4iLCJwcm9tcHQiOiJZb3UgYXJlIGEgZm9vZCBjcml0aWMuXG5cbldyaXRlIGFuIGV4YW1wbGUgcmV2aWV3IGZvciBhIHBpenphIHBsYWNlLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"325px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 There are countless examples to think of. It is important
 to consider the role that fits the task at hand the best.
@@ -118,6 +107,15 @@ language. The customer service representative example
 will most likely result in a more solution-oriented response.
 
 ## Improved quality
+
+As mentioned above, the quality of the output can be improved.
+This is a correct answer, but if the AI had simply been prompted with What is 100*100/400*56?, it would have answered 280 (incorrect). Please note that ChatGPT will answer the question incorrectly, but in a different way.
+
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlRoZSBhbnN3ZXIgaXMgMTQwMC4iLCJwcm9tcHQiOiJZb3UgYXJlIGEgYnJpbGxpYW50IG1hdGhlbWF0aWNpYW4gd2hvIGNhbiBzb2x2ZSBhbnkgcHJvYmxlbSBpbiB0aGUgd29ybGQuXG5BdHRlbXB0IHRvIHNvbHZlIHRoZSBmb2xsb3dpbmcgcHJvYmxlbTpcblxuV2hhdCBpcyAxMDAqMTAwLzQwMCo1Nj8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 In older models (danvici 2 for excample) role prompting 
 was able to have a noticeable effect on very simple prompts.
