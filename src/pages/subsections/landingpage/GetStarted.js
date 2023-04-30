@@ -5,9 +5,7 @@ import Button from "@site/src/components/Button";
 
 function GetStarted() {
   return (
-    <ClassicPadding
-      className={"flex flex-col md:flex-row gap-4 justify-between md:py-24"}
-    >
+    <ClassicPadding className="flex flex-col md:flex-row gap-4 justify-between md:py-24">
       <div className="items-center md:w-[60%]">
         <div className="text-center md:text-left text-5xl md:text-6xl font-vietnam font-medium tracking-tighter pt-16">
           Get Started.
@@ -28,7 +26,6 @@ function GetStarted() {
           </div>
         </div>
       </div>
-
       <div className="w-full md:w-1/2 flex items-center">
         <img
           src={require("@site/static/img/sitting_astronaut.png").default}
