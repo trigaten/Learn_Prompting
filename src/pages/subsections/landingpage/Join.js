@@ -1,4 +1,6 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion";
 import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import StatPoint from "@site/src/components/StatPoint";
 import LargeCallout from "@site/src/components/layouts/LargeCallout";
@@ -118,7 +120,23 @@ function Join() {
           </div>
         </div>
         <div className="pt-20">
-          <ScrollingText values={brands} />
+          <Marquee gradient={false} speed={30}>
+            {brands.map((brand, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.1 }}
+                className="mx-4 flex items-center"
+              >
+                <a href={brand.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={brand.logo}
+                    alt={brand.name}
+                    className="w-40 h-20 md:w-48 md:h-24 object-contain"
+                  />
+                </a>
+              </motion.div>
+            ))}
+          </Marquee>
           <div className="text-center opacity-80 font-medium pt-8 pb-8 text-xs md:text-lg">
             Proudly Sponsored by Industry-Defining AI Companies
           </div>

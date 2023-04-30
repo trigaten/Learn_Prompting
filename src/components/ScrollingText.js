@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 function ScrollingText({ values }) {
   const controls = useAnimation();
@@ -12,7 +13,7 @@ function ScrollingText({ values }) {
       async function animate() {
         await controls.start({
           x: -halfWidth,
-          transition: { duration: 25, repeat: Infinity }, // Decrease the duration to 25 to speed up the scrolling
+          transition: { duration: 25, repeat: Infinity },
         });
       }
 

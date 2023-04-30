@@ -3,7 +3,6 @@ import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ButtonField from "@site/src/components/ButtonField";
-import Code from "@site/src/css/code_snippet_1.svg";
 import BeginnerMobile from "@site/static/img/advancedmobile.svg";
 import BeginnerWeb from "@site/static/img/beginnerweb.svg";
 import IntermediateMobile from "@site/static/img/intermediatemobile.svg";
