@@ -6,9 +6,8 @@ sidebar_position: 105
 
 import Brain from '@site/docs/assets/brain.svg';
 
-
 <div style={{textAlign: 'center'}}>
-  <Brain style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Brain style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 

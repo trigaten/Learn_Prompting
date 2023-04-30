@@ -8,9 +8,8 @@ sidebar_position: 80
 import Chatbots from '@site/docs/assets/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Chatbots style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
-
 
 Thus far, this course has mostly used GPT-3 for examples. GPT-3 is a LLM that has no memory. When you ask it a question (a prompt), it does not remember anything that you have previously asked it. In contrast, chatbots like [ChatGPT](http://chat.openai.com) are able to **remember your conversation history**. This can be useful for applications such as customer service or simply if you want to have a conversation with a LLM!
 

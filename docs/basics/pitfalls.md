@@ -7,7 +7,7 @@ sidebar_position: 90
 import Pitfalls from '@site/docs/assets/pitfalls.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Pitfalls style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 
