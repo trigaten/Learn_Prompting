@@ -55,19 +55,19 @@ function Join() {
 
   return (
     <div className="w-screen font-vietnam">
-        <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-15 lg:px-[200px]">
-          Join our global community. Elevate your prompting skills.
-          <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-28 pt-10">
-            Become part of a worldwide network of learners from various
-            industries, all mastering the skill of effectively engaging with AI
-            using our curriculum
-          </div>
+      <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-15 lg:px-[200px]">
+        Join our global community. Elevate your prompting skills.
+        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-28 pt-10">
+          Become part of a worldwide network of learners from various
+          industries, all mastering the skill of effectively engaging with AI
+          using our curriculum
         </div>
-        <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-16 pb-10">
-          {stats.map((stat, i) => (
-            <StatPoint key={i} header={stat.header} subtitle={stat.subtitle} />
-          ))}
-        </div>
+      </div>
+      <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-16 pb-10">
+        {stats.map((stat, i) => (
+          <StatPoint key={i} header={stat.header} subtitle={stat.subtitle} />
+        ))}
+      </div>
       <LargeCallout className={"pt-20 tracking-tighter"}>
         <div
           id={"competition"}
