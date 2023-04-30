@@ -58,7 +58,7 @@ class NewsletterSignupForm extends Component {
                   required
                   style={{ color: "black" }}
                   placeholder="email@learnprompting.org"
-                  className="rounded-l-md px-6 py-2 bg-white text-dark/500 text-sm font-medium tracking-tight ring-0 focus:outline-none w-[350px] md:w-[450px] focus:ring-0"
+                  className="rounded-l-md px-6 py-2 bg-white text-dark/500 text-sm font-medium tracking-tight ring-0 focus:outline-none w-[250px] md:w-[450px] focus:ring-0"
                 />
                 <button
                   type="submit"

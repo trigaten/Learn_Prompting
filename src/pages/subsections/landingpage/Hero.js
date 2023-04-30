@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo } from "react";
 import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
@@ -15,6 +15,34 @@ import ApplicationsWeb from "@site/static/img/applicationsweb.svg";
 
 function Hero() {
   const categories = ["Beginner", "Intermediate", "Advanced", "Applications"];
+  // const [activeCategory, setActiveCategory] = React.useEffect("Beginner");
+  const [activeCategory, setActiveCategory] = React.useState("Beginner");
+
+  const x_pos = React.useMemo(() => {
+    switch (activeCategory) {
+      case "Beginner":
+        return "left-1";
+      case "Intermediate":
+        return "left-2";
+      case "Advanced":
+        return "left-3";
+      case "Applications":
+        return "left-4";
+    }
+  }, [activeCategory]);
+
+  const x_pos_mob = React.useMemo(() => {
+    switch (activeCategory) {
+      case "Beginner":
+        return "left-1-mobile";
+      case "Intermediate":
+        return "left-2-mobile";
+      case "Advanced":
+        return "left-3-mobile";
+      case "Applications":
+        return "left-4-mobile";
+    }
+  }, [activeCategory]);
 
   return (
     <ClassicPadding className={"pb-10"}>
@@ -39,27 +67,53 @@ function Hero() {
         />
       </div>
       <div className="flex flex-col items-center pt-16 z-10 overflow-hidden md:overflow-visible">
-        <div className="flex flex-row flex-wrap gap-4 md:gap-4 justify-center">
+        <div className="flex flex-row flex-wrap gap-4 md:gap-4 justify-center z-[2]">
           {categories.map((category, i) => (
             <ButtonField
               key={i}
               text={category}
-              isActive={i == 0}
-              onClick={() => alert("TBD")}
+              isActive={category == activeCategory}
+              onClick={() => setActiveCategory(category)}
             />
           ))}
         </div>
 
-        <div className="mt-[-25px] hidden md:flex">
-          <BeginnerWeb className="h-[700px]" />
+        <div className="relative h-[700px] hidden md:flex">
+          <div
+            className={`mt-[-25px] absolute top-0 hidden md:flex   border-black flex-row transition-all ${x_pos}`}
+          >
+            <BeginnerWeb className="h-[700px] mr-[-10rem]" />
+            <IntermediateWeb className="h-[700px] mr-[-10rem]" />
+            <AdvancedWeb className="h-[700px] mr-[-10rem]" />
+            <ApplicationsWeb className="h-[700px] mr-[-10rem]" />
+          </div>
         </div>
-      </div>
 
-      <div className="md:hidden">
-        <img
-          src={require("@site/src/css/phonelp.png").default}
-          className="w-full"
-        />
+        <div className="relative h-[700px] md:hidden w-screen">
+          <div
+            className={
+              "left-0 absolute top-0 h-full flex flex-row transition-all " +
+              x_pos_mob
+            }
+          >
+            <img
+              src={require("@site/src/css/beginnermobile.png").default}
+              className="h-[650px] mr-[0rem]"
+            />
+            <img
+              src={require("@site/src/css/intermediatemobile.png").default}
+              className="h-[650px] mr-[0rem]"
+            />
+            <img
+              src={require("@site/src/css/advancedmobile.png").default}
+              className="h-[650px] mr-[0rem]"
+            />
+            <img
+              src={require("@site/src/css/applicationsmobile.png").default}
+              className="h-[650px] mr-[0rem]"
+            />
+          </div>
+        </div>
       </div>
     </ClassicPadding>
   );

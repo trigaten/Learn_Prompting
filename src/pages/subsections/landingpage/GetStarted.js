@@ -9,7 +9,7 @@ function GetStarted() {
       className={"flex flex-col md:flex-row gap-4 justify-between md:py-24"}
     >
       <div className="flex items-center md:w-[60%]">
-        <div className="text-center md:text-left text-7xl md:text-6xl font-vietnam font-medium tracking-tighter pt-15">
+        <div className="text-center md:text-left text-5xl md:text-6xl font-vietnam font-medium tracking-tighter pt-16">
           Get Started.
           <div className="text-center md:text-left text-default text-sm font-vietnam font-light tracking-tight pt-4 px-12 md:px-0">
             Join the 650K learners mastering the skill of communicating with AI
@@ -32,7 +32,7 @@ function GetStarted() {
       <div className="w-full md:w-1/2">
         <img
           src={require("@site/static/img/sitting_astronaut.png").default}
-          className="ml-0 md:ml-[80px]"
+          className="ml-20 md:ml-[80px] md:h-auto h-[300px]"
         />
       </div>
     </ClassicPadding>
