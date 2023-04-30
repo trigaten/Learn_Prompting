@@ -12,41 +12,32 @@ import RolePrompt from '@site/docs/assets/role_prompt.svg';
 </div>
 
 Another prompting technique is *role prompting*, which assigns a role to the AI. 
-It can be as simple as telling the AI to "you are a food critic" or to "act like a detective".
+It can be as simple as telling the AI to "you are a food critic" or to "act like a detective". Role prompting is a great technique for steering the output in your intended direction, and in some cases it can also improve the accuracy of outputs (e.g. when you want to use the AI to classify text or solve math problems). 
 
-Role prompting is a great technique for steering the output in your intended direction, and in some cases it can also improve the accuracy of outputs (e.g. when you want to use the AI to classify text or solve math problems). 
+## Food Critic Example
 
-## Straightforward roles
+When writing a review for a pizza place, it's important to tailor your approach based on the platform you're using and the audience you're writing for. Simply copying and pasting the same review across various sites like Google Reviews, TripAdvisor, and Yelp is not an effective strategy, especially if you're writing for a food critic in a magazine or blog post. To ensure your review resonates with your intended audience, consider factors like length, style, language, and tone, and use these to craft a review that speaks directly to your readers' interests and expectations. With a thoughtful approach and a focus on quality content, you can create a review that truly captures the essence of the pizza place you're writing about. Let's start with a simple prompt without a role.
 
-Let's dive into the food critic example mentioned above. When reviewing a pizza place, it's crucial to consider your publishing platform and intended audience. 
-
-You can argue that you can copy and paste the same review across
-Goople Reviews, TripAdvor and Yelp, but that won't work for 
-a review by a food critic in a magazine or a blogpost. 
-
-You could instruct the language model to keep it short or 
-long, to write in a certain style or what sort of language
-to use, or you could use a role prompt to do all of this at once.
-
-Let's start with a simple prompt without a role.
+```text
+Write a review of [random pizza place].
+```
 
 The AI's (GPT-3 davinci-003) answer is highlighted in green:
 
 ```text
-Write a review of [random pizza place].
-
 // highlight-start
 "I recently had the pleasure of trying [random pizza place] and I must say that I was thoroughly impressed. The pizza was cooked to perfection and the toppings were fresh and flavorful. The crust was light and crispy, and the sauce was just the right amount of tangy. The service was also top-notch; the staff was friendly and attentive. Overall, I had a great experience and would definitely recommend [random pizza place] to anyone looking for a delicious pizza."
 // highlight-end
 ```
-The result isn't good or bad, it depends a bit on what 
-you want the output to be. 
 
-Now let's make the AI assume the role of food critic. Again, the output of the AI is highlighted in green:
+This result is pretty good, but let's see what happens when the AI assumes the role of a food critic. 
 
 ```text
 You are a food critic. Write a review of [random pizza place].
+```
 
+Again, the output of the AI is highlighted in green:
+```text
 // highlight-start
 "I recently had the pleasure of dining at [Pizza Place], a cozy pizzeria located in the heart of the city. Despite its small size, the restaurant packs a huge punch when it comes to flavor.
 
@@ -58,10 +49,7 @@ Overall, my experience at [Pizza Place] was fantastic and I highly recommend it 
 // highlight-end
 ```
 
-It adds a little more detail, goes a bit more in depth.
-
-Now let's go a step further and make it assume the role
-of a writer for the Michilen guide:
+We can see that it adds more detail and goes a bit more in depth. Now let's go a step further and make it assume the role of a writer for the Michelin guide:
 
 ```text
 You are a food critic writing for the Michelin Guide. Write a review of [random pizza place].
@@ -71,10 +59,7 @@ You are a food critic writing for the Michelin Guide. Write a review of [random 
 // highlight-end
 ```
 
-The output might not be a fully written out article,
-however, the review does seem a lot more "rich" in it's
-descriptions.
-
+Now we can see how assign GPT-3 the role of a food critic makes the review seem more "rich" and "professional" in it's description.
 
 You can try it for yourself here:
 
@@ -84,7 +69,10 @@ You can try it for yourself here:
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-There are countless examples to think of. It is important
+
+## Email Example
+
+There are countless applications of role prompting. It is important
 to consider the role that fits the task at hand the best.
 
 For example, if you want an LLM like ChatGPT to draft 
