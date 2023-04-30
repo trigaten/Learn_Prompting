@@ -76,7 +76,10 @@ function FAQ() {
             {" "}
             Contact Us
             <span className="ml-1">
-              <RxArrowTopRight className="inline-block text-default text-md mt-1" />
+              <RxArrowTopRight
+                className="inline-block text-default text-md mt-1"
+                style={{ transform: "translateY(3px)" }}
+              />
             </span>
           </a>
         </span>
