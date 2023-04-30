@@ -55,8 +55,7 @@ function Join() {
 
   return (
     <div className="w-screen font-vietnam">
-      <ClassicPadding>
-        <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-15">
+        <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-15 lg:px-[200px]">
           Join our global community. Elevate your prompting skills.
           <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-28 pt-10">
             Become part of a worldwide network of learners from various
@@ -69,7 +68,6 @@ function Join() {
             <StatPoint key={i} header={stat.header} subtitle={stat.subtitle} />
           ))}
         </div>
-      </ClassicPadding>
       <LargeCallout className={"pt-20 tracking-tighter"}>
         <div
           id={"competition"}

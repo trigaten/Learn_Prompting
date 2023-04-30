@@ -61,7 +61,7 @@ function FAQ() {
     <ClassicPadding className={"pb-24"}>
       <div
         id={"faq"}
-        className="text-left md:text-center text-3xl md:text-5xl font-vietnam font-medium tracking-tighter  md:px-32 pt-6 md:pt-20"
+        className="text-left md:text-center text-3xl md:text-5xl font-vietnam font-medium tracking-tighter  md:px-0 pt-6 md:pt-20"
       >
         Frequently Asked Questions
       </div>
