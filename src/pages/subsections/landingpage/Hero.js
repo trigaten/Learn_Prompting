@@ -15,7 +15,6 @@ import ApplicationsWeb from "@site/static/img/applicationsweb.svg";
 
 function Hero() {
   const categories = ["Beginner", "Intermediate", "Advanced", "Applications"];
-  // const [activeCategory, setActiveCategory] = React.useEffect("Beginner");
   const [activeCategory, setActiveCategory] = React.useState("Beginner");
 
   const x_pos = React.useMemo(() => {
@@ -46,7 +45,7 @@ function Hero() {
 
   return (
     <ClassicPadding className={"pb-10"}>
-      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter lg:px-8 2xl:px-28 pt-8">
+      <div className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter lg:px-8 2xl:px-32 pt-8">
         Your Guide to Communicating with Artificial Intelligence
       </div>
       <div className="text-center text-default text-sm font-vietnam font-light tracking-tighter px-10 md:px-10 lg:px-52 pt-8">

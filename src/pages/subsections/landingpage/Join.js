@@ -24,7 +24,7 @@ function Join() {
       subtitle: "People Learning",
     },
     {
-      header: "35K+",
+      header: "36K+",
       subtitle: "Discord Members",
     },
     {
@@ -36,12 +36,21 @@ function Join() {
       subtitle: "Languages",
     },
   ];
+
   const brands = [
-    { name: "scale", link: "" },
-    { name: "humanloop", link: "" },
-    { name: "snorkel", link: "" },
-    { name: "preamble", link: "" },
+    { name: "Scale", logo: Scale, link: "https://scale.com/" },
+    { name: "Stability", logo: Stability, link: "https://stability.ai/" },
+    { name: "HuggingFace", logo: HuggingFace, link: "https://huggingface.co/" },
+    { name: "HumanLoop", logo: HumanLoop, link: "https://humanloop.com/" },
+    { name: "Preamble", logo: Preamble, link: "https://www.preamble.com/" },
+    { name: "Voiceflow", logo: Voiceflow, link: "https://www.voiceflow.com/" },
+    { name: "Arthur", logo: Arthur, link: "https://www.arthur.ai/" },
+    { name: "Snorkel", logo: Snorkel, link: "https://snorkel.ai/" },
+    { name: "Towards", logo: Towards, link: "https://towardsai.net/" },
+    { name: "Trustible", logo: Trustible, link: "https://www.trustible.ai/" },
+    { name: "FiscalNote", logo: FiscalNote, link: "https://fiscalnote.com/" },
   ];
+
   return (
     <div className="w-screen font-vietnam">
       <ClassicPadding>

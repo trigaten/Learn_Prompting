@@ -1,62 +1,57 @@
-import React, { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  useMotionValue,
-  useVelocity,
-  useAnimationFrame,
-} from "framer-motion";
-import { wrap } from "@motionone/utils";
+import React, { useRef, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 
-function ParallaxText({ children, baseVelocity = 100 }) {
-  const baseX = useMotionValue(0);
-  const { scrollY } = useScroll();
-  const scrollVelocity = useVelocity(scrollY);
-  const smoothVelocity = useSpring(scrollVelocity, {
-    damping: 50,
-    stiffness: 400,
-  });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
-    clamp: false,
-  });
+function ScrollingText({ values }) {
+  const controls = useAnimation();
+  const logosRef = useRef(null);
 
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  useEffect(() => {
+    if (logosRef.current) {
+      const halfWidth = logosRef.current.clientWidth / 2;
 
-  const directionFactor = useRef(1);
+      async function animate() {
+        await controls.start({
+          x: -halfWidth,
+          transition: { duration: 25, repeat: Infinity }, // Decrease the duration to 25 to speed up the scrolling
+        });
+      }
 
-  useAnimationFrame((t, delta) => {
-    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
-
-    if (velocityFactor.get() < 0) {
-      directionFactor.current = -1;
-    } else if (velocityFactor.get() > 0) {
-      directionFactor.current = 1;
+      animate();
     }
+  }, [controls, logosRef]);
 
-    moveBy += directionFactor.current * moveBy * velocityFactor.get();
-
-    baseX.set(baseX.get() + moveBy);
-  });
+  const renderLogos = (logos) =>
+    logos.map((brand, index) => (
+      <a
+        key={index}
+        href={brand.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center mx-8"
+        style={{ minWidth: "140px" }}
+      >
+        <img
+          src={brand.logo}
+          alt={brand.name}
+          className="h-20 w-auto object-contain"
+          style={brand.name === "Scale" ? { width: "140px" } : {}}
+        />
+      </a>
+    ));
 
   return (
-    <div className="parallax">
-      <motion.div className="scroller" style={{ x }}>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
+    <div className="w-full overflow-hidden">
+      <motion.div
+        ref={logosRef}
+        className="flex gap-0"
+        animate={controls}
+        initial={{ x: "0%" }}
+      >
+        {renderLogos(values)}
+        {renderLogos(values)}
       </motion.div>
     </div>
   );
 }
 
-export default function ScrollingText() {
-  return (
-    <section>
-      <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
-      <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
-    </section>
-  );
-}
+export default ScrollingText;

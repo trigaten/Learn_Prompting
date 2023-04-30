@@ -54,7 +54,7 @@ function FAQ() {
       ),
       header: "Can I help add to the site?",
       subtitle:
-        "Yes, we are always looking for more contributors! You can find more information here.",
+        "Yes, we are always looking for more contributors! You can find more information by clicking the contribute tab.",
     },
   ];
   return (
