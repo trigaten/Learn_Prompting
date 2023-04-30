@@ -62,7 +62,7 @@ function Hero() {
         />
       </div>
       <div className="flex flex-col items-center pt-16 z-10 overflow-hidden md:overflow-visible">
-        <div className="flex flex-row flex-wrap gap-4 md:gap-4 justify-center z-[2]">
+        <div className="flex flex-row flex-wrap gap-4 md:gap-4 justify-center z-[2]" style={{color:"black"}}>
           {categories.map((category, i) => (
             <ButtonField
               key={i}
@@ -77,8 +77,8 @@ function Hero() {
           <div
             className={`mt-[-25px] absolute top-0 hidden md:flex   border-black flex-row transition-all ${x_pos}`}
           >
-            <BeginnerWeb className="h-[700px] mr-[-10rem]" />
-            <IntermediateWeb className="h-[700px] mr-[-10rem]" />
+            <BeginnerWeb className="h-[700px] mr-[-10rem]"/>
+            <IntermediateWeb className="h-[700px] mr-[-10rem]"/>
             <AdvancedWeb className="h-[700px] mr-[-10rem]" />
             <ApplicationsWeb className="h-[700px] mr-[-10rem]" />
           </div>
