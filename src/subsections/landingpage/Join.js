@@ -86,7 +86,7 @@ function Join() {
             <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
               A beginner-friendly competition that will challenge you to beat 7
               levels of prompt hacking defenses. Inject, leak and defeat the
-              sandwich defense to claim your share of over $37,500 in prizes.
+              sandwich defense to claim your share of over $35,000 in prizes.
               Ready to trick the AI? Hack our prompts anytime between May 5th
               and May 26th!
             </div>
