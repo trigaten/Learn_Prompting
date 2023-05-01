@@ -102,6 +102,7 @@ Os cactos de Natal são uma ótima escolha para quem quer uma planta bonita e f�
 ```
 Legal! Provavelmente você vai querer adicionar informações sobre sua empresa e os preços dos cactos de Natal que você vende, então vamos usar o seguint prompt:
 
+
 ```text
 Perfeito!  Inclua um parágrafo no fim do texto sobre nossa empresa e os preços dos nossos cactos de Natal.
 

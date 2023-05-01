@@ -6,7 +6,6 @@ sidebar_position: 10
 
 Escrever e-mails pode ser uma tarefa demorada, especialmente quando você precisa ler um e-mail que recebeu primeiro. Esta seção abordará casos de uso que vão desde um simples e-mail informando ao seu chefe que você está doente até e-mails mais complexos para a captação de novos clientes.
 
-
 ## E-mail simples: Avise ao seu chefe que você está doente
 
 Imagine that you wake up sick one day and can't go into work (or just don't want to 😈). Here is a simple prompt that writes an email to your boss telling them you are sick. 

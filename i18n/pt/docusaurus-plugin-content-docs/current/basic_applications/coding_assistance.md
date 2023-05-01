@@ -57,8 +57,7 @@ for i in range(3):
 
 Experimente com o código aqui:
 
-<div 
-trydyno-embed="" 
+<div trydyno-embed="" 
 openai-model="text-davinci-003" 
 initial-prompt="Atue como um programador Python júnior. Por favor, escreva o código para gerar madlibs a partir de 3 matrizes de 6 itens cada: preposições, verbos e substantivos, sendo que os substantivos também devem ser usados como objetos diretos." 
 initial-response="" 
@@ -85,7 +84,7 @@ for i in range(num_points):
     print(' ' * (amplitude + y) + '*')
 ```
 
-A resposta será algo similar ao exemplo abaixoL
+A resposta será algo similar ao exemplo abaixo:
 
 ```text
 // highlight-start
@@ -191,9 +190,6 @@ while numbers:
     numbers -= multiples
 
 Esse código usa um conjunto para manter os números que precisam ser verificados, e em seguida encontra e remove os múltiplos dos números primos encontrados do conjunto. O resultado é uma lista de números primos no intervalo de 1 a 100.
-
-
-
 // highlight-end
 ```
 
@@ -241,7 +237,6 @@ ss_tax = salary * 0.062
 print(f"Social Security tax is: ${ss_tax:.2f}")
 // highlight-end
 ```
-
 
 ## Como Lidar com Múltiplos Arquivos e Refatorar sua Base de Código
 
@@ -332,7 +327,6 @@ SELECT * FROM politicos_longevos;
 
 // highlight-end
 ```
-
 A partir do código acima, você pode adicionar colunas, indexes, e mais.
 From there, you can add columns, indexes and more:
 
@@ -451,5 +445,5 @@ Uma discussão completa sobre o uso do ChatGPT como uma máquina virtual pode se
 
 ---
 
-Artigo escrito por Prompt Yes!, uma empresa que ensina Engenharia de Prompt [prompt engineering training](https://promptyes.com/). 
-Traduzido por [Gabi] (http://imgabi.com).
+Escrito por by Prompt Yes!, uma empresa que oferece [cursos sobre Engenharia de Prompt](https://promptyes.com/).
+Traduzido por [Gabi Fonseca](https://imgabi.com)
