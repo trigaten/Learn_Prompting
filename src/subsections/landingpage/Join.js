@@ -55,9 +55,9 @@ function Join() {
   return (
     <div className="w-screen font-vietnam">
       <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-15 lg:px-[200px]">
-        <span style={{color:"black"}}>Join our global community.</span>
+        <span style={{ color: "black" }}>Join our global community.</span>
         <br />
-        <span style={{color:"black"}}>Elevate your prompting skills.</span>
+        <span style={{ color: "black" }}>Elevate your prompting skills.</span>
         <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-28 pt-10">
           Become part of a worldwide network of learners from various
           industries, all mastering <br class="hidden md:block" /> the
