@@ -93,13 +93,11 @@ function Join() {
             <div className="flex pt-8 justify-center md:justify-start">
               <Button
                 onClick={() =>
-                  React.useEffect(() => {
-                    window.open(
-                      "https://www.aicrowd.com/challenges/hackaprompt-2023",
-                      "_blank",
-                      "noopener noreferrer"
-                    )
-                  }, [])
+                  window.open(
+                    "https://www.aicrowd.com/challenges/hackaprompt-2023",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
                 }
                 text={"Register Now"}
                 type={"white"}

@@ -55,11 +55,7 @@ function Hero() {
 
         <div className="flex items-center justify-center pt-6">
           <Button
-            onClick={() => 
-              React.useEffect(() => {
-                window.location.replace("/docs/intro")
-              }, [])
-          }
+            onClick={() => window.location.replace("/docs/intro")}
             text={"Start Learning"}
             icon={
               <RxArrowTopRight

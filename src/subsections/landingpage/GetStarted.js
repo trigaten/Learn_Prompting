@@ -14,11 +14,7 @@ function GetStarted() {
           </div>
           <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12 mt-1">
             <Button
-              onClick={() => 
-                React.useEffect(() => {
-                  window.location.replace("/docs/intro")
-                }, [])
-            }
+              onClick={() => window.location.replace("/docs/intro")}
               text={"Start Learning"}
               icon={
                 <RxArrowTopRight
