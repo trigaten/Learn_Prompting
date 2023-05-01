@@ -116,7 +116,6 @@ async function createConfig() {
       },
     ],
     themeConfig: {
-      // Add metadata for SEO
       metadata: [
         {
           name: "description",
