@@ -50,17 +50,16 @@ function Hero() {
         </div>
         <div className="text-center text-default text-sm font-vietnam font-light tracking-tighter px-4 md:px-10 lg:px-20 xl:px-60 pt-8">
           Learn how to use ChatGPT and other AI tools to accomplish your goals
-          using our free {window.innerWidth >= 768 && <br />}
+          using our free <br class="hidden md:block" />
           and open source curriculum, designed for all skill levels!
         </div>
 
         <div className="flex items-center justify-center pt-6">
-          <Button
+        <a href="https://learnprompting.org/docs/intro"><Button
             onClick={() => 
-              React.useEffect(() => {
-                window.location.replace("/docs/intro")
-              }, [])
-          }
+            React.useEffect(() => {
+              window.location.replace("/docs/intro")
+            }, [])}
             text={"Start Learning"}
             icon={
               <RxArrowTopRight
@@ -68,7 +67,7 @@ function Hero() {
                 style={{ verticalAlign: "middle" }}
               />
             }
-          />
+          /></a>
         </div>
         <div className="flex flex-col items-center pt-16 z-10 overflow-hidden md:overflow-visible">
           <div

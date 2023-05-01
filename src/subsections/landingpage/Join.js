@@ -91,7 +91,7 @@ function Join() {
               and May 26th!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
-              <Button
+              <a href="https://www.aicrowd.com/challenges/hackaprompt-2023"><Button
                 onClick={() =>
                   React.useEffect(() => {
                     window.open(
@@ -109,7 +109,7 @@ function Join() {
                     style={{ position: "relative", top: "3px" }}
                   />
                 }
-              />
+              /></a>
             </div>
           </div>
           <div
