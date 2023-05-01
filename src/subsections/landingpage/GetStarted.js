@@ -13,7 +13,7 @@ function GetStarted() {
             Join 700K+ learners mastering the skill of communicating with AI
           </div>
           <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12 mt-1">
-            <Button
+            <a href="https://learnprompting.org/docs/intro"><Button
               onClick={() => 
                 React.useEffect(() => {
                   window.location.replace("/docs/intro")
@@ -26,7 +26,7 @@ function GetStarted() {
                   style={{ verticalAlign: "middle" }}
                 />
               }
-            />
+            /></a>
           </div>
         </div>
       </div>

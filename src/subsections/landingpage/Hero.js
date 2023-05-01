@@ -54,7 +54,7 @@ function Hero() {
         </div>
 
         <div className="flex items-center justify-center pt-6">
-          <Button
+        <a href="https://learnprompting.org/docs/intro"><Button
             onClick={() => 
             React.useEffect(() => {
               window.location.replace("/docs/intro")
@@ -66,7 +66,7 @@ function Hero() {
                 style={{ verticalAlign: "middle" }}
               />
             }
-          />
+          /></a>
         </div>
         <div className="flex flex-col items-center pt-16 z-10 overflow-hidden md:overflow-visible">
           <div
