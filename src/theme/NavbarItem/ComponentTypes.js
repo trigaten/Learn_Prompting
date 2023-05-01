@@ -1,7 +1,7 @@
 import React from "react";
 
 import ComponentTypes from '@theme-original/NavbarItem/ComponentTypes';
-import MyAwesomeNavbarItem from '@site/src/pages/subsections/landingpage/Navbar.js';
+import MyAwesomeNavbarItem from '@site/src/subsections/landingpage/Navbar.js';
 
 function MyAwesomeNavbarItemForDocs(props) {
   return <MyAwesomeNavbarItem {...props} forDocs={true} />;

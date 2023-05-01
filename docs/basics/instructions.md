@@ -5,9 +5,8 @@ sidebar_position: 2
 
 import InstructionPrompt from '@site/docs/assets/instruction_prompt.svg';
 
-
 <div style={{textAlign: 'center'}}>
-  <InstructionPrompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 
@@ -15,7 +14,7 @@ One of the simplest prompting methods is just giving instructions (sometimes cal
 in a previous section (`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`). However,
 modern AIs can follow much more complex instructions. 
 
-Below is our first [Dyno embed](https://learnprompting.org/docs/basics/intro#dyno-embeds). If you do not see it, make sure to turn Javascript on in your browser. Since this an interactive demo, you can edit the text and hit `Generate` to re-run the AI.
+Below is our first [embed](https://learnprompting.org/docs/basics/intro#embeds). If you do not see it, make sure to turn Javascript on in your browser. Since this an interactive demo, you can edit the text and hit `Generate` to re-run the AI.
 
 #### Example 1
 
