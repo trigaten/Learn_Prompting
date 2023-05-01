@@ -7,7 +7,7 @@ sidebar_position: 0
 import Techniques from '@site/docs/assets/techniques.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Techniques style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 
@@ -56,18 +56,18 @@ to an AI, it can likely either do it for you or at least give you a starting poi
 Read the rest of this chapter, then check out other chapters that interest you.
 In particular, the [applied prompting](https://learnprompting.org/docs/applied_prompting/overview) section may be of interest if you would like
 to see how professionals use AI to automate their work. You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno embeds](https://learnprompting.org/docs/basics/intro#dyno-embeds) that you will see throughout this site.
+using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [embeds](https://learnprompting.org/docs/basics/intro#embeds) that you will see throughout this site.
 
 Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
 
-### Dyno Embeds
+### Embeds
 
-This course offers an interactive learning experience. You can experiment with exercises discussed in the course using [Dyno](https://trydyno.com) embeds that are placed throughout the site.
+This course offers an interactive learning experience. You can experiment with exercises discussed in the course using [embeds](https://embed.learnprompting.org/) that are placed throughout the site.
 
-Here is an **image** of what a Dyno embed looks like:
+Here is an **image** of what an embed looks like:
 
-import dyno from '../assets/dyno_example.png';
-import key from '../assets/API_key.png';
+import dyno from '@site/docs/assets/basics/dyno_example.png';
+import key from '@site/docs/assets/API_key.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={dyno} style={{width: "750px"}} />
@@ -77,12 +77,14 @@ You should be able to see an embed that looks exactly like this image right belo
 
 <hr/>
 Embed here:
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Generate a comma separated list of 10 ice cream flavors:" initial-response="Chocolate, Vanilla, Strawberry, Mint Chip, Rocky Road, Cookie Dough, Butter Pecan, Neapolitan, Coffee, Coconut" max-tokens="256" box-rows="3" model-temp="0.7" top-p="1">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkNob2NvbGF0ZSwgVmFuaWxsYSwgU3RyYXdiZXJyeSwgTWludCBDaGlwLCBSb2NreSBSb2FkLCBDb29raWUgRG91Z2gsIEJ1dHRlciBQZWNhbiwgTmVhcG9saXRhbiwgQ29mZmVlLCBDb2NvbnV0IiwicHJvbXB0IjoiR2VuZXJhdGUgYSBjb21tYSBzZXBhcmF0ZWQgbGlzdCBvZiAxMCBpY2UgY3JlYW0gZmxhdm9yczoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"280px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <hr/>
 
-Assuming that you can see it, click on the **Generate** button. If this is your first time using it (or you are in a new browser/have cleared cookies), it will ask you to input an [OpenAI API key](https://platform.openai.com/account/api-keys). You can get a free key by clicking [this link](https://platform.openai.com/account/api-keys) and signing up for an OpenAI account. This key allows you to use OpenAI's AIs to generate text in the Dyno embeds. 
+Assuming that you can see it, click on the **Generate** button. If this is your first time using it (or you are in a new browser/have cleared cookies), it will ask you to input an [OpenAI API key](https://platform.openai.com/account/api-keys). You can get a free key by clicking [this link](https://platform.openai.com/account/api-keys) and signing up for an OpenAI account. This key allows you to use OpenAI's AIs to generate text in the embeds. 
 
 :::note
 Although OpenAI provides free credits, you will eventually have to pay to use their AI. Fortunately, it is [relatively cheap](https://openai.com/pricing)!
@@ -94,7 +96,7 @@ When you navigate to the [OpenAI API key](https://platform.openai.com/account/ap
   <img src={key} style={{width: "750px"}} />
 </div>
 
-Put this key into the Dyno embed and hit **Save**. You should now be able to use the Dyno embeds throughout this site.
+Put this key into the embed and hit **Save**. You should now be able to use the embeds throughout this site.
 
 Now you have all of the information that you need to get started. Happy Learning!
 
