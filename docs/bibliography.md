@@ -242,6 +242,14 @@ cite them as such.
 
 #### STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension(@wang2022strudel)
 
+## Hot Topics
+
+#### Auto-GPT(@richards2023)
+
+#### Baby AGI(@nakajima2023)
+
+#### AgentGPT(@reworkd2023)
+
 ## Miscl
 
 #### Prompting Is Programming: A Query Language For Large Language Models(@beurerkellner2022prompting)
