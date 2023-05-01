@@ -49,7 +49,7 @@ function Hero() {
         </div>
         <div className="text-center text-default text-sm font-vietnam font-light tracking-tighter px-4 md:px-10 lg:px-20 xl:px-60 pt-8">
           Learn how to use ChatGPT and other AI tools to accomplish your goals
-          using our free {window.innerWidth >= 768 && <br />}
+          using our free <br class="hidden md:block" />
           and open source curriculum, designed for all skill levels!
         </div>
 
