@@ -5,11 +5,10 @@ sidebar_position: 1000
 # 🟢 Starting Your Journey
 
 
-import Steps from '../assets/steps.svg';
-
+import Steps from '@site/docs/assets/steps.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Steps style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 Now that you have learned about the basics of prompt engineering, you are ready to start prompt engineering on your own. The rest of this course will contain additional techniques and resources, but the best way of learning PE is to start experimenting with your own prompts. This page will show you how to get started with solving an arbitrary prompt engineering problem.
@@ -30,7 +29,7 @@ You might find [this one](https://prompts.chat/#act-as-a-text-based-adventure-ga
 
 ## Step 2: Experiment
 
-Now, we will put the prompt into ChatGPT and see what what happens.
+Now, we will put the prompt into ChatGPT and see what happens.
 
 import CSharp from '../assets/csharp.png';
 

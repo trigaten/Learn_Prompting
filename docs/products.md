@@ -8,6 +8,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Content Writing
 
+- [Agent.so](https://www.agent.so/)
+> All-in-one platform that helps you use AI to write content & code, solve problems, have fun, and more! Powered by over 150 uniquely trained models, and ±200 apps being released to the new AI App Store. New members get unlimited chats and 100 Credits App Store for free.
+
 - [ID-Assist™](https://id-assist.co/)
 > An eLearning and classroom training storyboard automation tool, to help Instructional Designers automate creation of Course Outline, Learning Objecives, Assessments, Scenarios, and lot more.
 
@@ -130,6 +133,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Debuild](https://debuild.app/)
 > Code your web app in seconds. The AI-powered low-code tool that helps you build web apps with text and built-in prompts.
 
+- [ToolBuilder](https://toolbuilder.ai/)
+> Toolbuilder is the platform for building and discovering AI web apps without coding.
+
 ## Search Engines
 
 - [Perplexity](https://www.perplexity.ai/)
@@ -154,6 +160,8 @@ Here is a growing list of notable products that use prompting. If you have a pro
 > Web search using the same ideas behind DALL-E and Stable Diffusion. It understands language — in the form of prompts — so you can say what you're looking for in all the expressive and creative ways you can think of.
 
 ## Chatbots
+
+- [Agent.so](https://www.agent.so/)
 
 - [Poe](http://poe.com)
 
