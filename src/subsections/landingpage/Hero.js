@@ -40,34 +40,35 @@ function Hero() {
 
   return (
     <div style={{ maxWidth: "100vw", overflow: "hidden" }}>
-      <ClassicPadding className={"pb-10"}>
+      <div className={"pb-10 px-4 md:px-20 lg:px-56 2xl:px-96"}>
         <div
           className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter lg:px-8 2xl:px-32 pt-8"
           style={{ color: "black" }}
         >
-          Your Guide to <br class="hidden md:block" /> Communicating with{" "}
-          <br class="hidden md:block" /> Artificial Intelligence
+          Your Guide to Communicating with Artificial Intelligence
         </div>
         <div className="text-center text-default text-sm font-vietnam font-light tracking-tighter px-4 md:px-10 lg:px-20 xl:px-60 pt-8">
           Learn how to use ChatGPT and other AI tools to accomplish your goals
-          using our free <br class="hidden md:block" />
-          and open source curriculum, designed for all skill levels!
+          using our free and open source curriculum, designed for all skill
+          levels!
         </div>
-
         <div className="flex items-center justify-center pt-6">
-        <a href="https://learnprompting.org/docs/intro"><Button
-            onClick={() => 
-            React.useEffect(() => {
-              window.location.replace("/docs/intro")
-            }, [])}
-            text={"Start Learning"}
-            icon={
-              <RxArrowTopRight
-                className="inline-block text-white"
-                style={{ verticalAlign: "middle" }}
-              />
-            }
-          /></a>
+          <a href="https://learnprompting.org/docs/intro">
+            <Button
+              onClick={() =>
+                React.useEffect(() => {
+                  window.location.replace("/docs/intro");
+                }, [])
+              }
+              text={"Start Learning"}
+              icon={
+                <RxArrowTopRight
+                  className="inline-block text-white"
+                  style={{ verticalAlign: "middle" }}
+                />
+              }
+            />
+          </a>
         </div>
         <div className="flex flex-col items-center pt-16 z-10 overflow-hidden md:overflow-visible">
           <div
@@ -130,7 +131,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </ClassicPadding>
+      </div>
     </div>
   );
 }
