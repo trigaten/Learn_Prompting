@@ -52,18 +52,19 @@ function Hero() {
           using our free and open source curriculum, designed for all skill
           levels!
         </div>
-
         <div className="flex items-center justify-center pt-6">
-          <Button
-            onClick={() => window.location.replace("/docs/intro")}
-            text={"Start Learning"}
-            icon={
-              <RxArrowTopRight
-                className="inline-block text-white"
-                style={{ verticalAlign: "middle" }}
-              />
-            }
-          />
+          <a href="https://learnprompting.org/docs/intro">
+            <Button
+              onClick={() => window.location.replace("/docs/intro")}
+              text={"Start Learning"}
+              icon={
+                <RxArrowTopRight
+                  className="inline-block text-white"
+                  style={{ verticalAlign: "middle" }}
+                />
+              }
+            />
+          </a>
         </div>
         <div className="flex flex-col items-center pt-16 z-10 overflow-hidden md:overflow-visible">
           <div
