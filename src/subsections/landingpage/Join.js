@@ -17,6 +17,7 @@ import Towards from "@site/static/img/towards_logo.png";
 import Trustible from "@site/static/img/trustible_logo.png";
 import Voiceflow from "@site/static/img/voiceflow_logo.png";
 import FiscalNote from "@site/static/img/fiscalnote_logo.png";
+import OpenAI from "@site/static/img/openai_logo.png";
 
 function Join() {
   const stats = [
@@ -40,6 +41,7 @@ function Join() {
 
   const brands = [
     { name: "Scale", logo: Scale, link: "https://scale.com/" },
+    { name: "OpenAI", logo: OpenAI, link: "https://openai.com/" },
     { name: "Stability", logo: Stability, link: "https://stability.ai/" },
     { name: "HuggingFace", logo: HuggingFace, link: "https://huggingface.co/" },
     { name: "HumanLoop", logo: HumanLoop, link: "https://humanloop.com/" },
@@ -58,10 +60,10 @@ function Join() {
         <span style={{ color: "black" }}>Join our global community.</span>
         <br />
         <span style={{ color: "black" }}>Elevate your prompting skills.</span>
-        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-28 pt-10">
+        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-56 pt-10">
           Become part of a worldwide network of learners from various
-          industries, all mastering <br class="hidden md:block" /> the
-          skill of effectively engaging with AI using our curriculum
+          industries, all mastering the skill of effectively engaging with AI
+          using our curriculum
         </div>
       </div>
 
@@ -91,25 +93,27 @@ function Join() {
               and May 26th!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
-              <a href="https://www.aicrowd.com/challenges/hackaprompt-2023"><Button
-                onClick={() =>
-                  React.useEffect(() => {
-                    window.open(
-                      "https://www.aicrowd.com/challenges/hackaprompt-2023",
-                      "_blank",
-                      "noopener noreferrer"
-                    )
-                  }, [])
-                }
-                text={"Register Now"}
-                type={"white"}
-                icon={
-                  <RxArrowTopRight
-                    className="inline-block text-green/300"
-                    style={{ position: "relative", top: "3px" }}
-                  />
-                }
-              /></a>
+              <a href="https://www.aicrowd.com/challenges/hackaprompt-2023">
+                <Button
+                  onClick={() =>
+                    React.useEffect(() => {
+                      window.open(
+                        "https://www.aicrowd.com/challenges/hackaprompt-2023",
+                        "_blank",
+                        "noopener noreferrer"
+                      );
+                    }, [])
+                  }
+                  text={"Register Now"}
+                  type={"white"}
+                  icon={
+                    <RxArrowTopRight
+                      className="inline-block text-green/300"
+                      style={{ position: "relative", top: "3px" }}
+                    />
+                  }
+                />
+              </a>
             </div>
           </div>
           <div
@@ -148,7 +152,7 @@ function Join() {
             ))}
           </Marquee>
           <div className="text-center opacity-80 font-medium pt-4 pb-8 text-xs md:text-lg">
-            Proudly Sponsored by Industry-Defining AI Companies
+            Proudly Sponsored by Industry-Leading AI Companies
           </div>
         </div>
       </LargeCallout>
