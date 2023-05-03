@@ -2,7 +2,7 @@
 sidebar_position: 90
 ---
 
-# 🟢 LLMS の落とし穴
+# 🟢 LLM の落とし穴
 
 import Pitfalls from '@site/docs/assets/pitfalls.svg';
 
