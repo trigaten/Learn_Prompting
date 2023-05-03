@@ -10,9 +10,11 @@ Rédiger des e-mails peut être une tâche chronophage, surtout lorsque vous dev
 
 Imaginez que vous vous réveillez malade un jour et que vous ne pouvez pas aller travailler (ou que vous ne voulez tout simplement pas 😈). Voici un prompt simple qui écrit un e-mail à votre patron pour lui dire que vous êtes malade.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Mon Nom : Mario\nNom du patron : John\n\nÉcrire un courriel à mon patron indiquant que je serai absent aujourd'hui car je suis malade. " initial-response="Objet : Absent - Malade\n\nCher John,\n\nJe vous écris pour vous informer que je serai absent aujourd'hui en raison de ma maladie. Je m'excuse pour tout inconvénient que cela pourrait causer.\n\nJe vais vous tenir au courant de mes progrès et je serai de retour au bureau dès que je me sentirai mieux.\n\nMerci pour votre compréhension.\n\nCordialement,\n\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
-    <noscript>Échec du chargement de Dyno Embed : JavaScript doit être activé</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9iamV0IDogQWJzZW50IC0gTWFsYWRlXFxuXFxuQ2hlciBKb2huLFxcblxcbkplIHZvdXMg6WNyaXMgcG91ciB2b3VzIGluZm9ybWVyIHF1ZSBqZSBzZXJhaSBhYnNlbnQgYXVqb3VyZCdodWkgZW4gcmFpc29uIGRlIG1hIG1hbGFkaWUuIEplIG0nZXhjdXNlIHBvdXIgdG91dCBpbmNvbnbpbmllbnQgcXVlIGNlbGEgcG91cnJhaXQgY2F1c2VyLlxcblxcbkplIHZhaXMgdm91cyB0ZW5pciBhdSBjb3VyYW50IGRlIG1lcyBwcm9ncuhzIGV0IGplIHNlcmFpIGRlIHJldG91ciBhdSBidXJlYXUgZOhzIHF1ZSBqZSBtZSBzZW50aXJhaSBtaWV1eC5cXG5cXG5NZXJjaSBwb3VyIHZvdHJlIGNvbXBy6WhlbnNpb24uXFxuXFxuQ29yZGlhbGVtZW50LFxcblxcbk1hcmlvIiwicHJvbXB0IjoiTW9uIE5vbSA6IE1hcmlvXFxuTm9tIGR1IHBhdHJvbiA6IEpvaG5cXG5cXG7JY3JpcmUgdW4gY291cnJpZWwg4CBtb24gcGF0cm9uIGluZGlxdWFudCBxdWUgamUgc2VyYWkgYWJzZW50IGF1am91cmQnaHVpIGNhciBqZSBzdWlzIG1hbGFkZS4gIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 Cet e-mail fonctionne, mais il est assez ennuyeux. Égayons-le un peu !
 
