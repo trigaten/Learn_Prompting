@@ -22,10 +22,11 @@ Cet e-mail fonctionne, mais il est assez ennuyeux. Égayons-le un peu !
 
 Il est très facile de modifier le style de l'e-mail. Par exemple, vous pouvez demander à l'IA d'être "humoristique" ou lui donner l'instruction d'inclure "une raison drôle".
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Mon nom: Mario\nNom du patron : John\n\nÉcrivez un e-mail humoristique mais professionnel à mon patron pour lui dire que je serai absent du bureau aujourd'hui car je suis malade. \nSoyez concis et drôle. Incluez une raison amusante:" initial-response="Cher John,\n\nJe vous écris pour vous informer que je serai absent du bureau aujourd'hui. Je sais que je suis censé travailler, mais je n'ai pas pu résister à l'appel de la sirène de la boulangerie locale. Je suis sûr que vous comprenez.\n\nJe serai de retour au bureau demain et je rattraperai le temps perdu.\n\nMerci,\nMario" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1">
-<noscript>Échec du chargement de Dyno Embed : JavaScript doit être activé</noscript>
-</div>
-<br/>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiaGVyIEpvaG4sXFxuXFxuSmUgdm91cyDpY3JpcyBwb3VyIHZvdXMgaW5mb3JtZXIgcXVlIGplIHNlcmFpIGFic2VudCBkdSBidXJlYXUgYXVqb3VyZCdodWkuIEplIHNhaXMgcXVlIGplIHN1aXMgY2Vuc%2BkgdHJhdmFpbGxlciwgbWFpcyBqZSBuJ2FpIHBhcyBwdSBy6XNpc3RlciDgIGwnYXBwZWwgZGUgbGEgc2ly6G5lIGRlIGxhIGJvdWxhbmdlcmllIGxvY2FsZS4gSmUgc3VpcyBz%2B3IgcXVlIHZvdXMgY29tcHJlbmV6LlxcblxcbkplIHNlcmFpIGRlIHJldG91ciBhdSBidXJlYXUgZGVtYWluIGV0IGplIHJhdHRyYXBlcmFpIGxlIHRlbXBzIHBlcmR1Llxcblxcbk1lcmNpLFxcbk1hcmlvIiwicHJvbXB0IjoiTW9uIG5vbTogTWFyaW9cXG5Ob20gZHUgcGF0cm9uIDogSm9oblxcblxcbsljcml2ZXogdW4gZS1tYWlsIGh1bW9yaXN0aXF1ZSBtYWlzIHByb2Zlc3Npb25uZWwg4CBtb24gcGF0cm9uIHBvdXIgbHVpIGRpcmUgcXVlIGplIHNlcmFpIGFic2VudCBkdSBidXJlYXUgYXVqb3VyZCdodWkgY2FyIGplIHN1aXMgbWFsYWRlLiBcXG5Tb3lleiBjb25jaXMgZXQgZHL0bGUuIEluY2x1ZXogdW5lIHJhaXNvbiBhbXVzYW50ZToiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 Voici un autre exemple qui est plus sérieux/professionnel.
 
