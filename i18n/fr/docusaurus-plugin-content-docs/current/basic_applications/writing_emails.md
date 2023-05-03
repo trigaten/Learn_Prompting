@@ -29,10 +29,11 @@ Il est très facile de modifier le style de l'e-mail. Par exemple, vous pouvez d
 
 Voici un autre exemple qui est plus sérieux/professionnel.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Mon nom : Mario\nNom de mon patron : John\n\nRédigez un e-mail **sérieux** et professionnel à mon patron indiquant que je serai absent du bureau aujourd'hui car je suis malade.\nSois concis :" initial-response="Objet : Absence - Malade\n\nCher John,\n\nJe vous informe que je serai absent du bureau aujourd'hui en raison de ma maladie. Je vous prie de m'excuser pour toute gêne occasionnée.\n\nMerci de votre compréhension.\n\nCordialement,\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
-<noscript>Échec du chargement de Dyno Embed : JavaScript doit être activé</noscript>
-</div>
-<br/>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9iamV0IDogQWJzZW5jZSAtIE1hbGFkZVxcblxcbkNoZXIgSm9obixcXG5cXG5KZSB2b3VzIGluZm9ybWUgcXVlIGplIHNlcmFpIGFic2VudCBkdSBidXJlYXUgYXVqb3VyZCdodWkgZW4gcmFpc29uIGRlIG1hIG1hbGFkaWUuIEplIHZvdXMgcHJpZSBkZSBtJ2V4Y3VzZXIgcG91ciB0b3V0ZSBn6m5lIG9jY2FzaW9ubullLlxcblxcbk1lcmNpIGRlIHZvdHJlIGNvbXBy6WhlbnNpb24uXFxuXFxuQ29yZGlhbGVtZW50LFxcbk1hcmlvIiwicHJvbXB0IjoiTW9uIG5vbSA6IE1hcmlvXFxuTm9tIGRlIG1vbiBwYXRyb24gOiBKb2huXFxuXFxuUulkaWdleiB1biBlLW1haWwgKipz6XJpZXV4KiogZXQgcHJvZmVzc2lvbm5lbCDgIG1vbiBwYXRyb24gaW5kaXF1YW50IHF1ZSBqZSBzZXJhaSBhYnNlbnQgZHUgYnVyZWF1IGF1am91cmQnaHVpIGNhciBqZSBzdWlzIG1hbGFkZS5cXG5Tb2lzIGNvbmNpcyA6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Répondre à un Email
 
