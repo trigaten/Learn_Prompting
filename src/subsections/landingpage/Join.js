@@ -127,30 +127,36 @@ function Join() {
           </div>
         </div>
         <div className="pt-20">
-          <Marquee gradient={false} speed={30}>
-            {brands.map((brand, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.1 }}
-                className="mx-4 flex items-center"
-              >
-                <a href={brand.link} target="_blank" rel="noopener noreferrer">
-                  <div className="w-40 h-20 md:w-48 md:h-24 flex items-center justify-center">
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="object-contain"
-                      style={
-                        brand.name === "Scale"
-                          ? { width: "80%", height: "80%" }
-                          : {}
-                      }
-                    />
-                  </div>
-                </a>
-              </motion.div>
-            ))}
-          </Marquee>
+          <div style={{ touchAction: "none" }}>
+            <Marquee gradient={false} speed={30}>
+              {brands.map((brand, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.1 }}
+                  className="mx-4 flex items-center"
+                >
+                  <a
+                    href={brand.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="w-40 h-20 md:w-48 md:h-24 flex items-center justify-center">
+                      <img
+                        src={brand.logo}
+                        alt={brand.name}
+                        className="object-contain"
+                        style={
+                          brand.name === "Scale"
+                            ? { width: "80%", height: "80%" }
+                            : {}
+                        }
+                      />
+                    </div>
+                  </a>
+                </motion.div>
+              ))}
+            </Marquee>
+          </div>
           <div className="text-center opacity-80 font-medium pt-4 pb-8 text-xs md:text-lg">
             Proudly Sponsored by Industry-Leading AI Companies
           </div>
