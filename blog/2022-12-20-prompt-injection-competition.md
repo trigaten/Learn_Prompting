@@ -6,7 +6,7 @@ title: Announcing HackAPrompt
 
 
 
-import hackaprompt from '@site/static/img/hackaprompt.jpg';
+import hackaprompt from '@site/static/img/hackaprompt.png';
 
 <div style={{textAlign: 'center'}}>
   <a href="https://www.aicrowd.com/challenges/hackaprompt-2023"><img src={hackaprompt} style={{width: "100%"}} /></a>
