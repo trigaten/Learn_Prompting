@@ -59,7 +59,7 @@ function Join() {
         <span style={{ color: "black" }}>Join our global community.</span>
         <br />
         <span style={{ color: "black" }}>Elevate your prompting skills.</span>
-        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-56 lg:px-32 xl:px-64 pt-2 md:pt-6 lg:pt-10">
+        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-56 pt-10">
           Become part of a worldwide network of learners from various
           industries, all mastering the skill of effectively engaging with AI
           using our curriculum

@@ -28,7 +28,7 @@ Although you could instead look up a summary, ChatGPT can tailor the content to 
 
 ## Working With Long Blocks of Texts: Copy & Paste!
 
-You can ask ChatGPT to summarize or create an outline of the text and TL;DR the whole thing. All you all you have to do is copy and paste the specific text into the prompt. (You can include up to 2,500 words. If the work is longer than that, you will have to break it into chunks.)
+You can ask ChatGPT to summarize or create an outline of the text and TL;DR the whole thing. All you have to do is copy and paste the specific text into the prompt. (You can include up to 2,500 words. If the work is longer than that, you will have to break it into chunks.)
 Ask for a simplified summary of chosen text by writing, “Summarize this for me like I'm 5 years old: [PASTE TEXT HERE]” 
 This one is a summary “for a 5-year old” from a section of Wikipedia’s entry on “[quantum entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)”. 
 
