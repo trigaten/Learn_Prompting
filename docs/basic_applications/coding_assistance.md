@@ -75,6 +75,7 @@ num_points = 50
 for i in range(num_points):
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
     print(' ' * (amplitude + y) + '*')
+###
 ```
 
 The output will be something like:
