@@ -8,6 +8,6 @@ Maintenant que vous avez appris quelques techniques du Prompt Engineering très 
 
 Les exemples présentés dans les articles suivants devraient aider à vous montrer la gamme d'applications auxquelles vous pouvez appliquer le Prompt Engineering.
 
-## Note:
-
+:::note
 Nous utilisons à la fois ChatGPT et GPT-3 dans ces exemples. Peu importe généralement ce que vous utilisez.
+:::
