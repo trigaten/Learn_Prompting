@@ -1,7 +1,7 @@
 import React from "react";
 import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import { RxArrowTopRight } from "react-icons/rx";
-import { FaBook } from "react-icons/fa";
+import { FaBookOpen } from "react-icons/fa";
 import { RiBracesFill, RiSuitcaseFill } from "react-icons/ri";
 import { FiLayers } from "react-icons/fi";
 import { TbCertificate } from "react-icons/tb";
@@ -11,14 +11,16 @@ import BulletPoint from "@site/src/components/BulletPoint";
 function FAQ() {
   const leftFaq = [
     {
-      icon: <FaBook className="inline-block text-dark/500 text-lg mb-1" />,
+      icon: (
+        <FaBookOpen className="align-middle inline-block text-dark/500 text-xl" />
+      ),
       header: "Is this curriculum free?",
       subtitle:
         "Yes, it is completely free and open source. We do not charge for any of the content on this website.",
     },
     {
       icon: (
-        <RiBracesFill className="inline-block text-dark/500 text-lg mt-1 " />
+        <RiBracesFill className="align-middle inline-block text-dark/500 text-xl mt-1" />
       ),
       header: "Do I need to know how to code?",
       subtitle:
@@ -26,7 +28,7 @@ function FAQ() {
     },
     {
       icon: (
-        <TbCertificate className="inline-block text-dark/500 text-xl mt-1" />
+        <TbCertificate className="align-middle inline-block text-dark/500 text-2xl mt-1" />
       ),
       header: "When is the certificate being released?",
       subtitle:
@@ -35,14 +37,16 @@ function FAQ() {
   ];
   const rightFaq = [
     {
-      icon: <FiLayers className="inline-block text-dark/500 text-lg mt-1" />,
+      icon: (
+        <FiLayers className="align-middle inline-block text-dark/500 text-xl mt-1" />
+      ),
       header: "Do I need previous experience?",
       subtitle:
         "Nope! This course is designed to be accessible to everyone, regardless of prior experience. ",
     },
     {
       icon: (
-        <RiSuitcaseFill className="inline-block text-dark/500 text-xl mt-1" />
+        <RiSuitcaseFill className="align-middle inline-block text-dark/500 text-2xl mt-1" />
       ),
       header: "Is prompt engineering a real job?",
       subtitle:
@@ -50,7 +54,7 @@ function FAQ() {
     },
     {
       icon: (
-        <BsPencilFill className="inline-block text-dark/500 text-lg mt-1" />
+        <BsPencilFill className="align-middle inline-block text-dark/500 text-xl mt-1" />
       ),
       header: "Can I help add to the site?",
       subtitle:
@@ -63,7 +67,7 @@ function FAQ() {
         id={"faq"}
         className="text-left md:text-center text-3xl md:text-5xl font-vietnam font-medium tracking-tighter  md:px-0 pt-6 md:pt-20"
       >
-        <span style={{color:"black"}}>Frequently Asked Questions</span>
+        <span style={{ color: "black" }}>Frequently Asked Questions</span>
       </div>
       <div className="text-left md:text-center text-default text-sm pt-2 font-vietnam font-light tracking-tight md:px-28 md:pt-4 md:text-md mb-4 md:mb-0 ">
         Can't find what you are looking for?{" "}
@@ -86,7 +90,10 @@ function FAQ() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-around pt-4 md:pt-20 gap-8 md:gap-24">
-        <div className="gap-8 md:gap-12 flex-col flex" style={{color:"black"}}>
+        <div
+          className="gap-8 md:gap-12 flex-col flex"
+          style={{ color: "black" }}
+        >
           {leftFaq.map((faq, i) => (
             <BulletPoint
               key={i}
@@ -96,7 +103,10 @@ function FAQ() {
             />
           ))}
         </div>
-        <div className="gap-8 md:gap-12 flex-col flex" style={{color:"black"}}>
+        <div
+          className="gap-8 md:gap-12 flex-col flex"
+          style={{ color: "black" }}
+        >
           {rightFaq.map((faq, i) => (
             <BulletPoint
               key={i}

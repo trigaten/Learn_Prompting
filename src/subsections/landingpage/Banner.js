@@ -5,7 +5,7 @@ function Banner() {
   return (
     <div className="banner p-4 pt-4 flex items-center flex-col md:flex-row md:justify-center">
       <div className="text-center text-xs text-white opacity-81">
-        Get ready for the HackAPrompt Competition starting May 5th
+        Compete in the HackAPrompt Competition until May 26th!
       </div>
       <a
         target="_blank"

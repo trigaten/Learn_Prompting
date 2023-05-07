@@ -1,7 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
-import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import StatPoint from "@site/src/components/StatPoint";
 import LargeCallout from "@site/src/components/layouts/LargeCallout";
 import Button from "@site/src/components/Button";
@@ -66,7 +65,6 @@ function Join() {
           using our curriculum
         </div>
       </div>
-
       <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 md:px-16 lg:px-20 xl:px-24 2xl:px-32 text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-14 pb-10 max-w-screen-xl mx-auto">
         {stats.map((stat, i) => (
           <StatPoint key={i} header={stat.header} subtitle={stat.subtitle} />
@@ -127,30 +125,36 @@ function Join() {
           </div>
         </div>
         <div className="pt-20">
-          <Marquee gradient={false} speed={30}>
-            {brands.map((brand, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.1 }}
-                className="mx-4 flex items-center"
-              >
-                <a href={brand.link} target="_blank" rel="noopener noreferrer">
-                  <div className="w-40 h-20 md:w-48 md:h-24 flex items-center justify-center">
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="object-contain"
-                      style={
-                        brand.name === "Scale"
-                          ? { width: "80%", height: "80%" }
-                          : {}
-                      }
-                    />
-                  </div>
-                </a>
-              </motion.div>
-            ))}
-          </Marquee>
+          <div style={{ touchAction: "none" }}>
+            <Marquee gradient={false} speed={30}>
+              {brands.map((brand, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.1 }}
+                  className="mx-4 flex items-center"
+                >
+                  <a
+                    href={brand.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="w-40 h-20 md:w-48 md:h-24 flex items-center justify-center">
+                      <img
+                        src={brand.logo}
+                        alt={brand.name}
+                        className="object-contain"
+                        style={
+                          brand.name === "Scale"
+                            ? { width: "80%", height: "80%" }
+                            : {}
+                        }
+                      />
+                    </div>
+                  </a>
+                </motion.div>
+              ))}
+            </Marquee>
+          </div>
           <div className="text-center opacity-80 font-medium pt-4 pb-8 text-xs md:text-lg">
             Proudly Sponsored by Industry-Leading AI Companies
           </div>
