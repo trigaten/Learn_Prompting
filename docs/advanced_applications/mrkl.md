@@ -114,7 +114,7 @@ Below we can see the final results, which are all correct!
   <img src={final} style={{width: "750px"}} />
 </div>
 
-Feel free to clone and experiment with this playground [here](https://dust.tt/trigaten/a/98bdd65cb7).
+Feel free to clone and experiment with this playground [here](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7).
 
 ## Notes
 MRKL was developed by [AI21](https://www.ai21.com/) and originally used their 
