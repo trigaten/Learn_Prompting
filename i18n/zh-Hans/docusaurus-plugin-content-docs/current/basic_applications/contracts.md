@@ -86,7 +86,7 @@ NOW, THEREFORE, in consideration of the mutual promises and covenants contained 
 这份协议中包含了哪些危险用语？
 ```
 
-Here is ChatGPT's response. 
+以下是 ChatGPT 的回答： 
 
 ```text
 // highlight-start
@@ -100,88 +100,89 @@ Here is ChatGPT's response.
 // highlight-end
 ```
 
-虽然我不是律师，但我认为 `机密信息的不合理定义` 相关性很强。
+虽然我不是律师，但我认为 `机密信息的不合理定义` 相关性还是很强的。
 
 这种检查危险法律内容的技术可用于一系列法律文件。我们甚至看到在 GPT-3 之上构建的工具可以检测 TOS 协议和雇佣合同中的危险语言。
 
 ## 撰写合同
 
-From the previous section, we saw that ChatGPT can write NDAs. It also does a good job with other common documents like terms of use and terms of service. However, when you are dealing with less common documents, you will need to be more careful. 
+从上一节中，我们看到 ChatGPT 可以编写 NDA。它也可以很好地处理其他常见文档，例如使用条款和服务条款。但是，当您处理不太熟悉的文档时，您需要更加小心。
 
-I recently wrote one such document mostly using GPT-3, then had it reviewed by a lawyer. They mentioned 1-2 things that could be slightly improved, but overall it was a robust document. Some people in industry are performing this process, where they generate a document using GPT-3, then have it reviewed by a lawyer. This saves time and costs.
 
-Let's pretend to be a government contractor and write a contract for a someone doing some defense work. We will use the following prompt:
+我最近使用 GPT-3 写了一份这样的文件，然后让律师审查了它。他们提到了 1-2 处可以稍微改进的地方，但总的来说它是一份可靠的文件。一些业内人士也正在这样使用，这节省了很大的时间和成本。
+
+让我们假装是政府承包商，为从事国防工作的人写一份合同。我们将使用以下提示：
 
 ```text
-You are a lawyer for a government contractor. You are writing a contract for a subcontractor to do some aerospace work. The contract should be robust and should include the following:
-The job will last for 1.5 years and will be worth $2.5 million. It requires top secret clearance and relates to secret nuclear silo defense development. The subcontractor will be paid $1.5 million upfront and the remaining $1 million will be paid in 6 monthly installments. The subcontractor will be required to sign a non-disclosure agreement. The subcontractor will be required to sign a non-compete agreement. The subcontractor will be required to sign a non-solicitation agreement. The subcontractor will be required to sign a non-circumvention agreement. 
+你是政府承包商的律师。您正在为一家从事航空航天工作的分包商编写合同。合同应该是稳健的，并且应该包括以下内容：
+这份工作将持续 1.5 年，价值 250 万美元。它需要绝密许可并涉及秘密核发射井防御的发展。分包商将预付 150 万美元，其余 100 万美元将分 6 个月分期支付。分包商将被要求签署保密协议。分包商将被要求签署竞业禁止协议。分包商将被要求签署非招揽协议。分包商将被要求签署不规避协议。
 
 // highlight-start
-SUBCONTRACT AGREEMENT
+分包协议
 
-This Subcontract Agreement (the "Agreement") is entered into by and between [Government Contractor] ("Contractor") and [Subcontractor] ("Subcontractor") as of the date set forth below.
+本分包协议（以下简称“协议”）由[政府承包商]（“承包商”）与[分包商]（“分包商”）于下述日期签订。
 
-SCOPE OF WORK
-Subcontractor shall perform the work described in the Statement of Work attached hereto as Exhibit A (the "Work"). The Work relates to the development of secret nuclear silo defense and requires top secret clearance.
+工作范围
+分包商应执行附件 A 所附工作说明书中描述的工作（“工作”）。这项工作涉及秘密核发射井防御的发展，需要绝密许可。
 
-PAYMENT
-The total payment for the Work shall be $2.5 million, payable as follows:
+支付
+工程总付款为 250 万美元，支付方式如下：
 
-$1.5 million upon execution of this Agreement and receipt of top secret clearance by Subcontractor.
-$1 million to be paid in 6 monthly installments of $166,666.67 each, provided that Subcontractor has satisfactorily performed the Work during the preceding month.
-NON-DISCLOSURE AGREEMENT
-Subcontractor shall sign a non-disclosure agreement in the form attached hereto as Exhibit B (the "NDA"). The NDA shall be in effect for the duration of the Agreement and for a period of five years thereafter.
+签署本协议并收到分包商绝密许可后支付 150 万美元。
+分 6 个月分期支付 100 万美元，每次 166,666.67 美元，前提是分包商在上个月圆满地完成了工作。
+保密协议
+分包商应以附件 B 所附的形式签署保密协议（“NDA”）。 NDA 应在协议有效期内及之后的五年内有效。
 
-NON-COMPETE AGREEMENT
-Subcontractor shall sign a non-compete agreement in the form attached hereto as Exhibit C (the "NCA"). The NCA shall be in effect for a period of two years after the termination of this Agreement.
+竞业禁止协议
+分包商应按照附件 C（“NCA”）所附表格签署竞业禁止协议。 NCA 的有效期为本协议终止后两年。
 
-NON-SOLICITATION AGREEMENT
-Subcontractor shall sign a non-solicitation agreement in the form attached hereto as Exhibit D (the "NSA"). The NSA shall be in effect for a period of two years after the termination of this Agreement.
+非招揽协议
+分包商应以附件 D（“NSA”）所附的形式签署一份非招揽协议。 NSA 的有效期为本协议终止后两年。
 
-NON-CIRCUMVENTION AGREEMENT
-Subcontractor shall sign a non-circumvention agreement in the form attached hereto as Exhibit E (the "NCAg"). The NCAg shall be in effect for a period of two years after the termination of this Agreement.
+非规避协议
+分包商应按照附件 E（以下简称“NCAg”）所附表格签署非规避协议。 NCAg 的有效期为本协议终止后两年。
 
-TERM AND TERMINATION
-This Agreement shall commence on the date set forth above and shall continue in effect until the completion of the Work or until terminated by either party upon thirty (30) days written notice. The non-disclosure, non-compete, non-solicitation, and non-circumvention obligations contained herein shall survive any termination of this Agreement.
+期限和终止
+本协议应从上述日期开始，并应持续有效，直至工作完成或任何一方在三十 (30) 天发出书面通知后终止。本协议中包含的不披露、不竞争、不招揽和不规避义务在本协议终止后仍然有效。
 
-INDEPENDENT CONTRACTOR
-Subcontractor is an independent contractor and is not an employee of Contractor. Subcontractor shall be responsible for its own taxes, social security contributions, insurance, and other benefits. Subcontractor shall indemnify and hold Contractor harmless from any claims, damages, or liabilities arising out of or related to Subcontractor's status as an independent contractor.
+独立承包商
+分包商是独立承包商，不是承包商的雇员。分包商应负责自己的税收、社会保障缴款、保险和其他福利。对于因分包商作为独立承包商的身份而引起或与之相关的任何索赔、损害或责任，分包商应赔偿并使承包商免受损害。
 
-GOVERNING LAW AND JURISDICTION
-This Agreement shall be governed by and construed in accordance with the laws of the state of [state], without giving effect to any choice of law or conflict of law provisions. Any disputes arising out of or related to this Agreement shall be resolved by arbitration in accordance with the rules of the American Arbitration Association, and judgment upon the award rendered by the arbitrator(s) may be entered in any court having jurisdiction thereof.
+法律和管辖区
+本协议应受 [州] 州法律管辖并按其解释，不影响任何法律选择或法律冲突规定。因本协议引起的或与本协议有关的任何争议应根据美国仲裁协会的规则通过仲裁解决，仲裁员作出的裁决可由任何有管辖权的法院作出判决。
 
-ENTIRE AGREEMENT
-This Agreement constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements and understandings, whether written or oral, relating to the subject matter of this Agreement. This Agreement may not be amended or modified except in writing signed by both parties.
+整个协议
+本协议构成双方之间的完整协议，并取代与本协议主题相关的所有先前和同期的书面或口头协议和谅解。除非双方书面签署，否则不得修改或修改本协议。
 
-IN WITNESS WHEREOF, the parties have executed this Agreement as of the date set forth below.
+兹证明，双方已于下列日期签署本协议。
 
-[Government Contractor]
+[政府承包商]
 
-By: ____________________________
+名称: __________________________
 
-Name: __________________________
+姓名: __________________________
 
-Title: ___________________________
+头衔: __________________________
 
-[Subcontractor]
+[分包商]
 
-By: ____________________________
+名称: __________________________
 
-Name: __________________________
+姓名: __________________________
 
-Title: ___________________________
+头衔: __________________________
 
-Date: ___________________________
+日期: __________________________
 // highlight-end
 ```
 
-This is a pretty good start. Imaginably you would want to add more information in the scope, payment, and other sections. This is where you would need to use your own knowledge and experience to start iterating on the document.
+这是一个很好的开始。如果您希望在范围、付款和其他部分补充更多信息，那么就需要您利用自己的知识和经验进一步迭代了。
 
-## Takeaways
+## 要点
 
-- LLMs can be used to review and clarify legal documents *in an assistive capacity*.
-- LLMs can be used to generate legal documents *in an assistive capacity*.
+- LLMs 可用于*以辅助身份*审查和澄清法律文件。
+- LLMs 可用于*以辅助身份*生成法律文件。
 
 :::danger
-Do not use any legal documents on this page. They are for demonstration purposes only.
+请勿使用该页面上的任何法律内容。它们仅用于演示目的。
 :::
