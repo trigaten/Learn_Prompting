@@ -97,3 +97,5 @@ A：
 ```
 
 多示例提示有助于上下文学习，这意味着模型无需更新参数就能够进行学习输出(@zhao2021calibrate)。
+
+By [gezilinll](https://github.com/gezilinll).
