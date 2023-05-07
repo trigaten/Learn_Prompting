@@ -73,3 +73,5 @@ sidebar_position: 30
 ## 总结
 
 除了以上方法外，当然还有其他的方式利用 LLMs 来学习。像 Duolingo 和 Quizlet 这样的学习公司就正在将 LLMs 引入他们的产品中。
+
+By [gezilinll](https://github.com/gezilinll).

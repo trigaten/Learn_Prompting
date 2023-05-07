@@ -59,3 +59,5 @@ import friendship_millennial from '@site/docs/assets/basic_applications/Friendsh
 ></iframe>
 
 <br/>你可以输入你过去写过的任何文字（电子邮件、报告、博客等），GPT-3/ChatGPT 通常都能复制你的风格。你提供的内容越多，它就越能复制你的风格。
+
+By [gezilinll](https://github.com/gezilinll).
