@@ -10,7 +10,7 @@ function Banner() {
       <a
         target="_blank"
         rel="noreferrer"
-        href={"https://www.crowdcast.io/c/hackaprompt"}
+        href={"https://www.aicrowd.com/challenges/hackaprompt-2023"}
       >
         <div className="flex cursor-pointer hover:underline transition-all items-center text-white font-bold tracking-tight mt-2 md:mt-0 ml-0 md:ml-3 text-sm">
           Register Now
