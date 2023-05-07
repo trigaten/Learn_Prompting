@@ -16,7 +16,7 @@ MathGPT has since been secured against code injection. Please do not attempt to 
 
 Let's work with a simplified example of the [MathGPT](https://mathgpt.streamlit.app/) app. We will assume that it takes in a math problem and writes Python code to try to solve the problem.
 
-Here is the prompt that the app uses:
+Here is the prompt that the simplified example app uses:
 
 ```
 Write Python code to solve the following math problem:
