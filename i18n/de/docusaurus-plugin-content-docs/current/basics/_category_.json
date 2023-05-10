@@ -1,0 +1,8 @@
+{
+  "label": "😃 Grundlagen",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Einführung in PE und einfache PE-Techniken."
+  }
+}
