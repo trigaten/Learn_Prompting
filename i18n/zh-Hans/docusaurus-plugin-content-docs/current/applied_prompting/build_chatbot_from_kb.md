@@ -187,7 +187,6 @@ GPT-3试图更好地理解用户的问题，给出了以下回答。
 
 ## 使用GPT-3生成答案时可能出现的问题
 
-The previous examples worked well. However, there are several ways in which this chatbot could fail.
 前面的例子都很正常运行。然而，这种聊天机器人可能会失败的几种方式。
 
 如果我们询问“移动应用程序是否免费？”，将登录文档作为上下文传递给GPT-3，你通常会得到一个答案，比如“是的，VideoGram移动应用程序是免费下载和使用的”，即使这样的信息并没有包含在上下文信息中。生成虚假信息对于客户服务聊天机器人来说非常糟糕！
