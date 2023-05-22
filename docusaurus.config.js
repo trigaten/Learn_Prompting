@@ -9,7 +9,7 @@ async function createConfig() {
     tagline:
       "Český překlad bezplatného open source kurzu o komunikaci s umělou inteligencí",
     url: "https://learnprompting.org",
-    baseUrl: "/",
+    baseUrl: "/Learn_Prompting_CAI/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/cai_logo.ico",
