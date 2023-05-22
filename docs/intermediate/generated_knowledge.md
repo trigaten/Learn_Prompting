@@ -2,77 +2,77 @@
 sidebar_position: 7
 ---
 
-# 🟡 Generated Knowledge
+# 🟡 Generované znalosti
 
 
-The idea behind the generated knowledge approach(@liu2021generated) is to ask the %%LLM|LLM%% to generate potentially useful information about a given question/prompt before generating a final response.
+Myšlenkou přístupu generovaných znalostí(@liu2021generated) je požádat %%LLM|LLM%% o vygenerování potenciálně užitečných informací o dané otázce/podnětu před vygenerováním konečné odpovědi.
 
-For example, say you want to write a small blog post about some animal, like [Spirit bears](https://en.wikipedia.org/wiki/Kermode_bear). Before asking the %%LLM|LLM%% to write the blog post, you can ask it to generate some facts about Spirit bears. This will help the LLM write a more informative blog post. There are two simple ways of going about this.
+Řekněme například, že chcete napsat malý příspěvek na blog o nějakém zvířeti, například [Medvědí duch](https://cs.wikipedia.org/wiki/Baribal_b%C3%ADl%C3%BD). Než požádáte %%LLM|LLM%% o napsání příspěvku na blog, můžete jej požádat, aby vygeneroval některá fakta o medvědech duchů. To pomůže LLM napsat informativnější příspěvek na blog. Existují dva jednoduché způsoby, jak na to.
 
-## Single prompt approach
+## Přístup založený na jednom promptu
 
-The first approach asks the LLM to generate knowledge then write the post, all with a single prompt.
+První přístup požádá LLM, aby vygeneroval znalosti a poté napsal příspěvek, a to vše pomocí jediné výzvy.
 
 ```text
-Generate 4 facts about the Kermode bear, then use these facts to write a short blog post using the information:
+Vygenerujte 4 fakta o medvědím duchovi a poté na základě těchto faktů napište krátký příspěvek na blog:
 // highlight-start
-The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada. 
+Medvěd kermodský, známý také jako medvědí duch, je vzácný poddruh amerického medvěda černého, který se vyskytuje v pobřežních oblastech Britské Kolumbie v Kanadě. 
 
-1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur. 
+1. Medvěd kermodský je unikátní poddruh amerického černého medvěda, jehož přibližně 10 % populace má bílou srst. 
 
-2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. 
+2. Medvěd kermodský je symbolem prvních národů Britské Kolumbie a je považován za duchovní zvíře. 
 
-3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. 
+3. Medvěd kermodský je důležitou součástí ekosystému, pomáhá roznášet semena a udržovat rovnováhu lesa. 
 
-4. The Kermode bear is a protected species, and its population is monitored closely by the provincial government.
+4. Medvěd kermodský je chráněným druhem a jeho populace je pečlivě sledována vládou provincie.
 
-The Kermode bear is a unique and special animal that is found in the coastal regions of British Columbia, Canada. Approximately 10% of the population of this subspecies of the American black bear have white fur, making them a rare sight. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. It is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. The Kermode bear is a protected species, and its population is monitored closely by the provincial government. It is a beautiful and majestic animal, and it is important that we do our part to protect and conserve this species.
+Medvěd kermodský je jedinečné a zvláštní zvíře, které se vyskytuje v pobřežních oblastech Britské Kolumbie v Kanadě. Přibližně 10 % populace tohoto poddruhu amerického medvěda černého má bílou srst, což z nich dělá vzácnou podívanou. Medvěd kermodský je symbolem prvních národů Britské Kolumbie a je považován za duchovní zvíře. Je důležitou součástí ekosystému, pomáhá roznášet semena a udržovat rovnováhu lesa. Medvěd kermodský je chráněným druhem a jeho populace je pečlivě sledována provinční vládou. Je to krásné a majestátní zvíře a je důležité, abychom se podíleli na ochraně a zachování tohoto druhu.
 // highlight-end
 ```
 
 
-## Dual prompt approach
+## Duální promptní přístup
 
-In this approach, we first prompt the %%LLM|LLM%% to generate facts about the bear:
+V tomto přístupu nejprve vyzveme %%LLM|LLM%% k vytvoření faktů o medvědovi:
   
 ```text
-Generate 10 facts about the Kermode bear:
+Vygenerujte 10 faktů o medvědovi kermodském:
 // highlight-start
-1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
+1. Medvěd kermodský, známý také jako medvědí duch, je vzácný poddruh amerického medvěda černého, který se vyskytuje v Britské Kolumbii v Kanadě.
 
-2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+2. Medvěd kermodskýrmode má jedinečnou bílou nebo krémově zbarvenou srst, která je způsobena recesivním genem.
 
-3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+3. Medvěd kermodský je pro obyvatele prvních národů Britské Kolumbie symbolem naděje a obnovy.
 
-4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
+4. Medvěd kermodský je chráněným druhem a Výbor pro stav ohrožených druhů volně žijících živočichů v Kanadě jej zařadil na seznam zvláště chráněných druhů.
 // highlight-end
 ```
 
-Then, we feed that information into another prompt to write the blog post:
+Poté tyto informace vložíme do další výzvy k napsání příspěvku na blog:
 
 ```text
-1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
+1. Medvěd kermodský, známý také jako medvědí duch, je vzácný poddruh amerického medvěda černého, který se vyskytuje v Britské Kolumbii v Kanadě.
 
-2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+2. Medvěd kermodský má jedinečnou bílou nebo krémovou srst, která je způsobena recesivním genem.
 
-3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+3. Medvěd kermodský je pro obyvatele prvních národů Britské Kolumbie symbolem naděje a obnovy.
 
-4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
+4. Medvěd kermodský je chráněným druhem a Výbor pro stav ohrožených druhů volně žijících živočichů v Kanadě jej zařadil na seznam zvláště chráněných druhů.
 
-Use the above facts to write a one paragraph blog post about the Kermode bear:
+Na základě výše uvedených faktů napište příspěvek o medvědu kermodském v rozsahu jednoho odstavce na blog:
 
 // highlight-start
 
-The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada. This unique bear has a white or cream-colored coat, caused by a recessive gene, and is a symbol of hope and renewal for the First Nations people of British Columbia. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada, making it an important part of the region's biodiversity.
+Medvěd kermodský, známý také jako medvědá duch, je vzácný poddruh amerického medvěda černého, který se vyskytuje v Britské Kolumbii v Kanadě. Tento jedinečný medvěd má bílou nebo krémově zbarvenou srst, což je způsobeno recesivním genem, a je symbolem naděje a obnovy pro první národy Britské Kolumbie. Medvěd kermodský je chráněným druhem a Výbor pro stav ohrožených druhů volně žijících živočichů v Kanadě ho zařadil na seznam zvláště chráněných druhů, takže je důležitou součástí biologické rozmanitosti regionu.
 
 // highlight-end
 ```
 
-I recommend this second approach since it can produce longer content more reliably.
+Doporučuji tento druhý přístup, protože dokáže spolehlivěji vytvářet delší obsah.
 
-## Another use case
+## Další případ použití
 
-The generated knowledge approach was actually introduced for a completely different task, that of answering difficult questions. Consider the following question, which GPT-3 answers incorrectly: 
+Přístup generovaných znalostí byl ve skutečnosti zaveden pro zcela jiný úkol, a to pro zodpovídání obtížných otázek. Vezměme si následující otázku, na kterou GPT-3 odpovídá nesprávně: 
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIGxhcmdlciB0aGFuIENvbmdvLiIsInByb21wdCI6IldoaWNoIGNvdW50cnkgaXMgbGFyZ2VyLCBDb25nbyBvciBTb3V0aCBBZnJpY2E%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -81,14 +81,14 @@ The generated knowledge approach was actually introduced for a completely differ
 ></iframe>
 
 :::note
-This example may not may accurate. We are working to revise it.
+Tento příklad nemusí být přesný. Pracujeme na jeho revizi.
 :::
 
 <br/>
 
-If we first ask the %%LLM|LLM%% to generate facts about Congo and South Africa, we can then use that information to answer the question correctly. In theory, this is similar to %%CoT|CoT prompting%%, since we are effectively getting the LLM to generate intermediate reasoning in the form of related facts.
+Pokud nejprve požádáme %%LLM|LLM%% o vytvoření faktů o Kongu a Jihoafrické republice, můžeme tyto informace použít ke správnému zodpovězení otázky. Teoreticky je to podobné jako %%CoT|CoT prompting%%, protože tím vlastně přimějeme LLM, aby vygeneroval zprostředkující úvahy v podobě souvisejících faktů.
 
-Let's start with the first step, *knowledge generation*. We can ask the %%LLM|LLM%% to generate facts about Congo and South Africa:
+Začněme prvním krokem, *generováním znalostí*. Můžeme požádat %%LLM|LLM%%, aby generoval fakta o Kongu a Jižní Africe:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy4iLCJwcm9tcHQiOiJHZW5lcmF0ZSBzb21lIGtub3dsZWRnZSBhYm91dCB0aGUgc2l6ZXMgb2YgU291dGggQWZyaWNhIGFuZCBDb25nbzoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -98,7 +98,7 @@ Let's start with the first step, *knowledge generation*. We can ask the %%LLM|LL
 
 <br/>
 
-Next, let's use that knowledge to answer the question correctly. This is the *knowledge integration* step!
+Dále využijeme tyto znalosti ke správnému zodpovězení otázky. Toto je krok *integrace znalostí*!
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiQ29uZ28gaXMgbGFyZ2VyIHRoYW4gU291dGggQWZyaWNhLlxuIiwicHJvbXB0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy5cblxuV2hpY2ggY291bnRyeSBpcyBsYXJnZXIsIENvbmdvIG9yIFNvdXRoIEFmcmljYT8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -106,9 +106,9 @@ Next, let's use that knowledge to answer the question correctly. This is the *kn
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## A more technical discussion
+## Techničtější diskuse
 
-Although the above use case was similar to the way generated knowledge was originally introduced, it is not exactly the same. The below content covers the more technical context in which the approach was introduced. It follows the two intermediate steps (knowledge generation and knowledge integration) pattern that we saw above.
+Ačkoli výše uvedený případ použití byl podobný způsobu, jakým byly původně zavedeny generované znalosti, není úplně stejný. Níže uvedený obsah se týká více technického kontextu, ve kterém byl tento přístup představen. Řídí se vzorem dvou mezikroků (generování znalostí a integrace znalostí), který jsme viděli výše.
 
 import KGImage from '@site/docs/assets/knowledge_generation.png';
 
@@ -120,11 +120,11 @@ import KGImage from '@site/docs/assets/knowledge_generation.png';
 Generated Knowledge (Liu et al.)
 </div>
 
-### Knowledge Generation
+### Generování znalostí
 
-In the knowledge generation step, the %%LLM|LLM%% is asked to generate a set of facts
-about the **question**. The LLM is prompted in few-shot fashion as seen below. 
-M different completions are generated using this same prompt (similar to the self-consistency approach).
+V kroku generování znalostí je %%LLM|LLM%% požádán, aby vygeneroval sadu faktů.
+o **otázce**. LLM je vyzván několikanásobným způsobem, jak je vidět níže. 
+Pomocí této výzvy je vygenerováno M různých doplnění (podobně jako u přístupu založeného na vlastní konzistenci).
 
 import KGP1Image from '@site/docs/assets/gen_k_p1.png';
 
@@ -137,38 +137,38 @@ Generated Knowledge Example (Liu et al.)
 </div>
 
 
-### Knowledge Integration
+### Integrace znalostí
 
-Next, we generate "knowledge augmented" questions and prompt the %%LLM|LLM%% with them
-to get final answers. The easiest way to understand this is to go through an example.
+Dále vygenerujeme "znalostně rozšířené" otázky a vyzveme jimi %%LLM|LLM%%
+a získáme konečné odpovědi. Nejjednodušší způsob, jak to pochopit, je projít si příklad.
 
-Let's assume we are attempting to answer the **question** 
-"Most Kangaroos have <mask\> limbs". Assume that at the knowledge generation step 
-we generated 2 knowledges (M=2):
+Předpokládejme, že se pokoušíme odpovědět na **otázku**. 
+"Většina klokanů má <masku\> končetin". Předpokládejme, že v kroku generování znalostí 
+jsme vygenerovali 2 znalosti (M=2):
 
-- Knowledge 1: `Kangaroos are marsupials that live in Australia.`
+- Znalost 1: `Klokani jsou vačnatci, kteří žijí v Austrálii.`
 
-- Knowledge 2: `Kangaroos are marsupials that have 5 limbs.`
+- Znalost 2: `Kangur je vačnatec, který má 5 končetin.`
 
-Now, we concatenate each knowledge with the question to generate knowledge augmented questions:
+Nyní spojíme každou znalost s otázkou a vytvoříme otázky rozšířené o znalosti:
 
-- Knowledge Augmented Question 1: `Most Kangaroos have <mask\> limbs. Kangaroos are marsupials that live in Australia.`
+- Otázka s rozšířenou znalostí 1: `Většina klokanů má <mask\> končetin. Klokani jsou vačnatci, kteří žijí v Austrálii.`
 
-- Knowledge Augmented Question 2: `Most Kangaroos have <mask\> limbs. Kangaroos are marsupials that have 5 limbs.`
+- Otázka s rozšířenou znalostí 2: `Většina klokanů má <mask\> končetin. Klokani jsou vačnatci, kteří mají 5 končetin.`
 
-We then prompt the LLM with these knowledge augmented questions and get the final answer proposals:
+Poté zadáme LLM tyto rozšířené znalostní otázky a získáme konečné návrhy odpovědí:
 
-- Answer 1: `4`
+- Odpověď 1: `4`
 
-- Answer 2: `5`
+- Odpověď 2: `5`
 
-We select the answer with the highest probability as the final answer. The 
-highest probability could be the softmax probability of the answer token, or the
-log probability of the answer token(s).
+Jako konečnou odpověď vybereme odpověď s nejvyšší pravděpodobností. Na 
+Nejvyšší pravděpodobnost může být měkká maximální pravděpodobnost tokenu odpovědi, nebo
+logaritmická pravděpodobnost tokenu(ů) odpovědi.
 
-## Recitation-Augmented Language Models
+## Jazykové modely rozšířené o recitaci
 
-The recitation-augmented(@sun2022recitationaugmented) approach it is similar to generated knowledge (basically the same). However, is much less complex than the formal implementation of generated knowledge.
+Přístup recitation-augmented(@sun2022recitationaugmented) je podobný generovaným znalostem (v podstatě stejný). Je však mnohem méně složitý než formální implementace generovaných znalostí.
 
 
 import RImage from '@site/docs/assets/recitation.png';
@@ -177,16 +177,16 @@ import RImage from '@site/docs/assets/recitation.png';
   <img src={RImage} style={{width: "250px"}} />
 </div>
 
-The idea here is to few shot prompt the LLM to generate information *and* answer in the *same* step. The fact that it is reciting/generating knowledge and answering the question in the same step is the main difference from the generated knowledge approach.
+Jde o to, aby několik výstřelů vyzvalo LLM ke generování informací *a* odpovědi ve *stejném* kroku. Skutečnost, že ve stejném kroku recituje/generuje znalosti a odpovídá na otázku, je hlavním rozdílem oproti přístupu s generovanými znalostmi.
 
-To reiterate, this approach prompts the model with multiple (question, recitation, answer) exemplars, then asks the question. The authors note that this approach can be combined with self consistency or multiple completion paths.
+Zopakujme, že tento přístup podněcuje model pomocí několika příkladů (otázka, recitace, odpověď) a poté položí otázku. Autoři poznamenávají, že tento přístup lze kombinovat s vlastní konzistencí nebo vícenásobnými cestami doplňování.
 
 
 
-## Notes
+## Poznámky
 
-- Generated knowledge shows improvements on various commonsense datasets.
+- Vygenerované znalosti vykazují zlepšení na různých souborech dat commonsense.
 
-- The knowledge corresponding to the selected answer is called the _selected knowledge_.
+- Znalost odpovídající vybrané odpovědi se nazývá _vybraná znalost_.
 
-- In practice, you could take the most frequently occurring answer as the final one.
+- V praxi lze za konečnou odpověď považovat tu, která se vyskytuje nejčastěji.

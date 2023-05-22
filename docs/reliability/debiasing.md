@@ -4,86 +4,86 @@ sidebar_position: 3
 
 # 🟢 Prompt Debiasing
 
-This page covers a few simple techniques to debias your prompts.
+Tato stránka se zabývá několika jednoduchými technikami pro debiasing vašich promptů.
 
-## Exemplar Debiasing
+## Debiasing exemplářů
 
-Depending on their distribution and order within the prompt, %%exemplars|exemplars%% may bias LLM outputs(@si2022prompting). This is discussed to some extent in the [What's in a Prompt](http://learnprompting.org/docs/intermediate/whats_in_a_prompt) page.
+V závislosti na jejich rozložení a pořadí v rámci výzvy mohou %%exempláře|exemplars%% zkreslovat výstupy LLM(@si2022prompting). To je do jisté míry popsáno na stránce [Co je v promptu](http://learnprompting.org/docs/intermediate/whats_in_a_prompt).
 
-### Distribution
+### Distribuce
 
-When discussing the distribution of exemplars within a prompt, we are referring to
-how many exemplars from different classes are present. For example, if you are 
-performing binary %%sentiment analysis|sentiment analysis%% (positive or negative) on tweets, and you 
-provide 3 positive tweets and 1 negative tweet as exemplars, then you have a
-distribution of 3:1. Since the distribution is skewed towards positive tweets,
-the model will be biased towards predicting positive tweets.
+Při diskusi o distribuci exemplářů v rámci výzvy máme na mysli např.
+kolik exemplářů z různých tříd je přítomno. Například pokud se jedná o 
+provádíte binární  %%analýzu sentimentů|analýza sentimentů%% (pozitivní nebo negativní) na tweetech, a vy 
+jako exempláře poskytnete 3 pozitivní tweety a 1 negativní tweet, pak máte
+rozložení 3:1. Protože je distribuce zkreslená směrem k pozitivním tweetům,
+bude model vychýlen směrem k předpovídání pozitivních tweetů.
 
-#### Worse:
-
-```text
-Q: Tweet: "What a beautiful day!"
-A: positive
-
-Q: Tweet: "I love pockets on jeans"
-A: positive
-
-Q: Tweet: "I love hotpockets"
-A: positive
-
-Q: Tweet: "I hate this class"
-A: negative
-```
-#### Better:
-Having an even exemplar distribution is better.
-
+#### Horší:
 
 ```text
-Q: Tweet: "What a beautiful day!"
-A: positive
+Otázka: Tweet: "To je ale krásný den!"
+Odpověď: pozitivní
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Q: Tweet: "Miluju kapsy na džínách"
+Odpověď: pozitivní
 
-Q: Tweet: "I don't like pizza"
-A: negative
+Q: Tweet: "Miluji hotpockets"
+Odpověď: pozitivní
 
-Q: Tweet: "I hate this class"
-A: negative
+Q: Tweet: "Nesnáším tuhle třídu"
+Odpověď: negativní
 ```
+#### Lepší:
+Lepší je mít rovnoměrné rozložení exemplářů.
 
-### Order
-
-The order of %%exemplars|exemplars%% can also cause bias. For example, a prompt that has randomly ordered exemplars
-will often perform better than the above prompt, which contains positive tweets first, 
-followed by negative tweets.
-
-#### Best:
 
 ```text
-Q: Tweet: "I hate this class"
-A: negative
+Q: Tweet: "To je ale krásný den!"
+Odpověď: pozitivní
 
-Q: Tweet: "What a beautiful day!"
-A: positive
+Q: Tweet: "Miluju kapsy na džínách"
+Odpověď: pozitivní
 
-Q: Tweet: "I don't like pizza"
-A: negative
+Q: Tweet: "Nemám ráda pizzu"
+Odpověď: negativní
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Otázka: Tweet: "Nesnáším tuhle třídu"
+Odpověď: záporná
 ```
 
-## Instruction Debiasing
+### Objednávka
 
-We can explicitly prompt GPT-3 to be unbiased, by including an instruction
-to do so in the prompt. In particular, Si et al.(@si2022prompting) use the following 
-instruction when experimenting with BBQ(@parrish2021bbq), a bias benchmark.
+Pořadí %%exemplářů|exempláře%% může také způsobit zkreslení. Například výzva, která má náhodně seřazené exempláře.
+bude mít často lepší výsledky než výše uvedená výzva, která obsahuje nejprve pozitivní tweety, 
+následované negativními tweety.
+
+#### nejlepší:
 
 ```text
-We should treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown option, rather than making assumptions based on our stereotypes.
+Otázka: Tweet: "Nesnáším tuhle třídu"
+A: negativní
+
+Q: Tweet: "To je ale krásný den!"
+Odpověď: pozitivní
+
+Q: Tweet: "Nemám rád pizzu"
+Odpověď: negativní
+
+Otázka: Tweet: "Miluji kapsy na džínách"
+Odpověď: pozitivní
 ```
 
-## Notes
+## Debiasing Pokynů
 
-See more on debiasing in the Calibration section.
+Můžeme explicitně vyzvat GPT-3, aby se odklonil, a to tak, že do něj zahrneme instrukci
+do výzvy. Si a další (@si2022prompting) používají zejména následující příkaz 
+instrukci při experimentování s BBQ(@parrish2021bbq), benchmarkem zkreslení.
+
+```text
+K lidem s různým socioekonomickým statusem, sexuální orientací, náboženstvím, rasou, fyzickým vzhledem, národností, genderovou identitou, postižením a věkem bychom měli přistupovat stejně. Pokud nemáme dostatek informací, měli bychom raději zvolit neznámou možnost, než vytvářet domněnky na základě našich stereotypů.
+```
+
+## Poznámky
+
+Více informací o debiasingu najdete v části Kalibrace.

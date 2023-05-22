@@ -2,43 +2,43 @@
 sidebar_position: 2
 ---
 
-# 🔴 Interpretable Soft Prompts
+# 🔴 Interpretovatelné měkké prompty/výzvy
 
-Soft prompts are a sequence of vectors which
-don't correspond to any actual tokens in the vocabulary. This makes it difficult
-to interpret the prompt. However, we can still attempt to do so
-by mapping the vectors to the closest tokens in the vocabulary. However, projected 
-soft prompts are often wayward; they can solve 
-tasks well, but get projected to arbitrary tokens in the vocabulary(@khashabi2021prompt).
+Měkké prompty jsou posloupností vektorů, které
+neodpovídají žádným skutečným tokenům ve slovníku. To ztěžuje
+interpretovat výzvu. Přesto se o to můžeme pokusit
+mapováním vektorů na nejbližší tokeny ve slovníku. Promítnutí 
+měkké podněty jsou často zcestné; mohou řešit 
+úlohy dobře, ale promítají se na libovolné tokeny ve slovníku(@khashabi2021prompt).
 
-For example, if we are training on math questions like GSM8K(@cobbe2021training), 
-we might start with the prompt `You are a mathematician. Solve this question:`. 
-If we perform prompt tuning on it, then project that back into tokenspace, we might 
-be left with something nonsensical like `A bus is a bus. Do thing here:`. It is often the
-case that the soft prompt which maps to this nonsensical prompt can provide better performance on the task!
+Pokud například trénujeme na matematických otázkách typu GSM8K(@cobbe2021training), 
+můžeme začít výzvou `Jste matematik. Vyřešte tuto otázku:`. 
+Pokud na ní provedeme ladění promptů a pak ji promítneme zpět do prostoru tokenů, mohli bychom 
+zůstat něco nesmyslného jako `Autobus je autobus. Udělejte věc zde:`. Často je to
+že měkká výzva, která se mapuje na tuto nesmyslnou výzvu, může poskytnout lepší výkon v úloze!
 
-## The Waywardness Hypothesis
+## Hypotéza necestovosti
 
-Khashabi et al.(@khashabi2021prompt) propose this incredible hypothesis. It says 
-that given a task, for any discrete target prompt, there exists a 
-continuous prompt that projects to it, while performing well on the task.
+Khashabi a další (@khashabi2021prompt) navrhují tuto neuvěřitelnou hypotézu. Říká 
+že při zadání úlohy existuje pro jakoukoli diskrétní cílovou výzvu 
+spojitá výzva, která se do ní promítá, a přitom v úloze dobře funguje.
 
-This means that given 1000 different tasks, there exist 1000 different
-performant soft prompts (one for each task) which map to the same discrete prompt.
+To znamená, že při zadání 1000 různých úloh existuje 1000 různých
+výkonných měkkých podnětů (pro každý úkol jeden), které se vztahují ke stejnému diskrétnímu podnětu.
 
-## Interpretability Risks
+## Rizika interpretovatelnosti
 
-They use the Waywardness Hypothesis to highlight a number of risks which arise 
-when interpreting soft prompts. In particular, a soft prompt can be projected to
-a discrete prompt which gives a misleading intent.
+Pomocí hypotézy směrodatnosti upozorňují na řadu rizik, která vznikají 
+při interpretaci měkkých výzev. Konkrétně může být měkká výzva promítnuta do
+diskrétní výzvu, která poskytuje zavádějící záměr.
 
-Consider a soft prompt for ranking resumes. When projected into tokenspace, it might
-be `You hiring manager. Rank good resumes:`. This seems decent, perhaps a bit lacking
-in grammaticality. However, the token `good` might have a similar projection as the token for `white`, and there
-could exist implicit bias in the prompt. Using a slightly different projection method,
-we could end up with `You hiring manager. Rank white resumes:`. This is obviously quite
-different, and could have significant implications.
+Uvažujme měkkou výzvu k hodnocení životopisů. Když se promítne do prostoru tokenů, může se stát, že
+`Vy vedoucí náboru. Seřaďte dobré životopisy:`. To se zdá být slušné, možná trochu nedostatečné
+gramaticky. Nicméně token `dobrý` by mohl mít podobnou projekci jako token pro `bílý` a tam
+může v této výzvě existovat implicitní předpojatost. Použití trochu jiné metody projekce,
+bychom mohli skončit u `Vy vedoucí náboru. Seřaďte bílé životopisy:`. To je samozřejmě docela
+odlišné a mohlo by to mít významné důsledky.
 
-Similarly to interpreting a regular discrete prompt, we should be extremely 
-conscious of the biases which might be present in the prompt. We must be especially
-careful with soft prompts, as they are more difficult to interpret.
+Podobně jako při interpretaci běžné diskrétní výzvy bychom měli být extrémně 
+uvědomit si předsudky, které by mohly být v dotazu přítomny. Musíme být obzvláště
+opatrní u měkkých výzev, protože jejich interpretace je obtížnější.

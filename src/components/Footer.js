@@ -5,26 +5,26 @@ import { RxArrowTopRight } from "react-icons/rx";
 function Footer() {
   const rightLinks = [
     {
-      name: "Discord",
-      link: "http://discord.gg/learn-prompting",
+      name: "Punkový Digitál",
+      link: "https://punkovydigital.cz/",
     },
     {
-      name: "GitHub",
-      link: "https://github.com/trigaten/Learn_Prompting",
+      name: "shh.agency",
+      link: "https://www.shh.agency/",
     },
     {
-      name: "Twitter",
-      link: "https://twitter.com/learnprompting",
+      name: "Instagram",
+      link: "https://www.instagram.com/shh_agency/",
     },
     {
-      name: "Contact",
-      link: "mailto:learnprompting@gmail.com",
+      name: "Kontakt",
+      link: "mailto:hello@shh.agency",
     },
   ];
 
   return (
     <ClassicPadding className="bg-gray-100 py-12 sm:py-16 border-t-[gray/200] border flex flex-col sm:flex-row justify-between font-vietnam tracking-tight text-default">
-      <div className="hidden sm:flex">© 2023 Learn Prompting</div>
+      <div className="hidden sm:flex">© 2023 Learn Prompting (Česky AI)</div>
       <div className="flex gap-4">
         {rightLinks.map((link, idx) => (
           <div
@@ -42,7 +42,7 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className="flex sm:hidden mt-4 sm:mt-0">© 2023 Learn Prompting</div>
+      <div className="flex sm:hidden mt-4 sm:mt-0">© 2023 Česky AI</div>
     </ClassicPadding>
   );
 }

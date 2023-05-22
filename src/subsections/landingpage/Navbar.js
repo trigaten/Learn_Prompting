@@ -5,20 +5,16 @@ import { RxArrowTopRight } from "react-icons/rx";
 function Navbar(props) {
   const leftLinks = [
     {
-      name: "Learn",
+      name: "Bezplatný program",
       link: "/docs/intro",
     },
     {
-      name: "Competition",
-      link: "#competition",
+      name: "Největší AI kruz",
+      link: "#nejvetsi-kurz",
     },
     {
-      name: "Contribute",
+      name: "Přispět",
       link: "/contribute",
-    },
-    {
-      name: "Newsletter",
-      link: "#newsletter",
     },
     {
       name: "Blog",
@@ -28,20 +24,20 @@ function Navbar(props) {
 
   const rightLinks = [
     {
-      name: "Discord",
-      link: "http://discord.gg/learn-prompting",
+      name: "Instagram",
+      link: "https://www.instagram.com/shh_agency/",
     },
     {
-      name: "GitHub",
-      link: "https://github.com/trigaten/Learn_Prompting",
+      name: "Punkový Digitál",
+      link: "https://punkovydigital.cz/",
     },
     {
-      name: "Twitter",
-      link: "https://twitter.com/learnprompting",
+      name: "Shh.agency",
+      link: "https://www.shh.agency/",
     },
     {
-      name: "Contact",
-      link: "mailto:learnprompting@gmail.com",
+      name: "Kontakt",
+      link: "mailto:hello@shh.agency",
     },
   ];
 

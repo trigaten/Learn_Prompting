@@ -1,36 +1,36 @@
 ---
 sidebar_position: 90
 ---
-# 🟢 Fix Deformed Generations
+# 🟢 Oprava deformovaných generací
 
-Deformed generations, particularly on human body parts (e.g. hands, feet), are a common issue with many models. This can be dealt with to some extent with good negative prompts(@blake2022with). The following example is adapted from [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/).
+Deformované generace, zejména na částech lidského těla (např. ruce, nohy), jsou častým problémem mnoha modelů. To lze do jisté míry řešit dobrými negativními podněty(@blake2022with). Následující příklad je převzat z [tohoto příspěvku na Redditu](https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/).
 
-## Example
+## Příklad
 
 import good_pitt from '@site/docs/assets/images_chapter/good_pitt.png';
 import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
 
-Using Stable Diffusion v1.5 and the following prompt, we generate a nice image of Brad Pitt, except for his hands of course!
+Pomocí Stable Diffusion v1.5 a následující výzvy vygenerujeme pěkný obrázek Brada Pitta, samozřejmě až na jeho ruce!
 
-`studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
+`studiový střední portrét Brada Pitta mávajícího rukama, detailní, film, studiové osvětlení, 90mm objektiv, autor: Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
   <img src={bad_pitt} style={{width: "250px"}} />
 </div>
 
-Using a robust negative prompt, we can generate much more convincing hands.
+Pomocí robustní negativní výzvy můžeme generovat mnohem přesvědčivější ruce.
 
-`studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6 | disfigured, deformed hands, blurry, grainy, broken, cross-eyed, undead, photoshopped, overexposed, underexposed, lowres, bad anatomy, bad hands, extra digits, fewer digits, bad digit, bad ears, bad eyes, bad face, cropped: -5`
+`Studiový střední portrét Brada Pitta mávajícího rukama, detailní, film, studiové osvětlení, 90mm objektiv, autor: Martin Schoeller:6 | znetvořené, deformované ruce, rozmazané, zrnité, rozbité, šilhající, nemrtvé, upravené photoshopem, přeexponované, podexponované, nízké rozlišení, špatná anatomie, špatné ruce, číslice navíc, méně číslic, špatné číslice, špatné uši, špatné oči, špatný obličej, oříznuté: -5`.
 <div style={{textAlign: 'center'}}>
   <img src={good_pitt} style={{width: "250px"}} />
 </div>
 
-Using a similar negative prompt can help with other body parts as well. Unfortunately, this technique is not consistent, so you may need to attempt multiple generations
-before getting a good result.
-In the future, this type of prompting should be unnecessary since models will improve. 
-However, currently it is a very useful technique.
+Použití podobné negativní výzvy může pomoci i u jiných částí těla. Bohužel tato technika není konzistentní, takže se možná budete muset pokusit o více generací
+než dosáhnete dobrého výsledku.
+V budoucnu by tento typ výzev neměl být nutný, protože modely se budou zlepšovat. 
+V současné době se však jedná o velmi užitečnou techniku.
 
 
-# Notes
+# Poznámky
 
-Improved models such as [Protogen](https://civitai.com/models/3666/protogen-x34-official-release) are often better with hands, feet, etc.
+Vylepšené modely, jako je [Protogen](https://civitai.com/models/3666/protogen-x34-official-release), mají často lepší ruce, nohy atd.

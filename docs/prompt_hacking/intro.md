@@ -4,7 +4,7 @@ sidebar_position: 0
 
 
 
-# 🟢 Introduction
+# 🟢 Úvod
 
 import Lock from '@site/static/img/lock.png';
 
@@ -14,8 +14,8 @@ import Lock from '@site/static/img/lock.png';
 </div>
 
 
-Prompt hacking is a term used to describe a type of attack that exploits the vulnerabilities of %%LLMs|LLM%%, by manipulating their inputs or prompts. Unlike traditional hacking, which typically exploits software vulnerabilities, prompt hacking relies on carefully crafting prompts to deceive the LLM into performing unintended actions.
+Prompt hacking je termín používaný k popisu typu útoku, který zneužívá zranitelnosti %%LLM|LLM%% manipulací s jejich vstupy nebo výzvami. Na rozdíl od tradičního hackingu, který obvykle zneužívá zranitelnosti softwaru, se prompt hacking spoléhá na pečlivě vytvořené výzvy, aby oklamal LLM a přiměl ho k provedení nezamýšlených akcí.
 
-We will cover three types of prompt hacking: prompt injection, prompt leaking, and jailbreaking. Prompt injection involves adding malicious or unintended content to a prompt to hijack the language model's output. Prompt leaking and jailbreaking are effectively subsets of this: Prompt leaking involves extracting sensitive or confidential information from the LLM's responses, while jailbreaking involves bypassing safety and moderation features. We will also discuss specific offensive techniques as well as defensive techniques.
+Budeme se zabývat třemi typy hackování pomocí promptů: prompt injection, prompt leaking a jailbreaking. Injektáž výzvy zahrnuje přidání škodlivého nebo nezamýšleného obsahu do výzvy, aby se převzal výstup jazykového modelu. Prompt leaking a jailbreaking jsou vlastně jejich podmnožiny: Prompt leaking zahrnuje extrakci citlivých nebo důvěrných informací z odpovědí LLM, zatímco jailbreaking zahrnuje obcházení bezpečnostních a moderačních funkcí. Probereme také konkrétní útočné i obranné techniky.
 
-To protect against prompt hacking, defensive measures must be taken. These include implementing prompt based defenses, regularly monitoring the LLM's behavior and outputs for unusual activity, and using fine tuning or other techniques. Overall, prompt hacking is a growing concern for the security of LLMs, and it is essential to remain vigilant and take proactive steps to protect against these types of attacks.
+K ochraně před promptním únikem je třeba přijmout obranná opatření. Ta zahrnují implementaci obranných opatření založených na pohotových úkonech, pravidelné sledování chování a výstupů LLM z hlediska neobvyklých aktivit a používání jemného ladění nebo jiných technik. Celkově lze říci, že promptní hacking představuje rostoucí problém pro bezpečnost LLM a je nezbytné zůstat ostražitý a přijmout proaktivní opatření na ochranu před těmito typy útoků.

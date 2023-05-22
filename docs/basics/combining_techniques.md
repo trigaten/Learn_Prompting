@@ -1,43 +1,42 @@
 ---
 sidebar_position: 6
 locale: en-us
-style: chicago
+styl: chicago
 ---
 
-# 🟢 Combining Techniques
+# 🟢 Kombinování technik
 
 import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <CombinedPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+  <CombinedPrompt style={{width: "100%",height: "300px",verticalAlign: "top"}}/>
 </div>
 
 
-As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, and multiple input-output examples. However, thus far, we have only examined separate classes of prompts. Combining these different prompting techniques can lead to more powerful prompts. 
+Jak jsme viděli na předchozích stránkách, výzvy mohou mít různý formát a složitost. Mohou obsahovat kontext, instrukce a několik příkladů vstupů a výstupů. Dosud jsme však zkoumali pouze samostatné třídy výzev. Kombinace těchto různých technik výzev může vést k vytvoření výkonnějších výzev. 
 
-Here is an example of a prompt that includes context, instructions, and multiple examples:
+Zde je příklad výzvy, která zahrnuje kontext, instrukce a více příkladů:
 
 ```text
-Twitter is a social media platform where users can post short messages called "tweets".
-Tweets can be positive or negative, and we would like to be able to classify tweets as
-positive or negative. Here are some examples of positive and negative tweets. Make sure 
-to classify the last tweet correctly.
+Twitter je platforma sociálních médií, kde mohou uživatelé zveřejňovat krátké zprávy nazývané "tweety".
+Tweety mohou být pozitivní nebo negativní a my bychom chtěli být schopni klasifikovat tweety jako
+pozitivní nebo negativní. Zde je několik příkladů pozitivních a negativních tweetů. Ujistěte se, že 
+správně zařadit poslední tweet.
 
-Q: Tweet: "What a beautiful day!"
-Is this tweet positive or negative?
+Otázka: Tweet: "To je ale krásný den!"
+Je tento tweet pozitivní, nebo negativní?
 
-A: positive
+Odpověď: pozitivní
 
-Q: Tweet: "I hate this class"
-Is this tweet positive or negative?
+Otázka: Tweet: "Nesnáším tuhle třídu"
+Je tento tweet pozitivní, nebo negativní?
 
-A: negative
+Odpověď: negativní
 
-Q: Tweet: "I love pockets on jeans"
+Otázka: Tweet: "Miluju kapsy na džínách"
 
 A:
 ```
 
-By adding additional context/examples, we can often improve the performance of AIs
-on different tasks. 
-
+Přidáním dalšího kontextu/příkladů můžeme často zlepšit výkonnost UI
+v různých úlohách. 

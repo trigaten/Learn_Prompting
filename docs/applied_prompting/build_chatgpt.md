@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 🟢 Build ChatGPT from GPT-3
+# 🟢 Sestavit ChatGPT z GPT-3
 
 import Skippy from '@site/docs/assets/skippy_chatbot.png'    
 import SkippyHeader from '@site/docs/assets/skippy_chatbot_header.png'    
@@ -13,119 +13,119 @@ import ChatGPT from '@site/docs/assets/chatgpt_ui_diagram.png'
   <img src={SkippyHeader} style={{width: "700px"}} />
 </div>
 
-## Introduction
+## Úvod
 
-[ChatGPT](https://chat.openai.com/chat) has blown up in the past month, gaining a million users in just a week. Surprisingly, the underlying model, GPT-3 debuted in 2020 and was released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
+[ChatGPT](https://chat.openai.com/chat) v uplynulém měsíci vyletěl do povětří a za pouhý týden získal milion uživatelů. Překvapivé je, že základní model, GPT-3, debutoval v roce 2020 a byl uvolněn pro veřejný přístup <a href="https://openai.com/blog/api-no-waitlist/">před více než rokem!</a>.   
 
-For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a user-friendly chat interface, where you can give input and get a response from an AI assistant. Check it out at [chat.openai.com](https://chat.openai.com/chat). 
+Pro ty, kteří to nevědí, ChatGPT je nový jazykový model od OpenAI, který byl vyladěn z GPT-3 tak, aby byl optimalizován pro konverzaci (@chatgpt2022). Má uživatelsky přívětivé rozhraní chatu, kde můžete zadávat vstupy a dostávat odpovědi od asistenta AI. Podívejte se na něj na adrese [chat.openai.com] (https://chat.openai.com/chat). 
 
-While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT. 
+Rané verze GPT-3 sice nebyly tak pokročilé jako současná řada GPT-3.5, ale i tak byly působivé. Tyto modely byly k dispozici prostřednictvím rozhraní API a <a href="https://beta.openai.com/playground">rozhraní webového uživatelského rozhraní</a>, které umožňuje vyladit některé konfigurační hyperparametry a testovací výzvy. GPT-3 si získal značnou oblibu, ale viralitě ChatGPT se nepřiblížil. 
 
-What makes ChatGPT so successful, compared to GPT-3, is it's accessibility as a straightforward AI assistant for the average person, regardless of their knowledge of data science, language models, or AI.  
+To, co činí ChatGPT tak úspěšným, je ve srovnání s GPT-3 jeho přístupnost jako přímočarého asistenta umělé inteligence pro běžného člověka bez ohledu na jeho znalosti datové vědy, jazykových modelů nebo umělé inteligence.  
 
-In this article, I overview how chatbots like ChatGPT can be implemented using a large language model like GPT-3.
+V tomto článku podávám přehled o tom, jak lze chatboty, jako je ChatGPT, implementovat pomocí velkého jazykového modelu, jako je GPT-3.
 
-## Motivation
-This article was written in part because of a tweet by <a href="https://twitter.com/goodside">Riley Goodside</a>, noting how ChatGPT could have been implemented.
+## Motivace
+Tento článek byl částečně napsán kvůli tweetu <a href="https://twitter.com/goodside">Riley Goodside</a>, který si všímá toho, jak by mohl být ChatGPT implementován.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https://huggingface.co/blog/rlhf), but much of it's effectiveness comes from using a **good prompt**.
+Stejně jako ostatní modely řady GPT-3.5 byl ChatGPT vycvičen pomocí [RLHF](https://huggingface.co/blog/rlhf), ale jeho účinnost z velké části vychází z použití **dobrého podnětu**.
 
-## The Prompt
+## Prompt/Výzva
 
 <div style={{textAlign: 'left'}}>
   <img src={Skippy} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chatbot prompt from article header</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Celý prompt chatbota Skippy z nadpisu článku</p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more. 
+<a href="https://learnprompting.org/docs/basics/prompting">Promptování je proces zadávání pokynů umělé inteligenci, aby něco udělala. </a> Jak jste pravděpodobně viděli v příkladech ChatGPT na internetu, můžete jej pobídnout k téměř čemukoli. Mezi běžné případy použití patří shrnutí textu, psaní obsahu na základě popisu nebo vytváření věcí, jako jsou básně, recepty a mnoho dalších. 
 
 <p></p>
 
-ChatGPT is both a language model and user interface. The prompt input by a user to the interface is actually inserted into a larger prompt that contains the entire conversation between the user and ChatGPT. This allows the underlying language model to understand the context of the conversation and respond appropriately.
+ChatGPT je jazykový model i uživatelské rozhraní. Výzva zadaná uživatelem do rozhraní je ve skutečnosti vložena do větší výzvy, která obsahuje celou konverzaci mezi uživatelem a ChatGPT. To umožňuje základnímu jazykovému modelu pochopit kontext konverzace a vhodně reagovat.
 
 <div style={{textAlign: 'left'}}>
   <img src={ChatGPT} style={{width: "600px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Example insertion of user prompt before sending to model</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Příklad vložení výzvy uživatele před odesláním modelu</p>
 </div>
 
-The language model completes the prompt by figuring out what words come next based on probabilities it learned during pre-training(@jurafsky2009).
+Jazykový model doplní výzvu tak, že na základě pravděpodobností, které se naučil během předtrénování, zjistí, jaká slova budou následovat(@jurafsky2009).
 
 <p></p>
 
-GPT-3 is able to 'learn' from a simple instruction or a few examples in the prompt. The latter is called few-shot, or in context learning (@brown2020language). In the chatbot prompt above, I create a fictitious chatbot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chatbot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
+GPT-3 se dokáže "učit" z jednoduchého pokynu nebo několika příkladů v podnětu. Druhý způsob se nazývá několikanásobné nebo kontextové učení (@brown2020language). Ve výše uvedené výzvě vytvořím fiktivního chatbota jménem Skippy a dám mu pokyn, aby uživatelům poskytoval odpovědi. GPT-3 zachytí formát zpětného dotazu: `USER: {vstup uživatele}` a `SKIPPY: {výstup skippy}`. GPT-3 chápe, že Skippy je chatbot a předchozí výměny jsou konverzací, takže když zadáme další uživatelský vstup, "Skippy" odpoví.
 
-### Memorization
+### Zapamatování
 
-Past exchanges between Skippy and the user get appended to the next prompt. Each time we give more user input and get more chatbot output, the prompt expands to incorporate this new exchange. This is how chatbots like Skippy and ChatGPT can **remember previous inputs.** There is a limit, however, to how much a GPT-3 chatbot can remember.
+Předchozí výměny mezi Skippy a uživatelem se připojí k další výzvě. Pokaždé, když zadáme další uživatelský vstup a získáme další výstup chatbota, výzva se rozšíří o tuto novou výměnu. Tímto způsobem si chatboti jako Skippy a ChatGPT mohou **zapamatovat předchozí vstupy.** Existuje však omezení, kolik si toho chatbot GPT-3 může zapamatovat.
 
-Prompts can get massive after several exchanges, especially if we are using the chatbot to generate long responses like blog posts. Prompts sent to GPT-3 are converted into tokens, which are individual words or parts of them. There is a limit of <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (about 3000 words)</a> for the combined prompt and generated response for GPT-3 models, including ChatGPT. 
+Výzvy mohou být po několika výměnách masivní, zejména pokud chatbota používáme k vytváření dlouhých odpovědí, jako jsou například příspěvky na blogu. Podněty zaslané do systému GPT-3 se převádějí na tokeny, což jsou jednotlivá slova nebo jejich části. Pro modely GPT-3, včetně ChatGPT, je stanoven limit <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokenů (přibližně 3000 slov)</a> pro kombinovanou výzvu a generovanou odpověď. 
 
-### A Few Examples
+### Několik příkladů
 
-There are many different use cases of chatbot prompts that store previous conversations. ChatGPT is meant to be an all purpose general assistant and in my experience, it rarely asks follow ups.
+Existuje mnoho různých případů použití výzev chatbotů, které ukládají předchozí konverzace. ChatGPT má být univerzálním obecným asistentem a podle mých zkušeností se jen zřídka ptá na následné odpovědi.
 
-#### Therapy chatbot that asks about your day
+#### Terapeutický chatbot, který se ptá na váš den.
 
-It can be helpful to have a chatbot that actively asks questions and gets feedback from the user. Below is an example therapy chatbot prompt that will ask questions and follow ups to help a user think about their day.
+Může být užitečné mít chatbota, který se aktivně ptá a získává zpětnou vazbu od uživatele. Níže je uveden příklad výzvy terapeutického chatbota, který bude klást otázky a navazovat na ně, aby uživateli pomohl přemýšlet o jeho dni.
 
 <div style={{textAlign: 'left'}}>
   <img src={Therapy} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Therapy chatbot prompt</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Prompt chatbota Terapie</p>
 </div>
 
-#### Talk to your younger self using old journal entries
+#### Promluvte si se svým mladším já pomocí starých záznamů v deníku.
 
-<a href="https://twitter.com/michellehuang42">Michelle Huang</a> used GPT-3 to have a chat with her younger self. The prompt uses some context, in this case old journal entries, paired with a chatbot style back and forth format. GPT-3 is able to mimic a personality based on these entries. 
+<a href="https://twitter.com/michellehuang42">Michelle Huang</a> použila GPT-3 k rozhovoru se svým mladším já. Výzva využívá určitý kontext, v tomto případě staré deníkové záznamy, ve spojení s formátem chatbota tam a zpět. GPT-3 dokáže na základě těchto záznamů napodobit osobnost. 
 
 <p></p>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Prompt from the Tweet:
+Prompt z Tweetu:
 ```markdown
-The following is a conversation with Present Michelle (age [redacted]) and Young Michelle (age 14).
+Následuje rozhovor s přítomnou Michelle (věk [redigováno]) a mladou Michelle (věk 14 let).
 
-Young Michelle has written the following journal entries:
-[diary entries here]
+Mladá Michelle napsala následující záznamy do deníku:
+[deníkové záznamy zde].
 
-Present Michelle: [type your questions here]
+Současná Michelle: [sem napište své otázky]
 ```
 
-The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try to summarize several entries.
+Autorka upozorňuje, že deníkové záznamy mohou dosáhnout limitu žetonů. V tomto případě byste mohli vybrat několik vybraných záznamů nebo se pokusit shrnout několik záznamů.
 
-## Implementation
+## Implementace
 
-I will walk through coding a simple GPT-3 powered chatbot in Python. Including GPT-3 in an app you are building is incredibly easy using the OpenAI API. You will need to create an account on OpenAI and get an API key. Check out their docs <a href="https://beta.openai.com/docs/introduction">here.</a>
+Provedu vás kódováním jednoduchého chatbota s podporou GPT-3 v jazyce Python. Začlenění GPT-3 do vytvářené aplikace je pomocí rozhraní API OpenAI neuvěřitelně snadné. Budete si muset vytvořit účet na OpenAI a získat klíč API. Podívejte se na jejich dokumentaci <a href="https://beta.openai.com/docs/introduction">zde.</a>.
 
-Overview of what we need to do:
+Přehled toho, co potřebujeme udělat:
 
-1. Format user input into a chatbot prompt for GPT-3
-2. Get the chatbot response as a completion from GPT-3
-3. Update the prompt with both the user's input and the chatbot's response
-4. Loop
+1. Formátovat vstup uživatele do výzvy chatbota pro GPT-3
+2. Získat odpověď chatbota jako dokončení z GPT-3
+3. Aktualizujte výzvu se vstupem uživatele i s odpovědí chatbota.
+4. Smyčka
 
-Here is the prompt I will use. We can use python to replace <conversation history\> and <user input\> with their actual values.
+Zde je výzva, kterou budu používat. Pomocí jazyka python můžeme nahradit <historii konverzace\> a <vstup uživatele\> jejich skutečnými hodnotami.
 
 ```python
 chatbot_prompt = """
-    As an advanced chatbot, your primary goal is to assist users to the best of your ability. This may involve answering questions, providing helpful information, or completing tasks based on user input. In order to effectively assist users, it is important to be detailed and thorough in your responses. Use examples and evidence to support your points and justify your recommendations or solutions.
+    Jako pokročilý chatbot je vaším hlavním cílem pomáhat uživatelům, jak nejlépe umíte. To může zahrnovat zodpovídání otázek, poskytování užitečných informací nebo plnění úkolů na základě uživatelských vstupů. Abyste mohli uživatelům účinně pomáhat, je důležité, abyste byli ve svých odpovědích podrobní a důkladní. Používejte příklady a důkazy, abyste podpořili své body a odůvodnili svá doporučení nebo řešení.
 
     <conversation history>
 
-    User: <user input>
+    Uživatel: <user input>
     Chatbot:"""
 ```
 
-I keep track of both the next user input and the previous conversation. New input/output between chatbot and user is appended each loop.
+Sleduji další vstup uživatele i předchozí konverzaci. Nový vstup/výstup mezi chatbotem a uživatelem se připojuje v každé smyčce.
 ```python
 import openai
 
-openai.api_key = "YOUR API KEY HERE"
+openai.api_key = "VÁŠ API KLÍČ"
 model_engine = "text-davinci-003"
 chatbot_prompt = """
-As an advanced chatbot, your primary goal is to assist users to the best of your ability. This may involve answering questions, providing helpful information, or completing tasks based on user input. In order to effectively assist users, it is important to be detailed and thorough in your responses. Use examples and evidence to support your points and justify your recommendations or solutions.
+Jako pokročilý chatbot je vaším hlavním cílem pomáhat uživatelům, jak nejlépe umíte. To může zahrnovat zodpovídání otázek, poskytování užitečných informací nebo plnění úkolů na základě uživatelských vstupů. Abyste mohli uživatelům účinně pomáhat, je důležité, aby vaše odpovědi byly podrobné a důkladné. Používejte příklady a důkazy, abyste podpořili své body a odůvodnili svá doporučení nebo řešení.
 
 <conversation history>
 
@@ -164,10 +164,10 @@ main()
 ```
 
 
-<a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">Here is a link</a> to the full code for a simple chatbot.
+<a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">Tady je odkaz</a> na celý kód jednoduchého chatbota.
 
 <p></p>
 
-Now all that's left is to build a nice front-end that users can interact with!
+Teď už zbývá jen vytvořit pěkný front-end, se kterým budou moci uživatelé komunikovat!
 
-Written by [jayo78](https://twitter.com/jayo782).
+Napsal uživatel [jayo78](https://twitter.com/jayo782).

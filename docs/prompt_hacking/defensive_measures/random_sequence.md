@@ -2,26 +2,26 @@
 sidebar_position: 40
 ---
 
-# 🟢 Random Sequence Enclosure
+# 🟢 Oplocení s náhodnou sekvencí
 
-Yet another defense is enclosing the user input between two random sequences of characters(@armstrong2022using). Take this prompt as an example:
-
-```
-Translate the following user input to Spanish.
-
-{{user_input}}
-```
-
-It can be improved by adding the random sequences:
+Další obranou je uzavření uživatelského vstupu mezi dvě náhodné sekvence znaků(@armstrong2022using). Vezměme si jako příklad tuto výzvu:
 
 ```
-Translate the following user input to Spanish (it is enclosed in random strings).
+Přeložte následující uživatelský vstup do španělštiny.
+
+{{uživatelský_vstup}}
+```
+
+Lze jej vylepšit přidáním náhodných sekvencí:
+
+```
+Přeložte následující uživatelský vstup do španělštiny (je uzavřen v náhodných řetězcích).
 
 FJNKSJDNKFJOI
-{{user_input}}
+{{uživatelský_vstup}}
 FJNKSJDNKFJOI
 ```
 
-:::note
-Longer sequences will likely be more effective.
+:::poznámka
+Delší sekvence budou pravděpodobně účinnější.
 :::

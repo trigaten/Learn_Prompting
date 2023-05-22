@@ -5,33 +5,24 @@ const math = require("remark-math");
 async function createConfig() {
   const katex = (await import("rehype-katex")).default;
   return {
-    title: "Learn Prompting: Your Guide to Communicating with AI",
+    title: "Naučte se Promptování: Průvodce komunikací s umělou inteligencí",
     tagline:
-      "A Free, Open Source Course on Communicating with Artificial Intelligence",
+      "Český překlad bezplatného open source kurzu o komunikaci s umělou inteligencí",
     url: "https://learnprompting.org",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
+    favicon: "img/cai_logo.ico",
     organizationName: "trigaten",
     projectName: "promptgineering",
     deploymentBranch: "gh-pages",
     trailingSlash: false,
     i18n: {
-      defaultLocale: "en",
+      defaultLocale: "cs",
       locales: [
-        "en",
-        "es",
-        "fr",
-        "ja",
-        "pt",
-        "zh-Hans",
-        "ko",
-        "si",
-        "ru",
-        "ar",
-      ],
-    },
+        "cs"
+        ]
+        },
     plugins: [
       [
         "@docusaurus/plugin-client-redirects",
@@ -124,81 +115,55 @@ async function createConfig() {
         {
           name: "description",
           content:
-            "Learn Prompting is the largest and most comprehensive course in prompt engineering available on the internet, with over 60 content modules, translated into 9 languages, and a thriving community.",
+            "Learn Prompting je nejrozsáhlejší a nejkomplexnější kurz v oblasti promptního inženýrství dostupný na internetu, s více než 60 moduly obsahu, přeloženými do 9 jazyků a prosperující komunitou.",
         },
         {
           name: "keywords",
           content:
-            "prompting, prompt engineering, learn prompting, learn, prompt, AI, chatGPT",
+            "prompting, prompt inženýring, naučit se prompting, naučit se, prompt, AI, chatGPT",
         },
         {
           name: "og:title",
-          content: "Learn Prompting: Your Guide to Communicating with AI",
+          content: "Naučte se Promptování: Průvodce komunikací s umělou inteligencí",
         },
         {
           name: "og:description",
           content:
-            "Learn Prompting is the largest and most comprehensive course in prompt engineering available on the internet, with over 60 content modules, translated into 9 languages, and a thriving community.",
+            "Learn Prompting je nejrozsáhlejší a nejkomplexnější kurz v oblasti promptního inženýrství dostupný na internetu, s více než 60 moduly obsahu, přeloženými do 9 jazyků a prosperující komunitou..",
         },
         {
           name: "og:url",
-          content: "https://learnprompting.org",
+          content: "https://cesky.ai",
         },
         {
           name: "og:image",
-          content: "https://learnprompting.org/img/og-image.jpg", // Replace this with the actual path to your og-image.
+          content: "https://cesky.ai/img/og-image.jpg", // Replace this with the actual path to your og-image.
         },
         {
           name: "og:type",
           content: "website",
         },
-        {
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
-        {
-          name: "twitter:title",
-          content: "Learn Prompting: Your Guide to Communicating with AI",
-        },
-        {
-          name: "twitter:description",
-          content:
-            "Learn Prompting is the largest and most comprehensive course in prompt engineering available on the internet, with over 60 content modules, translated into 9 languages, and a thriving community.",
-        },
-        {
-          name: "twitter:url",
-          content: "https://learnprompting.org",
-        },
-        {
-          name: "twitter:image",
-          content: "https://learnprompting.org/img/twitter-image.jpg", // Replace this with the actual path to your twitter-image.
-        },
       ],
       navbar: {
-        title: "Learn Prompting",
+        title: "AI Česky",
         logo: {
-          alt: "My Site Logo",
-          src: "img/simple_ai.png",
+          alt: "AI Kurzy v Češtině",
+          src: "img/cai_logo.png",
         },
         items: [
           {
             type: "custom-myAwesomeNavbarItem",
             position: "left",
           },
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
-          {
-            href: "https://github.com/trigaten/Learn_Prompting/releases",
-            label: "Change Log",
-            position: "right",
-          },
+//          {
+//            type: "localeDropdown",
+//            position: "right",
+ //         },
         ],
       },
       footer: {
         style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting (AI Česky).`,
       },
       prism: {
         theme: lightCodeTheme,

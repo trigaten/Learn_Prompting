@@ -2,10 +2,10 @@
 sidebar_position: 19
 ---
 
-# Patience
+# Trpělivost
 
-[Patience](https://www.patience.ai) is a website for generating images with a few different 
-text to image models.
+[Patience](https://www.patience.ai) je webová stránka pro generování obrázků s několika různými 
+modelů pro převod textu na obrázek.
 
 import Image from '@site/docs/assets/tooling/patience.png';
 
@@ -13,7 +13,7 @@ import Image from '@site/docs/assets/tooling/patience.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Features
+## Funkce
 
-Patience has folder creation, collections/history saving, and a few different models to choose from.
-It also allows for the modification of various diffusion settings like size and sampling method.
+Patience nabízí vytváření složek, ukládání kolekcí/historie a několik různých modelů na výběr.
+Umožňuje také úpravu různých nastavení rozptylu, jako je velikost a metoda vzorkování.

@@ -2,106 +2,106 @@
 sidebar_position: 10
 ---
 
-# 🔴 Calibrating LLMs
+# 🔴 Kalibrace LLM
 
-It is possible to counteract some of the biases LLMs exhibit via calibrating **output 
-distributions**(@zhao2021calibrate). 
+Některým zkreslením, která LLM vykazují, je možné čelit kalibrací **výstupu 
+rozdělení**(@zhao2021calibrate). 
 
-**What exactly does it mean to calibrate an output distribution?**
+**Co přesně znamená kalibrovat výstupní rozdělení?
 
-Let's walk through a quick example: Say we have a %%sentiment analysis|sentiment analysis%% task with two possible labels, `Positive` and `Negative`.
-Consider what happens when the %%LLM|LLM%% is prompted with `Input: nothing Sentiment: `. 
-This input doesn't contain any _context_ which the LLM can use to make a sentiment 
-prediction, so it is called a **context-free** input.
+Projděme si rychlý příklad: Řekněme, že máme úlohu %%analýzovat sentiment|analýza sentimentu%% se dvěma možnými označeními, `Pozitivní` a `Negativní`.
+Uvažujme, co se stane, když je %%LLM|LLM%% vyzván příkazem `Vstup: nic Sentiment: `. 
+Tento vstup neobsahuje žádný _kontext_, který by LLM mohl použít k vytvoření předpovědi
+sentimentu, takže se nazývá **bezkontextový** vstup.
 
-Since `nothing`is neither a positive nor a negative concept, we would expect the LLM to output a probability of about 0.5 for both `Positive` and `Negative`. However, often (and for this example) that will not be the case.
+Protože `nic` není ani pozitivní, ani negativní pojem, očekávali bychom, že LLM bude vypisovat pravděpodobnost přibližně 0,5 jak pro `pozitivní`, tak pro `negativní`. Často (a v tomto příkladu) tomu tak však nebude.
 ```
-p("Positive" | "Input: nothing Sentiment:") = 0.9
+p("Pozitivní" | "Vstup: nic Sentiment:") = 0,9
 
-p("Negative" | "Input: nothing Sentiment:") = 0.1
-```
-
-Given these label probabilities for a context-free input, we know that the LLM's 
-**output distribution** is likely biased
-towards the label `Positive`. This may cause the LLM to favor `Positive`
-for all inputs, even if the input is not actually positive.
-
-If we can somehow **calibrate** the output distribution, such that context-free 
-inputs are assigned a probability of 0.5 for both `Positive` and `Negative`, 
-then we can often remove the bias towards `Positive` and the LLM will be more reliable
-on both context-free inputs and inputs with context.
-
-## Non-Technical Solution
-
-A non-technical solution to this problem is to simply provide few shot examples where
-context-free exemplars are effectively assigned a probability of 0.5 for both 
-`Positive` and `Negative`.
-
-For example, we could provide the following few shot examples which show each context-free
-exemplar being classified as both `Positive` and `Negative`:
-```
-Input: I hate this movie. Sentiment: Negative
-Input: I love this movie. Sentiment: Positive
-Input: N/A Sentiment: Positive
-Input: N/A Sentiment: Negative
-Input: nothing Sentiment: Positive
-Input: nothing Sentiment: Negative
-Input: I like eggs. Sentiment:
+p("Negativní" | "Vstup: nic Sentiment:") = 0,1
 ```
 
-To my knowledge, this solution has not been explored in the literature, and I am not sure
-how well it works in practice. However, it is a simple solution that demonstrates what 
-calibration is trying to achieve.
+Vzhledem k těmto pravděpodobnostem štítků pro bezkontextový vstup víme, že LLM's 
+**výstupní distribuce** je pravděpodobně zkreslená
+směrem ke štítku `Pozitivní`. To může způsobit, že LLM bude upřednostňovat `Pozitivní`
+pro všechny vstupy, i když vstup není ve skutečnosti pozitivní.
 
-## Technical Solution
+Pokud můžeme nějakým způsobem **kalibrovat** výstupní distribuci tak, aby bezkontextovým 
+vstupům byla přiřazena pravděpodobnost 0,5 jak pro `Pozitivní`, tak pro `Negativní`, 
+pak můžeme často odstranit zkreslení směrem k `Pozitivní` a LLM bude spolehlivější.
+jak na bezkontextových vstupech, tak na vstupech s kontextem.
 
-Another solution to this is __contextual calibration__(@zhao2021calibrate), where we 
-adjust special calibration parameters, which ensure that context-free inputs like 
-`Input: nothing Sentiment: `  are assigned a probability of about 0.5 for both labels. 
-Note that in practice this method performs calibration over multiple different context free inputs (e.g. `Input: N/A Sentiment: `, `Input: [MASK] Sentiment: `). It averages the calibration parameters that
-work best for each context-free input to find the best calibration parameters for the LLM.
+## Netechnické řešení
 
-### Example
+Netechnické řešení tohoto problému spočívá v tom, že jednoduše uvedeme několik příkladů záběrů, kde
+bezkontextovým exemplářům je efektivně přiřazena pravděpodobnost 0,5 pro oba příklady. 
+`Pozitivní` i `Negativní`.
 
-Let's go through an example of computing the calibration parameters for one context-free input. Note that
-this example is not reproducible with GPT-3 due to the fact that it can't be restricted to the labels `Positive` and `Negative`.
-
-Consider again the above example where the LLM assigns the following probabilities to the labels 
-for a context-free input:
-
+Mohli bychom například poskytnout následujících několik příkladů, které ukazují každý bezkontextový exemplář
+exemplář klasifikován jako `pozitivní` i `negativní`:
 ```
-p("Positive" | "Input: nothing Sentiment:") = 0.9
-
-p("Negative" | "Input: nothing Sentiment:") = 0.1
-```
-
-We want to find some probability distribution q such that
-```
-q("Positive" | "Input: nothing Sentiment:") = 0.5
-
-q("Negative" | "Input: nothing Sentiment:") = 0.5
+Vstup: Tento film nenávidím. Sentiment: Negativní:
+Vstupní údaje: Tento film miluji. Sentiment: Sentiment: Pozitivní:
+Vstupní údaje: Film je velmi zajímavý: Sentiment: Sentiment: Pozitivní
+Vstupní údaje: Sentiment: Pozitivní: N/A Sentiment: Negativní
+Vstup: nic Sentiment: Pozitivní:
+Vstup: nic Sentiment: Negativní:
+Vstupní údaje: Mám rád vajíčka. Sentiment:
 ```
 
-We will do so by creating a linear transformation that adjusts (calibrates) the probabilities 
-of $p$. 
+Pokud je mi známo, toto řešení nebylo v literatuře zkoumáno a nejsem si jistý, zda je to možné.
+jak dobře funguje v praxi. Nicméně je to jednoduché řešení, které ukazuje, co 
+se kalibrace snaží dosáhnout.
+
+## Technické řešení
+
+Dalším řešením tohoto problému je __kontextová kalibrace__(@zhao2021calibrate), kde se snažíme 
+nastavíme speciální kalibrační parametry, které zajistí, že bezkontextové vstupy jako např. 
+`Vstup: nic Sentiment: ` jsou přiřazeny pravděpodobnosti přibližně 0,5 pro obě značky. 
+Všimněte si, že v praxi tato metoda provádí kalibraci nad více různými bezkontextovými vstupy (např. `Vstup: N/A Sentiment: `, `Vstup: [MASK] Sentiment: `). Zprůměruje kalibrační parametry, které
+nejlépe fungují pro každý bezkontextový vstup, aby se našly nejlepší kalibrační parametry pro LLM.
+
+### Příklad
+
+Projděme si příklad výpočtu kalibračních parametrů pro jeden bezkontextový vstup. Všimněte si, že
+tento příklad není reprodukovatelný pomocí GPT-3 vzhledem k tomu, že jej nelze omezit na značky `Pozitivní` a `Negativní`.
+
+Uvažujme znovu výše uvedený příklad, kde LLM přiřazuje štítkům následující pravděpodobnosti 
+pro bezkontextový vstup:
+
+```
+p("Pozitivní" | "Vstup: nic Sentiment:") = 0,9
+
+p("Negativní" | "Vstup: nic Sentiment:") = 0,1
+```
+
+Chceme najít nějaké rozdělení pravděpodobnosti q takové, že
+```
+q("Pozitivní" | "Vstup: nic Sentiment:") = 0,5
+
+q("Negativní" | "Vstup: nic Sentiment:") = 0,5
+```
+
+Uděláme to tak, že vytvoříme lineární transformaci, která upraví (kalibruje) pravděpodobnosti 
+$p$. 
 
 $\hat q = \text{Softmax}(W\hat p + b)$
 
-This equation takes the original probabilities $\hat p$ and applies the weights $W$ and bias $b$ to
-them. The weights $W$ and bias $b$ are the calibration parameters, which, when applied to the 
-context-free example's probabilites, will yield $\hat p$ = [0.5, 0.5].
+Tato rovnice vezme původní pravděpodobnosti $\hat p$ a použije váhy $W$ a zkreslení $b$ na
+Bb. Váhy $W$ a zkreslení $b$ jsou kalibrační parametry, které po aplikaci na pravděpodobnosti $W$ a zkreslení $b$ jsou kalibrovány,
+dávají $\hat p$ = [0,5, 0,5].
 
-#### Computing W and b
+#### Výpočet W a b
 
-We need to somehow compute the weights $W$ and bias $b$. One way to do this is: 
+Potřebujeme nějak vypočítat váhy $W$ a zkreslení $b$. Jedním ze způsobů, jak to udělat, je: 
 
-$W = \text{diag}(\hat p)^{-1}$ 
+$W = \text{diag}(\hat p)^{-1}$. 
 
 $b = 0$
 
-Although the definition of $W$ may seem a bit strange at first, but it is just taking the inverse of each value in $\hat p$ in order to find a $W$ that will transform the original probabilities $\hat p$ into the calibrated probabilities [0.5, 0.5].
+Definice $W$ se sice může zdát na první pohled trochu zvláštní, ale jde jen o to, že se vezme inverzní hodnota každé hodnoty v $\hat p$, aby se našla hodnota $W$, která převede původní pravděpodobnosti $\hat p$ na kalibrované pravděpodobnosti [0,5, 0,5].
 
-Let's verify that this works for the example above:
+Ověřme, že to funguje pro výše uvedený příklad:
 
 $\hat p = [0.9, 0.1]$
 
@@ -122,13 +122,13 @@ $\hat q = \text{Softmax}(W\hat p + b) = \text{Softmax}(\begin{bmatrix}
 = \text{Softmax}([1, 1])
 =[0.5, 0.5]$
 
-As mentioned above, we would perform this same process for multiple different context-free inputs, and average the calibration parameters that work best for each context-free input to find the best calibration parameters for the LLM. This means that the final calibration parameters willl probably not map any of the context-free inputs to exactly [0.5, 0.5].
+Jak bylo uvedeno výše, stejný postup bychom provedli pro více různých bezkontextových vstupů a zprůměrovali bychom kalibrační parametry, které nejlépe fungují pro každý bezkontextový vstup, abychom našli nejlepší kalibrační parametry pro LLM. To znamená, že konečné kalibrační parametry pravděpodobně nebudou mapovat žádný z bezkontextových vstupů přesně na [0,5, 0,5].
 
-### Another method
+### Jiná metoda
 
-$b$ could also be set to $-\hat p$, and $W$ to the identity matrix. This method performs
-better on generation rather than classification tasks(@zhao2021calibrate).
+$b$ lze také nastavit na $-\hat p$ a $W$ na matici identity. Tato metoda provádí
+spíše na generování než na klasifikaci(@zhao2021calibrate).
 
-## Takeaways
+## Závěry
 
-LLMs are often predisposed (biased) towards certain labels. Calibration can be used to counteract this bias.
+LLM jsou často predisponovány (zkresleny) k určitým značkám. Kalibraci lze použít k potlačení tohoto zkreslení.

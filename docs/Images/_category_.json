@@ -1,8 +1,8 @@
 {
-  "label": "🖼️ Image Prompting",
+  "label": "🖼️ Prompting obrázků",
   "position": 40,
   "link": {
     "type": "generated-index",
-    "description": "Prompt engineering for text to image models like DALLE and Stable Diffusion!"
+    "description": "Prompt engineering pro modely převodu textu na obraz, jako je DALLE a stabilní difúze!"
   }
 }

@@ -2,12 +2,12 @@
 sidebar_position: 4
 ---
 
-# 🟡 Code as Reasoning
+# 🟡 Kód jako zdůvodnění
 
-[Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) are another example of a MRKL system.
-When given a question, PALs are able to **write code** that solves this question. They send the
-code to a programmatic runtime to get the result. PAL works in contrast to CoT; PAL's intermediate 
-reasoning is code, while CoT's is natural language.
+Dalším příkladem systému MRKL jsou [Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal).
+Když je jim zadána otázka, PAL jsou schopny **napsat kód**, který tuto otázku vyřeší. Odesílají
+kód do programového běhu, aby získal výsledek. PAL pracuje na rozdíl od CoT; PAL je meziproduktem 
+uvažování je kód, zatímco u CoT je to přirozený jazyk.
 
 import image from '@site/docs/assets/pal.png';
 
@@ -16,21 +16,21 @@ import image from '@site/docs/assets/pal.png';
 </div>
 
 <div style={{textAlign: 'center'}}>
-PAL Example (Gao et al.)
+Příklad PAL (Gao a kol.)
 </div>
 
 
-One important thing to note it that PAL actually interleaves natural language (NL) and code.
-In the above image, in blue are natural language reasoning that PAL generates. Although it
-is not shown in the image, PAL actually generates '\#' before each line of NL reasoning, so
-that they are interpreted as comments by the programmatic runtime.
+Je třeba si uvědomit jednu důležitou věc: PAL ve skutečnosti prolíná přirozený jazyk (NL) a kód.
+Na výše uvedeném obrázku jsou modře vyznačeny úvahy v přirozeném jazyce, které PAL generuje. Ačkoli se jedná o
+není na obrázku zobrazen, PAL ve skutečnosti generuje '\#' před každým řádkem úvahy NL, takže
+aby je programový běh interpretoval jako komentáře.
 
-## Example
+## Příklad
 
-Let's look at an example of PAL solving a math question. I use a 3-shot prompt, 
-which is a simplified version of [this one](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
+Podívejme se na příklad, jak PAL řeší matematickou otázku. Používám výzvu se třemi snímky, 
+která je zjednodušenou verzí [této](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
 
-I will use langchain, a Python package for chaining LLM functionality for this. First, a few installations are needed:
+Použiji k tomu langchain, balíček jazyka Python pro řetězení funkcí LLM. Nejprve je potřeba provést několik instalací:
 
 ```python
 !pip install langchain==0.0.26
@@ -40,32 +40,32 @@ import os
 os.environ["OPENAI_API_KEY"] = "sk-YOUR_KEY_HERE"
 ```
 
-Then, we can create an instance of GPT-3 davinci-002 (an API call happens when we use this object)
+Poté můžeme vytvořit instanci GPT-3 davinci-002 (volání API se uskuteční, když použijeme tento objekt)
 ```
 llm = OpenAI(model_name='text-davinci-002', temperature=0)
 ```
 
-Here is the few shot prompt:
+Zde je few shot prompt:
 
 ```python
 MATH_PROMPT = '''
-Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+Q: V serverovně bylo devět počítačů. Každý den od pondělí do čtvrtka bylo instalováno dalších pět počítačů. Kolik počítačů je nyní v serverovně?
 
-# solution in Python:
-"""There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?"""
+# řešení v jazyce Python:
+"""V serverovně bylo devět počítačů. Každý den, od pondělí do čtvrtka, bylo nainstalováno dalších pět počítačů. Kolik počítačů je nyní v serverovně?"""
 computers_initial = 9
-computers_per_day = 5
-num_days = 4  # 4 days between monday and thursday
+omputers_per_day = 5
+num_days = 4 # 4 dny od pondělí do čtvrtka
 computers_added = computers_per_day * num_days
 computers_total = computers_initial + computers_added
 result = computers_total
 return result
 
 
-Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
+Otázka: Shawn má pět hraček. K Vánocům dostal od maminky a tatínka po dvou hračkách. Kolik hraček má nyní?
 
-# solution in Python:
-"""Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?"""
+# řešení v Pythonu:
+"""Shawn má pět hraček. K Vánocům dostal od maminky a tatínka po dvou hračkách. Kolik hraček má nyní?"""
 toys_initial = 5
 mom_toys = 2
 dad_toys = 2
@@ -74,53 +74,53 @@ total_toys = toys_initial + total_received
 result = total_toys
 
 
-Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+Otázka: Jason měl 20 lízátek. Dal Dennymu několik lízátek. Nyní má Jason 12 lízátek. Kolik lízátek dal Jason Dennymu?
 
-# solution in Python:
-"""Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?"""
+# řešení v Pythonu:
+"""Jason měl 20 lízátek. Dal Dennymu několik lízátek. Nyní má Jason 12 lízátek. Kolik lízátek dal Jason Dennymu?"""
 jason_lollipops_initial = 20
 jason_lollipops_after = 12
 denny_lollipops = jason_lollipops_initial - jason_lollipops_after
 result = denny_lollipops
 
-Q: {question}
+Otázka: {otázka}
 
-# solution in Python:
+# řešení v Pythonu:
 '''
 ```
 
-Now we can pass the combined prompt to GPT-3.
+Nyní můžeme kombinovaný dotaz předat GPT-3.
 
 ```
 llm_out = llm(MATH_PROMPT.format(question=question))
 print(llm_out)
 ```
 
-The output is:
+Výstup je následující:
 
 <pre>
 <span className="bluegreen-highlight">
-Emma took a 60 minute plane ride to seattle. She then took a 2 hour train ride to portland, and then a 30 minute bus ride to vancouver. How long did it take her to get to vancouver?<br/><br/>
+Emma letěla 60 minut letadlem do Seattlu. Poté jela 2 hodiny vlakem do Portlandu a následně 30 minut autobusem do Vancouveru. Jak dlouho jí trvala cesta do vancouveru?<br/><br/>?
 
 plane_ride = 60<br/>
-train_ride = 2 * 60  # 2 hours in minutes<br/>
+train_ride = 2 * 60  # 2 hodiny v minutách<br/>
 bus_ride = 30<br/>
 total_time = plane_ride + train_ride + bus_ride<br/>
 result = total_time
 </span>
 </pre>
 
-Finally, we can pass this code to a Python runtime to get the answer:
+Nakonec můžeme tento kód předat Python runtime a získat odpověď:
 
 ```python
 exec(llm_out)
 print(result)
 ```
 
-The output is **210**, which is correct.
+Výsledek je **210**, což je správně.
 
-See the Jupyter notebook for this example [here](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
+Viz zápisník Jupyter pro tento příklad [zde](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
 
-## More
+## Více
 
-Also see [PAL's colab example](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).
+Podívejte se také na příklad [PAL's colab example](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).

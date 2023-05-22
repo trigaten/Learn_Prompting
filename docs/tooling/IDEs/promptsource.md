@@ -4,8 +4,8 @@ sidebar_position: 7
 
 # PromptSource 
 
-[PromptSource](https://github.com/bigscience-workshop/promptsource)(@bach2022promptsource) is a research tool for prompt engineering. It was used in the development of 
-BLOOM(@scao2022bloom), a well known multilingual LLM.
+[PromptSource](https://github.com/bigscience-workshop/promptsource)(@bach2022promptsource) je výzkumný nástroj pro prompt engineering. Byl použit při vývoji 
+BLOOM(@scao2022bloom), známého vícejazyčného LLM.
 
 
 import Image from '@site/docs/assets/tooling/promptsource.png';
@@ -14,7 +14,7 @@ import Image from '@site/docs/assets/tooling/promptsource.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Features
+## Funkce
 
-PromptSource allows for automated testing on datasets, and provides a clean
-interface via streamlit.
+PromptSource umožňuje automatizované testování na sadách dat a poskytuje čistý
+rozhraní prostřednictvím streamlit.

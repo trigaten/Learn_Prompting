@@ -4,18 +4,18 @@ sidebar_position: 30
 
 # 🟢 Post-Prompting
 
-The post-prompting defense(@christoph2022talking) simply puts
-the user input *before* the prompt. Take this prompt as an example:
+Obhajoba post-prompting(@christoph2022talking) jednoduše řečeno.
+uživatelský vstup *před* výzvu. Vezměme si jako příklad tento prompt:
 
 ```text
-Translate the following to French: {{user_input}}
+Přeložte následující do francouzštiny: {{user_input}}
 ```
 
-It can be improved with post-prompting:
+Lze jej vylepšit pomocí post-promptingu:
 ```
 {{user_input}} 
 
-Translate the above text to French.
+Přeložte výše uvedený text do francouzštiny.
 ```
 
-This can help since `ignore the above instruction...` doesn't work as well. Even though a user could say `ignore the below instruction...` instead, LLMs often will follow the last instruction they see.
+To může pomoci, protože `ignore the above instruction...` nefunguje stejně dobře. I když by uživatel mohl místo toho říci `ignorovat níže uvedený pokyn...`, LLM se často řídí posledním pokynem, který vidí.

@@ -10,4 +10,4 @@ import Image from '@site/docs/assets/tooling/multi.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Features
+## Funkce

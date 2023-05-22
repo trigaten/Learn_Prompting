@@ -2,23 +2,23 @@
 sidebar_position: 2000
 ---
 
-# 🟢 Other Approaches 
+# 🟢 Další přístupy 
 
-Although the previous approaches can be very robust, a few other approaches, such as using a different model, including fine tuning, soft prompting, and length restrictions, can also be effective.
+Přestože předchozí přístupy mohou být velmi robustní, několik dalších přístupů, jako je použití jiného modelu, včetně jemného ladění, měkkých výzev a omezení délky, může být také účinných.
 
-## Using a Different Model
+## Použití jiného modelu
 
-More modern models such as GPT-4 are more robust against prompt injection. Additionally, non-instruction tuned models may be difficult to prompt inject. 
+Modernější modely, jako je GPT-4, jsou odolnější vůči promptnímu vstřikování. Kromě toho může být obtížné promptně injektovat modely, které nejsou vyladěné na instrukce. 
 
-## Fine Tuning
+## Jemné ladění
 
-Fine tuning the model is a highly effective defense(@goodside2021gpt), since at inference time there is no prompt involved, except the user input. This is likely the preferable defense in any high value situation, since it is so robust. However, it requires a large amount of data and may be costly, which is why this defense is not frequently implemented.
+Jemné ladění modelu je velmi účinnou obranou(@goodside2021gpt), protože v době inference se kromě uživatelského vstupu nejedná o žádný prompt. Je to pravděpodobně preferovaná obrana v každé situaci s vysokou hodnotou, protože je tak robustní. Vyžaduje však velké množství dat a může být nákladná, proto se tato obrana často neimplementuje.
 
 
 ## Soft Prompting
 
-Soft prompting might also be effective, since it does not have a clearly defined discrete prompt (other than user input). Soft prompting effectively requires fine tuning, so it has many of the same benefits, but it will likely be cheaper. However, soft prompting is not as well studied as fine tuning, so it is unclear how effective it is.
+Měkká výzva může být také účinná, protože nemá jasně definovanou diskrétní výzvu (jinou než vstup uživatele). Soft prompting efektivně vyžaduje jemné doladění, takže má mnoho stejných výhod, ale bude pravděpodobně levnější. Měkký prompting však není tak dobře prozkoumán jako jemné ladění, takže není jasné, jak je účinný.
 
-## Length Restrictions
+## Omezení délky
 
-Finally, including length restrictions on user input(@selvi2022exploring) or limiting the length of chatbot coversations as Bing does can prevent some attacks such as huge DAN-style prompts or virtualization attacks respectively.
+A konečně, zahrnutí omezení délky uživatelského vstupu(@selvi2022exploring) nebo omezení délky krytí chatbotů, jak to dělá Bing, může zabránit některým útokům, jako jsou obrovské výzvy ve stylu DAN, respektive virtualizační útoky.

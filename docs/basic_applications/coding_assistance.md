@@ -2,11 +2,11 @@
 sidebar_position: 40
 ---
 
-# 🟡 Coding Assistance
+# 🟡 Pomoc při kódování
 
-You can use ChatGPT for debugging, code generation, reformatting, commenting, and more. It can work with code in over 40 programming languages. 
+ChatGPT můžete využít k ladění, generování kódu, přeformátování, komentování a dalším činnostem. Dokáže pracovat s kódem ve více než 40 programovacích jazycích. 
 
-|   Very Old  |         Old    |     Recent          |    Bleeding Edge      |
+|   Moc staré |    Staré       |     Relevantní      |     Nejnovější        |
 |-------------|----------------|---------------------|-----------------------|
 | BASIC       | Perl           | Swift               | Kotlin                |
 | Assembly    | Pascal         | TypeScript          | Julia                 |
@@ -19,15 +19,15 @@ You can use ChatGPT for debugging, code generation, reformatting, commenting, an
 | Forth       | Tcl            | Groovy              | Vlang                 |
 | Ada         | SQL            | Scala Native        | Erlang                |
 
-## Code Generation
+## Generování kódu
 
-Instructing ChatGPT to generate code is as simple as this:
+Pokyn ChatGPT k vygenerování kódu je jednoduchý:
 
 ```text
-Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
+Chovejte se jako mladší programátor v Pythonu. Napište prosím kód, který vygeneruje madliby ze 3 polí po 6 položkách: předložky, slovesa a podstatná jména, přičemž podstatná jména se používají také jako přímé objekty. Po jeho napsání kód spusťte.
 ```
 
-The output will be something like:
+Výstup bude vypadat nějak takto:
 
 ```text
 // highlight-start
@@ -47,26 +47,26 @@ print(madlib)
 // highlight-end
 ```
 
-Try it here:
+Vyzkoušejte si to zde:
 
 <div 
 trydyno-embed="" 
 openai-model="text-davinci-003" 
-initial-prompt="Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects." 
+initial-prompt="Jednejte jako mladší programátor v Pythonu. Napište prosím kód, který vygeneruje madliby ze 3 polí po 6 položkách: předložky, slovesa a podstatná jména, přičemž podstatná jména budou použita i jako přímé objekty." 
 initial-response="" 
 max-tokens="512" 
 box-rows="5" 
 model-temp="0.0" 
 top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+    <noscript>Nepodařilo se načíst Dyno Embed: JavaScript musí být povolen</noscript>
 </div>
 
-## Commenting and Reformatting Code
+## Komentování a přeformátování kódu
 
-You can ask ChatGPT to add comments to your code, and reformat it for legibility. After your prompt instruction, add three hashmarks and then paste in the code you'd like it to clean up:
+Můžete požádat ChatGPT, aby do vašeho kódu přidal komentáře a přeformátoval jej pro lepší čitelnost. Po vašem pokynu přidejte tři hashmarky a poté vložte kód, který chcete, aby poupravil:
 
 ```text
-Please add line comments to this Python code and reformat it for legibility:  
+Prosím, přidejte do tohoto kódu Pythonu komentáře k řádkům a přeformátujte jej pro lepší čitelnost:  
 
 import math
 amplitude = 30
@@ -78,45 +78,45 @@ for i in range(num_points):
 ###
 ```
 
-The output will be something like:
+Výstup bude vypadat takto:
 
 ```text
 // highlight-start
-# Import the math module
+# Import matematického modulu
 import math
 
-# Set the amplitude, frequency, and number of points in the wave
+# Nastavte amplitudu, frekvenci a počet bodů vlny
 amplitude = 30
-frequency = 2
+frekvence = 2
 num_points = 50
 
-# Loop over each point in the wave
+# Projděte ve smyčce každý bod vlny
 for i in range(num_points):
-    # Calculate the y value of the wave using the sine function from the math module
+    # Vypočítejte hodnotu y vlny pomocí funkce sinus z matematického modulu
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
     
-    # Print a space for padding, followed by an asterisk at the appropriate position on the wave
-    print(' ' * (amplitude + y) + '*')
+    # Vypište mezeru pro vyplnění, následovanou hvězdičkou na příslušném místě vlny
+    print(' ' * (amplituda + y) + '*')
 
 // highlight-end
 ```
 
-## Debugging
+## Ladění
 
-Not only can ChatGPT detect syntax errors in code, but it can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error on line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
+Program ChatGPT dokáže nejen odhalit syntaktické chyby v kódu, ale také logické chyby, které by se objevily při provádění kódu. Níže je uveden příklad skriptu v jazyce Python, který nakonec způsobí chybu dělení nulou na řádku 4 kvůli logické chybě na řádku 3.  Vyzkoušejte tuto jednoduchou výzvu k nalezení a opravě chyby:
 
 ```text
-Please debug this Python code:  
+Prosím, vylaďte tento kód Pythonu:  
 
 1. pizza_cost = 100
 2. partygoers = 10
 3. while partygoers = 0:
-4.    cost_per_person = pizza_cost / partygoers
-5.    print("the cost per person is $", "{:.2f}".format(cost_per_person))
-6.    partygoers -= 2
+4. cost_per_person = pizza_cost / partygoers
+5. print("náklady na osobu jsou $", "{:.2f}".format(cost_per_person))
+6. partygoers -= 2
 ```
 
-The output will include the corrected while loop, which is changed to ensure the denominator variable stays positive:
+Výstup bude obsahovat opravenou smyčku while, která je změněna tak, aby proměnná ve jmenovateli zůstala kladná:
 
 ```text
 // highlight-start
@@ -124,18 +124,18 @@ The output will include the corrected while loop, which is changed to ensure the
 // highlight-end
 ```
 
-For more nuanced errors, you may need to add more specifics: the error message, environment variables, included libraries or variations in inputs. 
+V případě složitějších chyb může být nutné přidat další specifika: chybové hlášení, proměnné prostředí, zahrnuté knihovny nebo varianty vstupů. 
 
 
-## Optimizing Code
+## Optimalizace kódu
 
-If your script is taking too long to execute, ChatGPT can optimize it. Here's an example of optimizing an inefficient script that finds prime numbers:
+Pokud se váš skript provádí příliš dlouho, ChatGPT jej může optimalizovat. Zde je příklad optimalizace neefektivního skriptu, který hledá prvočísla:
 
 ```text
-Act like a very senior python developer. Please optimize this script:  
+Chovejte se jako velmi zkušený vývojář jazyka Python. Optimalizujte prosím tento skript:  
 
 for num in range(1, 101):
-    if num  1:
+    if num 1:
         for i in range(2, num):
             if (num % i) == 0:
                 break
@@ -143,7 +143,7 @@ for num in range(1, 101):
             print(num)
 ```
 
-The output might be a script that uses the [Sieve of Eratosthenes algorithm](https://www.geeksforgeeks.org/sieve-of-eratosthenes/) for finding prime numbers:
+Výstupem může být skript, který používá [Eratosthenův algoritmus](https://www.geeksforgeeks.org/sieve-of-eratosthenes/) pro hledání prvočísel:
 
 ```text
 // highlight-start
@@ -156,15 +156,15 @@ print(numbers)
 // highlight-end
 ```
 
-Note that we asked the bot to "act like a _senior_ developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask ChatGPT to write that script "as a _very junior_ developer."
+Všimněte si, že jsme bota požádali, aby se "choval jako _starší_ vývojář" a optimalizoval skript. Můžete mu také nařídit, aby měl určitou odbornost (např. třídicí algoritmy) nebo počet let zkušeností. Případně, pokud máte skript, který se vám zdá příliš složitý, můžete ChatGPT požádat, aby tento skript napsal "jako _velmi juniorní_ vývojář".
 
 
-## Translating Between Programming Languages
+## Překlad mezi programovými jazyky
 
-A very useful feature ChatGPT offers is the ability to port programs from one language to another. A typical use for this might be upgrading code in an older language to a more modern one:
+Velmi užitečnou funkcí, kterou ChatGPT nabízí, je možnost přenášet programy z jednoho jazyka do druhého. Typickým využitím může být aktualizace kódu ve starším jazyce na modernější:
 
 ```text
-Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
+Chovejte se jako zkušený vývojář se znalostí jazyka COBOL i Python. Převeďte tento program v jazyce COBOL do jazyka Python:  
 
 
 IDENTIFICATION DIVISION.
@@ -185,54 +185,54 @@ DISPLAY "Social Security tax is: $", SS-TAX.
 STOP RUN.
 ```
 
-The output might be something like this:
+Výstup by mohl vypadat takto:
 
 ```text
 // highlight-start
-salary = float(input("Enter employee's salary: "))
-ss_tax = salary * 0.062
+plat = float(input("Zadejte plat zaměstnance: "))
+ss_tax = plat * 0,062
 
-print("Social Security tax is: $", round(ss_tax, 2))
+print("Daň ze sociálního pojištění je: $", round(ss_tax, 2))
 // highlight-end
 ```
 
 
-## Handling Multiple Files and Refactoring your Codebase
+## Práce s více soubory a refaktorizace kódové základny
 
-What if you want ChatGPT to evaluate **multiple** files? Simply supply the filenames and paste the code for each:
+Co když chcete, aby ChatGPT vyhodnocoval **více** souborů? Jednoduše zadejte názvy souborů a vložte kód pro každý z nich:
 
 ```text
-My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
+Můj skript v Pythonu používá dva níže uvedené soubory v různých adresářích. Zobrazte prosím výstup ze spuštění souboru conversation.py:
 
 BEGIN FILE 1: ./phrases/coming_and_going.py
 def hi(name):
-   print(f"Hello, {name}!")
+   print(f "Ahoj, {name}!")
 def bye(name):
-   print(f"Goodbye, {name}!")
+   print(f "Sbohem, {name}!")
 
 BEGIN FILE 2: ./conversation.py
 from phrases.coming_and_going import hi, bye
-hi("John")
-bye("John")
+ahoj("John")
+sbohem("John")
 
 // highlight-start
-Hello, John!
-Goodbye, John!
+Ahoj, Johne!
+Sbohem, Johne!
 // highlight-end
 ```
 
 
-Using this technique, you can submit multiple files to ChatGPT in a single prompt and ask it to refactor the code. Alternatively, you can ask it to "memorize" each one and then execute it in a later prompt.
+Pomocí této techniky můžete ChatGPT odeslat více souborů v jedné výzvě a požádat jej o refaktorizaci kódu. Případně jej můžete požádat, aby si každý z nich "zapamatoval" a pak jej provedl v pozdější výzvě.
 
-## Simulating a Database Server
+## Simulace databázového serveru
 
-Not only can ChatGPT work with code, but it can simulate server environments like databases, web and email servers. Consider this prompt:
+ChatGPT umí pracovat nejen s kódem, ale také simulovat serverová prostředí, jako jsou databáze, webové a e-mailové servery. Vezměme si tuto výzvu:
 
 ```text
-Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
+Chovejte se jako Microsoft SQL Server. Vytvořte databázi s názvem "politics" a uvnitř ní tabulku s názvem "politicians". Naplňte ji 50 řádky slavných politiků z celého světa z různých období v letech 1900-2000. Přidejte sloupce pro jejich celá jména, země, data narození a případně data úmrtí. Vytvořte zobrazení pro 3 nejdéle žijící politiky. Vytvořte a spusťte příkaz Transact-SQL, který vypíše obsah tohoto pohledu.
 ```
 
-The output will be something like:
+Výstup bude vypadat asi takto:
 
 ```text
 // highlight-start
@@ -256,13 +256,13 @@ CREATE TABLE politicians (
 // highlight-end
 ```
 
-From there, you can add columns, indexes and more:
+Odtud můžete přidávat sloupce, indexy a další položky:
 
 ```
-Add a column to the politicians table for the second-in-command and update it for each row.
+Přidejte sloupec do tabulky politiků pro druhého v pořadí a aktualizujte jej pro každý řádek.
 ```
 
-The output might be something like:
+Výstup může vypadat například takto:
 
 ```text
 // highlight-start
@@ -280,18 +280,18 @@ SET second_in_command =
 // highlight-end
 ```
 
-## Simulating a Web Server
+## Simulace webového serveru
 
-ChatGPT can simulate many other servers and APIs. Here's an example of a prompt that simulates an Apache server response to specific browser request headers:
+ChatGPT může simulovat mnoho dalších serverů a rozhraní API. Zde je příklad výzvy, která simuluje odpověď serveru Apache na konkrétní hlavičky požadavků prohlížeče:
 
 ```text
-Act as an Apache web server. How would you respond to these HTTP headers?
+Chovejte se jako webový server Apache. Jak byste reagovali na tyto hlavičky HTTP?
 
 GET /example HTTP/1.1
 Host: www.example.com
 ```
 
-The output will be something like:
+Výstup bude vypadat asi takto:
 
 ```text
 // highlight-start
@@ -303,9 +303,9 @@ Content-Type: [MIME type of the requested resource, e.g. text/html]
 // highlight-end
 ```
 
-Here are just some of the types of servers and APIs that ChatGPT can emulate:
+Zde jsou uvedeny jen některé typy serverů a rozhraní API, které může ChatGPT emulovat:
 
-|   Very Old  |     Old        |        Recent          |    Bleeding Edge     |
+|   Moc staré |     Staré      |        Aktuální        |    Nejnovější        |
 |-------------|----------------|------------------------|----------------------|
 | Telnet      | HTTP/1.0       | RESTful API            | GraphQL API          |
 | FTP         | SMTP           | SOAP API               | GRPC API             |
@@ -319,15 +319,15 @@ Here are just some of the types of servers and APIs that ChatGPT can emulate:
 | SMB         | JSON-RPC       | Google Cloud Endpoints | NATS Streaming API   |
 
 
-## Simulating a Command Line
+## Simulace příkazového řádku
 
-Since a shell within Linux (or Windows PowerShell) is also a programming language, you can interact with it using ChatGPT, and build an environment for your filesystem:
+Protože shell v Linuxu (nebo Windows PowerShell) je také programovací jazyk, můžete s ním komunikovat pomocí ChatGPT a vytvořit prostředí pro svůj souborový systém:
 
 ```
-Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
+Chovejte se jako příkazový shell systému Debian Linux. Odpovídejte na mé příkazy tak, jak by to udělal terminál, s co nejmenším množstvím vysvětlení. Můj první příkaz je: ls -l
 ```
 
-The output will be something like:
+Výstup bude vypadat nějak takto:
 
 ```text
 // highlight-start
@@ -337,27 +337,27 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 // highlight-end
 ```
 
-Try experimenting with other commands:
+Zkuste experimentovat s dalšími příkazy:
 
 ```text
->touch greeting.txt  
->echo "hello" > greeting.txt  
+>touch pozdrav.txt  
+>echo "ahoj" > pozdrav.txt  
 >ls -l  
 ```
 
-ChatGPT should remember your changes (for a while, at least) and the final output ought to something like:
+ChatGPT by si měl vaše změny zapamatovat (alespoň na chvíli) a konečný výstup by měl vypadat nějak takto:
 
 ```text
 // highlight-start
--rw-r--r--  1 user  group   2048 Mar  3 14:23 file1.txt
-drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
--rwx------  1 user  group  16384 Feb 25 19:41 executable1
--rw-r--r--  1 user  group      6 Mar  4 16:15 greeting.txt
+-rw-r--r-- 1 user group 2048 3. března 14:23 soubor1.txt
+drwxr-xr-x 2 user group 4096 28. února 09:12 adresář1
+-rwx------ 1 skupina uživatelů 16384 25. února 19:41 spustitelný1
+-rw-r--r-- 1 skupina uživatelů 6 4. března 16:15 pozdrav.txt
 // highlight-end
 ```
 
-A full discussion of using ChatGPT as a virtual machine can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
+Úplnou diskusi o použití ChatGPT jako virtuálního počítače najdete na [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
 
 ---
 
-Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes.com/).
+Přispěla společnost Prompt Yes!, která poskytuje [prompt engineering training](https://promptyes.com/).

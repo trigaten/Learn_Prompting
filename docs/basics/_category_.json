@@ -1,8 +1,8 @@
 {
-  "label": "😃 Basics",
+  "label": "😃 Základy",
   "position": 10,
   "link": {
     "type": "generated-index",
-    "description": "Intro to PE and simple PE techniques."
+    "description": "Úvod do Prompt Engeneeringu a jednoduché PE techniky."
   }
 }

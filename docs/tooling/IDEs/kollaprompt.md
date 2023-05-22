@@ -4,8 +4,8 @@ sidebar_position: 14
 
 # Kolla Prompt 🚧
 
-[Kolla Prompt](https://kollaprompt.com) is a tool for graphically chaining 
-prompts. 
+[Kolla Prompt](https://kollaprompt.com) je nástroj pro grafické řetězení 
+výzev. 
 
 import Image from '@site/docs/assets/tooling/kollaprompt.png';
 
@@ -13,7 +13,7 @@ import Image from '@site/docs/assets/tooling/kollaprompt.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Features
+## Funkce
 
-Kolla features draggable blocks that are piped together to form a pipeline. It 
-also allows for chaining language models to image models.
+Kolla obsahuje přetahovací bloky, které jsou spojeny do potrubí a tvoří tak potrubí. To 
+umožňuje také řetězení jazykových modelů s obrazovými modely.

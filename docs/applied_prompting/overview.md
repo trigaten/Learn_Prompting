@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 Úvod
 
-Now we will discuss the end-to-end prompt engineering process via articles written
-by community members.
+Nyní se budeme zabývat procesem inženýrství end-to-end promptů prostřednictvím článků napsaných
+členy komunity.

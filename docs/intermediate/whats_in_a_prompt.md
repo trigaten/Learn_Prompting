@@ -2,19 +2,19 @@
 sidebar_position: 7
 ---
 
-# 🟢 What's in a Prompt?
+# 🟢 Co se skrývá v promptu?
 
-We have gone through a few different prompting strategies in the previous pages.
-This page will offer some general advice about what is actually important in a prompt.
-
-
-## "Ground Truth Matters Little"
+Na předchozích stránkách jsme si prošli několik různých strategií promptingu.
+Na této stránce vám nabídneme několik obecných rad, co je vlastně v promptu důležité.
 
 
-Surprisingly, when providing few shot %%exemplars|exemplars%% in prompts, the actual answers (%%gold|gold_labels%%) 
-in the exemplars are not important. As shown in the figure below, providing random
-%%labels|labels%% in the exemplars barely hurts performance(@min2022rethinking). "Demo" is synonymous
-with exemplar in this image.
+## "Na základní pravdě záleží jen málo"
+
+
+Je překvapivé, že když v podnětech poskytneme jen několik málo záběrů %%exemplářů|exempláře%%, skutečné odpovědi (%%gold|gold_labels%%) 
+v exemplářích nejsou důležité. Jak ukazuje obrázek níže, poskytování náhodných
+%%značek|značky%% v exemplářích sotva poškodí výkonnost(@min2022rethinking). "Demo" je synonymum
+s exemplářem na tomto obrázku.
 
 import GoldUn from '@site/docs/assets/gold_unimportant.png';
 
@@ -24,36 +24,36 @@ import GoldUn from '@site/docs/assets/gold_unimportant.png';
 
 ## Labelspace Matters
 
-Even though the gold labels in the exemplars are not important, the %%labelspace|labelspace%%
-is.
-Even providing random labels from the labelspace helps the LLM get a better understanding
-of the labelspace, and improves results. Additionally, properly representing the 
-distribution of the labelspace in the exemplars is important. Rather than uniformly
-sampling from the labelspace in the exemplars, it is better to sample according to the true distribution of the labels.
+Přestože zlaté štítky v příkladech nejsou důležité, prostor %%labelspace|labelspace%%
+je.
+Dokonce i poskytnutí náhodných štítků z labelspace pomáhá LLM lépe porozumět.
+prostoru štítků a zlepšuje výsledky. Kromě toho správná reprezentace 
+rozložení prostoru štítků v exemplářích je důležité. Spíše než rovnoměrně
+vzorkovat z prostoru štítků v exemplářích, je lepší vzorkovat podle skutečného rozložení štítků.
 
-## Format Matters
+## Na formátu záleží
 
-Perhaps the most important part of exemplars is how they are formatted. This
-format instructs the LLM on how to properly format its answer to the prompt.
+Snad nejdůležitější součástí exemplářů je jejich formátování. Tento
+formát instruuje LLM, jak má správně formátovat svou odpověď na výzvu.
 
-For example, consider the below exemplars. They use all capital words as answers.
-Even though the answers are completely wrong (2+2 is not 50), GPT-3 correctly answers
-the last question, and follows the format of the others.
+Vezměme si například níže uvedené exempláře. Jako odpovědi používají všechna velká písmena.
+Přestože jsou odpovědi zcela chybné (2+2 není 50), GPT-3 správně odpoví
+a dodržuje formát ostatních otázek.
 
 ```text
-What is 2+2? 
+Co je 2+2? 
 FIFTY
-What is 20+5?
-FORTY-THREE
-What is 12+9?
+Co je 20+5?
+ČTYŘICET TŘI
+Co je 12+9?
 // highlight-start
 TWENTY-ONE
 // highlight-end
 ```
 
-## Notes
+## Poznámky
 
-Between 4-8 exemplars is a good number to use for few shot prompts(@min2022rethinking),
-but it can often be helpful to put as many as possible.
+Pro několik málo podnětů k výstřelu je vhodné použít 4-8 příkladů(@min2022rethinking),
+ale často může být užitečné uvést jich co nejvíce.
 
-[^labelspace]: See the [vocabulary reference](https://learnprompting.org/docs/vocabulary#labels) for more info.
+[^labelspace]: Více informací naleznete v [odkazu na slovník](https://learnprompting.org/docs/vocabulary#labels).

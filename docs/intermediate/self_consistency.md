@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 🟡 Self-Consistency
+# 🟡 Soběstačnost
 
 import SCImage from '@site/docs/assets/intermediate/self_consistency.png';
 
@@ -10,77 +10,77 @@ import SCImage from '@site/docs/assets/intermediate/self_consistency.png';
   <img src={SCImage} style={{width: "500px"}} />
 </div>
 
-Self-consistency(@wang2022selfconsistency) is an approach that simply asks a model the same prompt multiple times and takes the majority result as the final answer. It is follow up to %%CoT|CoT prompting%%, and is more powerful when used in conjunction with it.
+Self-consistency(@wang2022selfconsistency) neboli Soběstačnost je přístup, který se jednoduše zeptá modelu na stejnou výzvu vícekrát a za konečnou odpověď považuje většinový výsledek. Navazuje na %%CoT|CoT prompting%% a je výkonnější, pokud se používá ve spojení s ním.
 
-## Example
+## Příklad
 
-Let's consider a simple example of analyzing emails. Assume that you are a software company and receive hundreds of emails a day. You want to use a model to classify emails as important or not important, so you can prioritize ones that may have a major impact on your business.
+Uvažujme jednoduchý příklad analýzy e-mailů. Předpokládejme, že jste softwarová společnost a dostáváte stovky e-mailů denně. Chcete použít model pro klasifikaci e-mailů jako důležitých nebo nedůležitých, abyste mohli upřednostnit ty, které mohou mít zásadní dopad na vaši firmu.
 
-Here is an example of an email that you might receive:
+Zde je příklad e-mailu, který můžete obdržet:
 
 ```text
-Hello,
+Dobrý den,
 
-I have discovered a major security vulnerability in your system. Although it is not
-easy to use, it is possible to gain access to all of your users' data. I have attached
-a proof of concept. Please fix this issue as soon as possible.
+Ve vašem systému jsem objevil závažnou bezpečnostní chybu. Ačkoli se nejedná o
+snadné, je možné získat přístup ke všem datům vašich uživatelů. V příloze přikládám
+ukázku konceptu. Prosím, opravte tento problém co nejdříve.
 
-Cheers,
+S pozdravem,
 
 Donny
 ```
 
-Let's put that into a prompt:
+Pojďme to dát do výzvy:
 
 ```text
-Hello,
+Dobrý den,
 
-I have discovered a major security vulnerability in your system. Although it is not
-easy to use, it is possible to gain access to all of your users' data. I have attached
-a proof of concept. Please fix this issue as soon as possible.
+Objevil jsem ve vašem systému závažnou bezpečnostní chybu. Ačkoli to není
+snadné, je možné získat přístup ke všem datům vašich uživatelů. V příloze přikládám
+ukázku konceptu. Prosím, opravte tento problém co nejdříve.
 
-Cheers,
+S pozdravem,
 
 Donny
 
-Classify the above email as IMPORTANT or NOT IMPORTANT as it relates to a software company. Let's think step by step.
+Zařaďte výše uvedený e-mail do kategorie DŮLEŽITÉ nebo NEDŮLEŽITÉ, protože se týká softwarové společnosti. Přemýšlejme krok za krokem.
 ```
 
-Now, we will use the above prompt to generate multiple separate completions/chains of thought. Here are a few examples:
+Nyní použijeme výše uvedenou výzvu k vytvoření několika samostatných dokončení/řetězců myšlenek. Zde je několik příkladů:
 
 ```text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system. 
-This is important because it could lead to a data breach. 
-I would classify this email as IMPORTANT
+Odesílatel objevil v systému závažnou bezpečnostní chybu. 
+Je to důležité, protože by to mohlo vést k úniku dat. 
+Tento e-mail bych klasifikoval jako DŮLEŽITÝ.
 <!-- highlight-end -->
 ```
 
-```text
+````text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use. 
-I would classify this email as NOT IMPORTANT
+Odesílatel objevil závažnou bezpečnostní chybu v systému, ale neposkytl žádný důkaz konceptu a není snadné ji použít. 
+Tento e-mail bych klasifikoval jako NEDŮLEŽITÝ.
 <!-- highlight-end -->
 ```
 
-```text
+````text
 <!-- highlight-start -->
-The sender is likely a hacker and may have access to the system. 
-This is important because it could lead to a data breach. 
-I would classify this email as IMPORTANT
+Odesílatel je pravděpodobně hacker a může mít přístup do systému. 
+To je důležité, protože by to mohlo vést k úniku dat. 
+Tento e-mail bych klasifikoval jako DŮLEŽITÝ.
 <!-- highlight-end -->
 ```
 
-By generating many chains of thought, and taking the most commonly occurring answer (`IMPORTANT`), we can get a more consistently correct answer from GPT-3.
+Vytvořením mnoha myšlenkových řetězců a vybráním nejčastěji se vyskytující odpovědi (`DŮLEŽITÉ`) můžeme z GPT-3 získat konzistentnější správnou odpověď.
 
-## Results
+## Výsledky
 
-Self-consistency has been shown to improve results on arithmetic, commonsense and symbolic reasoning tasks. Even when regular CoT was found to be ineffective(@ye2022unreliability), self-consistency
-was still able to improve results.
+Bylo prokázáno, že sebekonzistence zlepšuje výsledky v aritmetických úlohách, úlohách zdravého rozumu a symbolického uvažování. Dokonce i v případech, kdy se běžná metoda CoT ukázala jako neefektivní(@ye2022nespolehlivost), sebedůslednost
+stále dokázala zlepšit výsledky.
 
-## Notes
+## Poznámky
 
-- Wang et al. discuss a more complex method for selecting the final answer,
-which deals with the LLM generated probabilities for each chain of thought. However, they
-do not use this method in their experiments, and majority voting seems to usually
-have the same or better performance.
+- Wang et al. se zabývají složitější metodou výběru konečné odpovědi,
+která se zabývá pravděpodobnostmi generovanými LLM pro každý myšlenkový řetězec. Nicméně se
+tuto metodu ve svých experimentech nepoužívají a zdá se, že většinové hlasování se obvykle
+má stejný nebo lepší výkon.

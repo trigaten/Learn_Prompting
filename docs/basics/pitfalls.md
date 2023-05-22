@@ -2,41 +2,41 @@
 sidebar_position: 90
 ---
 
-# 🟢 Pitfalls of LLMs
+# 🟢 Úskalí LLM
 
 import Pitfalls from '@site/docs/assets/pitfalls.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+  <Pitfalls style={{width: "100%",height: "300px",verticalAlign: "top"}}/>
 </div>
 
 
-LLMs are extremely powerful, but they are by no means perfect. There are many pitfalls that you should be aware of when using them.
+Systémy LLM jsou nesmírně výkonné, ale v žádném případě nejsou dokonalé. Existuje mnoho úskalí, kterých byste si při jejich používání měli být vědomi.
 
-## Citing Sources
+## Uvádění zdrojů
 
-LLMs for the most part **cannot accurately cite sources**. This is because they do not have access to the Internet, and do not exactly remember where their information came from. They will frequently generate sources that look good, but are entirely inaccurate.
+LLM většinou **neumí přesně citovat zdroje**. Je to proto, že nemají přístup k internetu a nepamatují si přesně, odkud jejich informace pocházejí. Často vytvoří zdroje, které vypadají dobře, ale jsou zcela nepřesné.
 
-:::note
-Strategies like search augmented LLMs (LLMs that can search the Internet and other sources) can often fix this problem
+::::poznámka
+Strategie, jako jsou LLM s rozšířeným vyhledáváním (LLM, které mohou vyhledávat na internetu a v dalších zdrojích), mohou tento problém často vyřešit.
 :::
 
-## Bias
+## Předpojatost
 
-LLMs are often biased towards generating stereotypical responses. Even with safe guards in place, they will sometimes say sexist/racist/homophobic things. Be careful when using LLMs in consumer-facing applications, and also be careful when using them in research (they can generate biased results).
+Modely LLM jsou často zkreslené směrem ke generování stereotypních odpovědí. Dokonce i při zavedení bezpečných ochranných prvků někdy říkají sexistické/rasistické/homofobní věci. Buďte opatrní při používání LLM v aplikacích zaměřených na spotřebitele a také při jejich používání ve výzkumu (mohou generovat neobjektivní výsledky).
 
-## Hallucinations
+## Halucinace
 
-LLMs will frequently generate falsehoods when asked a question that they do not know the answer to. Sometimes they will state that they do not know the answer, but much of the time they will confidently give a wrong answer.
+LLM budou často generovat nepravdy, když jim bude položena otázka, na kterou neznají odpověď. Někdy uvedou, že odpověď neznají, ale ve většině případů sebevědomě uvedou špatnou odpověď.
 
-## Math
+## Matematika
 
-LLMs are often bad at math. They have difficulty solving simple math problems, and they are often unable to solve more complex math problems.
+Studenti LLM jsou často špatní v matematice. Mají potíže s řešením jednoduchých matematických úloh a často nejsou schopni řešit složitější matematické úlohy.
 
-:::note
-This problem can be fixed to some extent by using a [tool augmented LLM](https://learnprompting.org/docs/advanced_applications/mrkl).
+::::pozn.
+Tento problém lze do jisté míry vyřešit použitím [nástroje rozšířeného o LLM](https://learnprompting.org/docs/advanced_applications/mrkl).
 :::
 
-## Prompt Hacking
+## Hackování promptů
 
-Users can often trick LLMs into generating any content they want. Read more about this [here](https://learnprompting.org/docs/category/-prompt-hacking).
+Uživatelé mohou často obelstít LLM, aby generoval libovolný obsah. Více se o tom dočtete [zde](https://learnprompting.org/docs/category/-prompt-hacking).

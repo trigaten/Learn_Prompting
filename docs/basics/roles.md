@@ -2,61 +2,61 @@
 sidebar_position: 3
 ---
 
-# 🟢 Role Prompting
+# 🟢 Prompting rolí
 
 import RolePrompt from '@site/docs/assets/role_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <RolePrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+  <RolePrompt style={{width: "100%",height: "300px",verticalAlign: "top"}}/>
 </div>
 
-Another prompting technique is to assign a role to the AI. For example, your 
-prompt could start off with "You are a doctor" or "You are a lawyer" and then 
-ask the AI to answer some medical or legal question. Here is an example:
+Další technikou výzvy je přiřazení role umělé inteligenci. Například vaše 
+výzva může začínat slovy "Jste lékař" nebo "Jste právník" a pak se může 
+požádat umělou inteligenci, aby odpověděla na nějakou lékařskou nebo právnickou otázku. Zde je příklad:
 
 ```text
-You are a brilliant mathematician who can solve any problem in the world.
-Attempt to solve the following problem:
+Jste geniální matematik, který dokáže vyřešit jakýkoli problém na světě.
+Pokuste se vyřešit následující problém:
 
-What is 100*100/400*56?
+Kolik je 100*100/400*56?
 
 // highlight-start
-The answer is 1400.
+Odpověď je 1400.
 // highlight-end
 ```
 
-The AI's (GPT-3 davinci-003) answer is highlighted in green:
+Odpověď AI (GPT-3 davinci-003) je zvýrazněna zeleně:
 
 
-This is a correct answer, but if the AI had simply been prompted with `What is 100*100/400*56?`,
-it would have answered `280` (incorrect). Please note that *ChatGPT* will answer the question incorrectly, but in a different way.
+Je to správná odpověď, ale kdyby se AI jednoduše zeptala: `Co je 100*100/400*56? `,
+odpověděla by `280` (nesprávně). Všimněte si, že *ChatGPT* odpoví na otázku nesprávně, ale jiným způsobem.
 
-When assigning a role to the AI, we are giving it some context. This context
-helps the AI understand the question better. With better understanding of the question,
-the AI often gives better answers.
+Při přiřazování role umělé inteligenci jí dáváme určitý kontext. Tento kontext
+pomáhá UI lépe porozumět otázce. Díky lepšímu pochopení otázky,
+AI často poskytuje lepší odpovědi.
 
-:::note
-This technique is no longer as effective with more modern AIs (e.g. GPT-3 davinci-003).
-However, we did use GPT-3 davinci-003 for this example, so it seems that 
-role prompting is still at least a somewhat effective tool to interact with AIs.
+:::poznámka
+Tato technika již není tak účinná u modernějších UI (např. GPT-3 davinci-003).
+Nicméně pro tento příklad jsme použili GPT-3 davinci-003, takže se zdá, že 
+podněcování rolí je stále alespoň trochu účinným nástrojem pro interakci s UI.
 :::
 
-## Examples
+## Příklady
 
-You can find some more interesting prompts in the [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts)
-repository on GitHub. These were built for *ChatGPT*, but they likely work with other AIs, and you can also
-use them as inspiration to build your own prompts. Let's see two examples:
+Další zajímavé výzvy najdete v sekci [Skvělé prompty pro ChatGPT](https://github.com/f/awesome-chatgpt-prompts#prompts).
+v repozitáři na GitHubu. Byly vytvořeny pro *ChatGPT*, ale pravděpodobně budou fungovat i s jinými AI a můžete je také
+použít jako inspiraci pro vytvoření vlastních výzev. Podívejme se na dva příklady:
 
-> ### Act as an Etymologist
-> I want you to act as an etymologist. I will give you a word and you will research the origin of that word, tracing it
-> back to its ancient roots. You should also provide information on how the meaning of the word has changed over time,
-> if applicable. My first request is "I want to trace the origins of the word 'pizza'".
+#### Jednejte jako etymolog
+> Chci, abyste se zachovali jako etymolog. Zadám vám slovo a vy budete pátrat po jeho původu a vysledovat jeho původ.
+> zpět k jeho dávným kořenům. Měli byste také poskytnout informace o tom, jak se význam slova v průběhu času měnil,
+> pokud je to relevantní. Můj první požadavek zní: "Chci vypátrat původ slova 'pizza'".
 
-> ### Act as an Absurdist
-> I want you to act as an absurdist. The absurdist's sentences are meaningless. The words used by an absurdist are completely
-> ridiculous. The absurdist does not make commonplace sentences in any way. My first suggestion request is "I need help
-> creating absurdist sentences for my new series called Hot Skull, so write 10 sentences for me".
+> ### Jednejte jako absurdista
+> Chci, abyste se zachovali jako absurdista. Věty absurdisty jsou nesmyslné. Slova, která absurdista používá, jsou zcela
+> směšné. Absurdista v žádném případě netvoří běžné věty. Moje první žádost o návrh zní: "Potřebuji pomoc.
+> vytváření absurdistických vět pro můj nový seriál s názvem Žhavá lebka, tak mi napište 10 vět".
 
 ---
 
-🚧 This page needs citations.
+🚧 Tato stránka potřebuje citace.

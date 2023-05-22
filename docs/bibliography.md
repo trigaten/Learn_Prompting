@@ -2,37 +2,37 @@
 sidebar_position: 1000
 ---
 
-# 📚 Bibliography
+# 📚 Bibliografie
 
-The page contains an organized list of all papers used by this course.
-The papers are organized by topic.
+Stránka obsahuje uspořádaný seznam všech dokumentů použitých v tomto kurzu.
+Dokumenty jsou uspořádány podle témat.
 
-**To cite this course, use the provided citation in the Github repository.**
+**Chcete-li citovat tento kurz, použijte uvedenou citaci v úložišti Github**.
 
-🔵 = Paper directly cited in this course. Other papers have informed my understanding of the topic.
+🔵 = Příspěvek přímo citovaný v tomto kurzu. Ostatní dokumenty přispěly k mému pochopení tématu.
 
-Note: since [neither the GPT-3 nor the GPT-3 Instruct paper correspond to davinci models](https://twitter.com/janleike/status/1584618242756132864), I attempt not to
-cite them as such.
+Poznámka: vzhledem k tomu, že [ani dokument GPT-3, ani dokument GPT-3 Instruct neodpovídají davinciho modelům](https://twitter.com/janleike/status/1584618242756132864), snažím se je nezobrazovat
+je jako takové citovat.
 
-## Prompt Engineering Strategies
+## Promptní inženýrské strategie
 
-#### Chain of Thought(@wei2022chain) 🔵
+#### Myšlenkový řetězec(@wei2022chain) 🔵
 
 #### Zero Shot Chain of Thought(@kojima2022large) 🔵
 
-#### Self Consistency(@wang2022selfconsistency) 🔵
+#### Sebedůslednost(@wang2022selfconsistency) 🔵
 
-#### What Makes Good In-Context Examples for GPT-3?(@liu2021makes) 🔵
+#### Co dělá dobré příklady v kontextu pro GPT-3?(@liu2021makes) 🔵
 
 ### Ask-Me-Anything Prompting(@arora2022ama) 🔵
 
-#### Generated Knowledge(@liu2021generated) 🔵
+#### Generované znalosti(@liu2021generated) 🔵
 
-#### Recitation-Augmented Language Models(@sun2022recitationaugmented) 🔵
+#### Recitací rozšířené jazykové modely(@sun2022recitationaugmented) 🔵
 
-#### Rethinking the role of demonstrations(@min2022rethinking) 🔵
+#### Přehodnocení role demonstrací(@min2022rethinking) 🔵
 
-#### Scratchpads(@nye2021work)
+#### Scratchpady(@nye2021work)
 
 #### Maieutic Prompting(@jung2022maieutic)
 
@@ -40,39 +40,39 @@ cite them as such.
 
 #### Least to Most(@zhou2022leasttomost) 🔵
 
-#### Reframing Instructional Prompts to GPTk’s Language(@mishra2022reframing) 🔵
+#### Přerámování instrukčních výzev do jazyka GPTk(@mishra2022reframing) 🔵
 
-#### The Turking Test: Can Language Models Understand Instructions?(@efrat2020turking) 🔵
+#### Turkingův test: Rozumí jazykové modely instrukcím?(@efrat2020turking) 🔵
 
-## Reliability
+## Spolehlivost
 
 #### MathPrompter(@imani2023mathprompter) 🔵
 
-#### The Unreliability of Explanations in Few-shot Prompting for Textual Reasoning(@ye2022unreliability) 🔵
+#### Nespolehlivost vysvětlení v několikastránkové promptingové metodě pro textové uvažování(@ye2022unreliability) 🔵
 
-#### Prompting GPT-3 to be reliable(@si2022prompting)
+#### Promptování GPT-3, aby bylo spolehlivé(@si2022prompting)
 
-#### Diverse Prompts(@li2022advance) 🔵
+#### Různorodé podněty(@li2022advance) 🔵
 
-#### Calibrate Before Use: Improving Few-Shot Performance of Language Models(@zhao2021calibrate) 🔵
+#### Kalibrace před použitím: Zlepšení výkonu jazykových modelů s několika snímky(@zhao2021calibrate) 🔵
 
-#### Enhanced Self Consistency(@mitchell2022enhancing)
+#### Zvýšená vlastní konzistence(@mitchell2022enhancing)
 
 #### Bias and Toxicity in Zero-Shot CoT(@shaikh2022second) 🔵
 
-#### Constitutional AI: Harmlessness from AI Feedback (@bai2022constitutional) 🔵
+#### Konstituční UI: Neškodnost ze zpětné vazby UI (@bai2022constitutional) 🔵
 
-#### Compositional Generalization - SCAN(@lake2018scan)
+#### Kompoziční generalizace - SCAN(@lake2018scan)
 
-## Automated Prompt Engineering
+## Automatizované inženýrství promptů
 
-#### AutoPrompt(@shin2020autoprompt) 🔵
+#### AutoPrompt (@shin2020autoprompt) 🔵
 
 #### Automatic Prompt Engineer(@zhou2022large)
 
-## Models
+## Modely
 
-### Language Models
+### Jazykové modely
 
 #### GPT-3(@brown2020language) 🔵
 
@@ -82,9 +82,9 @@ cite them as such.
 
 #### BLOOM(@scao2022bloom) 🔵
 
-#### BLOOM+1 (more languages/ 0 shot improvements)(@yong2022bloom1)
+#### BLOOM+1 (více jazyků/ 0 vylepšení snímků)(@yong2022bloom1)
 
-#### GPT-4 Technical Report(@openai2023gpt4) 🔵
+#### Technická zpráva GPT-4(@openai2023gpt4) 🔵
 
 #### Jurassic 1(@lieberjurassic) 🔵
 
@@ -94,17 +94,17 @@ cite them as such.
 
 ### Image Models
 
-#### Stable Diffusion(@rombach2021highresolution) 🔵
+#### Stabilní difúze(@rombach2021highresolution) 🔵
 
 #### DALLE(@ramesh2022hierarchical) 🔵
 
-## Soft Prompting
+## Měkké promítání
 
 #### Soft Prompting(@lester2021power) 🔵
 
-#### Interpretable Discretized Soft Prompts(@khashabi2021prompt) 🔵
+#### Interpretovatelné diskrétní měkké promptování(@khashabi2021prompt) 🔵
 
-## Datasets
+## Datové sady
 
 #### MultiArith(@roy-roth-2015-solving) 🔵
 
@@ -114,11 +114,11 @@ cite them as such.
 
 #### Fever(@thorne2018fever) 🔵
 
-#### BBQ: A Hand-Built Bias Benchmark for Question Answering(@parrish2021bbq) 🔵
+#### BBQ: Ručně sestavený benchmark pro zodpovídání otázek(@parrish2021bbq) 🔵
 
 ## Image Prompt Engineering
 
-#### Taxonomy of prompt modifiers(@oppenlaender2022taxonomy)
+#### Taxonomie modifikátorů výzvy(@oppenlaender2022taxonomy)
 
 #### DiffusionDB(@wang2022diffusiondb)
 
@@ -126,11 +126,11 @@ cite them as such.
 
 #### Prompt Engineering for Text-Based Generative Art(@oppenlaender2022prompt) 🔵
 
-#### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with) 🔵
+#### Se správným promptem umí stabilní difúze 2.0 ruce (@blake2022with) 🔵
 
-#### Optimizing Prompts for Text-to-Image Generation(@hao2022optimizing)
+#### Optimalizace výzev pro generování textu na obrázek(@hao2022optimizing)
 
-## Prompt Engineering IDEs
+## Prompt Engineering IDE
 
 #### Prompt IDE(@strobelt2022promptide) 🔵
 
@@ -144,63 +144,63 @@ cite them as such.
 
 #### LangChain(@Chase_LangChain_2022) 🔵
 
-#### TextBox 2.0: A Text Generation Library with Pre-trained Language Models(@tang2022textbox) 🔵
+#### TextBox 2.0: Knihovna pro generování textu s předem natrénovanými jazykovými modely(@tang2022textbox) 🔵
 
-#### OpenPrompt: An Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
+#### OpenPrompt: Open-source Framework for Prompt-learning(@ding2021openprompt) 🔵
 
 #### GPT Index(@Liu_GPT_Index_2022) 🔵
 
-## Applied Prompt Engineering
+## Aplikované promptní inženýrství
 
-#### Language Model Cascades(@dohan2022language)
+#### Kaskády jazykových modelů(@dohan2022language)
 
 #### MRKL(@karpas2022mrkl) 🔵
 
 #### ReAct(@yao2022react) 🔵
 
-#### PAL: Program-aided Language Models(@gao2022pal) 🔵
+#### PAL: Programem podporované jazykové modely(@gao2022pal) 🔵
 
-## User Interface Design
+## Návrh uživatelského rozhraní
 
-#### Design Guidelines for Prompt Engineering Text-to-Image Generative Models(@liu2022design)
+#### Pokyny pro návrh pro promptní inženýrství Text-to-Image generativních modelů(@liu2022design)
 
 ## Prompt Injection
 
-#### Machine Generated Text: A Comprehensive Survey of Threat Models and Detection Methods(@crothers2022machine) 🔵
+#### Strojově generovaný text: A Comprehensive Survey of Threat Models and Detection Methods(@crothers2022machine) 🔵
 
-#### Evaluating the Susceptibility of Pre-Trained Language Models via Handcrafted Adversarial Examples(@branch2022evaluating) 🔵
+#### Hodnocení vnímavosti předem vyškolených jazykových modelů prostřednictvím ručně vytvořených protivných příkladů(@branch2022evaluating) 🔵
 
-#### Exploiting Programmatic Behavior of LLMs: Dual-Use Through Standard Security Attacks(@kang2023exploiting) 🔵
+#### Využití programového chování LLM: Dvojí využití prostřednictvím standardních bezpečnostních útoků(@kang2023exploiting) 🔵
     
-#### More than you've asked for: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models(@greshake2023youve) 🔵
+#### Více, než jste si řekli: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models(@greshake2023youve) 🔵
 
-#### Prompt injection attacks against GPT-3(@simon2022inject) 🔵
+#### Útoky Prompt injection proti GPT-3(@simon2022inject) 🔵
 
-#### Exploiting GPT-3 prompts with malicious inputs that order the model to ignore its previous directions(@goodside2022inject) 🔵
+#### Zneužití výzev GPT-3 pomocí škodlivých vstupů, které modelu nařídí ignorovat jeho předchozí pokyny(@goodside2022inject) 🔵
 
 #### adversarial-prompts(@chase2021adversarial) 🔵
 
-#### ChatGPT "DAN" (and other "Jailbreaks")(@kiho2023chatgpt) 🔵
+#### ChatGPT "DAN" (a další "útěky z vězení")(@kiho2023chatgpt) 🔵
 
 #### GPT-3 Prompt Injection Defenses(@goodside2021gpt) 🔵
 
-#### Talking to machines: prompt engineering & injection(@christoph2022talking)
+#### Mluvení se stroji: promptní inženýrství a injekce(@christoph2022talking)
 
-#### Exploring Prompt Injection Attacks(@selvi2022exploring) 🔵
+#### Prozkoumání útoků Prompt Injection(@selvi2022exploring) 🔵
 
-#### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
+#### Použití GPT-Eliezer proti útěku z vězení ChatGPT(@armstrong2022using) 🔵
 
 #### Microsoft Bing Chat Prompt(@kevinbing)
 
 ## Jailbreaking
 
-#### Ignore Previous Prompt: Attack Techniques For Language Models(@perez2022jailbreak)
+#### Ignorovat předchozí výzvu: Útočné techniky pro jazykové modely(@perez2022jailbreak)
 
-#### Lessons learned on Language Model Safety and misuse(@brundage_2022)
+#### Poučení o bezpečnosti a zneužití jazykových modelů(@brundage_2022)
 
-#### Toxicity Detection with Generative Prompt-based Inference(@wang2022jailbreak)
+#### Detekce toxicity pomocí generativního odvozování na základě propozic(@wang2022jailbreak)
 
-#### New and improved content moderation tooling(@markov_2022)
+#### Nové a vylepšené nástroje pro moderování obsahu(@markov_2022)
 
 #### OpenAI API(@openai_api) 🔵
 
@@ -208,41 +208,41 @@ cite them as such.
 
 #### ChatGPT 4 Tweet(@alice2022jailbreak) 🔵
 
-#### Acting Tweet(@miguel2022jailbreak) 🔵
+#### Hraní Tweet(@miguel2022jailbreak) 🔵
 
-#### Research Tweet(@derek2022jailbreak) 🔵
+#### Výzkum Tweet(@derek2022jailbreak) 🔵
 
-#### Pretend Ability Tweet(@nero2022jailbreak) 🔵
+#### Předstírání schopností Tweet(@nero2022jailbreak) 🔵
 
-#### Responsibility Tweet(@nick2022jailbreak) 🔵
+#### Zodpovědnost Tweet(@nick2022jailbreak) 🔵
 
 #### Lynx Mode Tweet(@jonas2022jailbreak) 🔵
 
 #### Sudo Mode Tweet(@sudo2022jailbreak) 🔵
 
-#### Ignore Previous Prompt(@ignore_previous_prompt) 🔵
+#### Ignorovat předchozí výzvu(@ignore_previous_prompt) 🔵
 
-#### Updated Jailbreaking Prompts (@AI_jailbreak) 🔵
+#### Aktualizované výzvy k útěku z vězení (@AI_jailbreak) 🔵
 
-## Surveys
+## Průzkumy
 
-#### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
+#### Předběžný trénink, výzva a předvídání: Systematický přehled metod promptování při zpracování přirozeného jazyka(@liu2021pretrain)
 
 #### PromptPapers(@ning2022papers)
 
-## Dataset Generation
+## Generování datových sad
 
 #### Discovering Language Model Behaviors with Model-Written Evaluations(@perez2022discovering)
 
-#### Selective Annotation Makes Language Models Better Few-Shot Learners(@su2022selective)
+#### Selektivní anotace dělá z jazykových modelů lepší učitele s několika snímky(@su2022selective)
 
-## Applications
+## Aplikace
 
 #### Atlas: Few-shot Learning with Retrieval Augmented Language Models(@izacard2022atlas)
 
-#### STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension(@wang2022strudel)
+#### STRUDEL: Strukturovaná sumarizace dialogů pro porozumění dialogům(@wang2022strudel)
 
-## Hot Topics
+## Horká témata
 
 #### Auto-GPT(@richards2023)
 
@@ -252,39 +252,39 @@ cite them as such.
 
 ## Miscl
 
-#### Prompting Is Programming: A Query Language For Large Language Models(@beurerkellner2022prompting)
+#### Promptování je programování: A Query Language For Large Language Models(@beurerkellner2022prompting)
 
-#### Parallel Context Windows Improve In-Context Learning of Large Language Models(@ratner2022parallel)
+#### Paralelní kontextová okna zlepšují učení velkých jazykových modelů v kontextu(@ratner2022parallel)
 
-#### A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT(@white2023prompt) 🔵
+#### A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT(@white2023prompt) 🔵.
 
-#### Learning to Perform Complex Tasks through Compositional Fine-Tuning of Language Models(@bursztyn2022learning)
+#### Učení složitých úloh pomocí kompozičního dolaďování jazykových modelů(@bursztyn2022learning)
 
-#### Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks(@wang2022supernaturalinstructions)
+#### Nadpřirozenéinstrukce: Generalizace prostřednictvím deklarativních instrukcí na více než 1600 úlohách NLP(@wang2022supernaturalinstructions)
 
 #### Making Pre-trained Language Models Better Few-shot Learners(@gao2021making)
 
 #### Grounding with search results(@livin2022large)
 
-#### How to Prompt? Opportunities and Challenges of Zero- and Few-Shot Learning for Human-AI Interaction in Creative Applications of Generative Models(@dang2022prompt)
+#### Jak na prompt? Příležitosti a výzvy učení s nulovým počtem snímků a několika snímky pro interakci mezi člověkem a umělou inteligencí v kreativních aplikacích generativních modelů(@dang2022prompt)
 
 #### On Measuring Social Biases in Prompt-Based Multi-Task Learning(@akyrek2022measuring)
 
-#### Plot Writing From Pre-Trained Language Models(@jin2022plot) 🔵
+#### Psaní zápletek z předem vytrénovaných jazykových modelů(@jin2022plot) 🔵
 
-#### StereoSet: Measuring stereotypical bias in pretrained language models(@nadeem-etal-2021-stereoset)
+#### StereoSet: Měření stereotypního zkreslení v předtrénovaných jazykových modelech(@nadeem-etal-2021-stereoset)
 
-#### Survey of Hallucination in Natural Language Generation(@Ji_2022)
+#### Přehled halucinací při generování přirozeného jazyka(@Ji_2022)
 
-#### Examples(@2022examples)
+#### Příklady(@2022examples)
 
 #### Wordcraft(@yuan2022wordcraft)
 
 #### PainPoints(@fadnavis2022pain)
 
-#### Self-Instruct: Aligning Language Model with Self Generated Instructions(@wang2022selfinstruct)
+#### Sebeinstruktáž: Sladění jazykového modelu se samostatně generovanými instrukcemi(@wang2022selfinstruct)
 
-#### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
+#### Od obrázků k textovým podnětům: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
 

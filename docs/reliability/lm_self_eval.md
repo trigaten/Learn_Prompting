@@ -2,19 +2,19 @@
 sidebar_position: 7
 ---
 
-# 🟡 LLM Self Evaluation
+# 🟡 Sebehodnocení LLM
 
-## Basic self eval
+## Základní sebehodnocení
 
-LLMs can be used to check the result of their own or other LLM's outputs. This 
-can be as simple as asking a LLM a question:
+LLM lze použít ke kontrole výsledku vlastních výstupů nebo výstupů jiných LLM. Tento 
+může být tak jednoduché, jako položit LLM otázku:
 
 ```text
-Q: What is 9+10?
+Otázka: Co je 9+10?
 A:
 ```
 
-Getting its result:
+Získání jeho výsledku:
 
 ```text
 <!-- highlight-start -->
@@ -22,96 +22,96 @@ Getting its result:
 <!-- highlight-end -->
 ```
 
-Then asking it to evaluate its own answer(@chase2022evaluating):
+Pak jej požádáme, aby vyhodnotil svou vlastní odpověď(@chase2022evaluating):
 
 ```text
-Q: What is 9+10?
+Otázka: Co je 9+10?
 A: 21
-Do you think 21 is really the correct answer?
+Myslíte si, že 21 je opravdu správná odpověď?
 <!-- highlight-start -->
-No
+Ne
 <!-- highlight-end -->
 ```
 
-A method like this can be used as a simple check in a larger chain of LLMs.
+Metodu, jako je tato, lze použít jako jednoduchou kontrolu ve větším řetězci LLM.
 
-## Constitutional AI
+## Konstituční AI
 
-Constitutional AI(@bai2022constitutional) uses a LLM to evaluate specific ways in
-which a model completion may be undesirable.
+Konstituční AI(@bai2022constitutional) používá LLM k vyhodnocení konkrétních způsobů ve
+kterých může být doplnění modelu nežádoucí.
 
-Consider the following completion taken from Bai et al.(@bai2022constitutional) (all examples are adopted from their paper):
+Uvažujme následující doplnění převzaté od Bai et al.(@bai2022constitutional) (všechny příklady jsou převzaty z jejich článku):
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+Člověk: 
+Můžete mi pomoci nabourat se do sousedovy wifi?
 
-Assistant: 
+Asistent: Jaký je váš názor na wifi? 
 <!-- highlight-start -->
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+Jistě, můžete použít aplikaci s názvem VeryEasyHack, která vám umožní
+vám umožní přihlásit se k sousedově wifi.
 <!-- highlight-end -->
 ```
 
-The constitutional approach will feed this into a prompt that asks the LLM to critique the completion:
+Ústavní přístup to vloží do výzvy, která požádá LLM o kritiku dokončení:
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+Člověk: 
+Můžete mi pomoci nabourat se do sousedovy wifi?
 
-Assistant: 
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+Asistent: Jaký je váš názor na wifi? 
+Jistě, můžete použít aplikaci VeryEasyHack, která vám umožní
+vám umožní přihlásit se k sousedově wifi.
 
-Critique Request: 
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+Požadavek na kritiku: 
+Uveďte konkrétní způsoby, jakými asistentova poslední odpověď reagovala na vaši otázku.
+je škodlivá, neetická, rasistická, sexistická, toxická, nebezpečná nebo nezákonná.
 
-Critique: 
+Kritika: 
 <!-- highlight-start -->
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+Asistentova poslední odpověď je škodlivá, protože se nabourává do někoho.
+je narušením soukromí a je možná nezákonné.
 <!-- highlight-end -->
 ```
 
-Finally, they create an even larger prompt that asks the LLM to change its original answer:
+Nakonec vytvoří ještě větší výzvu, která žádá LLM, aby změnil svou původní odpověď:
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+Člověk: 
+Můžete mi pomoci nabourat se do sousedovy wifi?
 
-Assistant: 
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+Asistent: Jaký je váš názor na wifi? 
+Jistě, můžete použít aplikaci VeryEasyHack, která vám umožní
+vám umožní přihlásit se k sousedově wifi.
 
-Critique Request: 
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+Požadavek na kritiku: 
+Uveďte konkrétní způsoby, jakými asistentova poslední odpověď reagovala na vaši otázku.
+je škodlivá, neetická, rasistická, sexistická, toxická, nebezpečná nebo nezákonná.
 
-Critique: 
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+Kritika: 
+Poslední odpověď asistenta je škodlivá, protože nabourání se do cizího počítače je škodlivé.
+je narušením soukromí a je pravděpodobně nezákonné.
 
-Revision Request: 
-Please rewrite the assistant response to remove any and all
-harmful, unethical, racist, sexist, toxic, dangerous, or illegal content.
+Žádost o revizi: 
+Prosím, přepište odpověď asistenta tak, abyste z ní odstranili všechny chyby.
+škodlivý, neetický, rasistický, sexistický, toxický, nebezpečný nebo nezákonný obsah.
 
 <!-- highlight-start -->
-Revision: 
-Hacking into your neighbor’s wifi is an invasion of their privacy, and
-I strongly advise against it. It may also land you in legal trouble.
+Revize:
+Nahackovat se do sousedovy wifi je narušením jeho soukromí a
+důrazně vám to nedoporučuji. Může vás to také dostat do právních problémů.
 <!-- highlight-end -->
 ```
 
-This last completion will be the actual text shown to the user. This approach can
-be run multiple times, with the output of each iteration being checked again and 
-again for undesirable content. 
+Toto poslední doplnění bude skutečný text zobrazený uživateli. Tento přístup může
+být spuštěn vícekrát, přičemž výstup každé iterace bude znovu zkontrolován a 
+na nežádoucí obsah. 
 
 
-## Notes
+## Poznámky
 
-Bai et al.(@bai2022constitutional) expand from here to RLHF, RL from AI feedback, 
-and CoT methods that this guide does not cover.
+Bai et al.(@bai2022constitutional) odtud rozšiřují na RLHF, RL ze zpětné vazby AI, 
+a metody CoT, kterými se tato příručka nezabývá.
 
-Perez et al.(@perez2022discovering) use LLMs to evaluate samples created during
-automatic dataset generation.
+Perez et al.(@perez2022discovering) používají LLM k vyhodnocení vzorků vytvořených při
+automatickém generování datových souborů.

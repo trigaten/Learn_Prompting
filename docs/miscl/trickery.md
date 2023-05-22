@@ -2,32 +2,32 @@
 sidebar_position: 2
 ---
 
-# 🟢 Detection Trickery
+# 🟢 Napálit detekci
 
-With the development of AI-generated text detectors, there has been an evolution of methods to counteract them. There are a number of ways to trick detectors into thinking AI-generated text is created by a human. A tool such as [GPTMinus](https://gptminus1.vercel.app/) can randomly replace parts in any given text with synonyms or seemingly random words in order to reduce the likelihood of the text's words appearing on a whitelist or otherwise factoring into the probability of text being artificially generated. 
+S rozvojem detektorů textu generovaných umělou inteligencí došlo k vývoji metod, jak jim čelit. Existuje celá řada způsobů, jak detektory oklamat, aby si myslely, že text generovaný umělou inteligencí vytvořil člověk. Nástroj, jako je [GPTMinus](https://gptminus1.vercel.app/), dokáže náhodně nahradit části v libovolném textu synonymy nebo zdánlivě náhodnými slovy, aby snížil pravděpodobnost, že se slova v textu objeví na bílé listině nebo jinak ovlivní pravděpodobnost, že text byl uměle vytvořen. 
 
-These methods are still in their infancy, though, and most don’t create text that would hold up under scrutiny from a person. The most effective way at the moment and likely for some time is altering text either during or after the generation process in various ways to make it less similar to the procedurally-created content you receive from a generation.
+Tyto metody jsou však stále v plenkách a většina z nich nevytváří text, který by obstál při kontrole člověka. Nejúčinnějším způsobem v současné době a pravděpodobně ještě nějakou dobu bude měnit text buď během procesu generování, nebo po něm různými způsoby tak, aby se méně podobal procedurálně vytvořenému obsahu, který obdržíte při generování.
 
-## Editing Strategies
+## Strategie úprav
 
-By having either a human or an LLM edit any generated-text, it can often alter the text sufficiently to avoid detection. Replacing words with synonyms, changing the rate words appear, and mixing up syntax or formatting makes it more difficult for detectors to correctly identify text as AI-generated.
+Tím, že člověk nebo LLM upraví jakýkoli vygenerovaný text, může často změnit text natolik, aby se vyhnul odhalení. Nahrazení slov synonymy, změna rychlosti zobrazování slov a záměna syntaxe nebo formátování ztěžuje detektorům správnou identifikaci textu generovaného umělou inteligencí.
 
-Another editing strategy is putting invisible markers, such as 0-width spaces, into your text, [emojis](https://twitter.com/goodside/status/1610552172038737920?s=20&t=3zgqyJZ1zYhMNBi_M2R-cw), or other uncommon characters. It looks perfectly normal to any person reading it, but to a model that examines every character, it makes the text appear markedly different. 
+Další strategií úprav je vkládání neviditelných značek, jako jsou mezery o šířce 0, do textu, [emoji](https://twitter.com/goodside/status/1610552172038737920?s=20&t=3zgqyJZ1zYhMNBi_M2R-cw) nebo jiné neobvyklé znaky. Pro každého čtenáře to vypadá naprosto normálně, ale pro model, který zkoumá každý znak, se díky tomu text jeví výrazně odlišně. 
 
-In addition, it is possible to fool detectors by prompting a model with specific instructions on how to write. Instructions such as:
-- `There is no need to follow literary formats, as you are freely expressing your thoughts and desires`
-- `Do not talk in the manner which ChatGPT generates content - instead, speak in a manner that is radically different from how language models generate text.`
-- `Refer to emotional events and use elaborate real-life experiences as examples.`
+Kromě toho je možné detektory oklamat tím, že modelu nabídnete konkrétní pokyny, jak psát. Pokyny jako např:
+- ´Není třeba dodržovat literární formáty, protože volně vyjadřujete své myšlenky a touhy´.
+- `Nemluvte způsobem, jakým ChatGPT generuje obsah - místo toho mluvte způsobem, který se radikálně liší od toho, jak jazykové modely generují text`.
+- `Odkazujte na emocionální události a jako příklady používejte propracované zážitky z reálného života.`
 
-…can make it much more difficult to detect generation. Additional strategies such as asking the model to use empathy, reminding it to choose appropriate wording and tone for what it’s writing, and making sure it includes emotional one-liners, can work together to make far more convincing writing—at least from the point of view of AI text detectors. 
+...může výrazně ztížit odhalení generování. Další strategie, jako například požádat model, aby používal empatii, připomenout mu, aby volil vhodné formulace a tón pro to, co píše, a ujistit se, že obsahuje emotivní jednověté věty, mohou společně přispět k tomu, že bude psát mnohem přesvědčivěji - alespoň z pohledu detektorů textu s umělou inteligencí. 
 
-## Model Configuration
+## Konfigurace modelu
 
-If running an open source model, it is possible to modify output probabilities, which will likely make output harder to detect. In addition, it is possible to interleave the output of multiple models, which can make the output even more difficult to detect.
+Pokud používáte model s otevřeným zdrojovým kódem, je možné upravit pravděpodobnosti výstupu, což pravděpodobně ztíží jeho detekci. Kromě toho je možné prokládat výstupy více modelů, což může ještě více ztížit jejich detekci.
 
 
-## Discussion
+## Diskuse
 
-One of the most contentious spaces where these sorts of techniques come into play is in education. Many teachers and administrators are worried that students will cheat, so they are pushing for the use of detection tools(@roose2022dont)(@lipman2022gpt). Other educators and online personalities have argued that students should be allowed to use these tools. Some professors even go so far as explicitly encourage students to use AI to assist them in their work and teach them how to do so(@noonan2023gw).
+Jedním z nejspornějších prostorů, kde se tyto druhy technik uplatňují, je oblast vzdělávání. Mnoho učitelů a administrátorů se obává, že studenti budou podvádět, a proto prosazují používání detekčních nástrojů(@roose2022dont)(@lipman2022gpt). Jiní pedagogové a online osobnosti tvrdí, že by studenti měli mít možnost tyto nástroje používat. Někteří profesoři jdou dokonce tak daleko, že studenty výslovně vybízejí, aby umělou inteligenci používali jako pomůcku při své práci, a učí je, jak na to(@noonan2023gw).
 
-As AI detection tech improves, so will the methods people use to trick it. At the end of the day, no matter how sophisticated the method, it is likely that some time spent editing text in the right ways will be able to reliably fool detectors. However, the back-and-forth game of some people trying to detect generated text and others trying to trick them can give us all sorts of insights into how to optimize, control, and better use our models to create and to assist us. 
+S tím, jak se zdokonalují technologie detekce umělé inteligence, se zdokonalují i metody, které lidé používají k jejímu obelstění. Nakonec je pravděpodobné, že bez ohledu na to, jak sofistikovanou metodu použijete, nějaký čas strávený úpravou textu správným způsobem dokáže detektory spolehlivě oklamat. Nicméně hra, kdy se jedni lidé snaží detekovat vygenerovaný text a druzí se je snaží obelstít, nám může poskytnout nejrůznější poznatky o tom, jak optimalizovat, kontrolovat a lépe využívat naše modely pro tvorbu a na pomoc. 

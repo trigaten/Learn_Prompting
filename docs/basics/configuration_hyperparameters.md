@@ -2,54 +2,54 @@
 sidebar_position: 100
 ---
 
-# 🟢 LLM Settings
+# 🟢 Nastavení LLM
 
 
 import Temperature from '@site/docs/assets/temperature.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Temperature style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+  <Temperature style={{width: "100%",height: "300px",verticalAlign: "top"}}/>
 </div>
 
-# Introduction
+# Úvod
 
-The output of LLMs can be affected by *configuration hyperparameters*, which control various aspects of the model, such as how 'random' it is. These hyperparameters can be adjusted to produce more creative, diverse, and interesting output. In this section, we will discuss two important configuration hyperparameters and how they affect the output of LLMs.
+Výstup modelu LLM lze ovlivnit *konfiguračními hyperparametry*, které řídí různé aspekty modelu, například to, jak "náhodný" je. Tyto hyperparametry lze upravit tak, aby byl výstup kreativnější, rozmanitější a zajímavější. V této části se budeme zabývat dvěma důležitými konfiguračními hyperparametry a tím, jak ovlivňují výstup LLM.
 
-:::note
-[for researchers] These are different from regular hyperparameters like learning rate, number of layers, hidden size, etc. 
+:::poznámka
+[Pro výzkumníky] Tyto parametry se liší od běžných hyperparametrů, jako je rychlost učení, počet vrstev, velikost skrytých vrstev atd. 
 :::
 
-## Temperature
+## Teplota
 
-Temperature is a configuration hyperparameter that controls the randomness of language model output. A high temperature produces more unpredictable and creative results, while a low temperature produces more common and conservative output. For example, if you adjust the temperature to 0.5, the model will usually generate text that is more predictable and less creative than if you set the temperature to 1.0.
+Teplota je konfigurační hyperparametr, který řídí náhodnost výstupu jazykového modelu. Vysoká teplota vytváří nepředvídatelnější a kreativnější výsledky, zatímco nízká teplota vytváří běžnější a konzervativnější výstup. Pokud například nastavíte teplotu na 0,5, model bude obvykle generovat text, který je více předvídatelný a méně kreativní, než když nastavíte teplotu na 1,0.
 
 ## Top p
 
-Top p, also known as nucleus sampling, is another configuration hyperparameter that controls the randomness of language model output. It sets a threshold probability and selects the top tokens whose cumulative probability exceeds the threshold. The model then randomly samples from this set of tokens to generate output. This method can produce more diverse and interesting output than traditional methods that randomly sample the entire vocabulary. For example, if you set top p to 0.9, the model will only consider the most likely words that make up 90% of the probability mass.
+Top p, známý také jako vzorkování jádra, je další konfigurační hyperparametr, který řídí náhodnost výstupu jazykového modelu. Nastavuje prahovou pravděpodobnost a vybírá top tokeny, jejichž kumulativní pravděpodobnost je vyšší než prahová hodnota. Z této množiny tokenů pak model náhodně vzorkuje výstup. Tato metoda může vytvářet rozmanitější a zajímavější výstupy než tradiční metody, které náhodně vzorkují celou slovní zásobu. Pokud například nastavíte top p na hodnotu 0,9, model bude brát v úvahu pouze nejpravděpodobnější slova, která tvoří 90 % pravděpodobnostní masy.
 
-## Other relevant hyperparameters
+## Další důležité hyperparametry
 
-There are many other hyperparameters that can affect language model performance, such as frequency and presence penalties. We do not cover them here, but perhaps will in the future.
+Existuje mnoho dalších hyperparametrů, které mohou ovlivnit výkonnost jazykového modelu, například penalizace za frekvenci a přítomnost. Zde se jimi nezabýváme, ale možná se jimi budeme zabývat v budoucnu.
 
-## How these hyperparameters affect the output
+## Jak tyto hyperparametry ovlivňují výstupy
 
-Temperature and top p can both affect the output of a language model by controlling the degree of randomness and diversity in the generated text. A high temperature or top p value produces more unpredictable and interesting results, but also increases the likelihood of errors or nonsense text. A low temperature or top p value can produce more conservative and predictable results, but may also result in repetitive or uninteresting text.
+Teplota i top p mohou ovlivnit výstup jazykového modelu tím, že řídí míru náhodnosti a rozmanitosti generovaného textu. Vysoká teplota nebo hodnota top p vytváří nepředvídatelnější a zajímavější výsledky, ale také zvyšuje pravděpodobnost výskytu chyb nebo nesmyslného textu. Nízká teplota nebo horní hodnota p může produkovat konzervativnější a předvídatelnější výsledky, ale může také vést k opakujícímu se nebo nezajímavému textu.
 
-For text generation tasks, you may want to use a high temperature or top p value. However, for tasks where accuracy is important, such as translation tasks or question answering, a low temperature or top p value should be used to improve accuracy and factual correctness.
+Pro úlohy generování textu můžete chtít použít vysokou teplotu nebo horní hodnotu p. Pro úlohy, kde je důležitá přesnost, jako jsou překladové úlohy nebo odpovědi na otázky, by však měla být použita nízká teplota nebo horní hodnota p, aby se zlepšila přesnost a věcná správnost.
 
-:::note
-Sometimes more randomness can be helpful on tasks where accuracy is necessary when paired with [special prompting techniques](https://learnprompting.org/docs/intermediate/self_consistency).
+:::poznámka
+Někdy může být v úlohách, kde je nutná přesnost, užitečná větší náhodnost ve spojení se [speciálními technikami napovídání](https://learnprompting.org/docs/intermediate/self_consistency).
 :::
 
 
 
 
-## Conclusion
+## Závěr
 
-In summary, temperature, top p, and other model configuration hyperparameters are key factors to consider when working with language models. By understanding the relationship between these hyperparameters and the model output, practitioners can optimize their prompts for specific tasks and applications.
+Závěrem lze říci, že teplota, top p a další hyperparametry konfigurace modelu jsou klíčovými faktory, které je třeba při práci s jazykovými modely zvážit. Pochopením vztahu mezi těmito hyperparametry a výstupem modelu mohou odborníci z praxe optimalizovat své výzvy pro konkrétní úlohy a aplikace.
 
-:::warning
-Some models, like ChatGPT, **don't** let you adjust these configuration hyperparameters (unless you use the API).
+:::varování
+Některé modely, jako například ChatGPT, **neumožňují** tyto konfigurační hyperparametry upravovat (pokud nepoužijete rozhraní API).
 :::
 
-By jackdickens382
+Od jackdickens382

@@ -2,7 +2,7 @@
 sidebar_position: 600
 ---
 
-# 🟢 Zapier for Emails
+# 🟢 Zapier pro e-maily
 
 import Basic from '@site/docs/assets/Zapiermail/Basic.png';
 import Diagram from '@site/docs/assets/Zapiermail/Diagram.png';
@@ -12,52 +12,52 @@ import Step3 from '@site/docs/assets/Zapiermail/Step3.png';
 import Step4 from '@site/docs/assets/Zapiermail/Step4.png';
 import Zap from '@site/docs/assets/Zapiermail/Zap.png';
 
-## Introduction
+## Úvod
 
 
-We have already seen how useful GPT-3 can be when it comes to emails. It can be even more so when you combine it with **nocode** tools like [Zapier](https://zapier.com) or [Bubble.io](https://bubble.io).
+Již jsme viděli, jak užitečný může být GPT-3, pokud jde o e-maily. Může být ještě užitečnější, když jej zkombinujete s **nookódovými** nástroji, jako je [Zapier](https://zapier.com) nebo [Bubble.io](https://bubble.io).
 
-This article will contain an example of what Zapier+GPT-3 can do with only a small amount of setup time. This article focuses on a particular example, but the possibilities are much greater. We'll give some other examples along the way. Keep in mind you can also do this in Bubble.io. There are many other nocode tools, but at the time of writing only very few allow you to use GPT-3. 
+Tento článek bude obsahovat příklad toho, co Zapier+GPT-3 dokáže jen s malým množstvím času na nastavení. Tento článek se zaměřuje na konkrétní příklad, ale možnosti jsou mnohem větší. V průběhu článku uvedeme několik dalších příkladů. Mějte na paměti, že to můžete dělat také v Bubble.io. Existuje mnoho dalších nástrojů pro nocode, ale v době psaní tohoto článku jen velmi málo z nich umožňuje používat GPT-3. 
 
 
-In this article we will show you how to set up a simple system in Zapier in which **e-mails are summarized and stored**. Have a meeting with someone? Quickly check the summaries of emails you've exchanged with that person. Setting this up takes about 20 minutes.
+V tomto článku si ukážeme, jak v Zapieru nastavit jednoduchý systém, ve kterém se **shrnují a ukládají e-maily**. Máte s někým schůzku? Rychle zkontrolujte souhrny e-mailů, které jste si s danou osobou vyměnili. Nastavení této funkce zabere asi 20 minut.
 
-:::caution
-It is helpful to already know Zapier for this article. If you don't, you can check out this [article](https://zapier.com/learn/).
+:::upozornění
+Pro tento článek je užitečné již znát Zapier. Pokud ne, můžete se podívat na tento [článek] (https://zapier.com/learn/).
 :::
 
 
-## General Idea
+## Obecná myšlenka
 
 
-Below is a diagram of what we will be doing here in Zapier. Whenever an email comes into your inbox, it will trigger Zapier. There are four steps (for now):
+Níže je uvedeno schéma toho, co zde budeme v Zapieru dělat. Kdykoli vám do schránky přijde e-mail, spustí se nástroj Zapier. Jedná se o čtyři kroky (prozatím):
 
-1. Email comes in and trigger Zapier
-1. Format the content of the email (to remove HTML markdown, for example). 
-2. Send it to GPT-3 to be summarized
-3. Store the output in a database
+1. Přijde e-mail a spustí Zapier
+1. Zformátujte obsah e-mailu (například pro odstranění značek HTML). 
+2. Odešlete jej do GPT-3, aby byl shrnut.
+3. Uložit výstup do databáze
 
 <div style={{textAlign: 'left'}}>
   <img src={Diagram} style={{width: "500px"}} />
 </div>
 
-## Set-up in Zapier
+## Nastavení v aplikaci Zapier
 
 
-Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a free one). Setting it up should be fairly straightforward. After making your account, expand the below box to see full descriptions of each Zapier action we need to create. 
+Ujistěte se, že máte účet [Zapier](https://zapier.com/sign-up) (můžete jej získat zdarma). Nastavení by mělo být poměrně jednoduché. Po vytvoření účtu rozbalte níže uvedený rámeček, abyste viděli úplný popis jednotlivých akcí Zapier, které musíme vytvořit. 
 
 
 <details>
-  <summary>Expand for a more detailed view of the steps in Zapier</summary>
+  <summary>Rozbalením získáte podrobnější zobrazení kroků v nástroji Zapier</summary>.
   <div>
-  This is what the Zapier action diagram will eventually look like.
+  Takto bude nakonec vypadat diagram akcí Zapier.
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <img src={Zap} style={{šířka: "500px"}} />
 </div></div>
     <br/>
     <details>
       <summary>
-        Step 1: Gmail trigger on new incoming email (Gmail is used here).
+        Krok 1: Spouštěč Gmailu při novém příchozím e-mailu (zde se používá Gmail).
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
@@ -67,7 +67,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
     <details>
       <summary>
-       Step 2: Formatter for E-mail content. 
+       Krok 2: Formátovač obsahu e-mailu. 
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
@@ -77,7 +77,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
     <details>
       <summary>
-        Step 3: Prompting the Email content
+        Krok 3: Prompting obsahu emailu
         <br/>
       </summary>
       <div>
@@ -88,7 +88,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
     <details>
       <summary>
-        Step 4: Adding it to a database
+        Krok 4: Přidání do databáze
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
@@ -98,20 +98,20 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
   </div>
 </details>
-Here is a set-up in zapier that allows you to do a very basic summary as shown in the diagram. It has it’s limitation, but it does do the job and can build up a useful database.
+Zde je nastavení v zapier, které umožňuje provést velmi základní shrnutí, jak je znázorněno na obrázku. Má svá omezení, ale svou práci odvede a dokáže vytvořit užitečnou databázi.
 
 
-## Optimizing the prompt for better results
+## Optimalizace promptu pro lepší výsledky
 
-There are a few easy ways to improve your results. Adding context and role prompting can improve the output. However, the topic and contents of your emails might cover a wide range of topics. This means that general instructions will do a better job than very specific ones, which might throw the model off. 
+Existuje několik snadných způsobů, jak zlepšit výsledky. Přidání kontextových a rolových výzev může zlepšit výstup. Téma a obsah vašich e-mailů však může zahrnovat širokou škálu témat. To znamená, že obecné pokyny odvedou lepší práci než velmi specifické, které by mohly model rozhodit. 
 
-For practical reasons, it is useful to give an instruction, followed by telling GPT-3 when the email starts in the prompt by simply adding "Email: " and ending the prompt with ""Summary": ". This avoids GPT-3 answering with "Sure! I can summarize it for you...".
+Z praktických důvodů je užitečné zadat instrukci, po které následuje sdělení GPT-3, kdy e-mail začíná ve výzvě prostým přidáním "Email: " a výzvu ukončíte slovem ""Shrnutí": ". Tím se vyhnete tomu, aby GPT-3 odpověděl větou "Jistě! Mohu vám to shrnout...".
 
-Role prompting can be useful here as well. Asking GPT-3 to act as a personal assistant helps increase the quality of the summary.
-If you want to summarize work emails, simply adding the role you have gives GPT-3 context to work with. It acts as if it assumes some level of knowledge from the reader, which helps filter out the non-relevant parts of the email. 
-Below we show some examples with emails an office administrator might receive. 
+I zde může být užitečná výzva s rolí. Požádat GPT-3, aby fungoval jako osobní asistent, pomáhá zvýšit kvalitu shrnutí.
+Pokud chcete shrnout pracovní e-maily, stačí přidat roli, kterou máte, a GPT-3 získá kontext, se kterým může pracovat. Chová se, jako by předpokládal určitou úroveň znalostí čtenáře, což pomáhá odfiltrovat nepodstatné části e-mailu. 
+Níže uvádíme několik příkladů s e-maily, které může obdržet správce kanceláře. 
 
-You can ask it to summarize a simple email in bullet points, however, this might not be all that useful depending on how you would like to use the summary. For quick skimming of email exchanges you might just want it to be short and concise. Simply asking for this in the prompt works well. Below is an example of this prompt. Adjust it and play around with it to see how it changes. 
+Můžete jej požádat, aby shrnul jednoduchý e-mail v bodech, což však nemusí být až tak užitečné v závislosti na tom, jak chcete shrnutí použít. Pro rychlé prolistování výměny e-mailů možná budete chtít, aby byl jen krátký a stručný. Jednoduchý požadavek na to ve výzvě funguje dobře. Níže je uveden příklad této výzvy. Upravte ji a pohrajte si s ní, abyste viděli, jak se změní. 
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiUmVxdWVzdCBmb3IgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZHVlIHRvIGhpZ2ggd29ya2xvYWQuIExpc3Qgb2YgcmVxdWVzdGVkIGl0ZW1zOiBwcmludGVyIHBhcGVyLCBpbmsgY2FydHJpZGdlcyBmb3IgSFAgcHJpbnRlciBpbiBjb25mZXJlbmNlIHJvb20sIHN0aWNreSBub3RlcywgYmluZGVyIGNsaXBzLCBhbmQgaGlnaGxpZ2h0ZXJzLiBSZXF1ZXN0aW5nIGRlbGl2ZXJ5IGluZm9ybWF0aW9uIGFuZCBpZiB0aGVyZSBhcmUgYW55IHF1ZXN0aW9ucyBvciBjb25jZXJucy4iLCJwcm9tcHQiOiJBY3QgYXMgbXkgcGVyc29uYWwgYXNzaXN0YW50LiBJIGFtIGFuIG9mZmljZSBhZG1pbmlzdHJhdG9yLiBTdW1tYXJpemUgdGhlIGZvbGxvd2luZyBlbWFpbCBhcyBjb25jaXNlbHkgYXMgeW91IGNhbiwgaWdub3JlIHRoZSBmb290ZXIgYW5kIGhlYWRlciBhbmQgYW55IHByZXZpb3VzIGVtYWlscy4gXG5cbkVtYWlsOiBSZXF1ZXN0IGZvciBBZGRpdGlvbmFsIE9mZmljZSBTdXBwbGllcyBEZWFyIE9mZmljZSBBZG1pbmlzdHJhdG9yLCBJIGhvcGUgdGhpcyBlbWFpbCBmaW5kcyB5b3Ugd2VsbC4gSSBhbSB3cml0aW5nIHRvIHJlcXVlc3QgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZm9yIG91ciB0ZWFtLiBBcyB5b3Uga25vdywgd2UgaGF2ZSBiZWVuIGV4cGVyaWVuY2luZyBhIGhpZ2ggdm9sdW1lIG9mIHdvcmsgbGF0ZWx5IGFuZCBoYXZlIGJlZW4gdXNpbmcgb3VyIHN1cHBsaWVzIGF0IGEgZmFzdGVyIHJhdGUgdGhhbiB1c3VhbC4gV2Ugd291bGQgZ3JlYXRseSBhcHByZWNpYXRlIGl0IGlmIHlvdSBjb3VsZCBwcm92aWRlIHVzIHdpdGggdGhlIGZvbGxvd2luZyBpdGVtczogUHJpbnRlciBwYXBlciBJbmsgY2FydHJpZGdlcyBmb3IgdGhlIEhQIHByaW50ZXIgaW4gdGhlIGNvbmZlcmVuY2Ugcm9vbSBTdGlja3kgbm90ZXMgQmluZGVyIGNsaXBzIEhpZ2hsaWdodGVycyBQbGVhc2UgbGV0IG1lIGtub3cgaWYgdGhlcmUgYXJlIGFueSBxdWVzdGlvbnMgb3IgY29uY2VybnMsIGFuZCB3aGVuIHdlIGNhbiBleHBlY3QgdGhlIHN1cHBsaWVzIHRvIGJlIGRlbGl2ZXJlZC4gVGhhbmsgeW91IGZvciB5b3VyIGhlbHAuIFxuXG5CZXN0IHJlZ2FyZHMsIFlvdXIgTmFtZSBTdW1tYXJ5OlxuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -126,18 +126,25 @@ The response here is acceptable, and would be useful. However, with some further
 </div>
 
 
-<br/>Now you're left with only the most important parts of the summary!
+Odpověď zde je přijatelná a byla by užitečná. Nicméně dalším doladěním můžete dosáhnout lepšího výsledku. Jako čtenáři souhrnů je vám jedno, že se jedná o e-mail, možná budete chtít nižší úroveň podrobnosti souhrnu. Informace o tom, proč, jsou irelevantní, totéž platí pro poslední větu o otázkách a obavách. Jednoduchým doplněním, že cílem shrnutí je, abyste obsah přelétli a že chcete odstranit příjemné věci, lze výsledek zlepšit. 
+
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Jednejte jako můj osobní asistent. Jsem správce kanceláře. Shrňte následující e-mail co nejstručněji, ignorujte zápatí a záhlaví a všechny předchozí e-maily. Shrnutí chci použít k procházení e-mailů. Odstraňte veškeré zdvořilosti. \n\nEmail: Doufám, že vás tento e-mail zastihne v pořádku. Píši vám s žádostí o další kancelářské potřeby pro náš tým. Jak víte, v poslední době máme velký objem práce a spotřebováváme zásoby rychleji než obvykle. Velmi bychom ocenili, kdybyste nám poskytli následující položky: Prosím, dejte mi vědět, pokud máte nějaké dotazy nebo obavy a kdy můžeme očekávat dodání zásob. Děkuji vám za pomoc. \n\nBest regards, Your Name Summary:\n" initial-response="Požadavek na další kancelářské potřeby - papír do tiskárny, inkoustové kazety do tiskárny HP, samolepicí poznámky, sponky do pořadače a zvýrazňovače." max-tokens="256" box-rows="15" model-temp="0.0" top-p="0">
+    <noscript>Nepodařilo se načíst Dyno Embed: JavaScript musí být povolen</noscript>
+</div>
 
 
-## Other usecases
-
-Now that you've seen the example of summaries, We will mention a few other use cases for Zapier+GPT-3. One great example is letting GPT-3 categorize your emails. This just comes down to telling it in a prompt to categorize the following email as whatever categories you like.
-
-A more in depth example would be having multiple prompts. You can use a prompt to generate a response that agrees with the demands of the email and one that disagrees or denies. Both can be stored in your drafts and be ready to go whenever you want to send it. 
-
-If you regularly receive very similar emails, you can use a filter in Zapier to apply a prompt ONLY to that email. This can be a powerful tool when combined with a formatter. You can extract information and export CSV's from them or directly store them in some form of a database. 
+<br/>Nyní vám zbývají jen nejdůležitější části shrnutí!
 
 
-## Concerns
+## Další případy použití
 
-Please do keep in mind privacy concerns when running emails through GPT-3 and storing them. GPT-3 sometimes makes mistakes. We highly recommend checking email content before sending.
+Nyní, když jste viděli příklad souhrnů, zmíníme několik dalších případů použití Zapier+GPT-3. Jedním ze skvělých příkladů je nechat GPT-3 kategorizovat vaše e-maily. To spočívá pouze v tom, že mu ve výzvě řeknete, aby následující e-mail zařadil do libovolné kategorie.
+
+Důkladnějším příkladem by bylo mít více výzev. Můžete použít výzvu k vygenerování odpovědi, která souhlasí s požadavky e-mailu, a odpovědi, která s nimi nesouhlasí nebo je popírá. Obě můžete uložit do návrhů a mít je připravené k odeslání, kdykoli je budete chtít odeslat. 
+
+Pokud pravidelně dostáváte velmi podobné e-maily, můžete pomocí filtru v aplikaci Zapier použít výzvu POUZE na tento e-mail. V kombinaci s formátovačem to může být mocný nástroj. Můžete z nich extrahovat informace a exportovat CSV nebo je přímo ukládat do nějaké formy databáze. 
+
+
+## Obavy
+
+Při spouštění e-mailů přes GPT-3 a jejich ukládání mějte na paměti obavy o ochranu osobních údajů. GPT-3 se někdy dopouští chyb. Důrazně doporučujeme zkontrolovat obsah e-mailu před odesláním.

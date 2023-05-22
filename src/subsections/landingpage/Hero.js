@@ -9,31 +9,31 @@ import AdvancedWeb from "@site/static/img/advancedweb.svg";
 import ApplicationsWeb from "@site/static/img/applicationsweb.svg";
 
 function Hero() {
-  const categories = ["Beginner", "Intermediate", "Advanced", "Applications"];
-  const [activeCategory, setActiveCategory] = React.useState("Beginner");
+  const categories = ["Začátečníci", "Středně Pokročilí", "Pokročilí", "Aplikace"];
+  const [activeCategory, setActiveCategory] = React.useState("Začátečníci");
 
   const x_pos = React.useMemo(() => {
     switch (activeCategory) {
-      case "Beginner":
+      case "Začátečníci":
         return "left-1";
-      case "Intermediate":
+      case "Středně Pokročilí":
         return "left-2";
-      case "Advanced":
+      case "Pokročilí":
         return "left-3";
-      case "Applications":
+      case "Aplikace":
         return "left-4";
     }
   }, [activeCategory]);
 
   const x_pos_mob = React.useMemo(() => {
     switch (activeCategory) {
-      case "Beginner":
+      case "Začátečníci":
         return "left-1-mobile";
-      case "Intermediate":
+      case "Středně Pokročilí":
         return "left-2-mobile";
-      case "Advanced":
+      case "Pokročilí":
         return "left-3-mobile";
-      case "Applications":
+      case "Aplikace":
         return "left-4-mobile";
     }
   }, [activeCategory]);
@@ -45,22 +45,20 @@ function Hero() {
           className="text-center text-3xl md:text-7xl font-vietnam md:font-medium font-semibold tracking-tighter lg:px-8 2xl:px-32 pt-8"
           style={{ color: "black" }}
         >
-          Your Guide to Communicating with Artificial Intelligence
+          Váš průvodce komunikací s umělou inteligencí
         </div>
         <div className="text-center text-default text-sm font-vietnam font-light tracking-tighter px-4 md:px-10 lg:px-20 xl:px-60 pt-8">
-          Learn how to use ChatGPT and other AI tools to accomplish your goals
-          using our free and open source curriculum, designed for all skill
-          levels!
+          Naučte se používat ChatGPT a další nástroje umělé inteligence k dosažení svých cílů pomocí našeho bezplatného výukového programu s otevřeným zdrojovým kódem, který je určen pro všechny úrovně dovedností!
         </div>
         <div className="flex items-center justify-center pt-6">
-          <a href="https://learnprompting.org/docs/intro">
+          <a href="/docs/intro">
             <Button
               onClick={() =>
                 React.useEffect(() => {
                   window.location.replace("/docs/intro");
                 }, [])
               }
-              text={"Start Learning"}
+              text={"Začněte se učit"}
               icon={
                 <RxArrowTopRight
                   className="inline-block text-white"
@@ -82,11 +80,11 @@ function Hero() {
                 isActive={category == activeCategory}
                 onClick={() => setActiveCategory(category)}
                 customStyle={
-                  category === "Intermediate"
+                  category === "Středně Pokročilí"
                     ? "bg-yellow-500"
-                    : category === "Advanced"
+                    : category === "Pokročilí"
                     ? "bg-red-500"
-                    : category === "Applications"
+                    : category === "Aplikace"
                     ? "bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500"
                     : ""
                 }

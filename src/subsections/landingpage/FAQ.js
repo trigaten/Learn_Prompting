@@ -14,25 +14,25 @@ function FAQ() {
       icon: (
         <FaBookOpen className="align-middle inline-block text-dark/500 text-xl" />
       ),
-      header: "Is this curriculum free?",
+      header: "Je tento program zdarma?",
       subtitle:
-        "Yes, it is completely free and open source. We do not charge for any of the content on this website.",
+        "Ano, je zcela zdarma a s otevřeným zdrojovým kódem. Za žádný obsah na těchto webových stránkách neúčtujeme žádné poplatky.",
     },
     {
       icon: (
         <RiBracesFill className="align-middle inline-block text-dark/500 text-xl mt-1" />
       ),
-      header: "Do I need to know how to code?",
+      header: "Musím umět kódovat?",
       subtitle:
-        "Nope! However, coding is a great skill to learn alongside prompt engineering. We recommend learning Python, as it is a popular language for AI and machine learning.",
+        "Ne! Kódování je však skvělá dovednost, kterou se můžete naučit vedle pohotového inženýrství. Doporučujeme naučit se jazyk Python, protože je to oblíbený jazyk pro umělou inteligenci a strojové učení.",
     },
     {
       icon: (
         <TbCertificate className="align-middle inline-block text-dark/500 text-2xl mt-1" />
       ),
-      header: "When is the certificate being released?",
+      header: "Je ten kurz od shh.agency?",
       subtitle:
-        "It is coming soon! Be among the first to access the certification program as soon as it launches by joining our newsletter below.",
+        "Ne, toto je český překlad open source bezplatného kurzu od Learn Prompting. Placené kurzy na stránkách www.shh.agency jsou od shh.agency.",
     },
   ];
   const rightFaq = [
@@ -40,25 +40,25 @@ function FAQ() {
       icon: (
         <FiLayers className="align-middle inline-block text-dark/500 text-xl mt-1" />
       ),
-      header: "Do I need previous experience?",
+      header: "Potřebuji předchozí zkušenosti?",
       subtitle:
-        "Nope! This course is designed to be accessible to everyone, regardless of prior experience. ",
+        "Ne! Tento kurz je navržen tak, aby byl přístupný všem bez ohledu na předchozí zkušenosti. ",
     },
     {
       icon: (
         <RiSuitcaseFill className="align-middle inline-block text-dark/500 text-2xl mt-1" />
       ),
-      header: "Is prompt engineering a real job?",
+      header: "Je prompt inženýrství skutečnou prací?",
       subtitle:
-        "Yes, but most prompt engineering jobs require other skills such as coding and teaching. We prefer to view it as a skill that can be used in many different professions.",
+        "Ano, ale většina pracovních míst v oblasti promptního inženýrství vyžaduje další dovednosti, jako je kódování a výuka. Raději se na něj díváme jako na dovednost, kterou lze využít v mnoha různých profesích.",
     },
     {
       icon: (
         <BsPencilFill className="align-middle inline-block text-dark/500 text-xl mt-1" />
       ),
-      header: "Can I help add to the site?",
+      header: "Mohu pomoci přispět?",
       subtitle:
-        "Yes, we are always looking for more contributors! You can find more information by clicking the contribute tab.",
+        "Ano, stále hledáme další přispěvatele! Více informací najdete po kliknutí na záložku přispět.",
     },
   ];
   return (
@@ -67,18 +67,18 @@ function FAQ() {
         id={"faq"}
         className="text-left md:text-center text-3xl md:text-5xl font-vietnam font-medium tracking-tighter  md:px-0 pt-6 md:pt-20"
       >
-        <span style={{ color: "black" }}>Frequently Asked Questions</span>
+        <span style={{ color: "black" }}>Často kladené otázky</span>
       </div>
       <div className="text-left md:text-center text-default text-sm pt-2 font-vietnam font-light tracking-tight md:px-28 md:pt-4 md:text-md mb-4 md:mb-0 ">
-        Can't find what you are looking for?{" "}
+        Nemůžete najít, co hledáte?{" "}
         <span className={"underline"}>
           <a
-            href={"mailto:learnprompting@gmail.com"}
+            href={"mailto:hello@shh.agency"}
             className="underline"
             style={{ color: "grey" }}
           >
             {" "}
-            Contact Us
+            Napište nám
             <span className="ml-1">
               <RxArrowTopRight
                 className="inline-block text-default text-md mt-1"

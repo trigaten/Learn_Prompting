@@ -2,6 +2,6 @@
 sidebar_position: 10
 ---
 
-# 🟢 Filtering
+# 🟢 Filtrování
 
-Filtering is a common technique for preventing prompt hacking(@kang2023exploiting). There are a few types of filtering, but the basic idea is to check for words and phrase in the initial prompt or the output that should be banned. You can use a blacklist or even a whitelist for these purpose(@selvi2022exploring). A blacklist is a list of words and phrases that should be banned, and a whitelist is a list of words and phrases that should be allowed. 
+Filtrování je běžná technika pro prevenci pohotového hackování(@kang2023exploiting). Existuje několik typů filtrování, ale základní myšlenkou je kontrola slov a frází v úvodní výzvě nebo výstupu, které by měly být zakázány. Pro tyto účely můžete použít blacklist nebo dokonce whitelist(@selvi2022exploring). Blacklist je seznam slov a frází, které by měly být zakázány, a whitelist je seznam slov a frází, které by měly být povoleny. 

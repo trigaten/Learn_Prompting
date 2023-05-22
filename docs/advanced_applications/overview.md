@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 Úvod
 
-We have seen a number of prompting/prompt engineering methods thus far. 
-Now we will cover some advanced applications of prompting that can solve
-complex reasoning tasks by performing searches for information via the internet,
-or other external sources.
+Doposud jsme se seznámili s řadou metod inženýrství podnětů/promptů. 
+Nyní se budeme zabývat některými pokročilými aplikacemi promptingu, které mohou vyřešit
+složité úlohy uvažování prováděním vyhledávání informací prostřednictvím internetu,
+nebo jiných externích zdrojů.

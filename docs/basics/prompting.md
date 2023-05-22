@@ -6,60 +6,60 @@ sidebar_position: 1
 import Prompt from '@site/docs/assets/prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Prompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+<Prompt style={{width: "100%",height: "300px",verticalAlign: "top"}}/>
 </div>
 
 
 
-In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
-The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI
-a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a instruction/question, or as complex as huge chunks of text. 
+V předchozí kapitole jsme se zabývali umělou inteligencí a tím, jak mohou lidé dávat umělé inteligenci pokyny k provádění úkolů.
+Proces zadávání pokynů umělé inteligenci k provedení úkolu se nazývá výzva(@shin2020autoprompt). Umělé inteligenci říkáme
+sadu instrukcí (prompt) a ona provede úkol. Podněty mohou být jednoduché jako instrukce/otázka nebo složité jako obrovské kusy textu. 
 
-Here are two examples of prompts:
+Zde jsou dva příklady výzev:
 
-#### 1) Summarizing an Article
+#### 1) Shrnutí článku
 
-Say you are reading an article about snowfall in Florida. You want to quickly get the main ideas of the article, so you show the AI what you are reading, and ask for a summary[^2]:
+Řekněme, že čtete článek o sněžení na Floridě. Chcete se rychle seznámit s hlavními myšlenkami článku, a proto ukážete UI, co čtete, a požádáte o shrnutí[^2]:
 
 ```
-It is very rare for snow to fall in the U.S. state of Florida, especially in the central and southern portions of the state. With the exception of the far northern areas of the state, most of the major cities in Florida have never recorded measurable snowfall, though trace amounts have been recorded, or flurries in the air observed few times each century. According to the National Weather Service, in the Florida Keys and Key West there is no known occurrence of snow flurries since the European colonization of the region more than 300 years ago. In Miami, Fort Lauderdale, and Palm Beach there has been only one known report of snow flurries observed in the air in more than 200 years; this occurred in January 1977. In any event, Miami, Fort Lauderdale, and Palm Beach have not seen snow flurries before or since this 1977 event.
+V americkém státě Florida padá sníh velmi zřídka, zejména v centrální a jižní části státu. S výjimkou nejsevernějších oblastí státu většina velkých měst na Floridě nikdy nezaznamenala měřitelné sněžení, ačkoli byla zaznamenána stopová množství sněhu nebo několikrát za století pozorovány závěje ve vzduchu. Podle Národní meteorologické služby není v oblasti Florida Keys a Key West znám žádný výskyt sněhových závějí od doby evropské kolonizace oblasti před více než 300 lety. V Miami, Fort Lauderdale a Palm Beach je za více než 200 let známa pouze jedna zpráva o pozorování sněhových vánic v ovzduší; stalo se tak v lednu 1977. V každém případě v Miami, Fort Lauderdale a Palm Beach nebyly před touto událostí v roce 1977 ani po ní zaznamenány sněhové vánice.
 
-Summarize this paragraph in a single sentence:
+Shrňte tento odstavec do jedné věty:
 ```
 
-Here is the AI's response. It is a much shorter read!
+Zde je odpověď AI. Je to mnohem kratší čtení!
 
 ```text
 // highlight-start
-Snowfall is extremely rare in Florida, with the exception of the far northern areas, and only one instance of snow flurries in the air has been recorded in the major cities of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
+Sněžení je na Floridě, s výjimkou nejsevernějších oblastí, velmi vzácné a ve velkých městech Miami, Fort Lauderdale a Palm Beach byl za posledních 200 let zaznamenán pouze jeden případ sněhové vánice ve vzduchu.
 // highlight-end
 ```
 
-#### 2) Math Word Problem Solving
+#### 2) Řešení matematických slovních úloh
 
-If you have a dataset of mathematical equations that you would like a language model to solve,
-you can create a prompt by posing the question "What is EQUATION".
+Máte-li k dispozici soubor dat s matematickými rovnicemi, které chcete řešit pomocí jazykového modelu,
+můžete vytvořit výzvu položením otázky "Co je to ROVNICE".
 
-For a given question, your full prompt could look like this:
+Pro danou otázku může vaše úplná výzva vypadat takto:
 
 ```
-What is 965*590?
+Co je 965*590?
 ```
 
-For this prompt, GPT-3 (text-davinci-003) (an AI) sometimes answers 569,050 (incorrect). This is where prompt engineering comes in.
+Na tuto výzvu GPT-3 (text-davinci-003) (umělá inteligence) někdy odpoví 569,050 (nesprávně). Zde přichází na řadu inženýrství výzvy.
 
 # Prompt Engineering
 
-If, instead of asking `What is 965*590?`, we ask 
-`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`, GPT-3 will
-answer `569350` (correct). Why is this the case? Why is telling the AI twice to give a correct answer helpful? How can we create
-prompts that yield optimal results on our task? This last question, in particular,
-is the focus of the field of Prompt Engineering, as well as this course.
+Pokud se místo otázky `Co je 965*590? ` zeptáme 
+`Ujistěte se, že vaše odpověď je přesně správná. Kolik je 965*590? Ujistěte se, že vaše odpověď je přesně správná:`, GPT-3 bude
+odpoví `569350` (správně). Proč tomu tak je? Proč je užitečné říci umělé inteligenci dvakrát, aby uvedla správnou odpověď? Jak můžeme vytvořit
+výzvy, které přinesou optimální výsledky naší úlohy? Zejména tato poslední otázka,
+je středem zájmu oboru Prompt Engineering a také tohoto kurzu.
 
 :::caution
-One more thing, if you are running the above prompt in GPT-3, you should set temperature to 0 to remove randomness. 
+Ještě jedna věc, pokud výše uvedenou výzvu spouštíte v GPT-3, měli byste nastavit teplotu na 0, abyste odstranili náhodnost. 
 :::
 
-Read on to learn how to engineer good prompts!
+Čtěte dále a dozvíte se, jak konstruovat dobré výzvy!
 
-[^2]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida
+[^2]: Tento odstavec je z https://en.wikipedia.org/wiki/Snow_in_Florida

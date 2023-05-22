@@ -2,31 +2,31 @@
 sidebar_position: 0
 ---
 
-# 🟢 Structuring Data
+# 🟢 Strukturování dat
 
-One simple and exciting use case for LLMs is organizing data into tables. Perhaps you have a bunch of news articles or business reports, and you would like all of the important points to be summarized in a table that you can then put into a spreadsheet or database. Chat bots like ChatGPT can help you do this.
+Jedním z jednoduchých a zajímavých případů použití LLM je uspořádání dat do tabulek. Možná máte několik novinových článků nebo obchodních zpráv a rádi byste všechny důležité body shrnuli do tabulky, kterou pak můžete vložit do tabulkového procesoru nebo databáze. Chatovací boti, jako je ChatGPT, vám s tím mohou pomoci.
 
-We can extract information from the following report by appending `Generate a table containing this information:` to it.
+Informace z následující zprávy můžeme získat tak, že k ní připojíme příkaz `Vytvořit tabulku obsahující tyto informace:`.
 
 ```text
-In a recent business report presentation, the CEO of Zana Corp. highlighted their remarkable growth in the past fiscal year. She shared that the company experienced a 15% increase in revenue, reaching $50 million, with a 12% profit margin ($6 million in net profit). The report also showcased a 20% growth in their customer base, now totaling 100,000 customers. Additionally, the company's operating expenses went up by 10%, amounting to $10 million, while the employee headcount increased by 25%, resulting in a current workforce of 500 employees. 
+V nedávné prezentaci obchodní zprávy vyzdvihl generální ředitel společnosti Zana Corp. její pozoruhodný růst v uplynulém fiskálním roce. Sdělila, že společnost zaznamenala 15% nárůst tržeb, které dosáhly 50 milionů dolarů, při 12% ziskové marži (6 milionů dolarů čistého zisku). Zpráva také ukázala 20% nárůst jejich zákaznické základny, která nyní čítá 100 000 zákazníků. Kromě toho se provozní náklady společnosti zvýšily o 10 % a dosáhly 10 milionů dolarů, zatímco počet zaměstnanců se zvýšil o 25 %, takže v současné době zaměstnává 500 lidí. 
 
-Generate a table containing this information:
+Vytvořte tabulku obsahující tyto informace:
 ```
 
-ChatGPT will output a table like the following:
+ChatGPT vygeneruje následující tabulku:
 
-| Metric | Value |
+| Metrika | Hodnota |
 |-------|------|
-| Revenue | $50 million |
-| Profit Margin | 12% |
-| Net Profit | $6 million |
-| Customer Base | 100,000 |
-| Operating Expenses | $10 million |
-| Employee Headcount | 500 |
-| Revenue Increase | 15% |
-| Customer Increase | 20% |
-| Operating Expenses Increase | 10% |
-| Employee Headcount Increase | 25% |
+| Příjmy | 50 milionů dolarů |
+| Zisková marže | 12% |
+| Čistý zisk | 6 milionů dolarů |
+| Zákaznická základna | 100 000 |
+| Provozní náklady | 10 milionů dolarů |
+| Počet zaměstnanců | 500 |
+| Nárůst tržeb | 15% |
+| Nárůst počtu zákazníků | 20% |
+| Nárůst provozních nákladů | 10% |
+| Nárůst počtu zaměstnanců | 25% |
 
-You can then copy and paste it into a spreadsheet like Excel/Sheets or even documents and powerpoints.
+Poté je můžete zkopírovat a vložit do tabulky, jako je Excel/Sheets, nebo dokonce do dokumentů a powerpointů.

@@ -21,20 +21,20 @@ import OpenAI from "@site/static/img/openai_logo.png";
 function Join() {
   const stats = [
     {
-      header: "700K+",
-      subtitle: "People Learning",
+      header: "100+",
+      subtitle: "Studentů",
     },
     {
-      header: "36K+",
-      subtitle: "Discord Members",
+      header: "150+",
+      subtitle: "AI nástrojů",
     },
     {
       header: "60+",
-      subtitle: "Content Modules",
+      subtitle: "Bezplatných modulů",
     },
     {
-      header: "9+",
-      subtitle: "Languages",
+      header: "3",
+      subtitle: "Placené kurzy",
     },
   ];
 
@@ -56,13 +56,11 @@ function Join() {
   return (
     <div className="w-screen font-vietnam">
       <div className="text-center text-2xl md:text-5xl font-vietnam font-semibold md:font-medium tracking-tighter px-4 md:px-32 md:pt-15 lg:px-[200px]">
-        <span style={{ color: "black" }}>Join our global community.</span>
+        <span style={{ color: "black" }}>Lepší prompty.</span>
         <br />
-        <span style={{ color: "black" }}>Elevate your prompting skills.</span>
+        <span style={{ color: "black" }}>Úžasné výsledky.</span>
         <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-56 pt-10">
-          Become part of a worldwide network of learners from various
-          industries, all mastering the skill of effectively engaging with AI
-          using our curriculum
+          Naučte se jak správně komunikovat nejen s ChatGPT, abyste dosahli neuvěřitelných výsledků.
         </div>
       </div>
       <div className="flex flex-col gap-8 md:gap-0 md:flex-row items-center justify-between px-12 md:px-16 lg:px-20 xl:px-24 2xl:px-32 text-transparent bg-clip-text bg-gradient-to-r from-[#005046] to-[#027F75] pt-14 pb-10 max-w-screen-xl mx-auto">
@@ -73,22 +71,21 @@ function Join() {
 
       <LargeCallout className={"pt-20 tracking-tighter"}>
         <div
-          id={"competition"}
+          id={"nejvetsi-kurz"}
           className="flex gap-4 justify-around flex-col md:flex-row"
         >
           <div className="md:w-[45%] md:pl-28 md:ml-12">
             <div className="opacity-81 text-center md:text-left text-lg">
-              Introducing The
+              Představujeme
             </div>
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
-              <span className="font-bold">HackAPrompt</span> Competition
+              <span className="font-bold">Největší AI kurzy</span> v češtině
             </div>
             <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
-              A beginner-friendly competition that will challenge you to beat 7
-              levels of prompt hacking defenses. Inject, leak and defeat the
-              sandwich defense to claim your share of over $35,000 in prizes.
-              Ready to trick the AI? Hack our prompts anytime between May 5th
-              and May 26th!
+              Chystáme 3 nejrozsáhlejší AI kurzy v češtině. Můžete se těšit na: 
+              <br />Rozsáhlý AI kurz pro začatečníky.
+              <br />AI kurz v marketingu.
+              <br />AI pro žáky a studenty.
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
               <a href="https://www.aicrowd.com/challenges/hackaprompt-2023">
@@ -96,13 +93,12 @@ function Join() {
                   onClick={() =>
                     React.useEffect(() => {
                       window.open(
-                        "https://www.aicrowd.com/challenges/hackaprompt-2023",
-                        "_blank",
-                        "noopener noreferrer"
+                        "https://www.shh.agency/punkovy-digital",
+                        "_blank"
                       );
                     }, [])
                   }
-                  text={"Register Now"}
+                  text={"Přihlásit se"}
                   type={"white"}
                   icon={
                     <RxArrowTopRight
@@ -119,44 +115,9 @@ function Join() {
             style={{ paddingTop: "20px", marginTop: "-20px" }}
           >
             <img
-              src={require("@site/static/img/lock.png").default}
-              alt="Example banner"
+              src={require("@site/static/img/marketing-ai.webp").default}
+              alt="Kurz AI v Marketingu pro Začátečníky"
             />
-          </div>
-        </div>
-        <div className="pt-20">
-          <div style={{ touchAction: "none" }}>
-            <Marquee gradient={false} speed={30}>
-              {brands.map((brand, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.1 }}
-                  className="mx-4 flex items-center"
-                >
-                  <a
-                    href={brand.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="w-40 h-20 md:w-48 md:h-24 flex items-center justify-center">
-                      <img
-                        src={brand.logo}
-                        alt={brand.name}
-                        className="object-contain"
-                        style={
-                          brand.name === "Scale"
-                            ? { width: "80%", height: "80%" }
-                            : {}
-                        }
-                      />
-                    </div>
-                  </a>
-                </motion.div>
-              ))}
-            </Marquee>
-          </div>
-          <div className="text-center opacity-80 font-medium pt-4 pb-8 text-xs md:text-lg">
-            Proudly Sponsored by Industry-Leading AI Companies
           </div>
         </div>
       </LargeCallout>

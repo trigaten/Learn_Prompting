@@ -1,78 +1,77 @@
 ---
 sidebar_position: 2
 ---
-# 🟢 Giving Instructions
+# 🟢 Dávání pokynů
 
 import InstructionPrompt from '@site/docs/assets/instruction_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+  <InstructionPrompt style={{width: "100%",height: "300px",verticalAlign: "top"}}/>
 </div>
 
 
-One of the simplest prompting methods is just giving instructions (sometimes called *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). We already saw a simple instruction
-in a previous section (`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`). However,
-modern AIs can follow much more complex instructions. 
+Jednou z nejjednodušších metod podněcování je pouhé zadávání pokynů (někdy nazývané *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). Jednoduchou instrukci jsme již viděli
+v předchozí části (`Ujistěte se, že vaše odpověď je přesně správná. Kolik je 965*590? Ujistěte se, že vaše odpověď je přesně správná:`). V této příručce se však dočtete, že: "V případě, že se jedná o číslo 9655, je to číslo, které je v tabulce uvedeno jako 9655,
+Moderní umělé inteligence se mohou řídit mnohem složitějšími instrukcemi. 
 
-Below is our first [embed](https://learnprompting.org/docs/basics/intro#embeds). If you do not see it, make sure to turn Javascript on in your browser. Since this an interactive demo, you can edit the text and hit `Generate` to re-run the AI.
+Níže je náš první [embed](https://learnprompting.org/docs/basics/intro#embeds). Pokud se vám nezobrazí, ujistěte se, že máte v prohlížeči zapnutý Javascript. Protože se jedná o interaktivní ukázku, můžete text upravit a stisknutím tlačítka `Generovat` AI znovu spustit.
 
-#### Example 1
+#### Příklad 1
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IkEgdXNlciBoYXMgaW5wdXQgdGhlaXIgZmlyc3QgYW5kIGxhc3QgbmFtZSBpbnRvIGEgZm9ybS4gV2UgZG9uJ3Qga25vdyBpbiB3aGljaCBvcmRlciBcbnRoZWlyIGZpcnN0L2xhc3QgbmFtZSBpcywgYnV0IHdlIG5lZWQgaXQgdG8gYmUgaW4gdGhlIGZvcm1hdCAnTGFzdCwgRmlyc3QnLiBDb252ZXJ0IHRoZSBmb2xsb3dpbmc6XG5cbmpvaG4gZG9lIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
-    style={{width:"100%", height:"350px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    style={{width: "100%", height: "350px", border: "0", borderRadius: "4px", overflow: "hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-<br/>The AI is easily able to solve this problem. We can also ask it to solve many other
-simple and more complex problems.
+<br/>Umělá inteligence je schopna tento problém snadno vyřešit. Můžeme ji také požádat, aby vyřešila mnoho dalších
+jednoduchých i složitějších problémů.
 
-#### Example 2
+#### Příklad 2
 
-Here is a more complicated example[^A]:
+Zde je složitější příklad[^A]:
 
 ```
-Read the following sales email. Remove any personally identifiable information (PII),
-and replace it with the appropriate placeholder. For example, replace the name "John Doe"
-with "[NAME]".
+Přečtěte si následující e-mail o prodeji. Odstraňte všechny informace umožňující identifikaci osob (PII),
+a nahraďte je příslušným zástupným znakem. Nahraďte například jméno "John Doe".
+za "[JMÉNO]".
 
-Hi John,
+Ahoj Johne,
 
-I'm writing to you because I noticed you recently purchased a new car. I'm a salesperson
-at a local dealership (Cheap Dealz), and I wanted to let you know that we have a great deal on a new
-car. If you're interested, please let me know.
+Píši vám, protože jsem si všiml, že jste si nedávno koupil nové auto. Jsem prodejce
+v místním autosalonu (Cheap Dealz) a chtěl jsem vám dát vědět, že máme skvělou nabídku na nové auto.
+na nový vůz. Pokud máte zájem, dejte mi prosím vědět.
 
-Thanks,
+Děkuji,
 
 Jimmy Smith
 
-Phone: 410-805-2345
-Email: jimmysmith@cheapdealz.com
+Telefon: 410-805-2345
+E-mail: jimmysmith@cheapdealz.com
 ```
 
-Here is the [AI's response](https://beta.openai.com/playground/p/002o3gmji5jlwUfRq9d7KDHc?model=text-davinci-003):
+Zde je odpověď [AI](https://beta.openai.com/playground/p/002o3gmji5jlwUfRq9d7KDHc?model=text-davinci-003):
 
 ```text
 // highlight-start
-Hi [NAME],
+Ahoj [JMÉNO],
 
-I'm writing to you because I noticed you recently purchased a new car. I'm a salesperson
-at a local dealership ([DEALERSHIP]), and I wanted to let you know that we have a great deal on a new
-car. If you're interested, please let me know.
+Píšu vám, protože jsem si všiml, že jste si nedávno koupil nové auto. Jsem prodejce
+v místním autosalonu ([DEALERSHIP]) a chtěl jsem vám dát vědět, že máme skvělou nabídku na nové
+vůz. Pokud máte zájem, dejte mi prosím vědět.
 
-Thanks,
+Děkuji,
 
-[SALESPERSON]
+[PRODEJCE]
 
-Phone: [PHONE NUMBER]
-Email: [EMAIL ADDRESS]
+Telefon: [TELEFONNÍ ČÍSLO]
+E-mail: [E-MAILOVÁ ADRESA]
 // highlight-end
 ```
 
-It is very exciting to see how the model can extrapolate from the instructions. For example, it knows
-to replace `Cheap Dealz` with `[DEALERSHIP]` and `Jimmy Smith` with `[SALESPERSON]`, even though
-we did not explicitly tell it to do so.
+Je velmi zajímavé sledovat, jak model dokáže extrapolovat z pokynů. Například umí
+nahradit `Cheap Dealz` za `[DEALERSHIP]` a `Jimmy Smith` za `[SALESPERSON]`, i když
+že jsme mu to výslovně neřekli.
 
-[^A]: Allowing AI to remove PII from text is a promising approach, but it should be used with extraordinary caution as it may make mistakes.
-
+[^A]: Umožnit umělé inteligenci odstranit z textu osobní údaje je slibný přístup, ale měla by být používána s mimořádnou opatrností, protože se může dopustit chyb.
 

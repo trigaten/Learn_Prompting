@@ -2,36 +2,36 @@
 sidebar_position: 100
 ---
 
-# Conclusion
+# Závěr
 
-This page will be updated as I get access to more IDEs. 
+Tato stránka bude aktualizována, jakmile získám přístup k dalším IDE. 
 
-This chapter has provided an overview of some of the tools which may be of interest to
-you as a prompt engineer. Below are my recommendations for which to use, and in 
-what capacity. Keep in mind that prompt engineering is a rapidly evolving field, and
-many of the previously mentioned tools will undergo signifigant changes in the future.
+Tato kapitola poskytla přehled některých nástrojů, které by mohly být zajímavé.
+vás jako pohotového inženýra zajímat. Níže uvádím svá doporučení, které z nich používat, a v 
+jakém rozsahu. Mějte na paměti, že promptní inženýrství je rychle se vyvíjející obor, a
+mnoho z dříve uvedených nástrojů projde v budoucnu významnými změnami.
 
-## For Single Prompt Iterating
+## Pro jednotlivé promptní iterace
 
-Everyprompt seems to have the best feature set for single prompt iterating (from the IDEs I have been able to try). Regular playground is also good, and a bit simpler.
+Zdá se, že Everyprompt má nejlepší sadu funkcí pro iteraci jednotlivých promptů (z IDE, které jsem měl možnost vyzkoušet). Regular playground je také dobrý a o něco jednodušší.
 
-## For Prompt Chaining
+## Pro řetězení promptů
 
-Dust is currently the best (less technical) tool for prompt chaining. It provides a very 
-robust feature set.
-
-
-## Embeds
-
-Dyno is the only tool which offers an embed.
-
-## For Full Control
-
-Langchain is the way to go! It is a Python library, so it is fully extensible, 
-and already comes with a great feature set.
+Dust je v současné době nejlepší (méně technický) nástroj pro řetězení promptů. Poskytuje velmi 
+robustní sadu funkcí.
 
 
-## More
+## Vkládání
 
-I will be adding more recommendations as I get access to more IDEs. I recommend 
-trying out different ones, as each has a distinct feel and different features.
+Dyno je jediný nástroj, který nabízí vkládání.
+
+## Pro úplné ovládání
+
+Langchain je to pravé! Jedná se o knihovnu Pythonu, takže je plně rozšiřitelná, 
+a je již vybavena skvělou sadou funkcí.
+
+
+## Více
+
+Další doporučení budu přidávat, jakmile získám přístup k dalším IDE. Doporučuji 
+vyzkoušet různá IDE, protože každé z nich má odlišný pocit a jiné funkce.

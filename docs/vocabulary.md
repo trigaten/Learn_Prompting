@@ -2,66 +2,66 @@
 sidebar_position: 90
 ---
 
-# 📙 Vocabulary Reference
+# 📙 Reference na slovní zásobu
 
-Please refer to this page for a list of terms and concepts that we will use throughout this course.
+Na této stránce naleznete seznam termínů a pojmů, které budeme v tomto kurzu používat.
 
-#### Large Language Models (LLMs), Pretrained Language Models (PLMs)(@branch2022evaluating), Language Models (LMs), and foundation models
+#### Velké jazykové modely (Large Language Models neboli LLM), předem natrénované jazykové modely (Pretrained Language Models neboli PLM)(@branch2022evaluating), jazykové modely (Language Models neboli LM) a modely základů (foundation models).
 
-These terms all refer more or less to the same thing: large AIs (neural networks), which have usually been trained
-on a huge amount of text.
+Všechny tyto termíny označují víceméně totéž: velké umělé inteligence (neuronové sítě), které byly obvykle natrénovány
+na obrovském množství textu.
 
-#### Masked Language Models (MLMs)
+#### Maskované jazykové modely (Masked Language Models neboli MLM)
 
-MLMs are a type of NLP model, which have a special token, usually `[MASK]`, which is
-replaced with a word from the vocabulary. The model then predicts the word that
-was masked. For example, if the sentence is "The dog is [MASK] the cat", the model
-will predict "chasing" with high probability.
+MLM jsou typem modelů NLP, které mají speciální token, obvykle `[MASK]`, který je
+nahrazen slovem ze slovníku. Model pak předpovídá slovo, které
+bylo zamaskováno. Například pokud věta zní "Pes je [MASK] kočku", model
+s vysokou pravděpodobností předpoví "honí".
 
-#### Labels
+#### Štítky (Labels)
 
-The concept of labels is best understood with an example.
+Koncept štítků nejlépe pochopíte na příkladu.
 
-Say we want to classify some Tweets as mean or not mean. If we have a list of Tweets and
-their corresponding _label_ (mean or not mean), we can train a model to classify
-whether tweets are mean or not. Labels are generally just possibilities for the
-classification task.
+Řekněme, že chceme klasifikovat některé tweety jako kruté nebo nekruté (mean nebo not mean). Máme-li seznam tweetů a
+jejich odpovídající _štítek_ (mean nebo not mean), můžeme natrénovat model pro klasifikaci tweetů.
+zda jsou tweety kruté, nebo ne. Štítky jsou obecně jen možnosti pro
+klasifikační úlohy.
 
-#### Label Space
+#### Prostor štítků (Label Space)
 
-All of the possible labels for a given task ('mean' and 'not mean' for the above example).
+Všechny možné štítky pro danou úlohu ("mean" a "not mean" pro výše uvedený příklad).
 
-#### Sentiment Analysis
+#### Analýza sentimentu (Sentiment Analysis)
 
-Sentiment analysis is the task of classifying text into positive, negative, or other sentiments.
+Analýza sentimentu je úloha klasifikace textu na pozitivní, negativní nebo jiné sentimenty.
 
-#### "Model" vs. "AI" vs. "LLM"
+#### "Model" vs. "AI" vs. "LLM".
 
-These terms are used somewhat interchangeably throughout this course, but they do
-not always mean the same thing. LLMs are a type of AI, as noted above, but not all AIs are LLMs.
-When we mentioned models in this course, we are referring to AI models. As such, in this course,
-you can consider the terms "model" and "AI" to be interchangeable.
+Tyto termíny se v tomto kurzu používají do jisté míry zaměnitelně, ale mají
+neznamenají vždy totéž. Jak bylo uvedeno výše, LLM jsou typem AI, ale ne všechny AI jsou LLM.
+Když se v tomto kurzu zmiňujeme o modelech, máme na mysli modely AI. V tomto kurzu 
+můžete považovat pojmy "model" a "AI" za zaměnitelné.
 
-#### Machine Learning (ML)
+#### Strojové učení (Machine Learning neboli ML)
 
-ML is a field of study that focuses on algorithms that
-can learn from data. ML is a subfield of AI.
+ML je studijní obor, který se zaměřuje na algoritmy, které
+se mohou učit z dat. ML je podoborem umělé inteligence.
 
-#### Verbalizer
+#### Verbalizér
 
-In the classification setting, verbalizers are mappings from labels to words in
-a language model's vocabulary(@schick2020exploiting). For example, consider
-performing sentiment classification with the following prompt:
+V prostředí klasifikace jsou verbalizátory mapování ze štítků na slova v oblasti
+slovníku jazykového modelu(@schick2020exploiting). Uvažujme např.
+provádění klasifikace sentimentu s následující výzvou:
 
 ```text
-Tweet: "I love hotpockets"
-What is the sentiment of this tweet? Say 'pos' or 'neg'.
+Tweet: "Miluji Hotpockets"
+Jaký je sentiment tohoto tweetu? Řekněte "pozitivní" (positive) nebo "negativní" (negative).
 ```
 
-Here, the verbalizer is the mapping from the conceptual labels of `positive` and `negative` to the tokens `pos` and `neg`.
+Zde je verbalizátor mapováním z pojmových značek `positive` a `negative` na tokeny `pos` a `neg`.
 
-#### Reinforcement Learning from Human Feedback (RLHF)
+#### Učení posilováním ze zpětné vazby od člověka (Reinforcement Learning from Human Feedback neboli RLHF)
 
-RLHF is a method for fine tuning LLMs according to human preference data.
+RLHF je metoda pro jemné ladění LLM podle údajů o lidských preferencích.
 
 <!-- %%RemarkAutoGlossary::list_all%% -->

@@ -4,11 +4,11 @@ sidebar_position: 3
 
 # Dust 
 
-[Dust](https://dust.tt/) is a prompt engineering tool built for chaining prompts together. They provide 
-a web interface for writing prompts and chaining them together. 
+[Dust](https://dust.tt/) je nástroj pro vytváření výzev, který slouží k řetězení výzev. Poskytují 
+webové rozhraní pro psaní podnětů a jejich řetězení. 
 
-At the moment, it has a steep learning curve compared to other prompt engineering
-IDEs.
+V současné době má v porovnání s jinými nástroji pro tvorbu výzev strmou křivku učení.
+IDE.
 
 import Image from '@site/docs/assets/tooling/dust.png';
 
@@ -16,19 +16,18 @@ import Image from '@site/docs/assets/tooling/dust.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Features
+## Funkce
 
-Dust provides robust tooling in the form of a number of composable "blocks", for 
-functions like LLM querying, code snippets, and internet searches. Dust also supports 
-the use of datasets and automatically testing prompts against datasets. 
+Dust poskytuje robustní nástroje v podobě řady složitelných "bloků", pro 
+funkce, jako je dotazování LLM, úryvky kódu a vyhledávání na internetu. Dust také podporuje 
+používání datových sad a automatické testování dotazů na základě datových sad. 
 
-Current Dust functionality focuses on chaining prompts rather than iterating on a single prompt.
+Současné funkce Dustu se zaměřují na řetězení výzev spíše než na iteraci jediné výzvy.
 
-Dust supports multiple model providers: (OpenAI, Cohere), and has planned support for HuggingFace and Replicate. API keys are required for all providers.
+Dust podporuje více poskytovatelů modelů: (OpenAI, Cohere) a plánuje podporu pro HuggingFace a Replicate. Pro všechny poskytovatele jsou vyžadovány klíče API.
 
-You can deploy LLM apps built in Dust.
+Aplikace LLM vytvořené v systému Dust můžete nasadit.
 
-## Notes
+## Poznámky
 
-Dust has recently reached 1,000 active users.
-
+Aplikace Dust nedávno dosáhla počtu 1 000 aktivních uživatelů.

@@ -1,8 +1,8 @@
 {
-  "label": "💪 Prompt Tuning",
+  "label": "💪 Ladění promptů",
   "position": 70,
   "link": {
     "type": "generated-index",
-    "description": "Prompt engineering that you can fine tune with gradients"
+    "description": "Prompt engineering, který můžete jemně doladit pomocí gradientů"
   }
 }

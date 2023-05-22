@@ -1,48 +1,36 @@
 api:
   term: API
-  def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."
-  link: See <a href='https://www.redhat.com/en/topics/api/what-is-a-rest-api'>What is a REST API?</a>
+  def: "Application Programming Interface. Umožňuje různým systémům vzájemně programově komunikovat. Existují dva typy rozhraní API: REST API (webové rozhraní API) a nativní knihovní rozhraní API."
+  link: Viz <a href='https://www.redhat.com/en/topics/api/what-is-a-rest-api'>What is a REST API?</a>
 self_consistency:
   term: Self Consistency
-  def: Generating multiple chains of thought and taking the majority answer.
-  link: See <a href='https://learnprompting.org/docs/intermediate/self_consistency'>Self Consistency</a>
+  def: Generování více myšlenkových řetězců a přijetí většinové odpovědi.
+  link: Viz <a href='https://learnprompting.org/docs/intermediate/self_consistency'>Self Consistency</a>
 labelspace:
   term: Label space
-  def: All of the possible labels for a given task.
+  def: Všechny možné štítky pro danou úlohu.
 few shot standard prompt:
   term: few shot standard prompt
-  def: Standard prompts that have exemplars in them. Exemplars are examples of the task that the prompt is trying to solve, which are included in the prompt itself.
+  def: Standardní prompty/výzvy, které obsahují příklady. Exempláře jsou příklady úlohy, kterou se výzva snaží vyřešit, a které jsou součástí samotné výzvy.
 exemplars:
-  term: Exemplars
-  def: Examples of the task that the prompt is trying to solve, which are included in the prompt itself.
+  term: Exempláře
+  def: Příklady úlohy, kterou se výzva snaží vyřešit a která je součástí samotné výzvy.
 CoT prompting:
   term: CoT prompting
-  def: The main idea of CoT is that by showing the LLM some few shot exemplars where the reasoning process is explained in the exemplars, the LLM will also show the reasoning process when answering the prompt.
+  def: Hlavní myšlenka CoT spočívá v tom, že tím, že LLM ukáže několik exemplářů snímků, kde je vysvětlen proces uvažování v exemplářích, LLM také ukáže proces uvažování při odpovídání na výzvu.
 PAL:
   term: PAL
-  def: A method that uses code as intermediate reasoning
-  link: see <a href='https://learnprompting.org/docs/advanced_applications/pal'>PAL</a>
+  def: Metoda, která používá kód jako zprostředkující argumentaci.
+  link: Viz <a href='https://learnprompting.org/docs/advanced_applications/pal'>PAL</a>
 LLM:
   term: LLM
-  def: Large Language Model. A model that is trained to predict the next word in a sentence.
+  def: Large Language Model neboli Velký jazykový model. Model, který je vycvičen k předpovídání dalšího slova ve větě.
 gold_labels:
   term: Gold Labels
-  def: The correct labels for a given task.
+  def: Správné štítky pro danou úlohu.
 labels:
   term: labels
-  def: The concept of labels is best understood with an example. <br/><br/>Say we want to classify some Tweets as mean or not mean. If we have a list of Tweets and their corresponding *label* (mean or not mean), we can train a model to classify whether tweets are mean or not. Labels are generally just possibilities for the classification task.
+  def: Koncept štítků nejlépe pochopíte na příkladu. <br/><br/>Řekněme, že chceme klasifikovat některé tweety jako průměrné nebo neprůměrné. Máme-li seznam tweetů a jim odpovídající *štítek* (průměr nebo ne-průměr), můžeme natrénovat model, který klasifikuje, zda jsou tweety průměrné nebo ne. Štítky jsou obecně jen možností pro klasifikační úlohu.
 sentiment analysis:
   term: Sentiment Analysis
-  def: Sentiment analysis is the task of classifying text into positive, negative, or other sentiments.
-
-# spanish definitions
-prompt estándar de pocos ejemplos:
-  term: prompt estándar de pocos ejemplos
-  def: Los prompts estándar que incluyen ejemplos. Los ejemplos son ejemplos de la tarea que el prompt intenta resolver, los cuales se incluyen en el propio prompt.
-ejemplos:
-  term: Ejemplos
-  def: Ejemplos de la tarea que el prompt intenta resolver, los cuales se incluyen en el propio prompt.
-
-prompting de CoT:
-  term: prompting de CoT
-  def: La idea principal de CoT es que al mostrarle al LLM algunos ejemplos de few-shot donde se explica el proceso de razonamiento en los ejemplos, el LLM también mostrará el proceso de razonamiento al responder a la solicitud.
+  def: Analýza sentimentu je klasifikace textu na pozitivní, negativní nebo jiné sentimenty.

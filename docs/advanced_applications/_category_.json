@@ -1,8 +1,8 @@
 {
-  "label": "🚀 Advanced Applications",
+  "label": "🚀 Pokročilé aplikace",
   "position": 20,
   "link": {
     "type": "generated-index",
-    "description": "Some very powerful, but more advanced applications of prompt engineering."
+    "description": "Některé velmi výkonné, ale pokročilejší aplikace promptního inženýrství."
   }
 }

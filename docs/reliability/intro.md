@@ -2,23 +2,23 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 Úvod
 
-This chapter covers how to make completions more reliable, as well as how to 
-implement checks to ensure that outputs are reliable. 
+Tato kapitola se zabývá tím, jak zajistit větší spolehlivost doplňování a jak 
+implementovat kontroly, které zajistí spolehlivost výstupů. 
 
-To a certain extent, most
-of the previous techniques covered have to do with improving completion
-accuracy, and thus reliability, in particular self-consistency(@wang2022selfconsistency).
-However, there are a number of other techniques that can be used to improve reliability,
-beyond basic prompting strategies. 
+Do jisté míry je většina
+předchozích popsaných technik souvisí se zlepšením dokončování.
+přesnosti, a tím i spolehlivosti, zejména pak autokonzistence(@wang2022selfconsistency).
+Existuje však řada dalších technik, které lze použít ke zlepšení spolehlivosti,
+nad rámec základních strategií výzvy. 
 
-%%LLMs|LLM%% have been found to be more reliable than we might expect at interpreting what a prompt is *trying* to say when responding to misspelled, badly phrased, or even actively misleading prompts(@webson2023itscomplicated). 
-Despite this ability, they still exhibit various problems including hallucinations(@ye2022unreliability), 
-flawed explanations with %%CoT|CoT prompting%% methods(@ye2022unreliability), and multiple biases
-including majority label bias, recency bias, and common token bias(@zhao2021calibrate). 
-Additionally, zero-shot CoT can be particularly biased when dealing with sensitive topics
+Bylo zjištěno, že %%LLM|LLM%% jsou spolehlivější, než bychom mohli očekávat, při interpretaci toho, co se výzva *snaží* říci, když odpovídají na špatně napsané, špatně formulované, nebo dokonce aktivně zavádějící výzvy(@webson2023itscomplicated). 
+Navzdory této schopnosti se u nich stále objevují různé problémy včetně halucinací(@ye2022unreliability), 
+chybná vysvětlení pomocí metod %%CoT|CoT prompting%%%(@ye2022unreliability) a vícenásobné zkreslení.
+včetně zkreslení většinového označení, zkreslení v souvislosti s recenzí a zkreslení v souvislosti se společným symbolem(@zhao2021calibrate). 
+Kromě toho může být zero-shot CoT obzvláště zkreslený, když se zabývá citlivými tématy.
 (@shaikh2022second).
 
-Common solutions to some of these problems include calibrators to remove _a priori_ biases,
-and verifiers to score completions, as well as promoting diversity in completions.
+Mezi běžná řešení některých z těchto problémů patří kalibrátory, které odstraňují _a priori_ zkreslení,
+a ověřovatelé, kteří hodnotí doplnění, a také podpora rozmanitosti v doplněních.

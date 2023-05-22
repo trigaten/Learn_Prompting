@@ -2,27 +2,27 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Přehled
 
-Prompt engineering is an iterative design task. More formalized iterative design
-fields (e.g. logo design) have well established tooling which allows designers to
-be more efficient. Similar tooling exists in the prompt engineering space, with
-a variety of prompt engineering IDEs (integrated development environments) having 
-recently been created. There exists a surprising range of such tooling, with everything
-from research interfaces to professionally designed IDEs.
-This chapter will provide an overview of some of the tools which may be of interest to
-you as a prompt engineer.
+Promptní inženýrství je iterativní návrhová úloha. Formalizovanější iterativní návrh
+oblasti (např. návrh loga) mají dobře zavedené nástroje, které designérům umožňují
+být efektivnější. Podobné nástroje existují i v oblasti promptního inženýrství.
+různá IDE (integrovaná vývojová prostředí) pro promptní inženýrství. 
+v nedávné době vytvořeny. Existuje překvapivě široká škála těchto nástrojů, kde je vše, co je třeba.
+od výzkumných rozhraní až po profesionálně navržená IDE.
+Tato kapitola poskytne přehled některých nástrojů, které mohou být zajímavé pro
+vás jako pohotového inženýra.
 
-See the final article in this chapter for my recommendations on tools to use.
+V závěrečném článku této kapitoly naleznete má doporučení ohledně nástrojů, které je vhodné používat.
 
-Due to waitlists, I have not yet been able to access all IDEs mentioned here. 
-Additionally, due to the number of tools coming out, not all have a dedicated page.
+Vzhledem k čekacím listinám jsem zatím neměl přístup ke všem zde zmíněným IDE. 
+Navíc vzhledem k množství vycházejících nástrojů nemají všechny vyhrazenou stránku.
 
 
-Here is a table of the tools we will be discussing in this chapter:
+Zde je tabulka nástrojů, které budeme v této kapitole probírat:
 
-## Text Prompt IDEs
-| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+## IDE pro textové výzvy
+| Název | Hostované řešení | Open Source | Zaměření na výzkum| Obchodní model| Spuštěno | Modality | Podporovaní provideři |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart) | ✅ | ❌ | ❌ | Pay per tokens | ✅ | Text | OpenAI|
 | [Dust](https://dust.tt/)                   | ✅ | ✅ | ❌|  | ✅ | Text | OpenAI, Cohere |
@@ -36,7 +36,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [PromptMaker](https://dl.acm.org/doi/abs/10.1145/3491101.3503564) |❌ | | ✅| | | Text| |
 | [PromptSandbox](https://promptsandbox.io) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
 
-| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+| Název | Hostované řešení | Open Source | Zaměření na výzkum| Obchodní model| Spuštěno | Modality | Podporovaní provideři |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [Prompts.ai](https://prompts.ai/)           | ✅ | ✅ | ❌| None | ✅ | Text | OpenAI |
 | [Snorkel](https://snorkel.ai/snorkel-flow-platform/foundation-model/) | ✅ | ❌ | ❌|  | ✅ | Text | |
@@ -52,22 +52,21 @@ Here is a table of the tools we will be discussing in this chapter:
 
 
 
-## Image Only IDEs
+## IDE pouze pro obrázky
 
-| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
+| Název | Hostované řešení | Open Source | Zaměření na výzkum| Obchodní model| Spuštěno | Modality | Podporovaní provideři |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [DALL·E](https://labs.openai.com) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | OpenAI DALLE|
 | [Dream Studio](https://beta.dreamstudio.ai/dream) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion |
 | [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
 | [getimg.ai](https://getimg.ai/guides) | ✅ | ❌ | ❌ |  | ✅ |  Text2Image, AIEditor | |
 
-**Hosted Solution**: The tool is hosted on a website and can be used without installing anything.
+**Hostované řešení**: Nástroj je hostován na webové stránce a lze jej používat bez nutnosti instalace čehokoli.
 
-**Research Focused**: The tool is designed for research purposes, and may not be as
-user friendly as other tools.
+**Zaměření na výzkum**: Nástroj je určen k výzkumným účelům a nemusí být stejně
+uživatelsky přívětivější než jiné nástroje.
 
-**Business Model**: Type of business model.
-
+**Obchodní model**: Typ obchodního modelu.
 
 
 

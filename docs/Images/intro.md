@@ -2,32 +2,32 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 Úvod
 
-Figuring out the best prompt to create a perfect image is a particular challenge.
-Research into methods to do so is not quite as developed as text prompting. This
-may be due to inherent challenges in creating objects which are fundamentally subjective
-and often lack good accuracy metrics. However, fear not, as the image prompting 
-community(@parsons2022dalleprompt) has made great discoveries about how to prompt various image models(@rombach2021highresolution)(@ramesh2022hierarchical).
+Zjistit nejlepší výzvu k vytvoření dokonalého snímku je obzvlášť náročné.
+Výzkum metod, jak toho dosáhnout, není tak rozvinutý jako v případě textových podnětů. Tento
+může být způsobeno inherentními problémy při vytváření objektů, které jsou v zásadě subjektivní.
+a často chybí dobré metriky přesnosti. Nemusíte se však bát, protože prompty k obrázkům 
+komunita(@parsons2022dalleprompt) učinila velké objevy o tom, jak napovídat různým obrazovým modelům(@rombach2021highresolution)(@ramesh2022hierarchical).
 
-This guide covers basic image prompting techniques, and we highly encourage 
-that you look at the great resources at the end of the chapter.
-Additionally, we provide an example of the end-to-end image prompting process below.
+Tento průvodce se zabývá základními technikami podněcování obrázků a velmi doporučujeme 
+abyste se podívali na skvělé zdroje na konci kapitoly.
+Níže navíc uvádíme příklad komplexního procesu vyvolávání obrázků.
 
 
-## Example
+## Příklad
 
-Here I will go through an example of how I created the images for the front page of this course. 
-I had been experimenting with low poly style for a deep reinforcement learning
-neural radiance field project. I liked the low poly style, and wanted to use it 
-for this course's images. 
+Zde projdu příklad, jak jsem vytvořil obrázky pro titulní stránku tohoto kurzu. 
+Experimentoval jsem se stylem low poly pro hluboké posilování učení.
+projektu neuronového zářivého pole. Styl low poly se mi líbil a chtěl jsem ho použít 
+pro obrázky tohoto kurzu. 
 
-I wanted an astronaut, a rocket, and a computer for the images on the front page.
+Pro obrázky na titulní stránce jsem chtěl astronauta, raketu a počítač.
 
-I did a bunch of research into how to create low poly images, on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/)
-and other sites, but couldn't find anything super helpful.
+Na stránkách [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) jsem si prozkoumal, jak vytvářet nízkopolymerové obrázky.
+a dalších stránkách, ale nic moc užitečného jsem nenašel.
 
-I decided to just start with DALLE and the prompt `Low poly white and blue rocket shooting to the moon in front of a sparse green meadow` and see what happened.
+Rozhodl jsem se prostě začít s DALLE a zadáním `Nízkopolymerová bílá a modrá raketa střílející k Měsíci před řídkou zelenou loukou` a uvidíme, co se stane.
 
 import rockets1 from '@site/docs/assets/rockets_dalle_1.png';
 import rockets2 from '@site/docs/assets/rockets_dalle_2.png';
@@ -52,98 +52,98 @@ import astronaut_final from '../../static/img/astronaut.png';
   <img src={rockets2} style={{width: "750px"}} />
 </div>
 
-I thought these results were pretty decent for a first try; I particularly liked
-the bottom left rocket.
+Myslím, že tyto výsledky byly na první pokus docela slušné; obzvlášť se mi líbily
+levá dolní raketa.
 
-Next, I wanted a computer in the same style: `Low poly white and blue computer sitting in a sparse green meadow`
+Dále jsem chtěl počítač ve stejném stylu: `Nízkopolymerový bílo-modrý počítač sedící na řídké zelené louce`.
 
 <div style={{textAlign: 'center'}}>
   <img src={computer_1} style={{width: "750px"}} />
 </div>
 
-Finally, I needed an astronaut! `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background` seemed to do the trick.
+Konečně jsem potřeboval astronauta! Zdálo se, že `Nízkopolymerový bílo-modrý astronaut sedící na řídké zelené louce s nízkopolymerovými horami v pozadí` je to pravé.
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_1} style={{width: "750px"}} />
 </div>
 
-I thought the second one was decent.
+Ten druhý mi přišel slušný.
 
-Now I had an astronaut, a rocket, and a computer. I was happy with them,
-so I put them on the front page. After a few days and input from my friends I
-realized the style just wasn't consistent 😔.
+Teď jsem měl astronauta, raketu a počítač. Byl jsem s nimi spokojený,
+tak jsem je umístil na titulní stránku. Po několika dnech a příspěvcích mých přátel jsem
+uvědomil, že styl prostě není konzistentní 😔.
 
 
-I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric. I decided to try that out, using Stable Diffusion instead of DALLE.
-I also realized that I needed to add more modifiers to my prompt
-to constrain the style. I tried this prompt:
-`A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+Udělal jsem další průzkum na [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) a našel jsem lidi, kteří používají slovo izometrický. Rozhodl jsem se to vyzkoušet a místo DALLE použít Stable Diffusion.
+Také jsem si uvědomil, že musím do své výzvy přidat další modifikátory.
+aby se styl omezil. Vyzkoušel jsem tuto výzvu:
+Svět v nízkém poly s astronautem v bílém obleku a modrým hledím sedícím na řídké zelené louce s horami v nízkém poly v pozadí. Vysoce detailní, izometrický, 4K`.
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_2} style={{width: "250px"}} />
 </div>
 
-These weren't great, so I decided to start on the rocket instead
+Tyhle nebyly nic moc, tak jsem se rozhodl začít raději s raketou.
 
-`A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+`Svět v nízkém rozlišení s bílou a modrou raketou, která startuje z řídké zelené louky s horami v nízkém rozlišení v pozadí. Vysoce detailní, izometrický, 4K`.
 
 <div style={{textAlign: 'center'}}>
   <img src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
-These are not particularly good, but after a bit of iterating around here, I ended up with 
+Tyhle nejsou nijak zvlášť dobré, ale po troše iterací jsem zde skončil u 
 
 <div style={{textAlign: 'center'}}>
   <img src={rocket_final} style={{width: "250px"}} />
 </div>
 
-Now I needed a better laptop
+Teď jsem potřeboval lepší notebook
 
-`A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K`
+`Svět s nízkou úrovní poly, s bílým a modrým notebookem sedícím na řídké zelené louce s horami s nízkou úrovní poly v pozadí. Obrazovka je zcela modrá. Vysoce detailní, izometrický, 4K`.
 
 <div style={{textAlign: 'center'}}>
   <img src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
-I got some inconsistent results; I like the bottom right one, but I decided to go in a different direction.
+Dostal jsem rozporuplné výsledky; líbí se mi ten vpravo dole, ale rozhodl jsem se jít jiným směrem.
 
-`A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+`Svět v nízkém poly, se zářícím bílým a modrým drahokamem, který sedí na řídké zelené louce s nízkými poly horami v pozadí. Vysoce detailní, izometrický, 4K`.
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
-This wasn't quite right. Let's try something magical and glowing.
+Tohle nebylo úplně v pořádku. Zkusíme něco kouzelného a zářivého.
 
-`A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+`Svět v nízkém rozlišení se zářícím bílým a modrým drahokamem, který se kouzelně vznáší uprostřed obrazovky nad řídkou zelenou loukou s nízkými horami v pozadí. Vysoce detailní, izometrický, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
-I liked these, but wanted the stone in the middle of the screen.
+Tyhle se mi líbily, ale chtěl jsem ten kámen uprostřed obrazovky.
 
-`A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+`Svět v nízkém rozlišení, se zářícím modrým drahokamem magicky se vznášejícím uprostřed obrazovky nad řídkou zelenou loukou s horami v nízkém rozlišení v pozadí. Vysoce detailní, izometrický, 4K`.
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
-Somewhere around here, I used SD's ability to have a previous image provide some influence for future images.
-And thus I arrived at:
+Někde tady jsem využil možnosti SD, aby předchozí obrázek poskytoval určitý vliv pro budoucí obrázky.
+A tak jsem dospěl k následujícímu:
 
 <div style={{textAlign: 'center'}}>
   <img src={focus_final} style={{width: "250px"}} />
 </div>
 
-Finally, I was on to the astronaut.
+Konečně jsem se dostal ke kosmonautovi.
 
-`A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+`Svět ve stylu umění mála úhelníků s astronautem v bílé kombinéze a modrým hledím sedí na řídké zelené louce s nízkými poly horami v pozadí. Vysoce detailní, izometrický, 4K`.
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_final} style={{width: "250px"}} />
 </div>
 
-At this point, I was sufficiently happy with the style consistency between my three images to use them
-on the website. The main takeaways for me were that this was a very iterative, research heavy process,
-and I had to modify my expectations and ideas as I experimented with different prompts and models.
+V tuto chvíli jsem byl dostatečně spokojen s konzistencí stylu svých tří obrázků, abych je mohl použít
+na webových stránkách. Hlavním poznatkem pro mě bylo, že se jednalo o velmi iterativní a výzkumný proces,
+a že jsem musel upravovat svá očekávání a představy, když jsem experimentoval s různými podněty a modely.

@@ -3,11 +3,11 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
-[Midjourney](https://www.midjourney.com) is an AI image generator that operates through a Discord bot interface as well as a web app (an API version of Midjourney is planned). The process for generating images with Midjourney follows the same fundamental principles as other AI image generators, including the use of prompts to guide the generation process. 
+[Midjourney](https://www.midjourney.com) je generátor obrázků s umělou inteligencí, který funguje prostřednictvím rozhraní bota Discord i webové aplikace (plánuje se verze Midjourney s API). Proces generování obrázků pomocí Midjourney se řídí stejnými základními principy jako jiné generátory obrázků AI, včetně používání výzev, které proces generování řídí. 
 
-One of the unique features of Midjourney compared to other AI image generators is its ability to create visually striking and artistically composed images. This is attributed to the model's specialized training, which enables it to produce high-quality images with specific artistic parameters (more about this in "Advanced Prompts" > "Parameters").
+Jednou z jedinečných vlastností aplikace Midjourney ve srovnání s jinými generátory obrázků s umělou inteligencí je její schopnost vytvářet vizuálně působivé a umělecky komponované obrázky. To je dáno specializovaným tréninkem modelu, který mu umožňuje vytvářet vysoce kvalitní obrázky se specifickými uměleckými parametry (více o tom v části "Pokročilé výzvy" > "Parametry").
 
-You can experiment with the Midjourney Bot in the [Learn Prompting Discord](http://learnprompting.org/discord) or in the [official Midjourney Discord server](https://discord.gg/midjourney).
+S Botem Midjourney můžete experimentovat na serveru [Learn Prompting Discord](http://learnprompting.org/discord) nebo na serveru [official Midjourney Discord server](https://discord.gg/midjourney).
 
 import midjourney_astronaut from '@site/docs/assets/midjourney_astronaut.png';
 import midjourney_astronaut_params from '@site/docs/assets/midjourney_astronaut_params.png';
@@ -40,11 +40,11 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/midjourney_astrona
 
 
 
-# Basic Usage
+# Základní použití
 
-The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAMETERS]`. 
+Základní anatomie výzvy s Midjourney je `/imagine prompt: [PROMPT PRO OBRÁZEK] [--VOLITELNÉ PARAMETRY]`. 
 
-For example: `/imagine prompt: astronaut on a horse`
+Například: `/imagine prompt: astronaut na koni`.
 
 
 <div style={{textAlign: 'center'}}>
@@ -52,69 +52,69 @@ For example: `/imagine prompt: astronaut on a horse`
 </div>
 
 
-Example with parameters: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000 `
+Příklad s parametry: `/imagine prompt: astronaut na koni --ar 3:2 --c 70 --q 2 --seed 1000 `
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
 
-In this basic example the following parameters have been used:
+V tomto základním příkladu byly použity následující parametry:
 
 
-`--ar 3:2` sets the aspect ratio of the image to 3:2
+`--ar 3:2` nastaví poměr stran obrázku na 3:2
 
-`--c 70` adds a chaos value of 70 to allow Midjourney to interpret the prompt more freely(chaos value range: 0 - 100)
+`--c 70` přidává hodnotu chaosu 70, aby mohl Midjourney volněji interpretovat výzvu (rozsah hodnot chaosu: 0 - 100)
 
-`--seed 100` sets an arbitrary seed value which can be used to re-render or re-work an image later
-
-
-(learn more about Midjourney parameters in "Advanced Prompts" > "Parameters")
+`--seed 100` nastaví libovolnou počáteční hodnotu, kterou lze později použít k opětovnému vykreslení nebo přepracování obrázku.
 
 
-# Advanced Prompts
-Advanced prompts in Midjourney make use of parameters and special prompting techniques supported by the Midjourney algorithm.
+(více informací o parametrech Midjourney najdete v části "Pokročilé propmty" > "Parametry")
 
-## Multi Prompts
-Midjourney interprets your prompt holistically by default. Using a double colon `::` tells Midjourney to interpret each part of a prompt separately.
 
-Example:
+# Pokročilé prompty
+Pokročilé výzvy v Midjourney využívají parametry a speciální techniky výzvy podporované algoritmem Midjourney.
+
+## Vícenásobné promptyvy
+Ve výchozím nastavení interpretuje Midjourney výzvu holisticky. Použití dvojité dvojtečky `::` říká Midjourney, aby interpretoval každou část výzvy zvlášť.
+
+Příklad:
 
 ```text
-/imagine prompt: astronaut and horse
+/imagine prompt: astronaut a kůň
 ```
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
 ```text
-/imagine prompt: astronaut:: and horse
+/imagine prompt: astronaut:: a kůň
 ```
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
 
-## Image Prompts
-By uploading an image to Discord and using its URL in a prompt, you can instruct Midjourney to use that image to influence the content, style and composition of your results. 
-Example:
-[Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).jpg)
+## Obrázkové prompty
+Nahráním obrázku do služby Discord a použitím jeho adresy URL ve výzvě můžete dát Midjourney pokyn, aby tento obrázek použila k ovlivnění obsahu, stylu a kompozice výsledků. 
+Příklad:
+[Astronaut (Zdroj: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).jpg)
 
 ```text
-/imagine prompt: [image URL], impressionist painting
+/imagine prompt: [URL obrázku], impresionistický obraz
 ```
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
-## Parameters (v4)
+## Parametry (v4)
 
-The following parameters are supported by Midjourney's latest model (v4).
+Nejnovější model Midjourney (v4) podporuje následující parametry.
 
-### Aspect Ratio:
+### Poměr stran:
 
-`--ar [ratio]` changes the default ratio (1:1) to a new ratio (currently the max. supported ratio is 2:1)
+`--ar [ratio]` změní výchozí poměr (1:1) na nový poměr (v současné době je maximální podporovaný poměr 2:1).
 
-Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
+Příklad: `astronaut na koni --ar 16:9` a `astronaut na koni --ar 1:2`.
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
@@ -125,9 +125,9 @@ Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 
 ### Chaos:
 
-`--c [value]` sets a chaos value that determines how much Midjourney varies the prompt; the higher the chaos value the more unusual and unexpected the results and compositions (range: 0 - 100)
+`--c [value]` nastavuje hodnotu chaosu, která určuje, jak moc Midjourney mění výzvu; čím vyšší je hodnota chaosu, tím neobvyklejší a neočekávanější jsou výsledky a kompozice (rozsah: 0 - 100)
 
-Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
+Příklad: `astronaut na koni --c20` a `astronaut na koni --c 80`.
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
@@ -136,11 +136,11 @@ Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 </div>
 
 
-### Quality:
+### Kvalita:
 
-`--q [value]` defines how much time will be spend generating the image, thus increasing the quality. The default setting is "1". Higher values use more of your subscription's GPU minutes (accepts values ".25", ".5" , "1" and "2")
+`--q [hodnota]` určuje, kolik času bude generování obrázku trvat, čímž se zvýší kvalita. Výchozí nastavení je "1". Vyšší hodnoty využívají více minut grafického procesoru vašeho předplatného (akceptuje hodnoty ".25", ".5" , "1" a "2").
 
-Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
+Příklad: `astronaut na koni --q .5` a `astronaut na koni --q 2`.
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
@@ -151,9 +151,9 @@ Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 
 ### Seed:
 
-`--seed [value]` sets a seed number which defines the starting point (noise field) for the image generation. The seeds for each image are generated randomly when not specified with the seed parameter. Using the same seed number and prompt will produce similar images.
+`--seed [hodnota]` nastavuje číslo semínka, které určuje počáteční bod (pole šumu) pro generování obrázku. Pokud není parametr seed zadán, jsou semínka pro každý obrázek generována náhodně. Při použití stejného čísla semínka a výzvy vzniknou podobné obrázky.
 
-Example: `astronaut on a horse --seed 123`
+Příklad: `astronaut na koni --seed 123`.
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
@@ -162,12 +162,12 @@ Example: `astronaut on a horse --seed 123`
 </div>
 
 
-### Stylize:
+### Stylizujte:
 
-`--stylize [value]` or `--s [value]` influences how strongly Midjourney applies its artistic algorithm.  Low values produce images that closely match the prompt, high values create very artistic images that are less connected to the prompt. The default is 100, value range is 0 - 1000.
-(Note: you can use the `/settings`command to change the default stylize value from "🖌️ Style Med" (=`--s 100`) to "🖌️ Style Low" (=`--s 50`), "🖌️ Style High"(=`--s 250`) or "🖌️ Style Very High" (=`--s 750`))
+`--stylize [hodnota]` nebo `--s [hodnota]` ovlivňuje, jak silně Midjourney použije svůj umělecký algoritmus.  Nízké hodnoty vytvářejí obrázky, které přesně odpovídají výzvě, vysoké hodnoty vytvářejí velmi umělecké obrázky, které jsou s výzvou méně spojené. Výchozí hodnota je 100, rozsah hodnot je 0 - 1000.
+(Poznámka: pomocí příkazu `/settings` můžete změnit výchozí hodnotu stylizace z "🖌️ Style Med" (=`--s 100`) na "🖌️ Style Low" (=`--s 50`), "🖌️ Style High"(=`--s 250`) nebo "🖌️ Style Very High" (=`--s 750`)).
 
-Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
+Příklad: `astronaut na koni --s 50` a `astronaut na koni --s 900`.
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
@@ -176,10 +176,10 @@ Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 </div>
 
 
-### Version:
-`--v [version number]`or `--version [version number]` let you access earlier Midjourney models (1-3)
+### Verze:
+`--v [číslo verze]` nebo `--version [číslo verze]` umožňují přístup ke starším modelům Midjourney (1-3).
 
-Example: `--v 1`, `--v 2`, and `--v 3`
+Příklad: `--v 1`, `--v 2` a `--v 3`.
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
@@ -190,24 +190,24 @@ Example: `--v 1`, `--v 2`, and `--v 3`
 </div>
 
 
-## Parameters (previous models)
+## Parametry (předchozí modely)
 
-### Same Seed
+### Stejné osivo
 
-`--sameseed`: while the `--seed` parameter produces a single noise field applied across all images in the initial grid, the sameseed parameter applies the same starting noise to all images in the initial grid so it will produce very similar images.
+`--sameseed`: zatímco parametr `--seed` vytváří jediné šumové pole aplikované na všechny obrázky v počáteční mřížce, parametr sameseed aplikuje stejný počáteční šum na všechny obrázky v počáteční mřížce, takže vytvoří velmi podobné obrázky.
 
-Example: `astronaut on a horse --sameseed --v 3`
+Příklad: `astronaut na koni --sameseed --v 3`.
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
 </div>
 
 
-### Tile
+### Dlaždice
 
-`--tile` generates images that can be used as repeating tiles to create seamless patterns for fabrics, wallpapers and textures (only works with models 1 - 3)
+`--tile` generuje obrázky, které lze použít jako opakující se dlaždice pro vytvoření bezešvých vzorů látek, tapet a textur (funguje pouze s modely 1 - 3).
 
-Example: `astronaut on a horse --tile --v 3`
+Příklad: `astronaut na koni --tile --v 3`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
@@ -220,9 +220,9 @@ Example: `astronaut on a horse --tile --v 3`
 
 ### Video
 
-`--video` creates a short movie of the image grid being generated. Reacting with the ✉️ emoji lets the Midjourney Bot send you a DM with the link to the video.
+`--video` vytvoří krátký film s vygenerovanou mřížkou obrázků. Reakce pomocí emoji ✉️ umožní botovi Midjourney odeslat DM s odkazem na video.
 
-Example: `astronaut on a horse --video --v 3`
+Příklad: `astronaut na koni --video --v 3`.
 
 <div style={{textAlign: 'center'}}>
  <video width="320" height="240" autoplay muted>
@@ -233,6 +233,6 @@ Example: `astronaut on a horse --video --v 3`
 
 
 
-## Links
+## Odkazy
 
-[Official Midjourney Documentation](https://docs.midjourney.com/)
+[Oficiální dokumentace Midjourney](https://docs.midjourney.com/)

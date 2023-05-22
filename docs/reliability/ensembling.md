@@ -4,14 +4,14 @@ sidebar_position: 5
 
 # 🟡 Prompt Ensembling
 
-Prompt ensembling is the concept of using multiple different prompts to try to 
-answer the same question. There are many different approaches to this.
+Prompt ensembling je koncept použití více různých výzev, které se snaží 
+odpovědět na stejnou otázku. Existuje mnoho různých přístupů.
 
 ## DiVeRSe
 
-DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") is
-a method that improves the reliability of answers in a threefold manner. It does this by
-1) using multiple prompts to generate diverse completions, 2) using a verifier to distinguish good answers from bad answers, and 3) using a verifier to check the correctness of reasoning steps.
+DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") je
+metoda, která trojnásobně zvyšuje spolehlivost odpovědí. Dosahuje toho tím, že
+1) používáním více výzev ke generování různorodých doplnění, 2) používáním ověřovače k rozlišení dobrých odpovědí od špatných a 3) používáním ověřovače ke kontrole správnosti kroků uvažování.
 
 
 import diverse from '@site/docs/assets/diverse.png';
@@ -25,67 +25,67 @@ DiVeRSe (Li et al.)
 </div>
 
 
-### Diverse Prompts
+### Rozmanité výzvy
 
-DiVeRSe uses 5 different prompts a given input. To construct each prompt, they randomly
-sample a few exemplars from the training set. Here is an example of one such few-shot
-prompt (k=2), with exemplars taken from the [GSM8K benchmark](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). In practice, DiVeRSe uses
-5 exemplars in prompts for this benchmark.
+DiVeRSe používá 5 různých výzev daný vstup. Pro sestavení každé výzvy náhodně
+náhodně několik exemplářů z trénovací sady. Zde je příklad jednoho takového několikavzorkového příkladu
+výzva (k=2) s exempláři převzatými z [benchmarku GSM8K](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). V praxi DiVeRSe používá
+5 exemplářů ve výzvách pro tento benchmark.
 
 
 ```
-Q: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
-A: Natalia sold 48/2 = 24 clips in May.
-Natalia sold 48+24 = 72 clips altogether in April and May.
+Otázka: Natálie prodala v dubnu klipy 48 svým přátelům a v květnu pak prodala o polovinu méně klipů. Kolik klipů prodala Natálie celkem v dubnu a květnu?
+Odpověď: Natálie prodala v květnu 48/2 = 24 klipů.
+Natálie prodala v dubnu a květnu celkem 48+24 = 72 klipů.
 #### 72
-Q: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?
-A: Weng earns 12/60 = $0.2 per minute.
-Working 50 minutes, she earned 0.2 x 50 = $10.
+Otázka: Weng si za hlídání dětí vydělá 12 dolarů na hodinu. Včera hlídala děti právě 50 minut. Kolik si vydělala?
+Odpověď: Weng si vydělá 12/60 = 0,2 dolaru za minutu.
+Za 50 minut práce si vydělala 0,2 x 50 = 10 USD.
 #### 10
-Q: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?
+Otázka: Betty si šetří peníze na novou peněženku, která stojí 100 dolarů. Betty má pouze polovinu potřebných peněz. Její rodiče se rozhodli, že jí na tento účel dají 15 dolarů a prarodiče dvakrát tolik než rodiče. Kolik peněz ještě Betty potřebuje, aby si peněženku mohla koupit?
 A:
 ```
 
-After generating 5 different prompts like above, DiVeRSe samples 20 reasoning paths 
-for each (temperature = 0.5). Here are a few example completions of the above prompt.
-Note that the answers are not always correct.
+Po vygenerování 5 různých podnětů, jako je výše uvedený, DiVeRSe ukáže 20 způsobů uvažování. 
+pro každou z nich (teplota = 0,5). Zde je několik příkladů vyplnění výše uvedené výzvy.
+Všimněte si, že odpovědi nejsou vždy správné.
 
 
 ```text
 <!-- highlight-start -->
-Betty has 0.5*100 = $50.
-Then she gets 15 more = $65.
-Then she gets 2*15 = $90.
-She needs 100-90 = $10 more.
+Betty má 0,5*100 = 50 dolarů.
+Pak dostane ještě 15 = 65 dolarů.
+Pak dostane 2*15 = 90 dolarů.
+Potřebuje ještě 100-90 = 10 dolarů.
 #### 10
 <!-- highlight-end -->
 ```
 
-```text
+````text
 <!-- highlight-start -->
-A: Betty has 0.5*100 = $500.
-Then she gets 15 more = $650.
-Then she gets 2*15 = $900.
-She needs 100-90 = $1000 more.
+A: Betty má 0,5*100 = 500 dolarů.
+Pak dostane dalších 15 = 650 dolarů.
+Pak dostane 2*15 = 900 dolarů.
+Potřebuje ještě 100-90 = 1000 dolarů.
 #### 1000
 <!-- highlight-end -->
 ```
 
-At this point, DiVeRSe has generated 100 different completions.
+V tomto okamžiku má DiVeRSe vygenerováno 100 různých doplnění.
 
-### Voting Verifier
+### Ověřovatel hlasování
 
-Now, we could just take the majority answer, like Self-Consistency(@mitchell2022enhancing) does.
+Nyní bychom mohli prostě vzít většinovou odpověď, jako to dělá Self-Consistency(@mitchell2022enhancing).
 
-However, DiVeRSe proposes a much more complicated method, which they call a _voting verifier_.
+DiVeRSe však navrhuje mnohem složitější metodu, kterou nazývá _ověřovač hlasování_.
 
-At test time, using the voting verifier is a two step process. First, the verifier (a neural network)
-assigns a 0-1 score to each completion based on how likely it is to be correct. Then, the 'voting'
-component sums all of the scores over different answers and yields the final answer.
+V době testování je použití ověřovatele hlasování dvoustupňový proces. Nejprve ověřovatel (neuronová síť)
+přiřadí každému vyplnění skóre 0-1 podle toho, jak pravděpodobné je, že je správné. Poté se provede "hlasování
+sečte všechna skóre různých odpovědí a získá konečnou odpověď.
 
-#### Example
+#### Příklad
 
-Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
+Zde je malý příklad. Řekněme, že máme následující odpovědi na otázku "Co je dvě plus dvě?":
 
 ```text
 <!-- highlight-start -->
@@ -95,153 +95,152 @@ Here is a small example. Say we have the following completions for the prompt `W
 
 ```text
 <!-- highlight-start -->
-two + 2 = 5
+dva + 2 = 5
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-I think 2+2 = 6
+Myslím, že 2+2 = 6
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-two plus two = 4
+dva plus dva = 4
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-It is 5
+Je to 5
 <!-- highlight-end -->
 ```
 
-The verifier will read each completion and assign a score to it. For example, it might assign
-the scores: 0.9, 0.1, 0.2, 0.8, 0.3 respectively. Then, the voting component will sum the scores for each
-answer.
+Ověřovatel přečte každé doplnění a přiřadí mu skóre. Může například přiřadit
+skóre: 0,9, 0,1, 0,2, 0,8, 0,3. Poté hlasovací komponenta sečte skóre pro každé z nich.
+odpovědi.
 
 ```
-score(4) = 0.9 + 0.8 = 1.7
-score(5) = 0.1 + 0.3 = 0.4
-score(6) = 0.2
+score(4) = 0,9 + 0,8 = 1,7
+score(5) = 0,1 + 0,3 = 0,4
+score(6) = 0,2
 ```
 
-The final answer is 4, since it has the highest score.
+Konečná odpověď je 4, protože má nejvyšší skóre.
 
-**But how is the verifier trained?**
+**Ale jak je ověřovač vycvičen?**
 
-The verifier is trained with a slightly complex loss function, which 
-I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
+Ověřovač je trénován pomocí mírně složité ztrátové funkce, která 
+kterou se zde nebudu zabývat. Pro více informací si přečtěte část 3.3 článku (@li2022advance).
 
-## Ask Me Anything (AMA) Prompting
+## Ask Me Anything (AMA) Prompting (Ptejte se mě na cokoli)
 
-import ama from '@site/docs/assets/AMA_Prompting.jpg';
+import ama z '@site/docs/assets/AMA_Prompting.jpg';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama} style={{width: "750px"}} />
 </div>
 
-Ask Me Anything (AMA) prompting(@arora2022ama) is a similar approach to DiVeRSe. However, both its multiple prompt step and its answer aggregation step differ signifigantly. The core idea of AMA is to use a LLM to generate multiple prompts, instead of just using different few-shot exemplars.
+Ask Me Anything (AMA) prompting(@arora2022ama) je podobný přístup jako DiVeRSe. Jeho krok vícenásobné výzvy i krok agregace odpovědí se však výrazně liší. Základní myšlenkou AMA je použití LLM ke generování vícenásobných výzev, místo aby se používaly pouze různé exempláře s několika snímky.
 
-### Multiple Prompts
+### Vícenásobné výzvy
 
-AMA shows that you can take a question and reformat it in multiple ways to create different prompts. For example, say you are scraping a bunch of websites for information on animals and want to only record ones that live in North America. Let's construct a prompt to determine this.
+AMA ukazuje, že můžete vzít otázku a přeformátovat ji více způsoby, abyste vytvořili různé výzvy. Například řekněme, že sháníte informace o zvířatech z několika webových stránek a chcete zaznamenat pouze ta, která žijí v Severní Americe. Sestavme výzvu, která to určí.
 
-Given the following passage from Wikipedia:
-
-```text
-The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-```
-
-You can format this task into a prompt like so:
+Vzhledem k následujícímu úryvku z Wikipedie:
 
 ```text
-Is the following claim True or False given the context?
-
-Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-Claim: This animal lives in North America
-Answer:
+Medvěd kermodský, někdy nazývaný medvědí duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
 ```
 
-This is a bit of an odd formulation. Why not just use the following simpler prompt?
+Tuto úlohu můžete naformátovat do výzvy takto:
 
 ```text
-Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-Question: Does this animal lives in North America?
+Je následující tvrzení vzhledem ke kontextu pravdivé, nebo nepravdivé?
+
+Kontext: Medvěd kermodský, někdy nazývaný medvědí duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
+Tvrzení: Toto zvíře žije v Severní Americe
+Odpověď: Tento druh medvěda se vyskytuje na území České republiky:
 ```
 
-Well, by formulating the question in this special way, we can generate different prompts.
-Our first step here will be to take the claim `This animal lives in North America` and reformat it into different questions, which are basically asking the same thing. To do this, we will pass the claim through prompts like those in the below image.
+Toto je trochu zvláštní formulace. Proč prostě nepoužijete následující jednodušší výzvu?
 
-import ama_multi from '@site/docs/assets/AMA_multiprompting.png';
+```text
+Kontext: Medvěd kermodský, někdy nazývaný medvědí duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
+Otázka: Žije toto zvíře v Severní Americe?
+```
+
+Nuže, formulováním otázky tímto zvláštním způsobem můžeme generovat různé podněty.
+Naším prvním krokem zde bude vzít tvrzení ``Toto zvíře žije v Severní Americe`` a přeformátovat ho na různé otázky, které se v podstatě ptají na totéž. Za tímto účelem projdeme tvrzení přes výzvy, jako jsou ty na následujícím obrázku.
+
+import ama_multi z '@site/docs/assets/AMA_multiprompting.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama_multi} style={{width: "800px"}} />
 </div>
 
-This might output:
-1. Was the animal living in North America?
-2. Does the animal live in North America?
-3. Where does the animal live?
+To může mít za následek:
+1. Žilo zvíře v Severní Americe?
+2. Žije zvíře v Severní Americe?
+3. Kde zvíře žije?
 
-The idea behind this is to create different *views* of the task. We then apply each to the given context like so:
-
-```text
-Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-Question: Was the animal living in North America?
-```
-
-Then, we can generate answers for each:
-
-1. `Yes it was`
-2. `Yes it does`
-3. `North America`
-
-These are *intermediate* answers. We need to map them to task labels (e.g. Yes or No).
-
-We can do this by passing the intermediate answers through a prompt like the following:
+Smyslem tohoto postupu je vytvořit různé *pohledy* na danou úlohu. Každý z nich pak aplikujeme na daný kontext takto:
 
 ```text
-Select the correct category.
-
-"Categories":
-- Yes, North America
-- No, not North America
-
-"Yes it was" fits category:
+Kontext: Medvěd kermodský, někdy nazývaný medvěd duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
+Otázka: Žilo toto zvíře v Severní Americe?
 ```
 
-Now we can get our output answers.
+Poté můžeme vygenerovat odpovědi na každou z nich:
 
-1. `Yes, North America`
-2. `Yes, North America`
-3. `Yes, North America`
+1. `Ano, bylo`
+2. `Ano, je to tak`
+3. `Severní Amerika`
 
-Here, they all agree, so we can just take the first answer. However, if they disagreed, we could use the AMA aggregation step to get a final answer.
+Toto jsou *prostřední* odpovědi. Musíme je přiřadit k označení úlohy (např. Ano nebo Ne).
 
-### Answer Aggregation
+To můžeme udělat tak, že mezipodpovědi předáme prostřednictvím následující výzvy:
 
-AMA uses a very complicated strategy for aggregating answers (more so than DiVeRSe) instead of simply taking the majority answer. To understand why the majority answer may be a poor choice, consider two of the questions we generated before:
+```text
+Vyberte správnou kategorii.
 
-1. Was the animal living in North America?
-2. Does the animal live in North America?
+"Kategorie":
+- Ano, Severní Amerika
+- Ne, ne Severní Amerika
 
-They are extremely similar, so will likely generate the same result. Since the questions are so similar, they will effectively bias the end result. To deal with this, AMA relies on weak supervision and complex mathematics in order to estimate dependencies between different prompts it creates, and then uses this to weight them appropriately.
+"Ano, bylo" odpovídá kategorii:
+```
 
-So, for the three questions we generated, it might assign weights of 25%, 25%, and 50%, since the first two are so similar.
+Nyní můžeme získat naše výstupní odpovědi.
 
-Although AMA's aggregation strategy is powerful, it is so complicated that I will not cover it here. Read section 3.4 of the paper for more details(@arora2022ama).
+1. `Ano, Severní Amerika`
+2. `Ano, Severní Amerika`
+3. `Ano, Severní Amerika`
 
-### Results
+Zde se všichni shodují, takže můžeme vzít jen první odpověď. Pokud by se však neshodli, mohli bychom použít krok agregace AMA a získat konečnou odpověď.
 
-- With this prompting strategy, AMA is able to use GPT-J-6B(@wange2021gptj) to outperform GPT-3. 
+### Agregace odpovědí
 
-- AMA is better on questions where given context contains the answer.
+AMA používá velmi složitou strategii pro agregaci odpovědí (více než DiVeRSe), místo aby prostě vzala většinovou odpověď. Abychom pochopili, proč může být většinová odpověď špatnou volbou, vezměme si dvě z otázek, které jsme vygenerovali dříve:
 
-## Takeaways
+1. Žilo zvíře v Severní Americe?
+2. Žije zvíře v Severní Americe?
 
-Ensembling methods are very powerful. They can be used to improve the performance of any model, and can be used to improve the performance of a model on a specific task.
+Jsou si velmi podobné, takže pravděpodobně vygenerují stejný výsledek. Protože jsou otázky tak podobné, budou účinně zkreslovat konečný výsledek. Aby se s tím AMA vypořádala, spoléhá se na slabý dohled a složitou matematiku, aby odhadla závislosti mezi různými podněty, které vytvoří, a pak je použije k jejich vhodnému zvážení.
 
-In practice, majority voting should be your go to strategy.
+Takže třem otázkám, které jsme vytvořili, může přiřadit váhy 25 %, 25 % a 50 %, protože první dvě jsou si tak podobné.
 
+Ačkoli je agregační strategie AMA výkonná, je natolik složitá, že se jí zde nebudu zabývat. Podrobnější informace najdete v části 3.4 článku(@arora2022ama).
+
+### Výsledky
+
+- S touto strategií agregace je AMA schopna použít GPT-J-6B(@wange2021gptj) a překonat tak GPT-3. Na základě této strategie agregace je AMA schopna použít GPT-J-6B(@wange2021gptj). 
+
+- AMA je lepší v otázkách, kde daný kontext obsahuje odpověď.
+
+## Závěry
+
+Metody skládání jsou velmi výkonné. Lze je použít ke zlepšení výkonu jakéhokoli modelu a lze je použít ke zlepšení výkonu modelu na konkrétní úloze.
+
+V praxi by mělo být vaší strategií většinové hlasování.

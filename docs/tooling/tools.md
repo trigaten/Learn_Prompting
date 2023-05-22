@@ -2,81 +2,81 @@
 sidebar_position: 50
 ---
 
-# Prompt Engineering Tools
+# Nástroje Prompt Engineeringu
 
-This section contains a list of non-IDE tools that are useful for prompting.
+Tato část obsahuje seznam nástrojů, které nejsou součástí IDE a které jsou užitečné pro promptování.
 
-## Prompt Development, Testing, and Chaining
+## Vývoj, testování a řetězení promptů
 
 ### [LangChain](https://github.com/hwchase17/langchain/)
 
-> Large language models (LLMs) are emerging as a transformative technology, enabling developers to build applications that they previously could not. But using these LLMs in isolation is often not enough to create a truly powerful app - the real power comes when you can combine them with other sources of computation or knowledge.
+> Velké jazykové modely (LLM) se stávají transformativní technologií, která umožňuje vývojářům vytvářet aplikace, které dříve nemohli. Používání těchto modelů LLM izolovaně však často nestačí k vytvoření skutečně výkonné aplikace - skutečná síla přichází, když je můžete kombinovat s dalšími zdroji výpočtů nebo znalostí.
 
-> This library is aimed at assisting in the development of those types of applications.
+> Cílem této knihovny je pomoci při vývoji těchto typů aplikací.
 
 ### [Dust.tt](https://dust.tt)
 
-> The Dust platform helps build large language model applications as a series of prompted calls
-to external models. It provides an easy to use graphical UI to build chains of prompts, as well as a set of standard blocks and a custom programming language to parse and process language model outputs.
+> Platforma Dust pomáhá vytvářet rozsáhlé aplikace jazykových modelů jako sérii pohotových volání.
+na externí modely. Poskytuje snadno použitelné grafické uživatelské rozhraní pro vytváření řetězců výzev a také sadu standardních bloků a vlastní programovací jazyk pro analýzu a zpracování výstupů jazykových modelů.
 
-> It provides a series of features to make development of applications faster,
-easier and more robust:
-- running multiple completions in parallel
-- inspecting execution outputs
-- versioning prompt chains 
-- custom programming language to process data and text
-- API integration for various models and external services
+> Poskytuje řadu funkcí, které urychlují vývoj aplikací,
+jednodušší a robustnější:
+- paralelní spouštění více doplnění
+- kontrola výstupů provádění
+- verzování řetězců výzev 
+- vlastní programovací jazyk pro zpracování dat a textu
+- integrace API pro různé modely a externí služby
 
 ### [OpenPrompt](https://thunlp.github.io/OpenPrompt/)(@ding2021openprompt)
 
-> Prompt-learning is the latest paradigm to adapt pre-trained language models (PLMs) to downstream NLP tasks, which modifies the input text with a textual template and directly uses PLMs to conduct pre-trained tasks. OpenPrompt is a library built upon PyTorch and provides a standard, flexible and extensible framework to deploy the prompt-learning pipeline. OpenPrompt supports loading PLMs directly from huggingface transformers. In the future, we will also support PLMs implemented by other libraries.
+> Prompt-learning je nejnovější paradigma pro přizpůsobení předem vyškolených jazykových modelů (PLM) navazujícím úlohám NLP, které upravuje vstupní text pomocí textové šablony a přímo využívá PLM k provádění předem vyškolených úloh. OpenPrompt je knihovna postavená na PyTorch a poskytuje standardní, flexibilní a rozšiřitelný rámec pro nasazení prompt-learning pipeline. OpenPrompt podporuje načítání PLM přímo z transformátorů huggingface. V budoucnu bude podporovat také PLM implementované jinými knihovnami.
 
 ### [BetterPrompt](https://github.com/stjordanis/betterprompt)
 
-> ⚡ Test suite for LLM prompts before pushing them to PROD ⚡
+> ⚡ Sada testů pro LLM výzvy před jejich odesláním do PROD ⚡.
 
 ### [Prompt Engine](https://github.com/microsoft/prompt-engine)
 
-> NPM utility library for creating and maintaining prompts for Large Language Models (LLMs).
+> Utilitární knihovna NPM pro vytváření a údržbu výzev pro velké jazykové modely (LLM).
 
 ### [Promptify](https://github.com/promptslab/Promptify)
 
-> Relying solely on LLMs is often insufficient to build applications & tools. To unlock their full potential, it's necessary to integrate LLMs with other sources of computation or knowledge and get the pipeline ready for production.
+> Spoléhat se pouze na LLM je pro vytváření aplikací a nástrojů často nedostatečné. K uvolnění jejich plného potenciálu je nutné integrovat LLM s dalšími zdroji výpočtů nebo znalostí a připravit pipeline pro produkci.
 
-> This library is aimed at assisting in developing a pipeline for using LLMs APIs in production, solving NLP Tasks such as NER, Classification, Question, Answering, Summarization, Text2Graph etc. and providing powerful agents for building chat agents for different tasks.
+> Cílem této knihovny je pomoci při vývoji pipeline pro využití LLMs API v produkci, řešení NLP úloh, jako jsou NER, klasifikace, otázky, odpovědi, sumarizace, Text2Graph atd. a poskytnutí výkonných agentů pro vytváření chatovacích agentů pro různé úlohy.
 
 
 ### [TextBox](https://github.com/RUCAIBox/TextBox)(@tang2022textbox)
 
-> TextBox 2.0 is an up-to-date text generation library based on Python and PyTorch focusing on building a unified and standardized pipeline for applying pre-trained language models to text generation:
+> TextBox 2.0 je aktuální knihovna pro generování textu založená na jazycích Python a PyTorch, která se zaměřuje na vytvoření jednotné a standardizované pipeline pro použití předem natrénovaných jazykových modelů pro generování textu:
 
 ### [ThoughtSource](https://github.com/OpenBioLink/ThoughtSource)
 
-> "ThoughtSource is a central, open resource and community centered on data and tools for chain-of-thought reasoning in large language models (Wei 2022). Our long-term goal is to enable trustworthy and robust reasoning in advanced AI systems for driving scientific research and medical practice."
+> "ThoughtSource je centrální otevřený zdroj a komunita zaměřená na data a nástroje pro uvažování řetězce myšlenek ve velkých jazykových modelech (Wei 2022). Naším dlouhodobým cílem je umožnit důvěryhodné a robustní uvažování v pokročilých systémech umělé inteligence pro řízení vědeckého výzkumu a lékařské praxe."
 
-## Misc.
+## Různé.
 
 ### [GPT Index](https://gpt-index.readthedocs.io/en/latest/)(@Liu_GPT_Index_2022)
 
-> GPT Index is a project consisting of a set of data structures designed to make it easier to use large external knowledge bases with LLMs
+> GPT Index je projekt sestávající ze sady datových struktur navržených tak, aby usnadnily používání rozsáhlých externích znalostních bází s LLM.
 
 ### [Deforum](https://github.com/HelixNGC7293/DeforumStableDiffusionLocal)
 
-AI animated videos
+Animovaná videa s umělou inteligencí
 
 ### [Visual Prompt Builder](https://tools.saxifrage.xyz/prompt)
 
-Build prompts, visually
+Sestavení vizuálních výzev
 
 ### [Interactive Composition Explorer](https://github.com/oughtinc/ice)
 
-> ICE is a Python library and trace visualizer for language model programs.
+> ICE je knihovna a vizualizátor stop v jazyce Python pro programy s jazykovým modelem.
 
 ### [PTPT - Prompt To Plain Text](https://github.com/LeslieLeung/PTPT)
 
-> PTPT is an command-line tool that allows you to easily convert plain text files using pre-defined prompts with the help of ChatGPT. With PTPT, you can effortlessly create and share prompt formats, making collaboration and customization a breeze. Plus, by subscribing, you gain access to even more prompts to enhance your experience. If you're interested in prompt engineering, you can use PTPT to develop and share your prompts.
+> PTPT je nástroj příkazového řádku, který umožňuje snadno převádět prosté textové soubory pomocí předdefinovaných výzev s pomocí ChatGPT. Pomocí PTPT můžete bez námahy vytvářet a sdílet formáty promptů, což usnadňuje spolupráci a přizpůsobení. Navíc po přihlášení k odběru získáte přístup k ještě většímu počtu výzev, které vám pomohou vylepšit vaše zkušenosti. Pokud se zajímáte o tvorbu výzev, můžete pomocí PTPT vytvářet a sdílet své výzvy.
 
 
-### Other
+### Ostatní
 
 https://gpttools.com

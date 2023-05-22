@@ -2,186 +2,186 @@
 sidebar_position: 50
 ---
 
-# 🟢 Contracts
+# 🟢 Smlouvy
 
-Tired of reading and writing long, boring contracts? AI can help!
+Už vás nebaví číst a psát dlouhé a nudné smlouvy? Umělá inteligence vám může pomoci!
 
-:::warning
-Obligatory: I am not a lawyer and nothing in this post should be taken as legal advice.
+:::varování
+Povinné: Nejsem právník a nic v tomto příspěvku by nemělo být považováno za právní radu.
 :::
-## Reading Contracts
+## Čtení smluv
 
-### Clarifying Legal Language
+### Objasnění právního jazyka
 
-You should always read contracts carefully. If you don't understand something, or don't have time to do so, *you should talk to a lawyer*. However, if you are reading through and have trouble understanding a section, you can use AI to help you understand it.
+Smlouvy byste měli vždy pečlivě číst. Pokud něčemu nerozumíte nebo na to nemáte čas, *měli byste se poradit s právníkem*. Pokud však pročítáte a máte problémy s pochopením některé části, můžete použít UI, která vám pomůže porozumět.
 
-Here is some language from an NDA (non-disclosure agreement):
+Zde jsou některé formulace z NDA (smlouvy o mlčenlivosti):
 
 ```text
-WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
+VZHLEDEM K TOMU, že zhotovitel má nebo se může seznámit s důvěrnými informacemi a/nebo obchodním tajemstvím vládního subjektu; a
 
-WHEREAS, the Government Entity desires to ensure that its confidential information and trade secrets are protected from disclosure; and
+VZHLEDEM K TOMU, že vládní subjekt si přeje zajistit ochranu svých důvěrných informací a obchodních tajemství před prozrazením; a
 
-WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
+VZHLEDEM K TOMU, že zhotovitel souhlasí se zachováním důvěrnosti těchto informací v souladu s podmínkami této dohody.
 
-NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+S ohledem na vzájemné sliby a závazky obsažené v této smlouvě se strany dohodly takto:
 ```
 
-When I first set out into the world of legalities, I really did not understand the use of WHEREAS and NOW, THEREFORE. Let's see what ChatGPT has to say about it:
+Když jsem se poprvé vydal do světa práva, opravdu jsem nerozuměl používání slov vzhledem k a s ohledem na. Podívejme se, co na to říká ChatGPT:
 
 ```text
-WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
+VZHLEDEM K TOMU, že zhotovitel má nebo se může seznámit s důvěrnými informacemi a/nebo obchodním tajemstvím vládního subjektu; a
 
-WHEREAS, the Government Entity desires to ensure that its confidential information and trade secrets are protected from disclosure; and
+VZHLEDEM K TOMU, že vládní subjekt si přeje zajistit ochranu svých důvěrných informací a obchodních tajemství před vyzrazením; a
 
-WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
+VZHLEDEM K TOMU, že zhotovitel souhlasí se zachováním důvěrnosti těchto informací v souladu s podmínkami této dohody.
 
-NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+S OHLEDEM NA vzájemné sliby a závazky obsažené v této smlouvě se strany dohodly takto:
 
-Read the above NDA language and explain what the words in all caps are saying:
+Přečtěte si výše uvedené znění NDA a vysvětlete, co říkají slova psaná velkými písmeny:
 // highlight-start
-The words in all caps in the NDA language are legal terms that set the context and purpose of the agreement. Specifically, they establish the background and reasons for the agreement and state the obligations and expectations of the parties. In this case, the capitalized words indicate that the Contractor has access to confidential information and trade secrets of the Government Entity, that the Government Entity wants to protect this information from disclosure, and that the Contractor agrees to maintain the confidentiality of such information according to the terms of the agreement.
+Slova psaná velkými písmeny v jazyce NDA jsou právní termíny, které určují kontext a účel dohody. Konkrétně stanovují pozadí a důvody dohody a uvádějí povinnosti a očekávání stran. V tomto případě slova psaná velkými písmeny naznačují, že zhotovitel má přístup k důvěrným informacím a obchodním tajemstvím vládního subjektu, že vládní subjekt chce tyto informace chránit před vyzrazením a že zhotovitel se zavazuje zachovávat důvěrnost těchto informací v souladu s podmínkami dohody.
 // highlight-end
 ```
 
-This seems to be a decent explanation, but you can easily improve your understanding by asking follow up questions.
+Zdá se, že toto je slušné vysvětlení, ale můžete snadno zlepšit své porozumění kladením doplňujících otázek.
 
-### Discovering Dangerous Language
+### Objevování nebezpečného jazyka
 
-Here is part of an NDA produced by ChatGPT. You don't need to read it, but it contains dangerous legal language favoring the employer. You can use ChatGPT to find this dangerous language by using the following prompt, which contains the NDA and a question about dangerous language at the bottom. 
+Zde je část NDA vytvořená ChatGPT. Nemusíte ji číst, ale obsahuje nebezpečný právní jazyk zvýhodňující zaměstnavatele. K nalezení tohoto nebezpečného jazyka můžete použít aplikaci ChatGPT pomocí následující výzvy, která obsahuje NDA a otázku o nebezpečném jazyku v dolní části. 
 
-:::note
+:::poznámka
 
-This NDA was created by jailbreaking ChatGPT and prompting it with `Write a contractor NDA that has dangerous legal language favoring the employer`.
+Tato NDA byla vytvořena tak, že ChatGPT zlomil vězení a zadal výzvu `Napsat NDA dodavatele, která obsahuje nebezpečný právní jazyk zvýhodňující zaměstnavatele`.
 
 :::
 
 ```text
-NON-DISCLOSURE AGREEMENT
+SMLOUVA O MLČENLIVOSTI
 
-This Non-Disclosure Agreement (the "Agreement") is entered into by and between [Employer] ("Employer") and [Contractor] ("Contractor") as of the date set forth below.
+Tato smlouva o mlčenlivosti ("Smlouva") je uzavřena mezi [Zaměstnavatelem] ("Zaměstnavatel") a [Zhotovitelem] ("Zhotovitel") k níže uvedenému datu.
 
-WHEREAS, the Contractor may become privy to confidential information and/or trade secrets of the Employer; and
+VZHLEDEM K TOMU, že Zhotovitel se může seznámit s důvěrnými informacemi a/nebo obchodním tajemstvím Zadavatele; a
 
-WHEREAS, the Employer desires to ensure that its confidential information and trade secrets are protected from disclosure; and
+VZHLEDEM K TOMU, že Zadavatel si přeje zajistit, aby jeho důvěrné informace a obchodní tajemství byly chráněny před vyzrazením; a
 
-WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
+VZHLEDEM K TOMU, že Zhotovitel se zavazuje zachovávat důvěrnost těchto informací v souladu s podmínkami této Smlouvy.
 
-NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+S OHLEDEM NA vzájemné sliby a dohody obsažené v této smlouvě se strany dohodly takto:
 
-CONFIDENTIALITY
-Contractor acknowledges that all information, documents, and materials provided by or on behalf of Employer, or obtained by Contractor from Employer or its affiliates, and all derivatives thereof (collectively, the "Confidential Information") are the exclusive property of Employer. Confidential Information includes all information of any nature, whether tangible or intangible, and in whatever form or medium, that is not generally known to the public and that relates to the business, products, services, customers, suppliers, operations, strategies, or any other aspect of the Employer.
+MLČENLIVOST
+Zhotovitel bere na vědomí, že veškeré informace, dokumenty a materiály poskytnuté Zadavatelem nebo jeho jménem nebo získané Zhotovitelem od Zadavatele nebo jeho přidružených společností a všechny jejich odvozeniny (dále společně jen "Důvěrné informace") jsou výlučným vlastnictvím Zadavatele. Důvěrné informace zahrnují veškeré informace jakékoli povahy, ať už hmotné či nehmotné, a v jakékoli formě či na jakémkoli nosiči, které nejsou obecně známé veřejnosti a které se týkají podnikání, produktů, služeb, zákazníků, dodavatelů, operací, strategií nebo jakéhokoli jiného aspektu Zadavatele.
 
-Contractor agrees to maintain the confidentiality of the Confidential Information and not to disclose, distribute, reproduce, copy, transmit, disseminate, or use in any way, except as expressly authorized in writing by Employer. Contractor agrees to protect the Confidential Information with at least the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care. Contractor acknowledges that any breach of this provision may result in irreparable harm to Employer, and that Employer shall be entitled to seek equitable relief, including injunctive relief and specific performance, in addition to any other remedies available at law or in equity.
+Zhotovitel se zavazuje zachovávat důvěrnost Důvěrných informací a nezveřejňovat, nešířit, nereprodukovat, nekopírovat, nepředávat, nešířit ani nepoužívat žádným způsobem, s výjimkou případů výslovně písemně schválených Zadavatelem. Zhotovitel se zavazuje chránit Důvěrné informace s minimálně stejnou mírou opatrnosti, jakou používá k ochraně svých vlastních důvěrných informací, v žádném případě však ne méně než s přiměřenou péčí. Zhotovitel bere na vědomí, že jakékoli porušení tohoto ustanovení může mít za následek nenapravitelnou škodu pro Zadavatele a že Zadavatel je oprávněn požadovat spravedlivé zadostiučinění, včetně soudního příkazu a zvláštního plnění, kromě jakýchkoli jiných dostupných právních nebo správních prostředků.
 
-OWNERSHIP
-All Confidential Information, including all derivatives thereof, shall remain the exclusive property of Employer. Contractor acknowledges that all right, title, and interest in and to the Confidential Information, including all intellectual property rights, belong to Employer. Contractor agrees to execute any and all documents and take any and all actions necessary or desirable to effectuate this provision.
+VLASTNICTVÍ
+Veškeré důvěrné informace, včetně všech jejich odvozenin, zůstávají výhradním vlastnictvím Zadavatele. Zhotovitel bere na vědomí, že veškerá práva, vlastnické právo a podíl na Důvěrných informacích, včetně všech práv duševního vlastnictví, náleží Zadavateli. Zhotovitel souhlasí s tím, že vyhotoví veškeré dokumenty a podnikne veškeré kroky, které jsou nezbytné nebo žádoucí k realizaci tohoto ustanovení.
 
-NO LICENSE
-Nothing contained in this Agreement shall be construed as granting any rights, by implication or otherwise, to Contractor with respect to the Confidential Information, except as expressly set forth herein.
+ŽÁDNÁ LICENCE
+Nic z toho, co je obsaženo v této smlouvě, nelze vykládat jako udělení jakýchkoli práv, implicitních nebo jiných, Zhotoviteli ve vztahu k Důvěrným informacím, s výjimkou případů výslovně uvedených v této smlouvě.
 
-TERM AND TERMINATION
-This Agreement shall commence on the date set forth above and shall continue in effect until terminated by either party upon thirty (30) days written notice. The confidentiality obligations contained herein shall survive any termination of this Agreement.
+DOBA PLATNOSTI A UKONČENÍ
+Tato dohoda začíná platit dnem uvedeným výše a zůstává v platnosti, dokud ji jedna ze stran nevypoví s třicetidenní (30) výpovědní lhůtou. Povinnosti týkající se důvěrnosti obsažené v této smlouvě zůstávají v platnosti i po ukončení této smlouvy.
 
-What part of this agreement contains dangerous language?
+Která část této smlouvy obsahuje nebezpečné formulace?
 ```
 
-Here is ChatGPT's response. 
+Zde je odpověď společnosti ChatGPT. 
 
 ```text
 // highlight-start
-The entire agreement contains dangerous language that favors the Employer over the Contractor. Here are some of the key elements that make this agreement unethical:
+Celá dohoda obsahuje nebezpečné formulace, které zvýhodňují zadavatele před zhotovitelem. Zde jsou uvedeny některé klíčové prvky, které činí tuto dohodu neetickou:
 
-Unreasonable Definition of Confidential Information: The agreement defines the Confidential Information to include all information, documents, and materials provided by or on behalf of the Employer, or obtained by the Contractor from the Employer or its affiliates, without any limitations or exclusions. This definition is broad and could potentially include information that is not actually confidential or trade secret information, which could cause the Contractor to unknowingly breach the agreement.
+Nepřiměřená definice důvěrných informací: Dohoda definuje Důvěrné informace tak, že zahrnují veškeré informace, dokumenty a materiály poskytnuté Zadavatelem nebo jeho jménem nebo získané Zhotovitelem od Zadavatele nebo jeho přidružených společností, a to bez jakýchkoli omezení nebo výjimek. Tato definice je široká a mohla by potenciálně zahrnovat informace, které ve skutečnosti nejsou důvěrnými informacemi nebo obchodním tajemstvím, což by mohlo způsobit nevědomé porušení smlouvy ze strany Zhotovitele.
 
-No Limitations on Use: The agreement does not provide any limitations on how the Employer can use the Confidential Information. This could allow the Employer to use the information for any purpose, including competing with the Contractor or disclosing the information to third parties.
+Žádná omezení použití: Smlouva nestanoví žádná omezení, jak může Zadavatel důvěrné informace použít. To by mohlo Zadavateli umožnit použití informací k jakémukoli účelu, včetně konkurenčního boje se Zhotovitelem nebo poskytnutí informací třetím stranám.
 
-Broad Definition of Ownership: The agreement states that all Confidential Information, including all derivatives thereof, shall remain the exclusive property of the Employer, with no exceptions or limitations. This means that the Contractor may not use or benefit from any information obtained through their work for the Employer, even if the Contractor developed the information independently or with other resources.
+Široká definice vlastnictví: Smlouva stanoví, že veškeré Důvěrné informace včetně všech jejich odvozenin zůstávají výhradním vlastnictvím Zadavatele, a to bez jakýchkoli výjimek či omezení. To znamená, že Zhotovitel nesmí využívat ani těžit z jakýchkoli informací získaných při své práci pro Zadavatele, a to ani v případě, že Zhotovitel tyto informace vyvinul nezávisle nebo s využitím jiných zdrojů.
 // highlight-end
 ```
 
-Althought I am not a lawyer, I think `Unreasonable Definition of Confidential Information` is particularly relevant. 
+Ačkoli nejsem právník, myslím, že `Neodůvodněná definice důvěrných informací` je obzvláště relevantní. 
 
-This technique of checking for dangerous legal content can be used for a range of legal documents. We have even seen tools being built on top of GPT-3 to detect dangerous language in TOS agreements and employment contracts.
+Tuto techniku kontroly nebezpečného právního obsahu lze použít pro celou řadu právních dokumentů. Dokonce jsme viděli, že na základě GPT-3 vznikají nástroje pro odhalování nebezpečného jazyka ve smlouvách TOS a pracovních smlouvách.
 
-## Writing Contracts
+## Psaní smluv
 
-From the previous section, we saw that ChatGPT can write NDAs. It also does a good job with other common documents like terms of use and terms of service. However, when you are dealing with less common documents, you will need to be more careful. 
+Z předchozí části jsme viděli, že ChatGPT umí psát NDA. Dobře si poradí i s dalšími běžnými dokumenty, jako jsou podmínky používání a podmínky poskytování služeb. Při práci s méně běžnými dokumenty však budete muset být opatrnější. 
 
-I recently wrote one such document mostly using GPT-3, then had it reviewed by a lawyer. They mentioned 1-2 things that could be slightly improved, but overall it was a robust document. Some people in industry are performing this process, where they generate a document using GPT-3, then have it reviewed by a lawyer. This saves time and costs.
+Nedávno jsem jeden takový dokument napsal převážně pomocí GPT-3 a poté jsem ho nechal zkontrolovat právníkem. Zmínili 1-2 věci, které by se daly mírně vylepšit, ale celkově to byl solidní dokument. Někteří lidé v průmyslu provádějí tento postup, kdy vytvoří dokument pomocí GPT-3 a pak ho nechají přezkoumat právníkem. To šetří čas i náklady.
 
-Let's pretend to be a government contractor and write a contract for a someone doing some defense work. We will use the following prompt:
+Předstírejme, že jsme vládní dodavatel a píšeme smlouvu pro někoho, kdo provádí nějaké obranné práce. Použijeme následující výzvu:
 
 ```text
-You are a lawyer for a government contractor. You are writing a contract for a subcontractor to do some aerospace work. The contract should be robust and should include the following:
-The job will last for 1.5 years and will be worth $2.5 million. It requires top secret clearance and relates to secret nuclear silo defense development. The subcontractor will be paid $1.5 million upfront and the remaining $1 million will be paid in 6 monthly installments. The subcontractor will be required to sign a non-disclosure agreement. The subcontractor will be required to sign a non-compete agreement. The subcontractor will be required to sign a non-solicitation agreement. The subcontractor will be required to sign a non-circumvention agreement. 
+Jste právník vládního dodavatele. Píšete smlouvu pro subdodavatele, který má provést nějaké práce v leteckém průmyslu. Smlouva by měla být robustní a měla by obsahovat následující:
+Práce bude trvat 1,5 roku a bude mít hodnotu 2,5 milionu dolarů. Vyžaduje prověrku na stupeň přísně tajné a týká se tajného vývoje obranného jaderného sila. Subdodavateli bude vyplaceno 1,5 milionu dolarů předem a zbývající 1 milion dolarů bude vyplacen v 6 měsíčních splátkách. Subdodavatel bude muset podepsat dohodu o zachování mlčenlivosti. Subdodavatel bude muset podepsat dohodu o zákazu konkurence. Subdodavatel bude muset podepsat dohodu o zákazu uzavírání smluv. Subdodavatel bude muset podepsat dohodu o zákazu obcházení předpisů. 
 
 // highlight-start
-SUBCONTRACT AGREEMENT
+SUBDODAVATELSKÁ SMLOUVA
 
-This Subcontract Agreement (the "Agreement") is entered into by and between [Government Contractor] ("Contractor") and [Subcontractor] ("Subcontractor") as of the date set forth below.
+Tato subdodavatelská smlouva (dále jen "smlouva") je uzavřena mezi [vládním dodavatelem] ("dodavatel") a [subdodavatelem] ("subdodavatel") k níže uvedenému datu.
 
-SCOPE OF WORK
-Subcontractor shall perform the work described in the Statement of Work attached hereto as Exhibit A (the "Work"). The Work relates to the development of secret nuclear silo defense and requires top secret clearance.
+ROZSAH PRÁCE
+Subdodavatel provede práce popsané ve výkazu prací, který je přílohou A této smlouvy ("práce"). Práce se týkají vývoje tajné obrany jaderných sil a vyžadují prověrku na stupeň přísně tajné.
 
-PAYMENT
-The total payment for the Work shall be $2.5 million, payable as follows:
+PLATBA
+Celková platba za Dílo činí 2,5 milionu USD a je splatná takto:
 
-$1.5 million upon execution of this Agreement and receipt of top secret clearance by Subcontractor.
-$1 million to be paid in 6 monthly installments of $166,666.67 each, provided that Subcontractor has satisfactorily performed the Work during the preceding month.
-NON-DISCLOSURE AGREEMENT
-Subcontractor shall sign a non-disclosure agreement in the form attached hereto as Exhibit B (the "NDA"). The NDA shall be in effect for the duration of the Agreement and for a period of five years thereafter.
+USD po uzavření této dohody a obdržení prověrky na stupeň přísně tajné subdodavatelem.
+1 milion USD bude vyplacen v 6 měsíčních splátkách po 166 666,67 USD za předpokladu, že Subdodavatel uspokojivě provedl Dílo během předchozího měsíce.
+DOHODA O MLČENLIVOSTI
+Subdodavatel podepíše dohodu o mlčenlivosti ve formě přiložené k tomuto dokumentu jako příloha B (dále jen "NDA"). NDA bude platit po dobu trvání Smlouvy a po dobu pěti let po jejím skončení.
 
-NON-COMPETE AGREEMENT
-Subcontractor shall sign a non-compete agreement in the form attached hereto as Exhibit C (the "NCA"). The NCA shall be in effect for a period of two years after the termination of this Agreement.
+KONKURENČNÍ DOLOŽKA
+Subdodavatel podepíše dohodu o zákazu konkurence ve formě přiložené k této smlouvě jako příloha C ("NCA"). NCA bude platit po dobu dvou let od ukončení této dohody.
 
-NON-SOLICITATION AGREEMENT
-Subcontractor shall sign a non-solicitation agreement in the form attached hereto as Exhibit D (the "NSA"). The NSA shall be in effect for a period of two years after the termination of this Agreement.
+DOHODA O ZÁKAZU UZAVÍRÁNÍ SMLUV
+Subdodavatel podepíše dohodu o zákazu uzavírání smluv na formuláři, který tvoří přílohu D této smlouvy ("NSA"). NSA bude platit po dobu dvou let po ukončení této dohody.
 
-NON-CIRCUMVENTION AGREEMENT
-Subcontractor shall sign a non-circumvention agreement in the form attached hereto as Exhibit E (the "NCAg"). The NCAg shall be in effect for a period of two years after the termination of this Agreement.
+DOHODA O ZÁKAZU OBCHÁZENÍ
+Subdodavatel podepíše dohodu o zákazu obcházení ve formě přiložené k této smlouvě jako příloha E ("NCAg"). NCAg bude platit po dobu dvou let po ukončení této dohody.
 
-TERM AND TERMINATION
-This Agreement shall commence on the date set forth above and shall continue in effect until the completion of the Work or until terminated by either party upon thirty (30) days written notice. The non-disclosure, non-compete, non-solicitation, and non-circumvention obligations contained herein shall survive any termination of this Agreement.
+DOBA PLATNOSTI A UKONČENÍ
+Tato dohoda začíná platit dnem uvedeným výše a zůstává v platnosti až do dokončení díla nebo do doby, než ji jedna ze stran vypoví s třicetidenní (30) výpovědní lhůtou. Závazky týkající se zákazu zveřejňování informací, zákazu soutěžit, zákazu šíření nabídek a zákazu obcházení předpisů obsažené v této smlouvě zůstávají v platnosti i po ukončení této smlouvy.
 
-INDEPENDENT CONTRACTOR
-Subcontractor is an independent contractor and is not an employee of Contractor. Subcontractor shall be responsible for its own taxes, social security contributions, insurance, and other benefits. Subcontractor shall indemnify and hold Contractor harmless from any claims, damages, or liabilities arising out of or related to Subcontractor's status as an independent contractor.
+NEZÁVISLÝ DODAVATEL
+Subdodavatel je nezávislým dodavatelem a není zaměstnancem Zhotovitele. Subdodavatel je odpovědný za své vlastní daně, příspěvky na sociální zabezpečení, pojištění a další výhody. Subdodavatel odškodní Zhotovitele za jakékoli nároky, škody nebo závazky vyplývající z postavení Subdodavatele jako nezávislého dodavatele nebo s ním související.
 
-GOVERNING LAW AND JURISDICTION
-This Agreement shall be governed by and construed in accordance with the laws of the state of [state], without giving effect to any choice of law or conflict of law provisions. Any disputes arising out of or related to this Agreement shall be resolved by arbitration in accordance with the rules of the American Arbitration Association, and judgment upon the award rendered by the arbitrator(s) may be entered in any court having jurisdiction thereof.
+ROZHODNÉ PRÁVO A SOUDNÍ PRAVOMOC
+Tato smlouva se řídí a vykládá v souladu s právem státu [stát], aniž by se zohledňovala jakákoli ustanovení o volbě práva nebo kolizní ustanovení. Veškeré spory vyplývající z této dohody nebo s ní související budou řešeny v rozhodčím řízení podle pravidel Americké rozhodčí asociace a rozsudek na základě nálezu vydaného rozhodcem (rozhodci) může být vydán u kteréhokoli příslušného soudu.
 
-ENTIRE AGREEMENT
-This Agreement constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements and understandings, whether written or oral, relating to the subject matter of this Agreement. This Agreement may not be amended or modified except in writing signed by both parties.
+CELÁ DOHODA
+Tato dohoda představuje úplnou dohodu mezi stranami a nahrazuje všechny předchozí a současné dohody a ujednání, ať už písemné nebo ústní, týkající se předmětu této dohody. Tuto smlouvu lze měnit nebo doplňovat pouze písemnou formou podepsanou oběma stranami.
 
-IN WITNESS WHEREOF, the parties have executed this Agreement as of the date set forth below.
+NA DŮKAZ TOHO strany podepsaly tuto dohodu k níže uvedenému datu.
 
-[Government Contractor]
+[Vládní dodavatel]
 
-By: ____________________________
+Zplnomocněný zástupce: ____________________________
 
-Name: __________________________
+Název:  __________________________
 
-Title: ___________________________
+Titul:  ___________________________
 
-[Subcontractor]
+[Subdodavatel]
 
-By: ____________________________
+Podepsáno: ____________________________
 
-Name: __________________________
+Jméno: __________________________
 
-Title: ___________________________
+Titul: ___________________________
 
-Date: ___________________________
+Datum: ___________________________
 // highlight-end
 ```
 
-This is a pretty good start. Imaginably you would want to add more information in the scope, payment, and other sections. This is where you would need to use your own knowledge and experience to start iterating on the document.
+To je docela dobrý začátek. Lze si představit, že budete chtít přidat další informace v sekcích rozsah, platba a dalších. Zde byste museli využít svých vlastních znalostí a zkušeností a začít dokument iterovat.
 
-## Takeaways
+## Závěry
 
-- LLMs can be used to review and clarify legal documents *in an assistive capacity*.
-- LLMs can be used to generate legal documents *in an assistive capacity*.
+- K přezkoumání a objasnění právních dokumentů lze *pomocí* použít LLM.
+- LLM lze použít k vytváření právních dokumentů *v asistenční funkci*.
 
-:::danger
-Do not use any legal documents on this page. They are for demonstration purposes only.
+:::nebezpečí
+Nepoužívejte žádné právní dokumenty na této stránce. Slouží pouze pro demonstrační účely.
 :::

@@ -2,74 +2,74 @@
 sidebar_position: 30
 ---
 
-# 🟢 Study Buddy
+# 🟢 Studijní kamarád
 
-One of our favorite ways to use LLMs is as a study tool! In particular, it is useful for explaining confusing terms as well as quizzing you on test content.
+Jedním z našich nejoblíbenějších způsobů, jak využít LLM, je studijní pomůcka! Hodí se zejména pro vysvětlení matoucích pojmů a také pro kvízy z obsahu testu.
 
-## Explaining Terms
+## Vysvětlení pojmů
 
-I was recently reading a textbook about Cacti(@nobel2002cacti), and saw this passage:
+Nedávno jsem četl učebnici o kaktusech(@nobel2002cacti) a uviděl jsem tuto pasáž:
 
 ```text
-Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
+Vzhledem k adaptacím na xerické podmínky a přítomnosti **méně odvozených dřevin** v čeledi Pereskioideae je čeleď Cactaceae jednou z anatomicky i morfologicky nejzajímavějších čeledí. 
 ```
 
-I had no idea what **less derived woods** meant, and Google only showed research articles on it. I decided to use ChatGPT to find out what it meant. I gave it the following prompt, which is simple the passage from the book and my question.
+Neměl jsem tušení, co **méně odvozené dřeviny** znamenají, a Google mi o tom ukázal pouze výzkumné články. Rozhodl jsem se použít ChatGPT, abych zjistil, co to znamená. Zadal jsem mu následující výzvu, která je prostá úryvku z knihy a mé otázky.
 
 ```text
-Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
+Vzhledem k adaptacím na xerické podmínky a přítomnosti méně odvozených dřevin v čeledi Pereskioideae je čeleď Cactaceae jednou z anatomicky i morfologicky nejzajímavějších čeledí. 
 
-What do less derived woods mean?
+Co znamenají méně odvozené dřeviny?
 
 // highlight-start
-In this context, "less derived woods" refers to the ancestral or primitive form of wood found in the early evolution of plants. These woods lack specialized structures and features that evolved later in more derived or advanced plants. In the Pereskioideae subfamily of the Cactaceae family, the wood is less derived compared to other subfamilies and is more similar to the wood found in non-cactus plants. The less derived wood in Pereskioideae is thought to be an adaptation to the more humid and less xeric environments in which these plants grow compared to other cacti.
+V tomto kontextu "méně odvozené dřeviny" označují předky nebo primitivní formu dřeva, která se vyskytovala v rané evoluci rostlin. Tato dřeva postrádají specializované struktury a znaky, které se vyvinuly později u odvozenějších nebo pokročilejších rostlin. V podčeledi Pereskioideae čeledi Cactaceae je dřevo ve srovnání s ostatními podčeleděmi méně odvozené a více se podobá dřevu, které se vyskytuje u nekaktusovitých rostlin. Předpokládá se, že méně odvozené dřevo u Pereskioideae je adaptací na vlhčí a méně xerické prostředí, ve kterém tyto rostliny rostou ve srovnání s ostatními kaktusy.
 //highlight-end
 ```
 
-The model was able to answer my question quickly and I was able to continue with my reading.
+Model dokázal rychle odpovědět na mou otázku a já mohl pokračovat ve čtení.
 
-## Quizzing Yourself
+## Kvízování sebe sama
 
-Another way to use LLMs as a study tool is to quiz yourself. If you have an upcoming calculus test, you could simply ask:
+Dalším způsobem, jak využít LLM jako studijní pomůcku, je kvízovat se. Pokud vás čeká nadcházející test z matematiky, můžete se jednoduše zeptat:
 
 ```text
-Generate 5 calculus I quiz questions for me:
+Vygenerujte mi 5 kvízových otázek z kalkulu I:
 
 // highlight-start
-1. What is the derivative of y = x3?
-2. Evaluate the indefinite integral of x3 + 5x2 + 7x + 4.
-3. What is the product rule for derivatives?
-4. Find the equation of the line tangent to y = x2 at the point (4, 16).
-5. What is the second derivative of y = x4?
+1. Jaká je derivace vztahu y = x3?
+2. Vyhodnoťte neurčitý integrál ze vztahu x3 + 5x2 + 7x + 4. Jaký je výsledek?
+3. Jaké je součinové pravidlo pro derivace?
+4. Najděte rovnici přímky tečné k y = x2 v bodě (4, 16).
+5. Jaká je druhá derivace y = x4?
 //highlight-end
 ```
 
-If you are studying a more specific topic, you may need to give the model additional information, for example your class notes!
+Pokud se učíte specifičtější téma, může být nutné uvést k modelu další informace, například poznámky z hodiny!
 
 ```text
-3/20/2020 2:30 PM
+20/3/2020 14:30
 
-Marketing Class Notes
+Poznámky ke kurzu marketingu
 
-- Discussed 4 P's of marketing: Product, Price, Place, Promotion
-- Difference between B2C and B2B: B2C is direct consumer market, B2B is business to business
-- Different types of market research: Quantitative and Qualitative, such as surveys and focus groups
-- Pricing Strategies: Skimming, Penetration, Competition, and Value
-- Segmentation: segmenting customer base by age, income, etc.
-- 4 types of segmentation: Demographic, Geographic, Psychographic, and Behavioral
-- Discussed different promotional tools: Advertising, Personal Selling, Public Relations, Direct Marketing, and Sales Promotions
+- Probírány 4 P marketingu: Produkt, cena, místo, propagace.
+- Rozdíl mezi B2C a B2B: B2C je přímý spotřebitelský trh, B2B je business to business.
+- Různé typy průzkumu trhu: Kvantitativní a kvalitativní, např. průzkumy a cílové skupiny
+- Cenové strategie: Skimming, Penetrace, Konkurence a Hodnota
+- Segmentace: Segmentace zákaznické základny podle věku, příjmů atd.
+- Čtyři typy segmentace: Demografická, geografická, psychografická a behaviorální segmentace.
+- Diskuse o různých propagačních nástrojích: Reklama, osobní prodej, vztahy s veřejností, přímý marketing a podpora prodeje.
 
-Generate 5 marketing quiz questions for me based on my notes:
+Vygenerujte pro mě 5 otázek marketingového kvízu na základě mých poznámek:
 
 // highlight-start
-1. What are the 4 P's of marketing?
-2. What is the difference between B2C and B2B?
-3. What are two types of market research?
-4. What are 4 types of segmentation?
-5. Name 5 promotional tools.
+1. Jaké jsou 4 P marketingu?
+2. Jaký je rozdíl mezi B2C a B2B?
+3. Jaké jsou dva typy průzkumu trhu?
+4. Jaké jsou 4 typy segmentace?
+5. Vyjmenujte 5 nástrojů propagace.
 //highlight-end
 ```
 
-## Conclusion
+## Závěr
 
-There are probably other ways to use LLMs to study. Many learning companies like Duolingo and Quizlet are implementing LLMs into their products.
+Pravděpodobně existují i další způsoby, jak využít LLM ke studiu. Mnoho vzdělávacích společností, jako je Duolingo a Quizlet, implementuje LLM do svých produktů.

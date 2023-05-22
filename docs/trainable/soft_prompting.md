@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# 🔴 Soft Prompts
+# 🔴 Měkké prompty/výzvy
 
-Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi2021prompt), freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
+Ladění promptů(@lester2021power), alternativa k fine tuningu modelu(@khashabi2021prompt), zmrazí váhy modelu a aktualizuje parametry výzvy. Výsledný prompt je "měkký prompt".
 
 
 import Image from '../assets/prompt_tuning.png';
@@ -17,32 +17,32 @@ import Image from '../assets/prompt_tuning.png';
 Model Tuning vs Prompt Tuning (Lester et al.)
 </div>
 
-The above image contrasts model tuning with prompt tuning. 
-In model tuning, you finetune the same model on different tasks. This gives you
-a few different models, with which you can't necessarily batch inputs easily.
+Výše uvedený obrázek staví do kontrastu modelové ladění a promptní ladění. 
+Při ladění modelu dolaďujete stejný model na různých úlohách. Tím získáte
+několik různých modelů, s nimiž nelze nutně snadno dávkovat vstupy.
 
-On the other hand, prompt tuning lets you use the same model for all tasks. You 
-just need to append the proper prompts at inference time, which makes batching across
-different tasks easier. This is pretty much the same advantage that regular prompting
-has. Additionally, soft prompts trained for a single model across
-multiple tasks will often be of the same token length.
+Naproti tomu promptní ladění vám umožňuje použít stejný model pro všechny úlohy. Můžete 
+stačí v době inference přidat správné výzvy, což umožňuje dávkování napříč různými
+různých úlohách jednodušší. To je v podstatě stejná výhoda, jakou má běžné promptování.
+má. Navíc měkké podněty natrénované pro jeden model napříč
+více úloh budou mít často stejnou délku tokenu.
 
-## How it works
+## Jak to funguje
 
-To understand the basic logic behind soft prompting, let's think about how **model inference** works
-on a given prompt: `What's 2+2?`.
+Abychom pochopili základní logiku soft promptingu, zamysleme se nad tím, jak funguje **odvozování modelu**.
+na daném promptu: `Co je 2+2?`.
 
-1) It might be tokenized as `What, 's, 2, +, 2, ?`. 
+1) Může být tokenizována jako `Co, 's, 2, +, 2, ?`. 
 
-2) Then, each token will be converted to a vector of values.
+2) Pak se každý token převede na vektor hodnot.
 
-3) This vectors of values can be considered as model parameters. The model can be further
-trained, only adjusting the weights of these prompts.
+3) Tyto vektory hodnot lze považovat za parametry modelu. Model může být dále
+trénovat pouze úpravou vah těchto proměnných.
 
-Note that as soon as we start updating these weights, the vectors of the tokens no
-longer correspond to actual embeddings from the vocabulary.
+Všimněte si, že jakmile začneme tyto váhy aktualizovat, vektory tokenů se již nebudou měnit.
+již neodpovídají skutečným vnořením ze slovníku.
 
-# Results 
+# Výsledky 
 
-Prompt tuning performs better with larger models. Larger models also require less
-soft prompt tokens. Regardless, more than 20 tokens does not yield significant performance gains.
+Ladění promptů funguje lépe u větších modelů. Větší modely také vyžadují méně
+měkkých promptních tokenů. Bez ohledu na to více než 20 tokenů nepřináší výrazný nárůst výkonu.

@@ -2,7 +2,7 @@
 sidebar_position: 40
 ---
 
-# 🟢 Chatbot + Knowledge Base
+# 🟢 Chatbot + znalostní databáze
 
 import ImageIntents from '@site/docs/assets/chatbot_from_kb_intents.png'
 import ImageGPT3 from '@site/docs/assets/chatbot_from_kb_gpt3.png'
@@ -10,195 +10,195 @@ import ImageGPT3Organized from '@site/docs/assets/chatbot_from_kb_gpt3_organized
 import ImagePrompt from '@site/docs/assets/chatbot_from_kb_prompt.png'
 import ImageLogin from '@site/docs/assets/chatbot_from_kb_login.png'
 
-Recent advancements in large language models (LLMs) such as [GPT-3](https://arxiv.org/abs/2005.14165) and [ChatGPT](https://chat.openai.com/chat) have created a lot of buzz in the tech industry. These models are incredibly powerful for content generation, but they also have some downsides such as bias(@nadeem-etal-2021-stereoset) and hallucinations(@Ji_2022). One area in which these LLMs can be particularly useful is chatbot development.
+Nedávné pokroky v oblasti velkých jazykových modelů (LLM), jako jsou [GPT-3](https://arxiv.org/abs/2005.14165) a [ChatGPT](https://chat.openai.com/chat), vyvolaly v technologickém průmyslu velký rozruch. Tyto modely jsou neuvěřitelně výkonné pro generování obsahu, ale mají také některé nevýhody, jako je zkreslení(@nadeem-etal-2021-stereoset) a halucinace(@Ji_2022). Jednou z oblastí, ve které mohou být tyto LLM obzvláště užitečné, je vývoj chatbotů.
 
-## Intent-Based Chatbots
+## Chatboty založené na záměrech
 
-Traditional chatbots are typically intent-based, meaning they are designed to respond to specific user intents. Each intent is made up of a set of sample questions and an associated response. For example, the intent “Weather” might include sample questions like “What’s the weather today?” or “Will it rain today?” and a response like “Today will be sunny.” When a user asks a question, the chatbot matches it to the intent with the most similar sample questions and returns the associated response.
+Tradiční chatboti jsou obvykle založeni na záměrech, což znamená, že jsou navrženi tak, aby reagovali na konkrétní záměry uživatelů. Každý záměr se skládá ze sady vzorových otázek a související odpovědi. Například záměr "Počasí" může obsahovat vzorové otázky typu "Jaké je dnes počasí?" nebo "Bude dnes pršet?" a odpověď typu "Dnes bude slunečno". Když uživatel položí otázku, chatbot ji přiřadí k záměru s nejpodobnějšími vzorovými otázkami a vrátí související odpověď.
 
 <div style={{textAlign: 'left'}}>
   <img src={ImageIntents} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a traditional intent-based chatbot works. Image by the author.</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Jak funguje tradiční chatbot založený na záměrech. Obrázek od autora.</p>
 </div>
 
-However, intent-based chatbots have their own set of problems. One issue is that they require a large number of specific intents to give specific answers. For example, user utterances like “I can’t login”, “I forgot my password”, or “Login error” may need three different answers and therefore three different intents, even though they are all quite similar.
+Chatboty založené na záměru však mají vlastní řadu problémů. Jedním z problémů je, že vyžadují velké množství konkrétních záměrů, aby mohly poskytovat konkrétní odpovědi. Například uživatelské výroky jako "Nemohu se přihlásit", "Zapomněl jsem heslo" nebo "Chyba při přihlašování" mohou vyžadovat tři různé odpovědi, a tedy tři různé intence, přestože jsou si všechny docela podobné.
 
-## How GPT-3 Can Help
+## Jak může GPT-3 pomoci
 
-This is where GPT-3 can be particularly useful. Instead of having many very specific intents, each intent can be broader and leverage a document from your [Knowledge Base](https://en.wikipedia.org/wiki/Knowledge_base). A Knowledge Base (KB) is information stored as structured and unstructured data, ready to be used for analysis or inference. Your KB may be composed of a series of documents explaining how to use your products.
+V tomto případě může být GPT-3 obzvláště užitečný. Namísto mnoha velmi specifických záměrů může být každý záměr širší a využívat dokument z vaší [znalostní báze](https://en.wikipedia.org/wiki/Knowledge_base). Databáze znalostí (KB) jsou informace uložené jako strukturovaná i nestrukturovaná data, připravená k použití pro analýzu nebo odvozování. Vaše KB se může skládat z řady dokumentů vysvětlujících, jak používat vaše produkty.
 
-This way, each intent is associated with a document instead of a list of questions and a specific answer, e.g. one intent for “login problems,” one intent for “how to subscribe,” etc. When a user asks a question about login, we can pass the “login problems” document to GPT-3 as context information and generate a specific response to the user’s question.
+Každý záměr je tak spojen s dokumentem namísto seznamu otázek a konkrétní odpovědi, např. jeden záměr pro "problémy s přihlášením", jeden záměr pro "jak se přihlásit" atd. Když se uživatel zeptá na přihlášení, můžeme dokument "problémy s přihlášením" předat GPT-3 jako kontextovou informaci a vygenerovat konkrétní odpověď na uživatelovu otázku.
 
 
 <div style={{textAlign: 'left'}}>
   <img src={ImageGPT3} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a chatbot leveraging GPT-3 could work. Image by the author.</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Jak by mohl chatbot využívající GPT-3 fungovat. Obrázek od autora.</p>
 </div>
 
-This approach reduces the number of intents that need to be managed and allows for answers that are better adapted to each question. Additionally, if the document associated with the intent describes different processes (e.g. a process for “login on the website” and another for “login on the mobile app”), GPT-3 can automatically ask the user for clarification before giving the final answer.
+Tento přístup snižuje počet záměrů, které je třeba spravovat, a umožňuje lépe přizpůsobit odpovědi jednotlivým otázkám. Pokud navíc dokument spojený se záměrem popisuje různé procesy (např. proces pro "přihlášení na webové stránce" a jiný pro "přihlášení v mobilní aplikaci"), může GPT-3 před poskytnutím konečné odpovědi automaticky požádat uživatele o vysvětlení.
 
-## Why Can’t We Pass the Whole KB to GPT-3?
+## Proč nemůžeme GPT-3 předat celý KB?
 
-Today, LLMs like GPT-3 have a maximum prompt size of about 4k tokens (for the [`text-davinci-003`](https://beta.openai.com/docs/models/gpt-3) model), which is a lot but not enough for feeding a whole knowledge base into a single prompt. The LLMs have a maximum prompt size for computational reasons, as generating text with them involves a number of computations which quickly increases as the prompt size increases.
+V současné době mají LLM jako GPT-3 maximální velikost dotazu asi 4k tokenů (pro model [`text-davinci-003`](https://beta.openai.com/docs/models/gpt-3)), což je sice hodně, ale nestačí to pro předání celé báze znalostí do jednoho dotazu. Modely LLM mají maximální velikost promptů z výpočetních důvodů, protože generování textu pomocí nich zahrnuje množství výpočtů, které se rychle zvyšuje s rostoucí velikostí promptů.
 
-Future LLMs may not have this limitation while retaining the text generation capabilities. However, for now, we need to design a solution around it.
+Budoucí LLM nemusí mít toto omezení a zároveň si zachovají schopnost generovat text. Prozatím je však třeba navrhnout řešení, které to obejde.
 
-## How a Chatbot With GPT-3 Could Work
+## Jak by mohl chatbot s GPT-3 fungovat
 
-So, the chatbot pipeline could be made of two steps:
+Potrubí chatbota by se tedy mohlo skládat ze dvou kroků:
 
-1. First, we need to select the appropriate intent for the user question, i.e. we need to retrieve the right document from our knowledge base.
-2. Then, once we have the right document, we can leverage GPT-3 to generate an appropriate answer for the user. In doing so, we’ll need to craft a good prompt.
+1. Nejprve musíme vybrat vhodný záměr pro otázku uživatele, tj. musíme načíst správný dokument z naší znalostní báze.
+2. Poté, jakmile máme správný dokument, můžeme využít GPT-3 k vygenerování vhodné odpovědi pro uživatele. Přitom budeme muset vytvořit dobrou výzvu.
 
-The first step is essentially solved by [semantic search](https://en.wikipedia.org/wiki/Semantic_search). We can use pre-trained models from the [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) library and easily assign a score to each document. The document with the highest score is the one that will be used to generate the chatbot answer.
+První krok v podstatě řeší [sémantické vyhledávání](https://en.wikipedia.org/wiki/Semantic_search). Můžeme použít předtrénované modely z knihovny [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) a snadno přiřadit každému dokumentu skóre. Dokument s nejvyšším skóre bude použit pro vygenerování odpovědi chatbota.
 
 <div style={{textAlign: 'left'}}>
   <img src={ImageGPT3Organized} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a chatbot leveraging GPT-3 could work. GPT-3 could be used to generate an appropriate answer leveraging the information from knowledge base documents. Image by the author.</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Jak by mohl chatbot využívající GPT-3 fungovat. GPT-3 by mohl být použit k vygenerování vhodné odpovědi s využitím informací z dokumentů znalostní báze. Obrázek od autora.</p>
 </div>
 
-## Generating Answers with GPT-3
+## Generování odpovědí pomocí GPT-3
 
-Once we have the right document, we’ll need to create a good prompt to be used with GPT-3 to generate the answer. In the following experiments, we’ll always use the `text-davinci-003` model with a temperature of `0.7`.
+Jakmile budeme mít k dispozici správný dokument, budeme muset vytvořit vhodnou výzvu, kterou použijeme s GPT-3 ke generování odpovědi. V následujících experimentech budeme vždy používat model `text-davinci-003` s teplotou `0,7`.
 
-To craft the prompt, we’ll experiment using:
+Pro vytvoření výzvy budeme experimentovat pomocí:
 
-- [**Role-prompting**](https://learnprompting.org/docs/basics/roles): a heuristic technique that assigns a specific role to the AI.
-- **Relevant KB information**, i.e. the document retrieved in the semantic search step.
-- **The last messages exchanged between the user and the chatbot**. These are useful for messages sent by the user where the whole context is not specified. We’ll see an example of it later. Have a look at [this example](https://learnprompting.org/docs/applied_prompting/build_chatgpt) to see how to manage conversations with GPT-3.
-- Last, **the user question**.
+- [**Promptování na základě role**](https://learnprompting.org/docs/basics/roles): heuristická technika, která umělé inteligenci přiřazuje konkrétní roli.
+- **Relevantní informace KB**, tj. dokument získaný v kroku sémantického vyhledávání.
+- **Poslední zprávy vyměněné mezi uživatelem a chatbotem**. Ty jsou užitečné pro zprávy odeslané uživatelem, u nichž není specifikován celý kontext. Příklad si ukážeme později. Podívejte se na [tento příklad](https://learnprompting.org/docs/applied_prompting/build_chatgpt), jak spravovat konverzace pomocí GPT-3.
+- A konečně **otázka uživatele**.
 
 <div style={{textAlign: 'left'}}>
   <img src={ImagePrompt} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Information used to craft our GPT-3 prompt. Image by the author.</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Informace použité k vytvoření našeho promptu/výzvy pro GPT-3. Obrázek od autora.</p>
 </div>
 
-Let’s start our prompt using the <span className="yellow-highlight">role-prompting</span> technique.
+Začněme naši výzvu pomocí techniky <span className="yellow-highlight">role-prompting</span>.
 
 <pre>
-    <span className="yellow-highlight">As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.</span>
+    <span className="yellow-highlight">Jako pokročilý chatbot jménem Skippy máte za úkol především pomáhat uživatelům, jak nejlépe dovedete </span>.
 </pre>
 
-Then, suppose the semantic search step extracts the following document from our knowledge base. All the documents describe how the VideoGram product works, which is an imaginary product similar to Instagram, but only for videos.
+Pak předpokládejme, že krok sémantického vyhledávání extrahuje z naší znalostní báze následující dokument. Všechny dokumenty popisují, jak funguje produkt VideoGram, což je imaginární produkt podobný Instagramu, ale pouze pro videa.
 
 <div style={{textAlign: 'left'}}>
   <img src={ImageLogin} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>A document explaining how login to VideoGram works. Image by the author.</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Dokument vysvětlující, jak funguje přihlašování do služby VideoGram. Obrázek od autora.</p>
 </div>
 
-We can add <span className="yellow-highlight">its content</span> inside the prompt in this way.
+Tímto způsobem můžeme přidat <span className="yellow-highlight">jeho obsah</span> uvnitř promptu.
 
 <pre>
-    As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/><br/>
+    Jako pokročilý chatbot jménem Skippy máte za úkol především pomáhat uživatelům, jak nejlépe dovedete.<br/><br/>
 
     <span className="yellow-highlight">
     START CONTEXT<br/>
-    Login to VideoGram from Website<br/>
-    1. Open your web browser and go to the VideoGram website.<br/>
-    2. Click on the “Login” button located in the top right corner of the page.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, click on the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
+    Přihlášení do služby VideoGram z webové stránky<br/>
+    1. Otevřete webový prohlížeč a přejděte na webovou stránku VideoGram.<br/>
+    2. Klikněte na tlačítko "Přihlásit se", které se nachází v pravém horním rohu stránky.<br/>
+    3. Na přihlašovací stránce zadejte své uživatelské jméno a heslo VideoGram.<br/>
+    4. Po zadání přihlašovacích údajů klikněte na tlačítko "Přihlásit se".<br/>
+    5. Nyní byste měli být přihlášeni ke svému účtu VideoGram.<br/>
     <br/>
-    Login to VideoGram from Mobile App<br/>
-    1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, tap the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    END CONTEXT<br/>
+    Přihlášení do služby VideoGram z mobilní aplikace<br/>
+    1. Otevřete aplikaci VideoGram na svém mobilním zařízení.<br/> 2. Přihlaste se do aplikace VideoGram.
+    2. Na hlavní stránce klepněte na tlačítko "Přihlásit se", které se nachází v pravém dolním rohu.<br/>
+    3. Na přihlašovací stránce zadejte své uživatelské jméno a heslo pro službu VideoGram.<br/>
+    4. Po zadání přihlašovacích údajů klepněte na tlačítko "Přihlásit se".<br/>
+    5. Nyní byste měli být přihlášeni ke svému účtu VideoGram.<br/>
+    KONEC KONTEXTU<br/>
     </span>
 </pre>
 
-Last, we need to add <span className="yellow-highlight">the conversation and the user question</span> to the end of the prompt, like in the following example.
+Nakonec musíme na konec výzvy přidat <span className="yellow-highlight">konverzaci a otázku uživatele</span>, jako v následujícím příkladu.
 
 <pre>
-    As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/>
+    Jako pokročilý chatbot jménem Skippy máte za úkol především pomáhat uživatelům, jak nejlépe dovedete.<br/>
     <br/>
-    START CONTEXT<br/>
-    Login to VideoGram from Website<br/>
-    1. Open your web browser and go to the VideoGram website.<br/>
-    2. Click on the “Login” button located in the top right corner of the page.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, click on the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
+    ZAČÁTEK KONTEXTU<br/>
+    Přihlášení do služby VideoGram z webové stránky<br/>
+    1. Otevřete webový prohlížeč a přejděte na webovou stránku VideoGramu.<br/>
+    2. Klikněte na tlačítko "Přihlásit se", které se nachází v pravém horním rohu stránky.<br/>
+    3. Na přihlašovací stránce zadejte své uživatelské jméno a heslo VideoGram.<br/>
+    4. Po zadání přihlašovacích údajů klikněte na tlačítko "Přihlásit se".<br/>
+    5. Nyní byste měli být přihlášeni ke svému účtu VideoGram.<br/>
     <br/>
-    Login to VideoGram from Mobile App<br/>
-    1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, tap the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    END CONTEXT<br/>
+    Přihlášení do služby VideoGram z mobilní aplikace<br/>
+    1. Otevřete aplikaci VideoGram na svém mobilním zařízení.<br/> 2. Přihlaste se do aplikace VideoGram.
+    2. Na hlavní stránce klepněte na tlačítko "Přihlásit se", které se nachází v pravém dolním rohu.<br/>
+    3. Na přihlašovací stránce zadejte své uživatelské jméno a heslo pro službu VideoGram.<br/>
+    4. Po zadání přihlašovacích údajů klepněte na tlačítko "Přihlásit se".<br/>
+    5. Nyní byste měli být přihlášeni ke svému účtu VideoGram.<br/>
+    KONEC KONTEXTU<br/>
     <br/>
-    <span className="yellow-highlight">SKIPPY: Hello, I’m Skippy! How can I help you?<br/>
-    USER: I can’t find the login button.<br/>
+    <span className="yellow-highlight">SKIPPY: Dobrý den, já jsem Skippy! Jak vám mohu pomoci?<br/>
+    UŽIVATEL: Nemohu najít tlačítko pro přihlášení.<br/>
     SKIPPY:</span><br/>
 </pre>
 
-Passing this prompt to GPT-3, I got the following generated answer.
+Po předání této výzvy GPT-3 jsem dostal následující vygenerovanou odpověď.
 
 <pre>
-    <span className="bluegreen-highlight">No problem! On the website, the login button is located in the top right corner of the page. On the mobile app, the login button is located in the bottom right corner. Let me know if you need any further assistance!</span>
+    <span className="bluegreen-highlight">Žádný problém! Na webové stránce se tlačítko pro přihlášení nachází v pravém horním rohu stránky. V mobilní aplikaci se tlačítko pro přihlášení nachází v pravém dolním rohu. Pokud budete potřebovat další pomoc, dejte mi vědět!</span>
 </pre>
 
-Notice how the information in the generated answer comes from the knowledge base document.
+Všimněte si, že informace ve vygenerované odpovědi pocházejí z dokumentu znalostní báze.
 
-## Disambiguating Questions with GPT-3
+## Rozklíčování otázek pomocí GPT-3
 
-Let’s try with a more vague user utterance, like <span className="yellow-highlight">“can’t login”</span>. Here’s the complete prompt.
+Zkusme to s vágnějším uživatelským výrokem, například <span className="yellow-highlight">"nemohu se přihlásit"</span>. Zde je kompletní dotaz.
 
 <pre>
-    As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/>
+    Jako pokročilý chatbot jménem Skippy je vaším hlavním cílem pomáhat uživatelům, jak nejlépe dovedete.<br/>
     <br/>
-    START CONTEXT<br/>
-    Login to VideoGram from Website<br/>
-    1. Open your web browser and go to the VideoGram website.<br/>
-    2. Click on the “Login” button located in the top right corner of the page.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, click on the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
+    START KONTEXTU<br/>
+    Přihlaste se do služby VideoGram z webové stránky<br/>
+    1. Otevřete webový prohlížeč a přejděte na webovou stránku VideoGramu.<br/>
+    2. Klikněte na tlačítko "Přihlásit se", které se nachází v pravém horním rohu stránky.<br/>
+    3. Na přihlašovací stránce zadejte své uživatelské jméno a heslo VideoGram.<br/>
+    4. Po zadání přihlašovacích údajů klikněte na tlačítko "Přihlásit se".<br/>
+    5. Nyní byste měli být přihlášeni ke svému účtu VideoGram.<br/>
     <br/>
-    Login to VideoGram from Mobile App<br/>
-    1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, tap the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    END CONTEXT<br/>
+    Přihlášení do služby VideoGram z mobilní aplikace<br/>
+    1. Otevřete aplikaci VideoGram na svém mobilním zařízení.<br/> 2. Přihlaste se do aplikace VideoGram.
+    2. Na hlavní stránce klepněte na tlačítko "Přihlásit se", které se nachází v pravém dolním rohu.<br/>
+    3. Na přihlašovací stránce zadejte své uživatelské jméno a heslo pro službu VideoGram.<br/>
+    4. Po zadání přihlašovacích údajů klepněte na tlačítko "Přihlásit se".<br/>
+    5. Nyní byste měli být přihlášeni ke svému účtu VideoGram.<br/>
+    KONEC KONTEXTU<br/>
     <br/>
-    SKIPPY: Hello, I’m Skippy! How can I help you?<br/>
-    USER: <span className="yellow-highlight">Can’t login</span><br/>
+    SKIPPY: Dobrý den, já jsem Skippy! Jak vám mohu pomoci?<br/>
+    UŽIVATEL: <span className="yellow-highlight">Nemůžu se přihlásit</span><br/>
     SKIPPY:<br/>
 </pre>
 
-GPT-3 answers trying to understand better what’s the problem of the user.
+GPT-3 odpovídá a snaží se lépe pochopit, v čem je problém uživatele.
 
 <pre>
-    <span className="bluegreen-highlight">I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?</span>
+    <span className="bluegreen-highlight">To mě mrzí. Můžete mi říct, zda se snažíte přihlásit přes webové stránky VideoGramu nebo mobilní aplikaci?</span>
 </pre>
 
-Next, here’s how the complete conversation goes. The whole prompt is hidden for better visibility.
+Dále uvádíme, jak probíhá kompletní konverzace. Celá výzva je pro lepší přehlednost skrytá.
 
 <pre>
-    USER: Can’t login<br/>
-    SKIPPY: I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?<br/>
-    USER: Mobile app<br/>
-    <span className="bluegreen-highlight">SKIPPY: OK, no problem. To login via the mobile app, open the VideoGram app on your mobile device. On the main page, tap the “Login” button located in the bottom right corner. On the login page, enter your VideoGram username and password. Once you have entered your credentials, tap the “Login” button. You should now be logged in to your VideoGram account. Please let me know if you need any further assistance.</span>
+    UŽIVATEL: Nelze se přihlásit<br/>
+    SKIPPY: To mě mrzí. Můžete mi říct, zda se snažíte přihlásit prostřednictvím webové stránky VideoGramu nebo mobilní aplikace?<br/>
+    UŽIVATEL: Mobilní aplikace<br/>
+    <span className="bluegreen-highlight">SKIPPY: Dobře, žádný problém. Chcete-li se přihlásit prostřednictvím mobilní aplikace, otevřete na svém mobilním zařízení aplikaci VideoGram. Na hlavní stránce klepněte na tlačítko "Přihlásit", které se nachází v pravém dolním rohu. Na přihlašovací stránce zadejte své uživatelské jméno a heslo VideoGram. Po zadání přihlašovacích údajů klepněte na tlačítko "Přihlásit". Nyní byste měli být přihlášeni ke svému účtu VideoGram. Pokud budete potřebovat další pomoc, dejte mi prosím vědět.</span>
 </pre>
 
-GPT-3 can manage disambiguation, provided that it has the right contextual information.
+GPT-3 dokáže spravovat disambiguaci za předpokladu, že má k dispozici správné kontextové informace.
 
-## Problems With Generating Answers with GPT-3
+## Problémy s generováním odpovědí pomocí GPT-3
 
-The previous examples worked well. However, there are several ways in which this chatbot could fail.
+Předchozí příklady fungovaly dobře. Existuje však několik způsobů, jak by tento chatbot mohl selhat.
 
-If we ask “Is the mobile app free?” to GPT-3 passing the login document as context, you’d often get an answer like “Yes, the VideoGram mobile app is free to download and use”, even if such information is not contained in the context information. Generating false information is very bad for customer service chatbots!
+Pokud bychom se GPT-3 zeptali "Je mobilní aplikace zdarma?" a jako kontext předali přihlašovací dokument, často bychom dostali odpověď typu "Ano, mobilní aplikace VideoGram je ke stažení a používání zdarma", i když taková informace není obsažena v kontextové informaci. Generování nepravdivých informací je pro chatboty zákaznického servisu velmi špatné!
 
-GPT-3 rarely generates false information when the answer to the user question can be found in the context. As user questions are often short and ambiguous texts, we can’t rely on the semantic search step to always retrieve a correct document, and so we are always vulnerable to false information generation.
+GPT-3 zřídkakdy generuje falešné informace, pokud lze odpověď na otázku uživatele nalézt v kontextu. Vzhledem k tomu, že uživatelské dotazy jsou často krátké a nejednoznačné texty, nemůžeme se spolehnout na to, že krok sémantického vyhledávání vždy získá správný dokument, a tak jsme vždy zranitelní vůči generování falešných informací.
 
-## Conclusion
+## Závěr
 
-GPT-3 is very useful for creating conversational chatbots and is able to answer a series of specific questions on the basis of contextual information inserted in the prompt. However, it’s hard to make the model produce answers leveraging only the information in the context, as the model tends to hallucinate (i.e. generating new information, potentially false). Generating false information is a problem of different severity depending on the use case.
+GPT-3 je velmi užitečný pro vytváření konverzačních chatbotů a dokáže odpovídat na řadu konkrétních otázek na základě kontextových informací vložených do výzvy. Je však obtížné přimět model, aby vytvářel odpovědi využívající pouze informace v kontextu, protože model má tendenci halucinovat (tj. generovat nové informace, potenciálně nepravdivé). Generování nepravdivých informací je problém různé závažnosti v závislosti na případu použití.
 
-Written by [Fabio Chiusano](https://www.linkedin.com/in/fabio-chiusano-b6a3b311b/).
+Napsal [Fabio Chiusano](https://www.linkedin.com/in/fabio-chiusano-b6a3b311b/).

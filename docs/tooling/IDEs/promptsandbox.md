@@ -4,11 +4,11 @@ sidebar_position: 22
 
 # PromptSandbox.io
 
-[PromptSandbox.io](https://PromptSandbox.io) is a node-based visual programming platform to design and execute workflows with OpenAI APIs.
+[PromptSandbox.io](https://PromptSandbox.io) je vizuální programovací platforma založená na uzlech, která umožňuje navrhovat a provádět pracovní postupy pomocí rozhraní API OpenAI.
 
-Explore the repository on [GitHub](https://github.com/eg9y/promptsandbox.io/).
+Prozkoumejte repozitář na [GitHub](https://github.com/eg9y/promptsandbox.io/).
 
-Watch the guided tour in this [demo video](https://www.youtube.com/watch?v=CBPw7FXtaEU).
+Podívejte se na prohlídku v tomto [demo videu](https://www.youtube.com/watch?v=CBPw7FXtaEU).
 
 import Image from '@site/docs/assets/tooling/promptsandbox.png';
 
@@ -16,10 +16,10 @@ import Image from '@site/docs/assets/tooling/promptsandbox.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Features
+## Funkce
 
-- Versatile Nodes: Utilize diverse node types, including OpenAI APIs, loops, conditionals, and text I/O, to craft complex workflows.
-- Project Organization: Easily create, manage, and access multiple projects within the platform.
-- Dynamic Chat: Interact with and test workflows through an intuitive chat interface.
-- Collaborative Gallery: Explore and share projects with the community in the project gallery.
-- Open Access: Enjoy free, signup-free access to visual programming with OpenAI APIs.
+- Všestranné uzly: Využívejte různé typy uzlů, včetně rozhraní API OpenAI, smyček, podmíněností a textových vstupů/výstupů, k vytváření složitých pracovních postupů.
+- Organizace projektu: Snadné vytváření, správa a přístup k více projektům v rámci platformy.
+- Dynamický chat: Interakce s pracovními postupy a jejich testování prostřednictvím intuitivního rozhraní chatu.
+- Kolaborativní galerie: Prozkoumejte a sdílejte projekty s komunitou v galerii projektů.
+- Otevřený přístup: Využijte bezplatný přístup k vizuálnímu programování bez registrace pomocí rozhraní API OpenAI.

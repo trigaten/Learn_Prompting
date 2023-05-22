@@ -4,8 +4,8 @@ sidebar_position: 5
 
 # Everyprompt 
 
-[Everyprompt](https://www.everyprompt.com) is a robustly featured prompt engineering IDE 
-that provides a professional interface for single prompt iteration.
+[Everyprompt](https://www.everyprompt.com) je robustně vybavené IDE pro tvorbu promptů,
+které poskytuje profesionální rozhraní pro iteraci jednotlivých promptů.
 
 
 import Image from '@site/docs/assets/tooling/everyprompt.png';
@@ -14,8 +14,8 @@ import Image from '@site/docs/assets/tooling/everyprompt.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Features
+## Funkce
 
-Everyprompt has a varied feature set, including different GPT models, datasets, 
-and stats. Note that support for some of these features requires emailing the developers,
-so it is unclear how thoroughly they are implemented thus far. They also provide **50k free** tokens. 
+Everyprompt má pestrou sadu funkcí, včetně různých modelů GPT, datových sad, 
+a statistik. Všimněte si, že podpora některých z těchto funkcí vyžaduje zaslání e-mailu vývojářům,
+takže zatím není jasné, jak důkladně jsou implementovány. Poskytují také **50 tisíc bezplatných** tokenů. 

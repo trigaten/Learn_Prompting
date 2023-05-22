@@ -1,8 +1,8 @@
 {
-  "label": "🟢 Defensive Measures",
+  "label": "🟢 Obranná opatření",
   "position": 50,
   "link": {
     "type": "generated-index",
-    "description": "Hacking, but for PE"
+    "description": "Hacking, ale pro PE"
   }
 }

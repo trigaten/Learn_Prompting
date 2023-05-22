@@ -1,37 +1,37 @@
 ---
 sidebar_position: 5
 ---
-# 🟢 Quality Boosters
+# 🟢 Zvyšování kvality
 
-Quality boosters(@oppenlaender2022taxonomy) are terms added to a prompt to improve
-certain non-style-specific qualities of the generated image. For example "amazing", "beautiful", and "good quality" are all quality boosters that can be used to improve the quality of the generated image.
+Posilovače kvality(@oppenlaender2022taxonomy) jsou výrazy přidané k výzvě ke zlepšení
+určité vlastnosti generovaného obrázku, které nejsou specifické pro daný styl. Například "úžasný", "krásný" a "kvalitní" jsou boostery kvality, které lze použít ke zlepšení kvality generovaného obrázku.
 
 import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
 import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.png';
 
-# Example
+# Příklad
 
-Recall from the other page the pyramids generated with DALLE, and the prompt `pyramid`.
+Připomeňme si z druhé stránky pyramidy vygenerované pomocí DALLE a prompt `pyramid`.
 
 <div style={{textAlign: 'center'}}>
   <img src={pyramids} style={{width: "750px"}} />
 </div>
 
-Now take at pyramids generated with this prompt:
-`A beautiful, majestic, incredible pyramid, 4K`
+Nyní se podívejte na pyramidy vygenerované pomocí této výzvy:
+`Krásná, majestátní, neuvěřitelná pyramida, 4K`.
 
 <div style={{textAlign: 'center'}}>
   <img src={special_pyramids} style={{width: "750px"}} />
 </div>
 
-These are much more scenic and impressive! 
+Tyto jsou mnohem malebnější a působivější! 
 
-Here is a list of a number of quality boosters: 
+Zde je seznam řady kvalitních posilovačů: 
 ```text
-High resolution, 2K, 4K, 8K, clear, good lighting, detailed, extremely detailed, sharp focus, intricate, beautiful, realistic+++, complementary colors, high quality, hyper detailed, masterpiece, best quality, artstation, stunning
+Vysoké rozlišení, 2K, 4K, 8K, jasný, dobré osvětlení, detailní, extrémně detailní, ostrý, složitý, krásný, realistický+++, doplňkové barvy, vysoká kvalita, hyper detailní, mistrovské dílo, nejlepší kvalita, umělecká stanice, ohromující
 ```
 
-## Notes
+## Poznámky
 
-Similar to the note on the previous page, our working definition of quality boosters differs from Oppenlaender et al.(@oppenlaender2022taxonomy). This being said, it is 
-sometimes difficult to exactly distinguish between quality boosters and style modifiers.
+Podobně jako v poznámce na předchozí stránce se naše pracovní definice posilovačů kvality liší od Oppenlaendera a dalších (@oppenlaender2022taxonomy). Jak již bylo řečeno, jedná se o 
+někdy obtížné přesně rozlišit mezi boostery kvality a modifikátory stylu.

@@ -2,10 +2,10 @@
 sidebar_position: 100
 ---
 
-# 🟢 Resources
+# 🟢 Zdroje
 
-The image prompt engineering field is very diverse. Here is a good list of 
-resources that covers parts of it.
+Oblast inženýrství obrazových podnětů je velmi rozmanitá. Zde je dobrý seznam 
+zdrojů, který pokrývá jeho části.
 
 - [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery
 - [Stable Diffusion Prompt Book](https://cdn.openart.ai/assets/Stable%20Diffusion%20Prompt%20Book%20From%20OpenArt%2010-28.pdf)
