@@ -7,13 +7,13 @@ async function createConfig() {
     return {
         title: 'Naučte se Promptování: Průvodce komunikací s umělou inteligencí',
         tagline: 'Český překlad bezplatného open source kurzu o komunikaci s umělou inteligencí',
-        url: 'https://emilliepost.github.io',
+        url: 'https://kkosheev.github.io',
         baseUrl: '/',
         onBrokenLinks: 'throw',
         onBrokenMarkdownLinks: 'warn',
         favicon: 'img/cai_logo.ico',
-        organizationName: 'trigaten',
-        projectName: 'promptgineering',
+        organizationName: 'kkosheev',
+        projectName: 'Learn_Prompting_CAI',
         deploymentBranch: 'gh-pages',
         trailingSlash: false,
         // i18n: {
