@@ -8,8 +8,8 @@ async function createConfig() {
     title: "Naučte se Promptování: Průvodce komunikací s umělou inteligencí",
     tagline:
       "Český překlad bezplatného open source kurzu o komunikaci s umělou inteligencí",
-    url: "https://learnprompting.org",
-    baseUrl: "/",
+    url: "https://emilliepost.github.io",
+    baseUrl: "/Learn_Prompting_CAI/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/cai_logo.ico",
