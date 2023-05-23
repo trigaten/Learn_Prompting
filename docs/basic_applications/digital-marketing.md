@@ -16,9 +16,9 @@ Your favorite AI chatbot is a treasure trove of resources for both the mundane a
 
 Ask your preferred AI chatbot what keyword variants exist for a main keyword, and ask for more detail:
 ```text
-* Generate a list of keywords related to Pez dispensers.
-* Generate a cluster of keywords related to Pez dispensers, and organize with column headings for the cluster, the keyword, and the search intent.
-* Generate a list of long-tail keywords related to Pez dispensers.
+PROMPT: Generate a list of keywords related to Pez dispensers.
+PROMPT: Generate a cluster of keywords related to Pez dispensers, and organize with column headings for the cluster, the keyword, and the search intent.
+PROMPT: Generate a list of long-tail keywords related to Pez dispensers.
 ```
 
 Try it for your keyword:
@@ -34,15 +34,14 @@ Try it for your keyword:
 
 One of the most important concerns for digital marketers is budgeting their time and resources to different marketing channels. An AI chatbot can give you immediate insights into the types of marketing channels that will work best for a particular client and product. Consider these prompts (leaving out the role of "Act as a senior digital marketing consultant" for the sake of brevity). Once you've identified the marketing channels, you can drill down into each to identify strategies and content.
 ```text
-* For a client wishing to promote their Pez dispenser portraying MrBeast, with a budget of $100000, generate a table showing how much money should be spent on which marketing channels. Use columns for the marketing channel, the budget allocation, and the reasoning behind it.
-* List some strategies to identify Instagram influencers that can help market the MrBeast Pez dispenser.
-* Create an introductory email to [influencer name], to ask them about initiating a partnership and referencing some of their tweets at https://twitter.com/[influencer]. [requires Web Browser plugin]
-* List the top hashtags on Twitter relating to Pez dispensers.
+PROMPT: For a client wishing to promote their Pez dispenser portraying MrBeast, with a budget of $100000, generate a table showing how much money should be spent on which marketing channels. Use columns for the marketing channel, the budget allocation, and the reasoning behind it.
+PROMPT: List some strategies to identify Instagram influencers that can help market the MrBeast Pez dispenser.
+PROMPT: Create an introductory email to [influencer name], to ask them about initiating a partnership and referencing some of their tweets at https://twitter.com/[influencer]. [requires Web Browser plugin]
+PROMPT: List the top hashtags on Twitter relating to Pez dispensers.
 ```
 
 The output for this last prompt ought to something like:
 
-```text
 // highlight-start
 Here are some popular hashtags on Twitter related to Pez dispensers:
 
@@ -53,16 +52,15 @@ Here are some popular hashtags on Twitter related to Pez dispensers:
 #PezCollector
 etc.
 // highlight-end
-```
 
 
 ## Tweaking Web Page Tags and PPC Ads
 
 AI Chatbots are an ideal tool to help generate text that fits within the constraints of SEO and PPC campaigns:
 ```text
-* Generate a table with 5 snappy title tag options with SEO power words for a blog article announcing a new Pez dispenser portraying MrBeast. Each title should be fewer than 60 characters in length and incorporate the SEO keyword "celebrity Pez dispenser."  Add a column to display the 5 corresponding meta descriptions, which must also incorporate the same SEO keyword and a call to action.
-* Generate 5 compelling headlines, each fewer than 30 characters long, for a Google responsive search ad about collectible Pez dispensers
-* Generate 5 three-word calls to action for a new campaign announcing Pez dispenser portraying MrBeast
+PROMPT: Generate a table with 5 snappy title tag options with SEO power words for a blog article announcing a new Pez dispenser portraying MrBeast. Each title should be fewer than 60 characters in length and incorporate the SEO keyword "celebrity Pez dispenser."  Add a column to display the 5 corresponding meta descriptions, which must also incorporate the same SEO keyword and a call to action.
+PROMPT: Generate 5 compelling headlines, each fewer than 30 characters long, for a Google responsive search ad about collectible Pez dispensers
+PROMPT: Generate 5 three-word calls to action for a new campaign announcing Pez dispenser portraying MrBeast
 ```
 
 <iframe
@@ -75,12 +73,14 @@ AI Chatbots are an ideal tool to help generate text that fits within the constra
 ## Prompts to Generate Images for Blog Posts
 
 With the advent of tools like Midjourney, DALL-E, and Stable Diffusion, designers can now use prompt engineering to generate images. If you're unfamiliar with the syntax and techniques of these kinds of prompts, though, you can simply ask an AI chatbot for a set of text-to-image prompts to try out on your preferred AI image generation tool. Note that Midjourney was released after ChatGPT's knowledge cutoff date of September 2021.
-* Generate 5 concepts for an illustration to accompany a blog article announcing a new Pez dispenser portraying MrBeast [or paste in blog article].
-* Generate 5 text-to-image prompts for DALL-E to create dramatic images that convey concept #3 from my earlier prompt.
+
+```text
+PROMPT: Generate 5 concepts for an illustration to accompany a blog article announcing a new Pez dispenser portraying MrBeast [or paste in blog article].
+PROMPT: Generate 5 text-to-image prompts for DALL-E to create dramatic images that convey concept #3 from my earlier prompt.
+```
 
 The output for this last prompt ought to something like:
 
-```text
 // highlight-start
 Certainly! Here are five text-to-image prompts for DALL·E to create dramatic images conveying concept #3:
 
@@ -90,28 +90,25 @@ Certainly! Here are five text-to-image prompts for DALL·E to create dramatic im
 4. "A storm of Pez candies swirls around MrBeast, forming a vortex of excitement and anticipation, as the new Pez dispenser takes center stage in an exhilarating display."
 5. "Silhouetted against a fiery backdrop, MrBeast unveils the new Pez dispenser, its glow radiating hope and inspiration, symbolizing a new era of Pez collecting."
 // highlight-end
-```
 
 
 ## Technical SEO
 
 Just as developers use AI chatbots to generate and debug code, digital marketers can use chatbots to analyze and debug technical SEO issues:
 ```text
-* Based on these request and response headers, why isn't Cloudflare returning this web page from its cache? [paste in headers from Chrome Dev Tools]
-* Based on the rules at schema.org/HowTo, generate some schema in JSON for how to make a sandwich.
-* What patterns can you identify in this data set, which is an export of Google Search Console data for 3 months for a company that sells collectible Pez dispensers? [paste Google Sheets URL if your chatbot has web access, otherwise paste CSV data]
-* What is a regular expression to identify any search query that includes the singular or plural versions of the words "collectible" or "celebrity"
+PROMPT: Based on these request and response headers, why isn't Cloudflare returning this web page from its cache? [paste in headers from Chrome Dev Tools]
+PROMPT: Based on the rules at schema.org/HowTo, generate some schema in JSON for how to make a sandwich.
+PROMPT: What patterns can you identify in this data set, which is an export of Google Search Console data for 3 months for a company that sells collectible Pez dispensers? [paste Google Sheets URL if your chatbot has web access, otherwise paste CSV data]
+PROMPT: What is a regular expression to identify any search query that includes the singular or plural versions of the words "collectible" or "celebrity"
 ```
 
 The output for this last prompt ought to something like:
 
-```text
 // highlight-start
 To identify search queries that include the singular or plural versions of the words "collectible" or "celebrity" using regular expressions, you can use the following pattern:
 
 \b(collectible|collectibles|celebrity|celebrities)\b
 // highlight-end
-```
 
 ---
 
