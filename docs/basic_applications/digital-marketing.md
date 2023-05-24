@@ -42,6 +42,7 @@ PROMPT: List the top hashtags on Twitter relating to Pez dispensers.
 
 The output for this last prompt ought to something like:
 
+```text
 // highlight-start
 Here are some popular hashtags on Twitter related to Pez dispensers:
 
@@ -52,7 +53,7 @@ Here are some popular hashtags on Twitter related to Pez dispensers:
 #PezCollector
 etc.
 // highlight-end
-
+```
 
 ## Tweaking Web Page Tags and PPC Ads
 
@@ -81,6 +82,7 @@ PROMPT: Generate 5 text-to-image prompts for DALL-E to create dramatic images th
 
 The output for this last prompt ought to something like:
 
+```text
 // highlight-start
 Certainly! Here are five text-to-image prompts for DALL·E to create dramatic images conveying concept #3:
 
@@ -90,7 +92,7 @@ Certainly! Here are five text-to-image prompts for DALL·E to create dramatic im
 4. "A storm of Pez candies swirls around MrBeast, forming a vortex of excitement and anticipation, as the new Pez dispenser takes center stage in an exhilarating display."
 5. "Silhouetted against a fiery backdrop, MrBeast unveils the new Pez dispenser, its glow radiating hope and inspiration, symbolizing a new era of Pez collecting."
 // highlight-end
-
+```
 
 ## Technical SEO
 
@@ -104,11 +106,13 @@ PROMPT: What is a regular expression to identify any search query that includes 
 
 The output for this last prompt ought to something like:
 
+```text
 // highlight-start
 To identify search queries that include the singular or plural versions of the words "collectible" or "celebrity" using regular expressions, you can use the following pattern:
 
 \b(collectible|collectibles|celebrity|celebrities)\b
 // highlight-end
+```
 
 ---
 
