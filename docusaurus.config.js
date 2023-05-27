@@ -56,10 +56,10 @@ async function createConfig() {
         "classic",
         {
           gtag: {
-            trackingID: "G-FV0C417KS8",
+            trackingID: "G-BV2JPXRYS8",
           },
           googleAnalytics: {
-            trackingID: "G-FV0C417KS8",
+            trackingID: "G-BV2JPXRYS8",
           },
           docs: {
             sidebarPath: require.resolve("./sidebars.js"),
@@ -163,7 +163,7 @@ async function createConfig() {
       },
       footer: {
         style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting (AI Česky).`,
+        copyright: `Copyright © ${new Date().getFullYear()} Learn Prompting (Český AIPE).`,
       },
       prism: {
         theme: lightCodeTheme,
