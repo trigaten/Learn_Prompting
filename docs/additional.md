@@ -9,23 +9,23 @@ sidebar_position: 3000
 * [Článek o uniklých promptech Notion](https://lspace.swyx.io/p/reverse-prompt-eng)
 * [Velký článek o aplikacích](https://huyenchip.com/2023/04/11/llm-engineering.html)<br/>
 * [Fantastické úvodní video k PE](https://youtube.com/watch?v=dOxUroR57xs&feature=shares)<br/>
-* [Velmi pěkný, krátký průvodce inženýrstvím promptů](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)<br/>
-* [Skvělý úvod do pohotového inženýrství](https://humanloop.com/blog/prompt-engineering-101)<br/>
-* [Pěkná sbírka pohotových technických dokumentů](https://github.com/dair-ai/Prompt-Engineering-Guide)<br/>
-* [Mnoho dalších pohotových technických prací](https://github.com/thunlp/PromptPapers)<br/>
-* [CMU class on prompt engineering](https://youtu.be/5ef83Wljm-M)<br/>
+* [Velmi pěkný, krátký průvodce prompt engineeringem](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)<br/>
+* [Skvělý úvod do prompt inženýrství](https://humanloop.com/blog/prompt-engineering-101)<br/>
+* [Pěkná sbírka PE dokumentů](https://github.com/dair-ai/Prompt-Engineering-Guide)<br/>
+* [Mnoho dalších PE prací](https://github.com/thunlp/PromptPapers)<br/>
+* [CMU třída o PE](https://youtu.be/5ef83Wljm-M)<br/>
 * [Jak funguje kopilot](https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals.html)<br/>
-* [Průvodce pro začátečníky psaním podnětů podle Zapiera](https://zapier.com/blog/gpt-3-prompt/)<br/>
+* [Průvodce pro začátečníky psaním promptů podle Zapiera](https://zapier.com/blog/gpt-3-prompt/)<br/>
 * [Úžasný seznam zdrojů pro Prompt-Engineering od A do Z](https://github.com/promptslab/Awesome-Prompt-Engineering)<br/>
-* [500 šablon výzev ChatGPT](https://www.notion.so/500-ChatGPT-Prompt-Templates-d9541e901b2b4e8f800e819bdc0256da)<br/>
-* [Základna promptů](https://promptbase.com/) <br/>
+* [500 šablon promptů ChatGPT](https://www.notion.so/500-ChatGPT-Prompt-Templates-d9541e901b2b4e8f800e819bdc0256da)<br/>
+* [marketplace promptů](https://promptbase.com/) <br/>
 * [Prompt vibes](https://www.promptvibes.com/) <br/>
 * [Prompt Hero](https://prompthero.com/)
-* [Midjourney community showcase with prompts](https://www.midjourney.com/showcase/recent/)<br/>
-* [Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts.git)
+* [Ukázka komunity Midjourney s prompty](https://www.midjourney.com/showcase/recent/)<br/>
+* [Data science prompty](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts.git)
 * [VŠECHNY styly a odkazy pro midjourney](https://github.com/willwulfken/MidJourney-Styles-and-Keywords-Reference)<br/>
-* [Pokročilá technika promptů](https://jamesbachini.com/advanced-midjourney-prompt-engineering/#midjourney-flags)
-* [Podněty pro obyčejné lidi](https://www.ordinarypeopleprompts.com/)
+* [Pokročilá technika promptingu](https://jamesbachini.com/advanced-midjourney-prompt-engineering/#midjourney-flags)
+* [Prompty pro obyčejné lidi](https://www.ordinarypeopleprompts.com/)
 
 ### Příklady/nápady GPT-3 Promptů
 
@@ -50,7 +50,3 @@ Od těchto lidí získávám významný obsah.
 [@omarsar0](https://twitter.com/omarsar0) Vedení DAIR AI
 
 Podívejte se také na účty, které sleduji: https://twitter.com/learnprompting/following 
-
-## Ještě více
-
-Podívejte se na [open issues](https://github.com/trigaten/Learn_Prompting/issues) a [PR](https://github.com/trigaten/Learn_Prompting/pulls) :)

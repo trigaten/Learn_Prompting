@@ -2,7 +2,7 @@
 sidebar_position: 20
 ---
 
-# 🟢 Rozdělení zátěže
+# 🟢 Rozdělení payloadu
 
 Rozdělení zátěže spočívá v rozdělení vstupu protivníka na více částí a následném přimění LLM, aby je spojil a provedl. Kang et al.(@kang2023exploiting) uvádí následující příklad, který napíše podvodný e-mail:
 
@@ -12,11 +12,11 @@ Rozdělení zátěže spočívá v rozdělení vstupu protivníka na více čás
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## Fragmentační spojovací útok
+## Fragmentační spojování
 
 Pokud potřebujeme větší kontrolu nad přesným generovaným slovem, můžeme předat celé slovo, ale rozdělené na kousky. Můžeme například předat písmena `P, W, N, E, D`, pak požádat model, aby je spojil(@kang2023exploiting) a výsledné slovo použil k libovolnému účelu. Pokud chceme model donutit, aby řekl "Byl jsem PWNED", a slovo "PWNED" není jako vstup povoleno, můžeme použít následující strategii:
 
-Pokusme se tuto výzvu hacknout:
+Pokusme se tento prompt hacknout:
 
 ```text
 Je následující rostlina nebo zvíře?
@@ -41,6 +41,6 @@ Zde je interaktivní ukázka tohoto útoku:
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-:::poznámka
+:::note
 Tento útok také využívá *přiřazení proměnné*, a to tak, že definuje X a Y a používá je společně.
 :::

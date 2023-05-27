@@ -5,9 +5,8 @@ sidebar_position: 60
 # 🟢 Různé styly psaní
 
 Umělé inteligence jako [ChatGPT](https://chat.openai.com/chat) jsou známé tím, že eseje a články na blogy píší v mžiku. Často jsou však články, které vytvářejí, obecné a suché. Je třeba udělat něco navíc, abyste slovům dodali ducha nebo šmrnc. 
-Jedním z nejrychlejších způsobů, jak toho docílit, je uvést v zadání styl psaní nebo jmenovat slavného autora.     
-Řekněme, že chcete odstavec o důležitosti přátelství. 
-generický prompt typu "Napište mi odstavec o důležitosti přátelství" přinese generickoucnou odpověď od ChatGPT.  
+Jedním z nejrychlejších způsobů, jak toho docílit, je uvést v promptu styl psaní nebo jmenovat slavného autora.     
+Řekněme, že chcete odstavec o důležitosti přátelství. Generický prompt typu "Napište mi odstavec o důležitosti přátelství" přinese generickoucnou odpověď od ChatGPT.  
 
 import friendship from '../assets/basic_applications/Generic_Friendship.png';
 import friendship_informal from '../assets/basic_applications/Friendship_Informal.png';
@@ -29,7 +28,7 @@ Výsledky se změní, když přidáte specifikace, například "**Pište prosím
 
 To už je o něco lepší. 
 
-A pokud se cítíte trochu fantazie, můžete požádat ChatGPT, aby psal ve stylu některého z literárních velikánů, například Marka Twaina:
+A pokud se cítíte trochu nóbl, můžete požádat ChatGPT, aby psal ve stylu některého z literárních velikánů, například Marka Twaina:
 
 <div style={{textAlign: 'center'}}>
   <img src={friendship_mark} style={{width: "750px"}} />
@@ -42,7 +41,7 @@ Nemusí to však být zrovna slavný autor. Můžete použít i známé osobnost
   <img src={friendship_chris} style={{width: "750px"}} />
 </div>
 
-Nebo jak je to s těmi "mileniály"?
+Nebo co tak ve stylu "mileniálů"?
 
 <div style={{textAlign: 'center'}}>
   <img src={friendship_millennial} style={{width: "750px"}} />

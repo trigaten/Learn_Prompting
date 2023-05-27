@@ -2,22 +2,13 @@
 sidebar_position: 1
 ---
 
-# Přehled
+# Úvod
 
-Promptní inženýrství je iterativní návrhová úloha. Formalizovanější iterativní návrh
-oblasti (např. návrh loga) mají dobře zavedené nástroje, které designérům umožňují
-být efektivnější. Podobné nástroje existují i v oblasti promptního inženýrství.
-různá IDE (integrovaná vývojová prostředí) pro promptní inženýrství. 
-v nedávné době vytvořeny. Existuje překvapivě široká škála těchto nástrojů, kde je vše, co je třeba.
-od výzkumných rozhraní až po profesionálně navržená IDE.
-Tato kapitola poskytne přehled některých nástrojů, které mohou být zajímavé pro
-vás jako pohotového inženýra.
+Prompt engineering je iterativní designová úloha. Formalizovanější oblasti iterativního designu (např. návrh loga) mají dobře zavedené nástroje, které umožňují návrhářům být efektivnější. Podobné nástroje existují i v oblasti prompt inženýrství - v poslední době byla vytvořena řada IDE (integrovaných vývojových prostředí) pro prompt inženýrství. Existuje překvapivě široká škála takových nástrojů, od výzkumných rozhraní až po profesionálně navržená IDE. V této kapitole najdete přehled některých nástrojů, které by vás jako prompt inženýra mohly zajímat.
 
 V závěrečném článku této kapitoly naleznete má doporučení ohledně nástrojů, které je vhodné používat.
 
-Vzhledem k čekacím listinám jsem zatím neměl přístup ke všem zde zmíněným IDE. 
-Navíc vzhledem k množství vycházejících nástrojů nemají všechny vyhrazenou stránku.
-
+Vzhledem k čekacím listinám jsem zatím neměl přístup ke všem zde zmíněným IDE. Navíc vzhledem k množství vycházejících nástrojů nemají všechny vyhrazenou stránku.
 
 Zde je tabulka nástrojů, které budeme v této kapitole probírat:
 
@@ -63,8 +54,7 @@ Zde je tabulka nástrojů, které budeme v této kapitole probírat:
 
 **Hostované řešení**: Nástroj je hostován na webové stránce a lze jej používat bez nutnosti instalace čehokoli.
 
-**Zaměření na výzkum**: Nástroj je určen k výzkumným účelům a nemusí být stejně
-uživatelsky přívětivější než jiné nástroje.
+**Zaměření na výzkum**: Nástroj je určen k výzkumným účelům a nemusí být stejně uživatelsky přívětivé než jiné nástroje.
 
 **Obchodní model**: Typ obchodního modelu.
 

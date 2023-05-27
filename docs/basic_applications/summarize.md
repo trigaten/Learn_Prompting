@@ -5,12 +5,12 @@ sidebar_position: 70
 # 🟢 Shrnutí textu
 
 ChatGPT je pověstný tím, že obsah vytváří v mžiku oka a osvědčil se jako obrovská úspora času.
-U již napsaného obsahu nám ChatGPT může ušetřit čas také tím, že nám pomůže strávit dlouhé mučivé texty.  
-Dokáže shrnout knihy, filmy, divadelní hry, články a mnoho dalšího. S ChatGPT je to jako mít Cliffovy poznámky... NA VŠECHNO!
+U již napsaného obsahu nám ChatGPT může ušetřit čas také tím, že nám pomůže lépe strávit dlouhé mučivé texty.  
+Dokáže shrnout knihy, filmy, divadelní hry, články a mnoho dalšího.
 
 ## Shrnutí od nuly
 
-Někdy můžete ChatGPT požádat, aby shrnul slavná díla, aniž byste museli vkládat další text, protože ChatGPT díla dobře zná. Můžete ho například požádat, aby shrnul "Romea a Julii" po jednotlivých dějstvích. Místo toho, abyste se museli prodírat 24 000 slovy hry, můžete získat její podstatu ve 300 nebo méně slovech. 
+Můžete ChatGPT požádat, aby shrnul slavná díla, aniž byste museli vkládat další text, protože ChatGPT díla dobře zná. Můžete ho například požádat, aby shrnul "Romea a Julii" po jednotlivých dějstvích. Místo toho, abyste se museli prodírat 24 000 slovy hry, můžete získat její podstatu ve 300 nebo méně slovech. 
 
 
 import outline1 from '../assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.png';
@@ -26,18 +26,18 @@ import rope2 from '../assets/basic_applications/summarizing/Outline_2.png';
 Ačkoli byste místo toho mohli vyhledat shrnutí, ChatGPT může obsah přizpůsobit vašim potřebám. Možná máte opravdu rádi fotbal, takže byste mohli jako ChatGPT.
 "Napište mi shrnutí 100 slov o filmu "Romeo a Julie" v termínech amerického fotbalu.".
 
-## Práce s dlouhými bloky textů: Kopírujte a vkládejte!
+## Práce s dlouhými bloky textů
 
-Můžete požádat ChatGPT, aby shrnul nebo vytvořil osnovu textu a celou věc TL;DR. Stačí jen zkopírovat a vložit konkrétní text do výzvy. (Můžete uvést až 2 500 slov. Pokud je dílo delší, budete ho muset rozdělit na části).
+Můžete požádat ChatGPT, aby shrnul nebo vytvořil osnovu textu a celý TL;DR longread. Stačí jen zkopírovat a vložit konkrétní text do promptu. (Můžete uvést až 2 500 slov. Pokud je dílo delší, budete ho muset rozdělit na části).
 Požádejte o zjednodušené shrnutí vybraného textu tak, že napíšete: "Shrňte mi to, jako by mi bylo 5 let: [SEM VLOŽTE TEXT]". 
-Toto je shrnutí "pro pětileté dítě" z části hesla Wikipedie o "[kvantovém provázání](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Kvantové%20provázání,-je%20fenomén)". 
+Toto je shrnutí "pro pětileté dítě" z části hesla Wikipedie o "[kvantovém provázání](https://cs.wikipedia.org/wiki/Kvantov%C3%A9_prov%C3%A1z%C3%A1n%C3%AD)". 
 
 <div style={{textAlign: 'left'}}>
   <img src={quantum} style={{width: "750px"}} />
 </div>
 
 Kromě souhrnů můžete ChatGPT požádat také o napsání osnovy pro bloky textu. Někdy je lepší mít osnovu, abyste viděli vlákno nebo kostru celého článku. 
-Do výzvy také stačí zkopírovat a vložit text, který chcete načrtnout.   
+Do promptu také stačí zkopírovat a vložit text, který chcete načrtnout.   
 Následuje osnova ChatGPT na stránce Wikipedie o "lanech", konkrétně o historii [lana](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were).
 
 <div style={{textAlign: 'left'}}>

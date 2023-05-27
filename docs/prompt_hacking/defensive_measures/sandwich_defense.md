@@ -4,14 +4,13 @@ sidebar_position: 50
 
 # 🟢 Sendvičová obrana
 
-Sendvičová obrana[^1] zahrnuje vložení uživatelského vstupu mezi
-dvěma výzvami. Jako příklad si vezměme následující výzvu:
+Sendvičová obrana[^1] zahrnuje vložení uživatelského vstupu mezi dvěma prompty. Jako příklad si vezměme následující prompt:
 
 ```text
 Přeložte následující do francouzštiny: {{uživatelský_vstup}}
 ```
 
-Lze ji vylepšit pomocí sendvičové obrany:
+Lze jej vylepšit pomocí sendvičové obrany:
 
 ```
 Přeložte následující do francouzštiny:

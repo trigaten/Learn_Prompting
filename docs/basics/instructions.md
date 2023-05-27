@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# 🟢 Dávání pokynů
+# 🟢 Instrukce
 
 import InstructionPrompt from '@site/docs/assets/instruction_prompt.svg';
 
@@ -10,11 +10,10 @@ import InstructionPrompt from '@site/docs/assets/instruction_prompt.svg';
 </div>
 
 
-Jednou z nejjednodušších metod podněcování je pouhé zadávání pokynů (někdy nazývané *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). Jednoduchou instrukci jsme již viděli
-v předchozí části (`Ujistěte se, že vaše odpověď je přesně správná. Kolik je 965*590? Ujistěte se, že vaše odpověď je přesně správná:`). V této příručce se však dočtete, že: "V případě, že se jedná o číslo 9655, je to číslo, které je v tabulce uvedeno jako 9655,
+Jednou z nejjednodušších metod promptingu je pouhé zadávání pokynů (někdy nazývané *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). Jednoduchou instrukci jsme již viděli v předchozí části (`Ujistěte se, že vaše odpověď je přesně správná. Kolik je 965*590? Ujistěte se, že vaše odpověď je přesně správná:`).
 Moderní umělé inteligence se mohou řídit mnohem složitějšími instrukcemi. 
 
-Níže je náš první [embed](https://learnprompting.org/docs/basics/intro#embeds). Pokud se vám nezobrazí, ujistěte se, že máte v prohlížeči zapnutý Javascript. Protože se jedná o interaktivní ukázku, můžete text upravit a stisknutím tlačítka `Generovat` AI znovu spustit.
+Níže je náš první [embed](/Learn_Prompting_CAI/docs/basics/intro#embeds). Pokud se vám nezobrazí, ujistěte se, že máte v prohlížeči zapnutý Javascript. Protože se jedná o interaktivní ukázku, můžete text upravit a stisknutím tlačítka `Generate` AI znovu spustit.
 
 #### Příklad 1
 
@@ -24,23 +23,18 @@ Níže je náš první [embed](https://learnprompting.org/docs/basics/intro#embe
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-<br/>Umělá inteligence je schopna tento problém snadno vyřešit. Můžeme ji také požádat, aby vyřešila mnoho dalších
-jednoduchých i složitějších problémů.
+<br/>Umělá inteligence je schopna tento problém snadno vyřešit. Můžeme ji také požádat, aby vyřešila mnoho dalších jednoduchých i složitějších problémů.
 
 #### Příklad 2
 
 Zde je složitější příklad[^A]:
 
 ```
-Přečtěte si následující e-mail o prodeji. Odstraňte všechny informace umožňující identifikaci osob (PII),
-a nahraďte je příslušným zástupným znakem. Nahraďte například jméno "John Doe".
-za "[JMÉNO]".
+Přečtěte si následující prodejní e-mail. Odstraňte všechny informace umožňující identifikaci osob (PII), a nahraďte je příslušným zástupným znakem. Nahraďte například jméno "John Doe" za "[JMÉNO]".
 
-Ahoj Johne,
+Dobrý den, Johne,
 
-Píši vám, protože jsem si všiml, že jste si nedávno koupil nové auto. Jsem prodejce
-v místním autosalonu (Cheap Dealz) a chtěl jsem vám dát vědět, že máme skvělou nabídku na nové auto.
-na nový vůz. Pokud máte zájem, dejte mi prosím vědět.
+Píši vám, protože jsem si všiml, že jste si nedávno koupil nové auto. Jsem prodejce v místním autosalonu (Cheap Dealz) a chtěl jsem vám dát vědět, že máme skvělou nabídku na nová auta. Pokud máte zájem, dejte mi prosím vědět.
 
 Děkuji,
 
@@ -54,11 +48,9 @@ Zde je odpověď [AI](https://beta.openai.com/playground/p/002o3gmji5jlwUfRq9d7K
 
 ```text
 // highlight-start
-Ahoj [JMÉNO],
+Dobrý den, [JMÉNO],
 
-Píšu vám, protože jsem si všiml, že jste si nedávno koupil nové auto. Jsem prodejce
-v místním autosalonu ([DEALERSHIP]) a chtěl jsem vám dát vědět, že máme skvělou nabídku na nové
-vůz. Pokud máte zájem, dejte mi prosím vědět.
+Píšu vám, protože jsem si všiml, že jste si nedávno koupil nové auto. Jsem prodejce v místním autosalonu ([DEALERSHIP]) a chtěl jsem vám dát vědět, že máme skvělou nabídku na nové vozy. Pokud máte zájem, dejte mi prosím vědět.
 
 Děkuji,
 

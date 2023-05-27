@@ -2,12 +2,10 @@
 sidebar_position: 4
 ---
 
-# 🟡 Kód jako zdůvodnění
+# 🟡 Code as Reasoning
 
 Dalším příkladem systému MRKL jsou [Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal).
-Když je jim zadána otázka, PAL jsou schopny **napsat kód**, který tuto otázku vyřeší. Odesílají
-kód do programového běhu, aby získal výsledek. PAL pracuje na rozdíl od CoT; PAL je meziproduktem 
-uvažování je kód, zatímco u CoT je to přirozený jazyk.
+Když je jim zadána otázka, %%PALy|PAL%% jsou schopny **napsat kód**, který tuto otázku vyřeší. Odesílají kód do programového runtime, aby získaly výsledek. PAL pracuje na jinak než %%CoT|Chain of Thought Prompting%%; PALův meziprodukt uvažování je kód, zatímco u CoT je to přirozený jazyk.
 
 import image from '@site/docs/assets/pal.png';
 
@@ -20,15 +18,11 @@ Příklad PAL (Gao a kol.)
 </div>
 
 
-Je třeba si uvědomit jednu důležitou věc: PAL ve skutečnosti prolíná přirozený jazyk (NL) a kód.
-Na výše uvedeném obrázku jsou modře vyznačeny úvahy v přirozeném jazyce, které PAL generuje. Ačkoli se jedná o
-není na obrázku zobrazen, PAL ve skutečnosti generuje '\#' před každým řádkem úvahy NL, takže
-aby je programový běh interpretoval jako komentáře.
+Je třeba si uvědomit jednu důležitou věc: PAL ve skutečnosti prolíná přirozený jazyk (Natural Language – NL) a kód. Na výše uvedeném obrázku jsou modře vyznačeny úvahy v přirozeném jazyce, které PAL generuje. Ačkoli není na obrázku zobrazen, PAL ve skutečnosti generuje '\#' před každým řádkem úvahy NL, aby je programový runtime interpretoval jako komentáře.
 
 ## Příklad
 
-Podívejme se na příklad, jak PAL řeší matematickou otázku. Používám výzvu se třemi snímky, 
-která je zjednodušenou verzí [této](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
+Podívejme se na příklad, jak PAL řeší matematickou otázku. Používám prompt se třemi shoty (a 3-shot prompt), který je zjednodušenou verzí [tohoto promptu](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
 
 Použiji k tomu langchain, balíček jazyka Python pro řetězení funkcí LLM. Nejprve je potřeba provést několik instalací:
 
@@ -40,12 +34,12 @@ import os
 os.environ["OPENAI_API_KEY"] = "sk-YOUR_KEY_HERE"
 ```
 
-Poté můžeme vytvořit instanci GPT-3 davinci-002 (volání API se uskuteční, když použijeme tento objekt)
+Poté můžeme vytvořit instanci GPT-3 davinci-002 (API call se uskuteční, když použijeme tento objekt)
 ```
 llm = OpenAI(model_name='text-davinci-002', temperature=0)
 ```
 
-Zde je few shot prompt:
+Zde je %%few shot prompt|few shot standard prompt%%:
 
 ```python
 MATH_PROMPT = '''
@@ -89,7 +83,7 @@ Otázka: {otázka}
 '''
 ```
 
-Nyní můžeme kombinovaný dotaz předat GPT-3.
+Nyní můžeme kombinovaný prompt předat GPT-3.
 
 ```
 llm_out = llm(MATH_PROMPT.format(question=question))

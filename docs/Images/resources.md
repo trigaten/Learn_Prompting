@@ -4,10 +4,9 @@ sidebar_position: 100
 
 # 🟢 Zdroje
 
-Oblast inženýrství obrazových podnětů je velmi rozmanitá. Zde je dobrý seznam 
-zdrojů, který pokrývá jeho části.
+Oblast inženýrství obrázkových promptu je velmi rozmanitá. Zde je dobrý seznam zdrojů, který pokrývá jeho části.
 
-- [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery
+- [Seznam zdrojů](https://dallery.gallery/prompt-resources-tools-ai-art/) z DALLE Gallery
 - [Stable Diffusion Prompt Book](https://cdn.openart.ai/assets/Stable%20Diffusion%20Prompt%20Book%20From%20OpenArt%2010-28.pdf)
 - [Traveler's Guide to Latent Space](https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f)
 - [The DALLE 2 Prompt Book](https://dallery.gallery/the-dalle-2-prompt-book/)(@parsons2022dalleprompt)

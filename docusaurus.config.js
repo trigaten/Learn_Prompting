@@ -5,8 +5,8 @@ const math = require('remark-math')
 async function createConfig() {
     const katex = (await import('rehype-katex')).default
     return {
-        title: 'Naučte se Promptování: Průvodce komunikací s umělou inteligencí',
-        tagline: 'Český překlad bezplatného open source kurzu o komunikaci s umělou inteligencí',
+        title: 'Naučte se Promptingu: AI Prompt Engineering',
+        tagline: 'Český bezplatný kurz o komunikaci s umělou inteligencí',
         url: 'https://kkosheev.github.io',
         baseUrl: '/Learn_Prompting_CAI',
         onBrokenLinks: 'throw',
@@ -60,7 +60,6 @@ async function createConfig() {
                     },
                     docs: {
                         sidebarPath: require.resolve('./sidebars.js'),
-                        editUrl: 'https://github.com/trigaten/promptgineering/tree/v1.2.3',
                         remarkPlugins: [
                             math,
                             (await import('remark-gfm')).default,
@@ -111,28 +110,28 @@ async function createConfig() {
                 {
                     name: 'description',
                     content:
-                        'Learn Prompting je nejrozsáhlejší a nejkomplexnější kurz v oblasti promptního inženýrství dostupný na internetu, s více než 60 moduly obsahu, přeloženými do 9 jazyků a prosperující komunitou.',
+                        'Learn Prompting je nejrozsáhlejší a nejkomplexnější kurz v oblasti prompt inženýrství dostupný online, s více než 60 moduly obsahu, přeloženými do 9 jazyků a prosperující komunitou.',
                 },
                 {
                     name: 'keywords',
-                    content: 'prompting, prompt inženýring, naučit se prompting, naučit se, prompt, AI, chatGPT',
+                    content: 'prompting, AI kurz zdarma, AI zdarma, prompt engeneering, naučit se prompting, naučit se, prompt, AI, chatGPT',
                 },
                 {
                     name: 'og:title',
-                    content: 'Naučte se Promptování: Průvodce komunikací s umělou inteligencí',
+                    content: 'Naučte se Promptingu: Průvodce komunikací s umělou inteligencí',
                 },
                 {
                     name: 'og:description',
                     content:
-                        'Learn Prompting je nejrozsáhlejší a nejkomplexnější kurz v oblasti promptního inženýrství dostupný na internetu, s více než 60 moduly obsahu, přeloženými do 9 jazyků a prosperující komunitou..',
+                        'Learn Prompting je nejrozsáhlejší a nejkomplexnější kurz v oblasti prompt inženýrství dostupný online, s více než 60 moduly obsahu, přeloženými do 9 jazyků a prosperující komunitou..',
                 },
                 {
                     name: 'og:url',
-                    content: 'https://cesky.ai',
+                    content: 'https://aipe.cz',
                 },
                 {
                     name: 'og:image',
-                    content: 'https://cesky.ai/img/og-image.jpg', // Replace this with the actual path to your og-image.
+                    content: 'https://aipe.cz/img/og-image.jpg', // Replace this with the actual path to your og-image.
                 },
                 {
                     name: 'og:type',

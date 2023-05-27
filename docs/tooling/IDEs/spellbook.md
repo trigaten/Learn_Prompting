@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # Spellbook 🚧
 
-[Spellbook](https://scale.com/spellbook) je profesionální IDE pro tvorbu nápověd, které vytvořila společnost Scale AI.
+[Spellbook](https://scale.com/spellbook) je profesionální IDE pro profesionální prompting, které vytvořila společnost Scale AI.
 
 import Image from '@site/docs/assets/tooling/spellbook.png';
 
@@ -14,5 +14,4 @@ import Image from '@site/docs/assets/tooling/spellbook.png';
 
 ## Funkce
 
-Kniha kouzel umožňuje uživatelům projít celým postupem vytváření a porovnávání výzev,
-doladění modelů a nasazení koncových bodů do produkce.
+Spellbook umožňuje uživatelům projít celým postupem vytváření a porovnávání promptů, doladění modelů a nasazení endpointů do produkce.

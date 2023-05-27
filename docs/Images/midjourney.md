@@ -3,7 +3,7 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
-[Midjourney](https://www.midjourney.com) je generátor obrázků s umělou inteligencí, který funguje prostřednictvím rozhraní bota Discord i webové aplikace (plánuje se verze Midjourney s API). Proces generování obrázků pomocí Midjourney se řídí stejnými základními principy jako jiné generátory obrázků AI, včetně používání výzev, které proces generování řídí. 
+[Midjourney](https://www.midjourney.com) je generátor obrázků s umělou inteligencí, který funguje prostřednictvím rozhraní bota Discord i webové aplikace (plánuje se verze Midjourney s API). Proces generování obrázků pomocí Midjourney se řídí stejnými základními principy jako jiné generátory obrázků AI, včetně používání promptů, které proces generování řídí. 
 
 Jednou z jedinečných vlastností aplikace Midjourney ve srovnání s jinými generátory obrázků s umělou inteligencí je její schopnost vytvářet vizuálně působivé a umělecky komponované obrázky. To je dáno specializovaným tréninkem modelu, který mu umožňuje vytvářet vysoce kvalitní obrázky se specifickými uměleckými parametry (více o tom v části "Pokročilé výzvy" > "Parametry").
 
@@ -42,7 +42,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/midjourney_astrona
 
 # Základní použití
 
-Základní anatomie výzvy s Midjourney je `/imagine prompt: [PROMPT PRO OBRÁZEK] [--VOLITELNÉ PARAMETRY]`. 
+Základní anatomie promptu na Midjourney je `/imagine prompt: [PROMPT PRO OBRÁZEK] [--VOLITELNÉ PARAMETRY]`. 
 
 Například: `/imagine prompt: astronaut na koni`.
 
@@ -72,10 +72,10 @@ V tomto základním příkladu byly použity následující parametry:
 
 
 # Pokročilé prompty
-Pokročilé výzvy v Midjourney využívají parametry a speciální techniky výzvy podporované algoritmem Midjourney.
+Pokročilé výzvy v Midjourney využívají parametry a speciální techniky promptingu podporované algoritmem Midjourney.
 
 ## Vícenásobné promptyvy
-Ve výchozím nastavení interpretuje Midjourney výzvu holisticky. Použití dvojité dvojtečky `::` říká Midjourney, aby interpretoval každou část výzvy zvlášť.
+Ve výchozím nastavení interpretuje Midjourney prompt holisticky. Použití dvojité dvojtečky `::` říká Midjourney, aby interpretoval každou část promptu zvlášť.
 
 Příklad:
 
@@ -138,7 +138,7 @@ Příklad: `astronaut na koni --c20` a `astronaut na koni --c 80`.
 
 ### Kvalita:
 
-`--q [hodnota]` určuje, kolik času bude generování obrázku trvat, čímž se zvýší kvalita. Výchozí nastavení je "1". Vyšší hodnoty využívají více minut grafického procesoru vašeho předplatného (akceptuje hodnoty ".25", ".5" , "1" a "2").
+`--q [hodnota]` určuje, kolik času bude generování obrázku trvat, čímž se zvýší kvalita. Výchozí nastavení je "1". Vyšší hodnoty využívají více minut grafického procesoru (akceptuje hodnoty ".25", ".5" , "1" a "2").
 
 Příklad: `astronaut na koni --q .5` a `astronaut na koni --q 2`.
 
@@ -151,7 +151,7 @@ Příklad: `astronaut na koni --q .5` a `astronaut na koni --q 2`.
 
 ### Seed:
 
-`--seed [hodnota]` nastavuje číslo semínka, které určuje počáteční bod (pole šumu) pro generování obrázku. Pokud není parametr seed zadán, jsou semínka pro každý obrázek generována náhodně. Při použití stejného čísla semínka a výzvy vzniknou podobné obrázky.
+`--seed [hodnota]` nastavuje číslo semínka, které určuje počáteční bod (pole šumu) pro generování obrázku. Pokud není parametr seed zadán, jsou semínka pro každý obrázek generována náhodně. Při použití stejného čísla semínka a promptu vzniknou podobné obrázky.
 
 Příklad: `astronaut na koni --seed 123`.
 
@@ -164,7 +164,7 @@ Příklad: `astronaut na koni --seed 123`.
 
 ### Stylizujte:
 
-`--stylize [hodnota]` nebo `--s [hodnota]` ovlivňuje, jak silně Midjourney použije svůj umělecký algoritmus.  Nízké hodnoty vytvářejí obrázky, které přesně odpovídají výzvě, vysoké hodnoty vytvářejí velmi umělecké obrázky, které jsou s výzvou méně spojené. Výchozí hodnota je 100, rozsah hodnot je 0 - 1000.
+`--stylize [hodnota]` nebo `--s [hodnota]` ovlivňuje, jak silně Midjourney použije svůj umělecký algoritmus.  Nízké hodnoty vytvářejí obrázky, které přesně odpovídají promptu, vysoké hodnoty vytvářejí velmi umělecké obrázky, které jsou s promptem méně spojené. Výchozí hodnota je 100, rozsah hodnot je 0 - 1000.
 (Poznámka: pomocí příkazu `/settings` můžete změnit výchozí hodnotu stylizace z "🖌️ Style Med" (=`--s 100`) na "🖌️ Style Low" (=`--s 50`), "🖌️ Style High"(=`--s 250`) nebo "🖌️ Style Very High" (=`--s 750`)).
 
 Příklad: `astronaut na koni --s 50` a `astronaut na koni --s 900`.
@@ -192,7 +192,7 @@ Příklad: `--v 1`, `--v 2` a `--v 3`.
 
 ## Parametry (předchozí modely)
 
-### Stejné osivo
+### Stejné semínko
 
 `--sameseed`: zatímco parametr `--seed` vytváří jediné šumové pole aplikované na všechny obrázky v počáteční mřížce, parametr sameseed aplikuje stejný počáteční šum na všechny obrázky v počáteční mřížce, takže vytvoří velmi podobné obrázky.
 

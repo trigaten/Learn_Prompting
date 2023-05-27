@@ -4,11 +4,11 @@ sidebar_position: 1000
 
 # 🟢 Injekce kódu
 
-Code injection(@kang2023exploiting) je pohotové hackerské zneužití, kdy útočník dokáže přimět LLM ke spuštění libovolného kódu (často Pythonu). K tomu může dojít u LLM rozšířených o nástroje, kdy je LLM schopen odeslat kód interpretu, ale může k tomu dojít i tehdy, když je LLM sám použit k vyhodnocení kódu.
+Code injection(@kang2023exploiting) je prompt hacking zneužití, kdy útočník dokáže přimět LLM ke spuštění libovolného kódu (často Pythonu). K tomu může dojít u LLM rozšířených o nástroje, kdy je LLM schopen odeslat kód interpretu, ale může k tomu dojít i tehdy, když je LLM sám použit k vyhodnocení kódu.
 
 Injekce kódu byla údajně [provedena](https://twitter.com/ludwig_stumpp/status/1619701277419794435) na aplikaci AI, [MathGPT](https://mathgpt.streamlit.app/) a byla použita k získání jejího klíče API OpenAI ([zpráva MITRE](https://atlas.mitre.org/studies/AML.CS0016/)). 
 
-:::poznámka
+:::note
 MathGPT byl od té doby zabezpečen proti injekci kódu. Nepokoušejte se jej prosím hacknout; za volání API se platí.
 :::
 
@@ -16,7 +16,7 @@ MathGPT byl od té doby zabezpečen proti injekci kódu. Nepokoušejte se jej pr
 
 Pracujme se zjednodušeným příkladem aplikace [MathGPT](https://mathgpt.streamlit.app/). Budeme předpokládat, že přijme matematický problém a vypíše kód Pythonu, kterým se pokusí problém vyřešit.
 
-Zde je výzva, kterou zjednodušený příklad aplikace používá:
+Zde je prompt, který zjednodušený příklad aplikace používá:
 
 ```
 Napište kód Pythonu pro řešení následující matematické úlohy:

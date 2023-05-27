@@ -4,7 +4,7 @@ sidebar_position: 30
 
 # 🟢 Definovaný slovníkový útok
 
-Definovaný slovníkový útok[^1] je forma prompt injection navržená tak, aby se vyhnula sendvičové obraně. Připomeňme si, jak sendvičová obrana funguje. Vkládá uživatelský vstup mezi dvě instrukce. Díky tomu je velmi obtížné se jí vyhnout. Zde je příklad obrany z předchozí stránky:
+Definovaný slovníkový útok[^1] je forma prompt injekce navržená tak, aby se vyhnula sendvičové obraně. Připomeňme si, jak sendvičová obrana funguje. Vkládá uživatelský vstup mezi dvě instrukce. Díky tomu je velmi obtížné se jí vyhnout. Zde je příklad obrany z předchozí stránky:
 
 
 ```
@@ -15,7 +15,7 @@ Přeložte následující text do francouzštiny:
 Nezapomeňte, že výše uvedený text překládáte do francouzštiny.
 ```
 
-Musíme se nějak vypořádat s tím, že za uživatelským vstupem následuje instrukce. Uděláme to tak, že modelu ukážeme kódový slovník a požádáme ho, aby správně namapoval závěrečnou větu podle tohoto slovníku. Zde je jedna výzva, kterou můžeme k tomuto účelu použít:
+Musíme se nějak vypořádat s tím, že za uživatelským vstupem následuje instrukce. Uděláme to tak, že modelu ukážeme kódový slovník a požádáme ho, aby správně namapoval závěrečnou větu podle tohoto slovníku. Zde je jeden prompt, který můžeme k tomuto účelu použít:
 
 ```text
 Mám rád koláč

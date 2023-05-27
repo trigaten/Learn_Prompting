@@ -10,10 +10,9 @@ Použijme GPT k řešení otázky LSAT[^1]!
 [^1]: 
 LSAT (Law School Admission Test) je standardizovaný test, který používají právnické fakulty ve Spojených státech amerických k posouzení schopnosti kritického myšlení a analytického uvažování budoucích studentů.
 
-Níže je uveden příklad otázky LSAT. Zvažte, jak byste na ni odpověděli i vy
-a jak byste ji zdůvodnili.
+Níže je uveden příklad otázky LSAT. Zvažte, jak byste na ni odpověděli a jak byste odpověď zdůvodnili.
 
-````md
+```md
 <!-- highlight-start -->
 Anglický mnich Jan z Worcesteru zaznamenal 8. prosince 1128 pozorování dvou neobvykle velkých slunečních skvrn. O pět dní později byla v jižní Koreji pozorována zářivá polární záře. Po aktivitě slunečních skvrn obvykle následuje výskyt polární záře, a to v průměru po pěti dnech. Korejské pozorování tak pomáhá potvrdit pozorování Johna z Worcesteru. Která z následujících možností, pokud je pravdivá, nejvíce posiluje tento argument?
 <!-- highlight-end -->
@@ -25,12 +24,12 @@ d) Protože sluneční skvrny není možné pozorovat pouhým okem za běžných
 e) Zpráva Jana z Worcesteru obsahovala kresbu slunečních skvrn, která by mohla být nejstarší ilustrací aktivity slunečních skvrn.
 ```
 
-<detaily>
+<details>
 <summary>Správná odpověď je ...</summary>.
 c) Pouze silná aktivita slunečních skvrn mohla mít za následek polární záři pozorovatelnou v tak nízké zeměpisné šířce, jako je ta korejská. 
 </details>
 
-Zkuste vložit úlohu do níže uvedené ukázky:
+Zkuste vložit úlohu do níže uvedeného dema:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiZSkgSm9obiBvZiBXb3JjZXN0ZXIncyBhY2NvdW50IGluY2x1ZGVkIGEgZHJhd2luZyBvZiB0aGUgc3Vuc3BvdHMsIHdoaWNoIGNvdWxkIGJlIHRoZSBlYXJsaWVzdCBpbGx1c3RyYXRpb24gb2Ygc3Vuc3BvdCBhY3Rpdml0eS4iLCJwcm9tcHQiOiJKb2huIG9mIFdvcmNlc3RlciwgYW4gRW5nbGlzaCBtb25rLCByZWNvcmRlZCB0aGUgc2lnaHRpbmcsIG9uIERlY2VtYmVyIDgsIDExMjgsIG9mIHR3byB1bnVzdWFsbHkgbGFyZ2Ugc3Vuc3BvdHMuIEZpdmUgZGF5cyBsYXRlciBhIGJyaWxsaWFudCBhdXJvcmEgYm9yZWFsaXMgKG5vcnRoZXJuIGxpZ2h0cykgd2FzIG9ic2VydmVkIGluIHNvdXRoZXJuIEtvcmVhLiBTdW5zcG90IGFjdGl2aXR5IGlzIHR5cGljYWxseSBmb2xsb3dlZCBieSB0aGUgYXBwZWFyYW5jZSBvZiBhbiBhdXJvcmEgYm9yZWFsaXMsIGFmdGVyIGEgc3BhbiBvZiB0aW1lIHRoYXQgYXZlcmFnZXMgZml2ZSBkYXlzLiBUaHVzLCB0aGUgS29yZWFuIHNpZ2h0aW5nIGhlbHBzIHRvIGNvbmZpcm0gSm9obiBvZiBXb3JjZXN0ZXIncyBzaWdodGluZy4gV2hpY2ggb25lIG9mIHRoZSBmb2xsb3dpbmcsIGlmIHRydWUsIG1vc3Qgc3RyZW5ndGhlbnMgdGhlIGFyZ3VtZW50P1xuYSkgQW4gYXVyb3JhIGJvcmVhbGlzIGNhbiBzb21ldGltZXMgb2NjdXIgZXZlbiB3aGVuIHRoZXJlIGhhcyBiZWVuIG5vIHNpZ25pZmljYW50IHN1bnNwb3QgYWN0aXZpdHkgaW4gdGhlIHByZXZpb3VzIHdlZWsuIFxuYikgQ2hpbmVzZSBzb3VyY2VzIHJlY29yZGVkIHRoZSBzaWdodGluZyBvZiBzdW5zcG90cyBtb3JlIHRoYW4gMTAwMCB5ZWFycyBiZWZvcmUgSm9obiBvZiBXb3JjZXN0ZXIgZGlkLiBcbmMpIE9ubHkgaGVhdnkgc3Vuc3BvdCBhY3Rpdml0eSBjb3VsZCBoYXZlIHJlc3VsdGVkIGluIGFuIGF1cm9yYSBib3JlYWxpcyB2aWV3YWJsZSBhdCBhIGxhdGl0dWRlIGFzIGxvdyBhcyB0aGF0IG9mIEtvcmVhLiBcbmQpIEJlY2F1c2UgaXQgaXMgaW1wb3NzaWJsZSB0byB2aWV3IHN1bnNwb3RzIHdpdGggdGhlIG5ha2VkIGV5ZSB1bmRlciB0eXBpY2FsIGRheWxpZ2h0IGNvbmRpdGlvbnMsIHRoZSBzaWdodGluZyByZWNvcmRlZCBieSBKb2huIG9mIFdvcmNlc3RlciB3b3VsZCBoYXZlIHRha2VuIHBsYWNlIHVuZGVyIHVudXN1YWwgd2VhdGhlciBjb25kaXRpb25zIHN1Y2ggYXMgZm9nIG9yIHRoaW4gY2xvdWRzLiBcbmUpIEpvaG4gb2YgV29yY2VzdGVyJ3MgYWNjb3VudCBpbmNsdWRlZCBhIGRyYXdpbmcgb2YgdGhlIHN1bnNwb3RzLCB3aGljaCBjb3VsZCBiZSB0aGUgZWFybGllc3QgaWxsdXN0cmF0aW9uIG9mIHN1bnNwb3QgYWN0aXZpdHkuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -61,7 +60,7 @@ e) Vyprávění Jana z Worcesteru obsahovalo kresbu slunečních skvrn, která b
 
 Vysvětlujme krok za krokem
 ```
-Tato věta zvýší slovosled modelu. Výstup může vypadat takto:
+Tato věta zvýší slovní zásobu modelu. Výstup může vypadat takto:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkEpIFRoaXMgYW5zd2VyIGNob2ljZSBpcyBpbmNvcnJlY3QuIFRoaXMgYW5zd2VyIGRvZXMgbm90IHN0cmVuZ3RoZW4gdGhlIGFyZ3VtZW50LCBhcyBpdCBpbnN0ZWFkIGludHJvZHVjZXMgYW4gYWx0ZXJuYXRpdmUgZXhwbGFuYXRpb24gZm9yIHRoZSBhdXJvcmEgYm9yZWFsaXMuIFxuQikgVGhpcyBhbnN3ZXIgY2hvaWNlIGlzIGluY29ycmVjdC4gVGhpcyBhbnN3ZXIgZG9lcyBub3Qgc3RyZW5ndGhlbiB0aGUgYXJndW1lbnQsIGFzIGl0IGlzIGlycmVsZXZhbnQgdG8gdGhlIGNvbm5lY3Rpb24gYmV0d2VlbiBzdW5zcG90IGFjdGl2aXR5IGFuZCBhdXJvcmEgYm9yZWFsaXMgc2lnaHRpbmdzLiBcbkMpIFRoaXMgYW5zd2VyIGNob2ljZSBpcyBjb3JyZWN0LiBUaGlzIGFuc3dlciBzdHJlbmd0aGVucyB0aGUgYXJndW1lbnQgYnkgc3VnZ2VzdGluZyB0aGF0IHRoZSBzdW5zcG90IGFjdGl2aXR5IHJlY29yZGVkIGJ5IEpvaG4gb2YgV29yY2VzdGVyIHdhcyB0aGUgY2F1c2Ugb2YgdGhlIGF1cm9yYSBib3JlYWxpcyB0aGF0IHdhcyBvYnNlcnZlZCBpbiBLb3JlYSBmaXZlIGRheXMgbGF0ZXIuIFxuRCkgVGhpcyBhbnN3ZXIgY2hvaWNlIGlzIGluY29ycmVjdC4gVGhpcyBhbnN3ZXIgZG9lcyBub3Qgc3RyZW5ndGhlbiB0aGUgYXJndW1lbnQsIGFzIGl0IGlzIGlycmVsZXZhbnQgdG8gdGhlIGNvbm5lY3Rpb24gYmV0d2VlbiBzdW5zcG90IGFjdGl2aXR5IGFuZCBhdXJvcmEgYm9yZWFsaXMgc2lnaHRpbmdzLiBcbkUpIFRoaXMgYW5zd2VyIGNob2ljZSBpcyBpbmNvcnJlY3QuIFRoaXMgYW5zd2VyIGRvZXMgbm90IHN0cmVuZ3RoZW4gdGhlIGFyZ3VtZW50LCBhcyBpdCBpcyBpcnJlbGV2YW50IHRvIHRoZSBjb25uZWN0aW9uIGJldHdlZW4gc3Vuc3BvdCBhY3Rpdml0eSBhbmQgYXVyb3JhIGJvcmVhbGlzIHNpZ2h0aW5ncy4gXG5UaGUgY29ycmVjdCBhbnN3ZXIgaXMgQykgT25seSBoZWF2eSBzdW5zcG90IGFjdGl2aXR5IGNvdWxkIGhhdmUgcmVzdWx0ZWQgaW4gYW4gYXVyb3JhIGJvcmVhbGlzIHZpZXdhYmxlIGF0IGEgbGF0aXR1ZGUgYXMgbG93IGFzIHRoYXQgb2YgS29yZWEuIiwicHJvbXB0IjoiSm9obiBvZiBXb3JjZXN0ZXIsIGFuIEVuZ2xpc2ggbW9uaywgcmVjb3JkZWQgdGhlIHNpZ2h0aW5nLCBvbiBEZWNlbWJlciA4LCAxMTI4LCBvZiB0d28gdW51c3VhbGx5IGxhcmdlIHN1bnNwb3RzLiBGaXZlIGRheXMgbGF0ZXIgYSBicmlsbGlhbnQgYXVyb3JhIGJvcmVhbGlzIChub3J0aGVybiBsaWdodHMpIHdhcyBvYnNlcnZlZCBpbiBzb3V0aGVybiBLb3JlYS4gU3Vuc3BvdCBhY3Rpdml0eSBpcyB0eXBpY2FsbHkgZm9sbG93ZWQgYnkgdGhlIGFwcGVhcmFuY2Ugb2YgYW4gYXVyb3JhIGJvcmVhbGlzLCBhZnRlciBhIHNwYW4gb2YgdGltZSB0aGF0IGF2ZXJhZ2VzIGZpdmUgZGF5cy4gVGh1cywgdGhlIEtvcmVhbiBzaWdodGluZyBoZWxwcyB0byBjb25maXJtIEpvaG4gb2YgV29yY2VzdGVyJ3Mgc2lnaHRpbmcuIFdoaWNoIG9uZSBvZiB0aGUgZm9sbG93aW5nLCBpZiB0cnVlLCBtb3N0IHN0cmVuZ3RoZW5zIHRoZSBhcmd1bWVudD9cbmEpIEFuIGF1cm9yYSBib3JlYWxpcyBjYW4gc29tZXRpbWVzIG9jY3VyIGV2ZW4gd2hlbiB0aGVyZSBoYXMgYmVlbiBubyBzaWduaWZpY2FudCBzdW5zcG90IGFjdGl2aXR5IGluIHRoZSBwcmV2aW91cyB3ZWVrLiBcbmIpIENoaW5lc2Ugc291cmNlcyByZWNvcmRlZCB0aGUgc2lnaHRpbmcgb2Ygc3Vuc3BvdHMgbW9yZSB0aGFuIDEwMDAgeWVhcnMgYmVmb3JlIEpvaG4gb2YgV29yY2VzdGVyIGRpZC4gXG5jKSBPbmx5IGhlYXZ5IHN1bnNwb3QgYWN0aXZpdHkgY291bGQgaGF2ZSByZXN1bHRlZCBpbiBhbiBhdXJvcmEgYm9yZWFsaXMgdmlld2FibGUgYXQgYSBsYXRpdHVkZSBhcyBsb3cgYXMgdGhhdCBvZiBLb3JlYS4gXG5kKSBCZWNhdXNlIGl0IGlzIGltcG9zc2libGUgdG8gdmlldyBzdW5zcG90cyB3aXRoIHRoZSBuYWtlZCBleWUgdW5kZXIgdHlwaWNhbCBkYXlsaWdodCBjb25kaXRpb25zLCB0aGUgc2lnaHRpbmcgcmVjb3JkZWQgYnkgSm9obiBvZiBXb3JjZXN0ZXIgd291bGQgaGF2ZSB0YWtlbiBwbGFjZSB1bmRlciB1bnVzdWFsIHdlYXRoZXIgY29uZGl0aW9ucyBzdWNoIGFzIGZvZyBvciB0aGluIGNsb3Vkcy4gXG5lKSBKb2huIG9mIFdvcmNlc3RlcidzIGFjY291bnQgaW5jbHVkZWQgYSBkcmF3aW5nIG9mIHRoZSBzdW5zcG90cywgd2hpY2ggY291bGQgYmUgdGhlIGVhcmxpZXN0IGlsbHVzdHJhdGlvbiBvZiBzdW5zcG90IGFjdGl2aXR5LiBMZXQncyBleHBsYWluIHN0ZXAgYnkgc3RlcCIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -73,12 +72,12 @@ Tato věta zvýší slovosled modelu. Výstup může vypadat takto:
 :::info
 Všimněte si, jak model zdůvodňuje problém krok za krokem.
 
-Specifický termín pro toto chování je Chain of Thought(@wei2022chain); model postupně generuje příkazy, aby dospěl k odpovědi. To je podobné konceptu myšlení systému 2 (z knihy [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)); model ve výchozím nastavení používá myšlení systému 1, ale může řetězit myšlení systému 1, aby dospěl k metodičtější odpovědi. 
+Specifický termín pro toto chování je Chain of Thought(@wei2022chain); model postupně generuje příkazy, aby dospěl k odpovědi. To je podobné konceptu myšlení systému 2 (z knihy [Myšlení, rychlé a pomalé](https://www.ctu.to/kniha/mysleni-rychle-a-pomale)); model ve výchozím nastavení používá myšlení systému 1, ale může řetězit myšlení systému 1, aby dospěl k metodičtější odpovědi. 
 :::
 
 ## Zlepšení
 
-Zde je několik variant naší základní výzvy pro otázky s výběrem odpovědi:
+Zde je několik variant našeho základního promptu pro otázky s výběrem odpovědi.
 
 ### Změna pořadí položek otázky
 
@@ -99,12 +98,12 @@ b) Protože sluneční skvrny není možné pozorovat pouhým okem za běžných
 ### Přeformulujte otázku
 
 
-Připomeňme si, že původní výzva zněla takto:
+Připomeňme si, že původní prompt zněl takto:
 ```
 Která z následujících možností, pokud je pravdivá, nejvíce posiluje argument?
 ```
 
-Výzvu můžeme změnit na tuto:
+Prompt můžeme změnit na tento:
 ```
 Označte každou z možností jako posilující, oslabující nebo neovlivňující argument.
 ```
@@ -160,13 +159,13 @@ Model použije správný vzorec, Bayesův.
 
 Což je **správně**!
 
-:::upozornění
+:::warning
 Model GPT neprovádí dobře aritmetické operace. Můžete si všimnout, že zatímco zapsaný výraz je opravený, vypočtené číslo nikoli.
 
 Zkuste přidat větu: `Vyjádřete výraz jako odpověď, nikoliv číslo`, abyste výpočet zakázali.
-
-
-Možná vás bude zajímat [MRKL](https://learnprompting.org/docs/advanced_applications/mrkl)(@karpas2022mrkl), paradigma kombinace GPT s externími nástroji, jako jsou kalkulačky, které tento problém řeší.
 :::
+
+Možná vás bude zajímat [MRKL](/Learn_Prompting_CAI/docs/advanced_applications/mrkl)(@karpas2022mrkl), paradigma kombinace GPT s externími nástroji, jako jsou kalkulačky, které tento problém řeší.
+
 
 Napsal [zeyuzhao](https://github.com/Zeyuzhao).

@@ -2,11 +2,11 @@
 sidebar_position: 40
 ---
 
-# 🟡 Pomoc při kódování
+# 🟡 Asistence při kódování
 
 ChatGPT můžete využít k ladění, generování kódu, přeformátování, komentování a dalším činnostem. Dokáže pracovat s kódem ve více než 40 programovacích jazycích. 
 
-|   Moc staré |    Staré       |     Relevantní      |     Nejnovější        |
+| Moc staré   |    Staré       |     Relevantní      |     Nejnovější        |
 |-------------|----------------|---------------------|-----------------------|
 | BASIC       | Perl           | Swift               | Kotlin                |
 | Assembly    | Pascal         | TypeScript          | Julia                 |
@@ -21,10 +21,10 @@ ChatGPT můžete využít k ladění, generování kódu, přeformátování, ko
 
 ## Generování kódu
 
-Pokyn ChatGPT k vygenerování kódu je jednoduchý:
+Prompt ChatGPT pro vygenerování kódu je jednoduchý:
 
 ```text
-Chovejte se jako mladší programátor v Pythonu. Napište prosím kód, který vygeneruje madliby ze 3 polí po 6 položkách: předložky, slovesa a podstatná jména, přičemž podstatná jména se používají také jako přímé objekty. Po jeho napsání kód spusťte.
+Chovejte se jako junior programátor v Pythonu. Napište prosím kód, který vygeneruje madliby ze 3 polí po 6 položkách: předložky, slovesa a podstatná jména, přičemž podstatná jména se používají také jako přímé objekty. Po jeho napsání kód spusťte.
 ```
 
 Výstup bude vypadat nějak takto:
@@ -47,10 +47,9 @@ print(madlib)
 // highlight-end
 ```
 
-Vyzkoušejte si to zde:
+Vyzkoušejte si to zde (musíte mít povolený JavaScript):
 
-<div 
-trydyno-embed="" 
+<div trydyno-embed="" 
 openai-model="text-davinci-003" 
 initial-prompt="Jednejte jako mladší programátor v Pythonu. Napište prosím kód, který vygeneruje madliby ze 3 polí po 6 položkách: předložky, slovesa a podstatná jména, přičemž podstatná jména budou použita i jako přímé objekty." 
 initial-response="" 
@@ -63,11 +62,12 @@ top-p="0">
 
 ## Komentování a přeformátování kódu
 
-Můžete požádat ChatGPT, aby do vašeho kódu přidal komentáře a přeformátoval jej pro lepší čitelnost. Po vašem pokynu přidejte tři hashmarky a poté vložte kód, který chcete, aby poupravil:
+Můžete požádat ChatGPT, aby do vašeho kódu přidal komentáře a přeformátoval jej pro lepší čitelnost. Po vašem promptu přidejte tři hashmarky a poté vložte kód, který chcete, aby poupravil:
 
 ```text
 Prosím, přidejte do tohoto kódu Pythonu komentáře k řádkům a přeformátujte jej pro lepší čitelnost:  
 
+###
 import math
 amplitude = 30
 frequency = 2
@@ -75,7 +75,7 @@ num_points = 50
 for i in range(num_points):
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
     print(' ' * (amplitude + y) + '*')
-###
+
 ```
 
 Výstup bude vypadat takto:
@@ -87,7 +87,7 @@ import math
 
 # Nastavte amplitudu, frekvenci a počet bodů vlny
 amplitude = 30
-frekvence = 2
+frequency = 2
 num_points = 50
 
 # Projděte ve smyčce každý bod vlny
@@ -96,14 +96,14 @@ for i in range(num_points):
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
     
     # Vypište mezeru pro vyplnění, následovanou hvězdičkou na příslušném místě vlny
-    print(' ' * (amplituda + y) + '*')
+    print(' ' * (amplitude + y) + '*')
 
 // highlight-end
 ```
 
 ## Ladění
 
-Program ChatGPT dokáže nejen odhalit syntaktické chyby v kódu, ale také logické chyby, které by se objevily při provádění kódu. Níže je uveden příklad skriptu v jazyce Python, který nakonec způsobí chybu dělení nulou na řádku 4 kvůli logické chybě na řádku 3.  Vyzkoušejte tuto jednoduchou výzvu k nalezení a opravě chyby:
+ChatGPT dokáže nejen odhalit syntaktické chyby v kódu, ale také logické chyby, které by se objevily při exekuci kódu. Níže je uveden příklad skriptu v Pythonu, který nakonec způsobí chybu dělení nulou na řádku 4 kvůli logické chybě na řádku 3.  Vyzkoušejte tento jednoduchý prompt k nalezení a opravě chyby:
 
 ```text
 Prosím, vylaďte tento kód Pythonu:  
@@ -132,7 +132,7 @@ V případě složitějších chyb může být nutné přidat další specifika:
 Pokud se váš skript provádí příliš dlouho, ChatGPT jej může optimalizovat. Zde je příklad optimalizace neefektivního skriptu, který hledá prvočísla:
 
 ```text
-Chovejte se jako velmi zkušený vývojář jazyka Python. Optimalizujte prosím tento skript:  
+Chovejte se jako velmi senior vývojář jazyka Python. Optimalizujte prosím tento skript:  
 
 for num in range(1, 101):
     if num 1:
@@ -156,7 +156,7 @@ print(numbers)
 // highlight-end
 ```
 
-Všimněte si, že jsme bota požádali, aby se "choval jako _starší_ vývojář" a optimalizoval skript. Můžete mu také nařídit, aby měl určitou odbornost (např. třídicí algoritmy) nebo počet let zkušeností. Případně, pokud máte skript, který se vám zdá příliš složitý, můžete ChatGPT požádat, aby tento skript napsal "jako _velmi juniorní_ vývojář".
+Všimněte si, že jsme bota požádali, aby se "choval jako _senior_ vývojář" a optimalizoval skript. Můžete mu také nařídit, aby měl určitou odbornost (např. třídicí algoritmy) nebo počet let zkušeností. Případně, pokud máte skript, který se vám zdá příliš složitý, můžete ChatGPT požádat, aby tento skript napsal "jako _velmi juniorní_ vývojář".
 
 
 ## Překlad mezi programovými jazyky
@@ -164,7 +164,7 @@ Všimněte si, že jsme bota požádali, aby se "choval jako _starší_ vývojá
 Velmi užitečnou funkcí, kterou ChatGPT nabízí, je možnost přenášet programy z jednoho jazyka do druhého. Typickým využitím může být aktualizace kódu ve starším jazyce na modernější:
 
 ```text
-Chovejte se jako zkušený vývojář se znalostí jazyka COBOL i Python. Převeďte tento program v jazyce COBOL do jazyka Python:  
+Chovejte se jako seniorní vývojář se znalostí jazyka COBOL i Python. Převeďte tento program v jazyce COBOL do jazyka Python:  
 
 
 IDENTIFICATION DIVISION.
@@ -176,12 +176,12 @@ WORKING-STORAGE SECTION.
 01 SS-TAX PIC 9(7)V99.
 
 PROCEDURE DIVISION.
-DISPLAY "Enter employee's salary: ".
+DISPLAY "Zadejte plat zaměstnance: ".
 ACCEPT SALARY.
 
 COMPUTE SS-TAX = SALARY * 0.062.
 
-DISPLAY "Social Security tax is: $", SS-TAX.
+DISPLAY "Daň ze sociálního pojištění je: $", SS-TAX.
 STOP RUN.
 ```
 
@@ -221,12 +221,11 @@ Sbohem, Johne!
 // highlight-end
 ```
 
-
-Pomocí této techniky můžete ChatGPT odeslat více souborů v jedné výzvě a požádat jej o refaktorizaci kódu. Případně jej můžete požádat, aby si každý z nich "zapamatoval" a pak jej provedl v pozdější výzvě.
+Pomocí této techniky můžete ChatGPT odeslat více souborů v jedné výzvě a požádat jej o refaktorizaci kódu. Případně jej můžete požádat, aby si každý z nich "zapamatoval" a pak jej provedl v pozdějším promptu.
 
 ## Simulace databázového serveru
 
-ChatGPT umí pracovat nejen s kódem, ale také simulovat serverová prostředí, jako jsou databáze, webové a e-mailové servery. Vezměme si tuto výzvu:
+ChatGPT umí pracovat nejen s kódem, ale také simulovat serverová prostředí, jako jsou databáze, webové a e-mailové servery. Vezměme si tento prompt:
 
 ```text
 Chovejte se jako Microsoft SQL Server. Vytvořte databázi s názvem "politics" a uvnitř ní tabulku s názvem "politicians". Naplňte ji 50 řádky slavných politiků z celého světa z různých období v letech 1900-2000. Přidejte sloupce pro jejich celá jména, země, data narození a případně data úmrtí. Vytvořte zobrazení pro 3 nejdéle žijící politiky. Vytvořte a spusťte příkaz Transact-SQL, který vypíše obsah tohoto pohledu.
@@ -324,7 +323,7 @@ Zde jsou uvedeny jen některé typy serverů a rozhraní API, které může Chat
 Protože shell v Linuxu (nebo Windows PowerShell) je také programovací jazyk, můžete s ním komunikovat pomocí ChatGPT a vytvořit prostředí pro svůj souborový systém:
 
 ```
-Chovejte se jako příkazový shell systému Debian Linux. Odpovídejte na mé příkazy tak, jak by to udělal terminál, s co nejmenším množstvím vysvětlení. Můj první příkaz je: ls -l
+Chovejte se jako command shell systému Debian Linux. Odpovídejte na mé příkazy tak, jak by to udělal terminál, s co nejmenším množstvím vysvětlení. Můj první příkaz je: ls -l
 ```
 
 Výstup bude vypadat nějak takto:

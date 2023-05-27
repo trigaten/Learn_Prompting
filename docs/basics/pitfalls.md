@@ -17,8 +17,8 @@ Systémy LLM jsou nesmírně výkonné, ale v žádném případě nejsou dokona
 
 LLM většinou **neumí přesně citovat zdroje**. Je to proto, že nemají přístup k internetu a nepamatují si přesně, odkud jejich informace pocházejí. Často vytvoří zdroje, které vypadají dobře, ale jsou zcela nepřesné.
 
-::::poznámka
-Strategie, jako jsou LLM s rozšířeným vyhledáváním (LLM, které mohou vyhledávat na internetu a v dalších zdrojích), mohou tento problém často vyřešit.
+::::note
+Strategie, jako jsou LLM s rozšířeným vyhledáváním (LLM, které mohou vyhledávat na internetu a v dalších zdrojích), mohou tento problém často vyřešit. Například Edge od Bingu v beta verzi poskytuje tuto funkci, stejně jako pluginy GPT-4.
 :::
 
 ## Předpojatost
@@ -31,12 +31,12 @@ LLM budou často generovat nepravdy, když jim bude položena otázka, na kterou
 
 ## Matematika
 
-Studenti LLM jsou často špatní v matematice. Mají potíže s řešením jednoduchých matematických úloh a často nejsou schopni řešit složitější matematické úlohy.
+LLM jsou často špatní v matematice. Mají potíže s řešením jednoduchých matematických úloh a často nejsou schopni řešit složitější matematické úlohy.
 
-::::pozn.
-Tento problém lze do jisté míry vyřešit použitím [nástroje rozšířeného o LLM](https://learnprompting.org/docs/advanced_applications/mrkl).
+::::note
+Tento problém lze do jisté míry vyřešit použitím [nástroje rozšířeného o LLM](/Learn_Prompting_CAI/docs/advanced_applications/mrkl).
 :::
 
 ## Hackování promptů
 
-Uživatelé mohou často obelstít LLM, aby generoval libovolný obsah. Více se o tom dočtete [zde](https://learnprompting.org/docs/category/-prompt-hacking).
+Uživatelé mohou často obelstít LLM, aby generoval libovolný obsah. Více se o tom dočtete [zde](/Learn_Prompting_CAI/docs/category/-prompt-hacking).

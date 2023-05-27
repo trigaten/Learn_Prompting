@@ -6,25 +6,26 @@ sidebar_position: 50
 
 Už vás nebaví číst a psát dlouhé a nudné smlouvy? Umělá inteligence vám může pomoci!
 
-:::varování
-Povinné: Nejsem právník a nic v tomto příspěvku by nemělo být považováno za právní radu.
+:::warning
+Nejsem právník a nic v tomto příspěvku by nemělo být považováno za právní radu.
 :::
+
 ## Čtení smluv
 
 ### Objasnění právního jazyka
 
-Smlouvy byste měli vždy pečlivě číst. Pokud něčemu nerozumíte nebo na to nemáte čas, *měli byste se poradit s právníkem*. Pokud však pročítáte a máte problémy s pochopením některé části, můžete použít UI, která vám pomůže porozumět.
+Smlouvy byste měli vždy pečlivě číst. Pokud něčemu nerozumíte nebo na to nemáte čas, *měli byste se poradit s právníkem*. Pokud však pročítáte a máte problémy s pochopením některé části, můžete použít AI, která vám pomůže porozumět.
 
 Zde jsou některé formulace z NDA (smlouvy o mlčenlivosti):
 
 ```text
-VZHLEDEM K TOMU, že zhotovitel má nebo se může seznámit s důvěrnými informacemi a/nebo obchodním tajemstvím vládního subjektu; a
+VZHLEDEM K TOMU (ang. WHEREAS), že zhotovitel má nebo se může seznámit s důvěrnými informacemi a/nebo obchodním tajemstvím vládního subjektu; a
 
 VZHLEDEM K TOMU, že vládní subjekt si přeje zajistit ochranu svých důvěrných informací a obchodních tajemství před prozrazením; a
 
 VZHLEDEM K TOMU, že zhotovitel souhlasí se zachováním důvěrnosti těchto informací v souladu s podmínkami této dohody.
 
-S ohledem na vzájemné sliby a závazky obsažené v této smlouvě se strany dohodly takto:
+S ohledem na (ang. NOW, THEREFORE,) vzájemné sliby a závazky obsažené v této smlouvě se strany dohodly takto:
 ```
 
 Když jsem se poprvé vydal do světa práva, opravdu jsem nerozuměl používání slov vzhledem k a s ohledem na. Podívejme se, co na to říká ChatGPT:
@@ -39,20 +40,21 @@ VZHLEDEM K TOMU, že zhotovitel souhlasí se zachováním důvěrnosti těchto i
 S OHLEDEM NA vzájemné sliby a závazky obsažené v této smlouvě se strany dohodly takto:
 
 Přečtěte si výše uvedené znění NDA a vysvětlete, co říkají slova psaná velkými písmeny:
+
 // highlight-start
 Slova psaná velkými písmeny v jazyce NDA jsou právní termíny, které určují kontext a účel dohody. Konkrétně stanovují pozadí a důvody dohody a uvádějí povinnosti a očekávání stran. V tomto případě slova psaná velkými písmeny naznačují, že zhotovitel má přístup k důvěrným informacím a obchodním tajemstvím vládního subjektu, že vládní subjekt chce tyto informace chránit před vyzrazením a že zhotovitel se zavazuje zachovávat důvěrnost těchto informací v souladu s podmínkami dohody.
 // highlight-end
 ```
 
-Zdá se, že toto je slušné vysvětlení, ale můžete snadno zlepšit své porozumění kladením doplňujících otázek.
+Zdá se, že toto je slušné vysvětlení, ale můžete snadno zlepšit výsledek kladením doplňujících otázek.
 
 ### Objevování nebezpečného jazyka
 
-Zde je část NDA vytvořená ChatGPT. Nemusíte ji číst, ale obsahuje nebezpečný právní jazyk zvýhodňující zaměstnavatele. K nalezení tohoto nebezpečného jazyka můžete použít aplikaci ChatGPT pomocí následující výzvy, která obsahuje NDA a otázku o nebezpečném jazyku v dolní části. 
+Zde je část NDA vytvořená ChatGPT. Nemusíte ji číst, ale obsahuje nebezpečný právní jazyk zvýhodňující zaměstnavatele. K nalezení tohoto nebezpečného jazyka můžete použít  ChatGPT pomocí následujícího promptu, který obsahuje NDA a otázku o nebezpečném jazyku v dolní části. 
 
-:::poznámka
+:::note
 
-Tato NDA byla vytvořena tak, že ChatGPT zlomil vězení a zadal výzvu `Napsat NDA dodavatele, která obsahuje nebezpečný právní jazyk zvýhodňující zaměstnavatele`.
+Tato NDA byla vytvořena tak, že ChatGPT zlomil vězení a zadal výzvu `Napsat NDA zhovotitele, která obsahuje nebezpečný právní jazyk zvýhodňující zaměstnavatele`.
 
 :::
 
@@ -86,7 +88,7 @@ Tato dohoda začíná platit dnem uvedeným výše a zůstává v platnosti, dok
 Která část této smlouvy obsahuje nebezpečné formulace?
 ```
 
-Zde je odpověď společnosti ChatGPT. 
+Zde je odpověď ChatGPT. 
 
 ```text
 // highlight-start
@@ -102,13 +104,13 @@ Nepřiměřená definice důvěrných informací: Dohoda definuje Důvěrné inf
 
 Ačkoli nejsem právník, myslím, že `Neodůvodněná definice důvěrných informací` je obzvláště relevantní. 
 
-Tuto techniku kontroly nebezpečného právního obsahu lze použít pro celou řadu právních dokumentů. Dokonce jsme viděli, že na základě GPT-3 vznikají nástroje pro odhalování nebezpečného jazyka ve smlouvách TOS a pracovních smlouvách.
+Tuto techniku kontroly nebezpečného právního obsahu lze použít pro celou řadu právních dokumentů. Dokonce jsme viděli, že na základě GPT-3 vznikají nástroje pro odhalování nebezpečného jazyka ve smluvních podmínkách a pracovních smlouvách.
 
 ## Psaní smluv
 
 Z předchozí části jsme viděli, že ChatGPT umí psát NDA. Dobře si poradí i s dalšími běžnými dokumenty, jako jsou podmínky používání a podmínky poskytování služeb. Při práci s méně běžnými dokumenty však budete muset být opatrnější. 
 
-Nedávno jsem jeden takový dokument napsal převážně pomocí GPT-3 a poté jsem ho nechal zkontrolovat právníkem. Zmínili 1-2 věci, které by se daly mírně vylepšit, ale celkově to byl solidní dokument. Někteří lidé v průmyslu provádějí tento postup, kdy vytvoří dokument pomocí GPT-3 a pak ho nechají přezkoumat právníkem. To šetří čas i náklady.
+Nedávno jsem jeden takový dokument napsal převážně pomocí GPT-3 a poté jsem ho nechal zkontrolovat právníkem. Zmínil 1-2 věci, které by se daly mírně vylepšit, ale celkově to byl solidní dokument. Někteří lidé v průmyslu provádějí tento postup, kdy vytvoří dokument pomocí GPT-3 a pak ho nechají přezkoumat právníkem. To šetří čas i náklady.
 
 Předstírejme, že jsme vládní dodavatel a píšeme smlouvu pro někoho, kdo provádí nějaké obranné práce. Použijeme následující výzvu:
 
@@ -127,7 +129,7 @@ Subdodavatel provede práce popsané ve výkazu prací, který je přílohou A t
 PLATBA
 Celková platba za Dílo činí 2,5 milionu USD a je splatná takto:
 
-USD po uzavření této dohody a obdržení prověrky na stupeň přísně tajné subdodavatelem.
+1.5 milion USD po uzavření této dohody a obdržení prověrky na stupeň přísně tajné subdodavatelem.
 1 milion USD bude vyplacen v 6 měsíčních splátkách po 166 666,67 USD za předpokladu, že Subdodavatel uspokojivě provedl Dílo během předchozího měsíce.
 DOHODA O MLČENLIVOSTI
 Subdodavatel podepíše dohodu o mlčenlivosti ve formě přiložené k tomuto dokumentu jako příloha B (dále jen "NDA"). NDA bude platit po dobu trvání Smlouvy a po dobu pěti let po jejím skončení.
@@ -161,7 +163,7 @@ Zplnomocněný zástupce: ____________________________
 
 Název:  __________________________
 
-Titul:  ___________________________
+Pozice:  ___________________________
 
 [Subdodavatel]
 
@@ -169,7 +171,7 @@ Podepsáno: ____________________________
 
 Jméno: __________________________
 
-Titul: ___________________________
+Pozice: ___________________________
 
 Datum: ___________________________
 // highlight-end
@@ -179,9 +181,9 @@ To je docela dobrý začátek. Lze si představit, že budete chtít přidat dal
 
 ## Závěry
 
-- K přezkoumání a objasnění právních dokumentů lze *pomocí* použít LLM.
+- K přezkoumání a objasnění právních dokumentů lze použít LLM *v asistenční funkci*.
 - LLM lze použít k vytváření právních dokumentů *v asistenční funkci*.
 
-:::nebezpečí
+:::warning
 Nepoužívejte žádné právní dokumenty na této stránce. Slouží pouze pro demonstrační účely.
 :::

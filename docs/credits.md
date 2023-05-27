@@ -10,8 +10,8 @@ Zde je rostoucí seznam lidí, kteří se podíleli na vzniku tohoto kurzu:
 - [WesJD](https://wesleysmith.dev), bolesti Javascriptu, nastavení domény
 - Sulu, Docusaurus
 - [snpranav](https://twitter.com/snpranav), nastavení domény
-- [jayo78](https://github.com/jayo78), preferuje své emotikony vlevo
+- [jayo78](https://github.com/jayo78), preferuje své emojis vlevo
 - [zeyuzhao](https://github.com/Zeyuzhao), školící se prompter
 - [UMD CLIP Lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), spousta zodpovězených otázek :)
 - [Wahub Ahmed](https://github.com/wahub-ahmed), jailbreaking
-- [Zihong](https://github.com/1openwindow), přeložil většinu dokumentů do čínštiny
+- [shh.agency](https://shh.agency), přeložil všechny dokumenty do češtiny

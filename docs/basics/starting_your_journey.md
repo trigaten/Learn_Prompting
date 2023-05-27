@@ -11,7 +11,7 @@ import Steps from '@site/docs/assets/steps.svg';
 <Steps style={{width: "100%",height: "300px",verticalAlign: "top"}}/>
 </div>
 
-Nyní, když jste se seznámili se základy promptního inženýrství, jste připraveni začít s promptním inženýrstvím na vlastní pěst. Zbytek tohoto kurzu bude obsahovat další techniky a zdroje, ale nejlepší způsob, jak se naučit PE, je začít experimentovat s vlastními podněty. Tato stránka vám ukáže, jak začít s řešením libovolného problému promptního inženýrství.
+Nyní, když jste se seznámili se základy PE, jste připraveni začít s prompt inženýrstvím na vlastní pěst. Zbytek tohoto kurzu bude obsahovat další techniky a zdroje, ale nejlepší způsob, jak se naučit PE, je začít experimentovat s vlastními prompty. Tato stránka vám ukáže, jak začít s řešením libovolného problému prompt inženýrství.
 
 Řekněme, že chcete prompt, který bude generovat poutavý, interaktivní příběh s ChatGPT.
 
@@ -22,14 +22,14 @@ Nejprve je třeba prozkoumat požadovaný prompt. Kromě googlování jsou velmi
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [FlowGPT](https://flowgpt.com)
 - [r/PromptDesign](https://www.reddit.com/r/PromptDesign/) (a podobné subreddity).
-- [Learn Prompting Discord](https://discord.gg/learn-prompting) (a další příslušné diskurzy, včetně [OpenAI Discord](https://discord.gg/openai)).
+- [Learn Prompting Discord](https://discord.gg/learn-prompting) (a další příslušné discordy, včetně [OpenAI Discord](https://discord.gg/openai)).
 
 Jako dobrý výchozí bod vám může posloužit [tento](https://prompts.chat/#act-as-a-text-based-adventure-game) od [Heroj04](https://github.com/Heroj04):
 > Chci, abyste se chovali jako textová adventura. Já budu zadávat příkazy a vy budete odpovídat popisem toho, co postava vidí. Chci, abyste odpovídali pouze výstupem ze hry uvnitř jednoho unikátního bloku kódu a ničím jiným. nepište vysvětlivky. nepište příkazy, pokud vám k tomu nedám pokyn. když vám budu potřebovat něco říct anglicky, udělám to tak, že vložím text do kudrnatých závorek {jako je tento}. můj první příkaz je probuď se
 
 ## Krok 2: Experiment
 
-Nyní vložíme příkaz do programu ChatGPT a uvidíme, co se stane.
+Nyní vložíme prompt do ChatGPT a uvidíme, co se stane.
 
 import CSharp from '../assets/csharp.png';
 
@@ -58,30 +58,29 @@ Pěkné, nyní se příběh vypíše jako prostý text. Naše výzva však postr
 // highlight-start
 ČAS: Brzy ráno
 UMÍSTĚNÍ: Útulná, malebná chaloupka zasazená do vesnice obklopené bujnou zelení a voňavými květinami.
-PŘÍBĚHY: Jste sami v ložnici, zachumlaní pod útulnou přikrývkou.
-PŘÍBĚHY: V PEŘINĚ SE PŘIKRÝVÁTE A PŘIKRÝVÁTE: Vedle postele vidíš dřevěný noční stolek a na parapetu stojí košík plný čerstvých květin.
+PŘÁTELÉ: Jste sami v ložnici, zachumlaní pod útulnou přikrývkou.
+PŘEDMĚTY: Vedle postele vidíš dřevěný noční stolek a na parapetu stojí košík plný čerstvých květin.
 
 Když se probudíte, cítíte teplo slunce pronikající oknem a tiché štěbetání ptáků venku. Posadíte se v posteli, protáhnete si ruce a kocháte se pohledem na krásné květiny, které venku kvetou. Jemné šumění listů a jemný vánek vám přinášejí pocit klidu a pohody. Cítíte se osvěžení a omlazení, připravení na všechna dobrodružství, která vám den přinese.
 // highlight-end
 ```
 
-Ach, perfektní, nyní můžete prožít své sny o jádru chaty s ChatGPT 🌸.
+Ach, perfektní, nyní můžete prožít své sny s ChatGPT 🌸.
 
 
-## Krok 3: Získejte zpětnou vazbu a vylepšujte
+## Krok 3: Zpětná vazba a iterace
 
-Nyní to ukažte svým přátelům/zaměstnancům/šéfovi a požádejte je o zpětnou vazbu. Pokud se jim to bude líbit, skvělé! Pokud ne, iterujte výzvu, dokud nezískáte něco, co se bude líbit vám oběma. O zpětnou vazbu můžete požádat také ve výše zmíněných komunitách. Tento krok nikdy skutečně nekončí. Podněty budete vždy iterovat, protože problémy a lidé se v průběhu času mění.
+Nyní to ukažte svým přátelům/zaměstnancům/šéfovi a požádejte je o zpětnou vazbu. Pokud se jim to bude líbit, skvělé! Pokud ne, iterujte (vylepšete) prompt, dokud nezískáte něco, co se bude líbit vám oběma. O zpětnou vazbu můžete požádat také ve výše zmíněných komunitách. Tento krok nikdy skutečně nekončí. Prompty budete vždy iterovat, protože problémy a lidé se v průběhu času mění.
 
 ## Závěr
 
-Dělejte inženýrství podnětů tak, jak *chcete*. Já (správce tohoto kurzu) píšu své podněty vždy od začátku. Neexistuje žádný zlatý standard, jak psát nejlepší podněty; nejlepší způsob, jak se to naučit, je pokus a omyl. Šťastné učení a hodně štěstí se zbytkem tohoto kurzu!
+Dělejte prompt inženýrství tak, *jak chcete*. Neexistuje žádný zlatý standard, jak psát nejlepší prompty; nejlepší způsob, jak se to naučit, je pokus a omyl. Šťastné učení a hodně štěstí se zbytkem tohoto kurzu!
 
-:::poznámka
-Doporučení v tomto článku platí pro všechny problémy tvorby podnětů, nejen pro psaní interaktivních příběhů!
+:::note
+Doporučení v tomto článku platí pro všechny problémy tvorby promptů, nejen pro psaní interaktivních příběhů!
 :::
 
 
 ## Poznámky
 
-- V dalších kapitolách se můžete setkat se slovy **AI, model a LLM.
-používána zaměnitelně**. Více informací naleznete v [odkazu na slovník](https://learnprompting.org/docs/vocabulary).
+- V dalších kapitolách se můžete setkat se slovy **AI, model a LLM, které se používají zaměnitelně**. Více informací naleznete ve [slovníku](/Learn_Prompting_CAI/docs/vocabulary).

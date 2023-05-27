@@ -4,11 +4,9 @@ locale: cs-CZ
 styl: chicago
 ---
 
-# 🟢 Myšlenkový řetězec Prompting
+# 🟢 Chain of Thought Prompting
 
-Chain of Thought (CoT) prompting (@wei2022chain) je nedávno vyvinutý prompting
-metoda, která vybízí žáka s LLM k vysvětlení jeho uvažování. Níže uvedený obrázek(@wei2022chain) 
-ukazuje standardní výzvu s %%několika snímky|standardní výzvu s%několika snímky%% (vlevo) v porovnání s výzvou myšlenkového řetězce (vpravo).
+Chain of Thought (CoT) prompting (@wei2022chain) je nedávno vyvinutá prompting metoda, která vybízí %%LLM|LLM%% k vysvětlení jeho uvažování. Níže uvedený obrázek(@wei2022chain) ukazuje %%standardní prompt s několika shoty|few shot standard prompt%% (vlevo) v porovnání s %%promptem myšlenkového řetězce|Chain of Thought Prompting%% (vpravo).
 
 
 import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
@@ -18,18 +16,14 @@ import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
 </div>
 
 <div style={{textAlign: 'center'}}>
-lasický prompting vs CoT (Wei et al.)
+klasický prompting vs CoT (Wei et al.)
 </div>
 
-Hlavní myšlenka CoT spočívá v tom, že ukázáním několika málo záběrů %%exemplářů|exemplářů%%, kde se argumentace
-je proces uvažování vysvětlen v exemplářích, LLM také ukáže proces uvažování v exemplářích
-při odpovídání na výzvu. Toto vysvětlení uvažování často vede k přesnějšímu
-výsledkům.
+Hlavní myšlenka %%CoT|Chain of Thought Prompting%% spočívá v tom, že ukázáním několika málo záběrů %%exemplářů|exemplars%%, kde se argumentace vysvětluje v exemplářích, LLM také ukáže proces uvažování při odpovídání na prompt. Toto vysvětlení uvažování často vede k přesnějším výsledkům.
 
 ## Příklad
 
-Zde je několik ukázek. První ukazuje GPT-3 (davinci-003)
-který nedokáže vyřešit jednoduchou slovní úlohu. Druhá ukazuje, jak GPT-3 (davinci-003) úspěšně řeší stejnou úlohu pomocí výzvy CoT.
+Zde je několik ukázek. První ukazuje jak GPT-3 (davinci-003) nedokáže vyřešit jednoduchou slovní úlohu. Druhá ukazuje, jak GPT-3 (davinci-003) úspěšně řeší stejnou úlohu pomocí výzvy CoT.
 
 #### Nesprávně
 
@@ -49,10 +43,8 @@ který nedokáže vyřešit jednoduchou slovní úlohu. Druhá ukazuje, jak GPT-
 
 ## Výsledky
 
-Ukázalo se, že technologie CoT je účinná při zlepšování výsledků v úlohách, jako je např. 
-aritmetických úlohách, úlohách zdravého rozumu a symbolického uvažování (@wei2022chain). 
-Zejména pohotová PaLM 540B(@chowdhery2022palm) dosahuje 57 % řešení 
-přesnosti v úloze GSM8K(@cobbe2021training) (v té době SOTA).
+Ukázalo se, že technologie CoT je účinná při zlepšování výsledků v úlohách, jako je např. aritmetických úlohách, úlohách zdravého rozumu a symbolického uvažování (@wei2022chain). 
+Zejména pohotová PaLM 540B(@chowdhery2022palm) dosahuje 57% přesnosti v řešení úlohy GSM8K(@cobbe2021training) (v té době SOTA).
 
 import PromptedPaLM from '@site/docs/assets/prompted_palm.png';
 
@@ -66,9 +58,9 @@ Comparison of models on the GSM8K benchmark (Wei et al.)
 
 ## Omezení
 
-Důležité je, že podle Wei et al. "CoT přináší zvýšení výkonu pouze při použití modelů s parametry ∼100B". Menší modely zapisovaly nelogické myšlenkové řetězce, což vedlo k horší přesnosti než standardní napovídání. Modely obvykle získávají nárůst výkonu díky podnětům CoT způsobem úměrným velikosti modelu.
+Důležité je, že podle Wei et al. _"CoT přináší zvýšení výkonu pouze při použití modelů s parametry cca 100B"_. Menší modely zapisovaly nelogické myšlenkové řetězce, což vedlo k horší přesnosti než standardní prompting. Modely obvykle získávají nárůst výkonu díky podnětům CoT způsobem úměrným velikosti modelu.
 
 
 ## Poznámky
 
-Při psaní této kapitoly nebyly ~~poškozeny~~ žádné jazykové modely, které by byly finálně vyladěny 😊.
+Při psaní této kapitoly nebyly ~~poškozeny~~ doladěny žádné jazykové modely 😊.

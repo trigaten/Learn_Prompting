@@ -4,14 +4,11 @@ sidebar_position: 5
 
 # 🟡 Prompt Ensembling
 
-Prompt ensembling je koncept použití více různých výzev, které se snaží 
-odpovědět na stejnou otázku. Existuje mnoho různých přístupů.
+Prompt ensembling je koncept použití více různých promptů, které se snaží odpovědět na stejnou otázku. Existuje mnoho různých přístupů.
 
 ## DiVeRSe
 
-DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") je
-metoda, která trojnásobně zvyšuje spolehlivost odpovědí. Dosahuje toho tím, že
-1) používáním více výzev ke generování různorodých doplnění, 2) používáním ověřovače k rozlišení dobrých odpovědí od špatných a 3) používáním ověřovače ke kontrole správnosti kroků uvažování.
+DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") je metoda, která trojnásobně zvyšuje spolehlivost odpovědí. Dosahuje toho: 1) používáním více promptů ke generování různorodých doplnění, 2) používáním ověřovače k rozlišení dobrých odpovědí od špatných a 3) používáním ověřovače ke kontrole správnosti kroků uvažování.
 
 
 import diverse from '@site/docs/assets/diverse.png';
@@ -25,12 +22,9 @@ DiVeRSe (Li et al.)
 </div>
 
 
-### Rozmanité výzvy
+### Rozmanité prompty
 
-DiVeRSe používá 5 různých výzev daný vstup. Pro sestavení každé výzvy náhodně
-náhodně několik exemplářů z trénovací sady. Zde je příklad jednoho takového několikavzorkového příkladu
-výzva (k=2) s exempláři převzatými z [benchmarku GSM8K](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). V praxi DiVeRSe používá
-5 exemplářů ve výzvách pro tento benchmark.
+DiVeRSe používá 5 různých promptů na každý vstup. Pro sestavení každého promptu náhodně zvolí několik exemplářů z trénovací sady. Zde je příklad jednoho takového %%few-shot promptu|few shot standard prompt%% (k=2) s exempláři převzatými z [benchmarku GSM8K](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). V praxi DiVeRSe používá 5 exemplářů v promptech pro tento benchmark.
 
 
 ```
@@ -43,12 +37,10 @@ Odpověď: Weng si vydělá 12/60 = 0,2 dolaru za minutu.
 Za 50 minut práce si vydělala 0,2 x 50 = 10 USD.
 #### 10
 Otázka: Betty si šetří peníze na novou peněženku, která stojí 100 dolarů. Betty má pouze polovinu potřebných peněz. Její rodiče se rozhodli, že jí na tento účel dají 15 dolarů a prarodiče dvakrát tolik než rodiče. Kolik peněz ještě Betty potřebuje, aby si peněženku mohla koupit?
-A:
+Odpověď:
 ```
 
-Po vygenerování 5 různých podnětů, jako je výše uvedený, DiVeRSe ukáže 20 způsobů uvažování. 
-pro každou z nich (teplota = 0,5). Zde je několik příkladů vyplnění výše uvedené výzvy.
-Všimněte si, že odpovědi nejsou vždy správné.
+Po vygenerování 5 různých promptů, jako je výše uvedený, DiVeRSe ukáže 20 způsobů uvažování pro každou z nich (teplota = 0,5). Zde je několik příkladů vyplnění výše uvedeného promptu. Všimněte si, že odpovědi nejsou vždy správné.
 
 
 ```text
@@ -61,7 +53,7 @@ Potřebuje ještě 100-90 = 10 dolarů.
 <!-- highlight-end -->
 ```
 
-````text
+```text
 <!-- highlight-start -->
 A: Betty má 0,5*100 = 500 dolarů.
 Pak dostane dalších 15 = 650 dolarů.
@@ -73,15 +65,13 @@ Potřebuje ještě 100-90 = 1000 dolarů.
 
 V tomto okamžiku má DiVeRSe vygenerováno 100 různých doplnění.
 
-### Ověřovatel hlasování
+### Ověřovač hlasování
 
 Nyní bychom mohli prostě vzít většinovou odpověď, jako to dělá Self-Consistency(@mitchell2022enhancing).
 
 DiVeRSe však navrhuje mnohem složitější metodu, kterou nazývá _ověřovač hlasování_.
 
-V době testování je použití ověřovatele hlasování dvoustupňový proces. Nejprve ověřovatel (neuronová síť)
-přiřadí každému vyplnění skóre 0-1 podle toho, jak pravděpodobné je, že je správné. Poté se provede "hlasování
-sečte všechna skóre různých odpovědí a získá konečnou odpověď.
+V době testování je použití ověřovatele hlasování dvoustupňový proces. Nejprve ověřovač (neuronová síť) přiřadí každému vyplnění skóre 0-1 podle toho, jak pravděpodobné je, že je správné. Poté "hlasovací" komponenta sečte všechna skóre různých odpovědí a získá konečnou odpověď.
 
 #### Příklad
 
@@ -117,9 +107,7 @@ Je to 5
 <!-- highlight-end -->
 ```
 
-Ověřovatel přečte každé doplnění a přiřadí mu skóre. Může například přiřadit
-skóre: 0,9, 0,1, 0,2, 0,8, 0,3. Poté hlasovací komponenta sečte skóre pro každé z nich.
-odpovědi.
+Ověřovač přečte každé doplnění a přiřadí mu skóre. Může například přiřadit skóre: 0,9, 0,1, 0,2, 0,8, 0,3. Poté hlasovací komponenta sečte skóre pro každé z odpovědí.
 
 ```
 score(4) = 0,9 + 0,8 = 1,7
@@ -131,22 +119,21 @@ Konečná odpověď je 4, protože má nejvyšší skóre.
 
 **Ale jak je ověřovač vycvičen?**
 
-Ověřovač je trénován pomocí mírně složité ztrátové funkce, která 
-kterou se zde nebudu zabývat. Pro více informací si přečtěte část 3.3 článku (@li2022advance).
+Ověřovač je trénován pomocí mírně složité ztrátové funkce (loss function), která  kterou se zde nebudu zabývat. Pro více informací si přečtěte část 3.3 článku(@li2022advance).
 
 ## Ask Me Anything (AMA) Prompting (Ptejte se mě na cokoli)
 
-import ama z '@site/docs/assets/AMA_Prompting.jpg';
+import ama from '@site/docs/assets/AMA_Prompting.jpg';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama} style={{width: "750px"}} />
 </div>
 
-Ask Me Anything (AMA) prompting(@arora2022ama) je podobný přístup jako DiVeRSe. Jeho krok vícenásobné výzvy i krok agregace odpovědí se však výrazně liší. Základní myšlenkou AMA je použití LLM ke generování vícenásobných výzev, místo aby se používaly pouze různé exempláře s několika snímky.
+Ask Me Anything (AMA) prompting(@arora2022ama) je podobný přístup jako DiVeRSe. Jeho krok vícenásobného promptu (multiple prompt) i krok agregace odpovědí se však výrazně liší. Základní myšlenkou AMA je použití LLM ke generování vícenásobných promptů, místo aby se používaly pouze různé few-shot exempláře.
 
-### Vícenásobné výzvy
+### Vícenásobné prompty
 
-AMA ukazuje, že můžete vzít otázku a přeformátovat ji více způsoby, abyste vytvořili různé výzvy. Například řekněme, že sháníte informace o zvířatech z několika webových stránek a chcete zaznamenat pouze ta, která žijí v Severní Americe. Sestavme výzvu, která to určí.
+AMA ukazuje, že můžete vzít otázku a přeformátovat ji více způsoby, abyste vytvořili různé prompty. Například řekněme, že sháníte informace o zvířatech z několika webových stránek a chcete zaznamenat pouze ta, která žijí v Severní Americe. Sestavme prompt, který to určí.
 
 Vzhledem k následujícímu úryvku z Wikipedie:
 
@@ -154,7 +141,7 @@ Vzhledem k následujícímu úryvku z Wikipedie:
 Medvěd kermodský, někdy nazývaný medvědí duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
 ```
 
-Tuto úlohu můžete naformátovat do výzvy takto:
+Tuto úlohu můžete naformátovat do promptu takto:
 
 ```text
 Je následující tvrzení vzhledem ke kontextu pravdivé, nebo nepravdivé?
@@ -164,17 +151,16 @@ Tvrzení: Toto zvíře žije v Severní Americe
 Odpověď: Tento druh medvěda se vyskytuje na území České republiky:
 ```
 
-Toto je trochu zvláštní formulace. Proč prostě nepoužijete následující jednodušší výzvu?
+Toto je trochu zvláštní formulace. Proč prostě nepoužijete následující jednodušší prompt?
 
 ```text
 Kontext: Medvěd kermodský, někdy nazývaný medvědí duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
 Otázka: Žije toto zvíře v Severní Americe?
 ```
 
-Nuže, formulováním otázky tímto zvláštním způsobem můžeme generovat různé podněty.
-Naším prvním krokem zde bude vzít tvrzení ``Toto zvíře žije v Severní Americe`` a přeformátovat ho na různé otázky, které se v podstatě ptají na totéž. Za tímto účelem projdeme tvrzení přes výzvy, jako jsou ty na následujícím obrázku.
+No, formulováním otázky tímto zvláštním způsobem můžeme generovat různé podněty. Naším prvním krokem zde bude vzít tvrzení ``Toto zvíře žije v Severní Americe`` a přeformátovat ho na různé otázky, které se v podstatě ptají na totéž. Za tímto účelem projdeme tvrzení přes prompty, jako jsou ty na následujícím obrázku.
 
-import ama_multi z '@site/docs/assets/AMA_multiprompting.png';
+import ama_multi from '@site/docs/assets/AMA_multiprompting.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama_multi} style={{width: "800px"}} />
@@ -188,19 +174,19 @@ To může mít za následek:
 Smyslem tohoto postupu je vytvořit různé *pohledy* na danou úlohu. Každý z nich pak aplikujeme na daný kontext takto:
 
 ```text
-Kontext: Medvěd kermodský, někdy nazývaný medvěd duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
+Kontext: Medvěd kermodský, někdy nazývaný medvědí duch (Ursus americanus kermodei), je poddruh amerického medvěda černého a žije v oblasti středního a severního pobřeží Britské Kolumbie v Kanadě.
 Otázka: Žilo toto zvíře v Severní Americe?
 ```
 
 Poté můžeme vygenerovat odpovědi na každou z nich:
 
-1. `Ano, bylo`
+1. `Ano, žilo`
 2. `Ano, je to tak`
 3. `Severní Amerika`
 
 Toto jsou *prostřední* odpovědi. Musíme je přiřadit k označení úlohy (např. Ano nebo Ne).
 
-To můžeme udělat tak, že mezipodpovědi předáme prostřednictvím následující výzvy:
+To můžeme udělat tak, že mezipodpovědi předáme prostřednictvím následujícího promptu:
 
 ```text
 Vyberte správnou kategorii.
@@ -209,7 +195,7 @@ Vyberte správnou kategorii.
 - Ano, Severní Amerika
 - Ne, ne Severní Amerika
 
-"Ano, bylo" odpovídá kategorii:
+"Ano, žilo" odpovídá kategorii:
 ```
 
 Nyní můžeme získat naše výstupní odpovědi.
@@ -218,7 +204,7 @@ Nyní můžeme získat naše výstupní odpovědi.
 2. `Ano, Severní Amerika`
 3. `Ano, Severní Amerika`
 
-Zde se všichni shodují, takže můžeme vzít jen první odpověď. Pokud by se však neshodli, mohli bychom použít krok agregace AMA a získat konečnou odpověď.
+Zde se všechni shodují, takže můžeme vzít jen první odpověď. Pokud by se však neshodly, mohli bychom použít krok agregace AMA a získat konečnou odpověď.
 
 ### Agregace odpovědí
 
@@ -241,6 +227,6 @@ Ačkoli je agregační strategie AMA výkonná, je natolik složitá, že se jí
 
 ## Závěry
 
-Metody skládání jsou velmi výkonné. Lze je použít ke zlepšení výkonu jakéhokoli modelu a lze je použít ke zlepšení výkonu modelu na konkrétní úloze.
+Metody skládání (ensembling methods)jsou velmi výkonné. Lze je použít ke zlepšení výkonu jakéhokoli modelu a lze je použít ke zlepšení výkonu modelu na konkrétní úloze.
 
 V praxi by mělo být vaší strategií většinové hlasování.

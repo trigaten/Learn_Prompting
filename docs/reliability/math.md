@@ -4,7 +4,7 @@ sidebar_position: 70
 
 # 🟡 Matematika
 
-V průběhu tohoto kurzu jsme se seznámili s mnoha různými metodami podnětů, které lze použít ke zlepšení %%LLM|LLM%% matematických schopností. Jeden z posledních přístupů, MathPrompter(@imani2023mathprompter), sjednocuje některé z těchto metod (%%CoT|CoT prompting%%, %%PAL|PAL%% atd.) do jediné techniky. Zastřešující myšlenkou je rozložit matematickou otázku na algebraické termíny a pak ji pomocí kódu Pythonu řešit různými způsoby.
+V průběhu tohoto kurzu jsme se seznámili s mnoha různými metodami promptů, které lze použít ke zlepšení matematických schopností %%LLM|LLM%%. Jeden z posledních přístupů, MathPrompter(@imani2023mathprompter), sjednocuje některé z těchto metod (%%CoT|Chain of Thought Prompting%%, %%PAL|PAL%% atd.) do jediné techniky. Zastřešující myšlenkou je rozložit matematickou otázku na algebraické termíny a pak ji pomocí Pythonu řešit různými způsoby.
 
 import math from '@site/docs/assets/math.png';
 
@@ -15,15 +15,14 @@ import math from '@site/docs/assets/math.png';
 MathPrompter má **čtyři** kroky. Vysvětlíme si je na následujícím příkladu úlohy. Příklad je převzat přímo z článku.
 
 ```text
-Otázka: V restauraci stojí každé jídlo pro dospělého 5 dolarů a děti jedí zdarma. Pokud skupina 15 osob
-lidí a 8 z nich by byly děti, kolik by stálo jídlo pro tuto skupinu?
+Otázka: V restauraci stojí každé jídlo pro dospělého 5 dolarů a děti jedí zdarma. Pokud přijde skupina 15 osob lidí a 8 z nich jsou děti, kolik by stálo jídlo pro tuto skupinu?
 ```
 
 ## Krok 1: Vytvořte algebraickou šablonu
 
 Prvním krokem je přiřadit každému číslu v otázce proměnnou. To pomůže, protože to umožní snadnější převod otázky do abstraktní matematické otázky i do programového kódu.
 
-To lze provést pomocí few shot prompting (prompt s několika vystřely):
+To lze provést pomocí %%few shot promptingu|few shot standard prompt%%:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlF0OiBBdCBhIHJlc3RhdXJhbnQsIGVhY2ggYWR1bHQgbWVhbCBjb3N0cyAkQSBhbmQga2lkcyBlYXQgZnJlZS4gSWYgYSBncm91cCBvZiBCIHBlb3BsZSBjYW1lIGluIGFuZCBDIHdlcmUga2lkcywgaG93IG11Y2ggd291bGQgaXQgY29zdCBmb3IgdGhlIGdyb3VwIHRvIGVhdD9cbk1hcHBpbmc6IHtBOiA1LCBCOiAxNSwgQzogOH0iLCJwcm9tcHQiOiJROiBBIHpvbyBjaGFyZ2VzICQxMiBwZXIgYWR1bHQgdGlja2V0IGFuZCBhbGxvd3MgY2hpbGRyZW4gdW5kZXIgNSB0byBlbnRlciBmb3IgZnJlZS4gQSBmYW1pbHkgb2YgNCBhZHVsdHMgYW5kIDIgY2hpbGRyZW4gdW5kZXIgNSB2aXNpdCB0aGUgem9vLiBXaGF0IGlzIHRoZSB0b3RhbCBjb3N0IGZvciB0aGUgZmFtaWx5IHRvIGVudGVyP1xuUXQ6IEF0IGEgem9vLCBlYWNoIGFkdWx0IHRpY2tldCBjb3N0cyAkQSBhbmQgY2hpbGRyZW4gdW5kZXIgNSBjYW4gZW50ZXIgZm9yIGZyZWUuIElmIGEgZmFtaWx5IG9mIEIgYWR1bHRzIGFuZCBDIGNoaWxkcmVuIHVuZGVyIDUgdmlzaXQgdGhlIHpvbywgd2hhdCBpcyB0aGUgdG90YWwgY29zdCBmb3IgdGhlIGZhbWlseSB0byBlbnRlcj9cbk1hcHBpbmc6IHtBOiAxMiwgQjogNCwgQzogMn1cblxuUTogQSBzdG9yZSBzZWxscyBzaG9lcyBhdCAkNjAgcGVyIHBhaXIgYW5kIHNvY2tzIGF0ICQ4IHBlciBwYWlyLiBJZiBhIGN1c3RvbWVyIGJ1eXMgMiBwYWlycyBvZiBzaG9lcyBhbmQgMyBwYWlycyBvZiBzb2Nrcywgd2hhdCBpcyB0aGUgdG90YWwgY29zdCBvZiB0aGUgcHVyY2hhc2U%2FXG5RdDogQXQgYSBzdG9yZSwgc2hvZXMgY29zdCAkQSBwZXIgcGFpciBhbmQgc29ja3MgY29zdCAkQiBwZXIgcGFpci4gSWYgYSBjdXN0b21lciBidXlzIEMgcGFpcnMgb2Ygc2hvZXMgYW5kIEQgcGFpcnMgb2Ygc29ja3MsIHdoYXQgaXMgdGhlIHRvdGFsIGNvc3Qgb2YgdGhlIHB1cmNoYXNlP1xuTWFwcGluZzoge0E6IDYwLCBCOiA4LCBDOiAyLCBEOiAzfVxuXG5ROiBBdCBhIHJlc3RhdXJhbnQsIGVhY2ggYWR1bHQgbWVhbCBjb3N0cyAkNSBhbmQga2lkcyBlYXQgZnJlZS4gSWYgYSBncm91cCBvZiAxNVxucGVvcGxlIGNhbWUgaW4gYW5kIDggd2VyZSBraWRzLCBob3cgbXVjaCB3b3VsZCBpdCBjb3N0IGZvciB0aGUgZ3JvdXAgdG8gZWF0PyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -31,9 +30,9 @@ To lze provést pomocí few shot prompting (prompt s několika vystřely):
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## Krok 2: Matematické výzvy
+## Krok 2: Matematické prompty
 
-Smyslem tohoto kroku je formulovat problém jako algebraický příkaz i jako kód jazyka Python. Tento krok obsahuje dvě souběžné výzvy, které pomáhají k různorodé reprezentaci problému.
+Smyslem tohoto kroku je formulovat problém jako algebraický příkaz i jako kód jazyka Python. Tento krok obsahuje dva souběžné prompty, které pomáhají k různorodé reprezentaci problému.
 
 ### 2a: Algebraický výrok
 
@@ -45,7 +44,7 @@ Můžeme několikrát vyzvat program LLM, aby reprezentoval matematický problé
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-### 2b: Kód jazyka Python
+### 2b: Kód Python
 
 Můžeme také požádat %%LLM|LLM%% o vygenerování kódu Pythonu, který problém vyřeší. To provedeme tak, že požádáme LLM o vygenerování funkce Pythonu.
 
@@ -60,12 +59,12 @@ Můžeme také požádat %%LLM|LLM%% o vygenerování kódu Pythonu, který prob
 Nyní můžeme použít Mapování, které jsme vygenerovali dříve, k automatickému vyplnění proměnných.
 
 ```text
-Mapování: {A: 5, B: 15, C: 8}.
+Mapping: {A: 5, B: 15, C: 8}.
 ```
 
 Algebraické: 
 ```text
-Odpověď = 5 * 15 - 5 * 8
+Answer = 5 * 15 - 5 * 8
 ```
 
 Funkce Pythonu:
@@ -88,10 +87,10 @@ Funkce Pythonu:
 35
 ```
 
-## Krok 4: Vlastní konzistence
+## Krok 4: Sebekonzistence
 
 Nakonec využijeme %%Self-Consistency|self_consistency%% k několikanásobnému opakování výše uvedeného postupu (~5) a poté vybereme většinovou odpověď.
 
 ## Závěr
 
-MathPrompter vykazuje 92,5% přesnost na datové sadě MultiArith(@roy-roth-2015-solving). Úspěch této techniky je skvělým příkladem toho, jak můžete **vy** jako pohotový inženýr využít metody, které jste se naučili v průběhu tohoto kurzu, a kombinovat je při řešení větších problémů.
+MathPrompter vykazuje 92,5% přesnost na datasetu MultiArith(@roy-roth-2015-solving). Úspěch této techniky je skvělým příkladem toho, jak můžete **vy** jako prompt inženýr využít metody, které jste se naučili v průběhu tohoto kurzu, a kombinovat je při řešení větších problémů.

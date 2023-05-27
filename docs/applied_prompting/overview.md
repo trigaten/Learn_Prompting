@@ -4,5 +4,4 @@ sidebar_position: 1
 
 # 🟢 Úvod
 
-Nyní se budeme zabývat procesem inženýrství end-to-end promptů prostřednictvím článků napsaných
-členy komunity.
+Nyní se budeme zabývat procesem end-to-end prompt inženýrství prostřednictvím článků napsaných členy komunity.

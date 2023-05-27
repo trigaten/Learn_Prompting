@@ -13,9 +13,9 @@ import Temperature from '@site/docs/assets/temperature.svg';
 
 # Úvod
 
-Výstup modelu LLM lze ovlivnit *konfiguračními hyperparametry*, které řídí různé aspekty modelu, například to, jak "náhodný" je. Tyto hyperparametry lze upravit tak, aby byl výstup kreativnější, rozmanitější a zajímavější. V této části se budeme zabývat dvěma důležitými konfiguračními hyperparametry a tím, jak ovlivňují výstup LLM.
+Výstup LLM lze ovlivnit *konfiguračními hyperparametry*, které řídí různé aspekty modelu, například to, jak "náhodný" je. Tyto hyperparametry lze upravit tak, aby byl výstup kreativnější, rozmanitější a zajímavější. V této části se budeme zabývat dvěma důležitými konfiguračními hyperparametry a tím, jak ovlivňují výstup LLM.
 
-:::poznámka
+:::note
 [Pro výzkumníky] Tyto parametry se liší od běžných hyperparametrů, jako je rychlost učení, počet vrstev, velikost skrytých vrstev atd. 
 :::
 
@@ -25,7 +25,7 @@ Teplota je konfigurační hyperparametr, který řídí náhodnost výstupu jazy
 
 ## Top p
 
-Top p, známý také jako vzorkování jádra, je další konfigurační hyperparametr, který řídí náhodnost výstupu jazykového modelu. Nastavuje prahovou pravděpodobnost a vybírá top tokeny, jejichž kumulativní pravděpodobnost je vyšší než prahová hodnota. Z této množiny tokenů pak model náhodně vzorkuje výstup. Tato metoda může vytvářet rozmanitější a zajímavější výstupy než tradiční metody, které náhodně vzorkují celou slovní zásobu. Pokud například nastavíte top p na hodnotu 0,9, model bude brát v úvahu pouze nejpravděpodobnější slova, která tvoří 90 % pravděpodobnostní masy.
+Top p, známý také jako vzorkování jádra (nucleus sampling), je další konfigurační hyperparametr, který řídí náhodnost výstupu jazykového modelu. Nastavuje prahovou pravděpodobnost a vybírá top tokeny, jejichž kumulativní pravděpodobnost je vyšší než prahová hodnota. Z této množiny tokenů pak model náhodně vzorkuje výstup. Tato metoda může vytvářet rozmanitější a zajímavější výstupy než tradiční metody, které náhodně vzorkují celou slovní zásobu. Pokud například nastavíte top p na hodnotu 0,9, model bude brát v úvahu pouze nejpravděpodobnější slova, která tvoří 90 % pravděpodobnostní masy.
 
 ## Další důležité hyperparametry
 
@@ -33,12 +33,12 @@ Existuje mnoho dalších hyperparametrů, které mohou ovlivnit výkonnost jazyk
 
 ## Jak tyto hyperparametry ovlivňují výstupy
 
-Teplota i top p mohou ovlivnit výstup jazykového modelu tím, že řídí míru náhodnosti a rozmanitosti generovaného textu. Vysoká teplota nebo hodnota top p vytváří nepředvídatelnější a zajímavější výsledky, ale také zvyšuje pravděpodobnost výskytu chyb nebo nesmyslného textu. Nízká teplota nebo horní hodnota p může produkovat konzervativnější a předvídatelnější výsledky, ale může také vést k opakujícímu se nebo nezajímavému textu.
+Teplota a top p mohou ovlivnit výstup jazykového modelu tím, že řídí míru náhodnosti a rozmanitosti generovaného textu. Vysoká teplota nebo hodnota top p vytváří nepředvídatelnější a zajímavější výsledky, ale také zvyšuje pravděpodobnost výskytu chyb nebo nesmyslného textu. Nízká teplota nebo top p může produkovat konzervativnější a předvídatelnější výsledky, ale může také vést k opakujícímu se nebo nezajímavému textu.
 
-Pro úlohy generování textu můžete chtít použít vysokou teplotu nebo horní hodnotu p. Pro úlohy, kde je důležitá přesnost, jako jsou překladové úlohy nebo odpovědi na otázky, by však měla být použita nízká teplota nebo horní hodnota p, aby se zlepšila přesnost a věcná správnost.
+Pro úlohy generování textu můžete chtít použít vysokou teplotu nebo vysoká hodnota top p. Pro úlohy, kde je důležitá přesnost, jako jsou překladové úlohy nebo odpovědi na otázky, by však měla být použita nízká teplota nebo nízká hodnota top p, aby se zlepšila přesnost a věcná správnost.
 
-:::poznámka
-Někdy může být v úlohách, kde je nutná přesnost, užitečná větší náhodnost ve spojení se [speciálními technikami napovídání](https://learnprompting.org/docs/intermediate/self_consistency).
+:::note
+Někdy může být v úlohách, kde je nutná přesnost, užitečná větší náhodnost ve spojení se [speciálními technikami napovídání](/Learn_Prompting_CAI/docs/intermediate/self_consistency).
 :::
 
 
@@ -48,7 +48,7 @@ Někdy může být v úlohách, kde je nutná přesnost, užitečná větší n�
 
 Závěrem lze říci, že teplota, top p a další hyperparametry konfigurace modelu jsou klíčovými faktory, které je třeba při práci s jazykovými modely zvážit. Pochopením vztahu mezi těmito hyperparametry a výstupem modelu mohou odborníci z praxe optimalizovat své výzvy pro konkrétní úlohy a aplikace.
 
-:::varování
+:::warning
 Některé modely, jako například ChatGPT, **neumožňují** tyto konfigurační hyperparametry upravovat (pokud nepoužijete rozhraní API).
 :::
 

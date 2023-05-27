@@ -4,11 +4,11 @@ locale: cs-CZ
 styl: chicago
 ---
 
-# 🟡 Nejméně až nejvíce prompting
+# 🟡 Least to Most Prompting
 
-Metoda Least to Most prompting (LtM)(@zhou2022leasttomost) posouvá %%CoT prompting|CoT prompting%%% o krok dále tím, že nejprve rozdělí problém na dílčí problémy a pak řeší každý z nich. Jedná se o techniku inspirovanou reálnými vzdělávacími strategiemi pro děti.  
+Metoda Least to Most prompting (LtM)(@zhou2022leasttomost) neboli prompting od nejmenšího k největšímu posouvá %%CoT prompting|Chain of Thought Prompting%% o krok dále tím, že nejprve rozdělí problém na dílčí problémy a pak řeší každý z nich. Jedná se o techniku inspirovanou reálnými vzdělávacími strategiemi pro děti.  
 
-Stejně jako v případě CoT prompting je problém, který je třeba vyřešit, rozložen na sadu dílčích problémů, které na sebe navazují. Ve druhém kroku se tyto dílčí problémy řeší jeden po druhém. Na rozdíl od myšlenkového řetězce se řešení předchozích podproblémů vkládá do podnětu, který se snaží vyřešit další problém.
+Stejně jako v případě CoT promptingu je problém, který je třeba vyřešit, rozložen na sadu dílčích problémů, které na sebe navazují. Ve druhém kroku se tyto dílčí problémy řeší jeden po druhém. Na rozdíl od myšlenkového řetězce (CoT) se řešení předchozích podproblémů vkládá do podnětu, který se snaží vyřešit další problém.
 
 import leastToMost from '@site/docs/assets/least_to_most_formal.png'
 
@@ -18,7 +18,7 @@ import leastToMost from '@site/docs/assets/least_to_most_formal.png'
 </div>
 
 <div style={{textAlign: 'center'}}>
-   Diagram of a Least to Most prompting
+   Schéma promptu Least to Most
 </div>
 
 ## Příklad: Odpověď na dotaz zákazníka
@@ -46,16 +46,16 @@ Položme mírně komplikovaný dotaz na zákaznický servis:
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-Pouhým vyřešením prvního dílčího problému jsme byli schopni vyřešit celý problém. Pokud by GPT-3 nevrátil odpověď okamžitě, mohli jsme řešit další dílčí problém a tak dále, dokud nevrátil odpověď. Všimněte si, že jsme použili příkaz `Postupujme krok za krokem`. Doplnění této věty není vždy nutné, ale pro tento příklad pomáhá.
+Pouhým vyřešením prvního dílčího problému jsme byli schopni vyřešit celý problém. Pokud by GPT-3 nevrátil odpověď okamžitě, mohli jsme řešit další dílčí problém a tak dále, dokud nevrátil odpověď. Všimněte si, že jsme použili `Postupujme krok za krokem`. Doplnění této věty není vždy nutné, ale pro tento příklad pomáhá.
 
 
 ## Příklad: spojování písmen
 
-Původně byl LtM zaveden pomocí několikanásobné výzvy, nikoliv explicitního pokynu k rozdělení problému do více kroků (jak je vidět výše). Navíc může být někdy implementován pomocí jediné výzvy, nikoli řetězených výzev. Prozkoumejme problém spojování posledních písmen jednotlivých slov(@wei2022chain) (například při zadání `dort, etymologie` jako vstupních slov by výstupem mělo být `ej`).
+Původně byl %%LtM|LTM%% zaveden pomocí několikanásobné výzvy, nikoliv explicitního pokynu k rozdělení problému do více kroků (jak je vidět výše). Navíc může být někdy implementován pomocí jediné výzvy, nikoli řetězených výzev. Prozkoumejme problém spojování posledních písmen jednotlivých slov(@wei2022chain) (například při zadání `dort, etymologie` jako vstupních slov by výstupem mělo být `te`).
 
 ### První pokus: Standardní 
 
-Standardní výzva s několika málo příklady funguje velmi špatně, a to i s pokročilejším modelem, jako je text-davinci-003.
+%%Standardní prompt s few-shot příklady|few shot standard prompt%% funguje velmi špatně, a to i s pokročilejším modelem, jako je text-davinci-003.
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoibGlwIiwicHJvbXB0IjoiUTogdGhpbmssIG1hY2hpbmVcbkE6IGtlXG5cblE6IGxlYXJuaW5nLCByZWFzb25pbmcsIGdlbmVyYWxpemF0aW9uXG5BOiBnZ25cblxuUTogYXJ0aWZpY2lhbCwgaW50ZWxsaWdlbmNlXG5BOiBsZVxuXG5ROiB0cmFuc2Zvcm1lciwgbGFuZ3VhZ2UsIHZpc2lvblxuQTogcmVuXG5cblE6IGZvbyxiYXIsYmF6LGJsaXBcbkE6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -64,16 +64,16 @@ Standardní výzva s několika málo příklady funguje velmi špatně, a to i s
 ></iframe>
 
 ### Druhý pokus: Myšlenkový řetězec
-Řetězec myšlenek funguje výrazně lépe než standardní výzva. Je to proto, že nyní umožňuje modelu, aby sám zvážil extrakci posledního písmene každého slova, čímž se složitost snižuje na operaci seskupení písmen, která předtím shromáždil. To se však začíná hroutit při větších velikostech.
+%%Myšlenkový řetězec|Chain of Thought Prompting%% funguje výrazně lépe než standardní prompt. Je to proto, že nyní umožňuje modelu, aby sám zvážil extrakci posledního písmene každého slova, čímž se složitost snižuje na operaci seskupení písmen, která předtím shromáždil. To se však začíná hroutit při větších velikostech.
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiVGhlIGxhc3QgbGV0dGVyIG9mIFwiZm9vXCIgaXMgXCJvXCIuIFRoZSBsYXN0IGxldHRlciBvZiBcImJhclwiIGlzIFwiclwiLiBUaGUgbGFzdCBsZXR0ZXIgb2YgXCJiYXpcIiBpcyBcInpcIi4gVGhlIGxhc3QgbGV0dGVyIG9mIFwiYmxpcFwiIGlzIFwicFwiLiBTbyBcImZvbyxiYXIsYmF6LGJsaXBcIiBpcyBcIm9yenBcIi4iLCJwcm9tcHQiOiJROiB0aGluaywgbWFjaGluZVxuQTogVGhlIGxhc3QgbGV0dGVyIG9mIFwidGhpbmtcIiBpcyBcImtcIi4gVGhlIGxhc3QgbGV0dGVyIG9mIFwibWFjaGluZVwiIGlzIFwiZVwiLiBTbyBcInRoaW5rLCBtYWNoaW5lXCIgaXMgXCJrZVwiLlxuXG5ROiBsZWFybmluZywgcmVhc29uaW5nLCBnZW5lcmFsaXphdGlvblxuQTogVGhlIGxhc3QgbGV0dGVyIG9mIFwibGVhcm5pbmdcIiBpcyBcImdcIi4gVGhlIGxhc3QgbGV0dGVyIG9mIFwicmVhc29uaW5nXCIgaXMgXCJuXCIuIFRoZSBsYXN0IGxldHRlciBvZiBcImdlbmVyYWxpemF0aW9uXCIgaXMgXCJuXCIuIFNvIFwibGVhcm5pbmcsIHJlYXNvbmluZywgZ2VuZXJhbGl6YXRpb25cIiBpcyBcImdnblwiLlxuXG5ROiBhcnRpZmljaWFsLCBpbnRlbGxpZ2VuY2VcbkE6IFRoZSBsYXN0IGxldHRlciBvZiBcImFydGlmaWNpYWxcIiBpcyBcImxcIi4gVGhlIGxhc3QgbGV0dGVyIG9mIFwiaW50ZWxsaWdlbmNlXCIgaXMgXCJlXCIuIFNvIFwiYXJ0aWZpY2lhbCwgaW50ZWxsaWdlbmNlXCIgaXMgXCJsZVwiLlxuXG5ROiB0cmFuc2Zvcm1lciwgbGFuZ3VhZ2UsIHZpc2lvblxuQTogVGhlIGxhc3QgbGV0dGVyIG9mIFwidHJhbnNmb3JtZXJcIiBpcyBcInJcIi4gVGhlIGxhc3QgbGV0dGVyIG9mIFwibGFuZ3VhZ2VcIiBpcyBcImVcIi4gVGhlIGxhc3QgbGV0dGVyIG9mIFwidmlzaW9uXCIgaXMgXCJuXCIuIFNvIFwidHJhbnNmb3JtZXIsIGxhbmd1YWdlLCB2aXNpb25cIiBpcyBcInJlblwiLlxuXG5ROiBmb28sYmFyLGJheixibGlwXG5BOiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-### Třetí pokus: Od nejmenšího k největšímu (jediná výzva)
+### Třetí pokus: Od nejmenšího k největšímu (jeden prompt)
 
-Při použití výzvy Least to Most rozšíříme koncept myšlenkového řetězce tím, že jednotlivé kroky přeformulujeme tak, aby znovu vyjadřovaly dříve zřetězený výsledek. Tím se každý krok zjednoduší na zřetězení pouze jednoho nového písmene. To vede k dobrému výkonu až do 12 a více slov.
+Při použití výzvy %%Least to Most|LtM%% rozšíříme koncept myšlenkového řetězce tím, že jednotlivé kroky přeformulujeme tak, aby znovu vyjadřovaly dříve zřetězený výsledek. Tím se každý krok zjednoduší na zřetězení pouze jednoho nového písmene. To vede k dobrému výkonu až do 12 a více slov.
 
 Tento přístup může vypadat velmi podobně jako myšlenkový řetězec, ale koncepčně se velmi liší. Zde v každém kroku zavádíme předchozí zřetězení. V případě "think, machine, learning" se namísto spojování písmen "k", "e", "g" jednotlivě spojí "k" a "e", poté "ke" a "g". V důsledku tohoto znovuzavedení předchozí práce může nyní model zobecňovat mnohem delší řetězce, protože výsledek přenáší postupně a v každém kroku musí vykonat jen malé množství práce.
 
@@ -90,11 +90,11 @@ V případě problému spojování posledních písmen s 12 slovy je Chain of Th
 
 ## Příklad: kompoziční zobecnění (SCAN)
 
-Srovnávací test SCAN (@lake2018scan) vyžaduje, aby model převáděl přirozený jazyk na sekvence akcí. Například věta "běž doleva a jdi dvakrát" by byla převedena na "TURN_LEFT + RUN + WALK * 2". Jazykové modely fungují obzvláště špatně, pokud jsou konfrontovány se sekvencemi, které jsou delší než sekvence v trénovací množině.
+Srovnávací test SCAN (@lake2018scan) vyžaduje, aby model převáděl přirozený jazyk na sekvence akcí. Například věta "běž doleva a jdi dvakrát" by byla převedena na "TURN_LEFT + RUN + WALK * 2". Jazykové modely fungují obzvláště špatně, pokud jsou konfrontovány se sekvencemi, které jsou delší než sekvence v trénovacím setu.
 
-### První pokus: Standardní výzva
+### První pokus: Standardní prompt
 
-Při použití jednoduchých standardních výzev se text-davinci-003 dostane působivě daleko, ale přesto selže.
+Při použití jednoduchých standardních promptů se text-davinci-003 dostane působivě daleko, ale přesto selže.
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiKFRVUk4gTEVGVCAqIDIgKyBXQUxLKSAqIDMgKyAoVFVSTiBMRUZUICsgSlVNUCkgKiAyIiwicHJvbXB0IjoiUTogdHVybiBsZWZ0XG5BOiBUVVJOIExFRlRcblxuUTogdHVybiByaWdodFxuQTogVFVSTiBSSUdIVFxuXG5ROiBqdW1wIGxlZnRcbkE6IFRVUk4gTEVGVCArIEpVTVBcblxuUTogcnVuIHJpZ2h0XG5BOiBUVVJOIFJJR0hUICsgUlVOXG5cblE6IGxvb2sgdHdpY2VcbkE6IExPT0sgKiAyXG5cblE6IHJ1biBhbmQgbG9vayB0d2ljZVxuQTogUlVOICsgTE9PSyAqIDJcblxuUToganVtcCByaWdodCB0aHJpY2VcbkE6IChUVVJOIFJJR0hUICsgSlVNUCkgKiAzXG5cblE6IHdhbGsgYWZ0ZXIgcnVuXG5BOiBSVU4gKyBXQUxLXG5cblE6IHR1cm4gb3Bwb3NpdGUgbGVmdFxuQTogVFVSTiBMRUZUICogMlxuXG5ROiB0dXJuIGFyb3VuZCBsZWZ0XG5BOiBUVVJOIExFRlQgKiA0XG5cblE6IHR1cm4gb3Bwb3NpdGUgcmlnaHRcbkE6IFRVUk4gUklHSFQgKiAyXG5cblE6IHR1cm4gYXJvdW5kIHJpZ2h0XG5BOiBUVVJOIFJJR0hUICogNFxuXG5ROiB3YWxrIG9wcG9zaXRlIGxlZnRcbkE6IFRVUk4gTEVGVCAqIDIgKyBXQUxLXG5cblE6IHdhbGsgYXJvdW5kIGxlZnRcbkE6IChUVVJOIExFRlQgKyBXQUxLKSAqIDRcblxuUTogXCJqdW1wIGFyb3VuZCBsZWZ0IHR3aWNlIGFmdGVyIHdhbGsgb3Bwb3NpdGUgbGVmdCB0aHJpY2VcIiBcbkE6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -102,14 +102,14 @@ Při použití jednoduchých standardních výzev se text-davinci-003 dostane p�
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-### Druhý pokus: Nejméně k nejvíce, první krok - Redukce
+### Druhý pokus: Least to Most, první krok - Redukce
 
-Zde pracujeme se 2 různými výzvami. První výzva slouží k redukci vstupního problému na jednodušší posloupnost kroků. Druhá výzva slouží k namapování této zjednodušené posloupnosti kroků na skutečné akce.
+Zde pracujeme se 2 různými prompty. První prompt slouží k redukci vstupního problému na jednodušší posloupnost kroků. Druhý prompt slouží k namapování této zjednodušené posloupnosti kroků na skutečné akce.
 
-Obě výzvy jsou poměrně dlouhé a používají komprimovaný zápis pythonu pro akce, aby se ušetřilo na tokenech.
+Oba prompty jsou poměrně dlouhé a používají komprimovaný zápis pythonu pro akce, aby se ušetřilo na tokenech.
 
 První krok rozkládá popis přirozeného jazyka na explicitnější, ale stále lidský jazyk. To pomůže kroku mapování zjistit pořadí věcí.
-Například "skoč dvakrát kolem levé strany" se zredukuje na "skoč doleva" -> `TURN_LEFT + JUMP` a "skoč doleva" -> `(TURN_LEFT + JUMP) * 4`. Podobně se redukční krok používá k vysvětlení pojmu opakování (dvakrát, třikrát atd...).
+Například "jump around left twice" se zredukuje na "jump left" -> `TURN_LEFT + JUMP` a "jump around left" -> `(TURN_LEFT + JUMP) * 4`. Podobně se redukční krok používá k vysvětlení pojmu opakování (dvakrát, třikrát atd...).
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiXCJqdW1wIGFyb3VuZCBsZWZ0IHR3aWNlXCIgY2FuIGJlIHNvbHZlZCBieTogXCJqdW1wIGxlZnRcIiwgXCJqdW1wIGFyb3VuZCBsZWZ0XCIsIFwianVtcCBhcm91bmQgbGVmdCB0d2ljZVwiLiBcIndhbGsgb3Bwb3NpdGUgbGVmdCB0aHJpY2VcIiBjYW4gYmUgc29sdmVkIGJ5OiBcIndhbGsgb3Bwb3NpdGUgbGVmdFwiLCBcIndhbGsgb3Bwb3NpdGUgbGVmdCB0aHJpY2VcIi4gU28sIFwianVtcCBhcm91bmQgbGVmdCB0d2ljZSBhZnRlciB3YWxrIG9wcG9zaXRlIGxlZnQgdGhyaWNlXCIgY2FuIGJlIHNvbHZlZCBieTogXCJqdW1wIGxlZnRcIiwgXCJqdW1wIGFyb3VuZCBsZWZ0XCIsIFwianVtcCBhcm91bmQgbGVmdCB0d2ljZVwiLCBcIndhbGsgb3Bwb3NpdGUgbGVmdFwiLCBcIndhbGsgb3Bwb3NpdGUgbGVmdCB0aHJpY2VcIi4iLCJwcm9tcHQiOiJROiBsb29rIHJpZ2h0IGFmdGVyIGxvb2sgdHdpY2VcbkE6IFwibG9vayByaWdodCBhZnRlciBsb29rIHR3aWNlXCIgY2FuIGJlIHNvbHZlZCBieTogXCJsb29rIHJpZ2h0XCIsIFwibG9vayB0d2ljZVwiLlxuXG5ROiBqdW1wIG9wcG9zaXRlIHJpZ2h0IHRocmljZSBhbmQgd2Fsa1xuQTogXCJqdW1wIG9wcG9zaXRlIHJpZ2h0IHRocmljZVwiIGNhbiBiZSBzb2x2ZWQgYnk6IFwianVtcCBvcHBvc2l0ZSByaWdodFwiLCBcImp1bXAgb3Bwb3NpdGUgcmlnaHQgdGhyaWNlXCIuIFwid2Fsa1wiIGNhbiBiZSBzb2x2ZWQgYnk6IFwid2Fsa1wiLiBTbywgXCJqdW1wIG9wcG9zaXRlIHJpZ2h0IHRocmljZSBhbmQgd2Fsa1wiIGNhbiBiZSBzb2x2ZWQgYnk6IFwianVtcCBvcHBvc2l0ZSByaWdodFwiLCBcImp1bXAgb3Bwb3NpdGUgcmlnaHQgdGhyaWNlXCIsIFwid2Fsa1wiLlxuXG5ROiBydW4gbGVmdCB0d2ljZSBhbmQgcnVuIHJpZ2h0XG5BOiBcInJ1biBsZWZ0IHR3aWNlXCIgY2FuIGJlIHNvbHZlZCBieTogXCJydW4gbGVmdFwiLCBcInJ1biBsZWZ0IHR3aWNlXCIuIFwicnVuIHJpZ2h0XCIgY2FuIGJlIHNvbHZlZCBieSBcInJ1biByaWdodFwiLiBTbywgXCJydW4gbGVmdCB0d2ljZSBhbmQgcnVuIHJpZ2h0XCIgY2FuIGJlIHNvbHZlZCBieTogXCJydW4gbGVmdFwiLCBcInJ1biBsZWZ0IHR3aWNlXCIsIFwicnVuIHJpZ2h0XCIuXG5cblE6IHJ1biBvcHBvc2l0ZSByaWdodFxuQTogXCJydW4gb3Bwb3NpdGUgcmlnaHRcIiBjYW4gYmUgc29sdmVkIGJ5IFwicnVuIG9wcG9zaXRlIHJpZ2h0XCIuXG5cblE6IGxvb2sgb3Bwb3NpdGUgcmlnaHQgdGhyaWNlIGFmdGVyIHdhbGtcbkE6IFwibG9vayBvcHBvc2l0ZSByaWdodCB0aHJpY2VcIiBjYW4gYmUgc29sdmVkIGJ5OiBcImxvb2sgb3Bwb3NpdGUgcmlnaHRcIiwgXCJsb29rIG9wcG9zaXRlIHJpZ2h0IHRocmljZVwiLiBcIndhbGtcIiBjYW4gYmUgc29sdmVkIGJ5IFwid2Fsa1wiLiBTbywgXCJsb29rIG9wcG9zaXRlIHJpZ2h0IHRocmljZSBhZnRlciB3YWxrXCIgY2FuIGJlIHNvbHZlZCBieTogXCJsb29rIG9wcG9zaXRlIHJpZ2h0XCIsIFwibG9vayBvcHBvc2l0ZSByaWdodCB0aHJpY2VcIiwgXCJ3YWxrXCIuXG5cblE6IGp1bXAgYXJvdW5kIHJpZ2h0XG5BOiBcImp1bXAgYXJvdW5kIHJpZ2h0XCIgY2FuIGJlIHNvbHZlZCBieTogXCJqdW1wIHJpZ2h0XCIsIFwianVtcCBhcm91bmQgcmlnaHRcIi4gU28sIFwianVtcCBhcm91bmQgcmlnaHRcIiBjYW4gYmUgc29sdmVkIGJ5OiBcImp1bXAgcmlnaHRcIiwgXCJqdW1wIGFyb3VuZCByaWdodFwiLlxuXG5ROiBsb29rIGFyb3VuZCByaWdodCB0aHJpY2UgYW5kIHdhbGtcbkE6IFwibG9vayBhcm91bmQgcmlnaHQgdGhyaWNlXCIgY2FuIGJlIHNvbHZlZCBieTogXCJsb29rIHJpZ2h0XCIsIFwibG9vayBhcm91bmQgcmlnaHRcIiwgXCJsb29rIGFyb3VuZCByaWdodCB0aHJpY2VcIi4gXCJ3YWxrXCIgY2FuIGJlIHNvbHZlZCBieSBcIndhbGtcIi4gU28sIFwibG9vayBhcm91bmQgcmlnaHQgdGhyaWNlIGFuZCB3YWxrXCIgY2FuIGJlIHNvbHZlZCBieTogXCJsb29rIHJpZ2h0XCIsIFwibG9vayBhcm91bmQgcmlnaHRcIiwgXCJsb29rIGFyb3VuZCByaWdodCB0aHJpY2VcIiwgXCJ3YWxrXCIuXG5cblE6IHR1cm4gcmlnaHQgYWZ0ZXIgcnVuIHJpZ2h0IHRocmljZVxuQTogXCJ0dXJuIHJpZ2h0XCIgY2FuIGJlIHNvbHZlZCBieTogXCJ0dXJuIHJpZ2h0XCIuIFwicnVuIHJpZ2h0IHRocmljZVwiIGNhbiBiZSBzb2x2ZWQgYnk6IFwicnVuIHJpZ2h0XCIsIFwicnVuIHJpZ2h0IHRocmljZVwiLiBTbywgXCJ0dXJuIHJpZ2h0IGFmdGVyIHJ1biByaWdodCB0aHJpY2VcIiBjYW4gYmUgc29sdmVkIGJ5OiBcInR1cm4gcmlnaHRcIiwgXCJydW4gcmlnaHRcIiwgXCJydW4gcmlnaHQgdGhyaWNlXCIuXG5cblE6IGp1bXAgYXJvdW5kIGxlZnQgdHdpY2UgYWZ0ZXIgd2FsayBvcHBvc2l0ZSBsZWZ0IHRocmljZVxuQToiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -117,15 +117,15 @@ Například "skoč dvakrát kolem levé strany" se zredukuje na "skoč doleva" -
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-### Druhý pokus: Nejméně k nejvíce, druhý krok - mapování
+### Druhý pokus: Least to Most, druhý krok - mapování
 
-Ve druhém kroku použijeme výstup redukce a opět použijeme poměrně dlouhou výzvu (14 případů) k převodu redukovaného popisu přirozeného jazyka na posloupnost akcí.
+Ve druhém kroku použijeme výstup redukce a opět použijeme poměrně dlouhý prompt (14 případů) k převodu redukovaného popisu přirozeného jazyka na posloupnost akcí.
 
 Zde vkládáme výstup prvního kroku:
 
-> "dvakrát skočit doleva" lze vyřešit takto: "skočit vlevo", "skočit kolem levé strany", "skočit kolem levé strany dvakrát". "třikrát projít naproti vlevo" lze řešit takto:: "projít naproti vlevo", "projít naproti vlevo třikrát". Takže "skok vlevo dvakrát po chůzi vlevo třikrát" lze vyřešit takto: "skočit vlevo", "skočit kolem levé", "skočit kolem levé dvakrát", "jít naproti levé", "jít naproti levé třikrát".
+> "jump around left twice" can be solved by: "jump left", "jump around left", "jump around left twice". "walk opposite left thrice" can be solved by: "walk opposite left", "walk opposite left thrice". So, "jump around left twice after walk opposite left thrice" can be solved by: "jump left", "jump around left", "jump around left twice", "walk opposite left", "walk opposite left thrice".
 
-do LLM.
+do %%LLM|LLM%%.
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiVGhlIG91dHB1dCBvZiBcImp1bXAgYXJvdW5kIGxlZnQgdHdpY2UgYWZ0ZXIgd2FsayBvcHBvc2l0ZSBsZWZ0IHRocmljZVwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcIndhbGsgb3Bwb3NpdGUgbGVmdCB0aHJpY2VcIiwgdGhlIG91dHB1dCBvZiBcImp1bXAgYXJvdW5kIGxlZnQgdHdpY2VcIi4gXCJ3YWxrIG9wcG9zaXRlIGxlZnQgdGhyaWNlXCIgb3V0cHV0cyBcIlRVUk4gTEVGVFwiICogMiArIFwiV0FMS1wiICogMy4gXCJqdW1wIGFyb3VuZCBsZWZ0IHR3aWNlXCIgb3V0cHV0cyAoXCJUVVJOIExFRlRcIiArIFwiSlVNUFwiKSAqIDQuIFNvIGNvbmNhdGVuYXRpbmcgdGhlIG91dHB1dCBvZiBcIndhbGsgb3Bwb3NpdGUgbGVmdCB0aHJpY2VcIiBhbmQgdGhlIG91dHB1dCBvZiBcImp1bXAgYXJvdW5kIGxlZnQgdHdpY2VcIiBsZWFkcyB0byBcIlRVUk4gTEVGVFwiICogMiArIFwiV0FMS1wiICogMyArIChcIlRVUk4gTEVGVFwiICsgXCJKVU1QXCIpICogNC4gU28gdGhlIG91dHB1dCBvZiBcImp1bXAgYXJvdW5kIGxlZnQgdHdpY2UgYWZ0ZXIgd2FsayBvcHBvc2l0ZSBsZWZ0IHRocmljZVwiIGlzIFwiVFVSTiBMRUZUXCIgKiAyICsgXCJXQUxLXCIgKiAzICsgKFwiVFVSTiBMRUZUXCIgKyBcIkpVTVBcIikgKiA0LiIsInByb21wdCI6IlE6IHR1cm4gbGVmdFxuQTogXCJ0dXJuIGxlZnRcIiBvdXRwdXRzIFwiVFVSTiBMRUZUXCIuXG5cblE6IHR1cm4gcmlnaHRcbkE6IFwidHVybiByaWdodFwiIG91dHB1dHMgXCJUVVJOIFJJR0hUXCIuXG5cblE6IGp1bXAgbGVmdFxuQTogVGhlIG91dHB1dCBvZiBcImp1bXAgbGVmdFwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcInR1cm4gbGVmdFwiLCB0aGUgb3V0cHV0IG9mIFwianVtcFwiLiBcInR1cm4gbGVmdFwiIG91dHB1dHMgXCJUVVJOIExFRlRcIi4gXCJqdW1wXCIgb3V0cHV0cyBcIkpVTVBcIi4gU28gY29uY2F0ZW5hdGluZyB0aGUgb3V0cHV0IG9mIFwidHVybiBsZWZ0XCIgYW5kIHRoZSBvdXQtIHB1dCBvZiBcImp1bXBcIiBsZWFkcyB0byBcIlRVUk4gTEVGVFwiICsgXCJKVU1QXCIuIFNvIHRoZSBvdXRwdXQgb2YgXCJqdW1wIGxlZnRcIiBpcyBcIlRVUk4gTEVGVFwiICsgXCJKVU1QXCIuXG5cblE6IHJ1biByaWdodFxuQTogVGhlIG91dHB1dCBvZiBcInJ1biByaWdodFwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcInR1cm4gcmlnaHRcIiwgdGhlIG91dHB1dCBvZiBcInJ1blwiLiBcInR1cm4gcmlnaHRcIiBvdXRwdXRzIFwiVFVSTiBSSUdIVFwiLiBcInJ1blwiIG91dHB1dHMgXCJSVU5cIi4gU28gY29uY2F0ZW5hdGluZyB0aGUgb3V0cHV0IG9mIFwidHVybiByaWdodFwiIGFuZCB0aGUgb3V0cHV0IG9mIFwicnVuXCIgbGVhZHMgdG8gXCJUVVJOIFJJR0hUXCIgKyBcIlJVTlwiLiBTbyB0aGUgb3V0cHV0IG9mIFwicnVuIHJpZ2h0XCIgaXMgXCJUVVJOIFJJR0hUXCIgKyBcIlJVTlwiLlxuXG5ROiBsb29rIHR3aWNlXG5BOiBUaGUgb3V0cHV0IG9mIFwibG9vayB0d2ljZVwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcImxvb2tcIiwgdGhlIG91dHB1dCBvZiBcImxvb2tcIi4gXCJsb29rXCIgb3V0cHV0cyBcIkxPT0tcIi4gU28gcmVwZWF0aW5nIHRoZSBvdXRwdXQgb2YgXCJsb29rXCIgdHdvIHRpbWVzIGxlYWRzIHRvIFwiTE9PS1wiICogMi4gU28gdGhlIG91dHB1dCBvZiBcImxvb2sgdHdpY2VcIiBpcyBcIkxPT0tcIiAqIDIuXG5cblE6IHJ1biBhbmQgbG9vayB0d2ljZVxuQTogVGhlIG91dHB1dCBvZiBcInJ1biBhbmQgbG9vayB0d2ljZVwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcInJ1blwiLCB0aGUgb3V0cHV0IG9mIFwibG9vayB0d2ljZVwiLiBcInJ1blwiIG91dHB1dHMgXCJSVU5cIi4gXCJsb29rIHR3aWNlXCIgb3V0cHV0cyBcIkxPT0tcIiAqIDIuIFNvIGNvbmNhdGVuYXRpbmcgdGhlIG91dHB1dCBvZiBcInJ1blwiIGFuZCB0aGUgb3V0cHV0IG9mIFwibG9vayB0d2ljZVwiIGxlYWRzIHRvIFwiUlVOXCIgKyBcIkxPT0tcIiAqIDIuIFNvIHRoZSBvdXRwdXQgb2YgXCJydW4gYW5kIGxvb2sgdHdpY2VcIiBpcyBcIlJVTlwiICsgXCJMT09LXCIgKiAyLlxuXG5ROiBqdW1wIHJpZ2h0IHRocmljZVxuQTogVGhlIG91dHB1dCBvZiBcImp1bXAgcmlnaHQgdGhyaWNlXCIgY29uY2F0ZW5hdGVzOiB0aGUgb3V0cHV0IG9mIFwianVtcCByaWdodFwiLCB0aGUgb3V0cHV0IG9mIFwianVtcCByaWdodFwiLCB0aGUgb3V0cHV0IG9mIFwianVtcCByaWdodFwiLiBcImp1bXAgcmlnaHRcIiBvdXRwdXRzIFwiVFVSTiBSSUdIVFwiICsgXCJKVU1QXCIuIFNvIHJlcGVhdGluZyB0aGUgb3V0cHV0IG9mIFwianVtcCByaWdodFwiIHRocmVlIHRpbWVzIGxlYWRzIHRvIChcIlRVUk4gUklHSFRcIiArIFwiSlVNUFwiKSAqIDMuIFNvIHRoZSBvdXRwdXQgb2YgXCJqdW1wIHJpZ2h0IHRocmljZVwiIGlzIChcIlRVUk4gUklHSFRcIiArIFwiSlVNUFwiKSAqIDMuXG5cblE6IHdhbGsgYWZ0ZXIgcnVuXG5BOiBUaGUgb3V0cHV0IG9mIFwid2FsayBhZnRlciBydW5cIiBjb25jYXRlbmF0ZXM6IHRoZSBvdXRwdXQgb2YgXCJydW5cIiwgdGhlIG91dHB1dCBvZiBcIndhbGtcIi4gXCJydW5cIiBvdXRwdXRzIFwiUlVOXCIuIFwid2Fsa1wiIG91dHB1dHMgXCJXQUxLXCIuIFNvIGNvbmNhdGVuYXRpbmcgdGhlIG91dHB1dCBvZiBcInJ1blwiIGFuZCB0aGUgb3V0cHV0IG9mIFwid2Fsa1wiIGxlYWRzIHRvIFwiUlVOXCIgKyBcIldBTEtcIi4gU28gdGhlIG91dHB1dCBvZiBcIndhbGsgYWZ0ZXIgcnVuXCIgaXMgXCJSVU5cIiArIFwiV0FMS1wiLlxuXG5ROiB0dXJuIG9wcG9zaXRlIGxlZnRcbkE6IFRoZSBvdXRwdXQgb2YgXCJ0dXJuIG9wcG9zaXRlIGxlZnRcIiBjb25jYXRlbmF0ZXM6IHRoZSBvdXRwdXQgb2YgXCJ0dXJuIGxlZnRcIiwgdGhlIG91dHB1dCBvZiBcInR1cm4gbGVmdFwiLiBcInR1cm4gbGVmdFwiIG91dHB1dHMgXCJUVVJOIExFRlRcIi4gU28gcmVwZWF0aW5nIHRoZSBvdXRwdXQgb2YgXCJ0dXJuIGxlZnRcIiB0d2ljZSBsZWFkcyB0byBcIlRVUk4gTEVGVFwiICogMi4gU28gdGhlIG91dHB1dCBvZiBcInR1cm4gb3Bwb3NpdGUgbGVmdFwiIGlzIFwiVFVSTiBMRUZUXCIgKiAyLlxuXG5ROiB0dXJuIGFyb3VuZCBsZWZ0XG5BOiBUaGUgb3V0cHV0IG9mIFwidHVybiBhcm91bmQgbGVmdFwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcInR1cm4gbGVmdFwiLCB0aGUgb3V0cHV0IG9mIFwidHVybiBsZWZ0XCIsIHRoZSBvdXRwdXQgb2YgXCJ0dXJuIGxlZnRcIiwgdGhlIG91dHB1dCBvZiBcInR1cm4gbGVmdFwiLiBcInR1cm4gbGVmdFwiIG91dHB1dHMgXCJUVVJOIExFRlRcIi4gU28gcmVwZWF0aW5nIHRoZSBvdXRwdXQgb2YgXCJ0dXJuIGxlZnRcIiBmb3VyIHRpbWVzIGxlYWRzIHRvIFwiVFVSTiBMRUZUXCIgKiA0LiBTbyB0aGUgb3V0cHV0IG9mIFwidHVybiBhcm91bmQgbGVmdFwiIGlzIFwiVFVSTiBMRUZUXCIgKiA0LlxuXG5ROiB0dXJuIG9wcG9zaXRlIHJpZ2h0XG5BOiBUaGUgb3V0cHV0IG9mIFwidHVybiBvcHBvc2l0ZSByaWdodFwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcInR1cm4gcmlnaHRcIiwgdGhlIG91dHB1dCBvZiBcInR1cm4gcmlnaHRcIi4gXCJ0dXJuIHJpZ2h0XCIgb3V0cHV0cyBcIlRVUk4gUklHSFRcIi4gU28gcmVwZWF0aW5nIHRoZSBvdXRwdXQgb2YgXCJ0dXJuIHJpZ2h0XCIgdHdpY2UgbGVhZHMgdG8gXCJUVVJOIFJJR0hUXCIgKiAyLiBTbyB0aGUgb3V0cHV0IG9mIFwidHVybiBvcHBvc2l0ZSByaWdodFwiIGlzIFwiVFVSTiBSSUdIVFwiICogMi5cblxuUTogdHVybiBhcm91bmQgcmlnaHRcbkE6IFRoZSBvdXRwdXQgb2YgXCJ0dXJuIGFyb3VuZCByaWdodFwiIGNvbmNhdGVuYXRlczogdGhlIG91dHB1dCBvZiBcInR1cm4gcmlnaHRcIiwgdGhlIG91dHB1dCBvZiBcInR1cm4gcmlnaHRcIiwgdGhlIG91dHB1dCBvZiBcInR1cm4gcmlnaHRcIiwgdGhlIG91dHB1dCBvZiBcInR1cm4gcmlnaHRcIi4gXCJ0dXJuIHJpZ2h0XCIgb3V0cHV0cyBcIlRVUk4gUklHSFRcIi4gU28gcmVwZWF0aW5nIHRoZSBvdXRwdXQgb2YgXCJ0dXJuIHJpZ2h0XCIgZm91ciB0aW1lcyBsZWFkcyB0byBcIlRVUk4gUklHSFRcIiAqIDQuIFNvIHRoZSBvdXRwdXQgb2YgXCJ0dXJuIGFyb3VuZCByaWdodFwiIGlzIFwiVFVSTiBSSUdIVFwiICogNC5cblxuUTogd2FsayBvcHBvc2l0ZSBsZWZ0XG5BOiBUaGUgb3V0cHV0IG9mIFwid2FsayBvcHBvc2l0ZSBsZWZ0XCIgY29uY2F0ZW5hdGVzOiB0aGUgb3V0cHV0IG9mIFwidHVybiBvcHBvc2l0ZSBsZWZ0XCIsIHRoZSBvdXRwdXQgb2YgXCJ3YWxrXCIuIFwidHVybiBvcHBvc2l0ZSBsZWZ0XCIgb3V0cHV0cyBcIlRVUk4gTEVGVFwiICogMi4gXCJ3YWxrXCIgb3V0cHV0cyBcIldBTEtcIi4gU28gY29uY2F0ZW5hdGluZyB0aGUgb3V0cHV0IG9mIFwidHVybiBvcHBvc2l0ZSBsZWZ0XCIgYW5kIHRoZSBvdXRwdXQgb2YgXCJ3YWxrXCIgbGVhZHMgdG8gXCJUVVJOIExFRlRcIiAqIDIgKyBcIldBTEtcIi4gU28gdGhlIG91dHB1dCBvZiBcIndhbGsgb3Bwb3NpdGUgbGVmdFwiIGlzIFwiVFVSTiBMRUZUXCIgKiAyICsgXCJXQUxLXCIuXG5cblE6IHdhbGsgYXJvdW5kIGxlZnRcbkE6IFRoZSBvdXRwdXQgb2YgXCJ3YWxrIGFyb3VuZCBsZWZ0XCIgY29uY2F0ZW5hdGVzOiB0aGUgb3V0cHV0IG9mIFwid2FsayBsZWZ0XCIsIHRoZSBvdXRwdXQgb2YgXCJ3YWxrIGxlZnRcIiwgdGhlIG91dHB1dCBvZiBcIndhbGsgbGVmdFwiLCB0aGUgb3V0cHV0IG9mIFwid2FsayBsZWZ0XCIuIFwid2FsayBsZWZ0XCIgb3V0cHV0cyBcIlRVUk4gTEVGVFwiICsgXCJXQUxLXCIuIFNvIHJlcGVhdGluZyB0aGUgb3V0cHV0IG9mIFwid2FsayBhcm91bmQgbGVmdFwiIGZvdXIgdGltZXMgbGVhZHMgdG8gKFwiVFVSTiBMRUZUXCIgKyBcIldBTEtcIikgKiA0LiBTbyB0aGUgb3V0cHV0IG9mIFwid2FsayBhcm91bmQgbGVmdFwiIGlzIChcIlRVUk4gTEVGVFwiICsgXCJXQUxLXCIpICogNC5cblxuUTogXCJqdW1wIGFyb3VuZCBsZWZ0IHR3aWNlIGFmdGVyIHdhbGsgb3Bwb3NpdGUgbGVmdCB0aHJpY2VcIiBcbkE6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -135,9 +135,9 @@ do LLM.
 
 ### Výsledky
 
-LtM vede k několika zlepšením:
-- lepší přesnost oproti řetězci myšlenek
-- větší zobecnění u problémů obtížnějších než ty, které jsou uvedeny v zadání
+%%LtM|LTM%% vede k několika zlepšením:
+- lepší přesnost oproti myšlenkovému řetězci (CoT)
+- větší zobecnění u problémů obtížnějších než ty, které jsou uvedeny v promptu
 - výrazně lepší výkon v kompoziční generalizaci, zejména v benchmarku SCAN(@lake2018scan).
 
 Standardní prompting s textem-davinci-002 (model použitý v článku) vede k 6 % úspěšně vyřešených problémů SCAN, zatímco Least to Most prompting vede k působivé 76% úspěšnosti. Výsledky jsou event. významnější s kódem-davinci-002, kde Least to Most prompting dosahuje 99,7% úspěšnosti.

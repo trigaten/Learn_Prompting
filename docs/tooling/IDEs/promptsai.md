@@ -4,8 +4,7 @@ sidebar_position: 8
 
 # Prompts.ai
 
-[Prompts.ai](https://prompts.ai/) poskytuje hřiště podobné hřišti GPT-3 Playground, ale s některými prvky
-přidanými funkcemi. Již se nevyvíjí.
+[Prompts.ai](https://prompts.ai/) poskytuje playground podobné GPT-3 Playground, ale s některými přidanými funkcemi. Již se nevyvíjí.
 
 import Image from '@site/docs/assets/tooling/promptsai.png';
 
@@ -15,6 +14,4 @@ import Image from '@site/docs/assets/tooling/promptsai.png';
 
 ## Funkce
 
-Nástroj Prompts.ai poskytuje zejména nástroje pro simulované vyplnění 
-různých výzev, vícenásobné vyplnění ze stejné výzvy a konverzaci.
-funkci.
+Nástroj Prompts.ai poskytuje zejména nástroje pro simulované doplnění různých promptů, vícenásobné doplnění ze stejného promptu a konverzační funkci.

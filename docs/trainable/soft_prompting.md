@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# 🔴 Měkké prompty/výzvy
+# 🔴 Soft prompty
 
-Ladění promptů(@lester2021power), alternativa k fine tuningu modelu(@khashabi2021prompt), zmrazí váhy modelu a aktualizuje parametry výzvy. Výsledný prompt je "měkký prompt".
+Prompt tuning(@lester2021power), alternativa k fine tuningu modelu(@khashabi2021prompt), zmrazí váhy modelu a aktualizuje parametry promptu. Výsledný prompt je "měkký prompt" (ang. soft prompt).
 
 
 import Image from '../assets/prompt_tuning.png';
@@ -17,32 +17,22 @@ import Image from '../assets/prompt_tuning.png';
 Model Tuning vs Prompt Tuning (Lester et al.)
 </div>
 
-Výše uvedený obrázek staví do kontrastu modelové ladění a promptní ladění. 
-Při ladění modelu dolaďujete stejný model na různých úlohách. Tím získáte
-několik různých modelů, s nimiž nelze nutně snadno dávkovat vstupy.
+Na výše uvedeném obrázku je kontrast mezi tuningem modelu a prompt tuningem. Při tuningu (ladění) modelu dolaďujete stejný model na různých úlohách. Tím získáte několik různých modelů, s nimiž nelze nutně snadno batchovat vstupy.
 
-Naproti tomu promptní ladění vám umožňuje použít stejný model pro všechny úlohy. Můžete 
-stačí v době inference přidat správné výzvy, což umožňuje dávkování napříč různými
-různých úlohách jednodušší. To je v podstatě stejná výhoda, jakou má běžné promptování.
-má. Navíc měkké podněty natrénované pro jeden model napříč
-více úloh budou mít často stejnou délku tokenu.
+Naproti tomu ladění promptu vám umožňuje použít stejný model pro všechny úlohy. Stačí jen v době inference doplnit správné prompty, což usnadňuje batching v různých úlohách. To je v podstatě stejná výhoda, jakou má běžný prompting. Navíc soft prompty natrénované pro jeden model ve více úlohách budou mít často stejnou délku tokenu.
 
 ## Jak to funguje
 
-Abychom pochopili základní logiku soft promptingu, zamysleme se nad tím, jak funguje **odvozování modelu**.
-na daném promptu: `Co je 2+2?`.
+Abychom pochopili základní logiku soft promptingu, zamysleme se nad tím, jak funguje **odvozování modelu** na daném promptu: `Co je 2+2?`.
 
 1) Může být tokenizována jako `Co, 's, 2, +, 2, ?`. 
 
 2) Pak se každý token převede na vektor hodnot.
 
-3) Tyto vektory hodnot lze považovat za parametry modelu. Model může být dále
-trénovat pouze úpravou vah těchto proměnných.
+3) Tyto vektory hodnot lze považovat za parametry modelu. Model může být dále trénovaán pouze úpravou vah těchto proměnných.
 
-Všimněte si, že jakmile začneme tyto váhy aktualizovat, vektory tokenů se již nebudou měnit.
-již neodpovídají skutečným vnořením ze slovníku.
+Všimněte si, že jakmile začneme tyto váhy aktualizovat, vektory tokenů již neodpovídají skutečným embeddingům ze slovníku.
 
 # Výsledky 
 
-Ladění promptů funguje lépe u větších modelů. Větší modely také vyžadují méně
-měkkých promptních tokenů. Bez ohledu na to více než 20 tokenů nepřináší výrazný nárůst výkonu.
+Ladění promptů funguje lépe u větších modelů. Větší modely také vyžadují méně soft prompt tokenů. Bez ohledu na to více než 20 tokenů nepřináší výrazný nárůst výkonu.

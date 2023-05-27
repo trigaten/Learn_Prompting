@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Prompt IDE 
 
-[Prompt IDE](https://prompt.vizhub.ai)(@strobelt2022promptide) je výzkumný nástroj pro promptní inženýrství.
+[Prompt IDE](https://prompt.vizhub.ai)(@strobelt2022promptide) je výzkumný nástroj pro prompt inženýrství.
 
 
 import Image from '@site/docs/assets/tooling/promptide.png';
@@ -15,4 +15,4 @@ import Image from '@site/docs/assets/tooling/promptide.png';
 
 ## Funkce
 
-Prompt IDE umožňuje automatizované testování na sadách dat.
+Prompt IDE umožňuje automatizované testování na datasetech.

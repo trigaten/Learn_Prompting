@@ -8,15 +8,16 @@ Co kdybyste mohli napsat příspěvek na blog za 5 sekund?
 
 Upřímně řečeno, nejde to. Ale umělá inteligence může **výrazně** zkrátit čas potřebný k napsání příspěvku na blog.
 
-Tato stránka se zabývá základy využití umělé inteligence, která vám pomůže při psaní blogu. Proces by měl být iterativní: měli byste psát podněty, sledovat, co model vyprodukuje, přebírat části výstupu a toto opakovat.
+Tato stránka se zabývá základy využití umělé inteligence, která vám pomůže při psaní blogu. Proces by měl být iterativní: měli byste psát prompty, sledovat, co model vyprodukuje, přebírat části výstupu a toto opakovat.
 
-Jako příklad si představte, že pracujete ve školce a připravujete článek na téma "Proč jsou vánoční kaktusy skvělou koupí". Vždycky rád začínám s osnovou, takže začněme následujícím podnětem:
+Jako příklad si představte, že pracujete ve školce a připravujete článek na téma "Proč jsou vánoční kaktusy skvělou koupí". Vždycky rád začínám s osnovou, takže začněme následujícím promptem:
 
 ```text
 Napište osnovu krátkého příspěvku na blog o tom, proč jsou vánoční kaktusy skvělou koupí.
+```
+Existuje mnoho produktů, které se o to pokoušejí, ale často můžete dosáhnout konzistentních výsledků, když to uděláte sami.
 
-Existuje mnoho produktů, které se o to pokoušejí, ale často můžete dosáhnout konzistentních výsledků, když to uděláte sami. 
-
+```text
 // highlight-start
 I. Úvod
 A. Přehled vánočních kaktusů
@@ -42,14 +43,14 @@ C. Návrhy na péči a údržbu
 //highlight-end
 ```
 
-Páni, to je docela obsáhlé. Možná chceme trochu kratší příspěvek, takže požádejme umělou inteligenci, aby napsala kratší verzi pomocí této výzvy:
+Páni, to je docela obsáhlé. Možná chceme trochu kratší příspěvek, takže požádejme umělou inteligenci, aby napsala kratší verzi pomocí tohoto promptu:
 
 ```text
 To je skvělý nástin, ale trochu dlouhý. Zkraťte ho na hlavní body:
 ```
 
-:::poznámka
-Předpokládáme, že používáte ChatGPT (pokud ne, vložte osnovu před tuto novou výzvu).
+:::note
+Předpokládáme, že používáte ChatGPT (pokud ne, vložte osnovu před tento nový prompt).
 :::
 
 Zde je výstup modelu:
@@ -85,7 +86,7 @@ Celkově jsou vánoční kaktusy skvělou koupí na svátky. Jsou cenově dostup
 //highlight-end
 ```
 
-Dobře, to vypadá docela dobře. Pravděpodobně budeme chtít přidat nějaké informace o naší společnosti a cenách vánočních kaktusů, takže použijeme následující výzvu:
+Dobře, to vypadá docela dobře. Pravděpodobně budeme chtít přidat nějaké informace o naší společnosti a cenách vánočních kaktusů, takže použijeme následující prompt:
 
 ```text
 Perfektní! Přidejte na konec odstavec o naší společnosti a cenách na Vánoční kaktusy.
@@ -107,10 +108,10 @@ Ve školce Prickly Point se specializujeme na poskytování vysoce kvalitních r
 //highlight-end
 ```
 
-Tohle je docela dobrý příspěvek na blogu!
+Tohle je docela dobrý blogový příspěvek!
 
 Při psaní obsahu obvykle používám jen ChatGPT nebo GPT-3, ale existuje řada dalších nástrojů, které vám mohou při psaní blogů pomoci, například [Jasper.ai](https://www.jasper.ai/) a [Copy.ai](https://www.copy.ai/). Ty se obvykle spoléhají na GPT-3 v pozadí, ale mají řadu dalších funkcí, které vám mohou pomoci při psaní obsahu.
 
-## Závěry
+## Závěr
 
 - Umělá inteligence vám může pomoci napsat kvalitní příspěvky na blog za zlomek času, který byste potřebovali k jejich napsání sami. Tento proces není zcela automatizovaný, takže vyžaduje, abyste se do něj aktivně zapojili.

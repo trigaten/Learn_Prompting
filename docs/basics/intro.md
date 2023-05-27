@@ -11,26 +11,18 @@ import Techniques from '@site/docs/assets/techniques.svg';
 </div>
 
 
-V této kapitole jsou představeny jednoduché techniky výzev a také terminologie. Abyste porozuměli technice výzvy/podnětu, musíte nejprve pochopit některé *velmi* základní pojmy umělé inteligence. Pokud již znáte níže uvedená témata, neváhejte přeskočit na [další článek](https://learnprompting.org/docs/basics/prompting).
+V této kapitole jsou představeny jednoduché techniky promptů a terminologie. Abyste porozuměli technice promptů/příkazů, musíte nejprve pochopit některé *velmi* základní pojmy umělé inteligence. Pokud již znáte níže uvedená témata, neváhejte přeskočit na [další kapitolu](/Learn_Prompting_CAI/docs/basics/prompting).
 
 ## Co je to umělá inteligence?
 
-Pro naše účely je umělá inteligence (AI) obor, v němž lidé vytvořili
-"chytré" algoritmy, které "myslí" jako lidé[^1]. Tyto algoritmy mohou psát **esej**, 
-řešit **matematické problémy** a vytvářet **umění**. Nedávné pokroky v tomto oboru vytvořily umělou inteligenci.
-tak pokročilé, že dokáží psát přesvědčivé **prodejní e-maily**, **novinové články**, a dokonce i **zprávy**. 
-**vyhrávat [umělecké soutěže](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
+Pro naše účely je umělá inteligence (AI) obor, v němž lidé vytvořili "chytré" algoritmy, které "myslí" jako lidé[^1]. Tyto algoritmy mohou psát **esej**, řešit **matematické problémy** a vytvářet **umění**. Nedávné pokroky v tomto oboru vytvořily umělou inteligenci tak pokročilou, že dokáží psát přesvědčivé **prodejní e-maily**, **novinové články**, a dokonce i **vyhrávat [umělecké soutěže](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
 
-Umělá inteligence v současné době přináší revoluci do mnoha odvětví, včetně **žurnalistiky**, **zdravotnictví** a dalších.
-**vzdělávání**. Je pravděpodobné, že se s jejím nasazením brzy setkáte i na svém pracovišti/ve třídě, pokud jste ji dosud nepoužili.
-ještě ne. Přestože je umělá inteligence nesmírně užitečná, vyžaduje, aby ji člověk řídil, co má dělat.
-Umělé inteligence jsou často jako velmi chytré pětileté děti. Dokážou spoustu věcí, ale potřebují. 
-pečlivé instrukce, aby je dělaly dobře.
+Umělá inteligence v současné době přináší revoluci do mnoha odvětví, včetně **žurnalistiky**, **zdravotnictví**, **vzdělávání** a dalších. Je pravděpodobné, že se s jejím nasazením brzy setkáte i na svém pracovišti/ve třídě, pokud jste ji dosud nepoužili. Přestože je umělá inteligence nesmírně užitečná, vyžaduje, aby ji člověk řídil, co má dělat. Umělá inteligence je jako velmi chytré pětileté děti. Dokážou spoustu věcí, ale potřebuje pečlivé instrukce, aby je dělala dobře.
 
-Umět umělou inteligenci správně řídit je velmi silná dovednost. Jak s nimi tedy komunikujete? 
-Umělé inteligence, o kterých pojednává tento kurz, rozumí angličtině (a dalším jazykům),
-takže obvykle stačí popsat úkoly, které chceme provést. Umělé inteligenci můžeme například říci, aby
-`Napsat esej o výhodách umělé inteligence` a ono řekne [^2]:
+Umět umělou inteligenci správně řídit je velmi silná dovednost. Jak s nimi tedy komunikujete? Umělé inteligence, o kterých pojednává tento kurz, rozumí angličtině (a dalším jazykům), takže obvykle stačí popsat úkoly, které chceme provést. 
+
+Umělé inteligenci můžeme například říci:
+`Napsat esej o výhodách umělé inteligence` a ona odpoví [^2]:
 
 ```
 V posledních letech se umělá inteligence (AI) stala horkým tématem v technologickém světě. Díky svému potenciálu způsobit revoluci v mnoha aspektech našeho života se AI stává stále aktuálnější s tím, jak se technologie neustále vyvíjejí. Od jejích aplikací ve zdravotnictví a dopravě až po její využití ve vzdělávání a výrobě nám AI již ukázala svůj obrovský potenciál, který může být pro společnost přínosem v mnoha směrech.
@@ -48,21 +40,18 @@ Celkově má umělá inteligence potenciál způsobit revoluci v mnoha aspektech
 
 Umělou inteligenci lze využít k automatizaci úkolů, jejichž řešením *právě teď* trávíte nespočet hodin.
 Výše jsme uvedli několik příkladů, ale můžete vzít v úvahu i jakýkoli mírně se opakující úkol, který děláte.
-Může to být psaní e-mailů, sestav nebo dokonce psaní kódu. Pokud dokážete úkol popsat
-umělé inteligenci, pravděpodobně ho udělá za vás nebo vám alespoň poskytne výchozí bod. 
+Může to být psaní e-mailů, reportů nebo dokonce psaní kódu. Pokud dokážete úkol správně popsat umělé inteligenci, pravděpodobně ho udělá za vás nebo vám alespoň poskytne výchozí bod. 
 
 ## Jak začít?
 
 Přečtěte si zbytek této kapitoly a pak se podívejte na další kapitoly, které vás zajímají.
-Zejména kapitola [applied prompting](https://learnprompting.org/docs/applied_prompting/overview) by vás mohla zajímat, pokud byste chtěli
-vidět, jak profesionálové používají umělou inteligenci k automatizaci své práce. S UI můžete experimentovat
-pomocí zdrojů, jako je [Playground](https://beta.openai.com/playground), [jiné IDE](https://learnprompting.org/docs/tooling/IDEs/intro), nebo jednoduše pomocí interaktivních [embedů](https://learnprompting.org/docs/basics/intro#embeds), které uvidíte na celé této stránce.
+Zejména kapitola [Použití promptování](/Learn_Prompting_CAI/docs/category/-použití-promptování) by vás mohla zajímat, pokud byste chtěli vidět, jak profesionálové používají umělou inteligenci k automatizaci své práce. S AI můžete experimentovat pomocí zdrojů, jako je [GTP-3 hřiště](https://beta.openai.com/playground), [jiné IDE](/Learn_Prompting_CAI/docs/category/prompt-engineering-ide), nebo jednoduše pomocí interaktivních [embedů](/Learn_Prompting_CAI/docs/basics/intro#vložení), které uvidíte na v průběhu tohoto kurzu.
 
-Než si přečtete další článek, je důležité poznamenat, že k tomu, abyste se mohli věnovat promptnímu inženýrství, nepotřebujete žádné technické zázemí. Většinou se jedná o metodu pokusů a omylů a můžete se učit za pochodu.
+Než si přečtete další článek/kapitolu, je důležité poznamenat, že k tomu, abyste se mohli věnovat prompt inženýrství, nepotřebujete žádné technické zázemí. Většinou se jedná o metodu pokusů a omylů a můžete se učit za pochodu.
 
 ### Vložení
 
-Tento kurz nabízí interaktivní výuku. Můžete experimentovat s cvičeními probíranými v kurzu pomocí [embeds](https://embed.learnprompting.org/), které jsou umístěny po celém webu.
+Tento kurz nabízí interaktivní výuku. Můžete experimentovat s cvičeními probíranými v kurzu pomocí [embedů/vložení](https://embed.learnprompting.org/), které jsou umístěny po celém webu.
 
 Zde je **obrázek**, jak vypadá vložený soubor:
 
@@ -86,8 +75,8 @@ Vkládání zde:
 
 Za předpokladu, že jej vidíte, klikněte na tlačítko **Generate**. Pokud jej používáte poprvé (nebo jste v novém prohlížeči/vymazali jste soubory cookie), bude po vás požadováno zadání klíče [OpenAI API key](https://platform.openai.com/account/api-keys). Bezplatný klíč získáte kliknutím na [tento odkaz](https://platform.openai.com/account/api-keys) a registrací účtu OpenAI. Tento klíč vám umožní používat umělou inteligenci OpenAI ke generování textu v embedech. 
 
-:::poznámka
-Přestože OpenAI poskytuje bezplatné klíče, za používání jejich UI budete muset nakonec zaplatit. Naštěstí je to [relativně levné](https://openai.com/pricing)!
+:::note
+Přestože OpenAI poskytuje bezplatné klíče, za používání jejich AI budete muset nakonec zaplatit. Naštěstí je to [opravdu levné](https://openai.com/pricing)!
 :::
 
 Když přejdete na stránku [OpenAI API key](https://platform.openai.com/account/api-keys), klikněte na tlačítko **Vytvořit nový tajný klíč**. Zobrazí se modální okno, které obsahuje řetězec textu, jako je tento:

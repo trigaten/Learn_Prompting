@@ -4,8 +4,7 @@ sidebar_position: 14
 
 # Kolla Prompt 🚧
 
-[Kolla Prompt](https://kollaprompt.com) je nástroj pro grafické řetězení 
-výzev. 
+[Kolla Prompt](https://kollaprompt.com) je nástroj pro grafické řetězení promptů. 
 
 import Image from '@site/docs/assets/tooling/kollaprompt.png';
 
@@ -15,5 +14,4 @@ import Image from '@site/docs/assets/tooling/kollaprompt.png';
 
 ## Funkce
 
-Kolla obsahuje přetahovací bloky, které jsou spojeny do potrubí a tvoří tak potrubí. To 
-umožňuje také řetězení jazykových modelů s obrazovými modely.
+Kolla obsahuje přetahovací bloky, které jsou spojeny a tvoří tak pipeline. To umožňuje také řetězení jazykových modelů s obrazovými modely.

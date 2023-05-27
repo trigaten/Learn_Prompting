@@ -1,6 +1,6 @@
 api:
   term: API
-  def: "Application Programming Interface. Umožňuje různým systémům vzájemně programově komunikovat. Existují dva typy rozhraní API: REST API (webové rozhraní API) a nativní knihovní rozhraní API."
+  def: Application Programming Interface. Umožňuje různým systémům vzájemně programově komunikovat. Existují dva typy rozhraní API – REST API (webové rozhraní API) a nativní knihovní rozhraní API.
   link: Viz <a href='https://www.redhat.com/en/topics/api/what-is-a-rest-api'>What is a REST API?</a>
 self_consistency:
   term: Self Consistency
@@ -8,16 +8,13 @@ self_consistency:
   link: Viz <a href='https://learnprompting.org/docs/intermediate/self_consistency'>Self Consistency</a>
 labelspace:
   term: Label space
-  def: Všechny možné štítky pro danou úlohu.
+  def: Všechny možné značky pro danou úlohu.
 few shot standard prompt:
   term: few shot standard prompt
-  def: Standardní prompty/výzvy, které obsahují příklady. Exempláře jsou příklady úlohy, kterou se výzva snaží vyřešit, a které jsou součástí samotné výzvy.
+  def: Standardní prompty, které obsahují exempláře. Exempláře jsou příklady úlohy, kterou se prompy snaží vyřešit, a které jsou součástí samotného promptu.
 exemplars:
-  term: Exempláře
-  def: Příklady úlohy, kterou se výzva snaží vyřešit a která je součástí samotné výzvy.
-CoT prompting:
-  term: CoT prompting
-  def: Hlavní myšlenka CoT spočívá v tom, že tím, že LLM ukáže několik exemplářů snímků, kde je vysvětlen proces uvažování v exemplářích, LLM také ukáže proces uvažování při odpovídání na výzvu.
+  term: exemplars
+  def: příklady úlohy, kterou se prompt snaží vyřešit a která je součástí samotného promptu.
 PAL:
   term: PAL
   def: Metoda, která používá kód jako zprostředkující argumentaci.
@@ -27,10 +24,22 @@ LLM:
   def: Large Language Model neboli Velký jazykový model. Model, který je vycvičen k předpovídání dalšího slova ve větě.
 gold_labels:
   term: Gold Labels
-  def: Správné štítky pro danou úlohu.
+  def: Správné značky pro danou úlohu.
 labels:
   term: labels
-  def: Koncept štítků nejlépe pochopíte na příkladu. <br/><br/>Řekněme, že chceme klasifikovat některé tweety jako průměrné nebo neprůměrné. Máme-li seznam tweetů a jim odpovídající *štítek* (průměr nebo ne-průměr), můžeme natrénovat model, který klasifikuje, zda jsou tweety průměrné nebo ne. Štítky jsou obecně jen možností pro klasifikační úlohu.
+  def: Koncept značek nejlépe pochopíte na příkladu. <br/><br/>Řekněme, že chceme klasifikovat některé tweety jako kruté nebo nekruté. Máme-li seznam tweetů a jim odpovídající *značku* (kruté nebo nekruté), můžeme natrénovat model, který klasifikuje, zda jsou tweety kruté nebo ne. Značky jsou obecně jen pravděpodobností pro klasifikační úlohu.
 sentiment analysis:
   term: Sentiment Analysis
   def: Analýza sentimentu je klasifikace textu na pozitivní, negativní nebo jiné sentimenty.
+Chain of Thought Prompting:
+  term: Chain of Thought Prompting
+  def: Prompting pomocí myšlenkového řetězce (Chain-of-thought prompting - CoT) zlepšuje schopnost uvažování LLM tím, že je podněcuje k vytvoření řady mezikroků, které vedou ke konečné odpovědi na vícekrokový problém.
+LTM:
+  term: LTM
+  def: Prompting od nejmenšího k největšímu (Least to Most Prompting – LtM) nejprve rozdělí problém na dílčí problémy a pak řeší každý z nich. Jedná se o techniku inspirovanou reálnými vzdělávacími strategiemi pro děti.
+PAL:
+  term: PAL
+  def: Nová metoda, která využívá LLM ke čtení problémů v přirozeném jazyce a generování programů jako mezikroků v uvažování, ale krok řešení přenáší na programový runtime, jako je interpret Pythonu.
+RLHF: 
+  term: RLHF
+  def: Technika, která trénuje model odměny přímo z lidské zpětné vazby a používá tento model jako funkci odměny k optimalizaci politiky agenta pomocí posilujícího učení (Reinforcement Learning – RL) přes optimalizační algoritmus.

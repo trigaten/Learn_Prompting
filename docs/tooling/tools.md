@@ -4,7 +4,7 @@ sidebar_position: 50
 
 # Nástroje Prompt Engineeringu
 
-Tato část obsahuje seznam nástrojů, které nejsou součástí IDE a které jsou užitečné pro promptování.
+Tato část obsahuje seznam nástrojů, které nejsou součástí IDE (Integrated Development Environment – vývojové prostředí) a které jsou užitečné pro prompting.
 
 ## Vývoj, testování a řetězení promptů
 
@@ -16,11 +16,9 @@ Tato část obsahuje seznam nástrojů, které nejsou součástí IDE a které j
 
 ### [Dust.tt](https://dust.tt)
 
-> Platforma Dust pomáhá vytvářet rozsáhlé aplikace jazykových modelů jako sérii pohotových volání.
-na externí modely. Poskytuje snadno použitelné grafické uživatelské rozhraní pro vytváření řetězců výzev a také sadu standardních bloků a vlastní programovací jazyk pro analýzu a zpracování výstupů jazykových modelů.
+> Platforma Dust pomáhá vytvářet rozsáhlé aplikace jazykových modelů jako sérii pohotových volání na externí modely. Poskytuje snadno použitelné grafické uživatelské rozhraní pro vytváření řetězců promptů a také sadu standardních bloků a vlastní programovací jazyk pro analýzu a zpracování výstupů jazykových modelů.
 
-> Poskytuje řadu funkcí, které urychlují vývoj aplikací,
-jednodušší a robustnější:
+> Poskytuje řadu funkcí, které urychlují, usnadňují a zvyšují robustnost vývoje aplikací:
 - paralelní spouštění více doplnění
 - kontrola výstupů provádění
 - verzování řetězců výzev 
@@ -33,11 +31,11 @@ jednodušší a robustnější:
 
 ### [BetterPrompt](https://github.com/stjordanis/betterprompt)
 
-> ⚡ Sada testů pro LLM výzvy před jejich odesláním do PROD ⚡.
+> ⚡ Sada testů pro LLM prompty před jejich odesláním do PROD ⚡.
 
 ### [Prompt Engine](https://github.com/microsoft/prompt-engine)
 
-> Utilitární knihovna NPM pro vytváření a údržbu výzev pro velké jazykové modely (LLM).
+> Utilitární knihovna NPM pro vytváření a údržbu promptů pro velké jazykové modely (LLM).
 
 ### [Promptify](https://github.com/promptslab/Promptify)
 
@@ -62,11 +60,11 @@ jednodušší a robustnější:
 
 ### [Deforum](https://github.com/HelixNGC7293/DeforumStableDiffusionLocal)
 
-Animovaná videa s umělou inteligencí
+> AI animovaná videa
 
 ### [Visual Prompt Builder](https://tools.saxifrage.xyz/prompt)
 
-Sestavení vizuálních výzev
+> Vizuální tvorba promptů
 
 ### [Interactive Composition Explorer](https://github.com/oughtinc/ice)
 
@@ -74,9 +72,9 @@ Sestavení vizuálních výzev
 
 ### [PTPT - Prompt To Plain Text](https://github.com/LeslieLeung/PTPT)
 
-> PTPT je nástroj příkazového řádku, který umožňuje snadno převádět prosté textové soubory pomocí předdefinovaných výzev s pomocí ChatGPT. Pomocí PTPT můžete bez námahy vytvářet a sdílet formáty promptů, což usnadňuje spolupráci a přizpůsobení. Navíc po přihlášení k odběru získáte přístup k ještě většímu počtu výzev, které vám pomohou vylepšit vaše zkušenosti. Pokud se zajímáte o tvorbu výzev, můžete pomocí PTPT vytvářet a sdílet své výzvy.
+> PTPT je nástroj příkazového řádku, který umožňuje snadno převádět prosté textové soubory díky předdefinovaným promptům s pomocí ChatGPT. Pomocí PTPT můžete bez námahy vytvářet a sdílet formáty promptů, což usnadňuje spolupráci a přizpůsobení. Navíc po přihlášení k odběru získáte přístup k ještě většímu počtu promptů, které vám pomohou vylepšit zkušenost. Pokud se zajímáte o tvorbu promptů, můžete pomocí PTPT vytvářet a sdílet své prompty.
 
 
 ### Ostatní
 
-https://gpttools.com
+> https://gpttools.com

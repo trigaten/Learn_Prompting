@@ -14,7 +14,7 @@ Nedávno jsem četl učebnici o kaktusech(@nobel2002cacti) a uviděl jsem tuto p
 Vzhledem k adaptacím na xerické podmínky a přítomnosti **méně odvozených dřevin** v čeledi Pereskioideae je čeleď Cactaceae jednou z anatomicky i morfologicky nejzajímavějších čeledí. 
 ```
 
-Neměl jsem tušení, co **méně odvozené dřeviny** znamenají, a Google mi o tom ukázal pouze výzkumné články. Rozhodl jsem se použít ChatGPT, abych zjistil, co to znamená. Zadal jsem mu následující výzvu, která je prostá úryvku z knihy a mé otázky.
+Neměl jsem tušení, co **méně odvozené dřeviny** znamenají, a Google mi o tom ukázal pouze výzkumné články. Rozhodl jsem se použít ChatGPT, abych zjistil, co to znamená. Zadal jsem mu následující prompt z úryvku z knihy a mé otázky.
 
 ```text
 Vzhledem k adaptacím na xerické podmínky a přítomnosti méně odvozených dřevin v čeledi Pereskioideae je čeleď Cactaceae jednou z anatomicky i morfologicky nejzajímavějších čeledí. 
