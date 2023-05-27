@@ -24,7 +24,7 @@ function Footer() {
 
   return (
     <ClassicPadding className="bg-gray-100 py-12 sm:py-16 border-t-[gray/200] border flex flex-col sm:flex-row justify-between font-vietnam tracking-tight text-default">
-      <div className="hidden sm:flex">© 2023 Learn Prompting (Česky AI)</div>
+      <div className="hidden sm:flex">© 2023 Learn Prompting (Český AIPE)</div>
       <div className="flex gap-4">
         {rightLinks.map((link, idx) => (
           <div
