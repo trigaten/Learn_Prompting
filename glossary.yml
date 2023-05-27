@@ -18,7 +18,7 @@ exemplars:
 PAL:
   term: PAL
   def: Metoda, která používá kód jako zprostředkující argumentaci.
-  link: Viz <a href='https://learnprompting.org/docs/advanced_applications/pal'>PAL</a>
+  link: Viz <a href='https://www.aipe.cz/docs/advanced_applications/pal'>PAL</a>
 LLM:
   term: LLM
   def: Large Language Model neboli Velký jazykový model. Model, který je vycvičen k předpovídání dalšího slova ve větě.
