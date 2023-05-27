@@ -7,13 +7,13 @@ async function createConfig() {
     return {
         title: 'Naučte se Promptingu: AI Prompt Engineering',
         tagline: 'Český bezplatný kurz o komunikaci s umělou inteligencí',
-        url: 'https://kkosheev.github.io',
-        baseUrl: '/Learn_Prompting_CAI',
+        url: 'https://aipe.cz',
+        baseUrl: '',
         onBrokenLinks: 'throw',
         onBrokenMarkdownLinks: 'warn',
         favicon: 'img/cai_logo.ico',
-        organizationName: 'kkosheev',
-        projectName: 'Learn_Prompting_CAI',
+        organizationName: 'AIPE',
+        projectName: 'Prompt inženýrství umělé inteligence',
         deploymentBranch: 'gh-pages',
         trailingSlash: false,
         // i18n: {
