@@ -8,7 +8,7 @@ async function createConfig() {
         title: 'Naučte se Promptingu: AI Prompt Engineering',
         tagline: 'Český bezplatný kurz o komunikaci s umělou inteligencí',
         url: 'https://aipe.cz',
-        baseUrl: '',
+        baseUrl: '/',
         onBrokenLinks: 'throw',
         onBrokenMarkdownLinks: 'warn',
         favicon: 'img/cai_logo.ico',
