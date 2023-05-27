@@ -52,6 +52,12 @@ async function createConfig() {
             [
                 'classic',
                 {
+                    sitemap: {
+                        changefreq: 'weekly',
+                        priority: 0.5,
+                        ignorePatterns: ['/tags/**'],
+                        filename: 'sitemap.xml',
+                    },
                     gtag: {
                         trackingID: 'G-BV2JPXRYS8',
                     },
