@@ -11,7 +11,7 @@ import Techniques from '@site/docs/assets/techniques.svg';
 </div>
 
 
-V této kapitole jsou představeny jednoduché techniky promptů a terminologie. Abyste porozuměli technice promptů/příkazů, musíte nejprve pochopit některé *velmi* základní pojmy umělé inteligence. Pokud již znáte níže uvedená témata, neváhejte přeskočit na [další kapitolu](/Learn_Prompting_CAI/docs/basics/prompting).
+V této kapitole jsou představeny jednoduché techniky promptů a terminologie. Abyste porozuměli technice promptů/příkazů, musíte nejprve pochopit některé *velmi* základní pojmy umělé inteligence. Pokud již znáte níže uvedená témata, neváhejte přeskočit na [další kapitolu](/docs/basics/prompting).
 
 ## Co je to umělá inteligence?
 
