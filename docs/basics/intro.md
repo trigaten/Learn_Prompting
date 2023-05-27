@@ -45,7 +45,7 @@ Může to být psaní e-mailů, reportů nebo dokonce psaní kódu. Pokud doká�
 ## Jak začít?
 
 Přečtěte si zbytek této kapitoly a pak se podívejte na další kapitoly, které vás zajímají.
-Zejména kapitola [Použití promptování](/Learn_Prompting_CAI/docs/category/-použití-promptování) by vás mohla zajímat, pokud byste chtěli vidět, jak profesionálové používají umělou inteligenci k automatizaci své práce. S AI můžete experimentovat pomocí zdrojů, jako je [GTP-3 hřiště](https://beta.openai.com/playground), [jiné IDE](/Learn_Prompting_CAI/docs/category/prompt-engineering-ide), nebo jednoduše pomocí interaktivních [embedů](/Learn_Prompting_CAI/docs/basics/intro#vložení), které uvidíte na v průběhu tohoto kurzu.
+ S AI můžete experimentovat pomocí zdrojů, jako je [GTP-3 hřiště](https://beta.openai.com/playground), [jiné IDE](/Learn_Prompting_CAI/docs/category/prompt-engineering-ide), nebo jednoduše pomocí interaktivních [embedů](/Learn_Prompting_CAI/docs/basics/intro#vložení), které uvidíte na v průběhu tohoto kurzu.
 
 Než si přečtete další článek/kapitolu, je důležité poznamenat, že k tomu, abyste se mohli věnovat prompt inženýrství, nepotřebujete žádné technické zázemí. Většinou se jedná o metodu pokusů a omylů a můžete se učit za pochodu.
 
