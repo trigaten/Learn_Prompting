@@ -5,11 +5,11 @@ const math = require("remark-math");
 async function createConfig() {
   const katex = (await import("rehype-katex")).default;
   return {
-    title: "Naučte se Promptování: Průvodce komunikací s umělou inteligencí",
+    title: "Naučte se Promptingu: Průvodce komunikací s umělou inteligencí",
     tagline:
       "Český překlad bezplatného open source kurzu o komunikaci s umělou inteligencí",
-    url: "https://emilliepost.github.io",
-    baseUrl: "/Learn_Prompting_CAI/",
+    url: "https://aipe.cz",
+    baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/cai_logo.ico",
