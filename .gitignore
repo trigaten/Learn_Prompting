@@ -1,5 +1,6 @@
 notes.txt
 build
+.DS_Store
 
 # Dependencies
 /node_modules
