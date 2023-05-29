@@ -86,3 +86,4 @@ Add 2+2:
 
 多范例提示是让模型生成准确且格式正确的输出的强大技术！
  
+By [gezilinll](https://github.com/gezilinll).

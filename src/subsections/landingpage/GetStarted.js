@@ -12,7 +12,7 @@ function GetStarted() {
           <div className="text-center md:text-left text-default text-2xl font-vietnam font-light tracking-tight pt-6 px-12 md:px-0">
             Join 900K+ learners mastering the skill of communicating with AI
           </div>
-          <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12 mt-1 mt-[-6]">
+          <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12 mt-1">
             <a href="https://learnprompting.org/docs/intro">
               <Button
                 onClick={() => {

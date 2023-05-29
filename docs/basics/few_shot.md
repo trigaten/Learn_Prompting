@@ -11,7 +11,7 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 </div>
 
 
-Yet another prompting strategy is *few shot prompting*, which is basically just showing the model a few examples (called shots) of what you want it to do. 
+Yet another prompting strategy is *few shot prompting*(@logan-iv-etal-2022-cutting)(@lake2015human), which is basically just showing the model a few examples (called shots) of what you want it to do. 
 
 Consider the above example, in which we are attempting to classify customer feedback as positive or negative. We show the model 3 examples of positive/negative feedback, then we show it a new piece of feedback that has not been classified yet (`It doesnt work!:`). The model sees that the first 3 examples were classified as either `positive` or `negative`, and uses this information to classify the new example as `negative`.
 

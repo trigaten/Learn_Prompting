@@ -69,7 +69,7 @@ Example MRKL System (AI21)
 ## An Example
 
 I have reproduced an example MRKL System from the original paper, using Dust.tt, 
-linked [here](https://dust.tt/trigaten/a/98bdd65cb7). 
+linked [here](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7). 
 The system reads a math problem (e.g. `What is 20 times 5^6?`), extracts the numbers and the operations,
 and reformats them for a calculator app (e.g. `20*5^6`). It then sends the reformatted equation 
 to Google's calculator app, and returns the result. Note that the original paper performs prompt tuning on the router (the LLM), but I do not in this example. Let's walk through how this works:
@@ -114,7 +114,7 @@ Below we can see the final results, which are all correct!
   <img src={final} style={{width: "750px"}} />
 </div>
 
-Feel free to clone and experiment with this playground [here](https://dust.tt/trigaten/a/98bdd65cb7).
+Feel free to clone and experiment with this playground [here](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7).
 
 ## Notes
 MRKL was developed by [AI21](https://www.ai21.com/) and originally used their 
