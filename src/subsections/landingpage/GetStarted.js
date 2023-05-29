@@ -10,7 +10,7 @@ function GetStarted() {
         <div className="text-center md:text-left text-5xl md:text-7xl font-vietnam font-medium tracking-tighter pt-16">
           <span style={{ color: "black" }}>Get Started.</span>
           <div className="text-center md:text-left text-default text-2xl font-vietnam font-light tracking-tight pt-6 px-12 md:px-0">
-            Join 700K+ learners mastering the skill of communicating with AI
+            Join 900K+ learners mastering the skill of communicating with AI
           </div>
           <div className="flex justify-center md:justify-start pt-8 text-[1rem] tracking-tighter mb-12 mt-1 mt-[-6]">
             <a href="https://learnprompting.org/docs/intro">

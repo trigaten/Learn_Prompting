@@ -21,11 +21,11 @@ import OpenAI from "@site/static/img/openai_logo.png";
 function Join() {
   const stats = [
     {
-      header: "700K+",
+      header: "900K+",
       subtitle: "People Learning",
     },
     {
-      header: "36K+",
+      header: "40K+",
       subtitle: "Discord Members",
     },
     {
