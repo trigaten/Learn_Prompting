@@ -15,7 +15,7 @@ sidebar_position: 30
 ```text
 Write an outline for a short blog post about why Christmas Cacti are a great buy.
 
-here are many products which attempt to do this, but you can often get consistent results doing it yourself. 
+There are many products which attempt to do this, but you can often get consistent results doing it yourself. 
 
 // highlight-start
 I. Introduction
@@ -113,4 +113,4 @@ At Prickly Point Nursery, we specialize in providing high quality plants and flo
 
 ## 핵심
 
-- AI는 여러분이 좋은 글을 짧은 시간내에 써낼 수 있도록 도와준다. 이 과정이 완전히 자동은 아니기 때문에 여러분은 수동적으로 이 과정에 참여해야 합니다.
+- AI는 여러분이 좋은 글을 짧은 시간내에 써낼 수 있도록 돕는다. 이 과정이 완전히 자동은 아니기 때문에 여러분은 수동으로 이 과정에 참여해야 합니다.
