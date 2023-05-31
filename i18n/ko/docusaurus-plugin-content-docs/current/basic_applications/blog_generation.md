@@ -48,7 +48,7 @@ C. Suggestions for Care and Maintenance
 That's a great outline, but a bit long. Consdense it to the main points:
 ```
 
-:::참고
+:::note
 우리는 당신이 ChatGPT를 쓰고 있다고 가정하고 있다 (만약 아니라면 아웃라인을 새로운 프롬프트 앞에 넣어주자)
 :::
 
