@@ -15,7 +15,7 @@ sidebar_position: 30
 ```text
 Write an outline for a short blog post about why Christmas Cacti are a great buy.
 
-here are many products which attempt to do this, but you can often get consistent results doing it yourself. 
+There are many products which attempt to do this, but you can often get consistent results doing it yourself. 
 
 // highlight-start
 I. Introduction
