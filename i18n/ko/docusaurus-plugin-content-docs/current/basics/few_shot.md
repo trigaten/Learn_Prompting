@@ -23,7 +23,7 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 
 <br/>
 
-:::참고
+:::note
 각 입력-출력 쌍은 *exemplar*라고 불립니다.
 :::
 
@@ -40,7 +40,7 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 
 모델에게 몇가지 정확한 출력 포멧을 제공하는 것으로, 새로운 글에서도 정확한 출력을 제공할 수 있을 것입니다.
 
-:::참고
+:::note
 그냥 명령 프롬프트를 통해서도 같은 출력을 만들 수 있지만 퓨샷 프롬프트는 더 *일관성*있는 출력을 제공할 것입니다.
 
 :::
