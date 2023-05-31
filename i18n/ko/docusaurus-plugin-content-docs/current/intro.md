@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ## 이 과정에서 가장 중요한 부분은 여러분의 피드백입니다!
 질문, 의견 또는 제안이 있다면 언제든지 해주세요:
-  - **[깃헙 이슈](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**을 올리고
+  - **[깃헙 이슈](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**를 올리고
   - [learnprompting@gmail.com](mailto:learnprompting@gmail.com)로 저희에게 이메일 주세요
   - [디스코드](https://learnprompting.org/discord) 커뮤니티에 들어오세요
   - [트위터](https://twitter.com/learnprompting)를 팔로우 해주세요
@@ -71,7 +71,7 @@ sidebar_position: 1
 
 **심화 어플리케이션**: 강력하면서도 더 심화된 PE 어플리케이션. 
 
-**신뢰성**: 어떻게 LLM들을 더 신뢰도 있게 만들까
+**신뢰성**: 어떻게 대형 언어 모형 (LLM)들을 더 신뢰도 있게 만들까
 
 **이미지들**: DALLE and Stable Diffusion같은 텍스트 => 이미지 모델들을 위한 PE!
 
