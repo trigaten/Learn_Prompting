@@ -14,12 +14,11 @@ sidebar_position: 1
 
 이 과정은 오픈 소스이며 다양한 연구자, 번역가, 취미 활동가들로 구성된 커뮤니티에서 제작했습니다. 우리는 AI가 모든 사람이 접근할 수 있어야 하며, 명확하고 객관적으로 설명되어야 한다고 믿습니다. 이를 위해 과도한 전문 용어와 과대 광고가 없는 포괄적이고 편견 없는 강좌를 제작하기 위해 노력하고 있습니다.
 
-우리는 이 접근 방식이 프롬프트 엔지니어링 커뮤니티에서 인정받고 있음을 발견했습니다: 이 과정은 [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), )에서 인용하며 [O'REILY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, OpenAI. OpenAI와 같은 회사 사람들이 사용합니다 또한 <a href="rel={"nofollow"}>거의 </a><a href="https://learnwithhasan.com/prompt-engineering-guide/ " rel={"nofollow"}>모든 </a><a href="rel={"nofollow"}>기타 <a href="https://youtu.be/yR4hNBNS6yc ?t=743" rel={"nofollow"}> 프롬프트 </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208 " rel={"nofollow"}> 엔지니어링 </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495 " rel={"nofollow"}> 비디오 </a> <a href="rel="rel={"nofollow"> 가이드 </a>
-가 이 과정의 자료를 사용합니다. 620,000명의 사용자와 33,000명의 [Discord](https://discord.gg/learn-prompting) 회원을 포함하여 신속한 엔지니어링 커뮤니티를 지원하게 되어 영광입니다.
+우리는 이 접근 방식이 프롬프트 엔지니어링 커뮤니티에서 인정받고 있음을 발견했습니다: 이 과정은 [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), )에서 인용하며 [O'REILY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, OpenAI. OpenAI와 같은 회사 사람들이 사용합니다 또한 <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>거의 </a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>모든 </a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>다른 </a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>프롬프트 </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>엔지니어링 </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>video </a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>와 </a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>가이드 </a>가 이 과정의 자료를 사용합니다. 620,000명의 사용자와 33,000명의 [Discord](https://discord.gg/learn-prompting) 회원을 포함하여 프롬프트 엔지니어링 커뮤니티를 지원하게 되어 영광입니다.
 
 ### 가르치는 방법
 
-신속한 엔지니어링 교육에 대한 우리의 접근 방식은 다음과 같은 원칙에 따라 안내됩니다:
+프롬프트 엔지니어링 교육에 대한 우리의 접근 방식은 다음과 같은 원칙에 따라 안내됩니다:
 
 **빠른 반복**—새로운 PE 콘텐츠는 거의 매일 게시되므로 새로운 기술에 대한 빈번하고 간결한 기사로 본 코스를 최신 상태로 유지할 것입니다. 어떤 주제에 대해 자세히 알아보고 싶은지 알려주세요!
 
@@ -55,27 +54,27 @@ sidebar_position: 1
 
 다음은 각 장에 대한 간략한 개요입니다:
 
-**기본**: 신속한 엔지니어링 및 기본 기술 소개
+**기본**: 프롬프트 엔지니어링 및 기본 기술 소개
 
-**기본 애플리케이션**: 간편하고 실용적인 신속한 엔지니어링 애플리케이션
+**기본 애플리케이션**: 간편하고 실용적인 프롬프트 엔지니어링 애플리케이션
 
 **중급**: 중간 정도의 복잡성을 가진 연구 기반 PE 기술
 
 **응용 프롬프트**: 커뮤니티 구성원이 제공하는 종합적인 PE 프로세스 단계별 설명
 
-**고급 애플리케이션**: 강력하고 복잡한 신속한 엔지니어링 애플리케이션
+**고급 애플리케이션**: 강력하고 복잡한 프롬프트 엔지니어링 애플리케이션
 
 **신뢰성**: LLM(대규모 언어 모델)의 신뢰성 향상
 
-**Images**: DALLE 및 안정적인 확산과 같은 텍스트-이미지 모델을 위한 신속한 엔지니어링
+**Images**: DALLE 및 안정적인 확산과 같은 텍스트-이미지 모델을 위한 프롬프트 엔지니어링
 
-**프롬프트 주입**: 해킹, 그러나 신속한 엔지니어링을 위한 것입니다
+**프롬프트 주입**: 해킹, 그러나 프롬프트 엔지니어링을 위한 것입니다
 
-**툴링**: 다양한 신속한 엔지니어링 도구 및 IDE 검토
+**툴링**: 다양한 프롬프트 엔지니어링 도구 및 IDE 검토
 
 **프롬프트 튜닝**: 그라데이션 기반 기술을 사용하여 프롬프트 개선
 
-**기타**: 신속한 엔지니어링과 관련된 추가 주제 및 기술 모음
+**기타**: 프롬프트 엔지니어링과 관련된 추가 주제 및 기술 모음
 
 ## 피드백
 
