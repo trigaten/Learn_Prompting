@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ## 이 과정에서 가장 중요한 부분은 여러분의 피드백입니다!
 질문, 의견 또는 제안이 있다면 언제든지 해주세요:
-  - **[깃헙 이슈](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**를 올리고
+  - **[깃헙 이슈](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**를 만드세요
   - [learnprompting@gmail.com](mailto:learnprompting@gmail.com)로 저희에게 이메일 주세요
   - [디스코드](https://learnprompting.org/discord) 커뮤니티에 들어오세요
   - [트위터](https://twitter.com/learnprompting)를 팔로우 해주세요
