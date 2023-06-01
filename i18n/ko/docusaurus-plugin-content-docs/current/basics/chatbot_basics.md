@@ -68,7 +68,7 @@ import primed_question from '@site/docs/assets/primed_question.png';
   <img src={unprimed_question} style={{width: "650px"}} />
 </div>
 
-두 번째 예시는 ChatGPT에 프라이밍된 정확한 포맷의 질문을 전달한 결과입니다. 첫 번쨰 답변과 몇가지의 비슷한 점이 있다는 것을 알 수 있을 것입니다. 예를 들어 다양한 분야에 대한 예시를 제공했다는 점은 비슷하지만 더 심화된 답변을 제공했습니다. 일상과 관련된 예시와 함께 일관성 있는 답변을 선호하며 리스트 포맷을 포기했습니다.
+두 번째 예시는 ChatGPT에 프라이밍된 정확한 포맷의 질문을 전달한 결과입니다. 첫 번째 답변과 몇가지의 비슷한 점이 있다는 것을 알 수 있을 것입니다. 예를 들어 다양한 분야에 대한 예시를 제공했다는 점은 비슷하지만 더 심화된 답변을 제공했습니다. 일상과 관련된 예시와 함께 일관성 있는 답변을 선호하며 리스트 포맷을 포기했습니다.
 
 <div style={{textAlign: 'center'}}>
   <img src={primed_question} style={{width: "650px"}} />
