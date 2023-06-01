@@ -6,7 +6,7 @@ sidebar_position: 4
 
 
 제로 샷 사고 사슬 프롬프팅(제로 샷 CoT)는 아주 간단한 제로 샷 프롬프팅 기술이면서 CoT 프롬프팅(@wei2022chain)의 후속 기술이다. ""**Let's think step
-by step.**""을 질문의 마지막에 넣게 되면 LLM은 질문에 대한 사고 사슬을 생성하게 되고 이 사고 사슬을 이용해서 더 정확한 답변을 추출해낼 수 있다.  
+by step.**""을 질문의 마지막에 넣게 되면 LLM은 질문에 대한 사고 사슬을 생성하게 되고 이 사고 사슬을 이용해서 더 정확한 답변을 추출해낼 수 있다.
 
 import ZSImage from '@site/docs/assets/zero_shot.png';
 
@@ -66,7 +66,7 @@ import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';
 
 Kojima 등, 많은 제로 샷 CoT(Zero-shot-CoT) 프롬프트 연구에 따르면
 "Let’s solve this problem by splitting it into steps." or "Let’s think about this logically."등 다양한 어구들이 있지만
-"Let's think step by step"가 가장 효과적이였습니다. 
+"Let's think step by step"가 가장 효과적이였습니다.
 
 
 
@@ -75,5 +75,5 @@ Kojima 등, 많은 제로 샷 CoT(Zero-shot-CoT) 프롬프트 연구에 따르�
 추출 단계는 종종 작업에 따라 달라야져야 하므로 제로 샷 CoT(Zero-Shot-CoT)을 처음에 보이는 것보다 더 특수하게 사용할 수 있습니다.
 
 일례로 저는 생성 작업에서 답변의 길이를 늘리는 데에서 제로 샷 CoT가 효과적이라는 것을 발견했습니다.
-예를 들어서, 답변의 길이를 늘리기 위해서 
+예를 들어서, 답변의 길이를 늘리기 위해서
 단순히 `Write a story about a frog and a mushroom who become friends.`보다는 `Let's think step by step.`를 말미에 추가하는 것을 고려해볼 필요가 있습니다.

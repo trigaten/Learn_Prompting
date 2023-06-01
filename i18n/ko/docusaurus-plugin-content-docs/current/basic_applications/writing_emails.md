@@ -9,7 +9,7 @@ sidebar_position: 10
 
 ## 아픈 날 보내는 기본적인 메일
 
-여러분이 아파서 회사에 가지 못한다고 생각해보세요(아니면 가기 싫어서😈). 여기 상사에게 여러분이 아프다는 것을 말하는 이메일을 작성하는 간단한 프롬프트가 있습니다. 
+여러분이 아파서 회사에 가지 못한다고 생각해보세요(아니면 가기 싫어서😈). 여기 상사에게 여러분이 아프다는 것을 말하는 이메일을 작성하는 간단한 프롬프트가 있습니다.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Mario\nBoss's name: John\n\nWrite an email to my boss saying that I will be out of office today since I am sick. " initial-response="Subject: Out of Office - Sick\n\nDear John,\n\nI am writing to inform you that I will be out of office today due to illness. I apologize for any inconvenience this may cause.\n\nI will be sure to keep you updated on my progress and will be back in the office as soon as I am feeling better.\n\nThank you for your understanding.\n\nSincerely,\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>

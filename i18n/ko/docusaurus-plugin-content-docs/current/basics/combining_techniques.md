@@ -20,7 +20,7 @@ import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
 ```text
 Twitter is a social media platform where users can post short messages called "tweets".
 Tweets can be positive or negative, and we would like to be able to classify tweets as
-positive or negative. Here are some examples of positive and negative tweets. Make sure 
+positive or negative. Here are some examples of positive and negative tweets. Make sure
 to classify the last tweet correctly.
 
 Q: Tweet: "What a beautiful day!"

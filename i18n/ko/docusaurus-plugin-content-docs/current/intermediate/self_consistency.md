@@ -22,7 +22,7 @@ import SCImage from '@site/docs/assets/self_consistency.png';
 
 ## 예제
 
-이메일 분석에 대한 간단한 예제에 대해서 알아보겠습니다. 여러분이 소프트웨어 회사에 다니고 매일 몇 백 통의 이메일을 받는다고 가정해봅시다. 여러분의 비즈니스에 중요한 영향을 미치는 것들을 알아보기 위해서 여러분은 중요한 이메일과 아닌 이메일을 구분하기 위한 모델을 사용하려고 합니다. 
+이메일 분석에 대한 간단한 예제에 대해서 알아보겠습니다. 여러분이 소프트웨어 회사에 다니고 매일 몇 백 통의 이메일을 받는다고 가정해봅시다. 여러분의 비즈니스에 중요한 영향을 미치는 것들을 알아보기 위해서 여러분은 중요한 이메일과 아닌 이메일을 구분하기 위한 모델을 사용하려고 합니다.
 
 여기에 여러분이 받을 이메일에 대한 예시가 있습니다:
 
@@ -54,27 +54,27 @@ Donny
 Classify the above email as IMPORTANT or NOT IMPORTANT as it relates to a software company. Let's think step by step.
 ```
 
-이제, 우리는 위의 프롬프트를 통해서 여러 개의 독립적인 사고 사슬을 만들 것입니다. 여기에 그 몇가지 예제가 있습니다: 
+이제, 우리는 위의 프롬프트를 통해서 여러 개의 독립적인 사고 사슬을 만들 것입니다. 여기에 그 몇가지 예제가 있습니다:
 
 ```text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system. 
-This is important because it could lead to a data breach. 
+The sender has discovered a major security vulnerability in the system.
+This is important because it could lead to a data breach.
 I would classify this email as IMPORTANT
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use. 
+The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use.
 I would classify this email as NOT IMPORTANT
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-The sender is likely a hacker and may have access to the system. 
-This is important because it could lead to a data breach. 
+The sender is likely a hacker and may have access to the system.
+This is important because it could lead to a data breach.
 I would classify this email as IMPORTANT
 <!-- highlight-end -->
 ```
@@ -83,9 +83,9 @@ I would classify this email as IMPORTANT
 
 ## 결론
 
-자기 일관성은 산술적, 상식적, 상징적 추론 과제에서 결과를 더 개선했습니다. 
+자기 일관성은 산술적, 상식적, 상징적 추론 과제에서 결과를 더 개선했습니다.
 
-심지어 기본 CoT가 효과적이지 않을 때도 자기 일관성은 여전히 도움이 된다는 것도 알 수 있었습니다. 
+심지어 기본 CoT가 효과적이지 않을 때도 자기 일관성은 여전히 도움이 된다는 것도 알 수 있었습니다.
 
 ## 참고
 

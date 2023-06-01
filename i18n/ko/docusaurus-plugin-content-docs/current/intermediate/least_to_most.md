@@ -8,7 +8,7 @@ style: chicago
 
 최소 최대 프롬프트(LtM)(@zhou2022leasttomost)는 CoT 프롬프팅에서 더 나아가 하나의 문제를 여러 개의 서브 문제들로 분할 후 각각을 해결하는 것입니다. 이 기술을 실제로 아이들을 위한 교육 전략에서 영감을 받아서 만들어졌습니다.
 
-먼저 CoT 프롬프팅에서 풀어야 할 문제는 각각 서로를 기반으로하는 서브 문제들로 이루어져 있습니다. 두 번째로 이 서브 문제들은 한번에 하나씩 해결됩니다. 일반 CoT와는 다르게 이전에 풀었던 서브 문제들은 다음 문제를 푸는데에 사용됩니다.   
+먼저 CoT 프롬프팅에서 풀어야 할 문제는 각각 서로를 기반으로하는 서브 문제들로 이루어져 있습니다. 두 번째로 이 서브 문제들은 한번에 하나씩 해결됩니다. 일반 CoT와는 다르게 이전에 풀었던 서브 문제들은 다음 문제를 푸는데에 사용됩니다.
 
 import leastToMost from '@site/docs/assets/least_to_most_formal.png'
 
@@ -30,7 +30,7 @@ import leastToMost from '@site/docs/assets/least_to_most_formal.png'
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-<br/>실패입니다. 이제 서브 문제들로 나누어보는 과정을 진행해봅시다. 
+<br/>실패입니다. 이제 서브 문제들로 나누어보는 과정을 진행해봅시다.
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiMS4gRGV0ZXJtaW5lIGlmIHRoZSBjdXN0b21lciBpcyB3aXRoaW4gdGhlIDMwLWRheSByZXR1cm4gd2luZG93LlxuMi4gQ2FsY3VsYXRlIHRoZSBhbW91bnQgb2Ygc3RvcmUgY3JlZGl0IHRoZSBjdXN0b21lciB3b3VsZCByZWNlaXZlIGlmIHRoZXkgcmV0dXJuZWQgdGhlIHNoaXJ0LlxuMy4gQ2FsY3VsYXRlIHRoZSBjb3N0IG9mIHR3byBzaGlydHMgYXQgdGhlIGN1cnJlbnQgNTAlIGRpc2NvdW50LlxuNC4gRGV0ZXJtaW5lIGlmIHRoZSBjdXN0b21lciBoYXMgZW5vdWdoIHN0b3JlIGNyZWRpdCB0byBwdXJjaGFzZSB0d28gc2hpcnRzLiIsInByb21wdCI6IkNVU1RPTUVSIElOUVVJUlk6XG5JIGp1c3QgYm91Z2h0IGEgVC1zaGlydCBmcm9tIHlvdXIgQXJub2xkIGNvbGxlY3Rpb24gb24gTWFyY2ggMXN0LiBJIHNhdyB0aGF0IGl0IHdhcyBvbiBkaXNjb3VudCwgc28gYm91Z2h0IGEgc2hpcnQgdGhhdCB3YXMgb3JpZ2luYWxsICQzMCwgYW5kIGdvdCA0MCUgb2ZmLiBJIHNhdyB0aGF0IHlvdSBoYXZlIGEgbmV3IGRpc2NvdW50IGZvciBzaGlydHMgYXQgNTAlLiBJJ20gd29uZGVyaW5nIGlmIEkgY2FuIHJldHVybiB0aGUgc2hpcnQgYW5kIGhhdmUgZW5vdWdoIHN0b3JlIGNyZWRpdCB0byBidXkgdHdvIG9mIHlvdXIgc2hpcnRzP1xuXG5JTlNUUlVDVElPTlM6XG5Zb3UgYXJlIGEgY3VzdG9tZXIgc2VydmljZSBhZ2VudCB0YXNrZWQgd2l0aCBraW5kbHkgcmVzcG9uZGluZyB0byBjdXN0b21lciBpbnF1aXJpZXMuIFJldHVybnMgYXJlIGFsbG93ZWQgd2l0aGluIDMwIGRheXMuIFRvZGF5J3MgZGF0ZSBpcyBNYXJjaCAyOXRoLiBUaGVyZSBpcyBjdXJyZW50bHkgYSA1MCUgZGlzY291bnQgb24gYWxsIHNoaXJ0cy4gU2hpcnQgcHJpY2VzIHJhbmdlIGZyb20gJDE4LSQxMDAgYXQgeW91ciBzdG9yZS4gRG8gbm90IG1ha2UgdXAgYW55IGluZm9ybWF0aW9uIGFib3V0IGRpc2NvdW50IHBvbGljaWVzLlxuV2hhdCBzdWJwcm9ibGVtcyBtdXN0IGJlIHNvbHZlZCBiZWZvcmUgYW5zd2VyaW5nIHRoZSBpbnF1aXJ5PyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -74,7 +74,7 @@ LtM은 문제를 여러 단계로 나누는데 명시적인 지시를 사용하�
 
 ### 세 번째 시도: 최소 최대 프롬프팅(프롬프트 한 개)
 
-최소 최대 프롬프팅을 통해서 우리는 이전에 연결된 결과를 다시 진술하기 위한 개별 단계를 재구성하여 사고 사슬 개념을 강화한다. 이 방법은 새로운 문자를 연결하는 각각의 과정들을 단순화한다. 그리고 이 방법은 단어가 12개 이상일 때의 성능을 향상시킨다. 
+최소 최대 프롬프팅을 통해서 우리는 이전에 연결된 결과를 다시 진술하기 위한 개별 단계를 재구성하여 사고 사슬 개념을 강화한다. 이 방법은 새로운 문자를 연결하는 각각의 과정들을 단순화한다. 그리고 이 방법은 단어가 12개 이상일 때의 성능을 향상시킨다.
 
 이 접근법은 그냥 사고 사슬 방식과 비슷해보일 수 있습니다. 하지만 실제로는 굉장히 다릅니다. 가장 다른 부분은 모든 단계에서 이전의 연결을 활용한다는 점입니다. "think, machine, learning"의 예를 들어봅시다, "k","e","g" 각각을 개별적으로 연결하는 것이 아니라 "k"와 "e"를 더해서 "ke"를 만들고 그 다음 "g"를 더하는 방식을 사용할 것입니다. 이 이전의 결과물을 활용하는 것으로 인해서 모델은 각각의 단계에서는 아주 조금의 작업만을 필요하기 때문에 더 긴 사슬을 형성할 수 있습니다.
 
@@ -83,7 +83,7 @@ LtM은 문제를 여러 단계로 나누는데 명시적인 지시를 사용하�
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
-     
+
 
 ### 결론
 
@@ -138,6 +138,6 @@ LLM으로요.
 LtM은 여러 장점이 있습니다:
 - 사고 사슬보다 더 개선된 정확도
 - 프롬프트안의 예시들 보다 더 복잡한 문제들을 일반화하는데 장점이 있다.
-- 특히 SCAN같은 문제에서 구성 일반화에 굉장한 장점이 있다. 
+- 특히 SCAN같은 문제에서 구성 일반화에 굉장한 장점이 있다.
 
 text-davinci-002에 표준 프롬프트로 작성한 결과는 6%정도의 SCAN문제 정확도를 가지는데 최소 최대 프롬프팅의 결과는 76%의 정확도를 가진다. 게다가 code-davinci-002 모델에서는 더 뚜렷하게 나타나는데 최소 최대 프롬프팅은 무려 99.7%의 정확도를 가진다.
