@@ -34,7 +34,7 @@ sidebar_position: 1
 
 ## 읽는 법
 
-모든 장을 순서대로 읽을 필요는 없습니다. 무엇이 흥미로운지 자유롭게 살펴보십시오! AI, 머신러닝, 프로그래밍을 처음 하시는 분들은 [기본사항](https://learnprompting.org/docs/category/-basics) 섹션과 [설명서](https://learnprompting.org/docs/basics/intro) 가이드)부터 시작하는 것이 좋습니다. 이러한 개념에 이미 익숙하신 분들은 [중급](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate) 섹션을 통해 지식을 확장할 수 있습니다.
+모든 장을 순서대로 읽을 필요는 없습니다. 무엇이 흥미로운지 자유롭게 살펴보십시오! AI, 머신러닝, 프로그래밍을 처음 하시는 분들은 [기본사항](https://learnprompting.org/ko/docs/category/-basics) 섹션과 [소개](https://learnprompting.org/ko/docs/basics/intro)부터 시작하는 것이 좋습니다. 이러한 개념에 이미 익숙하신 분들은 [중급](https://learnprompting.org/ko/docs/category/%EF%B8%8F-intermediate) 섹션을 통해 지식을 확장할 수 있습니다.
 
 ### 문서 등급 시스템
 
