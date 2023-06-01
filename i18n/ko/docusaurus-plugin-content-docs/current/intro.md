@@ -83,7 +83,7 @@ sidebar_position: 1
 질문, 의견 또는 제안이 있는 경우 다음을 수행할 수 있습니다:
 
 - [GitHub에 대한 이슈 만들기](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
-- [learnprompting@gmail.com ](메일 주소:learnprompting@gmail.com )로 이메일을 보내주십시오
+- [learnprompting@gmail.com](mailto:learnprompting@gmail.com)로 이메일을 보내주십시오
 - [Discord 커뮤니티](https://learnprompting.org/discord) 에 가입합니다
 - [Twitter](https://twitter.com/learnprompting) 에서 팔로우 해주세요
 
