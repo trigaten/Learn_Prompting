@@ -18,7 +18,7 @@ ChatGPT를 통해서 인상깊고, 상호작용하는 이야기를 생성하고 
 
 ## Step 1: 연구
 
-첫번째로 여러분이 원하는 프롬프트에 대해서 연구해보는 것입니다. 구글링을 포함해서 아래의 자료들은 도움이 될 것입니다:
+첫 번째로 여러분이 원하는 프롬프트에 대해서 연구해보는 것입니다. 구글링을 포함해서 아래의 자료들은 도움이 될 것입니다:
 
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [FlowGPT](https://flowgpt.com)

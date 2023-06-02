@@ -15,7 +15,7 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 
 위의 예제에서 우리는 고객의 피드백이 긍정적인지 부정적인지 구분하려고 합니다. 우리는 모델에게 긍적/부정의 3가지 예제를 제공했고 그리고 아직 구분되지 않은 피드백을 보여주었습니다(`It doesnt work!:`과 함께). 모델은 먼저 `긍정`과 `부정`으로 구분되어 있는 3가지 예제를 보고 이 정보를 이용해서 주어진 새로운 예제를 `부정`으로 구분했습니다.
 
-예제를 구조화하는 것은 상당히 중요합니다. `input: classification`을 통해서 3개의 예제를 구조화 했기 때문에 모델은 `this review is positive`와 같은 문장 전체로 답변하는 게 아니라 마지막 라인에 한 개의 단어로 답변하게 되었습니다. 
+예제를 구조화하는 것은 상당히 중요합니다. `input: classification`을 통해서 3개의 예제를 구조화 했기 때문에 모델은 `this review is positive`와 같은 문장 전체로 답변하는 게 아니라 마지막 라인에 한 개의 단어로 답변하게 되었습니다.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Great product, 10/10: positive\nDidn't work very well: negative\nSuper helpful, worth it: positive\nIt doesnt work!:" initial-response="negative" max-tokens="256" box-rows="5" model-temp="0.0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
@@ -52,7 +52,7 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 종류:
 - 제로 샷(0 shot) 프롬프팅: 모델에게 예제를 제공하지 않음
 - 원 샷(1 shot) 프롬프팅: 모델에게 한 개의 예제를 제공함
-- 퓨샷 프롬프팅: 2개 이상의 모델을 제공함 
+- 퓨샷 프롬프팅: 2개 이상의 모델을 제공함
 
 ### 제로 샷(0-shot) 프롬프팅
 
@@ -67,7 +67,7 @@ Add 2+2:
 ### 원 샷(1-shot) 프롬프트
 
 원 샷(1-shot) 프롬프트는 모델에게 1개의 예시만 제공합니다. `Add 2+2:`을 물어보고 싶을 떄:
-   
+
 ```text
 Add 3+3: 6
 Add 2+2:
@@ -91,4 +91,3 @@ Add 2+2:
 
 퓨샷 프롬프팅(Few-shot prompting)은 모델에게 정확하고 구조화된 출력을 생성하게 하는 아주 강력한 기술입니다.
 
- 
