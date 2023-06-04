@@ -34,12 +34,20 @@ Abaixo estão alguns demos (que apenas realizam extração de raciocínio). Este
 
 #### Incorreto
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Se João tem 5 peras, come 2 e compra mais 5, depois dá 3 ao seu amigo, quantas peras ele tem agora?" initial-response="O João tem oito peras." max-tokens="256" box-rows="3" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiTyBKb%2BNvIHRlbSA4IHBlcmFzLiIsInByb21wdCI6IlNlIEpv428gdGVtIDUgcGVyYXMsIGNvbWUgMiBlIGNvbXByYSBtYWlzIDUsIGRlcG9pcyBk4SAzIGFvIHNldSBhbWlnbywgcXVhbnRhcyBwZXJhcyBlbGUgdGVtIGFnb3JhPyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 
 #### Correto
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Se João tem 5 peras, come 2 e compra mais 5, depois dá 3 ao seu amigo, quantas peras ele tem agora?\n\nVamos pensar passo a passo." initial-response="João tem 5 peras, come 2, então sobram 5 - 2 = 3 peras. Depois ele compra mais 5, então ele tem 3 + 5 = 8 peras. Mas em seguida ele dá 3 peras ao amigo, portanto agora ele tem 8 - 3 = 5 peras. João tem 5 peras agora." max-tokens="256" box-rows="5" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiSm%2FjbyB0ZW0gNSBwZXJhcywgY29tZSAyLCBlbnTjbyBzb2JyYW0gNSAtIDIgPSAzIHBlcmFzLiBEZXBvaXMgZWxlIGNvbXByYSBtYWlzIDUsIGVudONvIGVsZSB0ZW0gMyArIDUgPSA4IHBlcmFzLiBNYXMgZW0gc2VndWlkYSBlbGUgZOEgMyBwZXJhcyBhbyBhbWlnbywgcG9ydGFudG8gYWdvcmEgZWxlIHRlbSA4IC0gMyA9IDUgcGVyYXMuIEpv428gdGVtIDUgcGVyYXMgYWdvcmEuIiwicHJvbXB0IjoiU2UgSm%2FjbyB0ZW0gNSBwZXJhcywgY29tZSAyIGUgY29tcHJhIG1haXMgNSwgZGVwb2lzIGThIDMgYW8gc2V1IGFtaWdvLCBxdWFudGFzIHBlcmFzIGVsZSB0ZW0gYWdvcmE%2FXG5cblZhbW9zIHBlbnNhciBwYXNzbyBhIHBhc3NvLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Resultados
 
