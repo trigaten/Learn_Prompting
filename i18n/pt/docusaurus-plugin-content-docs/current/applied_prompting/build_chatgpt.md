@@ -49,9 +49,10 @@ O ChatGPT é tanto um modelo de linguagem quanto uma interface de usuário. A en
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Inserção de exemplo de prompt do usuário antes de enviar para o modelo</p>
 </div>
 
-O modelo de linguagem completa a prompt descobrindo quais palavras vêm a seguir com base nas probabilidades que ele aprendeu durante o pré-treinamento.(@jurafsky2009).
+O modelo de linguagem completa a prompt descobrindo quais palavras vêm a seguir com base nas probabilidades que ele aprendeu durante o pré-treinamento(@jurafsky2009).
 
 <p></p>
+
 O GPT-3 é capaz de 'aprender' a partir de uma instrução simples ou alguns exemplos no prompt. Este último é chamado de aprendizado few-shot ou aprendizado contextual (@brown2020language). No prompt do chatbot acima, crio um chatbot fictício chamado Skippy e o instruo a fornecer respostas aos usuários. O GPT-3 entende o formato de ida e volta, `USUÁRIO: {entrada do usuário}` e `SKIPPY: {resposta do skippy}`. O GPT-3 entende que Skippy é um chatbot e as trocas anteriores são uma conversa, de modo que quando fornecemos a próxima entrada do usuário, "Skippy" responderá.
 
 ### Memorização
