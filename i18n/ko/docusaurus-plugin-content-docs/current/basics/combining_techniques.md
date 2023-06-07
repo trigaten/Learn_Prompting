@@ -20,7 +20,7 @@ import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
 ```text
 Twitter is a social media platform where users can post short messages called "tweets".
 Tweets can be positive or negative, and we would like to be able to classify tweets as
-positive or negative. Here are some examples of positive and negative tweets. Make sure 
+positive or negative. Here are some examples of positive and negative tweets. Make sure
 to classify the last tweet correctly.
 
 Q: Tweet: "What a beautiful day!"
@@ -38,5 +38,5 @@ Q: Tweet: "I love pockets on jeans"
 A:
 ```
 
-추가적인 문맥/예시들을 더함으로써 우리는 종종 AI의 성능을 향상 시킬 수 있을 것입니다.
+맥락과 예시를 추가하면 다양한 작업에서 AI의 성능을 개선할 수 있습니다.
 

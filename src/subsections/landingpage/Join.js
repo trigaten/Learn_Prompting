@@ -21,11 +21,11 @@ import OpenAI from "@site/static/img/openai_logo.png";
 function Join() {
   const stats = [
     {
-      header: "700K+",
+      header: "900K+",
       subtitle: "People Learning",
     },
     {
-      header: "36K+",
+      header: "40K+",
       subtitle: "Discord Members",
     },
     {
@@ -88,7 +88,7 @@ function Join() {
               levels of prompt hacking defenses. Inject, leak and defeat the
               sandwich defense to claim your share of over $35,000 in prizes.
               Ready to trick the AI? Hack our prompts anytime between May 5th
-              and May 26th!
+              and June 3rd!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
               <a href="https://www.aicrowd.com/challenges/hackaprompt-2023">
