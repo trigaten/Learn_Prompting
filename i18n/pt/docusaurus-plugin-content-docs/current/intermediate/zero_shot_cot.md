@@ -16,6 +16,7 @@ import ZSImage from '@site/docs/assets/zero_shot.png';
 Cadeia de Pensamento Zero Shot. Exemplo adaptado. (Kojima et al.)
 </div>
 
+
 Tecnicamente, o processo completo de Cadeia de Pensamento Zero Shot envolve duas solicitações separadas. Na imagem abaixo, a bolha superior à esquerda gera uma cadeia de pensamento, enquanto a bolha superior à direita recebe a saída da primeira solicitação (incluindo a própria primeira solicitação) e extrai a resposta da cadeia de pensamento. Essa segunda solicitação é uma _solicitação auto-aumentada_ ou _auto-enriquecida_.
 
 import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';

@@ -6,7 +6,7 @@ style: chicago
 
 # 🟢 Prompting com Cadeia de Pensamento
 
-Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *prompting* recente, que encoraja ao *LLM* (Grande Modelo de Linguagem) a explicar o seu raciocínio. A imagem abaixo (@wei2022chain) mostra um *prompt few shot* padrão (esquerda) comparado ao *prompt* com Cadeia de Pensamento (direita).
+Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *prompting* recente, que encoraja o *LLM* (Grande Modelo de Linguagem) a explicar o seu raciocínio. A imagem abaixo (@wei2022chain) mostra um *prompt few shot* padrão (esquerda) comparado ao *prompt com Cadeia de Pensamento* (direita).
 
 
 import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
