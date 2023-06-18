@@ -14,7 +14,7 @@ import Banner from "../subsections/landingpage/Banner";
 function Home() {
   return (
     <>
-      <Banner />
+      {/*<Banner />*/}
       <div className="bg-gray/300">
         <Navbar />
         <Hero />
