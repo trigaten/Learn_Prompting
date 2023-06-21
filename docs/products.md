@@ -464,7 +464,7 @@ Writes content, predicts outcomes or answers questions at your command.
 > AI code writing assistant for data scientists, engineers, and analysts. Get code completions and suggestions as you type.
 
 - [regex.ai](https://regex.ai/)
-- AI-Powered Regular Expression Solver
+> AI-Powered Regular Expression Solver
 
 ## Sales and Marketing
 
