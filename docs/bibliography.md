@@ -68,7 +68,11 @@ cite them as such.
 
 #### AutoPrompt(@shin2020autoprompt) 🔵
 
-#### Automatic Prompt Engineer(@zhou2022large)
+#### Automatic Prompt Engineer(@zhou2022large) 🔵
+
+#### TEMPERA(@zhang2022tempera) 🔵
+
+#### RLPrompt(@deng2022rlprompt)
 
 ## Models
 
