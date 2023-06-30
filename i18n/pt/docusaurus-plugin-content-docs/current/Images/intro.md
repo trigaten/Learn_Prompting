@@ -27,13 +27,13 @@ import computer_1 from '@site/docs/assets/computer_dalle_1.png';
 import astronaut_1 from '@site/docs/assets/astronaut_dalle_1.png';
 import astronaut_2 from '@site/docs/assets/astronaut_sd_1.png';
 import rocket_sd_1 from '@site/docs/assets/rocket_sd_1.png';
-import rocket_final from '../../static/img/rocket.png';
+import rocket_final from '@site/static/img/rocket.png';
 import laptop_sd_1 from '@site/docs/assets/laptop_sd_1.png';
 import gemstone_sd_1 from '@site/docs/assets/gemstone_sd_1.png';
 import gemstone_sd_2 from '@site/docs/assets/gemstone_sd_2.png';
 import gemstone_sd_3 from '@site/docs/assets/gemstone_sd_3.png';
-import focus_final from '../../static/img/computer.png';
-import astronaut_final from '../../static/img/astronaut.png';
+import focus_final from '@site/static/img/computer.png';
+import astronaut_final from '@site/static/img/astronaut.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={rockets1} style={{width: "750px"}} />
