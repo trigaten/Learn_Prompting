@@ -1,0 +1,3 @@
+files:
+  - source: /docs/
+    translation: /i18n/%language%/docusaurus-plugin-content-docs/current/%original_path%
