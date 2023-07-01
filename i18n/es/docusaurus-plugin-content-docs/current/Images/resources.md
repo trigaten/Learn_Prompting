@@ -17,3 +17,4 @@ El campo de la ingeniería de imágenes generadas por IA es muy diverso. Aquí h
 - [Lexica, una base de datos de imágenes generadas por IA](https://lexica.art)
 - [Playground, otra base de datos de imágenes generadas por IA](https://playgroundai.com)
 - [Biblioteca abierta de estilos](https://docs.google.com/spreadsheets/d/1cm6239gw1XvvDMRtazV6txa9pnejpKkM5z24wRhhFz0/edit#gid=1057933666)
+- [Best midjourney preferred options](https://pastebin.com/5Zsezviq)
