@@ -50,7 +50,7 @@ sidebar_position: 1
 
 메모: 🔴 및 🟣 문서의 경우에도 일반적으로 별도의 전문 지식이 없어도 내용을 파악할 수 있지만 전문 지식이 있으면 구현에 도움이 될 수 있습니다.
 
-### 챕터
+### Chapters
 
 다음은 각 장에 대한 간략한 개요입니다:
 
@@ -82,9 +82,10 @@ sidebar_position: 1
 
 질문, 의견 또는 제안이 있는 경우 다음을 수행할 수 있습니다:
 
-- [GitHub에 대한 이슈 만들기](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
+- https://github.com/trigaten/Learn_Prompting/issues/new/choose
 - [learnprompting@gmail.com](mailto:learnprompting@gmail.com)로 이메일을 보내주십시오
 - [Discord 커뮤니티](https://learnprompting.org/discord) 에 가입합니다
 - [Twitter](https://twitter.com/learnprompting) 에서 팔로우 해주세요
+- Join the HackAPrompt Competition until May 26 [Twitter](https://www.aicrowd.com/challenges/hackaprompt-2023)
 
 아무리 작은 피드백이라도 큰 도움이 됩니다!
