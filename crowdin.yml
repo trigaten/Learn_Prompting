@@ -1,3 +1,25 @@
 files:
-  - source: /docs/
+  - source: /docs/advanced_applications
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/advanced_applications/%original_file_name%
+  - source: docs/reliability
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/reliability/%original_file_name%
+  - source: docs/Images
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/Images/%original_file_name%
+  - source: docs/applied_prompting
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/applied_prompting/%original_file_name%
+  - source: docs/basic_applications
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/basic_applications/%original_file_name%
+  - source: docs/basics
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/basics/%original_file_name%
+  - source: docs/intermediate
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/intermediate/%original_file_name%
+  - source: docs/miscl
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/miscl/%original_file_name%
+  - source: docs/prompt_hacking
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/prompt_hacking/%original_file_name%
+  - source: docs/tooling
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/tooling/%original_file_name%
+  - source: docs/trainable
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/trainable/%original_file_name%
+  - source: docs/*.md
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/%original_file_name%
