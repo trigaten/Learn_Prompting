@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
----
+--- 
 
 # 🟢 Détection de texte généré par l'IA
 
@@ -26,12 +26,12 @@ Une méthode de détection du texte généré par l'IA consiste à introduire un
 
 C'est une idée fascinante, mais elle exige que les créateurs d'un modèle mettent en œuvre ce cadre dans leur LLM. Si le filigrane n'est pas intégré dans un modèle, cette méthode ne fonctionnera pas.
 
-## **DetectGPT**
+## DetectGPT
 
 La méthode [DetectGPT](https://detectgpt.ericmitchell.ai/)(@mitchell2023detectgpt) est capable de détecter les textes générés par l'IA avec moins de configuration que les concepts précédents. Les chercheurs ont constaté que les générations de texte LLM ont tendance à "occuper les régions à courbure négative de la fonction de probabilité logarithmique du modèle". De ce fait, il est possible de créer un système basé sur la courbure pour déterminer si un bloc de texte a été généré de manière procédurale.
 
 Il fonctionne en calculant les probabilités logarithmiques du modèle censé avoir généré le texte et en les comparant à des altérations aléatoires du texte provenant d'un autre modèle de langage générique pré-entraîné. De cette manière, DetectGPT est capable d'identifier la probabilité que le passage ait été généré en utilisant uniquement les courbes de probabilité !
 
-## **Note**
+## Note
 
 Pour une discussion supplémentaire sur le sujet des détecteurs et la façon dont les gens les trompent, voir [cet article](https://learnprompting.org/docs/miscl/trickery).
