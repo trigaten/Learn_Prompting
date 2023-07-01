@@ -46,14 +46,14 @@ Estos son buenos, ¡pero me gusta ir frase por frase!
 ## Frase 1
 
 ```text
-¿Listo para liberar tu creatividad con IA?
+Ready to unleash your creativity with AI?
 
-¿Cuáles son algunos buenos emojis para agregar a esta parte de un tweet?
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-Aquí hay algunos emojis que podrían funcionar bien con la frase "¿Listo para liberar tu creatividad con IA?":
+Here are some emojis that could go well with the sentence "Ready to unleash your creativity with AI?":
 
-🎨 Paleta: para sugerir creatividad y arte.
+🎨 Palette: to suggest creativity and art.
 🤖 Cara de robot: para indicar la participación de la IA y la tecnología.
 💪 Bíceps flexionados: para mostrar fuerza y determinación para crear algo nuevo.
 🚀 Cohete: para implicar progreso, avance e innovación.
@@ -91,6 +91,11 @@ Aquí hay algunos emojis relevantes que puedes usar para transmitir el mensaje y
 Aquí hay algunos emojis relevantes que puedes usar para transmitir el mensaje y el tono del tweet:
 
 📝 Memo: para sugerir que el artículo es una guía o un tutorial.
+
+//highlight-start
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
+
+📝 Memo: to suggest that the article is a guide or a how-to.
 💡 Bombilla: para implicar nuevas ideas e inspiración.
 🤖 Cara de robot: para indicar la participación de la IA y la tecnología.
 🎨 Paleta: para representar la creatividad y el arte.
@@ -103,11 +108,13 @@ Aquí hay algunos emojis relevantes que puedes usar para transmitir el mensaje y
 Ahora que tengo sugerencias de emojis para cada parte, ¡puedo agregar los que me gusten y twitear!
 
 ```text
-¿Listo para desatar tu creatividad con IA? 🔥🎨
+¿Listo para liberar tu creatividad con IA? 🔥🎨
+
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images! ¿Listo para desatar tu creatividad con IA? 🔥🎨
 
 ¡Descubre el poder de Midjourney, el generador de imágenes de IA que produce imágenes impresionantes y artísticas! ✨
 
-Echa un vistazo a nuestro artículo más reciente para aprender cómo crear tus propias obras maestras únicas con IA. 🖌️
+Echa un vistazo a nuestro artículo más reciente para aprender cómo crear tus propias obras maestras únicas con IA.
 ```
 
 Nota que añadí algunos emojis que no fueron sugeridos por la IA. Siempre debes usar tu propio criterio al elegir emojis, ¡y simplemente usa ChatGPT para ayudarte a encontrar algunas buenas opciones!
