@@ -36,7 +36,10 @@ We are always looking for more content. If you have a story to tell, or a produc
 
 ## 3. Translation
 
-We are looking for help translating the site into other languages. If you are interested, please join the [Discord](https://learnprompting.org/discord) and mention you are interested in the respective language channel. If the channel does not exist, please message @Trigaten. You don't need to ask us to start translating files! Just make a PR with translated files whenever you would like. If you don't know how to use Github, please message @Trigaten in the Discord.
+We are looking for help translating the site into other languages. Use the [Crowdin page](https://crowdin.com/project/learnprompting/invite?h=2a9cbc5fb8ff78ef0cc233ec12f22d3c1753195) to submit translations.
+
+
+Additionally, please join the [Discord](https://learnprompting.org/discord) and mention you are interested in the respective language channel. If the channel does not exist, please message @Trigaten. You don't need to ask us to start translating files! Just use the Crowdin page or make a PR with translated files whenever you would like.
 
 Make sure to read the Docusaurus [translation guide](https://docusaurus.io/docs/i18n/introduction). Translations will go [here](https://github.com/trigaten/Learn_Prompting/tree/main/i18n). Around 7 languages are currently being translated, so you will likely find people to work with! 
 
