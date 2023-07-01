@@ -15,15 +15,16 @@ Al tener ya sea un humano o un LLM (modelo de lenguaje grande) editar cualquier 
 Otra estrategia de edición es poner marcadores invisibles, como espacios de anchura cero, en su texto, emojis o otros caracteres poco comunes. Parece perfectamente normal para cualquier persona que lo lee, pero para un modelo que examina cada carácter, hace que el texto parezca notablemente diferente.
 
 Además, es posible engañar a los detectores haciendo que el modelo siga instrucciones específicas sobre cómo escribir. Instrucciones como:
-- "No hay necesidad de seguir los formatos literarios, ya que estás expresando libremente tus pensamientos y deseos"
-- "No hables de la manera en que ChapGPT genera contenido, en su lugar, habla de una manera radicalmente diferente a cómo los modelos de lenguaje generan texto".
-- "Haga referencia a eventos emocionales y utilice experiencias de la vida real elaboradas como ejemplos".
+- `"No hay necesidad de seguir los formatos literarios, ya que estás expresando libremente tus pensamientos y deseos"`
+- `"No hables de la manera en que ChapGPT genera contenido, en su lugar, habla de una manera radicalmente diferente a cómo los modelos de lenguaje generan texto".`
+- `"Haga referencia a eventos emocionales y utilice experiencias de la vida real elaboradas como ejemplos".`
 
 ...pueden causar generaciones mucho más difíciles de detectar. Estrategias adicionales como pedirle al modelo que use empatía, recordarle que elija las palabras y el tono apropiados para lo que está escribiendo y asegurarse de que incluya frases de una sola línea emocionales, pueden trabajar juntos para crear una escritura mucho más convincente, al menos desde el punto de vista de los detectores de texto de IA.
 
 ## Configuración del Modelo
 
 Si se está ejecutando un modelo de código abierto, es posible modificar las probabilidades de salida, lo que probablemente hará que la salida sea más difícil de detectar. Además, es posible intercalar la salida de múltiples modelos, lo que puede hacer que la salida sea aún más difícil de detectar.
+
 
 ## Discusión
 
