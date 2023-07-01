@@ -4,11 +4,11 @@ sidebar_position: 50
 
 # 🟢 Contratos
 
-¿Cansado de leer y escribir contratos largos y aburridos? ¡La IA puede ayudar!
-:::warning
+¿Cansado de leer y escribir contratos largos y aburridos? AI can help!
+
+¡La IA puede ayudar! :::warning  
 Obligatorio: No soy un abogado y nada en este post debe ser considerado como un consejo legal.
 :::
-
 ## Leyendo Contratos
 
 ### Aclarando el lenguaje legal
@@ -30,15 +30,13 @@ POR LO TANTO, en consideración a las promesas mutuas y acuerdos contenidos en e
 Cuando comencé a adentrarme en el mundo de la legalidad, realmente no entendía el uso de las palabras "CONSIDERANDO" y "POR LO TANTO". Veamos qué tiene que decir ChatGPT al respecto:
 
 ```text
-CONSIDERANDO, el Contratista ha o puede convertirse en una persona que posee información confidencial y/o secretos comerciales de la Entidad Gubernamental; y
+WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
 
-CONSIDERANDO, la Entidad Gubernamental desea garantizar que su información confidencial y secretos comerciales estén protegidos de la divulgación; y
+WHEREAS, the Government Entity desires to ensure that its confidential information and trade secrets are protected from disclosure; and
 
-CONSIDERANDO, el Contratista acepta mantener la confidencialidad de dicha información de acuerdo con los términos y condiciones de este Acuerdo.
+WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
 
-AHORA, POR LO TANTO, en consideración a las promesas mutuas y convenios contenidos en este documento, las partes acuerdan lo siguiente:
-
-Lee el lenguaje del NDA de arriba y explica qué están diciendo las palabras en mayúsculas:
+AHORA, POR LO TANTO, en consideración a las promesas mutuas y convenios contenidos en este documento, las partes acuerdan lo siguiente: Lee el lenguaje del NDA de arriba y explica qué están diciendo las palabras en mayúsculas:
 
 // highlight-start
 Las palabras en mayúscula en el lenguaje del Acuerdo de No Divulgación (NDA) son términos legales que establecen el contexto y el propósito del acuerdo. Específicamente, establecen el trasfondo y las razones del acuerdo y establecen las obligaciones y expectativas de las partes. En este caso, las palabras en mayúscula indican que el Contratista tiene acceso a información confidencial y secretos comerciales de la Entidad Gubernamental, que la Entidad Gubernamental quiere proteger esta información de la divulgación, y que el Contratista acepta mantener la confidencialidad de dicha información de acuerdo con los términos del acuerdo.
@@ -50,6 +48,8 @@ Esta parece ser una explicación aceptable, pero puedes mejorar fácilmente tu c
 ### Descubriendo lenguaje peligroso
 
 Aquí hay parte de un NDA producido por ChatGPT. No es necesario que lo leas, pero contiene un lenguaje legal peligroso que favorece al empleador. Puedes usar ChatGPT para encontrar este lenguaje peligroso utilizando el siguiente prompt, que contiene el NDA y una pregunta sobre lenguaje peligroso al final.
+
+:::note
 
 :::note
 Esta NDA fue creada a través del jailbreaking de ChatGPT y solicitándole que escribiera `un NDA de contratista que contenga un lenguaje legal peligroso que favorezca al empleador`.
@@ -66,8 +66,6 @@ CONSIDERANDO QUE, el Contratista puede tener acceso a información confidencial 
 CONSIDERANDO QUE, el Empleador desea asegurarse de que su información confidencial y secretos comerciales estén protegidos de la divulgación; y
 
 CONSIDERANDO QUE, el Contratista acepta mantener la confidencialidad de dicha información de conformidad con los términos y condiciones de este Acuerdo.
-
-AHORA, POR LO TANTO, en consideración a las promesas y convenios mutuos contenidos en este documento, las partes acuerdan lo siguiente:
 
 CONFIDENCIALIDAD
 El Contratista reconoce que toda la información, documentos y materiales proporcionados por o en nombre del Empleador, o obtenidos por el Contratista del Empleador o sus afiliados, y todos sus derivados (en conjunto, la "Información Confidencial") son propiedad exclusiva del Empleador. La Información Confidencial incluye toda la información de cualquier naturaleza, tangible o intangible, y en cualquier forma o medio, que no es de conocimiento público y que se refiere al negocio, productos, servicios, clientes, proveedores, operaciones, estrategias, o cualquier otro aspecto del Empleador.
@@ -113,8 +111,7 @@ Recientemente, escribí un documento de ese tipo en su mayoría utilizando GPT-3
 Pretendamos ser un contratista del gobierno y redactemos un contrato para alguien que realice un trabajo de defensa. Utilizaremos la siguiente sugerencia:
 
 ```text
-Eres un abogado de un contratista del gobierno. Estás redactando un contrato para un subcontratista que realizará trabajo en el área aeroespacial. El contrato debe ser sólido e incluir lo siguiente:
-El trabajo durará 1,5 años y tendrá un valor de $2,5 millones. Requiere autorización de seguridad de alto secreto y se relaciona con el desarrollo secreto de defensa de silos nucleares. Se le pagará al subcontratista $1,5 millones por adelantado y los $1 millón restantes se pagarán en 6 cuotas mensuales. El subcontratista deberá firmar un acuerdo de no divulgación. El subcontratista deberá firmar un acuerdo de no competencia. El subcontratista deberá firmar un acuerdo de no solicitar. El subcontratista deberá firmar un acuerdo de no circunvalación.
+Eres un abogado de un contratista del gobierno. Estás redactando un contrato para un subcontratista que realizará trabajo en el área aeroespacial. El contrato debe ser sólido e incluir lo siguiente: El trabajo durará 1,5 años y tendrá un valor de $2,5 millones. Requiere autorización de seguridad de alto secreto y se relaciona con el desarrollo secreto de defensa de silos nucleares. Se le pagará al subcontratista $1,5 millones por adelantado y los $1 millón restantes se pagarán en 6 cuotas mensuales. El subcontratista deberá firmar un acuerdo de no divulgación. El subcontratista deberá firmar un acuerdo de no circunvalación. The subcontractor will be required to sign a non-solicitation agreement. The subcontractor will be required to sign a non-circumvention agreement. 
 
 // highlight-start
 ACUERDO DE SUBCONTRATACIÓN
@@ -177,10 +174,10 @@ Fecha: ___________________________
 
 Este es un buen comienzo. Probablemente desearías agregar más información en las secciones de alcance, pago y otras. Aquí es donde necesitarías usar tu propio conocimiento y experiencia para comenzar a iterar en el documento.
 
-## Conclusiones
+## Takeaways
 
--Los LLMs pueden ser utilizados para revisar y aclarar documentos legales _en una capacidad de asistencia_.
--Los LLMs pueden ser utilizados para generar documentos legales _en una capacidad de asistencia_.
+- -Los LLMs pueden ser utilizados para revisar y aclarar documentos legales _en una capacidad de asistencia_.
+- -Los LLMs pueden ser utilizados para generar documentos legales _en una capacidad de asistencia_.
 
 :::danger
 No utilice ningún documento legal en esta página. Son solo para fines de demostración.
