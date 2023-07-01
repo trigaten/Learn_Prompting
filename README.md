@@ -17,6 +17,7 @@ We welcome contributions in any form.
 We are actively looking for:
 
 - content suggestions
+- translation
 - content/art contributions
 - typos :)
 
