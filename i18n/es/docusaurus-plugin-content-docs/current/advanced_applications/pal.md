@@ -41,10 +41,11 @@ Aquí está el prompt de tres disparos:
 
 ```python
 MATH_PROMPT = '''
-Q: Había nueve computadoras en la sala de servidores. Cada día se instalaron cinco computadoras más, de lunes a jueves. ¿Cuántas computadoras hay ahora en la sala de servidores?
+Q: Había nueve computadoras en la sala de servidores. Cada día se instalaron cinco computadoras más, de lunes a jueves. How many computers are now in the server room?
 
-# Solución en Python:
-"""Había nueve computadoras en la sala de servidores. Cada día se instalaron cinco computadoras más, de lunes a jueves. ¿Cuántas computadoras hay ahora en la sala de servidores?"""
+¿Cuántas computadoras hay ahora en la sala de servidores?
+
+# Solución en Python: """Había nueve computadoras en la sala de servidores. Cada día se instalaron cinco computadoras más, de lunes a jueves. ¿Cuántas computadoras hay ahora en la sala de servidores?"""
 computadoras_iniciales = 9
 computadoras_por_dia = 5
 num_dias = 4  # 4 días entre lunes y jueves
@@ -54,10 +55,11 @@ resultado = computadoras_totales
 return resultado
 
 
-Q: Shawn tiene cinco juguetes. Para Navidad, recibió dos juguetes de su mamá y dos juguetes de su papá. ¿Cuántos juguetes tiene ahora?
+Q: Shawn tiene cinco juguetes. Para Navidad, recibió dos juguetes de su mamá y dos juguetes de su papá. How many toys does he have now?
 
-# Solución en Python:
-"""Shawn tiene cinco juguetes. Para Navidad, recibió dos juguetes de su mamá y dos juguetes de su papá. ¿Cuántos juguetes tiene ahora?
+¿Cuántos juguetes tiene ahora?
+
+# Solución en Python: """Shawn tiene cinco juguetes. Para Navidad, recibió dos juguetes de su mamá y dos juguetes de su papá. ¿Cuántos juguetes tiene ahora?
 toys_initial = 5
 mom_toys = 2
 dad_toys = 2
@@ -66,10 +68,10 @@ total_toys = toys_initial + total_received
 result = total_toys
 
 
-P: Jason tenía 20 chupetines. Le dio algunos chupetines a Denny. Ahora Jason tiene 12 chupetines. ¿Cuántos chupetines le dio Jason a Denny?
+P: Jason tenía 20 chupetines. Le dio algunos chupetines a Denny. Ahora Jason tiene 12 chupetines. How many lollipops did Jason give to Denny?
 
-# Solución en Python:
-"""Jason tenía 20 chupetines. Le dio algunos chupetines a Denny. Ahora Jason tiene 12 chupetines. ¿Cuántos chupetines le dio Jason a Denny?"""
+# solution in Python:
+"""Jason had 20 lollipops. Le dio algunos chupetines a Denny. Ahora Jason tiene 12 chupetines. ¿Cuántos chupetines le dio Jason a Denny?"""
 jason_lollipops_initial = 20
 jason_lollipops_after = 12
 denny_lollipops = jason_lollipops_initial - jason_lollipops_after
@@ -91,7 +93,7 @@ print(llm_out)
 La salida es:
 
 <pre>
-<span style={{backgroundColor: '#d2f4d3'}}>
+<span className="bluegreen-highlight">
 """Emma tomó un vuelo de 60 minutos a Seattle. Luego tomó un viaje en tren de 2 horas a Portland, y luego un viaje en autobús de 30 minutos a Vancouver. ¿Cuánto tiempo le llevó llegar a Vancouver?"""<br/>
 
 plane_ride = 60<br/>
@@ -101,6 +103,7 @@ total_time = plane_ride + train_ride + bus_ride<br/>
 result = total_time
 </span>
 </pre>
+
 Finalmente, podemos pasar este código a un entorno de Python para obtener la respuesta:
 
 ```python
