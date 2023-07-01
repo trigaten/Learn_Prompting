@@ -1,8 +1,8 @@
 {
-  "label": "🟢 Defensive Measures",
+  "label": "🔓 Prompt Hacking",
   "position": 50,
   "link": {
     "type": "generated-index",
-    "description": "Hacking, but for PE"
+    "description": "Hacking para PE"
   }
 }
