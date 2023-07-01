@@ -8,6 +8,7 @@ Encontrar el mejor estímulo para crear una imagen perfecta es un desafío parti
 
 Esta guía cubre técnicas básicas de estimulación de imágenes, y recomendamos encarecidamente que consultéis los recursos excelentes al final del capítulo. Además, proporcionamos un ejemplo del proceso de estimulación de extremo a extremo de la imagen a continuación.
 
+
 ## Ejemplo
 
 Aquí voy a mostrar un ejemplo de cómo creé las imágenes para la página principal de este curso. Había estado experimentando con el estilo de baja poli para un proyecto de campo de radiación neuronal de refuerzo profundo. Me gustó el estilo de baja poli y quería usarlo para las imágenes de este curso.
@@ -36,7 +37,6 @@ import astronaut_final from '@site/static/img/astronaut.png';
   <img src={rockets1} style={{width: "750px"}} />
 </div>
 
-
 <div style={{textAlign: 'center'}}>
   <img src={rockets2} style={{width: "750px"}} />
 </div>
@@ -49,7 +49,7 @@ A continuación, quería una computadora en el mismo estilo: `Computadora blanca
   <img src={computer_1} style={{width: "750px"}} />
 </div>
 
-Finalmente, necesitaba un astronauta! `Astronauta de baja poligonización en blanco y azul sentado en un prado verde escaso con montañas de baja poligonización en el fondo` pareció funcionar.
+Finally, I needed an astronaut! Finalmente, necesitaba un astronauta! `Astronauta de baja poligonización en blanco y azul sentado en un prado verde escaso con montañas de baja poligonización en el fondo` pareció funcionar.
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_1} style={{width: "750px"}} />
@@ -57,13 +57,10 @@ Finalmente, necesitaba un astronauta! `Astronauta de baja poligonización en bla
 
 Pensé que el segundo era decente.
 
-Ahora tenía un astronauta, un cohete y una computadora. Estaba contento con ellos,
-así que los puse en la página principal. Después de unos días y con la opinión de mis amigos, me di cuenta de que el estilo simplemente no era consistente 😔.
+Ahora tenía un astronauta, un cohete y una computadora. Estaba contento con ellos, así que los puse en la página principal. Después de unos días y con la opinión de mis amigos, me di cuenta de que el estilo simplemente no era consistente 😔.
 
-Investigué un poco más en [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) y encontré personas que usaban la palabra isométrico. Decidí probarlo, usando Stable Diffusion en lugar de DALLE.
-También me di cuenta de que necesitaba agregar más modificadores a mi prompt
-para limitar el estilo. Intenté con este prompt:
-`Un mundo de baja poligonización, con un astronauta con traje blanco y visor azul sentado en una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
+
+Investigué un poco más en [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) y encontré personas que usaban la palabra isométrico. Decidí probarlo, usando Stable Diffusion en lugar de DALLE. También me di cuenta de que necesitaba agregar más modificadores a mi prompt para limitar el estilo. Intenté con este prompt: `Un mundo de baja poligonización, con un astronauta con traje blanco y visor azul sentado en una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_2} style={{width: "250px"}} />
@@ -77,7 +74,7 @@ Estos no eran geniales, así que decidí empezar con el cohete en su lugar.
   <img src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
-Estos no son particularmente buenos, pero después de un poco de iteración, terminé con esto:
+Estos no son particularmente buenos, pero después de un poco de iteración, terminé con esto: 
 
 <div style={{textAlign: 'center'}}>
   <img src={rocket_final} style={{width: "250px"}} />
@@ -115,8 +112,7 @@ Me gustaron estas imágenes, pero quería que la piedra estuviera en el centro d
   <img src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
-En algún lugar por aquí, utilicé la capacidad de SD para que una imagen anterior influyera en imágenes futuras.
-Y así llegué a:
+En algún lugar por aquí, utilicé la capacidad de SD para que una imagen anterior influyera en imágenes futuras. Y así llegué a:
 
 <div style={{textAlign: 'center'}}>
   <img src={focus_final} style={{width: "250px"}} />
