@@ -32,6 +32,10 @@ El análisis de sentimiento es la tarea de clasificar el texto en sentimientos p
 
 Estos términos se utilizan de manera algo intercambiable a lo largo de este curso, pero no siempre significan lo mismo. Los LLM son un tipo de AI, como se señaló anteriormente, pero no todas las AIs son LLM. Cuando mencionamos modelos en este curso, nos referimos a modelos de IA. Como tal, en este curso, puede considerar los términos "modelo" y "IA" como intercambiables.
 
+#### Machine Learning (ML)
+
+ML is a field of study that focuses on algorithms that can learn from data. ML is a subfield of AI.
+
 #### Verbalizador
 
 En el entorno de clasificación, los verbalizadores son mapeos de etiquetas a palabras en el vocabulario del modelo de lenguaje (@schick2020exploiting). Por ejemplo, considere realizar la clasificación de sentimientos con el siguiente prompt:
