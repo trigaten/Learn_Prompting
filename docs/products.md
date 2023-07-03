@@ -467,7 +467,7 @@ Writes content, predicts outcomes or answers questions at your command.
 > AI code writing assistant for data scientists, engineers, and analysts. Get code completions and suggestions as you type.
 
 - [regex.ai](https://regex.ai/)
-- AI-Powered Regular Expression Solver
+> AI-Powered Regular Expression Solver
 
 - [Hey - CopilotAI](http://hey.technonia.com)
 > CopilotAI-like writing tool that responses to your question with markdown format. Supports OpenAPI Swagger.
