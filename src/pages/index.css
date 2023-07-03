@@ -64,7 +64,7 @@ code {
 }
 
 .left-1{
-  transform: translateX(50%);
+  transform: translateX(0%);
 }
 .left-2{
   transform: translateX(-100%);
