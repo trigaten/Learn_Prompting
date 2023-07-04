@@ -125,7 +125,7 @@ O verificador é treinando com uma função um pouco compleza, que eu não vou a
 
 ## Prompts do tipo "Me Pergunte Qualquer Coisa" - Ask Me Anything (AMA)
 
-import ama from '@site/docs/assets/AMA_Prompting.jpg';
+import ama from '@site/docs/assets/reliability/AMA_Prompting.jpg';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama} style={{width: "750px"}} />
@@ -163,7 +163,7 @@ Pergunta: Esse animal vive na América do Norte?
 Bem, ao formular a questão desta forma especial, podemos gerar prompts diferentes.
 Nosso primeiro passo aqui será transformar a afirmação `Esse animal vive na América do Norte` e reformatá-la em diferentes perguntas, que basicamente estão perguntando a mesma coisa. Para isso, passaremos a afirmação por prompts como os da imagem abaixo.
 
-import ama_multi from '@site/docs/assets/AMA_multiprompting.png';
+import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama_multi} style={{width: "800px"}} />
