@@ -6,7 +6,7 @@ sidebar_position: 4
 
 import Skippy from '@site/docs/assets/basic_applications/skippy_chatbot.png'    
 import SkippyHeader from '@site/docs/assets/basic_applications/skippy_chatbot_header.png'    
-import Therapy from '@site/docs/assets/therapy_chatbot.gif'
+import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.png'
 
 <div style={{textAlign: 'left'}}>
