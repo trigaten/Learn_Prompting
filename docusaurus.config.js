@@ -85,7 +85,7 @@ async function createConfig() {
                 { yamlFile: "glossary.yml" },
               ],
             ],
-            rehypePlugins: [katex],
+            rehypePlugins: [[katex, { strict: false }]]
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),

@@ -32,8 +32,8 @@ I decided to just start with DALLE and the prompt `Low poly white and blue rocke
 import rockets1 from '@site/docs/assets/rockets_dalle_1.png';
 import rockets2 from '@site/docs/assets/rockets_dalle_2.png';
 import computer_1 from '@site/docs/assets/computer_dalle_1.png';
-import astronaut_1 from '@site/docs/assets/astronaut_dalle_1.png';
-import astronaut_2 from '@site/docs/assets/astronaut_sd_1.png';
+import astronaut_1 from '@site/docs/assets/images_chapter/astronaut_dalle_1.png';
+import astronaut_2 from '@site/docs/assets/images_chapter/astronaut_sd_1.png';
 import rocket_sd_1 from '@site/docs/assets/rocket_sd_1.png';
 import rocket_final from '../../static/img/rocket.png';
 import laptop_sd_1 from '@site/docs/assets/laptop_sd_1.png';
