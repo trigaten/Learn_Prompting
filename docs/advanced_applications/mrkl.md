@@ -122,5 +122,5 @@ J-1 (Jurassic 1)(@lieberjurassic) LLM.
 
 ## More
 
-See [this example](https://python.langchain.com/en/latest/modules/agents/agents/examples/mrkl.html) of a MRKL System
+See [this example](https://python.langchain.com/docs/modules/agents/how_to/mrkl) of a MRKL System
 built with LangChain.
