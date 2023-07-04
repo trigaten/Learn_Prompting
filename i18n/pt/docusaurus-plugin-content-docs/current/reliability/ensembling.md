@@ -10,7 +10,7 @@ sidebar_position: 5
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps", ou "Verificador Diversificado em Etapas de Raciocínio") é um método que melhora a confiabilidade das respostas de três maneiras. Isso é feito 1) usando vários prompts para gerar conclusões diversificadas, 2) usando um verificador para distinguir boas respostas das ruins e 3) usando um verificador para verificar a correção das etapas de raciocínio.
 
-import diverse from '@site/docs/assets/diverse.png';
+import diverse from '@site/docs/assets/reliability/diverse.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={diverse} style={{width: "750px"}} />

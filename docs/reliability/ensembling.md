@@ -14,7 +14,7 @@ a method that improves the reliability of answers in a threefold manner. It does
 1) using multiple prompts to generate diverse completions, 2) using a verifier to distinguish good answers from bad answers, and 3) using a verifier to check the correctness of reasoning steps.
 
 
-import diverse from '@site/docs/assets/diverse.png';
+import diverse from '@site/docs/assets/reliability/diverse.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={diverse} style={{width: "750px"}} />

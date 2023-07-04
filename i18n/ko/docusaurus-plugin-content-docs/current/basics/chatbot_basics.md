@@ -3,7 +3,7 @@ sidebar_position: 80
 ---
 
 # 🟢 챗봇 기초
-import Chatbots from '@site/docs/assets/chatbot.svg';
+import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
   <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
@@ -17,8 +17,8 @@ GPT-3와 마찬가지로 챗봇은 질문에 답하고, 요약, 분석을 제공
 
 ### 스타일 가이드
 
-import unguided_question from '@site/docs/assets/unguided_question.png';
-import limerick_question from '@site/docs/assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.png';
+import limerick_question from '@site/docs/assets/basic_applications/limerick_question.png';
 
 스타일 가이드는 단순히 AI에게 특정 스타일로 말하도록 요청하는 것입니다. 스타일 안내가 없는 질문을 할 때 ChatGPT는 일반적으로 한두 개의 짧은 단락을 응답으로 반환하며, 더 긴 응답이 필요한 경우에는 더 긴 단락을 반환하기도 합니다:
 
@@ -59,8 +59,8 @@ import limerick_question from '@site/docs/assets/limerick_question.png';
 
     If you understand and are ready to begin, respond with only “yes.”
 
-import unprimed_question from '@site/docs/assets/unprimed_question.png';
-import primed_question from '@site/docs/assets/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.png';
+import primed_question from '@site/docs/assets/basics/primed_question.png';
 
 아래는 ChatGPT에 "철학에서 가장 흥미로운 분야"에 대한 프라이밍되지 않은 질문을 해본 것입니다. 리스트를 이용했고 일반적이고 냉정하고 특별하지 않은 답변을 했습니다.
 

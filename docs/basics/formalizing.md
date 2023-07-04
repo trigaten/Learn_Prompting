@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # 🟢 Formalizing Prompts
 
-import FormalPrompt from '@site/docs/assets/formal_prompt.svg';
+import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <FormalPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
