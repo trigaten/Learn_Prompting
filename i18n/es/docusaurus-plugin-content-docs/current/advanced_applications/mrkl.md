@@ -38,13 +38,13 @@ Considere los siguientes ejemplos adicionales de aplicaciones:
 
 - O incluso tareas mucho más complejas que dependen de múltiples fuentes de datos, como las siguientes:
 
-import mrkl_task from '@site/docs/assets/mrkl_task.png';
-import dataset from '@site/docs/assets/mrkl/dataset.png';
-import load_dataset from '@site/docs/assets/mrkl/load_dataset.png';
-import model from '@site/docs/assets/mrkl/model.png';
-import extract from '@site/docs/assets/mrkl/extract.png';
-import search from '@site/docs/assets/mrkl/search.png';
-import final from '@site/docs/assets/mrkl/final.png';
+import mrkl_task from '@site/docs/assets/advanced/mrkl_task.png';
+import dataset from '@site/docs/assets/advanced/mrkl/dataset.png';
+import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.png';
+import model from '@site/docs/assets/advanced/mrkl/model.png';
+import extract from '@site/docs/assets/advanced/mrkl/extract.png';
+import search from '@site/docs/assets/advanced/mrkl/search.png';
+import final from '@site/docs/assets/advanced/mrkl/final.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={mrkl_task} style={{width: "500px"}} />

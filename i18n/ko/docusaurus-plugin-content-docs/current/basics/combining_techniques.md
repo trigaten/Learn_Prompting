@@ -6,7 +6,7 @@ style: chicago
 
 # 🟢 지금까지 배운 기술들 융합하기
 
-import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
+import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
 
 
 <div style={{textAlign: 'center'}}>
