@@ -16,7 +16,7 @@ L'une des façons les plus courantes dont les prompting peuvent être utiles est
 ### Guidage stylistique
 
 import unguided_question from '@site/docs/assets/basics/unguided_question.png';
-import limerick_question from '@site/docs/assets/basic_applications/limerick_question.png';
+import limerick_question from '@site/docs/assets/basics/limerick_question.png';
 
 Le guidage stylistique consiste simplement à demander à l'IA de parler dans un certain style. Lorsque vous posez une question sans indication de style, ChatGPT répond généralement par un ou deux paragraphes courts, parfois plus si une réponse plus longue est nécessaire :
 

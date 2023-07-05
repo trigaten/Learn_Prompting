@@ -11,7 +11,7 @@ sidebar_position: 80
 ### スタイルガイダンス
 
 import unguided_question from '@site/docs/assets/basics/unguided_question.png';
-import limerick_question from '@site/docs/assets/basic_applications/limerick_question.png';
+import limerick_question from '@site/docs/assets/basics/limerick_question.png';
 
 スタイルガイダンスは、AIに特定のスタイルで話すように求めるだけです。スタイル ガイダンスのない質問をすると、ChatGPT は通常、応答として 1 つまたは 2 つの短い段落を返します。より長い応答が必要な場合は、さらに多くの段落を返します。
 

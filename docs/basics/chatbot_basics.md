@@ -20,7 +20,7 @@ Just like GPT-3, chatbots can answer questions, provide summaries, analysis, and
 ### Style Guidance
 
 import unguided_question from '@site/docs/assets/basics/unguided_question.png';
-import limerick_question from '@site/docs/assets/basic_applications/limerick_question.png';
+import limerick_question from '@site/docs/assets/basics/limerick_question.png';
 
 Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
 

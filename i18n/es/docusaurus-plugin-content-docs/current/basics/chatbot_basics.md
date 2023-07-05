@@ -11,7 +11,7 @@ Una de las formas más comunes en que puede ser útil el prompting es al interac
 ### Guía de Estilo
 
 import unguided_question from '@site/docs/assets/basics/unguided_question.png';
-import limerick_question from '@site/docs/assets/basic_applications/limerick_question.png';
+import limerick_question from '@site/docs/assets/basics/limerick_question.png';
 
 La guía de estilo simplemente pide al AI que hable en cierto estilo. Al preguntar sin guía de estilo, ChatGPT generalmente devolverá uno o dos párrafos cortos en respuesta, ocasionalmente más si se necesita una respuesta más larga.
 
