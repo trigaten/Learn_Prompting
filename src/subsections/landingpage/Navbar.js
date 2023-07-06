@@ -24,6 +24,10 @@ function Navbar(props) {
       name: "Blog",
       link: "/blog",
     },
+    {
+      name: "Consulting",
+      link: "/consulting",
+    },
   ];
 
   const rightLinks = [

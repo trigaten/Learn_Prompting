@@ -153,6 +153,11 @@ async function createConfig() {
           content: "website",
         },
         {
+          to: 'consulting', 
+          label:"Consulting", 
+          position:"left",          
+        },
+        {
           name: "twitter:card",
           content: "summary_large_image",
         },
