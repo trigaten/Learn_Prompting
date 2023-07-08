@@ -67,9 +67,9 @@ Below is a brief overview of each chapter:
 
 **Reliability**: Enhancing the reliability of large language models (LLMs)
 
-**Images**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
+**Image Prompting**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
 
-**Prompt Injection**: Hacking, but for prompt engineering
+**Prompt Hacking**: Hacking, but for prompt engineering
 
 **Tooling**: A review of various prompt engineering tools and IDEs
 
