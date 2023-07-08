@@ -59,7 +59,7 @@ function Join() {
         <span style={{ color: "black" }}>Join our global community.</span>
         <br />
         <span style={{ color: "black" }}>Elevate your prompting skills.</span>
-        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-56 pt-10">
+        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-30 lg:px-56 pt-10">
           Become part of a worldwide network of learners from various
           industries, all mastering the skill of effectively engaging with AI
           using our curriculum
@@ -78,17 +78,15 @@ function Join() {
         >
           <div className="md:w-[45%] md:pl-28 md:ml-12">
             <div className="opacity-81 text-center md:text-left text-lg">
-              Introducing The
+              The
             </div>
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
               <span className="font-bold">HackAPrompt</span> Competition
             </div>
             <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
-              A beginner-friendly competition that will challenge you to beat 7
-              levels of prompt hacking defenses. Inject, leak and defeat the
-              sandwich defense to claim your share of over $35,000 in prizes.
-              Ready to trick the AI? Hack our prompts anytime between May 5th
-              and June 3rd!
+              We ran this beginner-friendly competition May 5th-June 3rd. 2700+ competitors 
+              injected, leaked and defeated the sandwich defense in order to claim their 
+              share of over $35,000 in prizes.
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
               <a href="https://www.aicrowd.com/challenges/hackaprompt-2023">
@@ -102,7 +100,7 @@ function Join() {
                       );
                     }, [])
                   }
-                  text={"Register Now"}
+                  text={"See Results"}
                   type={"white"}
                   icon={
                     <RxArrowTopRight
