@@ -78,7 +78,7 @@ sidebar_position: 7
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-:::примітка
+:::note
 Цей приклад може бути неточним. Ми все ще працюємо над його вдосконаленням.
 :::
 
