@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 🟢 Білд ChatGPT з GPT-3
+# 🟢 Створити ChatGPT з GPT-3
 
 import Skippy from '@site/docs/assets/basic_applications/skippy_chatbot.png'    
 import SkippyHeader from '@site/docs/assets/basic_applications/skippy_chatbot_header.png'    
@@ -36,7 +36,7 @@ import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.png
 
 <div style={{textAlign: 'left'}}>
   <img src={Skippy} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Повний запит чат-бота Skippy із заголовка статті</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Повний запит чат-бота Скіппі із заголовка статті</p>
 </div>
 
 <a href="https://learnprompting.org/docs/basics/prompting">Здійснення пошуку за запитом — це процес надання вказівок ШІ щось зробити. </a> Як ви, напевно, бачили в прикладах ChatGPT в Інтернеті, ви можете надати йому запит зробити будь-що. Типовими прикладами його використання є анотування тексту, написання контенту на основі опису або створення таких речей, як вірші, рецепти та багато іншого.
