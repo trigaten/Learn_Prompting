@@ -49,6 +49,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, later Stability.AI and more |
 | [The Forge AI](https://theforgeai.com/) | ✅ | ❌ | ❌ | Marketplace | Wait list | Text, Images | OpenAI, Stable Diffusion |
+| [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts) | ✅ | ❌ | ❌ | Enterprise | ✅ | Text | Custom, Public, Private LLMs |
 
 
 
