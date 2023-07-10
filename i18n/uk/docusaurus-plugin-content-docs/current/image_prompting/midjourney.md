@@ -169,7 +169,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
    <img src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
 </div>
 
-### Версія:
+### Версія
 `--v [version number]`або `--version [version number]` дозволяє отримати доступ до попередніх моделей Midjourney (1–3)
 
 Приклад: `--v 1`, `--v 2` та `--v 3`
@@ -196,7 +196,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 
 ### Клітинка
 
-`--tile` створює зображення, які можна використовувати як повторювані клітинки для створення безшовних візерунків на тканині, шпалерах і текстурі (працює лише з моделями 1–3).
+`--tile` створює зображення, які можна використовувати як повторювані клітинки для створення безшовних візерунків на тканині, шпалерах і текстурі (працює лише з моделями 1–3)
 
 Приклад: `astronaut on a horse --tile --v 3`
 
