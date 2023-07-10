@@ -3,6 +3,6 @@
   "position": 40,
   "link": {
     "type": "generated-index",
-    "description": "Інженерія запитів у моделях для перетворення тексту в зображення, таких як DALLE і Stable Diffusion!"
+    "description": "Інженерія запитів для перетворення тексту в зображення у таких моделях, як DALLE і Stable Diffusion!"
   }
 }
