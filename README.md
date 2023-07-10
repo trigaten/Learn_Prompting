@@ -8,7 +8,7 @@
 [https://learnprompting.org](https://learnprompting.org)
 
 This website is a free, open-source guide on prompt engineering. Contributions are welcome!
-Harsh criticism is welcome too!
+Harsh criticism is welcome oo!
 
 ## Contribution Guidelines
 
