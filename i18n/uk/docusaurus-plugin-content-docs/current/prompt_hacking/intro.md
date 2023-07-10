@@ -6,7 +6,7 @@ sidebar_position: 0
 
 # 🟢 Вступ
 
-імпорт блокування з '@site/static/img/lock.png';
+import Lock from '@site/static/img/lock.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Lock} style={{width:"30%"}}/>
