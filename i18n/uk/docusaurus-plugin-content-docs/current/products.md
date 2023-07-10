@@ -516,7 +516,7 @@ sidebar_position: 2500
 > Зв’язуйтесь з потенційними клієнтами, проводьте дослідження та керуйте початковим охопленням. ШІ пише та надсилає листи з вашої електронної адреси.
 
 - [Hey - NotionAI](http://hey.technonia.com/notionai/)
-> NotionAI-like writing tool that generates suitable content for your selected template (recruiting emails, sails email, etc)
+> Інструмент для написання текстів, подібний до NotionAI, який генерує потрібний контент для обраного вами шаблону (рекрутингові листи, електронні запити тощо)
 
 ## Музика
 
