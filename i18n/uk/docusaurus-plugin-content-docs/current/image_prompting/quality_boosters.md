@@ -11,13 +11,13 @@ import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.
 
 # Приклад
 
-Поверніться до пірамід на іншій сторінці, що були створені за допомогою DALLE і запиту `піраміда`.
+Поверніться до пірамід на іншій сторінці, що були створені за допомогою DALLE і запиту `pyramid`.
 
 <div style={{textAlign: 'center'}}>
   <img src={pyramids} style={{width: "750px"}} />
 </div>
 
-Тепер погляньте на піраміди, створені за допомогою цього запиту: `Красива, велична, неймовірна піраміда, 4K`
+Тепер погляньте на піраміди, створені за допомогою цього запиту: `A beautiful, majestic, incredible pyramid, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={special_pyramids} style={{width: "750px"}} />

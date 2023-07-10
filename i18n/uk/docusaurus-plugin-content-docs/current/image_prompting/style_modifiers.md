@@ -17,7 +17,7 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.png';
   <img src={pyramids} style={{width: "750px"}} />
 </div>
 
-Ось декілька пірамід, згенерованих DALLE за запитом `Піраміда зі скла, зарендерена на платформі Unity і пофарбована в червоний`, який використовує 3 модифікатори стилю.
+Ось декілька пірамід, згенерованих DALLE за запитом `A pyramid made of glass, rendered in Unity and tinted red`, який використовує 3 модифікатори стилю.
 
 <div style={{textAlign: 'center'}}>
   <img src={red_pyramids} style={{width: "750px"}} />
@@ -26,9 +26,9 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.png';
 Ось список деяких корисних модифікаторів стилю:
 
 ```text
-фотореалістичний, автор ґреґ рутковський, автор крістофер нолан, живопис, цифровий живопис, концепт-арт, октановий рендеринг, широкий об’єктив, 3D-рендеринг, кінематографічне освітлення, популярний на ArtStation, популярний на CGSociety, гіперреалістичний, фото, природне світло, зернистість плівки
+photorealistic, by greg rutkowski, by christopher nolan, painting, digital painting, concept art, octane render, wide lens, 3D render, cinematic lighting, trending on ArtStation, trending on CGSociety, hyper realist, photo, natural light, film grain
 ```
 
 ## Примітки
 
-Oppenlaender et al. (@oppenlaender2022taxonomy) описують дескриптор `зарендерений(а) на...` як підсилювач якості, але наше робоче визначення відрізняється, оскільки цей модифікатор постійно генерує певний стиль платформи Unity (або іншої системи рендерингу). Таким чином, ми будемо називати цей дескриптор модифікатором стилю.
+Oppenlaender et al. (@oppenlaender2022taxonomy) описують дескриптор `rendered in ...` як підсилювач якості, але наше робоче визначення відрізняється, оскільки цей модифікатор постійно генерує певний стиль платформи Unity (або іншої системи рендерингу). Таким чином, ми будемо називати цей дескриптор модифікатором стилю.

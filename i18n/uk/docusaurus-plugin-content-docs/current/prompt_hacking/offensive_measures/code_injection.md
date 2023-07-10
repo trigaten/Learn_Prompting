@@ -8,7 +8,7 @@ sidebar_position: 1000
 
 Як повідомляється, введення коду було виконано [](https://twitter.com/ludwig_stumpp/status/1619701277419794435) у програмі зі штучним інтелектом, [MathGPT](https://mathgpt.streamlit.app/) і використано для отримання ключа API OpenAI ([звіт MITRE](https://atlas.mitre.org/studies/AML.CS0016/)).
 
-:::Примітка
+:::note
 З того часу MathGPT захищено від введення коду. Будь ласка, не намагайтеся зламати її; виклики API платні.
 :::
 
