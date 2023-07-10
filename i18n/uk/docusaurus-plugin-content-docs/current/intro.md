@@ -67,7 +67,7 @@ sidebar_position: 1
 
 **Надійність**: підвищення надійності великих мовних моделей (ВММ)
 
-**Image Prompting**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
+**Зображення за запитами**: інженерія запитів для моделей, що генерують зображення з тексту, таких як DALLE і Stable Diffusion
 
 **Злам запитами**: хакерство, але для інженерії запитів
 
