@@ -9,10 +9,6 @@ function Navbar(props) {
       link: "/docs/intro",
     },
     {
-      name: "Competition",
-      link: "#competition",
-    },
-    {
       name: "Contribute",
       link: "/contribute",
     },
