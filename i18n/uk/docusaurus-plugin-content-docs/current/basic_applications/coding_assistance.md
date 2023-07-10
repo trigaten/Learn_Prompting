@@ -33,15 +33,15 @@ sidebar_position: 40
 // highlight-start
 import random
 
-прийменники = ['на', 'у', 'над', 'з ', 'під', 'біля']
-дієслова = ['бігати', 'стрибати', 'танцювати', 'співати', 'сміятися', 'плакати']
-іменники = ['кішка', 'собака', 'дерево', 'квітка', 'книга', 'комп'ютер']
+prepositions = ['at', 'in', 'on', 'with', 'under', 'over']
+verbs = ['run', 'jump', 'dance', 'sing', 'laugh', 'cry']
+nouns = ['cat', 'dog', 'tree', 'flower', 'book', 'computer']
 
-прийменник = random.choice(прийменники)
-дієслово = random.choice(дієслова)
-іменник = random.choice(іменники)
+preposition = random.choice(prepositions)
+verb = random.choice(verbs)
+noun = random.choice(nouns)
 
-madlib = f"Я {дієслово} {прийменник} {іменник}."
+madlib = f"I {verb} {preposition} the {noun}."
 
 print(madlib)
 // highlight-end
