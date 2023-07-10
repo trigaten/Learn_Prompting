@@ -24,7 +24,7 @@ import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
   <img src={good_water} style={{width: "750px"}} />
 </div>
 
-Акцент на слові `very`, здається, покращує якість результату! Повторення також можна використовувати для підкреслення предметних термінів. Наприклад, якщо ви хочете створити зображення планети з інопланетянами, використовуючи запит: `A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`, інопланетяни з більшою вірогідністю будуть присутні на отриманому зображенні. Наступні зображення створено за допомогою Stable Diffusion:
+Акцент на слові `very`, здається, покращує якість результату! Повторення також можна використовувати для підкреслення предметних термінів. Наприклад, якщо ви хочете створити зображення планети з інопланетянами, використовуючи запит: `A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`, інопланетяни з більшою вірогідністю будуть присутні на отриманому зображенні. Наступні зображення створено за допомогою моделі Stable Diffusion:
 
 ``
 <div style={{textAlign: 'center'}}>
