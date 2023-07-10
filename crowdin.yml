@@ -1,5 +1,5 @@
 files:
-  - source: /docs/advanced_applications
-    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/advanced_applications/%original_file_name%
+  - source: /docs/**/*.md
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
   - source: /docs/**/*.json
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
