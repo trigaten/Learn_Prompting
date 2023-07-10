@@ -68,7 +68,7 @@ import astronaut_final from '../../static/img/astronaut.png';
 
 Зображення вийшли не таким гарними, як я очікував, тож я вирішив натомість почати з ракети:
 
-`Низькополігональний світ із біло-блакитною ракетою, що вилітає з розмитого зеленого лугу з низькополігональними горами на фоні. Highly detailed, isometric, 4K`
+`A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={rocket_sd_1} style={{width: "250px"}} />
@@ -80,17 +80,17 @@ import astronaut_final from '../../static/img/astronaut.png';
   <img src={rocket_final} style={{width: "250px"}} />
 </div>
 
-Тепер мені потрібен був кращий ноутбук
+Тепер мені потрібен потужніший ноутбук:
 
-`Низькополігональний світ з біло-блакитним ноутбуком на розмитому зеленому лузі з низькополігональними горами на фоні. Екран повністю синій. Дуже детальний ізометричний, 4K`
+`A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
-Я отримав деякі суперечливі результати; мені подобається правий нижній, але я вирішив спробувати дещо інше.
+Я отримав досить різні результати, з цих чотирьох зображень найбільше мені подобається правий нижній, однак, на цьому я не зупинився і вирішив спробувати дещо інше:
 
-`Низькополігональний світ із яскравим біло-блакитним дорогоцінним каменем на розмитому зеленому лузі з низькополігональними горами на фоні. Дуже детальний, ізометричний, 4K`
+`A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_1} style={{width: "250px"}} />
@@ -98,7 +98,7 @@ import astronaut_final from '../../static/img/astronaut.png';
 
 Це було не зовсім те, що треба. Спробуймо дещо чарівне та яскраве.
 
-`Низькополігональний світ із яскравим біло-блакитним дорогоцінним каменем, що за допомогою магії завис у центрі екрану над розмитим зеленим лугом із низькополігональними горами на фоні. Дуже детальний, ізометричний, 4K`
+`A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_2} style={{width: "250px"}} />
@@ -106,7 +106,7 @@ import astronaut_final from '../../static/img/astronaut.png';
 
 Мені сподобалися результати, але я хотів, щоб камінь був чітко посередині екрану.
 
-`Низькополігональний світ із яскравим біло-блакитним дорогоцінним каменем, що за допомогою магії завис у центрі екрану над розмитим зеленим лугом із низькополігональними горами на фоні. Дуже детальний, ізометричний, 4K`
+`A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_3} style={{width: "250px"}} />
@@ -120,7 +120,7 @@ import astronaut_final from '../../static/img/astronaut.png';
 
 Нарешті я почав працювати над космонавтом.
 
-`Низькополігональний світ із космонавтом у білому костюмі та блакитному шоломі, який сидить на розмитому зеленому лузі із низькополігональними горами на фоні. Дуже детальний ізометричний, 4K`
+`A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_final} style={{width: "250px"}} />
