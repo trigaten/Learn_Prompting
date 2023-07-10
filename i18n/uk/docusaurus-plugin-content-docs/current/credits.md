@@ -6,8 +6,8 @@ sidebar_position: 20000
 
 Ось зростаючий список людей, які долучилися до створення цього курсу:
 
-- [Chenglei Si](https://noviscl.github.io), багато-багато пропозицій щодо документів
-- [WesJD](https://wesleysmith.dev), проблеми з Javascript, налаштування домену
+- [Chenglei Si](https://noviscl.github.io) — мав силу-силенну пропозицій щодо документів
+- [WesJD](https://wesleysmith.dev) — допомагав вирішити проблеми з Javascript та налаштуваннями домену
 - Sulu, Docusaurus
 - [snpranav](https://twitter.com/snpranav), налаштування домену
 - [jayo78](https://github.com/jayo78), надає перевагу емодзі зліва
