@@ -92,7 +92,7 @@ import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
 
 sudo — це команда, яка «...делегує повноваження[s] , щоб надати певним користувачам... можливість запускати деякі (або всі) команди...» (@sudo2022jailbreak). Існує кілька варіантів експлуатації "sudo mode", наприклад, гіпотетичний "режим ядра" запропонований [@samczsun](https://twitter.com/samczsun/status/1598679658488217601)(@sam2022jailbreak). На запит вищезгаданим способом ChatGPT діє так, ніби надає користувачеві підвищені привілеї. Це враження про підвищені привілеї користувача, як правило, робить ChatGPT менш обмеженим у відповідях на запити.
 
-import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
+import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={sudo} style={{width: "500px"}} />
