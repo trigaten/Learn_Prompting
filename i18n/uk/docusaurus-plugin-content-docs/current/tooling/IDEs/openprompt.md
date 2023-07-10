@@ -6,7 +6,7 @@ sidebar_position: 16
 
 [OpenPrompt](https://thunlp.github.io/OpenPrompt/index.html) – це бібліотека Python з різними функціями для створення і тестування запитів.
 
-Зображення з '@site/docs/assets/tooling/openprompt.gif';
+import Image from '@site/docs/assets/tooling/openprompt.gif';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
