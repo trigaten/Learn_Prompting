@@ -13,7 +13,7 @@ import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
 
 Використовуючи Stable Diffusion v1.5 та наступний запит, ми створюємо гарне зображення Бреда Пітта, за винятком його рук, звичайно!
 
-`студійний, середнього розміру, портрет Бреда Пітта, який махає руками, деталізований, на плівку, студійне освітлення, об’єктив 90 мм, фотограф Мартін Шеллер:6`
+`studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
   <img src={bad_pitt} style={{width: "250px"}} />
