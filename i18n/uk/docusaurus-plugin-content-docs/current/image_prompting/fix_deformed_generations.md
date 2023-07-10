@@ -11,7 +11,7 @@ sidebar_position: 90
 import good_pitt from '@site/docs/assets/images_chapter/good_pitt.png';
 import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
 
-Використовуючи Stable Diffusion v1.5 та наступний запит, ми створюємо гарне зображення Бреда Пітта, за винятком його рук, звичайно!
+Використовуючи модель Stable Diffusion v1.5 та наступний запит, ми створюємо гарне зображення Бреда Пітта, за винятком його рук, звичайно!
 
 `studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
 
