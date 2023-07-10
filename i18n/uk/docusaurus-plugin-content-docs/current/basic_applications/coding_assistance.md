@@ -134,10 +134,10 @@ ChatGPT вміє виявляти в коді не тільки синтакси
 ```text
 Ти старший розробник Python. Оптимізуй цей скрипт:  
 
-for num in range (1, 101):
-    if num 1:
+for num in range(1, 101):
+    if num  1:
         for i in range(2, num):
-            if (число % i) == 0:
+            if (num % i) == 0:
                 break
         else:
             print(num)
@@ -167,32 +167,32 @@ print(numbers)
 Ти досвідчений розробник зі знанням COBOL і Python. Конвертуй цю програму з COBOL у Python:  
 
 
-ІДЕНТИФІКАЦІЯ.
-PROGRAM-ID. ВИРАХУВАТИ-ЄСВ-ПОДАТОК.
+IDENTIFICATION DIVISION.
+PROGRAM-ID. CALCULATE-SS-TAX.
 
-ДАНІ.
-РОБОЧИЙ ПРОСТІР.
-01 ЗАРПЛАТА PIC 9(7)V99.
-01 ЄСВ-ПОДАТОК PIC 9(7)V99.
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 SALARY PIC 9(7)V99.
+01 SS-TAX PIC 9(7)V99.
 
-ВИКОНАННЯ.
-ВИВЕСТИ «Введіть оклад працівника: ».
-ВРАХУВАННЯ ЗАРПЛАТИ.
+PROCEDURE DIVISION.
+DISPLAY "Enter employee's salary: ".
+ACCEPT SALARY.
 
-ОБЧИСЛИТИ ЄСВ-ПОДАТОК = ЗАРПЛАТА * 0,062.
+COMPUTE SS-TAX = SALARY * 0.062.
 
-ВИВЕСТИ "Податок на соціальне страхування становить: $", ЄСВ-ПОДАТОК.
-ЗУПИНИТИ РОБОТУ.
+DISPLAY "Social Security tax is: $", SS-TAX.
+STOP RUN.
 ```
 
 Приблизний результат:
 
 ```text
 // highlight-start
-зарплата = float(input("Введіть оклад працівника: "))
-єсв_податок = зарплата * 0,062
+salary = float(input("Enter employee's salary: "))
+ss_tax = salary * 0.062
 
-print("ЄСВ-податок становить: $", round(єсв_податок, 2))
+print("Social Security tax is: $", round(ss_tax, 2))
 // highlight-end
 ```
 
@@ -204,20 +204,20 @@ print("ЄСВ-податок становить: $", round(єсв_податок
 ```text
 Мій скрипт Python використовує два файли, вказані нижче, у різних каталогах. Виведи результат виконання conversion.py:
 
-ЗАПУСК ФАЙЛУ 1: ./phrases/coming_and_going.py
+BEGIN FILE 1: ./phrases/coming_and_going.py
 def hi(name):
-   print(f"Вітаю, {name}!")
+   print(f"Hello, {name}!")
 def bye(name):
-   print(f"До побачення, {name}!")
+   print(f"Goodbye, {name}!")
 
-ЗАПУСК ФАЙЛУ 2: ./conversation.py
+BEGIN FILE 2: ./conversation.py
 from phrases.coming_and_going import hi, bye
-Привіт("Джон")
-До побачення("Джон")
+hi("John")
+bye("John")
 
 // highlight-start
-Привіт, Джоне!
-До побачення, Джоне!
+Hello, John!
+Goodbye, John!
 // highlight-end
 ```
 
@@ -236,21 +236,21 @@ ChatGPT може не тільки працювати з кодом, але й �
 
 ```text
 // highlight-start
--- Створити базу даних «політика»
-CREATE DATABASE політика;
+-- Створити базу даних «politics»
+CREATE DATABASE politics;
 GO
 
--- Залучити базу даних «політика»
-USE політика;
+-- Залучити базу даних «politics»
+USE politics;
 GO
 
--- Створити таблицю «політики»
-CREATE TABLE політики (
+-- Створити таблицю «politicians»
+CREATE TABLE politicians (
     id INT PRIMARY KEY,
-    повне_ім'я VARCHAR(50),
-    країна VARCHAR(50),
-    день_народження DATE,
-    день_смерті DATE
+    full_name VARCHAR(50),
+    country VARCHAR(50),
+    date_of_birth DATE,
+    date_of_death DATE
 );
 -- і т.д.
 // highlight-end
@@ -268,12 +268,12 @@ CREATE TABLE політики (
 // highlight-start
 ALTER TABLE політики ADD заступники VARCHAR(255);
 
-UPDATE політики
-SET заступники = 
-    CASE ім'я
-        WHEN «Вінстон Черчілль», THEN «Клемент Еттлі»
-        WHEN «Франклін Д. Рузвельт» THEN «Гаррі С. Трумен»
-        WHEN "Мао Цзедун", THEN "Лінь Бяо"
+UPDATE politicians
+SET second_in_command = 
+    CASE name
+        WHEN 'Winston Churchill' THEN 'Clement Attlee'
+        WHEN 'Franklin D. Roosevelt' THEN 'Harry S. Truman'
+        WHEN 'Mao Zedong' THEN 'Lin Biao'
         -- додайте ще зразків для кожного політика
         ELSE NULL
     END;
@@ -296,10 +296,10 @@ Host: www.example.com
 ```text
 // highlight-start
 HTTP/1.1 200 OK
-Дата: [поточна дата й час]
-Сервер: Apache/2.4.41 (Ubuntu)
-Остання зміна: [дата й час останньої зміни запитуваного ресурсу]
-Тип вмісту: [тип MIME запитуваного ресурсу, наприклад text/html]
+Date: [поточна дата й час]
+Server: Apache/2.4.41 (Ubuntu)
+Last-Modified: [дата й час останньої зміни запитуваного ресурсу]
+Content-Type: [тип MIME запитуваного ресурсу, наприклад text/html]
 // highlight-end
 ```
 
@@ -331,17 +331,17 @@ HTTP/1.1 200 OK
 
 ```text
 // highlight-start
--rw-r--r-- 1 група користувачів 2048 3 березня 14:23 file1.txt
-drwxr-xr-x 2 група користувачів 4096 28 лютого 09:12 directory1
--rwx------ 1 група користувачів 16384 25 лютого 19:41 executable1
+-rw-r--r--  1 user  group   2048 Mar  3 14:23 file1.txt
+drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
+-rwx------  1 user  group  16384 Feb 25 19:41 executable1
 // highlight-end
 ```
 
 Пограйтеся з іншими командами:
 
 ```text
->торкнися greeting.txt  
->скажи "привіт" > greeting.txt  
+>touch greeting.txt  
+>echo "hello" > greeting.txt  
 >ls -l  
 ```
 
@@ -349,10 +349,10 @@ ChatGPT має зберегти ваші зміни (хоча б на деяки
 
 ```text
 // highlight-start
--rw-r--r-- 1 група користувачів 2048 3 березня 14:23 file1.txt
-drwxr-xr-x 2 група користувачів 4096 28 лютого 09:12 directory1
--rwx------ 1 група користувачів 16384 25 лютого 19:41 executable1
--rw-r--r-- 1 група користувачів 6 березня 4 16:15 greeting.txt
+-rw-r--r--  1 user  group   2048 Mar  3 14:23 file1.txt
+drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
+-rwx------  1 user  group  16384 Feb 25 19:41 executable1
+-rw-r--r--  1 user  group      6 Mar  4 16:15 greeting.txt
 // highlight-end
 ```
 
