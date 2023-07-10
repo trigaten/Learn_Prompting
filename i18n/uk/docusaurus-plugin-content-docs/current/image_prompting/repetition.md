@@ -18,7 +18,7 @@ import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
   <img src={bad_water} style={{width: "750px"}} />
 </div>
 
-`Дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже дуже красива картина з горою поруч із водоспадом.`
+`A very very very very very very very very very very very very very very very very very very very very very very beautiful painting of a mountain next to a waterfall.`
 
 <div style={{textAlign: 'center'}}>
   <img src={good_water} style={{width: "750px"}} />
@@ -31,7 +31,7 @@ import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
   <img src= style={{width: "250px"}} />
 </div>
 
-`Планета з інопланетянами інопланетянами інопланетянами інопланетянами інопланетянами інопланетянами інопланетянами інопланетянами інопланетянами інопланетянами інопланетянами`
+`A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`
 
 <div style={{textAlign: 'center'}}>
   <img src={planet_aliens} style={{width: "250px"}} />
