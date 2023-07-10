@@ -18,7 +18,7 @@ We are actively looking for:
 
 - content suggestions
 - translation
-- content/art contributions
+- content and art contributions
 - typos :)
 
 
