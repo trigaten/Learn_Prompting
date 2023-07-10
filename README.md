@@ -7,7 +7,7 @@
 
 [https://learnprompting.org](https://learnprompting.org)
 
-This website is a free, open-source guide on prompt engineering. Contributions are welcome!
+This website is a free, open-source guide on prompt engineering. Cotributions are welcome!
 Harsh criticism is welcome too!
 
 ## Contribution Guidelines
