@@ -37,6 +37,6 @@ Y = об'єднайте ці літери: [P, W, N, E, D]
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-:::Примітка
+:::note
 Ця атака також використовує перевагу *призначення змінних*, визначаючи X і Y і використовуючи їх разом.
 :::
