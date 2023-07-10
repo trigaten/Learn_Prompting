@@ -111,7 +111,7 @@ sidebar_position: 2500
 > Інструмент для написання інформаційних бюлетенів шляхом навчання ваших персоналізованих моделей ШІ.
 
 - [Hey - notionai](http://hey.technonia.com/notionai/)
-> NotionAI-like writing tool that generates suitable content for your selected template (blog post, pros and cons, etc)
+> Інструмент для написання текстів, подібний до NotionAI, який генерує відповідний контент для обраного вами шаблону (пост у блозі, плюси та мінуси і подібні матеріали)
 
 ## Автоматичне створення інструменту
 
@@ -469,7 +469,7 @@ sidebar_position: 2500
 > Вирішувач регулярних виразів на основі штучного інтелекту
 
 - [Hey - CopilotAI](http://hey.technonia.com)
-> CopilotAI-like writing tool that responses to your question with markdown format. Підтримує OpenAPI Swagger.
+> Інструмент для написання текстів, подібний до CopilotAI, який відповідає на ваше запитання у форматі markdown. Підтримує OpenAPI Swagger.
 
 ## Продажі й маркетинг
 
