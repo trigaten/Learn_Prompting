@@ -96,7 +96,7 @@ import astronaut_final from '../../static/img/astronaut.png';
   <img src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
-Це було не зовсім те, що треба. Спробуймо дещо чарівне та яскраве.
+Це було не зовсім те, що треба. Спробуймо додати трішки чогось магічного та яскравого.
 
 `A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
@@ -104,7 +104,7 @@ import astronaut_final from '../../static/img/astronaut.png';
   <img src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
-Мені сподобалися результати, але я хотів, щоб камінь був чітко посередині екрану.
+Мені сподобався результат цього запиту, але я хотів, щоб камінь був чітко посередині зображення.
 
 `A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
@@ -112,7 +112,7 @@ import astronaut_final from '../../static/img/astronaut.png';
   <img src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
-Десь тут я використав здатність SD забезпечувати вплив попереднього результату на наступні зображення. І таким чином я дійшов до:
+Десь тут я використав здатність SD забезпечувати вплив попереднього результату на наступні зображення. І таким чином я отримав ось це:
 
 <div style={{textAlign: 'center'}}>
   <img src={focus_final} style={{width: "250px"}} />
