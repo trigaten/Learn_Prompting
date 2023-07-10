@@ -1,8 +1,8 @@
 {
-  "label": "🖼️ Image Prompting",
+  "label": "🖼️ Запити на створення зображень",
   "position": 40,
   "link": {
     "type": "generated-index",
-    "description": "Prompt engineering for text to image models like DALLE and Stable Diffusion!"
+    "description": "Інженерія запитів у моделях для перетворення тексту в зображення, таких як DALLE і Stable Diffusion!"
   }
 }
