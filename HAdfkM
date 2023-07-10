@@ -1,0 +1,319 @@
+.
+├── additional.md
+├── advanced_applications
+│   ├── _category_.json
+│   ├── mrkl.md
+│   ├── overview.md
+│   ├── pal.md
+│   └── react.md
+├── applied_prompting
+│   ├── _category_.json
+│   ├── build_chatbot_from_kb.md
+│   ├── build_chatgpt.md
+│   ├── mc_tutorial.md
+│   ├── overview.md
+│   └── short_response.md
+├── assets
+│   ├── advanced
+│   │   ├── mrkl
+│   │   │   ├── dataset.png
+│   │   │   ├── extract.png
+│   │   │   ├── final.png
+│   │   │   ├── load_dataset.png
+│   │   │   ├── model.png
+│   │   │   └── search.png
+│   │   ├── mrkl.png
+│   │   ├── mrkl_task.png
+│   │   ├── pal.png
+│   │   ├── react_performance.png
+│   │   └── react_qa.png
+│   ├── basic_applications
+│   │   ├── Friendship_Chris_Rock.png
+│   │   ├── Friendship_Informal.png
+│   │   ├── Friendship_Mark_Twain.png
+│   │   ├── Friendship_Millennial.png
+│   │   ├── Generic_Friendship.png
+│   │   ├── Zapiermail
+│   │   │   ├── Basic.png
+│   │   │   ├── Diagram.png
+│   │   │   ├── Step1.png
+│   │   │   ├── Step2.png
+│   │   │   ├── Step3.png
+│   │   │   ├── Step4.png
+│   │   │   └── Zap.png
+│   │   ├── chatbot_from_kb_gpt3.png
+│   │   ├── chatbot_from_kb_gpt3_organized.png
+│   │   ├── chatbot_from_kb_intents.png
+│   │   ├── chatbot_from_kb_login.png
+│   │   ├── chatbot_from_kb_prompt.png
+│   │   ├── chatgpt_ui_diagram.png
+│   │   ├── short_content_auto.png
+│   │   ├── skippy_chatbot.png
+│   │   ├── skippy_chatbot_header.png
+│   │   ├── summarizing
+│   │   │   ├── Football.png
+│   │   │   ├── Outline_1.png
+│   │   │   ├── Outline_2.png
+│   │   │   ├── Quantum_Entanglement.png
+│   │   │   ├── Romeo_and_Juliet_Act_by_Act_1.png
+│   │   │   └── Romeo_and_Juliet_Act_by_Act_2.png
+│   │   └── therapy_chatbot.gif
+│   ├── basics
+│   │   ├── API_key.png
+│   │   ├── brain.svg
+│   │   ├── chain_of_thought.png
+│   │   ├── chain_of_thought_example.png
+│   │   ├── chatbot.svg
+│   │   ├── combined_prompt.svg
+│   │   ├── csharp.png
+│   │   ├── dyno_example.png
+│   │   ├── few_shot.svg
+│   │   ├── formal_prompt.svg
+│   │   ├── instruction_prompt.svg
+│   │   ├── limerick_question.png
+│   │   ├── music+image.png
+│   │   ├── novice.png
+│   │   ├── pitfalls.svg
+│   │   ├── primed_question.png
+│   │   ├── prompt.svg
+│   │   ├── role_prompt.svg
+│   │   ├── steps.svg
+│   │   ├── techniques.svg
+│   │   ├── temperature.svg
+│   │   ├── unguided_question.png
+│   │   └── unprimed_question.png
+│   ├── images_chapter
+│   │   ├── AMA_multiprompting.png
+│   │   ├── astronaut_dalle_1.png
+│   │   ├── astronaut_sd_1.png
+│   │   ├── bad_pitt.png
+│   │   ├── bad_water.jpg
+│   │   ├── computer_dalle_1.png
+│   │   ├── gemstone_sd_1.png
+│   │   ├── gemstone_sd_2.png
+│   │   ├── gemstone_sd_3.png
+│   │   ├── good_pitt.png
+│   │   ├── good_water.jpg
+│   │   ├── laptop_sd_1.png
+│   │   ├── midjourney_astronaut.png
+│   │   ├── midjourney_astronaut_ip2.png
+│   │   ├── midjourney_astronaut_multi1.png
+│   │   ├── midjourney_astronaut_multi2.png
+│   │   ├── midjourney_astronaut_params.png
+│   │   ├── midjourney_astronaut_params_a12.png
+│   │   ├── midjourney_astronaut_params_a169.png
+│   │   ├── midjourney_astronaut_params_c20.png
+│   │   ├── midjourney_astronaut_params_c80.png
+│   │   ├── midjourney_astronaut_params_q05.png
+│   │   ├── midjourney_astronaut_params_q2.png
+│   │   ├── midjourney_astronaut_params_s50.png
+│   │   ├── midjourney_astronaut_params_s900.png
+│   │   ├── midjourney_astronaut_params_sameseed.png
+│   │   ├── midjourney_astronaut_params_seed123.png
+│   │   ├── midjourney_astronaut_params_tile.png
+│   │   ├── midjourney_astronaut_params_tilecomplete.jpeg
+│   │   ├── midjourney_astronaut_params_tilegrid.png
+│   │   ├── midjourney_astronaut_params_v1.png
+│   │   ├── midjourney_astronaut_params_v2.png
+│   │   ├── midjourney_astronaut_params_v3.png
+│   │   ├── mountains.png
+│   │   ├── mountains_no_trees.png
+│   │   ├── planet.png
+│   │   ├── planet_aliens.png
+│   │   ├── planets.png
+│   │   ├── pyramids.png
+│   │   ├── red_pyramids.png
+│   │   ├── rocket_sd_1.png
+│   │   ├── rockets_dalle_1.png
+│   │   ├── rockets_dalle_2.png
+│   │   └── special_pyramids.png
+│   ├── intermediate
+│   │   ├── gen_k_p1.png
+│   │   ├── gold_unimportant.png
+│   │   ├── knowledge_generation.png
+│   │   ├── least-to-most.png
+│   │   ├── least_to_most_formal.png
+│   │   ├── prompted_palm.png
+│   │   ├── recitation.png
+│   │   ├── zero_shot.png
+│   │   └── zero_shot_example.png
+│   ├── jailbreak
+│   │   ├── bing_chat.png
+│   │   ├── chatgpt4.png
+│   │   ├── chatgpt_actor.jpg
+│   │   ├── hotwire_jailbreak.png
+│   │   ├── injection.png
+│   │   ├── injection_job.png
+│   │   ├── injection_leak.png
+│   │   ├── jailbreak_research.png
+│   │   ├── logic.png
+│   │   ├── lynx_jailbreak.png
+│   │   ├── pretend_jailbreak.png
+│   │   ├── responsibility_jailbreak.jpg
+│   │   ├── sudo_jailbreak.png
+│   │   └── sudo_mode_jailbreak.jpg
+│   ├── miscl
+│   │   └── riffusion_phonk.png
+│   ├── providers
+│   │   └── openai.png
+│   ├── reliability
+│   │   ├── AMA_Prompting.jpg
+│   │   ├── AMA_multiprompting.png
+│   │   ├── diverse.png
+│   │   ├── math.png
+│   │   ├── playground_probability.png
+│   │   ├── playground_probability_2.png
+│   │   └── self_consistency.png
+│   ├── tooling
+│   │   ├── GPT3.png
+│   │   ├── dalle.png
+│   │   ├── dreamstudio.png
+│   │   ├── dust.png
+│   │   ├── dyno.png
+│   │   ├── everyprompt.png
+│   │   ├── humanloop.png
+│   │   ├── kollaprompt.png
+│   │   ├── langchain.png
+│   │   ├── multi.png
+│   │   ├── openprompt.gif
+│   │   ├── patience.png
+│   │   ├── promptchainer.png
+│   │   ├── promptide.png
+│   │   ├── promptmetheus.jpg
+│   │   ├── promptsai.png
+│   │   ├── promptsandbox.png
+│   │   ├── promptsource.png
+│   │   ├── snorkel.png
+│   │   ├── soaked.png
+│   │   ├── spellbook.png
+│   │   └── theforgeai.png
+│   └── trainable
+│       └── prompt_tuning.png
+├── basic_applications
+│   ├── _category_.json
+│   ├── blog_generation.md
+│   ├── coding_assistance.md
+│   ├── contracts.md
+│   ├── emojis.md
+│   ├── introduction.md
+│   ├── study_tool.md
+│   ├── summarize.md
+│   ├── table_generation.md
+│   ├── writing_emails.md
+│   ├── writing_in_diff_voices.md
+│   └── zapier_for_emails.md
+├── basics
+│   ├── _category_.json
+│   ├── chatbot_basics.md
+│   ├── combining_techniques.md
+│   ├── configuration_hyperparameters.md
+│   ├── few_shot.md
+│   ├── formalizing.md
+│   ├── instructions.md
+│   ├── intro.md
+│   ├── pitfalls.md
+│   ├── prompting.md
+│   ├── roles.md
+│   ├── starting_your_journey.md
+│   └── world.md
+├── bibliography.md
+├── code_examples
+│   └── PAL.ipynb
+├── credits.md
+├── hot_topics.md
+├── image_prompting
+│   ├── _category_.json
+│   ├── fix_deformed_generations.md
+│   ├── intro.md
+│   ├── midjourney.md
+│   ├── quality_boosters.md
+│   ├── repetition.md
+│   ├── resources.md
+│   ├── style_modifiers.md
+│   └── weighted_terms.md
+├── intermediate
+│   ├── _category_.json
+│   ├── chain_of_thought.md
+│   ├── generated_knowledge.md
+│   ├── least_to_most.md
+│   ├── self_consistency.md
+│   ├── whats_in_a_prompt.md
+│   └── zero_shot_cot.md
+├── intro.md
+├── miscl
+│   ├── _category_.json
+│   ├── detect.md
+│   ├── music.md
+│   └── trickery.md
+├── products.md
+├── prompt_hacking
+│   ├── _category_.json
+│   ├── defensive_measures
+│   │   ├── _category_.json
+│   │   ├── filtering.md
+│   │   ├── instruction.md
+│   │   ├── llm_eval.md
+│   │   ├── other.md
+│   │   ├── overview.md
+│   │   ├── post_prompting.md
+│   │   ├── random_sequence.md
+│   │   ├── sandwich_defense.md
+│   │   └── xml_tagging.md
+│   ├── injection.md
+│   ├── intro.md
+│   ├── jailbreaking.md
+│   ├── leaking.md
+│   └── offensive_measures
+│       ├── _category_.json
+│       ├── code_injection.md
+│       ├── defined_dictionary.md
+│       ├── indirect_injection.md
+│       ├── obfuscation.md
+│       ├── overview.md
+│       ├── payload_splitting.md
+│       ├── recursive_attack.md
+│       └── virtualization.md
+├── reliability
+│   ├── _category_.json
+│   ├── calibration.md
+│   ├── debiasing.md
+│   ├── ensembling.md
+│   ├── intro.md
+│   ├── lm_self_eval.md
+│   └── math.md
+├── tooling
+│   ├── IDEs
+│   │   ├── DALLE.md
+│   │   ├── _category_.json
+│   │   ├── conclusion.md
+│   │   ├── dream_studio.md
+│   │   ├── dust.md
+│   │   ├── dyno.md
+│   │   ├── everyprompt.md
+│   │   ├── humanloop.md
+│   │   ├── intro.md
+│   │   ├── kollaprompt.md
+│   │   ├── langchain.md
+│   │   ├── multi.md
+│   │   ├── openprompt.md
+│   │   ├── patience.md
+│   │   ├── playground.md
+│   │   ├── promptchainer.md
+│   │   ├── promptide.md
+│   │   ├── promptmetheus.md
+│   │   ├── promptsai.md
+│   │   ├── promptsandbox.md
+│   │   ├── promptsource.md
+│   │   ├── snorkel.md
+│   │   ├── soaked.md
+│   │   ├── spellbook.md
+│   │   └── theforgeai.md
+│   ├── _category_.json
+│   └── tools.md
+├── trainable
+│   ├── _category_.json
+│   ├── discretized.md
+│   └── soft_prompting.md
+└── vocabulary.md
+
+30 directories, 286 files
