@@ -18,7 +18,7 @@ import react_qa from '@site/docs/assets/advanced/react_qa.png';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Система ReAct (Яо та ін.)
+Система ReAct (Yao та ін.)
 </div>
 
 Читачі, які знайомі з навчанням із підкріпленням, можуть розпізнати цей процес як подібний з класичним циклом такого навчання: стан, дія, винагорода, стан... ReAct надає деяку формалізацію цього у своїй статті.
@@ -35,6 +35,6 @@ import react_performance from '@site/docs/assets/advanced/react_performance.png'
 </div>
 
 <div style={{textAlign: 'center'}}>
-Результати ReAct (Яо та ін.)
+Результати ReAct (Yao та ін.)
 </div>
 
