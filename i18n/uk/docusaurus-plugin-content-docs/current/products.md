@@ -111,7 +111,7 @@ sidebar_position: 2500
 > Інструмент для написання інформаційних бюлетенів шляхом навчання ваших персоналізованих моделей ШІ.
 
 - [Hey - notionai](http://hey.technonia.com/notionai/)
-> NotionAI-like writing tool that generates suitable content for your selected template (blog post, pros and cons, etc)
+> Інструмент для написання текстів, подібний до NotionAI, який генерує відповідний контент для обраного вами шаблону (пост у блозі, плюси та мінуси і подібні матеріали)
 
 ## Автоматичне створення інструменту
 
@@ -469,7 +469,7 @@ sidebar_position: 2500
 > Вирішувач регулярних виразів на основі штучного інтелекту
 
 - [Hey - CopilotAI](http://hey.technonia.com)
-> CopilotAI-like writing tool that responses to your question with markdown format. Supports OpenAPI Swagger.
+> Інструмент для написання текстів, подібний до CopilotAI, який відповідає на ваше запитання у форматі markdown. Підтримує OpenAPI Swagger.
 
 ## Продажі й маркетинг
 
@@ -516,11 +516,11 @@ sidebar_position: 2500
 > Зв’язуйтесь з потенційними клієнтами, проводьте дослідження та керуйте початковим охопленням. ШІ пише та надсилає листи з вашої електронної адреси.
 
 - [Hey - NotionAI](http://hey.technonia.com/notionai/)
-> NotionAI-like writing tool that generates suitable content for your selected template (recruiting emails, sails email, etc)
+> Інструмент для написання текстів, подібний до NotionAI, який генерує потрібний контент для обраного вами шаблону (рекрутингові листи, електронні запити тощо)
 
 ## Музика
 
-- [Splash](https://www.splashmusic.com/) > ШІ, який відкриває нові способи створення музики та насолоди від неї. Наш штучний інтелект дозволяє будь-кому складати оригінальну музику та співати під будь-яку мелодію.
+- [Splash](https://www.splashmusic.com/) > ШІ, який відкриває нові способи створення музики та насолоди від її прослуховування. Наш штучний інтелект дозволяє будь-кому складати оригінальну музику та співати під будь-яку мелодію.
 
 ## Відео
 
@@ -586,4 +586,4 @@ sidebar_position: 2500
 > Генератор складних запитів зі штучним інтелектом з малого початкового запиту.
 
 - [Thomas IO](https://www.thomas.io/stable-diffusion-prompt-generator)
-> Генератор запитів Stable Diffusion. Введіть кілька слів і натисніть enter, щоб отримати детальний запит.
+> Генератор запитів Stable Diffusion. Введіть кілька слів і натисніть Enter, щоб отримати детальний запит.
