@@ -7,12 +7,12 @@ sidebar_position: 6
 [Prompt IDE](https://prompt.vizhub.ai)(@strobelt2022promptide) – це пошуковий інструмент інженерії запитів.
 
 
-Зображення з '@site/docs/assets/tooling/promptide.png';
+import Image from '@site/docs/assets/tooling/promptide.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Функції
+## Характеристики
 
 Prompt IDE дозволяє проводити автоматизоване тестування на основі наборів даних.
