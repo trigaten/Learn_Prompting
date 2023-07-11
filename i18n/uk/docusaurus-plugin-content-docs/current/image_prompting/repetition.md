@@ -2,9 +2,9 @@
 sidebar_position: 50
 ---
 
-# 🟢 Repetition
+# 🟢 Повторення
 
-Repeating the same word within a prompt, or similar phrases can cause the model to emphasize that word in the generated image(@oppenlaender2022taxonomy). For example, [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) generated these waterfalls with DALLE:
+Повторення того самого слова або схожих фраз у запиті може призвести до того, що модель зробить акцент на цьому слові в згенерованому зображенні (@oppenlaender2022taxonomy). Наприклад, [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) створив ці водоспади за допомогою нейромережі DALLE:
 
 import bad_water from '@site/docs/assets/images_chapter/bad_water.jpg';
 import good_water from '@site/docs/assets/images_chapter/good_water.jpg';
@@ -24,7 +24,7 @@ import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
   <img src={good_water} style={{width: "750px"}} />
 </div>
 
-The emphasis on the word `very` seems to improve generation quality! Repetition can also be used to emphasize subject terms. For example, if you want to generate an image of a planet with aliens, using the prompt `A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens` will make it more likely that aliens are in the resultant image. The following images are made with Stable Diffusion.
+Акцент на слові `very`, здається, покращує якість результату! Повторення також можна використовувати для підкреслення предметних термінів. Наприклад, якщо ви хочете створити зображення планети з інопланетянами, використовуючи запит: `A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`, інопланетяни з більшою вірогідністю будуть присутні на отриманому зображенні. Наступні зображення створено за допомогою моделі Stable Diffusion:
 
 ``
 <div style={{textAlign: 'center'}}>
@@ -37,6 +37,6 @@ The emphasis on the word `very` seems to improve generation quality! Repetition 
   <img src={planet_aliens} style={{width: "250px"}} />
 </div>
 
-## Notes
+## Примітки
 
-This method is not perfect, and using weights (next article) is often a better option.
+Цей метод не досконалим, і використання значущості (наступна стаття) часто є кращим варіантом.
