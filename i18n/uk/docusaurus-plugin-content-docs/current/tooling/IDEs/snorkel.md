@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Snorkel 🚧
 
-import Image from '@site/docs/assets/tooling/snorkel.png';
+Зображення з '@site/docs/assets/tooling/snorkel.png';
 
 У [Snorkel](https://snorkel.ai/snorkel-flow-platform/foundation-model/) є інструменти для створення запитів і точного налаштування моделей.
 
@@ -12,4 +12,4 @@ import Image from '@site/docs/assets/tooling/snorkel.png';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Характеристики
+## Функції
