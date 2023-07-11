@@ -6,12 +6,12 @@ sidebar_position: 11
 
 [Spellbook](https://scale.com/spellbook) – це професійне ІСР для запитів, створене Scale AI.
 
-Зображення з '@site/docs/assets/tooling/spellbook.png';
+import Image from '@site/docs/assets/tooling/spellbook.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Функції
+## Характеристики
 
 Spellbook дозволяє користувачам пройти повний цикл створення та порівняння запитів, точного налаштування моделей і приведення остаточних налаштувань до дії.
