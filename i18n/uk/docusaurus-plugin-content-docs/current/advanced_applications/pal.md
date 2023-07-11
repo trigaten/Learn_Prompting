@@ -13,12 +13,12 @@ import image from '@site/docs/assets/advanced/pal.png';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Приклад PAL (Gao та ін.)
+Приклад PAL (Ґао та ін.)
 </div>
 
 Важливо зауважити, що PAL поєднує природну мову (NL - natural language) і код. На наведеному вище зображенні синім кольором показано міркування природною мовою, які створює PAL. Хоча тут цього і не видно, проте PAL генерує '\#' перед кожним рядком міркування природною мовою, так що програмне середовище виконання інтерпретує їх як коментарі.
 
-## Приклад
+## Наприклад
 
 Давайте розглянемо приклад вирішення математичної задачі за допомогою PAL. Маю запит з трьох питань, що є спрощеною версією [цього](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal).
 
@@ -41,43 +41,43 @@ llm = OpenAI(model_name='text-davinci-002', temperature=0)
 
 ```python
 MATH_PROMPT = '''
-Q: У серверній кімнаті було дев'ять комп'ютерів. Щодня, з понеділка по четвер, встановлювали ще по п’ять комп’ютерів. Скільки комп’ютерів зараз у серверній кімнаті?
+Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
 
-# рішення на Python:
-"""У серверній кімнаті було дев'ять комп'ютерів. Щодня, з понеділка по четвер, встановлювали ще по п’ять комп’ютерів. Скільки комп’ютерів зараз у серверній кімнаті?"""
-комп'ютери_початкові = 9
-комп'ютери_в_день = 5
-число_днів = 4 # 4 дні між понеділком і четвергом
-комп'ютери_додані = комп'ютери_в_день * число_днів
-комп'ютери_всього = комп'ютери_початкові + комп'ютери_додані
-результат = комп'ютери_всього 
-повернути результат
-
-
-Q: У Шона п'ять іграшок. На Різдво він отримав від мами й тата по дві іграшки. Скільки у нього зараз іграшок?
-
-# рішення на Python:
-"""У Шона п'ять іграшок. На Різдво він отримав від мами й тата по дві іграшки. Скільки у нього зараз іграшок?"""
-іграшки_початкові = 5
-іграшки_мами = 2
-іграшки_тата = 2
-всього_отримав = іграшки_мами + іграшки_тата
-всього_іграшок = іграшки_початкові + всього_отримав
-результат = всього_іграшок 
+# solution in Python:
+"""There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?"""
+computers_initial = 9
+computers_per_day = 5
+num_days = 4  # 4 days between monday and thursday
+computers_added = computers_per_day * num_days
+computers_total = computers_initial + computers_added
+result = computers_total
+return result
 
 
-Q: Джейсон мав 20 льодяників. Він дав Денні декілька льодяників. Тепер у Джейсона 12 льодяників. Скільки льодяників Джейсон дав Денні?
+Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
 
-# рішення на Python:
-"""У Джейсона було 20 льодяників. Він дав Денні декілька льодяників. Тепер у Джейсона 12 льодяників. Скільки льодяників Джейсон дав Денні?"""
-джейсон_льодяники_початкові = 20
-джейсон_льодяники_після = 12
-денні_льодяники = джейсон_льодяники_початкові - джейсон_льодяники_після
-результат = денні_льодяники
+# solution in Python:
+"""Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?"""
+toys_initial = 5
+mom_toys = 2
+dad_toys = 2
+total_received = mom_toys + dad_toys
+total_toys = toys_initial + total_received
+result = total_toys
+
+
+Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+
+# solution in Python:
+"""Jason had 20 lollipops. He gave Denny some lollipops. He gave Denny some lollipops. How many lollipops did Jason give to Denny?"""
+jason_lollipops_initial = 20
+jason_lollipops_after = 12
+denny_lollipops = jason_lollipops_initial - jason_lollipops_after
+result = denny_lollipops
 
 Q: {question}
 
-# рішення на Python:
+# solution in Python:
 '''
 ```
 
@@ -92,13 +92,13 @@ print(llm_out)
 
 <pre>
 <span className="bluegreen-highlight">
-Емма долетіла літаком до Сіетла за 60 хвилин. Потім вона за 2 години доїхала потягом до Портленда, а ще за 30 хвилин автобусом до Ванкувера. Скільки часу їй знадобилося, щоб дістатися до Ванкувера?<br/><br/>
+Emma took a 60 minute plane ride to seattle. She then took a 2 hour train ride to portland, and then a 30 minute bus ride to vancouver. How long did it take her to get to vancouver?<br/><br/>
 
-політ_на_літаку = 60<br/>
-поїздка_на_потязі = 2 * 60 # 2 години в хвилинах<br/>
-поїздка_на_автобусі = 30<br/>
-загальний_час = політ_на_літаку + поїздка_на_потязі + поїздка_на_автобусі<br/>
-результат = загальний_час
+plane_ride = 60<br/>
+train_ride = 2 * 60  # 2 hours in minutes<br/>
+bus_ride = 30<br/>
+total_time = plane_ride + train_ride + bus_ride<br/>
+result = total_time
 </span>
 </pre>
 
