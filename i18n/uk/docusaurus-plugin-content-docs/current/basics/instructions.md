@@ -12,7 +12,7 @@ import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
 
 Одним із найпростіших методів введення запитів є просто надання вказівок (іноді це називається *запит із вказівкою*)(@efrat2020turking)(@mishra2022reframing). Ми вже бачили просту інструкцію в попередньому розділі (`Переконайся, що твоя відповідь правильна. Чому дорівнює 965*590? Переконайся, що твоя відповідь правильна:`). Однак сучасні ШІ можуть виконувати набагато складніші вказівки.
 
-Нижче наведено наш перший [приклад](https://learnprompting.org/docs/basics/intro#embeds). Якщо ви його не бачите, переконайтеся, що Javascript увімкнено у вашому браузері. Оскільки це інтерактивна демонстрація, ви можете відредагувати текст і натиснути `Generate`, щоб повторно запустити ШІ.
+Нижче наведено наш перший [приклад](https://learnprompting.org/docs/basics/intro#embeds). Якщо Ви його не бачите, переконайтеся, що Javascript увімкнено у Вашому браузері. Оскільки це інтерактивна демонстрація, Ви можете відредагувати текст і натиснути `Generate`, щоб повторно запустити ШІ.
 
 #### Приклад 1 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IkEgdXNlciBoYXMgaW5wdXQgdGhlaXIgZmlyc3QgYW5kIGxhc3QgbmFtZSBpbnRvIGEgZm9ybS4gV2UgZG9uJ3Qga25vdyBpbiB3aGljaCBvcmRlciBcbnRoZWlyIGZpcnN0L2xhc3QgbmFtZSBpcywgYnV0IHdlIG5lZWQgaXQgdG8gYmUgaW4gdGhlIGZvcm1hdCAnTGFzdCwgRmlyc3QnLiBDb252ZXJ0IHRoZSBmb2xsb3dpbmc6XG5cbmpvaG4gZG9lIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
