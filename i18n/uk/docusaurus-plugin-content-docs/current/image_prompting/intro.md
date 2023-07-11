@@ -49,7 +49,7 @@ import astronaut_final from '../../static/img/astronaut.png';
   <img src={computer_1} style={{width: "750px"}} />
 </div>
 
-Зрештою, мені потрібен ще й космонавт! Запит `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background`, здається, підходить:
+Зрештою, мені потрібен ще й космонавт! Запит: `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background`, здається, підходить.
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_1} style={{width: "750px"}} />
@@ -96,7 +96,7 @@ import astronaut_final from '../../static/img/astronaut.png';
   <img src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
-Це було не зовсім те, що треба. Спробуймо додати трішки чогось магічного та яскравого:
+Це було не зовсім те, чого я хотів, тому я додав трішки чогось магічного та яскравого:
 
 `A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
