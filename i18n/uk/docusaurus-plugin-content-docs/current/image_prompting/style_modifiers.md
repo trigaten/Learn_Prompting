@@ -11,7 +11,7 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.png';
 
 # Приклад
 
-Ось кілька пірамід, згенерованих нейромережею DALLE, за запитом: `pyramid`.
+Ось кілька пірамід, згенерованих моделлю DALLE, за запитом: `pyramid`.
 
 <div style={{textAlign: 'center'}}>
   <img src={pyramids} style={{width: "750px"}} />
