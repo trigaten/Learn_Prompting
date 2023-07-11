@@ -4,8 +4,8 @@ sidebar_position: 3000
 
 # 🛸 Додаткові ресурси
 
-## Interactive Tutorials
-* [agents.blue](https://www.agents.blue/) - A free, guided tutorial on prompt engineering.
+## Інтерактивні посібники
+* [agents.blue](https://www.agents.blue/) — безкоштовний підручник із програмування запитів.
 
 ## Ресурси
 
