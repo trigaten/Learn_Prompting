@@ -10,13 +10,13 @@ sidebar_position: 22
 
 Подивіться це [ознайомче відео](https://www.youtube.com/watch?v=CBPw7FXtaEU).
 
-Зображення з '@site/docs/assets/tooling/promptsandbox.png';
+import Image from '@site/docs/assets/tooling/promptsandbox.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Функції
+## Характеристики
 
 - Універсальні ланки: використовуйте різні типи ланок, зокрема ключі API для OpenAI, цикли, умови та текстові вхідні/вихідні дані, щоб створювати складні робочі процеси.
 - Організація проєкту: з легкістю створюйте проєкти, управляйте ними та отримуйте доступ до кількох проєктів на платформі.
