@@ -6,12 +6,12 @@ sidebar_position: 20
 
 [Promptmetheus](https://promptmetheus.com) допомагає поєднувати, тестувати та оцінювати разові запити на платформі OpenAI, яка прогнозовано перетворює вхідні дані на вихідні.
 
-Зображення з '../../assets/tooling/promptmetheus.jpg';
+import Image from '@site/docs/assets/tooling/promptmetheus.jpg';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Функції
+## Характеристики
 
 На платформі Promptmetheus Ви можете складати запити з окремих блоків і тестувати варіанти запитів із різними параметрами моделі. Також – оцінювати різні результати та отримати візуалізацію того, як працює кожен блок. Запити та результати можна легко експортувати у файли форматів .csv, .xls і .json. 
