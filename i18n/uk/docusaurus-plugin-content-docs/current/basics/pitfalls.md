@@ -38,4 +38,4 @@ import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 
 ## Злом запиту
 
-Користувачі часто можуть обманом змусити ВММ створити будь-який вміст, який вони хочуть. Докладніше про це [тут](https://learnprompting.org/docs/category/-prompt-hacking).
+Користувачі часто можуть обманом змусити ВММ створити будь-який контент, який вони хочуть. Докладніше про це [тут](https://learnprompting.org/docs/category/-prompt-hacking).
