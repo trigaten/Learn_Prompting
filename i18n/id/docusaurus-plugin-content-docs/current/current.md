@@ -70,5 +70,4 @@ Wide Shot/Establishing Shot, Long Shot, Full Shot, Medium Shot, Cowboy Shot, Med
 
 ## Notes
 
-Similar to the note on the previous page, our working definition of quality boosters differs from Oppenlaender et al.(@oppenlaender2022taxonomy). This being said, it is 
-sometimes difficult to exactly distinguish between quality boosters and style modifiers.
+It is difficult to find difference between some shot types.
