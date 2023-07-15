@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100px, 100px); }
+}
+
+.moving-line {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: black;
+  animation: move 5s linear infinite;
+}
+
+.moving-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+  animation: move 5s linear infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fading-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+}
