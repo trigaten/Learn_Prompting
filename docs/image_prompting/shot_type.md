@@ -7,14 +7,14 @@ Shot type refers to the various camera angles and composition used in filmaking 
 
 There are many kind of shot type. For example, long shot, medium shot, bird-eye shot, low-angle shot and many more.
 
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/bird_eye_shot.jpg';
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/close_up_shot.jpg';
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/extreme_long_shot.jpg';
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/high_angle_shot.jpg';
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/long_shot.jpg';
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/low_angle_shot.jpg';
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/medium_shot.jpg';
-import pyramids from '@site/i18n/id/docusaurus-plugin-content-docs/assets/wide_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/bird_eye_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/close_up_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/extreme_long_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/high_angle_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/long_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/low_angle_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/medium_shot.jpg';
+import pyramids from '@site/docs/assets/images_chapter/wide_shot.jpg';
 
 # Example
 
@@ -70,5 +70,4 @@ Wide Shot/Establishing Shot, Long Shot, Full Shot, Medium Shot, Cowboy Shot, Med
 
 ## Notes
 
-Similar to the note on the previous page, our working definition of quality boosters differs from Oppenlaender et al.(@oppenlaender2022taxonomy). This being said, it is 
-sometimes difficult to exactly distinguish between quality boosters and style modifiers.
+It is difficult to find difference between some shot types.
