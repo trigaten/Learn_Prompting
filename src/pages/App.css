@@ -36,8 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-@keyframes move {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(100px, 100px); }
-}
