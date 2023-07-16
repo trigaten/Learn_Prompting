@@ -21,7 +21,7 @@ import OpenAI from "@site/static/img/openai_logo.png";
 function Join() {
   const stats = [
     {
-      header: "900K+",
+      header: "1M+",
       subtitle: "People Learning",
     },
     {

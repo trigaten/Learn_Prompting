@@ -28,6 +28,10 @@ function Navbar(props) {
       name: "Certificate",
       link: "/certificate",
     },
+    {
+      name: "About",
+      link: "/about",
+    },
   ];
 
   const rightLinks = [
