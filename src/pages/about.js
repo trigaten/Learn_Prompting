@@ -7,19 +7,19 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-    {/* what className makes backgroun white: bg-white */}
+    {/* {/* what className makes text black:  */}
 
-      <div className="bg-white">
+      <div className="bg-white text-black">
         <Navbar />
         <div className="container mx-auto py-10">
           <div className="text-center">
-            <h1 className="text-5xl md:text-5xl font-bold mb-8">Illuminate Generative AI</h1>
+            <h1 className="text-5xl md:text-5xl font-bold mb-8 text-black">Illuminate Generative AI</h1>
           </div>
           <p className="mx-auto px-8 md:px-32 text-lg text-gray-600 leading-relaxed text-center">
             Our mission is to teach global audiences about prompt engineering and generative AI. 
           </p>
-          <div className="bg-white shadow-lg rounded-lg p-8 my-10">
-            <h2 className="text-2xl md:text-4xl font-semibold mb-6">Our Team</h2>
+          <div className="bg-white shadow-lg rounded-lg p-8 my-10 text-black">
+            <h2 className="text-2xl md:text-4xl font-semibold mb-6 ">Our Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div className="text-center">
                 <img src={require("@site/static/team/sander.webp").default} alt="CTO" className="mx-auto rounded-full border-4 border-gray-200 shadow-lg" style={{ width: "200px", height: "200px" }}/>
