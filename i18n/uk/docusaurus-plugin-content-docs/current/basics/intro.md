@@ -60,8 +60,9 @@ import key from '@site/docs/assets/basics/API_key.webp';
 <hr />
 Вбудувати тут:
 
-<iframe    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkNob2NvbGF0ZSwgVmFuaWxsYSwgU3RyYXdiZXJyeSwgTWludCBDaGlwLCBSb2NreSBSb2FkLCBDb29raWUgRG91Z2gsIEJ1dHRlciBQZWNhbiwgTmVhcG9saXRhbiwgQ29mZmVlLCBDb2NvbnV0IiwicHJvbXB0IjoiR2VuZXJhdGUgYSBjb21tYSBzZXBhcmF0ZWQgbGlzdCBvZiAxMCBpY2UgY3JlYW0gZmxhdm9yczoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
-    style={{width:"100%", height:"280px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6ItCo0L7QutC%2B0LvQsNC00L3QtSwg0JLQsNC90ZbQu9GM0L3QtSwg0J%2FQvtC70YPQvdC40YfQvdC1LCDQnCfRj9GC0L3QtSwg0JHQsNC90LDQvdC%2B0LLQtSwg0JrQvtC70LAsINCd0LXQsNC%2F0L7Qu9GW0YLQsNC90YHRjNC60LUsINCa0LDQstC%2B0LLQtSwg0JrQvtC60L7RgdC%2B0LLQtSwg0J%2FQtdGA0YHQuNC60L7QstC1IiwicHJvbXB0Ijoi0KHRgtCy0L7RgNC4INGB0L%2FQuNGB0L7QuiAxMCDRgdC80LDQutGW0LIg0LzQvtGA0L7Qt9C40LLQsCwg0YDQvtC30LTRltC70LXQvdC40YUg0LrQvtC80LDQvNC4OiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 <hr />
