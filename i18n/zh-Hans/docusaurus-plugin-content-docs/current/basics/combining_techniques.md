@@ -6,7 +6,7 @@ style: chicago
 
 # 🟢 组合提示
 
-import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
+import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
 
 
 <div style={{textAlign: 'center'}}>
@@ -36,3 +36,5 @@ A:
 ```
 
 通过添加额外的上下文和示例，我们通常可以提高人工智能在不同任务上的表现。
+
+By [gezilinll](https://github.com/gezilinll).

@@ -22,7 +22,7 @@ sidebar_position: 1
 好的，那又怎样？我们可以让模型忽略提示的第一部分，但这有什么用呢？
 看看以下图像(@simon2022inject)。公司 `remoteli.io` 有一个 LLM 用于回复关于远程工作的 Twitter 帖子。Twitter 用户很快就发现他们可以将自己的文本注入到机器人中，使其说出任何他们想要的话。
 
-import Image from '@site/docs/assets/injection_job.png';
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

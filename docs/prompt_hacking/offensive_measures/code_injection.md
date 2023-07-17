@@ -6,13 +6,17 @@ sidebar_position: 1000
 
 Code injection(@kang2023exploiting) is a prompt hacking exploit where the attacker is able to get the LLM to run arbitrary code (often Python). This can occur in tool-augmented LLMs, where the LLM is able to send code to an interpreter, but it can also occur when the LLM itself is used to evaluate code.
 
-Code injection has reportedly [been performed](https://twitter.com/ludwig_stumpp/status/1619701277419794435) on an AI app, MathGPT and was used to obtain it's OpenAI API key ([MITRE report](https://atlas.mitre.org/studies/AML.CS0016/)). 
+Code injection has reportedly [been performed](https://twitter.com/ludwig_stumpp/status/1619701277419794435) on an AI app, [MathGPT](https://mathgpt.streamlit.app/) and was used to obtain it's OpenAI API key ([MITRE report](https://atlas.mitre.org/studies/AML.CS0016/)). 
+
+:::note
+MathGPT has since been secured against code injection. Please do not attempt to hack it; they pay for API calls.
+:::
 
 ## Example
 
-Let's work with a simplified example of the MathGPT app. We will assume that it takes in a math problem and writes Python code to try to solve the problem.
+Let's work with a simplified example of the [MathGPT](https://mathgpt.streamlit.app/) app. We will assume that it takes in a math problem and writes Python code to try to solve the problem.
 
-Here is the prompt that the app uses:
+Here is the prompt that the simplified example app uses:
 
 ```
 Write Python code to solve the following math problem:

@@ -4,7 +4,7 @@ sidebar_position: 2000
 
 # 🟢 Other Approaches 
 
-Although the previous approaches can be very robust, a few other approaches, using a different model, including fine tuning, soft prompting, and length restrictions, can also be effective.
+Although the previous approaches can be very robust, a few other approaches, such as using a different model, including fine tuning, soft prompting, and length restrictions, can also be effective.
 
 ## Using a Different Model
 

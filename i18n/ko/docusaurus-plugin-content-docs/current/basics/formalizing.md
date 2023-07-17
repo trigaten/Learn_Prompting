@@ -4,13 +4,13 @@ sidebar_position: 7
 
 # 🟢 프롬프트 공식화
 
-import FormalPrompt from '@site/docs/assets/formal_prompt.svg';
+import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <FormalPrompt style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-이제 우리는 다양한 프롬프트들을 알게 되었고 또 각각을 융합하는 방법도 알고 있습니다. 이 페이지는 다양한 프롬프트들을 설명하기 위한 단어를 여러분에게 제공할 것입니다. 프롬프트 엔지니어링 공식화에 대한 담론이 꾸준히 있었음에도 이 부분은 계속 바뀌어왔습니다. 그래서 우리는 여러분에게 시작하기에 알맞은 정도의 정보만을 제공할 것입니다. 
+이제 우리는 다양한 프롬프트들을 알게 되었고 또 각각을 융합하는 방법도 알고 있습니다. 이 페이지는 다양한 프롬프트들을 설명하기 위한 단어를 여러분에게 제공할 것입니다. 프롬프트 엔지니어링 공식화에 대한 담론이 꾸준히 있었음에도 이 부분은 계속 바뀌어왔습니다. 그래서 우리는 여러분에게 시작하기에 알맞은 정도의 정보만을 제공할 것입니다.
 
 ## 프롬프트의 구성
 
@@ -45,19 +45,19 @@ March 1, 2022: Sustained a concussion in a car accident. Admitted to the hospita
 You are a doctor. Read this medical history and predict risks for the patient:
 ```
 
-하지만 지시가 프롬프트의 마지막 부분이므로 두번째 프롬프트의 형태가 조금 더 선호됩니다. LLM이 지시를 따르는 것 대신에 의도치 않은 글을 작성할 가능성이 적어지기 때문에 더 좋은 방법이 될 것입니다. 예를 들어서, 첫번째 프롬프트에서 LLM은 `March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`과 같은 추가적인 문장을 작성할 수 도 있다.
+하지만 지시가 프롬프트의 마지막 부분이므로 두 번째 프롬프트의 형태가 조금 더 선호됩니다. LLM이 지시를 따르는 것 대신에 의도치 않은 글을 작성할 가능성이 적어지기 때문에 더 좋은 방법이 될 것입니다. 예를 들어서, 첫 번째 프롬프트에서 LLM은 `March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`과 같은 추가적인 문장을 작성할 수 도 있다.
 
 
 ## "표준" 프롬프트
 
-우리는 지금까지 몇 가지 다양한 프롬프트 포맷에 대해서 살펴보았습니다. 처음으로 돌아가서 "표준" 프롬프트를 정의해볼 것입니다. 
+우리는 지금까지 몇 가지 다양한 프롬프트 포맷에 대해서 살펴보았습니다. 처음으로 돌아가서 "표준" 프롬프트를 정의해볼 것입니다.
 Kojima et al에 따라(@kojima2022large), 우리는 질문으로만 이루어진 프롬프트를 "표준" 프롬프트로 바꿔볼 것입니다.
 또한 우리는 QA 포맷으로 되어있는 질문을 "표준" 프롬프트로 바꿔볼 것입니다.
 
 #### 왜 알아둬야 할까?
 
 우리가 참조했던 많은 논문들에서 이 용어를 사용하는 것을 볼 수 있었습니다.
-앞으로 표준 프롬프트와 대조되는 새로운 유형의 프롬프트에 대해 논의할 수 있도록 이를 미리 정의하고 있습니다. 
+앞으로 표준 프롬프트와 대조되는 새로운 유형의 프롬프트에 대해 논의할 수 있도록 이를 미리 정의하고 있습니다.
 
 ### 표준 프롬프트에 대한 두가지 예시:
 

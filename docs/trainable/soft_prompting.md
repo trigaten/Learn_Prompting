@@ -7,7 +7,7 @@ sidebar_position: 1
 Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi2021prompt), freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
 
 
-import Image from '../assets/prompt_tuning.png';
+import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

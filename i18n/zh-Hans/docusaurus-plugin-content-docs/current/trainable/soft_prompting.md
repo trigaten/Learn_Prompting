@@ -6,7 +6,7 @@ sidebar_position: 1
 
 提示微调(Prompt Tuning)(@lester2021power) 是模型微调（@khashabi2021prompt）的一种替代方法，它会固定模型权重并更新提示的参数，生成的提示被称为“软提示”。
 
-import Image from '@site/docs/assets/prompt_tuning.png';
+import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

@@ -5,7 +5,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import { TwitterFollowButton } from 'react-twitter-embed';
-import styles from '../components/HomepageFeatures/styles.module.css';
 /* React Component Version */
 
 

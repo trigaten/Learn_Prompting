@@ -5,7 +5,7 @@ sidebar_position: 200
 
 你好，读者，恭喜你完成了基础介绍章节。你在这个非常令人兴奋的领域有了一个很好的开端。在继续阅读本课程的其余部分之前，有几件简单的事情你应该知道，关于不同的人工智能及其工作原理。
 
-import music_image from '@site/docs/assets/music+image.png';
+import music_image from '@site/docs/assets/basics/music+image.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={music_image} style={{width: "850px"}} />

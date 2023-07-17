@@ -6,7 +6,7 @@ sidebar_position: 3
 
 [Soaked](https://soaked-prompts.vercel.app) es un entorno de desarrollo integrado (IDE) de ingeniería de prompts que se enfoca en el encadenamiento visual de prompts con una interfaz gráfica. Actualmente se encuentra en beta, pero el desarrollo activo ha cesado.
 
-import Image from '@site/docs/assets/tooling/soaked.png';
+import Image from '@site/docs/assets/tooling/soaked.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

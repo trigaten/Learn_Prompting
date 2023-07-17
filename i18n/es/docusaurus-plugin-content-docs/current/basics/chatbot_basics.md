@@ -10,8 +10,8 @@ Una de las formas más comunes en que puede ser útil el prompting es al interac
 
 ### Guía de Estilo
 
-import unguided_question from '@site/docs/assets/unguided_question.png';
-import limerick_question from '@site/docs/assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 La guía de estilo simplemente pide al AI que hable en cierto estilo. Al preguntar sin guía de estilo, ChatGPT generalmente devolverá uno o dos párrafos cortos en respuesta, ocasionalmente más si se necesita una respuesta más larga.
 
@@ -55,8 +55,8 @@ Como ejemplo, vamos a configurar un sistema para permitirnos tener una conversac
     If you understand and are ready to begin, respond with only “yes.”
     Si entiende y está listo para comenzar, responda solo con "sí"
     
-import unprimed_question from '@site/docs/assets/unprimed_question.png';
-import primed_question from '@site/docs/assets/primed_question.png';  
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';  
 
 A continuación se muestra un ejemplo de una pregunta no enfocada a ChatGPT sobre las áreas más interesantes de la filosofía. Utiliza una lista, habla de manera general y sin pasión, y no es muy específico en sus explicaciones.
 

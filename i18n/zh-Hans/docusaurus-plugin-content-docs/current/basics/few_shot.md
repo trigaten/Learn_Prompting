@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # 🟢 多范例提示
 
-import FewShot from '@site/docs/assets/few_shot.svg';
+import FewShot from '@site/docs/assets/basics/few_shot.svg';
 
 <div style={{textAlign: 'center'}}>
   <FewShot style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
@@ -86,3 +86,4 @@ Add 2+2:
 
 多范例提示是让模型生成准确且格式正确的输出的强大技术！
  
+By [gezilinll](https://github.com/gezilinll).

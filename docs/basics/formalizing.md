@@ -4,11 +4,12 @@ sidebar_position: 7
 
 # 🟢 Formalizing Prompts
 
-import FormalPrompt from '@site/docs/assets/formal_prompt.svg';
+import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <FormalPrompt style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
+  <FormalPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+
 
 We have now covered multiple types of prompts, as well as ways to combine them. This page will provide you with terms to explain different types of prompts. Although there have been approaches to formalize discourse around prompt engineering(@white2023prompt), the field is ever changing, so we will provide you with just enough information to get started.
 

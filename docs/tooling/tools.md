@@ -14,6 +14,16 @@ This section contains a list of non-IDE tools that are useful for prompting.
 
 > This library is aimed at assisting in the development of those types of applications.
 
+### [PromptAppGPT](https://github.com/mleoking/PromptAppGPT)
+
+> PromptAppGPT is a low-code prompt-based rapid app development framework. PromptAppGPT contains features such as low-code prompt-based development, GPT text generation, DALLE image generation, online prompt editer+compiler+runer, automatic user interface generation, support for plug-in extensions, etc. PromptAppGPT aims to enable natural language app development based on GPT.
+
+> PromptAppGPT provides multi-task conditional triggering, result verification, and failure retry capabilities, allowing manual generation tasks that would otherwise require multiple steps to be automated. At the same time, users no longer need to memorise and enter the tedious prompt mantra themselves, and can easily complete tasks by entering only the core necessary information for the task.
+
+> PromptAppGPT significantly lowers the barrier to GPT application development, allowing anyone to develop AutoGPT-like applications with a few lines of low code.
+
+
+
 ### [Dust.tt](https://dust.tt)
 
 > The Dust platform helps build large language model applications as a series of prompted calls
@@ -75,6 +85,16 @@ Build prompts, visually
 ### [PTPT - Prompt To Plain Text](https://github.com/LeslieLeung/PTPT)
 
 > PTPT is an command-line tool that allows you to easily convert plain text files using pre-defined prompts with the help of ChatGPT. With PTPT, you can effortlessly create and share prompt formats, making collaboration and customization a breeze. Plus, by subscribing, you gain access to even more prompts to enhance your experience. If you're interested in prompt engineering, you can use PTPT to develop and share your prompts.
+
+### [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts)
+
+> Low-code collaboration platform for AI Prompts
+
+- Full prompt lifecycle management (from ideation to feedback collection)
+- Enterprise-grade features and security
+- Support for public, private, and custom LLMs
+- Prompts based on custom context and business rules. Evaluations on the Edge
+- Real-time logging and collection of performance and prompt economics
 
 
 ### Other

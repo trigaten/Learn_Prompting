@@ -4,7 +4,7 @@ sidebar_position: 100
 
 # 🟢 Ajustes del LLM
 
-import Temperature from '@site/docs/assets/temperature.svg';
+import Temperature from '@site/docs/assets/basics/temperature.svg';
 
 <div style={{textAlign: 'center'}}>
   <Temperature style={{width:"500px",height:"300px",verticalAlign:"top"}}/>

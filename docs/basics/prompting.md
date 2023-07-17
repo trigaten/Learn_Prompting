@@ -3,11 +3,10 @@ sidebar_position: 1
 ---
 # 🟢 Prompting
 
-import Prompt from '@site/docs/assets/prompt.svg';
-
+import Prompt from '@site/docs/assets/basics/prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Prompt style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Prompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 

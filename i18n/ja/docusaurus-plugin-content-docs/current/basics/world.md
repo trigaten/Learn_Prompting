@@ -5,7 +5,7 @@ sidebar_position: 200
 
 こんにちは、読者の皆さん。序章を読破したことをお祝いします。この非常にエキサイティングな分野で素晴らしいスタートを切っています。コースの残りの部分を読み始める前に、さまざまな AI とその仕組みについて知っておくべき簡単なことがいくつかあります。
 
-import music_image from '@site/docs/assets/music+image.png';
+import music_image from '@site/docs/assets/basics/music+image.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={music_image} style={{width: "850px"}} />

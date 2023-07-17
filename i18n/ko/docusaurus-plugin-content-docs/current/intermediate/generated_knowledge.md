@@ -5,24 +5,24 @@ sidebar_position: 7
 # 🟡 지식 생성하기
 
 
-"지식 생성하기"(@liu2021generated)는 최종 답을 생성하기 전에 LLM에 주어진 질문/프롬프트에 유용할만한 정보들을 생성하는 것입니다. 
+"지식 생성하기"(@liu2021generated)는 최종 답을 생성하기 전에 LLM에 주어진 질문/프롬프트에 유용할만한 정보들을 생성하는 것입니다.
 
 예를 들어 여러분이 [커모드 베어](https://en.wikipedia.org/wiki/Kermode_bear)와 같은 어떤 동물에 대한 짧은 블로그를 작성하려고 합니다. 먼저 블로그를 작성하기 전에 LLM에 커모드 베어에 대한 몇가지 사실들을 물어보는 것입니다. 이것은 LLM이 더 정보를 잘 제공하는 블로그를 작성할 수 있게 도와줄 것입니다. 여기 두가지 간단한 예제가 있습니다.
 
 ## 한 개의 프롬프트 사용
 
-첫번째 접근은 LLM이 지식을 생성하고 글을 쓰기까지 하나의 프롬프트에 작성하는 것입니다.
+첫 번째 접근은 LLM이 지식을 생성하고 글을 쓰기까지 하나의 프롬프트에 작성하는 것입니다.
 
 ```text
 Generate 4 facts about the Kermode bear, then use these facts to write a short blog post using the information:
 // highlight-start
-The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada. 
+The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada.
 
-1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur. 
+1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur.
 
-2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. 
+2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal.
 
-3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. 
+3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest.
 
 4. The Kermode bear is a protected species, and its population is monitored closely by the provincial government.
 
@@ -33,8 +33,8 @@ The Kermode bear is a unique and special animal that is found in the coastal reg
 
 ## 두 개의 프롬프트 사용
 
-이 접근법에서 첫번째 프롬프트는 LLM에게 곰에 대한 사실을 생성하도록 만듭니다:
-  
+이 접근법에서 첫 번째 프롬프트는 LLM에게 곰에 대한 사실을 생성하도록 만듭니다:
+
 ```text
 Generate 10 facts about the Kermode bear:
 // highlight-start
@@ -48,7 +48,7 @@ Generate 10 facts about the Kermode bear:
 // highlight-end
 ```
 
-그리고 우리는 다른 프롬프트에 이 정보들을 넣은 후 블로그를 작성하도록 만듭니다: 
+그리고 우리는 다른 프롬프트에 이 정보들을 넣은 후 블로그를 작성하도록 만듭니다:
 
 ```text
 1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
@@ -68,7 +68,7 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 // highlight-end
 ```
 
-저는 더 길고 믿을 만한 컨텐츠를 제공하는 두번째 접근법을 추천드립니다.
+저는 더 길고 믿을 만한 컨텐츠를 제공하는 두 번째 접근법을 추천드립니다.
 
 ## 또 다른 예제
 
@@ -80,7 +80,7 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 
 <br/>
 
-만약 우리가 먼저 LLM에게 콩고나 남아프리카에 대한 사실을 생성하도록 질문했다면 우리는 질문에 대한 더 정확한 답을 위해 그 정보를 사용할 수 있을 것입니다. 이론적으로, 관련된 사실들을 이용해서 중간 질문들을 생성하고 있기 때문에 COT와 비슷합니다.
+만약 우리가 먼저 LLM에게 콩고나 남아프리카에 대한 사실을 생성하도록 질문했다면 우리는 질문에 대한 더 정확한 답을 위해 그 정보를 사용할 수 있을 것입니다. 이론적으로, 관련된 사실들을 이용해서 중간 질문들을 생성하고 있기 때문에 CoT와 비슷합니다.
 
 *지식 생성* 단계를 시작해봅시다. 우리는 LLM에 콩고와 남아프리카에 대한 사실들을 생성하도록 질문할 수 있을 것입니다:
 
@@ -101,7 +101,7 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 위의 예제들이 기존에 소개된 것들과 비슷함에도 불구하고 완전히 똑같지는 않습니다. 아래의 컨텐츠는 더 기술적인 부분을 보여줄 것입니다.
 위에서 본 두가지 과정(지식 생성, 지식 통합)을 똑같이 이용할 것입니다.
 
-import KGImage from '@site/docs/assets/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}} />
@@ -116,7 +116,7 @@ Generated Knowledge (Liu et al.)
 지식 생성단계에서 LLM은 **질문**에 대한 사실들을 생성하도록 질문 받습니다.
 LLM은 퓨샷 스타일의 프롬프트를 받게 됩니다. M개의 각기 다른 답변들을 이 같은 프롬프트를 통해서 생성이 됩니다.(자기 일관성 접근법처럼)
 
-import KGP1Image from '@site/docs/assets/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
@@ -132,7 +132,7 @@ Generated Knowledge Example (Liu et al.)
 다음으로 우리는 최종 답안을 얻기 위해서 "지식이 추가된" 프롬프트를 LLM에 넣게 됩니다.
 이에 대한 쉬운 이해를 위해서 아래의 예제를 봅시다.
 
-우리가 아래의 **질문**에 답변하고 있다고 가정해봅시다. 
+우리가 아래의 **질문**에 답변하고 있다고 가정해봅시다.
 "Most Kangaroos have <mask\> limbs"
 지식 생성 단계에서 우리가 2개의 지식을 생성했다고 가정합니다(M=2):
 
@@ -153,23 +153,23 @@ Generated Knowledge Example (Liu et al.)
 
 - Answer 2: `5`
 
-우리는 가장 가능성이 높은 답변을 최종답변으로 고를 것입니다. 
+우리는 가장 가능성이 높은 답변을 최종답변으로 고를 것입니다.
 가장 높은 확률은 "소프트 맥스 가능성"이나 "로그 가능성"이 될 것입니다.
 
 ## 암기-증강 언어 모델
 
-암기-증강(@sun2022recitationaugmented) 접근법은 지식 생성하기와 굉장히 비슷합니다.(기본적으로는 같습니다) 
+암기-증강(@sun2022recitationaugmented) 접근법은 지식 생성하기와 굉장히 비슷합니다.(기본적으로는 같습니다)
 하지만 정식적인 지식 생성하기 개발보다는 덜 복잡할 것입니다.
 
 
-import RImage from '@site/docs/assets/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={RImage} style={{width: "250px"}} />
 </div>
 
-아이디어는 퓨샷 프롬프트로 지식 생성과 답변을 같은 단계에서 실행하는 데 있습니다. 
-암기와 지식 생성하기 그리고 답변하기를 동시에 진행한다는 사실은 지식 생성하기 접근법과의 가장 큰 차이가 될것입니다. 
+아이디어는 퓨샷 프롬프트로 지식 생성과 답변을 같은 단계에서 실행하는 데 있습니다.
+암기와 지식 생성하기 그리고 답변하기를 동시에 진행한다는 사실은 지식 생성하기 접근법과의 가장 큰 차이가 될것입니다.
 
 반복하자면 이 접근법은 모델에게 여러 개의 (질문, 암송, 답변) 예제를 제공한 다음 질문을 한다. 저자들은 이 접근법이 자기 일관성 또는 여러 프롬프팅 방법과 결합될 수 있다는 점에 주목한다.
 

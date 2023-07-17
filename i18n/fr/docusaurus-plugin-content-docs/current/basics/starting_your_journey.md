@@ -4,7 +4,7 @@ sidebar_position: 1000
 
 # 🟢 Commencer votre parcours
 
-import Steps from '@site/docs/assets/steps.svg';
+import Steps from '@site/docs/assets/basics/steps.svg';
 
 <div style={{textAlign: 'center'}}>
   <Steps style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
@@ -31,7 +31,7 @@ Vous pourriez trouver [celui-ci](https://prompts.chat/#act-as-a-text-based-adven
 
 Maintenant, nous allons mettre le prompt dans ChatGPT et voir ce qui se passe.
 
-import CSharp from '@site/docs/assets/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

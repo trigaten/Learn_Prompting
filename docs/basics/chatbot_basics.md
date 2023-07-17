@@ -5,12 +5,11 @@ sidebar_position: 80
 # 🟢 Chatbot Basics
 
 
-import Chatbots from '@site/docs/assets/chatbot.svg';
+import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Chatbots style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
-
 
 Thus far, this course has mostly used GPT-3 for examples. GPT-3 is a LLM that has no memory. When you ask it a question (a prompt), it does not remember anything that you have previously asked it. In contrast, chatbots like [ChatGPT](http://chat.openai.com) are able to **remember your conversation history**. This can be useful for applications such as customer service or simply if you want to have a conversation with a LLM!
 
@@ -20,8 +19,8 @@ Just like GPT-3, chatbots can answer questions, provide summaries, analysis, and
 
 ### Style Guidance
 
-import unguided_question from '@site/docs/assets/unguided_question.png';
-import limerick_question from '@site/docs/assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
 
@@ -63,8 +62,8 @@ As an example, let's set up a system to allow us to have a conversation with a t
 
     If you understand and are ready to begin, respond with only “yes.”
     
-import unprimed_question from '@site/docs/assets/unprimed_question.png';
-import primed_question from '@site/docs/assets/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 Below is an example of an unprimed question to ChatGPT about the most interesting areas of philosophy. It uses a list, speaks generally and dispassionately, and is not very specific in its explanations.  
 

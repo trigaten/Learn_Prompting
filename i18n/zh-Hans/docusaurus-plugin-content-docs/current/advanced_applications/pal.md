@@ -6,7 +6,7 @@ sidebar_position: 4
 
 [程序辅助语言模型（Program-aided Language Models, PAL）](https://reasonwithpal.com)(@gao2022pal) 是另一个MRKL系统的例子。给定一个问题，PAL能够编写代码解决这个问题。它将代码发送到编程运行时以获得结果。PAL的中间推理是代码，而CoT的是自然语言。
 
-import image from '@site/docs/assets/pal.png';
+import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={image} style={{width: "500px"}} />

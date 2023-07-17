@@ -6,7 +6,7 @@ sidebar_position: 4
 
 零样本思维链（Zero Shot Chain of Thought，Zero-shot-CoT）提示过程(@kojima2022large)是对 %%CoT prompting|CoT prompting%% (@wei2022chain) 的后续研究，引入了一种非常简单的零样本提示。他们发现，通过在问题的结尾附加“**让我们一步步思考。**”这几个词，大语言模型能够生成一个回答问题的思维链。从这个思维链中，他们能够提取更准确的答案。
 
-import ZSImage from '@site/docs/assets/zero_shot.png';
+import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSImage} style={{width: "500px"}} />
@@ -17,7 +17,7 @@ import ZSImage from '@site/docs/assets/zero_shot.png';
 
 从技术上讲，完整的零样本思维链过程涉及两个单独的提示/补全结果。在下面的图像中，左侧的顶部气泡生成一个思维链，而右侧的顶部气泡接收来自第一个提示（包括第一个提示本身）的输出，并从思维链中提取答案。这个第二个提示是一个 _自我增强_ 的提示。
 
-import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSProcessImage} style={{width: "500px"}} />

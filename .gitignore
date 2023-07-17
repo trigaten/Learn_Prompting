@@ -27,3 +27,5 @@ node_modules
 .vscode/
 
 docs/code_examples/scrape.ipynb
+
+vscode_extension/

@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # 🟢 规范化提示
 
-import FormalPrompt from '@site/docs/assets/formal_prompt.svg';
+import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <FormalPrompt style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
@@ -97,3 +97,5 @@ A：
 ```
 
 多示例提示有助于上下文学习，这意味着模型无需更新参数就能够进行学习输出(@zhao2021calibrate)。
+
+By [gezilinll](https://github.com/gezilinll).
