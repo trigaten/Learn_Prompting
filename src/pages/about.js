@@ -7,7 +7,9 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <div className="">
+    {/* what className makes backgroun white: bg-white */}
+
+      <div className="bg-white">
         <Navbar />
         <div className="container mx-auto py-10">
           <div className="text-center">
