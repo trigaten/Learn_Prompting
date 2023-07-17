@@ -16,7 +16,7 @@ Un método común de jailbreaking es _pretender_. Si se le pregunta a ChatGPT so
 
 #### Pretender Simple
 
-import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.png';
+import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={pretend} style={{width: "500px"}} />
@@ -26,7 +26,7 @@ import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.png';
 
 #### Interpretación de Personaje
 
-import actor from '@site/docs/assets/jailbreak/chatgpt_actor.jpg';
+import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={actor} style={{width: "500px"}} />
@@ -40,7 +40,7 @@ ChatGPT se afinó con RLHF, por lo que teóricamente está entrenado para produc
 
 #### Responsabilidad Asumida
 
-import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.jpg';
+import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={responsibility} style={{width: "500px"}} />
@@ -50,7 +50,7 @@ import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak
 
 #### Experimento de Investigación
 
-import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.png';
+import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={hotwire} style={{width: "500px"}} />
@@ -60,7 +60,7 @@ import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.png';
 
 #### Razonamiento Lógico
 
-import logic from '@site/docs/assets/jailbreak/logic.png';
+import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={logic} style={{width: "500px"}} />
@@ -74,7 +74,7 @@ ChatGPT está diseñado para responder preguntas e instrucciones. Cuando se inte
 
 #### Modelo Superior
 
-import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.png';
+import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={GPT4} style={{width: "500px"}} />
@@ -84,7 +84,7 @@ Este ejemplo de [@alicemazzy](https://twitter.com/alicemazzy/status/159828851930
 
 #### Modo Sudo
 
-import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
+import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={sudo_mode} style={{width: "500px"}} />
@@ -92,13 +92,13 @@ import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
 
 sudo es un comando que "...delega autoridad para dar a ciertos usuarios... la capacidad de ejecutar algunos (o todos) los comandos..." (@sudo2022jailbreak). Hay múltiples variantes de exploits de "modo sudo", por ejemplo, el hipotético "modo kernel" propuesto por [@samczsun](https://twitter.com/samczsun/status/1598679658488217601)(@sam2022jailbreak). Cuando se solicita de la manera anterior, ChatGPT responde actuando como si le estuviera dando al usuario privilegios elevados. Esta impresión de los privilegios elevados del usuario tiende a hacer que ChatGPT sea menos restrictivo en la respuesta de las solicitudes.
 
-import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.png';
+import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={sudo} style={{width: "500px"}} />
 </div>
 
-import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.png';
+import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={lynx} style={{width: "500px"}} />

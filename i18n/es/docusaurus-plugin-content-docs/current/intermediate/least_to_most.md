@@ -10,7 +10,7 @@ Prompting de menos a más (LtM) (Zhou et al., 2022) lleva la técnica de %%CoT p
 
 Al igual que en CoT prompting, el problema a resolver se descompone en un conjunto de subproblemas que se construyen uno sobre otro. En una segunda etapa, estos subproblemas se resuelven uno por uno. A diferencia de la cadena de pensamiento, la solución de los subproblemas anteriores se alimenta en el prompt para tratar de resolver el siguiente problema.
 
-import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.png'
+import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
   <img src={leastToMost} style={{width: "600px"}}

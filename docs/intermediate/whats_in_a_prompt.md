@@ -16,7 +16,7 @@ in the exemplars are not important. As shown in the figure below, providing rand
 %%labels|labels%% in the exemplars barely hurts performance(@min2022rethinking). "Demo" is synonymous
 with exemplar in this image.
 
-import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.png';
+import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={GoldUn} style={{width: "750px"}} />

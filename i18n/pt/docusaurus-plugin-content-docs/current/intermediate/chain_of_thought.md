@@ -9,7 +9,7 @@ style: chicago
 Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *prompting* recente, que encoraja o *LLM* (Grande Modelo de Linguagem) a explicar o seu raciocínio. A imagem abaixo (@wei2022chain) mostra um *prompt few shot* padrão (esquerda) comparado ao *prompt com Cadeia de Pensamento* (direita).
 
 
-import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.png';
+import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CoTExample} style={{width: "750px"}} />
@@ -47,7 +47,7 @@ obtendo êxito na resolução do mesmo problema, com o uso da técnica de Cadeia
 A Cadeia de Pensamento (CdP) mostrou ser efetiva em melhorar os resultados em tarefas de aritmética, senso comum e racicínio simbólico (@wei2022chain).
 Em particular, *prompted* PaLM 540B(@chowdhery2022palm) atinge 57% de precisão na resolução dos problemas de matemática da coleção de dados GSM8K(@cobbe2021training) (Estado da Arte, na época).
 
-import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={PromptedPaLM} style={{width: "300px"}} />

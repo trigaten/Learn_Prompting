@@ -6,9 +6,9 @@ sidebar_position: 60
 
 Algunos modelos (Stable Diffusion, Midjourney, etc.) permiten ponderar los términos en un prompt. Esto se puede utilizar para enfatizar ciertas palabras o frases en la imagen generada. También se puede utilizar para disminuir la importancia de ciertas palabras o frases en la imagen generada. Consideremos un ejemplo sencillo:
 
-import mountains from '@site/docs/assets/images_chapter/mountains.png';
-import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.png';
-import planets from '@site/docs/assets/images_chapter/planets.png';
+import mountains from '@site/docs/assets/images_chapter/mountains.webp';
+import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.webp';
+import planets from '@site/docs/assets/images_chapter/planets.webp';
 
 
 # Ejemplo

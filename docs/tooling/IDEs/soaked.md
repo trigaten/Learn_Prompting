@@ -8,7 +8,7 @@ sidebar_position: 3
 focuses on visual prompt chaining with a graphical interface. It is currently in
 beta, but active development has ceased.
 
-import Image from '@site/docs/assets/tooling/soaked.png';
+import Image from '@site/docs/assets/tooling/soaked.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

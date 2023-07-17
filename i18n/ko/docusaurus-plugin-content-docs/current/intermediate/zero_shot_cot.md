@@ -8,7 +8,7 @@ sidebar_position: 4
 제로 샷 사고 사슬 프롬프팅(제로 샷 CoT)는 아주 간단한 제로 샷 프롬프팅 기술이면서 CoT 프롬프팅(@wei2022chain)의 후속 기술이다. ""**Let's think step
 by step.**""을 질문의 마지막에 넣게 되면 LLM은 질문에 대한 사고 사슬을 생성하게 되고 이 사고 사슬을 이용해서 더 정확한 답변을 추출해낼 수 있다.
 
-import ZSImage from '@site/docs/assets/intermediate/zero_shot.png';
+import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSImage} style={{width: "500px"}} />
@@ -22,7 +22,7 @@ import ZSImage from '@site/docs/assets/intermediate/zero_shot.png';
 아래의 이미지를 보면 왼쪽 위의 상자에서는 사고 사슬을 생성하고 오른쪽 상자에서는 첫 번째 프롬프트에서 나온 답변을 이용해서 답변을 추출한다.
 그래서 두 번째 프롬프트는 하나의 _자기 강화_ 프롬프트가 된다.
 
-import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSProcessImage} style={{width: "500px"}} />

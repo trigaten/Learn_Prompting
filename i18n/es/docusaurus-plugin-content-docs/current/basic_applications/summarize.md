@@ -10,11 +10,11 @@ ChatGPT es conocido por producir contenido en un abrir y cerrar de ojos, y ha de
 
 A veces, puedes pedirle a ChatGPT que resuma obras famosas sin pegar ningún texto adicional, ya que ChatGPT las conoce muy bien. Por ejemplo, puedes pedirle que resuma "Romeo y Julieta" por acto. Así, en lugar de luchar con las 24.000 palabras de la obra, puedes obtener la idea general en 300 palabras o menos.
 
-import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.png';
-import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.png';
+import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.png';
-import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.png';
+import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.webp';
+import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}} />

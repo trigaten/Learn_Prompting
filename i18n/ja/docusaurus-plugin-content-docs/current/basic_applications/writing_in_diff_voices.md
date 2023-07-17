@@ -9,11 +9,11 @@ AI、例えば [ChatGPT](https://chat.openai.com/chat) のようなものは、�
 例えば、友情の重要性についての段落が欲しいとします。
 「友情の重要性について段落を書いてください」という一般的なプロンプトでは、ChatGPT から一般的な反応が返ってきます。
 
-import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.png';
-import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.png';
-import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.png';
-import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.png';
-import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.png';
+import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.webp';
+import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.webp';
+import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.webp';
+import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.webp';
+import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 
 <div style={{textAlign: 'center'}}>

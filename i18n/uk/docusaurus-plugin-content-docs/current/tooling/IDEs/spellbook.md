@@ -6,7 +6,7 @@ sidebar_position: 11
 
 [Spellbook](https://scale.com/spellbook) – це професійне ІСР для запитів, створене Scale AI.
 
-import Image from '@site/docs/assets/tooling/spellbook.png';
+import Image from '@site/docs/assets/tooling/spellbook.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

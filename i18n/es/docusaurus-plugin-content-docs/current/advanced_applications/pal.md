@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Los Modelos de Lenguaje Asistidos por Programa (PAL, por sus siglas en inglés) son otro ejemplo de un sistema MRKL. Cuando se les hace una pregunta, los PAL son capaces de **escribir código** que resuelve esa pregunta. Envían el código a un tiempo de ejecución programático para obtener el resultado. El funcionamiento de PAL es en contraposición al de CoT; el razonamiento intermedio de PAL es código, mientras que el de CoT es lenguaje natural.
 
-import image from '@site/docs/assets/advanced/pal.png';
+import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={image} style={{width: "500px"}} />

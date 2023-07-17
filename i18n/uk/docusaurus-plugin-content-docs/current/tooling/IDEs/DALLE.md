@@ -6,7 +6,7 @@ sidebar_position: 18
 
 [OpenAI DALLE IDE](https://labs.openai.com) – це вебсайт для створення зображень за допомогою DALLE-2, моделі для перетворення тексту в зображення.
 
-import Image from '@site/docs/assets/tooling/dalle.png';
+import Image from '@site/docs/assets/tooling/dalle.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

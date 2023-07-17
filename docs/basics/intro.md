@@ -66,8 +66,8 @@ This course offers an interactive learning experience. You can experiment with e
 
 Here is an **image** of what an embed looks like:
 
-import dyno from '@site/docs/assets/basics/dyno_example.png';
-import key from '@site/docs/assets/basics/API_key.png';
+import dyno from '@site/docs/assets/basics/dyno_example.webp';
+import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={dyno} style={{width: "750px"}} />

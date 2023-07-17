@@ -10,8 +10,8 @@ sidebar_position: 80
 
 ### 风格指导（Style Guidance）
 
-import unguided_question from '@site/docs/assets/basics/unguided_question.png';
-import limerick_question from '@site/docs/assets/basics/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 风格指导就是要求 AI 以某种特定的风格来表达。如果没有给出风格指导的问题，ChatGPT 通常会返回一两个短段落的回答，少数需要更长的回答时会返回更多内容。
 
@@ -54,8 +54,8 @@ ChatGPT 的回答常以中性正式的语气表达，同时提供一些细节，
 
     如果您理解并准备开始，请回答“是”。
     
-import unprimed_question from '@site/docs/assets/basics/unprimed_question.png';
-import primed_question from '@site/docs/assets/basics/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 以下是一个未引导的问题示例，询问 ChatGPT 关于哲学领域中最有趣的部分。它使用列表，通俗冷静地表达，然而在解释中不是非常具体。
 

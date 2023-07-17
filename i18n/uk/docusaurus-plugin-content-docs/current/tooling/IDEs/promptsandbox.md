@@ -10,7 +10,7 @@ sidebar_position: 22
 
 Подивіться це [ознайомче відео](https://www.youtube.com/watch?v=CBPw7FXtaEU).
 
-import Image from '@site/docs/assets/tooling/promptsandbox.png';
+import Image from '@site/docs/assets/tooling/promptsandbox.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

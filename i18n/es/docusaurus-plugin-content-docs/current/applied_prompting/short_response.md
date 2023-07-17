@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 🟢 preguntas de discusión
 
-import Auto from '@site/docs/assets/basic_applications/short_content_auto.png';
+import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
 
 Con el estímulo adecuado, GPT-3 es muy capaz de escribir respuestas de formato corto. Para demostrar esto, analizaremos la **resolución de preguntas de discusión**, una tarea común semanal en muchos cursos universitarios. Una respuesta a una pregunta de discusión suele ser de aproximadamente 100-700 palabras. El contenido más largo puede ser un poco más difícil, ya que los LLM tienen memoria limitada y tienen dificultades para comprender el panorama general de lo que están escribiendo(@jin2022plot).
 

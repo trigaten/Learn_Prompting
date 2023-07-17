@@ -9,7 +9,7 @@ style: chicago
 Ланцюг думок (CoT) (@wei2022chain) — нещодавно розроблений метод запитів, що спонукає ВММ арґументувати свої твердження. На зображенні нижче (@wei2022chain) продемонстровано %%стандартний запит|few shot standard prompt%% (ліворуч) у порівнянні зі запитом на основі методу ланцюга думок (праворуч).
 
 
-import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.png';
+import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CoTExample} style={{width: "750px"}} />
@@ -43,7 +43,7 @@ import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.png';
 
 Було доведено, що CoT ефективно покращує результати в завданнях на обчислення, логіку та символьні міркування (@wei2022chain). Зокрема, запропонований PaLM 540B (@chowdhery2022palm) досягає 57% точності розв’язання на GSM8K (@cobbe2021training) (на той час SOTA).
 
-import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={PromptedPaLM} style={{width: "300px"}} />

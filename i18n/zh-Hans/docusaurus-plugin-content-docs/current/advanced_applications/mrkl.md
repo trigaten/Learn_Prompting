@@ -38,13 +38,13 @@ MRKL系统将看到单词`CALCULATOR`，并将`100*100`插入计算器应用程�
 
 - 或者更复杂的依赖多个数据源的任务，例如下面这个例子：
 
-import mrkl_task from '@site/docs/assets/advanced/mrkl_task.png';
-import dataset from '@site/docs/assets/advanced/mrkl/dataset.png';
-import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.png';
-import model from '@site/docs/assets/advanced/mrkl/model.png';
-import extract from '@site/docs/assets/advanced/mrkl/extract.png';
-import search from '@site/docs/assets/advanced/mrkl/search.png';
-import final from '@site/docs/assets/advanced/mrkl/final.png';
+import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
+import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
+import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.webp';
+import model from '@site/docs/assets/advanced/mrkl/model.webp';
+import extract from '@site/docs/assets/advanced/mrkl/extract.webp';
+import search from '@site/docs/assets/advanced/mrkl/search.webp';
+import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={mrkl_task} style={{width: "500px"}} />

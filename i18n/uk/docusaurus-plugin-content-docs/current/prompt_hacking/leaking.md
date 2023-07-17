@@ -9,7 +9,7 @@ sidebar_position: 2
 
 Як показано на прикладі нижче, зловмисник змінює `user_input`, щоб спробувати повернути запит. Передбачувана мета відрізняється від перехвату цілі (звичайне введення запиту), коли зловмисник змінює `user_input`, щоб вивести шкідливі інструкції.
 
-import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
+import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={research} style={{width: "500px"}} />
@@ -17,7 +17,7 @@ import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
 
 Наступне зображення(@simon2022inject), знову ж таки з прикладу `remoteli.io`, показує користувача Twitter, який змушує систему злити свій запит.
 
-import Image from '@site/docs/assets/jailbreak/injection_leak.png';
+import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "300px"}} />
@@ -31,7 +31,7 @@ import Image from '@site/docs/assets/jailbreak/injection_leak.png';
 
 Зокрема, 07.02.23 Microsoft випустила пошукову систему на основі ChatGPT, відому як «новий Bing», яка виявилася вразливою до витоку запитів. Наступний приклад від [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) демонструє, як попередня версія Bing Search під кодовою назвою "Sydney" була вразливою, коли надавала фрагмент свого запиту(@kevinbing). Це дозволить користувачеві отримати решту запиту без належної автентифікації для його перегляду.
 
-import bing from '@site/docs/assets/jailbreak/bing_chat.png';
+import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={bing} style={{width: "700px"}} />

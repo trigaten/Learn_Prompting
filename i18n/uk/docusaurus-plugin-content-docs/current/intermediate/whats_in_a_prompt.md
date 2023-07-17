@@ -12,7 +12,7 @@ sidebar_position: 7
 
 На диво, якщо вказати %%зразки|exemplars%% на основі кількох ілюстрацій у запитах, фактичні відповіді — %%жовтенькі|gold_labels%% — у зразках є неважливими. Як показано на малюнку нижче, надання випадкових %%маркерів|labels%% у зразках майже не впливає на продуктивність (@min2022rethinking). "Demo" є синонімом зразка на цьому зображенні.
 
-import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.png';
+import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={GoldUn} style={{width: "750px"}} />

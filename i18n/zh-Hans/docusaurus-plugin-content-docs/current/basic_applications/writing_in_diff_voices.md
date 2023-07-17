@@ -9,11 +9,11 @@ sidebar_position: 60
 假设你想要一段关于友谊的重要性的段落。
 像“给我写一段关于友谊的重要性”这样宽泛的提示将导致 ChatGPT 生成宽泛、平平无奇的内容。
 
-import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.png';
-import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.png';
-import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.png';
-import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.png';
-import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.png';
+import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.webp';
+import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.webp';
+import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.webp';
+import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.webp';
+import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 
 <div style={{textAlign: 'center'}}>

@@ -12,11 +12,11 @@ ChatGPT は瞬く間にコンテンツを生成することで知られており
 
 時には、ChatGPT はその作品をよく知っているため、追加のテキストを何も貼り付けずに作品を要約することができます。例えば、「ロミオとジュリエット」を章ごとに要約してもらいましょう。頑張って 24,000 語を読む代わりに、300 語以下でその要点を把握することができます。
 
-import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.png';
-import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.png';
+import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.png';
-import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.png';
+import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.webp';
+import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}} />

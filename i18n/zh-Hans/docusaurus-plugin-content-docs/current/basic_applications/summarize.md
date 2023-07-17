@@ -13,11 +13,11 @@ ChatGPT 因在眨眼间生成内容而声名远扬，事实证明它可以节省
 有时，您可以在无需粘贴任何附加文本的情况下要求 ChatGPT 总结著名作，因为 ChatGPT 已经非常了解这些作品了。例如，您可以要求它概括“罗密欧与朱丽叶”剧本。因此，与其费力地读完该剧的 24,000 个字，您可以在 300 或更少的字数内掌握要点。
 
 
-import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.png';
-import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.png';
+import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.png';
-import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.png';
+import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.webp';
+import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}} />

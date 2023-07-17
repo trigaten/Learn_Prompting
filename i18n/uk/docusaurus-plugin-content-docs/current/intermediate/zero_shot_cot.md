@@ -7,7 +7,7 @@ sidebar_position: 4
 
 Запит ланцюг думок без ілюстрацій (Zero-shot-CoT)(@kojima2022large) є доповненням до %%CoT|CoT prompting%% (@wei2022chain), який представляє неймовірно простий запит на основі 1 ілюстрації. Таким чином, додаючи слова "**Let's think step by step.**" до кінця запитання, ВММ можуть створити ланцюг думок, який відповідає на запитання. З цього ланцюга думок вони можуть отримати точніші відповіді.
 
-import ZSImage from '@site/docs/assets/intermediate/zero_shot.png';
+import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSImage} style={{width: "500px"}} />
@@ -19,7 +19,7 @@ import ZSImage from '@site/docs/assets/intermediate/zero_shot.png';
 
 Технічно, повний процес Zero-shot-CoT включає два окремі запити/завершення. На зображенні нижче верхня бульбашка зліва створює ланцюг думок, а верхня бульбашка справа бере вихідні дані з першого запиту (включно з найпершим запитом) та вилучає відповідь із ланцюга думок. Цей другий запит є _самодоповненим_.
 
-import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSProcessImage} style={{width: "500px"}} />

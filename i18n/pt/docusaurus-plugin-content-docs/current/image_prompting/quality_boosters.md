@@ -5,8 +5,8 @@ sidebar_position: 5
 
 Os impulsionadores de qualidade (@oppenlaender2022taxonomy) são termos adicionados à um prompt para melhorar determinadas qualidades não-específicas de estilo da imagem gerada. Por exemplo, "incrível", "bonito" e "boa qualidade" são todas as qualidade impulsoras que podem ser usadas para melhorar a qualidade da imagem gerada.
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
 # Exemplo
 

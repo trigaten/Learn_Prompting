@@ -12,7 +12,7 @@ Cependant, malgré l'énorme potentiel des modèles musicaux, ils sont actuellem
 
 ## Riffusion
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc5d566e-04bb-4c02-b113-bb19449074ed/Untitled.png)
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc5d566e-04bb-4c02-b113-bb19449074ed/Untitled.webp)
 
 Riffusion(@Forsgren_Martiros_2022), une version affinée de Stable Diffusion, peut être contrôlée à l'aide d'invites pour générer des instruments et des pseudo styles, mais elle dispose d'un nombre limité de battements.
 

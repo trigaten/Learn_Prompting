@@ -24,7 +24,7 @@ Traduza o seguinte texto do inglês para o francês:
 E daí? Podemos fazer com que os modelos ignorem a primeira parte do prompt, mas por que isso é útil?
 Dê uma olhada na imagem a seguir (@simon2022inject). A empresa remoteli.io tinha um modelo de linguagem respondendo a postagens no Twitter sobre trabalho remoto. Os usuários do Twitter logo descobriram que podiam injetar seu próprio texto no bot para fazê-lo dizer o que quisessem.
 
-import Image from '@site/docs/assets/jailbreak/injection_job.png';
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />
