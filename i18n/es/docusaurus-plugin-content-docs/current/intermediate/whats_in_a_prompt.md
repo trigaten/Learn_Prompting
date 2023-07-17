@@ -10,7 +10,7 @@ Hemos pasado por algunas estrategias de promoción diferentes en las páginas an
 
 Sorprendentemente, al proporcionar algunos pocos ejemplos en las promociones, las respuestas reales (%%gold|gold_labels%%) en los ejemplos no son importantes. Como se muestra en la figura a continuación, proporcionar etiquetas aleatorias en los ejemplos apenas afecta el rendimiento (@min2022rethinking). "Demo" es sinónimo de ejemplo en esta imagen.
 
-import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.png';
+import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={GoldUn} style={{width: "750px"}} />

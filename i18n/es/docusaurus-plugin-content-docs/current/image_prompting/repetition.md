@@ -5,10 +5,10 @@ sidebar_position: 50
 
 Repetir la misma palabra dentro de una consulta, o frases similares, puede hacer que el modelo enfatice esa palabra en la imagen generada(@oppenlaender2022taxonomy). Por ejemplo, [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) generó estas cascadas con DALLE:
 
-import bad_water from '@site/docs/assets/images_chapter/bad_water.jpg';
-import good_water from '@site/docs/assets/images_chapter/good_water.jpg';
-import planet from '@site/docs/assets/images_chapter/planet.png';
-import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
+import bad_water from '@site/docs/assets/images_chapter/bad_water.webp';
+import good_water from '@site/docs/assets/images_chapter/good_water.webp';
+import planet from '@site/docs/assets/images_chapter/planet.webp';
+import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.webp';
 
 
 `Una hermosa pintura de una montaña junto a una cascada.`.

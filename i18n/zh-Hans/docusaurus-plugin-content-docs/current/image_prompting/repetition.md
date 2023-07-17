@@ -5,10 +5,10 @@ sidebar_position: 50
 
 在提示中重复相同的词语或者类似短语会导致模型在生成的图片中强调该词语。例如，[@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) 使用 DALLE 生成了这些瀑布：
 
-import bad_water from '@site/docs/assets/images_chapter/bad_water.jpg';
-import good_water from '@site/docs/assets/images_chapter/good_water.jpg';
-import planet from '@site/docs/assets/images_chapter/planet.png';
-import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
+import bad_water from '@site/docs/assets/images_chapter/bad_water.webp';
+import good_water from '@site/docs/assets/images_chapter/good_water.webp';
+import planet from '@site/docs/assets/images_chapter/planet.webp';
+import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.webp';
 
 
 `A beautiful painting of a mountain next to a waterfall.`.

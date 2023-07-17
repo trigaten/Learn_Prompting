@@ -6,7 +6,7 @@ sidebar_position: 4
 
 [Dyno](https://trydyno.com/login) – це ІСР для інженерії запитів, яке зосереджено на ітерації одного запиту. Воно надає професійний вебінтерфейс з можливістю розділити запит на декілька областей перегляду для подальшої ітерації.
 
-import Image from '@site/docs/assets/tooling/dyno.png';
+import Image from '@site/docs/assets/tooling/dyno.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

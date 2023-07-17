@@ -7,8 +7,8 @@ Style modifiers are simply descriptors which consistently
 produce certain styles (e.g. 'tinted red', 'made of glass', 'rendered in Unity')(@oppenlaender2022taxonomy). They can be combined together to
 produce even more specific styles. They can "include information about art periods, schools, and styles, but also art materials and media, techniques, and artists"(@oppenlaender2022taxonomy).
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 
 # Example
 

@@ -7,8 +7,8 @@ Las generaciones deformes, especialmente en partes del cuerpo humano (por ejempl
 
 ## Ejemplo
 
-import good_pitt from '@site/docs/assets/images_chapter/good_pitt.png';
-import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
+import good_pitt from '@site/docs/assets/images_chapter/good_pitt.webp';
+import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 
 Usando Stable Diffusion v1.5 y el siguiente prompt, generamos una bonita imagen de Brad Pitt, ¡excepto por sus manos, por supuesto!
 

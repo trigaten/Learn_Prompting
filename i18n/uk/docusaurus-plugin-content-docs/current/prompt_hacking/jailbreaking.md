@@ -16,7 +16,7 @@ OpenAI, серед інших компаній і організацій, які
 
 #### Просте прикидання
 
-import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.png';
+import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={pretend} style={{width: "500px"}} />
@@ -26,7 +26,7 @@ import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.png';
 
 #### Рольова гра персонажів
 
-import actor from '@site/docs/assets/jailbreak/chatgpt_actor.jpg';
+import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={actor} style={{width: "500px"}} />
@@ -40,7 +40,7 @@ ChatGPT було точно налаштовано за допомогою RLHF,
 
 #### Взята на себе відповідальність
 
-import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.jpg';
+import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={responsibility} style={{width: "500px"}} />
@@ -50,7 +50,7 @@ import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak
 
 #### Дослідницький експеримент
 
-import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.png';
+import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={hotwire} style={{width: "500px"}} />
@@ -60,7 +60,7 @@ import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.png';
 
 #### Логічне міркування
 
-import logic from '@site/docs/assets/jailbreak/logic.png';
+import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={logic} style={{width: "500px"}} />
@@ -74,7 +74,7 @@ ChatGPT призначений для відповідей на запитанн
 
 #### Покращена модель
 
-import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.png';
+import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={GPT4} style={{width: "500px"}} />
@@ -84,7 +84,7 @@ import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.png';
 
 #### Режим Sudo
 
-import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
+import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={sudo_mode} style={{width: "500px"}} />
@@ -92,13 +92,13 @@ import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
 
 sudo — це команда, яка «...делегує повноваження[s] , щоб надати певним користувачам... можливість запускати деякі (або всі) команди...» (@sudo2022jailbreak). Існує кілька варіантів експлуатації "sudo mode", наприклад, гіпотетичний "режим ядра" запропонований [@samczsun](https://twitter.com/samczsun/status/1598679658488217601)(@sam2022jailbreak). На запит вищезгаданим способом ChatGPT діє так, ніби надає користувачеві підвищені привілеї. Це враження про підвищені привілеї користувача, як правило, робить ChatGPT менш обмеженим у відповідях на запити.
 
-import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.png';
+import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={sudo} style={{width: "500px"}} />
 </div>
 
-import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.png';
+import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={lynx} style={{width: "500px"}} />

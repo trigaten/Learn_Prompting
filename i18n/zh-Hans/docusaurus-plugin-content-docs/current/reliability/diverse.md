@@ -6,7 +6,7 @@ sidebar_position: 5
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") 是一张通过三重方式提高答案可靠性的方法。它通过使用多个提示生成多样化的补全结果（completions），使用验证器区分好的答案和坏的答案，并使用验证器检查推理步骤的正确性。
 
-import diverse from '@site/docs/assets/reliability/diverse.png';
+import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={diverse} style={{width: "750px"}} />

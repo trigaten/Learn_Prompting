@@ -6,9 +6,9 @@ sidebar_position: 60
 
 Alguns modelos (Stable Diffusion, Midjourney, etc.) permitem que você dê pesos diferentes para diferentes termos em um prompt. Isso pode ser usado para enfatizar certas palavras ou frases na imagem gerada. Também pode ser usado para desenfatizar certas palavras ou frases na imagem gerada. Vamos considerar um exemplo simples:
 
-import mountains from '@site/docs/assets/images_chapter/mountains.png';
-import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.png';
-import planets from '@site/docs/assets/images_chapter/planets.png';
+import mountains from '@site/docs/assets/images_chapter/mountains.webp';
+import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.webp';
+import planets from '@site/docs/assets/images_chapter/planets.webp';
 
 # Exemplo
 

@@ -11,7 +11,7 @@ Esta página oferecerá alguns conselhos gerais sobre o que é realmente importa
 
 Surpreendentemente, ao fornecer %%exemplos|exemplars%% em um prompt, as respostas reais (%%gold|gold_labels%%) nos exemplos não são importantes. Como mostrado na figura abaixo, fornecer %%rótulos aleatórios (random labels)|labels%%  nos exemplos praticamente não afeta o seu desempenho (@min2022rethinking). "Demo" é sinônimo de exemplar/exemplo na imagem abaixo.
 
-import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.png';
+import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={GoldUn} style={{width: "750px"}} />

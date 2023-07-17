@@ -11,7 +11,7 @@ Os modelos de geração de música podem criar progressões de acordes, melodias
 No entanto, apesar do enorme potencial dos modelos de música, atualmente é difícil criar prompts para eles. A saída gerada muitas vezes não é completamente personalizável através do prompt, ao contrário de modelos de geração de imagens ou texto.
 
 ## Riffusion
-import riffusion from '@site/docs/assets/miscl/riffusion_phonk.png';
+import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={riffusion} style={{width: "500px"}} />

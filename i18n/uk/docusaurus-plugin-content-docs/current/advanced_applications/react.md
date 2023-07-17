@@ -11,7 +11,7 @@ ReAct(@yao2022react)(reason, act) — це парадигма, яка дозво
 Розглянемо наступне зображення. Запитання у верхньому полі взято з HotPotQA(@yang2018hotpotqa), набору даних із відповідями на запитання, які потребують складних міркувань. ReAct може відповісти на запитання, спочатку обміркувавши його (Thought 1), а потім виконавши дію (Act 1) надсилання запиту до Google. Потім він отримує певний огляд (Obs 1) і продовжує цей цикл думок, дій, спостережень, доки не досягне висновку (Act 3).
 
 
-import react_qa from '@site/docs/assets/advanced/react_qa.png';
+import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_qa} style={{width: "500px"}} />
@@ -28,7 +28,7 @@ import react_qa from '@site/docs/assets/advanced/react_qa.png';
 
 Google використовував ВМM PaLM(@chowdhery2022palm) в експериментах з ReAct. Порівняння зі стандартним створенням запитів (лише питання), CoT та іншими конфігураціями показує, що продуктивність ReAct є перспективною для складних задач міркування. Google також проводить дослідження на наборі даних FEVER (@thorne2018fever), який охоплює вилучення і перевірку фактів.
 
-import react_performance from '@site/docs/assets/advanced/react_performance.png';
+import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_performance} style={{width: "500px"}} />

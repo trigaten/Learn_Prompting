@@ -6,8 +6,8 @@ sidebar_position: 5
 Quality boosters(@oppenlaender2022taxonomy) are terms added to a prompt to improve
 certain non-style-specific qualities of the generated image. For example "amazing", "beautiful", and "good quality" are all quality boosters that can be used to improve the quality of the generated image.
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
 # Example
 

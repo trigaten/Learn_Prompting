@@ -8,7 +8,7 @@ sidebar_position: 3
 
 Наразі він має стрімку криву навчання в порівнянні з іншими ІСР для інженерії запитів.
 
-import Image from '@site/docs/assets/tooling/dust.png';
+import Image from '@site/docs/assets/tooling/dust.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

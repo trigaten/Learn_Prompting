@@ -6,7 +6,7 @@ sidebar_position: 19
 
 [Patience](https://www.patience.ai) es un sitio web para generar imágenes con algunos modelos diferentes de texto a imagen.
 
-import Image from '@site/docs/assets/tooling/patience.png';
+import Image from '@site/docs/assets/tooling/patience.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

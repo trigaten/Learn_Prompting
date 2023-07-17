@@ -6,7 +6,7 @@ sidebar_position: 2
 
 [GPT-3 Playground](https://beta.openai.com/docs/quickstart) – це вебінтерфейс для ключів API GPT-3 OpenAI. Скоріше за все, більшість людей уже скористалася цим оригінальним інструментом інженерії запитів. Саме тому він надзвичайно відомий.
 
-import Image from '@site/docs/assets/tooling/GPT3.png';
+import Image from '@site/docs/assets/tooling/GPT3.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

@@ -6,7 +6,7 @@ sidebar_position: 7
 
 [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)(@wu2022promptchainer) es una herramienta de investigación para la ingeniería de prompts. Se enfoca en concatenar prompts y es la herramienta de investigación más refinada que he encontrado.
 
-import Image from '@site/docs/assets/tooling/promptchainer.png';
+import Image from '@site/docs/assets/tooling/promptchainer.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

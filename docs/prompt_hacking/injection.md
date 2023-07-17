@@ -26,7 +26,7 @@ about remote work. Twitter users quickly figured out that they could inject thei
 bot to get it to say whatever they wanted. 
 
 
-import Image from '@site/docs/assets/jailbreak/injection_job.png';
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

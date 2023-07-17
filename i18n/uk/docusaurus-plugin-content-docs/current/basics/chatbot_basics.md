@@ -19,8 +19,8 @@ import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 ### Інструкція зі стилю
 
-import unguided_question from '@site/docs/assets/basics/unguided_question.png';
-import limerick_question from '@site/docs/assets/basics/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 Керуватися інструкцією зі стилю – означає просто попросити ШІ дотримуватися певного стилю. Коли ви формуєте запит без указівок щодо стилю, ChatGPT зазвичай генерує один або два коротких абзаци, іноді більше, якщо потрібна довша відповідь: 
 
@@ -61,8 +61,8 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.png';
     
     Якщо ти зрозумів і готов розпочати, відповідай «так».
 
-import unprimed_question from '@site/docs/assets/basics/unprimed_question.png';
-import primed_question from '@site/docs/assets/basics/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 Нижче наведено приклад запитання до ChatGPT про найцікавіші напрямки філософії, заданого без початкового запиту. Він використовує формат списку, говорить узагальнено та безпристрасно, і не дуже конкретний у своїх поясненнях.  
 

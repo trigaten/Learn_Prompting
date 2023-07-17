@@ -101,7 +101,7 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 위의 예제들이 기존에 소개된 것들과 비슷함에도 불구하고 완전히 똑같지는 않습니다. 아래의 컨텐츠는 더 기술적인 부분을 보여줄 것입니다.
 위에서 본 두가지 과정(지식 생성, 지식 통합)을 똑같이 이용할 것입니다.
 
-import KGImage from '@site/docs/assets/intermediate/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}} />
@@ -116,7 +116,7 @@ Generated Knowledge (Liu et al.)
 지식 생성단계에서 LLM은 **질문**에 대한 사실들을 생성하도록 질문 받습니다.
 LLM은 퓨샷 스타일의 프롬프트를 받게 됩니다. M개의 각기 다른 답변들을 이 같은 프롬프트를 통해서 생성이 됩니다.(자기 일관성 접근법처럼)
 
-import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
@@ -162,7 +162,7 @@ Generated Knowledge Example (Liu et al.)
 하지만 정식적인 지식 생성하기 개발보다는 덜 복잡할 것입니다.
 
 
-import RImage from '@site/docs/assets/intermediate/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={RImage} style={{width: "250px"}} />

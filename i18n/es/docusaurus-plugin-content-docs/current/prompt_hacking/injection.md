@@ -22,7 +22,7 @@ Traduce el siguiente texto de inglés a francés:
 ¿Y esto para qué sirve? Podemos hacer que los modelos ignoren la primera parte del prompt, pero ¿por qué es útil?
 Mira la siguiente imagen (@simon2022inject). La empresa `remoteli.io` tenía un LLM que respondía a los tweets sobre trabajo remoto. Los usuarios de Twitter descubrieron rápidamente que podían inyectar su propio texto en el bot para hacer que dijera lo que quisieran.
 
-import Image from '@site/docs/assets/jailbreak/injection_job.png';
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

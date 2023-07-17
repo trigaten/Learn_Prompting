@@ -40,7 +40,7 @@ ChatGPTを使用して没入型のインタラクティブなストーリーを�
 
 これから、プロンプトをChatGPTに入力して、どうなるか見てみましょう。
 
-import CSharp from '@site/docs/assets/basics/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

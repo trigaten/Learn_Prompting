@@ -10,7 +10,7 @@ style: chicago
 
 먼저 CoT 프롬프팅에서 풀어야 할 문제는 각각 서로를 기반으로하는 서브 문제들로 이루어져 있습니다. 두 번째로 이 서브 문제들은 한번에 하나씩 해결됩니다. 일반 CoT와는 다르게 이전에 풀었던 서브 문제들은 다음 문제를 푸는데에 사용됩니다.
 
-import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.png'
+import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
   <img src={leastToMost} style={{width: "600px"}}

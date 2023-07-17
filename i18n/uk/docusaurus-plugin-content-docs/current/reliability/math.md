@@ -6,7 +6,7 @@ sidebar_position: 70
 
 У цьому курсі ми бачили багато різних методів введення запитів, які можна використовувати для вдосконалення обчислювальних здібностей %%ВММ|ВММ%%. Один із останніх підходів, MathPrompter(@imani2023mathprompter), об’єднує деякі з цих методів (%%CoT|запити з покроковим поясненням рішень%%, %%ПМЛ|ПМЛ%% тощо) в одну техніку. Основна ідея полягає в тому, щоб розбити математичну задачу на алгебраїчні твердження, а потім використати код Python для її розв'язання різними способами.
 
-import math from '@site/docs/assets/reliability/math.png';
+import math from '@site/docs/assets/reliability/math.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={math} style={{width: "500px"}} />

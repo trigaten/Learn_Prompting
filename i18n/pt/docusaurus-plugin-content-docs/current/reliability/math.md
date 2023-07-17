@@ -6,7 +6,7 @@ sidebar_position: 70
 
 Durante este curso, vimos muitos métodos de prompt diferentes que podem ser usados ​​para melhorar a habilidade matemática de um %%LLM|LLM%%. Uma abordagem recente, MathPrompter(@imani2023mathprompter), une alguns desses métodos: (%%Cadeia de Pensamento|CoT prompting%%, %%PAL|PAL%%, etc.) em uma única técnica. A ideia principal é dividir uma questão matemática em termos algébricos e, em seguida, usar código Python para resolvê-la de maneiras diferentes.
 
-import math from '@site/docs/assets/reliability/math.png';
+import math from '@site/docs/assets/reliability/math.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={math} style={{width: "500px"}} />

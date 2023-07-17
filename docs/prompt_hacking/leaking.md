@@ -10,7 +10,7 @@ spit out its *own prompt*.
 
 As shown in the example image(@ignore_previous_prompt) below, the attacker changes `user_input` to attempt to return the prompt. The intended goal is distinct from goal hijacking (normal prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt). 
 
-import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
+import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={research} style={{width: "500px"}} />
@@ -19,7 +19,7 @@ import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
 The following image(@simon2022inject), again from the `remoteli.io` example, shows
 a Twitter user getting the model to leak its prompt.
 
-import Image from '@site/docs/assets/jailbreak/injection_leak.png';
+import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "300px"}} />
@@ -36,7 +36,7 @@ through that company.
 
 More notably, Microsoft released a ChatGPT powered search engine known as "the new Bing" on 2/7/23, which was demonstrated to be vulnerable to prompt leaking. The following example by [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) demonstrates how given an earlier version of Bing Search, code-named "Sydney", was susceptible when giving a snippet of its prompt(@kevinbing). This would allow the user to retrieve the rest of the prompt without proper authentication to view it.
 
-import bing from '@site/docs/assets/jailbreak/bing_chat.png';
+import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={bing} style={{width: "700px"}} />

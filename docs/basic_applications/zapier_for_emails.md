@@ -4,13 +4,13 @@ sidebar_position: 600
 
 # 🟢 Zapier for Emails
 
-import Basic from '@site/docs/assets/basic_applications/Zapiermail/Basic.png';
-import Diagram from '@site/docs/assets/basic_applications/Zapiermail/Diagram.png';
-import Step1 from '@site/docs/assets/basic_applications/Zapiermail/Step1.png';
-import Step2 from '@site/docs/assets/basic_applications/Zapiermail/Step2.png';
-import Step3 from '@site/docs/assets/basic_applications/Zapiermail/Step3.png';
-import Step4 from '@site/docs/assets/basic_applications/Zapiermail/Step4.png';
-import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.png';
+import Basic from '@site/docs/assets/basic_applications/Zapiermail/Basic.webp';
+import Diagram from '@site/docs/assets/basic_applications/Zapiermail/Diagram.webp';
+import Step1 from '@site/docs/assets/basic_applications/Zapiermail/Step1.webp';
+import Step2 from '@site/docs/assets/basic_applications/Zapiermail/Step2.webp';
+import Step3 from '@site/docs/assets/basic_applications/Zapiermail/Step3.webp';
+import Step4 from '@site/docs/assets/basic_applications/Zapiermail/Step4.webp';
+import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 
 ## Introduction
 

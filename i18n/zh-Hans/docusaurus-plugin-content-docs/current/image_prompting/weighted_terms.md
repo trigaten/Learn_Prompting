@@ -6,9 +6,9 @@ sidebar_position: 60
 
 一些模型（如 Stable Diffusion、Midjourney 等）允许你对提示中的词语进行加权。这可以用于强调生成图片中的某些词语或短语。它还可以用于减弱生成的图片中某些词语或短语的影响。让我们考虑一个简单的例子：
 
-import mountains from '@site/docs/assets/images_chapter/mountains.png';
-import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.png';
-import planets from '@site/docs/assets/images_chapter/planets.png';
+import mountains from '@site/docs/assets/images_chapter/mountains.webp';
+import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.webp';
+import planets from '@site/docs/assets/images_chapter/planets.webp';
 
 # 例子
 

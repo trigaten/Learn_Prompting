@@ -18,19 +18,19 @@ Investigué mucho sobre cómo crear imágenes de baja poli en [r/StableDiffusion
 
 Decidí empezar con DALLE y el estímulo `Cohete blanco y azul Low poly disparando a la luna delante de un prado verde disperso` y ver qué pasaba.
 
-import rockets1 from '@site/docs/assets/images_chapter/rockets_dalle_1.png';
-import rockets2 from '@site/docs/assets/images_chapter/rockets_dalle_2.png';
-import computer_1 from '@site/docs/assets/images_chapter/computer_dalle_1.png';
-import astronaut_1 from '@site/docs/assets/images_chapter/astronaut_dalle_1.png';
-import astronaut_2 from '@site/docs/assets/images_chapter/astronaut_sd_1.png';
-import rocket_sd_1 from '@site/docs/assets/images_chapter/rocket_sd_1.png';
-import rocket_final from '@site/static/img/rocket.png';
-import laptop_sd_1 from '@site/docs/assets/images_chapter/laptop_sd_1.png';
-import gemstone_sd_1 from '@site/docs/assets/images_chapter/gemstone_sd_1.png';
-import gemstone_sd_2 from '@site/docs/assets/images_chapter/gemstone_sd_2.png';
-import gemstone_sd_3 from '@site/docs/assets/images_chapter/gemstone_sd_3.png';
-import focus_final from '@site/static/img/computer.png';
-import astronaut_final from '@site/static/img/astronaut.png';
+import rockets1 from '@site/docs/assets/images_chapter/rockets_dalle_1.webp';
+import rockets2 from '@site/docs/assets/images_chapter/rockets_dalle_2.webp';
+import computer_1 from '@site/docs/assets/images_chapter/computer_dalle_1.webp';
+import astronaut_1 from '@site/docs/assets/images_chapter/astronaut_dalle_1.webp';
+import astronaut_2 from '@site/docs/assets/images_chapter/astronaut_sd_1.webp';
+import rocket_sd_1 from '@site/docs/assets/images_chapter/rocket_sd_1.webp';
+import rocket_final from '@site/static/img/rocket.webp';
+import laptop_sd_1 from '@site/docs/assets/images_chapter/laptop_sd_1.webp';
+import gemstone_sd_1 from '@site/docs/assets/images_chapter/gemstone_sd_1.webp';
+import gemstone_sd_2 from '@site/docs/assets/images_chapter/gemstone_sd_2.webp';
+import gemstone_sd_3 from '@site/docs/assets/images_chapter/gemstone_sd_3.webp';
+import focus_final from '@site/static/img/computer.webp';
+import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={rockets1} style={{width: "750px"}} />

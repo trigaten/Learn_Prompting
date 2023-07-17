@@ -10,7 +10,7 @@ style: chicago
 
 Як і з CoT, проблема, яку потрібно вирішити, розкладається на набір підпроблем, які будуються одна на одній. На другому кроці ці підпроблеми вирішуються одна за одною. Всупереч ланцюгу думок, рішення попередніх підпроблем підставляється в запит, який намагається розв'язати наступну проблему.
 
-import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.png'
+import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
   <img src={leastToMost} style={{width: "600px"}}

@@ -7,7 +7,7 @@ sidebar_position: 4
 
 Os Modelos de Linguagem Auxiliados por Programa [(Program-aided Language Models - PALs)](https://reasonwithpal.com)(@gao2022pal) são outro exemplo de um sistema de MRKL. Quando uma pergunta é feita, os PALs são capazes de escrever código que resolve essa pergunta. Eles enviam o código para uma execução programática para obter o resultado. O PAL funciona em contraste com a Cadeia de Pensamento; o raciocínio intermediário do PAL é código, enquanto o do CdP é linguagem natural.
 
-import image from '@site/docs/assets/advanced/pal.png';
+import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={image} style={{width: "500px"}} />

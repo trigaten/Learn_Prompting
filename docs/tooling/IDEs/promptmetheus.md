@@ -6,7 +6,7 @@ sidebar_position: 20
 
 [Promptmetheus](https://promptmetheus.com) helps you compose, test, and evaluate one-shot prompts for the OpenAI platform that predictably transform input to output.
 
-import Image from '../../assets/tooling/promptmetheus.jpg';
+import Image from '../../assets/tooling/promptmetheus.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
