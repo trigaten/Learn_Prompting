@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# 🟡 LLMs that Reason and Act
+# 🟡 LLMs которые рассуждают и действуют
 
-ReAct(@yao2022react)(reason, act) is a paradigm for enabling language models to solve complex tasks using natural language reasoning. ReAct is designed for tasks in which the LLM is allowed to perform certain actions. For example, as in a MRKL system, a LLM may be able to interact with external APIs to retrieve information. When asked a question, the LLM could choose to perform an action to retrieve information, and then answer the question based on the retrieved information.
+ReAct(@yao2022react)(reason, act) - это парадигма, позволяющая языковым моделям решать сложные задачи с помощью рассуждений на естественном языке. ReAct предназначен для задач, в которых LLM разрешено выполнять определенные действия. Например, как в системе MRKL, LLM может иметь возможность взаимодействовать с внешними API для получения информации. Когда ЛЛМ задают вопрос, он может выбрать действие для получения информации, а затем ответить на вопрос на основе полученной информации.
 
-ReAct Systems can be thought of as MRKL systems, with the added ability to **reason about** the actions they can perform.
+Системы ReAct можно рассматривать как системы MRKL, с дополнительной способностью **рассуждать о** действиях, которые они могут выполнять.
 
-Examine the following image. The question in the top box is sourced from HotPotQA(@yang2018hotpotqa), a question answering dataset that requires complex reasoning. ReAct is able to answer the question by first reasoning about the question (Thought 1), and then performing an action (Act 1) to send a query to Google. It then receives an observation (Obs 1), and continues with this thought, action, observation loop until it reaches a conclusion (Act 3).
+Рассмотрите следующее изображение. Вопрос в верхнем поле взят из HotPotQA (@yang2018hotpotqa), набора данных для ответов на вопросы, требующих сложных рассуждений. ReAct способен ответить на вопрос, сначала обдумав его (Thought 1), а затем выполнив действие (Act 1) по отправке запроса в Google. Затем он получает наблюдение (Obs 1) и продолжает цикл "мысль, действие, наблюдение". пока не придет к заключению (действие 3).
 
 
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
@@ -18,15 +18,15 @@ import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-ReAct System (Yao et al.)
+Система ReAct (Yao и др.)
 </div>
 
-Readers with knowledge of reinforcement learning may recognize this process as similar to the classic RL loop of state, action, reward, state,... ReAct provides some formalization for this in their paper.
+Читатели, знакомые с обучением подкрепления, могут распознать этот процесс как похожий на классический цикл RL: состояние, действие, вознаграждение, состояние, .... ReAct предлагает некоторую формализацию этого процесса в своей статье.
 
 
-## Results
+## Результаты
 
-Google used the PaLM(@chowdhery2022palm) LLM in experiments with ReAct. Comparisons to standard prompting (question only), CoT, and other configurations show that ReAct's performance is promising for complex reasoning tasks. Google also performs studies on the FEVER dataset(@thorne2018fever), which covers fact extraction and verification.
+В экспериментах с ReAct компания Google использовала LLM PaLM(@chowdhery2022palm). Сравнение со стандартным промтингом (только вопрос), CoT и другими конфигурациями показало, что производительность ReAct многообещающа для сложных задач рассуждения. Google также проводит исследования на наборе данных FEVER (@thorne2018fever), который охватывает извлечение и проверку фактов.
 
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
@@ -35,6 +35,6 @@ import react_performance from '@site/docs/assets/advanced/react_performance.webp
 </div>
 
 <div style={{textAlign: 'center'}}>
-ReAct Results (Yao et al.)
+Результаты ReAct (Yao и др.)
 </div>
 
