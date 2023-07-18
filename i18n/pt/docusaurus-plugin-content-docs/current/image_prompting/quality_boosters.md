@@ -2,34 +2,34 @@
 sidebar_position: 5
 ---
 
-# 🟢 Quality Boosters
+# 🟢 Impulsionadores de qualidade
 
-Quality boosters(@oppenlaender2022taxonomy) are terms added to a prompt to improve certain non-style-specific qualities of the generated image. For example "amazing", "beautiful", and "good quality" are all quality boosters that can be used to improve the quality of the generated image.
+Os impulsionadores de qualidade (@oppenlaender2022taxonomy) são termos adicionados à um prompt para melhorar determinadas qualidades não-específicas de estilo da imagem gerada. Por exemplo, "incrível", "bonito" e "boa qualidade" são todas as qualidade impulsoras que podem ser usadas para melhorar a qualidade da imagem gerada.
 
 import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
 import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
-# Example
+# Exemplo
 
-Recall from the other page the pyramids generated with DALLE, and the prompt `pyramid`.
+Lembre-se da página anterior das pirâmides geradas com o DALLE e o prompt `pirâmide`.
 
 <div style={{textAlign: 'center'}}>
   <img src={pyramids} style={{width: "750px"}} />
 </div>
 
-Now take at pyramids generated with this prompt: `A beautiful, majestic, incredible pyramid, 4K`
+Agora veja as pirâmides geradas com este prompt: `Uma bela, majestosa, incrível pirâmide, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={special_pyramids} style={{width: "750px"}} />
 </div>
 
-These are much more scenic and impressive!
+Estas são muito mais cênicas e impressionantes!
 
-Here is a list of a number of quality boosters:
+Aqui está uma lista de vários impulsionadores de qualidade:
 ```text
-High resolution, 2K, 4K, 8K, clear, good lighting, detailed, extremely detailed, sharp focus, intricate, beautiful, realistic+++, complementary colors, high quality, hyper detailed, masterpiece, best quality, artstation, stunning
+Alta resolução, 2K, 4K, 8K, nítido, boa iluminação, detalhado, extremamente detalhado, foco nítido, intrincado, bonito, realista+, cores complementares, alta qualidade, hiper detalhado, obra-prima, melhor qualidade, artstation, impressionante
 ```
 
-## Notes
+## Notas
 
-Similar to the note on the previous page, our working definition of quality boosters differs from Oppenlaender et al.(@oppenlaender2022taxonomy). This being said, it is sometimes difficult to exactly distinguish between quality boosters and style modifiers.
+Similarmente à nota da página anterior, nossa definição de trabalho de impulsionadores de qualidade difere da de Oppenlaender et al. (@oppenlaender2022taxonomy). Dito isto, às vezes é difícil distinguir exatamente entre os impulsionadores de qualidade e os modificadores de estilo.
