@@ -100,6 +100,6 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
 ## Примітки
 MRKL був розроблений [AI21](https://www.ai21.com/) та спочатку використовував їхні ВММ J-1 (Jurassic 1)(@lieberjurassic).
 
-## Більше
+## Додаткова інформація
 
 Перегляньте [цей приклад](https://python.langchain.com/docs/modules/agents/how_to/mrkl) системи MRKL, створеного за допомогою LangChain.
