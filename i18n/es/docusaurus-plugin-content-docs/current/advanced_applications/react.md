@@ -10,6 +10,7 @@ Los sistemas ReAct se pueden pensar como sistemas MRKL, con la capacidad adicion
 
 Examinemos la siguiente imagen. La pregunta en el cuadro superior proviene de HotPotQA (@yang2018hotpotqa), un conjunto de datos de preguntas y respuestas que requiere un razonamiento complejo. ReAct puede responder la pregunta primero razonando sobre ella (Pensamiento 1), y luego realizando una acción (Acción 1) para enviar una consulta a Google. Luego recibe una observación (Obs 1) y continúa con este ciclo de pensamiento, acción, observación hasta que llega a una conclusión (Acción 3).
 
+
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
@@ -21,6 +22,7 @@ Sistema ReAct (Yao et al.)
 </div>
 
 Los lectores con conocimientos de aprendizaje por refuerzo pueden reconocer este proceso como similar al ciclo clásico de RL de estado, acción, recompensa, estado,.... ReAct proporciona una formalización para esto en su artículo.
+
 
 ## Resultados
 
