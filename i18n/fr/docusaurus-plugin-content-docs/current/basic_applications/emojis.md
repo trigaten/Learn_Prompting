@@ -2,116 +2,116 @@
 sidebar_position: 40
 ---
 
-# 🟢 Trouver des emojis
+# 🟢 Finding Emojis
 
-🤔 Avez-vous déjà besoin du **parfait emoji** pour un tweet ou une publication?
+🤔 Do you ever need the **perfect emoji** for a tweet or post?
 
-Parfois, il est difficile de se rappeler lequel des milliers d'emojis serait le meilleur. Heureusement, l'IA peut aider!
+Sometimes it is hard to remember which of the thousands of emojis would be best. Fortunately, AI can help!
 
-À titre d'exemple, essayons de trouver les meilleurs emojis à ajouter à [ce](https://twitter.com/learnprompting/status/1631786358330085382) tweet:
+As an example, let's try to find the best emojis to add to [this](https://twitter.com/learnprompting/status/1631786358330085382) tweet:
 
 ```text
-Prêt à libérer votre créativité avec l'IA?
+Ready to unleash your creativity with AI?
 
-Découvrez la puissance de Midjourney, le générateur d'images IA qui produit des images étonnantes et artistiques!
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-Consultez notre dernier article pour apprendre à créer vos propres chefs-d'œuvre uniques avec l'IA.
+Check out our newest article to learn how to create your own unique masterpieces with AI
 ```
 
-Nous pourrions demander à ChatGPT de nous aider:
+We could ask ChatGPT to help us:
 
 ```text
-Prêt à libérer votre créativité avec l'IA?
+Ready to unleash your creativity with AI?
 
-Découvrez la puissance de Midjourney, le générateur d'images IA qui produit des images étonnantes et artistiques!
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-Consultez notre dernier article pour apprendre à créer vos propres chefs-d'œuvre uniques avec l'IA.
+Check out our newest article to learn how to create your own unique masterpieces with AI
 
-Quels sont quelques bons emojis à ajouter à ce tweet?
+What are some good emojis to add to this tweet?
 
 // highlight-start
-Voici quelques emojis pertinents que vous pouvez utiliser pour transmettre le message et le ton du tweet:
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-🎨 Palette: pour représenter la créativité et l'art.
-🤖 Visage de robot: pour indiquer l'implication de l'IA et de la technologie.
-🌟 Étoiles: pour mettre en évidence la qualité étonnante et artistique des images générées.
-🔍 Loupe: pour suggérer l'exploration et la découverte.
-💡 Ampoule: pour signifier de nouvelles idées et de l'innovation.
-📝 Mémo: pour impliquer un guide étape par étape sur la façon de créer des chefs-d'œuvre avec l'IA.
+🎨 Palette: to represent creativity and art.
+🤖 Robot face: to indicate the involvement of AI and technology.
+🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
+🔍 Magnifying glass: to suggest exploration and discovery.
+💡 Light bulb: to signify new ideas and innovation.
+📝 Memo: to imply a step-by-step guide on how to create masterpieces with AI.
 // highlight-end
 ```
 
-Ceux-ci sont bons, mais j'aime aller phrase par phrase!
+These are good, but I like to go sentence by sentence!
 
-## Phrase 1
+## Sentence 1
 
 ```text
-Prêt à libérer votre créativité avec l'IA?
+Ready to unleash your creativity with AI?
 
-Quels sont quelques bons emojis à ajouter à cette partie d'un tweet?
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-Voici quelques emojis qui pourraient bien aller avec la phrase "Prêt à libérer votre créativité avec l'IA?":
+Here are some emojis that could go well with the sentence "Ready to unleash your creativity with AI?":
 
-🎨 Palette: pour suggérer la créativité et l'art.
-🤖 Visage de robot: pour indiquer l'implication de l'IA et de la technologie.
-💪 Biceps fléchis: pour montrer la force et la détermination de créer quelque chose de nouveau.
-🚀 Fusée: pour impliquer le progrès, l'avancement et l'innovation.
-🌟 Étoiles: pour suggérer l'idée de quelque chose de nouveau et excitant.
+🎨 Palette: to suggest creativity and art.
+🤖 Robot face: to indicate the involvement of AI and technology.
+💪 Flexed biceps: to show strength and determination to create something new.
+🚀 Rocket: to imply progress, advancement, and innovation.
+🌟 Sparkles: to suggest the idea of something new and exciting.
 // highlight-end
 ```
 
-## Phrase 2
+## Sentence 2
 
 ```text
-Consultez notre dernier article pour apprendre à créer vos propres chefs-d'œuvre uniques avec l'IA.
+Check out our newest article to learn how to create your own unique masterpieces with AI
 
-Quels sont quelques bons emojis à ajouter à cette partie d'un tweet?
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-Voici quelques emojis pertinents que vous pouvez utiliser pour transmettre le message et le ton du tweet:
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-🤖 Visage de robot: pour indiquer l'implication de l'IA et de la technologie.
-🌟 Étoiles: pour mettre en évidence la qualité étonnante et artistique des images générées.
-📷 Caméra: pour suggérer que les images générées sont de haute qualité et dignes de partage.
-🎨 Palette: pour représenter la créativité et l'art.
-🔍 Loupe: pour impliquer que le générateur d'images AI est un outil pour explorer et découvrir de nouvelles possibilités.
+🤖 Robot face: to indicate the involvement of AI and technology.
+🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
+📷 Camera: to suggest that the generated images are of high quality and worth sharing.
+🎨 Palette: to represent creativity and art.
+🔍 Magnifying glass: to imply that the AI image generator is a tool to explore and discover new possibilities.
 
 // highlight-end
 ```
 
-## Phrase 3
+## Sentence 3
 
 ```text
-Découvrez la puissance de Midjourney, le générateur d'images IA qui produit des images étonnantes et artistiques!
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-Quels sont quelques bons emojis à ajouter à cette partie d'un tweet?
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-Voici quelques emojis pertinents que vous pouvez utiliser pour transmettre le message et le ton du tweet:
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-📝 Mémo: pour suggérer que l'article est un guide ou un tutoriel.
-💡 Ampoule: pour impliquer de nouvelles idées et de l'inspiration.
-🤖 Visage de robot: pour indiquer l'implication de l'IA et de la technologie.
-🎨 Palette: pour représenter la créativité et l'art.
-📚 Livre: pour suggérer que l'article est informatif et éducatif.
+📝 Memo: to suggest that the article is a guide or a how-to.
+💡 Light bulb: to imply new ideas and inspiration.
+🤖 Robot face: to indicate the involvement of AI and technology.
+🎨 Palette: to represent creativity and art.
+📚 Book: to suggest that the article is informative and educational.
 // highlight-end
 ```
 
 ## Conclusion
 
-Maintenant que j'ai des suggestions d'emoji pour chaque partie, je peux ajouter ceux que j'aime et tweeter!
+Now that I have emoji suggests for each part, I can add in the ones I like and tweet it out!
 
 ```text
-Prêt à libérer votre créativité avec l'IA? 🔥🎨
+Ready to unleash your creativity with AI? 🔥🎨
 
-Découvrez la puissance de Midjourney, le générateur d'images IA qui produit des images étonnantes et artistiques! ✨
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images! ✨
 
-Consultez notre dernier article pour apprendre à créer vos propres chefs-d'œuvre uniques avec l'IA 🖌️
+Check out our newest article to learn how to create your own unique masterpieces with AI 🖌️
 ```
 
-Notez que j'ai ajouté des emojis qui n'ont pas été suggérés par l'IA. Vous devriez toujours utiliser votre propre jugement lors du choix des emojis, et utilisez simplement ChatGPT pour vous aider à trouver de bonnes options!
+Note that I added in some emojis that weren't suggested by the AI. You should always use your own judgement when choosing emojis, and just use ChatGPT to help you find some good options!
 
 ## Notes
 
-- Je préfère ChatGPT pour cette tâche car il fournit des explications pour ses suggestions. GPT-3 propose souvent simplement une liste d'emojis: 🤩😎🤩🤩😃😃💪
+- I prefer ChatGPT for this task since it provides rationales for its suggestions. GPT-3 often just outputs a list of emojis: 🤩😎🤩🤩😃😃💪
