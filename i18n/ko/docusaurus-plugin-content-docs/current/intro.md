@@ -14,7 +14,7 @@ sidebar_position: 1
 
 이 과정은 오픈 소스이며 다양한 연구자, 번역가, 취미 활동가들로 구성된 커뮤니티에서 제작했습니다. 우리는 AI가 모든 사람이 접근할 수 있어야 하며, 명확하고 객관적으로 설명되어야 한다고 믿습니다. 이를 위해 과도한 전문 용어와 과대 광고가 없는 포괄적이고 편견 없는 강좌를 제작하기 위해 노력하고 있습니다.
 
-우리는 이 접근 방식이 프롬프트 엔지니어링 커뮤니티에서 인정받고 있음을 발견했습니다: 이 과정은 [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15)에서 인용하며 [O'REILY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, OpenAI. OpenAI와 같은 회사 사람들이 사용합니다 또한 <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>거의 </a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>모든 </a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>다른 </a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>프롬프트 </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>엔지니어링 </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>video </a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>와 </a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>가이드 </a>가 이 과정의 자료를 사용합니다. 620,000명의 사용자와 33,000명의 [Discord](https://discord.gg/learn-prompting) 회원을 포함하여 프롬프트 엔지니어링 커뮤니티를 지원하게 되어 영광입니다.
+우리는 이 접근 방식이 프롬프트 엔지니어링 커뮤니티에서 인정받고 있음을 발견했습니다: 이 과정은 [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15)에서 인용하며 [O'REILY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, OpenAI. OpenAI와 같은 회사 사람들이 사용합니다 또한 <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>거의 </a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>모든 </a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>다른 </a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>프롬프트 </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>엔지니어링 </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>video </a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>와 </a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>가이드 </a>가 이 과정의 자료를 사용합니다. We are honored to support the prompt engineering community, including our 1M+ users and 40K [Discord](https://discord.gg/learn-prompting) members.
 
 ### 가르치는 방법
 
@@ -50,7 +50,7 @@ sidebar_position: 1
 
 메모: 🔴 및 🟣 문서의 경우에도 일반적으로 별도의 전문 지식이 없어도 내용을 파악할 수 있지만 전문 지식이 있으면 구현에 도움이 될 수 있습니다.
 
-### 챕터
+### Chapters
 
 다음은 각 장에 대한 간략한 개요입니다:
 
@@ -66,9 +66,9 @@ sidebar_position: 1
 
 **신뢰성**: LLM(대규모 언어 모델)의 신뢰성 향상
 
-**Images**: DALLE 및 안정적인 확산과 같은 텍스트-이미지 모델을 위한 프롬프트 엔지니어링
+**Image Prompting**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
 
-**프롬프트 주입**: 해킹, 그러나 프롬프트 엔지니어링을 위한 것입니다
+**Prompt Hacking**: Hacking, but for prompt engineering
 
 **툴링**: 다양한 프롬프트 엔지니어링 도구 및 IDE 검토
 
@@ -82,9 +82,10 @@ sidebar_position: 1
 
 질문, 의견 또는 제안이 있는 경우 다음을 수행할 수 있습니다:
 
-- [GitHub에 대한 이슈 만들기](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
+- https://github.com/trigaten/Learn_Prompting/issues/new/choose
 - [learnprompting@gmail.com](mailto:learnprompting@gmail.com)로 이메일을 보내주십시오
 - [Discord 커뮤니티](https://learnprompting.org/discord) 에 가입합니다
 - [Twitter](https://twitter.com/learnprompting) 에서 팔로우 해주세요
+- Join the HackAPrompt Competition until May 26 [Twitter](https://www.aicrowd.com/challenges/hackaprompt-2023)
 
 아무리 작은 피드백이라도 큰 도움이 됩니다!
