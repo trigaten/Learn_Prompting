@@ -4,21 +4,13 @@ sidebar_position: 5
 
 # 🟡 자기 일관성
 
-자기 일관성(@wang2022selfconsistency)은 하나가 아닌 여러 개의 사고 사슬을 만들고 그 중에서 가장 많이 나온 답을 택하는 CoT 방식입니다.
-
-아래의 그림을 보면 왼쪽의 프롬프트는 퓨샷 CoT 패러다임을 사용해서 쓰여졌습니다. 이 하나의 프롬프트를 이용해서 여러개의 독립적인 사고 사슬이 생성되었습니다.
-답변은 각 항목들로부터 추출되었고 그 결과 최종 답안은 "marginalizing out reasoning paths"가 되었습니다.
-이 예제에서는 단순히 가장 많이 나온 답을 선택한 것 뿐입니다.
-
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "750px"}} />
+  <img src={SCImage} style={{width: "500px"}} />
 </div>
 
-<div style={{textAlign: 'center'}}>
-자기 일관성 (Wang et al.)
-</div>
+자기 일관성(@wang2022selfconsistency)은 하나가 아닌 여러 개의 사고 사슬을 만들고 그 중에서 가장 많이 나온 답을 택하는 CoT 방식입니다. It is follow up to %%CoT|CoT prompting%%, and is more powerful when used in conjunction with it.
 
 ## 예제
 
@@ -58,36 +50,33 @@ Classify the above email as IMPORTANT or NOT IMPORTANT as it relates to a softwa
 
 ```text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system.
-This is important because it could lead to a data breach.
+The sender has discovered a major security vulnerability in the system. 
+This is important because it could lead to a data breach. 
 I would classify this email as IMPORTANT
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use.
+The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use. 
 I would classify this email as NOT IMPORTANT
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-The sender is likely a hacker and may have access to the system.
-This is important because it could lead to a data breach.
+The sender is likely a hacker and may have access to the system. 
+This is important because it could lead to a data breach. 
 I would classify this email as IMPORTANT
 <!-- highlight-end -->
 ```
 
 많은 사고 사슬을 만들어 내고, 가장 많이 나온 답변을 선택함으로써(`중요함`), 우리는 GPT-3로 부터 더 일관적이고 정확한 답변을 얻을 수 있습니다.
 
-## 결론
+## Results
 
-자기 일관성은 산술적, 상식적, 상징적 추론 과제에서 결과를 더 개선했습니다.
-
-심지어 기본 CoT가 효과적이지 않을 때도 자기 일관성은 여전히 도움이 된다는 것도 알 수 있었습니다.
+자기 일관성은 산술적, 상식적, 상징적 추론 과제에서 결과를 더 개선했습니다. 심지어 기본 CoT가 효과적이지 않을 때도 자기 일관성은 여전히 도움이 된다는 것도 알 수 있었습니다.
 
 ## 참고
 
-Wang et al. 답을 도출하는 더 복잡한 방법에 대해서 고민해봅시다. 사고 사슬에 대한 LLM의 생성 확률에 대해서 생각해 볼 수 있을 것입니다.
-하지만 최빈값 투표가 보통 더 나은 답을 제공하기 때문에 연구에서는 이러한 방법들을 사용하지 않습니다.
+- Wang et al. 답을 도출하는 더 복잡한 방법에 대해서 고민해봅시다. 사고 사슬에 대한 LLM의 생성 확률에 대해서 생각해 볼 수 있을 것입니다. 하지만 최빈값 투표가 보통 더 나은 답을 제공하기 때문에 연구에서는 이러한 방법들을 사용하지 않습니다.
