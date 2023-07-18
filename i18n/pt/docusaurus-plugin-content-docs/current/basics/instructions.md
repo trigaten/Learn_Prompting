@@ -1,67 +1,74 @@
 ---
 sidebar_position: 2
 ---
-# 🟢 Dando Instruções
 
-Um dos métodos de *prompting* mais simples é apenas dar instruções. Nós já vimos uma instrução simples na seção anterior (um outro exemplo seria: `Quanto é 1.000.000 * 9.000? Tenha certeza de colocar a quantidade certa de zeros, mesmo que sejam muitos:`)
+# 🟢 Giving Instructions
 
-Abaixo, tem-se um exemplo interativo com o [*toolkit* Dyno](https://trydyno.com/). Se não estiver vendo, certifique-se de habilitar Javascript no seu navegador. Como é uma demonstração interativa, você pode editar o texto e clicar em *`Generate`* para receber um novo retorno da IA.
+import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
 
-#### Exemplo 1
+<div style={{textAlign: 'center'}}>
+  <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+</div>
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Um usuário digitou o seu primeiro e o seu último nome em um formulário. Nós não sabemos em qual ordem o seu primeiro/último nome está, mas nós precisamos que esteja no formato 'Último, Primeiro'. Converta a seguir:\n\njonh doe" initial-response="Doe, Jonh" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
-<br />
+One of the simplest prompting methods is just giving instructions (sometimes called *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). We already saw a simple instruction in a previous section (`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`). However, modern AIs can follow much more complex instructions.
 
-A IA é capaz de facilmente resolver este problema. Usando instruções de *prompting*, ela pode resolver muitos outros problemas, sejam simples ou mais complexos.
+Below is our first [embed](https://learnprompting.org/docs/basics/intro#embeds). If you do not see it, make sure to turn Javascript on in your browser. Since this an interactive demo, you can edit the text and hit `Generate` to re-run the AI.
 
-#### Exemplo 2
+#### Example 1
 
-Aqui está um exemplo mais complicado[^1]:
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlxuXG5TaGFoLCBBYXl1c2giLCJwcm9tcHQiOiJBIHVzZXIgaGFzIGlucHV0IHRoZWlyIGZpcnN0IGFuZCBsYXN0IG5hbWUgaW50byBhIGZvcm0uIFdlIGRvbid0IGtub3cgaW4gd2hpY2ggb3JkZXIgdGhlaXIgZmlyc3QgbmFtZSBhbmQgbGFzdCBuYW1lIGFyZSwgYnV0IHdlIG5lZWQgaXQgdG8gYmUgaW4gdGhpcyBmb3JtYXQgJzxMYXN0IG5hbWU%2BLCA8Rmlyc3QgbmFtZT4nLiBcblxuUGxlYXNlIGNvbnZlcnQgdGhlIGZvbGxvd2luZyBuYW1lIGluIHRoZSBleHBlY3RlZCBmb3JtYXQ6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+
+<br/>The AI is easily able to solve this problem. We can also ask it to solve many other simple and more complex problems.
+
+#### Example 2
+
+Here is a more complicated example[^A]:
 
 ```
-Leia o seguinte e-mail de venda e remova todas as informações de identificação pessoal, 
-substituindo-as com o espaço reservado apropriado. Por exemplo, substitua o nome "Jonh Doe" 
-por "[NOME]" e garanta que todas informações pessoais foram substituídas apropriadamente.
+Read the following sales email. Remove any personally identifiable information (PII),
+and replace it with the appropriate placeholder. For example, replace the name "John Doe"
+with "[NAME]".
 
-Olá, Jonh!
+Hi John,
 
-Eu estou escrevendo porque percebi que você comprou um novo carro recentemente. 
-Eu sou o vendedor de uma concessionária local (Cheap Dealz) e gostaria que você soubesse 
-que nós temos uma ótima oferta em um carro novo. Se você tiver interesse, por favor, avise-me.
+I'm writing to you because I noticed you recently purchased a new car. I'm a salesperson
+at a local dealership (Cheap Dealz), and I wanted to let you know that we have a great deal on a new
+car. If you're interested, please let me know.
 
-Atenciosamente,
+Thanks,
 
 Jimmy Smith
 
-Telefone: 410-805-2345
-E-mail: jimmysmith@cheapdealz.com
+Phone: 410-805-2345
+Email: jimmysmith@cheapdealz.com
 ```
 
-Aqui está a [resposta da IA](https://platform.openai.com/playground/p/6fy8vbdvGelrMlF190tLEE5n?model=text-davinci-003) (por se tratar de um modelo probabilístico, podem ocorrer variações na resposta):
+Here is the [AI's response](https://beta.openai.com/playground/p/002o3gmji5jlwUfRq9d7KDHc?model=text-davinci-003):
 
 ```text
 // highlight-start
-Olá, [NOME]!
+Hi [NAME],
 
-Eu estou escrevendo porque percebi que você comprou um novo carro recentemente. 
-Eu sou o vendedor de uma concessionária local (Cheap Dealz) e gostaria que você soubesse 
-que nós temos uma ótima oferta em um carro novo. Se você tiver interesse, por favor, avise-me.
+I'm writing to you because I noticed you recently purchased a new car. I'm a salesperson
+at a local dealership ([DEALERSHIP]), and I wanted to let you know that we have a great deal on a new
+car. If you're interested, please let me know.
 
-Atenciosamente,
+Thanks,
 
-[NOME]
+[SALESPERSON]
 
-Telefone: [NÚMERO DE TELEFONE]
-E-mail: [ENDEREÇO DE E-MAIL]
+Phone: [PHONE NUMBER]
+Email: [EMAIL ADDRESS]
 // highlight-end
 ```
 
-É bem legal perceber como o modelo pode ir além das instruções. Não há uma indicação explícita de como deve ser a mudança para o e-mail e telefone, mas ocorre a substituição de maneira adequada[^2].
+It is very exciting to see how the model can extrapolate from the instructions. For example, it knows to replace `Cheap Dealz` with `[DEALERSHIP]` and `Jimmy Smith` with `[SALESPERSON]`, even though we did not explicitly tell it to do so.
 
-[^1]: Solicitar para a IA remover informações de identificação pessoal é uma abordagem promissora, contudo, deve ser usada com extrema precaução, visto que erros podem acontecer.
-[^2]: Comparando-se com o [*prompt* original](https://learnprompting.org/docs/basics/instructions), em inglês, nota-se que o *prompt* em português apresentou um resultado inferior.
+[^A]: Allowing AI to remove PII from text is a promising approach, but it should be used with extraordinary caution as it may make mistakes.
 
 
-## Notes 
-
-🚧 Esta página precisa de citações 🚧
