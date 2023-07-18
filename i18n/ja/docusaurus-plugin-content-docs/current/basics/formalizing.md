@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# 🟢 プロンプトの形式化
+# 🟢 Formalizing Prompts
 
 import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
@@ -10,23 +10,21 @@ import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
   <FormalPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
+We have now covered multiple types of prompts, as well as ways to combine them. This page will provide you with terms to explain different types of prompts. Although there have been approaches to formalize discourse around prompt engineering(@white2023prompt), the field is ever changing, so we will provide you with just enough information to get started.
 
-ここまで、複数のタイプのプロンプトとそれらを組み合わせる方法を学習してきました。このページでは、さまざまな種類のプロンプトを説明するための用語について解説します。プロンプトエンジニアリング周辺の議論を形式化する種々のアプローチ（@white2023prompt）がありますが、この分野は常に変化しているため、まずは学習を開始するのに十分な情報を提供します。
+## Parts of a Prompt
 
-## プロンプトのパーツ
+There are a few different parts of a prompt that you will see over and over again. They are roughly:
 
-プロンプトには、よく登場するパーツがいくつかあります。
+- A role
+- An instruction/task
+- A question
+- Context
+- Examples (few shot)
 
-- A role - 役割
-- An instruction/task - 指示
-- A question - 質問
-- Context - 文脈、コンテキスト
-- Examples (few shot) - 例示
+We have covered roles, instructions, and examples in previous pages. A question is simply a question! (E.g. `what is the capital of France?`). Context is any relevant information that you want the model to use when answering the question/performing the instruction.
 
-私達はこれまでに、役割、指示、および例示について学びました。質問はそのまま質問という意味です！（例: `フランスの首都は何ですか？`）。コンテキストとは、質問をしたり、命令を実行するときにモデルに与える周辺情報です。
-
-これらすべてが必ずプロンプトの中に出てくるわけではありません。また、決まった順序もありません。例えば、次の2つのプロンプトはどちらも役割、命令、およびコンテキストを含み、ほぼ同じことを行います。
-
+Not all of these occur in every prompt, and when some do occur, there is no standard order for them. For example, the following two prompts, which each contain a role, an instruction, and context, will do roughly the same thing:
 
 ```text
 You are a doctor. Read this medical history and predict risks for the patient:
@@ -46,45 +44,39 @@ March 1, 2022: Sustained a concussion in a car accident. Admitted to the hospita
 You are a doctor. Read this medical history and predict risks for the patient:
 ```
 
-ただし、指示が最後に来ているという点で、後者のプロンプトの方がより良い出力を生む可能性が高いです。このような書き方は LLM が単にコンテキストを繰り返すような出力をすることを防ぐため良いでしょう。前者のプロンプトが与えられた場合、LLM は続きの新しい行
-
-`March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`
-
-を追加する可能性が高いです。
-
-## 「標準」のプロンプト
-
-これまでにいくつかの形式のプロンプトについて学んできました。今一度初心に立ち返り「標準」プロンプトを定義してみましょう。
-コジマ氏（@kojima2022large）に倣い、質問のみで構成されるプロンプトを「標準」プロンプトと定義します。
-また、QA 形式の質問のみで構成されるプロンプトも「標準」プロンプトと定義します。
-
-#### なぜ「標準」を定義すべきか？
-
-私たちが参照する多くの記事/論文でも「標準」という言葉を使用しています。また、新しいタイプのプロンプトについて議論するためにも、「標準」を定義する必要があります。
-
-### 標準プロンプトの 2 つの例：
+However, the second prompt is likely preferable since the instruction is the last part of the prompt. This is good since the LLM is less likely to simply write more context instead of following the instruction. For example, if given the first prompt, the LLM might add a new line: `March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`
 
 
-_標準プロンプト_
+## A "Standard" Prompt
+
+We have heard of a few different formats of prompts thus far. Now, we will quickly jump back to the beginning and define a "standard" prompt. Following Kojima et al. (@kojima2022large), we will refer to prompts that consist solely of a question as "standard" prompts. We also consider prompts that consist solely of a question that are in the QA format to be "standard" prompts.
+
+#### Why should I care?
+
+Many articles/papers that we reference use this term. We are defining it so we can discuss new types of prompts in contrast to standard prompts.
+
+### Two examples of standard prompts:
+
+
+_Standard Prompt_
 ```
 What is the capital of France?
 ```
 
-_QA 形式の標準プロンプト_
+_Standard Prompt in QA format_
 ```
 Q: What is the capital of France?
 
 A:
 ```
 
-## Few-shot 標準プロンプト
+## Few Shot Standard Prompts
 
-Few-shot 標準プロンプト（@liu2021pretrain）は、_exemplars（模範）_ が含まれている標準プロンプトのことです。模範とは、プロンプトが解決しようとしているタスクの例のことを指します。（@Brown2020Language）
-研究のレポートの中では Few-shot 標準プロンプトを単に標準プロンプトと呼ぶことがしばしばあります。（本ガイドではそうしないようにします。）
+Few shot standard prompts(@liu2021pretrain) are just standard prompts that have _exemplars_ in them. Exemplars are examples of the task that the prompt is trying to solve, which are included in the prompt itself (@brown2020language). In research, few shot standard prompts are sometimes referred to simply as standard prompts (though we attempt not to do so in this guide).
 
-### Few-shot 標準プロンプトの 2 つの例：
+### Two examples of few shot standard prompts:
 
-_Few-shot 標準プロンプト_
+_Few Shot Standard Prompt_
 
 ```
 What is the capital of Spain?
@@ -94,7 +86,7 @@ Rome
 What is the capital of France?
 ```
 
-_QA 形式の Few-shot 標準プロンプト_
+_Few Shot Standard Prompt in QA format_
 ```
 Q: What is the capital of Spain?
 A: Madrid
@@ -104,4 +96,4 @@ Q: What is the capital of France?
 A:
 ```
 
-Few-shot プロンプトは、コンテキストを与えることでパラメータの更新なしに学習することができる能力と言えます。
+Few shot prompts facilitate "few shot" AKA "in context" learning, which is the ability to learn without parameter updates(@zhao2021calibrate).
