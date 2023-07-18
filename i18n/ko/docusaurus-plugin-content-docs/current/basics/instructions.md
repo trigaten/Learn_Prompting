@@ -1,16 +1,27 @@
 ---
 sidebar_position: 2
 ---
+
 # 🟢 지시 하기
 
-지시하기는 가장 쉬운 프롬프트 방법 중 하나입니다. 우리는 이전 섹션에서 이미 간단한 지시들을 봤습니다(`What is 1,000,000 * 9,000? Make sure to put the right amount of zeros, even if there are many:`). 하지만 현대의 AI들은 더 복잡한 지시도 따를 수 있습니다.
+import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
 
-아래는 Dyno interactive embed 예제입니다. 만약 예제가 안 보이신다면 브라우저에서 Javascript를 허용으로 바꿔야 합니다.
-상호작용 가능한 데모이기 때문에 수정이 가능하고 `Generate`를 누르면 AI를 다시 실행시길 수 있습니다.
+<div style={{textAlign: 'center'}}>
+  <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+</div>
+
+One of the simplest prompting methods is just giving instructions (sometimes called *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). We already saw a simple instruction in a previous section (`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`). 하지만 현대의 AI들은 더 복잡한 지시도 따를 수 있습니다.
+
+아래는 Dyno interactive embed 예제입니다. 만약 예제가 안 보이신다면 브라우저에서 Javascript를 허용으로 바꿔야 합니다. 상호작용 가능한 데모이기 때문에 수정이 가능하고 `Generate`를 누르면 AI를 다시 실행시길 수 있습니다.
 
 #### 예제 1
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="A user has input their first and last name into a form. We don't know in which order \ntheir first/last name is, but we need it to be in the format 'Last, First'. Convert the following:\n\njohn doe" initial-response="Doe, John" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlxuXG5TaGFoLCBBYXl1c2giLCJwcm9tcHQiOiJBIHVzZXIgaGFzIGlucHV0IHRoZWlyIGZpcnN0IGFuZCBsYXN0IG5hbWUgaW50byBhIGZvcm0uIFdlIGRvbid0IGtub3cgaW4gd2hpY2ggb3JkZXIgdGhlaXIgZmlyc3QgbmFtZSBhbmQgbGFzdCBuYW1lIGFyZSwgYnV0IHdlIG5lZWQgaXQgdG8gYmUgaW4gdGhpcyBmb3JtYXQgJzxMYXN0IG5hbWU%2BLCA8Rmlyc3QgbmFtZT4nLiBcblxuUGxlYXNlIGNvbnZlcnQgdGhlIGZvbGxvd2luZyBuYW1lIGluIHRoZSBleHBlY3RlZCBmb3JtYXQ6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
 
 <br/>AI는 이 문제를 쉽게 해결할 수 있습니다. 지시 프롬프팅을 사용해서 다른 쉬운 문제나 더 어려운 문제를 해결 할 수 있을 것입니다.
 
@@ -56,12 +67,8 @@ Email: [EMAIL ADDRESS]
 // highlight-end
 ```
 
-모델이 지시로부터 어떻게 추론하는 지를 보는 것은 매우 멋진 일입니다. 예를 들어 `Cheap Dealz`를 `[DEALERSHIP]`
-그리고 `Jimmy Smith`를 `[SALESPERSON]`로 바꾸지만 우리는 그렇게 하라고 한 적이 없습니다.
+모델이 지시로부터 어떻게 추론하는 지를 보는 것은 매우 멋진 일입니다. 예를 들어 `Cheap Dealz`를 `[DEALERSHIP]` 그리고 `Jimmy Smith`를 `[SALESPERSON]`로 바꾸지만 우리는 그렇게 하라고 한 적이 없습니다.
+
+[^A]: AI가 PII를 없앨 수 있도록 허용되는 것은 예견된 일입니다. 하지만 많은 실수를 하게 될 것이기 때문에 더 엄청난 주의가 필요해질 것입니다.
 
 
-[^1]: AI가 PII를 없앨 수 있도록 허용되는 것은 예견된 일입니다. 하지만 많은 실수를 하게 될 것이기 때문에 더 엄청난 주의가 필요해질 것입니다.
-
-## 참고
-
-🚧 이 페이지는 인용문이 필요합니다 🚧

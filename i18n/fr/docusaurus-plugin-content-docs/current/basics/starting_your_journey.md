@@ -4,10 +4,11 @@ sidebar_position: 1000
 
 # 🟢 Commencer votre parcours
 
+
 import Steps from '@site/docs/assets/basics/steps.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Steps style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 Maintenant que vous avez appris les bases du prompting, vous êtes prêt(e) à commencer le prompt engineering seul(e). Le reste de ce cours contient des techniques et des ressources supplémentaires, mais la meilleure façon d'apprendre le PE est de commencer à expérimenter avec vos propres prompts. Cette page vous montrera comment commencer à résoudre un problème de prompt engineering arbitraire.
@@ -24,7 +25,6 @@ La première chose à faire est de rechercher le prompt que vous voulez. Outre l
 - [Learn Prompting Discord](https://discord.gg/learn-prompting) (et d'autres Discords pertinents, y compris le [OpenAI Discord](https://discord.gg/openai))
 
 Vous pourriez trouver [celui-ci](https://prompts.chat/#act-as-a-text-based-adventure-game) par [Heroj04](https://github.com/Heroj04) comme un bon point de départ :
-
 > je veux que vous agissiez comme un jeu d'aventure textuel. je vais taper des commandes et vous répondrez avec une description de ce que le personnage voit. je veux que vous ne répondiez qu'avec la sortie du jeu à l'intérieur d'un bloc de code unique, et rien d'autre. ne donnez pas d'explications. ne tapez pas de commandes à moins que je ne vous y invite. Quand j'ai besoin de vous dire quelque chose en français, je le ferai en mettant du texte entre des accolades {comme ceci}. Ma première commande est "réveille-toi".
 
 ## Étape 2 : Expérimentation
@@ -41,8 +41,8 @@ Nous pouvons voir qu'il a généré une histoire, mais qu'il l'a écrite à l'in
 
 > Je veux que vous agissiez comme un jeu d'aventure textuel. Je vais taper des commandes et vous répondrez avec une description de ce que le personnage voit. Ne donnez pas d'explications. Ma première commande est "réveille-toi".
 
-**Réponse de ChatGPT** :
 
+**Réponse de ChatGPT** :
 ```text
 // highlight-start
 Vous ouvrez lentement les yeux et vous vous trouvez allongé sur le sol froid et dur. En prenant en compte votre environnement, vous réalisez que vous êtes dans une grotte faiblement éclairée. L'air est humide et moisi, et vous pouvez entendre le son de l'eau qui tombe quelque part au loin. Votre tête vous fait mal et vous vous sentez désorienté. Vous devez comprendre où vous êtes et comment sortir d'ici.
@@ -54,7 +54,6 @@ Super, maintenant il affiche l'histoire sous forme de texte brut. Cependant, not
 > Je veux que vous agissiez comme un jeu d'aventure textuel. Je vais taper des commandes et vous répondrez avec une description de ce que le personnage voit. Ne donnez pas d'explications. Utilisez un langage fleuri et descriptif. Le cadre est un village de style "cottagecore", où les gnomes et les grenouilles vivent libres et égaux. Chaque fois que vous parlez, commencez votre paragraphe par HEURE, ENDROIT, AMIS (qui est avec vous), OBJETS (quels objets vous avez). Ma première commande est "réveille-toi".
 
 **Réponse de ChatGPT** :
-
 ```text
 // highlight-start
 HEURE: Tôt le matin
@@ -68,6 +67,7 @@ Au réveil, vous sentez la chaleur du soleil qui filtre à travers la fenêtre e
 
 Ah, parfait, maintenant vous pouvez vivre vos rêves de "cottagecore" avec ChatGPT 🌸
 
+
 ## Étape 3 : Obtenir des commentaires et itérer
 
 Maintenant, montrez-le à vos ami(e)s/employé(e)s/patron et demandez-leur leur avis. S'ils aiment ça, génial ! Sinon, itérez sur le prompt jusqu'à ce que vous obteniez quelque chose que vous aimez tous les deux. Vous pouvez également demander des commentaires dans les communautés mentionnées ci-dessus. Cette étape ne se termine jamais vraiment. Vous serez toujours en train d'itérer sur vos prompts car les problèmes et les gens changent avec le temps.
@@ -79,6 +79,7 @@ Faites du prompt engineering comme _vous_ le souhaitez. Moi (le mainteneur de ce
 :::note
 Les recommandations de cet article s'appliquent à tous les problèmes de prompt engineering, pas seulement à l'écriture d'histoires interactives !
 :::
+
 
 ## Notes
 

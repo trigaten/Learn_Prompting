@@ -2,32 +2,31 @@
 sidebar_position: 0
 ---
 
-# 🟢 Estruturando Dados
+# 🟢 Structuring Data
 
-Um caso de uso simples e empolgante para os LLMs é a organização de dados em tabelas. Talvez você tenha um monte de artigos de notícias ou relatórios de negócios, e gostaria que todos os pontos importantes fossem resumidos em uma tabela que você possa então colocar em uma planilha ou banco de dados. Chat bots como ChatGPT podem ajudá-lo a fazer isso.
+One simple and exciting use case for LLMs is organizing data into tables. Perhaps you have a bunch of news articles or business reports, and you would like all of the important points to be summarized in a table that you can then put into a spreadsheet or database. Chat bots like ChatGPT can help you do this.
 
-Podemos extrair informações do seguinte relatório ao adicionar `Gerar uma tabela contendo essas informações:`.
-
+We can extract information from the following report by appending `Generate a table containing this information:` to it.
 
 ```text
-Em uma apresentação de relatório de negócios recente, a CEO da Conga Conga destacou seu notável crescimento no último ano fiscal. Ela compartilhou que a empresa teve um aumento de 15% na receita, atingindo R$ 50 milhões, com uma margem de lucro de 12% (R$ 6 milhões em lucro líquido). O relatório também mostrou um crescimento de 20% em sua base de clientes, totalizando agora 100.000 clientes. Além disso, as despesas operacionais da empresa aumentaram 10%, totalizando R$ 10 milhões, enquanto o número de funcionários aumentou 25%, resultando em uma força de trabalho atual de 500 funcionários.
+In a recent business report presentation, the CEO of Zana Corp. highlighted their remarkable growth in the past fiscal year. She shared that the company experienced a 15% increase in revenue, reaching $50 million, with a 12% profit margin ($6 million in net profit). The report also showcased a 20% growth in their customer base, now totaling 100,000 customers. Additionally, the company's operating expenses went up by 10%, amounting to $10 million, while the employee headcount increased by 25%, resulting in a current workforce of 500 employees. 
 
-Gerar uma tabela contendo essas informações:
+Generate a table containing this information:
 ```
 
-A resposta será algo semelhante:
+ChatGPT will output a table like the following:
 
-| Informação | Valor |
-|-------|------|
-| Receita | R$ 50 milhões |
-| Margem de Lucro | 12% |
-| Lucro Líquido | R$ 6 milhões |
-| Base de clientes	 | 100,000 |
-| Despesas operacionais | R$ 10 milhões |
-| Número de funcionários	| 500 |
-| Aumento da receita	 | 15% |
-| Aumento da base de clientes	 | 20% |
-| Aumento das despesas operacionais	 | 10% |
-| Aumento do número de funcionários	 | 25% |
+| Metric                      | Value       |
+| --------------------------- | ----------- |
+| Revenue                     | $50 million |
+| Profit Margin               | 12%         |
+| Net Profit                  | $6 million  |
+| Customer Base               | 100,000     |
+| Operating Expenses          | $10 million |
+| Employee Headcount          | 500         |
+| Revenue Increase            | 15%         |
+| Customer Increase           | 20%         |
+| Operating Expenses Increase | 10%         |
+| Employee Headcount Increase | 25%         |
 
-Você pode então copiar e colar em uma planilha como Excel/Sheets ou até mesmo em documentos e apresentações.
+You can then copy and paste it into a spreadsheet like Excel/Sheets or even documents and powerpoints.

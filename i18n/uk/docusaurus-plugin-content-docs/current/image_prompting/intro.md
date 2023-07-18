@@ -9,7 +9,7 @@ sidebar_position: 1
 У цьому посібнику висвітлено основні методики написання запитів для зображень, і ми наполегливо рекомендуємо переглянути добірку корисних ресурсів в кінці розділу. Крім того, нижче ми надаємо покроковий опис процесу написання запитів для зображень.
 
 
-## Приклад
+## Наприклад
 
 Ось приклад того, як я створив зображення для першої сторінки цього курсу. Я експериментував із низькополігональним стилем у рамках проєкту глибокого навчання з використанням нейронної мережі, що може відтворювати різні ракурси складних 3D-об'єктів на основі 2D-зображення (Neural radiance field, NeRF). Мені сподобався низькополігональний стиль, тому я використав його, щоб створити зображення для цього курсу.
 
@@ -25,13 +25,13 @@ import computer_1 from '@site/docs/assets/images_chapter/computer_dalle_1.webp';
 import astronaut_1 from '@site/docs/assets/images_chapter/astronaut_dalle_1.webp';
 import astronaut_2 from '@site/docs/assets/images_chapter/astronaut_sd_1.webp';
 import rocket_sd_1 from '@site/docs/assets/images_chapter/rocket_sd_1.webp';
-import rocket_final from '@site/static/img/rocket.webp';
+import rocket_final from '../../static/img/rocket.webp';
 import laptop_sd_1 from '@site/docs/assets/images_chapter/laptop_sd_1.webp';
 import gemstone_sd_1 from '@site/docs/assets/images_chapter/gemstone_sd_1.webp';
 import gemstone_sd_2 from '@site/docs/assets/images_chapter/gemstone_sd_2.webp';
 import gemstone_sd_3 from '@site/docs/assets/images_chapter/gemstone_sd_3.webp';
-import focus_final from '@site/static/img/computer.webp';
-import astronaut_final from '@site/static/img/astronaut.webp';
+import focus_final from '../../static/img/computer.webp';
+import astronaut_final from '../../static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={rockets1} style={{width: "750px"}} />

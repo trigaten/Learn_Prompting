@@ -14,4 +14,4 @@ He aquí una lista creciente de personas que han contribuido decisivamente a la 
 - [zeyuzhao](https://github.com/Zeyuzhao), Ingeniero de parámetros en práctica
 - [UMD CLIP Lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), muchas respuestas respondidas :)
 - [Wahub Ahmed](https://github.com/wahub-ahmed), jailbreaking
-- [dr-nefardio3058](https://github.com/dr-nefardio3058), tradució esta página a español
+- [Zihong](https://github.com/1openwindow), translated the majority of the documents into Chinese

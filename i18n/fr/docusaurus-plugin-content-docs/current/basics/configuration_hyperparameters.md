@@ -4,10 +4,11 @@ sidebar_position: 100
 
 # 🟢 Paramètres LLM
 
+
 import Temperature from '@site/docs/assets/basics/temperature.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Temperature style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <Temperature style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 # Introduction
@@ -16,7 +17,6 @@ La sortie des LLM peut être affectée par des _hyperparamètres de configuratio
 
 :::note
 [pour les chercheurs] Ceux-ci sont différents des hyperparamètres réguliers tels que le taux d'apprentissage, le nombre de couches, la taille cachée, etc.
-:::
 
 ## Température
 
@@ -39,6 +39,9 @@ Pour les tâches de génération de texte, vous voudrez peut-être utiliser une 
 :::note
 Parfois, plus d'aléatoire peut être utile pour les tâches où l'exactitude est nécessaire lorsqu'il est associé à [des techniques de prompting spéciales](https://learnprompting.org/docs/intermediate/self_consistency).
 :::
+
+
+
 
 ## Conclusion
 

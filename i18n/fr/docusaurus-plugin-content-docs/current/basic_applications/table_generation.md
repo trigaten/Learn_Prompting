@@ -9,22 +9,21 @@ Un cas d'utilisation simple et passionnant pour les LLMs est l'organisation de d
 Nous pouvons extraire des informations du rapport suivant en y ajoutant `Générer un tableau contenant ces informations :`.
 
 ```text
-Lors d'une récente présentation de rapport d'activité, la PDG de Zana Corp. a mis en évidence leur croissance remarquable au cours de la dernière année fiscale. Elle a partagé que l'entreprise a connu une augmentation de 15 % de son chiffre d'affaires, atteignant 50 millions de dollars, avec une marge bénéficiaire de 12 % (6 millions de dollars de bénéfice net). Le rapport a également mis en avant une croissance de 20 % de leur base de clients, qui totalise désormais 100 000 clients. De plus, les dépenses d'exploitation de l'entreprise ont augmenté de 10 %, s'élevant à 10 millions de dollars, tandis que l'effectif a augmenté de 25 %, ce qui porte l'effectif actuel à 500 employés.
+Lors d'une récente présentation de rapport d'activité, la PDG de Zana Corp. a mis en évidence leur croissance remarquable au cours de la dernière année fiscale. Elle a partagé que l'entreprise a connu une augmentation de 15 % de son chiffre d'affaires, atteignant 50 millions de dollars, avec une marge bénéficiaire de 12 % (6 millions de dollars de bénéfice net). Le rapport a également mis en avant une croissance de 20 % de leur base de clients, qui totalise désormais 100 000 clients. De plus, les dépenses d'exploitation de l'entreprise ont augmenté de 10 %, s'élevant à 10 millions de dollars, tandis que l'effectif a augmenté de 25 %, ce qui porte l'effectif actuel à 500 employés. 
 
 Générer un tableau contenant ces informations :
-
 ```
 
 ChatGPT produira un tableau comme celui-ci :
 
 | Mesure                                   | Valeur                 |
 | ---------------------------------------- | ---------------------- |
-| Chiffre d'affaires                       | 50 millions de dollars |
+| Revenue                                  | 50 millions de dollars |
 | Marge bénéficiaire                       | 12 %                   |
 | Bénéfice net                             | 6 millions de dollars  |
 | Base de clients                          | 100 000                |
 | Dépenses d'exploitation                  | 10 millions de dollars |
-| Effectif                                 | 500                    |
+| Employee Headcount                       | 500                    |
 | Augmentation du chiffre d'affaires       | 15 %                   |
 | Augmentation du nombre de clients        | 20 %                   |
 | Augmentation des dépenses d'exploitation | 10 %                   |

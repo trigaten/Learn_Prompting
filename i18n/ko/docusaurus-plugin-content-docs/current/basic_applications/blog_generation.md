@@ -15,7 +15,7 @@ sidebar_position: 30
 ```text
 Write an outline for a short blog post about why Christmas Cacti are a great buy.
 
-There are many products which attempt to do this, but you can often get consistent results doing it yourself.
+There are many products which attempt to do this, but you can often get consistent results doing it yourself. 
 
 // highlight-start
 I. Introduction
@@ -42,7 +42,7 @@ C. Suggestions for Care and Maintenance
 //highlight-end
 ```
 
-흠, 꽤나 포괄적이다. 아마도 우리는 더 짧은 포스트를 원할 것이다. AI에게 좀 더 짧은 버전을 쓰라고 해보자:
+Wow, that's quite comprehensive. 아마도 우리는 더 짧은 포스트를 원할 것이다. AI에게 좀 더 짧은 버전을 쓰라고 해보자:
 
 ```text
 That's a great outline, but a bit long. Consdense it to the main points:
@@ -79,13 +79,13 @@ Write a short blog post using this outline about why Christmas Cacti are a great
 // highlight-start
 Christmas Cacti are a great buy for the holiday season! They are an affordable and long-lasting option that make great gifts. Christmas Cacti are easy to find in most garden and plant stores, and they range in price from a few dollars to more expensive, depending on the size and shape of the plant.
 
-These plants are also known for their long lifespan. If cared for properly, they can last for many years, providing your friends and family with an evergreen reminder of the holiday spirit. Christmas Cacti are fairly low maintenance and require minimal care, making them a great option for someone who does not have a lot of experience with plants. They should be placed in a bright and sunny spot, watered regularly, and given plant food every month or so.
+These plants are also known for their long lifespan. If cared for properly, they can last for many years, providing your friends and family with an evergreen reminder of the holiday spirit. Christmas Cacti are fairly low maintenance and require minimal care, making them a great option for someone who does not have a lot of experience with plants. They should be placed in a bright and sunny spot, watered regularly, and given plant food every month or so. 
 
 Overall, Christmas Cacti are a great buy for the holidays. They are affordable, have a long lifespan, and make great gifts. With minimal care and attention, these plants can provide a beautiful reminder of the holiday season for years to come.
 //highlight-end
 ```
 
-꽤나 보기 좋다. 우리는 우리 회사에 대한 정보와 크리스마스 선인장 가격에 대한 정보를 추가해야한다. 아래의 프롬프트를 사용해보자:
+Alright, that seems pretty good. 우리는 우리 회사에 대한 정보와 크리스마스 선인장 가격에 대한 정보를 추가해야한다. 아래의 프롬프트를 사용해보자:
 
 ```text
 Perfect! Add a paragraph at the end about our company and pricing on Christmas Cacti.
@@ -99,7 +99,7 @@ Price for a Christmas Cacti: $10-$25
 // highlight-start
 Christmas Cacti are a great buy for the holiday season! They are an affordable and long-lasting option that make great gifts. Christmas Cacti are easy to find in most garden and plant stores, and they range in price from a few dollars to more expensive, depending on the size and shape of the plant.
 
-These plants are also known for their long lifespan. If cared for properly, they can last for many years, providing your friends and family with an evergreen reminder of the holiday spirit. Christmas Cacti are fairly low maintenance and require minimal care, making them a great option for someone who does not have a lot of experience with plants. They should be placed in a bright and sunny spot, watered regularly, and given plant food every month or so.
+These plants are also known for their long lifespan. If cared for properly, they can last for many years, providing your friends and family with an evergreen reminder of the holiday spirit. Christmas Cacti are fairly low maintenance and require minimal care, making them a great option for someone who does not have a lot of experience with plants. They should be placed in a bright and sunny spot, watered regularly, and given plant food every month or so. 
 
 Overall, Christmas Cacti are a great buy for the holidays. They are affordable, have a long lifespan, and make great gifts. With minimal care and attention, these plants can provide a beautiful reminder of the holiday season for years to come.
 
@@ -111,6 +111,6 @@ At Prickly Point Nursery, we specialize in providing high quality plants and flo
 
 컨텐츠를 작성할 때 나는 ChatGPT나 GPT-3를 보통 사용하다, 하지만 [Jasper.ai](https://www.jasper.ai/)나 [Copy.ai](https://www.copy.ai/)같은 우리의 블로그 작성을 도와줄 더 많은 도구들이 있다. 이것들은 일반적으로 백그라운드에서 GPT-3를 이용하고 있지만 콘텐츠를 작성하는 데 도움이 될 수 있는 다른 여러 기능이 있습니다.
 
-## 핵심
+## Takeaways
 
 - AI는 여러분이 좋은 글을 짧은 시간내에 써낼 수 있도록 돕는다. 이 과정이 완전히 자동은 아니기 때문에 여러분은 수동으로 이 과정에 참여해야 합니다.

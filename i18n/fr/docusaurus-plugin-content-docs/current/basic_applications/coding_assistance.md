@@ -6,7 +6,7 @@ sidebar_position: 40
 
 Vous pouvez utiliser ChatGPT pour le débogage, la génération de code, le reformatage, les commentaires, et plus encore. Il peut travailler avec du code dans plus de 40 langages de programmation.
 
-| Très ancien | Ancien    | Récent        | De pointe      |
+| Très ancien | Ancien    | Recent        | Bleeding Edge  |
 | ----------- | --------- | ------------- | -------------- |
 | BASIC       | Perl      | Swift         | Kotlin         |
 | Assembleur  | Pascal    | TypeScript    | Julia          |
@@ -18,6 +18,7 @@ Vous pouvez utiliser ChatGPT pour le débogage, la génération de code, le refo
 | RPG         | Smalltalk | Elixir        | Crystal (LLVM) |
 | Forth       | Tcl       | Groovy        | Vlang          |
 | Ada         | SQL       | Scala Native  | Erlang         |
+|             | Java      |               |                |
 
 ## Génération de code
 
@@ -52,7 +53,7 @@ Essayez-le ici :
 <div 
 trydyno-embed="" 
 openai-model="text-davinci-003" 
-initial-prompt="Agissez comme un junior programmeur en Python. Veuillez écrire le code pour générer des madlibs à partir de 3 tableaux de 6 éléments chacun : les prépositions, les verbes et les noms, les noms étant également utilisés comme compléments directs." 
+initial-prompt="Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects." 
 initial-response="" 
 max-tokens="512" 
 box-rows="5" 
@@ -103,7 +104,7 @@ for i in range(num_points):
 
 ## Débogage
 
-ChatGPT peut non seulement détecter les erreurs de syntaxe dans le code, mais également trouver les erreurs logiques qui apparaîtraient lors de l'exécution du code. Voici un exemple de script Python qui finit par provoquer une erreur de division par zéro à la ligne 4 en raison d'une erreur logique à la ligne 3. Essayez cette simple invitation pour trouver et corriger l'erreur :
+ChatGPT peut non seulement détecter les erreurs de syntaxe dans le code, mais également trouver les erreurs logiques qui apparaîtraient lors de l'exécution du code. Voici un exemple de script Python qui finit par provoquer une erreur de division par zéro à la ligne 4 en raison d'une erreur logique à la ligne 3.  Essayez cette simple invitation pour trouver et corriger l'erreur :
 
 ```text
 Veuillez déboguer ce code Python :
@@ -125,6 +126,7 @@ Le résultat inclura la boucle while corrigée, qui est modifiée pour que la va
 ```
 
 Pour des erreurs plus nuancées, vous devrez peut-être ajouter plus de détails : le message d'erreur, les variables d'environnement, les bibliothèques incluses ou les variations d'entrées.
+
 
 ## Optimisation de code
 
@@ -156,6 +158,7 @@ print(numbers)
 ```
 
 Notez que nous avons demandé au bot d'agir comme un développeur _très expérimenté_ pour optimiser le script. Vous pouvez également dicter qu'il ait un certain domaine d'expertise (par exemple, les algorithmes de tri) ou un certain nombre d'années d'expérience. Alternativement, si vous avez un script qui semble trop compliqué, vous pouvez demander à ChatGPT d'écrire ce script "en tant que _très junior_ développeur".
+
 
 ## Traduction entre les langages de programmation
 
@@ -194,6 +197,7 @@ print("La taxe de sécurité sociale est de : $", round(ss_tax, 2))
 // highlight-end
 ```
 
+
 ## Gestion de plusieurs fichiers et refactorisation de votre base de code
 
 Et si vous voulez que ChatGPT évalue **plusieurs** fichiers ? Fournissez simplement les noms de fichiers et collez le code pour chacun :
@@ -214,9 +218,20 @@ aurevoir("Jean")
 
 // highlight-start
 Salut, Jean!
+def bye(name):
+   print(f"Goodbye, {name}!")
+
+BEGIN FILE 2: ./conversation.py
+from phrases.coming_and_going import hi, bye
+hi("John")
+bye("John")
+
+// highlight-start
+Hello, John!
 Au revoir, Jean!
 // highlight-end
 ```
+
 
 En utilisant cette technique, vous pouvez soumettre plusieurs fichiers à ChatGPT dans un seul prompt et lui demander de refactoriser le code. Sinon, vous pouvez lui demander de "mémoriser" chacun d'eux et de l'exécuter dans un prompt ultérieur.
 
@@ -248,13 +263,12 @@ CREATE TABLE politiciens (
     date_de_naissance DATE,
     date_de_deces DATE
 );
--- etc.
-// highlight-end
+-- etc. // highlight-end
 ```
 
 À partir de là, vous pouvez ajouter des colonnes, des index et plus encore :
 
-```text
+```
 Ajoutez une colonne à la table des politiciens pour le commandant en second et mettez-la à jour pour chaque ligne.
 ```
 
@@ -301,7 +315,7 @@ Content-Type: [type MIME de la ressource demandée, par exemple text/html]
 
 Voici quelques-uns des types de serveurs et d'API que ChatGPT peut émuler :
 
-| Très ancien | Ancien   | Récent                 | De pointe          |
+| Très ancien | Ancien   | Recent                 | Bleeding Edge      |
 | ----------- | -------- | ---------------------- | ------------------ |
 | Telnet      | HTTP/1.0 | API RESTful            | API GraphQL        |
 | FTP         | SMTP     | API SOAP               | API GRPC           |
@@ -314,13 +328,12 @@ Voici quelques-uns des types de serveurs et d'API que ChatGPT peut émuler :
 | NFS         | XML-RPC  | Gestion API Azure      | API OpenTracing    |
 | SMB         | JSON-RPC | Google Cloud Endpoints | API NATS Streaming |
 
----
 
 ## Simulation d'une ligne de commande
 
 Puisqu'un shell dans Linux (ou Windows PowerShell) est également un langage de programmation, vous pouvez interagir avec celui-ci en utilisant ChatGPT, et construire un environnement pour votre système de fichiers :
 
-```text
+```
 Agissez comme un shell de commande Debian Linux. Veuillez répondre à mes commandes comme le ferait le terminal, avec le moins d'explication possible. Ma première commande est : ls -l
 ```
 
@@ -339,7 +352,7 @@ Essayez d'expérimenter avec d'autres commandes :
 ```text
 >touch greeting.txt
 >echo "hello" > greeting.txt
->ls -l
+>ls -l  
 ```
 
 ChatGPT devrait se souvenir de vos modifications (pendant un certain temps, du moins) et la sortie finale devrait ressembler à quelque chose comme :

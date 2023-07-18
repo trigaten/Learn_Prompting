@@ -9,7 +9,7 @@ sidebar_position: 4
 import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
 import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 
-# Приклад
+# Наприклад
 
 Ось кілька пірамід, згенерованих моделлю DALLE, за запитом: `pyramid`.
 

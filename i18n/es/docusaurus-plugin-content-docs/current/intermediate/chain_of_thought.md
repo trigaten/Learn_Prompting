@@ -1,12 +1,13 @@
 ---
 sidebar_position: 3
-locale: es-mx
+locale: en-us
 style: chicago
 ---
 
 # 🟢 Cadena de pensamiento
 
 El prompting Chain of Thought (CoT) (@wei2022chain) es un método de prompt recientemente desarrollado que alienta al LLM a explicar su razonamiento. La siguiente imagen (@wei2022chain) muestra un %%few shot standard prompt|prompt estándar de pocos ejemplos%% (izquierda) en comparación con un prompt de Cadena de Pensamiento (derecha).
+
 
 import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
@@ -26,13 +27,19 @@ Aquí hay algunas demostraciones. La primera muestra a GPT-3 (davinci-003) falla
 
 #### Incorrecto
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="¿Cuál es la forma más rápida de llegar al trabajo?\nOpción 1: Tomar un autobús de 1000 minutos, luego un tren de media hora y finalmente un paseo en bicicleta de 10 minutos.\nOpción 2: Tomar un autobús de 800 minutos, luego un tren de una hora y finalmente un paseo en bicicleta de 30 minutos." initial-response="La opción 1 es una forma más rápida de llegar al trabajo." max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9wdGlvbiAxIGlzIGEgZmFzdGVyIHdheSB0byBnZXQgdG8gd29yay4iLCJwcm9tcHQiOiJXaGljaCBpcyBhIGZhc3RlciB3YXkgdG8gZ2V0IHRvIHdvcms%2FXG5PcHRpb24gMTogVGFrZSBhIDEwMDAgbWludXRlIGJ1cywgdGhlbiBhIGhhbGYgaG91ciB0cmFpbiwgYW5kIGZpbmFsbHkgYSAxMCBtaW51dGUgYmlrZSByaWRlLlxuT3B0aW9uIDI6IFRha2UgYW4gODAwIG1pbnV0ZSBidXMsIHRoZW4gYW4gaG91ciB0cmFpbiwgYW5kIGZpbmFsbHkgYSAzMCBtaW51dGUgYmlrZSByaWRlLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 #### Correcto
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="¿Cuál es la forma más rápida de llegar a casa?\nOpción 1: Tomar un autobús de 10 minutos, luego un autobús de 40 minutos y finalmente un tren de 10 minutos.\nOpción 2: Tomar un tren de 90 minutos, luego un paseo en bicicleta de 45 minutos y finalmente un autobús de 10 minutos.\nOpción 1: tomará 10+40+10=60 minutos.\nOpción 2: tomará 90+45+10=145 minutos.\nSince Dado que la opción 1 tarda 60 minutos y la opción 2 tarda 145 minutos, la opción 1 es más rápida.\n\n¿Cuál es la forma más rápida de llegar al trabajo? \nOpción 1: Tomar un autobús de 1000 minutos, luego un tren de media hora y finalmente un paseo en bicicleta de 10 minutos. \nOpción 2: Tomar un autobús de 800 minutos, luego un tren de una hora y finalmente un paseo en bicicleta de 30 minutos." initial-response="La opción 1 tomará 1000+30+10=1040 minutos.
-La opción 2 tomará 800+60+30=890 minutos.
-Dado que la opción 2 tarda 890 minutos y la opción 1 tarda 1040 minutos, la opción 2 es más rápida." max-tokens="256" box-rows="18" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9wdGlvbiAxIHdpbGwgdGFrZSAxMDAwKzMwKzEwID0gMTA0MCBtaW51dGVzLlxuT3B0aW9uIDIgd2lsbCB0YWtlIDgwMCs2MCszMCA9IDg5MCBtaW51dGVzLlxuU2luY2UgT3B0aW9uIDIgdGFrZXMgODkwIG1pbnV0ZXMgYW5kIE9wdGlvbiAxIHRha2VzIDEwNDAgbWludXRlcywgT3B0aW9uIDIgaXMgZmFzdGVyLiIsInByb21wdCI6IldoaWNoIGlzIGEgZmFzdGVyIHdheSB0byBnZXQgaG9tZT9cbk9wdGlvbiAxOiBUYWtlIGFuIDEwIG1pbnV0ZXMgYnVzLCB0aGVuIGFuIDQwIG1pbnV0ZSBidXMsIGFuZCBmaW5hbGx5IGEgMTAgbWludXRlIHRyYWluLlxuT3B0aW9uIDI6IFRha2UgYSA5MCBtaW51dGVzIHRyYWluLCB0aGVuIGEgNDUgbWludXRlIGJpa2UgcmlkZSwgYW5kIGZpbmFsbHkgYSAxMCBtaW51dGUgYnVzLlxuT3B0aW9uIDEgd2lsbCB0YWtlIDEwKzQwKzEwID0gNjAgbWludXRlcy5cbk9wdGlvbiAyIHdpbGwgdGFrZSA5MCs0NSsxMD0xNDUgbWludXRlcy5cblNpbmNlIE9wdGlvbiAxIHRha2VzIDYwIG1pbnV0ZXMgYW5kIE9wdGlvbiAyIHRha2VzIDE0NSBtaW51dGVzLCBPcHRpb24gMSBpcyBmYXN0ZXIuXG5cbldoaWNoIGlzIGEgZmFzdGVyIHdheSB0byBnZXQgdG8gd29yaz9cbk9wdGlvbiAxOiBUYWtlIGEgMTAwMCBtaW51dGUgYnVzLCB0aGVuIGEgaGFsZiBob3VyIHRyYWluLCBhbmQgZmluYWxseSBhIDEwIG1pbnV0ZSBiaWtlIHJpZGUuXG5PcHRpb24gMjogVGFrZSBhbiA4MDAgbWludXRlIGJ1cywgdGhlbiBhbiBob3VyIHRyYWluLCBhbmQgZmluYWxseSBhIDMwIG1pbnV0ZSBiaWtlIHJpZGUuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Resultados
 
@@ -51,6 +58,7 @@ Comparación de modelos en la prueba de referencia GSM8K (Wei et al.)
 ## Limitaciones
 
 Es importante destacar que, según Wei et al., "CoT solo produce mejoras de rendimiento cuando se usa con modelos de alrededor de 100 mil millones de parámetros". Los modelos más pequeños escribieron cadenas de pensamiento ilógicas, lo que condujo a una precisión peor que la del prompting estándar. Los modelos suelen obtener mejoras de rendimiento del prompting CoT de manera proporcional al tamaño del modelo.
+
 
 ## Notas
 

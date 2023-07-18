@@ -2,125 +2,116 @@
 sidebar_position: 40
 ---
 
-# 🟢 絵文字を見つける
+# 🟢 Finding Emojis
 
-🤔 ツイートや投稿に**ぴったりな絵文字**が必要になったことはありますか？
+🤔 Do you ever need the **perfect emoji** for a tweet or post?
 
-何千種類もある絵文字の中から最適なものを思い出すのは結構難しいです。AI を活用すれば解決できます！
+Sometimes it is hard to remember which of the thousands of emojis would be best. Fortunately, AI can help!
 
-例えば、[このツイート](https://twitter.com/learnprompting/status/1631786358330085382)に追加するのに最適な絵文字を見つけてみましょう。
-
-(日本語訳)
+As an example, let's try to find the best emojis to add to [this](https://twitter.com/learnprompting/status/1631786358330085382) tweet:
 
 ```text
-AI で創造力を解き放とう!
+Ready to unleash your creativity with AI?
 
-Midjourney のパワーを発揮して、素晴らしく芸術的な画像を生成する AI イメージジェネレーターを発見しよう！
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-自分だけの独自でユニークな傑作を AI で作成する方法を学ぶために、私たちの最新記事をチェックアウトしてください。
+Check out our newest article to learn how to create your own unique masterpieces with AI
 ```
 
-ChatGPT に助けを求めることができます。
-
-(日本語訳)
+We could ask ChatGPT to help us:
 
 ```text
-AI で創造力を解き放とう!
+Ready to unleash your creativity with AI?
 
-Midjourney のパワーを発揮して、素晴らしく芸術的な画像を生成する AI イメージジェネレーターを発見しよう！
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-自分だけの独自でユニークな傑作を AI で作成する方法を学ぶために、私たちの最新記事をチェックしてください。
+Check out our newest article to learn how to create your own unique masterpieces with AI
 
-このツイートに追加するのに良い絵文字は何ですか？
+What are some good emojis to add to this tweet?
 
 // highlight-start
-以下は、ツイートのメッセージとトーンを表現するために使用できる関連する絵文字です:
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-🎨 パレット: 創造性と芸術を表すために。
-🤖 ロボットの顔: AIとテクノロジーの関与を示すために。
-🌟 スパークル: 生成された画像の素晴らしさと芸術的な品質を強調するために。
-🔍 拡大鏡: 探究心と発見を示すために。
-💡 電球: 新しいアイデアと革新性を象徴するために。
-📝 メモ: AIを使って自分だけの独特な傑作を作成する手順のガイドを暗示するために。
+🎨 Palette: to represent creativity and art.
+🤖 Robot face: to indicate the involvement of AI and technology.
+🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
+🔍 Magnifying glass: to suggest exploration and discovery.
+💡 Light bulb: to signify new ideas and innovation.
+📝 Memo: to imply a step-by-step guide on how to create masterpieces with AI.
 // highlight-end
 ```
 
-これでも悪くないですが、私は 1 文ずつ ChatGPT に聞くのが好きです。
+These are good, but I like to go sentence by sentence!
 
-## 文 1
-
-(日本語訳)
+## Sentence 1
 
 ```text
-AI で創造力を解き放とう!
+Ready to unleash your creativity with AI?
 
-このツイートのこの部分に追加するための良い絵文字は何ですか？
-
-//highlight-start
-"AIで創造力を解き放とう!" という文章に合う絵文字の例:
-
-🎨 パレット: 創造性と芸術を示唆するために。
-🤖 ロボットの顔: AIとテクノロジーの関与を示すために。
-💪 曲げられた上腕二頭筋: 何か新しいものを作るための力と決意を示すために。
-🚀 ロケット: 進歩、発展、革新を示唆するために。
-🌟 スパークル: 新しくわくわくするアイデアを示唆するために。
-//highlight-end
-```
-
-## 文 2
-
-(日本語訳)
-
-```text
-自分だけの独自でユニークな傑作を AI で作成する方法を学ぶために、私たちの最新記事をチェックしてください。
-
-このツイートのこの部分に追加するための良い絵文字は何ですか？
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-ツイートのメッセージとトーンを伝えるために使用できる関連する絵文字の例:
+Here are some emojis that could go well with the sentence "Ready to unleash your creativity with AI?":
 
-🤖 ロボットの顔: AIとテクノロジーの関与を示すために。
-🌟 スパークル: 生成された画像の見事な芸術的品質を強調するために。
-📷 カメラ: 生成された画像が高品質で共有する価値があることを示唆するために。
-🎨 パレット: 創造性と芸術を表現するために。
-🔍 拡大鏡: AI画像生成器が新しい可能性を探索するためのツールであることを暗示するために。
+🎨 Palette: to suggest creativity and art.
+🤖 Robot face: to indicate the involvement of AI and technology.
+💪 Flexed biceps: to show strength and determination to create something new.
+🚀 Rocket: to imply progress, advancement, and innovation.
+🌟 Sparkles: to suggest the idea of something new and exciting.
 // highlight-end
 ```
 
-## 文 3
-
-(日本語訳)
+## Sentence 2
 
 ```text
-Midjourney のパワーを発揮して、素晴らしく芸術的な画像を生成する AI イメージジェネレーターを発見しよう！
+Check out our newest article to learn how to create your own unique masterpieces with AI
 
-このツイートのこの部分に追加するための良い絵文字は何ですか？
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-ツイートのメッセージとトーンを伝えるために使用できる関連する絵文字の例: 
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-📝 メモ: 記事がガイドやハウツーであることを示すために。
-💡 電球: 新しいアイデアとインスピレーションを暗示するために。
-🤖 ロボットの顔: AIとテクノロジーの関与を示すために。
-🎨 パレット: 創造性と芸術を表現するために。
-📚 本: 記事が情報提供であり教育的であることを示唆するために。
+🤖 Robot face: to indicate the involvement of AI and technology.
+🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
+📷 Camera: to suggest that the generated images are of high quality and worth sharing.
+🎨 Palette: to represent creativity and art.
+🔍 Magnifying glass: to imply that the AI image generator is a tool to explore and discover new possibilities.
+
 // highlight-end
 ```
 
-## 結論
-
-各パートに絵文字を提案したので、自分が好きなものを追加してツイートすることができます！
+## Sentence 3
 
 ```text
-AI で創造力を解き放とう!🔥🎨
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-Midjourney のパワーを発揮して、素晴らしく芸術的な画像を生成する AI イメージジェネレーターを発見しよう！✨
+What are some good emojis to add to this part of a tweet?
 
-自分だけの独自でユニークな傑作を AI で作成する方法を学ぶために、私たちの最新記事をチェックしてください。🖌️
+//highlight-start
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
+
+📝 Memo: to suggest that the article is a guide or a how-to.
+💡 Light bulb: to imply new ideas and inspiration.
+🤖 Robot face: to indicate the involvement of AI and technology.
+🎨 Palette: to represent creativity and art.
+📚 Book: to suggest that the article is informative and educational.
+// highlight-end
 ```
 
-AIによって提案されなかった絵文字をいくつか追加してみました。絵文字を選ぶ際には常に自分自身で判断すべきです。ChatGPT は良いオプションを見つける手助けをしてくれるでしょう！
+## Conclusion
 
-## 余談
+Now that I have emoji suggests for each part, I can add in the ones I like and tweet it out!
 
-- 私はこのようなタスクでは、理由を添えて提案してくれる ChatGPT の方が好きです。GPT-3 は絵文字のリストを出力するだけのときがあります。 🤩😎🤩🤩😃😃💪
+```text
+Ready to unleash your creativity with AI? 🔥🎨
+
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images! ✨
+
+Check out our newest article to learn how to create your own unique masterpieces with AI 🖌️
+```
+
+Note that I added in some emojis that weren't suggested by the AI. You should always use your own judgement when choosing emojis, and just use ChatGPT to help you find some good options!
+
+## Notes
+
+- I prefer ChatGPT for this task since it provides rationales for its suggestions. GPT-3 often just outputs a list of emojis: 🤩😎🤩🤩😃😃💪

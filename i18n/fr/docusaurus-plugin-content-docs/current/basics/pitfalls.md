@@ -7,7 +7,7 @@ sidebar_position: 90
 import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Pitfalls style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 Les LLM sont extrêmement puissants, mais ils ne sont en aucun cas parfaits. Il existe de nombreux pièges dont vous devez être conscient lors de leur utilisation.
@@ -18,9 +18,8 @@ Les LLM ne peuvent pour la plupart **pas citer de manière précise les sources*
 
 :::note
 Des stratégies comme les LLM augmentés par la recherche (LLM qui peuvent rechercher sur Internet et d'autres sources) peuvent souvent résoudre ce problème.
-:::
 
-## Biais
+## Bias
 
 Les LLM sont souvent biaisés en faveur de la génération de réponses stéréotypées. Même avec des gardes en place, ils diront parfois des choses sexistes/racistes/homophobes. Soyez prudent lorsque vous utilisez des LLM dans des applications destinées aux consommateurs et soyez également prudent lorsque vous les utilisez dans la recherche (ils peuvent générer des résultats biaisés).
 
@@ -36,6 +35,6 @@ Les LLM sont souvent mauvais en mathématiques. Ils ont des difficultés à rés
 Ce problème peut être résolu dans une certaine mesure en utilisant un [LLM augmenté d'outils](https://learnprompting.org/docs/advanced_applications/mrkl).
 :::
 
-## Piratage de prompt
+## Prompt Hacking
 
 Les utilisateurs peuvent souvent tromper les LLM pour générer n'importe quel contenu qu'ils veulent. En savoir plus à ce sujet [ici](https://learnprompting.org/docs/category/-prompt-hacking).

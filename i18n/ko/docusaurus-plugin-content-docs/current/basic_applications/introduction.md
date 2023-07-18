@@ -9,5 +9,5 @@ sidebar_position: 0
 이어지는 예제에서는 프롬프트 엔지니어링을 적용할 수 있는 다양한 애플리케이션을 보여드릴 겁니다.
 
 :::note
-GPT-3와 ChatGPT를 모두 사용하지만 여러분은 아무거나 사용해도 괜찮습니다.
+GPT-3와 ChatGPT를 모두 사용하지만 여러분은 아무거나 사용해도 괜찮습니다. It usually does not matter which you use.
 :::

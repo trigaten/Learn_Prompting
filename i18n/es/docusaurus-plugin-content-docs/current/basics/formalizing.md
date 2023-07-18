@@ -7,7 +7,7 @@ sidebar_position: 7
 import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <FormalPrompt style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
+  <FormalPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 Ya hemos cubierto varios tipos de prompts, así como formas de combinarlas. Esta página le proporcionará términos para explicar los distintos tipos de prompts. Aunque ha habido enfoques para formalizar el discurso en torno a la ingeniería de prompt(@white2023prompt), el campo está en constante cambio, por lo que le proporcionaremos la información suficiente para empezar.
@@ -22,7 +22,7 @@ Hay algunas partes diferentes de un prompt que verá una y otra vez. Son aproxim
 - Contexto
 - Ejemplos (pocas muestras)
 
-En las páginas anteriores hemos cubierto los roles, las instrucciones y los ejemplos. Una pregunta es simplemente una pregunta. (Por ejemplo, `¿cuál es la capital de Francia?`). El contexto es cualquier información relevante que deseas modelar para utilizar al responder la pregunta o realizar la instrucción.
+En las páginas anteriores hemos cubierto los roles, las instrucciones y los ejemplos. Una pregunta es simplemente una pregunta. (E.g. (Por ejemplo, `¿cuál es la capital de Francia?`). El contexto es cualquier información relevante que deseas modelar para utilizar al responder la pregunta o realizar la instrucción.
 
 No todas estas opciones aparecen en todos los prompts, y cuando algunas aparecen, no hay un orden estándar para ellas. Por ejemplo, las siguientes dos indicaciones, cada una que contiene un rol, una instrucción y contexto, harán aproximadamente lo mismo:
 
@@ -46,7 +46,8 @@ Eres un médico. Lee esta historia clínica y predice los riesgos para el pacien
 
 Sin embargo, es probable que el segundo prompt sea preferible ya que la acción a realizar es la última parte del prompt. Esto es bueno porque el LLM es menos probable que simplemente escriba más contexto en lugar de seguir la instrucción. Por ejemplo, dada la primera instrucción, el LLM podría agregar una nueva línea: `15 de marzo de 2022: Se programó una cita de seguimiento con un neurólogo para evaluar el progreso de la recuperación de la conmoción cerebral`.
 
-## Un Prompt "estándar"
+
+## A "Standard" Prompt
 
 Hemos oído hablar de varios formatos de prompts hasta ahora. Ahora, volveremos rápidamente al principio y definiremos un prompt "estándar". Siguiendo a Kojima et al. (@kojima2022large), nos referiremos a los prompts que consisten únicamente en una pregunta como prompts "estándar". También consideramos los prompts que consisten únicamente en una pregunta en formato de preguntas y respuestas (QA) como prompts "estándar".
 

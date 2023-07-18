@@ -7,12 +7,11 @@ sidebar_position: 1000
 
 import Steps from '@site/docs/assets/basics/steps.svg';
 
-
 <div style={{textAlign: 'center'}}>
-  <Steps style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-프롬프트 엔지니어링의 기초에 대해서 배워봤습니다. 여러분에 맞게 프롬프트 엔지니어링을 시작하실 준비가 되셨을 겁니다. 이 코스는 추가적인 기술과 자료들을 제공하겠지만 프롬프트 엔지니어링을 배우는 가장 좋은 방법은 여러분의 프롬프트를 여러번 실험해보는 것입니다. 이 페이지는 프롬프트 엔지니어링에서 발생할 수 있는 임의의 문제를 풀어내는 방법에 대해서 설명할 것입니다.
+프롬프트 엔지니어링의 기초에 대해서 배워봤습니다. 여러분에 맞게 프롬프트 엔지니어링을 시작하실 준비가 되셨을 겁니다. The rest of this course will contain additional techniques and resources, but the best way of learning PE is to start experimenting with your own prompts. 이 페이지는 프롬프트 엔지니어링에서 발생할 수 있는 임의의 문제를 풀어내는 방법에 대해서 설명할 것입니다.
 
 ChatGPT를 통해서 인상깊고, 상호작용하는 이야기를 생성하고 싶다고 가정해봅시다.
 
@@ -27,7 +26,6 @@ ChatGPT를 통해서 인상깊고, 상호작용하는 이야기를 생성하고 
 
 [이것](https://prompts.chat/#act-as-a-text-based-adventure-game) by [Heroj04](https://github.com/Heroj04)을 찾아본다면 좋은 시작점을 찾을 수 있을 것입니다:
 > I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. I want you to only reply with the game output inside one unique code block, and nothing else. do not write explanations. do not type commands unless I instruct you to do so. when i need to tell you something in english, i will do so by putting text inside curly brackets {like this}. my first command is wake up
-
 
 ## Step 2: 경험
 
@@ -72,12 +70,11 @@ As you wake up, you feel the warmth of the sun filtering through the window and 
 
 ## Step 3: 피드백과 반복
 
-이제 친구, 사장님 등에게 보여주고 피드백을 받아봅시다. 만약에 그들이 좋아한다면 좋은 거고 아니라면 다시 그들이 좋아할 때까지 반복하면 됩니다. 여러분은 커뮤니티에서 피드백을 받아볼 수도 있을 것입니다. 이 과정은 절대 완전히 끝나지 않습니다. 여러분은 항상 이 과정을 반복해야 할 것입니다.
+이제 친구, 사장님 등에게 보여주고 피드백을 받아봅시다. If they like it, great! If not, iterate on the prompt until you get something you both like. 여러분은 커뮤니티에서 피드백을 받아볼 수도 있을 것입니다. 이 과정은 절대 완전히 끝나지 않습니다. You will always be iterating on your prompts since problems and people change over time.
 
 ## 결론
 
-"여러분"이 원하는대로 프롬프트 엔지니어링을 하시길 바랍니다. 저는 항상 스트래치로부터 제 프롬프트를 작성합니다. 최고의 프롬프트를 작성하는 황금률은 없습니다;
-시도와 에러는 항상 가장 좋은 학습방법입니다. 좋은 학습하시고 앞으로의 과정에서도 행운이 따르길!
+"여러분"이 원하는대로 프롬프트 엔지니어링을 하시길 바랍니다. 저는 항상 스트래치로부터 제 프롬프트를 작성합니다. 최고의 프롬프트를 작성하는 황금률은 없습니다; 시도와 에러는 항상 가장 좋은 학습방법입니다. 좋은 학습하시고 앞으로의 과정에서도 행운이 따르길!
 
 :::note
 이 문서의 권장 사항은 대화형 스토리를 작성하는 것뿐만 아니라 모든 즉각적인 엔지니어링 문제에 적용됩니다!
@@ -86,4 +83,4 @@ As you wake up, you feel the warmth of the sun filtering through the window and 
 
 ## 참고
 
-- 다음 챕터에서 여러분은 **AI, model, LLM등의 혼용을 보게 될 것입니다** 더 알아보고 싶다면 [vocabulary reference](https://learnprompting.org/docs/vocabulary)을 클릭하세요
+- 다음 챕터에서 여러분은 **AI, model, LLM등의 혼용을 보게 될 것입니다** 더 알아보고 싶다면 [vocabulary reference](https://learnprompting.org/docs/vocabulary)을 클릭하세요 See the [vocabulary reference](https://learnprompting.org/docs/vocabulary) for more information.

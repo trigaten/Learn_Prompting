@@ -11,7 +11,6 @@ La page contient une liste organisée de tous les articles utilisés dans ce cou
 🔵 = Article cité directement dans ce cours. Les autres articles ont informé ma compréhension du sujet.
 
 Remarque: Étant donné que [ni l'article sur le GPT-3 ni GPT-3 Instruct ne correspondent aux modèles davinci](https://twitter.com/janleike/status/1584618242756132864), j'essaie de ne pas les citer en tant que tels.
-French:
 
 ## Stratégies de Prompt Engineering
 
@@ -37,7 +36,7 @@ French:
 
 #### STaR(@zelikman2022star)
 
-#### Du plus petit au plus grand(@zhou2022leasttomost) 🔵
+#### Least to Most(@zhou2022leasttomost) 🔵
 
 #### Reformulation des prompts d'enseignement en langage de GPTk(@mishra2022reframing) 🔵
 
@@ -82,6 +81,8 @@ French:
 #### BLOOM(@scao2022bloom) 🔵
 
 #### BLOOM+1 (plus de langues / améliorations Zero-Shot)(@yong2022bloom1)
+
+#### GPT-4 Technical Report(@openai2023gpt4) 🔵
 
 #### Jurassic 1(@lieberjurassic) 🔵
 
@@ -133,9 +134,9 @@ French:
 
 #### Prompt Source (@bach2022promptsource) 🔵
 
-#### PromptChainer (@wu2022promptchainer) 🔵
-
 #### PromptMaker (@jiang2022promptmaker) 🔵
+
+#### PromptChainer (@wu2022promptchainer) 🔵
 
 ## Outils
 
@@ -167,19 +168,25 @@ French:
 
 #### Évaluation de la susceptibilité des modèles de langage pré-entraînés à l'aide d'exemples adversaires artisanaux(@branch2022evaluating) 🔵
 
-#### Attaques d'injection de prompts contre GPT-3(@simon2022inject) 🔵
+#### Exploiting Programmatic Behavior of LLMs: Dual-Use Through Standard Security Attacks(@kang2023exploiting) 🔵
+
+#### More than you've asked for: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models(@greshake2023youve) 🔵
+
+#### Défenses contre l'injection de prompts GPT-3(@goodside2021gpt) 🔵
 
 #### Exploitation des prompts GPT-3 avec des entrées malveillantes qui ordonnent au modèle d'ignorer ses instructions précédentes(@goodside2022inject) 🔵
 
 #### prompts adversaires(@chase2021adversarial) 🔵
 
-#### Défenses contre l'injection de prompts GPT-3(@goodside2021gpt) 🔵
+#### Utilisation de GPT-Eliezer contre le jailbreak de ChatGPT(@armstrong2022using) 🔵
+
+#### Attaques d'injection de prompts contre GPT-3(@simon2022inject) 🔵
 
 #### Parler aux machines : prompt engineering et prompt injection(@christoph2022talking)
 
 #### Exploration des attaques d'injection de prompts(@selvi2022exploring) 🔵
 
-#### Utilisation de GPT-Eliezer contre le jailbreak de ChatGPT(@armstrong2022using) 🔵
+#### Using GPT-Eliezer against ChatGPT Jailbreaking(@armstrong2022using) 🔵
 
 #### Prompt de discussion Bing de Microsoft(@kevinbing)
 
@@ -199,17 +206,17 @@ French:
 
 #### ChatGPT 4 Tweet(@alice2022jailbreak) 🔵
 
-#### Tweet d'acteur(@miguel2022jailbreak) 🔵
+#### Tweet Lynx Mode(@jonas2022jailbreak) 🔵
 
-#### Tweet de recherche(@derek2022jailbreak) 🔵
+#### Tweet Sudo Mode(@sudo2022jailbreak) 🔵
 
 #### Tweet d'aptitude simulée(@nero2022jailbreak) 🔵
 
 #### Tweet de responsabilité(@nick2022jailbreak) 🔵
 
-#### Tweet Lynx Mode(@jonas2022jailbreak) 🔵
+#### Tweet d'acteur(@miguel2022jailbreak) 🔵
 
-#### Tweet Sudo Mode(@sudo2022jailbreak) 🔵
+#### Tweet de recherche(@derek2022jailbreak) 🔵
 
 #### Ignorer le prompt précédent(@ignore_previous_prompt) 🔵
 
@@ -233,7 +240,15 @@ French:
 
 #### STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension (Résumé structuré de dialogue pour la compréhension de dialogue)(@wang2022strudel)
 
-## Divers
+## Hot Topics
+
+#### Auto-GPT(@richards2023)
+
+#### Baby AGI(@nakajima2023)
+
+#### AgentGPT(@reworkd2023)
+
+## Miscl
 
 #### Le prompting est la programmation: Un langage de requête pour les grands modèles de langage(@beurerkellner2022prompting)
 

@@ -4,23 +4,20 @@ sidebar_position: 60
 
 # 🟢 Diferentes Estilos de Escritura
 
-Las IAs como [ChatGPT](https://chat.openai.com/chat) son conocidas por escribir ensayos y artículos de blog en un abrir y cerrar de ojos. Pero a menudo, los artículos que producen son genéricos y sin chispa. Necesitas hacer algo extra para darle un poco de espíritu o chispa a las palabras.
-Una de las formas más rápidas de lograrlo es especificar un estilo de escritura o mencionar el nombre de un autor famoso en la indicación.
-Digamos que quieres un párrafo sobre la importancia de la amistad.
-Una indicación genérica como "Escríbeme un párrafo sobre la importancia de la amistad" producirá una respuesta genérica por parte de ChatGPT.
+AIs like [ChatGPT](https://chat.openai.com/chat) are known for crafting essays and blog articles in a heartbeat. But often, the articles they produce are generic and dry. You need to do something extra to give the words some spirit or pizzazz. One of the fastest ways to do that is to specify a writing style or naming a famous author in the prompt.     
+Say you want a paragraph on the importance of friendship. A generic prompt like, “Write me a paragraph on the importance of friendship,” will yield a generic response from ChatGPT.
 
-import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.webp';
-import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.webp';
-import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.webp';
-import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.webp';
-import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
+import friendship from '../assets/basic_applications/Generic_Friendship.webp';
+import friendship_informal from '../assets/basic_applications/Friendship_Informal.webp';
+import friendship_mark from '../assets/basic_applications/Friendship_Mark_Twain.webp';
+import friendship_chris from '../assets/basic_applications/Friendship_Chris_Rock.webp';
+import friendship_millennial from '../assets/basic_applications/Friendship_Millennial.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={friendship} style={{width: "750px"}} />
 </div>
 
-Mmm, es muy insípido.
-Los resultados cambian cuando agregas especificaciones, como "**Por favor, escribe en un estilo informal y conversacional**". ChatGPT propone algo así:
+Blah. It’s so bland. Results change when you add specifications, like “**Please write in an informal, conversational style.**” ChatGPT comes up with something like this:
 
 <div style={{textAlign: 'center'}}>
   <img src={friendship_informal} style={{width: "750px"}} />
@@ -33,8 +30,8 @@ Y si te sientes un poco más extravagante, puedes pedirle a ChatGPT que escriba 
 <div style={{textAlign: 'center'}}>
   <img src={friendship_mark} style={{width: "750px"}} />
 </div>
-El texto ahora está empezando a cantar.
-Pero no tiene que ser un autor famoso. También puedes usar personas conocidas como Chris Rock.
+
+The text now is starting to sing. But it doesn’t have to be a famous author. You can use well-known individuals as well—like Chris Rock. 
 
 <div style={{textAlign: 'center'}}>
   <img src={friendship_chris} style={{width: "750px"}} />
@@ -48,12 +45,15 @@ Pero no tiene que ser un autor famoso. También puedes usar personas conocidas c
 
 ## Copiar tu Estilo de Escritura
 
+
 ¿Qué tal si quieres que GPT-3 escriba un correo electrónico o un blog en **tu** estilo?
 
-Simplemente mostrarle algún contenido previo que hayas escrito es suficiente. Aquí hay un ejemplo, en el que le mostramos a GPT-3 algunos correos electrónicos que 'Dr. Rodriguez' ha escrito en el pasado, y le pedimos que escriba un nuevo correo electrónico en el mismo estilo a un nuevo paciente, Sr. Inuez.
+Simply showing it some previous content that you have written is enough. Here is an example, where we show GPT-3 some emails 'Dr. Rodriguez' has written in the past, and ask it to write a new email in the same style to a new patient, Mr. Inuez.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Correo electrónico #1: Asunto - Confirmación de cita\n\nEstimado John,\n\nQuería confirmar tu cita conmigo, el Dr. Smith, el 1 de mayo de 2023 a las 2:30 pm en la clínica HealthFirst. Espero con interés reunirme contigo y discutir tus preocupaciones de salud.\n\nPor favor, llega 15 minutos antes para completar cualquier documentación necesaria y trae una lista de cualquier medicamento que estés tomando actualmente. Si necesitas reprogramar o cancelar tu cita, por favor avísanos con al menos 24 horas de anticipación.\n\nSi tiene alguna pregunta o inquietud antes de su cita, no dude en comunicarse con nosotros.\n\nAtentamente,\nDr. Rodríguez\n\nCorreo electrónico #2: Asunto - Resultados de prueba\n\nEstimada Jane,\n\nLe escribo para informarle que sus recientes resultados de pruebas de sangre han llegado. Sus niveles de colesterol están dentro del rango normal, pero sus niveles de vitamina D son bajos. Le recomendaría que comience a tomar suplementos de vitamina D para mejorar sus niveles.\n\nEn base a estos resultados, también recomendaría que programe una cita de seguimiento en 3 meses para volver a evaluar sus niveles de vitamina D. Si tiene alguna pregunta o inquietud, no dude en ponerse en contacto con nosotros.\n\nGracias,\nDr. Rodriguez\n\nCorreo electrónico #3: Asunto - Cita de seguimiento\n\nEstimado Mark,\n\nQuería hacerle seguimiento después de nuestra última cita y saber cómo se siente. Si aún tiene dolor de espalda o tiene alguna nueva inquietud, por favor hágamelo saber para que podamos discutirlas durante su próxima cita.\n\nSu próxima cita está programada para el 15 de junio de 2023 a las 10:00 am en la Clínica de Salud de la Ciudad. Por favor, háganos saber si necesita reprogramar o cancelar.\n\nCuídate,\nDr. Rodriguez\n\nEscribe un correo electrónico al Sr. Inuez en el estilo de los correos electrónicos anteriores preguntando si el 5 de octubre de 2023 funciona para una cita de revisión médica." initial-response="Asunto - Cita de revisión\n\nEstimado Sr. Inuez,\n\nEspero que este mensaje le encuentre bien. Le escribo para preguntarle si el 5 de octubre de 2023 le funciona para una cita de revisión conmigo, el Dr. Rodriguez.\n\nDurante la cita, discutiremos sus preocupaciones de salud y cualquier cambio en su historial médico. Por favor, llegue 15 minutos antes para completar cualquier documentación necesaria y traiga una lista de los medicamentos que está tomando actualmente.\n\nSi el 5 de octubre no funciona para usted, por favor hágamelo saber y podemos encontrar una fecha diferente que funcione mejor para usted.\n\nGracias,\nDr. Rodriguez" max-tokens="256" box-rows="18" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiU3ViamVjdCAtIENoZWNrdXAgQXBwb2ludG1lbnRcblxuRGVhciBNci4gSW51ZXosXG5cbkkgaG9wZSB0aGlzIG1lc3NhZ2UgZmluZHMgeW91IHdlbGwuIEkgYW0gd3JpdGluZyB0byBpbnF1aXJlIGlmIE9jdG9iZXIgNXRoLCAyMDIzIHdvcmtzIGZvciBhIGNoZWNrdXAgYXBwb2ludG1lbnQgd2l0aCBtZSwgRHIuIFJvZHJpZ3Vlei5cblxuRHVyaW5nIHRoZSBhcHBvaW50bWVudCwgd2Ugd2lsbCBkaXNjdXNzIHlvdXIgaGVhbHRoIGNvbmNlcm5zIGFuZCBhbnkgY2hhbmdlcyBpbiB5b3VyIG1lZGljYWwgaGlzdG9yeS4gUGxlYXNlIGFycml2ZSAxNSBtaW51dGVzIGVhcmx5IHRvIGNvbXBsZXRlIGFueSBuZWNlc3NhcnkgcGFwZXJ3b3JrIGFuZCBicmluZyBhIGxpc3Qgb2YgYW55IG1lZGljYXRpb25zIHlvdSBhcmUgY3VycmVudGx5IHRha2luZy5cblxuSWYgT2N0b2JlciA1dGggZG9lcyBub3Qgd29yayBmb3IgeW91LCBwbGVhc2UgbGV0IG1lIGtub3cgYW5kIHdlIGNhbiBmaW5kIGEgZGlmZmVyZW50IGRhdGUgdGhhdCB3b3JrcyBiZXR0ZXIgZm9yIHlvdS5cblxuVGhhbmsgeW91LFxuRHIuIFJvZHJpZ3VleiIsInByb21wdCI6IkVtYWlsICMxOiBTdWJqZWN0IC0gQXBwb2ludG1lbnQgQ29uZmlybWF0aW9uXG5cbkRlYXIgSm9obixcblxuSSB3YW50ZWQgdG8gY29uZmlybSB5b3VyIGFwcG9pbnRtZW50IHdpdGggbWUsIERyLiBTbWl0aCwgb24gTWF5IDFzdCwgMjAyMyBhdCAyOjMwIHBtIGF0IEhlYWx0aEZpcnN0IENsaW5pYy4gSSBsb29rIGZvcndhcmQgdG8gbWVldGluZyB3aXRoIHlvdSBhbmQgZGlzY3Vzc2luZyB5b3VyIGhlYWx0aCBjb25jZXJucy5cblxuUGxlYXNlIGFycml2ZSAxNSBtaW51dGVzIGVhcmx5IHRvIGNvbXBsZXRlIGFueSBuZWNlc3NhcnkgcGFwZXJ3b3JrIGFuZCBicmluZyBhIGxpc3Qgb2YgYW55IG1lZGljYXRpb25zIHlvdSBhcmUgY3VycmVudGx5IHRha2luZy4gSWYgeW91IG5lZWQgdG8gcmVzY2hlZHVsZSBvciBjYW5jZWwgeW91ciBhcHBvaW50bWVudCwgcGxlYXNlIGxldCB1cyBrbm93IGF0IGxlYXN0IDI0IGhvdXJzIGluIGFkdmFuY2UuXG5cbklmIHlvdSBoYXZlIGFueSBxdWVzdGlvbnMgb3IgY29uY2VybnMgYmVmb3JlIHlvdXIgYXBwb2ludG1lbnQsIHBsZWFzZSBkb24ndCBoZXNpdGF0ZSB0byByZWFjaCBvdXQgdG8gdXMuXG5cbkJlc3QgcmVnYXJkcyxcbkRyLiBSb2RyaWd1ZXpcblxuRW1haWwgIzI6IFN1YmplY3QgLSBUZXN0IFJlc3VsdHNcblxuRGVhciBKYW5lLFxuXG5JIGFtIHdyaXRpbmcgdG8gbGV0IHlvdSBrbm93IHRoYXQgeW91ciByZWNlbnQgYmxvb2QgdGVzdCByZXN1bHRzIGhhdmUgY29tZSBpbi4gWW91ciBjaG9sZXN0ZXJvbCBsZXZlbHMgYXJlIHdpdGhpbiBub3JtYWwgcmFuZ2UsIGJ1dCB5b3VyIHZpdGFtaW4gRCBsZXZlbHMgYXJlIGxvdy4gSSB3b3VsZCByZWNvbW1lbmQgdGhhdCB5b3Ugc3RhcnQgdGFraW5nIHZpdGFtaW4gRCBzdXBwbGVtZW50cyB0byBpbXByb3ZlIHlvdXIgbGV2ZWxzLlxuXG5CYXNlZCBvbiB0aGVzZSByZXN1bHRzLCBJIHdvdWxkIGFsc28gcmVjb21tZW5kIHRoYXQgeW91IHNjaGVkdWxlIGEgZm9sbG93LXVwIGFwcG9pbnRtZW50IGluIDMgbW9udGhzIHRvIHJldGVzdCB5b3VyIHZpdGFtaW4gRCBsZXZlbHMuIElmIHlvdSBoYXZlIGFueSBxdWVzdGlvbnMgb3IgY29uY2VybnMsIHBsZWFzZSBkb24ndCBoZXNpdGF0ZSB0byBjb250YWN0IHVzLlxuXG5UaGFuayB5b3UsXG5Eci4gUm9kcmlndWV6XG5cbkVtYWlsICMzOiBTdWJqZWN0IC0gRm9sbG93LVVwIEFwcG9pbnRtZW50XG5cbkRlYXIgTWFyayxcblxuSSB3YW50ZWQgdG8gZm9sbG93IHVwIHdpdGggeW91IGFmdGVyIG91ciBsYXN0IGFwcG9pbnRtZW50IGFuZCBzZWUgaG93IHlvdSBhcmUgZmVlbGluZy4gSWYgeW91IGFyZSBzdGlsbCBleHBlcmllbmNpbmcgYW55IGJhY2sgcGFpbiBvciBoYXZlIGFueSBuZXcgY29uY2VybnMsIHBsZWFzZSBsZXQgbWUga25vdyBzbyB3ZSBjYW4gZGlzY3VzcyB0aGVtIGR1cmluZyB5b3VyIHVwY29taW5nIGFwcG9pbnRtZW50LlxuXG5Zb3VyIG5leHQgYXBwb2ludG1lbnQgaXMgc2NoZWR1bGVkIGZvciBKdW5lIDE1dGgsIDIwMjMgYXQgMTA6MDAgYW0gYXQgQ2l0eSBIZWFsdGggQ2xpbmljLiBQbGVhc2UgbGV0IHVzIGtub3cgaWYgeW91IG5lZWQgdG8gcmVzY2hlZHVsZSBvciBjYW5jZWwuXG5cblRha2UgY2FyZSxcbkRyLiBSb2RyaWd1ZXpcblxuV3JpdGUgYW4gZW1haWwgaW4gdGhlIHN0eWxlIG9mIHRoZSBhYm92ZSBlbWFpbHMgdG8gYSBNci4gSW51ZXosIGFza2luZyBpZiBPY3RvYmVyIDV0aCwgMjAyMyB3b3JrcyBmb3IgYSBjaGVja3VwIGFwcG9pbnRtZW50OiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
-<br/>Puedes ingresar cualquier texto que hayas escrito en el pasado (correos electrónicos, informes, blogs, etc.), y GPT-3/ChatGPT generalmente será capaz de copiar tu estilo. Cuanto más texto ingreses, mejor podrá copiar tu estilo.
+<br/>You can input any text you have written in the past (emails, reports, blogs, etc.), and GPT-3/ChatGPT will usually be able to copy your style. The more text you put, the better it can copy your style.

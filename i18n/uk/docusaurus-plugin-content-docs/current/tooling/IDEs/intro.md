@@ -27,6 +27,7 @@ sidebar_position: 1
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)               | ❌                  |                 | ✅              | Немає            | ✅        | Текст   |                            |
 | [PromptMaker](https://dl.acm.org/doi/abs/10.1145/3491101.3503564)   | ❌                  |                 | ✅              |                  |          | Текст   |                            |
 | [PromptSandbox](https://promptsandbox.io)                           | ✅                  | ✅               | ✅              | Безплатно        | ✅        | Текст   | OpenAI                     |
+| [ChainForge](https://github.com/ianarawjo/ChainForge)               | ✅                  | ✅               | ✅              | Безплатно        | ✅        | Текст   | OpenAI                     |
 
 | Назва                                                                 | Хостингове рішення | Відкрите ПЗ | Для досліджень | Бізнес-модель      | Запущено          | Формати                           | Підтримувані постачальники        |
 | --------------------------------------------------------------------- | ------------------ | ----------- | -------------- | ------------------ | ----------------- | --------------------------------- | --------------------------------- |
@@ -41,6 +42,7 @@ sidebar_position: 1
 | [PromptShake](https://promptshake.com/?ref=producthunt)               | ✅                  | ❌           | ❌              |                    | Список очікування | Текст                             |                                   |
 | [GPT IDE](https://gptide.com)                                         | ❌                  | ❌           | ❌              |                    | ✅                 | Текст, зображення + аудіо пізніше | OpenAI, пізніше Stability.AI тощо |
 | [The Forge AI](https://theforgeai.com/)                               | ✅                  | ❌           | ❌              | Інтернет-магазин   | Список очікування | Текст, зображення                 | OpenAI, Stable Diffusion          |
+| [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts) | ✅                  | ❌           | ❌              | Enterprise         | ✅                 | Текст                             | Custom, Public, Private LLMs      |
 
 
 

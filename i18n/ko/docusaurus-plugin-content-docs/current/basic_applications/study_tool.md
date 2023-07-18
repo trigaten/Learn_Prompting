@@ -8,17 +8,16 @@ LLM을 이용하는 방법 중에는 공부 도구로써의 방법이 있습니�
 
 ## 단어 설명
 
-최근에 나는 선인장에 관한 책을 읽고 있었습니다. 그리고 아래의 문장을 보게 되었습니다:
+I was recently reading a textbook about Cacti(@nobel2002cacti), and saw this passage:
 
 ```text
-Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically.
+Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
 ```
-
 
 저는 **less derived woods**가 무엇을 의미하는 지 몰랐고 구글은 그냥 연구 논문들만 알려줄 뿐이었습니다. 저는 ChatGPT를 통해서 무슨 뜻인지 알아보기로 결정했습니다. 그래서 책에 있는 간단한 문장과 질문으로 이루어진 아래의 프롬프트를 넣기로 했습니다.
 
 ```text
-Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically.
+Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
 
 What do less derived woods mean?
 
@@ -56,8 +55,7 @@ Marketing Class Notes
 - Difference between B2C and B2B: B2C is direct consumer market, B2B is business to business
 - Different types of market research: Quantitative and Qualitative, such as surveys and focus groups
 - Pricing Strategies: Skimming, Penetration, Competition, and Value
-- Segmentation: segmenting customer base by age, income, etc.
-- 4 types of segmentation: Demographic, Geographic, Psychographic, and Behavioral
+- Segmentation: segmenting customer base by age, income, etc. - 4 types of segmentation: Demographic, Geographic, Psychographic, and Behavioral
 - Discussed different promotional tools: Advertising, Personal Selling, Public Relations, Direct Marketing, and Sales Promotions
 
 Generate 5 marketing quiz questions for me based on my notes:

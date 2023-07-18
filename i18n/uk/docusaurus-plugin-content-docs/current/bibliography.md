@@ -96,7 +96,7 @@ sidebar_position: 1000
 
 #### DALLE(@ramesh2022hierarchical) 🔵
 
-## М'який запит
+## М'які запити
 
 #### М'які запити(@lester2021power) 🔵
 
@@ -128,7 +128,7 @@ sidebar_position: 1000
 
 #### Оптимізація запитів для перетворення тексту в зображення(@hao2022optimizing)
 
-## Інженерія запитів IDEs
+## ІСР інженерії запитів
 
 #### Prompt IDE(@strobelt2022promptide) 🔵
 

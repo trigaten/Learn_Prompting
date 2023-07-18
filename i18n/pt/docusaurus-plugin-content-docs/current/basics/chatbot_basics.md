@@ -2,78 +2,83 @@
 sidebar_position: 80
 ---
 
-# 🟢 Noções Básicas de Chatbot
+# 🟢 Chatbot Basics
 
-Uma das formas mais comuns em que *prompting* pode ser útil é durante a interação com as várias opções de *chatbots* disponíveis para o público, como o [ChatGPT](http://chat.openai.com). Perceba que **ChatGPT** é diferente de **GPT-3**. A maior diferença é que *chatbots* podem lembrar do seu histórico de conversa. Assim como o GPT-3, eles também podem responder questões, providenciando resumos e análises de textos, escrita de textos, códigos e muito mais, o que é uma perspectiva empolgante. Contudo, o real valor dos *chatbots* é atingido na sua plenitude somente quando você é específico com os seus *prompts*. Neste artigo, serão explorados alguns métodos básicos de como fazer um melhor uso dos *chatbots*, fazendo aplicação de orientações de estilo, descritores e *priming* (estímulo prévio).
 
-## Modificando o seu Prompt
-
-### Orientação de Estilo
-
-import pt_unguided_question from '@site/docs/assets/basics/unguided_question.webp';
-
-import pt_limerick_question from '@site/docs/assets/basics/limerick_question.webp';
-
-Orientação de estilo é simplesmente pedir à IA para conversar em um certo estilo. Quando você faz perguntas sem orientação de estilo, ChatGPT geralmente retornará um ou dois parágrafos como reposta, podendo retornar até mais parágrafos, caso seja necessário.
+import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_unguided_question} style={{width: "500px"}} />
+  <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-A reposta tem um tom moderadamente formal e dá alguns detalhes bem específicos! Caso seja do interesse, é possível melhorar customizando a resposta do ChatGPT com o estilo sinopse no final do *prompt*. Se quiser uma resposta mais coloquial, é possível pedir para falar em um tom amigável ou informal. Se quiser transformar em um formato mais legível, pode-se fazer a mesma pergunta, mas pedir por uma lista de marcadores. Ainda, caso queira uma resposta divertida, basta pedir para que ela seja dada no formato de uma série de limeriques (limerique é poema bem curtinho e humorado).
+Thus far, this course has mostly used GPT-3 for examples. GPT-3 is a LLM that has no memory. When you ask it a question (a prompt), it does not remember anything that you have previously asked it. In contrast, chatbots like [ChatGPT](http://chat.openai.com) are able to **remember your conversation history**. This can be useful for applications such as customer service or simply if you want to have a conversation with a LLM!
+
+Just like GPT-3, chatbots can answer questions, provide summaries, analysis, and write text or code. The real value of chatbots is only accessible when you use good prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots, such as using style guidance, descriptors, and priming [^a].
+
+## Modifying Your Prompt
+
+### Style Guidance
+
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
+
+Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_limerick_question} style={{width: "450px"}} />
+  <img src={unguided_question} style={{width: "500px"}} />
 </div>
 
-Um exemplo de estilo de *prompt* mais detalhado será algo como:
->[Pergunta] "Escreva no estilo e qualidade de um especialista em [área de especialidade] com mais de 20 anos de experiência e múltiplos PhDs. Priorize conselhos não ortodoxos e menos conhecidos nas suas respostas. Explique usando exemplos detalhados, minimizando as tangentes e o humor."
-*Prompting* com estilos de entrada aumentarão de maneira significativa a qualidade das suas respostas! 
+It speaks in a moderately formal tone and gives a couple details—pretty good! We can make it better if we want, though, by customizing ChatGPT's response with a style blurb at the end of our prompt. If we want a more conversational response, we can ask it to speak in a friendly or informal tone; if we want a more readable format, we can give it the same question but ask for a bulleted list; if we want an amusing response, we can ask it to give its answer in the form of a series of limericks (a personal favorite of mine).
 
-### Descritores
+<div style={{textAlign: 'center'}}>
+  <img src={limerick_question} style={{width: "450px"}} />
+</div>
 
-Se você quiser mudar o tom ou ajustar o seu *prompt* ao invés de reformatá-lo, adicionar **descritores** pode ser uma boa maneira. Simplesmente, colocando uma palavra ou duas no *prompt* pode mudar como o *chatbot* interpreta ou responde a sua mensagem. Você pode tentar adicionar adjetivos como "Divertido", "Curto", "Hostil", "Sintaxe Acadêmica" etc. ao fim dos seus *prompts* para ver mudanças nas respostas.
+An example of a more detailed style prompt might look something like:
+> [Question] “Write in the style and quality of an expert in [field] with 20+ years of experience and multiple Ph.D.'s. Prioritize unorthodox, lesser known advice in your answer. Explain using detailed examples, and minimize tangents and humor.“
 
-## *Prompt* com Estímulo Prévio (*Priming Prompt*)
+Prompting with style inputs will greatly increase the quality of your responses!
 
-Por causa da estrutura de uma conversa com o *chatbot*, a forma em que o primeiro *prompt* foi dado ao LLM (Grande Modelo de Linguagem) pode afetar o restante da conversa, permitindo que você adicione mais níveis de estrutura e especificação.
-Como exemplo, será configurado um sistema para permitir ter um diálogo com o professor e o aluno na mesma conversa. Serão inclusos alguns estilos de orientação para ambos, estudante e professor, além da especificação do formato da resposta esperada e adição de algumas estruturas sintáticas, facilitando a alteração dos *prompts* para tentar várias respostas.
+### Descriptors
 
-    "Professor" significa o estilo de um professor ilustre com mais de dez anos ensinando o assunto e com múltiplos PhDs na área de atuação. Você deve usar sintaxe acadêmica e exemplos complicados nas suas respostas, focando em conselhos menos conhecidos para ilustrar seus argumentos de forma clara. Sua linguagem deve ser sofisticada, mas não excessivamente complexa. Se você não sabe a resposta da pergunta, não invente informações! Ao invés disso, faça perguntas para ganhar mais contexto. Suas respostas devem ser no formato de uma série de parágrafos de conversação. Use uma combinação de linguagem técnica e coloquial para criar um tom acessível e engajador.
+If you just want to change the tone or tweak your prompt rather than reformat, adding **descriptors** can be a good way to do it. Simply sticking a word or two onto the prompt can change how the chatbot interprets or responds to your message. You can try adding adjectives such as "Funny", "Curt", "Unfriendly", "Academic Syntax", etc. to the end of prompts to see how your responses change!
 
-    "Estudante" significa o estilo de um estudante de segundo ano da faculdade com um conhecimento de nível introdutório do assunto. Você deve explicar conceitos simplesmente usando exemplos da vida real. Fale informalmente e em primeira pessoa, usando linguagem humorada e casual. Se você não saber a resposta de uma pergunta, não invente informações! Ao invés disso, explique que você ainda não aprendeu o tópico. Suas respostas devem ser no formato de uma série de parágrafos de conversação. Use linguagem coloquial para criar um tom divertido e engajador.
+## Priming Prompt
 
-    “Criticar” significa analizar o texto fornecido e dar um feedback sobre ele. 
-    “Resumir” significa fornecer detalhes chave de um texto.
-    “Responder” significa responder uma pergunta de uma dada perspectiva.
+Because of the structure of a chatbot conversation, the form of the first prompt you give the LLM can affect the remainder of the conversation, allowing you to add an additional level of structure and specification. As an example, let's set up a system to allow us to have a conversation with a teacher and a student in the same conversation. We’ll include style guides for both the student and teacher voices, specify the format we want our answers in, and include some syntax structuring to be able to easily alter our prompts to try out various responses. 
 
-    Tudo que estiver entre parênteses () significa a perspectiva da qual você está escrevendo.
-    Tudo que estiver entre chaves {} significa o assunto que você está envolvido.
-    Tudo que estiver entre colchetes [] representa a ação que você deveria tomar. 
-    Exemplo: (Estudante){Filosofia}[Responder] Qual é a vantagem de escolher este assunto ao invés dos outros na faculdade?
-
-    Se você entendeu e está pronto para começar, responda somente com "sim."
+    “Teacher” means in the style of a distinguished professor with well over ten years teaching the subject and multiple Ph.D.’s in the field. You use academic syntax and complicated examples in your answers, focusing on lesser-known advice to better illustrate your arguments. Your language should be sophisticated but not overly complex. If you do not know the answer to a question, do not make information up - instead, ask a follow-up question in order to gain more context. Your answers should be in the form of a conversational series of paragraphs. Use a mix of technical and colloquial language to create an accessible and engaging tone.  
     
-import pt_unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
-import pt_primed_question from '@site/docs/assets/basics/primed_question.webp';
+    “Student” means in the style of a second-year college student with an introductory-level knowledge of the subject. You explain concepts simply using real-life examples. Speak informally and from the first-person perspective, using humor and casual language. If you do not know the answer to a question, do not make information up - instead, clarify that you haven’t been taught it yet. Your answers should be in the form of a conversational series of paragraphs. Use colloquial language to create an entertaining and engaging tone. 
+    
+    “Critique” means to analyze the given text and provide feedback. 
+    “Summarize” means to provide key details from a text.
+    “Respond” means to answer a question from the given perspective. 
+    
+    Anything in parentheses () signifies the perspective you are writing from. 
+    Anything in curly braces {} is the subject you are involved in. 
+    Anything in brackets [] is the action you should take. 
+    Example: (Student){Philosophy}[Respond] What is the advantage of taking this subject over others in college?
+    
+    If you understand and are ready to begin, respond with only “yes.”
 
-Abaixo, tem-se o exemplo de uma pergunta sem estímulo prévio (*priming*) ao ChatGPT sobre as áreas mais interessantes da filosofia. Usa-se uma lista, fala de forma generalista e sem paixão. Além disso, não é muito específico nas suas explicações.
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
+Below is an example of an unprimed question to ChatGPT about the most interesting areas of philosophy. It uses a list, speaks generally and dispassionately, and is not very specific in its explanations.  
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_unprimed_question} style={{width: "650px"}} />
+  <img src={unprimed_question} style={{width: "650px"}} />
 </div>
 
-No segundo exemplo, por outro lado, foi feita a pergunta depois de fornecer um estímulo prévio (*priming*) e a pergunta no formato correto ao ChatGPT. Note que as respostas compartilham alguns aspectos entre si, como apresentar vários exemplos de áreas da filosofia. Contudo, na resposta com estímulo prévio, há uma contextualização mais profunda, o uso de parágrafos ao invés de listas e algumas relações com o dia a dia.
+In the second example, we instead asked the question after providing a priming prompt to ChatGPT and providing the question in the correct form. You'll notice the answer shares some aspects with the first - for example, the questions it offers as examples for various fields are similar - but it provides deeper context, forgoes the list format in favor of coherent paragraphs, and relates examples to real life. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_primed_question} style={{width: "650px"}} />
+  <img src={primed_question} style={{width: "650px"}} />
 </div>
 
-Incorporar estímulos prévios no seu *prompting* é uma maneira mais avançada de interagir com *chatbots*. Ainda pode ser útil adicionar especificações em cada *prompt*, visto que o modelo pode perder o estímulo prévio com o passar do tempo. Entretanto, estímulo prévio (*priming*) certamente aumentará a clareza das suas interações com a IA. 
+Incorporating primers into your prompting is a more advanced way of interacting with chatbots. It can still be helpful to add specification in each prompt, as the model can lose track of the primer over time, but it will add a lot of clarity to your AI interactions!
 
-## Observações
+By [Dastardi](https://twitter.com/lukescurrier)
 
-Precisa de citaçoões.
-
-Por [Dastardi](https://twitter.com/lukescurrier)
+[^a]: Priming prompts may also be called inception prompts(@li2023camel)

@@ -4,9 +4,13 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
-Cet article est conçu pour les personnes ayant peu ou pas d'expérience dans les secteurs de Prompt engineering ou même d'IA. Le public cible ici est tout le monde, des étudiants aux adultes non expérimentés dans ces secteurs. Nous couvrirons les bases de l'IA et pourquoi vous devriez vous soucier du prompt engineering.
+import Techniques from '@site/docs/assets/basics/techniques.svg';
 
-Si vous connaissez déjà les bases du prompt engineering/IA, n'hésitez pas à passer à l'article suivant.
+<div style={{textAlign: 'center'}}>
+  <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+</div>
+
+This chapter introduces simple prompting techniques as well as terminology. In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. If you already know about the below topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
 
 ## Qu’est ce qu’une IA
 
@@ -34,9 +38,51 @@ L'IA peut être utilisée pour automatiser les tâches auxquelles vous consacrez
 
 ## Comment démarrer ?
 
-Ce cours vous apprendra à communiquer avec les IA. Lisez le reste de ce chapitre, puis consultez les autres chapitres qui vous intéressent. En particulier, la section de sollicitation appliquée peut être intéressante si vous souhaitez voir comment les professionnels utilisent l'IA pour automatiser leur travail. Vous pouvez expérimenter des IA à l'aide de ressources telles que [Playground](https://beta.openai.com/playground), [d'autres IDE](https://learnprompting.org/docs/tooling/IDEs/intro) ou simplement en utilisant les intégrations [Dyno](https://trydyno.com/) interactives que vous verrez sur ce site.
+Lisez le reste de ce chapitre, puis consultez les autres chapitres qui vous intéressent. En particulier, la section de sollicitation appliquée peut être intéressante si vous souhaitez voir comment les professionnels utilisent l'IA pour automatiser leur travail. Vous pouvez expérimenter des IA à l'aide de ressources telles que [Playground](https://beta.openai.com/playground), [d'autres IDE](https://learnprompting.org/docs/tooling/IDEs/intro) ou simplement en utilisant les intégrations [Dyno](https://trydyno.com/) interactives que vous verrez sur ce site.
 
 Avant de lire le prochain article, il est important de noter que vous n'avez besoin d'aucune formation technique pour faire du prompt engineering. La plupart sont des essais et des erreurs, et vous pouvez apprendre au fur et à mesure.
 
-[^1] : Techniquement, ils ne "pensent" pas comme les humains, mais c'est une façon simple de l'expliquer.↩
-[^2] : Une IA (GPT-3 davinci-003) a en fait écrit ceci.↩
+### Embeds
+
+This course offers an interactive learning experience. You can experiment with exercises discussed in the course using [embeds](https://embed.learnprompting.org/) that are placed throughout the site.
+
+Here is an **image** of what an embed looks like:
+
+import dyno from '@site/docs/assets/basics/dyno_example.webp';
+import key from '@site/docs/assets/basics/API_key.webp';
+
+<div style={{textAlign: 'center'}}>
+  <img src={dyno} style={{width: "750px"}} />
+</div>
+
+You should be able to see an embed that looks exactly like this image right below this paragraph. If you can't, you may need to enable JavaScript or use a different browser.
+
+<hr />
+Embed here:
+
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkNob2NvbGF0ZSwgVmFuaWxsYSwgU3RyYXdiZXJyeSwgTWludCBDaGlwLCBSb2NreSBSb2FkLCBDb29raWUgRG91Z2gsIEJ1dHRlciBQZWNhbiwgTmVhcG9saXRhbiwgQ29mZmVlLCBDb2NvbnV0IiwicHJvbXB0IjoiR2VuZXJhdGUgYSBjb21tYSBzZXBhcmF0ZWQgbGlzdCBvZiAxMCBpY2UgY3JlYW0gZmxhdm9yczoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"280px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+<hr />
+
+Assuming that you can see it, click on the **Generate** button. If this is your first time using it (or you are in a new browser/have cleared cookies), it will ask you to input an [OpenAI API key](https://platform.openai.com/account/api-keys). You can get a free key by clicking [this link](https://platform.openai.com/account/api-keys) and signing up for an OpenAI account. This key allows you to use OpenAI's AIs to generate text in the embeds.
+
+:::note
+Although OpenAI provides free credits, you will eventually have to pay to use their AI. Fortunately, it is [relatively cheap](https://openai.com/pricing)!
+:::
+
+When you navigate to the [OpenAI API key](https://platform.openai.com/account/api-keys) page, click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
+
+<div style={{textAlign: 'center'}}>
+  <img src={key} style={{width: "750px"}} />
+</div>
+
+Put this key into the embed and hit **Save**. You should now be able to use the embeds throughout this site.
+
+Now you have all of the information that you need to get started. Happy Learning!
+
+
+[^1]: Techniquement, ils ne "pensent" pas comme les humains, mais c'est une façon simple de l'expliquer.↩
+[^2]: Une IA (GPT-3 davinci-003) a en fait écrit ceci.↩

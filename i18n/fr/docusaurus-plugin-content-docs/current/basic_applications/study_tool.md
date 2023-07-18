@@ -2,7 +2,7 @@
 sidebar_position: 30
 ---
 
-# 🟢 Ami de révisions
+# 🟢 Study Buddy
 
 Un de nos moyens préférés d'utiliser les LLMs est comme outil d'étude ! En particulier, il est utile pour expliquer des termes confus ainsi que pour vous interroger sur le contenu des tests.
 
@@ -11,13 +11,13 @@ Un de nos moyens préférés d'utiliser les LLMs est comme outil d'étude ! En p
 J'ai récemment lu un manuel sur les Cactus(@nobel2002cacti), et j'ai vu ce passage :
 
 ```text
-Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically.
+Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
 ```
 
 Je ne savais pas ce que signifiait **less derived woods**, et Google n'a montré que des articles de recherche à ce sujet. J'ai décidé d'utiliser ChatGPT pour savoir ce que cela signifiait. Je lui ai donné le prompt suivant, qui est simplement le passage du livre et ma question.
 
 ```text
-Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically.
+Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
 
 Que veut dire "less derived woods" ?
 
@@ -28,7 +28,7 @@ Dans ce contexte, "les bois moins dérivés" font référence à la forme ancest
 
 Le modèle a été en mesure de répondre rapidement à ma question et j'ai pu continuer ma lecture.
 
-## Auto-interrogation
+## Quizzing Yourself
 
 Une autre façon d'utiliser les LLMs comme outil d'étude est de s'interroger soi-même. Si vous avez un test de calcul à venir, vous pourriez simplement demander :
 
@@ -49,17 +49,17 @@ Si vous étudiez un sujet plus spécifique, vous devrez peut-être donner des in
 ```text
 3/20/2020 2:30 PM
 
-Notes de cours de marketing
+Marketing Class Notes
 
-- Discussion des 4 P du marketing : Produit, Prix, Place, Promotion
-- Différence entre B2C et B2B : B2C est le marché direct au consommateur, B2B est le business to business
-- Différents types de recherche de marché : quantitative et qualitative, tels que des enquêtes et des groupes de discussion
-- Stratégies de tarification : Skimming, Penetration, Competition, et Value
-- Segmentation : segmentation de la base de clients par l'âge, le revenu, etc.
-- 4 types de segmentation : Démographique, Géographique, Psychographique et Comportementale
-- Discussion des différents outils promotionnels : Publicité, Vente personnelle, Relations publiques, Marketing direct, et promotions des ventes
+- Discussed 4 P's of marketing: Product, Price, Place, Promotion
+- Difference between B2C and B2B: B2C is direct consumer market, B2B is business to business
+- Different types of market research: Quantitative and Qualitative, such as surveys and focus groups
+- Pricing Strategies: Skimming, Penetration, Competition, and Value
+- Segmentation: segmenting customer base by age, income, etc.
+- 4 types of segmentation: Demographic, Geographic, Psychographic, and Behavioral
+- Discussed different promotional tools: Advertising, Personal Selling, Public Relations, Direct Marketing, and Sales Promotions
 
-Génère 5 questions d'interrogation marketing pour moi basées sur mes notes :
+Generate 5 marketing quiz questions for me based on my notes:
 
 // highlight-start
 1. Quels sont les 4 P du marketing ?

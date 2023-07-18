@@ -2,46 +2,41 @@
 sidebar_position: 2
 ---
 
-# 🟡 Использование инструментов LLMs
+# 🟡 LLMs Using Tools
 
-Системы MRKL (@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, произносится как "miracle" ну или "чудо") 
-представляют собой **нейро-символическую архитектуру**, которая объединяет LLM (нейронные вычисления) и внешние инструменты, такие как калькуляторы (символьные вычисления), для решения сложных задач. 
+MRKL Systems(@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, pronounced "miracle") are a **neuro-symbolic architecture** that combine LLMs (neural computation) and external tools like calculators (symbolic computation), to solve complex problems.
 
-Система MRKL состоит из набора модулей (например, калькулятор, погодный API, база данных и т.д.) и маршрутизатора, который решает, как "направить" входящие запросы на естественном языке в соответствующий модуль.
+A MRKL system is composed of a set of modules (e.g. a calculator, weather API, database, etc.) and a router that decides how to 'route' incoming natural language queries to the appropriate module.
 
-Простым примером системы MRKL является LLM, который может 
-использовать приложение калькулятор. Это одномодульная система, где LLM является маршрутизатором.
-На вопрос `Сколько будет 100*100?`, LLM может выбрать извлечь числа из подсказки, а затем сказать системе MRKL использовать приложение калькулятора для вычисления результата. 
-Это может выглядеть следующим образом:
+A simple example of a MRKL system is a LLM that can use a calculator app. This is a single module system, where the LLM is the router. When asked, `What is 100*100?`, the LLM can choose to extract the numbers from the prompt, and then tell the MRKL System to use a calculator app to compute the result. This might look like the following:
 
 <pre>
-<p>Сколько будет 100*100?</p>
+<p>What is 100*100?</p>
 
 <span className="bluegreen-highlight">CALCULATOR[100*100]</span>
 </pre>
 
-Система MRKL увидит слово `CALCULATOR` и вставит `100*100` в приложение калькулятора.
-Эта простая идея может быть легко распространена на различные инструменты символьных вычислений.
+The MRKL system would see the word `CALCULATOR` and plug `100*100` into the calculator app. This simple idea can easily be expanded to various symbolic computing tools.
 
-Рассмотрим следующие дополнительные примеры применения: 
+Consider the following additional examples of applications:
 
-- Чатбот, способный отвечать на вопросы о финансовой базе данных путем извлечения информации для формирования SQL-запроса из текста пользователя.
-
-<pre>
-<p>Какова сейчас цена акций Apple?</p>
-
-<span className="bluegreen-highlight">Текущая цена - DATABASE[ВЫБРАТЬ цену ИЗ акций ГДЕ компания = "Apple" И время = "сейчас"].</span>
-</pre>
-
-- Чатбот, способный отвечать на вопросы о погоде, извлекая информацию из подсказки (prompt) и используя погодный API для получения информации. 
+- A chatbot that is able to respond to questions about a financial database by extracting information to form a SQL query from a users' text.
 
 <pre>
-<p>Какая погода (weather) в Нью-Йорке?</p>
+<p>What is the price of Apple stock right now?</p>
 
-<span className="bluegreen-highlight">Погода - WEATHER_API[Нью-Йорк].</span>
+<span className="bluegreen-highlight">The current price is DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"].</span>
 </pre>
 
-- Или даже гораздо более сложные задачи, которые зависят от нескольких источников данных, например, следующие: 
+- A chatbot that is able to respond to questions about the weather by extracting information from the prompt and using a weather API to retrieve the information.
+
+<pre>
+<p>What is the weather like in New York?</p>
+
+<span className="bluegreen-highlight">The weather is WEATHER_API[New York].</span>
+</pre>
+
+- Or even much more complex tasks that depend on multiple datasources, such as the following:
 
 
 import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
@@ -57,58 +52,54 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Пример системы MRKL  (AI21)
+Example MRKL System (AI21)
 </div>
 
+## An Example
 
-## Пример
+I have reproduced an example MRKL System from the original paper, using Dust.tt, linked [here](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7). The system reads a math problem (e.g. `What is 20 times 5^6?`), extracts the numbers and the operations, and reformats them for a calculator app (e.g. `20*5^6`). It then sends the reformatted equation to Google's calculator app, and returns the result. Note that the original paper performs prompt tuning on the router (the LLM), but I do not in this example. Let's walk through how this works:
 
-Я воспроизвел пример MRKL системы из оригинальной статьи, используя Dust.tt, 
-ссылка [здесь](https://dust.tt/trigaten/a/98bdd65cb7). 
-Система читает математическую задачу (например, `Сколько будет 20 раз по 5^6?`), извлекает числа и операции, и переформатирует их для приложения калькулятора (например, `20*5^6`). Затем он отправляет переформатированное уравнение в приложение-калькулятор Google и возвращает результат. Обратите внимание, что в оригинальной статье выполняется оперативная настройка маршрутизатора (LLM), но в данном примере я этого не делаю. Давайте рассмотрим, как это работает:
-
-Сначала я создал простой набор данных (dataset) на вкладке Dust `Datasets`.
-
+First, I made a simple dataset in the Dust `Datasets` tab.
 
 <div style={{textAlign: 'center'}}>
   <img src={dataset} style={{width: "750px"}} />
 </div>
 
-Затем я переключился на вкладку `Specification` и загрузил набор данных с помощью блока `data`.
+Then, I switched to the `Specification` tab and loaded the dataset using an `input` block.
 
 <div style={{textAlign: 'center'}}>
   <img src={load_dataset} style={{width: "750px"}} />
 </div>
 
-Далее я создал блок `llm`, который извлекает числа и операции. Обратите внимание, что в подсказке я сообщил, что мы будем использовать калькулятор Google. Модель, которую я использую (GPT-3), вероятно, имеет некоторые знания о калькуляторе Google из предварительного обучения. 
+Next, I created a `llm` block that extracts the numbers and operations. Notice how in the prompt I told it we would be using Google's calculator. The model I use (GPT-3) likely has some knowledge of Google's calculator from pretraining.
 
 <div style={{textAlign: 'center'}}>
   <img src={model} style={{width: "750px"}} />
 </div>
 
-Затем я создал блок `code`, который запускает простой код javascript для удаления пробелов из завершения.
+Then, I made a `code` block, which runs some simple javascript code to remove spaces from the completion.
 
 <div style={{textAlign: 'center'}}>
   <img src={extract} style={{width: "750px"}} />
 </div>
 
-Наконец, я сделал блок `search`, который отправляет переформатированное уравнение в калькулятор Google.
+Finally, I made a `search` block that sends the reformatted equation to Google's calculator.
 
 <div style={{textAlign: 'center'}}>
   <img src={search} style={{width: "750px"}} />
 </div>
 
-Ниже мы видим окончательные результаты, которые все верны!
+Below we can see the final results, which are all correct!
 
 <div style={{textAlign: 'center'}}>
   <img src={final} style={{width: "750px"}} />
 </div>
 
-Не стесняйтесь клонировать и экспериментировать с этой платформой [здесь] (https://dust.tt/trigaten/a/98bdd65cb7).
+Feel free to clone and experiment with this playground [here](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7).
 
-## Примечания
-MRKL был разработан [AI21](https://www.ai21.com/) и первоначально использовал их J-1 (Jurassic 1)(@lieberjurassic) LLM. 
+## Notes
+MRKL was developed by [AI21](https://www.ai21.com/) and originally used their J-1 (Jurassic 1)(@lieberjurassic) LLM.
 
-## Больше
+## More
 
-Смотрите [этот пример](https://langchain.readthedocs.io/en/latest/modules/agents/implementations/mrkl.html) системы MRKL построенной с использованием LangChain.
+See [this example](https://python.langchain.com/docs/modules/agents/how_to/mrkl) of a MRKL System built with LangChain.

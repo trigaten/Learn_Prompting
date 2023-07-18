@@ -7,7 +7,7 @@ sidebar_position: 90
 import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Pitfalls style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
+  <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 Los LLMs son extremadamente poderosos, pero no son perfectos. Hay muchos aspectos que debes tener en cuenta a la hora de utilizarlos.
@@ -18,13 +18,12 @@ La mayoría de los LLM **no pueden citar las fuentes con precisión**. Esto se d
 
 :::note
 Estrategias como LLMs con búsqueda aumentada (LLMs que pueden buscar en Internet y otras fuentes) a menudo pueden solucionar este problema.
-:::
 
-## Sesgos
+## Bias
 
 Los LLM suelen estar predispuestos a generar respuestas estereotipadas. Incluso con medidas de seguridad, a veces dicen cosas sexistas, racistas y homófobas. Ten cuidado cuando utilices LLM en aplicaciones orientadas al consumidor, y también ten cuidado cuando los utilices en investigación (pueden generar resultados sesgados).
 
-## Alucinaciones
+## Hallucinations
 
 Los LLM suelen decir falsedades cuando se les hace una pregunta cuya respuesta desconocen. A veces dirán que no saben la respuesta, pero la mayoría de las veces darán con seguridad una respuesta incorrecta.
 

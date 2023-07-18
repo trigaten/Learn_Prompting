@@ -9,20 +9,20 @@ sidebar_position: 7
 
 예를 들어 여러분이 [커모드 베어](https://en.wikipedia.org/wiki/Kermode_bear)와 같은 어떤 동물에 대한 짧은 블로그를 작성하려고 합니다. 먼저 블로그를 작성하기 전에 LLM에 커모드 베어에 대한 몇가지 사실들을 물어보는 것입니다. 이것은 LLM이 더 정보를 잘 제공하는 블로그를 작성할 수 있게 도와줄 것입니다. 여기 두가지 간단한 예제가 있습니다.
 
-## 한 개의 프롬프트 사용
+## Single prompt approach
 
 첫 번째 접근은 LLM이 지식을 생성하고 글을 쓰기까지 하나의 프롬프트에 작성하는 것입니다.
 
 ```text
 Generate 4 facts about the Kermode bear, then use these facts to write a short blog post using the information:
 // highlight-start
-The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada.
+The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada. 
 
-1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur.
+1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur. 
 
-2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal.
+2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. 
 
-3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest.
+3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. 
 
 4. The Kermode bear is a protected species, and its population is monitored closely by the provincial government.
 
@@ -70,13 +70,19 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 
 저는 더 길고 믿을 만한 컨텐츠를 제공하는 두 번째 접근법을 추천드립니다.
 
-## 또 다른 예제
+## Another use case
 
-지식 생성하기 접근법은 실제로 어려운 문제에 답변하는 등의 완전히 다른 문제에도 사용가능합니다. 여기 GPT-3가 잘못 답변한 아래의 질문에 대해서 알아봅시다.
+지식 생성하기 접근법은 실제로 어려운 문제에 답변하는 등의 완전히 다른 문제에도 사용가능합니다. 여기 GPT-3가 잘못 답변한 아래의 질문에 대해서 알아봅시다. 
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Which country is larger, Congo or South Africa?" initial-response="South Africa is larger than Congo." max-tokens="256" box-rows="3" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIGxhcmdlciB0aGFuIENvbmdvLiIsInByb21wdCI6IldoaWNoIGNvdW50cnkgaXMgbGFyZ2VyLCBDb25nbyBvciBTb3V0aCBBZnJpY2E%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"200px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+:::note
+This example may not may accurate. We are working to revise it.
+:::
 
 <br/>
 
@@ -84,22 +90,25 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 
 *지식 생성* 단계를 시작해봅시다. 우리는 LLM에 콩고와 남아프리카에 대한 사실들을 생성하도록 질문할 수 있을 것입니다:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Generate some knowledge about the sizes of South Africa and Congo:" initial-response="South Africa is the 25th largest country in the world, with an area of 1,221,037 square kilometers (471,445 square miles). Congo, on the other hand, is the 11th largest country in the world, with an area of 2,344,858 square kilometers (905,567 square miles). South Africa is almost half the size of Congo, with a population of 57.7 million compared to Congo's population of 84.3 million. South Africa is the most populous country in the region, while Congo is the second most populous." max-tokens="256" box-rows="6" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy4iLCJwcm9tcHQiOiJHZW5lcmF0ZSBzb21lIGtub3dsZWRnZSBhYm91dCB0aGUgc2l6ZXMgb2YgU291dGggQWZyaWNhIGFuZCBDb25nbzoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>
 
 다음으로 지식을 이용해서 질문에 더 정확하게 답변할 수 있도록 만들어봅시다. 이것이 *지식 통합* 단계입니다.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="South Africa is the 25th largest country in the world, with an area of 1,221,037 square kilometers (471,445 square miles). Congo, on the other hand, is the 11th largest country in the world, with an area of 2,344,858 square kilometers (905,567 square miles). South Africa is almost half the size of Congo, with a population of 57.7 million compared to Congo's population of 84.3 million. South Africa is the most populous country in the region, while Congo is the second most populous.\n\nWhich country is larger, Congo or South Africa?" initial-response="Congo is larger than South Africa." max-tokens="256" box-rows="15" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiQ29uZ28gaXMgbGFyZ2VyIHRoYW4gU291dGggQWZyaWNhLlxuIiwicHJvbXB0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy5cblxuV2hpY2ggY291bnRyeSBpcyBsYXJnZXIsIENvbmdvIG9yIFNvdXRoIEFmcmljYT8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## 더 기술적인 토론
 
-위의 예제들이 기존에 소개된 것들과 비슷함에도 불구하고 완전히 똑같지는 않습니다. 아래의 컨텐츠는 더 기술적인 부분을 보여줄 것입니다.
-위에서 본 두가지 과정(지식 생성, 지식 통합)을 똑같이 이용할 것입니다.
+위의 예제들이 기존에 소개된 것들과 비슷함에도 불구하고 완전히 똑같지는 않습니다. 아래의 컨텐츠는 더 기술적인 부분을 보여줄 것입니다. 위에서 본 두가지 과정(지식 생성, 지식 통합)을 똑같이 이용할 것입니다.
 
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
@@ -113,8 +122,7 @@ Generated Knowledge (Liu et al.)
 
 ### 지식 생성
 
-지식 생성단계에서 LLM은 **질문**에 대한 사실들을 생성하도록 질문 받습니다.
-LLM은 퓨샷 스타일의 프롬프트를 받게 됩니다. M개의 각기 다른 답변들을 이 같은 프롬프트를 통해서 생성이 됩니다.(자기 일관성 접근법처럼)
+지식 생성단계에서 LLM은 **질문**에 대한 사실들을 생성하도록 질문 받습니다. LLM은 퓨샷 스타일의 프롬프트를 받게 됩니다. M개의 각기 다른 답변들을 이 같은 프롬프트를 통해서 생성이 됩니다.(자기 일관성 접근법처럼)
 
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
@@ -126,16 +134,11 @@ import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 Generated Knowledge Example (Liu et al.)
 </div>
 
-
 ### 지식 통합
 
-다음으로 우리는 최종 답안을 얻기 위해서 "지식이 추가된" 프롬프트를 LLM에 넣게 됩니다.
-이에 대한 쉬운 이해를 위해서 아래의 예제를 봅시다.
+다음으로 우리는 최종 답안을 얻기 위해서 "지식이 추가된" 프롬프트를 LLM에 넣게 됩니다. 이에 대한 쉬운 이해를 위해서 아래의 예제를 봅시다.
 
-우리가 아래의 **질문**에 답변하고 있다고 가정해봅시다.
-"Most Kangaroos have <mask\> limbs"
-지식 생성 단계에서 우리가 2개의 지식을 생성했다고 가정합니다(M=2):
-
+우리가 아래의 **질문**에 답변하고 있다고 가정해봅시다. "Most Kangaroos have <mask\> limbs" 지식 생성 단계에서 우리가 2개의 지식을 생성했다고 가정합니다(M=2):
 
 - Knowledge 1: `Kangaroos are marsupials that live in Australia.`
 
@@ -153,13 +156,11 @@ Generated Knowledge Example (Liu et al.)
 
 - Answer 2: `5`
 
-우리는 가장 가능성이 높은 답변을 최종답변으로 고를 것입니다.
-가장 높은 확률은 "소프트 맥스 가능성"이나 "로그 가능성"이 될 것입니다.
+우리는 가장 가능성이 높은 답변을 최종답변으로 고를 것입니다. 가장 높은 확률은 "소프트 맥스 가능성"이나 "로그 가능성"이 될 것입니다.
 
 ## 암기-증강 언어 모델
 
-암기-증강(@sun2022recitationaugmented) 접근법은 지식 생성하기와 굉장히 비슷합니다.(기본적으로는 같습니다)
-하지만 정식적인 지식 생성하기 개발보다는 덜 복잡할 것입니다.
+암기-증강(@sun2022recitationaugmented) 접근법은 지식 생성하기와 굉장히 비슷합니다.(기본적으로는 같습니다) 하지만 정식적인 지식 생성하기 개발보다는 덜 복잡할 것입니다. However, is much less complex than the formal implementation of generated knowledge.
 
 
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
@@ -168,10 +169,10 @@ import RImage from '@site/docs/assets/intermediate/recitation.webp';
   <img src={RImage} style={{width: "250px"}} />
 </div>
 
-아이디어는 퓨샷 프롬프트로 지식 생성과 답변을 같은 단계에서 실행하는 데 있습니다.
-암기와 지식 생성하기 그리고 답변하기를 동시에 진행한다는 사실은 지식 생성하기 접근법과의 가장 큰 차이가 될것입니다.
+아이디어는 퓨샷 프롬프트로 지식 생성과 답변을 같은 단계에서 실행하는 데 있습니다. 암기와 지식 생성하기 그리고 답변하기를 동시에 진행한다는 사실은 지식 생성하기 접근법과의 가장 큰 차이가 될것입니다.
 
 반복하자면 이 접근법은 모델에게 여러 개의 (질문, 암송, 답변) 예제를 제공한 다음 질문을 한다. 저자들은 이 접근법이 자기 일관성 또는 여러 프롬프팅 방법과 결합될 수 있다는 점에 주목한다.
+
 
 
 ## 참고
@@ -180,4 +181,4 @@ import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 - 선택한 답에 맞는 지식은 _선택된 지식_이라고 불립니다.
 
-- 예제에서 여러분은 최빈값은 최종 답안으로 고를 수 있을 것입니다.
+- In practice, you could take the most frequently occurring answer as the final one.

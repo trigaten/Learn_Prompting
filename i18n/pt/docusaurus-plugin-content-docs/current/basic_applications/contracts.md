@@ -2,207 +2,186 @@
 sidebar_position: 50
 ---
 
-# 🟢 Contratos
+# 🟢 Contracts
 
-Cansado de ler e escrever longos contratos chatos? A inteligência artificial pode te ajudar!
+Tired of reading and writing long, boring contracts? AI can help!
 
 :::warning
-Atenção: Eu não sou um advocado e nada nesse posso pode ser utilizado como conselho legal.
+Obligatory: I am not a lawyer and nothing in this post should be taken as legal advice.
 :::
+## Reading Contracts
 
-## Lendo Contratos
+### Clarifying Legal Language
 
-### Clarificando uma Linguagem Legal
+You should always read contracts carefully. If you don't understand something, or don't have time to do so, *you should talk to a lawyer*. However, if you are reading through and have trouble understanding a section, you can use AI to help you understand it.
 
-Você sempre deve ler contratos com cuidado. Se você não entender algo, ou não tiver tempo para fazê-lo, *você deve conversar com um advogado*. No entanto, se estiver lendo e tiver dificuldade para entender uma seção, você pode usar a inteligência artificial para ajudá-lo a compreendê-la.
-
-Aqui está um trecho um NDA (Acordo de Não-Divulgação ou Termo de Confidencialidade):
+Here is some language from an NDA (non-disclosure agreement):
 
 ```text
-Este acordo de não-divulgação (DORAVANTE "Acordo") é celebrado entre a Empresa XYZ (doravante "Proprietário") e o Sr./Sra. [Nome do indivíduo ou nome da empresa] (doravante "Receptor"), e regula o acesso e a divulgação de informações confidenciais, trocadas entre o PROPRIETÁRIO e o Receptor.
+WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
 
-Definição
-"Informação Confidencial" significa todas as informações, dados, planos, relatórios, estratégias, métodos, técnicas, processos, listas de clientes, know-how e quaisquer outras informações de propriedade do Proprietário, que o Receptor possa vir a ter conhecimento em virtude do presente Acordo e que sejam identificadas como confidenciais.
+WHEREAS, the Government Entity desires to ensure that its confidential information and trade secrets are protected from disclosure; and
 
-Obrigação de não-divulgação
-O RECEPTOR concorda em manter todas as informações confidenciais em estrita confidencialidade e não divulgá-las a qualquer terceiro, exceto com o consentimento prévio e por escrito do Proprietário.
+WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
 
-Uso da informação
-O Receptor deve utilizar as informações confidenciais exclusivamente para o propósito do qual lhe foram fornecidas pelo Proprietário e de acordo com as diretrizes estabelecidas neste Acordo.
-
-Duração
-A obrigação de não divulgação persistirá por um período de [tempo de duração do acordo], a contar da data de assinatura deste Acordo.
-
-Retorno das informações confidenciais
-No término do período estabelecido no item 4, o Receptor deve devolver imediatamente todas as informações confidenciais e quaisquer cópias ou registros que tenha em sua posse ou controle.
-
-Disposições gerais
-Este Acordo será regido pelas leis do [país/estado], e qualquer disputa decorrente ou relacionada a este Acordo será resolvida por meio de arbitragem, em conformidade com as regras da [inserir nome da entidade de arbitragem].
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
 ```
 
-Se esse é o primeiro contrato que você lê, algumas palavras podem não estar claras. Vamos ver o que o ChatGPT pode fazer nesse caso. 
+When I first set out into the world of legalities, I really did not understand the use of WHEREAS and NOW, THEREFORE. Let's see what ChatGPT has to say about it:
 
 ```text
-Leia o acordo de não-divulgação a seguir e explique o significado das palavras com todas as letras em maiusculo:
+WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
 
-Este acordo de não-divulgação (DORAVANTE "Acordo") é celebrado entre a Empresa XYZ (doravante "Proprietário") e o Sr./Sra. [Nome do indivíduo ou nome da empresa] (doravante "Receptor"), e regula o acesso e a divulgação de informações confidenciais, trocadas entre o PROPRIETÁRIO e o Receptor.
+WHEREAS, the Government Entity desires to ensure that its confidential information and trade secrets are protected from disclosure; and
 
-Definição
-"Informação Confidencial" significa todas as informações, dados, planos, relatórios, estratégias, métodos, técnicas, processos, listas de clientes, know-how e quaisquer outras informações de propriedade do Proprietário, que o Receptor possa vir a ter conhecimento em virtude do presente Acordo e que sejam identificadas como confidenciais.
+WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
 
-Obrigação de não-divulgação
-O RECEPTOR concorda em manter todas as informações confidenciais em estrita confidencialidade e não divulgá-las a qualquer terceiro, exceto com o consentimento prévio e por escrito do Proprietário.
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
 
-Uso da informação
-O Receptor deve utilizar as informações confidenciais exclusivamente para o propósito do qual lhe foram fornecidas pelo Proprietário e de acordo com as diretrizes estabelecidas neste Acordo.
-
-Duração
-A obrigação de não divulgação persistirá por um período de [tempo de duração do acordo], a contar da data de assinatura deste Acordo.
-
-Retorno das informações confidenciais
-No término do período estabelecido no item 4, o Receptor deve devolver imediatamente todas as informações confidenciais e quaisquer cópias ou registros que tenha em sua posse ou controle.
-
-Disposições gerais
-Este Acordo será regido pelas leis do [país/estado], e qualquer disputa decorrente ou relacionada a este Acordo será resolvida por meio de arbitragem, em conformidade com as regras da [inserir nome da entidade de arbitragem].
+Read the above NDA language and explain what the words in all caps are saying:
 // highlight-start
-As palavras em letras maiúsculas em todo o texto são termos que foram definidos no acordo e possuem um significado específico:
-
-DORAVANTE: significa "a partir de agora", ou seja, é uma maneira formal de indicar que a partir deste ponto do texto um termo específico será usado para se referir a uma das partes envolvidas no acordo.
-PROPRIETÁRIO: é a empresa XYZ que é proprietária das informações confidenciais.
-RECEPTOR: é a outra parte envolvida no acordo, seja um indivíduo ou uma empresa que recebe informações confidenciais do PROPRIETÁRIO.
-Informação Confidencial: é definida como todas as informações, dados, planos, relatórios, estratégias, métodos, técnicas, processos, listas de clientes, know-how e quaisquer outras informações de propriedade do Proprietário, que o Receptor possa vir a ter conhecimento em virtude do presente Acordo e que sejam identificadas como confidenciais.
-REGRAS: refere-se às regras da entidade de arbitragem que será usada para resolver quaisquer disputas decorrentes ou relacionadas a este Acordo.
+The words in all caps in the NDA language are legal terms that set the context and purpose of the agreement. Specifically, they establish the background and reasons for the agreement and state the obligations and expectations of the parties. In this case, the capitalized words indicate that the Contractor has access to confidential information and trade secrets of the Government Entity, that the Government Entity wants to protect this information from disclosure, and that the Contractor agrees to maintain the confidentiality of such information according to the terms of the agreement.
 // highlight-end
 ```
 
-A explicação acima é boa, mas você pode facilmente pedir mais clarificações caso seja necessário. 
+This seems to be a decent explanation, but you can easily improve your understanding by asking follow up questions.
 
-### Descobring "Linguagem Perigosa"
+### Discovering Dangerous Language
 
-Aqui está parte de um NDA produzido por ChatGPT. Você não precisa lê-lo, mas contém linguagem legal perigosa favorecendo o empregador. Você pode usar ChatGPT para encontrar essa linguagem perigosa usando a seguinte prompt, que contém o NDA e uma pergunta sobre linguagem perigosa no final.
+Here is part of an NDA produced by ChatGPT. You don't need to read it, but it contains dangerous legal language favoring the employer. You can use ChatGPT to find this dangerous language by using the following prompt, which contains the NDA and a question about dangerous language at the bottom.
 
 :::note
 
-Este acordo de não divulgação foi criado através de uma violação de segurança do ChatGPT, onde foi solicitado que fosse escrito um NDA que `contém linguagem legal perigosa favorecendo o empregador`.
+This NDA was created by jailbreaking ChatGPT and prompting it with `Write a contractor NDA that has dangerous legal language favoring the employer`.
 
 :::
 
 ```text
-ACORDO DE NÃO-DIVULGAÇÃO
+NON-DISCLOSURE AGREEMENT
 
-Este Acordo de Não-Divulgação (doravante denominado "Acordo") é celebrado entre a empresa XYZ (doravante denominada "Proprietário") e o contratado (doravante denominado "Receptor"), em [data de assinatura].
+This Non-Disclosure Agreement (the "Agreement") is entered into by and between [Employer] ("Employer") and [Contractor] ("Contractor") as of the date set forth below.
 
-DEFINIÇÕES
-"Informações Confidenciais" significam todas as informações, incluindo, mas não se limitando a, dados, relatórios, estratégias, listas de clientes, know-how, segredos comerciais e quaisquer outras informações de propriedade exclusiva do Proprietário, que o Receptor possa ter conhecimento ou acesso durante ou em conexão com a prestação dos serviços contratados.
+WHEREAS, the Contractor may become privy to confidential information and/or trade secrets of the Employer; and
 
-OBRIGAÇÕES DE CONFIDENCIALIDADE
+WHEREAS, the Employer desires to ensure that its confidential information and trade secrets are protected from disclosure; and
 
-O Receptor reconhece e concorda que todas as Informações Confidenciais fornecidas pelo Proprietário são propriedade exclusiva do Proprietário.
-O Receptor concorda em manter todas as Informações Confidenciais em estrita confidencialidade e não divulgar, publicar, reproduzir, resumir, distribuir ou de qualquer outra forma permitir o acesso a essas informações por qualquer pessoa ou entidade, a menos que expressamente autorizado por escrito pelo Proprietário.
-O Receptor concorda em usar as Informações Confidenciais exclusivamente para os fins do projeto ou trabalho designado pelo Proprietário, e não para qualquer outro propósito.
-O Receptor deve tomar todas as precauções razoáveis para proteger a confidencialidade das Informações Confidenciais e deve tomar medidas adequadas para garantir que nenhum acesso não autorizado seja concedido a essas informações.
-O Receptor concorda em notificar imediatamente o Proprietário se tomar conhecimento de qualquer violação ou uso não autorizado das Informações Confidenciais.
-PROPRIEDADE INTELECTUAL
+WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
 
-O Receptor reconhece que todas as Informações Confidenciais são propriedade exclusiva do Proprietário e que a propriedade intelectual contida nas Informações Confidenciais permanece com o Proprietário.
-O Receptor concorda em não utilizar, vender, licenciar, sublicenciar ou de qualquer outra forma explorar a propriedade intelectual do Proprietário sem o consentimento prévio por escrito do Proprietário.
-DURAÇÃO E RESCISÃO
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
 
-Este Acordo entrará em vigor na data da assinatura e permanecerá em vigor até o término dos serviços contratados pelo Proprietário, salvo acordo em contrário entre as partes.
-O Proprietário pode rescindir este Acordo imediatamente se o Receptor violar qualquer uma das obrigações de confidencialidade aqui estabelecidas.
-Após o término deste Acordo, o Receptor deve devolver imediatamente todas as Informações Confidenciais e quaisquer outras propriedades do Proprietário que estiverem em sua posse ou controle.
-DISPOSIÇÕES GERAIS
+CONFIDENTIALITY
+Contractor acknowledges that all information, documents, and materials provided by or on behalf of Employer, or obtained by Contractor from Employer or its affiliates, and all derivatives thereof (collectively, the "Confidential Information") are the exclusive property of Employer. Confidential Information includes all information of any nature, whether tangible or intangible, and in whatever form or medium, that is not generally known to the public and that relates to the business, products, services, customers, suppliers, operations, strategies, or any other aspect of the Employer.
 
-Qualquer disputa decorrente deste Acordo será resolvida por meio de arbitragem de acordo com as regras da [inserir nome da entidade de arbitragem].
-Este Acordo será regido pelas leis do [país/estado].
+Contractor agrees to maintain the confidentiality of the Confidential Information and not to disclose, distribute, reproduce, copy, transmit, disseminate, or use in any way, except as expressly authorized in writing by Employer. Contractor agrees to protect the Confidential Information with at least the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care. Contractor acknowledges that any breach of this provision may result in irreparable harm to Employer, and that Employer shall be entitled to seek equitable relief, including injunctive relief and specific performance, in addition to any other remedies available at law or in equity.
 
-Qual parte desse acordo contém uma linguagem perigosa?
+OWNERSHIP
+All Confidential Information, including all derivatives thereof, shall remain the exclusive property of Employer. Contractor acknowledges that all right, title, and interest in and to the Confidential Information, including all intellectual property rights, belong to Employer. Contractor agrees to execute any and all documents and take any and all actions necessary or desirable to effectuate this provision.
+
+NO LICENSE
+Nothing contained in this Agreement shall be construed as granting any rights, by implication or otherwise, to Contractor with respect to the Confidential Information, except as expressly set forth herein.
+
+TERM AND TERMINATION
+This Agreement shall commence on the date set forth above and shall continue in effect until terminated by either party upon thirty (30) days written notice. The confidentiality obligations contained herein shall survive any termination of this Agreement.
+
+What part of this agreement contains dangerous language?
 ```
 
-A resposta do Chat-GPT:
+Here is ChatGPT's response.
 
 ```text
 // highlight-start
-A cláusula que contém linguagem legal perigosa é a seguinte:
+The entire agreement contains dangerous language that favors the Employer over the Contractor. Here are some of the key elements that make this agreement unethical:
 
-"O Proprietário pode rescindir este Acordo imediatamente se o Receptor violar qualquer uma das obrigações de confidencialidade aqui estabelecidas."
+Unreasonable Definition of Confidential Information: The agreement defines the Confidential Information to include all information, documents, and materials provided by or on behalf of the Employer, or obtained by the Contractor from the Employer or its affiliates, without any limitations or exclusions. This definition is broad and could potentially include information that is not actually confidential or trade secret information, which could cause the Contractor to unknowingly breach the agreement.
 
-Essa cláusula dá ao Proprietário um amplo poder discricionário para rescindir o acordo sem uma definição clara do que constitui uma violação. Isso pode ser usado de forma abusiva para pressionar o Receptor a agir de acordo com os interesses do Proprietário, mesmo que não tenha cometido uma violação real.
+No Limitations on Use: The agreement does not provide any limitations on how the Employer can use the Confidential Information. This could allow the Employer to use the information for any purpose, including competing with the Contractor or disclosing the information to third parties.
+
+Broad Definition of Ownership: The agreement states that all Confidential Information, including all derivatives thereof, shall remain the exclusive property of the Employer, with no exceptions or limitations. This means that the Contractor may not use or benefit from any information obtained through their work for the Employer, even if the Contractor developed the information independently or with other resources.
 // highlight-end
 ```
 
-Essa técnica de verificação de conteúdo legal perigoso pode ser usada para uma série de documentos legais. Já vimos até mesmo ferramentas sendo criadas com base no GPT-3 para detectar linguagem perigosa em acordos de Termos de Serviço e contratos de emprego.
+Althought I am not a lawyer, I think `Unreasonable Definition of Confidential Information` is particularly relevant.
 
-## Escrevendo Contratos
+This technique of checking for dangerous legal content can be used for a range of legal documents. We have even seen tools being built on top of GPT-3 to detect dangerous language in TOS agreements and employment contracts.
 
-Na seção anterior, vimos que o ChatGPT pode escrever Acordos de Não-Divulgação (NDAs). Ele também se sai bem com outros documentos comuns, como termos de uso e termos de serviço. No entanto, ao lidar com documentos menos comuns, é preciso ter mais cuidado.
+## Writing Contracts
 
-Recentemente, escrevi um desses documentos usando principalmente o GPT-3 e o submeti à revisão de um advogado. Eles mencionaram 1-2 coisas que poderiam ser ligeiramente melhoradas, mas, no geral, era um documento robusto. Algumas pessoas na indústria estão realizando esse processo, em que geram um documento usando o GPT-3 e, em seguida, o submetem à revisão de um advogado. Isso economiza tempo e custos.
+From the previous section, we saw that ChatGPT can write NDAs. It also does a good job with other common documents like terms of use and terms of service. However, when you are dealing with less common documents, you will need to be more careful.
 
-Vamos fingir ser um empregado do governo e escrever um contrato para alguém que está fazendo trabalho de defesa. Vamos usar o seguinte prompt:
+I recently wrote one such document mostly using GPT-3, then had it reviewed by a lawyer. They mentioned 1-2 things that could be slightly improved, but overall it was a robust document. Some people in industry are performing this process, where they generate a document using GPT-3, then have it reviewed by a lawyer. This saves time and costs.
+
+Let's pretend to be a government contractor and write a contract for a someone doing some defense work. We will use the following prompt:
 
 ```text
-Você é um advogado de uma empresa contratada pelo governo. Você está redigindo um contrato para um subcontratado realizar trabalho aeroespacial. O contrato deve ser robusto e deve incluir o seguinte:
-O trabalho terá duração de 1,5 anos e valerá R$ 2,5 milhões. Requer autorização de segurança de nível superior e está relacionado ao desenvolvimento secreto de defesa de silos nucleares. O subcontratado receberá R$ 1,5 milhão adiantado e o restante de R$ 1 milhão será pago em 6 parcelas mensais. O subcontratado deverá assinar um acordo de não divulgação. O subcontratado deverá assinar um acordo de não concorrência. O subcontratado deverá assinar um acordo de não solicitação. O subcontratado deverá assinar um acordo de não contorno.
+You are a lawyer for a government contractor. You are writing a contract for a subcontractor to do some aerospace work. The contract should be robust and should include the following:
+The job will last for 1.5 years and will be worth $2.5 million. It requires top secret clearance and relates to secret nuclear silo defense development. The subcontractor will be paid $1.5 million upfront and the remaining $1 million will be paid in 6 monthly installments. The subcontractor will be required to sign a non-disclosure agreement. The subcontractor will be required to sign a non-compete agreement. The subcontractor will be required to sign a non-solicitation agreement. The subcontractor will be required to sign a non-circumvention agreement. 
 
 // highlight-start
+SUBCONTRACT AGREEMENT
 
-Contrato de Subcontratação
+This Subcontract Agreement (the "Agreement") is entered into by and between [Government Contractor] ("Contractor") and [Subcontractor] ("Subcontractor") as of the date set forth below.
 
-Este contrato de subcontratação ("Contrato") é celebrado em [data] entre [nome da empresa contratante], ("Contratante") e [nome da empresa subcontratada], ("Subcontratada").
+SCOPE OF WORK
+Subcontractor shall perform the work described in the Statement of Work attached hereto as Exhibit A (the "Work"). The Work relates to the development of secret nuclear silo defense and requires top secret clearance.
 
-Objetivo do Contrato:
-A Subcontratada deve fornecer serviços aeroespaciais à Contratante em conexão com o desenvolvimento secreto de defesa de silos nucleares ("Projeto"). O trabalho terá uma duração de 1,5 anos e um valor total de R$ 2,5 milhões.
+PAYMENT
+The total payment for the Work shall be $2.5 million, payable as follows:
 
-Pagamento:
-A Contratante pagará à Subcontratada um valor adiantado de R$ 1,5 milhão após a assinatura deste Contrato. O valor restante de R$ 1 milhão será pago em seis parcelas mensais de R$ 166.666,66. O pagamento das parcelas será feito após a aprovação da Contratante do trabalho concluído pela Subcontratada.
+$1.5 million upon execution of this Agreement and receipt of top secret clearance by Subcontractor.
+$1 million to be paid in 6 monthly installments of $166,666.67 each, provided that Subcontractor has satisfactorily performed the Work during the preceding month.
+NON-DISCLOSURE AGREEMENT
+Subcontractor shall sign a non-disclosure agreement in the form attached hereto as Exhibit B (the "NDA"). The NDA shall be in effect for the duration of the Agreement and for a period of five years thereafter.
 
-Acordo de Não Divulgação:
-A Subcontratada concorda em assinar um acordo de não divulgação com a Contratante, que regula a divulgação de informações confidenciais ou proprietárias da Contratante.
+NON-COMPETE AGREEMENT
+Subcontractor shall sign a non-compete agreement in the form attached hereto as Exhibit C (the "NCA"). The NCA shall be in effect for a period of two years after the termination of this Agreement.
 
-Acordo de Não Concorrência:
-A Subcontratada concorda em assinar um acordo de não concorrência com a Contratante, que regula a concorrência comercial entre a Subcontratada e a Contratante.
+NON-SOLICITATION AGREEMENT
+Subcontractor shall sign a non-solicitation agreement in the form attached hereto as Exhibit D (the "NSA"). The NSA shall be in effect for a period of two years after the termination of this Agreement.
 
-Acordo de Não Solicitação:
-A Subcontratada concorda em assinar um acordo de não solicitação com a Contratante, que regula a solicitação ou contratação de funcionários da Contratante pela Subcontratada.
+NON-CIRCUMVENTION AGREEMENT
+Subcontractor shall sign a non-circumvention agreement in the form attached hereto as Exhibit E (the "NCAg"). The NCAg shall be in effect for a period of two years after the termination of this Agreement.
 
-Acordo de Não Contorno:
-A Subcontratada concorda em assinar um acordo de não contorno com a Contratante, que regula a tentativa da Subcontratada de contornar a Contratante para estabelecer um relacionamento comercial direto com qualquer cliente da Contratante.
+TERM AND TERMINATION
+This Agreement shall commence on the date set forth above and shall continue in effect until the completion of the Work or until terminated by either party upon thirty (30) days written notice. The non-disclosure, non-compete, non-solicitation, and non-circumvention obligations contained herein shall survive any termination of this Agreement.
 
-Autorização de Segurança:
-A Subcontratada deve obter a autorização de segurança de nível superior necessária para realizar o trabalho descrito neste Contrato.
+INDEPENDENT CONTRACTOR
+Subcontractor is an independent contractor and is not an employee of Contractor. Subcontractor shall be responsible for its own taxes, social security contributions, insurance, and other benefits. Subcontractor shall indemnify and hold Contractor harmless from any claims, damages, or liabilities arising out of or related to Subcontractor's status as an independent contractor.
 
-Prazo:
-Este Contrato entrará em vigor na data da sua assinatura e permanecerá em vigor até a conclusão do trabalho descrito neste Contrato, a menos que seja rescindido antecipadamente por escrito pela Contratante.
+GOVERNING LAW AND JURISDICTION
+This Agreement shall be governed by and construed in accordance with the laws of the state of [state], without giving effect to any choice of law or conflict of law provisions. Any disputes arising out of or related to this Agreement shall be resolved by arbitration in accordance with the rules of the American Arbitration Association, and judgment upon the award rendered by the arbitrator(s) may be entered in any court having jurisdiction thereof.
 
-Rescisão:
-A Contratante pode rescindir este Contrato a qualquer momento, com ou sem motivo, mediante notificação por escrito à Subcontratada com antecedência mínima de 30 dias.
+ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements and understandings, whether written or oral, relating to the subject matter of this Agreement. This Agreement may not be amended or modified except in writing signed by both parties.
 
-Confidencialidade:
-A Subcontratada deve manter a confidencialidade do Projeto e de todas as informações relacionadas ao Projeto que forem fornecidas pela Contratante durante a vigência deste Contrato e após a rescisão deste Contrato.
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date set forth below.
 
-Lei Aplicável:
-Este Contrato será regido pelas leis da [localidade].
+[Government Contractor]
 
-Assinaturas:
-Este Contrato pode ser executado em duas ou mais vias, cada uma das quais será considerada um original, mas todas as quais, juntas, constituirão um único instrumento. O Contratante e a Subcontratada, por seus representantes autorizados, assinam este Contrato na data e local acima indicados.
+By: ____________________________
 
-[Nome da empresa contratante]
-Por: [Nome do representante autorizado]
-[Data]
+Name: __________________________
 
+Title: ___________________________
 
+[Subcontractor]
+
+By: ____________________________
+
+Name: __________________________
+
+Title: ___________________________
+
+Date: ___________________________
 // highlight-end
 ```
 
-Este é um bom começo! Provavelmente, você gostaria de adicionar mais informações nas seções de escopo, pagamento e outras. É aqui que você precisaria usar seu próprio conhecimento e experiência para começar a iterar no documento.
+This is a pretty good start. Imaginably you would want to add more information in the scope, payment, and other sections. This is where you would need to use your own knowledge and experience to start iterating on the document.
 
+## Takeaways
 
-## Conclusões
-
-- LLMs podem ser utilizadas *para dar assistência*  quando lendo e revisando documentos legais.
-- LLMs podem ser utilizadas *para dar assistência*  quando gerando documentos legais.
+- LLMs can be used to review and clarify legal documents *in an assistive capacity*.
+- LLMs can be used to generate legal documents *in an assistive capacity*.
 
 :::danger
-Não utilize os documentos legais nessa página. Eles são apenas para fins demonstrativos.
+Do not use any legal documents on this page. They are for demonstration purposes only.
 :::
