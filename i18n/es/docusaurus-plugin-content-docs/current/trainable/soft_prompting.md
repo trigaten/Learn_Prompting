@@ -25,7 +25,7 @@ Por otro lado, la sintonización del prompt te permite utilizar el mismo modelo 
 
 Para entender la lógica básica detrás de la sintonización suave del prompt, pensemos en cómo funciona la **inferencia del modelo** en un prompt dado: "¿Cuánto es 2+2?".
 
-1) Podría ser tokenizado como "¿Cuánto, 'es', 2, +, 2,?". 
+1) Podría ser tokenizado como "¿Cuánto, 'es', 2, +, 2,?".
 
 2) Luego, cada token se convertirá en un vector de valores.
 
