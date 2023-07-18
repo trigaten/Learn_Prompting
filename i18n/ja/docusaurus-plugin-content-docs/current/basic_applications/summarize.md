@@ -2,41 +2,38 @@
 sidebar_position: 70
 ---
 
-# 🟢 テキストの要約
+# 🟢 Summarizing Text
 
-ChatGPT は瞬く間にコンテンツを生成することで知られており、大きな時間節約となっています。
-既存のコンテンツについても、長くて読むのが大変なテキストの理解のサポートと時間の節約をしてくれます。
-本、映画、演劇、記事など、多くのものを要約することができます。ChatGPT があれば、あらゆるものに対するクリフのノートを手に入れたようなものです！
+ChatGPT is notorious for producing content in the blink of an eye, and has proven to be a huge time saver. For content already written, ChatGPT can also save us time by helping us digest long torturous texts.  
+It can summarize books, movies, plays, articles and many more. With ChatGPT, it’s like having a Cliff’s Notes…ON EVERYTHING!
 
-## スクラッチからの要約
+## Summarizing from Scratch
 
-時には、ChatGPT はその作品をよく知っているため、追加のテキストを何も貼り付けずに作品を要約することができます。例えば、「ロミオとジュリエット」を章ごとに要約してもらいましょう。頑張って 24,000 語を読む代わりに、300 語以下でその要点を把握することができます。
+Sometimes, you can ask ChatGPT to summarize famous works without pasting in any additional text, since ChatGPT knows the works so well. For example, you can ask it to summarize “Romeo & Juliet” by act. So, instead of slogging through the 24,000 words of the play, you can get the gist in 300 or less.
 
-import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
-import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.webp';
-import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
+import outline1 from '../assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import quantum from '../assets/basic_applications/summarizing/Quantum_Entanglement.webp';
+
+import rope from '../assets/basic_applications/summarizing/Outline_1.webp';
+import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}} />
 </div>
 
-要約を探し出す代わりに、ChatGPT はコンテンツをあなたのニーズに合わせて作り上げることができます。あなたはアメリカンフットボールが大好きだったとすると、「'ロミオとジュリエット' をアメリカンフットボールの言葉で 100 語で要約してください」要約を依頼することもできるのです。
+Although you could instead look up a summary, ChatGPT can tailor the content to your needs. Maybe you really like Football, so you could as ChatGPT to “Give me a 100 word summary of ‘Romeo and Juliet’ in American football terms.”
 
-## 長い文章での活用: コピーアンドペーストしよう！
+## Working With Long Blocks of Texts: Copy & Paste!
 
-あなたは ChatGPT に、テキストを要約したり、アウトラインを作ったり、全体を短縮したりするように依頼することができます。あなたがすることは、特定のテキストをプロンプトにコピーして貼り付けることだけです。(最大 2,500 語まで含めることができます。作品がそれより長い場合、それを分割する必要があります。)
-「これを 5 歳児のための要約にしてください: [ここにテキストを貼り付け]」と書いて、選択したテキストの簡略化された要約を依頼します。
-これは、Wikipedia の「[量子もつれ](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)」のエントリーから、「5 歳向け」の要約です。
+You can ask ChatGPT to summarize or create an outline of the text and TL;DR the whole thing. All you have to do is copy and paste the specific text into the prompt. (You can include up to 2,500 words. If the work is longer than that, you will have to break it into chunks.) Ask for a simplified summary of chosen text by writing, “Summarize this for me like I'm 5 years old: [PASTE TEXT HERE]” This one is a summary “for a 5-year old” from a section of Wikipedia’s entry on “[quantum entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)”. 
 
 <div style={{textAlign: 'left'}}>
   <img src={quantum} style={{width: "750px"}} />
 </div>
 
-要約に加えて、ChatGPT にテキストのアウトライン作成を依頼することもできます。時には全体の流れや枠組みを見るために、アウトラインを持っている方が良い場合もあります。
-あなたがアウトライン化したいテキストをコピーして、プロンプトに貼り付けるだけです。
-以下は、ChatGPT による Wikipedia の[ロープページ](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were)、特にロープの歴史に関するアウトラインです。
+In addition to summaries, you can also ask ChatGPT to write outlines for blocks of text. Sometimes it’s better to have an outline so that you can see the thread or framework of the whole article. You also just need to copy and paste the text you want outlined into your prompt.   
+The following is ChatGPT’s outline on the Wikipedia page on “rope,” specifically on the history of [rope](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were).
 
 <div style={{textAlign: 'left'}}>
   <img src={rope} style={{width: "750px"}} />
@@ -46,6 +43,6 @@ import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.we
   <img src={rope2} style={{width: "750px"}} />
 </div>
 
-これで、長いテキストを扱うための ChatGPT の基本的な使い方の一部をカバーしました。テキストを要約し、アウトライン化するための ChatGPT の利用方法はまだまだたくさんあります！
+We’ve just covered some of the very basics of using ChatGPT to handle long texts. There are many more ways to use ChatGPT to summarize and outline texts!
 
 By [languagenoodle](https://twitter.com/languagenoodle).
