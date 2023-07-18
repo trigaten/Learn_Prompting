@@ -12,11 +12,11 @@ ChatGPT відомий тим, що створює контент миттєво
 Іноді ви можете попросити ChatGPT узагальнити відомі твори, не вставляючи жодного додаткового тексту, оскільки він дуже добре знає твори. Наприклад, ви можете попросити його коротко переказати «Ромео і Джульєтту» за актами. Отже, замість того, щоб довго переглядати 24 000 слів п’єси, ви можете зрозуміти суть за допомогою 300 чи навіть менше.
 
 
-import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
-import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
+import outline1 from '../assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import quantum from '../assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.webp';
-import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
+import rope from '../assets/basic_applications/summarizing/Outline_1.webp';
+import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}} />
