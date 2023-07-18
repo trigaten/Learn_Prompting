@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# Introduction
 
-We have seen a number of prompting/prompt engineering methods thus far. Now we will cover some advanced applications of prompting that can solve complex reasoning tasks by performing searches for information via the internet, or other external sources.
+Até o momento, vimos algumas aplicações básicas realizadas com engenharia de prompt. Nessa seção, abordaremos algumas aplicações avançadas de solicitação que podem resolver tarefas de raciocínio complexas realizando pesquisas de informações na internet ou em outras fontes externas.
