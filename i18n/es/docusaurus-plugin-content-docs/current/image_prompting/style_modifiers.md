@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 ---
+
 # 🟢 Modificadores de Estilo
 
 Los modificadores de estilo son simplemente descriptores que producen consistentemente ciertos estilos (por ejemplo, "tintado de rojo", "hecho de vidrio", "renderizado en Unity")(@oppenlaender2022taxonomy). Pueden combinarse para producir estilos aún más específicos. Pueden "incluir información sobre períodos, escuelas y estilos artísticos, pero también sobre materiales y medios artísticos, técnicas y artistas"(@oppenlaender2022taxonomy).
