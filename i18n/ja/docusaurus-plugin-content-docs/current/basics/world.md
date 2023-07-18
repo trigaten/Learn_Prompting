@@ -2,7 +2,7 @@
 sidebar_position: 105
 ---
 
-# 🟢 Understanding AI Minds
+# 🟢 AI の心を理解する
 
 
 import Brain from '@site/docs/assets/basics/brain.svg';
@@ -11,34 +11,34 @@ import Brain from '@site/docs/assets/basics/brain.svg';
   <Brain style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-There are a few simple things you should know about different AIs and how they work before you start reading the rest of the course.
+コースの残りの部分を読み始める前に、さまざまな AI とその仕組みについて知っておくべき簡単なことがいくつかあります。
 
 
-## Different AIs
+## さまざまな AI
 
-Thousands, if not millions of AIs exist. Some are better than others. Different AIs can produce [images](https://openai.com/product/dall-e-2), [music](https://google-research.github.io/seanet/musiclm/examples/), [text](https://platform.openai.com/playground), and even [videos](https://makeavideo.studio/). Note that these are all *generative* AIs, basically AIs that *make* things. There are also *discriminative* AIs, which are AIs that *classify* things. For example, you can use an image classifier to tell if an image is a cat or a dog. We will not be using any discriminative AIs in this course.
-
-
-Only a few generative AIs are currently advanced enough to be especially useful for prompt engineering. We mainly use GPT-3 and ChatGPT in this course. As we mentioned in the last page, ChatGPT is a chat bot, while GPT-3 is not. **They will usually produce different responses when asked the same question**. If you are a developer, I recommend using GPT-3, since it is more reproducible. If you are a non-developer, I recommend using [ChatGPT](https://learnprompting.org/docs/category/%EF%B8%8F-image-prompting), since it is easier to use. Most techniques in this course can be applied to both AIs. However, some of them will be GPT-3 only, so we encourage you to use GPT-3 if you want to use all of the techniques in this course.
-
-We will also use [Stable Diffusion](https://beta.dreamstudio.ai/home) and [DALLE](https://openai.com/product/dall-e-2) in the image generation section. See more relevant AIs [here](https://learnprompting.org/docs/products#chatbots).
-
-## How these AIs work
-
-This section describes aspects of popular generative **text** AIs. These AIs have brains that are made up of billions of artificial neurons. The way these neurons are structured is called a transformer architecture. It is a fairly complex type of neural network. What you should understand is:
-
-1. These AIs are just math functions. Instead of $f(x) = x^2$, they are more like f(thousands of variables) = thousands of possible outputs.
-2. These AIs understand sentences by breaking them into words/subwords called tokens (e.g. the AI might read `I don't like` as `"I", "don", "'t" "like"`). Each token is then converted into a list of numbers, so the AI can process it.
-3. These AIs predict the next word/token in the sentence based on the previous words/tokens (e.g. the AI might predict `apples` after `I don't like`). Each token they write is based on the previous tokens they have seen and written; every time they write a new token, they pause to think about what the next token should be.
-4. These AIs look at every token at the same time. They don't read left to right, or right to left like humans do.
-
-Please understand that the words "think", "brain", and "neuron" are zoomorphisms, which are essentially metaphors for what the model is actually doing. These models are not really thinking, they are just math functions. They are not actually brains, they are just artificial neural networks. They are not actually biological neurons, they are just numbers.
-
-This is an area of active research and philosophizing. This description is rather cynical about their nature and is meant to temper popular media depiction of AIs as beings that think/act like humans. This being said, if you want to anthropomorphize the AI, go ahead! It seems that most people do this and it may even be helpful for learning.
+何百万とは言わないまでも、何千もの AI が存在します。 いくつかは他のものよりも優れています。 さまざまな AI が[画像](https://openai.com/product/dall-e-2)、[音楽](https://google-research.github.io/seanet/musiclm/examples/)、[テキスト](https://platform.openai.com/playground)、さらには[ビデオ](https://makeavideo.studio/)を作り出します。 これらはすべて*生成型* AI であり、基本的にはものを*作る* AI であることに注意してください。 物事を*分類する* AI である*識別型* AI もあります。 たとえば、画像分類器を使用して、画像が猫か犬かを判断できます。 このコースでは、識別型の AI は使用しません。
 
 
-## Notes
+現在、迅速なエンジニアリングに十分に役立つほど高度な生成 AI はごくわずかです。 このコースでは主に GPT-3 と ChatGPT を使用します。 前のページで述べたように、ChatGPT はチャット ボットですが、GPT-3 はそうではありません。 **同じ質問をされても、彼らは通常、異なる反応を示します**。 あなたが開発者である場合は、GPT-3 を使用することをお勧めします。 GPT-3 の方が再現性が高いからです。 開発者でない場合は、[ChatGPT](https://learnprompting.org/docs/category/%EF%B8%8F-image-prompting) を使用することをお勧めします。 このコースのほとんどのテクニックは、両方の AI に適用できます。 ただし、一部は GPT-3 のみであるため、このコースのすべての手法を使用する場合は GPT-3 を使用することをお勧めします。
 
-- [d2l.ai](https://www.d2l.ai) is a good resource for learning about how AI works
+また、画像生成セクションで [Stable Diffusion](https://beta.dreamstudio.ai/home) と [DALLE](https://openai.com/product/dall-e-2) を使用します。 関連する AI の詳細は[こちら](https://learnprompting.org/docs/products#chatbots)を参照してください。
 
-- Please note that the authors do, in fact, enjoy apples. They are delicious.
+## これらの AI の仕組み
+
+このセクションでは、一般的な**テキスト**生成 AI の側面について説明します。 これらの AI には、何十億もの人工ニューロンで構成された脳があります。 これらのニューロンが構造化される方法は、トランスフォーマーアーキテクチャと呼ばれます。 これはかなり複雑なタイプのニューラル ネットワークです。 理解しておくべきことは次のとおりです。
+
+1. これらの AI は単なる数学関数です。 $f(x) = x^2$ のように関数を表現しますが、AI の場合は f(数千の変数) = 数千の可能な出力 と表現できるでしょう。
+2. これらの AI は、文をトークンと呼ばれる単語/サブワードに分割することで文を理解します。 たとえば、AI は「I don't like」を「I」「don」「't」「like」と読む場合があります。 その後、各トークンは AI が処理可能な数値のリストに変換されます。
+3. これらの AI は、前の単語/トークンに基づいて、文の次の単語/トークンを予測します。 たとえば、AI は「I don't like」の後に「apples」を予測する場合があります。 彼らが書き込む各トークンは、彼らが見て書き込んだ以前のトークンに基づいています。 彼らは新しいトークンを書くたびに、次のトークンがどうあるべきかを考えるために一時停止します。
+4. これらの AI は、すべてのトークンを同時に調べます。 人間のように左から右、または右から左に読むことはありません。
+
+「考える」「脳」「ニューロン」という言葉は、ズーモフィズム（動物に例えること）であり、モデルが実際に行っていることを例えているに過ぎません。 これらのモデルは実際には考えているわけではなく、単なる数学関数です。 実際には脳ではなく、単なる人工ニューラルネットワークです。 そして、実際には生物学的ニューロンではなく、単なる数字です。
+
+これは活発な研究と哲学的思考が行われている分野です。 この説明は、AI の本質に対してやや皮肉なものであり、大衆向けメディアが AI を人間のように考える/行動する存在として描写することを揶揄しています。 とはいえ、AIを擬人化したいのであればどうぞ！ 多くの人がそうしているようで、学習に役立つかもしれません。
+
+
+## 注釈
+
+- [d2l.ai](https://www.d2l.ai) は、AI の仕組みを学習するための優れたリソースです。
+
+- 実際、著者はリンゴを楽しんでいることに注意してください。 おいしいよ。
