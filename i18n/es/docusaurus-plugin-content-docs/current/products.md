@@ -8,6 +8,15 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Content Writing
 
+- [Agent.so](https://www.agent.so/)
+> All-in-one platform that helps you use AI to write content & code, solve problems, have fun, and more! Powered by over 150 uniquely trained models, and ±200 apps being released to the new AI App Store. New members get unlimited chats and 100 Credits App Store for free.
+
+- [ID-Assist™](https://id-assist.co/)
+> An eLearning and classroom training storyboard automation tool, to help Instructional Designers automate creation of Course Outline, Learning Objecives, Assessments, Scenarios, and lot more.
+
+- [Writers brew AI](https://writersbrew.app)
+> One AI assistant that works across all apps & browsers. It can WRITE. IMPROVE. REPLY. SUMMARIZE. EXPLAIN & TRANSLATE. It has inbuilt OCR engine, and can extract text + generate AI text.
+
 - [Simplified](https://simplified.com/ai-writer/)
 > Generate copy with text prompts for business bios, facebook ads, product descriptions, emails, landing pages, YouTube descriptions, taglines, and more.
 
@@ -101,6 +110,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Glasp](https://glasp.co/ai-writing)
 > Newsletter writing tool by training your personalized AI models.
 
+- [Hey - notionai](http://hey.technonia.com/notionai/)
+> NotionAI-like writing tool that generates suitable content for your selected template (blog post, pros and cons, etc)
+
 ## Automatically Build a Tool
 
 - [Toolbot](https://toolbot.ai)
@@ -123,6 +135,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Debuild](https://debuild.app/)
 > Code your web app in seconds. The AI-powered low-code tool that helps you build web apps with text and built-in prompts.
+
+- [ToolBuilder](https://toolbuilder.ai/)
+> Toolbuilder is the platform for building and discovering AI web apps without coding.
 
 ## Search Engines
 
@@ -149,9 +164,13 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Chatbots
 
+- [Agent.so](https://www.agent.so/)
+
 - [Poe](http://poe.com)
 
 - [Jasper Chat](https://www.jasper.ai/chat)
+
+- [Anthropic Claude](https://scale.com/blog/chatgpt-vs-claude#What%20is%20%E2%80%9CConstitutional%20AI%E2%80%9D?)
 
 ## Browser Extensions
 
@@ -340,6 +359,10 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Tome](https://beta.tome.app)
 > Unlock your best work with Tome's AI-powered storytelling format.
 
+
+- [Superus](https://www.superusapp.com)
+> AI-Powered Maps for Ultimate Visual Storytelling
+
 - [Superside](https://www.superside.com/)
 > DesignOps tech for persuasive pitch decks, sales decks, or PowerPoint presentations.
 
@@ -383,8 +406,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Goose AI](https://goose.ai/)
 > Text completion and generation based on existing texts as prompts.
 
-- [Cohere](https://cohere.ai/generate)
-Writes content, predicts outcomes or answers questions at your command.
+- [Cohere](https://cohere.ai/generate) Writes content, predicts outcomes or answers questions at your command.
 
 - [Codeium](https://www.codeium.com/)
 > Codeium is a programming superpower that enables developers to quickly make changes to unfamiliar languages and codebases using natural language.
@@ -443,6 +465,12 @@ Writes content, predicts outcomes or answers questions at your command.
 - [CodeSquire](https://codesquire.ai/)
 > AI code writing assistant for data scientists, engineers, and analysts. Get code completions and suggestions as you type.
 
+- [regex.ai](https://regex.ai/)
+> AI-Powered Regular Expression Solver
+
+- [Hey - CopilotAI](http://hey.technonia.com)
+> CopilotAI-like writing tool that responses to your question with markdown format. Supports OpenAPI Swagger.
+
 ## Sales and Marketing
 
 - [GhostWriter](https://www.tailwindapp.com/?optimize-exp=index_ghostwriter_control)
@@ -487,10 +515,12 @@ Writes content, predicts outcomes or answers questions at your command.
 - [Robin](https://www.hellorobin.ai/)
 > Reach out to leads, conduct research, and handle initial outreach. Writes and sends emails from your email address.
 
+- [Hey - NotionAI](http://hey.technonia.com/notionai/)
+> NotionAI-like writing tool that generates suitable content for your selected template (recruiting emails, sails email, etc)
+
 ## Music
 
-- [Splash](https://www.splashmusic.com/)
-> AI that opens up new ways for music to be made and enjoyed. Our AI allows anyone to compose original music and sing lyrics to any melody.
+- [Splash](https://www.splashmusic.com/) > AI that opens up new ways for music to be made and enjoyed. Our AI allows anyone to compose original music and sing lyrics to any melody.
 
 ## Video
 
@@ -508,8 +538,7 @@ Writes content, predicts outcomes or answers questions at your command.
 
 ## Web Design
 
-- [Studio Design](https://studio.design/)
-> Make a selection and design suggestions populate based on surrounding styles. Talk to a voice assistant and have it perform complex styling tasks for website design.
+- [Studio Design](https://studio.design/) > Make a selection and design suggestions populate based on surrounding styles. Talk to a voice assistant and have it perform complex styling tasks for website design.
 
 ## Product Photography
 
