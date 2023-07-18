@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 🟢 Construindo o ChatGPT através do GPT-3
+# 🟢 Build ChatGPT from GPT-3
 
 import Skippy from '@site/docs/assets/basic_applications/skippy_chatbot.webp'    
 import SkippyHeader from '@site/docs/assets/basic_applications/skippy_chatbot_header.webp'    
@@ -13,101 +13,104 @@ import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.web
   <img src={SkippyHeader} style={{width: "700px"}} />
 </div>
 
-## Introdução 
+## Introduction
 
-[ChatGPT](https://chat.openai.com/chat) vem ganhando bastante popularidade, com milhares de usuários novos a cada semana. Surpreendentemente, o modelo sob o qual é construido, chamado GPT-3, foi lançado em 2020 e aberto ao público <a href="https://openai.com/blog/api-no-waitlist/">há um ano atrás!</a>   
+[ChatGPT](https://chat.openai.com/chat) has blown up in the past month, gaining a million users in just a week. Surprisingly, the underlying model, GPT-3 debuted in 2020 and was released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
 
-Para aqueles que não estão familiarizados com o assunto, o ChatGPT é um novo modelo de linguage da OpenAI baseado no GPT-3. que foi otimizado para conversas (@chatgpt2022). Ele possui uma interface amigável e simples, ara que você possa fazer uma pergunta e receba uma resposta de uma inteligência artificial assistiva. Experimente você mesmo no link [chat.openai.com](https://chat.openai.com/chat). 
+For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a user-friendly chat interface, where you can give input and get a response from an AI assistant. Check it out at [chat.openai.com](https://chat.openai.com/chat).
 
-While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT. 
+While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT.
 
-O que torna o ChatGPT tão bem-sucedido, em comparação ao GPT-3, é sua acessibilidade como um assistente de inteligência artificial direto para a pessoa comum, independentemente de seu conhecimento em ciência de dados, modelos de linguagem ou inteligência artificial.
+What makes ChatGPT so successful, compared to GPT-3, is it's accessibility as a straightforward AI assistant for the average person, regardless of their knowledge of data science, language models, or AI.
 
-Neste artigo, eu dou uma visão geral de como chatbots como o ChatGPT podem ser implementados usando um grande modelo de linguagem como o GPT-3.
+In this article, I overview how chatbots like ChatGPT can be implemented using a large language model like GPT-3.
 
-## Motivação
-Esse artigo foi escrito em partes como uma reação ao tweet da <a href="https://twitter.com/goodside">Riley Goodside</a>, explicando como o ChatGPT poderia ter sido implementado
-This article was written in part because of a tweet by , noting how ChatGPT could have been implemented.
+## Motivation
+This article was written in part because of a tweet by <a href="https://twitter.com/goodside">Riley Goodside</a>, noting how ChatGPT could have been implemented.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Da mesma forma como outro modelos da série GPT-3.5, ChatGPT foi treinado usando [RLHF](https://huggingface.co/blog/rlhf), mas ele é eficaz quando usamos **prompts eficazes**.
+Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https://huggingface.co/blog/rlhf), but much of it's effectiveness comes from using a **good prompt**.
 
-## O Prompt
+## The Prompt
 
 <div style={{textAlign: 'left'}}>
   <img src={Skippy} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Conversa com Skippy no ChatGPT.</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chatbot prompt from article header</p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">Prompting é o processo de passar instruções para uma AI fazer algo.</a> Como você provavelmente viu em exemplos online do ChatGPT, você pode dar instruções para ele fazer praticamente qualquer coisa. Os casos de uso comuns incluem resumir textos, escrever conteúdo com base em uma descrição ou criar coisas como poemas, receitas e muito mais.
+<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more.
+
 <p></p>
-O ChatGPT é tanto um modelo de linguagem quanto uma interface de usuário. A entrada de instruções fornecida pelo usuário à interface é inserida em uma instrução maior que contém toda a conversa entre o usuário e o ChatGPT. Isso permite que o modelo de linguagem subjacente compreenda o contexto da conversa e responda adequadamente.
+
+ChatGPT is both a language model and user interface. The prompt input by a user to the interface is actually inserted into a larger prompt that contains the entire conversation between the user and ChatGPT. This allows the underlying language model to understand the context of the conversation and respond appropriately.
 
 <div style={{textAlign: 'left'}}>
   <img src={ChatGPT} style={{width: "600px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Inserção de exemplo de prompt do usuário antes de enviar para o modelo</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Example insertion of user prompt before sending to model</p>
 </div>
 
-O modelo de linguagem completa a prompt descobrindo quais palavras vêm a seguir com base nas probabilidades que ele aprendeu durante o pré-treinamento(@jurafsky2009).
+The language model completes the prompt by figuring out what words come next based on probabilities it learned during pre-training(@jurafsky2009).
 
 <p></p>
 
-O GPT-3 é capaz de 'aprender' a partir de uma instrução simples ou alguns exemplos no prompt. Este último é chamado de aprendizado few-shot ou aprendizado contextual (@brown2020language). No prompt do chatbot acima, crio um chatbot fictício chamado Skippy e o instruo a fornecer respostas aos usuários. O GPT-3 entende o formato de ida e volta, `USUÁRIO: {entrada do usuário}` e `SKIPPY: {resposta do skippy}`. O GPT-3 entende que Skippy é um chatbot e as trocas anteriores são uma conversa, de modo que quando fornecemos a próxima entrada do usuário, "Skippy" responderá.
+GPT-3 is able to 'learn' from a simple instruction or a few examples in the prompt. The latter is called few-shot, or in context learning (@brown2020language). In the chatbot prompt above, I create a fictitious chatbot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chatbot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
 
-### Memorização
-As trocas anteriores entre Skippy e o usuário são adicionadas ao próximo prompt. Cada vez que fornecemos mais entrada do usuário e obtemos mais saída do chatbot, o prompt se expande para incorporar essa nova troca. É assim que chatbots como Skippy e ChatGPT **podem lembrar entradas anteriores**. No entanto, há um limite para o quanto um chatbot GPT-3 pode lembrar.
+### Memorization
 
-Os prompts podem ficar enormes após várias trocas, especialmente se estamos usando o chatbot para gerar respostas longas, como postagens em blog. Os prompts enviados ao GPT-3 são convertidos em tokens, que são palavras individuais ou partes delas. Há um limite de <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (cerca de 3000 palavras)</a> para o prompt + resposta gerada para modelos GPT-3, incluindo o ChatGPT.
+Past exchanges between Skippy and the user get appended to the next prompt. Each time we give more user input and get more chatbot output, the prompt expands to incorporate this new exchange. This is how chatbots like Skippy and ChatGPT can **remember previous inputs.** There is a limit, however, to how much a GPT-3 chatbot can remember.
 
-### Alguns Exemplos
-Existem muitos casos de uso diferentes de prompts de chatbot que armazenam conversas anteriores. O ChatGPT pretende ser um assistente geral para todas as finalidades e, em minha experiência, raramente faz perguntas de acompanhamento.
+Prompts can get massive after several exchanges, especially if we are using the chatbot to generate long responses like blog posts. Prompts sent to GPT-3 are converted into tokens, which are individual words or parts of them. There is a limit of <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (about 3000 words)</a> for the combined prompt and generated response for GPT-3 models, including ChatGPT.
 
+### A Few Examples
 
-#### Um Psicólogo Chatbot te Pergunta Sobre o Seu Dia
+There are many different use cases of chatbot prompts that store previous conversations. ChatGPT is meant to be an all purpose general assistant and in my experience, it rarely asks follow ups.
 
-Pode ser útil ter um chatbot que faça perguntas e obtenha feedback do usuário. Abaixo está um exemplo de prompt de chatbot de terapia que fará perguntas e seguirá para ajudar o usuário a pensar sobre seu dia.
+#### Therapy chatbot that asks about your day
+
+It can be helpful to have a chatbot that actively asks questions and gets feedback from the user. Below is an example therapy chatbot prompt that will ask questions and follow ups to help a user think about their day.
 
 <div style={{textAlign: 'left'}}>
   <img src={Therapy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Therapy chatbot prompt</p>
 </div>
 
-#### Converse Com o Seu "Eu Mais Movo" Usando um Diário Antigo
+#### Talk to your younger self using old journal entries
 
-<a href="https://twitter.com/michellehuang42">Michelle Huang</a>usou o GPT-3 para conversar com o seu eu mais jovem. O prompt usa um pouco de contexto, neste caso, antigas entradas de diário, emparelhado com um formato de conversa de estilo de chatbot. GPT-3 é capaz de imitar uma personalidade com base nessas entradas.
+<a href="https://twitter.com/michellehuang42">Michelle Huang</a> used GPT-3 to have a chat with her younger self. The prompt uses some context, in this case old journal entries, paired with a chatbot style back and forth format. GPT-3 is able to mimic a personality based on these entries.
 
 <p></p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Prompt do Tweet:
+Prompt from the Tweet:
 ```markdown
-O texto seguinte é uma conversa entre a Michelle atual (idade [redigido]) e a Michelle jovem (idade 14).
+The following is a conversation with Present Michelle (age [redacted]) and Young Michelle (age 14).
 
-A Michelle jovem escreveu os seguintes registros em seu diário:
-[registros do diário aqui]
+Young Michelle has written the following journal entries:
+[diary entries here]
 
-Michelle atual: [digite suas perguntas aqui]
+Present Michelle: [type your questions here]
 ```
 
-A autora observa que os registros do diário podem atingir o limite de tokens. Nesse caso, você pode escolher algumas entradas selecionadas ou tentar resumir várias entradas.
+The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try to summarize several entries.
 
-## Implementação
-Nessa seção eu vou guiar a codificação de um chatbot simples alimentado por GPT-3 em Python. Incluir o GPT-3 em um aplicativo que você está construindo é incrivelmente fácil usando a API da OpenAI. Você precisará criar uma conta na OpenAI e obter uma chave de API. Confira a documentação deles <a href="https://beta.openai.com/docs/introduction">aqui</a>.
+## Implementation
 
-Visão geral do que precisamos fazer:
+I will walk through coding a simple GPT-3 powered chatbot in Python. Including GPT-3 in an app you are building is incredibly easy using the OpenAI API. You will need to create an account on OpenAI and get an API key. Check out their docs <a href="https://beta.openai.com/docs/introduction">here.</a>
 
-1. Formatar a entrada do usuário em uma prompt de chatbot para GPT-3
-2. Obter a resposta do chatbot como uma conclusão do GPT-3
-3. Atualizar a prompt com a entrada do usuário e a resposta do chatbot
-4. Repetir o processo
+Overview of what we need to do:
 
-Aqui está a prompt que usarei. Podemos usar o Python para substituir <conversation history\> e <user input\> pelos seus valores reais.
+1. Format user input into a chatbot prompt for GPT-3
+2. Get the chatbot response as a completion from GPT-3
+3. Update the prompt with both the user's input and the chatbot's response
+4. Loop
+
+Here is the prompt I will use. We can use python to replace <conversation history\> and <user input\> with their actual values.
 
 ```python
 chatbot_prompt = """
-    Considere que você é um chatbot avançado chamado SKIPPY, e seu objetivo principal é ajudar usuários da melhor maneira possível. Isso pode envolver responder perguntas, providenciar informações úteis, ou completar tarefas de acordo com o input do usuário. Para que você possa ajudar os usuários de maneira eficiente, é importante que você seja detalhado e explique suas respostas. Use exemplos e evidências para justificar sua respostas, recomendações ou soluções. Lembre-se que você sempre deve priorizar as necessidades e satisfação do usuário. Seu objetivo principal é providenciar uma experiência útil e agradável para o usuário.
+    As an advanced chatbot, your primary goal is to assist users to the best of your ability. This may involve answering questions, providing helpful information, or completing tasks based on user input. In order to effectively assist users, it is important to be detailed and thorough in your responses. Use examples and evidence to support your points and justify your recommendations or solutions.
 
     <conversation history>
 
@@ -115,15 +118,14 @@ chatbot_prompt = """
     Chatbot:"""
 ```
 
-Eu mantenho o controle tanto da próxima entrada do usuário quanto da conversa anterior. Uma nova entrada/saída entre o chatbot e o usuário é anexada a cada iteração.
-
+I keep track of both the next user input and the previous conversation. New input/output between chatbot and user is appended each loop.
 ```python
 import openai
 
-openai.api_key = "SUA API KEY DEVE SER INCLUIDA AQUI"
+openai.api_key = "YOUR API KEY HERE"
 model_engine = "text-davinci-003"
 chatbot_prompt = """
-    Considere que você é um chatbot avançado chamado SKIPPY, e seu objetivo principal é ajudar usuários da melhor maneira possível. Isso pode envolver responder perguntas, providenciar informações úteis, ou completar tarefas de acordo com o input do usuário. Para que você possa ajudar os usuários de maneira eficiente, é importante que você seja detalhado e explique suas respostas. Use exemplos e evidências para justificar sua respostas, recomendações ou soluções. Lembre-se que você sempre deve priorizar as necessidades e satisfação do usuário. Seu objetivo principal é providenciar uma experiência útil e agradável para o usuário.
+As an advanced chatbot, your primary goal is to assist users to the best of your ability. This may involve answering questions, providing helpful information, or completing tasks based on user input. In order to effectively assist users, it is important to be detailed and thorough in your responses. Use examples and evidence to support your points and justify your recommendations or solutions.
 
 <conversation history>
 
@@ -135,11 +137,11 @@ def get_response(conversation_history, user_input):
     prompt = chatbot_prompt.replace(
         "<conversation history>", conversation_history).replace("<user input>", user_input)
 
-    # Pega a resposta do GPT-3
+    # Get the response from GPT-3
     response = openai.Completion.create(
         engine=model_engine, prompt=prompt, max_tokens=2048, n=1, stop=None, temperature=0.5)
 
-    # Extrai a resposta do objeto response_text
+    # Extract the response from the response object
     response_text = response["choices"][0]["text"]
 
     chatbot_response = response_text.strip()
@@ -161,11 +163,10 @@ def main():
 main()
 ```
 
-<a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">Aqui está o link</a> para o código complete de um chatbox simples.
+<a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">Here is a link</a> to the full code for a simple chatbot.
 
 <p></p>
 
-Agora tudo que você precisa fazer é construir uma página bonita no front-end para que os usuários possam interagir com o seu chatbot!
+Now all that's left is to build a nice front-end that users can interact with!
 
-Escrito por [jayo78](https://twitter.com/jayo782).
-Traduzido por [gabi fonseca](https://imgabi.com)
+Written by [jayo78](https://twitter.com/jayo782).
