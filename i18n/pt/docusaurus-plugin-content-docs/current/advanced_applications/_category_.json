@@ -1,8 +1,8 @@
 {
-  "label": "🚀 Aplicações Avançadas",
+  "label": "🚀 Advanced Applications",
   "position": 20,
   "link": {
     "type": "generated-index",
-    "description": "Algumas aplicações de Engenharia de Prompt mais avançadas e poderosas."
+    "description": "Some very powerful, but more advanced applications of prompt engineering."
   }
 }
