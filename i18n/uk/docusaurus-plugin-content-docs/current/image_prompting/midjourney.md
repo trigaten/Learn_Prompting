@@ -95,7 +95,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 </div>
 
 ## Запити-зображення
-Завантаживши зображення в Discord і використовуючи його URL-адресу в запиті, ви можете дати вказівку Midjourney використовувати це зображення для впливу на вміст, стиль і композицію ваших результатів. Приклад: [Космонавт (Джерело: Вікіпедія)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
+Завантаживши зображення в Discord і використовуючи його URL-адресу в запиті, ви можете дати вказівку Midjourney використовувати це зображення для впливу на вміст, стиль і композицію ваших результатів. Example: [Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
 
 ```text
 /imagine prompt: [image URL], impressionist painting
