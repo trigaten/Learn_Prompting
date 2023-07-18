@@ -2,34 +2,33 @@
 sidebar_position: 40
 ---
 
-# 🟡 コーディングの補助
+# 🟡 Coding Assistance
 
-ChatGPT を使用すると、デバッグ、コード生成、再フォーマット、コメントなどができます。40以上のプログラミング言語でコードを扱うことができます。
+You can use ChatGPT for debugging, code generation, reformatting, commenting, and more. It can work with code in over 40 programming languages.
 
-|   非常に古い  |        古い    |     新しい            |         最新          |
-|-------------|----------------|---------------------|-----------------------|
-| BASIC       | Perl           | Swift               | Kotlin                |
-| Assembly    | Pascal         | TypeScript          | Julia                 |
-| Fortran     | PHP            | Rust                | Crystal               |
-| Lisp        | Prolog         | Kotlin/Native       | Racket                |
-| COBOL       | C              | Julia (GPU)         | Lua                   |
-| Algol       | PL/I           | Go                  | Zig                   |
-| SNOBOL      | C++            | Dart                | Nim                   |
-| RPG         | Smalltalk      | Elixir              | Crystal (LLVM)        |
-| Forth       | Tcl            | Groovy              | Vlang                 |
-| Ada         | SQL            | Scala Native        | Erlang                |
+| Very Old | Old       | Recent        | Bleeding Edge  |
+| -------- | --------- | ------------- | -------------- |
+| BASIC    | Perl      | Swift         | Kotlin         |
+| Assembly | Pascal    | TypeScript    | Julia          |
+| Fortran  | PHP       | Rust          | Crystal        |
+| Lisp     | Prolog    | Kotlin/Native | Racket         |
+| COBOL    | C         | Julia (GPU)   | Lua            |
+| Algol    | PL/I      | Go            | Zig            |
+| SNOBOL   | C++       | Dart          | Nim            |
+| RPG      | Smalltalk | Elixir        | Crystal (LLVM) |
+| Forth    | Tcl       | Groovy        | Vlang          |
+| Ada      | SQL       | Scala Native  | Erlang         |
+|          | Java      |               |                |
 
-## コード生成
+## Code Generation
 
-チャットGPTにコード生成を指示するのは、次のように簡単です。
-
-(日本語訳)
+Instructing ChatGPT to generate code is as simple as this:
 
 ```text
-ジュニアの Python プログラマーとして行動してください。6 つの項目を持つ 3 つの配列（前置詞、動詞、名詞）から madlibs (指定された文の一部に、欠けている単語をプレイヤーが自分で埋めることができる遊びのこと) を生成するコードを書いて、名詞も直接目的語として使用します。それを書いたら、コードを実行してください。
+Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
 ```
-　
-出力結果は以下のようになります。
+
+The output will be something like:
 
 ```text
 // highlight-start
@@ -49,14 +48,26 @@ print(madlib)
 // highlight-end
 ```
 
-## コメントと再フォーマット
+Try it here:
 
-ChatGPT に、コードにコメントを追加し、可読性を高めるように依頼することができます。下記のプロンプトに従って、ハッシュマーク 3 つを追加し、整理してほしいコードを貼り付けてください。
+<div 
+trydyno-embed="" 
+openai-model="text-davinci-003" 
+initial-prompt="Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects." 
+initial-response="" 
+max-tokens="512" 
+box-rows="5" 
+model-temp="0.0" 
+top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
 
-(日本語訳)
+## Commenting and Reformatting Code
+
+You can ask ChatGPT to add comments to your code, and reformat it for legibility. After your prompt instruction, add three hashmarks and then paste in the code you'd like it to clean up:
 
 ```text
-この Python のコードにコメントを追加し、可読性を高めるためにフォーマットしてください。 
+Please add line comments to this Python code and reformat it for legibility:  
 
 import math
 amplitude = 30
@@ -68,39 +79,35 @@ for i in range(num_points):
 ###
 ```
 
-出力結果は以下のようになります。
-
-(日本語訳)
+The output will be something like:
 
 ```text
 // highlight-start
-# mathモジュールをインポート
+# Import the math module
 import math
 
-# 波の振幅、周波数、点の数を設定
+# Set the amplitude, frequency, and number of points in the wave
 amplitude = 30
 frequency = 2
 num_points = 50
 
-# 波の各点をループ処理
+# Loop over each point in the wave
 for i in range(num_points):
-    # math モジュールの sin 関数を用いて、波の y 座標を計算。
+    # Calculate the y value of the wave using the sine function from the math module
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
-    
-    # 波の適切な位置に Padding のためのスペースとアスタリスクを出力。
+
+    # Print a space for padding, followed by an asterisk at the appropriate position on the wave
     print(' ' * (amplitude + y) + '*')
 
 // highlight-end
 ```
 
-## デバッグ
+## Debugging
 
-ChatGPTは、コード内の構文エラーだけでなく、実行時に発生する論理エラーも検出できます。以下は、Python スクリプトの例であり、3 行目の論理エラーにより、4 行目でゼロ除算エラーが発生します。このエラーを見つけて修正するために、次の簡単なプロンプトを試してください。
-
-(日本語訳)
+Not only can ChatGPT detect syntax errors in code, but it can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error on line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
 
 ```text
-この Python コードをデバッグしてください。
+Please debug this Python code:  
 
 1. pizza_cost = 100
 2. partygoers = 10
@@ -110,7 +117,7 @@ ChatGPTは、コード内の構文エラーだけでなく、実行時に発生�
 6.    partygoers -= 2
 ```
 
-出力には、分母変数が正の値に保たれるように変更された while ループが含まれています。
+The output will include the corrected while loop, which is changed to ensure the denominator variable stays positive:
 
 ```text
 // highlight-start
@@ -118,27 +125,26 @@ ChatGPTは、コード内の構文エラーだけでなく、実行時に発生�
 // highlight-end
 ```
 
-より微妙なエラーを解決するには、エラーメッセージや環境変数、含まれるライブラリ、入力の変化など、さらに詳細な情報が必要になる場合があります。
+For more nuanced errors, you may need to add more specifics: the error message, environment variables, included libraries or variations in inputs.
 
 
-## コードの最適化
+## Optimizing Code
 
-スクリプトの実行に時間がかかりすぎる場合、ChatGPT で最適化することができます。効率の悪い、素数を見つけるスクリプトの最適化の例を示します。
+If your script is taking too long to execute, ChatGPT can optimize it. Here's an example of optimizing an inefficient script that finds prime numbers:
 
-(日本語訳)
+```text
+Act like a very senior python developer. Please optimize this script:  
 
-```python
-最上級の Python 開発者のように振る舞ってください。このスクリプトを最適化してください。
-
-for num in range(2, 101):
-    for i in range(2, int(num**0.5)+1):
-        if (num % i) == 0:
-            break
-    else:
-        print(num)
+for num in range(1, 101):
+    if num  1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num)
 ```
 
-出力は、素数を見つけるための [Eratosthenes の篩のアルゴリズム](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)を使用するスクリプトになる場合があります。
+The output might be a script that uses the [Sieve of Eratosthenes algorithm](https://www.geeksforgeeks.org/sieve-of-eratosthenes/) for finding prime numbers:
 
 ```text
 // highlight-start
@@ -151,17 +157,16 @@ print(numbers)
 // highlight-end
 ```
 
-注意して欲しいのは、私たちは ChatGPT にこのスクリプトを最適化するために「上級開発者のように振る舞う」ように要求したということです。また、特定の専門分野 (例: ソートアルゴリズム) や経験年数を持っていることを指示することもできます。代替案として、スクリプトが複雑すぎる場合は、「超初心者の開発者として」そのスクリプトを書くように ChatGPT に依頼することができます。
+Note that we asked the bot to "act like a _senior_ developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask ChatGPT to write that script "as a _very junior_ developer."
 
 
-## プログラミング言語間の翻訳
+## Translating Between Programming Languages
 
-ChatGPT が提供する非常に便利な機能の 1 つは、プログラムを 1 つの言語から別の言語への書き換えです。これによって、古い言語で書かれたコードをより現代的なものにアップグレードするといった典型的な用途があります。
-
-(日本語訳)
+A very useful feature ChatGPT offers is the ability to port programs from one language to another. A typical use for this might be upgrading code in an older language to a more modern one:
 
 ```text
-COBOL と Python 両方の知識を持った経験豊富な開発者のように振る舞ってください。COBOL のプログラムを Python に変換してください。
+Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
+
 
 IDENTIFICATION DIVISION.
 PROGRAM-ID. CALCULATE-SS-TAX.
@@ -181,7 +186,7 @@ DISPLAY "Social Security tax is: $", SS-TAX.
 STOP RUN.
 ```
 
-出力は次のようになるはずです。
+The output might be something like this:
 
 ```text
 // highlight-start
@@ -193,23 +198,20 @@ print("Social Security tax is: $", round(ss_tax, 2))
 ```
 
 
-## 複数のファイルをまたいだリファクタリング
+## Handling Multiple Files and Refactoring your Codebase
 
-ChatGPT に複数のファイルを評価させたい場合はどうすればよいでしょうか？
-簡単です。ファイル名を提供し、次のように各コードを貼り付けてください。
-
-(日本語訳)
+What if you want ChatGPT to evaluate **multiple** files? Simply supply the filenames and paste the code for each:
 
 ```text
-私のPythonスクリプトは、異なるディレクトリにある以下の2つのファイルを使用しています。conversation.py を実行した際の出力を表示してください。
+My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
 
-ファイル 1: ./phrases/coming_and_going.py
+BEGIN FILE 1: ./phrases/coming_and_going.py
 def hi(name):
    print(f"Hello, {name}!")
 def bye(name):
    print(f"Goodbye, {name}!")
 
-ファイル 2: ./conversation.py
+BEGIN FILE 2: ./conversation.py
 from phrases.coming_and_going import hi, bye
 hi("John")
 bye("John")
@@ -220,33 +222,30 @@ Goodbye, John!
 // highlight-end
 ```
 
-このテクニックを使用すると、1 つのプロンプトで複数のファイルを ChatGPT に送信し、コードをリファクタリングすることができます。 または、それぞれを「覚えさせて」、後で別のプロンプトで実行するように依頼することもできます。
 
-## データベースサーバーのシミュレーション
+Using this technique, you can submit multiple files to ChatGPT in a single prompt and ask it to refactor the code. Alternatively, you can ask it to "memorize" each one and then execute it in a later prompt.
 
-ChatGPT はコードだけでなく、データベース、Web サーバー、および電子メールサーバーなどのサーバー環境をシミュレートすることもできます。 以下のプロンプトを参考にしてください。
+## Simulating a Database Server
 
-(日本語訳)
+Not only can ChatGPT work with code, but it can simulate server environments like databases, web and email servers. Consider this prompt:
 
 ```text
-Microsoft SQL Server として機能してください。「politics」という名前のデータベースを作成し、その中に「politicians」というテーブルを作成してください。異なる時代から世界中の有名な政治家 50 人のデータを入力してください。出身国、生年月日、必要に応じて死亡日のための列を追加してください。最も長生きした 3 人の政治家のビューを作成してください。そのビューの内容を出力する Transact-SQL コマンドを作成して実行してください。
+Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
 ```
 
-出力は次のようになります。
-
-(日本語訳)
+The output will be something like:
 
 ```text
 // highlight-start
--- 「politics」データベースを作成
+-- Create the "politics" database
 CREATE DATABASE politics;
 GO
 
--- 「politics」データベースを使用
+-- Use the "politics" database
 USE politics;
 GO
 
--- 「politicians」テーブルを作成
+-- Create the "politicians" table
 CREATE TABLE politicians (
     id INT PRIMARY KEY,
     full_name VARCHAR(50),
@@ -254,21 +253,17 @@ CREATE TABLE politicians (
     date_of_birth DATE,
     date_of_death DATE
 );
--- 省略
+-- etc.
 // highlight-end
 ```
 
-そこから、列やインデックスなどを追加することができます。
-
-(日本語訳)
+From there, you can add columns, indexes and more:
 
 ```
-politicians テーブルに second_in_command (補佐官) という列を追加し、各行の情報を更新してください。
+Add a column to the politicians table for the second-in-command and update it for each row.
 ```
 
-以下は、出力例です。
-
-(日本語訳)
+The output might be something like:
 
 ```text
 // highlight-start
@@ -280,64 +275,60 @@ SET second_in_command =
         WHEN 'Winston Churchill' THEN 'Clement Attlee'
         WHEN 'Franklin D. Roosevelt' THEN 'Harry S. Truman'
         WHEN 'Mao Zedong' THEN 'Lin Biao'
-        -- 各政治家について分岐を追加する
+        -- add more cases for each politician
         ELSE NULL
     END;
 // highlight-end
 ```
 
-## ウェブサーバーのシミュレーション
+## Simulating a Web Server
 
-ChatGPT は、他の多くのサーバーやAPIをシミュレートすることができます。以下は、特定のブラウザリクエストヘッダーに対するApacheサーバーのレスポンスをシミュレートするプロンプトの例です。
-
-(日本語訳)
+ChatGPT can simulate many other servers and APIs. Here's an example of a prompt that simulates an Apache server response to specific browser request headers:
 
 ```text
-Apache ウェブサーバーとして動作します。これらの HTTP ヘッダーにどのように応答しますか？
+Act as an Apache web server. How would you respond to these HTTP headers?
 
 GET /example HTTP/1.1
 Host: www.example.com
 ```
 
-出力は次のようになります。
-
-(日本語訳)
+The output will be something like:
 
 ```text
 // highlight-start
 HTTP/1.1 200 OK
-Date: [現在の日付と時刻]
+Date: [current date and time]
 Server: Apache/2.4.41 (Ubuntu)
-Last-Modified: [要求されたリソースの最終変更日時]
-Content-Type: [要求されたリソースの MIME タイプ、例えば text/html]
+Last-Modified: [date and time of last modification of the requested resource]
+Content-Type: [MIME type of the requested resource, e.g. text/html]
 // highlight-end
 ```
 
-ChatGPT が模擬できるサーバーやAPIの種類の一部を以下に示します。
+Here are just some of the types of servers and APIs that ChatGPT can emulate:
 
-|   非常に古い  |        古い    |     新しい            |         最新          |
-|-------------|----------------|------------------------|----------------------|
-| Telnet      | HTTP/1.0       | RESTful API            | GraphQL API          |
-| FTP         | SMTP           | SOAP API               | GRPC API             |
-| POP3        | LDAP           | OAuth 2.0              | Docker API           |
-| IMAP        | DHCP           | OpenAPI (Swagger)      | Kubernetes API       |
-| DNS         | NTP            | gRPC-web API           | Istio API            |
-| SNMP        | RADIUS         | MQTT API               | Prometheus API       |
-| Syslog      | SFTP           | WebSocket API          | Envoy API            |
-| TFTP        | SSH            | AWS API Gateway        | Istio Mixer API      |
-| NFS         | XML-RPC        | Azure API Management   | OpenTracing API      |
-| SMB         | JSON-RPC       | Google Cloud Endpoints | NATS Streaming API   |
+| Very Old | Old      | Recent                 | Bleeding Edge      |
+| -------- | -------- | ---------------------- | ------------------ |
+| Telnet   | HTTP/1.0 | RESTful API            | GraphQL API        |
+| FTP      | SMTP     | SOAP API               | GRPC API           |
+| POP3     | LDAP     | OAuth 2.0              | Docker API         |
+| IMAP     | DHCP     | OpenAPI (Swagger)      | Kubernetes API     |
+| DNS      | NTP      | gRPC-web API           | Istio API          |
+| SNMP     | RADIUS   | MQTT API               | Prometheus API     |
+| Syslog   | SFTP     | WebSocket API          | Envoy API          |
+| TFTP     | SSH      | AWS API Gateway        | Istio Mixer API    |
+| NFS      | XML-RPC  | Azure API Management   | OpenTracing API    |
+| SMB      | JSON-RPC | Google Cloud Endpoints | NATS Streaming API |
 
 
-## コマンドラインのシミュレーション
+## Simulating a Command Line
 
-Linux（または Windows PowerShell）内のシェルはプログラミング言語でもあるため、ChatGPT を使用して対話し、ファイルシステムの環境を構築することができます。
+Since a shell within Linux (or Windows PowerShell) is also a programming language, you can interact with it using ChatGPT, and build an environment for your filesystem:
 
 ```
-Debian Linux コマンドシェルとして振る舞ってください。説明は最小限にし、ターミナルのように応答してください。最初のコマンドは次のとおりです: ls -l
+Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
 ```
 
-出力は次のようになります。
+The output will be something like:
 
 ```text
 // highlight-start
@@ -347,7 +338,7 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 // highlight-end
 ```
 
-他のコマンドを試してみてください。
+Try experimenting with other commands:
 
 ```text
 >touch greeting.txt  
@@ -355,7 +346,7 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 >ls -l  
 ```
 
-ChatGPT はあなたの変更を（少なくともしばらくの間）覚えているので最終出力は次のようになるはずです。
+ChatGPT should remember your changes (for a while, at least) and the final output ought to something like:
 
 ```text
 // highlight-start
@@ -366,8 +357,8 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 // highlight-end
 ```
 
-Chat GPT を仮想マシンとして使用する方法の詳細については、[engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/) を参照してください。
+A full discussion of using ChatGPT as a virtual machine can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
 
 ---
 
-このセクションは [prompt engineering training](https://promptyes.com/) を提供する Prompt Yes! の貢献によるものです。
+Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes.com/).
