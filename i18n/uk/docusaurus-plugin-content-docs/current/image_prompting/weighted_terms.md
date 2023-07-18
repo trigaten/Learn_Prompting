@@ -11,7 +11,7 @@ import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_tr
 import planets from '@site/docs/assets/images_chapter/planets.webp';
 
 
-# Приклад
+# Наприклад
 
 Ось кілька гір, отриманих за допомогою Stable Diffusion, за запитом `mountain`.
 
