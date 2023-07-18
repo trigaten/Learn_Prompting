@@ -67,24 +67,49 @@ Para crear la indicación (prompt), experimentaremos con:
 - **Los últimos mensajes intercambiados entre el usuario y el chatbot**. Estos son útiles para mensajes enviados por el usuario donde el contexto completo no está especificado. Veremos un ejemplo de esto más adelante. Echa un vistazo a [este ejemplo](https://learnprompting.org/docs/applied_prompting/build_chatgpt) para ver cómo gestionar conversaciones con GPT-3.
 - Por último, **la pregunta del usuario**.
 
+<div style={{textAlign: 'left'}}>
+  <img src={ImagePrompt} style={{width: "700px"}} />
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Un documento que explica cómo funciona el inicio de sesión en VideoGram. Imagen del autor.</p>
+</div>
+
 Comencemos nuestra indicación usando la técnica de <span style={{backgroundColor: "#FFF2CC"}}>role-prompting</span>.
 
 <pre>
-    <span style={{backgroundColor: "#FFF2CC"}}>Como un chatbot avanzado llamado Skippy, tu objetivo principal es ayudar a los usuarios lo mejor que puedas.</span><br/>
+    <span className="yellow-highlight"><span style={{backgroundColor: "#FFF2CC"}}>Como un chatbot avanzado llamado Skippy, tu objetivo principal es ayudar a los usuarios de la mejor manera posible.</span></span>
 </pre>
 
-Comencemos nuestro prompt usando la técnica de <span style={{backgroundColor: "#FFF2CC"}}>solicitud de roles</span>.
-
-<pre>
-    <span style={{backgroundColor: "#FFF2CC"}}>Como un chatbot avanzado llamado Skippy, tu objetivo principal es ayudar a los usuarios de la mejor manera posible.</span><br/>
-</pre>
 Luego, supongamos que el paso de búsqueda semántica extrae el siguiente documento de nuestra base de conocimientos. Todos los documentos describen cómo funciona el producto VideoGram, que es un producto imaginario similar a Instagram, pero solo para videos.
 
 <div style={{textAlign: 'left'}}>
   <img src={ImageLogin} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Un documento que explica cómo funciona el inicio de sesión en VideoGram. Imagen del autor.</p>
+  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>A document explaining how login to VideoGram works. Image by the author.</p>
 </div>
+
 Podemos agregar <span style={{backgroundColor: "#FFF2CC"}}>su contenido</span> dentro del prompt de esta manera.
+
+<pre>
+    As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/><br/>
+
+    <span className="yellow-highlight">
+    START CONTEXT<br/>
+    Login to VideoGram from Website<br/>
+    1. Abre tu navegador web y ve al sitio web de VideoGram.<br/>
+    2. Haz clic en el botón "Iniciar sesión" ubicado en la esquina superior derecha de la página.<br/>
+    3. En la página de inicio de sesión, ingresa tu nombre de usuario y contraseña de VideoGram.<br/>
+    4. Una vez que hayas ingresado tus credenciales, haz clic en el botón "Iniciar sesión".<br/>
+    5. You should now be logged in to your VideoGram account.<br/>
+    <br/>
+    Login to VideoGram from Mobile App<br/>
+    1. Open the VideoGram app on your mobile device.<br/>
+    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
+    3. En la página de inicio de sesión, ingresa tu nombre de usuario y contraseña de VideoGram.<br/>
+    4. Once you have entered your credentials, tap the “Login” button.<br/>
+    5. You should now be logged in to your VideoGram account.<br/>
+    END CONTEXT<br/>
+    </span>
+</pre>
+
+Por último, necesitamos agregar <span style={{backgroundColor: "#FFF2CC"}}>la conversación y la pregunta del usuario</span> al final del prompt, como en el siguiente ejemplo.
 
 <pre>
     Como un chatbot avanzado llamado Skippy, tu objetivo principal es ayudar a los usuarios de la mejor manera posible.<br/><br/>
@@ -104,9 +129,20 @@ Podemos agregar <span style={{backgroundColor: "#FFF2CC"}}>su contenido</span> d
     4. Una vez que hayas ingresado tus credenciales, toca el botón "Iniciar sesión".<br/>
     5. Ahora deberías haber iniciado sesión en tu cuenta de VideoGram.<br/>
     FIN DE CONTEXTO<br/>
-    </span>
+    </span><br/>
 </pre>
-Por último, necesitamos agregar <span style={{backgroundColor: "#FFF2CC"}}>la conversación y la pregunta del usuario</span> al final del prompt, como en el siguiente ejemplo.
+
+Pasando este prompt a GPT-3, obtuve la siguiente respuesta generada:
+
+<pre>
+    <span className="bluegreen-highlight">No problem! On the website, the login button is located in the top right corner of the page. En la aplicación móvil, el botón de inicio de sesión se encuentra en la esquina inferior derecha. Hágamelo saber si necesita más ayuda!</span>
+</pre>
+
+Observa cómo la información en la respuesta generada proviene del documento de base de conocimiento.
+
+## Desambiguación de preguntas con GPT-3
+
+Intentemos con una frase del usuario más ambigua, como <span style={{backgroundColor: "#FFF2CC"}}>“no puedo iniciar sesión”</span>. Aquí está el prompt completo:
 
 <pre>
     Como un chatbot avanzado llamado Skippy, tu objetivo principal es ayudar a los usuarios de la mejor manera posible.<br/>
@@ -120,44 +156,10 @@ Por último, necesitamos agregar <span style={{backgroundColor: "#FFF2CC"}}>la c
     5. Ahora deberías haber iniciado sesión en tu cuenta de VideoGram.<br/>
     <br/>
     Iniciar sesión en VideoGram desde la aplicación móvil<br/>
-    1. Abre la aplicación de VideoGram en tu dispositivo móvil.<br/>
-    2. En la página principal, toca el botón "Iniciar sesión" ubicado en la esquina inferior derecha. 3. En la página de inicio de sesión, ingresa tu nombre de usuario y contraseña de VideoGram.<br/>
-    4. Una vez que hayas ingresado tus credenciales, toca el botón "Iniciar sesión".<br/>
-    5. Ahora deberías haber iniciado sesión en tu cuenta de VideoGram.<br/>
-    FIN DE CONTEXTO<br/>
-<br/>
-<span style={{backgroundColor: "#FFF2CC"}}>SKIPPY: ¡Hola, soy Skippy! ¿En qué puedo ayudarte?<br/>
-USUARIO: No puedo encontrar el botón de inicio de sesión.<br/>
-SKIPPY:</span><br/>
-</pre>
-
-Pasando este prompt a GPT-3, obtuve la siguiente respuesta generada:
-
-<pre>
-    <span style={{backgroundColor: "#D2F4D3"}}>No hay problema! En el sitio web, el botón de inicio de sesión se encuentra en la esquina superior derecha de la página. En la aplicación móvil, el botón de inicio de sesión se encuentra en la esquina inferior derecha. Hágamelo saber si necesita más ayuda!</span>
-</pre>
-
-Observa cómo la información en la respuesta generada proviene del documento de base de conocimiento.
-
-## Desambiguación de preguntas con GPT-3
-Intentemos con una frase del usuario más ambigua, como <span style={{backgroundColor: "#FFF2CC"}}>“no puedo iniciar sesión”</span>. Aquí está el prompt completo:
-
-<pre>
-    Como un chatbot avanzado llamado Skippy, tu objetivo principal es ayudar a los usuarios lo mejor que puedas.<br/>
-    <br/>
-    COMIENZA EL CONTEXTO<br/>
-    Iniciar sesión en VideoGram desde el sitio web:<br/>
-    1. Abre tu navegador web y ve al sitio web de VideoGram.<br/>
-    2. Haz clic en el botón "Iniciar sesión" ubicado en la esquina superior derecha de la página.<br/>
-    3. En la página de inicio de sesión, ingresa tu nombre de usuario y contraseña de VideoGram.<br/>
-    4. Una vez que hayas ingresado tus credenciales, haz clic en el botón "Iniciar sesión".<br/>
-    5. Ahora deberías haber iniciado sesión en tu cuenta de VideoGram.<br/>
-    <br/>
-    Iniciar sesión en VideoGram desde la aplicación móvil:<br/>
     1. Abre la aplicación VideoGram en tu dispositivo móvil.<br/>
     2. En la página principal, toca el botón "Iniciar sesión" ubicado en la esquina inferior derecha.<br/>
     3. En la página de inicio de sesión, ingresa tu nombre de usuario y contraseña de VideoGram.<br/>
-    4. Una vez que hayas ingresado tus credenciales, toca el botón "Iniciar sesión".<br/>
+    4. Once you have entered your credentials, tap the “Login” button.<br/>
     5. Ahora deberías haber iniciado sesión en tu cuenta de VideoGram.<br/>
     TERMINA EL CONTEXTO<br/>
     <br/>
@@ -165,25 +167,27 @@ Intentemos con una frase del usuario más ambigua, como <span style={{background
     USUARIO: <span style={{backgroundColor: "#FFF2CC"}}>No puedo iniciar sesión</span><br/>
     SKIPPY:<br/>
 </pre>
+
 GPT-3 intentará entender mejor cuál es el problema del usuario.
 
 <pre>
-    <span style={{backgroundColor: "#D2F4D3"}}>Lo siento mucho. ¿Puede decirme si está intentando iniciar sesión a través del sitio web de VideoGram o de la aplicación móvil?</span>
+    <span className="bluegreen-highlight">Lo siento mucho. ¿Puede decirme si está intentando iniciar sesión a través del sitio web de VideoGram o de la aplicación móvil?</span>
 </pre>
+
 A continuación, aquí está cómo continúa la conversación completa. El prompt completo está oculto para una mejor visibilidad.
 
 <pre>
     USER: No puedo iniciar sesión.<br/>
     SKIPPY: Lamento escuchar eso. ¿Puede decirme si está intentando iniciar sesión a través del sitio web o de la aplicación móvil de VideoGram?<br/>
     USER: Aplicación móvil<br/>
-    <span style={{backgroundColor: "#D2F4D3"}}>SKIPPY: De acuerdo, no hay problema. Para iniciar sesión a través de la aplicación móvil, abra la aplicación de VideoGram en su dispositivo móvil. En la página principal, toque el botón "Iniciar sesión" ubicado en la esquina inferior derecha. En la página de inicio de sesión, ingrese su nombre de usuario y contraseña de VideoGram. Una vez que haya ingresado sus credenciales, toque el botón "Iniciar sesión". Ahora debería haber iniciado sesión en su cuenta de VideoGram. Por favor, avíseme si necesita alguna otra ayuda.</span><br/>
+    <span style={{backgroundColor: "#D2F4D3"}}>SKIPPY: De acuerdo, no hay problema. Para iniciar sesión a través de la aplicación móvil, abra la aplicación de VideoGram en su dispositivo móvil. En la página principal, toque el botón "Iniciar sesión" ubicado en la esquina inferior derecha. En la página de inicio de sesión, ingrese su nombre de usuario y contraseña de VideoGram. Una vez que haya ingresado sus credenciales, toque el botón "Iniciar sesión". Ahora debería haber iniciado sesión en su cuenta de VideoGram. Por favor, avíseme si necesita alguna otra ayuda.</span>
 </pre>
 
 GPT-3 puede manejar la disambiguación, siempre que tenga la información contextual adecuada.
 
 ## Problemas al generar respuestas con GPT-3
 
-Sin embargo, existe un problema en generar respuestas con GPT-3.
+The previous examples worked well. However, there are several ways in which this chatbot could fail.
 
 Si le preguntamos "¿Es la aplicación móvil gratuita?" a GPT-3 pasando el documento de inicio de sesión como contexto, a menudo obtendríamos una respuesta como "Sí, la aplicación móvil de VideoGram es gratuita para descargar y usar", incluso si dicha información no está contenida en la información de contexto. ¡Generar información falsa es muy malo para los chatbots de servicio al cliente!
 
