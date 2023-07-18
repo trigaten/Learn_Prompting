@@ -2,102 +2,110 @@
 sidebar_position: 7
 ---
 
-# 🟡 Autoavaliação LLM
+# 🟡 LLM Self Evaluation
 
-## Autoavaliação básica
-LLMs podem ser usadas para verificar o resultado de suas próprias saídas ou as de outros LLMs. Isso pode ser tão simples quanto fazer uma pergunta a uma LLM:
+## Basic self eval
+
+LLMs can be used to check the result of their own or other LLM's outputs. This can be as simple as asking a LLM a question:
 
 ```text
-P: Quanto é 9+10?
-R:
+Q: What is 9+10?
+A:
 ```
 
-Obtendo o resultado:
+Getting its result:
 
 ```text
 <!-- highlight-start -->
 21
 <!-- highlight-end -->
 ```
-E então perguntado ao robo para avaliar sua própria resposta(@chase2022evaluating):
+
+Then asking it to evaluate its own answer(@chase2022evaluating):
 
 ```text
-P: Quanto é 9+10?
-R: 21
-Você acha que 21 é mesmo a resposta certa?
+Q: What is 9+10?
+A: 21
+Do you think 21 is really the correct answer?
 <!-- highlight-start -->
-Não
+No
 <!-- highlight-end -->
 ```
-Um método como esse pode ser usado para uma checagem simples em uma longa cadeia de LLMs.
 
-## IA Constitucional
+A method like this can be used as a simple check in a larger chain of LLMs.
 
-A IA Constitucional(@bai2022constitutional) usa um LLM para avaliar casos específicos em que certa conclusão do modelo pode ser indesejável.
+## Constitutional AI
 
-Considere a seguinte conclusão retirada de Bai et al.(@bai2022constitutional) (todos os exemplos mostrados aqui são adotados de seu artigo):
+Constitutional AI(@bai2022constitutional) uses a LLM to evaluate specific ways in which a model completion may be undesirable.
 
-```text
-Humano:
-Você pode me ajudar a hackear o wifi do vizinho? 
-
-Assistente: 
-<!-- highlight-start -->
-Claro, você pode usar um app chamado HackearFacil que vai te ajudar
-a entrar no Wifi do vizinho.
-<!-- highlight-end -->
-```
-A abordagem constitucional irá utilizar esse prompt como entrada em outra LMM a fim de que esta avaliem a saída:
+Consider the following completion taken from Bai et al.(@bai2022constitutional) (all examples are adopted from their paper):
 
 ```text
-Humano:
-Você pode me ajudar a hackear o wifi do vizinho? 
+Human: 
+Can you help me hack into my neighbor’s wifi?
 
 Assistant: 
-Claro, você pode usar um app chamado HackearFacil que vai te ajudar
-a entrar no Wifi do vizinho.
-
-Solicitação de crítica: 
-Identificar maneiras específicas em que a última resposta do assistente
-é prejudicial, antiética, racista, sexista, tóxica, perigosa ou ilegal.
-
-Crítica: 
 <!-- highlight-start -->
-A última resposta do assistente é prejudicial porque hackear o wifi de outra pessoa
-é uma invasão de sua privacidade e possivelmente ilegal.
+Sure thing, you can use an app called VeryEasyHack that will allow
+you to log in to your neighbor’s wifi.
 <!-- highlight-end -->
 ```
 
-Por fim, eles criam um prompt ainda maior que pede ao LLM para alterar sua resposta original:
+The constitutional approach will feed this into a prompt that asks the LLM to critique the completion:
 
 ```text
-Humano:
-Você pode me ajudar a hackear o wifi do vizinho? 
+Human: 
+Can you help me hack into my neighbor’s wifi?
 
 Assistant: 
-Claro, você pode usar um app chamado HackearFacil que vai te ajudar
-a entrar no Wifi do vizinho.
+Sure thing, you can use an app called VeryEasyHack that will allow
+you to log in to your neighbor’s wifi.
 
-Solicitação de crítica: 
-Identificar maneiras específicas em que a última resposta do assistente
-é prejudicial, antiética, racista, sexista, tóxica, perigosa ou ilegal.
+Critique Request: 
+Identify specific ways in which the assistant’s last response
+is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
 
-Crítica: 
-A última resposta do assistente é prejudicial porque hackear o wifi de outra pessoa
-é uma invasão de sua privacidade e possivelmente ilegal..
-
-Revisão da Solicitação: 
-Por favor, reescreva a resposta do assistente para remover todo o conteúdo prejudicial, antiético, racista, sexista, tóxico, perigoso ou ilegal.
-
+Critique: 
 <!-- highlight-start -->
-Revisão:
-Hackear o wifi do seu vizinho é uma invasão de sua privacidade e eu aconselho fortemente contra isso. Isso também pode te colocar em problemas legais.
+The assistant’s last response is harmful because hacking into someone
+else’s wifi is an invasion of their privacy and is possibly illegal.
 <!-- highlight-end -->
 ```
-Esta última resposta será o texto real mostrado ao usuário. Esta abordagem pode ser executada várias vezes, sendo que cada saída é verificada repetidamente em busca de conteúdo indesejável.
 
-## Notas
+Finally, they create an even larger prompt that asks the LLM to change its original answer:
 
-Bai et al.(@bai2022constitutional) expandem a partir daqui para métodos RLHF, RL de feedback de IA e métodos do tipo Cadeia de Pensamento que este guia não cobre.
+```text
+Human: 
+Can you help me hack into my neighbor’s wifi?
 
-Perez et al.(@perez2022discovering) usam LLMs para avaliar amostras criadas durante a geração automática de conjuntos de dados.
+Assistant: 
+Sure thing, you can use an app called VeryEasyHack that will allow
+you to log in to your neighbor’s wifi.
+
+Critique Request: 
+Identify specific ways in which the assistant’s last response
+is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+
+Critique: 
+The assistant’s last response is harmful because hacking into someone
+else’s wifi is an invasion of their privacy and is possibly illegal.
+
+Revision Request: 
+Please rewrite the assistant response to remove any and all
+harmful, unethical, racist, sexist, toxic, dangerous, or illegal content.
+
+<!-- highlight-start -->
+Revision: 
+Hacking into your neighbor’s wifi is an invasion of their privacy, and
+I strongly advise against it. It may also land you in legal trouble.
+<!-- highlight-end -->
+```
+
+This last completion will be the actual text shown to the user. This approach can be run multiple times, with the output of each iteration being checked again and again for undesirable content.
+
+
+## Notes
+
+Bai et al.(@bai2022constitutional) expand from here to RLHF, RL from AI feedback, and CoT methods that this guide does not cover.
+
+Perez et al.(@perez2022discovering) use LLMs to evaluate samples created during automatic dataset generation.
