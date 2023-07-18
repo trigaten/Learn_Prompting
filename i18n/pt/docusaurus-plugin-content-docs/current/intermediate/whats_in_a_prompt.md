@@ -2,14 +2,15 @@
 sidebar_position: 7
 ---
 
-# 🟢 O que há em um Prompt?
+# 🟢 What's in a Prompt?
 
-Nas páginas anteriores, passamos por algumas estratégias de prompt diferentes.
-Esta página oferecerá alguns conselhos gerais sobre o que é realmente importante em um prompt.
+We have gone through a few different prompting strategies in the previous pages. This page will offer some general advice about what is actually important in a prompt.
 
-## "A Verdade Fundamental Tem Pouca Importância"
 
-Surpreendentemente, ao fornecer %%exemplos|exemplars%% em um prompt, as respostas reais (%%gold|gold_labels%%) nos exemplos não são importantes. Como mostrado na figura abaixo, fornecer %%rótulos aleatórios (random labels)|labels%%  nos exemplos praticamente não afeta o seu desempenho (@min2022rethinking). "Demo" é sinônimo de exemplar/exemplo na imagem abaixo.
+## "Ground Truth Matters Little"
+
+
+Surprisingly, when providing few shot %%exemplars|exemplars%% in prompts, the actual answers (%%gold|gold_labels%%) in the exemplars are not important. As shown in the figure below, providing random %%labels|labels%% in the exemplars barely hurts performance(@min2022rethinking). "Demo" is synonymous with exemplar in this image.
 
 import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
@@ -17,29 +18,27 @@ import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
   <img src={GoldUn} style={{width: "750px"}} />
 </div>
 
-## O Espaço de Rótulos (ou Categorias) (labelspace) importam!
+## Labelspace Matters
 
-Embora os rótulos ou respostas corretas nos exemplos não sejam importantes, o espaço de rótulos ou categorias é %%(labelspace)|labelspace%%. Mesmo quando você fornece rótulos aleatórios da categoria no seu exemplo, ainda assim isso ajuda o LLM a entender melhor as categorias e a melhorar os resultados. Além disso, é importante representar adequadamente a distribuição das categorias nos exemplos. A melhor prática nesse caso seria detalhar a amostra de acordo com a verdadeira distribuição dos rótulos.
+Even though the gold labels in the exemplars are not important, the %%labelspace|labelspace%% is. Even providing random labels from the labelspace helps the LLM get a better understanding of the labelspace, and improves results. Additionally, properly representing the distribution of the labelspace in the exemplars is important. Rather than uniformly sampling from the labelspace in the exemplars, it is better to sample according to the true distribution of the labels.
 
-## O Formato Importa
-Talvez a parte mais importante dos exemplos seja a forma como são formatados. Essa formatação instrui o LLM sobre como formatar corretamente a resposta em relação a sua solicitação.
+## Format Matters
 
-Considere os exemplos abaixo. Eles usam palavras em letras maiúsculas como respostas. Embora as respostas estejam completamente erradas (2 + 2 não é 50), o GPT-3 responde corretamente
-à última pergunta e segue o formato dos exemplos.
+Perhaps the most important part of exemplars is how they are formatted. This format instructs the LLM on how to properly format its answer to the prompt.
+
+For example, consider the below exemplars. They use all capital words as answers. Even though the answers are completely wrong (2+2 is not 50), GPT-3 correctly answers the last question, and follows the format of the others.
 
 ```text
-Quanto é 2+2? 
-CINQUENTA
-Quanto is 20+5?
-QUARENTA E TRÊS
-Quanto is 12+9?
+What is 2+2? 
+FIFTY
+What is 20+5?
+FORTY-THREE
+What is 12+9?
 // highlight-start
-VINTE E TRÊS
+TWENTY-ONE
 // highlight-end
 ```
 
 ## Notes
 
-Entre 4 e 8 exemplares é um bom número para usar em prompts de few-shot(@min2022rethinking), mas muitas vezes pode ser útil colocar o maior número de exemplares possível.
-
-[^labelspace]: Confira o [vocabulário de referência](https://learnprompting.org/docs/vocabulary#labels) para mais informações.
+Between 4-8 exemplars is a good number to use for few shot prompts(@min2022rethinking), but it can often be helpful to put as many as possible.
