@@ -2,11 +2,13 @@
 sidebar_position: 7
 ---
 
-# 🟢 ¿Qué es una Promoción?
+# 🟢 What's in a Prompt?
 
 Hemos pasado por algunas estrategias de promoción diferentes en las páginas anteriores. Esta página ofrecerá algunos consejos generales sobre lo que realmente es importante en una promoción.
 
+
 ## "La verdad terrenal es de poca importancia"
+
 
 Sorprendentemente, al proporcionar algunos pocos ejemplos en las promociones, las respuestas reales (%%gold|gold_labels%%) en los ejemplos no son importantes. Como se muestra en la figura a continuación, proporcionar etiquetas aleatorias en los ejemplos apenas afecta el rendimiento (@min2022rethinking). "Demo" es sinónimo de ejemplo en esta imagen.
 
@@ -27,18 +29,16 @@ Quizás la parte más importante de los ejemplos es cómo se formatean. Este for
 Por ejemplo, considere los siguientes ejemplos. Usan palabras todas en mayúsculas como respuestas. Aunque las respuestas son completamente incorrectas (2 + 2 no son 50), GPT-3 responde correctamente a la última pregunta y sigue el formato de las otras.
 
 ```text
-¿Cuánto es 2+2?
-CINCUENTA
-¿Cuánto es 20+5?
-CUARENTA-TRES
-¿Cuánto es 12+9?
+What is 2+2? 
+FIFTY
+What is 20+5?
+FORTY-THREE
+What is 12+9?
 // highlight-start
-VEINTIUNO
+TWENTY-ONE
 // highlight-end
 ```
 
 ## Notas
 
 Entre 4 y 8 ejemplos son una buena cantidad para usar en promociones de pocos disparos (@min2022rethinking), pero a menudo puede ser útil poner tantos como sea posible.
-
-[^labelspace]: See the [vocabulary reference](https://learnprompting.org/docs/vocabulary#labels) for more info.
