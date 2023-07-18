@@ -1,65 +1,57 @@
 ---
 sidebar_position: 1
 ---
-# 🟢 *Prompting*
 
-No capítulo anterior, nós dicutimos sobre IA e como os humanos podem ensinar IAs a realizar tarefas. O processo de
-instruir uma IA a fazer uma tarefa é chamado de *prompting*(@shin2020autoprompt). Nós enviamos para a IA uma série de
-instruções (o *prompt*) e ela executa a tarefa. *Prompts* podem ser simples como uma pergunta, ou complexos como um
-texto de vários parágrafos.
+# 🟢 Prompting
 
-Abaixo, alguns exemplos de *prompts*:
+import Prompt from '@site/docs/assets/basics/prompt.svg';
 
-#### 1) Resumindo um Artigo
+<div style={{textAlign: 'center'}}>
+  <Prompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+</div>
 
-Digamos que você está lendo um artigo sobre chuva de granizo em Minas Gerais. Você quer rapidamente capturar as ideias
-principais do artigo, então você mostra para a IA o que você está lendo e pede um resumo[^2]:
+In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks. The process of instructing an AI to do a task is called prompting(@shin2020autoprompt). We tell the AI a set of instructions (the prompt) and it performs the task. Prompts can be as simple as a instruction/question, or as complex as huge chunks of text.
 
-```txt
-A chuva de granizo no leste de Minas Gerais em 1985 foi um evento de queda de granizo e chuvas intensas que afetou
-severamente áreas dos vales do Rio Doce e Mucuri, no interior mineiro, em 30 de setembro de 1985. O município de
-Itabirinha, então denominado Itabirinha de Mantena, foi o mais afetado. Contava com cerca de 10 mil habitantes em 1985,
-dos quais 4 mil ficaram desabrigados. Somente nessa cidade foram registradas vinte vítimas fatais e seiscentos feridos.
+Here are two examples of prompts:
 
-Resuma esse parágrafo em uma única sentença.
+#### 1) Summarizing an Article
+
+Say you are reading an article about snowfall in Florida. You want to quickly get the main ideas of the article, so you show the AI what you are reading, and ask for a summary[^2]:
+
+```
+It is very rare for snow to fall in the U.S. state of Florida, especially in the central and southern portions of the state. With the exception of the far northern areas of the state, most of the major cities in Florida have never recorded measurable snowfall, though trace amounts have been recorded, or flurries in the air observed few times each century. According to the National Weather Service, in the Florida Keys and Key West there is no known occurrence of snow flurries since the European colonization of the region more than 300 years ago. In Miami, Fort Lauderdale, and Palm Beach there has been only one known report of snow flurries observed in the air in more than 200 years; this occurred in January 1977. In any event, Miami, Fort Lauderdale, and Palm Beach have not seen snow flurries before or since this 1977 event.
+
+Summarize this paragraph in a single sentence:
 ```
 
-Aqui está a resposta da IA. É uma leitura muito mais curta!
+Here is the AI's response. It is a much shorter read!
 
-<pre>
-  <div className="bluegreen-highlight">
-    Em 30 de setembro de 1985, uma chuva de granizo e chuvas intensas atingiu severamente as áreas dos vales do Rio Doce
-    e Mucuri no leste de Minas Gerais, resultando em 20 vítimas fatais e 600 feridos em Itabirinha, o município mais
-    afetado.
-  </div>
-</pre>
-
-#### 2) Resolvendo um Problema Matemático
-
-Se você tiver uma lista de equações matemáticas que você gostaria de resolver através de um modelo de linguagem, você
-pode criar um *prompt* utilizando a pergunda "Quanto é {{EQUAÇÃO}}".
-
-Para uma certa questão, seu *prompt* completo pode ser algo como:
-
-```txt
-Quanto é 965*590?
+```text
+// highlight-start
+Snowfall is extremely rare in Florida, with the exception of the far northern areas, and only one instance of snow flurries in the air has been recorded in the major cities of Miami, Fort Lauderdale, and Palm Beach in the last 200 years.
+// highlight-end
 ```
 
-Para esse *prompt*, a IA GPT-3 (text-davinci-003) algumas vezes responde incorretamente, por exemplo: `572850`. É aqui
-onde a engenharia de *prompt* entra em ação.
+#### 2) Math Word Problem Solving
 
-# Engenharia de *Prompt*
+If you have a dataset of mathematical equations that you would like a language model to solve, you can create a prompt by posing the question "What is EQUATION".
 
-Se, ao invés de perguntar `Quanto é 965*590?`, nós perguntarmos:
-`Responda a multiplicação corretamente. Quanto é 965*590? Responda a multiplicação corretamente.`, GPT-3 responderá
-corretamente `569350` na maioria das vezes. Por que isso acontece? Por que pedir para a IA duas vezes uma resposta
-correta indicando a operação matemática a ser utilizada ajuda? Como nós podemos criar *prompts* que geram ótimos
-resultados em nossas tarefas? Essa última pergunta em particular, é o foco do campo de Engenharia de *Prompt*, bem como
-desse curso.
+For a given question, your full prompt could look like this:
 
-Uma coisa a mais: já que você está esperando uma resposta exata para a pergunta acima, você pode melhorar ainda mais os
-resultados apenas reduzindo a temperatura (randomicidade) da sua requisição.
+```
+What is 965*590?
+```
 
-Leia o conteúdo do curso para aprender como gerar bons *prompts*!
+For this prompt, GPT-3 (text-davinci-003) (an AI) sometimes answers 569,050 (incorrect). This is where prompt engineering comes in.
 
-[^2]: A fonte desse parágrafo foi: https://pt.wikipedia.org/wiki/Chuva_de_granizo_no_leste_de_Minas_Gerais_em_1985
+# Prompt Engineering
+
+If, instead of asking `What is 965*590?`, we ask `Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`, GPT-3 will answer `569350` (correct). Why is this the case? Why is telling the AI twice to give a correct answer helpful? How can we create prompts that yield optimal results on our task? This last question, in particular, is the focus of the field of Prompt Engineering, as well as this course.
+
+:::caution
+One more thing, if you are running the above prompt in GPT-3, you should set temperature to 0 to remove randomness.
+:::
+
+Read on to learn how to engineer good prompts!
+
+[^2]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida
