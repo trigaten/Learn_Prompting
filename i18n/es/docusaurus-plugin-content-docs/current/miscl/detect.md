@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
----
+--- 
 
 # 🟢 Detección de Textos IA
 
@@ -34,4 +34,4 @@ Funciona calculando las probabilidades logarítmicas del modelo que se pensó qu
 
 ## Nota
 
-Para obtener una discusión adicional sobre el tema de los detectores y cómo las personas los están engañando, consulte [este artículo] (https://learnprompting.org/docs/miscl/trickery).
+Para obtener una discusión adicional sobre el tema de los detectores y cómo las personas los están engañando, consulte \[este artículo\] (https://learnprompting.org/docs/miscl/trickery).
