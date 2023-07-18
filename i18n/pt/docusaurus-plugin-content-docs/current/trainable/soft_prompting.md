@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# 🔴 Soft Prompts
+# 🔴 Prompts Suaves
 
-Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi2021prompt), freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
+A afinação de prompts (@lester2021power), uma alternativa à afinação fina de modelos (@khashabi2021prompt), congela os pesos do modelo e atualiza os parâmetros de um prompt. O prompt resultante é um 'prompt suave'.
 
 
 import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
@@ -14,25 +14,25 @@ import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Model Tuning vs Prompt Tuning (Lester et al.)
+Ajuste de Modelo vs Ajuste de Prompt (Lester et al.)
 </div>
 
-The above image contrasts model tuning with prompt tuning. In model tuning, you finetune the same model on different tasks. This gives you a few different models, with which you can't necessarily batch inputs easily.
+A imagem acima contrasta o ajuste de modelo com o ajuste de prompt. No ajuste de modelo, você afina o mesmo modelo em diferentes tarefas. Isso lhe dá alguns modelos diferentes, com os quais não é necessariamente fácil agrupar entradas.
 
-On the other hand, prompt tuning lets you use the same model for all tasks. You just need to append the proper prompts at inference time, which makes batching across different tasks easier. This is pretty much the same advantage that regular prompting has. Additionally, soft prompts trained for a single model across multiple tasks will often be of the same token length.
+Por outro lado, o ajuste de prompt permite que você use o mesmo modelo para todas as tarefas. Você só precisa anexar os prompts apropriados no momento da inferência, o que facilita o agrupamento entre tarefas diferentes. Isso é praticamente a mesma vantagem que o prompting regular tem. Além disso, prompts suaves treinados para um único modelo em várias tarefas muitas vezes terão o mesmo comprimento de token.
 
-## How it works
+## Como funciona
 
-To understand the basic logic behind soft prompting, let's think about how **model inference** works on a given prompt: `What's 2+2?`.
+Para entender a lógica básica por trás do prompt suave, pense em como a **inferência do modelo** funciona em um prompt específico: `"Quanto é 2+2?"`.
 
-1) It might be tokenized as `What, 's, 2, +, 2, ?`.
+1) Pode ser tokenizado como What, 's, 2, +, 2, ?.
 
-2) Then, each token will be converted to a vector of values.
+2) Em seguida, cada token será convertido em um vetor de valores.
 
-3) This vectors of values can be considered as model parameters. The model can be further trained, only adjusting the weights of these prompts.
+3) Esses vetores de valores podem ser considerados como parâmetros do modelo. O modelo pode ser posteriormente treinado, ajustando apenas os pesos desses prompts.
 
-Note that as soon as we start updating these weights, the vectors of the tokens no longer correspond to actual embeddings from the vocabulary.
+Observe que assim que começamos a atualizar esses pesos, os vetores dos tokens não correspondem mais a embeddings reais do vocabulário.
 
-# Results
+# Resultados
 
-Prompt tuning performs better with larger models. Larger models also require less soft prompt tokens. Regardless, more than 20 tokens does not yield significant performance gains.
+O ajuste de prompt tem melhor desempenho com modelos maiores. Modelos maiores também requerem menos tokens de prompt suave. Independentemente disso, mais de 20 tokens não proporcionam ganhos significativos de desempenho.
