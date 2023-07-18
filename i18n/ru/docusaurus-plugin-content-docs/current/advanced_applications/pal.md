@@ -2,10 +2,9 @@
 sidebar_position: 4
 ---
 
-# 🟡 Код как рассуждение
+# 🟡 Code as Reasoning
 
-[Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) - еще один пример системы MRKL.
-Когда им задают вопрос, PAL способны **написать код**, который решает этот вопрос. Они посылают код в программную среду выполнения, чтобы получить результат. PAL работает в отличие от CoT; промежуточные рассуждения PAL - это код, а CoT - естественный язык. 
+[Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) are another example of a MRKL system. When given a question, PALs are able to **write code** that solves this question. They send the code to a programmatic runtime to get the result. PAL works in contrast to CoT; PAL's intermediate reasoning is code, while CoT's is natural language.
 
 import image from '@site/docs/assets/advanced/pal.webp';
 
@@ -14,18 +13,16 @@ import image from '@site/docs/assets/advanced/pal.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Пример PAL (Gao и др.)
+PAL Example (Gao et al.)
 </div>
 
+One important thing to note it that PAL actually interleaves natural language (NL) and code. In the above image, in blue are natural language reasoning that PAL generates. Although it is not shown in the image, PAL actually generates '\#' before each line of NL reasoning, so that they are interpreted as comments by the programmatic runtime.
 
-Важно отметить, что PAL фактически чередует естественный язык (NL - natural language) и код.
-На изображении выше синим цветом выделены рассуждения на естественном языке, которые генерирует PAL. Хотя это не показано на изображении, PAL фактически генерирует '\#' перед каждой строкой рассуждений на естественном языке, так что они интерпретируются как комментарии программной средой выполнения. 
+## Example
 
-## Пример
+Let's look at an example of PAL solving a math question. I use a 3-shot prompt, which is a simplified version of [this one](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal).
 
-Давайте рассмотрим пример решения PAL математического вопроса. Я использую промт из трех вопросов, который является упрощенной версией [вот этого](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
-
-Для этого я буду использовать langchain, пакет Python для объединения функциональности LLM в цепочку. Сначала необходимо выполнить несколько установок:
+I will use langchain, a Python package for chaining LLM functionality for this. First, a few installations are needed:
 
 ```python
 !pip install langchain==0.0.26
@@ -35,86 +32,87 @@ import os
 os.environ["OPENAI_API_KEY"] = "sk-YOUR_KEY_HERE"
 ```
 
-Затем мы можем создать копию GPT-3 davinci-002 (при использовании этого объекта происходит вызов API)
+Then, we can create an instance of GPT-3 davinci-002 (an API call happens when we use this object)
 ```
 llm = OpenAI(model_name='text-davinci-002', temperature=0)
 ```
 
-Вот несколько примеров промта:
+Here is the few shot prompt:
 
 ```python
 MATH_PROMPT = '''
-Q: В серверной комнате было девять компьютеров. Каждый день, с понедельника по четверг, устанавливалось еще пять компьютеров. Сколько компьютеров сейчас находится в серверной?
+Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
 
-# решение на языке Python:
-"""В серверной комнате было девять компьютеров. Каждый день с понедельника по четверг устанавливалось еще пять компьютеров. Сколько компьютеров сейчас в серверной?"""
-компьютеры_начальные = 9
-компьютеры_в_день = 5
-число_дней = 4 # 4 дня между понедельником и четвергом
-компьютеры_добавлены = компьютеры_в_день * число_дней
-компьютеры_всего = компьютеры_начальные + компьютеры_добавленные
-результат = компьютеры_всего
-вернуть результат
-
-
-Q: У Шона есть пять игрушек. На Рождество он получил по две игрушки от мамы и папы. Сколько игрушек у него сейчас?
-
-# решение на языке Python:
-"""У Шона есть пять игрушек. На Рождество он получил по две игрушки от мамы и папы. Сколько игрушек у него сейчас?"""
-игрушки_инициалы = 5
-игрушки_мамы = 2
-папины_игрушки = 2
-общее_полученное = мама_игрушки + папа_игрушки
-общее_количество_игрушек = игрушки_начальные + общее_количество_полученных
-результат = всего_игрушек
+# solution in Python:
+"""There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?"""
+computers_initial = 9
+computers_per_day = 5
+num_days = 4  # 4 days between monday and thursday
+computers_added = computers_per_day * num_days
+computers_total = computers_initial + computers_added
+result = computers_total
+return result
 
 
-Q: У Джейсона было 20 леденцов. Он дал Денни несколько леденцов. Теперь у Джейсона 12 леденцов. Сколько леденцов Джейсон отдал Денни?
+Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
 
-# решение на языке Python:
-"""У Джейсона было 20 леденцов. Он дал Денни несколько леденцов. Теперь у Джейсона 12 леденцов. Сколько леденцов Джейсон отдал Денни?""""
-джейсон_леденцы_начало = 20
-джейсон_леденцы_после = 12 денни_леденцы = джейсон_леденцы_начало - джейсон_леденцы_после
-результат = денни_леденцы
+# solution in Python:
+"""Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?"""
+toys_initial = 5
+mom_toys = 2
+dad_toys = 2
+total_received = mom_toys + dad_toys
+total_toys = toys_initial + total_received
+result = total_toys
 
-Q вопрос: {question}
 
-# решение на языке Python:
+Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+
+# solution in Python:
+"""Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?"""
+jason_lollipops_initial = 20
+jason_lollipops_after = 12
+denny_lollipops = jason_lollipops_initial - jason_lollipops_after
+result = denny_lollipops
+
+Q: {question}
+
+# solution in Python:
 '''
 ```
 
-Теперь мы можем передать комбинированный промт в GPT-3.
+Now we can pass the combined prompt to GPT-3.
 
 ```
 llm_out = llm(MATH_PROMPT.format(question=question))
 print(llm_out)
 ```
 
-Вывод:
+The output is:
 
 <pre>
 <span className="bluegreen-highlight">
-"""Эмма совершила 60-минутный перелет на самолете в Сиэтл. Затем она проехала 2 часа на поезде до Портленда, а затем 30 минут на автобусе до Ванкувера. Сколько времени ей понадобилось, чтобы добраться до Ванкувера?"""<br/>
+Emma took a 60 minute plane ride to seattle. She then took a 2 hour train ride to portland, and then a 30 minute bus ride to vancouver. How long did it take her to get to vancouver?<br/><br/>
 
-полёт_на_самолёте = 60<br/>
-проезд_на_поезде = 2 * 60 # 2 часа в минутах<br/>
-проезд_на_автобусе = 30<br/>
-общее_время = полёт_на_самолёте + проезд_на_поезде + проезд_на_автобусе<br/>
-результат = общее_время
+plane_ride = 60<br/>
+train_ride = 2 * 60  # 2 hours in minutes<br/>
+bus_ride = 30<br/>
+total_time = plane_ride + train_ride + bus_ride<br/>
+result = total_time
 </span>
 </pre>
 
-Наконец, мы можем передать этот код в среду выполнения Python, чтобы получить ответ:
+Finally, we can pass this code to a Python runtime to get the answer:
 
 ```python
 exec(llm_out)
 print(result)
 ```
 
-На выходе получается **210**, что верно.
+The output is **210**, which is correct.
 
-Смотрите блокнот Jupyter для этого примера [здесь] (https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
+See the Jupyter notebook for this example [here](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
 
-## Подробнее
+## More
 
-Также смотрите пример [PAL's colab](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).
+Also see [PAL's colab example](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).
