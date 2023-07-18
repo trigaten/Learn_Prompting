@@ -102,4 +102,4 @@ MRKL fue desarrollado por [AI21](https://www.ai21.com/) y originalmente utilizó
 
 ## Más
 
-See [this example](https://python.langchain.com/docs/modules/agents/how_to/mrkl) of a MRKL System built with LangChain.
+Vea [este ejemplo](https://langchain.readthedocs.io/en/latest/modules/agents/implementations/mrkl.html) de un sistema MRKL construido con LangChain.
