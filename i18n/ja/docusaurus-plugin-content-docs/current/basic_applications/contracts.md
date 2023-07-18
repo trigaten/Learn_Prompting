@@ -2,24 +2,20 @@
 sidebar_position: 50
 ---
 
-# 🟢 契約
+# 🟢 Contracts
 
-長くて退屈な契約書の読み書きに飽きたことはありませんか？
-AI がお手伝いします！
+Tired of reading and writing long, boring contracts? AI can help!
 
 :::warning
-注意: 私は法律の専門家ではありません。この投稿の内容は法的アドバイスとして受け取るべきではありません。
+Obligatory: I am not a lawyer and nothing in this post should be taken as legal advice.
 :::
+## Reading Contracts
 
-## 契約書の読み方
+### Clarifying Legal Language
 
-### 法的文書の明確化
+You should always read contracts carefully. If you don't understand something, or don't have time to do so, *you should talk to a lawyer*. However, if you are reading through and have trouble understanding a section, you can use AI to help you understand it.
 
-契約書は常に注意深く読むべきです。何か分からないことがある場合や時間がない場合は、*弁護士に相談するべきです*。ただし、あるセクションを読み進めていて理解が難しい場合、AI を使って理解するのに役立てることができます。
-
-以下は、秘密保持契約 (NDA) からの抜粋です。
-
-(原文)
+Here is some language from an NDA (non-disclosure agreement):
 
 ```text
 WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
@@ -31,21 +27,7 @@ WHEREAS, the Contractor agrees to maintain the confidentiality of such informati
 NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
 ```
 
-(日本語訳)
-
-```text
-請負業者は、政府機関の機密情報および/または取引秘密に対して特権を持つかもしれない。
-
-政府機関は、その機密情報と取引秘密が開示されないように保護することを望んでいる。
-
-請負業者は、本契約の条件に従ってそのような情報の機密性を維持することに同意する。
-
-したがって、当事者は、ここに含まれる相互の約束事項に対する考慮と契約の条件に基づいて、以下のように合意します。
-```
-
-法的事項の世界に飛び込んだ最初の頃、私は WHEREAS と NOW, THEREFORE の使用方法が本当に理解できませんでした。ChatGPT がそれについてどのように説明しているのか見てみましょう。
-
-(原文)
+When I first set out into the world of legalities, I really did not understand the use of WHEREAS and NOW, THEREFORE. Let's see what ChatGPT has to say about it:
 
 ```text
 WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
@@ -62,172 +44,144 @@ The words in all caps in the NDA language are legal terms that set the context a
 // highlight-end
 ```
 
-(日本語訳)
+This seems to be a decent explanation, but you can easily improve your understanding by asking follow up questions.
 
-```text
-請負業者は、政府機関の機密情報および/または取引秘密に対して特権を持つかもしれない。
+### Discovering Dangerous Language
 
-政府機関は、その機密情報と取引秘密が開示されないように保護することを望んでいる。
-
-請負業者は、本契約の条件に従ってそのような情報の機密性を維持することに同意する。
-
-したがって、当事者は、ここに含まれる相互の約束事項に対する考慮と契約の条件に基づいて、以下のように合意します。
-
-上記のNDAの言語を読んで、全ての大文字で書かれた単語が何を意味しているか説明してください:
-// highlight-start
-NDAの言語の全ての大文字で書かれた単語は、合意の背景と目的を設定する法的な用語です。具体的には、合意の背景と理由を確立し、当事者の義務と期待を述べています。この場合、大文字の単語は、請負業者が政府機関の機密情報と取引秘密にアクセスできること、政府機関がこの情報を開示から保護したいこと、請負業者が合意の条件に従ってそのような情報の機密性を維持することに同意することを示しています。
-// highlight-end
-```
-
-この説明でも悪くなさそうのですが、追加の質問をすることで理解をさらに深めることができます。
-
-### 危険な文言の発見
-
-以下は、ChatGPT が作成した NDA の一部です。読む必要はありませんが、雇用主に有利な危険な法的文言が含まれています。次のプロンプトを使用して、ChatGPT を使用してこの危険な文言を見つけることができます。
+Here is part of an NDA produced by ChatGPT. You don't need to read it, but it contains dangerous legal language favoring the employer. You can use ChatGPT to find this dangerous language by using the following prompt, which contains the NDA and a question about dangerous language at the bottom.
 
 :::note
 
-この NDA は ChatGPT をジェイルブレイクし、`雇用主に有利な危険な法的文言を含む請負業者向け NDA を作成してください` というプロンプトで出力させたものです。
+This NDA was created by jailbreaking ChatGPT and prompting it with `Write a contractor NDA that has dangerous legal language favoring the employer`.
 
 :::
 
-(日本語訳)
-
 ```text
-秘密保持契約
+NON-DISCLOSURE AGREEMENT
 
-この秘密保持契約 (以下、「本契約」といいます) は、[雇用主] (以下「雇用主」といいます) と[請負業者] (以下「請負業者」といいます) との間で、以下の日付に基づいて締結されます。
+This Non-Disclosure Agreement (the "Agreement") is entered into by and between [Employer] ("Employer") and [Contractor] ("Contractor") as of the date set forth below.
 
-請負業者は、政府機関の機密情報および/または取引秘密に対して特権を持つかもしれない。
+WHEREAS, the Contractor may become privy to confidential information and/or trade secrets of the Employer; and
 
-政府機関は、その機密情報と取引秘密が開示されないように保護することを望んでいる。
+WHEREAS, the Employer desires to ensure that its confidential information and trade secrets are protected from disclosure; and
 
-請負業者は、本契約の条件に従ってそのような情報の機密性を維持することに同意する。
+WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
 
-したがって、当事者は、ここに含まれる相互の約束事項に対する考慮と契約の条件に基づいて、以下のように合意します。
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
 
-機密保持
-請負業者は、雇用主またはその関連会社から提供された情報、書類、資料、およびそれらの派生物 (以下、「機密情報」といいます) が雇用主の排他的な所有物であることを認識します。機密情報には、一般に公知されていないビジネス、製品、サービス、顧客、サプライヤー、オペレーション、戦略、または雇用主の他の側面に関連する、具体的な形式や媒体に関係なく、すべての性質の情報が含まれます。
+CONFIDENTIALITY
+Contractor acknowledges that all information, documents, and materials provided by or on behalf of Employer, or obtained by Contractor from Employer or its affiliates, and all derivatives thereof (collectively, the "Confidential Information") are the exclusive property of Employer. Confidential Information includes all information of any nature, whether tangible or intangible, and in whatever form or medium, that is not generally known to the public and that relates to the business, products, services, customers, suppliers, operations, strategies, or any other aspect of the Employer.
 
-請負業者は、雇用主の書面による明示的な許可を得ることを除いて、機密情報を開示、配布、複製、コピー、送信、公表、またはいかなる方法でも使用しないこと、と同様の注意を自身の機密情報に使用する最低限の注意をもって機密情報を保護することに同意します。請負業者は、この規定の違反が雇用主に不可逆的な損害を与える可能性があること、そして雇用主は法的または公正な救済措置に加えて、差止命令や具体的な履行を含む公正な救済措置を求める権利があることを認識します。
+Contractor agrees to maintain the confidentiality of the Confidential Information and not to disclose, distribute, reproduce, copy, transmit, disseminate, or use in any way, except as expressly authorized in writing by Employer. Contractor agrees to protect the Confidential Information with at least the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care. Contractor acknowledges that any breach of this provision may result in irreparable harm to Employer, and that Employer shall be entitled to seek equitable relief, including injunctive relief and specific performance, in addition to any other remedies available at law or in equity.
 
-所有権
-すべての機密情報、およびそれらの派生物は、雇用主の排他的な所有物となります。請負業者は、この規定を実施するために必要なすべての文書に署名し、またこの規定を効力を持たせるために必要なあらゆる行動を実施することに同意します。
+OWNERSHIP
+All Confidential Information, including all derivatives thereof, shall remain the exclusive property of Employer. Contractor acknowledges that all right, title, and interest in and to the Confidential Information, including all intellectual property rights, belong to Employer. Contractor agrees to execute any and all documents and take any and all actions necessary or desirable to effectuate this provision.
 
-ライセンスの非付与
-本契約に含まれるいかなる内容も、明示または黙示を問わず、請負業者に対して機密情報に関するいかなる権利も与えるものと解釈されません。
+NO LICENSE
+Nothing contained in this Agreement shall be construed as granting any rights, by implication or otherwise, to Contractor with respect to the Confidential Information, except as expressly set forth herein.
 
-契約期間と終了
-本契約は、上記の日付に基づいて開始し、いずれかの当事者が
+TERM AND TERMINATION
+This Agreement shall commence on the date set forth above and shall continue in effect until terminated by either party upon thirty (30) days written notice. The confidentiality obligations contained herein shall survive any termination of this Agreement.
 
-書面による 30 日間の通知により終了するまで効力を持ちます。本契約に含まれる機密保持の義務は、本契約の終了後も継続します。
-
-この契約のどの部分に危険な文言が含まれていますか？
+What part of this agreement contains dangerous language?
 ```
 
-ChatGPTの回答は以下の通りです。
-
-(日本語訳)
+Here is ChatGPT's response.
 
 ```text
 // highlight-start
-この契約全体には、請負業者に対して雇用主が有利な危険な文言が含まれています。以下は、この契約を非倫理的にするいくつかの重要な要素です。
+The entire agreement contains dangerous language that favors the Employer over the Contractor. Here are some of the key elements that make this agreement unethical:
 
-機密情報の不合理な定義: 契約では、機密情報を雇用主またはその関連会社から提供されたすべての情報、書類、資料、およびそれらの派生物と定義しています。この定義は広範であり、実際には機密情報や取引秘密情報ではない可能性のある情報を含む可能性があり、請負業者が知らずに契約違反を起こす可能性があります。
+Unreasonable Definition of Confidential Information: The agreement defines the Confidential Information to include all information, documents, and materials provided by or on behalf of the Employer, or obtained by the Contractor from the Employer or its affiliates, without any limitations or exclusions. This definition is broad and could potentially include information that is not actually confidential or trade secret information, which could cause the Contractor to unknowingly breach the agreement.
 
-使用に制限がない: 契約には、雇用主が機密情報をどのように使用できるかについての制限がありません。これにより、雇用主が請負業者と競合したり、情報を第三者に開示したりすることが可能になります。
+No Limitations on Use: The agreement does not provide any limitations on how the Employer can use the Confidential Information. This could allow the Employer to use the information for any purpose, including competing with the Contractor or disclosing the information to third parties.
 
-所有権の広範な定義: 契約は、すべての機密情報、およびそれらの派生物が雇用主の排他的な所有物であると明記しており、例外や制限はありません。これは、請負業者が雇用主のための作業を通じて得た情報を独自に開発したり他のリソースと共同で開発したりした場合でも、請負業者がその情報を使用したり利益を得たりすることができないことを意味します。
+Broad Definition of Ownership: The agreement states that all Confidential Information, including all derivatives thereof, shall remain the exclusive property of the Employer, with no exceptions or limitations. This means that the Contractor may not use or benefit from any information obtained through their work for the Employer, even if the Contractor developed the information independently or with other resources.
 // highlight-end
 ```
 
-私は弁護士ではありませんが、「機密情報の不合理な定義」が特に関連していると考えることができます。
+Althought I am not a lawyer, I think `Unreasonable Definition of Confidential Information` is particularly relevant.
 
-この危険な法的内容をチェックするテクニックは、さまざまな法的文書に対して使用することができます。GPT-3 をベースにしたツールが、利用規約や雇用契約の危険な文言を検出するために開発されている例もあります。
+This technique of checking for dangerous legal content can be used for a range of legal documents. We have even seen tools being built on top of GPT-3 to detect dangerous language in TOS agreements and employment contracts.
 
-## 契約書の作成
+## Writing Contracts
 
-前のセクションで、ChatGPT が NDA (非開示契約書) を作成できることを見てきました。また、利用規約やサービス利用条件などの一般的な文書についてもうまく対応できます。ただし、一般的でない文書に取り組む場合は、より注意が必要です。
+From the previous section, we saw that ChatGPT can write NDAs. It also does a good job with other common documents like terms of use and terms of service. However, when you are dealing with less common documents, you will need to be more careful.
 
-最近、私は GPT-3 を主に使用してそのような文書を作成し、それを弁護士に審査してもらいました。彼らは若干の改善点を指摘しましたが、全体的には堅牢な文書でした。業界では、GPT-3 を使用して文書を生成し、それを弁護士に審査してもらうというプロセスを行っている人もいます。これにより、時間とコストを節約できます。
+I recently wrote one such document mostly using GPT-3, then had it reviewed by a lawyer. They mentioned 1-2 things that could be slightly improved, but overall it was a robust document. Some people in industry are performing this process, where they generate a document using GPT-3, then have it reviewed by a lawyer. This saves time and costs.
 
-政府の請負業者であり、防衛業務を行う人物のために契約書を作成してみましょう。以下のプロンプトを使用します:
-
-(日本語訳)
+Let's pretend to be a government contractor and write a contract for a someone doing some defense work. We will use the following prompt:
 
 ```text
-あなたは政府の請負業者の弁護士です。サブ請負業者に対して航空宇宙の仕事の契約を作成しています。契約は堅牢であり、以下の内容を含んでいる必要があります:
-仕事は 1.5 年間続き、2,500,000 ドルの価値があります。最高機密の承認が必要で、秘密の核弾頭基地防衛開発に関連しています。サブ請負業者には 150 万ドルの前払いがあり、残りの 100 万ドルは 6 か月ごとの分割払いで支払われます。サブ請負業者は非開示契約書に署名する必要があります。サブ請負業者は非競争契約書に署名する必要があります。サブ請負業者は非勧誘契約書に署名する必要があります。サブ請負業者は非回避契約書に署名する必要があります。
+You are a lawyer for a government contractor. You are writing a contract for a subcontractor to do some aerospace work. The contract should be robust and should include the following:
+The job will last for 1.5 years and will be worth $2.5 million. It requires top secret clearance and relates to secret nuclear silo defense development. The subcontractor will be paid $1.5 million upfront and the remaining $1 million will be paid in 6 monthly installments. The subcontractor will be required to sign a non-disclosure agreement. The subcontractor will be required to sign a non-compete agreement. The subcontractor will be required to sign a non-solicitation agreement. The subcontractor will be required to sign a non-circumvention agreement. 
 
 // highlight-start
-サブ請負契約書
+SUBCONTRACT AGREEMENT
 
-このサブ請負契約書 (以下「本契約」といいます) は、以下の日付をもって[政府請負業者] (以下「請負業者」といいます) と[サブ請負業者] (以下「サブ請負業者」といいます) の間で締結されます。
+This Subcontract Agreement (the "Agreement") is entered into by and between [Government Contractor] ("Contractor") and [Subcontractor] ("Subcontractor") as of the date set forth below.
 
-作業範囲
-サブ請負業者は、添付の付録A「作業明細書」に記載された作業 (以下「作業」といいます) を実施します。作業は秘密の核弾頭基地防衛の開発に関連し、最高機密の承認が必要です。
+SCOPE OF WORK
+Subcontractor shall perform the work described in the Statement of Work attached hereto as Exhibit A (the "Work"). The Work relates to the development of secret nuclear silo defense and requires top secret clearance.
 
-支払い
-作業の総支払額は 2,500,000 ドルで、以下の通り支払われます：
+PAYMENT
+The total payment for the Work shall be $2.5 million, payable as follows:
 
-・サブ請負契約書の締結時およびサブ請負業者が最高機密の承認を受け取った時点で150万ドル
-・サブ請負業者が前月において作業を満足に実施した場合、6 か月ごとに 166,666.67 ドルの分割払いで 100 万ドル支払われます。
+$1.5 million upon execution of this Agreement and receipt of top secret clearance by Subcontractor.
+$1 million to be paid in 6 monthly installments of $166,666.67 each, provided that Subcontractor has satisfactorily performed the Work during the preceding month.
+NON-DISCLOSURE AGREEMENT
+Subcontractor shall sign a non-disclosure agreement in the form attached hereto as Exhibit B (the "NDA"). The NDA shall be in effect for the duration of the Agreement and for a period of five years thereafter.
 
-非開示契約書
-サブ請負業者は、添付の付録B「非開示契約書」の形式に従って非開示契約書 (以下「NDA」といいます) に署名します。NDA は本契約の有効期間およびその後の 5 年間有効です。
+NON-COMPETE AGREEMENT
+Subcontractor shall sign a non-compete agreement in the form attached hereto as Exhibit C (the "NCA"). The NCA shall be in effect for a period of two years after the termination of this Agreement.
 
-非競争契約書
-サブ請負業者は、添付の付録C「非競争契約書」の形式に従って非競争契約書 (以下「NCA」といいます) に署名します。NCA は本契約終了後の 2 年間有効です。
+NON-SOLICITATION AGREEMENT
+Subcontractor shall sign a non-solicitation agreement in the form attached hereto as Exhibit D (the "NSA"). The NSA shall be in effect for a period of two years after the termination of this Agreement.
 
-非勧誘契約書
-サブ請負業者は、添付の付録D「非勧誘契約書」の形式に従って非勧誘契約書 (以下「NSA」といいます) に署名します。NSA は本契約終了後の 2 年間有効です。
+NON-CIRCUMVENTION AGREEMENT
+Subcontractor shall sign a non-circumvention agreement in the form attached hereto as Exhibit E (the "NCAg"). The NCAg shall be in effect for a period of two years after the termination of this Agreement.
 
-非回避契約書
-サブ請負業者は、添付の付録E「非回避契約書」の形式に従って非回避契約書 (以下「NCAg」といいます) に署名します。NCAg は本契約終了後の 2 年間有効です。
+TERM AND TERMINATION
+This Agreement shall commence on the date set forth above and shall continue in effect until the completion of the Work or until terminated by either party upon thirty (30) days written notice. The non-disclosure, non-compete, non-solicitation, and non-circumvention obligations contained herein shall survive any termination of this Agreement.
 
-期間と解除
-本契約は、上記の日付から開始され、作業の完了またはいずれかの当事者が書面による 30 日前の通知により解除されるま
+INDEPENDENT CONTRACTOR
+Subcontractor is an independent contractor and is not an employee of Contractor. Subcontractor shall be responsible for its own taxes, social security contributions, insurance, and other benefits. Subcontractor shall indemnify and hold Contractor harmless from any claims, damages, or liabilities arising out of or related to Subcontractor's status as an independent contractor.
 
-で効力を持ちます。本契約の解除後も、非開示、非競争、非勧誘、非回避の義務は存続します。
+GOVERNING LAW AND JURISDICTION
+This Agreement shall be governed by and construed in accordance with the laws of the state of [state], without giving effect to any choice of law or conflict of law provisions. Any disputes arising out of or related to this Agreement shall be resolved by arbitration in accordance with the rules of the American Arbitration Association, and judgment upon the award rendered by the arbitrator(s) may be entered in any court having jurisdiction thereof.
 
-独立請負業者
-サブ請負業者は独立請負業者であり、請負業者の従業員ではありません。サブ請負業者は自身の税金、社会保障貢献金、保険およびその他の福利厚生に責任を負います。サブ請負業者は、独立請負業者としての地位に関連するいかなるクレーム、損害または責任についても請負業者を免責し、保護するものとします。
+ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements and understandings, whether written or oral, relating to the subject matter of this Agreement. This Agreement may not be amended or modified except in writing signed by both parties.
 
-適用法と管轄裁判所
-本契約は[state]州の法律に基づき解釈されます。本契約に関連する紛争は、米国仲裁協会の規則に従い仲裁によって解決され、仲裁人の裁定に基づいて管轄権を有する任意の裁判所において判決が下されることができます。
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date set forth below.
 
-全体の合意
-本契約は当事者間の完全な合意を構成し、本契約の対象とする事項に関連するすべての事前および同時の書面または口頭での合意を置き換えます。本契約は、両当事者の署名による書面でなければ修正または変更することはできません。
+[Government Contractor]
 
-証人のため、以下の日付で本契約を締結しました。
+By: ____________________________
 
-[政府請負業者]
+Name: __________________________
 
-署名: ____________________________
+Title: ___________________________
 
-氏名: __________________________
+[Subcontractor]
 
-役職: ___________________________
+By: ____________________________
 
-[サブ請負業者]
+Name: __________________________
 
-署名: ____________________________
+Title: ___________________________
 
-氏名: __________________________
-
-役職: ___________________________
-
-日付: ___________________________
+Date: ___________________________
 // highlight-end
 ```
 
-これはかなり良いスタートです。スコープ、支払い、およびその他のセクションにさらに情報を追加したくなるかもしれません。ここで、独自の知識と経験を活用して文書を改善するために反復作業を始める必要があります。
+This is a pretty good start. Imaginably you would want to add more information in the scope, payment, and other sections. This is where you would need to use your own knowledge and experience to start iterating on the document.
 
-## 要点
+## Takeaways
 
-- LLM は、法的文書の審査と明確化において**支援的な役割**で使用することができる。
-- LLM は、法的文書の生成においても**支援的な役割**で使用することができる。
+- LLMs can be used to review and clarify legal documents *in an assistive capacity*.
+- LLMs can be used to generate legal documents *in an assistive capacity*.
 
 :::danger
-このページの法的文書は使用しないでください。デモンストレーションの目的で提供されています。
+Do not use any legal documents on this page. They are for demonstration purposes only.
 :::
