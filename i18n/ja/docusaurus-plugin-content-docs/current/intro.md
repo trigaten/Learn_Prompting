@@ -1,125 +1,92 @@
 ---
 sidebar_position: 1
 ---
-# はじめに
 
-初心者対応のプロンプトエンジニアリング講座へようこそ!
+# Welcome
 
-プロンプトエンジニアリング（PE）とは、**AIと効果的にやりたいタスクや行動をどう上手く伝え、
-望ましい結果を得るため**のプロセスです。人工知能（AI）が急速に進歩し続ける中、
-PEの習得はますます貴重で需要の高いスキルになっていってます。本講座では、
-PEの応用技術に焦点を当てます。
+Welcome to our introductory course on prompt engineering!
 
-このコースは**初心者**に合わせた内容になっており、AIやPEに初めて触れる方には丁度いいスタート地点です。
-初心者でなくてもこのコースの中に貴重な知識を見出すことができます。本講座は、PEのコースとしては
-**最も包括的なもの**で、AIの入門から高度なPEテクニックまで幅広い内容となっています。
+Prompt engineering (PE) is the process of **communicating effectively with an AI to achieve desired results**. As AI technology continues to rapidly advance, the ability to master prompt engineering has become a particularly valuable skill. Prompt engineering techniques can be applied to a wide variety of tasks, making it a useful tool for anyone seeking to improve their efficiency in both everyday and innovative activities.
 
-## 本講座の精神とフィロソフィー
+This course is tailored to **beginners**, making it the perfect starting point if you're new to AI and PE. However, even if you're not a beginner, you'll still find valuable insights within this course. This course is the **most comprehensive** prompt engineering course available, and the content ranges from an introduction to AI to advanced PE techniques.
 
-本講座はオープンソースであり、様々な研究者、翻訳者、ホビイストなど多様なコミュニティによって構築されています。
-我々は、AIは誰もがアクセスできるものであるべきであり、明確かつ客観的に説明されるべきであると考えています。
-そのため、なるべく過度な専門用語を排除し、包括的で偏りのない講座を制作するよう心がけています。
+## Ethos and Philosophy
 
-本講座は様々な方々から高く評価を得られています：
-* こちらの講座は[Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15)
-でも引用され、[O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/)、Scale AI、やOpenAIなどの様々な大企業でも活用されています。
-* その他にも様々な動画やガイドでもこの講座が引用されたり紹介されたりしてます。*（こちらは外国語の内容になります）*
-    - [How To Become a Prompt Engineer | 5 Best ChatGPT Prompts](https://youtu.be/GPqSoiOP3w8?t=274)
-    - [Prompt Engineering Ultimate Guide](https://learnwithhasan.com/prompt-engineering-guide/)
-    - [This Will Make You Better than 99% ChatGPT Users](https://www.youtube.com/watch?v=EYjG6i53-xk)
-    - [This ChatGPT Skill will earn you $10B (also, AI reads your mind!) | ML News](https://youtu.be/yR4hNBNS6yc?t=743)
-    - [What is Prompting? Talking with AI Models...](https://youtu.be/pZsJbYIFCCw?t=208)
-    - [300.000$ por un trabajo que puedes APRENDER GRATIS ▶ Curso OPEN SOURCE](https://youtu.be/4kp7oVTu9Ck?t=495)
-    - [Colabora con el proyecto opensource Learn Prompting sobre Prompt Engineering](https://www.youtube.com/watch?v=q5wuHUmGFMw)
-    - [This Bizarre Skill Makes You RICH With ChatGPT](https://youtu.be/f8PGV3T9w38?t=549)
-* 我々はPEコミュニティ、３８万人のユーザーと
-二千人以上の[ディスコード](ttps://discord.gg/learn-prompting)メンバーなども含め、
-サポートできることを常に光栄に思っております。
+This course is open source, and built by a diverse community of researchers, translators, and hobbyists. We believe that AI should be accessible to everyone, and that it should be described clearly and objectively. To this end, we strive to produce a comprehensive and unbiased course that is free of excessive jargon and hype.
 
-## 本講座の教え方のアプローチ
+We have found this approach to be appreciated by the PE community: This course is cited by [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), and is used by people at companies such as [O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, and OpenAI. You may also notice that <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>almost </a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>every </a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>other </a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>prompt </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>engineering </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>video </a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>and </a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>guide </a>
+uses material from this course. We are honored to support the prompt engineering community, including our 1M+ users and 40K [Discord](https://discord.gg/learn-prompting) members.
 
-我々がPEを教えるのに当たって下記の原則を元にしてアプローチしております：
+### How we teach
 
-**高速的な改善** - PEはほぼ毎日新しいコンテンツが公開されているので、
-このコースも新しい技術に関する短い記事を頻繁に更新していきます。
-あなたが興味のある内容やもっと聞きたいコンテンツを是非教えてください!
+Our approach to teaching prompt engineering is guided by the following principles:
 
-**実用性を重視する** - 我々は最速にアプリケーションで使える実用可能にできるように様々な技術や
-テクニックに焦点を当ています。
+**Quick Iterations**—Since new PE content is published almost daily, we'll keep this course up-to-date with frequent, concise articles about emerging techniques. Please tell us what topics you'd like us to explore further!
 
-**すぐに使える例** - 学習した内容をすぐにでも使えるように、本講座では明確に実用的なテクニックを
-ご紹介していきます。
+**Emphasis on Practicality**—Our focus is on applied, practical techniques that you can immediately incorporate into your projects and applications.
 
-**協調学習** - 我々はお互いから学ぶことを強く信じています。
-何か理解できないことや誤りを見つけた場合は、GitHubの
-[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
-を作成してご連絡ください。あなたのフィードバックは、このコースを改善するのに役立ちます。
+**Accessible Examples**—To help you grasp the techniques quickly, we'll provide clear, relevant examples throughout the articles.
 
-:::皆様からのご協力
-こちらの本講座は現在開発中であり、常に学習体験を改善するようにコンテンツを増やしています。
-何かご意見やご感想があれば、ぜひお聞かせください！
+**Collaborative Learning**—We believe in learning from each other. If you come across something that you don't quite understand or find a mistake, please let us know by creating an [issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose). Your feedback helps us improve the course for everyone.
+
+:::note
+This course is under heavy development. We are working hard to improve the learning experience and add more content. If you have any suggestions, please let us know!
 :::
 
-## 本講座の読み方
+## How to read
 
-こちらの講座はすべての章を順番に読む必要はありません。興味のあるところから読んでいってください！
-全くの初心者の方でAI、機械学習やプログラミングの基礎がない方は、
-「[基礎編](https://learnprompting.org/docs/category/-basics)」と
-「[はじめに](https://learnprompting.org/docs/basics/intro)」
-からお読みいただくとおすすめです。既に上記の知識がある方は
-「[中級編](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate)」
-からお読みいただくと、より効果的かもしれません。
+There's no need to read all chapters in order; feel free to explore what interests you! If you're new to AI, machine learning, and programming, we suggest starting with the [Basics](https://learnprompting.org/docs/category/-basics) section and the [Instructions](https://learnprompting.org/docs/basics/intro) guide. For those already familiar with these concepts, the [Intermediate](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate) section is a great place to dive in and expand your knowledge.
 
-### 難易度評価タグ
+### Article rating system
 
-本講座の記事は難易度別に評価され、以下のようなラベルが貼られています。自分のスキルや
-プログラミングの知識を元にあったタグで本講座を使用してください。
+We've implemented a rating system for articles based on their level of difficulty and the extent of programming knowledge needed:
 
-🟢 初心者向け: プログラミング不要
+🟢 Beginner-friendly; no programming required
 
-🟡 初級: 簡単なプログラミングが必要だが、専門知識は不要。
+🟡 Easy; basic programming knowledge necessary, but no specialized expertise
 
-🔴 中級: プログラミングが必要で、実装には専門知識が必要（例：ログプロブの計算）。
+🔴 Intermediate; programming skills and some domain knowledge required (e.g., calculating logarithmic probabilities)
 
-🟣 上級: プログラミングが必要で、実装には専門知識が必要（例：強化学習アプローチ）。
+🟣 Advanced; programming expertise and in-depth domain understanding needed (e.g., reinforcement learning techniques)
 
-注意：🔴🟣 のタグは専門知識がなくても理解できるコンテンツでありますが、実際に実装時に役に立つ内容です。
+Please note that even for 🔴 and 🟣 articles, you can generally grasp the content without prior domain expertise, though it may be helpful for implementation.
 
-## 章
+### Chapters
 
-ここでは、各章の概要を簡単にご紹介します:
+Below is a brief overview of each chapter:
 
-**基礎編**: PEの入門と簡単なPEの技術
+**Basics**: Introduction to prompt engineering and fundamental techniques
 
-**基礎実装編**: 簡単で実用的なPE
+**Basic Applications**: Simple, practical applications of prompt engineering
 
-**中級編**: 研究を元に、少々複雑なPEのテクニック
+**Intermediate**: Research-based PE techniques with moderate complexity
 
-**アプライドプロンプト**: コミュニティメンバーによって書かれたPEプロセスの完全なウォークスルー
+**Applied Prompting**: Comprehensive PE process walkthroughs contributed by community members
 
-**高度なアプリケーション**: PE の非常に強力でより高度なアプリケーションを紹介します
+**Advanced Applications**: Powerful, and more complex applications of prompt engineering
 
-**信頼性**: LLMをより信頼性の高いものにするには
+**Reliability**: Enhancing the reliability of large language models (LLMs)
 
-**画像**: DALLEやStable Diffusionのようなテキストから画像へのモデルに対応したPE!
+**Image Prompting**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
 
-**プロンプト・インジェクション**: ハッキング、ただしPE用
+**Prompt Hacking**: Hacking, but for prompt engineering
 
-**ツーリング**: 様々なPEツールとIDE
+**Tooling**: A review of various prompt engineering tools and IDEs
 
-**プロンプトのチューニング**: グラジエントでプロンプトを微調整する
+**Prompt Tuning**: Refining prompts using gradient-based techniques
 
-**その他**: PEに関する様々なトピックやテクニックをご紹介
+**Miscellaneous**: A collection of additional topics and techniques related to prompt engineering
 
-## フィードバック
+## Feedback
 
-このコースで最も重要なのは、あなたのフィードバックです!
+The single most important part of this course is your feedback!
 
-もし質問、コメント、提案などがありましたら:
-- [issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)** を作成する
-- [learnprompting@gmail.com](mailto:learnprompting@gmail.com) までメールする
-- [Discord](https://learnprompting.org/discord)のコミュニティーにご参加
-- [Twitter](https://twitter.com/learn_prompting)でフォローする
-- [コンサルタント募集](https://learnprompting.org/consulting)も行なっております。
+If you have any questions, comments, or suggestions, you can:
 
-わずかな感想でも、とても参考になります!
+- Make an [issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
+- Email us at [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+- Join the [Discord community](https://learnprompting.org/discord)
+- Follow us on [Twitter](https://twitter.com/learnprompting)
+- Join the HackAPrompt Competition until May 26 [Twitter](https://www.aicrowd.com/challenges/hackaprompt-2023)
+
+Even the smallest amount of feedback is very helpful!
