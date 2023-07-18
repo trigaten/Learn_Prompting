@@ -11,8 +11,11 @@ Les modèles de génération musicale peuvent créer des progressions d'accords,
 Cependant, malgré l'énorme potentiel des modèles musicaux, ils sont actuellement difficiles à guider. La sortie générée n'est souvent pas entièrement personnalisable par des invites, contrairement aux modèles de génération d'images ou de textes.
 
 ## Riffusion
+import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc5d566e-04bb-4c02-b113-bb19449074ed/Untitled.webp)
+<div style={{textAlign: 'center'}}>
+  <img src={riffusion} style={{width: "500px"}} />
+</div>
 
 Riffusion(@Forsgren_Martiros_2022), une version affinée de Stable Diffusion, peut être contrôlée à l'aide d'invites pour générer des instruments et des pseudo styles, mais elle dispose d'un nombre limité de battements.
 
@@ -22,4 +25,10 @@ Riffusion(@Forsgren_Martiros_2022), une version affinée de Stable Diffusion, pe
 
 ## Autre
 
-Il y a des tentatives d'utiliser GPT-3 comme un outil de Text-2-Music avec des invites réelles pour les éléments musicaux au "micro-niveau" des notes (au lieu des analogies de style d'invite plutôt vagues que produisent Mubert et Riffusion).
+Il y a des tentatives d'utiliser GPT-3 comme un outil de Text-2-Music avec des invites réelles pour les éléments musicaux au "micro-niveau" des notes (au lieu des analogies de style d'invite plutôt vagues que produisent Mubert et Riffusion). However, at present those attempts are limited to single instruments.
+
+Other approaches include a model chain that [converts any image into sound that represents it](https://huggingface.co/spaces/fffiloni/img-to-music) and prompting ChatGPT to generate code for [Python libraries that create sound](https://twitter.com/teropa/status/1598713756074246145).
+
+## Notes
+
+Music prompting is not well built out... yet. MusicLM looks promising, but it is not yet available to the public.
