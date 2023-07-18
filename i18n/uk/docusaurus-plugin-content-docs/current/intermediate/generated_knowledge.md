@@ -75,7 +75,7 @@ sidebar_position: 7
 Підхід до генерованих знань був фактично введений для зовсім іншої задачі — відповіді на складні запитання. Нижче розглянемо питання, на яке GPT-3 відповідає неправильно: 
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIGxhcmdlciB0aGFuIENvbmdvLiIsInByb21wdCI6IldoaWNoIGNvdW50cnkgaXMgbGFyZ2VyLCBDb25nbyBvciBTb3V0aCBBZnJpY2E%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0Ijoi0J%2FRltCy0LTQtdC90L3QsCDQkNGE0YDQuNC60LAg0LHRltC70YzRiNCwINC30LAg0JrQvtC90LPQvi4iLCJwcm9tcHQiOiLQr9C60LAg0LrRgNCw0ZfQvdCwINCx0ZbQu9GM0YjQsCwg0JrQvtC90LPQviDRh9C4INCf0ZbQstC00LXQvdC90LAg0JDRhNGA0LjQutCwPyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
     style={{width:"100%", height:"200px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
