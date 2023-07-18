@@ -1,13 +1,14 @@
 ---
 sidebar_position: 99
 ---
+
 # 🟢 Midjourney
 
-[Midjourney](https://www.midjourney.com) é um gerador de imagens baseado em IA que opera através de uma interface de bot do Discord, bem como uma aplicação web (uma versão API de Midjourney está planejada). O processo para gerar imagens com Midjourney segue os mesmos princípios fundamentais de outros geradores de imagens de IA, incluindo o uso de prompts para guiar o processo de geração.
+[Midjourney](https://www.midjourney.com) is an AI image generator that operates through a Discord bot interface as well as a web app (an API version of Midjourney is planned). The process for generating images with Midjourney follows the same fundamental principles as other AI image generators, including the use of prompts to guide the generation process.
 
-Um dos recursos únicos de Midjourney em comparação com outros geradores de imagens de IA é a sua capacidade de criar imagens visualmente atraentes e artisticamente compostas. Isso é atribuído ao treinamento especializado do modelo, que permite que ele produza imagens de alta qualidade com parâmetros artísticos específicos (saiba mais sobre isso em "Prompts Avançados" > "Parâmetros").
+One of the unique features of Midjourney compared to other AI image generators is its ability to create visually striking and artistically composed images. This is attributed to the model's specialized training, which enables it to produce high-quality images with specific artistic parameters (more about this in "Advanced Prompts" > "Parameters").
 
-Você pode experimentar o Bot Midjourney no [Learn Prompting Discord](http://learnprompting.org/discord) ou no [servidor oficial do Discord Midjourney](https://discord.gg/midjourney).
+You can experiment with the Midjourney Bot in the [Learn Prompting Discord](http://learnprompting.org/discord) or in the [official Midjourney Discord server](https://discord.gg/midjourney).
 
 import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
 import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';
@@ -39,80 +40,80 @@ import midjourney_astronaut_params_v2 from '@site/docs/assets/images_chapter/mid
 import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_v3.webp';
 
 
-# Uso Básico
 
-A anatomia básica de prompts com o Midjourney é `/imagine prompt: [PROMPT PARA A IMAGEM] [--PARAMETROS OPCIONAIS]`. 
+# Basic Usage
 
-Por exemplo: `/imagine prompt: astronauta em um cavalo`
+The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAMETERS]`.
 
+For example: `/imagine prompt: astronaut on a horse`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut} style={{width: "350px"}} />
 </div>
 
-
-Exemplo com parâmetros: `/imagine prompt: astronauta em um cavalo --ar 3:2 --c 70 --q 2 --seed 1000 `
+Example with parameters: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
 
-Neste exemplo básico, os seguintes parâmetros foram usados:
+In this basic example the following parameters have been used:
 
 
-`--ar 3:2` define a proporção de aspecto da imagem para 3:2
+`--ar 3:2` sets the aspect ratio of the image to 3:2
 
-`--c 70` adiciona um valor de caos de 70 para permitir que o Midjourney interprete o prompt de forma mais livre (intervalo de valor de caos: 0 - 100)
+`--c 70` adds a chaos value of 70 to allow Midjourney to interpret the prompt more freely(chaos value range: 0 - 100)
 
-`--seed 100` define um valor de semente arbitrário que pode ser usado para re-renderizar ou re-trabalhar uma imagem mais tarde
-
-(saiba mais sobre os parâmetros do Midjourney em "Prompts Avançados" > "Parâmetros")
+`--seed 100` sets an arbitrary seed value which can be used to re-render or re-work an image later
 
 
-# Prompts Avançados
-Prompts avançados no Midjourney fazem uso de parâmetros e técnicas de solicitação especiais suportadas pelo algoritmo Midjourney.
+(learn more about Midjourney parameters in "Advanced Prompts" > "Parameters")
 
-## Prompts Múltiplos
-O Midjourney interpreta seu prompt de forma holística por padrão. Usar dois pontos `::` diz ao Midjourney para interpretar cada parte de um prompt separadamente.
 
-Exemplo:
+# Advanced Prompts
+Advanced prompts in Midjourney make use of parameters and special prompting techniques supported by the Midjourney algorithm.
+
+## Multi Prompts
+Midjourney interprets your prompt holistically by default. Using a double colon `::` tells Midjourney to interpret each part of a prompt separately.
+
+Example:
 
 ```text
-/imagine prompt: astronauta e cavalo
+/imagine prompt: astronaut and horse
 ```
+
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
 ```text
-/imagine prompt: astronauta:: e cavalo
+/imagine prompt: astronaut:: and horse
 ```
+
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
-## Usando imagens no seu prompt
-Ao fazer o upload de uma imagem para o Discord e usar sua URL em um prompt, você pode instruir o Midjourney a usar essa imagem para influenciar o conteúdo, estilo e composição dos seus resultados. 
-Exemplo:
-[Astronauta (Fonte: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
+## Image Prompts
+By uploading an image to Discord and using its URL in a prompt, you can instruct Midjourney to use that image to influence the content, style and composition of your results. Example: [Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
 
 ```text
-/imagine prompt: [URL da imagem], pintura impressionista
+/imagine prompt: [image URL], impressionist painting
 ```
+
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
+## Parameters (v4)
 
-## Parâmetros (v4)
+The following parameters are supported by Midjourney's latest model (v4).
 
-Os seguintes parâmetros são suportados pelo modelo mais recente do Midjourney (v4).
+### Aspect Ratio:
 
-### Relação de Aspecto:
+`--ar [ratio]` changes the default ratio (1:1) to a new ratio (currently the max. supported ratio is 2:1)
 
-`--ar [ratio]` muda a relação padrão (1:1) para uma nova relação (atualmente, a relação máxima suportada é 2:1)
-
-Exemplo: `astronauta no cavalo --ar 16:9` e `astronauta a cavalo --ar 1:2`
+Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
@@ -120,12 +121,11 @@ Exemplo: `astronauta no cavalo --ar 16:9` e `astronauta a cavalo --ar 1:2`
    <img src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
 </div>
 
+### Chaos:
 
-### Caos:
+`--c [value]` sets a chaos value that determines how much Midjourney varies the prompt; the higher the chaos value the more unusual and unexpected the results and compositions (range: 0 - 100)
 
-`--c [valor]` define um valor de caos que determina quanto o Midjourney varia o prompt; quanto maior o valor de caos, mais incomuns e inesperados serão os resultados e composições (intervalo: 0 - 100)
-
-Exemplo: `astronauta no cavalo --c20` e `astronauta no cavalo --c 80`
+Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
@@ -133,12 +133,11 @@ Exemplo: `astronauta no cavalo --c20` e `astronauta no cavalo --c 80`
    <img src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
 </div>
 
+### Quality:
 
-### Qualidade:
+`--q [value]` defines how much time will be spend generating the image, thus increasing the quality. The default setting is "1". Higher values use more of your subscription's GPU minutes (accepts values ".25", ".5" , "1" and "2")
 
-`--q [valor]` define quanto tempo será gasto na geração da imagem, aumentando assim a qualidade. O ajuste padrão é "1". Valores mais altos usam mais minutos de GPU da assinatura (aceita os valores ".25", ".5" , "1" e "2")
-
-Exemplo: `astronauta no cavalo --q .5` e `astronauta no cavalo --q 2`
+Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
@@ -146,11 +145,11 @@ Exemplo: `astronauta no cavalo --q .5` e `astronauta no cavalo --q 2`
    <img src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
 </div>
 
-### Semente:
+### Seed:
 
-`--seed [valor]` define um número de semente que define o ponto de partida (campo de ruído) para a geração de imagens. As sementes para cada imagem são geradas aleatoriamente quando não especificadas com o parâmetro de semente. Usar o mesmo número de semente e o prompt produzirá imagens semelhantes.
+`--seed [value]` sets a seed number which defines the starting point (noise field) for the image generation. The seeds for each image are generated randomly when not specified with the seed parameter. Using the same seed number and prompt will produce similar images.
 
-Exemplo: `astronauta no cavalo --seed 123`
+Example: `astronaut on a horse --seed 123`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
@@ -158,12 +157,11 @@ Exemplo: `astronauta no cavalo --seed 123`
    <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
 </div>
 
-### Trabalhando com estilo:
+### Stylize:
 
-`--stylize [valor]` ou `--s [valor]` influencia a força com que o Midjourney aplica seu algoritmo artístico. Valores baixos produzem imagens que seguem o prompt de perto, enquanto valores altos criam imagens muito artísticas e menos relacionadas ao prompt. O padrão é 100, o intervalo de valores é de 0 a 1000.
-(Nota: você pode usar o comando `/settings` para alterar o valor padrão de "🖌️ Estilo Med" (=`--s 100`) para "🖌️ Estilo Baixo" (=`--s 50`), "🖌️ Estilo Alto" (=`--s 250`) ou "🖌️ Estilo Muito Alto" (=`--s 750`))
+`--stylize [value]` or `--s [value]` influences how strongly Midjourney applies its artistic algorithm.  Low values produce images that closely match the prompt, high values create very artistic images that are less connected to the prompt. The default is 100, value range is 0 - 1000. (Note: you can use the `/settings`command to change the default stylize value from "🖌️ Style Med" (=`--s 100`) to "🖌️ Style Low" (=`--s 50`), "🖌️ Style High"(=`--s 250`) or "🖌️ Style Very High" (=`--s 750`))
 
-Exemplo: `astronauta no cavalo --s 50` e `astronauta no cavalo --s 900`
+Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
@@ -171,11 +169,10 @@ Exemplo: `astronauta no cavalo --s 50` e `astronauta no cavalo --s 900`
    <img src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
 </div>
 
+### Version:
+`--v [version number]`or `--version [version number]` let you access earlier Midjourney models (1-3)
 
-### Versão:
-`--v [número da versão]` ou `--version [número da versão]` permite acessar modelos anteriores do Midjourney (1-3)
-
-Exemplo: `--v 1`, `--v 2` e `--v 3`
+Example: `--v 1`, `--v 2`, and `--v 3`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
@@ -185,24 +182,23 @@ Exemplo: `--v 1`, `--v 2` e `--v 3`
       <img src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
 </div>
 
-## Parâmetros (modelos anteriores)
+## Parameters (previous models)
 
 ### Same Seed
 
-`--sameseed`: enquanto o parâmetro `--seed` produz um único campo de ruído aplicado a todas as imagens na grade inicial, o parâmetro sameseed aplica o mesmo ruído inicial a todas as imagens na grade inicial, produzindo imagens muito semelhantes.
+`--sameseed`: while the `--seed` parameter produces a single noise field applied across all images in the initial grid, the sameseed parameter applies the same starting noise to all images in the initial grid so it will produce very similar images.
 
-Exemplo: `astronauta no cavalo --sameseed --v 3`
+Example: `astronaut on a horse --sameseed --v 3`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
 </div>
 
+### Tile
 
-### Telha
+`--tile` generates images that can be used as repeating tiles to create seamless patterns for fabrics, wallpapers and textures (only works with models 1 - 3)
 
-`--tile` gera imagens que podem ser usadas como telhas repetidas para criar padrões ininterruptos para tecidos, papéis de parede e texturas (funciona apenas com os modelos 1 - 3)
-
-Exemplo: `astronauta no cavalo --tile --v 3`
+Example: `astronaut on a horse --tile --v 3`
 
 <div style={{textAlign: 'center'}}>
   <img src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
@@ -212,12 +208,11 @@ Exemplo: `astronauta no cavalo --tile --v 3`
   <img src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
 </div>
 
+### Video
 
-### Vídeo
+`--video` creates a short movie of the image grid being generated. Reacting with the ✉️ emoji lets the Midjourney Bot send you a DM with the link to the video.
 
-`--video` cria um curto filme da grade de imagem sendo gerada. Reagindo com o emoji ✉️ permite que o Bot Midjourney envie um DM com o link para o vídeo.
-
-Exemplo: `astronauta no cavalo --video --v 3`
+Example: `astronaut on a horse --video --v 3`
 
 <div style={{textAlign: 'center'}}>
  <video width="320" height="240" autoplay muted>
@@ -228,4 +223,4 @@ Exemplo: `astronauta no cavalo --video --v 3`
 
 ## Links
 
-[Documentação Oficial do Midjourney - em inglês](https://docs.midjourney.com/)
+[Official Midjourney Documentation](https://docs.midjourney.com/)
