@@ -4,19 +4,17 @@ locale: en-us
 style: chicago
 ---
 
-# 🟢 テクニックを組み合わせる
+# 🟢 Combining Techniques
 
 import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <CombinedPrompt style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <CombinedPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-ここまでに見て来たように、プロンプトにはさまざまな形式や複雑さのものがあることが分かりました。そしてそれらは、コンテキストや、指示、複数の入出力例 (Few-shot) を含めることができます。
+As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, and multiple input-output examples. However, thus far, we have only examined separate classes of prompts. Combining these different prompting techniques can lead to more powerful prompts.
 
-ただし、紹介したものは、単一のテクニックを使った方法に過ぎません。これらのテクニックは組み合わせることで、さらなる力を発揮します。
-
-コンテキスト、指示、および複数の入出力例を組み合わせたプロンプトの例を次に示します。
+Here is an example of a prompt that includes context, instructions, and multiple examples:
 
 ```text
 Twitter is a social media platform where users can post short messages called "tweets".
@@ -39,4 +37,5 @@ Q: Tweet: "I love pockets on jeans"
 A:
 ```
 
-コンテキストや複数の入出力例を追加することで、さまざまなタスクで AI のパフォーマンスを向上させることができます。
+By adding additional context/examples, we can often improve the performance of AIs on different tasks. 
+
