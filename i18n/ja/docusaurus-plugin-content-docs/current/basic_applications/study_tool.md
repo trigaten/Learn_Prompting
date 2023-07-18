@@ -2,74 +2,74 @@
 sidebar_position: 30
 ---
 
-# 🟢 勉強仲間
+# 🟢 Study Buddy
 
-LLM（Large Language Model）お気に入りの活用方法の一つは、勉強ツールとして利用することです！特に、難しい用語の説明やテスト内容のクイズに役立ちます。
+One of our favorite ways to use LLMs is as a study tool! In particular, it is useful for explaining confusing terms as well as quizzing you on test content.
 
-## 用語の説明
+## Explaining Terms
 
-最近、サボテンについての教科書（@nobel2002cacti）を読んでいて、次のような一節を見つけました。
+I was recently reading a textbook about Cacti(@nobel2002cacti), and saw this passage:
 
 ```text
-サボテンが乾燥条件への適応とPereskioideaeにおける**派生度の低い木**の存在のために、Cactaceaeは解剖学的にも形態学的にも最も興味深いファミリーの一つです。
+Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
 ```
 
-私は**派生度の低い木**が何を意味するのか全くわかりませんでした。Google で調べても研究論文しか表示されませんでした。そこで私は ChatGPT を使ってその意味を探すことにしました。私はそれに次のプロンプトを与えました。これは単に教科書からの一節と私の質問です。
+I had no idea what **less derived woods** meant, and Google only showed research articles on it. I decided to use ChatGPT to find out what it meant. I gave it the following prompt, which is simple the passage from the book and my question.
 
 ```text
-サボテンが乾燥条件への適応と Pereskioideae における派生度の低い木の存在のために、Cactaceaeは 解剖学的にも形態学的にも最も興味深いファミリーの一つです。
+Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
 
-派生度の低い木とは何を意味しますか？
+What do less derived woods mean?
 
 // highlight-start
-この文脈では、「派生度の低い木」とは、植物の進化の初期に見られる原始的な、あるいは祖先型の木を指します。これらの木は、より派生的または進化した植物で後に進化した特化した構造や特性を欠いています。CactaceaeファミリーのPereskioideae亜科では、木は他の亜科と比べて派生度が低く、非サボテン植物で見られる木とより類似しています。Pereskioideaeの派生度の低い木は、他のサボテンと比較してこれらの植物が生育する環境がより湿度が高く、乾燥していないことへの適応と考えられています。
+In this context, "less derived woods" refers to the ancestral or primitive form of wood found in the early evolution of plants. These woods lack specialized structures and features that evolved later in more derived or advanced plants. In the Pereskioideae subfamily of the Cactaceae family, the wood is less derived compared to other subfamilies and is more similar to the wood found in non-cactus plants. The less derived wood in Pereskioideae is thought to be an adaptation to the more humid and less xeric environments in which these plants grow compared to other cacti.
 //highlight-end
 ```
 
-モデルは私の質問にすぐに答えることができ、私は読書を続けることができました。
+The model was able to answer my question quickly and I was able to continue with my reading.
 
-## 自分自身にクイズを出す
+## Quizzing Yourself
 
-LLM を勉強ツールとして使用する別の方法は、自分自身にクイズを出すことです。例えば、次に控えている微積分のテストがある場合、単純に次のように質問することができます。
+Another way to use LLMs as a study tool is to quiz yourself. If you have an upcoming calculus test, you could simply ask:
 
 ```text
-私のために微積分Iの問題を5つ作ってください：
+Generate 5 calculus I quiz questions for me:
 
 // highlight-start
-1. y = x3 の導関数は何ですか？
-2. x3 + 5x2 + 7x + 4 の不定積分を求めてください。
-3. 導関数の積の公式は何ですか？
-4. y = x2 の点 (4,16) における接線の方程式を求めてください。
-5. y = x4 の二階導関数は何ですか？
+1. What is the derivative of y = x3?
+2. Evaluate the indefinite integral of x3 + 5x2 + 7x + 4.
+3. What is the product rule for derivatives?
+4. Find the equation of the line tangent to y = x2 at the point (4, 16).
+5. What is the second derivative of y = x4?
 //highlight-end
 ```
 
-もしより具体的なトピックを勉強している場合は、例えばあなたの授業のノートなど、モデルに追加情報を与える必要があるかもしれません！
+If you are studying a more specific topic, you may need to give the model additional information, for example your class notes!
 
 ```text
-2020年3月20日午後2時30分
+3/20/2020 2:30 PM
 
-マーケティングの授業ノート
+Marketing Class Notes
 
-- マーケティングの4つのP（製品、価格、場所、プロモーション）について説明した
-- B2CとB2Bの違い: B2Cは直接消費者市場、B2Bは企業間ビジネス
-- 市場調査の異なる種類: サーベイやフォーカスグループなどの数量的および質的方法
-- 価格戦略: スキミング、透過的な価格設定、競争、価値
-- セグメンテーション: 年齢、収入などで顧客層を分割
-- 4つのセグメンテーションのタイプ: 人口統計学的、地理的、心理的、行動的
-- 広告、パーソナルセリング、広報、ダイレクトマーケティング、セールスプロモーションなど、さまざまなプロモーションツールについて説明した
+- Discussed 4 P's of marketing: Product, Price, Place, Promotion
+- Difference between B2C and B2B: B2C is direct consumer market, B2B is business to business
+- Different types of market research: Quantitative and Qualitative, such as surveys and focus groups
+- Pricing Strategies: Skimming, Penetration, Competition, and Value
+- Segmentation: segmenting customer base by age, income, etc.
+- 4 types of segmentation: Demographic, Geographic, Psychographic, and Behavioral
+- Discussed different promotional tools: Advertising, Personal Selling, Public Relations, Direct Marketing, and Sales Promotions
 
-私のノートに基づいて、5つのマーケティングクイズの問題を作成してください:
+Generate 5 marketing quiz questions for me based on my notes:
 
 // highlight-start
-1. マーケティングの4Pとは何ですか？
-2. B2CとB2Bの違いは何ですか？
-3. 市場調査の種類を2つ挙げてください。
-4. セグメンテーションの4つのタイプは何ですか？
-5. 5つのプロモーションツールの名前を挙げてください。
+1. What are the 4 P's of marketing?
+2. What is the difference between B2C and B2B?
+3. What are two types of market research?
+4. What are 4 types of segmentation?
+5. Name 5 promotional tools.
 //highlight-end
 ```
 
-## 結論
+## Conclusion
 
-LLMを学習するために使用する他の方法があるかもしれません。Duolingo や Quizlet などの多くの学習会社が、LLM を製品に実装しています。
+There are probably other ways to use LLMs to study. Many learning companies like Duolingo and Quizlet are implementing LLMs into their products.
