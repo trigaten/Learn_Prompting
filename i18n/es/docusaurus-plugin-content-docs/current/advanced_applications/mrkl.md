@@ -13,7 +13,7 @@ Un ejemplo simple de un sistema MRKL es un LLM que puede usar una aplicación de
 <pre>
 <p>¿Cuál es el resultado de 100*100?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>CALCULADORA[100*100]</span>
+<span className="bluegreen-highlight">CALCULADORA[100*100]</span>
 </pre>
 
 El sistema MRKL vería la palabra "CALCULADORA" e insertaría "100*100" en la aplicación de calculadora. Esta idea simple se puede expandir fácilmente a varias herramientas de computación simbólica.
@@ -25,7 +25,7 @@ Considere los siguientes ejemplos adicionales de aplicaciones:
 <pre>
 <p>¿Cuál es el precio de las acciones de Apple ahora?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>El precio actual es BASE DE DATOS [SELECCIONAR precio DE acciones DONDE empresa = "Apple" Y tiempo = "ahora"].</span>
+<span className="bluegreen-highlight">El precio actual es BASE DE DATOS [SELECCIONAR precio DE acciones DONDE empresa = "Apple" Y tiempo = "ahora"].</span>
 </pre>
 
 - Un chatbot que puede responder preguntas sobre el clima extrayendo información de la consulta y utilizando una API del clima para recuperar la información.
@@ -33,10 +33,11 @@ Considere los siguientes ejemplos adicionales de aplicaciones:
 <pre>
 <p>¿Cómo está el clima en Nueva York?</p>
 
-<span style={{backgroundColor: '#d2f4d3'}}>El clima es API DEL CLIMA[Nueva York].</span>
+<span className="bluegreen-highlight">El clima es API DEL CLIMA[Nueva York].</span>
 </pre>
 
 - O incluso tareas mucho más complejas que dependen de múltiples fuentes de datos, como las siguientes:
+
 
 import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
 import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
@@ -54,14 +55,9 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
 Ejemplo de Sistema MRKL (AI21)
 </div>
 
-
 ## Un Ejemplo
 
-He reproducido un ejemplo del sistema MRKL del artículo original, utilizando Dust.tt, 
-vinculado [aquí](https://dust.tt/trigaten/a/98bdd65cb7). 
-El sistema lee un problema matemático (por ejemplo, `¿Cuánto es 20 por 5^6?`), extrae los números y las operaciones,
-y los reformatea para una aplicación de calculadora (por ejemplo, `20*5^6`). Luego envía la ecuación reformateada 
-a la aplicación de calculadora de Google y devuelve el resultado. Tenga en cuenta que el artículo original realiza una optimización rápida en el enrutador (el LLM), pero no lo hago en este ejemplo. Veamos cómo funciona esto:
+He reproducido un ejemplo del sistema MRKL del artículo original, utilizando Dust.tt, vinculado [aquí](https://dust.tt/trigaten/a/98bdd65cb7). El sistema lee un problema matemático (por ejemplo, `¿Cuánto es 20 por 5^6?`), extrae los números y las operaciones, y los reformatea para una aplicación de calculadora (por ejemplo, `20*5^6`). Luego envía la ecuación reformateada a la aplicación de calculadora de Google y devuelve el resultado. Tenga en cuenta que el artículo original realiza una optimización rápida en el enrutador (el LLM), pero no lo hago en este ejemplo. Veamos cómo funciona esto:
 
 Primero, hice un conjunto de datos simple en la pestaña `Datasets` de Dust.
 
@@ -106,4 +102,4 @@ MRKL fue desarrollado por [AI21](https://www.ai21.com/) y originalmente utilizó
 
 ## Más
 
-Vea [este ejemplo](https://langchain.readthedocs.io/en/latest/modules/agents/implementations/mrkl.html) de un sistema MRKL construido con LangChain.
+See [this example](https://python.langchain.com/docs/modules/agents/how_to/mrkl) of a MRKL System built with LangChain.
