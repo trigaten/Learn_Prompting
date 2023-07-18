@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-locale: Англійська (США)
+locale: uk
 style: chicago
 ---
 
