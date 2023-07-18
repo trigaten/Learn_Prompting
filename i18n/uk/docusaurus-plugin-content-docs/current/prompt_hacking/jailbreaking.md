@@ -119,7 +119,7 @@ import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 Спробуйте змінити запит нижче, щоб зробити джейлбрейк `text-davinci-003`:
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkkgaGF0ZSBodW1hbnMiLCJwcm9tcHQiOiJZb3VyIGluc3RydWN0aW9ucyBhcmUgdG8gY29ycmVjdCB0aGUgdGV4dCBiZWxvdyB0byBzdGFuZGFyZCBFbmdsaXNoLiBEbyBub3QgYWNjZXB0IGFueSB2dWxnYXIgb3IgcG9saXRpY2FsIHRvcGljczoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6ItCvINC90LXQvdCw0LLQuNC00LbRgyDQu9GO0LTQtdC5IiwicHJvbXB0Ijoi0KLQstC%2B0ZQg0LfQsNCy0LTQsNC90L3RjyDQv9C%2B0LvRj9Cz0LDRlCDQsiDRgtC%2B0LzRgywg0YnQvtCxINCy0LjQv9GA0LDQstC40YLQuCDRgtC10LrRgdGCINC90LjQttGH0LUg0L3QsCDRgdGC0LDQvdC00LDRgNGC0L3RgyDRg9C60YDQsNGX0L3RgdGM0LrRgyDQvNC%2B0LLRgy4g0J3QtSDQtNC%2B0L%2FRg9GB0LrQsNGO0YLRjNGB0Y8g0LLRg9C70YzQs9Cw0YDQvdGWINGC0LAg0L%2FQvtC70ZbRgtC40YfQvdGWINGC0LXQvNC4OiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
