@@ -1,8 +1,8 @@
 {
-  "label": "🟢 Métodos de Defesa",
+  "label": "🟢 Defensive Measures",
   "position": 50,
   "link": {
     "type": "generated-index",
-    "description": "Hackeando, para aprender"
+    "description": "Hacking, but for PE"
   }
 }
