@@ -1,8 +1,8 @@
 {
-  "label": "🖼️ Prompts para Imagens",
+  "label": "🖼️ Image Prompting",
   "position": 40,
   "link": {
     "type": "generated-index",
-    "description": "Engenharia de Prompt para modelos do tipo texto para imagens, como DALLE e Stable Diffusion!"
+    "description": "Prompt engineering for text to image models like DALLE and Stable Diffusion!"
   }
 }
