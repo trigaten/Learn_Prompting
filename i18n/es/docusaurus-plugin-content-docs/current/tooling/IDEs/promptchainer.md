@@ -1,10 +1,11 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # PromptChainer
 
-[PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)(@wu2022promptchainer) es una herramienta de investigación para la ingeniería de prompts. Se enfoca en concatenar prompts y es la herramienta de investigación más refinada que he encontrado.
+[PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)(@wu2022promptchainer) is a research tool for prompt engineering. It focuses on chaining prompts together, and is the most refined research IDE that I have found.
+
 
 import Image from '@site/docs/assets/tooling/promptchainer.webp';
 
@@ -12,6 +13,6 @@ import Image from '@site/docs/assets/tooling/promptchainer.webp';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Características
+## Features
 
-PromptChainer tiene una vista de cadena y una vista de nodo individual. También proporciona funciones de depuración.
+PromptChainer has a chain view, as well as an individual node view. They also provide debugging features.
