@@ -1,33 +1,37 @@
 ---
 sidebar_position: 1
----
+--- 
 
-# 🟢 Detectando Texto Gerado por IA
+# 🟢 Detecting AI Generated Text
 
-Detectar texto gerado por inteligência artificial é um grande problema para pesquisadores e educadores de segurança, entre outros. Ferramentas como [GPTZero](https://gptzero.me), [GPT2 detector](https://openai-openai-detector.hf.space), and [detectores bilíngues](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection) tiveram um sucesso significativo. No entanto, eles podem ser enganados.
+Detecting AI generated text is a big problem for safety researchers and educators, among others. Tools like [GPTZero](https://gptzero.me), [GPT2 detector](https://openai-openai-detector.hf.space), and [bilingual detectors](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection) have seen significant success, However, they can be [tricked](https://learnprompting.org/docs/miscl/trickery).
 
-OpenAI e outros pesquisadores (@bansal2022certified) (@gu2022watermarking) estão trabalhando para introduzir a marca d'água estatística em nos textos gerado, mas isso também pode ser enganado pela modificação de grandes partes do texto.
+OpenAI and other researchers(@bansal2022certified)(@gu2022watermarking) are working to introduce statistical watermarking into their generated text, but this too may be fooled by modifying large portions of the text.
 
-O problema de detecção de texto gerado por IA provavelmente será uma corrida armamentista à medida que novos modelos e novos métodos de detecção forem introduzidos. Muitas empresas já começaram a desenvolver soluções que afirmam ser muito eficazes, mas é difícil provar isso, especialmente à medida que os modelos mudam ao longo do tempo.
+The problem of AI text detection will likely be an arms race as new models and new detection methods are introduced. Many companies have already started to build solutions which they claim are very effective, but it is difficult to prove this, especially as models change over time.
 
-Este artigo abordará alguns dos métodos atuais para detectar texto gerado por IA, e o próximo discutirá algumas maneiras que as pessoas encontraram para enganá-los.
+This article will cover some of the current methods for detecting AI-generated text, and the next will discuss a few ways people have found to fool them.
 
+## OpenAI Text Classifier
 
-## Classificador de Texto da OpenAI
+The [OpenAI Text Classifier](https://platform.openai.com/ai-text-classifier) is a fairly good attempt at a general-purpose AI text detector. By training the model on a large quantity of AI-generated data and human-written text of a similar quality, the detector is able to compute the likelihood that any given text was created by an LLM.
 
-O [Classificador de Texto da OpenAI](https://platform.openai.com/ai-text-classifier) é uma tentativa razoavelmente boa de detector de texto de IA. Ao treinar o modelo em uma grande quantidade de dados gerados por IA e texto escrito por humanos de qualidade semelhante, o detector é capaz de calcular a probabilidade de que qualquer texto dado tenha sido criado por um LLM.
+It has a number of limitations—it doesn’t accept any submission of under 1000 words, text can easily be edited to mess with the probability calculations, and because of its professionally-focused training set, it has more trouble with text created by children or non-english speakers.
 
-Ele tem várias limitações: não aceita textos de menos de 1000 palavras, o texto pode ser facilmente editado para interferir nos cálculos de probabilidade e, devido ao seu conjunto de treinamento focado em profissionais, ele tem mais dificuldade com o texto criado por crianças ou pessoas que não falam inglês.
+It currently flags human text as AI-generated only about 9% of the time, and correctly identifies AI-generated text ~26% of the time. As the model increases in power and scope, those numbers will improve, but it may be the case that more specific detectors are required to adequately assess whether text is generated or not.
 
-## O Método de Marca D'água
+## The Watermark Method
 
-Um dos métodos para detectar textos gerados por IA requer a introdução de uma marca d'água estatística durante a geração do texto. Essas técnicas podem usar uma "lista branca" de LLM, que é um método para determinar se um texto foi gerado por um modelo de IA específico. A marca d'água funciona selecionando um conjunto aleatório de tokens "verdes" antes que uma palavra seja gerada e, em seguida, promovendo suavemente o uso dos tokens selecionados durante a amostragem. Esses valores ponderados têm um efeito mínimo na qualidade das gerações, mas podem ser detectados algoritmicamente por outro LLM (@kirchenbauer2023watermarking).
+One method to detect AI generated text requires introducing a statistical watermark when generating the text. These techniques may use a LLM “whitelist”, which is a method of determining if text was generated by a specific AI model. The watermark works by selecting a randomized set of "green" tokens before a word is generated, and then softly promoting use of the selected tokens during sampling. These weighted values have a minimal effect on the quality of generations, but can be algorithmically detected by another LLM(@kirchenbauer2023watermarking).
+
+This is an intriguing idea, but it requires a model’s creators to implement this framework into their LLM. If a model doesn’t have the watermark built in, this method will not work.
 
 ## DetectGPT
 
-O método [DetectGPT](https://detectgpt.ericmitchell.ai/)(@mitchell2023detectgpt) é capaz de detectar textos gerados por IA com menos configuração do que os conceitos anteriores. Pesquisadores descobriram que as gerações de texto de modelos de linguagem de grande escala tendem a "ocupar regiões de curvatura negativa da função de probabilidade logarítmica do modelo". Por causa disso, é possível criar um sistema baseado em curvatura para determinar se um bloco de texto foi gerado de forma procedural.
+The [DetectGPT](https://detectgpt.ericmitchell.ai/)(@mitchell2023detectgpt) method is able to detect AI-generated text with less setup than the previous concepts. Researchers have found that LLM text generations tend to "occupy negative curvature regions of the model’s log probability function". Because of this, it is possible to create a curvature-based system for determining if a block of text was procedurally generated.
 
-O sistema funciona computando probabilidades logarítmicas do modelo que se acredita ter gerado o texto e comparando-os com alterações aleatórias do texto de outro modelo de linguagem genérico pré-treinado. Dessa forma, o DetectGPT é capaz de identificar a probabilidade de um trecho de texto ter sido gerado usando apenas curvas de probabilidade!
+It works by computing log probabilities from the model that was thought to have generated the text and comparing them to random alterations of the text from another, pre-trained generic language model. In this way, DetectGPT is able to identify the likelihood of the passage being generated using probability curves alone!
 
-## Nota
-Para uma discussão adicional sobre o tópico de detectores e como as pessoas estão enganando-os, consulte [este artigo](https://learnprompting.org/docs/miscl/trickery).
+## Note
+
+For an additional discussion on the topic of detectors and how people are tricking them, see [this article](https://learnprompting.org/docs/miscl/trickery).
