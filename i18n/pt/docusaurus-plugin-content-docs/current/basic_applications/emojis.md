@@ -2,118 +2,116 @@
 sidebar_position: 40
 ---
 
-# 🟢 Procurando emojis
+# 🟢 Finding Emojis
 
-🤔 Você já precisou do **emoji perfeito** para um Tweet ou post?
+🤔 Do you ever need the **perfect emoji** for a tweet or post?
 
-Às vezes é difícil lembrar qual dos milhares de emojis seria o melhor. Felizmente, a inteligência artificial pode ajudar!
+Sometimes it is hard to remember which of the thousands of emojis would be best. Fortunately, AI can help!
 
-Como exemplo, vamos tentar encontrar os melhores emojis para adicionar ao tweet abaixo:
+As an example, let's try to find the best emojis to add to [this](https://twitter.com/learnprompting/status/1631786358330085382) tweet:
 
 ```text
+Ready to unleash your creativity with AI?
 
-Pronto para liberar sua criatividade com a IA?
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-Descubra o poder do Midjourney, o gerador de imagens de IA que produz imagens incríveis e artísticas!
-
-Confira nosso artigo mais recente para aprender como criar suas próprias obras-primas únicas com IA.
+Check out our newest article to learn how to create your own unique masterpieces with AI
 ```
 
-Podemos pedir ao Chat-GPT para ajudar.
+We could ask ChatGPT to help us:
 
 ```text
+Ready to unleash your creativity with AI?
 
-Pronto para liberar sua criatividade com a IA?
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-Descubra o poder do Midjourney, o gerador de imagens de IA que produz imagens incríveis e artísticas!
+Check out our newest article to learn how to create your own unique masterpieces with AI
 
-Confira nosso artigo mais recente para aprender como criar suas próprias obras-primas únicas com IA.
-
-Quais as opções de emoji para incluir no tweet acima?
+What are some good emojis to add to this tweet?
 
 // highlight-start
-Alguns emojis que poderiam ser usados no tweet acima são:
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-🤖 - para representar a IA (Inteligência Artificial)
-🎨 - para representar a criatividade e produção artística
-📷 - para representar imagens e fotografia
-🚀 - para representar o poder e potencial da tecnologia
-
-Claro, há muitos outros emojis que poderiam ser usados, dependendo do tom e estilo que se deseja transmitir.
+🎨 Palette: to represent creativity and art.
+🤖 Robot face: to indicate the involvement of AI and technology.
+🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
+🔍 Magnifying glass: to suggest exploration and discovery.
+💡 Light bulb: to signify new ideas and innovation.
+📝 Memo: to imply a step-by-step guide on how to create masterpieces with AI.
 // highlight-end
 ```
 
-Essas opções são boas, mas eu quero um para cada frase! 
+These are good, but I like to go sentence by sentence!
 
-## Primeira Frase
+## Sentence 1
 
 ```text
-Pronto para liberar sua criatividade com a IA?
-Quais as opções de emoji para incluir na frase do tweet acima?
+Ready to unleash your creativity with AI?
+
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-Algumas opções de emojis para incluir na frase do tweet acima poderiam ser:
+Here are some emojis that could go well with the sentence "Ready to unleash your creativity with AI?":
 
-🎨 - paleta de cores, para representar a criatividade
-💡 - lâmpada, para representar a ideia ou a inspiração
-🤖 - robô, para representar a inteligência artificial
-🖼️ - moldura, para representar a arte
-🚀 - foguete, para representar o poder e a velocidade da tecnologia.
+🎨 Palette: to suggest creativity and art.
+🤖 Robot face: to indicate the involvement of AI and technology.
+💪 Flexed biceps: to show strength and determination to create something new.
+🚀 Rocket: to imply progress, advancement, and innovation.
+🌟 Sparkles: to suggest the idea of something new and exciting.
 // highlight-end
 ```
 
-## Segunda Frase
+## Sentence 2
 
 ```text
-Descubra o poder do Midjourney, o gerador de imagens de IA que produz imagens incríveis e artísticas!
+Check out our newest article to learn how to create your own unique masterpieces with AI
 
-Quais as opções de emoji para incluir na frase do tweet acima?
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-Algumas opções de emoji para incluir na frase do tweet acima são:
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-🤖 - para representar a inteligência artificial
-🎨 - para representar arte e criatividade
-🌟 - para representar algo impressionante e surpreendente
-📷 - para representar imagens e fotografias
+🤖 Robot face: to indicate the involvement of AI and technology.
+🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
+📷 Camera: to suggest that the generated images are of high quality and worth sharing.
+🎨 Palette: to represent creativity and art.
+🔍 Magnifying glass: to imply that the AI image generator is a tool to explore and discover new possibilities.
 
 // highlight-end
 ```
 
-## Terceira Frase
+## Sentence 3
 
 ```text
-Confira nosso artigo mais recente para aprender como criar suas próprias obras-primas únicas com IA.
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
 
-Quais as opções de emoji para incluir na frase do tweet acima?
+What are some good emojis to add to this part of a tweet?
 
 //highlight-start
-Algumas opções de emoji que poderiam ser usadas para essa frase são:
+Here are some relevant emojis that you can use to convey the message and tone of the tweet:
 
-🎨 (paleta de cores) para representar a ideia de criar obras de arte
-🤖 (robô) para representar a ideia de inteligência artificial
-🔍 (lupa) para representar a ideia de busca por conhecimento e aprendizado
-💡 (lâmpada) para representar a ideia de ideias e criatividade.
-
+📝 Memo: to suggest that the article is a guide or a how-to.
+💡 Light bulb: to imply new ideas and inspiration.
+🤖 Robot face: to indicate the involvement of AI and technology.
+🎨 Palette: to represent creativity and art.
+📚 Book: to suggest that the article is informative and educational.
 // highlight-end
 ```
 
-## Conclusão
+## Conclusion
 
-Agora que eu tenho sugestões de emojis para cada parte, eu posso escolher os que eu gosto e escrever a versão final do meu tweet.
-
+Now that I have emoji suggests for each part, I can add in the ones I like and tweet it out!
 
 ```text
-Pronto para liberar sua criatividade com a IA? 🎨 🚀
+Ready to unleash your creativity with AI? 🔥🎨
 
-Descubra o poder do Midjourney, o gerador de imagens de IA que produz imagens incríveis e artísticas! 🤖🌟 
+Discover the power of Midjourney, the AI image generator that produces stunning and artistic images! ✨
 
-Confira nosso artigo mais recente para aprender como criar suas próprias obras-primas únicas com IA. 💡 🤩
-
+Check out our newest article to learn how to create your own unique masterpieces with AI 🖌️
 ```
 
-Observe que adicionei alguns emojis que não foram sugeridos pela IA. Você sempre deve usar o seu próprio julgamento ao escolher emojis e apenas usar o ChatGPT para ajudá-lo a encontrar boas opções!
+Note that I added in some emojis that weren't suggested by the AI. You should always use your own judgement when choosing emojis, and just use ChatGPT to help you find some good options!
 
-## Notas
- 
-- Eu prefiro o ChatGPT para essa tarefa, já que ele fornece justificativas para suas sugestões. O GPT-3 muitas vezes apenas produz uma lista de emojis: 🤩😎🤩🤩😃😃💪
+## Notes
+
+- I prefer ChatGPT for this task since it provides rationales for its suggestions. GPT-3 often just outputs a list of emojis: 🤩😎🤩🤩😃😃💪
