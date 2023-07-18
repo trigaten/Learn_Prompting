@@ -2,10 +2,9 @@
 sidebar_position: 4
 ---
 
-# 🟡 Código como Raciocínio
+# 🟡 Code as Reasoning
 
-
-Os Modelos de Linguagem Auxiliados por Programa [(Program-aided Language Models - PALs)](https://reasonwithpal.com)(@gao2022pal) são outro exemplo de um sistema de MRKL. Quando uma pergunta é feita, os PALs são capazes de escrever código que resolve essa pergunta. Eles enviam o código para uma execução programática para obter o resultado. O PAL funciona em contraste com a Cadeia de Pensamento; o raciocínio intermediário do PAL é código, enquanto o do CdP é linguagem natural.
+[Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) are another example of a MRKL system. When given a question, PALs are able to **write code** that solves this question. They send the code to a programmatic runtime to get the result. PAL works in contrast to CoT; PAL's intermediate reasoning is code, while CoT's is natural language.
 
 import image from '@site/docs/assets/advanced/pal.webp';
 
@@ -17,112 +16,103 @@ import image from '@site/docs/assets/advanced/pal.webp';
 PAL Example (Gao et al.)
 </div>
 
+One important thing to note it that PAL actually interleaves natural language (NL) and code. In the above image, in blue are natural language reasoning that PAL generates. Although it is not shown in the image, PAL actually generates '\#' before each line of NL reasoning, so that they are interpreted as comments by the programmatic runtime.
 
-Uma coisa importante a notar é que o PAL, na verdade, intercala linguagem natural (NL) e código. Na imagem acima, em azul, estão os raciocínios em linguagem natural que o PAL gera. Embora isso não seja mostrado na imagem, o PAL, na verdade, gera um '#' antes de cada linha de raciocínio em NL, para que sejam interpretados como comentários pela execução programática.
+## Example
 
-## Exemplo
+Let's look at an example of PAL solving a math question. I use a 3-shot prompt, which is a simplified version of [this one](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal).
 
-Vamos ver um exemplo de PAL resolvendo uma questão de matemática. Eu uso um prompt de 3 disparos, que é uma versão simplificada [deste aqui](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
-
-Usarei o LangChain, um pacote Python para encadear a funcionalidade do LLM. Primeiro, são necessárias algumas instalações:
-
+I will use langchain, a Python package for chaining LLM functionality for this. First, a few installations are needed:
 
 ```python
 !pip install langchain==0.0.26
 !pip install openai
 from langchain.llms import OpenAI
 import os
-os.environ["OPENAI_API_KEY"] = "sk-SUA_CHAVE_AQUI"
+os.environ["OPENAI_API_KEY"] = "sk-YOUR_KEY_HERE"
 ```
 
-Então, podemos criar uma instância do GPT-3 davinci-002 (uma chamada de API acontece quando usamos esse objeto)
-
+Then, we can create an instance of GPT-3 davinci-002 (an API call happens when we use this object)
 ```
 llm = OpenAI(model_name='text-davinci-002', temperature=0)
 ```
 
-Aqui está o prompt de poucos disparos:
-
+Here is the few shot prompt:
 
 ```python
 MATH_PROMPT = '''
-Q: Havia nove computadores na sala do servidor. Cinco computadores foram instalados a cada dia, de segunda a quinta-feira. Quantos computadores há agora na sala do servidor?
+Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
 
-# solução em Python:
-"""Havia nove computadores na sala do servidor. Cinco computadores foram instalados a cada dia, de segunda a quinta-feira. Quantos computadores há agora na sala do servidor?"""
-computador_inicio = 9
-computador_por_dia = 5
-num_dias = 4  # 4 dias entre segunda e quinta
-computadores_adicionados = computador_por_dia * num_dias
-computadores_total = computador_inicio + computadores_adicionados
-resultado = computadores_total
-return resultado
-
-
-Q: Dani tem cinco brinquedos. Para o Natal, ela ganhou dois brinquedos de seu pai e dois da sua mãe. Quantos brinquedos ela tem agora?
-
-# solução em Python:
-"""Dani tem cinco brinquedos. Para o Natal, ela ganhou dois brinquedos de seu pai e dois da sua mãe. Quantos brinquedos ela tem agora?"""
-brinquedos_inicio = 5
-mae_brinquedos = 2
-pai_brinquedos = 2
-brinquedos_recebidos= mae_brinquedos + pai_brinquedos
-total_brinquedos= brinquedos_inicio + brinquedos_recebidos
-resultado = total_brinquedos
-return resultado
+# solution in Python:
+"""There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?"""
+computers_initial = 9
+computers_per_day = 5
+num_days = 4  # 4 days between monday and thursday
+computers_added = computers_per_day * num_days
+computers_total = computers_initial + computers_added
+result = computers_total
+return result
 
 
-Q: Jason tinha 20 pirulitos. Ele deu alguns para o Denny. Agora Jason tem 12 pirulitos. Quantos pirulitos ele deu para o Denny?
+Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
 
-# solução em Python:
-"""Jason tinha 20 pirulitos. Ele deu alguns para o Denny. Agora Jason tem 12 pirulitos. Quantos pirulitos ele deu para o Denny?"""
-jason_pirulitos_inicio = 20
-jason_pirulitos_fim = 12
-denny_pirulitos = jason_pirulitos_inicio - jason_pirulitos_fim
-resultado = denny_pirulitos
-return resultado
+# solution in Python:
+"""Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?"""
+toys_initial = 5
+mom_toys = 2
+dad_toys = 2
+total_received = mom_toys + dad_toys
+total_toys = toys_initial + total_received
+result = total_toys
 
 
-Q: {pergunta}
+Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
 
-# solução em Python:
+# solution in Python:
+"""Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?"""
+jason_lollipops_initial = 20
+jason_lollipops_after = 12
+denny_lollipops = jason_lollipops_initial - jason_lollipops_after
+result = denny_lollipops
+
+Q: {question}
+
+# solution in Python:
 '''
 ```
 
-Agora podemos passar esse prompt combinado para o GPT-3.
+Now we can pass the combined prompt to GPT-3.
 
 ```
 llm_out = llm(MATH_PROMPT.format(question=question))
 print(llm_out)
 ```
 
-A saída é:
+The output is:
 
 <pre>
 <span className="bluegreen-highlight">
-Emma levou uma viagem de avião de 60 minutos para Minas Gerais. Ela então pegou um trem de 2 horas para Ouro Preto, e então um ônibus de 30 minutos para Ouro Branco. Quanto tempo ela levou para chegar a Ouro Branco?
-<br/><br/>
+Emma took a 60 minute plane ride to seattle. She then took a 2 hour train ride to portland, and then a 30 minute bus ride to vancouver. How long did it take her to get to vancouver?<br/><br/>
 
-viagem_aviao = 60<br/>
-viagem_trem = 2 * 60  # 2 horas em minutos<br/>
-viagem_onibus = 30<br/>
-total_tempo = viagem_aviao + viagem_trem + viagem_onibus<br/>
-resultado = total_time
+plane_ride = 60<br/>
+train_ride = 2 * 60  # 2 hours in minutes<br/>
+bus_ride = 30<br/>
+total_time = plane_ride + train_ride + bus_ride<br/>
+result = total_time
 </span>
 </pre>
 
-Finalmente, podemos passar esse código para um runtime no Python e obter a resposta:
-
+Finally, we can pass this code to a Python runtime to get the answer:
 
 ```python
 exec(llm_out)
 print(result)
 ```
 
-A saída é **210**, o que é correta.
+The output is **210**, which is correct.
 
-Veja o notebook Jupyter para esse exemplo [here](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
+See the Jupyter notebook for this example [here](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
 
 ## More
 
-Confira também [esse exemplo](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).
+Also see [PAL's colab example](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).
