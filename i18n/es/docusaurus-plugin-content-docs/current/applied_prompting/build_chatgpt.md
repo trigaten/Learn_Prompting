@@ -15,11 +15,11 @@ import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.web
 
 ## Introducción
 
-[ChatGPT](https://chat.openai.com/chat) ha explotado en el último mes, ganando un millón de usuarios en solo una semana. Sorprendentemente, el modelo subyacente, GPT-3, debutó en 2020 y se lanzó para acceso público hace más de un año.   
+[ChatGPT](https://chat.openai.com/chat) ha explotado en el último mes, ganando un millón de usuarios en solo una semana. Sorprendentemente, el modelo subyacente, GPT-3, debutó en 2020 y se lanzó para acceso público hace más de un año.
 
 Para aquellos que no lo saben, ChatGPT es un nuevo modelo de lenguaje de OpenAI que fue ajustado a partir de GPT-3 para ser optimizado para la conversación (@chatgpt2022). Tiene una interfaz de chat fácil de usar, donde puedes ingresar una entrada y obtener una respuesta de un asistente de inteligencia artificial. Échale un vistazo en [chat.openai.com](https://chat.openai.com/chat).
 
-Si bien las primeras versiones de GPT-3 no eran tan avanzadas como la actual serie GPT-3.5, aún eran impresionantes. Estos modelos han estado disponibles a través de una API y una interfaz de usuario web de <a href="https://beta.openai.com/playground">playground</a> que te permite ajustar ciertos hiperparámetros de configuración y probar prompts. GPT-3 ganó una tracción significativa, pero no se acercó a la viralidad de ChatGPT. 
+Si bien las primeras versiones de GPT-3 no eran tan avanzadas como la actual serie GPT-3.5, aún eran impresionantes. Estos modelos han estado disponibles a través de una API y una interfaz de usuario web de <a href="https://beta.openai.com/playground">playground</a> que te permite ajustar ciertos hiperparámetros de configuración y probar prompts. GPT-3 ganó una tracción significativa, pero no se acercó a la viralidad de ChatGPT.
 
 Lo que hace que ChatGPT sea tan exitoso en comparación con GPT-3 es su accesibilidad como un asistente de IA sencillo para la persona promedio, independientemente de su conocimiento de la ciencia de datos, los modelos de lenguaje o la IA.
 
@@ -28,7 +28,7 @@ En este artículo, describo cómo se pueden implementar chatbots como ChatGPT ut
 ## Motivación
 Este artículo se escribió en parte debido a un tweet de <a href="https://twitter.com/goodside">Riley Goodside</a>, que señaló cómo podría haberse implementado ChatGPT.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cómo crear tu propio ChatGPT usando GPT-3 (text-davinci-003) - donde puedes personalizar las reglas según tus necesidades y acceder al chatbot resultante a través de una API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">26 de diciembre de 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cómo crear tu propio ChatGPT usando GPT-3 (text-davinci-003) - donde puedes personalizar las reglas según tus necesidades y acceder al chatbot resultante a través de una API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">26 de diciembre de 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Al igual que otros modelos de la serie GPT-3.5, ChatGPT fue entrenado utilizando [RLHF](https://huggingface.co/blog/rlhf), pero gran parte de su efectividad proviene de utilizar un **buen prompt**.
 
@@ -39,7 +39,7 @@ Al igual que otros modelos de la serie GPT-3.5, ChatGPT fue entrenado utilizando
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Prompt completo de Skippy del encabezado del artículo</p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">El prompting es el proceso de instruir a una IA para que haga algo.</a> Como probablemente hayas visto en los ejemplos de ChatGPT en línea, puedes pedirle que haga casi cualquier cosa. Los casos de uso comunes son resumir textos, escribir contenido basado en una descripción o crear cosas como poemas, recetas y mucho más.
+<a href="https://learnprompting.org/docs/basics/prompting">El prompting es el proceso de instruir a una IA para que haga algo.</a> Como probablemente hayas visto en los ejemplos de ChatGPT en línea, puedes pedirle que haga casi cualquier cosa. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Los casos de uso comunes son resumir textos, escribir contenido basado en una descripción o crear cosas como poemas, recetas y mucho más.
 
 <p></p>
 
@@ -60,7 +60,7 @@ GPT-3 es capaz de 'aprender' a partir de una instrucción simple o unos pocos ej
 
 Los intercambios anteriores entre Skippy y el usuario se agregan al siguiente prompt. Cada vez que proporcionamos más entrada del usuario y obtenemos más salida del chatbot, el prompt se expande para incorporar este nuevo intercambio. Así es como los chatbots como Skippy y ChatGPT pueden **recordar las entradas anteriores**. Sin embargo, hay un límite en cuanto a cuánto puede recordar un chatbot de GPT-3.
 
-Los prompts pueden llegar a ser muy largos después de varias interacciones, especialmente si estamos utilizando el chatbot para generar respuestas largas como publicaciones de blog. Los prompts enviados a GPT-3 se convierten en tokens, que son palabras individuales o partes de ellas. Existe un límite de <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (aproximadamente 3000 palabras)</a> para el prompt combinado y la respuesta generada para modelos GPT-3, incluyendo ChatGPT. 
+Los prompts pueden llegar a ser muy largos después de varias interacciones, especialmente si estamos utilizando el chatbot para generar respuestas largas como publicaciones de blog. Los prompts enviados a GPT-3 se convierten en tokens, que son palabras individuales o partes de ellas. Existe un límite de <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (aproximadamente 3000 palabras)</a> para el prompt combinado y la respuesta generada para modelos GPT-3, incluyendo ChatGPT.
 
 ### Algunos ejemplos
 
@@ -81,7 +81,7 @@ Puede ser útil tener un chatbot que haga preguntas y obtenga comentarios del us
 
 <p></p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Prompt del Tweet:
 ```markdown
@@ -104,9 +104,9 @@ Visión general de lo que tenemos que hacer:
 1. Formatear la entrada del usuario en un mensaje de chatbot para GPT-3.
 2. Obtener la respuesta del chatbot como una respuesta de GPT-3.
 3. Actualizar el mensaje con tanto la entrada del usuario como la respuesta del chatbot.
-4. Repetir.
+4. Loop
 
-Aquí está el mensaje que utilizaré. Podemos usar Python para reemplazar <historial de conversación\> y <entrada del usuario\> con sus valores reales.
+Aquí está el mensaje que utilizaré. Podemos usar Python para reemplazar <conversation history\> y <user input\> con sus valores reales.
 
 ```python
 chatbot_prompt = """
@@ -119,7 +119,6 @@ chatbot_prompt = """
 ```
 
 Mantengo un registro tanto de la próxima entrada del usuario como de la conversación anterior. Cada iteración se agrega una nueva entrada/salida entre el chatbot y el usuario.
-
 ```python
 import openai
 
@@ -139,7 +138,7 @@ def obtener_respuesta(historial_de_conversacion, entrada_del_usuario):
         "<historial de conversación>", historial_de_conversacion).replace("<entrada del usuario>", entrada_del_usuario)
 
     # Obtener la respuesta de GPT-3
-    respuesta = openai.Completion.create(
+    respuesta = openai. Completion.create(
         engine=model_engine, prompt=mensaje, max_tokens=2048, n=1, stop=None, temperature=0.5)
 
     # Extraer la respuesta del objeto de respuesta
@@ -168,6 +167,7 @@ main()
 Aquí hay un enlace al código completo para un chatbot simple: <a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">aquí</a>.
 
 <p></p>
+
 Ahora solo queda construir una interfaz de usuario atractiva con la que los usuarios puedan interactuar.
 
 Written by [jayo78](https://twitter.com/jayo782).
