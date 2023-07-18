@@ -9,7 +9,7 @@ style: chicago
 import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
-  <CombinedPrompt style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <CombinedPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 Comme nous l'avons vu dans les pages précédentes, les prompts peuvent avoir des formats et des complexités variables. Elles peuvent inclure du contexte, des instructions, et plusieurs exemples d'entrée-sortie. Cependant, jusqu'à présent, nous n'avons examiné que des classes de prompts séparées. La combinaison de ces différentes techniques de prompt peut conduire à des prompts plus performants.
@@ -35,4 +35,5 @@ Q: Tweet : "J'adore les poches sur les jeans"
 R:
 ```
 
-En ajoutant du contexte ou des exemples supplémentaires, nous pouvons souvent améliorer les performances des IA sur différentes tâches.
+En ajoutant du contexte ou des exemples supplémentaires, nous pouvons souvent améliorer les performances des IA sur différentes tâches. 
+
