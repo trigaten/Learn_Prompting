@@ -2,7 +2,7 @@
 sidebar_position: 90
 ---
 
-# 🟢 Pitfalls of LLMs
+# 🟢 LLMs の落とし穴
 
 import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 
@@ -10,32 +10,33 @@ import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
   <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-LLMs are extremely powerful, but they are by no means perfect. There are many pitfalls that you should be aware of when using them.
+LLMは非常に強力ですが、決して完璧ではありません。 それらを使用する際に注意すべき多くの落とし穴があります。
 
-## Citing Sources
+## 引用ソース
 
-LLMs for the most part **cannot accurately cite sources**. This is because they do not have access to the Internet, and do not exactly remember where their information came from. They will frequently generate sources that look good, but are entirely inaccurate.
-
-:::note
-Strategies like search augmented LLMs (LLMs that can search the Internet and other sources) can often fix this problem
-:::
-
-## Bias
-
-LLMs are often biased towards generating stereotypical responses. Even with safe guards in place, they will sometimes say sexist/racist/homophobic things. Be careful when using LLMs in consumer-facing applications, and also be careful when using them in research (they can generate biased results).
-
-## Hallucinations
-
-LLMs will frequently generate falsehoods when asked a question that they do not know the answer to. Sometimes they will state that they do not know the answer, but much of the time they will confidently give a wrong answer.
-
-## Math
-
-LLMs are often bad at math. They have difficulty solving simple math problems, and they are often unable to solve more complex math problems.
+LLM はほとんどの場合、**情報源を正確に示すことはできません**。 LLM はインターネットにアクセスできず、情報がどこから来たのかを正確に記憶していないためです。 LLM はいかにもそれらしい情報源を提示しますが、完全に不正確です。
 
 :::note
-This problem can be fixed to some extent by using a [tool augmented LLM](https://learnprompting.org/docs/advanced_applications/mrkl).
+検索拡張 LLM（インターネットやその他のソースを検索できる LLM）など、この問題を解決可能なものも存在します。
 :::
 
-## Prompt Hacking
+## バイアス
 
-Users can often trick LLMs into generating any content they want. Read more about this [here](https://learnprompting.org/docs/category/-prompt-hacking).
+LLM はしばしばステレオタイプな回答を生成する傾向があります。 安全装置があっても、時には性差別的な発言や人種差別的な発言、または同性愛者に対する差別的な発言をすることがあります。 消費者向けアプリケーションでLLMを使用する際には注意してください。 また、研究で使用する際にも偏りのある結果を生成する可能性があるため注意が必要です。
+
+## 幻覚
+
+LLM は、回答が分からない質問に対しては、しばしば誤った情報を生成することがあります。 時には、答えが分からないと回答することもありますが、多くの場合、自信満々に誤った回答をします。
+
+## 数学
+
+LLM は数学を苦手とします。 彼らは簡単な数学の問題を解くのすら難しく、より複雑な数学の問題は解決できないことがよくあります。
+
+:::note
+この問題は、[ツール拡張 LLM](https://learnprompting.org/docs/advanced_applications/mrkl) を使用して、ある程度解決できます。
+:::
+:::
+
+## プロンプトハッキング
+
+ユーザーはしばしば LLM をして、望む内容を生成させることができます。 詳しくは[こちら](https://learnprompting.org/ja/docs/category/-prompt-hacking)をご覧ください。
