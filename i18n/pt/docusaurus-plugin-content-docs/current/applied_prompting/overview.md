@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introdução
+# 🟢 Introduction
 
-Agora vamos discutir algumas demonstrações completas do processo de engenharia de prompts escritas por membros da comunidade.
+Now we will discuss the end-to-end prompt engineering process via articles written by community members.
