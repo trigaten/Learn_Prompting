@@ -2,108 +2,81 @@
 sidebar_position: 4
 ---
 
-# 🟢 Few-shot プロンプト
+# 🟢 Few shot prompting
 
 import FewShot from '@site/docs/assets/basics/few_shot.svg';
 
 <div style={{textAlign: 'center'}}>
-  <FewShot style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
+  <FewShot style={{width:"100%",height:"200px",verticalAlign:"top"}}/>
 </div>
 
-さらにもう 1 つのプロンプト戦略は *Few-shot プロンプト*です。これは基本的に、モデルに実行させたいことのいくつかの例 (shot と呼ばれます) を表示するだけです。
+Yet another prompting strategy is *few shot prompting*(@logan-iv-etal-2022-cutting)(@lake2015human), which is basically just showing the model a few examples (called shots) of what you want it to do.
 
-Few-shot の例を考えてみましょう。この例では、顧客からのフィードバックをポジティブまたはネガティブに分類しようとしています。ポジティブ/ネガティブの分類結果の例を 3 つ示してから、`It doesn't work!:` というまだ分類されていない新しい文を示します。モデルは、最初の 3 つの例が `positive` または `negative` に分類されたことを確認し、この情報を使用して新しい例を `negative` に分類します。
+Consider the above example, in which we are attempting to classify customer feedback as positive or negative. We show the model 3 examples of positive/negative feedback, then we show it a new piece of feedback that has not been classified yet (`It doesnt work!:`). The model sees that the first 3 examples were classified as either `positive` or `negative`, and uses this information to classify the new example as `negative`.
 
-例を構成する方法は非常に重要です。これら 3 つの例を `入力: 分類結果` として構成したため、モデルは、`this review is positive` のような完全な文ではなく、最終行の後に 1 つの単語を出力します。
+The way that we structure the examples is very important. Since we have structured these 3 examples as `input: classification`, the model outputs a single word after the final line, instead of saying a full sentence like `this review is positive`. 
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Great product, 10/10: positive\nDidn't work very well: negative\nSuper helpful, worth it: positive\nIt doesnt work!:" initial-response="negative" max-tokens="256" box-rows="5" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Im5lZ2F0aXZlIiwicHJvbXB0IjoiR3JlYXQgcHJvZHVjdCwgMTAvMTA6IHBvc2l0aXZlXG5EaWRuJ3Qgd29yayB2ZXJ5IHdlbGw6IG5lZ2F0aXZlXG5TdXBlciBoZWxwZnVsLCB3b3J0aCBpdDogcG9zaXRpdmVcbkl0IGRvZXNudCB3b3JrIToiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"350px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>
 
 :::note
-各入出力ペアは *exemplar* (模範)と呼ばれます。
+Each input-output pair is called an *exemplar*.
 :::
 
-## より詳細な構造を与える
+## More on structure
 
-Few-shot プロンプトの主な使用例は、出力をモデルに説明するのが難しい**特定の方法で構造化**する必要がある場合です。これを理解するために、関連する例を考えてみましょう。地元の新聞記事を分析して、近くの町の有名な市民の名前と職業をまとめる必要があるとします。モデルに各記事を読み込み、名前と職業のリストを `Last, First [OCCUPATION]` 形式で出力させたいとします。モデルにこれをさせるために、いくつかの例を示すことができます:
+A key use case for few shot prompting is when you need the output to be **structured in a specific way** that is difficult to describe to the model. To understand this, let's consider a relevant example: say you need to compile names and occupations of well known citizens in towns nearby by analyzing local newspaper articles. You would like the model to read each article and output a list of names and occupations in `First Last [OCCUPATION]` format. In order to get the model to do this, you can show it a few examples:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="In the bustling town of Emerald Hills, a diverse group of individuals made their mark. Sarah Martinez, a dedicated nurse, was known for her compassionate care at the local hospital. David Thompson, an innovative software engineer, worked tirelessly on groundbreaking projects that would revolutionize the tech industry. Meanwhile, Emily Nakamura, a talented artist and muralist, painted vibrant and thought-provoking pieces that adorned the walls of buildings and galleries alike. Lastly, Michael O'Connell, an ambitious entrepreneur, opened a unique, eco-friendly cafe that quickly became the town's favorite meeting spot. Each of these individuals contributed to the rich tapestry of the Emerald Hills community.\n1. Sarah Martinez [NURSE]\n2. David Thompson [SOFTWARE ENGINEER]\n3. Emily Nakamura [ARTIST]\n4. Michael O'Connell [ENTREPRENEUR]\n\nAt the heart of the town, Chef Oliver Hamilton has transformed the culinary scene with his farm-to-table restaurant, Green Plate. Oliver's dedication to sourcing local, organic ingredients has earned the establishment rave reviews from food critics and locals alike.\n\nJust down the street, you'll find the Riverside Grove Library, where head librarian Elizabeth Chen has worked diligently to create a welcoming and inclusive space for all. Her efforts to expand the library's offerings and establish reading programs for children have had a significant impact on the town's literacy rates.\n\nAs you stroll through the charming town square, you'll be captivated by the beautiful murals adorning the walls. These masterpieces are the work of renowned artist, Isabella Torres, whose talent for capturing the essence of Riverside Grove has brought the town to life.\n\nRiverside Grove's athletic achievements are also worth noting, thanks to former Olympic swimmer-turned-coach, Marcus Jenkins. Marcus has used his experience and passion to train the town's youth, leading the Riverside Grove Swim Team to several regional championships.\n1. Oliver Hamilton [CHEF]\n2. Elizabeth Chen [LIBRARIAN]\n3. Isabella Torres [ARTIST]\n4. Marcus Jenkins [COACH]\n\nOak Valley, a charming small town, is home to a remarkable trio of individuals whose skills and dedication have left a lasting impact on the community.\n\nAt the town's bustling farmer's market, you'll find Laura Simmons, a passionate organic farmer known for her delicious and sustainably grown produce. Her dedication to promoting healthy eating has inspired the town to embrace a more eco-conscious lifestyle.\n\nIn Oak Valley's community center, Kevin Alvarez, a skilled dance instructor, has brought the joy of movement to people of all ages. His inclusive dance classes have fostered a sense of unity and self-expression among residents, enriching the local arts scene.\n\nLastly, Rachel O'Connor, a tireless volunteer, dedicates her time to various charitable initiatives. Her commitment to improving the lives of others has been instrumental in creating a strong sense of community within Oak Valley.\n\nThrough their unique talents and unwavering dedication, Laura, Kevin, and Rachel have woven themselves into the fabric of Oak Valley, helping to create a vibrant and thriving small town." initial-response="1. Laura Simmons [FARMER]\n2. Kevin Alvarez [DANCE INSTRUCTOR]\n3. Rachel O'Connor [VOLUNTEER]" max-tokens="616" box-rows="20" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IjEuIExhdXJhIFNpbW1vbnMgW0ZBUk1FUl1cbjIuIEtldmluIEFsdmFyZXogW0RBTkNFIElOU1RSVUNUT1JdXG4zLiBSYWNoZWwgTydDb25ub3IgW1ZPTFVOVEVFUl0iLCJwcm9tcHQiOiJJbiB0aGUgYnVzdGxpbmcgdG93biBvZiBFbWVyYWxkIEhpbGxzLCBhIGRpdmVyc2UgZ3JvdXAgb2YgaW5kaXZpZHVhbHMgbWFkZSB0aGVpciBtYXJrLiBTYXJhaCBNYXJ0aW5leiwgYSBkZWRpY2F0ZWQgbnVyc2UsIHdhcyBrbm93biBmb3IgaGVyIGNvbXBhc3Npb25hdGUgY2FyZSBhdCB0aGUgbG9jYWwgaG9zcGl0YWwuIERhdmlkIFRob21wc29uLCBhbiBpbm5vdmF0aXZlIHNvZnR3YXJlIGVuZ2luZWVyLCB3b3JrZWQgdGlyZWxlc3NseSBvbiBncm91bmRicmVha2luZyBwcm9qZWN0cyB0aGF0IHdvdWxkIHJldm9sdXRpb25pemUgdGhlIHRlY2ggaW5kdXN0cnkuIE1lYW53aGlsZSwgRW1pbHkgTmFrYW11cmEsIGEgdGFsZW50ZWQgYXJ0aXN0IGFuZCBtdXJhbGlzdCwgcGFpbnRlZCB2aWJyYW50IGFuZCB0aG91Z2h0LXByb3Zva2luZyBwaWVjZXMgdGhhdCBhZG9ybmVkIHRoZSB3YWxscyBvZiBidWlsZGluZ3MgYW5kIGdhbGxlcmllcyBhbGlrZS4gTGFzdGx5LCBNaWNoYWVsIE8nQ29ubmVsbCwgYW4gYW1iaXRpb3VzIGVudHJlcHJlbmV1ciwgb3BlbmVkIGEgdW5pcXVlLCBlY28tZnJpZW5kbHkgY2FmZSB0aGF0IHF1aWNrbHkgYmVjYW1lIHRoZSB0b3duJ3MgZmF2b3JpdGUgbWVldGluZyBzcG90LiBFYWNoIG9mIHRoZXNlIGluZGl2aWR1YWxzIGNvbnRyaWJ1dGVkIHRvIHRoZSByaWNoIHRhcGVzdHJ5IG9mIHRoZSBFbWVyYWxkIEhpbGxzIGNvbW11bml0eS5cbjEuIFNhcmFoIE1hcnRpbmV6IFtOVVJTRV1cbjIuIERhdmlkIFRob21wc29uIFtTT0ZUV0FSRSBFTkdJTkVFUl1cbjMuIEVtaWx5IE5ha2FtdXJhIFtBUlRJU1RdXG40LiBNaWNoYWVsIE8nQ29ubmVsbCBbRU5UUkVQUkVORVVSXVxuXG5BdCB0aGUgaGVhcnQgb2YgdGhlIHRvd24sIENoZWYgT2xpdmVyIEhhbWlsdG9uIGhhcyB0cmFuc2Zvcm1lZCB0aGUgY3VsaW5hcnkgc2NlbmUgd2l0aCBoaXMgZmFybS10by10YWJsZSByZXN0YXVyYW50LCBHcmVlbiBQbGF0ZS4gT2xpdmVyJ3MgZGVkaWNhdGlvbiB0byBzb3VyY2luZyBsb2NhbCwgb3JnYW5pYyBpbmdyZWRpZW50cyBoYXMgZWFybmVkIHRoZSBlc3RhYmxpc2htZW50IHJhdmUgcmV2aWV3cyBmcm9tIGZvb2QgY3JpdGljcyBhbmQgbG9jYWxzIGFsaWtlLlxuXG5KdXN0IGRvd24gdGhlIHN0cmVldCwgeW91J2xsIGZpbmQgdGhlIFJpdmVyc2lkZSBHcm92ZSBMaWJyYXJ5LCB3aGVyZSBoZWFkIGxpYnJhcmlhbiBFbGl6YWJldGggQ2hlbiBoYXMgd29ya2VkIGRpbGlnZW50bHkgdG8gY3JlYXRlIGEgd2VsY29taW5nIGFuZCBpbmNsdXNpdmUgc3BhY2UgZm9yIGFsbC4gSGVyIGVmZm9ydHMgdG8gZXhwYW5kIHRoZSBsaWJyYXJ5J3Mgb2ZmZXJpbmdzIGFuZCBlc3RhYmxpc2ggcmVhZGluZyBwcm9ncmFtcyBmb3IgY2hpbGRyZW4gaGF2ZSBoYWQgYSBzaWduaWZpY2FudCBpbXBhY3Qgb24gdGhlIHRvd24ncyBsaXRlcmFjeSByYXRlcy5cblxuQXMgeW91IHN0cm9sbCB0aHJvdWdoIHRoZSBjaGFybWluZyB0b3duIHNxdWFyZSwgeW91J2xsIGJlIGNhcHRpdmF0ZWQgYnkgdGhlIGJlYXV0aWZ1bCBtdXJhbHMgYWRvcm5pbmcgdGhlIHdhbGxzLiBUaGVzZSBtYXN0ZXJwaWVjZXMgYXJlIHRoZSB3b3JrIG9mIHJlbm93bmVkIGFydGlzdCwgSXNhYmVsbGEgVG9ycmVzLCB3aG9zZSB0YWxlbnQgZm9yIGNhcHR1cmluZyB0aGUgZXNzZW5jZSBvZiBSaXZlcnNpZGUgR3JvdmUgaGFzIGJyb3VnaHQgdGhlIHRvd24gdG8gbGlmZS5cblxuUml2ZXJzaWRlIEdyb3ZlJ3MgYXRobGV0aWMgYWNoaWV2ZW1lbnRzIGFyZSBhbHNvIHdvcnRoIG5vdGluZywgdGhhbmtzIHRvIGZvcm1lciBPbHltcGljIHN3aW1tZXItdHVybmVkLWNvYWNoLCBNYXJjdXMgSmVua2lucy4gTWFyY3VzIGhhcyB1c2VkIGhpcyBleHBlcmllbmNlIGFuZCBwYXNzaW9uIHRvIHRyYWluIHRoZSB0b3duJ3MgeW91dGgsIGxlYWRpbmcgdGhlIFJpdmVyc2lkZSBHcm92ZSBTd2ltIFRlYW0gdG8gc2V2ZXJhbCByZWdpb25hbCBjaGFtcGlvbnNoaXBzLlxuMS4gT2xpdmVyIEhhbWlsdG9uIFtDSEVGXVxuMi4gRWxpemFiZXRoIENoZW4gW0xJQlJBUklBTl1cbjMuIElzYWJlbGxhIFRvcnJlcyBbQVJUSVNUXVxuNC4gTWFyY3VzIEplbmtpbnMgW0NPQUNIXVxuXG5PYWsgVmFsbGV5LCBhIGNoYXJtaW5nIHNtYWxsIHRvd24sIGlzIGhvbWUgdG8gYSByZW1hcmthYmxlIHRyaW8gb2YgaW5kaXZpZHVhbHMgd2hvc2Ugc2tpbGxzIGFuZCBkZWRpY2F0aW9uIGhhdmUgbGVmdCBhIGxhc3RpbmcgaW1wYWN0IG9uIHRoZSBjb21tdW5pdHkuXG5cbkF0IHRoZSB0b3duJ3MgYnVzdGxpbmcgZmFybWVyJ3MgbWFya2V0LCB5b3UnbGwgZmluZCBMYXVyYSBTaW1tb25zLCBhIHBhc3Npb25hdGUgb3JnYW5pYyBmYXJtZXIga25vd24gZm9yIGhlciBkZWxpY2lvdXMgYW5kIHN1c3RhaW5hYmx5IGdyb3duIHByb2R1Y2UuIEhlciBkZWRpY2F0aW9uIHRvIHByb21vdGluZyBoZWFsdGh5IGVhdGluZyBoYXMgaW5zcGlyZWQgdGhlIHRvd24gdG8gZW1icmFjZSBhIG1vcmUgZWNvLWNvbnNjaW91cyBsaWZlc3R5bGUuXG5cbkluIE9hayBWYWxsZXkncyBjb21tdW5pdHkgY2VudGVyLCBLZXZpbiBBbHZhcmV6LCBhIHNraWxsZWQgZGFuY2UgaW5zdHJ1Y3RvciwgaGFzIGJyb3VnaHQgdGhlIGpveSBvZiBtb3ZlbWVudCB0byBwZW9wbGUgb2YgYWxsIGFnZXMuIEhpcyBpbmNsdXNpdmUgZGFuY2UgY2xhc3NlcyBoYXZlIGZvc3RlcmVkIGEgc2Vuc2Ugb2YgdW5pdHkgYW5kIHNlbGYtZXhwcmVzc2lvbiBhbW9uZyByZXNpZGVudHMsIGVucmljaGluZyB0aGUgbG9jYWwgYXJ0cyBzY2VuZS5cblxuTGFzdGx5LCBSYWNoZWwgTydDb25ub3IsIGEgdGlyZWxlc3Mgdm9sdW50ZWVyLCBkZWRpY2F0ZXMgaGVyIHRpbWUgdG8gdmFyaW91cyBjaGFyaXRhYmxlIGluaXRpYXRpdmVzLiBIZXIgY29tbWl0bWVudCB0byBpbXByb3ZpbmcgdGhlIGxpdmVzIG9mIG90aGVycyBoYXMgYmVlbiBpbnN0cnVtZW50YWwgaW4gY3JlYXRpbmcgYSBzdHJvbmcgc2Vuc2Ugb2YgY29tbXVuaXR5IHdpdGhpbiBPYWsgVmFsbGV5LlxuXG5UaHJvdWdoIHRoZWlyIHVuaXF1ZSB0YWxlbnRzIGFuZCB1bndhdmVyaW5nIGRlZGljYXRpb24sIExhdXJhLCBLZXZpbiwgYW5kIFJhY2hlbCBoYXZlIHdvdmVuIHRoZW1zZWx2ZXMgaW50byB0aGUgZmFicmljIG9mIE9hayBWYWxsZXksIGhlbHBpbmcgdG8gY3JlYXRlIGEgdmlicmFudCBhbmQgdGhyaXZpbmcgc21hbGwgdG93bi4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
-(プロンプトの日本語訳)
-
-    にぎやかなエメラルドヒルズの町では、さまざまな人々が活躍していました。献身的な看護師であるサラ・マルティネスは、地元の病院での思いやりのあるケアで知られていました。革新的なソフトウェアエンジニアであるデイヴィッド・トンプソンは、テクノロジー業界に革命をもたらす画期的なプロジェクトにたゆまぬ努力を重ねてきました。一方、才能あるアーティストであり壁画家であるエミリー・ナカムラは、建物やギャラリーの壁を同様に飾る活気に満ちた示唆に富む作品を描きました。最後に、野心的な起業家であるマイケル・オコンネルは、ユニークで環境に優しいカフェをオープンし、すぐに町のお気に入りの待ち合わせ場所になりました。これらの各個人は、エメラルドヒルズコミュニティの豊かなタペストリーに貢献しました。
-    1. サラ・マルティネス [看護師]
-    2. デイヴィッド・トンプソン [ソフトウェアエンジニア]
-    3. エミリー・ナカムラ [アーティスト]
-    4. マイケル・オコンネル [起業家]
-
-    町の中心部で、シェフのオリバー・ハミルトンは、農場から食卓へのレストラン、グリーンプレートで料理シーンを一変させました。地元の有機食材を調達するというオリバーの献身は、食品評論家や地元の人々から絶賛されています。
-    通りのすぐ下にはリバーサイドグローブライブラリーがあり、主任司書のエリザベスチェンが熱心に取り組んで、すべての人にとって居心地の良い包括的な空間を作り出しています。図書館の提供物を拡大し、子供向けの読書プログラムを確立するという彼女の努力は、町の識字率に大きな影響を与えました。
-    魅力的な町の広場を散歩していると、壁を飾る美しい壁画に魅了されるでしょう。これらの傑作は、有名なアーティスト、イザベラ・トーレスの作品です。彼の才能は、リバーサイドグローブの本質を捉え、町に命を吹き込みました。
-    元オリンピック水泳選手からコーチに転向したマーカス・ジェンキンスのおかげで、リバーサイド・グローブの運動成績も注目に値します。マーカスは彼の経験と情熱を使って町の若者を訓練し、リバーサイドグ・ローブ水泳チームをいくつかの地域選手権に導きました。
-    1. オリバー・ハミルトン [シェフ]
-    2. エリザベス・チェン [司書]
-    3. イザベラ・トーレス [アーティスト]
-    4. マーカス・ジェンキンス [コーチ]
-
-    魅力的な小さな町であるオークバレーには、そのスキルと献身によってコミュニティに永続的な影響を与えてきた、注目に値する 3 人の個人が住んでいます。
-
-    町のにぎやかなファーマーズマーケットでは、おいしい、持続可能な方法で栽培された農産物で知られる情熱的な有機農家、ローラ・シモンズを見つけることができます。彼女の健康的な食事の促進への献身は、町がより環境に配慮したライフスタイルを受け入れるように促しました。
-    オークバレーのコミュニティセンターでは、熟練したダンスインストラクターであるケビン・アルバレスが、あらゆる年齢の人々に動きの喜びをもたらしました。彼のインクルーシブなダンスクラスは、住民の一体感と自己表現を育み、地元のアートシーンを豊かにしています。
-
-    最後に、精力的なボランティアであるレイチェル・オコナーは、さまざまな慈善活動に時間を費やしています。他の人々の生活を改善するという彼女のコミットメントは、オークバレー内に強いコミュニティ意識を生み出すのに役立ちました。
-    ユニークな才能と揺るぎない献身を通じて、ローラ、ケビン、レイチェルはオークバレーの構造に織り込まれ、活気に満ちた繁栄する小さな町の創造に貢献しています。
-
-(出力の日本語訳)
-
-    1. ローラ・シモンズ [農家]
-    2. ケビン・アルバレス [ダンスインストラクター]
-    3. レイチェル・オコナー [ボランティア]
-
-正しい出力形式のモデル例を示すことで、新しい記事の正しい出力を生成できます。
+By showing the model examples of the correct output format, it is able to produce the correct output for new articles.
 
 :::note
-代わりに命令プロンプトを使用してこの同じ出力を生成することもできますが、Few-shot プロンプトを使用すると、出力の*一貫性*が大幅に向上します。
+Even though you could produce this same output by using an instruction prompt instead, the few shot prompt helps the output be much more *consistent*.
 :::
 
-## ショットプロンプトのバリエーション
+## Variants of shot prompting
 
-「ショット」という言葉は「例」と同義です。Few-shot プロンプトの他に、2 つのタイプのショットプロンプトが存在します。これを考えすぎないでください！これらのバリエーションの唯一の違いは、モデルを表示する例の数です。
+The word "shot" is synonymous with "example". Aside from few-shot prompting, there are two other types of shot prompting that exist. Do not overthink this! The only difference between these variants is how many examples you show the model.
 
-バリエーション:
-- 0-shot プロンプト: モデルに例が表示されない
-- 1-shot プロンプト: モデルに 1 つの例を示します
-- Few-shot プロンプト: 2 つ以上の例がモデルに表示されます
+Variants:
+- 0 shot prompting: no examples are shown to the model
+- 1 shot prompting: 1 example is shown to the model
+- few shot prompting: 2+ examples are shown to the model
 
-### 0-shot プロンプト
+### 0-shot prompting
 
-0-shot プロンプトは、プロンプトの最も基本的な形式です。モデルに例のないプロンプトを表示し、応答を生成するように求めているだけです。そのため、これまでに見たすべての指示と役割のプロンプトは 0-shot プロンプトです。0-shot プロンプトの追加の例は次のとおりです。
+0-shot prompting is the most basic form of prompting. It is simply showing the model a prompt without examples and asking it to generate a response. As such, all of instruction and role prompts that you have seen so far are 0-shot prompts. An additional example of a 0-shot prompt is:
 
 ```text
 Add 2+2:
 ```
 
-モデルに完全な例を示していないため、0-shot です。
+It is 0-shot since we have not shown the model any complete examples.
 
-### 1-shot プロンプト
+### 1-shot prompting
 
-1-shot プロンプトは、モデルに 1 つの exemplar を表示する場合です。たとえば、0 ショット プロンプト `Add 2+2:` の 1 ショット アナログは次のとおりです。
+1-shot prompting is when you show the model a single example. For example, the 1-shot analogue of the 0-shot prompt `Add 2+2:` is:
 
 ```text
 Add 3+3: 6
 Add 2+2:
 ```
 
-モデルは 1 つの完全な exemplar (`Add 3+3: 6`) のみを示したので、これは 1 回限りのプロンプトです。
+We have shown the model only 1 complete example (`Add 3+3: 6`), so this is a 1-shot prompt.
 
-### Few-shot プロンプト
+### Few-shot prompting
 
-Few-shot プロンプトは、モデルに 2 つ以上の exemplar を使用する場合のことを指します。このセクションより前のプロンプトはすべて Few-shot プロンプトです。Few-shot の例は次のとおりです。
+Few-shot prompting is when you show the model 2 or more examples. All prompts above this variants section have been few-shot prompts. The few-shot analogue of the above two prompts is:
 
 ```text
 Add 3+3: 6
@@ -111,9 +84,10 @@ Add 5+5: 10
 Add 2+2:
 ```
 
-これは、2 つの完全な exemplar (`Add 3+3: 6` および `Add 5+5: 10`) をモデルに示しています。通常、モデルに表示する exemplar が多いほど、出力が向上するため、ほとんどの場合、0-shot および 1-shot プロンプトよりも Few-shot プロンプトの方が好ましいです。
+This is the case since we have shown the model at least 2 complete examples (`Add 3+3: 6` and `Add 5+5: 10`). Usually, the more examples you show the model, the better the output will be, so few-shot prompting is preferred over 0-shot and 1-shot prompting in most cases.
 
-## 結論
+## Conclusion
 
-Few-shot プロンプトは、モデルが正確で適切にフォーマットされた出力を生成するための強力な手法です。
+Few-shot prompting is a powerful technique for getting the model to produce accurate and properly formatted output!
+
  
