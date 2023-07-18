@@ -4,7 +4,7 @@ sidebar_position: 19
 
 # Patience
 
-[Patience](https://www.patience.ai) es un sitio web para generar imágenes con algunos modelos diferentes de texto a imagen.
+[Patience](https://www.patience.ai) is a website for generating images with a few different text to image models.
 
 import Image from '@site/docs/assets/tooling/patience.webp';
 
@@ -12,6 +12,6 @@ import Image from '@site/docs/assets/tooling/patience.webp';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Características
+## Features
 
-Patience tiene la creación de carpetas, la capacidad de guardar colecciones y historial, y algunos modelos diferentes para elegir. También permite la modificación de varias configuraciones de difusión como el tamaño y el método de muestreo.
+Patience has folder creation, collections/history saving, and a few different models to choose from. It also allows for the modification of various diffusion settings like size and sampling method.
