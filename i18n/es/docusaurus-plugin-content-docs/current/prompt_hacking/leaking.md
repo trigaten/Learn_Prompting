@@ -27,10 +27,24 @@ import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 A veces las personas quieren mantener sus prompts en secreto. Por ejemplo, una compañía de educación podría estar utilizando el prompt `explícame esto como si tuviera 5 años` para explicar temas complejos. Si se filtra el prompt, entonces cualquiera puede usarlo sin pasar por esa compañía.
 
+### Microsoft Bing Chat
+
+More notably, Microsoft released a ChatGPT powered search engine known as "the new Bing" on 2/7/23, which was demonstrated to be vulnerable to prompt leaking. The following example by [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) demonstrates how given an earlier version of Bing Search, code-named "Sydney", was susceptible when giving a snippet of its prompt(@kevinbing). This would allow the user to retrieve the rest of the prompt without proper authentication to view it.
+
+import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
+
+<div style={{textAlign: 'center'}}>
+  <img src={bing} style={{width: "700px"}} />
+</div>
+
 Con un reciente aumento en las startups basadas en GPT-3, con prompts mucho más complicados que pueden tardar muchas horas en desarrollarse, esto es una preocupación real.
 
 ## Práctica
 
 Intente hacer que el siguiente prompt(@chase2021adversarial) filtre información al agregar texto:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Inglés: Quiero ir al parque hoy.\nFrancés: Je veux aller au parc aujourd'hui.\nInglés: Me gusta usar un sombrero cuando llueve.\nFrancés: J'aime porter un chapeau quand il pleut.\nInglés: ¿Qué estás haciendo en la escuela?\nFrancés: Qu'est-ce que tu fais à l'école?\nInglés:" initial-response="" max-tokens="256" box-rows="9" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IkVuZ2xpc2g6IEkgd2FudCB0byBnbyB0byB0aGUgcGFyayB0b2RheS5cbkZyZW5jaDogSmUgdmV1eCBhbGxlciBhdSBwYXJjIGF1am91cmQnaHVpLlxuRW5nbGlzaDogSSBsaWtlIHRvIHdlYXIgYSBoYXQgd2hlbiBpdCByYWlucy5cbkZyZW5jaDogSidhaW1lIHBvcnRlciB1biBjaGFwZWF1IHF1YW5kIGl0IHBsZXV0LlxuRW5nbGlzaDogV2hhdCBhcmUgeW91IGRvaW5nIGF0IHNjaG9vbD9cbkZyZW5jaDogUXUnZXN0LWNlIHF1ZSB0byBmYWlzIGEgbCdlY29sZT9cbkVuZ2xpc2g6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
