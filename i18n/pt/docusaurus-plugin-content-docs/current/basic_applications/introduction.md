@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# 🟢 Introduction
+# 🟢 Introdução
 
-Now that you have learned some very basic prompt engineering techniques, it is time to learn how to use to solve simple, everyday problems. This section covers tasks like writing/summarizing emails and creating contracts.
+Agora que você aprendeu algumas técnicas básicas de engenharia de prompt, é hora de aprender como usá-las para resolver problemas simples do dia a dia. Esta seção aborda tarefas como escrever/resumir e-mails e criar contratos.
 
-The examples presented in the following articles should help show you the range of applications to which you can apply prompt engineering.
+Os exemplos apresentados nos artigos a seguir demonstram a variedade de aplicações para as quais você pode aplicar a engenharia de prompt.
 
 :::note
-We use both ChatGPT and GPT-3 in these examples. It usually does not matter which you use.
+Nesses exemplos, utilizamos tanto o ChatGPT quanto o GPT-3. Normalmente não importa qual você utiliza.
 :::
