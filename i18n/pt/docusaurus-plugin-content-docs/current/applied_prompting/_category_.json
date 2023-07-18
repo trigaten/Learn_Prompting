@@ -1,8 +1,8 @@
 {
-  "label": "🧪 Prompt Aplicados",
+  "label": "🧪 Applied Prompting",
   "position": 19,
   "link": {
     "type": "generated-index",
-    "description": "Algumas demonstrações completas do processo de engenharia de prompts escritas por membros da comunidade."
+    "description": "Some complete walkthroughs of the prompt engineering process written by community members."
   }
 }
