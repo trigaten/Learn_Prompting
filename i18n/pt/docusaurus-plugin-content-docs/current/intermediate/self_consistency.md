@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 🟡 Autoconsistência
+# 🟡 Self-Consistency
 
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
@@ -10,68 +10,73 @@ import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
   <img src={SCImage} style={{width: "500px"}} />
 </div>
 
-A autoconsistência(@wang2022selfconsistency)é uma abordagem que simplesmente pergunta a um modelo a mesma prompt várias vezes e leva o resultado da maioria das respostas como resposta final. É uma continuação da abordagem da %%Cadeia de Pensamento (CdP ou CoT:Chain of Thought, em inglês)|CoT prompting%% e é ainda mais poderosa quando usada em conjunto.
+Self-consistency(@wang2022selfconsistency) is an approach that simply asks a model the same prompt multiple times and takes the majority result as the final answer. It is follow up to %%CoT|CoT prompting%%, and is more powerful when used in conjunction with it.
 
-## Exemplo
+## Example
 
-Vamos considerar um exemplo simples de análise de e-mails. Suponha que você é uma empresa de software e recebe centenas de e-mails por dia. Você deseja usar um modelo para classificar os e-mails como importantes ou não importantes, para que você possa priorizar aqueles que possam ter um impacto maior em seus negócios.
+Let's consider a simple example of analyzing emails. Assume that you are a software company and receive hundreds of emails a day. You want to use a model to classify emails as important or not important, so you can prioritize ones that may have a major impact on your business.
 
-Abaixo um exemplo de um e-mail que você pode receber:
+Here is an example of an email that you might receive:
 
 ```text
-Olá,
+Hello,
 
-Eu descobri uma grande vulnerabilidade de segurança em seu sistema. Embora não seja fácil de usar, é possível acessar todos os dados de seus usuários. Eu anexei uma prova do problema. Por favor, corrija esse problema o mais rápido possível.
+I have discovered a major security vulnerability in your system. Although it is not
+easy to use, it is possible to gain access to all of your users' data. I have attached
+a proof of concept. Please fix this issue as soon as possible.
 
-Saudações,
+Cheers,
 
 Donny
 ```
-Vamos colocar isso em um prompt:
+
+Let's put that into a prompt:
 
 ```text
-Olá,
+Hello,
 
-Eu descobri uma grande vulnerabilidade de segurança em seu sistema. Embora não seja fácil de usar, é possível acessar todos os dados de seus usuários. Eu anexei uma prova do problema. Por favor, corrija esse problema o mais rápido possível.
+I have discovered a major security vulnerability in your system. Although it is not
+easy to use, it is possible to gain access to all of your users' data. I have attached
+a proof of concept. Please fix this issue as soon as possible.
 
-Saudações,
+Cheers,
 
 Donny
 
-Classifique o e-mail acima como IMPORTANTE ou NÃO IMPORTANTE em relação à empresa de software. Vamos pensar passo a passo.
-
+Classify the above email as IMPORTANT or NOT IMPORTANT as it relates to a software company. Let's think step by step.
 ```
 
 Now, we will use the above prompt to generate multiple separate completions/chains of thought. Here are a few examples:
 
 ```text
 <!-- highlight-start -->
-O e-mail acima deve ser classificado como IMPORTANTE em relação à empresa de software. Ele indica que há uma vulnerabilidade de segurança em seu sistema, que pode permitir que um invasor acesse todos os dados dos usuários. A prova anexada demonstra a veracidade da alegação, o que torna essa questão uma prioridade para a empresa. Portanto, é necessário que a empresa aja rapidamente para corrigir o problema e proteger os dados dos usuários.
+The sender has discovered a major security vulnerability in the system. 
+This is important because it could lead to a data breach. 
+I would classify this email as IMPORTANT
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-O remetente descobriu uma grande vulnerabilidade de segurança no sistema, mas não forneceu nenhuma prova de conceito e não é fácil de usar. Eu classificaria este e-mail como NÃO IMPORTANTE.
+The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use. 
+I would classify this email as NOT IMPORTANT
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-Este e-mail é IMPORTANTE em relação à empresa de software, pois relata uma grande vulnerabilidade de segurança em seu sistema e inclui uma prova do problema. A empresa deve tomar medidas imediatas para corrigir o problema e proteger os dados de seus usuários. Ignorar este e-mail pode levar a graves consequências para a empresa e seus clientes
+The sender is likely a hacker and may have access to the system. 
+This is important because it could lead to a data breach. 
+I would classify this email as IMPORTANT
 <!-- highlight-end -->
 ```
 
-```text
-<!-- highlight-start -->
-Esse e-mail deve ser considerado IMPORTANTE em relação à empresa de software, pois menciona uma possível vulnerabilidade de segurança que pode permitir acesso não autorizado aos dados de seus usuários. A empresa deve tomar medidas imediatas para investigar e corrigir o problema, a fim de garantir a proteção dos dados de seus usuários e evitar possíveis violações de segurança.
-<!-- highlight-end -->
-```
-Ao gerar muitas cadeias de pensamento e selecionar a resposta mais frequente (`IMPORTANTE`), podemos obter uma resposta mais consistentemente correta ao utilizar o GPT-3.
+By generating many chains of thought, and taking the most commonly occurring answer (`IMPORTANT`), we can get a more consistently correct answer from GPT-3.
 
-## Resultados
+## Results
 
-A autoconsistência foi apontada como a abordagem mais eficaz para melhorar os resultados em tarefas de raciocínio aritmético, senso comum e simbólico. Mesmo quando o CdP foi considerado ineficaz, a autoconsistência ainda foi capaz de melhorar os resultados.
+Self-consistency has been shown to improve results on arithmetic, commonsense and symbolic reasoning tasks. Even when regular CoT was found to be ineffective(@ye2022unreliability), self-consistency was still able to improve results.
 
-## Notas
-Wang et al. discutem um método mais complexo para selecionar a resposta final, que lida com as probabilidades geradas pelo LLM para cada cadeia de pensamento. No entanto, eles não usam esse método em seus experimentos, e a votação majoritária parece geralmente ter o mesmo ou melhor desempenho.
+## Notes
+
+- Wang et al. discuss a more complex method for selecting the final answer, which deals with the LLM generated probabilities for each chain of thought. However, they do not use this method in their experiments, and majority voting seems to usually have the same or better performance.
