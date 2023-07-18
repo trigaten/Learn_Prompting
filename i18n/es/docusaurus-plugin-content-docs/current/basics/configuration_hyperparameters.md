@@ -4,10 +4,11 @@ sidebar_position: 100
 
 # 🟢 Ajustes del LLM
 
+
 import Temperature from '@site/docs/assets/basics/temperature.svg';
 
 <div style={{textAlign: 'center'}}>
-  <Temperature style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
+  <Temperature style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 # Introducción
@@ -16,7 +17,6 @@ Los resultados de los LLM pueden verse afectados por los _hiperparámetros de co
 
 :::note
 [para investigadores] Son diferentes de los hiperparámetros normales, como la tasa de aprendizaje, el número de capas, el tamaño oculto, etc.
-:::
 
 ## Temperatura
 
@@ -39,6 +39,9 @@ Para tareas de generación de texto, puede que le interese utilizar una temperat
 :::note
 A veces, más aleatoriedad puede ser útil en tareas donde la precisión es necesaria cuando se combina con [técnicas especiales de prompting](https://learnprompting.org/docs/intermediate/self_consistency).
 :::
+
+
+
 
 ## Conclusión
 
