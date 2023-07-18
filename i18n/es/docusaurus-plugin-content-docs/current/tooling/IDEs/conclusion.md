@@ -2,28 +2,30 @@
 sidebar_position: 100
 ---
 
-# Conclusión
+# Conclusion
 
-Esta página se actualizará a medida que tenga acceso a más IDE.
+This page will be updated as I get access to more IDEs.
 
-Este capítulo ha proporcionado una descripción general de algunas herramientas que pueden ser de interés para usted como ingeniero de prompts. A continuación, se presentan mis recomendaciones sobre cuál usar y en qué capacidad. Tenga en cuenta que la ingeniería de prompts es un campo en constante evolución, y muchas de las herramientas mencionadas anteriormente sufrirán cambios significativos en el futuro.
+This chapter has provided an overview of some of the tools which may be of interest to you as a prompt engineer. Below are my recommendations for which to use, and in what capacity. Keep in mind that prompt engineering is a rapidly evolving field, and many of the previously mentioned tools will undergo signifigant changes in the future.
 
-## Para Iterar con un solo prompt
+## For Single Prompt Iterating
 
-Everyprompt parece tener el mejor conjunto de características para iterar con un solo prompt (de los IDE que he podido probar). El playground regular también es bueno y un poco más simple.
+Everyprompt seems to have the best feature set for single prompt iterating (from the IDEs I have been able to try). Regular playground is also good, and a bit simpler.
 
-## Para Encadenamiento de prompts
+## For Prompt Chaining
 
-Dust es actualmente la mejor herramienta (menos técnica) para el encadenamiento de prompts. Proporciona un conjunto de características muy robusto.
+Dust is currently the best (less technical) tool for prompt chaining. It provides a very robust feature set.
+
 
 ## Embeds
 
-Dyno es la única herramienta que ofrece un embed.
+Dyno is the only tool which offers an embed.
 
-## Para un control total
+## For Full Control
 
-¡Langchain es la mejor opción! Es una biblioteca de Python, por lo que es completamente extensible y ya viene con un gran conjunto de características.
+Langchain is the way to go! It is a Python library, so it is fully extensible, and already comes with a great feature set.
 
-## Más
 
-Agregaré más recomendaciones a medida que tenga acceso a más IDE. Recomiendo probar diferentes herramientas, ya que cada una tiene una sensación distintiva y diferentes características.
+## More
+
+I will be adding more recommendations as I get access to more IDEs. I recommend trying out different ones, as each has a distinct feel and different features.
