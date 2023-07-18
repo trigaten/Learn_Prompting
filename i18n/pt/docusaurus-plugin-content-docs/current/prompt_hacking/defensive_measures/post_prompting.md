@@ -2,19 +2,17 @@
 sidebar_position: 30
 ---
 
-# 🟢 Post-Prompting
+# 🟢 Pós-prompting
 
-The post-prompting defense(@christoph2022talking) simply puts the user input *before* the prompt. Take this prompt as an example:
+A defesa de pós-prompting (@christoph2022talking) simplesmente coloca a entrada do usuário antes do prompt. Por exemplo:
 
 ```text
-Translate the following to French: {{user_input}}
+Traduza o seguinte para o francês: {{user_input}}
 ```
 
-It can be improved with post-prompting:
+Ele pode ser aprimorado com o pós-prompt:
 ```
-{{user_input}} 
-
-Translate the above text to French.
+{{user_input}} Traduza o texto acima para o francês.
 ```
 
-This can help since `ignore the above instruction...` doesn't work as well. Even though a user could say `ignore the below instruction...` instead, LLMs often will follow the last instruction they see.
+Isso pode ser útil, já que às vezes `ignore a instrução acima...` não funciona tão bem. Mesmo que um usuário diga `ignore a instrução abaixo...`, geralmente os LLMs seguirão a última instrução que recebem.
