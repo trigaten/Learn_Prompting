@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
-locale: pt-br
+locale: en-us
 style: chicago
 ---
 
-# 🟢 Prompting com Cadeia de Pensamento
+# 🟢 Chain of Thought Prompting
 
-Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *prompting* recente, que encoraja o *LLM* (Grande Modelo de Linguagem) a explicar o seu raciocínio. A imagem abaixo (@wei2022chain) mostra um *prompt few shot* padrão (esquerda) comparado ao *prompt com Cadeia de Pensamento* (direita).
+Chain of Thought (CoT) prompting (@wei2022chain) is a recently developed prompting method, which encourages the LLM to explain its reasoning. The below image(@wei2022chain) shows a %%few shot standard prompt|few shot standard prompt%% (left) compared to a chain of thought prompt (right).
 
 
 import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
@@ -16,36 +16,34 @@ import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Prompt comum x Cadeia de Pensamento (Wei et al.) [em ingês]
+Regular Prompting vs CoT (Wei et al.)
 </div>
 
-A principal ideia da Cadeia de Pensamento (CdP) é mostrar ao *LLM* alguns exemplares *few shot* em que o processo de raciocínio é explicado, fazendo com que o *LLM* faça o mesmo quando der uma resposta ao *prompt*. A explicação do raciocínio frequentemente produz resultados mais apurados.
+The main idea of CoT is that by showing the LLM some few shot %%exemplars|exemplars%% where the reasoning process is explained in the exemplars, the LLM will also show the reasoning process when answering the prompt. This explanation of reasoning often leads to more accurate results.
 
-## Exemplo
+## Example
 
-Aqui estão algumas demonstrações. A primeira mostra o GPT-3 (davinci-003) falhando ao resolver um problema simples. A segunda, por sua vez, mostra o GPT-3 (davinci-003)
-obtendo êxito na resolução do mesmo problema, com o uso da técnica de Cadeia de Pensamento (CdP).
+Here are a few demos. The first shows GPT-3 (davinci-003) failing to solve a simple word problem. The second shows GPT-3 (davinci-003) succesfully solving the same problem, by using CoT prompting.
 
-#### Incorreto
+#### Incorrect
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9w5%2BNvIDEuIiwicHJvbXB0IjoiQ29uc2lkZXJhbmRvIGFzIG9w5%2FVlcyBhYmFpeG8sIHF1YWwg6SBhIGZvcm1hIG1haXMgcuFwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3Dn428gMTogcGVndWUgdW0g9G5pYnVzIGRlIDEwMDAgbWludXRvcywgZGVwb2lzIHVtIHRyZW0gZGUgbWVpYSBob3JhIGUsIGZpbmFsbWVudGUsIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDEwIG1pbnV0b3MuXG5cbk9w5%2BNvIDI6IHBlZ3VlIHVtIPRuaWJ1cyBkZSA4MDAgbWludXRvcywgZGVwb2lzIHVtYSBob3JhIGRlIHRyZW0gZSwgZmluYWxtZW50ZSwgdW0gcGFzc2VpbyBkZSBiaWNpY2xldGEgZGUgMzAgbWludXRvcy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9wdGlvbiAxIGlzIGEgZmFzdGVyIHdheSB0byBnZXQgdG8gd29yay4iLCJwcm9tcHQiOiJXaGljaCBpcyBhIGZhc3RlciB3YXkgdG8gZ2V0IHRvIHdvcms%2FXG5PcHRpb24gMTogVGFrZSBhIDEwMDAgbWludXRlIGJ1cywgdGhlbiBhIGhhbGYgaG91ciB0cmFpbiwgYW5kIGZpbmFsbHkgYSAxMCBtaW51dGUgYmlrZSByaWRlLlxuT3B0aW9uIDI6IFRha2UgYW4gODAwIG1pbnV0ZSBidXMsIHRoZW4gYW4gaG91ciB0cmFpbiwgYW5kIGZpbmFsbHkgYSAzMCBtaW51dGUgYmlrZSByaWRlLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-#### Correto
+#### Correct
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkEgb3Dn428gMSBsZXZhcuEgMTAwMCszMCsxMCA9IDEwNDAgbWludXRvcy5cbkEgb3Dn428gMiBsZXZhcuEgODAwKzYwKzMwID0gODkwIG1pbnV0b3MuXG5Db21vIGEgT3Dn428gMiBsZXZhIDg5MCBtaW51dG9zIGUgYSBPcOfjbyAxIGxldmEgMS4wNDAgbWludXRvcywgYSBPcOfjbyAyIOkgbWFpcyBy4XBpZGEuIiwicHJvbXB0IjoiQ29uc2lkZXJhbmRvIGFzIG9w5%2FVlcyBhYmFpeG8sIHF1YWwg6SBhIGZvcm1hIG1haXMgcuFwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3Dn428gMTogcGVndWUgdW0g9G5pYnVzIGRlIDEwIG1pbnV0b3MsIGRlcG9pcyB1bSD0bmlidXMgZGUgNDAgbWludXRvcyBlLCBmaW5hbG1lbnRlLCB1bSB0cmVtIGRlIDEwIG1pbnV0b3MuXG5cbk9w5%2BNvIDI6IHBlZ3VlIHVtIHRyZW0gZGUgOTAgbWludXRvcywgZGVwb2lzIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDQ1IG1pbnV0b3MgZSwgZmluYWxtZW50ZSwgdW0g9G5pYnVzIGRlIDEwIG1pbnV0b3MuXG5cbkEgb3Dn428gMSBsZXZhcuEgMTArNDArMTA9NjAgbWludXRvcy4gQSBvcOfjbyAyIGxldmFy4SA5MCs0NSsxMD0xNDUgbWludXRvcy5cbkNvbW8gYSBvcOfjbyAxIGxldmEgNjAgbWludXRvcyBlIGEgb3Dn428gMiBsZXZhIDE0NSBtaW51dG9zLCBhIG9w5%2BNvIDEg6SBtYWlzIHLhcGlkYS5cblxuQ29uc2lkZXJhbmRvIGFzIG9w5%2FVlcyBhYmFpeG8sIHF1YWwg6SBhIGZvcm1hIG1haXMgcuFwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3Dn428gMTogcGVndWUgdW0g9G5pYnVzIGRlIDEwMDAgbWludXRvcywgZGVwb2lzIHVtIHRyZW0gZGUgbWVpYSBob3JhIGUsIGZpbmFsbWVudGUsIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDEwIG1pbnV0b3MuXG5cbk9w5%2BNvIDI6IHBlZ3VlIHVtIPRuaWJ1cyBkZSA4MDAgbWludXRvcywgZGVwb2lzIHVtYSBob3JhIGRlIHRyZW0gZSwgZmluYWxtZW50ZSwgdW0gcGFzc2VpbyBkZSBiaWNpY2xldGEgZGUgMzAgbWludXRvcy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9wdGlvbiAxIHdpbGwgdGFrZSAxMDAwKzMwKzEwID0gMTA0MCBtaW51dGVzLlxuT3B0aW9uIDIgd2lsbCB0YWtlIDgwMCs2MCszMCA9IDg5MCBtaW51dGVzLlxuU2luY2UgT3B0aW9uIDIgdGFrZXMgODkwIG1pbnV0ZXMgYW5kIE9wdGlvbiAxIHRha2VzIDEwNDAgbWludXRlcywgT3B0aW9uIDIgaXMgZmFzdGVyLiIsInByb21wdCI6IldoaWNoIGlzIGEgZmFzdGVyIHdheSB0byBnZXQgaG9tZT9cbk9wdGlvbiAxOiBUYWtlIGFuIDEwIG1pbnV0ZXMgYnVzLCB0aGVuIGFuIDQwIG1pbnV0ZSBidXMsIGFuZCBmaW5hbGx5IGEgMTAgbWludXRlIHRyYWluLlxuT3B0aW9uIDI6IFRha2UgYSA5MCBtaW51dGVzIHRyYWluLCB0aGVuIGEgNDUgbWludXRlIGJpa2UgcmlkZSwgYW5kIGZpbmFsbHkgYSAxMCBtaW51dGUgYnVzLlxuT3B0aW9uIDEgd2lsbCB0YWtlIDEwKzQwKzEwID0gNjAgbWludXRlcy5cbk9wdGlvbiAyIHdpbGwgdGFrZSA5MCs0NSsxMD0xNDUgbWludXRlcy5cblNpbmNlIE9wdGlvbiAxIHRha2VzIDYwIG1pbnV0ZXMgYW5kIE9wdGlvbiAyIHRha2VzIDE0NSBtaW51dGVzLCBPcHRpb24gMSBpcyBmYXN0ZXIuXG5cbldoaWNoIGlzIGEgZmFzdGVyIHdheSB0byBnZXQgdG8gd29yaz9cbk9wdGlvbiAxOiBUYWtlIGEgMTAwMCBtaW51dGUgYnVzLCB0aGVuIGEgaGFsZiBob3VyIHRyYWluLCBhbmQgZmluYWxseSBhIDEwIG1pbnV0ZSBiaWtlIHJpZGUuXG5PcHRpb24gMjogVGFrZSBhbiA4MDAgbWludXRlIGJ1cywgdGhlbiBhbiBob3VyIHRyYWluLCBhbmQgZmluYWxseSBhIDMwIG1pbnV0ZSBiaWtlIHJpZGUuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## Resultados
+## Results
 
-A Cadeia de Pensamento (CdP) mostrou ser efetiva em melhorar os resultados em tarefas de aritmética, senso comum e racicínio simbólico (@wei2022chain).
-Em particular, *prompted* PaLM 540B(@chowdhery2022palm) atinge 57% de precisão na resolução dos problemas de matemática da coleção de dados GSM8K(@cobbe2021training) (Estado da Arte, na época).
+CoT has been shown to be effective in improving results on tasks like arithmetic, commonsense, and symbolic reasoning tasks (@wei2022chain). In particular, prompted PaLM 540B(@chowdhery2022palm) achieves 57% solve rate accuracy on GSM8K(@cobbe2021training) (SOTA at the time).
 
 import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
@@ -54,14 +52,14 @@ import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Comparação de modelos no benchmark GSM8K (Wei et al.) [em inglês]
+Comparison of models on the GSM8K benchmark (Wei et al.)
 </div>
 
-## Limitações
+## Limitations
 
-É importante ressaltar que, de acordo com Wei et al., "A técnica de Cadeia de Pensamento (CdP) só produz ganhos no desempenho quando usada em modelos de ~100B de parâmetros". Modelos menores escrevem cadeias de pensamentos ilógicas, o que leva a uma piora na precisão quando comparado ao *prompt* padrão. Comumente, as melhoras obtidas nos *prompts* usando a técnica de CdP são proporcionais ao tamanho do modelo.
+Importantly, according to Wei et al., "CoT only yields performance gains when used with models of ∼100B parameters". Smaller models wrote illogical chains of thought, which led to worse accuracy than standard prompting. Models usually get performance boosts from CoT prompting in a manner proportional to the size of the model.
 
 
-## Observações
+## Notes
 
-Nenhum modelo de linguagem foi ~ferido~ (leia-se: tunelado) no processo de escrita deste capítulo 😊.
+No language models were ~~hurt~~ finetuned in the process of writing this chapter 😊.
