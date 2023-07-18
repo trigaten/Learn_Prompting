@@ -4,123 +4,113 @@ sidebar_position: 30
 
 # 🟢 Blogs
 
-E se você pudesse escrever uma postagem de um blog em 5 segundos?
+What if you could write a blog post in 5 seconds?
 
-Sinceramente, você não pode. Mas a inteligência artificial pode reduzir **significativamente** o tempo necessário para escrever um post.
+Frankly, you can't. But AI can **significantly** reduce the time it takes to write a blog post.
 
-Esta página aborda o uso básico da IA para ajudá-lo a escrever um blog. Contudo o processo deve ser iterativo: você deve escrever prompts, ver o que o modelo produz, pegar partes da saída (output) e repetir o processo.
+This page covers the basics of using AI to help you write a blog. The process should be iterative: you should be writing prompts, seeing what the model outputs, taking pieces of the output, and repeating this.
 
-Por exemplo, imagine que você trabalhe em uma floricultura e esteja escrevendo um artigo sobre "Por que as Cactos de Natal são uma ótima compra". Eu sempre gosto de começar com uma estrutura, então vamos começar com o seguinte prompt:
-
-Escreva uma estrutura para uma postagem de blog curta sobre por que as Cactos de Natal são uma ótima compra.
-
-Existem muitos produtos que tentam fazer isso, mas você pode obter resultados consistentes fazendo você mesmo.
+As an example, pretend you work at a nursery and are drafting an article about "Why Christmas Cacti are a great buy". I always like to start with an outline, so let's begin with the following prompt:
 
 ```text
-Crie o esboço de um post de um post de blog curto sobre por que as Cactos de Natal são uma ótima compra.
+Write an outline for a short blog post about why Christmas Cacti are a great buy.
+
+There are many products which attempt to do this, but you can often get consistent results doing it yourself. 
 
 // highlight-start
-Título: Por que você deve comprar um Cacto de Natal neste Natal?
+I. Introduction
+A. Overview of Christmas Cacti
+B. Benefits of owning a Christmas Cacti
 
-Introdução:
+II. Christmas Cacti Are Affordable
+A. Cost of Christmas Cacti
+B. Comparison to Other Houseplants
 
-Breve apresentação sobre a tradição dos Cactos de Natal e a popularidade dessa planta suculenta na decoração natalina.
-Chamada para a importância de escolher as plantas certas para a sua decoração, levando em consideração fatores como praticidade e beleza.
-Desenvolvimento:
+III. Christmas Cacti Have Long Lifespans
+A. Average Lifespan of Christmas Cacti
+B. Low Maintenance Requirements
 
-Tópico 1: Fácil manutenção dos cactos de Natal
+IV. Christmas Cacti Make Great Gifts
+A. Unique Color and Shape of Blooms
+B. Easy to Care for and Long Lasting
 
-Destaque para as características de plantas suculentas e sua capacidade de armazenar água.
-Pontos positivos da praticidade: não precisam de muita água, pouca manutenção, resistentes a pragas e suportam bem temperaturas variadas.
-Tópico 2: Durabilidade das flores de cacto
-
-Comparação entre a durabilidade das flores de cacto e outras flores típicas do Natal.
-Destaque para a longa duração das flores de cacto, que podem durar até 2 meses.
-Tópico 3: Simbolismo dos Cactos de Natal
-
-História da tradição de presentear os amigos e familiares com Cactos de Natal.
-Explicação do simbolismo por trás dos cactos, como a resiliência e a capacidade de superar adversidades.
-Conclusão:
-
-Recapitulação dos pontos abordados e ênfase na escolha dos Cactos de Natal como uma opção de planta versátil, bonita e duradoura para a decoração de Natal.
-Incentivo para experimentar a alegria de decorar com essas plantas e compartilhar essa tradição com as pessoas queridas neste Natal.
+V. Conclusion
+A. Summary of Benefits of Owning a Christmas Cacti 
+B. Where to Find a Christmas Cacti 
+C. Suggestions for Care and Maintenance
 
 //highlight-end
 ```
-Uau, a resposta foi bem longa! Talvez você queira algo mais curto, então vamos pedir para a IA escrever uma versão mais curta usando esse prompt:
+
+Wow, that's quite comprehensive. Maybe we want a slightly shorter post, so let's ask the AI to write a shorter version using this prompt:
 
 ```text
-O esboço está bom, mas bem longo. Resuma os pontos principais em uma lista de forma título + subtítulo.
+That's a great outline, but a bit long. Condense it to the main points:
 ```
 
-Aqui está a resposta do ChatGPT:
+:::note
+We are assuming that you are using ChatGPT (if not, just put the outline before this new prompt)
+:::
+
+Here is the model output:
 
 ```text
 // highlight-start
-Claro, aqui está uma lista com os pontos principais do post:
+I. Introduction 
+A. Overview of Christmas Cacti 
 
-Tópico 1: Fácil manutenção
+II. Benefits 
+A. Affordable 
+B. Long Lifespan 
+C. Great Gifts 
 
-Cactos de Natal são suculentas e armazenam água, tornando-os fáceis de cuidar.
-Precisam de pouca água, são resistentes a pragas e suportam bem temperaturas variadas.
-Tópico 2: Flores duráveis
-
-As flores de cacto duram muito mais tempo do que outras flores típicas do Natal.
-Podem durar até 2 meses.
-Tópico 3: Simbolismo
-
-Cactos de Natal têm um simbolismo forte, como a resiliência e a capacidade de superar adversidades.
-São uma opção de presente que transmite essas mensagens.
-Conclusão:
-
-Recapitulação dos pontos abordados e ênfase na escolha dos cactos de Natal como uma opção de planta versátil, bonita e duradoura para a decoração de Natal.
+III. Conclusion 
+A. Summary of Benefits 
+B. Where to Find 
+C. Suggestions for Care and Maintenance
 //highlight-end
 ```
 
-Perfeito! Agora vamos pedir para ele usar essa estrutura e escrever um post completo.
+Perfect! Now let's ask it to use this outline to write a full blog post:
 
 ```text
-Usando a estrutura acima, escreve um blog post curto sobre o porquê cactos são uma boa compra para o Natal.
+Write a short blog post using this outline about why Christmas Cacti are a great buy.
 
 // highlight-start
-Por que cactos são uma boa compra para o Natal
+Christmas Cacti are a great buy for the holiday season! They are an affordable and long-lasting option that make great gifts. Christmas Cacti are easy to find in most garden and plant stores, and they range in price from a few dollars to more expensive, depending on the size and shape of the plant.
 
-O Natal é uma época em que a decoração da casa é tão importante quanto os presentes. E uma das maneiras mais populares de decorar a casa é com plantas, como o Cacto de Natal. Além de serem bonitos e interessantes, os cactos têm muitas vantagens sobre outras plantas tradicionais de Natal. Aqui estão algumas razões pelas quais você deve considerar comprar um cacto de Natal neste ano:
+These plants are also known for their long lifespan. If cared for properly, they can last for many years, providing your friends and family with an evergreen reminder of the holiday spirit. Christmas Cacti are fairly low maintenance and require minimal care, making them a great option for someone who does not have a lot of experience with plants. They should be placed in a bright and sunny spot, watered regularly, and given plant food every month or so. 
 
-Tópico 1: Fácil manutenção
-Os cactos de Natal são suculentas e armazenam água, tornando-os fáceis de cuidar. Eles precisam de pouca água, são resistentes a pragas e suportam bem temperaturas variadas. Isso significa que eles são uma ótima opção para quem não tem tempo ou habilidade para cuidar de plantas exigentes.
-
-Tópico 2: Flores duráveis
-As flores de cacto duram muito mais tempo do que outras flores típicas do Natal. Na verdade, elas podem durar até 2 meses. Isso significa que você pode ter flores lindas durante todo o período de festas sem se preocupar em trocá-las.
-
-Tópico 3: Simbolismo
-Os cactos de Natal têm um simbolismo forte, como a resiliência e a capacidade de superar adversidades. Eles são uma opção de presente que transmite essas mensagens importantes. Além disso, a tradição de presentear amigos e familiares com cactos de Natal é uma maneira de compartilhar essa mensagem de resiliência e esperança.
-
-Conclusão:
-Os cactos de Natal são uma ótima escolha para quem quer uma planta bonita e fácil de cuidar durante o Natal. Eles duram muito mais do que outras flores típicas do Natal e têm um simbolismo forte que transmite uma mensagem positiva. Então, se você está procurando uma opção de decoração de Natal que seja fácil de cuidar e tenha um significado especial, considere comprar um cacto de Natal.
-//highlight-end
-```
-Legal! Provavelmente você vai querer adicionar informações sobre sua empresa e os preços dos cactos de Natal que você vende, então vamos usar o seguint prompt:
-
-
-```text
-Perfeito!  Inclua um parágrafo no fim do texto sobre nossa empresa e os preços dos nossos cactos de Natal.
-
-Empresa: Cactos Sem Espinhos
-Preço do cacto de Natal: R$50 até R$250
-```
-
-A resposta do prompt você confere abaixo:
-```text
-// highlight-start
-Se você está procurando por um lugar para comprar o seu cacto de Natal, a Cactos Sem Espinhos é uma ótima opção. Nós nos especializamos em cactos de Natal e oferecemos uma ampla variedade de opções, desde as mais simples até as mais elaboradas. Além disso, nossos preços são muito acessíveis, variando de R$50 a R$250. Então, se você quer adicionar um toque especial à sua decoração de Natal, visite nosso site e escolha o cacto perfeito para você. Nós garantimos que você não vai se arrepender da sua escolha!
+Overall, Christmas Cacti are a great buy for the holidays. They are affordable, have a long lifespan, and make great gifts. With minimal care and attention, these plants can provide a beautiful reminder of the holiday season for years to come.
 //highlight-end
 ```
 
-E o seu blog post está prontinho!
+Alright, that seems pretty good. We probably want to add some information about our company and our pricing on Christmas Cacti, so let's use the following prompt:
 
-Quando escrevo conteúdo, geralmente uso ChatGPT ou GPT-3, mas existem outras ferramentas que podem ajudá-lo a escrever blogs, como o [Jasper.ai](https://www.jasper.ai/) e o [Copy.ai](https://www.copy.ai/). Essas ferramentas geralmente dependem do GPT-3 nos bastidores, mas têm várias outras funcionalidades que podem ajudá-lo a escrever um conteúdo bacana.
+```text
+Perfect! Add a paragraph at the end about our company and pricing on Christmas Cacti.
+Company: Prickly Point Nursery
+Price for a Christmas Cacti: $10-$25
+```
 
-## Conclusões
+Here is the model output:
 
-- A Inteligência Artificial pode te ajudar a escrever postagens de blog de alta qualidade em uma fração do tempo que levaria para você fazer isso sozinho. Esse processo não é completamente automatizado, portanto, requer que você esteja ativamente envolvido em todas as etapas.
+```text
+// highlight-start
+Christmas Cacti are a great buy for the holiday season! They are an affordable and long-lasting option that make great gifts. Christmas Cacti are easy to find in most garden and plant stores, and they range in price from a few dollars to more expensive, depending on the size and shape of the plant.
+
+These plants are also known for their long lifespan. If cared for properly, they can last for many years, providing your friends and family with an evergreen reminder of the holiday spirit. Christmas Cacti are fairly low maintenance and require minimal care, making them a great option for someone who does not have a lot of experience with plants. They should be placed in a bright and sunny spot, watered regularly, and given plant food every month or so. 
+
+Overall, Christmas Cacti are a great buy for the holidays. They are affordable, have a long lifespan, and make great gifts. With minimal care and attention, these plants can provide a beautiful reminder of the holiday season for years to come.
+
+At Prickly Point Nursery, we specialize in providing high quality plants and flowers for everyone's needs. We are proud to offer an extensive range of Christmas Cacti at great prices. Prices range from $10 for smaller plants to $25 for larger ones, so you're sure to find the perfect one for any budget. Our staff is always on hand to provide helpful advice and tips on how to care for your plants, so you can keep your Christmas Cacti looking fresh and beautiful for years to come. Thank you for considering Prickly Point Nursery for your holiday plant needs!
+//highlight-end
+```
+
+This is a pretty good blog post!
+
+When I write content, I usually just use ChatGPT or GPT-3, but there are a number of other tools that can help you write blogs, like [Jasper.ai](https://www.jasper.ai/) and [Copy.ai](https://www.copy.ai/). These usually rely on GPT-3 behind the scenes, but they have a number of other features that can help you write content.
+
+## Takeaways
+
+- AI can help you write high quality blog posts in a fraction of the time it would take you to write them yourself. This process is not completely automated, so it requires you to be actively involved in the process.
