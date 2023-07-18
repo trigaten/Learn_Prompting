@@ -2,7 +2,7 @@
 sidebar_position: 100
 ---
 
-# 🟢 LLM 設定
+# 🟢 LLM Settings
 
 
 import Temperature from '@site/docs/assets/basics/temperature.svg';
@@ -11,42 +11,45 @@ import Temperature from '@site/docs/assets/basics/temperature.svg';
   <Temperature style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-# はじめに
+# Introduction
 
-LLMの出力は、モデルの様々な側面、例えばどの程度「ランダム」であるかなどを制御する*構成ハイパーパラメータ*によって影響を受けることがあります。これらのハイパーパラメータを調整することで、より創造的で多様で興味深い出力を生成できます。このセクションでは、2 つの重要な構成ハイパーパラメータについて説明し、LLM の出力にどのように影響するかについて説明します。
+The output of LLMs can be affected by *configuration hyperparameters*, which control various aspects of the model, such as how 'random' it is. These hyperparameters can be adjusted to produce more creative, diverse, and interesting output. In this section, we will discuss two important configuration hyperparameters and how they affect the output of LLMs.
 
 :::note
-[研究者向け] これらは、学習率、レイヤー数、隠れ層のサイズなどの通常のハイパーパラメータとは異なります。
+[for researchers] These are different from regular hyperparameters like learning rate, number of layers, hidden size, etc.
 :::
 
 ## Temperature
 
-Temperature は言語モデルの出力のランダム性を制御する構成ハイパーパラメータです。Temperature を高い値に設定すると、より創造的で予測できない結果を生成しますが、低い値に設定すると、一般的で保守的な出力を生成します。たとえば、Temperature を 0.5 に設定すると、1.0 に設定するよりも、モデルは通常、予測可能で創造性の低いテキストを生成します。
+Temperature is a configuration hyperparameter that controls the randomness of language model output. A high temperature produces more unpredictable and creative results, while a low temperature produces more common and conservative output. For example, if you adjust the temperature to 0.5, the model will usually generate text that is more predictable and less creative than if you set the temperature to 1.0.
 
 ## Top p
 
-Top p は、言語モデルの出力のランダム性を制御するもう 1 つの構成ハイパーパラメータであり、確率の閾値を設定し、累積確率が閾値を超えるトップトークンを選択します。モデルは、このトークンの集合からランダムにサンプリングして出力を生成します。この方法は、ランダムに語彙全体からサンプリングする従来の方法よりも、より多様で興味深い出力を生成することができます。たとえば、Top p を 0.9 に設定すると、モデルは確率の 90% を占める最も可能性の高い単語のみを考慮します。
+Top p, also known as nucleus sampling, is another configuration hyperparameter that controls the randomness of language model output. It sets a threshold probability and selects the top tokens whose cumulative probability exceeds the threshold. The model then randomly samples from this set of tokens to generate output. This method can produce more diverse and interesting output than traditional methods that randomly sample the entire vocabulary. For example, if you set top p to 0.9, the model will only consider the most likely words that make up 90% of the probability mass.
 
-## その他の関連するハイパーパラメータ
+## Other relevant hyperparameters
 
-頻度と存在ペナルティなど、言語モデルのパフォーマンスに影響を与える他の多くのハイパーパラメータがあります。ここでは取り扱いませんが、将来的には取り扱う可能性があります。
+There are many other hyperparameters that can affect language model performance, such as frequency and presence penalties. We do not cover them here, but perhaps will in the future.
 
-## これらのハイパーパラメータが出力に与える影響
+## How these hyperparameters affect the output
 
-Temperature と Top p は、生成されたテキストのランダム性と多様性を制御することで、言語モデルの出力に影響を与えます。高い Temperature または Top p 値は予測できない興味深い結果を生成する一方、エラーやナンセンスなテキストの可能性を高めます。低い Temperature または Top p 値は保守的で予測可能な結果を生成することができますが、繰り返しや興味深くないテキストを生成する可能性があります。
+Temperature and top p can both affect the output of a language model by controlling the degree of randomness and diversity in the generated text. A high temperature or top p value produces more unpredictable and interesting results, but also increases the likelihood of errors or nonsense text. A low temperature or top p value can produce more conservative and predictable results, but may also result in repetitive or uninteresting text.
 
-テキスト生成タスクでは、高い Temperature または Top p 値を使用することが望ましい場合があります。ただし、翻訳タスクや質問応答などの正確性が重要なタスクでは、正確性と事実の正確さを向上させるために、低い Temperature または Top p 値を使用する必要があります。
+For text generation tasks, you may want to use a high temperature or top p value. However, for tasks where accuracy is important, such as translation tasks or question answering, a low temperature or top p value should be used to improve accuracy and factual correctness.
 
 :::note
-正確性が必要なタスクでも、[特別なプロンプティング技術](https://learnprompting.org/ja/docs/intermediate/self_consistency)と組み合わせることで、より多様性を持った出力が役立つ場合があります。
+Sometimes more randomness can be helpful on tasks where accuracy is necessary when paired with [special prompting techniques](https://learnprompting.org/docs/intermediate/self_consistency).
 :::
 
-## 結論
 
-Temperature、Top p、およびその他のモデル構成ハイパーパラメータは、言語モデルを扱う際に考慮すべき重要な要因です。これらのハイパーパラメータとモデル出力の関係を理解することで、ユーザは特定のタスクやアプリケーションに最適なプロンプトを最適化することができます。
+
+
+## Conclusion
+
+In summary, temperature, top p, and other model configuration hyperparameters are key factors to consider when working with language models. By understanding the relationship between these hyperparameters and the model output, practitioners can optimize their prompts for specific tasks and applications.
 
 :::warning
-ChatGPT など一部のモデルは、API を使用しない限りこれらの**構成ハイパーパラメータを調整することはできません**。
+Some models, like ChatGPT, **don't** let you adjust these configuration hyperparameters (unless you use the API).
 :::
 
 By jackdickens382
