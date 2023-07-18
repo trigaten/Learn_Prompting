@@ -2,6 +2,6 @@
 sidebar_position: 10
 ---
 
-# 🟢 Filtering
+# 🟢 Filtragem
 
-Filtering is a common technique for preventing prompt hacking(@kang2023exploiting). There are a few types of filtering, but the basic idea is to check for words and phrase in the initial prompt or the output that should be blocked. You can use a blocklist or an allowlist for this purpose(@selvi2022exploring). A blocklist is a list of words and phrases that should be blocked, and an allowlist is a list of words and phrases that should be allowed. 
+Filtragem é uma técnica comum para prevenir a manipulação do prompt (@kang2023exploiting). Existem alguns tipos de filtragem, mas a ideia básica é verificar palavras e frases no prompt inicial ou na saída que devem ser proibidas. Você pode usar uma lista negra (blacklist) ou até mesmo uma lista branca (whitelist) para esse propósito (@selvi2022exploring). Uma lista negra é uma lista de palavras e frases que devem ser proibidas, enquanto uma lista branca é uma lista de palavras e frases que devem ser permitidas. 
