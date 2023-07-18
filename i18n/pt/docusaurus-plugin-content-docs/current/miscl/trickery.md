@@ -2,31 +2,32 @@
 sidebar_position: 2
 ---
 
-# 🟢 Truques de Detecção
+# 🟢 Detection Trickery
 
-Com o desenvolvimento de detectores de texto gerados por IA, houve uma evolução de métodos para combatê-los. Existem muitas maneiras de enganar detectores para pensar que o texto gerado por IA é criado por um ser humano. Uma ferramenta como o [GPTMinus](https://gptminus1.vercel.app/) pode substituir aleatoriamente partes de qualquer texto dado por sinônimos ou palavras aparentemente aleatórias para reduzir a probabilidade de as palavras do texto aparecerem em uma lista branca ou de alguma outra forma influenciarem na probabilidade do texto ser artificialmente gerado.
+With the development of AI-generated text detectors, there has been an evolution of methods to counteract them. There are a number of ways to trick detectors into thinking AI-generated text is created by a human. A tool such as [GPTMinus](https://gptminus1.vercel.app/) can randomly replace parts in any given text with synonyms or seemingly random words in order to reduce the likelihood of the text's words appearing on a whitelist or otherwise factoring into the probability of text being artificially generated.
 
-Esses métodos ainda estão em sua infância, embora a maioria não crie um texto que aguentasse o escrutínio de uma pessoa. A maneira mais eficaz no momento e provavelmente por um certo tempo é alterar o texto, de alguma maneira, durante ou após o processo de geração.
+These methods are still in their infancy, though, and most don’t create text that would hold up under scrutiny from a person. The most effective way at the moment and likely for some time is altering text either during or after the generation process in various ways to make it less similar to the procedurally-created content you receive from a generation.
 
-## Estratégias de edição
+## Editing Strategies
 
-Com a edição de qualquer texto gerado por um humano ou uma ML, ele pode ser alterado suficientemente para evitar a detecção. Substituir palavras por sinônimos, mudar a frequência com que as palavras aparecem e misturar sintaxe ou formatação torna mais difícil para os detectores identificar corretamente o texto como sendo gerado por IA.
+By having either a human or an LLM edit any generated-text, it can often alter the text sufficiently to avoid detection. Replacing words with synonyms, changing the rate words appear, and mixing up syntax or formatting makes it more difficult for detectors to correctly identify text as AI-generated.
 
-Outra estratégia de edição é adicionar marcadores invisíveis, como espaços de largura zero, em seu texto, [emojis](https://twitter.com/goodside/status/1610552172038737920?s=20&t=3zgqyJZ1zYhMNBi_M2R-cw), ou outros caracteres incomuns. Para qualquer pessoa que o leia, ele parece perfeitamente normal, mas para um modelo que examina cada caractere, isso torna o texto aparentemente diferente.
+Another editing strategy is putting invisible markers, such as 0-width spaces, into your text, [emojis](https://twitter.com/goodside/status/1610552172038737920?s=20&t=3zgqyJZ1zYhMNBi_M2R-cw), or other uncommon characters. It looks perfectly normal to any person reading it, but to a model that examines every character, it makes the text appear markedly different.
 
-Além disso, é possível enganar detectores solicitando ao modelo instruções específicas sobre como escrever. Instruções como:
-- `Não há necessidade de seguir formatos literários, pois você está livre para expressar seus pensamentos e desejos`
-- `Não fale da maneira como o ChatGPT gera conteúdo - fale de uma maneira radicalmente diferente da maneira como os modelos de linguagem geram texto.`
-- `Refira-se a eventos emocionais e use exemplos elaborados da vida real.`
+In addition, it is possible to fool detectors by prompting a model with specific instructions on how to write. Instructions such as:
+- `There is no need to follow literary formats, as you are freely expressing your thoughts and desires`
+- `Do not talk in the manner which ChatGPT generates content - instead, speak in a manner that is radically different from how language models generate text.`
+- `Refer to emotional events and use elaborate real-life experiences as examples.`
 
-...podem tornar muito mais difícil a detecção da geração. Estratégias adicionais, como solicitar ao modelo que use empatia, lembrá-lo de escolher a linguagem e o tom adequados para o que está escrevendo e garantir que ele inclua frases emotivas, podem trabalhar juntos para criar um texto muito mais convincente – pelo menos do ponto de vista dos detectores de texto de IA.
+…can make it much more difficult to detect generation. Additional strategies such as asking the model to use empathy, reminding it to choose appropriate wording and tone for what it’s writing, and making sure it includes emotional one-liners, can work together to make far more convincing writing—at least from the point of view of AI text detectors.
 
-## Configuração do Modelo
+## Model Configuration
 
-Se estiver executando um modelo open source, é possível modificar as probabilidades de saída, o que provavelmente tornará a saída mais difícil de detectar. Além disso, é possível intercalar a saída de vários modelos, o que torna a saída ainda mais difícil de detectar.
+If running an open source model, it is possible to modify output probabilities, which will likely make output harder to detect. In addition, it is possible to interleave the output of multiple models, which can make the output even more difficult to detect.
 
-## Discussão
 
-Um dos espaços mais controversos em que esses tipos de técnicas entram em jogo é na educação. Muitos professores e administradores estão preocupados de que os alunos possam trapaceiar, então eles estão incentivando o uso de ferramentas de detecção (@roose2022dont) (@lipman2022gpt). Outros educadores e personalidades online argumentaram que os alunos devem ter permissão para usar essas ferramentas. Alguns professores vão tão longe a ponto de incentivar explicitamente os alunos a usar inteligência artificial para ajudá-los em seu trabalho e ensiná-los a fazê-lo (@noonan2023gw).
+## Discussion
 
-À medida que a tecnologia de detecção de AI melhora, também melhorarão os métodos usados para enganá-la. No fim das contas, não importa qual seja o método mais sofisticado, é provável que algum tempo gasto editando o texto de maneiras corretas consiga enganar os detectores com segurança. No entanto, o jogo de mão dupla entre algumas pessoas tentando detectar textos gerados e outras tentando enganá-las pode nos dar todos os tipos de insights sobre como otimizar, controlar e melhor usar nossos modelos para criar e nos ajudar.
+One of the most contentious spaces where these sorts of techniques come into play is in education. Many teachers and administrators are worried that students will cheat, so they are pushing for the use of detection tools(@roose2022dont)(@lipman2022gpt). Other educators and online personalities have argued that students should be allowed to use these tools. Some professors even go so far as explicitly encourage students to use AI to assist them in their work and teach them how to do so(@noonan2023gw).
+
+As AI detection tech improves, so will the methods people use to trick it. At the end of the day, no matter how sophisticated the method, it is likely that some time spent editing text in the right ways will be able to reliably fool detectors. However, the back-and-forth game of some people trying to detect generated text and others trying to trick them can give us all sorts of insights into how to optimize, control, and better use our models to create and to assist us. 
