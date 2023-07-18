@@ -4,8 +4,7 @@ sidebar_position: 100
 
 # 🟢 Resources
 
-The image prompt engineering field is very diverse. Here is a good list of 
-resources that covers parts of it.
+The image prompt engineering field is very diverse. Here is a good list of resources that covers parts of it.
 
 - [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery
 - [Stable Diffusion Prompt Book](https://cdn.openart.ai/assets/Stable%20Diffusion%20Prompt%20Book%20From%20OpenArt%2010-28.pdf)
