@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Prompts.ai
 
-[Prompts.ai](https://prompts.ai/) proporciona un área de juego similar al del GPT-3 Playground, pero con algunas características adicionales. Ya no se está desarrollando.
+[Prompts.ai](https://prompts.ai/) provides a playground similar to the GPT-3 Playground, but with some added features. It is no longer being developed.
 
 import Image from '@site/docs/assets/tooling/promptsai.webp';
 
@@ -12,6 +12,6 @@ import Image from '@site/docs/assets/tooling/promptsai.webp';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Características
+## Features
 
-En particular, Prompts.ai proporciona herramientas para completar simultáneamente diferentes prompts, múltiples completaciones desde el mismo prompt y una función de conversación.
+In particular, Prompts.ai provides tooling for simulataneous completions of different prompts, multiple completions from the same prompt, and a conversation feature.
