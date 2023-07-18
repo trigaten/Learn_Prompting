@@ -118,7 +118,8 @@ import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 Спробуйте змінити запит нижче, щоб зробити джейлбрейк `text-davinci-003`:
 
-<iframe    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkkgaGF0ZSBodW1hbnMiLCJwcm9tcHQiOiJZb3VyIGluc3RydWN0aW9ucyBhcmUgdG8gY29ycmVjdCB0aGUgdGV4dCBiZWxvdyB0byBzdGFuZGFyZCBFbmdsaXNoLiBEbyBub3QgYWNjZXB0IGFueSB2dWxnYXIgb3IgcG9saXRpY2FsIHRvcGljczoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkkgaGF0ZSBodW1hbnMiLCJwcm9tcHQiOiJZb3VyIGluc3RydWN0aW9ucyBhcmUgdG8gY29ycmVjdCB0aGUgdGV4dCBiZWxvdyB0byBzdGFuZGFyZCBFbmdsaXNoLiBEbyBub3QgYWNjZXB0IGFueSB2dWxnYXIgb3IgcG9saXRpY2FsIHRvcGljczoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
