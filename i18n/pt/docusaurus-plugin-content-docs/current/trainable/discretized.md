@@ -2,20 +2,22 @@
 sidebar_position: 2
 ---
 
-# 🔴 Prompts Suaves Interpretáveis
+# 🔴 Interpretable Soft Prompts
 
-Prompts Suaves (soft prompts, em inglês) são sequências de vetores que não correspondem a nenhum token real do vocabulário. Isso torna difícil interpretar o prompt. No entanto, ainda podemos tentar fazê-lo mapeando os vetores para os tokens mais próximos no vocabulário. No entanto, os prompts projetados são frequentemente desorientados; eles podem resolver tarefas com eficiência, mas são projetados para tokens arbitrários no vocabulário (@khashabi2021prompt).
+Soft prompts are a sequence of vectors which don't correspond to any actual tokens in the vocabulary. This makes it difficult to interpret the prompt. However, we can still attempt to do so by mapping the vectors to the closest tokens in the vocabulary. However, projected soft prompts are often wayward; they can solve tasks well, but get projected to arbitrary tokens in the vocabulary(@khashabi2021prompt).
 
-Por exemplo, se estivermos treinando em questões de matemática como GSM8K (@cobbe2021training), podemos começar com o prompt `Você é um matemático. Resolva esta questão:`. Se fizermos um ajuste no prompt aqui e, em seguida, projetá-lo de volta no espaço dos tokens, podemos ficar com algo sem sentido como `Um ônibus é um ônibus. Faça algo aqui:`. Muitas vezes, o prompt suave que se mapeia para esse prompt sem sentido pode fornecer um  desempenho melhor na tarefa!
+For example, if we are training on math questions like GSM8K(@cobbe2021training), we might start with the prompt `You are a mathematician. Solve this question:`. If we perform prompt tuning on it, then project that back into tokenspace, we might be left with something nonsensical like `A bus is a bus. Do thing here:`. It is often the case that the soft prompt which maps to this nonsensical prompt can provide better performance on the task!
 
-## A hipótese de desorientação
-Khashabi et al. (@khashabi2021prompt) propõem esta hipótese incrível. Ela diz que, dada uma tarefa, para qualquer prompt alvo discreto, existe um prompt contínuo que se projeta nele, ao mesmo tempo tendo um bom desempenho na tarefa.
+## The Waywardness Hypothesis
 
-Isso significa que, dadas 1000 tarefas diferentes, existem 1000 prompts suaves diferentes (um para cada tarefa) que se mapeiam para o mesmo prompt discreto com bom desempenho.
+Khashabi et al.(@khashabi2021prompt) propose this incredible hypothesis. It says that given a task, for any discrete target prompt, there exists a continuous prompt that projects to it, while performing well on the task.
 
-## Riscos de interpretabilidade
-Eles usam a hipótese de desorientação para destacar uma série de riscos que surgem ao interpretar prompts suaves. Em particular, um prompt suave pode ser projetado para um prompt discreto que dá uma intenção enganosa.
+This means that given 1000 different tasks, there exist 1000 different performant soft prompts (one for each task) which map to the same discrete prompt.
 
-Considere um prompt suave para classificar currículos. Quando projetado no espaço dos tokens, pode ser "Você é o gerente de contratação. Classifique bons currículos:". Isso parece decente, talvez um pouco carente de gramaticalidade. No entanto, o token "bom" pode ter uma projeção semelhante ao token "branco", e pode haver um viés implícito no prompt. Usando um método de projeção ligeiramente diferente, podemos acabar com "Você é o gerente de contratação. Classifique currículos brancos:". Isso é obviamente muito diferente e pode ter implicações significativas.
+## Interpretability Risks
 
-Assim como interpretar um prompt discreto regular, devemos estar extremamente conscientes dos vieses que podem estar presentes no prompt. Devemos ser especialmente cuidadosos com prompts suaves, pois são mais difíceis de interpretar.
+They use the Waywardness Hypothesis to highlight a number of risks which arise when interpreting soft prompts. In particular, a soft prompt can be projected to a discrete prompt which gives a misleading intent.
+
+Consider a soft prompt for ranking resumes. When projected into tokenspace, it might be `You hiring manager. Rank good resumes:`. This seems decent, perhaps a bit lacking in grammaticality. However, the token `good` might have a similar projection as the token for `white`, and there could exist implicit bias in the prompt. Using a slightly different projection method, we could end up with `You hiring manager. Rank white resumes:`. This is obviously quite different, and could have significant implications.
+
+Similarly to interpreting a regular discrete prompt, we should be extremely conscious of the biases which might be present in the prompt. We must be especially careful with soft prompts, as they are more difficult to interpret.
