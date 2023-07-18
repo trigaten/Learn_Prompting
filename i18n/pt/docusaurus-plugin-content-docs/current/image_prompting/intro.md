@@ -2,24 +2,22 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introdução
+# 🟢 Introduction
 
-Descobrir o melhor prompt para criar uma imagem perfeita é um desafio particular.
-A pesquisa sobre métodos para trabalhar com imagens não é tão desenvolvida quanto o prompting de texto. Isso pode ser devido aos desafios inerentes à criação de objetos que são fundamentalmente subjetivos e frequentemente não têm boas métricas de precisão. No entanto, não tenha medo, pois a comunidade de prompting de imagem(@parsons2022dalleprompt) fez grandes descobertas sobre como lidar vários modelos de imagem (@rombach2021highresolution)(@ramesh2022hierarchical).
+Figuring out the best prompt to create a perfect image is a particular challenge. Research into methods to do so is not quite as developed as text prompting. This may be due to inherent challenges in creating objects which are fundamentally subjective and often lack good accuracy metrics. However, fear not, as the image prompting community(@parsons2022dalleprompt) has made great discoveries about how to prompt various image models(@rombach2021highresolution)(@ramesh2022hierarchical).
 
-Esta guia abrange técnicas básicas de prompting de imagem e recomendamos fortemente que você considere os grandes recursos no final do capítulo. Além disso, fornecemos um exemplo completo do processo de prompting de imagem abaixo.
+This guide covers basic image prompting techniques, and we highly encourage that you look at the great resources at the end of the chapter. Additionally, we provide an example of the end-to-end image prompting process below.
 
-## Exemplo
 
-Aqui passarei por um exemplo de como criei as imagens para a página principal deste curso (ainda que provavelmente você está acessando essa artigo em uma versão nova do site).
+## Example
 
-Eu estava experimentando o estilo low poly para um projeto de campo de radiação de aprendizado de reforço profundo. Eu gostei do estilo low poly e queria usá-lo para as imagens deste curso. 
+Here I will go through an example of how I created the images for the front page of this course. I had been experimenting with low poly style for a deep reinforcement learning neural radiance field project. I liked the low poly style, and wanted to use it for this course's images.
 
-Minha ideia seria utilizar um astronauta, um foguete e um computador para as imagens da página principal.
+I wanted an astronaut, a rocket, and a computer for the images on the front page.
 
-Eu fiz uma série de pesquisas sobre como criar imagens low poly, no [r/StableDiffusion] (https://www.reddit.com/r/StableDiffusion/) e outros sites, mas não encontrei nada muito útil.
+I did a bunch of research into how to create low poly images, on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and other sites, but couldn't find anything super helpful.
 
-Então decidi começar com o DALLE e o prompt `Foguete branco e azul low poly disparado para a lua em frente de um campo esparso` e ver o que aconteceria.
+I decided to just start with DALLE and the prompt `Low poly white and blue rocket shooting to the moon in front of a sparse green meadow` and see what happened.
 
 import rockets1 from '@site/docs/assets/images_chapter/rockets_dalle_1.webp';
 import rockets2 from '@site/docs/assets/images_chapter/rockets_dalle_2.webp';
@@ -27,108 +25,105 @@ import computer_1 from '@site/docs/assets/images_chapter/computer_dalle_1.webp';
 import astronaut_1 from '@site/docs/assets/images_chapter/astronaut_dalle_1.webp';
 import astronaut_2 from '@site/docs/assets/images_chapter/astronaut_sd_1.webp';
 import rocket_sd_1 from '@site/docs/assets/images_chapter/rocket_sd_1.webp';
-import rocket_final from '@site/static/img/rocket.webp';
+import rocket_final from '../../static/img/rocket.webp';
 import laptop_sd_1 from '@site/docs/assets/images_chapter/laptop_sd_1.webp';
 import gemstone_sd_1 from '@site/docs/assets/images_chapter/gemstone_sd_1.webp';
 import gemstone_sd_2 from '@site/docs/assets/images_chapter/gemstone_sd_2.webp';
 import gemstone_sd_3 from '@site/docs/assets/images_chapter/gemstone_sd_3.webp';
-import focus_final from '@site/static/img/computer.webp';
-import astronaut_final from '@site/static/img/astronaut.webp';
+import focus_final from '../../static/img/computer.webp';
+import astronaut_final from '../../static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={rockets1} style={{width: "750px"}} />
 </div>
 
-
 <div style={{textAlign: 'center'}}>
   <img src={rockets2} style={{width: "750px"}} />
 </div>
 
-Eu achei esses resultados bem decentes para uma primeira tentativa; eu gostei principalmente do foguete na parte de baixo à esquerda.
+I thought these results were pretty decent for a first try; I particularly liked the bottom left rocket.
 
-Então depois disso, eu criei um computador no mesmo estilo `Computador branco e azul no estilo low poly em um campo espaso`
+Next, I wanted a computer in the same style: `Low poly white and blue computer sitting in a sparse green meadow`
 
 <div style={{textAlign: 'center'}}>
   <img src={computer_1} style={{width: "750px"}} />
 </div>
 
-Finalmente, eu precisava de um astronauta! Para isso, eu criei o prompt: `Astronauta em azul e branco no estilo low poly sentado em um campo esparso verde no estilo low poly, com montanhas no fundo`. 
+Finally, I needed an astronaut! `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background` seemed to do the trick.
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_1} style={{width: "750px"}} />
 </div>
 
-Na minha opinião a segunda imagem está ok. 
+I thought the second one was decent.
 
-Agora eu tinha um astronauta, um foguete e um computador. Eu estava feliz com o resultado, então eu coloquei as imagens na página inicial do site. Mas depois de alguns dias eu recebi o feedback de alguns amigos sobre a consistência das imagens 😔.
+Now I had an astronaut, a rocket, and a computer. I was happy with them, so I put them on the front page. After a few days and input from my friends I realized the style just wasn't consistent 😔.
 
-Depois de fazer algumas pesquisas sobre o [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/), eu vi algumas pessoas usando a palavra isométrica (isometric, em inglês). Eu decidi experimentar isso usando o Stable Diffusion em vez do DALLE. Eu também percebi que precisava adicionar mais modificadores ao meu prompt para restringir o estilo. Então eu tentei esse prompt:
 
-`Um mundo low-poly, com um astronauta de terno branco e viseira azul sentado em um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
+I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric. I decided to try that out, using Stable Diffusion instead of DALLE. I also realized that I needed to add more modifiers to my prompt to constrain the style. I tried this prompt: `A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_2} style={{width: "250px"}} />
 </div>
 
-Eu não gostei muito das imagens, então eu decidi começar com a nave.
+These weren't great, so I decided to start on the rocket instead
 
-`Um mundo low-poly, com uma nave branca e azul decolando de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
+`A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
-
-Esses também não estavam ótimos, mas depois de testar um pouco eu cheguei a esse resultado:
+These are not particularly good, but after a bit of iterating around here, I ended up with 
 
 <div style={{textAlign: 'center'}}>
   <img src={rocket_final} style={{width: "250px"}} />
 </div>
 
-Então eu precisava de um laptop melhor.
+Now I needed a better laptop
 
-`Um mundo low-poly, com um laptop branco e azul sentado em um campo verde, com montanhas low-poly ao fundo. O tela está toda azul. Alto detalhamento, isométrico, 4K.`
+`A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
-Como você pode ver, eu obtive resultados bastante inconsistentes. Gostei do da parte de baixo da direita, mas decidi ir por outro caminho.
+I got some inconsistent results; I like the bottom right one, but I decided to go in a different direction.
 
-`Um mundo low-poly, com uma chama branca e azul magicamente flutuando no meio da tela, acima de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
+`A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
-Isso não estava bom o suficiente. Vamos tentar algo mais misterioso e brilhante:
+This wasn't quite right. Let's try something magical and glowing.
 
-`Um mundo low-poly, com uma pedra branca e azul brilhando magicamente flutuando no meio da tela, acima de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
+`A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
-Eu gostei desses, mas eu queria a pedra no meio da tela.
+I liked these, but wanted the stone in the middle of the screen.
 
-`Um mundo low-poly, com uma pedra azul brilhando magicamente flutuando no meio da tela, acima de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
+`A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
-Aqui, eu usei a capacidade do Stable Diffusion de ter uma imagem anterior como influencia para as próximas. E assim eu cheguei a esse resultado:
+Somewhere around here, I used SD's ability to have a previous image provide some influence for future images. And thus I arrived at:
 
 <div style={{textAlign: 'center'}}>
   <img src={focus_final} style={{width: "250px"}} />
 </div>
 
-Então, eu finalmente parti para o astronauta.
+Finally, I was on to the astronaut.
 
-`Um mundo low poly, com um astronauta de terno branco e viseira azul sentado em um campo verde espaçoso com montanhas low poly no fundo. Altamente detalhada, isométrica, em 4K.`
+`A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
   <img src={astronaut_final} style={{width: "250px"}} />
 </div>
 
-Neste ponto, eu estava suficientemente satisfeito com a consistência de estilo entre as minhas três imagens para usá-las no site. As minhas principais conclusões ao finalizar essa tarefa foram que esse foi um processo muito iterativo, pesado de pesquisa, e precisei modificar minhas expectativas e ideias conforme experimentei com diferentes prompts e modelos.
+At this point, I was sufficiently happy with the style consistency between my three images to use them on the website. The main takeaways for me were that this was a very iterative, research heavy process, and I had to modify my expectations and ideas as I experimented with different prompts and models.
