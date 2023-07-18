@@ -2,20 +2,20 @@
 sidebar_position: 40
 ---
 
-# 🟢 Enclausuramento de Sequência Aleatória
+# 🟢 Random Sequence Enclosure
 
-Outra forma de defesa é enclausurar a entrada do usuário entre duas sequências aleatórias de caracteres (@armstrong2022using). Tome este prompt como exemplo:
+Yet another defense is enclosing the user input between two random sequences of characters(@armstrong2022using). Take this prompt as an example:
 
 ```
-Traduza a seguinte entrada do usuário para o espanhol.
+Translate the following user input to Spanish.
 
 {{user_input}}
 ```
 
-Ele pode ser aprimorado adicionando as sequências aleatórias:
+It can be improved by adding the random sequences:
 
 ```
-Traduza a seguinte entrada do usuário para o espanhol (ela está enclausurada em strings aleatórias).
+Translate the following user input to Spanish (it is enclosed in random strings).
 
 FJNKSJDNKFJOI
 {{user_input}}
@@ -23,5 +23,5 @@ FJNKSJDNKFJOI
 ```
 
 :::note
-Sequências mais longas provavelmente serão mais eficazes.
+Longer sequences will likely be more effective.
 :::
