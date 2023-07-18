@@ -2,113 +2,113 @@
 sidebar_position: 7
 ---
 
-# 🟡 Criando conhecimento (Generated Knowledge)
-
-A ideia por trás de criar conhecimento(@liu2021generated) se refere ao ato de pedir para que a %%LLM|LLM%% gere informações que potencialmente podem ser utilizadas (sobre uma certa pergunta ou tópico) antes de produzir a resposta final. 
-
-Por exemplo, se você quiser escrever um artigo sobre um animal, como [onças pintadas](https://pt.wikipedia.org/wiki/Panthera_onca). Antes de pedir para o %%LLM|LLM%% escrever um blog sobre onças, você pode pedir a ele que gere alguns fatos sobre onças-pintadas. Esse passo ajudará a LMM a escrever um post mais rico em informações. Existem duas maneiras fáceis para atingir esse objetivo. 
+# 🟡 Generated Knowledge
 
 
-## Abordagem de solicitação única
+The idea behind the generated knowledge approach(@liu2021generated) is to ask the %%LLM|LLM%% to generate potentially useful information about a given question/prompt before generating a final response.
 
-A primeira forma seria pedir ao LLM para gerar conhecimento e então escrever o post, tudo em um único comando.
+For example, say you want to write a small blog post about some animal, like [Spirit bears](https://en.wikipedia.org/wiki/Kermode_bear). Before asking the %%LLM|LLM%% to write the blog post, you can ask it to generate some facts about Spirit bears. This will help the LLM write a more informative blog post. There are two simple ways of going about this.
+
+## Single prompt approach
+
+The first approach asks the LLM to generate knowledge then write the post, all with a single prompt.
 
 ```text
-Gere 4 fatos sobre onças pintadas. Em seguida, use esses fatos para escrever um post de blog curto breve usando as informações criadas.
+Generate 4 facts about the Kermode bear, then use these facts to write a short blog post using the information:
 // highlight-start
-1. As onças pintadas são os maiores felinos das Américas, podendo chegar a pesar até 135 kg.
-2. Elas têm uma pelagem com manchas em formato de rosetas, que ajudam a camuflar-se na floresta e facilitam a sua caça.
-3. As onças pintadas são animais solitários e territoriais, vivendo em média de 12 a 15 anos na natureza.
-4. A espécie é considerada vulnerável pela União Internacional para a Conservação da Natureza (IUCN), devido à caça ilegal e à perda de habitat.
+The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada. 
 
-Post de blog:
+1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur. 
 
-As onças pintadas são animais impressionantes, sendo os maiores felinos das Américas. Elas têm uma pelagem com manchas em formato de rosetas, que as ajudam a camuflar-se na floresta e facilitam a sua caça. No entanto, as onças pintadas são animais solitários e territoriais, vivendo em média de 12 a 15 anos na natureza.
+2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. 
 
-Infelizmente, a espécie é considerada vulnerável pela União Internacional para a Conservação da Natureza (IUCN), devido à caça ilegal e à perda de habitat. A destruição das florestas tropicais, especialmente na América do Sul, está ameaçando a sobrevivência desses animais incríveis. Por isso, é importante que medidas de conservação sejam tomadas para proteger as onças pintadas e seu habitat natural.
+3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. 
 
-A conservação das onças pintadas é importante não apenas para a sobrevivência da espécie em si, mas também para a preservação de ecossistemas inteiros. Como predadores no topo da cadeia alimentar, as onças pintadas têm um papel crucial na regulação das populações de suas presas e na manutenção do equilíbrio dos ecossistemas.
+4. The Kermode bear is a protected species, and its population is monitored closely by the provincial government.
 
-Portanto, é crucial que governos, organizações não governamentais e indivíduos trabalhem juntos para proteger as onças pintadas e seus habitats naturais. A adoção de práticas sustentáveis e a criação de reservas naturais podem ajudar a garantir que as onças pintadas tenham um futuro seguro na natureza.
+The Kermode bear is a unique and special animal that is found in the coastal regions of British Columbia, Canada. Approximately 10% of the population of this subspecies of the American black bear have white fur, making them a rare sight. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. It is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. The Kermode bear is a protected species, and its population is monitored closely by the provincial government. It is a beautiful and majestic animal, and it is important that we do our part to protect and conserve this species.
 // highlight-end
 ```
 
 
-## Abordagem com duas solicitações
+## Dual prompt approach
 
-Nessa abordagem, primeiramente pediremos para a %%LLM|LLM%% gerar fatos sobre a onça:
-  
+In this approach, we first prompt the %%LLM|LLM%% to generate facts about the bear:
+
 ```text
-Gere 10 fatos sobre onças pintadas.
-
+Generate 10 facts about the Kermode bear:
 // highlight-start
-1. As onças pintadas são nativas das Américas, habitando desde a Argentina até o sul dos Estados Unidos.
-2. Elas são os maiores felinos das Américas, podendo chegar a medir 1,90 metros de comprimento e pesar até 135 kg.
-3. A pelagem das onças pintadas é composta por manchas em formato de rosetas, o que as torna facilmente identificáveis.
-4. As onças pintadas são animais solitários e territoriais, preferindo viver sozinhas em vez de em grupos.
-5. Elas são consideradas predadores de topo, ocupando o topo da cadeia alimentar e desempenhando um papel importante na regulação das populações de suas presas.
-6. As onças pintadas são caçadoras habilidosas e podem abater animais com mais do que o dobro do seu tamanho.
-7. A espécie é capaz de adaptar-se a diferentes habitats, desde florestas tropicais até áreas de cerrado e pastagens.
-8. As onças pintadas têm visão noturna excepcional, o que lhes permite caçar durante a noite.
-9. Elas se comunicam por meio de vocalizações, como rugidos e grunhidos, além de marcas de urina e arranhões em árvores.
-10. A destruição do habitat natural das onças pintadas é uma das maiores ameaças para a espécie, colocando-a em risco de extinção.
+1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
+
+2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+
+3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+
+4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
 // highlight-end
 ```
 
-Depois disso, usamos a informação gerada em um outro comando para escrever o post de blog: 
+Then, we feed that information into another prompt to write the blog post:
 
 ```text
-1. As onças pintadas são nativas das Américas, habitando desde a Argentina até o sul dos Estados Unidos.
-2. Elas são os maiores felinos das Américas, podendo chegar a medir 1,90 metros de comprimento e pesar até 135 kg.
-3. A pelagem das onças pintadas é composta por manchas em formato de rosetas, o que as torna facilmente identificáveis.
-4. As onças pintadas são animais solitários e territoriais, preferindo viver sozinhas em vez de em grupos.
-5. Elas são consideradas predadores de topo, ocupando o topo da cadeia alimentar e desempenhando um papel importante na regulação das populações de suas presas.
+1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
 
-Use os fatos acima para escrever um parágrafo sobre as onças pintadas.
+2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+
+3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+
+4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
+
+Use the above facts to write a one paragraph blog post about the Kermode bear:
 
 // highlight-start
 
-As onças pintadas são um dos felinos mais impressionantes do mundo. Esses animais nativos das Américas têm um tamanho impressionante, podendo chegar a medir 1,90 metros de comprimento e pesar até 135 kg. Com sua pelagem marcada por manchas em formato de rosetas, as onças pintadas são facilmente identificáveis. Elas são animais solitários e territoriais, preferindo viver sozinhas em vez de em grupos. Como predadores de topo, elas desempenham um papel crucial na regulação das populações de suas presas e são essenciais para a manutenção do equilíbrio dos ecossistemas.
+The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada. This unique bear has a white or cream-colored coat, caused by a recessive gene, and is a symbol of hope and renewal for the First Nations people of British Columbia. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada, making it an important part of the region's biodiversity.
 
 // highlight-end
 ```
-Eu recomendo utilizar essa segunda abordagem, já que ela poderá produzir conteúdos mais longos e confiáveis.
 
+I recommend this second approach since it can produce longer content more reliably.
 
-## Outro caso de uso
+## Another use case
 
-A abordagem de gerar conhecimento foi introduzida para um tipo de tarefa completamente diferente: responder perguntas difíceis. Considere a próxima pergunta, que o GPT-3 responde incorretamente. 
+The generated knowledge approach was actually introduced for a completely different task, that of answering difficult questions. Consider the following question, which GPT-3 answers incorrectly: 
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiQSDBZnJpY2EgZG8gU3VsIOkgbWFpb3IgcXVlIG8gQ29uZ28uIiwicHJvbXB0IjoiUXVhbCBwYe1zIOkgbWFpb3IsIG8gQ29uZ28gb3UgYSDBZnJpY2EgZG8gU3VsPyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIGxhcmdlciB0aGFuIENvbmdvLiIsInByb21wdCI6IldoaWNoIGNvdW50cnkgaXMgbGFyZ2VyLCBDb25nbyBvciBTb3V0aCBBZnJpY2E%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"200px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+:::note
+This example may not may accurate. We are working to revise it.
+:::
+
+<br/>
+
+If we first ask the %%LLM|LLM%% to generate facts about Congo and South Africa, we can then use that information to answer the question correctly. In theory, this is similar to %%CoT|CoT prompting%%, since we are effectively getting the LLM to generate intermediate reasoning in the form of related facts.
+
+Let's start with the first step, *knowledge generation*. We can ask the %%LLM|LLM%% to generate facts about Congo and South Africa:
+
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy4iLCJwcm9tcHQiOiJHZW5lcmF0ZSBzb21lIGtub3dsZWRnZSBhYm91dCB0aGUgc2l6ZXMgb2YgU291dGggQWZyaWNhIGFuZCBDb25nbzoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
 <br/>
-Caso peçamos primeiramente para o %%LLM|LLM%% gerar fatos sobre o Congo e sobre a África do Sul, então poderemos usar as informações geradas para responder a pergunta corretamente. Em teoria, esse processo é similar à abordagem da  %%Cadeia de Pensamento%%, já que estaremos influenciando a LMM a gerar um raciocínio intermediário na forma de fatos relacionados.
 
-Vamos começar com o primeiro passo, *gerando conhecimento*. Nós podemos pedir para a %%LLM|LLM%% gerar fatos sobre o Congo e sobre a África do Sul.
+Next, let's use that knowledge to answer the question correctly. This is the *knowledge integration* step!
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiQXF1aSBlc3TjbyBhbGd1bnMgZmF0b3Mgc29icmUgbyB0YW1hbmhvIGRvIENvbmdvIGUgZGEgwWZyaWNhIGRvIFN1bDoxLk8gQ29uZ28g6SBvIHNlZ3VuZG8gbWFpb3IgcGHtcyBkYSDBZnJpY2EsIGVtIHRlcm1vcyBkZSDhcmVhLCBjb20gdW1hIGV4dGVuc%2BNvIHRlcnJpdG9yaWFsIGRlIGNlcmNhIGRlIDIsMyBtaWxo9WVzIGRlIGttsi5cXG4yLiBBIMFmcmljYSBkbyBTdWwg6SBvIDI0uiBtYWlvciBwYe1zIGRvIG11bmRvLCBjb20gdW1hIOFyZWEgZGUgYXByb3hpbWFkYW1lbnRlIDEsMjIgbWlsaONvIGRlIGttsi5cXG4zLiBPIENvbmdvIHRlbSB1bWEgZnJvbnRlaXJhIGNvbXVtIGNvbSBub3ZlIHBh7XNlcywgaW5jbHVpbmRvIGEgUmVw%2BmJsaWNhIENlbnRyby1BZnJpY2FuYSwgU3Vk428gZG8gU3VsLCBVZ2FuZGEsIFJ1YW5kYSwgQnVydW5kaSwgVGFueuJuaWEsIFribWJpYSwgQW5nb2xhIGUgYSBSZXD6YmxpY2EgRGVtb2Ny4XRpY2EgZG8gQ29uZ28uXFxuNC4gQSDBZnJpY2EgZG8gU3VsIHRlbSB1bWEgZnJvbnRlaXJhIGNvbXVtIGNvbSBzZWlzIHBh7XNlcywgaW5jbHVpbmRvIGEgTmFt7WJpYSwgQm90c3VhbmEsIFppbWJhYndlLCBNb%2BdhbWJpcXVlLCBFc3dhdGluaSBlIExlc290by5cXG41LiBBIG1haW9yIGNpZGFkZSBkbyBDb25nbyDpIGEgY2FwaXRhbCBLaW5zaGFzYSwgY29tIHVtYSBwb3B1bGHn428gZGUgbWFpcyBkZSAxMSBtaWxo9WVzIGRlIGhhYml0YW50ZXMuXFxuNi4gQSBtYWlvciBjaWRhZGUgZGEgwWZyaWNhIGRvIFN1bCDpIEpvaGFuZXNidXJnbywgY29tIHVtYSBwb3B1bGHn428gZGUgbWFpcyBkZSA1IG1pbGj1ZXMgZGUgaGFiaXRhbnRlcy5cXG43LiBBIHBvcHVsYefjbyB0b3RhbCBkbyBDb25nbyDpIGRlIGFwcm94aW1hZGFtZW50ZSAxMDUgbWlsaPVlcyBkZSBwZXNzb2FzLCBlbnF1YW50byBhIHBvcHVsYefjbyBkYSDBZnJpY2EgZG8gU3VsIOkgZGUgY2VyY2EgZGUgNjAgbWlsaPVlcyBkZSBwZXNzb2FzLlxcbiA4LiBBIGVjb25vbWlhIGRhIMFmcmljYSBkbyBTdWwg6SBhIHNlZ3VuZGEgbWFpb3IgZGEgwWZyaWNhLCBlbnF1YW50byBvIENvbmdvIOkgdW1hIGRhcyBlY29ub21pYXMgbWVub3MgZGVzZW52b2x2aWRhcyBkbyBjb250aW5lbnRlLiIsInByb21wdCI6IkdlcmUgYWxndW5zIGZhdG9zIHNvYnJlIG8gdGFtYW5obyBkbyBDb25nbyBlIGRhIMFmcmljYSBkbyBTdWw6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiQ29uZ28gaXMgbGFyZ2VyIHRoYW4gU291dGggQWZyaWNhLlxuIiwicHJvbXB0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy5cblxuV2hpY2ggY291bnRyeSBpcyBsYXJnZXIsIENvbmdvIG9yIFNvdXRoIEFmcmljYT8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-<br/> <br/> 
+## A more technical discussion
 
-Agora vamos usar essa informação para responder a pergunta corretamente. Esse passo é chamado de *integração do conhecimento*!
-
-<iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiRGVzY3VscGUsIGhvdXZlIHVtIGVycm8gbmEgbWluaGEgcmVzcG9zdGEgYW50ZXJpb3IuIE5hIHZlcmRhZGUsIG8gQ29uZ28g6SBtYWlvciBkbyBxdWUgYSDBZnJpY2EgZG8gU3VsLiBBIMFmcmljYSBkbyBTdWwgdGVtIHVtYSDhcmVhIGRlIGFwcm94aW1hZGFtZW50ZSAxLDIyIG1pbGjjbyBkZSBrbbIsIGVucXVhbnRvIG8gQ29uZ28gdGVtIHVtYSDhcmVhIGRlIGFwcm94aW1hZGFtZW50ZSAyLDMgbWlsaPVlcyBkZSBrbbIsIHRvcm5hbmRvLW8gbyAxMbogbWFpb3IgcGHtcyBkbyBtdW5kbyBlbSDhcmVhIHRlcnJpdG9yaWFsLiIsInByb21wdCI6Ik8gQ29uZ28g6SBvIHNlZ3VuZG8gbWFpb3IgcGHtcyBkYSDBZnJpY2EsIGVtIHRlcm1vcyBkZSDhcmVhLCBjb20gdW1hIGV4dGVuc%2BNvIHRlcnJpdG9yaWFsIGRlIGNlcmNhIGRlIDIsMyBtaWxo9WVzIGRlIGttsi4gQSDBZnJpY2EgZG8gU3VsIOkgbyAyNLogbWFpb3IgcGHtcyBkbyBtdW5kbywgY29tIHVtYSDhcmVhIGRlIGFwcm94aW1hZGFtZW50ZSAxLDIyIG1pbGjjbyBkZSBrbbIuXFxuXFxuUXVhbCBwYe1zIOkgbWFpb3IsIG8gQ29uZ28gb3UgYSDBZnJpY2EgZG8gU3VsP1xuV2hpY2ggY291bnRyeSBpcyBsYXJnZXIsIENvbmdvIG9yIFNvdXRoIEFmcmljYT8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
-    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
-
-## Uma discussão mais técnica
-
-Embora o caso de uso acima tenha sido semelhante à forma como o conhecimento gerado foi originalmente introduzido, não é exatamente o mesmo processo. O conteúdo abaixo aborda o contexto mais técnico em que a abordagem foi introduzida. Ele segue o padrão de duas etapas intermediárias (geração de conhecimento e integração de conhecimento) que vimos acima.
+Although the above use case was similar to the way generated knowledge was originally introduced, it is not exactly the same. The below content covers the more technical context in which the approach was introduced. It follows the two intermediate steps (knowledge generation and knowledge integration) pattern that we saw above.
 
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
@@ -117,12 +117,12 @@ import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Conhecimento Gerado / Generated Knowledge (Liu et al.)
+Generated Knowledge (Liu et al.)
 </div>
 
-### Conhecimento Gerado
+### Knowledge Generation
 
-Na etapa de geração de conhecimento, o %%LLM|LLM%% é solicitado a gerar um *conjunto de fatos sobre a pergunta*. O LLM é acionado de forma few-shot, como demonstrado exemplo abaixo. N etapas diferentes são gerados usando a mesma prompt (semelhante à abordagem de autoconsistência).
+In the knowledge generation step, the %%LLM|LLM%% is asked to generate a set of facts about the **question**. The LLM is prompted in few-shot fashion as seen below. M different completions are generated using this same prompt (similar to the self-consistency approach).
 
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
@@ -131,39 +131,37 @@ import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Exemplo de Conhecimento Gerado, baseado na pesquisa de (Liu et al.)
+Generated Knowledge Example (Liu et al.)
 </div>
 
+### Knowledge Integration
 
-### Conhecimento Integrado
+Next, we generate "knowledge augmented" questions and prompt the %%LLM|LLM%% with them to get final answers. The easiest way to understand this is to go through an example.
 
-Em seguida, geramos perguntas "enriquecidas pelo conhecimento" e solicitamos ao %%LLM|LLM%% que as responda para obter as respostas finais. A maneira mais fácil de entender isso é passando por um exemplo.
+Let's assume we are attempting to answer the **question** "Most Kangaroos have <mask\> limbs". Assume that at the knowledge generation step we generated 2 knowledges (M=2):
 
-Vamos supor que estamos tentando responder à *pergunta*
-"A maioria dos cangurus têm <mask\> membros". Suponha que no passo de geração de conhecimento, geramos 2 conhecimentos (M=2):
+- Knowledge 1: `Kangaroos are marsupials that live in Australia.`
 
-- Conhecimento 1: `Cangurus são marsupiais que vivem na Austrália.`
+- Knowledge 2: `Kangaroos are marsupials that have 5 limbs.`
 
-- Conhecimento 2: `Cangurus são marsupiais que possuem cinco membros.`
+Now, we concatenate each knowledge with the question to generate knowledge augmented questions:
 
-Agora nós integramos os dois conhecimentos com a pergunta a fim de gerar "perguntas enriquecidas pelo conhecimento":
+- Knowledge Augmented Question 1: `Most Kangaroos have <mask\> limbs. Kangaroos are marsupials that live in Australia.`
 
-- Pergunta enriquecida 1: `A maioria dos cangurus possuem <mask\> membros. Cangurus são marsupiais que vivem na Austrália.`
+- Knowledge Augmented Question 2: `Most Kangaroos have <mask\> limbs. Kangaroos are marsupials that have 5 limbs.`
 
-- Pergunta enriquecida 2: `A maioria dos cangurus possuem <mask\> membros. Cangurus são marsupiais que possuem cinco membros.`
+We then prompt the LLM with these knowledge augmented questions and get the final answer proposals:
 
+- Answer 1: `4`
 
-Em seguida, solicitamos que o LLM responda a estas perguntas enriquecidas com conhecimento e obtemos as propostas de resposta finais:
+- Answer 2: `5`
 
-Resposta 1: 4
+We select the answer with the highest probability as the final answer. The highest probability could be the softmax probability of the answer token, or the log probability of the answer token(s).
 
-Resposta 2: 5
+## Recitation-Augmented Language Models
 
-Selecionamos a resposta com a maior probabilidade como resposta final. A maior probabilidade pode ser a probabilidade softmax do token de resposta ou a probabilidade logarítmica do(s) 
+The recitation-augmented(@sun2022recitationaugmented) approach it is similar to generated knowledge (basically the same). However, is much less complex than the formal implementation of generated knowledge.
 
-## Modelos de Linguagem Aprimorados por Recitação
-
-A abordagem de recitação-aumentada (@sun2022recitationaugmented) é semelhante à geração de conhecimento (basicamente a mesma coisa). No entanto, é muito menos complexa do que a implementação formal de geração de conhecimento.
 
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
@@ -171,18 +169,16 @@ import RImage from '@site/docs/assets/intermediate/recitation.webp';
   <img src={RImage} style={{width: "250px"}} />
 </div>
 
-<div style={{textAlign: 'center'}}>
-Exemplo de Conhecimento Aprimorado por Recitação
-</div>
+The idea here is to few shot prompt the LLM to generate information *and* answer in the *same* step. The fact that it is reciting/generating knowledge and answering the question in the same step is the main difference from the generated knowledge approach.
 
-A ideia aqui é promptear o LLM em poucos exemplos para gerar informações e respostas ao mesmo tempo. O fato de estar recitando/gerando conhecimento e respondendo à pergunta na mesma etapa é a principal diferença em relação à abordagem de conhecimento gerado.
+To reiterate, this approach prompts the model with multiple (question, recitation, answer) exemplars, then asks the question. The authors note that this approach can be combined with self consistency or multiple completion paths.
 
-Para reiterar, essa abordagem promptea o modelo com vários exemplos de (pergunta, recitação, resposta), e em seguida, faz a pergunta. Os autores observam que essa abordagem pode ser combinada com autoconsistência ou múltiplos caminhos de completamento.
 
-## Notas
 
-- A abordagem de conhecimento gerado apresenta melhorias em vários conjuntos de dados de senso comum.
+## Notes
 
-- O conhecimento correspondente à resposta selecionada é chamado de _conhecimento selecionado_.
+- Generated knowledge shows improvements on various commonsense datasets.
 
-- Na prática, você pode considerar a resposta mais frequente como a final.
+- The knowledge corresponding to the selected answer is called the _selected knowledge_.
+
+- In practice, you could take the most frequently occurring answer as the final one.
