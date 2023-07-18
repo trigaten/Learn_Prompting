@@ -18,6 +18,7 @@ sidebar_position: 40
 | RPG      | Smalltalk | Elixir          | Crystal (LLVM) |
 | Forth    | Tcl       | Groovy          | Vlang          |
 | Ada      | SQL       | Scala Native    | Erlang         |
+|          | Java      |                 |                |
 
 ## Генерування коду
 
