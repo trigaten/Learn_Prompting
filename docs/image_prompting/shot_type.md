@@ -6,14 +6,14 @@ Shot types refer to the various camera angles and compositions used in filmmakin
 
 There are several kinds of shot types, each serving its unique purpose. Some common examples include long shot, medium shot, bird-eye shot, and low-angle shot.
 
-import bird_eye_shot from '@site/docs/assets/images_chapter/bird_eye_shot.jpg';
-import close_up_shot from '@site/docs/assets/images_chapter/close_up_shot.jpg';
-import extreme_long_shot from '@site/docs/assets/images_chapter/extreme_long_shot.jpg';
-import high_angle_shot from '@site/docs/assets/images_chapter/high_angle_shot.jpg';
-import long_shot from '@site/docs/assets/images_chapter/long_shot.jpg';
-import low_angle_shot from '@site/docs/assets/images_chapter/low_angle_shot.jpg';
-import medium_shot from '@site/docs/assets/images_chapter/medium_shot.jpg';
-import wide_shot from '@site/docs/assets/images_chapter/wide_shot.jpg';
+import bird_eye_shot from '@site/docs/assets/images_chapter/bird_eye_shot.webp';
+import close_up_shot from '@site/docs/assets/images_chapter/close_up_shot.webp';
+import extreme_long_shot from '@site/docs/assets/images_chapter/extreme_long_shot.webp';
+import high_angle_shot from '@site/docs/assets/images_chapter/high_angle_shot.webp';
+import long_shot from '@site/docs/assets/images_chapter/long_shot.webp';
+import low_angle_shot from '@site/docs/assets/images_chapter/low_angle_shot.webp';
+import medium_shot from '@site/docs/assets/images_chapter/medium_shot.webp';
+import wide_shot from '@site/docs/assets/images_chapter/wide_shot.webp';
 
 # Example
 
