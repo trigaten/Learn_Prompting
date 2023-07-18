@@ -1,8 +1,8 @@
 {
-  "label": "🟢 Medidas Ofensivas",
+  "label": "🟢 Offensive Measures",
   "position": 50,
   "link": {
     "type": "generated-index",
-    "description": "Hackeando, mas para aprender"
+    "description": "Hacking, but for PE"
   }
 }
