@@ -10,7 +10,7 @@ Os sistemas ReAct podem ser considerados como sistemas MRKL, com a capacidade ad
 
 Examine a imagem à seguir. A pergunta na caixa superior é proveniente do HotPotQA (@yang2018hotpotqa), um conjunto de dados de resposta a perguntas que requer raciocínio complexo. O ReAct é capaz de responder à pergunta, primeiro raciocinando sobre a pergunta (Pensamento 1) e depois realizando uma ação (Ação 1) para enviar uma consulta ao Google. Ele então recebe uma observação (Obs 1) e continua com esse ciclo de pensamento, ação e observação até chegar a uma conclusão (Ação 3).
 
-import react_qa from '@site/docs/assets/advanced/react_qa.png';
+import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_qa} style={{width: "500px"}} />
@@ -26,7 +26,7 @@ Leitores com conhecimento de aprendizado por reforço podem reconhecer este proc
 
 O Google usou o PaLM(@chowdhery2022palm) LLM em experimentos com ReAct. Comparações com prompts padrão (de apenas pergunta), Cadeia de Pensamento e outras abordagens mostram que o desempenho de ReAct é promissor para tarefas de raciocínio complexo. O Google também realiza estudos no conjunto de dados FEVER (@thorne2018fever), que abrange extração e verificação de fatos. 
 
-import react_performance from '@site/docs/assets/advanced/react_performance.png';
+import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_performance} style={{width: "500px"}} />

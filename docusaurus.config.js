@@ -147,7 +147,7 @@ async function createConfig() {
         },
         {
           name: "og:image",
-          content: "https://learnprompting.org/img/og-image.jpg", // Replace this with the actual path to your og-image.
+          content: "https://learnprompting.org/img/og-image.webp", // Replace this with the actual path to your og-image.
         },
         {
           name: "og:type",
@@ -177,14 +177,14 @@ async function createConfig() {
         },
         {
           name: "twitter:image",
-          content: "https://learnprompting.org/img/twitter-image.jpg", // Replace this with the actual path to your twitter-image.
+          content: "https://learnprompting.org/img/twitter-image.webp", // Replace this with the actual path to your twitter-image.
         },
       ],
       navbar: {
         title: "Learn Prompting",
         logo: {
           alt: "My Site Logo",
-          src: "img/simple_ai.png",
+          src: "img/simple_ai.webp",
         },
         items: [
           {

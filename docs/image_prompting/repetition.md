@@ -6,10 +6,10 @@ sidebar_position: 50
 Repeating the same word within a prompt, or similar phrases can cause the model
 to emphasize that word in the generated image(@oppenlaender2022taxonomy). For example, [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) generated these waterfalls with DALLE:
 
-import bad_water from '@site/docs/assets/images_chapter/bad_water.jpg';
-import good_water from '@site/docs/assets/images_chapter/good_water.jpg';
-import planet from '@site/docs/assets/images_chapter/planet.png';
-import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
+import bad_water from '@site/docs/assets/images_chapter/bad_water.webp';
+import good_water from '@site/docs/assets/images_chapter/good_water.webp';
+import planet from '@site/docs/assets/images_chapter/planet.webp';
+import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.webp';
 
 
 `A beautiful painting of a mountain next to a waterfall.`.

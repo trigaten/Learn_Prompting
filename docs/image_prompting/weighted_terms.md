@@ -7,9 +7,9 @@ sidebar_position: 60
 Some models (Stable Diffusion, Midjourney, etc.) allow you to weight terms in a prompt. This can be used to emphasize certain words or phrases in the generated image. It can 
 also be used to de-emphasize certain words or phrases in the generated image. Let's consider a simple example:
 
-import mountains from '@site/docs/assets/images_chapter/mountains.png';
-import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.png';
-import planets from '@site/docs/assets/images_chapter/planets.png';
+import mountains from '@site/docs/assets/images_chapter/mountains.webp';
+import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.webp';
+import planets from '@site/docs/assets/images_chapter/planets.webp';
 
 
 # Example

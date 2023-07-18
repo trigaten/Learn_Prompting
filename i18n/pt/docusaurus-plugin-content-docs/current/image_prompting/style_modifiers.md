@@ -5,8 +5,8 @@ sidebar_position: 4
 
 Os modificadores de estilo são simples descritores que produzem de forma consistente certos estilos (por exemplo, 'tinta vermelha', 'feito de vidro', 'renderizado em Unity')(@oppenlaender2022taxonomy). Eles podem ser combinados para produzirem estilos ainda mais específicos. Eles podem "incluir informações sobre períodos, escolas e estilos de arte, mas também materiais e meios de arte, técnicas e artistas"(@oppenlaender2022taxonomy).
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 
 # Exemplo
 

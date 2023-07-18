@@ -9,7 +9,7 @@ La fuga de prompt es una forma de inyección de prompt en la que se le pide al m
 
 Como se muestra en la imagen de ejemplo(@ignore_previous_prompt) a continuación, el atacante cambia `user_input` para intentar devolver el prompt. El objetivo previsto es distinto del secuestro de objetivo (inyección de prompt normal), donde el atacante cambia `user_input` para imprimir instrucciones maliciosas(@ignore_previous_prompt).
 
-import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
+import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={research} style={{width: "500px"}} />
@@ -17,7 +17,7 @@ import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
 
 La siguiente imagen(@simon2022inject), nuevamente del ejemplo de `remoteli.io`, muestra a un usuario de Twitter haciendo que el modelo filtre su prompt.
 
-import Image from '@site/docs/assets/jailbreak/injection_leak.png';
+import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "300px"}} />

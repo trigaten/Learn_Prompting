@@ -13,14 +13,14 @@ import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 Thus far, this course has mostly used GPT-3 for examples. GPT-3 is a LLM that has no memory. When you ask it a question (a prompt), it does not remember anything that you have previously asked it. In contrast, chatbots like [ChatGPT](http://chat.openai.com) are able to **remember your conversation history**. This can be useful for applications such as customer service or simply if you want to have a conversation with a LLM!
 
-Just like GPT-3, chatbots can answer questions, provide summaries, analysis, and write text or code. The real value of chatbots is only accessible when you use good prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots, such as using style guidance, descriptors, and priming. 
+Just like GPT-3, chatbots can answer questions, provide summaries, analysis, and write text or code. The real value of chatbots is only accessible when you use good prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots, such as using style guidance, descriptors, and priming [^a]. 
 
 ## Modifying Your Prompt
 
 ### Style Guidance
 
-import unguided_question from '@site/docs/assets/basics/unguided_question.png';
-import limerick_question from '@site/docs/assets/basics/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
 
@@ -44,6 +44,7 @@ Prompting with style inputs will greatly increase the quality of your responses!
 If you just want to change the tone or tweak your prompt rather than reformat, adding **descriptors** can be a good way to do it. Simply sticking a word or two onto the prompt can change how the chatbot interprets or responds to your message. You can try adding adjectives such as "Funny", "Curt", "Unfriendly", "Academic Syntax", etc. to the end of prompts to see how your responses change! 
 
 ## Priming Prompt
+
 Because of the structure of a chatbot conversation, the form of the first prompt you give the LLM can affect the remainder of the conversation, allowing you to add an additional level of structure and specification.
 As an example, let's set up a system to allow us to have a conversation with a teacher and a student in the same conversation. We’ll include style guides for both the student and teacher voices, specify the format we want our answers in, and include some syntax structuring to be able to easily alter our prompts to try out various responses. 
 
@@ -62,8 +63,8 @@ As an example, let's set up a system to allow us to have a conversation with a t
 
     If you understand and are ready to begin, respond with only “yes.”
     
-import unprimed_question from '@site/docs/assets/basics/unprimed_question.png';
-import primed_question from '@site/docs/assets/basics/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 Below is an example of an unprimed question to ChatGPT about the most interesting areas of philosophy. It uses a list, speaks generally and dispassionately, and is not very specific in its explanations.  
 
@@ -80,3 +81,5 @@ In the second example, we instead asked the question after providing a priming p
 Incorporating primers into your prompting is a more advanced way of interacting with chatbots. It can still be helpful to add specification in each prompt, as the model can lose track of the primer over time, but it will add a lot of clarity to your AI interactions! 
 
 By [Dastardi](https://twitter.com/lukescurrier)
+
+[^a]: Priming prompts may also be called inception prompts(@li2023camel)

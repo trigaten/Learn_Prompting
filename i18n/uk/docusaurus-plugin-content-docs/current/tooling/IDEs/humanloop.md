@@ -6,7 +6,7 @@ sidebar_position: 11
 
 [Human Loop](https://humanloop.com/) пропонує платформу, схожу на платформу GPT-3, але з додатковими функціями. Зараз вони працюють із більшою кількістю користувачів галузі.
 
-import Image from '@site/docs/assets/tooling/humanloop.png';
+import Image from '@site/docs/assets/tooling/humanloop.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

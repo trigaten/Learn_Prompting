@@ -8,7 +8,7 @@ style: chicago
 
 El prompting Chain of Thought (CoT) (@wei2022chain) es un método de prompt recientemente desarrollado que alienta al LLM a explicar su razonamiento. La siguiente imagen (@wei2022chain) muestra un %%few shot standard prompt|prompt estándar de pocos ejemplos%% (izquierda) en comparación con un prompt de Cadena de Pensamiento (derecha).
 
-import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.png';
+import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CoTExample} style={{width: "750px"}} />
@@ -38,7 +38,7 @@ Dado que la opción 2 tarda 890 minutos y la opción 1 tarda 1040 minutos, la op
 
 Se ha demostrado que CoT es efectivo para mejorar los resultados en tareas como aritmética, sentido común y tareas de razonamiento simbólico (@wei2022chain). En particular, PaLM 540B con prompting (@chowdhery2022palm) logra una precisión de tasa de resolución del 57% en GSM8K (@cobbe2021training) (SOTA en ese momento).
 
-import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={PromptedPaLM} style={{width: "300px"}} />

@@ -6,7 +6,7 @@ sidebar_position: 20
 
 [Promptmetheus](https://promptmetheus.com) допомагає поєднувати, тестувати та оцінювати разові запити на платформі OpenAI, яка прогнозовано перетворює вхідні дані на вихідні.
 
-import Image from '@site/docs/assets/tooling/promptmetheus.jpg';
+import Image from '@site/docs/assets/tooling/promptmetheus.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

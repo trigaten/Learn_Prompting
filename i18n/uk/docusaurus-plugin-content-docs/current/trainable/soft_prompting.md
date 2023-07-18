@@ -7,7 +7,7 @@ sidebar_position: 1
 Налаштування запиту (@lester2021power) — це альтернатива точному налаштуванню моделі (@khashabi2021prompt), яка заморожує ваги моделі та оновлює параметри запиту. В результаті, отримуємо "м'який запит".
 
 
-import Image from '@site/docs/assets/trainable/prompt_tuning.png';
+import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

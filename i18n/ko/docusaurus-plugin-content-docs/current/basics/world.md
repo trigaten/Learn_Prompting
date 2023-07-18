@@ -5,7 +5,7 @@ sidebar_position: 200
 
 독자 여러분 반갑습니다. 인트로 챕터를 거의 다 마치신 것을 축하드립니다. 여러분은 굉장히 신나는 분야에 성공적으로 발을 들이게 되었습니다. 나머지 코스를 읽기 전에 여러분은 여러가지 AI들에 대해서 몇가지 알고 넘어가야 할 부분이 있습니다.
 
-import music_image from '@site/docs/assets/basics/music+image.png';
+import music_image from '@site/docs/assets/basics/music+image.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={music_image} style={{width: "850px"}} />

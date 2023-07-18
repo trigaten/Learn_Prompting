@@ -31,7 +31,7 @@ You might find [this one](https://prompts.chat/#act-as-a-text-based-adventure-ga
 
 Now, we will put the prompt into ChatGPT and see what happens.
 
-import CSharp from '@site/docs/assets/basics/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

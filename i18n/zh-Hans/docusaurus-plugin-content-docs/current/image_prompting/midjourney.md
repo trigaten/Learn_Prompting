@@ -5,11 +5,11 @@ sidebar_position: 99
 
 [Midjourney](https://www.midjourney.com) 是另一个 AI 图像生成器。与 Stable Diffusion 不同，Midjourney 使用 Discord Bot 作为 AI 图像生成的接口（[在此](https://discord.gg/midjourney)加入 Discord，或在 [Learn Prompting Discord](http://learnprompting.org/discord) 中尝试该 Bot）。不过，使用 Midjourney Bot 的遵循相同的图像提示基本原则。
 
-import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.png';
-import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.png';
-import midjourney_astronaut_multi1 from '@site/docs/assets/images_chapter/midjourney_astronaut_multi1.png';
-import midjourney_astronaut_multi2 from '@site/docs/assets/images_chapter/midjourney_astronaut_multi2.png';
-import midjourney_astronaut_ip2 from '@site/docs/assets/images_chapter/midjourney_astronaut_ip2.png';
+import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
+import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';
+import midjourney_astronaut_multi1 from '@site/docs/assets/images_chapter/midjourney_astronaut_multi1.webp';
+import midjourney_astronaut_multi2 from '@site/docs/assets/images_chapter/midjourney_astronaut_multi2.webp';
+import midjourney_astronaut_ip2 from '@site/docs/assets/images_chapter/midjourney_astronaut_ip2.webp';
 
 
 # 基本用法
@@ -56,7 +56,7 @@ Midjourney 默认情况下会整体理解你的提示语。使用双冒号 :: �
 
 ## 图像提示
 通过将一个图片上传到 Discord，并在提示语中使用它的 URL，你可以指示 Midjourney 使用该图片来影响你的结果的内容、样式和构成。例如：
-[Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).jpg)
+[Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
 
 ```text
 /imagine prompt: [image URL], impressionist painting

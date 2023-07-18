@@ -8,7 +8,7 @@ sidebar_position: 4
 focuses on iterating on a single prompt. They provide a professional web interface
 with the ability to split a prompt into multiple view for further iteration.
 
-import Image from '@site/docs/assets/tooling/dyno.png';
+import Image from '@site/docs/assets/tooling/dyno.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

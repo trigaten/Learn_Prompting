@@ -11,7 +11,7 @@ sidebar_position: 5
 DiVeRSe(@li2022advance) (**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps) — це метод, який утричі покращує достовірність відповідей. Він робить це за допомогою: 1) використання кількох запитів для генерування різноманітних результатів, 2) використання верифікатора для відрізнення хороших відповідей від поганих, 3) використання верифікатора для перевірки правильності кроків обґрунтування.
 
 
-import diverse from '@site/docs/assets/reliability/diverse.png';
+import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={diverse} style={{width: "750px"}} />
@@ -122,7 +122,7 @@ DiVeRSe використовує 5 різних запитів для певни
 
 ## Запит «Запитайте мене про будь-що» (AMA)
 
-import ama from '@site/docs/assets/reliability/AMA_Prompting.jpg';
+import ama from '@site/docs/assets/reliability/AMA_Prompting.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama} style={{width: "750px"}} />
@@ -159,7 +159,7 @@ AMA показує, що ви можете взяти запитання та п
 
 Ну, формулюючи питання таким особливим чином, ми можемо генерувати різні запити. Нашим першим кроком буде взяти твердження `Ця тварина живе в Північній Америці` і переформатувати його в різні запитання, які в основному запитують те саме. Для цього ми передамо претензію через запити, як на зображенні нижче.
 
-import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.png';
+import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama_multi} style={{width: "800px"}} />

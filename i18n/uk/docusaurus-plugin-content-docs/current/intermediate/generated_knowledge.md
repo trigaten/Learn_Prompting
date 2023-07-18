@@ -107,7 +107,7 @@ sidebar_position: 7
 
 Хоча наведений вище приклад використання був схожий на те, як спочатку впроваджувалися згенеровані знання, це не зовсім те саме. Наведений нижче вміст охоплює більш технічний аспект, у якому було представлено підхід. Він дотримується двох проміжних кроків (генерування знань та інтеграція знань), які ми бачили вище.
 
-import KGImage from '@site/docs/assets/intermediate/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}} />
@@ -121,7 +121,7 @@ import KGImage from '@site/docs/assets/intermediate/knowledge_generation.png';
 
 На етапі генерування знань %%ВММ|LLM%% просять згенерувати набір фактів про **питання**. ВМM запитується за кілька підходів, як показано нижче. M різних завершень генеруються за допомогою одного і того ж запиту (подібно до підходу самоузгодженості).
 
-import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
@@ -160,7 +160,7 @@ import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.png';
 Підхід із доповненим декламуванням (@sun2022recitationaugmented) схожий на згенероване знання (майже те саме). Однак є набагато легшим, ніж формальне впровадження згенерованих знань.
 
 
-import RImage from '@site/docs/assets/intermediate/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={RImage} style={{width: "250px"}} />

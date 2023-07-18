@@ -8,8 +8,8 @@ sidebar_position: 90
 
 ## Приклад
 
-import good_pitt from '@site/docs/assets/images_chapter/good_pitt.png';
-import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
+import good_pitt from '@site/docs/assets/images_chapter/good_pitt.webp';
+import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 
 Використовуючи модель Stable Diffusion v1.5 та наступний запит, ми створюємо гарне зображення Бреда Пітта, за винятком його рук, звичайно!
 

@@ -6,7 +6,7 @@ sidebar_position: 70
 
 Throughout this course, we have seen many different prompting methods that can be used to improve %%LLM|LLM%% math ability. One recent approach, MathPrompter(@imani2023mathprompter), unifies some of these methods (%%CoT|CoT prompting%%, %%PAL|PAL%%, etc.) into a single technique. The overarching idea is to break down a math question into algebraic terms then use Python code to solve it in different ways.
 
-import math from '@site/docs/assets/reliability/math.png';
+import math from '@site/docs/assets/reliability/math.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={math} style={{width: "500px"}} />

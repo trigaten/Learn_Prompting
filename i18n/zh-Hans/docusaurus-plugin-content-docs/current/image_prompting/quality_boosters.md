@@ -5,8 +5,8 @@ sidebar_position: 5
 
 “Quality boosters”(@oppenlaender2022taxonomy)是添加到提示中以提高生成图像的某些非特定样式质量的术语。例如，“amazing”、“beautiful”和“good quality”都是质量增强器，可以用于改善生成图像的质量。
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
 # 例子
 

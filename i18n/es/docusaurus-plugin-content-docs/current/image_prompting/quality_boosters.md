@@ -5,8 +5,8 @@ sidebar_position: 5
 
 Los potenciadores de calidad (@oppenlaender2022taxonomy) son términos agregados a una prompt para mejorar ciertas cualidades de la imagen generada que no están relacionadas con el estilo. Por ejemplo, "increíble", "hermoso" y "buena calidad" son potenciadores de calidad que se pueden utilizar para mejorar la calidad de la imagen generada.
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
 # Ejemplo
 

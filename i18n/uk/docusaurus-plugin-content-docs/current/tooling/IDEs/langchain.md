@@ -6,7 +6,7 @@ sidebar_position: 15
 
 [LangChain](https://github.com/hwchase17/langchain/) – це бібліотека Python, яка надає різні функції для створення запитів і об'єднання їх у ланцюги.
 
-import Image from '@site/docs/assets/tooling/langchain.png';
+import Image from '@site/docs/assets/tooling/langchain.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

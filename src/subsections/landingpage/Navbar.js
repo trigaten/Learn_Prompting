@@ -16,10 +16,10 @@ function Navbar(props) {
       name: "Newsletter",
       link: "#newsletter",
     },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   link: "/blog",
+    // },
     {
       name: "Consulting",
       link: "/consulting",
@@ -27,6 +27,10 @@ function Navbar(props) {
     {
       name: "Certificate",
       link: "/certificate",
+    },
+    {
+      name: "About",
+      link: "/about",
     },
   ];
 

@@ -7,7 +7,7 @@ sidebar_position: 5
 [Everyprompt](https://www.everyprompt.com) – це ІСР для інженерії запитів зі стійким функціоналом, яка надає професійний інтерфейс для ітерації одного запиту.
 
 
-import Image from '@site/docs/assets/tooling/everyprompt.png';
+import Image from '@site/docs/assets/tooling/everyprompt.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

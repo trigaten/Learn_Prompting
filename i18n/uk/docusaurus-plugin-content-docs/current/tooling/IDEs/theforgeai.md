@@ -7,7 +7,7 @@ sidebar_position: 23
 [The Forge AI](https://theforgeai.com/) –це потужне ІСР для запитів, яке використовують для створення та монетизації застосунків. Тут можна вводити різні типи налаштовуваних даних, визначати умовні процеси, генерувати текст і зображення за допомогою різних моделей. (У майбутньому з’явиться багато інших функцій).
 
 
-import Image from '@site/docs/assets/tooling/theforgeai.png';
+import Image from '@site/docs/assets/tooling/theforgeai.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "1200px"}} />

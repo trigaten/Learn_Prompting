@@ -7,7 +7,7 @@ sidebar_position: 6
 [Prompt IDE](https://prompt.vizhub.ai)(@strobelt2022promptide) – це пошуковий інструмент інженерії запитів.
 
 
-import Image from '@site/docs/assets/tooling/promptide.png';
+import Image from '@site/docs/assets/tooling/promptide.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

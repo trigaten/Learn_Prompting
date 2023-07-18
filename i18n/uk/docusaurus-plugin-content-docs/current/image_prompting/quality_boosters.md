@@ -6,8 +6,8 @@ sidebar_position: 5
 
 Підсилювачі якості (@oppenlaender2022taxonomy) – це слова, які додають до запиту для покращення певних властивостей згенерованого зображення, що не залежать від конкретного стилю. Наприклад, «чудовий», «красивий» і «хорошої якості» – це підсилювачі якості, які можна використовувати для покращення якості створеного зображення.
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
 # Приклад
 

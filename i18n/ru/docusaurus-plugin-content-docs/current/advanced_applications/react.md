@@ -12,7 +12,7 @@ ReAct(@yao2022react)(reason, act) - это парадигма, позволяю�
 пока не придет к заключению (действие 3). 
 
 
-import react_qa from '@site/docs/assets/advanced/react_qa.png';
+import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_qa} style={{width: "500px"}} />
@@ -31,7 +31,7 @@ import react_qa from '@site/docs/assets/advanced/react_qa.png';
 В экспериментах с ReAct компания Google использовала LLM PaLM(@chowdhery2022palm). 
 Сравнение со стандартным промтингом (только вопрос), CoT и другими конфигурациями показало, что производительность ReAct многообещающа для сложных задач рассуждения. Google также проводит исследования на наборе данных FEVER (@thorne2018fever), который охватывает извлечение и проверку фактов.  
 
-import react_performance from '@site/docs/assets/advanced/react_performance.png';
+import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_performance} style={{width: "500px"}} />

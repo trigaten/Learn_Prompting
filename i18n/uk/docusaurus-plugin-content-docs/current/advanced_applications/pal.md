@@ -6,7 +6,7 @@ sidebar_position: 4
 
 [Програмовані мовні моделі (PAL)](https://reasonwithpal.com)(@gao2022pal) є ще одним прикладом системи MRKL. Отримавши запитання, PAL можуть **написати код**, який вирішить його. Код надсилається до програмного середовища виконання для отримання результату. PAL і CoT працюють по-різному; проміжним міркуванням PAL є код, тоді як у CoT — природна мова.
 
-import image from '@site/docs/assets/advanced/pal.png';
+import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={image} style={{width: "500px"}} />

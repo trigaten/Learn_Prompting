@@ -4,15 +4,15 @@ import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ButtonField from "@site/src/components/ButtonField";
 
-import BeginnerWeb from "@site/static/img/beginnerweb.png";
-import IntermediateWeb from "@site/static/img/intermediateweb.png";
-import AdvancedWeb from "@site/static/img/advancedweb.png";
-import ApplicationsWeb from "@site/static/img/applicationsweb.png";
+import BeginnerWeb from "@site/static/img/beginnerweb.webp";
+import IntermediateWeb from "@site/static/img/intermediateweb.webp";
+import AdvancedWeb from "@site/static/img/advancedweb.webp";
+import ApplicationsWeb from "@site/static/img/applicationsweb.webp";
 
-import BeginnerMobile from "@site/static/img/beginnermobile.png";
-import IntermediateMobile from "@site/static/img/intermediatemobile.png";
-import AdvancedMobile from "@site/static/img/advancedmobile.png";
-import ApplicationsMobile from "@site/static/img/applicationsmobile.png";
+import BeginnerMobile from "@site/static/img/beginnermobile.webp";
+import IntermediateMobile from "@site/static/img/intermediatemobile.webp";
+import AdvancedMobile from "@site/static/img/advancedmobile.webp";
+import ApplicationsMobile from "@site/static/img/applicationsmobile.webp";
 
 function Hero() {
   const categories = ["Beginner", "Intermediate", "Advanced", "Applications"];

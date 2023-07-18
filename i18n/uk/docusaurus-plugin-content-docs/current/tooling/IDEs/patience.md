@@ -6,7 +6,7 @@ sidebar_position: 19
 
 [Patience](https://www.patience.ai) – це вебсайт для створення зображень із кількох різних текстових запитів, поставлених моделі для перетворення тексту в зображення.
 
-import Image from '@site/docs/assets/tooling/patience.png';
+import Image from '@site/docs/assets/tooling/patience.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

@@ -8,7 +8,7 @@ O vazamento de prompt é uma forma de injeção de prompt em que o modelo é sol
 
 Como mostrado na imagem de exemplo abaixo (@ignore_previous_prompt), o atacante muda o `user_input` para tentar retornar o prompt. O objetivo pretendido é diferente do objetivo de sequestro (injeção de prompt normal), onde o atacante muda o `user_input` para imprimir instruções maliciosas (@ignore_previous_prompt).
 
-import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
+import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={research} style={{width: "500px"}} />
@@ -17,7 +17,7 @@ import research from '@site/docs/assets/jailbreak/jailbreak_research.png';
 A imagem a seguir(@simon2022inject), novamente do exemplo `remoteli.io`, mostra
 um usuário do Twitter conseguindo que o modelo vaze o seu prompt.
 
-import Image from '@site/docs/assets/jailbreak/injection_leak.png';
+import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "300px"}} />
@@ -34,7 +34,7 @@ pela empresa.
 
 Mais notavelmente, a Microsoft lançou um mecanismo de pesquisa alimentado pelo ChatGPT, conhecido como "o novo Bing" em 7 de Fevereiro de 2023, que foi demonstrado como vulnerável ao vazamento de prompt. O seguinte exemplo do [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) mostra como, dada uma versão anterior do Bing Search, nomeado de "Sydney", era suscetível quando fornecido um trecho do seu prompt (@kevinbing). Isso permitiria ao usuário recuperar o restante do prompt sem autenticação adequada para visualizá-lo.
 
-import bing from '@site/docs/assets/jailbreak/bing_chat.png';
+import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={bing} style={{width: "700px"}} />

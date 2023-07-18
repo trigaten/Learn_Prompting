@@ -5,10 +5,10 @@ sidebar_position: 50
 
 Repetir a mesma palavra em um prompt ou frases semelhantes pode fazer com que o modelo enfatize essa palavra na imagem gerada (@oppenlaender2022taxonomy). Por exemplo, o que o [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) gerou com o DALLE:
 
-import bad_water from '@site/docs/assets/images_chapter/bad_water.jpg';
-import good_water from '@site/docs/assets/images_chapter/good_water.jpg';
-import planet from '@site/docs/assets/images_chapter/planet.png';
-import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.png';
+import bad_water from '@site/docs/assets/images_chapter/bad_water.webp';
+import good_water from '@site/docs/assets/images_chapter/good_water.webp';
+import planet from '@site/docs/assets/images_chapter/planet.webp';
+import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.webp';
 
 
 `Uma linda pintura de uma montanha ao lado de uma cachoeira.`.

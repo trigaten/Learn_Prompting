@@ -31,7 +31,7 @@ import Steps from '@site/docs/assets/basics/steps.svg';
 
 Тепер ми розмістимо запит в ChatGPT і подивимося, що станеться.
 
-import CSharp from '@site/docs/assets/basics/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

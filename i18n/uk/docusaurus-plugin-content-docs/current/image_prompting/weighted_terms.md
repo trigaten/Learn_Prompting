@@ -6,9 +6,9 @@ sidebar_position: 60
 
 Деякі моделі (Stable Diffusion, Midjourney тощо) дозволяють задавати значущість терміну в запиті. Це можна використовувати для акценту на певних словах або фразах в отриманому зображенні. Його також можна використовувати, щоб зменшити акцент на певних словах або фразах в отриманому зображенні. Розглянемо простий приклад:
 
-import mountains from '@site/docs/assets/images_chapter/mountains.png';
-import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.png';
-import planets from '@site/docs/assets/images_chapter/planets.png';
+import mountains from '@site/docs/assets/images_chapter/mountains.webp';
+import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.webp';
+import planets from '@site/docs/assets/images_chapter/planets.webp';
 
 
 # Приклад

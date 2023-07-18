@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
-import Lock from '@site/static/img/lock.png';
+import Lock from '@site/static/img/lock.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Lock} style={{width:"30%"}}/>

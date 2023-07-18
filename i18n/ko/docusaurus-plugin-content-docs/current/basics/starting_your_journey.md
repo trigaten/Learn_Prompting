@@ -33,7 +33,7 @@ ChatGPT를 통해서 인상깊고, 상호작용하는 이야기를 생성하고 
 
 이제 우리는 ChatGPT에 프롬프트를 넣어보고 무슨 일이 일어나는 지 볼 것입니다.
 
-import CSharp from '@site/docs/assets/basics/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

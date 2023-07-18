@@ -6,8 +6,8 @@ sidebar_position: 4
 
 Модифікатори стилю — це звичайні дескриптори, які послідовно створюють певні стилі (наприклад, «червоного кольору», «зроблено зі скла», «зарендерено на платформі Unity») (@oppenlaender2022taxonomy). Їх можна комбінувати, щоб створювати точніші стилі. Вони можуть «містити інформацію про періоди мистецтва, школи та стилі, а також художні матеріали, форми, техніки та художників» (@oppenlaender2022taxonomy).
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 
 # Приклад
 

@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) es un seguimiento del %%prompting de CoT|prompting de CoT%% (@wei2022chain), que introduce un prompt zero shot increíblemente simple. Descubren que al agregar las palabras "**Pensemos paso a paso.**" al final de una pregunta, los LLM pueden generar una cadena de pensamiento que responde a la pregunta. A partir de esta cadena de pensamiento, pueden extraer respuestas más precisas.
 
-import ZSImage from '@site/docs/assets/intermediate/zero_shot.png';
+import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSImage} style={{width: "500px"}} />
@@ -18,7 +18,7 @@ Zero Shot CoT (Kojima et al.)
 
 Técnicamente, el proceso completo de Zero-shot-CoT implica dos prompts/completions separados. En la siguiente imagen, la burbuja superior de la izquierda genera una cadena de pensamiento, mientras que la burbuja superior de la derecha toma la salida del primer prompt (incluido el primer prompt en sí mismo) y extrae la respuesta de la cadena de pensamiento. Este segundo prompt es un prompt _self augmented_.
 
-import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSProcessImage} style={{width: "500px"}} />

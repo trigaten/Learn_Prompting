@@ -11,7 +11,7 @@ sidebar_position: 3
 Однак, незважаючи на неймовірний потенціал музичних моделей, написання запитів для них все ще є не легкою справою. На відміну від моделей для генерації зображень або тексту, модель для створення музики часто не можна повністю налаштувати так за допомогою запитів, щоб отримати гарний кінцевий результат.
 
 ## Нейронна мережа для створення музики Riffusion
-import riffusion from '@site/docs/assets/miscl/riffusion_phonk.png';
+import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={riffusion} style={{width: "500px"}} />

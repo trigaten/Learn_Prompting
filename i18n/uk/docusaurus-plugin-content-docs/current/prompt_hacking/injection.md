@@ -22,7 +22,7 @@ sidebar_position: 1
 Гаразд, і що? Ми можемо змусити системи ігнорувати першу частину запиту, але чому це корисно? Подивіться на наступне зображення (@simon2022inject). У компанії `remoteli.io` був LLM, який відповідав на дописи у Twitter про віддалену роботу. Користувачі Twitter швидко зрозуміли, що вони можуть вставити власний текст у бота , щоб змусити його говорити все, що вони хочуть.
 
 
-import Image from '@site/docs/assets/jailbreak/injection_job.png';
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

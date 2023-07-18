@@ -4,11 +4,11 @@ sidebar_position: 40
 
 # 🟢 Чат-бот + База знань
 
-import ImageIntents from '@site/docs/assets/basic_applications/chatbot_from_kb_intents.png'
-import ImageGPT3 from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3.png'
-import ImageGPT3Organized from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3_organized.png'
-import ImagePrompt from '@site/docs/assets/basic_applications/chatbot_from_kb_prompt.png'
-import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_login.png'
+import ImageIntents from '@site/docs/assets/basic_applications/chatbot_from_kb_intents.webp'
+import ImageGPT3 from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3.webp'
+import ImageGPT3Organized from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3_organized.webp'
+import ImagePrompt from '@site/docs/assets/basic_applications/chatbot_from_kb_prompt.webp'
+import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_login.webp'
 
 Останні досягнення у великих мовних моделях (ВММ), таких як [GPT-3](https://arxiv.org/abs/2005.14165) і [ChatGPT](https://chat.openai.com/chat) викликали багато шуму в індустрії технологій. Ці моделі неймовірно потужні для створення контенту, але вони також мають деякі недоліки, такі як упередженість (@nadeem-etal-2021-stereoset) і галюцинації (@Ji_2022). Однією зі сфер, у якій ці ВММ можуть бути особливо корисними, є розробка чат-ботів.
 

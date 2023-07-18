@@ -7,8 +7,8 @@ Deformed generations, particularly on human body parts (e.g. hands, feet), are a
 
 ## Example
 
-import good_pitt from '@site/docs/assets/images_chapter/good_pitt.png';
-import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
+import good_pitt from '@site/docs/assets/images_chapter/good_pitt.webp';
+import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 
 Using Stable Diffusion v1.5 and the following prompt, we generate a nice image of Brad Pitt, except for his hands of course!
 

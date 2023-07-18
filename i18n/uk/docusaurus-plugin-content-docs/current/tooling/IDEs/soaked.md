@@ -6,7 +6,7 @@ sidebar_position: 3
 
 [Soaked](https://soaked-prompts.vercel.app) – це ІСР в інженерії запитів, спрямоване на об'єднання візуальних запитів за допомогою графічного інтерфейсу. Наразі воно в бета-версії, але активну розробку припинено.
 
-import Image from '@site/docs/assets/tooling/soaked.png';
+import Image from '@site/docs/assets/tooling/soaked.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

@@ -11,7 +11,7 @@ LLM에게 이유에 대해서 설명하도록 만드는 방법입니다.
 아래의 사진에서 (@wei2022chain) 퓨샷 표준 프롬프트(왼쪽)와 사고 사슬 프롬프팅(오른쪽)을 비교해 볼 수 있습니다.
 
 
-import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.png';
+import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CoTExample} style={{width: "750px"}} />
@@ -51,7 +51,7 @@ CoT의 메인 아이디어는 LLM에게 답이 나오는 과정에 대해서 설
 CoT는 산술적, 상식적, 상징적 추론 과제(@wei2022chain)와 같은 일들에 더 효율적으로 나은 결과를 만들어 냈다.
 특히 PaLM 540B(@chowdhery2022palm)는 GSM8K(@cobbe2021training)에서 57%의 정확도 향상을 보였다.
 
-import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={PromptedPaLM} style={{width: "300px"}} />

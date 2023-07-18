@@ -7,8 +7,8 @@ sidebar_position: 90
 
 ## 例子
 
-import good_pitt from '@site/docs/assets/images_chapter/good_pitt.png';
-import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.png';
+import good_pitt from '@site/docs/assets/images_chapter/good_pitt.webp';
+import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 
 使用 Stable Diffusion v1.5 和下面的提示语，我们生成了一张不错的 Brad Pitt 图像，当然除了他的手！
 

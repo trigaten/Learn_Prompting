@@ -97,7 +97,7 @@ A continuación, usemos ese conocimiento para responder correctamente la pregunt
 
 Aunque el caso de uso anterior era similar a la forma en que se introdujo originalmente el conocimiento generado, no es exactamente igual. El siguiente contenido abarca el contexto más técnico en el que se introdujo el enfoque. Sigue el patrón de dos pasos intermedios (generación de conocimiento e integración de conocimiento) que vimos anteriormente.
 
-import KGImage from '@site/docs/assets/intermediate/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}} />
@@ -113,7 +113,7 @@ En el paso de generación de conocimiento, se pide al %%LLM|LLM%% que genere un 
 sobre la **pregunta**. Al LLM se le pide que responda como se muestra a continuación.
 Se generan M terminaciones diferentes utilizando esta misma pregunta (similar al enfoque de autoconsistencia).
 
-import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
@@ -151,7 +151,7 @@ Seleccionamos la respuesta con la probabilidad más alta como la respuesta final
 
 El enfoque de recitación aumentada (@sun2022recitationaugmented) es similar al conocimiento generado (básicamente el mismo). Sin embargo, es mucho menos complejo que la implementación formal del conocimiento generado.
 
-import RImage from '@site/docs/assets/intermediate/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={RImage} style={{width: "250px"}} />

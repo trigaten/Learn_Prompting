@@ -6,7 +6,7 @@ sidebar_position: 1
 
 A afinação de prompts (@lester2021power), uma alternativa à afinação fina de modelos (@khashabi2021prompt), congela os pesos do modelo e atualiza os parâmetros de um prompt. O prompt resultante é um 'prompt suave'.
 
-import Image from '@site/docs/assets/trainable/prompt_tuning.png';
+import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

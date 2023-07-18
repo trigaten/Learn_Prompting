@@ -5,8 +5,8 @@ sidebar_position: 4
 
 样式修饰符是一些能够产生特定样式的描述符（例如，“带有红色色调”、“玻璃制成”、“用 Unity 渲染”）(@oppenlaender2022taxonomy)。它们可以组合在一起，产生更具体的样式。它们可以“包括关于艺术时期、流派和风格，以及艺术材料和媒介、技术和艺术家(@oppenlaender2022taxonomy)”的信息。
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.png';
-import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.png';
+import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
+import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 
 # 例子
 

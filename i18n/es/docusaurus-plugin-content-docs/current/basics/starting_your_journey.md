@@ -31,7 +31,7 @@ Puedes encontrar [este](https://prompts.chat/#act-as-a-text-based-adventure-game
 
 Ahora, vamos a poner un prompt en ChatGPT y ver qué pasa.
 
-import CSharp from '@site/i18n/es/docusaurus-plugin-content-docs/assets/csharp.png';
+import CSharp from '@site/i18n/es/docusaurus-plugin-content-docs/assets/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

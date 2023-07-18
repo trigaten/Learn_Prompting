@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 🟢 解答讨论性问题
 
-import Auto from '@site/docs/assets/basic_applications/short_content_auto.png';
+import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
 
 通过正确的提示，GPT-3非常擅长写作短格式回答。为了证明这一点，我将看一下**解答讨论性问题**，这是许多大学课程中常见的每周任务。对讨论性问题的回答通常约为100到700字。更长的内容可能会有些棘手，因为语言模型的记忆有限，并且难以理解他们所写的内容的全局图像(@jin2022plot)。
 

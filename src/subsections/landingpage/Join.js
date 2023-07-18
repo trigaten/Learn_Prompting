@@ -5,23 +5,23 @@ import StatPoint from "@site/src/components/StatPoint";
 import LargeCallout from "@site/src/components/layouts/LargeCallout";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
-import Arthur from "@site/static/img/arthur_logo.png";
-import HuggingFace from "@site/static/img/huggingface_logo.png";
-import HumanLoop from "@site/static/img/humanloop_logo.png";
-import Preamble from "@site/static/img/preamble_logo.png";
-import Scale from "@site/static/img/scale_logo.png";
-import Snorkel from "@site/static/img/snorkel_logo.png";
-import Stability from "@site/static/img/stability_logo.png";
-import Towards from "@site/static/img/towards_logo.png";
-import Trustible from "@site/static/img/trustible_logo.png";
-import Voiceflow from "@site/static/img/voiceflow_logo.png";
-import FiscalNote from "@site/static/img/fiscalnote_logo.png";
-import OpenAI from "@site/static/img/openai_logo.png";
+import Arthur from "@site/static/img/arthur_logo.webp";
+import HuggingFace from "@site/static/img/huggingface_logo.webp";
+import HumanLoop from "@site/static/img/humanloop_logo.webp";
+import Preamble from "@site/static/img/preamble_logo.webp";
+import Scale from "@site/static/img/scale_logo.webp";
+import Snorkel from "@site/static/img/snorkel_logo.webp";
+import Stability from "@site/static/img/stability_logo.webp";
+import Towards from "@site/static/img/towards_logo.webp";
+import Trustible from "@site/static/img/trustible_logo.webp";
+import Voiceflow from "@site/static/img/voiceflow_logo.webp";
+import FiscalNote from "@site/static/img/fiscalnote_logo.webp";
+import OpenAI from "@site/static/img/openai_logo.webp";
 
 function Join() {
   const stats = [
     {
-      header: "900K+",
+      header: "1M+",
       subtitle: "People Learning",
     },
     {
@@ -117,7 +117,7 @@ function Join() {
             style={{ paddingTop: "20px", marginTop: "-20px" }}
           >
             <img
-              src={require("@site/static/img/lock.png").default}
+              src={require("@site/static/img/lock.webp").default}
               alt="Example banner"
             />
           </div>
