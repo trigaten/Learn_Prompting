@@ -14,6 +14,16 @@ sidebar_position: 50
 
 > Ця бібліотека призначена для допомоги в розробці таких типів застосунків.
 
+### [PromptAppGPT](https://github.com/mleoking/PromptAppGPT)
+
+> PromptAppGPT is a low-code prompt-based rapid app development framework. PromptAppGPT contains features such as low-code prompt-based development, GPT text generation, DALLE image generation, online prompt editer+compiler+runer, automatic user interface generation, support for plug-in extensions, etc. PromptAppGPT aims to enable natural language app development based on GPT.
+
+> PromptAppGPT provides multi-task conditional triggering, result verification, and failure retry capabilities, allowing manual generation tasks that would otherwise require multiple steps to be automated. At the same time, users no longer need to memorise and enter the tedious prompt mantra themselves, and can easily complete tasks by entering only the core necessary information for the task.
+
+> PromptAppGPT significantly lowers the barrier to GPT application development, allowing anyone to develop AutoGPT-like applications with a few lines of low code.
+
+
+
 ### [Dust.tt](https://dust.tt)
 
 > Платформа Dust допомагає створювати застосунки на основі ВММ у вигляді ряду запитових викликів до зовнішніх моделей. Вона забезпечує простий у використанні графічний інтерфейс користувача для побудови ланцюгів із запитів, а також набір стандартних блоків і власну мову програмування для розбору та обробки результатів застосування мовної моделі.
