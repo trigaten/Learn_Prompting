@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# 🟢 はじめに
+# 🟢 Introduction
 
-非常に基本的なプロンプトエンジニアリングの技術を学んだので、今度はそれを使って簡単な日常問題を解決する方法を学びましょう。このセクションでは、メールの作成、要約や契約書の作成などのタスクを扱います。
+Now that you have learned some very basic prompt engineering techniques, it is time to learn how to use to solve simple, everyday problems. This section covers tasks like writing/summarizing emails and creating contracts.
 
-これらはプロンプトエンジニアリングを適用できる範囲を知るのに役立つはずです。
+The examples presented in the following articles should help show you the range of applications to which you can apply prompt engineering.
 
 :::note
-これから登場する例では、ChatGPTとGPT-3の両方を使用していますが、どちらを使用しても問題ありません。
+We use both ChatGPT and GPT-3 in these examples. It usually does not matter which you use.
 :::
