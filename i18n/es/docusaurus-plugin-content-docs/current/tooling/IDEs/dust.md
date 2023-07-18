@@ -2,12 +2,11 @@
 sidebar_position: 3
 ---
 
-# Dust 
+# Dust
 
-[Dust](https://dust.tt/) es una herramienta de ingeniería de prompts construida para encadenar prompts juntos. Proporcionan 
-una interfaz web para escribir prompts y encadenarlos.
+[Dust](https://dust.tt/) is a prompt engineering tool built for chaining prompts together. They provide a web interface for writing prompts and chaining them together.
 
-Actualmente, tiene una curva de aprendizaje pronunciada en comparación con otras IDEs de ingeniería de prompts.
+At the moment, it has a steep learning curve compared to other prompt engineering IDEs.
 
 import Image from '@site/docs/assets/tooling/dust.webp';
 
@@ -15,17 +14,17 @@ import Image from '@site/docs/assets/tooling/dust.webp';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Características
+## Features
 
-Dust proporciona herramientas robustas en forma de varios "bloques" componibles, para funciones como consultas de LLM, fragmentos de código y búsquedas en Internet. Dust también admite el uso de conjuntos de datos y pruebas automáticas de prompts contra conjuntos de datos.
+Dust provides robust tooling in the form of a number of composable "blocks", for functions like LLM querying, code snippets, and internet searches. Dust also supports the use of datasets and automatically testing prompts against datasets.
 
-La funcionalidad actual de Dust se centra en encadenar prompts en lugar de iterar en un solo prompt.
+Current Dust functionality focuses on chaining prompts rather than iterating on a single prompt.
 
-Dust admite múltiples proveedores de modelos: (OpenAI, Cohere), y tiene previsto admitir HuggingFace y Replicate. Se requieren claves de API para todos los proveedores.
+Dust supports multiple model providers: (OpenAI, Cohere), and has planned support for HuggingFace and Replicate. API keys are required for all providers.
 
-Puedes implementar aplicaciones de LLM construidas en Dust.
+You can deploy LLM apps built in Dust.
 
-## Notas
+## Notes
 
-Dust ha alcanzado recientemente los 1,000 usuarios activos.
+Dust has recently reached 1,000 active users.
 
