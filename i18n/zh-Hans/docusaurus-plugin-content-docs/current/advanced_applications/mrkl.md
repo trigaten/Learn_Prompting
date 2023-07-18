@@ -8,7 +8,7 @@ MRKL系统(@karpas2022mrkl) (Modular Reasoning, Knowledge and Language, pronounc
 
 MRKL系统由一组模块（例如计算器、天气API、数据库等）和一个路由器组成，决定如何将自然语言查询“路由”到适当的模块。
 
-一个简单的MRKL系统示例是一个可以使用计算器应用程序的LLM。这是一个单模块系统，其中LLM是路由器。当被问到`100*100是多少？`时，LLM可以选择从提示中提取数字，然后告诉MRKL系统使用计算器应用程序计算结果。这可能如下所示：
+一个简单的MRKL系统示例是一个可以使用计算器应用程序的LLM。 这是一个单模块系统，其中LLM是路由器。 当被问到`100*100是多少？ `时，LLM可以选择从提示中提取数字，然后告诉MRKL系统使用计算器应用程序计算结果。 这可能如下所示：
 
 <pre>
 <p>100*100是多少？</p>
@@ -16,7 +16,7 @@ MRKL系统由一组模块（例如计算器、天气API、数据库等）和一�
 <span className="bluegreen-highlight">CALCULATOR [100*100]</span>
 </pre>
 
-MRKL系统将看到单词`CALCULATOR`，并将`100*100`插入计算器应用程序中。这个简单的想法可以很容易地扩展到各种符号计算工具。
+MRKL系统将看到单词`CALCULATOR`，并将`100*100`插入计算器应用程序中。 这个简单的想法可以很容易地扩展到各种符号计算工具。
 
 考虑以下其他应用示例：
 
@@ -38,6 +38,7 @@ MRKL系统将看到单词`CALCULATOR`，并将`100*100`插入计算器应用程�
 
 - 或者更复杂的依赖多个数据源的任务，例如下面这个例子：
 
+
 import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
 import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
 import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.webp';
@@ -49,13 +50,14 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
 <div style={{textAlign: 'center'}}>
   <img src={mrkl_task} style={{width: "500px"}} />
 </div>
+
 <div style={{textAlign: 'center'}}>
 示例MRKL系统(AI21)
 </div>
 
 ## 示例
 
-我使用Dust.tt复现了原始论文中的一个示例MRKL系统，链接在[这里](https://dust.tt/trigaten/a/98bdd65cb7)。该系统可以读取数学问题（例如`20乘以5^6等于多少？`），提取数字和运算符号，并将其格式化为计算器应用(例如 `20 * 5^6`）。然后它将重新格式化的方程式发送给Google的计算器应用程序，并返回结果。请注意，原始论文对路由器（LLM）进行了提示调整，但是我在这个例子中没有进行提示调整。让我们来看看这是如何工作的：
+我使用Dust.tt复现了原始论文中的一个示例MRKL系统，链接在[这里](https://dust.tt/trigaten/a/98bdd65cb7)。 该系统可以读取数学问题（例如`20乘以5^6等于多少？ `），提取数字和运算符号，并将其格式化为计算器应用(例如 `20 * 5^6`）。 然后它将重新格式化的方程式发送给Google的计算器应用程序，并返回结果。 请注意，原始论文对路由器（LLM）进行了提示调整，但是我在这个例子中没有进行提示调整。 让我们来看看这是如何工作的：
 
 首先，我在Dust的`数据集`选项卡中制作了一个简单的数据集。
 
@@ -69,7 +71,7 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
   <img src={load_dataset} style={{width: "750px"}} />
 </div>
 
-接下来，我创建了一个`llm`块，用于提取数字和运算符号。请注意，在提示中，我告诉它我们将使用Google的计算器。我使用的模型（GPT-3）可能已经预先训练了一些关于Google计算器的知识。
+接下来，我创建了一个`llm`块，用于提取数字和运算符号。 请注意，在提示中，我告诉它我们将使用Google的计算器。 我使用的模型（GPT-3）可能已经预先训练了一些关于Google计算器的知识。
 
 <div style={{textAlign: 'center'}}>
   <img src={model} style={{width: "750px"}} />
