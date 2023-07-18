@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # GPT-3 Playground
 
-[GPT-3 Playground](https://beta.openai.com/docs/quickstart) es la interfaz web para la API de GPT-3 de OpenAI. Es probablemente la herramienta original de ingeniería de prompts que la mayoría de las personas han utilizado. Como tal, es extremadamente conocida.
+[GPT-3 Playground](https://beta.openai.com/docs/quickstart) is the web interface for OpenAI's GPT-3 API. It is likely the original prompt engineering tool that most people have used. As such, it is extremely well known.
 
 import Image from '@site/docs/assets/tooling/GPT3.webp';
 
@@ -12,6 +12,6 @@ import Image from '@site/docs/assets/tooling/GPT3.webp';
   <img src={Image} style={{width: "750px"}} />
 </div>
 
-## Características
+## Features
 
-GPT-3 Playground proporciona una interfaz limpia con algunos diales diferentes para modificar el comportamiento de GPT-3. También proporciona acceso a diferentes modelos de GPT con diferentes tamaños de parámetros y precios. Ofrecen créditos gratuitos, que caducan después de 3 meses.
+GPT-3 Playground provides a clean interface with a few different dials for modifying GPT-3's behavior. It also provides access to different GPT models of varying parameter sizes and prices. They provide free credits, which expire after 3 months. 
