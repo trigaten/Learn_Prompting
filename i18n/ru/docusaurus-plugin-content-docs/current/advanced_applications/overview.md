@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-# Краткий обзор
+# 🟢 Introduction
 
-До сих пор мы рассмотрели ряд методов промтинга/промт инженерии (prompting/prompt engineering).
-Теперь мы рассмотрим некоторые продвинутые приложения промтинга, которые могут решать сложные задачи рассуждения, выполняя поиск информации через Интернет, или других внешних источниках.
+We have seen a number of prompting/prompt engineering methods thus far. Now we will cover some advanced applications of prompting that can solve complex reasoning tasks by performing searches for information via the internet, or other external sources.
