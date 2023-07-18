@@ -2,79 +2,79 @@
 sidebar_position: 3
 ---
 
-# 🟢 Removendo bias
+# 🟢 Prompt Debiasing
 
-Esta página aborda algumas técnicas simples para removerrespostas tendenciosas em seus prompts.
+This page covers a few simple techniques to debias your prompts.
 
-## Desbiasando Prompts
+## Exemplar Debiasing
 
-Dependendo de sua distribuição e ordem dentro do prompt, os %%exemplares|exemplars%% podem influenciar os resultados da LLM (@si2022prompting). Isso é discutido em parte na página [O que está dentro de um prompt](http://learnprompting.org/docs/intermediate/whats_in_a_prompt).
+Depending on their distribution and order within the prompt, %%exemplars|exemplars%% may bias LLM outputs(@si2022prompting). This is discussed to some extent in the [What's in a Prompt](http://learnprompting.org/docs/intermediate/whats_in_a_prompt) page.
 
-### Distribuição
+### Distribution
 
-Quando discutimos a distribuição de exemplares dentro de um prompt, estamos nos referindo a quantos exemplares de diferentes classes estão presentes. Por exemplo, se você estiver realizando uma análise binária de %%sentimento|sentiment analysis%% em tweets, e você fornecer 3 tweets positivos e 1 tweet negativo como exemplares, então você terá uma distribuição de 3:1. Como a distribuição está desequilibrada para os tweets positivos, o modelo estará inclinado a prever tweets positivos.
+When discussing the distribution of exemplars within a prompt, we are referring to how many exemplars from different classes are present. For example, if you are performing binary %%sentiment analysis|sentiment analysis%% (positive or negative) on tweets, and you provide 3 positive tweets and 1 negative tweet as exemplars, then you have a distribution of 3:1. Since the distribution is skewed towards positive tweets, the model will be biased towards predicting positive tweets.
 
-#### Pior:
-
-```text
-Q: Tweet: "Que lindo dia!"
-A: positivo
-
-Q: Tweet: "Eu amo bolsos em jeans"
-A: positivo
-
-Q: Tweet: "Eu amo Hotpockets"
-A: positivo
-
-Q: Tweet: "Eu odeio essa classe"
-A: negativo
-```
-
-#### Melhor:
-Ter uma distribuição de exemplares uniforme é uma opção melhor.
+#### Worse:
 
 ```text
-Q: Tweet: "Que lindo dia!"
-A: positivo
+Q: Tweet: "What a beautiful day!"
+A: positive
 
-Q: Tweet: "Eu amo bolsos em jeans"
-A: positivo
+Q: Tweet: "I love pockets on jeans"
+A: positive
 
-Q: Tweet: "Eu não gosto de pizza"
-A: negativo
+Q: Tweet: "I love hotpockets"
+A: positive
 
-Q: Tweet: "Eu odeio essa classe"
-A: negativo
+Q: Tweet: "I hate this class"
+A: negative
 ```
+#### Better:
+Having an even exemplar distribution is better.
 
-### Ordem
-
-A ordem dos exemplares também pode causar um viés. Por exemplo, um prompt que tenha exemplares aleatoriamente ordenados geralmente terá um desempenho melhor do que o prompt acima, que contém tweets positivos em primeiro lugar, seguido de tweets negativos.
-
-#### Melhor:
 
 ```text
-Q: Tweet: "Eu odeio essa classe"
-A: negativo
+Q: Tweet: "What a beautiful day!"
+A: positive
 
-Q: Tweet: "Que lindo dia!"
-A: positivo
+Q: Tweet: "I love pockets on jeans"
+A: positive
 
-Q: Tweet: "Eu não gosto de pizza"
-A: negativo
+Q: Tweet: "I don't like pizza"
+A: negative
 
-Q: Tweet: "Eu amo bolsos em jeans"
-A: positivo
+Q: Tweet: "I hate this class"
+A: negative
 ```
 
-## Removendo Bias em Instruções
+### Order
 
-Podemos explicitamente solicitar ao GPT-3 que seja isento de viés, incluindo uma instrução para fazê-lo no prompt. Em particular, Si et al. (@si2022prompting) usam a seguinte instrução ao experimentar com o BBQ (@parrish2021bbq), um benchmark de viés.
+The order of %%exemplars|exemplars%% can also cause bias. For example, a prompt that has randomly ordered exemplars will often perform better than the above prompt, which contains positive tweets first, followed by negative tweets.
+
+#### Best:
 
 ```text
-Devemos tratar as pessoas de diferentes estatutos socioeconômicos, orientações sexuais, religiões, raças, aparências físicas, nacionalidades, identidades de gênero, deficiências e idades de maneira igual. Quando não temos informações suficientes, devemos escolher a opção desconhecida, em vez de fazer suposições com base em nossos estereótipos.
+Q: Tweet: "I hate this class"
+A: negative
+
+Q: Tweet: "What a beautiful day!"
+A: positive
+
+Q: Tweet: "I don't like pizza"
+A: negative
+
+Q: Tweet: "I love pockets on jeans"
+A: positive
 ```
 
-## Notas
+## Instruction Debiasing
 
-Veja mais sobre como remover bias na seção de Calibração.
+We can explicitly prompt GPT-3 to be unbiased, by including an instruction to do so in the prompt. In particular, Si et al.(@si2022prompting) use the following instruction when experimenting with BBQ(@parrish2021bbq), a bias benchmark.
+
+```text
+We should treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown option, rather than making assumptions based on our stereotypes.
+```
+
+## Notes
+
+See more on debiasing in the Calibration section.
