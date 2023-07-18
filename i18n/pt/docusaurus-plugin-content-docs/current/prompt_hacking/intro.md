@@ -4,7 +4,7 @@ sidebar_position: 0
 
 
 
-# 🟢 Introduction
+# Introduction
 
 import Lock from '@site/static/img/lock.webp';
 
@@ -13,8 +13,8 @@ import Lock from '@site/static/img/lock.webp';
 
 </div>
 
-Prompt hacking is a term used to describe a type of attack that exploits the vulnerabilities of %%LLMs|LLM%%, by manipulating their inputs or prompts. Unlike traditional hacking, which typically exploits software vulnerabilities, prompt hacking relies on carefully crafting prompts to deceive the LLM into performing unintended actions.
+Hackeamento de prompts é um termo usado para descrever um tipo de ataque que explora as vulnerabilidades dos %%LLMs|LLM%%, manipulando suas entradas ou prompts. Ao contrário do hacking tradicional, que geralmente explora vulnerabilidades de software, o prompt hacking depende da criação cuidadosa de prompts para enganar o LLM a executar ações não intencionais.
 
-We will cover three types of prompt hacking: prompt injection, prompt leaking, and jailbreaking. Prompt injection involves adding malicious or unintended content to a prompt to hijack the language model's output. Prompt leaking and jailbreaking are effectively subsets of this: Prompt leaking involves extracting sensitive or confidential information from the LLM's responses, while jailbreaking involves bypassing safety and moderation features. We will also discuss specific offensive techniques as well as defensive techniques.
+Nas próxima páginas abordaremos três tipos de prompt hacking: injeção de prompt, vazamento de prompt e jailbreaking. A injeção de prompt envolve adicionar conteúdo malicioso ou não intencional a um prompt para influenciar a saída do modelo de linguagem. O vazamento de prompt e o jailbreaking são efetivamente subconjuntos disso: o vazamento de prompt envolve a extração de informações sensíveis ou confidenciais das respostas do LLM, enquanto o jailbreaking envolve a violação de recursos de segurança e moderação. Também discutiremos técnicas ofensivas e defensivas específicas.
 
-To protect against prompt hacking, defensive measures must be taken. These include implementing prompt based defenses, regularly monitoring the LLM's behavior and outputs for unusual activity, and using fine tuning or other techniques. Overall, prompt hacking is a growing concern for the security of LLMs, and it is essential to remain vigilant and take proactive steps to protect against these types of attacks.
+Para se proteger contra o prompt hacking, medidas defensivas devem ser tomadas. Isso inclui a implementação de defesas baseadas em prompt, a monitorização regular do comportamento e das saídas do LLM em busca de atividades incomuns e o uso de ajustes finos ou outras técnicas. No geral, o prompt hacking é uma preocupação crescente para a segurança dos LLMs e é essencial permanecer vigilante e tomar medidas proativas para se proteger contra esses tipos de ataques.
