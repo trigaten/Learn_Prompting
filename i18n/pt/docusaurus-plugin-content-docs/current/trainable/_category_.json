@@ -1,8 +1,8 @@
 {
-  "label": "💪 Ajustando prompts",
+  "label": "💪 Prompt Tuning",
   "position": 70,
   "link": {
     "type": "generated-index",
-    "description": "Técnicas de engenharia de prompt em que você pode ajustar detalhadamente com gradientes"
+    "description": "Prompt engineering that you can fine tune with gradients"
   }
 }
