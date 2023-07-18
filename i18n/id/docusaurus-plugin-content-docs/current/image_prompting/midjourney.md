@@ -95,7 +95,7 @@ Contoh:
 </div>
 
 ## Image Prompts
-Dengan mengunggah gambar ke Discord dan menggunakan URL-nya dalam sebuah prompt, Anda dapat menginstruksikan Midjourney untuk menggunakan gambar tersebut untuk mempengaruhi konten, gaya, dan komposisi hasil Anda. Example: [Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
+Dengan mengunggah gambar ke Discord dan menggunakan URL-nya dalam sebuah prompt, Anda dapat menginstruksikan Midjourney untuk menggunakan gambar tersebut untuk mempengaruhi konten, gaya, dan komposisi hasil Anda. Contoh: [Astronot (Sumber: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
 
 ```text
 /imagine prompt: [image URL], impressionist painting
