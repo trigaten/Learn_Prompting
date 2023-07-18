@@ -2,9 +2,9 @@
 sidebar_position: 70
 ---
 
-# 🟡 Matemática
+# 🟡 Math
 
-Durante este curso, vimos muitos métodos de prompt diferentes que podem ser usados ​​para melhorar a habilidade matemática de um %%LLM|LLM%%. Uma abordagem recente, MathPrompter(@imani2023mathprompter), une alguns desses métodos: (%%Cadeia de Pensamento|CoT prompting%%, %%PAL|PAL%%, etc.) em uma única técnica. A ideia principal é dividir uma questão matemática em termos algébricos e, em seguida, usar código Python para resolvê-la de maneiras diferentes.
+Throughout this course, we have seen many different prompting methods that can be used to improve %%LLM|LLM%% math ability. One recent approach, MathPrompter(@imani2023mathprompter), unifies some of these methods (%%CoT|CoT prompting%%, %%PAL|PAL%%, etc.) into a single technique. The overarching idea is to break down a math question into algebraic terms then use Python code to solve it in different ways.
 
 import math from '@site/docs/assets/reliability/math.webp';
 
@@ -12,88 +12,86 @@ import math from '@site/docs/assets/reliability/math.webp';
   <img src={math} style={{width: "500px"}} />
 </div>
 
-O MathPrompter possui **quatro** etapas. Explicaremos as etapas usando o seguinte exemplo. O exemplo é retirado diretamente do artigo.
-
-
-```text
-P: Em um restaurante, cada refeição para adultos custa R$5 e as crianças comem de graça. Se um grupo de 15
-pessoas entrasse e 8 fossem crianças, quanto isso custaria para o grupo comer?
-```
-
-## Passo 1: Gerar o modelo algébrico
-
-A primeira etapa é atribuir uma variável a cada número na pergunta. Isso ajuda porque permite uma tradução mais fácil da pergunta para uma questão matemática abstrata, bem como para o código de programação.
-
-Isso pode ser feito por meio de poucos prompts com exemplo:
-
-<iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik1BOiBFbSB1bSByZXN0YXVyYW50ZSwgY2FkYSByZWZlaefjbyBwYXJhIGFkdWx0b3MgY3VzdGEgJEEgZSBhcyBjcmlhbudhcyBjb21lbSBkZSBncmHnYS4gU2UgdW0gZ3J1cG8gZGUgQiBwZXNzb2FzIGVudHJhciBlIEMgZm9yZW0gY3JpYW7nYXMsIHF1YW50byBpc3NvIGN1c3RhcmlhIHBhcmEgbyBncnVwbyBjb21lcj9NQVBFQU1FTlRPOiB7QTogNSwgQjogMTUsIEM6IDh9IiwicHJvbXB0IjoiUDogVW0gem9vbPNnaWNvIGNvYnJhIFIkMTIgcG9yIGluZ3Jlc3NvIHBhcmEgYWR1bHRvcyBlIHBlcm1pdGUgcXVlIGFzIGNyaWFu52FzIGNvbSBtZW5vcyBkZSA1IGFub3MgZW50cmVtIGRlIGdyYedhLiBVbWEgZmFt7WxpYSBkZSA0IGFkdWx0b3MgZSAyIGNyaWFu52FzIGNvbSBtZW5vcyBkZSA1IGFub3MgdmlzaXRhbSBvIHpvb2zzZ2ljby4gUXVhbCDpIG8gY3VzdG8gdG90YWwgcGFyYSBhIGZhbe1saWEgZW50cmFyP1xuTUE6IEVtIHVtIHpvb2zzZ2ljbywgY2FkYSBpbmdyZXNzbyBwYXJhIGFkdWx0b3MgY3VzdGEgJEEgZSBhcyBjcmlhbudhcyBjb20gbWVub3MgZGUgNSBhbm9zIHBvZGVtIGVudHJhciBkZSBncmHnYS4gU2UgdW1hIGZhbe1saWEgZGUgQiBhZHVsdG9zIGUgQyBjcmlhbudhcyBjb20gbWVub3MgZGUgNSBhbm9zIHZpc2l0YXIgbyB6b29s82dpY28sIHF1YWwg6SBvIGN1c3RvIHRvdGFsIHBhcmEgYSBmYW3tbGlhIGVudHJhcj9cbk1BUEVBTUVOVE86IHtBOiAxMiwgQjogNCwgQzogMn1cblxuUDogVW1hIGxvamEgdmVuZGUgc2FwYXRvcyBhICQ2MCBwb3IgcGFyIGUgbWVpYXMgYSAkOCBwb3IgcGFyLiBTZSB1bSBjbGllbnRlIGNvbXByYXIgMiBwYXJlcyBkZSBzYXBhdG9zIGUgMyBwYXJlcyBkZSBtZWlhcywgcXVhbCDpIG8gY3VzdG8gdG90YWwgZGEgY29tcHJhP1xuTUE6IEVtIHVtYSBsb2phLCBvcyBzYXBhdG9zIGN1c3RhbSAkQSBwb3IgcGFyIGUgYXMgbWVpYXMgY3VzdGFtICRCIHBvciBwYXIuIFNlIHVtIGNsaWVudGUgY29tcHJhciBDIHBhcmVzIGRlIHNhcGF0b3MgZSBEIHBhcmVzIGRlIG1laWFzLCBxdWFsIOkgbyBjdXN0byB0b3RhbCBkYSBjb21wcmE%2FXG5NQVBFQU1FTlRPOiB7QTogNjAsIEI6IDgsIEM6IDIsIEQ6IDN9XG5cblA6IEVtIHVtIHJlc3RhdXJhbnRlLCBjYWRhIHJlZmVp5%2BNvIHBhcmEgYWR1bHRvcyBjdXN0YSAkNSBlIGFzIGNyaWFu52FzIGNvbWVtIGRlIGdyYedhLiBTZSB1bSBncnVwbyBkZSAxNSBwZXNzb2FzIGVudHJhc3NlIGUgOCBmb3NzZW0gY3JpYW7nYXMsIHF1YW50byBpc3NvIGN1c3RhcmlhIHBhcmEgbyBncnVwbyBjb21lcj8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
-    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
-
-## Passo 2: Prompts Matemáticos
-
-O objetivo deste passo é formular o problema como uma declaração algébrica e como código Python. Este passo tem dois prompts simultâneos, que ajudam a dar representações diversas do problema.
-
-### 2a: Declaração Algébrica
-
-Podemos fazer o prompt de poucas amostras (few-shot) para que o LLM represente o problema matemático como uma declaração algébrica. Isso é feito pedindo ao LLM para gerar o formato da resposta, começando com "Resposta =".
-
-<iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlJlc3Bvc3RhID0gQSAqIEIgLSBBICogQyIsInByb21wdCI6IlA6IEVtIHVtIHpvb2zzZ2ljbywgY2FkYSBpbmdyZXNzbyBkZSBhZHVsdG8gY3VzdGEgJCBBIGUgY3JpYW7nYXMgbWVub3JlcyBkZSA1IGFub3MgcG9kZW0gZW50cmFyIGRlIGdyYedhLiBTZSB1bWEgZmFt7WxpYSBkZSBCIGFkdWx0b3MgZSBDIGNyaWFu52FzIG1lbm9yZXMgZGUgNSBhbm9zIHZpc2l0YXIgbyB6b29s82dpY28sIHF1YWwg6SBvIGN1c3RvIHRvdGFsIHBhcmEgYSBmYW3tbGlhIGVudHJhcj9cbk1hcGVhbWVudG86IHtBOiAxMiwgQjogNCwgQzogMn1cblxuRXNjcmV2YSB1bWEgZXF1YefjbyBtYXRlbeF0aWNhIGUgZ2VyZSBvIGZvcm1hdG8gZGUgcmVzcG9zdGEgY29tZedhbmRvIGNvbSAnUmVzcG9zdGEgPSdcblJlc3Bvc3RhID0gQSAqIEJcblxuUDogRW0gdW1hIGxvamEsIG9zIHNhcGF0b3MgY3VzdGFtICQgQSBwb3IgcGFyIGUgYXMgbWVpYXMgY3VzdGFtICQgQiBwb3IgcGFyLiBTZSB1bSBjbGllbnRlIGNvbXByYSBDIHBhcmVzIGRlIHNhcGF0b3MgZSBEIHBhcmVzIGRlIG1laWFzLCBxdWFsIOkgbyBjdXN0byB0b3RhbCBkYSBjb21wcmE%2FTWFwZWFtZW50bzoge0E6IDYwLCBCOiA4LCBDOiAyLCBEOiAzfVxuXG5Fc2NyZXZhIHVtYSBlcXVh5%2BNvIG1hdGVt4XRpY2EgZSBnZXJlIG8gZm9ybWF0byBkZSByZXNwb3N0YVxuY29tZedhbmRvIGNvbSAnUmVzcG9zdGEgPSdcblxuUmVzcG9zdGEgPSBBICogQyArIEIgKiBEXG5cblA6IEVtIHVtIHJlc3RhdXJhbnRlLCBjYWRhIHJlZmVp5%2BNvIHBhcmEgYWR1bHRvIGN1c3RhICQgQSBlIGFzIGNyaWFu52FzIGNvbWVtIGRlIGdyYedhLiBTZSB1bSBncnVwbyBkZSBCIHBlc3NvYXMgZW50cm91IGUgQyBlcmFtIGNyaWFu52FzLCBxdWFudG8gY3VzdGFyaWEgcGFyYSBvIGdydXBvIGNvbWVyP1xuTWFwZWFtZW50bzoge0E6IDUsIEI6IDE1LCBDOiA4fVxuXG5Fc2NyZXZhIHVtYSBlcXVh5%2BNvIG1hdGVt4XRpY2EgZSBnZXJlIG8gZm9ybWF0byBkZSByZXNwb3N0YSBjb21l52FuZG8gY29tICdSZXNwb3N0YSA9JyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
-    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
-
-### 2b: Código em Python 
-
-Também podemos pedir ao %%LLM|LLM%% que gere código Python que resolva o problema. Isso é feito pedindo ao LLM para gerar uma função Python.
-
-<iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6ImRlZiBjdXN0b19yZXN0YXVyYW50ZShBLCBCLCBDKTpcbiAgcmV0dXJuIEEgKiAoQiAtIEMpIiwicHJvbXB0IjoiUXQ6IEVtIHVtIHpvb2zzZ2ljbywgY2FkYSBpbmdyZXNzbyBhZHVsdG8gY3VzdGEgJCBBIGUgY3JpYW7nYXMgbWVub3JlcyBkZSA1IGFub3MgcG9kZW0gZW50cmFyIGRlIGdyYedhLiBTZSB1bWEgZmFt7WxpYSBkZSBCIGFkdWx0b3MgZSBDIGNyaWFu52FzIG1lbm9yZXMgZGUgNSBhbm9zIHZpc2l0YXIgbyB6b29s82dpY28sIHF1YWwg6SBvIGN1c3RvIHRvdGFsIHBhcmEgYSBmYW3tbGlhIGVudHJhcj9cblxuTWFwZWFtZW50bzoge0E6IDEyLCBCOiA0LCBDOiAyfVxuXG5Fc2NyZXZhIHVtYSBmdW7n428gUHl0aG9uIHF1ZSByZXRvcm5lIGEgcmVzcG9zdGEuXG5cbmRlZiBjdXN0b196b28oQSwgQiwgQyk6XG4gIHJldHVybiBBICogQlxuXG5cblF0OiBFbSB1bWEgbG9qYSwgc2FwYXRvcyBjdXN0YW0gJCBBIHBvciBwYXIgZSBtZWlhcyBjdXN0YW0gJCBCIHBvciBwYXIuIFNlIHVtIGNsaWVudGUgY29tcHJhciBDIHBhcmVzIGRlIHNhcGF0b3MgZSBEIHBhcmVzIGRlIG1laWFzLCBxdWFsIOkgbyBjdXN0byB0b3RhbCBkYSBjb21wcmE%2FXG5cbkVzY3JldmEgdW1hIGZ1bufjbyBQeXRob24gcXVlIHJldG9ybmUgYSByZXNwb3N0YS5cblxuZGVmIGN1c3RvX2xvamEoQSwgQiwgQywgRCk6XG4gIHJldHVybiAoQSAqIEMpICsgKEIgKiBEKVxuXG5cblF0OiBFbSB1bSByZXN0YXVyYW50ZSwgY2FkYSByZWZlaefjbyBhZHVsdGEgY3VzdGEgJCBBIGUgY3JpYW7nYXMgY29tZW0gZGUgZ3Jh52EuIFNlIHVtIGdydXBvIGRlIEIgcGVzc29hcyBlbnRyb3UgZSBDIGVyYW0gY3JpYW7nYXMsIHF1YW50byBjdXN0YXJpYSBwYXJhIG8gZ3J1cG8gY29tZXI%2FXG5cbkVzY3JldmEgdW1hIGZ1bufjbyBQeXRob24gcXVlIHJldG9ybmUgYSByZXNwb3N0YS4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
-    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
-
-### Geração de Respostas
-
-Agora, podemos usar o Mapeamento que geramos anteriormente para preencher automaticamente as variáveis.
+MathPrompter has **four** steps. We will explain them using the following example problem. The example is taken directly from the paper.
 
 ```text
-Mapeamento: {A: 5, B: 15, C: 8}
+Q: At a restaurant, each adult meal costs $5 and kids eat free. If a group of 15
+people came in and 8 were kids, how much would it cost for the group to eat?
 ```
 
-Algébrico: 
+## Step 1: Generate Algebraic Template
+
+The first step is to assign a variable to each number in the question. This helps because it allows easier translation of the question into an abstract math question, as well as into programming code.
+
+This can be done via few shot prompting:
+
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlF0OiBBdCBhIHJlc3RhdXJhbnQsIGVhY2ggYWR1bHQgbWVhbCBjb3N0cyAkQSBhbmQga2lkcyBlYXQgZnJlZS4gSWYgYSBncm91cCBvZiBCIHBlb3BsZSBjYW1lIGluIGFuZCBDIHdlcmUga2lkcywgaG93IG11Y2ggd291bGQgaXQgY29zdCBmb3IgdGhlIGdyb3VwIHRvIGVhdD9cbk1hcHBpbmc6IHtBOiA1LCBCOiAxNSwgQzogOH0iLCJwcm9tcHQiOiJROiBBIHpvbyBjaGFyZ2VzICQxMiBwZXIgYWR1bHQgdGlja2V0IGFuZCBhbGxvd3MgY2hpbGRyZW4gdW5kZXIgNSB0byBlbnRlciBmb3IgZnJlZS4gQSBmYW1pbHkgb2YgNCBhZHVsdHMgYW5kIDIgY2hpbGRyZW4gdW5kZXIgNSB2aXNpdCB0aGUgem9vLiBXaGF0IGlzIHRoZSB0b3RhbCBjb3N0IGZvciB0aGUgZmFtaWx5IHRvIGVudGVyP1xuUXQ6IEF0IGEgem9vLCBlYWNoIGFkdWx0IHRpY2tldCBjb3N0cyAkQSBhbmQgY2hpbGRyZW4gdW5kZXIgNSBjYW4gZW50ZXIgZm9yIGZyZWUuIElmIGEgZmFtaWx5IG9mIEIgYWR1bHRzIGFuZCBDIGNoaWxkcmVuIHVuZGVyIDUgdmlzaXQgdGhlIHpvbywgd2hhdCBpcyB0aGUgdG90YWwgY29zdCBmb3IgdGhlIGZhbWlseSB0byBlbnRlcj9cbk1hcHBpbmc6IHtBOiAxMiwgQjogNCwgQzogMn1cblxuUTogQSBzdG9yZSBzZWxscyBzaG9lcyBhdCAkNjAgcGVyIHBhaXIgYW5kIHNvY2tzIGF0ICQ4IHBlciBwYWlyLiBJZiBhIGN1c3RvbWVyIGJ1eXMgMiBwYWlycyBvZiBzaG9lcyBhbmQgMyBwYWlycyBvZiBzb2Nrcywgd2hhdCBpcyB0aGUgdG90YWwgY29zdCBvZiB0aGUgcHVyY2hhc2U%2FXG5RdDogQXQgYSBzdG9yZSwgc2hvZXMgY29zdCAkQSBwZXIgcGFpciBhbmQgc29ja3MgY29zdCAkQiBwZXIgcGFpci4gSWYgYSBjdXN0b21lciBidXlzIEMgcGFpcnMgb2Ygc2hvZXMgYW5kIEQgcGFpcnMgb2Ygc29ja3MsIHdoYXQgaXMgdGhlIHRvdGFsIGNvc3Qgb2YgdGhlIHB1cmNoYXNlP1xuTWFwcGluZzoge0E6IDYwLCBCOiA4LCBDOiAyLCBEOiAzfVxuXG5ROiBBdCBhIHJlc3RhdXJhbnQsIGVhY2ggYWR1bHQgbWVhbCBjb3N0cyAkNSBhbmQga2lkcyBlYXQgZnJlZS4gSWYgYSBncm91cCBvZiAxNVxucGVvcGxlIGNhbWUgaW4gYW5kIDggd2VyZSBraWRzLCBob3cgbXVjaCB3b3VsZCBpdCBjb3N0IGZvciB0aGUgZ3JvdXAgdG8gZWF0PyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+## Step 2: Math Prompts
+
+The point of this step is to formulate the problem as both an algebraic statement and as Python code. This step has two simultaneous prompts, which help to give diverse representations of the problem.
+
+### 2a: Algebraic Statement
+
+We can few-shot prompt the LLM to represent the math problem as an algebraic statement. This is done by asking the LLM to generate the answer format, starting with "Answer =".
+
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkFuc3dlciA9IEEgKiBCIC0gQSAqIEMiLCJwcm9tcHQiOiJRdDogQXQgYSB6b28sIGVhY2ggYWR1bHQgdGlja2V0IGNvc3RzICRBIGFuZCBjaGlsZHJlbiB1bmRlciA1IGNhbiBlbnRlciBmb3IgZnJlZS4gSWYgYSBmYW1pbHkgb2YgQiBhZHVsdHMgYW5kIEMgY2hpbGRyZW4gdW5kZXIgNSB2aXNpdCB0aGUgem9vLCB3aGF0IGlzIHRoZSB0b3RhbCBjb3N0IGZvciB0aGUgZmFtaWx5IHRvIGVudGVyP1xuTWFwcGluZzoge0E6IDEyLCBCOiA0LCBDOiAyfVxuXG5Xcml0ZSBhIG1hdGhlbWF0aWNhbCBlcXVhdGlvbiBhbmQgZ2VuZXJhdGUgdGhlIGFuc3dlciBmb3JtYXRcbnN0YXJ0aW5nIHdpdGggJ0Fuc3dlciA9J1xuXG5BbnN3ZXIgPSBBICogQlxuXG5RdDogQXQgYSBzdG9yZSwgc2hvZXMgY29zdCAkQSBwZXIgcGFpciBhbmQgc29ja3MgY29zdCAkQiBwZXIgcGFpci4gSWYgYSBjdXN0b21lciBidXlzIEMgcGFpcnMgb2Ygc2hvZXMgYW5kIEQgcGFpcnMgb2Ygc29ja3MsIHdoYXQgaXMgdGhlIHRvdGFsIGNvc3Qgb2YgdGhlIHB1cmNoYXNlP1xuTWFwcGluZzoge0E6IDYwLCBCOiA4LCBDOiAyLCBEOiAzfVxuXG5Xcml0ZSBhIG1hdGhlbWF0aWNhbCBlcXVhdGlvbiBhbmQgZ2VuZXJhdGUgdGhlIGFuc3dlciBmb3JtYXRcbnN0YXJ0aW5nIHdpdGggJ0Fuc3dlciA9J1xuXG5BbnN3ZXIgPSBBICogQyArIEIgKiBEXG5cblF0OiBBdCBhIHJlc3RhdXJhbnQsIGVhY2ggYWR1bHQgbWVhbCBjb3N0cyAkQSBhbmQga2lkcyBlYXQgZnJlZS4gSWYgYSBncm91cCBvZiBCIHBlb3BsZSBjYW1lIGluIGFuZCBDIHdlcmUga2lkcywgaG93IG11Y2ggd291bGQgaXQgY29zdCBmb3IgdGhlIGdyb3VwIHRvIGVhdD9cbk1hcHBpbmc6IHtBOiA1LCBCOiAxNSwgQzogOH1cblxuV3JpdGUgYSBtYXRoZW1hdGljYWwgZXF1YXRpb24gYW5kIGdlbmVyYXRlIHRoZSBhbnN3ZXIgZm9ybWF0XG5zdGFydGluZyB3aXRoICdBbnN3ZXIgPSciLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+### 2b: Python Code
+
+We can also ask the %%LLM|LLM%% to generate Python code that solves the problem. This is done by asking the LLM to generate a Python function.
+
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6ImRlZiByZXN0YXVyYW50X2Nvc3QoQSwgQiwgQyk6XG4gIHJldHVybiBBICogKEIgLSBDKSIsInByb21wdCI6IlF0OiBBdCBhIHpvbywgZWFjaCBhZHVsdCB0aWNrZXQgY29zdHMgJEEgYW5kIGNoaWxkcmVuIHVuZGVyIDUgY2FuIGVudGVyIGZvciBmcmVlLiBJZiBhIGZhbWlseSBvZiBCIGFkdWx0cyBhbmQgQyBjaGlsZHJlbiB1bmRlciA1IHZpc2l0IHRoZSB6b28sIHdoYXQgaXMgdGhlIHRvdGFsIGNvc3QgZm9yIHRoZSBmYW1pbHkgdG8gZW50ZXI%2FXG5NYXBwaW5nOiB7QTogMTIsIEI6IDQsIEM6IDJ9XG5cbldyaXRlIGEgUHl0aG9uIGZ1bmN0aW9uIHRoYXQgcmV0dXJucyB0aGUgYW5zd2VyLlxuXG5kZWYgem9vX2Nvc3QoQSwgQiwgQyk6XG4gIHJldHVybiBBICogQlxuXG5cblF0OiBBdCBhIHN0b3JlLCBzaG9lcyBjb3N0ICRBIHBlciBwYWlyIGFuZCBzb2NrcyBjb3N0ICRCIHBlciBwYWlyLiBJZiBhIGN1c3RvbWVyIGJ1eXMgQyBwYWlycyBvZiBzaG9lcyBhbmQgRCBwYWlycyBvZiBzb2Nrcywgd2hhdCBpcyB0aGUgdG90YWwgY29zdCBvZiB0aGUgcHVyY2hhc2U%2FXG5cbldyaXRlIGEgUHl0aG9uIGZ1bmN0aW9uIHRoYXQgcmV0dXJucyB0aGUgYW5zd2VyLlxuXG5kZWYgc3RvcmVfY29zdChBLCBCLCBDLCBEKTpcbiAgcmV0dXJuIChBICogQykgKyAoQiAqIEQpXG5cblF0OiBBdCBhIHJlc3RhdXJhbnQsIGVhY2ggYWR1bHQgbWVhbCBjb3N0cyAkQSBhbmQga2lkcyBlYXQgZnJlZS4gSWYgYSBncm91cCBvZiBCIHBlb3BsZSBjYW1lIGluIGFuZCBDIHdlcmUga2lkcywgaG93IG11Y2ggd291bGQgaXQgY29zdCBmb3IgdGhlIGdyb3VwIHRvIGVhdD9cblxuV3JpdGUgYSBQeXRob24gZnVuY3Rpb24gdGhhdCByZXR1cm5zIHRoZSBhbnN3ZXIuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+### Answer Generation
+
+Now, we can use the Mapping that we generated previously to automatically fill in the variables.
+
+```text
+Mapping: {A: 5, B: 15, C: 8}
+```
+
+Algebraic:
 ```text
 Answer = 5 * 15 - 5 * 8
 ```
 
-Código em Python:
+Python function:
 ```python
-def custo_restaurante(A=5, B=15, C=8):
+def restaurant_cost(A=5, B=15, C=8):
   return A * (B - C)
 ```
 
-Podemos avaliar ambos usando Python.
+We can evaluate both using Python.
 
-Algébrico:
-
+Algebraic:
 ```python
 >>> eval("5 * 15 - 5 * 8")
 35
 ```
 
-Código em Python:
-
+Python function:
 ```python
->>> custo_restaurante()
+>>> restaurant_cost()
 35
 ```
 
-## Passo 4: Auto-Consistência
-Finalmente, vamos aproveitar a %%Auto-Consistência|self_consistency%% para executar o processo acima várias vezes (~5), e então tomar a resposta da maioria.
+## Step 4: Self-Consistency
 
-## Conclusão
+Finally, we will leverage %%Self-Consistency|self_consistency%% to rerun the above process multiple times (~5), then take the majority answer.
 
-O MathPrompter relata 92,5% de precisão no conjunto de dados MultiArith(@roy-roth-2015-solving). O sucesso dessa técnica é um ótimo exemplo de como **você**, como um engenheiro de prompts, pode combinar métodos que aprendeu ao longo deste curso e combiná-los para lidar com problemas maiores.
+## Conclusion
+
+MathPrompter reports 92.5% accuracy on the MultiArith(@roy-roth-2015-solving) dataset. The success of this technique is a great example of how **you** as a prompt engineer can take methods that you have learned throughout this course and combine them to deal with larger problems.
