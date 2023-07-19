@@ -34,11 +34,11 @@ import focus_final from '../../static/img/computer.webp';
 import astronaut_final from '../../static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets1} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets1} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets2} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets2} style={{width: "750px"}} />
 </div>
 
 Saya pikir hasil ini cukup bagus untuk percobaan pertama; Saya terutama suka roket di sebelah kiri bawah.
@@ -46,13 +46,13 @@ Saya pikir hasil ini cukup bagus untuk percobaan pertama; Saya terutama suka rok
 Selanjutnya, saya ingin memiliki komputer dengan gaya yang sama: `Low poly white and blue computer sitting in a sparse green meadow`
 
 <div style={{textAlign: 'center'}}>
-  <img src={computer_1} style={{width: "750px"}} />
+  <LazyLoadImage src={computer_1} style={{width: "750px"}} />
 </div>
 
 Akhirnya, saya membutuhkan seorang astronot! `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background` sepertinya bagus.
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_1} style={{width: "750px"}} />
+  <LazyLoadImage src={astronaut_1} style={{width: "750px"}} />
 </div>
 
 Saya pikir yang kedua lumayan bagus.
@@ -63,7 +63,7 @@ Sekarang saya memiliki seorang astronot, roket, dan komputer. Saya merasa senang
 Saya melakukan riset pada [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) dan bertemu orang-orang yang menggunakan isometric. Saya memutuskan mencoba itu, menggunakan Diffusi Stabil alih-alih DALLE. Saya juga menyadari bahwa saya perlu menambahkan lebih banyak pengubah pada prompt saya untuk membatasi gaya. Saya mencoba prompt ini: `A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_2} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_2} style={{width: "250px"}} />
 </div>
 
 Hasilnya tidak bagus, jadi saya memutuskan untuk memulai pada roket sebagai gantinya
@@ -71,13 +71,13 @@ Hasilnya tidak bagus, jadi saya memutuskan untuk memulai pada roket sebagai gant
 `A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
 Ini tidak terlalu bagus, tetapi setelah saya mencoba-coba di sini, saya berakhir dengan 
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_final} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_final} style={{width: "250px"}} />
 </div>
 
 Sekarang saya membutuhkan laptop agar lebih baik
@@ -85,7 +85,7 @@ Sekarang saya membutuhkan laptop agar lebih baik
 `A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={laptop_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
 Saya mendapatkan beberapa hasil yang tidak konsisten; Saya suka yang di pojok kanan bawah, tapi saya memutuskan untuk mengambil arah yang berbeda.
@@ -93,7 +93,7 @@ Saya mendapatkan beberapa hasil yang tidak konsisten; Saya suka yang di pojok ka
 `A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
 Hasilnya tidak begitu benar. Ayo coba sesuatu yang ajaib dan bercahaya.
@@ -101,7 +101,7 @@ Hasilnya tidak begitu benar. Ayo coba sesuatu yang ajaib dan bercahaya.
 `A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_2} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
 Saya menyukai ini, tetapi ingin batu di tengah layar.
@@ -109,13 +109,13 @@ Saya menyukai ini, tetapi ingin batu di tengah layar.
 `A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_3} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
 Di sekitar sini, saya menggunakan kemampuan SD untuk menggunakan gambar sebelumnya sebagai pengaruh pada gambar di masa depan. Dan dengan demikian saya memutuskan:
 
 <div style={{textAlign: 'center'}}>
-  <img src={focus_final} style={{width: "250px"}} />
+  <LazyLoadImage src={focus_final} style={{width: "250px"}} />
 </div>
 
 Akhirnya, saya beralih ke astronot.
@@ -123,7 +123,7 @@ Akhirnya, saya beralih ke astronot.
 `A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_final} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_final} style={{width: "250px"}} />
 </div>
 
 Pada titik ini, saya sudah cukup puas dengan konsistensi gaya antara tiga gambar saya untuk menggunakannya di situs web. Hal utama yang saya dapatkan adalah bahwa ini adalah proses yang sangat iteratif dan membutuhkan penelitian yang banyak, dan saya harus memodifikasi harapan dan ide saya saat saya bereksperimen dengan berbagai pemberitahuan dan model yang berbeda.
