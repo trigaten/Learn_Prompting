@@ -16,14 +16,14 @@ import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 `studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
 </div>
 
 Однак, за допомогою чітко написаного негативного запиту, ми можемо створити набагато реалістичніше зображення рук.
 
 ``
 <div style={{textAlign: 'center'}}>
-  <img src={good_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={good_pitt} style={{width: "250px"}} />
 </div>
 
 Використовуючи подібний негативний запит, також можна отримати якісні зображення й інших частин тіла. На жаль, цей метод не завжди дає гарні результати, тому вам доведеться спробувати декілька разів, перш ніж ви отримаєте гарне зображення. У майбутньому цей тип запитів стане непотрібним, оскільки моделі ставатимуть ще кращі. Однак нині, він є дуже корисним методом для виправлення деформацій.
