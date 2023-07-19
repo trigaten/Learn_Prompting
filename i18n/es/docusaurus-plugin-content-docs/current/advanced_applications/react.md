@@ -14,7 +14,7 @@ Examinemos la siguiente imagen. La pregunta en el cuadro superior proviene de Ho
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_qa} style={{width: "500px"}} />
+  <LazyLoadImage src={react_qa} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -31,7 +31,7 @@ Google utilizó el LLM PaLM (@chowdhery2022palm) en experimentos con ReAct. Las 
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_performance} style={{width: "500px"}} />
+  <LazyLoadImage src={react_performance} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
