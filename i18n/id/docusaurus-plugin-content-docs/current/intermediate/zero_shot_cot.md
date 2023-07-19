@@ -10,7 +10,7 @@ Zero Shot Chain of Thought (Zero-shot-CoT) memicu (@kojima2022large) adalah sebu
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -22,7 +22,7 @@ Secara teknis, proses Zero-shot-CoT lengkap melibatkan dua masukan/pesanan yang 
 import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSProcessImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
