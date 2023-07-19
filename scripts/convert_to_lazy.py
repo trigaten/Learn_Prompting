@@ -9,15 +9,14 @@ for dirName, subdirList, fileList in os.walk(rootDir):
     for fname in fileList:
         if fname.endswith('.md'):
             file_path = os.path.join(dirName, fname)
-            with fileinput.FileInput(file_path, inplace=True, backup='.bak') as file:
+            with fileinput.FileInput(file_path, inplace=True) as file:
                 for line in file:
                     # Find img tag
-                    img_tag = re.search(r'<img src={(.+?)}( style={{width: "(.+?)"}})? />', line)
+                    img_tag = re.search(r'<img (.+?) />', line)
                     if img_tag:
-                        # Extract image source and width
-                        img_src = img_tag.group(1)
-                        img_width = img_tag.group(3) if img_tag.group(3) else "auto"
+                        # Extract attributes
+                        attributes = img_tag.group(1)
                         # Replace with LazyLoadImage component
-                        print(line.replace(img_tag.group(), f'<LazyLoadImage src={img_src} width={img_width} />'), end='')
+                        print(line.replace(img_tag.group(), f'<LazyLoadImage {attributes} />'), end='')
                     else:
                         print(line, end='')
