@@ -32,7 +32,7 @@ function GetStarted() {
       </div>
       <div className="w-full md:w-1/2 flex items-center">
         <img
-          src={require("@site/static/img/sitting_astronaut.webp").default}
+          src={require("@site/static/img/sitting_astronaut.webp").default} loading="lazy" 
           className="mx-auto md:ml-[80px] md:h-auto h-[300px]"
         />
       </div>
