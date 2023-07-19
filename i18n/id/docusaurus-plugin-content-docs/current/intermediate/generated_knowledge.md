@@ -113,7 +113,7 @@ Meskipun kasus penggunaan di atas mirip dengan cara pengetahuan yang dihasilkan 
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -127,7 +127,7 @@ Dalam langkah pembentukan pengetahuan, %%LLM|LLM%% diminta untuk menghasilkan se
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -166,7 +166,7 @@ Pendekatan model bahasa recitation-augmented (@sun2022recitationaugmented) ini m
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={RImage} style={{width: "250px"}} />
+  <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
 Ide di sini adalah untuk memberikan beberapa informasi penembak LLM untuk menghasilkan jawaban *dan* dalam langkah yang sama **. Fakta bahwa ia meresapi/menghasilkan pengetahuan dan menjawab pertanyaan dalam satu langkah yang sama adalah perbedaan utama dari pendekatan pengetahuan yang dihasilkan.
