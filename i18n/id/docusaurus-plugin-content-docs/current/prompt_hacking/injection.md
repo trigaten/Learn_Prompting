@@ -25,7 +25,7 @@ Oke, lalu apa? Kita dapat membuat model untuk mengabaikan bagian pertama permint
 import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "500px"}} />
+  <LazyLoadImage src={Image} style={{width: "500px"}} />
 </div>
 
 Alasan ini berhasil adalah bahwa `remoteli.io` mengambil tweet pengguna dan menggabungkannya dengan prompt mereka sendiri untuk membentuk prompt akhir yang mereka berikan ke LLM. Ini berarti bahwa teks apapun yang pengguna Twitter masukkan ke dalam tweet mereka akan disalin ke LLM.
