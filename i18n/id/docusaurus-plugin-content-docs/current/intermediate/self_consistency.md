@@ -7,7 +7,7 @@ sidebar_position: 5
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "500px"}} />
+  <LazyLoadImage src={SCImage} style={{width: "500px"}} />
 </div>
 
 Self-consistency(@wang2022selfconsistency) adalah pendekatan yang hanya menanyakan model prompt yang sama beberapa kali dan mengambil hasil mayoritas sebagai jawaban akhir. Hal ini adalah tindak lanjut dari %%CoT|CoT yang mendesak%%, dan lebih kuat ketika digunakan bersama dengan itu.
