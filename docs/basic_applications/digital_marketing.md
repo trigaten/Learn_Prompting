@@ -4,7 +4,7 @@ sidebar_position: 40
 
 # 🟡 Digital Marketing
 
-Your favorite AI chatbot is a treasure trove of resources for both the mundane and the nuanced work of digital marketing, from analysis to content generation to tweaking. In this article we look at:
+Your favorite AI chatbot is a treasure trove of resources for both the mundane and the nuanced work of digital marketing, from analysis to content generation to tweaking. In this article, we look at:
 * keyword research
 * marketing channel research
 * tweaking web page tags and PPC ads
