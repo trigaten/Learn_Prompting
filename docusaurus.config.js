@@ -30,6 +30,7 @@ async function createConfig() {
         "si",
         "ru",
         "ar",
+        "de",
         "uk"
       ],
     },
