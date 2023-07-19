@@ -14,7 +14,7 @@ Bagaimanapun, meskipun potensi besar model musik, saat ini sulit untuk memulainy
 import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={riffusion} style={{width: "500px"}} />
+  <LazyLoadImage src={riffusion} style={{width: "500px"}} />
 </div>
 
 Riffusion(@Forsgren_Martiros_2022), versi yang disempurnakan dari Stable Diffusion, dapat dikendalikan dengan prompt untuk menghasilkan alat musik dan gaya palsu, tetapi memiliki jumlah ketukan yang terbatas.
