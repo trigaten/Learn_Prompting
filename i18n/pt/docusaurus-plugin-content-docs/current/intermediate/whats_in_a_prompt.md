@@ -15,7 +15,7 @@ Surpreendentemente, ao fornecer %%exemplos|exemplars%% em um prompt, as resposta
 import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GoldUn} style={{width: "750px"}} />
+  <LazyLoadImage src={GoldUn} style={{width: "750px"}} />
 </div>
 
 ## O Espaço de Rótulos (ou Categorias) (labelspace) importam!
