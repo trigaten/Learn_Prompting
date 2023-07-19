@@ -19,7 +19,7 @@ import rope from '../assets/basic_applications/summarizing/Outline_1.webp';
 import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <img src={outline1} style={{width: "750px"}} />
+  <LazyLoadImage src={outline1} style={{width: "750px"}} />
 </div>
 
 Meskipun Anda bisa mencari ringkasan, ChatGPT dapat menyesuaikan kontennya sesuai dengan kebutuhan Anda. Mungkin Anda benar-benar suka sepak bola, sehingga Anda bisa meminta ChatGPT untuk "Berikan saya ringkasan 100 kata tentang 'Romeo dan Juliet' dalam istilah sepak bola Amerika."
@@ -29,18 +29,18 @@ Meskipun Anda bisa mencari ringkasan, ChatGPT dapat menyesuaikan kontennya sesua
 Anda dapat meminta ChatGPT untuk merangkum atau membuat garis besar teks dan TL;DR semuanya. Yang harus Anda lakukan adalah menyalin dan menempelkan teks yang spesifik ke dalam prompt. (Anda dapat menyertakan hingga 2.500 kata. Jika pekerjaannya lebih panjang dari itu, Anda harus membaginya menjadi beberapa bagian.) Minta ringkasan yang disederhanakan dari teks yang dipilih dengan menulis, "Ringkas ini untuk saya seperti saya berusia 5 tahun: [SALIN TEKS DI SINI]" Ini adalah ringkasan "untuk anak berusia 5 tahun" dari bagian entri Wikipedia tentang "[keterikatan kuantum](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)". 
 
 <div style={{textAlign: 'left'}}>
-  <img src={quantum} style={{width: "750px"}} />
+  <LazyLoadImage src={quantum} style={{width: "750px"}} />
 </div>
 
 Selain ringkasan, Anda juga dapat meminta ChatGPT untuk menulis garis besar untuk blok teks. Terkadang lebih baik memiliki kerangka sehingga Anda dapat melihat benang atau kerangka keseluruhan artikel. Anda juga hanya perlu menyalin dan menempelkan teks yang ingin Anda garisbawahi ke dalam prompt Anda.   
 Berikut adalah garis besar ChatGPT pada halaman Wikipedia tentang "tali," khususnya tentang sejarah [tali](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were).
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope} style={{width: "750px"}} />
+  <LazyLoadImage src={rope} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope2} style={{width: "750px"}} />
+  <LazyLoadImage src={rope2} style={{width: "750px"}} />
 </div>
 
 Kami baru saja membahas beberapa dasar-dasar penggunaan ChatGPT untuk menangani teks panjang. Ada banyak cara lain untuk menggunakan ChatGPT untuk merangkum dan menggambarkan teks!
