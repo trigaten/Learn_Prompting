@@ -2,26 +2,26 @@
 sidebar_position: 40
 ---
 
-# 🟡 Digital Marketing
+# 🟡 Pemasaran Digital
 
-Your favorite AI chatbot is a treasure trove of resources for both the mundane and the nuanced work of digital marketing, from analysis to content generation to tweaking. In this article we look at:
-* keyword research
-* marketing channel research
-* tweaking web page tags and PPC ads
-* prompts to generate images for blog posts
-* technical SEO
+AI chatbot favorit Anda adalah sumber daya yang sangat berharga untuk pekerjaan digital marketing, baik yang biasa maupun yang rumit, mulai dari analisis hingga pembuatan konten hingga pengaturan. Dalam artikel ini, kita akan membahas mengenai:
+* riset kata kunci
+* riset saluran pemasaran
+* memperbaiki tag halaman web dan iklan PPC
+* prompt untuk menghasilkan gambar untuk posting-an blog
+* SEO secara teknis
 
 
-## Keyword Research
+## Riset Kata Kunci
 
-Ask your preferred AI chatbot what keyword variants exist for a main keyword, and ask for more detail:
+Tanyakan kepada chatbot AI yang Anda pilih apa jenis variasi kata kunci yang ada untuk kata kunci utama, dan minta lebih banyak detail:
 ```text
-PROMPT: Generate a list of keywords related to Pez dispensers.
-PROMPT: Generate a cluster of keywords related to Pez dispensers, and organize with column headings for the cluster, the keyword, and the search intent.
-PROMPT: Generate a list of long-tail keywords related to Pez dispensers.
+PROMPT: Buat daftar kata kunci terkait dispenser Pez.
+PROMPT: Buat sekelompok kata kunci terkait dengan dispenser Pez, dan organisir dengan judul kolom untuk kelompok, kata kunci, dan tujuan pencarian.
+GENERATE: Buat daftar kata kunci yang panjang terkait dengan dispenser Pez.
 ```
 
-Try it for your keyword:
+Coba untuk kata kunci Anda:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlxuXG4xLiBWaW50YWdlIFBleiBEaXNwZW5zZXJzXG4yLiBQZXogRGlzcGVuc2VycyBmb3IgQ29sbGVjdG9yc1xuMy4gUGV6IERpc3BlbnNlcnMgd2l0aCBDaGFyYWN0ZXJzXG40LiBQZXogRGlzcGVuc2VycyB3aXRoIENhbmR5XG41LiBQZXogRGlzcGVuc2VycyBmb3IgS2lkc1xuNi4gUGV6IERpc3BlbnNlcnMgd2l0aCBSZWZpbGxhYmxlIENhbmR5XG43LiBQZXogRGlzcGVuc2VycyB3aXRoIFVuaXF1ZSBEZXNpZ25zXG44LiBQZXogRGlzcGVuc2VycyB3aXRoIFJhcmUgQ2hhcmFjdGVyc1xuOS4gUGV6IERpc3BlbnNlcnMgd2l0aCBTcGVjaWFsIEVkaXRpb24gQ2hhcmFjdGVyc1xuMTAuIFBleiBEaXNwZW5zZXJzIHdpdGggTGltaXRlZCBFZGl0aW9uIENoYXJhY3RlcnNcbjExLiBQZXogRGlzcGVuc2VycyB3aXRoIEN1c3RvbWl6YWJsZSBDaGFyYWN0ZXJzXG4xMi4gUGV6IERpc3BlbnNlcnMgd2l0aCBQZXJzb25hbGl6ZWQgQ2hhcmFjdGVyc1xuMTMuIFBleiBEaXNwZW5zZXJzIHdpdGggTGljZW5zZWQgQ2hhcmFjdGVyc1xuMTQuIFBleiBEaXNwZW5zZXJzIHdpdGggTW92aWUgQ2hhcmFjdGVyc1xuMTUuIFBleiBEaXNwZW5zZXJzIHdpdGggQ2FydG9vbiBDaGFyYWN0ZXJzXG4xNi4gUGV6IERpc3BlbnNlcnMgd2l0aCBTdXBlcmhlcm8gQ2hhcmFjdGVyc1xuMTcuIFBleiBEaXNwZW5zZXJzIHdpdGggQW5pbWFsIENoYXJhY3RlcnNcbjE4LiBQZXogRGlzcGVuc2VycyB3aXRoIFNwb3J0cyBDaGFyYWN0ZXJzXG4xOS4gUGV6IERpc3BlbnNlcnMgd2l0aCBNdXNpYyBDaGFyYWN0ZXJzXG4yMC4gUGV6IERpc3BlbnNlcnMgd2l0aCBWaWRlbyBHYW1lIENoYXJhY3RlcnMiLCJwcm9tcHQiOiJBY3QgYXMgYSBzZW5pb3IgU0VPIGNvbnN1bHRhbnQuIEdlbmVyYXRlIGEgbGlzdCBvZiBsb25nLXRhaWwga2V5d29yZHMgcmVsYXRlZCB0byBwZXogZGlzcGVuc2Vycy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -30,38 +30,38 @@ Try it for your keyword:
 ></iframe>
 
 
-## Marketing Channel Research
+## Riset Saluran Pemasaran
 
-One of the most important concerns for digital marketers is budgeting their time and resources to different marketing channels. An AI chatbot can give you immediate insights into the types of marketing channels that will work best for a particular client and product. Consider these prompts (leaving out the role of "Act as a senior digital marketing consultant" for the sake of brevity). Once you've identified the marketing channels, you can drill down into each to identify strategies and content.
+Salah satu kekhawatiran terpenting bagi pemasar digital adalah mengalokasikan waktu dan sumber daya mereka ke berbagai saluran pemasaran. Chatbot AI dapat memberikan wawasan langsung tentang jenis saluran pemasaran yang akan terbaik untuk klien dan produk tertentu. Pertimbangkan prompt ini (mengabaikan peran "Berperan sebagai konsultan pemasaran digital senior" demi ke singkatan). Setelah Anda mengidentifikasi saluran pemasaran, Anda dapat fokus pada masing-masing untuk mengidentifikasi strategi dan konten.
 ```text
-PROMPT: For a client wishing to promote their Pez dispenser portraying MrBeast, with a budget of $100000, generate a table showing how much money should be spent on which marketing channels. Use columns for the marketing channel, the budget allocation, and the reasoning behind it.
-PROMPT: List some strategies to identify Instagram influencers that can help market the MrBeast Pez dispenser.
-PROMPT: Create an introductory email to [influencer name], to ask them about initiating a partnership and referencing some of their tweets at https://twitter.com/[influencer]. [requires Web Browser plugin]
-PROMPT: List the top hashtags on Twitter relating to Pez dispensers.
+PROMPT: Untuk klien yang ingin mempromosikan Pez dispenser yang menggambarkan MrBeast, dengan anggaran $100000, buat tabel yang menunjukkan jumlah uang yang harus dihabiskan untuk saluran pemasaran mana. Gunakan kolom untuk saluran pemasaran, alokasi anggaran, dan alasan di baliknya.
+PROMPT: Sebutkan beberapa strategi untuk mengidentifikasi influencer Instagram yang dapat membantu memasarkan dispenser MrBeast Pez.
+PROMPT: Buat email perkenalan kepada [nama influencer], untuk meminta mereka tentang memulai kemitraan dan merujuk beberapa tweet mereka di https://twitter.com/[influencer]. [memerlukan plugin Browser Web]
+PROMPT: Daftar hashtag teratas di Twitter yang berhubungan dengan dispenser Pez.
 ```
 
-The output for this last prompt ought to something like:
+Hasil untuk permintaan terakhir ini seharusnya seperti ini:
 
 ```text
 // highlight-start
-Here are some popular hashtags on Twitter related to Pez dispensers:
+Ini beberapa tagar populer di Twitter yang terkait dengan dispenser Pez:
 
 #PezCollectors
 #PezDispensers
 #PezCommunity
 #PezLove
 #PezCollector
-etc.
+dll.
 // highlight-end
 ```
 
-## Tweaking Web Page Tags and PPC Ads
+## Mengubah Tag Halaman Web dan Iklan PPC
 
-AI Chatbots are an ideal tool to help generate text that fits within the constraints of SEO and PPC campaigns:
+AI Chatbots adalah alat ideal untuk membantu menghasilkan teks yang cocok dengan batasan kampanye SEO dan PPC:
 ```text
-PROMPT: Generate a table with 5 snappy title tag options with SEO power words for a blog article announcing a new Pez dispenser portraying MrBeast. Each title should be fewer than 60 characters in length and incorporate the SEO keyword "celebrity Pez dispenser."  Add a column to display the 5 corresponding meta descriptions, which must also incorporate the same SEO keyword and a call to action.
-PROMPT: Generate 5 compelling headlines, each fewer than 30 characters long, for a Google responsive search ad about collectible Pez dispensers
-PROMPT: Generate 5 three-word calls to action for a new campaign announcing Pez dispenser portraying MrBeast
+PROMPT: Buat tabel dengan 5 opsi tag judul yang menarik dengan kata-kata kuat SEO untuk artikel blog yang mengumumkan dispenser Pez baru yang menggambarkan MrBeast. Setiap judul harus kurang dari 60 karakter dan mencakup kata kunci SEO "celebrity Pez dispenser."  Menambahkan kolom untuk menampilkan 5 deskripsi meta yang sesuai, yang juga harus menggabungkan kata kunci SEO yang sama dan panggilan untuk bertindak.
+PROMPT: Buat 5 judul yang menarik, masing-masing dengan kurang dari 30 karakter, untuk iklan Google yang responsif tentang dispenser Pez koleksi
+PROMPT: Buat 5 panggilan aksi tiga kata untuk kampanye baru yang mengumumkan dispenser Pez yang menggambarkan MrBeast
 ```
 
 
@@ -72,49 +72,49 @@ PROMPT: Generate 5 three-word calls to action for a new campaign announcing Pez 
 ></iframe>
 
 
-## Prompts to Generate Images for Blog Posts
+## Prompt untuk Membuat Gambar untuk Pos Blog
 
-With the advent of tools like Midjourney, DALL-E, and Stable Diffusion, designers can now use prompt engineering to generate images. If you're unfamiliar with the syntax and techniques of these kinds of prompts, though, you can simply ask an AI chatbot for a set of text-to-image prompts to try out on your preferred AI image generation tool. Note that Midjourney was released after ChatGPT's knowledge cutoff date of September 2021.
+Dengan munculnya alat seperti Midjourney, DALL-E, dan Stable Diffusion, para desainer sekarang dapat menggunakan teknik rekayasa permintaan untuk menghasilkan gambar. Jika Anda tidak terbiasa dengan sintaks dan teknik dari jenis prompting ini, Anda dapat hanya menanyakan kepada chatbot AI untuk sekumpulan prompting teks-ke-gambar yang dapat dicoba pada alat generasi gambar AI pilihan Anda. Perhatikan bahwa Midjourney dirilis setelah tanggal pemotongan pengetahuan ChatGPT pada bulan September 2021.
 
 ```text
-PROMPT: Generate 5 concepts for an illustration to accompany a blog article announcing a new Pez dispenser portraying MrBeast [or paste in blog article].
-PROMPT: Generate 5 text-to-image prompts for DALL-E to create dramatic images that convey concept #3 from my earlier prompt.
+PROMPT: Ciptakan 5 konsep untuk ilustrasi yang akan menemani artikel blog mengumumkan dispenser Pez baru yang menggambarkan MrBeast [atau tempelkan di artikel blog].
+PROMPT: Hasilkan 5 permintaan teks-ke-gambar untuk DALL-E untuk menciptakan gambar yang dramatis yang menyampaikan konsep #3 dari permintaan sebelumnya saya.
 ```
 
-The output for this last prompt ought to something like:
+Output untuk prompt terakhir ini seharusnya seperti ini:
 
 ```text
 // highlight-start
-Certainly! Here are five text-to-image prompts for DALL·E to create dramatic images conveying concept #3:
+Tentu saja! Berikut adalah lima pendorong teks-ke-gambar untuk DALL·E menciptakan gambar-gambar dramatis yang menyampaikan konsep #3:
 
-1. "A majestic procession of Pez dispenser characters marches behind MrBeast, led by the new MrBeast Pez dispenser, symbolizing the rise of a legendary collection."
-2. "Surrounded by a radiant aura, MrBeast holds the new Pez dispenser as a beam of light illuminates a room filled with awe-inspiring Pez characters, signifying the power of a legendary addition."
-3. "In an epic clash of Pez dispenser heroes, the new MrBeast Pez dispenser stands tall, embodying strength and courage in the face of adversity."
-4. "A storm of Pez candies swirls around MrBeast, forming a vortex of excitement and anticipation, as the new Pez dispenser takes center stage in an exhilarating display."
-5. "Silhouetted against a fiery backdrop, MrBeast unveils the new Pez dispenser, its glow radiating hope and inspiration, symbolizing a new era of Pez collecting."
+1. "Suatu prosesi megah dari karakter Pez dispenser berjalan di belakang MrBeast, dipimpin oleh dispenser MrBeast Pez baru, melambangkan kebangkitan koleksi legendaris."
+2. "Dikelilingi oleh aura yang bersinar, MrBeast memegang dispenser Pez baru sebagai sinar cahaya menerangi ruangan yang penuh dengan karakter Pez yang mengagumkan, menandakan kekuatan penambahan legendaris."
+3. "Dalam pertempuran epik Pez dispenser heroes, Pez dispenser MrBeast baru berdiri tegak, mewujudkan kekuatan dan keberanian di tengah kesulitan."
+4. "Sebuah badai permen Pez berputar di sekitar MrBeast, membentuk pusaran kegembiraan dan antisipasi, ketika dispenser Pez baru menjadi pusat perhatian dalam tampilan yang menyenangkan."
+5. "Terbayang di latar belakang yang membara, MrBeast mengungkapkan dispenser Pez baru, sinarnya memancarkan harapan dan inspirasi, melambangkan era baru dalam mengumpulkan Pez."
 // highlight-end
 ```
 
-## Technical SEO
+## SEO Secara Teknis
 
-Just as developers use AI chatbots to generate and debug code, digital marketers can use chatbots to analyze and debug technical SEO issues:
+Sama seperti pengembang menggunakan chatbot AI untuk menghasilkan dan men-debug kode, pemasar digital dapat menggunakan chatbot untuk menganalisis dan men-debug masalah SEO teknis:
 ```text
-PROMPT: Based on these request and response headers, why isn't Cloudflare returning this web page from its cache? [paste in headers from Chrome Dev Tools]
-PROMPT: Based on the rules at schema.org/HowTo, generate some schema in JSON for how to make a sandwich.
-PROMPT: What patterns can you identify in this data set, which is an export of Google Search Console data for 3 months for a company that sells collectible Pez dispensers? [paste Google Sheets URL if your chatbot has web access, otherwise paste CSV data]
-PROMPT: What is a regular expression to identify any search query that includes the singular or plural versions of the words "collectible" or "celebrity"
+PROMPT: Berdasarkan header permintaan dan respons ini, mengapa Cloudflare tidak mengembalikan halaman web ini dari cache-nya? [paste di header dari Chrome Dev Tools]
+PROMPT: Berdasarkan aturan di schema.org/HowTo, buatlah beberapa skema dalam JSON untuk cara membuat sehelai sandwich.
+PROMPT: Apa pola yang dapat Anda identifikasi dalam kumpulan data ini, yang merupakan ekspor data Google Search Console selama 3 bulan untuk perusahaan yang menjual dispenser Pez koleksi? [Tempel URL Google Sheets jika chatbot Anda memiliki akses web, jika tidak, tempel data CSV]
+PROMPT: Apa ekspresi reguler untuk mengidentifikasi semua kueri pencarian yang mencakup versi tunggal atau jamak dari kata-kata "collectible" atau "celebrity"
 ```
 
-The output for this last prompt ought to something like:
+Output untuk prompt terakhir ini seharusnya seperti ini:
 
 ```text
-// highlight-start
-To identify search queries that include the singular or plural versions of the words "collectible" or "celebrity" using regular expressions, you can use the following pattern:
+// penyorotan-mulai
+Untuk mengidentifikasi permintaan pencarian yang mencakup versi tunggal atau jamak dari kata-kata "collectible" atau "celebrity" menggunakan ekspresi reguler, Anda dapat menggunakan pola berikut:
 
 \b(collectible|collectibles|celebrity|celebrities)\b
-// highlight-end
+// penyorotan-akhir
 ```
 
 ---
 
-Contributed by Prompt Yes!, a company offering [prompt engineering courses](https://promptyes.com).
+Kontribusi oleh Prompt Yes!, sebuah perusahaan yang menyediakan pelatihan [prompt engineering](https://promptyes.com).
