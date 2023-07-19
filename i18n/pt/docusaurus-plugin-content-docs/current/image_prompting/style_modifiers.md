@@ -14,13 +14,13 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 Aqui estão algumas pirâmides geradas pelo DALLE, com o comando `pirâmide`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
 </div>
 
 Aqui estão algumas pirâmides geradas pelo DALLE, com o comando `Uma pirâmide feita de vidro, renderizada em Unity e tinta vermelha`, que usa 3 modificadores de estilo.
 
 <div style={{textAlign: 'center'}}>
-  <img src={red_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={red_pyramids} style={{width: "750px"}} />
 </div>
 
 Aqui está uma lista de alguns modificadores de estilo úteis:
