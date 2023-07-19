@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # 🟢 Einführung
 
-import Techniques from '@site/docs/assets/techniques.svg';
+import Techniques from '@site/docs/assets/basics/techniques.svg';
 
 <div style={{textAlign: 'center'}}>
   <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
@@ -50,7 +50,7 @@ Dieser Kurs bietet eine interaktive Lernerfahrung. Du kannst mit den im Kurs bes
 Hier ist ein **Bild**, das zeigt, wie eine Einbettung aussieht:
 
 import dyno from '@site/docs/assets/basics/dyno_example.webp';
-import key from '@site/docs/assets/API_key.webp';
+import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={dyno} style={{width: "750px"}} />

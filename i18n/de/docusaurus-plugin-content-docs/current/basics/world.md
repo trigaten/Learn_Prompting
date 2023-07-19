@@ -4,7 +4,7 @@ sidebar_position: 105
 # 🟢 Wie KIs Denken
 
 
-import Brain from '@site/docs/assets/brain.svg';
+import Brain from '@site/docs/assets/basics/brain.svg';
 
 <div style={{textAlign: 'center'}}>
   <Brain style={{width:"100%",height:"300px",verticalAlign:"top"}}/>

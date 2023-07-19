@@ -5,7 +5,7 @@ sidebar_position: 80
 # 🟢 Chatbot Grundlagen
 
 
-import Chatbots from '@site/docs/assets/chatbot.svg';
+import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
   <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
@@ -19,8 +19,8 @@ Genau wie GPT-3 können Chatbots Fragen beantworten, Zusammenfassungen und Analy
 
 ### Stilvorgaben
 
-import unguided_question from '@site/docs/assets/unguided_question.webp';
-import limerick_question from '@site/docs/assets/limerick_question.webp';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 Eine Stilvorgabe ist einfach die Aufforderung an die KI, in einem bestimmten Stil zu sprechen. Wenn du eine Frage ohne Stilvorgaben stellst, antwortet ChatGPT in der Regel mit einem oder zwei kurzen Absätzen, gelegentlich auch mit mehr, wenn eine längere Antwort erforderlich ist:
 
@@ -61,8 +61,8 @@ Aufgrund der Struktur einer Chatbot-Konversation kann die Form des ersten Promts
 
     Wenn du verstanden hast und bereit bist, zu beginnen, antworte nur mit "Ja".
     
-import unprimed_question from '@site/docs/assets/unprimed_question.webp';
-import primed_question from '@site/docs/assets/primed_question.webp';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 Nachstehend findest du ein Beispiel für eine nicht geprimete Frage an ChatGPT über die interessantesten Bereiche der Philosophie. Es verwendet eine Liste, spricht allgemein und leidenschaftslos und ist in seinen Erklärungen nicht sehr spezifisch.
 

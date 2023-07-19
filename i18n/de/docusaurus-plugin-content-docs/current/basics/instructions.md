@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # 🟢 Anweisungen geben
 
-import InstructionPrompt from '@site/docs/assets/instruction_prompt.svg';
+import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
