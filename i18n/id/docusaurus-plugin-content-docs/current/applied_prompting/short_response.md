@@ -51,7 +51,7 @@ Sekarang kita bisa menambahkan pemformatan dan petunjuk konteks.
 Contoh perubahan di atas dihasilkan dengan [ChatGPT](https://openai.com/blog/chatgpt/)dari OpenAI.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Auto} style={{width: "500px"}} />
+  <LazyLoadImage src={Auto} style={{width: "500px"}} />
 </div>
 
 ### Iterasi
