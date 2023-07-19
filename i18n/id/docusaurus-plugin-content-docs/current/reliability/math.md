@@ -9,7 +9,7 @@ Sepanjang kursus ini, kita telah melihat banyak metode penggerak yang berbeda ya
 import math from '@site/docs/assets/reliability/math.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={math} style={{width: "500px"}} />
+  <LazyLoadImage src={math} style={{width: "500px"}} />
 </div>
 
 MathPrompter memiliki **empat** langkah. Kami akan menjelaskannya menggunakan contoh masalah berikut. Contoh ini diambil langsung dari makalah.
