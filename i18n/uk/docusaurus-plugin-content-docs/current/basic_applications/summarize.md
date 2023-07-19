@@ -19,7 +19,7 @@ import rope from '../assets/basic_applications/summarizing/Outline_1.webp';
 import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <img src={outline1} style={{width: "750px"}} />
+  <LazyLoadImage src={outline1} style={{width: "750px"}} />
 </div>
 
 Хоча замість цього ви можете переглянути резюме твору в мережі, ChatGPT може адаптувати вміст відповідно до ваших потреб. Можливо, ви справжній фанат футболу, тож можете написати ChatGPT наступне: «Дайте мені короткий зміст «Ромео і Джульєтти» в 100 словах з точки зору американського футболу».
@@ -29,18 +29,18 @@ import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
 Ви можете попросити ChatGPT узагальнити або створити план тексту, не читаючи його повністю. Все, що вам потрібно зробити, це скопіювати та вставити певний текст у запит. (Ви можете додати до 2500 слів. Якщо робота довша, то вам доведеться розбити її на частини.) Попросіть спрощений короткий виклад вибраного тексту, написавши: «Узагальніть це для мене, ніби мені 5 років: [ВСТАВТЕ ТЕКСТ ТУТ]» Це короткий виклад «для 5-річної дитини» із розділу статті Вікіпедії про «[квантову заплутаність](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)». 
 
 <div style={{textAlign: 'left'}}>
-  <img src={quantum} style={{width: "750px"}} />
+  <LazyLoadImage src={quantum} style={{width: "750px"}} />
 </div>
 
 Окрім цього, ви також можете попросити ChatGPT написати конспекти для блоків тексту. Іноді краще мати схематичний план, щоб ви могли бачити потік чи структуру всієї статті. Вам буде достатньо просто скопіювати та вставити текст, який ви хочете викласти у своєму запиті.   
 Нижче наведено конспект створений ChatGPT на основі змісту сторінки Вікіпедії про «Канат», особливо на історії використання [канатів](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were).
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope} style={{width: "750px"}} />
+  <LazyLoadImage src={rope} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope2} style={{width: "750px"}} />
+  <LazyLoadImage src={rope2} style={{width: "750px"}} />
 </div>
 
 Ми щойно розглянули деякі основи використання ChatGPT для роботи з великими текстами. Але існує ще багато інших способів як він може допомогти вам в узагальненні та створенні конспектів!
