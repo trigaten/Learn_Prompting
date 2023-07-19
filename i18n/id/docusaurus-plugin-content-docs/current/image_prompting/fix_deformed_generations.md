@@ -16,14 +16,14 @@ Dengan menggunakan Stable Diffusion v1.5 dan dengan menggunakan contoh berikut, 
 `studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
 </div>
 
 Dengan menggunakan prompt negatif yang kuat, kita dapat menghasilkan tangan yang jauh lebih meyakinkan.
 
 ``
 <div style={{textAlign: 'center'}}>
-  <img src={good_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={good_pitt} style={{width: "250px"}} />
 </div>
 
 Dengan menggunakan prompt negatif yang serupa dapat membantu kita pada bagian tubuh yang lain juga. Sayangnya, teknik ini tidak konsisten, sehingga mungkin Anda perlu mencoba beberapa kali sebelum mendapatkan hasil yang baik. Di masa depan, jenis prompt seperti ini seharusnya tidak perlu lagi karena model-model akan meningkat kualitasnya. Namun, saat ini ini adalah teknik yang sangat berguna.
