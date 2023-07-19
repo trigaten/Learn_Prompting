@@ -14,7 +14,7 @@ DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier pada **R**easoning **S**t**e*
 import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={diverse} style={{width: "750px"}} />
+  <LazyLoadImage src={diverse} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -125,7 +125,7 @@ Verifikator dilatih dengan fungsi loss yang sedikit rumit, yang tidak akan saya 
 import ama from '@site/docs/assets/reliability/AMA_Prompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama} style={{width: "750px"}} />
+  <LazyLoadImage src={ama} style={{width: "750px"}} />
 </div>
 
 Tanyakan apapun kepada saya (AMA) prompting (@arora2022ama) adalah pendekatan serupa dengan DiVeRSe. Namun, langkah prompt berulang dan langkah agregasi jawabannya berbeda secara signifikan. The core idea of AMA is to use a LLM to generate multiple prompts, instead of just using different few-shot exemplars.
@@ -162,7 +162,7 @@ Nah, dengan merumuskan pertanyaan dengan cara khusus ini, kita dapat menghasilka
 import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama_multi} style={{width: "800px"}} />
+  <LazyLoadImage src={ama_multi} style={{width: "800px"}} />
 </div>
 
 Ini mungkin menghasilkan:
