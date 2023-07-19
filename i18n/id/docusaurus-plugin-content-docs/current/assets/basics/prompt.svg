@@ -19,8 +19,8 @@
     <path d="M30.9 0 M30.9 0 C73.28 0.93, 120.37 0.83, 162.28 0 M30.9 0 C67.73 0.36, 102.96 -0.12, 162.28 0 M162.28 0 C184.56 -1.16, 192.42 9.9, 193.18 30.9 M162.28 0 C184.62 -0.87, 195.48 9.23, 193.18 30.9 M193.18 30.9 C194.48 46.84, 191.1 61.17, 193.18 92.7 M193.18 30.9 C193.24 52.3, 192.68 74.73, 193.18 92.7 M193.18 92.7 C195.12 114.11, 183.28 122.53, 162.28 123.6 M193.18 92.7 C194.19 115.28, 183.71 123.02, 162.28 123.6 M162.28 123.6 C136.28 123.7, 107.47 122.97, 30.9 123.6 M162.28 123.6 C117.81 122.92, 72.75 123.74, 30.9 123.6 M30.9 123.6 C10.53 123.89, -0.15 115.01, 0 92.7 M30.9 123.6 C9.23 122.38, 2.15 113.91, 0 92.7 M0 92.7 C1.78 70.63, -0.64 46.18, 0 30.9 M0 92.7 C-0.94 75.24, 0.25 59.05, 0 30.9 M0 30.9 C1.03 8.69, 10.79 0.5, 30.9 0 M0 30.9 C-0.36 11.02, 10.25 -1.32, 30.9 0" stroke="#000000" stroke-width="1" fill="none"/>
   </g>
   <g transform="translate(18.433609008789062 92.35404968261719) rotate(0 88.15797424316406 35)">
-    <text x="88.15797424316406" y="0" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">What are 3 </text>
-    <text x="88.15797424316406" y="35" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">good books?</text>
+    <text x="88.15797424316406" y="0" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Apa saja 3 </text>
+    <text x="88.15797424316406" y="35" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">buku yang bagus?</text>
   </g>
   <g stroke-linecap="round">
     <g transform="translate(206.27740478515648 133.17447335249625) rotate(0 56.704180249743956 0.39288651615945014)">
@@ -44,9 +44,9 @@
     <text x="88.39993286132812" y="50" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Runner</text>
   </g>
   <g transform="translate(51.263763427734375 10) rotate(0 44.919960021972656 12.5)">
-    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">A Prompt</text>
+    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Sebuah Prompt</text>
   </g>
   <g transform="translate(350.3423080444336 11.085235595703125) rotate(0 66.83993530273438 12.5)">
-    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Model Output</text>
+    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Output Model</text>
   </g>
 </svg>
