@@ -10,7 +10,7 @@ import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
 <div style={{textAlign: 'left'}}>
-  <img src={SkippyHeader} style={{width: "700px"}} />
+  <LazyLoadImage src={SkippyHeader} style={{width: "700px"}} />
 </div>
 
 ## Pendahuluan
@@ -35,7 +35,7 @@ Seperti model-model lain dalam seri GPT-3.5, ChatGPT dilatih menggunakan [RLHF](
 ## Prompt
 
 <div style={{textAlign: 'left'}}>
-  <img src={Skippy} style={{width: "700px"}} />
+  <LazyLoadImage src={Skippy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Tampilan bot obrolan Skippy dari header artikel</p>
 </div>
 
@@ -46,7 +46,7 @@ Seperti model-model lain dalam seri GPT-3.5, ChatGPT dilatih menggunakan [RLHF](
 ChatGPT adalah model bahasa dan antarmuka pengguna. Masukan prompt yang dimasukkan oleh pengguna ke antarmuka sebenarnya dimasukkan ke dalam prompt yang lebih besar yang berisi seluruh percakapan antara pengguna dan ChatGPT. Hal ini memungkinkan model bahasa yang mendasarinya untuk memahami konteks percakapan dan merespons dengan tepat.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ChatGPT} style={{width: "600px"}} />
+  <LazyLoadImage src={ChatGPT} style={{width: "600px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Contoh penambahan prompt pengguna sebelum dikirim ke model</p>
 </div>
 
@@ -71,7 +71,7 @@ Ada banyak kasus penggunaan yang berbeda dari prompt chatbot yang menyimpan perc
 Bisa sangat membantu memiliki chatbot yang aktif bertanya dan mendapatkan umpan balik dari pengguna. Berikut adalah contoh pernyataan yang akan ditanyakan oleh chatbot terapi untuk membantu pengguna memikirkan hari mereka.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Therapy} style={{width: "700px"}} />
+  <LazyLoadImage src={Therapy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Pertanyaan chatbot terapi</p>
 </div>
 
