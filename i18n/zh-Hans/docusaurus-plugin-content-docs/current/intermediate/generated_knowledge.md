@@ -9,7 +9,7 @@ sidebar_position: 7
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
 </div>
 <div style={{textAlign: 'center'}}>
 知识生成(Liu et al.)
@@ -22,7 +22,7 @@ import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 <div style={{textAlign: 'center'}}>
 生成的知识示例(Liu et al.)

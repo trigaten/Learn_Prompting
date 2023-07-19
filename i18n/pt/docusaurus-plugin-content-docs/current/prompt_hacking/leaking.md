@@ -11,7 +11,7 @@ Como mostrado na imagem de exemplo abaixo (@ignore_previous_prompt), o atacante 
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={research} style={{width: "500px"}} />
+  <LazyLoadImage src={research} style={{width: "500px"}} />
 </div>
 
 A imagem a seguir(@simon2022inject), novamente do exemplo `remoteli.io`, mostra
@@ -20,7 +20,7 @@ um usuário do Twitter conseguindo que o modelo vaze o seu prompt.
 import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "300px"}} />
+  <LazyLoadImage src={Image} style={{width: "300px"}} />
 </div>
 
 Bom, e daí? Por que alguém deveria se preocupar com o vazamento de prompt?
@@ -37,7 +37,7 @@ Mais notavelmente, a Microsoft lançou um mecanismo de pesquisa alimentado pelo 
 import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={bing} style={{width: "700px"}} />
+  <LazyLoadImage src={bing} style={{width: "700px"}} />
 </div>
 
 Com o recente aumento de startups baseadas no GPT-3, com prompts muito mais complicados que podem

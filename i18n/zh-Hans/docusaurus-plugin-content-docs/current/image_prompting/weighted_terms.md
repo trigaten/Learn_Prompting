@@ -15,20 +15,20 @@ import planets from '@site/docs/assets/images_chapter/planets.webp';
 这是通过 Stable Diffusion 生成的一些山，提示语是 `mountain`。
 
 <div style={{textAlign: 'center'}}>
-  <img src={mountains} style={{width: "350px"}} />
+  <LazyLoadImage src={mountains} style={{width: "350px"}} />
 </div>
 
 然而，如果我们想得到没有树的山，我们可以使用提示语 `mountain | tree:-10`。因为我们把树的权重设置为负数，所以它们不会出现在生成的图片中。
 
 <div style={{textAlign: 'center'}}>
-  <img src={mountains_no_trees} style={{width: "350px"}} />
+  <LazyLoadImage src={mountains_no_trees} style={{width: "350px"}} />
 </div>
 
 加权项可以组合成更复杂的提示语，比如 
 `A planet in space:10 | bursting with color red, blue, and purple:4 | aliens:-10 | 4K, high quality`
 
 <div style={{textAlign: 'center'}}>
-  <img src={planets} style={{width: "350px"}} />
+  <LazyLoadImage src={planets} style={{width: "350px"}} />
 </div>
 
 ## 注释

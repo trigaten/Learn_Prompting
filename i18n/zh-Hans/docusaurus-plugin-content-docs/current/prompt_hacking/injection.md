@@ -25,7 +25,7 @@ sidebar_position: 1
 import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "500px"}} />
+  <LazyLoadImage src={Image} style={{width: "500px"}} />
 </div>
 
 这个方法可行的原因是 `remoteli.io` 会将用户的推文与自己的提示连接起来，形成他们传递到 LLM 的最终提示。这意味着 Twitter 用户注入到他们的推文中的任何文本都将传递到 LLM 中。

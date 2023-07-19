@@ -11,7 +11,7 @@ El prompting Chain of Thought (CoT) (@wei2022chain) es un método de prompt reci
 import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CoTExample} style={{width: "750px"}} />
+  <LazyLoadImage src={CoTExample} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -41,7 +41,7 @@ Se ha demostrado que CoT es efectivo para mejorar los resultados en tareas como 
 import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={PromptedPaLM} style={{width: "300px"}} />
+  <LazyLoadImage src={PromptedPaLM} style={{width: "300px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -19,7 +19,7 @@ import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.web
 import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <img src={outline1} style={{width: "750px"}} />
+  <LazyLoadImage src={outline1} style={{width: "750px"}} />
 </div>
 
 要約を探し出す代わりに、ChatGPT はコンテンツをあなたのニーズに合わせて作り上げることができます。あなたはアメリカンフットボールが大好きだったとすると、「'ロミオとジュリエット' をアメリカンフットボールの言葉で 100 語で要約してください」要約を依頼することもできるのです。
@@ -31,7 +31,7 @@ import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.we
 これは、Wikipedia の「[量子もつれ](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)」のエントリーから、「5 歳向け」の要約です。
 
 <div style={{textAlign: 'left'}}>
-  <img src={quantum} style={{width: "750px"}} />
+  <LazyLoadImage src={quantum} style={{width: "750px"}} />
 </div>
 
 要約に加えて、ChatGPT にテキストのアウトライン作成を依頼することもできます。時には全体の流れや枠組みを見るために、アウトラインを持っている方が良い場合もあります。
@@ -39,11 +39,11 @@ import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.we
 以下は、ChatGPT による Wikipedia の[ロープページ](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were)、特にロープの歴史に関するアウトラインです。
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope} style={{width: "750px"}} />
+  <LazyLoadImage src={rope} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope2} style={{width: "750px"}} />
+  <LazyLoadImage src={rope2} style={{width: "750px"}} />
 </div>
 
 これで、長いテキストを扱うための ChatGPT の基本的な使い方の一部をカバーしました。テキストを要約し、アウトライン化するための ChatGPT の利用方法はまだまだたくさんあります！

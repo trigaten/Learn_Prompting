@@ -11,7 +11,7 @@ sidebar_position: 5
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "750px"}} />
+  <LazyLoadImage src={SCImage} style={{width: "750px"}} />
 </div>
 <div style={{textAlign: 'center'}}>
 自洽性 (Wang et al.)

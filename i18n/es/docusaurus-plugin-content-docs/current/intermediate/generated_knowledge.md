@@ -100,7 +100,7 @@ Aunque el caso de uso anterior era similar a la forma en que se introdujo origin
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -116,7 +116,7 @@ Se generan M terminaciones diferentes utilizando esta misma pregunta (similar al
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -154,7 +154,7 @@ El enfoque de recitación aumentada (@sun2022recitationaugmented) es similar al 
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={RImage} style={{width: "250px"}} />
+  <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
 La idea aquí es hacer una prompt de pocos ejemplos al LLM para generar información _y_ responder en _un mismo_ paso. El hecho de que el modelo recite/genere conocimiento y responda la pregunta en el mismo paso es la principal diferencia del enfoque de conocimiento generado.

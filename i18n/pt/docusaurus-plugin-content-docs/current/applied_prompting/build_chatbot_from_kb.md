@@ -19,7 +19,7 @@ Os chatbots tradicionais são geralmente baseados em intenções, o que signific
 
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Como um chatbox tradicional funciona. Imagem produzida pela tradutora (adaptação do autor).</p>
 </div>
 
@@ -31,7 +31,7 @@ Aqui é onde o GPT-3 pode ser especialmente útil. Em vez de ter muitas intenç�
 Dessa forma, cada intenção está associada a um documento em vez de uma lista de perguntas e uma resposta específica, por exemplo, uma intenção para "problemas de login", uma intenção para "como se inscrever", etc. Quando um usuário faz uma pergunta sobre login, podemos passar o documento "problemas de login" para o GPT-3 como informações de contexto e gerar uma resposta específica para a pergunta do usuário.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Chatbox com Banco do Conhecimento + GPT-3. Imagem produzida pela tradutora (adaptação do autor).</p>
 </div>
 
@@ -52,7 +52,7 @@ A sequência do chatbot pode ser composta por duas etapas:
 A primeira etapa é essencialmente resolvida por uma [busca semântica](https://en.wikipedia.org/wiki/Semantic_search). Podemos usar modelos pré-treinados da biblioteca [sentence-transformers](https://www.sbert.net/examples/applications/semantic-search/README.html) e atribuir facilmente uma pontuação para cada documento. O documento com a pontuação mais alta é aquele que será usado para gerar a resposta do chatbot.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3Organized} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Como um chatbot que usa o GPT-3 poderia funcionar. O GPT-3 poderia ser usado para gerar uma resposta apropriada aproveitando as informações dos documentos da base de conhecimento. Imagem produzida pela tradutora (adaptação do autor).</p>
 </div>
 
@@ -67,7 +67,7 @@ Para criar o prompt, vamos experimentar usando:
 - Por último, **a pergunta do usuário**.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImagePrompt} style={{width: "700px"}} />
+  <LazyLoadImage src={ImagePrompt} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Informação usada para criar o prompt para o GPT-3. Imagem produzida pela tradutora (adaptação do autor)</p>
 </div>
 
@@ -80,7 +80,7 @@ Vamos começar nosso prompt usando a técnica <span className="yellow-highlight"
 Em seguida, suponha que a etapa de busca semântica extrai o seguinte documento da nossa base de conhecimento. Todos os documentos descrevem como o produto VideoGram funciona, que é um produto imaginário semelhante ao Instagram, mas apenas para vídeos.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageLogin} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>A document explaining how login to VideoGram works. Image by the author.</p>
 </div>
 

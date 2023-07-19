@@ -21,7 +21,7 @@ La anatomía básica de un prompt con Midjourney es `/imagine prompt: [IMAGE PRO
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut} style={{width: "750px"}} />
 </div>
 
 Se puede encontrar más información sobre los parámetros del prompt aquí: [Documentación de Midjourney - Lista de parámetros](https://docs.midjourney.com/docs/parameter-list)
@@ -33,7 +33,7 @@ Ejemplo:
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params} style={{width: "750px"}} />
 </div>
 
 # Prompts avanzados
@@ -43,14 +43,14 @@ Por defecto, Midjourney interpreta el prompt holísticamente. Al usar `::` Midjo
 /imagine prompt: astronaut and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi1} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi1} style={{width: "750px"}} />
 </div>
 
 ```text
 /imagine prompt: astronaut:: and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi2} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi2} style={{width: "750px"}} />
 </div>
 
 
@@ -62,7 +62,7 @@ Al cargar una imagen en Discord y utilizar su URL en un prompt, se puede instrui
 /imagine prompt: [image URL], impressionist painting
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_ip2} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_ip2} style={{width: "750px"}} />
 </div>
 
 ## Notes

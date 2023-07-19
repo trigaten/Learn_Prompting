@@ -48,7 +48,7 @@ import search from '@site/docs/assets/advanced/mrkl/search.webp';
 import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <LazyLoadImage src={mrkl_task} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -62,37 +62,37 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
 Спочатку я створив простий набір даних (dataset) на вкладці Dust `Datasets`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 Потім перейшов на вкладку `Specification` і завантажив набір даних за допомогою блоку `input`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 Згодом створив блок `llm`, який вилучає числа та математичні операції. Зверніть увагу, що у запиті я вказав, що ми будемо використовувати калькулятор Google. Модель, яку я застосовую (GPT-3), ймовірно, має певні знання про калькулятор Google із попереднього навчання.
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 Потім я створив блок `code`, який запускає простий код JavaScript для видалення пробілів із результату задачі.
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 Зрештою, я створив блок `search`, який надсилає переформатоване рівняння до калькулятора Google.
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 Нижче ми можемо побачити остаточні результати, які, безперечно, правильні!
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 Не соромтеся копіювати та експериментувати з цією платформою [тут](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7).

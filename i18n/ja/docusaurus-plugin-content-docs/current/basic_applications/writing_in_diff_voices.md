@@ -17,14 +17,14 @@ import friendship_millennial from '@site/docs/assets/basic_applications/Friendsh
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship} style={{width: "750px"}} />
 </div>
 
 うーん、非常に平凡です。
 あなたが「**カジュアルで会話的なスタイルで書いてください**」のような指定を追加すると、結果が変わります。その結果、ChatGPT は次のようなものを作り出します:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_informal} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_informal} style={{width: "750px"}} />
 </div>
 
 これは少しマシです。
@@ -32,20 +32,20 @@ import friendship_millennial from '@site/docs/assets/basic_applications/Friendsh
 そして、もし少し特別感を出したいなら、あなたは ChatGPT に、例えばマーク・トウェインのような文学の巨人のスタイルで書くように頼むことができます:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_mark} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_mark} style={{width: "750px"}} />
 </div>
 
 これでテキストは少し楽しくなり始めます。
 しかし、それが有名な作家である必要はありません。クリス・ロックのような有名な個人のスタイルを使うこともできます。
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_chris} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_chris} style={{width: "750px"}} />
 </div>
 
 それとは別に、「ミレニアル世代」のスタイルはどうでしょう？
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_millennial} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_millennial} style={{width: "750px"}} />
 </div>
 
 ## あなたのライティングスタイルをコピーする

@@ -113,7 +113,7 @@ Embora o caso de uso acima tenha sido semelhante à forma como o conhecimento ge
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -127,7 +127,7 @@ Na etapa de geração de conhecimento, o %%LLM|LLM%% é solicitado a gerar um *c
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -168,7 +168,7 @@ A abordagem de recitação-aumentada (@sun2022recitationaugmented) é semelhante
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={RImage} style={{width: "250px"}} />
+  <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

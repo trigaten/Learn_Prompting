@@ -9,7 +9,7 @@ Durante este curso, vimos muitos métodos de prompt diferentes que podem ser usa
 import math from '@site/docs/assets/reliability/math.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={math} style={{width: "500px"}} />
+  <LazyLoadImage src={math} style={{width: "500px"}} />
 </div>
 
 O MathPrompter possui **quatro** etapas. Explicaremos as etapas usando o seguinte exemplo. O exemplo é retirado diretamente do artigo.

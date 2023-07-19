@@ -15,7 +15,7 @@ ReAct(@yao2022react)(reason, act) - это парадигма, позволяю�
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_qa} style={{width: "500px"}} />
+  <LazyLoadImage src={react_qa} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -34,7 +34,7 @@ import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_performance} style={{width: "500px"}} />
+  <LazyLoadImage src={react_performance} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

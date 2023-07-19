@@ -10,7 +10,7 @@ sidebar_position: 7
 import Image from '@site/docs/assets/tooling/promptsource.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Funciones

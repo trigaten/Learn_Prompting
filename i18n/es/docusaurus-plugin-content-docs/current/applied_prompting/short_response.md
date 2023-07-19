@@ -50,7 +50,7 @@ Ahora podemos agregar formato y direcciones de contexto.
 El ejemplo de reformulación anterior fue generado con [ChatGPT](https://openai.com/blog/chatgpt/) de OpenAI.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Auto} style={{width: "500px"}} />
+  <LazyLoadImage src={Auto} style={{width: "500px"}} />
 </div>
 
 ### Iteración

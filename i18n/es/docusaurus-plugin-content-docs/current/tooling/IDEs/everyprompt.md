@@ -10,7 +10,7 @@ que proporciona una interfaz profesional para la iteración de prompts individua
 import Image from '@site/docs/assets/tooling/everyprompt.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Características

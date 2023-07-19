@@ -10,7 +10,7 @@ import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
 <div style={{textAlign: 'left'}}>
-  <img src={SkippyHeader} style={{width: "700px"}} />
+  <LazyLoadImage src={SkippyHeader} style={{width: "700px"}} />
 </div>
 
 ## Вступ
@@ -35,7 +35,7 @@ import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.web
 ## Запит
 
 <div style={{textAlign: 'left'}}>
-  <img src={Skippy} style={{width: "700px"}} />
+  <LazyLoadImage src={Skippy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Повний запит чат-бота Скіппі із заголовка статті</p>
 </div>
 
@@ -46,7 +46,7 @@ import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.web
 ChatGPT — це і мовна модель, і інтерфейс користувача. Запит, введений користувачем до інтерфейсу, фактично вставляється в більший запит, який містить увесь діалог між користувачем і ChatGPT. Це дозволяє базовій мовній моделі зрозуміти контекст розмови та відповідати належним чином.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ChatGPT} style={{width: "600px"}} />
+  <LazyLoadImage src={ChatGPT} style={{width: "600px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Приклад вставки запиту користувача перед надсиланням його до моделі</p>
 </div>
 
@@ -71,7 +71,7 @@ GPT-3 здатний "навчатися" з простих вказівок а�
 Мати чат-бота, який активно ставить запитання та отримує зворотний зв'язок від користувача, може стати в пригоді. Нижче наведено приклад запиту чат-бота Therapy, який ставитиме запитання та відповідатиме, щоб допомогти користувачеві подумати про свій день.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Therapy} style={{width: "700px"}} />
+  <LazyLoadImage src={Therapy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Запит для чат-бота Therapy</p>
 </div>
 

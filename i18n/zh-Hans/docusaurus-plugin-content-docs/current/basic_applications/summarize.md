@@ -20,7 +20,7 @@ import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.web
 import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <img src={outline1} style={{width: "750px"}} />
+  <LazyLoadImage src={outline1} style={{width: "750px"}} />
 </div>
 
 虽然您可以自己查找摘要，但 ChatGPT 还可以根据您的需要定制内容。比如你真的很喜欢足球，那么你可以让 ChatGPT “用美式足球术语给我 100 字的‘罗密欧与朱丽叶’摘要。”
@@ -32,7 +32,7 @@ import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.we
 以下是为 5 岁年龄的孩童总结的 [在此处粘贴文本](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon) 的摘要：
 
 <div style={{textAlign: 'left'}}>
-  <img src={quantum} style={{width: "750px"}} />
+  <LazyLoadImage src={quantum} style={{width: "750px"}} />
 </div>
 
 除了摘要之外，您还可以要求 ChatGPT 为文本块编写大纲，这样你就可以看到整篇文章的线索或框架。
@@ -40,11 +40,11 @@ import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.we
 以下是 ChatGPT 在维基百科页面上关于“rope”的大纲，特别是关于[rope](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were)的历史。
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope} style={{width: "750px"}} />
+  <LazyLoadImage src={rope} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'left'}}>
-  <img src={rope2} style={{width: "750px"}} />
+  <LazyLoadImage src={rope2} style={{width: "750px"}} />
 </div>
 
 我们刚刚介绍了使用 ChatGPT 处理长文本的一些非常基础的知识。当然还有更多方法可以使用 ChatGPT 来总结和概述文本！

@@ -33,12 +33,12 @@ import focus_final from '@site/static/img/computer.webp';
 import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets1} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets1} style={{width: "750px"}} />
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets2} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets2} style={{width: "750px"}} />
 </div>
 
 Pensé que estos resultados eran bastante decentes para un primer intento; especialmente me gustó el cohete de la parte inferior izquierda.
@@ -46,13 +46,13 @@ Pensé que estos resultados eran bastante decentes para un primer intento; espec
 A continuación, quería una computadora en el mismo estilo: `Computadora blanca y azul de baja poli sentada en un prado verde disperso`
 
 <div style={{textAlign: 'center'}}>
-  <img src={computer_1} style={{width: "750px"}} />
+  <LazyLoadImage src={computer_1} style={{width: "750px"}} />
 </div>
 
 Finalmente, necesitaba un astronauta! `Astronauta de baja poligonización en blanco y azul sentado en un prado verde escaso con montañas de baja poligonización en el fondo` pareció funcionar.
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_1} style={{width: "750px"}} />
+  <LazyLoadImage src={astronaut_1} style={{width: "750px"}} />
 </div>
 
 Pensé que el segundo era decente.
@@ -66,7 +66,7 @@ para limitar el estilo. Intenté con este prompt:
 `Un mundo de baja poligonización, con un astronauta con traje blanco y visor azul sentado en una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_2} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_2} style={{width: "250px"}} />
 </div>
 
 Estos no eran geniales, así que decidí empezar con el cohete en su lugar.
@@ -74,13 +74,13 @@ Estos no eran geniales, así que decidí empezar con el cohete en su lugar.
 `Un mundo de baja poligonización, con un cohete blanco y azul despegando desde una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
 Estos no son particularmente buenos, pero después de un poco de iteración, terminé con esto:
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_final} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_final} style={{width: "250px"}} />
 </div>
 
 Ahora necesitaba una mejor laptop.
@@ -88,7 +88,7 @@ Ahora necesitaba una mejor laptop.
 `Un mundo de baja poligonización, con una laptop blanca y azul sentada en una pradera verde escasa con montañas de baja poligonización en el fondo. La pantalla es completamente azul. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={laptop_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
 Obtuve algunos resultados inconsistentes; Me gustó el de la esquina inferior derecha, pero decidí ir en una dirección diferente.
@@ -96,7 +96,7 @@ Obtuve algunos resultados inconsistentes; Me gustó el de la esquina inferior de
 `Un mundo de baja poligonización, con una gema blanca y azul que brilla sentada en una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
 Esto no estaba del todo bien. Intentemos algo mágico y brillante.
@@ -104,7 +104,7 @@ Esto no estaba del todo bien. Intentemos algo mágico y brillante.
 `Un mundo de baja poligonización, con una gema blanca y azul brillante que flota mágicamente en el centro de la pantalla sobre una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_2} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
 Me gustaron estas imágenes, pero quería que la piedra estuviera en el centro de la pantalla.
@@ -112,14 +112,14 @@ Me gustaron estas imágenes, pero quería que la piedra estuviera en el centro d
 `Un mundo de baja poligonización, con una piedra preciosa de color azul brillante flotando mágicamente en el centro de la pantalla sobre una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_3} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
 En algún lugar por aquí, utilicé la capacidad de SD para que una imagen anterior influyera en imágenes futuras.
 Y así llegué a:
 
 <div style={{textAlign: 'center'}}>
-  <img src={focus_final} style={{width: "250px"}} />
+  <LazyLoadImage src={focus_final} style={{width: "250px"}} />
 </div>
 
 Finalmente, necesitaba un astronauta.
@@ -127,7 +127,7 @@ Finalmente, necesitaba un astronauta.
 `Un mundo de baja poligonización, con un astronauta con traje blanco y visor azul sentado en una pradera verde escasa con montañas de baja poligonización en el fondo. Altamente detallado, isométrico, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_final} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_final} style={{width: "250px"}} />
 </div>
 
 En este punto, estaba lo suficientemente satisfecho con la consistencia de estilo entre mis tres imágenes como para usarlas en el sitio web. Lo más importante para mí fue que este fue un proceso muy iterativo y que requirió mucha investigación, y tuve que modificar mis expectativas e ideas mientras experimentaba con diferentes consignas y modelos.

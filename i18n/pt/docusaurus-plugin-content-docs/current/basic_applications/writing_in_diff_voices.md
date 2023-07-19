@@ -14,14 +14,14 @@ import friendship_millennial from '@site/i18n/pt/docusaurus-plugin-content-docs/
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship} style={{width: "750px"}} />
 </div>
 
 Blah. É tão sem graça.
 Os resultados mudam quando você adiciona especificações, como `**Por favor, escreva em um estilo informal e conversacional.**` O ChatGPT retorna algo assim:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_informal} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_informal} style={{width: "750px"}} />
 </div>
 
 Bom, já melhorou.
@@ -30,20 +30,20 @@ Se você quiser uma coisa mais aprimorada, você pode pedir ao ChatGPT para escr
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_mark} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_mark} style={{width: "750px"}} />
 </div>
 
 Agora o texto está tomando vida!
 Mas não precisa ser como um escritor famoso. Você pode utilizar qualquer pessoa conhecida, como o Whindersson Nunes.
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_chris} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_chris} style={{width: "750px"}} />
 </div>
 
 Quer um jeitinho mais "mineirinho"?
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_millennial} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_millennial} style={{width: "750px"}} />
 </div>
 
 ## Copiando o seu Estilo de Escrever

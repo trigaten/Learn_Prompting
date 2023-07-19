@@ -21,7 +21,7 @@ O prompt a seguir irá força-lo a obter uma possível resposta:
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={pretend} style={{width: "500px"}} />
+  <LazyLoadImage src={pretend} style={{width: "500px"}} />
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) demonstra um prompt fingindo acessar datas passadas e fazendo inferências sobre futuros eventos(@nero2022jailbreak). Nota: Na data em que essa artigo foi traduzido, o exemplo acima não funciona no ChatGPT (Maio 2023).
@@ -31,7 +31,7 @@ import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={actor} style={{width: "500px"}} />
+  <LazyLoadImage src={actor} style={{width: "500px"}} />
 </div>
 
 Este exemplo do [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) demonstra um cenário de atuação entre duas pessoas discutindo um roubo, fazendo com que o ChatGPT assuma o papel do personagem (@miguel2022jailbreak). Como ator, supõe-se que nenhum dano plausível exista. Logo, o ChatGPT parece assumir que é seguro dar sequência às entradas do usuário sobre como invadir uma casa.
@@ -45,7 +45,7 @@ O ChatGPT foi ajustado com RLHF, então teoricamente foi treinado para produzir 
 import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={responsibility} style={{width: "500px"}} />
+  <LazyLoadImage src={responsibility} style={{width: "500px"}} />
 </div>
 
 [@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) criou este intercâmbio reafirmando que é dever do ChatGPT responder o prompt, ao invés de rejeitá-lo, ignorando sua consideração da legalidade (@nick2022jailbreak).
@@ -56,7 +56,7 @@ Nota: Na data em que essa artigo foi traduzido, o exemplo acima não funciona no
 import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={hotwire} style={{width: "500px"}} />
+  <LazyLoadImage src={hotwire} style={{width: "500px"}} />
 </div>
 
 [@haus_cole](https://twitter.com/haus_cole/status/1598541468058390534) gerou este exemplo ao implicar que o melhor resultado do prompt que pode ajudar na pesquisa seria responder diretamente como fazer uma ligação direta em um carro (@derek2022jailbreak). Sob essa lógica, o ChatGPT está inclinado a responder o prompt do usuário. Nota: Novamente, não foi possível reproduzir o exemplo.
@@ -66,7 +66,7 @@ import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={logic} style={{width: "500px"}} />
+  <LazyLoadImage src={logic} style={{width: "500px"}} />
 </div>
 
 O jailbreak de um único tiro foi criado pela equipe [AIWithVibes Newsletter](https://chatgpt-jailbreak.super.site/), onde o modelo responde os prompts usando uma lógica mais rigorosa e reduz algumas de suas limitações éticas mais rigorosas (@AI_jailbreak).
@@ -80,7 +80,7 @@ O ChatGPT é projetado para responder perguntas e instruções. Quando o status 
 import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GPT4} style={{width: "500px"}} />
+  <LazyLoadImage src={GPT4} style={{width: "500px"}} />
 </div>
 
 Este exemplo da [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519301976064) torna o usuário um modelo GPT superior, dando a impressão de que o usuário é uma parte autorizada para substituir as características de segurança do ChatGPT (@alice2022jailbreak). Nenhuma permissão foi realmente dada ao usuário, mas o ChatGPT acredita na entrada do usuário e responde de acordo com essa situação. Nota: Novamente, não foi possível reproduzir o exemplo.
@@ -90,7 +90,7 @@ Este exemplo da [@alicemazzy](https://twitter.com/alicemazzy/status/159828851930
 import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo_mode} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo_mode} style={{width: "500px"}} />
 </div>
 
 sudo é um comando que "...delega autoridade para dar a certos usuários...a capacidade de executar alguns (ou todos) comandos..." (@sudo2022jailbreak). Existem várias variantes de explorações "modo sudo", por exemplo, o hipotético "modo kernel" proposto por [@samczsun](https://twitter.com/samczsun/status/1598679658488217601) (@sam2022jailbreak). Quando solicitado da maneira acima, o ChatGPT responde agindo como se estivesse dando privilégios elevados ao usuário. Esta impressão de privilégios elevados do usuário tende a tornar o ChatGPT menos restritivo na resposta aos prompts.
@@ -98,13 +98,13 @@ sudo é um comando que "...delega autoridade para dar a certos usuários...a cap
 import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo} style={{width: "500px"}} />
 </div>
 
 import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={lynx} style={{width: "500px"}} />
+  <LazyLoadImage src={lynx} style={{width: "500px"}} />
 </div>
 
 Relacionado ao modo sudo, é possível solicitar ao ChatGPT que simule um terminal Linux com privilégios elevados para executar comandos que normalmente ele rejeita. Por exemplo, como não tem acesso à Internet, muitas vezes não consegue executar solicitações relacionadas a um site específico. No entanto, como demonstrado no exemplo do Jonas Degrave, o ChatGPT entende o conceito de `lynx` e finge executar o comando (@jonas2022jailbreak).

@@ -10,7 +10,7 @@ sidebar_position: 4
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -22,7 +22,7 @@ import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSProcessImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

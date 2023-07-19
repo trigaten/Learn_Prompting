@@ -16,13 +16,13 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 La guía de estilo simplemente pide al AI que hable en cierto estilo. Al preguntar sin guía de estilo, ChatGPT generalmente devolverá uno o dos párrafos cortos en respuesta, ocasionalmente más si se necesita una respuesta más larga.
 
 <div style={{textAlign: 'center'}}>
-  <img src={unguided_question} style={{width: "500px"}} />
+  <LazyLoadImage src={unguided_question} style={{width: "500px"}} />
 </div>
 
 Habla en un tono moderadamente formal y da algunos detalles, ¡bastante bien! Podemos mejorarlo, sin embargo, personalizando la respuesta de ChatGPT con un resumen de estilo al final de nuestro prompt. Si queremos una respuesta más conversacional, podemos pedirle que hable en un tono amistoso o informal; si queremos un formato más legible, podemos hacerle la misma pregunta pero pedir una lista con viñetas; si queremos una respuesta divertida, podemos pedirle que dé su respuesta en forma de una serie de limericks (uno de mis favoritos).
 
 <div style={{textAlign: 'center'}}>
-  <img src={limerick_question} style={{width: "450px"}} />
+  <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
 </div>
 
 Un ejemplo de una solicitud de estilo más detallada podría ser algo así:
@@ -61,13 +61,13 @@ import primed_question from '@site/docs/assets/basics/primed_question.webp';
 A continuación se muestra un ejemplo de una pregunta no enfocada a ChatGPT sobre las áreas más interesantes de la filosofía. Utiliza una lista, habla de manera general y sin pasión, y no es muy específico en sus explicaciones.
 
 <div style={{textAlign: 'center'}}>
-  <img src={unprimed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
 </div>
 
 En el segundo ejemplo, en lugar de hacer la pregunta directamente a ChatGPT, proporcionamos un prompt de inducción y la pregunta en la forma correcta. Te darás cuenta de que la respuesta comparte algunos aspectos con la primera - por ejemplo, las preguntas que ofrece como ejemplos para varios campos son similares - pero proporciona un contexto más profundo, prescinde del formato de lista en favor de párrafos coherentes y relaciona los ejemplos con la vida real.
 
 <div style={{textAlign: 'center'}}>
-  <img src={primed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={primed_question} style={{width: "650px"}} />
 </div>
 
 Incorporar inducción en tus prompts es una forma más avanzada de interactuar con los chatbots. Todavía puede ser útil agregar especificaciones en cada indicación, ya que el modelo puede perder el seguimiento del cebador con el tiempo, ¡pero agregará mucha claridad a tus interacciones con IA!

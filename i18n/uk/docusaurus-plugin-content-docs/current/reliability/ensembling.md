@@ -14,7 +14,7 @@ DiVeRSe(@li2022advance) (**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps
 import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={diverse} style={{width: "750px"}} />
+  <LazyLoadImage src={diverse} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -125,7 +125,7 @@ DiVeRSe використовує 5 різних запитів для певни
 import ama from '@site/docs/assets/reliability/AMA_Prompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama} style={{width: "750px"}} />
+  <LazyLoadImage src={ama} style={{width: "750px"}} />
 </div>
 
 Запит «Запитайте мене про будь-що» (AMA) (@arora2022ama) — це підхід, подібний до DiVeRSe. Однак, і його крок з кількома запитами, і крок агрегування відповідей суттєво відрізняються. Основна ідея AMA полягає в тому, щоб використовувати ВММ для генерації кількох запитів замість того, щоб просто використовувати різні приклади з кількома ілюстраціями.
@@ -162,7 +162,7 @@ AMA показує, що ви можете взяти запитання та п
 import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama_multi} style={{width: "800px"}} />
+  <LazyLoadImage src={ama_multi} style={{width: "800px"}} />
 </div>
 
 Це може вивести:

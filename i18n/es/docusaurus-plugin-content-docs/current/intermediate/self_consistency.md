@@ -16,7 +16,7 @@ las rutas de razonamiento". En la práctica, esto significa tomar la respuesta m
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "750px"}} />
+  <LazyLoadImage src={SCImage} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

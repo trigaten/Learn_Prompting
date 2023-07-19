@@ -9,7 +9,7 @@ Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) es un se
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -21,7 +21,7 @@ Técnicamente, el proceso completo de Zero-shot-CoT implica dos prompts/completi
 import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSProcessImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -34,7 +34,7 @@ A continuación se muestra un diagrama de lo que haremos en Zapier. Cada vez que
 1.  Se almacena la salida en una base de datos.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}} />
+  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
 </div>
 
 ## Configuración en Zapier
@@ -46,7 +46,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
   <div>
   Así es como finalmente se verá el diagrama de acción de Zapier.
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
@@ -55,7 +55,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-    <img src={Step1} style={{width: "500px"}} />
+    <LazyLoadImage src={Step1} style={{width: "500px"}} />
         </div>
       </div>
     </details>
@@ -65,7 +65,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step2} style={{width: "500px"}} />
+  <LazyLoadImage src={Step2} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -76,7 +76,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step3} style={{width: "500px"}} />
+  <LazyLoadImage src={Step3} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -86,7 +86,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step4} style={{width: "500px"}} />
+  <LazyLoadImage src={Step4} style={{width: "500px"}} />
 </div>
       </div>
     </details>

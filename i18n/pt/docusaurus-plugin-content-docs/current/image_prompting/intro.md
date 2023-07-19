@@ -36,12 +36,12 @@ import focus_final from '@site/static/img/computer.webp';
 import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets1} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets1} style={{width: "750px"}} />
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets2} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets2} style={{width: "750px"}} />
 </div>
 
 Eu achei esses resultados bem decentes para uma primeira tentativa; eu gostei principalmente do foguete na parte de baixo à esquerda.
@@ -49,13 +49,13 @@ Eu achei esses resultados bem decentes para uma primeira tentativa; eu gostei pr
 Então depois disso, eu criei um computador no mesmo estilo `Computador branco e azul no estilo low poly em um campo espaso`
 
 <div style={{textAlign: 'center'}}>
-  <img src={computer_1} style={{width: "750px"}} />
+  <LazyLoadImage src={computer_1} style={{width: "750px"}} />
 </div>
 
 Finalmente, eu precisava de um astronauta! Para isso, eu criei o prompt: `Astronauta em azul e branco no estilo low poly sentado em um campo esparso verde no estilo low poly, com montanhas no fundo`. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_1} style={{width: "750px"}} />
+  <LazyLoadImage src={astronaut_1} style={{width: "750px"}} />
 </div>
 
 Na minha opinião a segunda imagem está ok. 
@@ -67,7 +67,7 @@ Depois de fazer algumas pesquisas sobre o [r/StableDiffusion](https://www.reddit
 `Um mundo low-poly, com um astronauta de terno branco e viseira azul sentado em um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_2} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_2} style={{width: "250px"}} />
 </div>
 
 Eu não gostei muito das imagens, então eu decidi começar com a nave.
@@ -75,14 +75,14 @@ Eu não gostei muito das imagens, então eu decidi começar com a nave.
 `Um mundo low-poly, com uma nave branca e azul decolando de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
 
 Esses também não estavam ótimos, mas depois de testar um pouco eu cheguei a esse resultado:
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_final} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_final} style={{width: "250px"}} />
 </div>
 
 Então eu precisava de um laptop melhor.
@@ -90,7 +90,7 @@ Então eu precisava de um laptop melhor.
 `Um mundo low-poly, com um laptop branco e azul sentado em um campo verde, com montanhas low-poly ao fundo. O tela está toda azul. Alto detalhamento, isométrico, 4K.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={laptop_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
 Como você pode ver, eu obtive resultados bastante inconsistentes. Gostei do da parte de baixo da direita, mas decidi ir por outro caminho.
@@ -98,7 +98,7 @@ Como você pode ver, eu obtive resultados bastante inconsistentes. Gostei do da 
 `Um mundo low-poly, com uma chama branca e azul magicamente flutuando no meio da tela, acima de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
 Isso não estava bom o suficiente. Vamos tentar algo mais misterioso e brilhante:
@@ -106,7 +106,7 @@ Isso não estava bom o suficiente. Vamos tentar algo mais misterioso e brilhante
 `Um mundo low-poly, com uma pedra branca e azul brilhando magicamente flutuando no meio da tela, acima de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_2} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
 Eu gostei desses, mas eu queria a pedra no meio da tela.
@@ -114,13 +114,13 @@ Eu gostei desses, mas eu queria a pedra no meio da tela.
 `Um mundo low-poly, com uma pedra azul brilhando magicamente flutuando no meio da tela, acima de um campo verde, com montanhas low-poly ao fundo. Alto detalhamento, isométrico, 4K.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_3} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
 Aqui, eu usei a capacidade do Stable Diffusion de ter uma imagem anterior como influencia para as próximas. E assim eu cheguei a esse resultado:
 
 <div style={{textAlign: 'center'}}>
-  <img src={focus_final} style={{width: "250px"}} />
+  <LazyLoadImage src={focus_final} style={{width: "250px"}} />
 </div>
 
 Então, eu finalmente parti para o astronauta.
@@ -128,7 +128,7 @@ Então, eu finalmente parti para o astronauta.
 `Um mundo low poly, com um astronauta de terno branco e viseira azul sentado em um campo verde espaçoso com montanhas low poly no fundo. Altamente detalhada, isométrica, em 4K.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_final} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_final} style={{width: "250px"}} />
 </div>
 
 Neste ponto, eu estava suficientemente satisfeito com a consistência de estilo entre as minhas três imagens para usá-las no site. As minhas principais conclusões ao finalizar essa tarefa foram que esse foi um processo muito iterativo, pesado de pesquisa, e precisei modificar minhas expectativas e ideias conforme experimentei com diferentes prompts e modelos.

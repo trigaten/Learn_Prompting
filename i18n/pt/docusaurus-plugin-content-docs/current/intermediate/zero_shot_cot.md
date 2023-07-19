@@ -9,7 +9,7 @@ Prompts do tipo Cadeia de Pensamento Zero Shot (ou Zero Shot Chain of Thought - 
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -22,7 +22,7 @@ Tecnicamente, o processo completo de Cadeia de Pensamento Zero Shot envolve duas
 import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSProcessImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

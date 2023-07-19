@@ -51,7 +51,7 @@ Agora podemos adicionar direções de formatação e contexto.
 O exemplo de reescrita acima foi gerado com o OpenAI [ChatGPT](https://openai.com/blog/chatgpt/).
 
 <div style={{textAlign: 'left'}}>
-  <img src={Auto} style={{width: "500px"}} />
+  <LazyLoadImage src={Auto} style={{width: "500px"}} />
 </div>
 
 ### Iteração

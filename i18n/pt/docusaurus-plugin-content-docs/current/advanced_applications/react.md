@@ -13,7 +13,7 @@ Examine a imagem à seguir. A pergunta na caixa superior é proveniente do HotPo
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_qa} style={{width: "500px"}} />
+  <LazyLoadImage src={react_qa} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -29,7 +29,7 @@ O Google usou o PaLM(@chowdhery2022palm) LLM em experimentos com ReAct. Compara�
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_performance} style={{width: "500px"}} />
+  <LazyLoadImage src={react_performance} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

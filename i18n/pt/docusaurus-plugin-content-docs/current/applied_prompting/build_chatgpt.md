@@ -10,7 +10,7 @@ import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
 <div style={{textAlign: 'left'}}>
-  <img src={SkippyHeader} style={{width: "700px"}} />
+  <LazyLoadImage src={SkippyHeader} style={{width: "700px"}} />
 </div>
 
 ## Introdução 
@@ -36,7 +36,7 @@ Da mesma forma como outro modelos da série GPT-3.5, ChatGPT foi treinado usando
 ## O Prompt
 
 <div style={{textAlign: 'left'}}>
-  <img src={Skippy} style={{width: "700px"}} />
+  <LazyLoadImage src={Skippy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Conversa com Skippy no ChatGPT.</p>
 </div>
 
@@ -45,7 +45,7 @@ Da mesma forma como outro modelos da série GPT-3.5, ChatGPT foi treinado usando
 O ChatGPT é tanto um modelo de linguagem quanto uma interface de usuário. A entrada de instruções fornecida pelo usuário à interface é inserida em uma instrução maior que contém toda a conversa entre o usuário e o ChatGPT. Isso permite que o modelo de linguagem subjacente compreenda o contexto da conversa e responda adequadamente.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ChatGPT} style={{width: "600px"}} />
+  <LazyLoadImage src={ChatGPT} style={{width: "600px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Inserção de exemplo de prompt do usuário antes de enviar para o modelo</p>
 </div>
 
@@ -69,7 +69,7 @@ Existem muitos casos de uso diferentes de prompts de chatbot que armazenam conve
 Pode ser útil ter um chatbot que faça perguntas e obtenha feedback do usuário. Abaixo está um exemplo de prompt de chatbot de terapia que fará perguntas e seguirá para ajudar o usuário a pensar sobre seu dia.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Therapy} style={{width: "700px"}} />
+  <LazyLoadImage src={Therapy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Therapy chatbot prompt</p>
 </div>
 

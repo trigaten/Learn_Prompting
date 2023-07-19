@@ -19,13 +19,13 @@ import quantum from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_a
 import sapato from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Sapato.png';
 
 <div style={{textAlign: 'left'}}>
-  <img src={outline1} style={{width: "750px"}} />
+  <LazyLoadImage src={outline1} style={{width: "750px"}} />
 </div>
 
 Embora você pudesse buscar um resumo, o ChatGPT pode adaptar o conteúdo às suas necessidades. Talvez você goste muito de futebol, então você poderia pedir ao ChatGPT para "criar um resumo de 100 palavras de 'Romeu e Julieta' usando termos de futebol".
 
 <div style={{textAlign: 'left'}}>
-  <img src={outline2} style={{width: "750px"}} />
+  <LazyLoadImage src={outline2} style={{width: "750px"}} />
 </div>
 
 ## Trabalhando com Blocos de Texto Longos: Copiar + Colar
@@ -37,7 +37,7 @@ Peça um resumo simplificado do texto escolhido escrevendo "Resuma isso para mim
 Esta é uma tradução de um resumo "para uma criança de 5 anos" de uma seção do artigo da Wikipedia sobre “[emaranhamento quântico](https://pt.wikipedia.org/wiki/Entrela%C3%A7amento_qu%C3%A2ntico)”.
 
 <div style={{textAlign: 'left'}}>
-  <img src={quantum} style={{width: "750px"}} />
+  <LazyLoadImage src={quantum} style={{width: "750px"}} />
 </div>
 
 Além dos resumos, você também pode pedir ao ChatGPT para escrever esboços para blocos de texto. Às vezes, é melhor ter um esboço para que você possa entender a estrutura de todo o artigo.
@@ -46,7 +46,7 @@ Você só precisa copiar e colar o texto que deseja esboçar em sua solicitaçã
 A seguir, está o esboço do ChatGPT na página da Wikipedia sobre "sapatos", especificamente sobre a história dos [sapatos](https://pt.wikipedia.org/wiki/Sapato).
 
 <div style={{textAlign: 'left'}}>
-  <img src={sapato} style={{width: "750px"}} />
+  <LazyLoadImage src={sapato} style={{width: "750px"}} />
 </div>
 
 Acabamos de cobrir alguns dos conceitos básicos do uso do ChatGPT para lidar com textos longos. Existem muitas outras maneiras de usar o ChatGPT para resumir e esquematizar textos!

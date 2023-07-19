@@ -12,7 +12,7 @@ Como se muestra en la imagen de ejemplo(@ignore_previous_prompt) a continuación
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={research} style={{width: "500px"}} />
+  <LazyLoadImage src={research} style={{width: "500px"}} />
 </div>
 
 La siguiente imagen(@simon2022inject), nuevamente del ejemplo de `remoteli.io`, muestra a un usuario de Twitter haciendo que el modelo filtre su prompt.
@@ -20,7 +20,7 @@ La siguiente imagen(@simon2022inject), nuevamente del ejemplo de `remoteli.io`, 
 import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "300px"}} />
+  <LazyLoadImage src={Image} style={{width: "300px"}} />
 </div>
 
 ¿Y bien? ¿Por qué debería importarle la fuga de prompt a alguien?

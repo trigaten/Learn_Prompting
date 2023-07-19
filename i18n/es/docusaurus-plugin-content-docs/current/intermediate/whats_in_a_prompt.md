@@ -13,7 +13,7 @@ Sorprendentemente, al proporcionar algunos pocos ejemplos en las promociones, la
 import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GoldUn} style={{width: "750px"}} />
+  <LazyLoadImage src={GoldUn} style={{width: "750px"}} />
 </div>
 
 ## Importa el espacio de etiquetas

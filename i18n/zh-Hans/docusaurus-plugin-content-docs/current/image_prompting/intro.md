@@ -33,12 +33,12 @@ import focus_final from '@site/static/img/computer.webp';
 import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets1} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets1} style={{width: "750px"}} />
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets2} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets2} style={{width: "750px"}} />
 </div>
 
 我认为这些结果对于第一次尝试来说是非常不错的，我特别喜欢左下角的火箭。
@@ -47,13 +47,13 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 接下来，我想要生成同样风格的一台电脑: `Low poly white and blue computer sitting in a sparse green meadow`
 
 <div style={{textAlign: 'center'}}>
-  <img src={computer_1} style={{width: "750px"}} />
+  <LazyLoadImage src={computer_1} style={{width: "750px"}} />
 </div>
 
 最后，我想要一个宇航员！`Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background` 看起来很奏效。
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_1} style={{width: "750px"}} />
+  <LazyLoadImage src={astronaut_1} style={{width: "750px"}} />
 </div>
 
 我认为第二张图还不错。
@@ -64,7 +64,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_2} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_2} style={{width: "250px"}} />
 </div>
 
 这些结果不是很好，所以我决定先从「火箭」入手
@@ -72,13 +72,13 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
 这些结果并不是特别好，但在进行了一些尝试之后，我最终得到了下面的图像
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_final} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_final} style={{width: "250px"}} />
 </div>
 
 现在我想要一个更好的笔记本电脑
@@ -86,7 +86,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={laptop_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
 我得到的结果不太一致；虽然我喜欢右下角的那个图像，但我决定走另外一条路线。
@@ -94,7 +94,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
 这不是很对，让我们尝试一下魔幻的发光效果。
@@ -102,7 +102,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_2} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
 我喜欢这些图像，但是希望石头在屏幕的中间。
@@ -110,13 +110,13 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_3} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
 在这个阶段，我使用了 Stable Diffusion，让之前的图片对后续的图片产生一些影响。于是我得到了以下结果：
 
 <div style={{textAlign: 'center'}}>
-  <img src={focus_final} style={{width: "250px"}} />
+  <LazyLoadImage src={focus_final} style={{width: "250px"}} />
 </div>
 
 最终，我得到了这个。
@@ -124,7 +124,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_final} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_final} style={{width: "250px"}} />
 </div>
 
 在这一点上，我对我的三张图片之间的风格一致性感到满意，可以在网站上使用它们了。对我来说，主要的收获是这是一个非常反复、不断研究的过程，我必须根据不同的提示和模型进行实验，调整我的期望和想法。

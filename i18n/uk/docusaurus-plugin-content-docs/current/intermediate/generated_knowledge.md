@@ -110,7 +110,7 @@ sidebar_position: 7
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -124,7 +124,7 @@ import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -163,7 +163,7 @@ import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={RImage} style={{width: "250px"}} />
+  <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
 Ідея полягає в тому, щоб кількома кроками спонукати ВМM згенерувати інформацію *і* та відповідь у *цьому ж* кроці. Те, що він відтворює/генерує знання і відповідає на питання на одному кроці, є головною відмінністю від підходу, заснованого на згенерованому знанні.

@@ -36,7 +36,7 @@ ChatGPT를 통해서 인상깊고, 상호작용하는 이야기를 생성하고 
 import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <LazyLoadImage src={CSharp} style={{width: "750px"}} />
 </div>
 
 우리는 스토리를 만드는 것을 볼 수 있습니다, 하지만 Csharp(프로그래밍 언어) 코드 블록 안에서만 작성하는 것을 볼 수 있습니다. 우리가 원하는 것은 이게 아니기 떄문에 프롬프트를 조금 수정해보겠습니다:

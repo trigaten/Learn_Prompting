@@ -35,7 +35,7 @@ import Steps from '@site/docs/assets/basics/steps.svg';
 import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <LazyLoadImage src={CSharp} style={{width: "750px"}} />
 </div>
 
 我们可以看到，它生成了一个故事，但它是在 csharp（一种编程语言）的代码块中写的。也许我们不想要这样的形式，所以我们将把提示修改成：

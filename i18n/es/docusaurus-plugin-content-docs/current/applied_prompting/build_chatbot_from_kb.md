@@ -17,7 +17,7 @@ Los avances recientes en modelos de lenguaje grandes (LLMs, por sus siglas en in
 Los chatbots tradicionales suelen estar basados en intenciones, lo que significa que son diseñados para responder a intenciones de usuario específicas. Cada intención está compuesta por un conjunto de preguntas de muestra y una respuesta asociada. Por ejemplo, la intención "Clima" puede incluir preguntas de muestra como "¿Cómo está el clima hoy?" o "¿Lloverá hoy?" y una respuesta como "Hoy estará soleado". Cuando un usuario hace una pregunta, el chatbot compara la pregunta con las preguntas de muestra más similares asociadas a la intención, y devuelve la respuesta correspondiente
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Cómo funciona un chatbot tradicional basado en intenciones. Imagen del autor.</p>
 </div>
 
@@ -30,7 +30,7 @@ Aquí es donde GPT-3 puede ser especialmente útil. En lugar de tener muchas int
 De esta manera, cada intención está asociada con un documento en lugar de una lista de preguntas y una respuesta específica, por ejemplo, una intención para "problemas de inicio de sesión", otra para "cómo suscribirse", etc. Cuando un usuario hace una pregunta sobre el inicio de sesión, podemos pasar el documento "problemas de inicio de sesión" a GPT-3 como información de contexto y generar una respuesta específica a la pregunta del usuario.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Cómo podría funcionar un chatbot aprovechando GPT-3. Imagen del autor.</p>
 </div>
 
@@ -52,7 +52,7 @@ Entonces, la canalización del chatbot podría estar compuesta por dos pasos:
 El primer paso se resuelve esencialmente mediante [búsqueda semántica](https://es.wikipedia.org/wiki/B%C3%BAsqueda_sem%C3%A1ntica). Podemos usar modelos pre-entrenados de la biblioteca [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) y asignar fácilmente una puntuación a cada documento. El documento con la puntuación más alta es el que se utilizará para generar la respuesta del chatbot.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3Organized} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Cómo podría funcionar un chatbot aprovechando GPT-3. GPT-3 podría utilizarse para generar una respuesta adecuada aprovechando la información de documentos de la base de conocimientos. Image by the author.</p>
 </div>
 
@@ -81,7 +81,7 @@ Comencemos nuestro prompt usando la técnica de <span style={{backgroundColor: "
 Luego, supongamos que el paso de búsqueda semántica extrae el siguiente documento de nuestra base de conocimientos. Todos los documentos describen cómo funciona el producto VideoGram, que es un producto imaginario similar a Instagram, pero solo para videos.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageLogin} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Un documento que explica cómo funciona el inicio de sesión en VideoGram. Imagen del autor.</p>
 </div>
 Podemos agregar <span style={{backgroundColor: "#FFF2CC"}}>su contenido</span> dentro del prompt de esta manera.

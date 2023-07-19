@@ -13,14 +13,14 @@ import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.
 回想一下前面一页中使用 DALLE 生成的金字塔以及这个提示语 `pyramid`。
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
 </div>
 
 现在看一下用这个提示生成的金字塔:
 `A beautiful, majestic, incredible pyramid, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={special_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={special_pyramids} style={{width: "750px"}} />
 </div>
 
 它们更为栩栩如生以及令人印象深刻！

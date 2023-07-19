@@ -106,7 +106,7 @@ function Hero() {
             >
               <img src={BeginnerWeb} alt="Beginner Web"/>
               <img src={IntermediateWeb} alt="Intermediate Web"/>
-              <img src={AdvancedWeb} alt="Advanced Web" />
+              <LazyLoadImage src={AdvancedWeb} alt="Advanced Web" />
               <img src={ApplicationsWeb} alt="Applications Web"/>
             </div>
           </div>

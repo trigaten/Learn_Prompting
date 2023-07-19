@@ -25,7 +25,7 @@ sidebar_position: 1
 import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "500px"}} />
+  <LazyLoadImage src={Image} style={{width: "500px"}} />
 </div>
 
 Це працює тому, що `remoteli.io` бере твіт користувача та об’єднує його із власним запитом для формування остаточного запиту, який вони передають у ВММ. Це означає, що будь-який текст, який користувач Twitter додає у свій твіт, буде передано в ВММ.
