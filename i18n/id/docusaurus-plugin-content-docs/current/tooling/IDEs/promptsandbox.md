@@ -13,7 +13,7 @@ Tonton panduan dalam video demo ini [](https://www.youtube.com/watch?v=CBPw7FXta
 import Image from '@site/docs/assets/tooling/promptsandbox.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Fitur
