@@ -25,13 +25,13 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 Panduan gaya hanya meminta AI untuk berbicara dengan gaya tertentu. Ketika mengajukan pertanyaan tanpa panduan gaya, ChatGPT biasanya akan mengembalikan satu atau dua paragraf pendek sebagai tanggapan, kadang-kadang lebih banyak jika tanggapan yang lebih panjang diperlukan: 
 
 <div style={{textAlign: 'center'}}>
-  <img src={unguided_question} style={{width: "500px"}} />
+  <LazyLoadImage src={unguided_question} style={{width: "500px"}} />
 </div>
 
 Ia berbicara dengan nada yang cukup formal dan memberikan beberapa detail—sangat bagus! Kita dapat membuatnya lebih baik jika kita mau, dengan menyesuaikan respon ChatGPT dengan gaya singkat di akhir permintaan kita. Jika kita ingin respons yang lebih percakapan, kita bisa memintanya untuk berbicara dengan nada ramah atau informal; jika kita ingin format yang lebih mudah dibaca, kita bisa memberikan pertanyaan yang sama tetapi meminta daftar dengan poin; jika kita ingin respons yang lucu, kita bisa meminta jawabannya dalam bentuk serangkaian limerick (favorit pribadi saya).
 
 <div style={{textAlign: 'center'}}>
-  <img src={limerick_question} style={{width: "450px"}} />
+  <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
 </div>
 
 Sebagai contoh, contoh yang lebih terperinci dari gaya penanya mungkin terlihat seperti ini:
@@ -68,13 +68,13 @@ import primed_question from '@site/docs/assets/basics/primed_question.webp';
 Berikut adalah contoh pertanyaan yang belum dijelaskan kepada ChatGPT tentang area-area filosofi yang paling menarik. Ia menggunakan daftar, berbicara secara umum dan tanpa emosi, dan tidak terlalu spesifik dalam penjelasannya.  
 
 <div style={{textAlign: 'center'}}>
-  <img src={unprimed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
 </div>
 
 Pada contoh kedua, kami malah bertanya setelah memberikan pertanyaan primer ke ChatGPT dan memberikan pertanyaan dalam bentuk yang benar. Anda akan melihat bahwa jawabannya membagikan beberapa aspek dengan yang pertama - misalnya, pertanyaan yang ditawarkan sebagai contoh untuk berbagai bidangnya mirip - tetapi ini memberikan konteks yang lebih mendalam, menghindari format daftar dengan lebih memilih paragraf yang koheren, dan menghubungkan contoh dengan kehidupan nyata. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={primed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={primed_question} style={{width: "650px"}} />
 </div>
 
 Menggabungkan primer ke dalam pengingat Anda adalah cara yang lebih lanjut untuk berinteraksi dengan chatbot. Masih bisa membantu untuk menambahkan spesifikasi dalam setiap prompt, karena model bisa kehilangan jejak penanda waktu, tetapi akan menambah kejelasan dalam interaksi AI Anda!
