@@ -48,7 +48,7 @@ import search from '@site/docs/assets/advanced/mrkl/search.webp';
 import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <LazyLoadImage src={mrkl_task} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -62,37 +62,37 @@ Saya telah mereproduksi sebuah contoh Sistem MRKL dari makalah aslinya, mengguna
 Pertama, saya membuat dataset sederhana pada tab `Dataset` Dust.
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 Lalu, saya beralih ke tab `Spesifikasi` dan memuat dataset menggunakan blok input ``.
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 Selanjutnya, saya membuat blok `llm` yang mengekstrak angka dan operasi. Perhatikan bagaimana dalam prompt saya memberitahukannya bahwa kita akan menggunakan kalkulator Google. Model yang saya gunakan (GPT-3) kemungkinan memiliki beberapa pengetahuan tentang kalkulator Google dari pra-pelatihan.
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 Lalu, saya membuat blok kode ``, yang menjalankan beberapa kode javascript sederhana untuk menghapus spasi dari penyelesaian.
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 Akhirnya, saya membuat blok `pencarian` yang mengirim persamaan yang diformat ulang ke kalkulator Google.
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 Di bawah ini kita dapat melihat hasil akhirnya, yang semuanya benar!
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 Silahkan mengkloning dan bereksperimen dengan playground ini [di sini](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7).
