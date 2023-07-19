@@ -14,13 +14,13 @@ import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.
 Lembre-se da página anterior das pirâmides geradas com o DALLE e o prompt `pirâmide`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
 </div>
 
 Agora veja as pirâmides geradas com este prompt: `Uma bela, majestosa, incrível pirâmide, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={special_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={special_pyramids} style={{width: "750px"}} />
 </div>
 
 Estas são muito mais cênicas e impressionantes!
