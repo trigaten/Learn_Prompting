@@ -10,7 +10,7 @@ A afinação de prompts (@lester2021power), uma alternativa à afinação fina d
 import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "500px"}} />
+  <LazyLoadImage src={Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
