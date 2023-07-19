@@ -25,37 +25,37 @@ Ganti jenis bidikan dengan tipe tembakan yang diinginkan.
 <div>
   <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
     <div style={{ textAlign: 'center' }}>
-      <img src={extreme_long_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={extreme_long_shot} style={{ width: '250px' }} />
       <p>Long Shot</p>
     </div>
     <div style={{ textAlign: 'center' }}>
-      <img src={long_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={long_shot} style={{ width: '250px' }} />
       <p>Long Shot</p>
     </div>
     <div style={{ textAlign: 'center' }}>
-      <img src={high_angle_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={high_angle_shot} style={{ width: '250px' }} />
       <p>High-angle Shot</p>
     </div>
     <div style={{ textAlign: 'center' }}>
-      <img src={low_angle_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={low_angle_shot} style={{ width: '250px' }} />
       <p>Low-angle Shot</p>
     </div>
   </div>
   <div style={{ display: 'flex', justifyContent: 'center' }}>
     <div style={{ textAlign: 'center' }}>
-      <img src={wide_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={wide_shot} style={{ width: '250px' }} />
       <p>Wide Shot</p>
     </div>
     <div style={{ textAlign: 'center' }}>
-      <img src={bird_eye_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={bird_eye_shot} style={{ width: '250px' }} />
       <p>Bird-eye Shot</p>
     </div>
     <div style={{ textAlign: 'center' }}>
-      <img src={medium_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={medium_shot} style={{ width: '250px' }} />
       <p>Medium Shot</p>
     </div>
     <div style={{ textAlign: 'center' }}>
-      <img src={close_up_shot} style={{ width: '250px' }} />
+      <LazyLoadImage src={close_up_shot} style={{ width: '250px' }} />
       <p>Close-up Shot</p>
     </div>
   </div>
