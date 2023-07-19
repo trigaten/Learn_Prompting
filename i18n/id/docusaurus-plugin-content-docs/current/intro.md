@@ -68,7 +68,7 @@ Di bawah ini adalah gambaran singkat tentang setiap bab:
 
 **Gambar**: Prompt engineering untuk model teks-ke-gambar, seperti DALLE dan Stable Diffusion
 
-**Prompt Injection**: Hacking, tetapi untuk prompt engineering
+**Prompt Hacking**: Hacking, tetapi untuk prompt engineering
 
 **Peralatan**: Tinjauan tentang berbagai alat dan IDE prompt engineering
 
