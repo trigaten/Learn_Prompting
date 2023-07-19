@@ -15,7 +15,7 @@ Secara mengejutkan, ketika memberikan beberapa contoh %%exemplars|exemplars%% da
 import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GoldUn} style={{width: "750px"}} />
+  <LazyLoadImage src={GoldUn} style={{width: "750px"}} />
 </div>
 
 ## Labelspace Matters
