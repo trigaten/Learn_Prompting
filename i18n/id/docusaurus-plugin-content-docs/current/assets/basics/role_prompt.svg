@@ -19,10 +19,10 @@
     <path d="M32 0 M32 0 C62.43 -1.61, 94.98 1.32, 161.18 0 M32 0 C81.04 0.03, 127.72 -1.86, 161.18 0 M161.18 0 C181.19 0.89, 192.41 10.46, 193.18 32 M161.18 0 C183.95 2.27, 191.57 9.79, 193.18 32 M193.18 32 C192.41 52.7, 193.45 75.64, 193.18 118 M193.18 32 C192.66 52.34, 191.78 71.93, 193.18 118 M193.18 118 C194.82 139.39, 182.37 148.48, 161.18 150 M193.18 118 C191.59 137.4, 181.45 150.72, 161.18 150 M161.18 150 C126.35 150.31, 93.94 149.08, 32 150 M161.18 150 C113.77 150.24, 67.75 149.16, 32 150 M32 150 C10.6 149.25, 1.21 140.21, 0 118 M32 150 C9.76 148.24, -0.71 140.83, 0 118 M0 118 C-1.13 95.47, 0.53 73.11, 0 32 M0 118 C0.36 96.58, 0.65 74.36, 0 32 M0 32 C-1.84 10.92, 9.6 -1.78, 32 0 M0 32 C0.81 10.8, 8.59 -1.81, 32 0" stroke="#000000" stroke-width="1" fill="none"/>
   </g>
   <g transform="translate(18.041648864746094 90.41986083984375) rotate(0 88.54993438720703 50)">
-    <text x="88.54993438720703" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">You are </text>
-    <text x="88.54993438720703" y="25" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Shakespeare, an </text>
-    <text x="88.54993438720703" y="50" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">English writer. </text>
-    <text x="88.54993438720703" y="75" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Write me a poem. </text>
+    <text x="88.54993438720703" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Kamu adalah </text>
+    <text x="88.54993438720703" y="25" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Shakespeare, seorang </text>
+    <text x="88.54993438720703" y="50" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Penulis dari Inggris. </text>
+    <text x="88.54993438720703" y="75" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Tuliskan sebuah pusisi. </text>
   </g>
   <g stroke-linecap="round">
     <g transform="translate(205.5176010074846 146.5434724379221) rotate(0 58.56330570228101 -0.6473650928477355)">
@@ -46,9 +46,9 @@
     <text x="90.83992004394531" y="50" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">fire...</text>
   </g>
   <g transform="translate(33.5958251953125 10) rotate(0 70.3399429321289 12.5)">
-    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">A Role Prompt</text>
+    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Sebuah Role Prompt</text>
   </g>
   <g transform="translate(350.22261810302734 10.948638916015625) rotate(0 66.83993530273438 12.5)">
-    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Model Output</text>
+    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Output Model</text>
   </g>
 </svg>
