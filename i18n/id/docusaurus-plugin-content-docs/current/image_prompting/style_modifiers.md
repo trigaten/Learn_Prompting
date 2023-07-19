@@ -14,13 +14,13 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 Berikut beberapa piramida yang dihasilkan oleh DALLE, dengan prompt `pyramid`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
 </div>
 
 Berikut beberapa piramida yang dihasilkan oleh DALLE, dengan prompt `A pyramid made of glass, rendered in Unity and tinted red`, yang menggunakan 3 perubahan gaya.
 
 <div style={{textAlign: 'center'}}>
-  <img src={red_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={red_pyramids} style={{width: "750px"}} />
 </div>
 
 Berikut adalah daftar beberapa pengubah gaya yang berguna:
