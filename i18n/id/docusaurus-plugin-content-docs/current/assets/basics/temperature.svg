@@ -71,8 +71,8 @@
     <text x="46.83598327636719" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Frogs</text>
   </g>
   <g transform="translate(354.22677485795066 10) rotate(0 122.41796875 45)">
-    <text x="122.41796875" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Probabilities</text>
-    <text x="122.41796875" y="45" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">of next token</text>
+    <text x="122.41796875" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Probabilitas</text>
+    <text x="122.41796875" y="45" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">dari token berikutnya</text>
   </g>
   <g transform="translate(532.0884211925513 907.5357978186527) rotate(0 40.82398223876953 22.5)">
     <text x="40.82398223876953" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">0.05</text>
