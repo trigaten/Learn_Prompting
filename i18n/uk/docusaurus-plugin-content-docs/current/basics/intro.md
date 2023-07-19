@@ -52,7 +52,7 @@ import dyno from '@site/docs/assets/basics/dyno_example.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={dyno} style={{width: "750px"}} />
+  <LazyLoadImage src={dyno} style={{width: "750px"}} />
 </div>
 
 Ви маєте побачити вставку, яка виглядає точно так само, як на зображенні під цим абзацом. Якщо ви не бачите його, вам може знадобитися увімкнути JavaScript або скористатися іншим браузером.
@@ -76,7 +76,7 @@ import key from '@site/docs/assets/basics/API_key.webp';
 Коли ви перейдете на сторінку [ключа OpenAI API](https://platform.openai.com/account/api-keys), натисніть кнопку ** Створити новий секретний ключ**. З’явиться модальне вікно, що містить такий текст:
 
 <div style={{textAlign: 'center'}}>
-  <img src={key} style={{width: "750px"}} />
+  <LazyLoadImage src={key} style={{width: "750px"}} />
 </div>
 
 Вставте цей ключ у вбудований елемент і натисніть **Зберегти**. Тепер ви можете використовувати вбудовуваний елемент на всьому сайті.
