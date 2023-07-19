@@ -91,10 +91,10 @@ function Hero() {
                   category === "Intermediate"
                     ? "bg-yellow-500"
                     : category === "Advanced"
-                    ? "bg-red-500"
-                    : category === "Applications"
-                    ? "bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500"
-                    : ""
+                      ? "bg-red-500"
+                      : category === "Applications"
+                        ? "bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500"
+                        : ""
                 }
               />
             ))}
@@ -106,8 +106,8 @@ function Hero() {
             >
               <LazyLoadImage src={BeginnerWeb} alt="Beginner Web" />
               <LazyLoadImage src={IntermediateWeb} alt="Intermediate Web" />
-              <LazyLoadImage src={AdvancedWeb} alt="Advanced Web"/>
-              <LazyLoadImage src={ApplicationsWeb} alt="Applications Web"/>
+              <LazyLoadImage src={AdvancedWeb} alt="Advanced Web" />
+              <LazyLoadImage src={ApplicationsWeb} alt="Applications Web" />
             </div>
           </div>
 
@@ -118,18 +118,10 @@ function Hero() {
                 x_pos_mob
               }
             >
-              <img
-                src={BeginnerMobile}
-              />
-              <img
-                src={IntermediateMobile}
-              />
-              <img
-                src={AdvancedMobile}
-              />
-              <img
-                src={ApplicationsMobile}
-              />
+              <LazyLoadImage src={BeginnerMobile} alt="Beginner Mobile" />
+              <LazyLoadImage src={IntermediateMobile} alt="Intermediate Mobile" />
+              <LazyLoadImage src={AdvancedMobile} alt="Advanced Mobile"/>
+              <LazyLoadImage src={ApplicationsMobile} alt="Applications Mobile"/>
             </div>
           </div>
         </div>

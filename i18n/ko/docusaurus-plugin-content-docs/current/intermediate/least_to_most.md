@@ -13,8 +13,7 @@ style: chicago
 import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
-  <img src={leastToMost} style={{width: "600px"}}
-        alt="A diagram of a least to most prompting" />
+  <LazyLoadImage src={leastToMost} style={{width: "600px"}} alt="A diagram of a least to most prompting"/>
 </div>
 
 <div style={{textAlign: 'center'}}>
