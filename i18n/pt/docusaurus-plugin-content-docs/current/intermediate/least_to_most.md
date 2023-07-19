@@ -13,8 +13,7 @@ Como na técnica de CdP prompting, o problema a ser resolvido é decomposto em u
 import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
-  <img src={leastToMost} style={{width: "600px"}}
-        alt="Diagrama representando o prompt Menor para o Maior (MpM)" />
+  <LazyLoadImage src={leastToMost} style={{width: "600px"}} alt="Diagrama representando o prompt Menor para o Maior (MpM)"/>
 </div>
 
 <div style={{textAlign: 'center'}}>

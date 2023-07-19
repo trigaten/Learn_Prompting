@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
 import { RxArrowTopRight } from "react-icons/rx";
 import Button from "@site/src/components/Button";
@@ -31,8 +32,8 @@ function GetStarted() {
         </div>
       </div>
       <div className="w-full md:w-1/2 flex items-center">
-        <img
-          src={require("@site/static/img/sitting_astronaut.webp").default} loading="lazy" 
+        <LazyLoadImage
+          src={require("@site/static/img/sitting_astronaut.webp").default} 
           className="mx-auto md:ml-[80px] md:h-auto h-[300px]"
         />
       </div>
