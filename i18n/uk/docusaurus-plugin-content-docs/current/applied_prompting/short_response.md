@@ -50,7 +50,7 @@ import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
 Наведений вище приклад переписування було створено за допомогою OpenAI [ChatGPT](https://openai.com/blog/chatgpt/).
 
 <div style={{textAlign: 'left'}}>
-  <img src={Auto} style={{width: "500px"}} />
+  <LazyLoadImage src={Auto} style={{width: "500px"}} />
 </div>
 
 ### Ітерація
