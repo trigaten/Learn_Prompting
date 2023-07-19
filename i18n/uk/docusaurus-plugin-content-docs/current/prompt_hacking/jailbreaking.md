@@ -66,7 +66,7 @@ import logic from '@site/docs/assets/jailbreak/logic.webp';
   <LazyLoadImage src={logic} style={{width: "500px"}} />
 </div>
 
-Одноразовий джейлбрейк створено командою [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), де модель відповіді на запит пропонує більш сувору логіку та зменшує деякі з її більш етичних обмежень (@AI_jailbreak).
+Одноразовий джейлбрейк створено командою [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), де модель відповіді на запит пропонує більш сувору логіку та зменшує деякі з її більш етичних обмежень.
 
 ### Авторизований користувач
 

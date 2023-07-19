@@ -67,7 +67,7 @@ import logic from '@site/docs/assets/jailbreak/logic.webp';
   <LazyLoadImage src={logic} style={{width: "500px"}} />
 </div>
 
-单次破解(one-shot jailbreak)最初发表于[AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/)，其模型使用更严谨的逻辑回答提示，并减少了一些更为严格的伦理限制(@AI_jailbreak)。
+单次破解(one-shot jailbreak)最初发表于[AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/)，其模型使用更严谨的逻辑回答提示，并减少了一些更为严格的伦理限制。
 
 ### 授权用户
 

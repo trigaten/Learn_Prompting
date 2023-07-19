@@ -213,8 +213,6 @@ French:
 
 #### Ignorer le prompt précédent(@ignore_previous_prompt) 🔵
 
-#### Prompts de jailbreak mis à jour(@AI_jailbreak) 🔵
-
 ## Enquêtes
 
 #### Pré-entraînement, prompting et prédiction: Une enquête systématique sur les méthodes de prompting en traitement du langage naturel(@liu2021pretrain)

@@ -66,7 +66,7 @@ import logic from '@site/docs/assets/jailbreak/logic.webp';
   <LazyLoadImage src={logic} style={{width: "500px"}} />
 </div>
 
-El jailbreak de un solo disparo se originó en el equipo de [AIWithVibes Newsletter](https://chatgpt-jailbreak.super.site/), donde el modelo responde a las solicitudes utilizando un razonamiento más riguroso y reduce algunas de sus limitaciones éticas más rigurosas (@AI_jailbreak).
+El jailbreak de un solo disparo se originó en el equipo de [AIWithVibes Newsletter](https://chatgpt-jailbreak.super.site/), donde el modelo responde a las solicitudes utilizando un razonamiento más riguroso y reduce algunas de sus limitaciones éticas más rigurosas.
 
 ### Usuario Autorizado
 
