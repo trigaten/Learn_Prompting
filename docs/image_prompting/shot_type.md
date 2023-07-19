@@ -4,7 +4,7 @@ sidebar_position: 90
 # 🟢 Shot type
 Shot types refer to the various camera angles and compositions used in filmmaking to capture different perspectives and visual effects within a scene. These shot types play a crucial role in conveying the story, setting the mood, and influencing the audience's perception and emotions.
 
-There are several kinds of shot types, each serving its own unique purpose. Some common examples include long shot, medium shot, bird-eye shot, and low-angle shot.
+There are several kinds of shot types, which each serve their own unique purpose. Some common examples include long shot, medium shot, bird-eye shot, and low-angle shot.
 
 import bird_eye_shot from '@site/docs/assets/images_chapter/bird_eye_shot.webp';
 import close_up_shot from '@site/docs/assets/images_chapter/close_up_shot.webp';
