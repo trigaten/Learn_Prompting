@@ -34,7 +34,7 @@ Sekarang, kita akan memasukkan prompt ke dalam ChatGPT dan melihat apa yang terj
 import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <LazyLoadImage src={CSharp} style={{width: "750px"}} />
 </div>
 
 Kita dapat melihat bahwa hal tersebut telah menghasilkan sebuah cerita, tetapi ditulis di dalam blok kode csharp (bahasa pemrograman). Mungkin kita tidak menginginkan ini, jadi kita akan mengubah permintaan menjadi:
