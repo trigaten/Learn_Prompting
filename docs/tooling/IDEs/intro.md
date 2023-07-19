@@ -29,10 +29,13 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Soaked Prompts](https://soaked-prompts.vercel.app) | ✅ | ✅ | ❌|  | ✅ | Text | OpenAI |
 | [Dyno](https://trydyno.com/login)          | ✅ | ❌ | ❌|  | ✅ | Text | OpenAI |
 | [Everyprompt](https://www.everyprompt.com) | ✅ | |    ❌| Freemium | ✅ | Text | OpenAI |
+| [Promptmetheus](https://promptmetheus.com) | ✅ | ❌ | ✅ | Free | ✅ | Text | OpenAI |
 | [PromptIDE](https://prompt.vizhub.ai)      | ✅ | Code TBD |✅ | None | ✅ | Text | |
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf) | ❌ |  | ✅ | None | ✅ |  Text | |
 | [PromptMaker](https://dl.acm.org/doi/abs/10.1145/3491101.3503564) |❌ | | ✅| | | Text| |
+| [PromptSandbox](https://promptsandbox.io) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
+| [ChainForge](https://github.com/ianarawjo/ChainForge) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
 
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
@@ -43,16 +46,12 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
+| [DiscuroAI](http://www.discuro.com) | ✅ | ❌ | ❌|  | ✅ | Text, Image | OpenAI|
 | [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, later Stability.AI and more |
+| [The Forge AI](https://theforgeai.com/) | ✅ | ❌ | ❌ | Marketplace | Wait list | Text, Images | OpenAI, Stable Diffusion |
+| [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts) | ✅ | ❌ | ❌ | Enterprise | ✅ | Text | Custom, Public, Private LLMs |
 
-
-## Python Library IDEs
-
-| Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
-| ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
-| [LangChain*](https://github.com/hwchase17/langchain/) | ❌ | ✅ | ✅| None | ✅ | Text | |
-| [OpenPrompt*](https://thunlp.github.io/OpenPrompt/) | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 
 
 ## Image Only IDEs
@@ -63,13 +62,6 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Dream Studio](https://beta.dreamstudio.ai/dream) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion |
 | [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
 | [getimg.ai](https://getimg.ai/guides) | ✅ | ❌ | ❌ |  | ✅ |  Text2Image, AIEditor | |
-
-
-
-
-\* LangChain is a Python library for prompt engineering. It's main interface is a Jupyter notebook.
-
-\* OpenPrompt is also a Python library for prompt engineering. It's main interface is the terminal or a Jupyter notebook.
 
 **Hosted Solution**: The tool is hosted on a website and can be used without installing anything.
 

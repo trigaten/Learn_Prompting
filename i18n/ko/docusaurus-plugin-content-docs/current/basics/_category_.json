@@ -1,0 +1,9 @@
+{
+    "label": "😃 기초",
+    "position": 10,
+    "link": {
+      "type": "generated-index",
+      "description": "PE(prompt engineering)의 개요와 간단한 PE 기술들"
+    }
+  }
+

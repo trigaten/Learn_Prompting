@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Schulhoff"
+  given-names: "Sander"
+- family-names: "Community Contributors"
+title: "Learn Prompting"
+date-released: 2022-12-01
+url: "https://github.com/trigaten/Learn_Prompting"

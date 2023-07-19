@@ -4,10 +4,10 @@ sidebar_position: 4
 
 # 🟢 Build ChatGPT from GPT-3
 
-import Skippy from '../assets/skippy_chatbot.png'    
-import SkippyHeader from '../assets/skippy_chatbot_header.png'    
-import Therapy from '../assets/therapy_chatbot.gif'
-import ChatGPT from '../assets/chatgpt_ui_diagram.png'
+import Skippy from '@site/docs/assets/basic_applications/skippy_chatbot.webp'    
+import SkippyHeader from '@site/docs/assets/basic_applications/skippy_chatbot_header.webp'    
+import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
+import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
 <div style={{textAlign: 'left'}}>
   <img src={SkippyHeader} style={{width: "700px"}} />
@@ -135,7 +135,7 @@ Chatbot:"""
 
 def get_response(conversation_history, user_input):
     prompt = chatbot_prompt.replace(
-        "<conversation_history>", conversation_history).replace("<user input>", user_input)
+        "<conversation history>", conversation_history).replace("<user input>", user_input)
 
     # Get the response from GPT-3
     response = openai.Completion.create(

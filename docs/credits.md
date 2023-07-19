@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2000
+sidebar_position: 20000
 ---
 
 # ✨ Credits
@@ -13,3 +13,5 @@ Here is a growing list of people who have been instrumental in the creation of t
 - [jayo78](https://github.com/jayo78), prefers his emojis on the left
 - [zeyuzhao](https://github.com/Zeyuzhao), prompter-in-training
 - [UMD CLIP Lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), lots of questions answered :)
+- [Wahub Ahmed](https://github.com/wahub-ahmed), jailbreaking
+- [Zihong](https://github.com/1openwindow), translated the majority of the documents into Chinese

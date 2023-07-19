@@ -7,7 +7,7 @@ sidebar_position: 16
 [OpenPrompt](https://thunlp.github.io/OpenPrompt/index.html) is a Python library
 that provides various functionality for building and testing prompts.
 
-import Image from '../../assets/tooling/openprompt.gif';
+import Image from '@site/docs/assets/tooling/openprompt.gif';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

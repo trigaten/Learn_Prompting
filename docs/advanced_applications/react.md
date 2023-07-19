@@ -21,7 +21,7 @@ to Google. It then receives an observation (Obs 1), and continues with this thou
 loop until it reaches a conclusion (Act 3). 
 
 
-import react_qa from '../assets/react_qa.png';
+import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_qa} style={{width: "500px"}} />
@@ -42,10 +42,10 @@ this in their paper.
 Google used the PaLM(@chowdhery2022palm) LLM in experiments with ReAct. 
 Comparisons to standard prompting (question only), CoT, and other configurations
 show that ReAct's performance is promising for complex reasoning tasks. Google 
-also performs studies on the fever dataset(@thorne2018fever), which covers
+also performs studies on the FEVER dataset(@thorne2018fever), which covers
 fact extraction and verification. 
 
-import react_performance from '../assets/react_performance.png';
+import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_performance} style={{width: "500px"}} />

@@ -27,8 +27,75 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --yellow-highlight: #bb8e0c7a;
+  --text-color: white;
+  --docusaurus-highlighted-code-line-bg: rgba(104, 156, 106, 0.67);
+  --bluegreen-highlight:  rgba(104, 156, 106, 0.67);
 }
+[data-theme='light'] {
+  --yellow-highlight: rgb(255, 242, 204);
+  --docusaurus-highlighted-code-line-bg: rgba(159, 238, 162, 0.67);
+  --bluegreen-highlight:  rgba(159, 238, 162, 0.67);
+} 
 
 :root {
-  --docusaurus-highlighted-code-line-bg: #d2f4d3;
+}
+
+.consulting-gradient {
+  background: -webkit-linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.consulting-gradient:hover {
+  background: -webkit-linear-gradient(90deg, #ff0037 0%, #002aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .consulting-gradient {
+  transition: all 0.5s ease;
+  background: -webkit-linear-gradient(90deg, #ff668b 0%, #5f7eff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+[data-theme="dark"] .consulting-gradient:hover {
+  background: -webkit-linear-gradient(90deg, #ffaaaa 0%, #aaaaff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.yellow-highlight {
+  background-color: var(--yellow-highlight);
+  color: var(--text-color);
+}
+.bluegreen-highlight {
+  background-color: var(--bluegreen-highlight);
+}
+/* Glossary and Tooltips */
+div[role="tooltip"] {
+  width: 450px;
+  max-width: 90vw;
+}
+div[role="tooltip"] a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+div[itemscope][itemtype*="DefinedTerm"] span[itemprop="description"] {
+  color: var(--ifm-toc-link-color);
+}
+a[data-tooltip-html] {
+  border-bottom: 1px dashed;
+  cursor: help;
+}
+a[data-tooltip-html]:hover {
+  text-decoration: none;
+}
+/* Code Block Word-Wrapping */
+pre[class*="language-"] {
+  white-space: pre-wrap;
+}
+pre {
+  white-space: pre-wrap;
 }

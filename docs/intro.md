@@ -1,79 +1,92 @@
 ---
 sidebar_position: 1
 ---
+
 # Welcome
 
-Welcome to this course on prompt engineering! 
+Welcome to our introductory course on prompt engineering!
 
-I like to think of prompt engineering (PE) as: **How to talk to AI to get it to do what you want**. 
+Prompt engineering (PE) is the process of **communicating effectively with an AI to achieve desired results**. As AI technology continues to rapidly advance, the ability to master prompt engineering has become a particularly valuable skill. Prompt engineering techniques can be applied to a wide variety of tasks, making it a useful tool for anyone seeking to improve their efficiency in both everyday and innovative activities.
 
+This course is tailored to **beginners**, making it the perfect starting point if you're new to AI and PE. However, even if you're not a beginner, you'll still find valuable insights within this course. This course is the **most comprehensive** prompt engineering course available, and the content ranges from an introduction to AI to advanced PE techniques.
 
+## Ethos and Philosophy
 
-With many of the recent advances in artificial intelligence (AI),
-this has become a particularly important skill.
-This course focuses on applied PE techniques. Minimal knowledge of 
-machine learning is expected. If you have no idea what any of this stuff means, read the Introduction in Basics.
+This course is open source, and built by a diverse community of researchers, translators, and hobbyists. We believe that AI should be accessible to everyone, and that it should be described clearly and objectively. To this end, we strive to produce a comprehensive and unbiased course that is free of excessive jargon and hype.
 
-## The single most important part of this course is your feedback!
-If you have any questions, comments, or suggestions, please make an **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, email me at learnprompting@gmail.com, or reach out over [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
+We have found this approach to be appreciated by the PE community: This course is cited by [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), and is used by people at companies such as [O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, and OpenAI. You may also notice that <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>almost </a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>every </a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>other </a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>prompt </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>engineering </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>video </a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>and </a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>guide </a>
+uses material from this course. We are honored to support the prompt engineering community, including our 1M+ users and 40K [Discord](https://discord.gg/learn-prompting) members.
 
-Even the smallest amount of feedback is very helpful!
+### How we teach
 
-## Course philosophy
+Our approach to teaching prompt engineering is guided by the following principles:
 
-**Quick Iterations** - Since new PE content is published almost daily, 
-I will update this course frequently with short articles about new techniques.
-Let me know what you want to hear more about!
+**Quick Iterations**—Since new PE content is published almost daily, we'll keep this course up-to-date with frequent, concise articles about emerging techniques. Please tell us what topics you'd like us to explore further!
 
-Part of this philosophy is **error iteration**. If you ever see something that you
-don't quite understand, even something small, that's on me. **Please make an [issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**!
+**Emphasis on Practicality**—Our focus is on applied, practical techniques that you can immediately incorporate into your projects and applications.
 
-**Focus on Practicality** - I will focus on applied, practical techniques that you can use
-immediately for your applications.
+**Accessible Examples**—To help you grasp the techniques quickly, we'll provide clear, relevant examples throughout the articles.
 
-**Examples ASAP** - I try to put examples in the articles as soon as possible,
-so you can get a feel for the techniques as soon as possible.
+**Collaborative Learning**—We believe in learning from each other. If you come across something that you don't quite understand or find a mistake, please let us know by creating an [issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose). Your feedback helps us improve the course for everyone.
 
-I'll philosophize more about this when I have time 😊
+:::note
+This course is under heavy development. We are working hard to improve the learning experience and add more content. If you have any suggestions, please let us know!
+:::
 
 ## How to read
 
-It is not necessary to read all chapters in order. Read what interests you!
+There's no need to read all chapters in order; feel free to explore what interests you! If you're new to AI, machine learning, and programming, we suggest starting with the [Basics](https://learnprompting.org/docs/category/-basics) section and the [Instructions](https://learnprompting.org/docs/basics/intro) guide. For those already familiar with these concepts, the [Intermediate](https://learnprompting.org/docs/category/%EF%B8%8F-intermediate) section is a great place to dive in and expand your knowledge.
 
-If you are a complete novice, read below then start with the Basics section.
-If not, starting with the Intermediate section may be more useful.
+### Article rating system
 
-Articles are rated by difficulty, and are labeled with the following:
+We've implemented a rating system for articles based on their level of difficulty and the extent of programming knowledge needed:
 
-🟢 Very easy; no programming required
+🟢 Beginner-friendly; no programming required
 
-🟡 Easy; simple programming required, but no domain expertise
+🟡 Easy; basic programming knowledge necessary, but no specialized expertise
 
-🔴 Medium; programming required, and some domain expertise to implement (e.g. computing log probs)
+🔴 Intermediate; programming skills and some domain knowledge required (e.g., calculating logarithmic probabilities)
 
-🟣 Hard; programming required, and robust domain expertise to implement (e.g. reinforcement learning approaches)
+🟣 Advanced; programming expertise and in-depth domain understanding needed (e.g., reinforcement learning techniques)
 
-Note: even though for 🔴🟣 problems domain expertise is helpful, usually you will still
-be able to understand the article.
+Please note that even for 🔴 and 🟣 articles, you can generally grasp the content without prior domain expertise, though it may be helpful for implementation.
 
-## Chapters
+### Chapters
 
-Here is a quick summary of each chapter:
+Below is a brief overview of each chapter:
 
-**Basics**: Intro to PE and simple PE techniques
+**Basics**: Introduction to prompt engineering and fundamental techniques
 
-**Intermediate**: Slightly more complicated PE techniques
+**Basic Applications**: Simple, practical applications of prompt engineering
 
-**Advanced Applications**: Some very powerful, but more advanced applications of PE
+**Intermediate**: Research-based PE techniques with moderate complexity
 
-**Applied Prompting**: Some complete walkthroughs of the PE process written by community members
+**Applied Prompting**: Comprehensive PE process walkthroughs contributed by community members
 
-**Reliability**: How to make LLMs more reliable
+**Advanced Applications**: Powerful, and more complex applications of prompt engineering
 
-**Images**: PE for text to image models like DALLE and Stable Diffusion!
+**Reliability**: Enhancing the reliability of large language models (LLMs)
 
-**Prompt Injection**: Hacking, but for PE
+**Image Prompting**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
 
-**Prompting IDEs**: Different PE tools
+**Prompt Hacking**: Hacking, but for prompt engineering
 
-**Prompt Tuning**: Fine tune prompts with gradients
+**Tooling**: A review of various prompt engineering tools and IDEs
+
+**Prompt Tuning**: Refining prompts using gradient-based techniques
+
+**Miscellaneous**: A collection of additional topics and techniques related to prompt engineering
+
+## Feedback
+
+The single most important part of this course is your feedback!
+
+If you have any questions, comments, or suggestions, you can:
+
+- Make an [issue on GitHub](https://github.com/trigaten/Learn_Prompting/issues/new/choose)
+- Email us at [learnprompting@gmail.com](mailto:learnprompting@gmail.com)
+- Join the [Discord community](https://learnprompting.org/discord)
+- Follow us on [Twitter](https://twitter.com/learnprompting)
+- Join the HackAPrompt Competition until May 26 [Twitter](https://www.aicrowd.com/challenges/hackaprompt-2023)
+
+Even the smallest amount of feedback is very helpful!

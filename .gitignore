@@ -22,3 +22,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 node_modules
+
+.history/
+.vscode/
+
+docs/code_examples/scrape.ipynb
+
+vscode_extension/

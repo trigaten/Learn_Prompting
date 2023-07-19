@@ -8,7 +8,7 @@ sidebar_position: 2
 original prompt engineering tool that most people have used. As such, it is 
 extremely well known.
 
-import Image from '../../assets/tooling/GPT3.png';
+import Image from '@site/docs/assets/tooling/GPT3.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />
