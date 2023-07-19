@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpromptgineering=self.webpackChunkpromptgineering||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Announcing HackAPrompt","permalink":"/blog/2022/12/20/prompt-injection-competition"}]}')}}]);
