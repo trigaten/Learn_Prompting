@@ -24,7 +24,7 @@ loop until it reaches a conclusion (Act 3).
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_qa} style={{width: "500px"}} />
+  <LazyLoadImage src={react_qa} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -48,7 +48,7 @@ fact extraction and verification.
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_performance} style={{width: "500px"}} />
+  <LazyLoadImage src={react_performance} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

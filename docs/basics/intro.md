@@ -70,7 +70,7 @@ import dyno from '@site/docs/assets/basics/dyno_example.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={dyno} style={{width: "750px"}} />
+  <LazyLoadImage src={dyno} style={{width: "750px"}} />
 </div>
 
 You should be able to see an embed that looks exactly like this image right below this paragraph. If you can't, you may need to enable JavaScript or use a different browser.
@@ -93,7 +93,7 @@ Although OpenAI provides free credits, you will eventually have to pay to use th
 When you navigate to the [OpenAI API key](https://platform.openai.com/account/api-keys) page, click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
 
 <div style={{textAlign: 'center'}}>
-  <img src={key} style={{width: "750px"}} />
+  <LazyLoadImage src={key} style={{width: "750px"}} />
 </div>
 
 Put this key into the embed and hit **Save**. You should now be able to use the embeds throughout this site.

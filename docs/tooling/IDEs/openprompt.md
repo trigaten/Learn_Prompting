@@ -10,7 +10,7 @@ that provides various functionality for building and testing prompts.
 import Image from '@site/docs/assets/tooling/openprompt.gif';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Features

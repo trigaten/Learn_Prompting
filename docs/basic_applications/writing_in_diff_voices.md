@@ -17,14 +17,14 @@ import friendship_millennial from '../assets/basic_applications/Friendship_Mille
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship} style={{width: "750px"}} />
 </div>
 
 Blah. It’s so bland. 
 Results change when you add specifications, like “**Please write in an informal, conversational style.**” ChatGPT comes up with something like this:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_informal} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_informal} style={{width: "750px"}} />
 </div>
 
 That’s a little better. 
@@ -32,20 +32,20 @@ That’s a little better.
 And if you feel a little fancy, you can ask ChatGPT to write in the style of one of the literary greats, like Mark Twain:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_mark} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_mark} style={{width: "750px"}} />
 </div>
 
 The text now is starting to sing.
 But it doesn’t have to be a famous author. You can use well-known individuals as well—like Chris Rock. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_chris} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_chris} style={{width: "750px"}} />
 </div>
 
 Or how about those “millennials”?
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_millennial} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_millennial} style={{width: "750px"}} />
 </div>
 
 ## Copy Your Writing Style

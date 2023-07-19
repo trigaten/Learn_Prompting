@@ -10,7 +10,7 @@ text to image models.
 import Image from '@site/docs/assets/tooling/patience.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Features

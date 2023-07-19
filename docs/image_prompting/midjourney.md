@@ -48,14 +48,14 @@ For example: `/imagine prompt: astronaut on a horse`
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut} style={{width: "350px"}} />
 </div>
 
 
 Example with parameters: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000 `
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
 
 In this basic example the following parameters have been used:
@@ -83,14 +83,14 @@ Example:
 /imagine prompt: astronaut and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi1} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
 ```text
 /imagine prompt: astronaut:: and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi2} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
 
@@ -103,7 +103,7 @@ Example:
 /imagine prompt: [image URL], impressionist painting
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_ip2} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
 ## Parameters (v4)
@@ -117,9 +117,9 @@ The following parameters are supported by Midjourney's latest model (v4).
 Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
 </div>
 
 
@@ -130,9 +130,9 @@ Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
 </div>
 
 
@@ -143,9 +143,9 @@ Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
 </div>
 
 
@@ -156,9 +156,9 @@ Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 Example: `astronaut on a horse --seed 123`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
 </div>
 
 
@@ -170,9 +170,9 @@ Example: `astronaut on a horse --seed 123`
 Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
 </div>
 
 
@@ -182,11 +182,11 @@ Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 Example: `--v 1`, `--v 2`, and `--v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
    &nbsp;
-      <img src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
+      <LazyLoadImage src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
 </div>
 
 
@@ -199,7 +199,7 @@ Example: `--v 1`, `--v 2`, and `--v 3`
 Example: `astronaut on a horse --sameseed --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
 </div>
 
 
@@ -210,11 +210,11 @@ Example: `astronaut on a horse --sameseed --v 3`
 Example: `astronaut on a horse --tile --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
   &nbsp;
-  <img src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
   &nbsp;
-  <img src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
 </div>
 
 

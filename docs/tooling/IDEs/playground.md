@@ -11,7 +11,7 @@ extremely well known.
 import Image from '@site/docs/assets/tooling/GPT3.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Features

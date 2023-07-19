@@ -15,13 +15,13 @@ import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.webp';
 `A beautiful painting of a mountain next to a waterfall.`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_water} style={{width: "750px"}} />
+  <LazyLoadImage src={bad_water} style={{width: "750px"}} />
 </div>
 
 `A very very very very very very very very very very very very very very very very very very very very very very beautiful painting of a mountain next to a waterfall.`
 
 <div style={{textAlign: 'center'}}>
-  <img src={good_water} style={{width: "750px"}} />
+  <LazyLoadImage src={good_water} style={{width: "750px"}} />
 </div>
 
 The emphasis on the word `very` seems to improve generation quality! Repetition can
@@ -31,13 +31,13 @@ will make it more likely that aliens are in the resultant image. The following i
 
 `A planet with aliens`
 <div style={{textAlign: 'center'}}>
-  <img src={planet} style={{width: "250px"}} />
+  <LazyLoadImage src={planet} style={{width: "250px"}} />
 </div>
 
 `A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`
 
 <div style={{textAlign: 'center'}}>
-  <img src={planet_aliens} style={{width: "250px"}} />
+  <LazyLoadImage src={planet_aliens} style={{width: "250px"}} />
 </div>
 
 

@@ -58,7 +58,7 @@ import search from '@site/docs/assets/advanced/mrkl/search.webp';
 import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <LazyLoadImage src={mrkl_task} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -78,13 +78,13 @@ First, I made a simple dataset in the Dust `Datasets` tab.
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 Then, I switched to the `Specification` tab and loaded the dataset using an `input` block.
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 Next, I created a `llm` block that extracts the numbers and operations. Notice how
@@ -92,26 +92,26 @@ in the prompt I told it we would be using Google's calculator. The model I use (
 likely has some knowledge of Google's calculator from pretraining.
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 Then, I made a `code` block, which runs some simple javascript code to remove 
 spaces from the completion.
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 Finally, I made a `search` block that sends the reformatted equation to Google's calculator.
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 Below we can see the final results, which are all correct!
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 Feel free to clone and experiment with this playground [here](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7).

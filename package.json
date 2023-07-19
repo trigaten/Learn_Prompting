@@ -36,6 +36,7 @@
     "react-elastic-carousel": "^0.11.5",
     "react-fast-marquee": "^1.5.2",
     "react-icons": "^4.8.0",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-multi-carousel": "^2.8.3",
     "react-tooltip": "^5.7.4",
     "react-twitter-embed": "^4.0.4",
