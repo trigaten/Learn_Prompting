@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 90
 ---
 # 🟢 Shot type
 Shot types refer to the various camera angles and compositions used in filmmaking to capture different perspectives and visual effects within a scene. These shot types play a crucial role in conveying the story, setting the mood, and influencing the audience's perception and emotions.
