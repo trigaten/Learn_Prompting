@@ -34,7 +34,7 @@ Jetzt werden wir den Promt in ChatGPT eingeben und sehen, was passiert.
 import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <LazyLoadImage src={CSharp} style={{width: "750px"}} />
 </div>
 
 Wir können sehen, dass es eine Geschichte erstellt hat, aber dass es sie innerhalb eines csharp (eine Programmiersprache) Codeblocks geschrieben hat. Vielleicht wollen wir das nicht, also ändern wir den Promt zu:

@@ -53,7 +53,7 @@ import dyno from '@site/docs/assets/basics/dyno_example.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={dyno} style={{width: "750px"}} />
+  <LazyLoadImage src={dyno} style={{width: "750px"}} />
 </div>
 
 Du solltest eine Einbettung sehen können, die genau wie dieses Bild direkt unter diesem Absatz aussieht. Wenn das nicht der Fall ist, musst du möglicherweise JavaScript aktivieren oder einen anderen Browser verwenden.
@@ -76,7 +76,7 @@ Obwohl OpenAI kostenlose Credits zur Verfügung stellt, musst du letztendlich f�
 Wenn du zur Seite [OpenAI API-Schlüssel](https://platform.openai.com/account/api-keys) navigierst, klick auf die Schaltfläche **Create new secret key**. Es öffnet sich ein Modal Screen, der eine Zeichenfolge wie diese enthält:
 
 <div style={{textAlign: 'center'}}>
-  <img src={key} style={{width: "750px"}} />
+  <LazyLoadImage src={key} style={{width: "750px"}} />
 </div>
 
 Gib diesen Schlüssel in die Einbettung ein und klick auf **Save**. Du solltest nun in der Lage sein, die Einbettungen auf dieser Website zu verwenden.

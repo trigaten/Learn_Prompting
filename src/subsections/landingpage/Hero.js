@@ -104,10 +104,10 @@ function Hero() {
             <div
               className={`mt-[-25px] top-0 hidden md:flex border-black transition-all ${x_pos}`}
             >
-              <img src={BeginnerWeb} alt="Beginner Web"/>
-              <img src={IntermediateWeb} alt="Intermediate Web"/>
-              <LazyLoadImage src={AdvancedWeb} alt="Advanced Web" />
-              <img src={ApplicationsWeb} alt="Applications Web"/>
+              <LazyLoadImage src={BeginnerWeb} alt="Beginner Web" />
+              <LazyLoadImage src={IntermediateWeb} alt="Intermediate Web" />
+              <LazyLoadImage src={AdvancedWeb} alt="Advanced Web"/>
+              <LazyLoadImage src={ApplicationsWeb} alt="Applications Web"/>
             </div>
           </div>
 

@@ -23,17 +23,17 @@ function Home() {
             <h2 className="text-2xl md:text-4xl font-semibold mb-6 ">Our Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div className="text-center">
-                <img src={require("@site/static/team/sander.webp").default} alt="CTO" className="mx-auto rounded-full border-4 border-gray-200 shadow-lg" style={{ width: "200px", height: "200px" }}/>
+                <LazyLoadImage src={require("@site/static/team/sander.webp").default} alt="CTO" className="mx-auto rounded-full border-4 border-gray-200 shadow-lg" style={{ width: "200px", height: "200px" }}/>
                 <h2 className="text-lg md:text-xl font-semibold mt-4"><a href="https://trigaten.github.io">Sander Schulhoff</a></h2>
                 <p className="text-gray-500 mt-2">CTO</p>
               </div>
               <div className="text-center">
-                <img src={require("@site/static/team/anaum.webp").default} alt="CEO" className="mx-auto rounded-full  shadow-lg" style={{ width: "200px", height: "200px" }}/>
+                <LazyLoadImage src={require("@site/static/team/anaum.webp").default} alt="CEO" className="mx-auto rounded-full  shadow-lg" style={{ width: "200px", height: "200px" }}/>
                 <h2 className="text-lg md:text-xl font-semibold mt-4"><a href="https://www.linkedin.com/in/anaumkhan/">Anaum Khan</a></h2>
                 <p className="text-gray-500 mt-2">CEO</p>
               </div>
               <div className="text-center">
-                <img src={require("@site/static/team/fady.webp").default} alt="COO" className="mx-auto rounded-full border-4 border-gray-200 shadow-lg" style={{ width: "200px", height: "200px" }}/>
+                <LazyLoadImage src={require("@site/static/team/fady.webp").default} alt="COO" className="mx-auto rounded-full border-4 border-gray-200 shadow-lg" style={{ width: "200px", height: "200px" }}/>
                 <h2 className="text-lg md:text-xl font-semibold mt-4"><a href="https://www.linkedin.com/in/fadyyanni/">Fady Yanni</a></h2>
                 <p className="text-gray-500 mt-2">COO</p>
               </div>

@@ -56,7 +56,7 @@ nvm install-latest-npm
 ## Thanks to all contributors ❤
 
  <a href = "https://github.com/trigaten/Learn_Prompting/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=trigaten/Learn_Prompting"/>
+   <LazyLoadImage src = "https://contrib.rocks/image?repo=trigaten/Learn_Prompting"/>
  </a>
 
 ## Cite
