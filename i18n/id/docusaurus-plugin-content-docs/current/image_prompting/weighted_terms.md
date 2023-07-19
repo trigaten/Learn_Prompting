@@ -16,19 +16,19 @@ import planets from '@site/docs/assets/images_chapter/planets.webp';
 Ini adalah beberapa gunung yang dihasilkan oleh Stable Diffusion, dengan prompt `mountain`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={mountains} style={{width: "350px"}} />
+  <LazyLoadImage src={mountains} style={{width: "350px"}} />
 </div>
 
 Namun, jika kita ingin pegunungan tanpa pepohonan, kita bisa menggunakan prompt `gunung | tree:-10`. Karena kami memberi bobot negatif yang sangat tinggi pada pohon, mereka tidak muncul di gambar yang dihasilkan.
 
 <div style={{textAlign: 'center'}}>
-  <img src={mountains_no_trees} style={{width: "350px"}} />
+  <LazyLoadImage src={mountains_no_trees} style={{width: "350px"}} />
 </div>
 
 Kata berbobot dapat digabungkan menjadi permintaan yang lebih rumit, seperti `A planet in space:10 | bursting with color red, blue, and purple:4 | aliens:-10 | 4K, high quality`
 
 <div style={{textAlign: 'center'}}>
-  <img src={planets} style={{width: "350px"}} />
+  <LazyLoadImage src={planets} style={{width: "350px"}} />
 </div>
 
 ## Catatan
