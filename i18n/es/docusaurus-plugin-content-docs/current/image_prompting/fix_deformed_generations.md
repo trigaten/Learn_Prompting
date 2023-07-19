@@ -16,14 +16,14 @@ Usando Stable Diffusion v1.5 y el siguiente prompt, generamos una bonita imagen 
 `retrato mediano de estudio de Brad Pitt saludando con sus manos, detallado, película, iluminación de estudio, lente de 90mm, por Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
 </div>
 
 Usando un prompt negativo robusto, podemos generar manos mucho más convincentes.
 
 ``
 <div style={{textAlign: 'center'}}>
-  <img src={good_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={good_pitt} style={{width: "250px"}} />
 </div>
 
 El uso de un prompt negativo similar también puede ayudar con otras partes del cuerpo. Desafortunadamente, esta técnica no es consistente, por lo que es posible que necesite intentar varias generaciones antes de obtener un buen resultado. En el futuro, este tipo de prompting debería ser innecesario ya que los modelos mejorarán. Sin embargo, actualmente es una técnica muy útil.
