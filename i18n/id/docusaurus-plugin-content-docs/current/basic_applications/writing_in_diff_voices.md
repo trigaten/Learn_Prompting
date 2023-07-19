@@ -14,13 +14,13 @@ import friendship_chris from '../assets/basic_applications/Friendship_Chris_Rock
 import friendship_millennial from '../assets/basic_applications/Friendship_Millennial.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship} style={{width: "750px"}} />
 </div>
 
 Blah. Begitu hambar. Hasilnya berubah ketika Anda menambahkan spesifikasi, seperti “**Silakan tulis dalam gaya informal, percakapan.**” ChatGPT menghasilkan sesuatu seperti ini:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_informal} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_informal} style={{width: "750px"}} />
 </div>
 
 Itu sedikit lebih baik.
@@ -28,19 +28,19 @@ Itu sedikit lebih baik.
 Dan jika Anda merasa sedikit mewah, Anda dapat meminta ChatGPT untuk menulis dengan gaya salah satu karya sastra terkenal, seperti Mark Twain:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_mark} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_mark} style={{width: "750px"}} />
 </div>
 
 Teksnya jadi lebih hidup dan menarik. Tapi tidak harus seorang penulis terkenal. Anda juga bisa menggunakan individu yang terkenal, seperti Chris Rock. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_chris} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_chris} style={{width: "750px"}} />
 </div>
 
 Bagaimana dengan para “milennials” itu?
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_millennial} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_millennial} style={{width: "750px"}} />
 </div>
 
 ## Salin Gaya Menulis Anda
