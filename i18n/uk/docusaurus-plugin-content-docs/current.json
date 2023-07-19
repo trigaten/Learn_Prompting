@@ -1,0 +1,71 @@
+{
+  "sidebar.tutorialSidebar.category.😃 Basics": {
+    "message": "😃 Основи"
+  },
+  "sidebar.tutorialSidebar.category.😃 Basics.link.generated-index.description": {
+    "message": "Вступ до інженерії запитів та прості методи інженерії запитів."
+  },
+  "sidebar.tutorialSidebar.category.💼 Basic Applications": {
+    "message": "💼 Основні застосунки"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate": {
+    "message": "🧙‍♂️ Середній рівень"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate.link.generated-index.description": {
+    "message": "Вступ до інженерії запитів та прості методи інженерії запитів."
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting": {
+    "message": "🧪 Прикладні запити"
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting.link.generated-index.description": {
+    "message": "Декілька повних покрокових інструкцій процесу інженерії запитів, написаних членами спільноти."
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications": {
+      "message": "🚀 Розширені застосунки"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications.link.generated-index.description": {
+    "message": "Кілька дуже ефективних і більш розширених застосунків інженерії запитів."
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability": {
+    "message": "⚖️ Надійність"
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability.link.generated-index.description": {
+    "message": "Як зробити ВММ більш надійними"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting": {
+    "message": "🖼️ Написання запитів для створення зображень"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting.link.generated-index.description": {
+    "message": "Інженерія запитів для перетворення тексту в зображення у таких моделях, як DALLE і Stable Diffusion!"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking": {
+    "message": "🔓 Злом запиту"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking.link.generated-index.description": {
+    "message": "Хакерство, але для інженерії запитів"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling": {
+    "message": "🔨 Інструменти"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling.link.generated-index.description": {
+    "message": "ІСР інженерії запитів"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs": {
+    "message": "ІСР інженерії запитів"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs.link.generated-index.description": {
+    "message": "ІСР інженерії запитів"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning": {
+    "message": "💪 Налаштування запиту"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning.link.generated-index.description": {
+    "message": "Інженерія запитів, яку можна налаштувати за допомогою градієнтів"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous": {
+    "message": "🎲 Різне"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous.link.generated-index.description": {
+    "message": "Різне"
+  }
+}
