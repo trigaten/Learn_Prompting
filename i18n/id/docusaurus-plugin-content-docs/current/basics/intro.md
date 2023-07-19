@@ -52,7 +52,7 @@ import dyno from '@site/docs/assets/basics/dyno_example.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={dyno} style={{width: "750px"}} />
+  <LazyLoadImage src={dyno} style={{width: "750px"}} />
 </div>
 
 Anda seharusnya dapat melihat sebuah embed yang terlihat persis seperti gambar ini tepat di bawah paragraf ini. Jika Anda tidak bisa, Anda mungkin perlu mengaktifkan JavaScript atau menggunakan browser yang berbeda.
@@ -76,7 +76,7 @@ Meskipun OpenAI menyediakan kredit gratis, pada akhirnya Anda harus membayar unt
 Ketika Anda dapat mengakses halaman [OpenAI API key](https://platform.openai.com/account/api-keys), klik tombol**Create new secret key**. Ini akan muncul sebuah modal yang berisi sebuah string teks seperti ini:
 
 <div style={{textAlign: 'center'}}>
-  <img src={key} style={{width: "750px"}} />
+  <LazyLoadImage src={key} style={{width: "750px"}} />
 </div>
 
 Masukkan kunci ini ke dalam embed dan tekan **Simpan**. Sekarang Anda seharusnya dapat menggunakan embed di seluruh situs ini.
