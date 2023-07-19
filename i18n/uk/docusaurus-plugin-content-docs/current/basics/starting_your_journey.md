@@ -34,7 +34,7 @@ import Steps from '@site/docs/assets/basics/steps.svg';
 import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <LazyLoadImage src={CSharp} style={{width: "750px"}} />
 </div>
 
 Ми бачимо, що він створив історію, але написав її всередині блоку коду csharp (мова програмування). Можливо, ми цього не хочемо, тому ми змінимо запит на:
