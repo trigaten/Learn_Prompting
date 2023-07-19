@@ -12,7 +12,7 @@ Seperti yang ditunjukkan dalam gambar contoh (@ignore_previous_prompt) di bawah 
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={research} style={{width: "500px"}} />
+  <LazyLoadImage src={research} style={{width: "500px"}} />
 </div>
 
 Gambar berikut (@simon2022inject), lagi-lagi dari contoh `remoteli.io`, menampilkan pengguna Twitter yang membuat model bocor dengan promptnya.
@@ -20,7 +20,7 @@ Gambar berikut (@simon2022inject), lagi-lagi dari contoh `remoteli.io`, menampil
 import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "300px"}} />
+  <LazyLoadImage src={Image} style={{width: "300px"}} />
 </div>
 
 Ya, lalu apa? Mengapa kita harus peduli tentang prompt leaking?
@@ -34,7 +34,7 @@ Lebih mencolok, Microsoft merilis mesin pencari berbasis ChatGPT yang dikenal se
 import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={bing} style={{width: "700px"}} />
+  <LazyLoadImage src={bing} style={{width: "700px"}} />
 </div>
 
 Dengan lonjakan baru-baru ini dalam startup berbasis GPT-3, dengan prompt yang jauh lebih rumit yang dapat memakan banyak waktu untuk dikembangkan, ini adalah kekhawatiran yang nyata.
