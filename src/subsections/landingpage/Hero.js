@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from "react";
-import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ButtonField from "@site/src/components/ButtonField";
