@@ -240,7 +240,7 @@ cite them as such.
 
 #### Survey of Hallucination in Natural Language Generation(@Ji_2022)
 
-#### Examples(@2022examples)
+#### Examples(@liu2021makes)
 
 #### Wordcraft(@yuan2022wordcraft)
 

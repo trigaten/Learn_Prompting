@@ -257,7 +257,7 @@ French:
 
 #### Enquête sur l'hallucination dans la génération de langage naturel(@Ji_2022)
 
-#### Exemples(@2022examples)
+#### Exemples(@liu2021makes)
 
 #### Wordcraft(@yuan2022wordcraft)
 
