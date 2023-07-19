@@ -19,9 +19,9 @@
     <path d="M30.9 0 M30.9 0 C57.48 2.28, 85.72 1, 162.28 0 M30.9 0 C65.71 1.55, 99.86 0.87, 162.28 0 M162.28 0 C182.71 -1.09, 193.92 11.59, 193.18 30.9 M162.28 0 C183.82 -1.21, 191.52 9.76, 193.18 30.9 M193.18 30.9 C195.49 46.35, 195.29 57.55, 193.18 92.7 M193.18 30.9 C194.39 50.82, 193.95 72.21, 193.18 92.7 M193.18 92.7 C191.67 115.05, 183.04 125.33, 162.28 123.6 M193.18 92.7 C192.1 113.29, 182.46 125.16, 162.28 123.6 M162.28 123.6 C126.81 124.59, 89.66 124.09, 30.9 123.6 M162.28 123.6 C117.94 123.28, 74.56 122.53, 30.9 123.6 M30.9 123.6 C8.83 125.07, -1.17 113.6, 0 92.7 M30.9 123.6 C9.75 124.06, 1.55 113.7, 0 92.7 M0 92.7 C-1.07 76.57, 0.4 57.43, 0 30.9 M0 92.7 C0.21 76.03, -0.59 57.19, 0 30.9 M0 30.9 C0.64 10.08, 11.37 -0.52, 30.9 0 M0 30.9 C-1.27 9.83, 9.88 -1.12, 30.9 0" stroke="#000000" stroke-width="1" fill="none"/>
   </g>
   <g transform="translate(26.861053466796875 74.97380065917969) rotate(0 87.84994506835938 52.5)">
-    <text x="87.84994506835938" y="0" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Write the </text>
-    <text x="87.84994506835938" y="35" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">word "funny" </text>
-    <text x="87.84994506835938" y="70" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">backwards</text>
+    <text x="87.84994506835938" y="0" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Tulislah </text>
+    <text x="87.84994506835938" y="35" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">kata "funny" </text>
+    <text x="87.84994506835938" y="70" font-family="Virgil, Segoe UI Emoji" font-size="28px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">secara mundur</text>
   </g>
   <g stroke-linecap="round">
     <g transform="translate(214.3968200683596 133.29441968391802) rotate(0 56.70371933970591 0.4006355759592566)">
@@ -43,9 +43,9 @@
     <text x="44.225982666015625" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#000000" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">ynnuf</text>
   </g>
   <g transform="translate(10 10) rotate(0 108.83990478515625 12.5)">
-    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">An Instruction Prompt</text>
+    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Sebuah Prompt Instruksi</text>
   </g>
   <g transform="translate(358.34203338623047 11.204986572265625) rotate(0 66.83993530273438 12.5)">
-    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Model Output</text>
+    <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Output Model</text>
   </g>
 </svg>
