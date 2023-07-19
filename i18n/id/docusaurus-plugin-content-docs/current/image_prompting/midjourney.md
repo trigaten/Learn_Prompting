@@ -48,13 +48,13 @@ Anatomi dasar prompt dengan Midjourney adalah `/bayangkan prompt: [GAMBAR PROMPT
 Contoh: `/imagine prompt: astronaut on a horse`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut} style={{width: "350px"}} />
 </div>
 
 Contoh dengan parameter: `imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
 
 Dalam contoh dasar ini, parameter-parameter berikut telah digunakan:
@@ -83,7 +83,7 @@ Contoh:
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi1} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
 ```text
@@ -91,7 +91,7 @@ Contoh:
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi2} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
 ## Image Prompts
@@ -102,7 +102,7 @@ Dengan mengunggah gambar ke Discord dan menggunakan URL-nya dalam sebuah prompt,
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_ip2} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
 ## Parameter (v4)
@@ -116,9 +116,9 @@ Berikut adalah parameter-parameter yang didukung oleh model terbaru Midjourney (
 Contoh: `astronaut on a horse --ar 16:9` dan `astronaut on a horse --ar 1:2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
 </div>
 
 ### Chaos:
@@ -128,9 +128,9 @@ Contoh: `astronaut on a horse --ar 16:9` dan `astronaut on a horse --ar 1:2`
 Contoh: `astronaut on a horse --c20` dan `astronaut on a horse --c 80`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
 </div>
 
 ### Kualitas:
@@ -140,9 +140,9 @@ Contoh: `astronaut on a horse --c20` dan `astronaut on a horse --c 80`
 Contoh: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
 </div>
 
 ### Seed:
@@ -152,9 +152,9 @@ Contoh: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 Contoh: `astronaut on a horse --seed 123`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
 </div>
 
 ### Stylize:
@@ -164,9 +164,9 @@ Contoh: `astronaut on a horse --seed 123`
 Contoh: `astronaut on a horse --s 50` dan `astronaut on a horse --s 900`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
 </div>
 
 ### Versi:
@@ -175,11 +175,11 @@ Contoh: `astronaut on a horse --s 50` dan `astronaut on a horse --s 900`
 Contoh: `--v 1`, `--v 2`, and `--v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
    &nbsp;
-      <img src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
+      <LazyLoadImage src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
 </div>
 
 ## Parameter (model sebelumnya)
@@ -191,7 +191,7 @@ Contoh: `--v 1`, `--v 2`, and `--v 3`
 Contoh: `astronaut on a horse --sameseed --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
 </div>
 
 ### Tile
@@ -201,11 +201,11 @@ Contoh: `astronaut on a horse --sameseed --v 3`
 Contoh: `astronaut on a horse --tile --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
   &nbsp;
-  <img src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
   &nbsp;
-  <img src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
 </div>
 
 ### Video
