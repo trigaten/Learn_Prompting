@@ -48,7 +48,7 @@ import search from '@site/docs/assets/advanced/mrkl/search.webp';
 import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <LazyLoadImage src={mrkl_task} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -62,37 +62,37 @@ He reproducido un ejemplo del sistema MRKL del artículo original, utilizando Du
 Primero, hice un conjunto de datos simple en la pestaña `Datasets` de Dust.
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 Luego, cambié a la pestaña `Specification` y cargué el conjunto de datos utilizando un bloque `data`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 A continuación, creé un bloque `llm` que extrae los números y operaciones. Observe cómo en el prompt le dije que estaríamos usando la calculadora de Google. El modelo que uso (GPT-3) probablemente tiene algún conocimiento de la calculadora de Google desde el preentrenamiento.
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 Luego, hice un bloque `code`, que ejecuta un código JavaScript simple para eliminar los espacios de la finalización.
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 Finalmente, hice un bloque `search` que envía la ecuación reformateada a la calculadora de Google.
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 ¡A continuación, podemos ver los resultados finales, que son todos correctos!
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 Siéntase libre de clonar y experimentar con este playground [aquí](https://dust.tt/trigaten/a/98bdd65cb7).
