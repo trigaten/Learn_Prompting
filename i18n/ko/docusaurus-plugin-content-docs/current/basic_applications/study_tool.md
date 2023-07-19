@@ -4,21 +4,21 @@ sidebar_position: 30
 
 # 🟢 공부 도우미
 
-LLM을 이용하는 방법 중에는 공부 도구로써의 방법이 있습니다. 특히, 테스트에서 여러분들을 헷갈리게 만드는 단어들을 설명하는데 상당히 유용합니다.
+LLM을 이용하는 방법 중에는 공부 도구로써의 방법이 있습니다. 특히, 테스트에서 여러분을 헷갈리게 하는 단어를 설명하는데 상당히 유용합니다.
 
 ## 단어 설명
 
 최근에 나는 선인장에 관한 책을 읽고 있었습니다. 그리고 아래의 문장을 보게 되었습니다:
 
 ```text
-Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
+Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically.
 ```
 
 
 저는 **less derived woods**가 무엇을 의미하는 지 몰랐고 구글은 그냥 연구 논문들만 알려줄 뿐이었습니다. 저는 ChatGPT를 통해서 무슨 뜻인지 알아보기로 결정했습니다. 그래서 책에 있는 간단한 문장과 질문으로 이루어진 아래의 프롬프트를 넣기로 했습니다.
 
 ```text
-Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
+Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically.
 
 What do less derived woods mean?
 
@@ -73,4 +73,4 @@ Generate 5 marketing quiz questions for me based on my notes:
 
 ## 결론
 
-LLM을 공부에 활용하는 다른 방법들도 있을 것입니다. Duolingo 와 Quizlet같은 많은 교육 기업들이 그들의 제품에 LLM을 적용하는 방법을 개발하고 있습니다. 
+LLM을 공부에 활용하는 다른 방법들도 있을 것입니다. Duolingo 와 Quizlet같은 많은 교육 기업들이 그들의 제품에 LLM을 적용하는 방법을 개발하고 있습니다.

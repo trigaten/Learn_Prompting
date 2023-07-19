@@ -1,0 +1,71 @@
+{
+    "sidebar.tutorialSidebar.category.😃 Basics": {
+      "message": "😃 Básicos"
+    },
+    "sidebar.tutorialSidebar.category.💼 Basic Applications": {
+      "message": "💼 Aplicações Básicas"
+    },
+    "sidebar.tutorialSidebar.category.😃 Basics.link.generated-index.description": {
+      "message": "Introdução à Engenharia de Prompt e técnicas simples"
+    },
+    "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate": {
+      "message": "🧙‍♂️ Intermediário"
+    },
+    "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate.link.generated-index.description": {
+      "message": "Técnicas de complexidade mediada"
+    },
+    "sidebar.tutorialSidebar.category.🧪 Applied Prompting": {
+      "message": "🧪 Prompt Aplicado"
+    },
+    "sidebar.tutorialSidebar.category.🧪 Applied Prompting.link.generated-index.description": {
+      "message": "Alguns exemplos aplicados escritos por membros da comunidade"
+    },
+    "sidebar.tutorialSidebar.category.🚀 Advanced Applications": {
+      "message": "🚀 Aplicações Avançadas"
+    },
+    "sidebar.tutorialSidebar.category.🚀 Advanced Applications.link.generated-index.description": {
+      "message": "Algumas aplicações mais poderosas de Engenharia de Software"
+    },
+    "sidebar.tutorialSidebar.category.⚖️ Reliability": {
+      "message": "⚖️ Confiabilidade"
+    },
+    "sidebar.tutorialSidebar.category.⚖️ Reliability.link.generated-index.description": {
+      "message": "Como tornar os resultados de um prompt mais estáveis e confiáveis"
+    },
+    "sidebar.tutorialSidebar.category.🖼️ Image Prompting": {
+      "message": "🖼️ Imagens"
+    },
+    "sidebar.tutorialSidebar.category.🖼️ Image Prompting.link.generated-index.description": {
+      "message": "Criando imagens com DALLE e Stable Diffusion!"
+    },
+    "sidebar.tutorialSidebar.category.🔓 Prompt Hacking": {
+      "message": "🔓 Hackeando Prompts"
+    },
+    "sidebar.tutorialSidebar.category.🔓 Prompt Hacking.link.generated-index.description": {
+      "message": "Aprendendo a hackear prompts, como o intuito de tornar suas aplicações mais seguras"
+    },
+    "sidebar.tutorialSidebar.category.🔨 Tooling": {
+      "message": "🔨 Ferramentas"
+    },
+    "sidebar.tutorialSidebar.category.🔨 Tooling.link.generated-index.description": {
+      "message": "Ferramentas úteis para Engenharia de Software."
+    },
+    "sidebar.tutorialSidebar.category.Prompt Engineering IDEs": {
+      "message": "Ferramentas úteis para Engenharia de Software."
+    },
+    "sidebar.tutorialSidebar.category.Prompt Engineering IDEs.link.generated-index.description": {
+      "message": "Ferramentas úteis para Engenharia de Software."
+    },
+    "sidebar.tutorialSidebar.category.💪 Prompt Tuning": {
+      "message": "💪 Tunando Prompts"
+    },
+    "sidebar.tutorialSidebar.category.💪 Prompt Tuning.link.generated-index.description": {
+      "message": "Tunando prompts com Gradientes"
+    },
+    "sidebar.tutorialSidebar.category.🎲 Miscellaneous": {
+      "message": "🎲 Aleatórios"
+    },
+    "sidebar.tutorialSidebar.category.🎲 Miscellaneous.link.generated-index.description": {
+      "message": "Um pouco de todo o resto!"
+    }
+  }

@@ -11,7 +11,7 @@ method, which encourages the LLM to explain its reasoning. The below image(@wei2
 shows a %%few shot standard prompt|few shot standard prompt%% (left) compared to a chain of thought prompt (right).
 
 
-import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
+import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CoTExample} style={{width: "750px"}} />
@@ -54,7 +54,7 @@ arithmetic, commonsense, and symbolic reasoning tasks (@wei2022chain).
 In particular, prompted PaLM 540B(@chowdhery2022palm) achieves 57% solve 
 rate accuracy on GSM8K(@cobbe2021training) (SOTA at the time).
 
-import PromptedPaLM from '@site/docs/assets/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={PromptedPaLM} style={{width: "300px"}} />

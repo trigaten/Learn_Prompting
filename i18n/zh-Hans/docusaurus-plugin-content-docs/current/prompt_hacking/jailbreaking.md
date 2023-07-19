@@ -16,7 +16,7 @@ OpenAI等创建LLM的公司和组织都包括内容审查功能，以确保它�
 
 #### 简单的伪装
 
-import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.png';
+import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={pretend} style={{width: "500px"}} />
@@ -27,7 +27,7 @@ import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.png';
 
 #### 角色扮演
 
-import actor from '@site/docs/assets/jailbreak/chatgpt_actor.jpg';
+import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={actor} style={{width: "500px"}} />
@@ -41,7 +41,7 @@ ChatGPT通过RLHF进行了微调，因此从理论上讲，它是被训练成用
 
 #### 承担责任
 
-import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.jpg';
+import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={responsibility} style={{width: "500px"}} />
@@ -51,7 +51,7 @@ import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak
 
 #### 研究实验
 
-import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.png';
+import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={hotwire} style={{width: "500px"}} />
@@ -61,7 +61,7 @@ import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.png';
 
 #### 逻辑推理
 
-import logic from '@site/docs/assets/jailbreak/logic.png';
+import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={logic} style={{width: "500px"}} />
@@ -75,7 +75,7 @@ ChatGPT 设计用于回答问题和指令。当用户的状态被解释为高于
 
 #### 上级模型
 
-import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.png';
+import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={GPT4} style={{width: "500px"}} />
@@ -85,7 +85,7 @@ import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.png';
 
 #### Sudo 模式
 
-import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
+import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={sudo_mode} style={{width: "500px"}} />
@@ -93,13 +93,13 @@ import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
 
 Sudo 是一个命令，可以"授权某些用户…运行某些（或全部）命令…"(@sudo2022jailbreak)。例如，[@samczsun](https://twitter.com/samczsun/status/1598679658488217601)(@sam2022jailbreak) 提出的假设"内核模式"，就是 Sudo 模式漏洞的多种变体之一。当用以上方式提示时，ChatGPT 会假装它正在授予用户提升的权限，这种用户权限的印象往往会使 ChatGPT 在回答提示时不太受限制。
 
-import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.png';
+import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={sudo} style={{width: "500px"}} />
 </div>
 
-import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.png';
+import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={lynx} style={{width: "500px"}} />

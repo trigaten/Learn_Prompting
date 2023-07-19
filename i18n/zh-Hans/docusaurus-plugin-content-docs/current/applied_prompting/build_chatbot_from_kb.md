@@ -4,11 +4,11 @@ sidebar_position: 40
 
 # 🟢 聊天机器人 + 知识库
 
-import ImageIntents from '@site/docs/assets/chatbot_from_kb_intents.png'
-import ImageGPT3 from '@site/docs/assets/chatbot_from_kb_gpt3.png'
-import ImageGPT3Organized from '@site/docs/assets/chatbot_from_kb_gpt3_organized.png'
-import ImagePrompt from '@site/docs/assets/chatbot_from_kb_prompt.png'
-import ImageLogin from '@site/docs/assets/chatbot_from_kb_login.png'
+import ImageIntents from '@site/docs/assets/basic_applications/chatbot_from_kb_intents.webp'
+import ImageGPT3 from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3.webp'
+import ImageGPT3Organized from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3_organized.webp'
+import ImagePrompt from '@site/docs/assets/basic_applications/chatbot_from_kb_prompt.webp'
+import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_login.webp'
 
 从 [GPT-3](https://arxiv.org/abs/2005.14165) 和 [ChatGPT](https://chat.openai.com/chat) 等大型语言模型 (LLM) 的最新进展中可以看出，在技术行业引起了很大的关注。这些模型对内容生成非常强大，但它们也有一些缺点，例如偏差(@nadeem-etal-2021-stereoset) 和幻象(@Ji_2022)。LLM在聊天机器人开发方面特别有用。
 

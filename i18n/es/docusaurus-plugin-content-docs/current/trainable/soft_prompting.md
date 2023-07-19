@@ -7,7 +7,7 @@ sidebar_position: 1
 La sintonización de prompts (@lester2021power), una alternativa a la sintonización fina del modelo (@khashabi2021prompt), congela los pesos del modelo y actualiza los parámetros de un prompt. El prompt resultante es un 'prompt suave'.
 
 
-import Image from '@site/docs/assets/prompt_tuning.png';
+import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "500px"}} />

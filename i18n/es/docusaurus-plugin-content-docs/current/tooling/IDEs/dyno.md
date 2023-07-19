@@ -6,7 +6,7 @@ sidebar_position: 4
 
 [Dyno](https://trydyno.com/login) es un entorno de desarrollo integrado para la creación de prompts que se centra en iterar sobre un solo prompt. Proporcionan una interfaz web profesional con la capacidad de dividir un prompt en varias vistas para una iteración adicional.
 
-import Image from '@site/docs/assets/tooling/dyno.png';
+import Image from '@site/docs/assets/tooling/dyno.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

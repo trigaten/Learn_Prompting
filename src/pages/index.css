@@ -64,26 +64,26 @@ code {
 }
 
 .left-1{
-  transform: translateX(-14%);
+  transform: translateX(0%);
 }
 .left-2{
-  transform: translateX(-40%);
+  transform: translateX(-100%);
 }
 .left-3 {
-  transform: translateX(-65%);
+  transform: translateX(-200%);
 }
 .left-4{
-  transform: translateX(-90%);
+  transform: translateX(-300%);
 }
 .left-1-mobile {
-  transform: translateX(3%);
+  transform: translateX(0%);
 }
 .left-2-mobile {
-  transform: translateX(-95%);
+  transform: translateX(-100%);
 }
 .left-3-mobile {
-  transform: translateX(-192%);
+  transform: translateX(-200%);
 }
 .left-4-mobile {
-  transform: translateX(-290%);
+  transform: translateX(-300%);
 }

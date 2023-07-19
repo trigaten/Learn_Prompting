@@ -4,7 +4,7 @@ sidebar_position: 90
 
 # 🟢 LLM의 함정
 
-import Pitfalls from '@site/docs/assets/pitfalls.svg';
+import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 
 <div style={{textAlign: 'center'}}>
   <Pitfalls style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
@@ -16,7 +16,7 @@ LLM은 굉장히 강력하지만 이것이 완벽함을 의미하지는 않습�
 
 LLM들은 **출처를 정확하게** 알 수 없습니다. 그들이 인터넷에 접속할 수 없기 때문이기도 하고 정보를 어디서 얻었는 지 기억할 수도 없기 때문이기도 합니다. LLM은 꽤 좋아보이는 정보를 생성하지만 완전히 틀렸을 수도 있습니다.
 
-:::참고
+:::note
 탐색 증강된 LLM(인터넷과 다른 자료들을 탐색할 수 있는 LLM)을 이용하면 이러한 문제를 종종 해결할 수 있습니다
 :::
 
@@ -32,7 +32,7 @@ LLM은 우리가 그들이 잘 모르는 것에 대해 질문했을 때 거짓�
 
 LLM은 수학을 잘 못합니다. 그들은 간단한 수학문제를 푸는 것에 어려움을 느끼고 그리고 복잡한 수학 문제는 아예 풀지도 못할 때가 많습니다.
 
-:::참고
+:::note
 이 문제는 [증강된 LLM](https://learnprompting.org/docs/advanced_applications/mrkl)을 통해서 해결할 수 있습니다.
 :::
 

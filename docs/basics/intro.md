@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
-import Techniques from '@site/docs/assets/techniques.svg';
+import Techniques from '@site/docs/assets/basics/techniques.svg';
 
 <div style={{textAlign: 'center'}}>
   <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
@@ -66,8 +66,8 @@ This course offers an interactive learning experience. You can experiment with e
 
 Here is an **image** of what an embed looks like:
 
-import dyno from '@site/docs/assets/basics/dyno_example.png';
-import key from '@site/docs/assets/API_key.png';
+import dyno from '@site/docs/assets/basics/dyno_example.webp';
+import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={dyno} style={{width: "750px"}} />

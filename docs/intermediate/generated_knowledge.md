@@ -110,7 +110,7 @@ Next, let's use that knowledge to answer the question correctly. This is the *kn
 
 Although the above use case was similar to the way generated knowledge was originally introduced, it is not exactly the same. The below content covers the more technical context in which the approach was introduced. It follows the two intermediate steps (knowledge generation and knowledge integration) pattern that we saw above.
 
-import KGImage from '@site/docs/assets/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}} />
@@ -126,7 +126,7 @@ In the knowledge generation step, the %%LLM|LLM%% is asked to generate a set of 
 about the **question**. The LLM is prompted in few-shot fashion as seen below. 
 M different completions are generated using this same prompt (similar to the self-consistency approach).
 
-import KGP1Image from '@site/docs/assets/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGP1Image} style={{width: "500px"}} />
@@ -171,7 +171,7 @@ log probability of the answer token(s).
 The recitation-augmented(@sun2022recitationaugmented) approach it is similar to generated knowledge (basically the same). However, is much less complex than the formal implementation of generated knowledge.
 
 
-import RImage from '@site/docs/assets/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={RImage} style={{width: "250px"}} />
