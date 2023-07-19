@@ -19,6 +19,7 @@
     "@docusaurus/core": "^2.4.0",
     "@docusaurus/plugin-client-redirects": "^2.4.0",
     "@docusaurus/plugin-google-analytics": "^2.4.0",
+    "@docusaurus/plugin-ideal-image": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.0",
     "@docusaurus/theme-mermaid": "^2.4.0",
     "@kailualabs/multimodal-search": "^1.0.1",
