@@ -16,11 +16,11 @@ Bagian ini berisi daftar alat-alat non-IDE yang berguna untuk memicu.
 
 ### [PromptAppGPT](https://github.com/mleoking/PromptAppGPT)
 
-> PromptAppGPT is a low-code prompt-based rapid app development framework. PromptAppGPT contains features such as low-code prompt-based development, GPT text generation, DALLE image generation, online prompt editer+compiler+runer, automatic user interface generation, support for plug-in extensions, etc. PromptAppGPT aims to enable natural language app development based on GPT.
+> PromptAppGPT adalah kerangka pengembangan aplikasi cepat berbasis kode rendah. PromptAppGPT memuat fitur seperti pengembangan berbasis prompt low-code, generasi teks GPT, generasi gambar DALLE, online prompt editor+compiler+runner, generasi antarmuka pengguna otomatis, dukungan untuk ekstensi plug-in, dll. PromptAppGPT bertujuan untuk memungkinkan pengembangan aplikasi bahasa alami berdasarkan GPT.
 
-> PromptAppGPT provides multi-task conditional triggering, result verification, and failure retry capabilities, allowing manual generation tasks that would otherwise require multiple steps to be automated. At the same time, users no longer need to memorise and enter the tedious prompt mantra themselves, and can easily complete tasks by entering only the core necessary information for the task.
+> PromptAppGPT menyediakan pemicu kondisional multi-tugas, verifikasi hasil, dan kemampuan pengulangan kegagalan, memungkinkan tugas generasi manual yang sebaliknya membutuhkan beberapa langkah untuk diotomatisasi. Pada saat yang sama, pengguna tidak perlu lagi menghafal dan memasukkan mantera yang membosankan itu sendiri, dan dapat dengan mudah menyelesaikan tugas dengan memasukkan hanya informasi yang terpenting untuk tugas itu.
 
-> PromptAppGPT significantly lowers the barrier to GPT application development, allowing anyone to develop AutoGPT-like applications with a few lines of low code.
+> PromptAppGPT secara signifikan menurunkan hambatan untuk pengembangan aplikasi GPT, memungkinkan siapa pun mengembangkan aplikasi mirip AutoGPT dengan beberapa baris kode rendah.
 
 
 
