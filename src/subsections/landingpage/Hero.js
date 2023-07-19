@@ -118,10 +118,10 @@ function Hero() {
                 x_pos_mob
               }
             >
-              <LazyLoadImage src={BeginnerMobile} alt="Beginner Mobile" />
-              <LazyLoadImage src={IntermediateMobile} alt="Intermediate Mobile" />
-              <LazyLoadImage src={AdvancedMobile} alt="Advanced Mobile"/>
-              <LazyLoadImage src={ApplicationsMobile} alt="Applications Mobile"/>
+              <img src={BeginnerMobile} alt="Beginner Mobile" loading="lazy"/>
+              <img src={IntermediateMobile} alt="Intermediate Mobile" loading="lazy"/>
+              <img src={AdvancedMobile} alt="Advanced Mobile" loading="lazy"/>
+              <img src={ApplicationsMobile} alt="Applications Mobile" loading="lazy"/>
             </div>
           </div>
         </div>
