@@ -9,7 +9,7 @@ sidebar_position: 20
 import Image from '@site/docs/assets/tooling/promptmetheus.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Характеристики
