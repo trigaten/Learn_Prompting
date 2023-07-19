@@ -10,61 +10,61 @@ import RolePrompt from '@site/docs/assets/basics/role_prompt.svg';
   <RolePrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Role prompting[^a] is a techniques that can be used to control the style of AI generated text(@shanahan2023roleplay)(@li2023camel)(@santu2023teler). It can also improve the AI's accuracy (e.g. solving a math problem). It is as simple as telling the AI "you are a food critic" or to "act like a detective". Role prompting is a widely used technique, and is used in many of the examples on this site.
+Role prompting[^a] adalah teknik yang dapat digunakan untuk mengontrol gaya teks yang dihasilkan oleh AI(@shanahan2023roleplay)(@li2023camel)(@santu2023teler). Teknik ini juga dapat meningkatkan keakuratan AI (misalnya memecahkan masalah matematika). Caranya semudah memberi tahu AI "kamu adalah kritikus makanan" atau "bertindak seperti seorang detektif". Role Prompting adalah teknik yang banyak digunakan, dan digunakan dalam banyak contoh di situs ini.
 
 
-## Styling Text
+## Memperindah Teks
 
-Role prompting is most often used to style text. It involves asking the AI to pretend to be a certain person, or act in a certain way, modifying how it writes based on the assigned role. This can be used to change the tone, style, and even the depth of the information presented. Let's delve into this concept with a food review example.
+Role prompting paling sering digunakan untuk memformat teks. Hal ini melibatkan meminta AI berpura-pura menjadi seseorang tertentu, atau bertindak dengan cara tertentu, memodifikasi cara menulis berdasarkan peran yang ditugaskan. Dapat digunakan untuk mengubah nada, gaya, dan bahkan kedalaman informasi yang disajikan. Mari kita jelajahi konsep ini dengan contoh ulasan makanan.
 
-### Food Review Example
+### Contoh Ulasan Makanan
 
-When writing a review, it's important to tailor your approach based on the platform you're using and the audience you're writing for. Simply copying and pasting the same review across various sites like Google Reviews, TripAdvisor, and Yelp is not an effective strategy, especially if you're writing for a food critic in a magazine or blog post. To ensure your review resonates with your intended audience, consider factors like length, style, language, and tone, and use these to craft a review that speaks directly to your readers' interests and expectations. With a thoughtful approach and a focus on quality content, you can create a review that truly captures the essence of the pizza place you're writing about. Let's start with a simple prompt without a role.
+Ketika menulis ulasan, penting untuk menyesuaikan pendekatan Anda berdasarkan platform yang Anda gunakan dan audiens yang Anda tulis untuk. Hanya menyalin dan menempelkan ulasan yang sama di berbagai situs seperti Google Reviews, TripAdvisor, dan Yelp bukan strategi yang efektif, terutama jika Anda menulis untuk kritikus makanan di majalah atau posting blog. Untuk memastikan ulasan Anda sesuai dengan audiens yang dituju, pertimbangkan faktor seperti panjang, gaya, bahasa, dan nada, dan gunakan ini untuk menyusun ulasan yang langsung mengena pada minat dan harapan pembaca Anda. Dengan pendekatan yang teliti dan fokus pada konten berkualitas, Anda dapat membuat ulasan yang benar-benar mengcapture inti dari tempat pizza yang sedang Anda tulis. Mari kita mulai dengan perintah sederhana tanpa peran.
 
 ```text
-Write a review of [pizza place].
+Tulis ulasan tentang [tempat pizza].
 ```
 
 Jawaban dari AI (GPT-3 davinci-003) ditandai dengan warna hijau:
 
 ```text
 // highlight-start
-"I recently had the pleasure of trying [random pizza place] and I must say that I was thoroughly impressed. The pizza was cooked to perfection and the toppings were fresh and flavorful. The crust was light and crispy, and the sauce was just the right amount of tangy. The service was also top-notch; the staff was friendly and attentive. Overall, I had a great experience and would definitely recommend [random pizza place] to anyone looking for a delicious pizza."
+"Saya baru-baru ini memiliki kesempatan mencoba [random pizza place] dan saya harus mengatakan bahwa saya sangat terkesan. Piza itu dimasak dengan sempurna dan topping-nya segar dan berasa. Kulitnya ringan dan renyah, dan sausnya pas asamnya. Layanan ini juga sangat baik; stafnya ramah dan perhatian. Secara keseluruhan, saya memiliki pengalaman yang sangat menyenangkan dan pasti akan merekomendasikan [random pizza place] kepada siapa pun yang mencari pizza lezat."
 // highlight-end
 ```
 
-This result is pretty good, but let's see what happens when the AI assumes the role of a food critic.
+Hasil ini cukup bagus, tapi mari lihat apa yang terjadi ketika AI mengasumsikan peran sebagai kritikus makanan.
 
 ```text
-You are a food critic. Write a review of [random pizza place].
+Anda adalah seorang kritikus makanan. Tulis ulasan mengenai [tempat pizza acak].
 ```
 
-Again, the output of the AI is highlighted in green:
+Sekali lagi, output AI tersebut dihighlight dengan warna hijau:
 ```text
 // highlight-start
-"I recently had the pleasure of dining at [Pizza Place], a cozy pizzeria located in the heart of the city. Despite its small size, the restaurant packs a huge punch when it comes to flavor.
+"Saya baru-baru ini memiliki kesenangan makan di [Pizza Place], sebuah pizzeria yang nyaman yang terletak di pusat kota. Meskipun ukurannya kecil, restoran ini memberikan dampak yang besar dalam hal rasa.
 
-The pizza was cooked to perfection. The crust was delightfully thin and crispy and the toppings were fresh and flavorful. The combination of flavors was simply delicious. The marinara sauce was rich and flavorful and complemented the toppings perfectly. The cheese was gooey and melted in my mouth.
+Piza itu dimasak dengan sempurna. Crust-nya ini sangat tipis dan renyah dan toppingnya segar dan lezat. Kombinasi rasa itu sungguh lezat. Saus marinara-nya kaya rasa dan sangat cocok dengan toppingnya. Keju itu lembut dan meleleh di mulutku.
 
-The service was also excellent. The staff was friendly and attentive. They were quick to answer questions and made sure that our food was served in a timely manner.
+Layanan juga luar biasa. Stafnya ramah dan perhatian. Mereka cepat menjawab pertanyaan dan memastikan makanan kami disajikan tepat waktu.
 
-Overall, my experience at [Pizza Place] was fantastic and I highly recommend it to anyone looking for a delicious pizza."
+Secara keseluruhan, pengalaman saya di [Pizza Place] luar biasa dan saya sangat merekomendasikannya bagi siapa pun yang mencari pizza lezat."
 // highlight-end
 ```
 
-We can see that it adds more detail and goes a bit more in depth. Now let's go a step further and make it assume the role of a writer for the Michelin guide:
+Kita bisa melihat bahwa ini menambahkan lebih banyak detail dan sedikit lebih mendalam. Sekarang mari kita melangkah lebih jauh dan membuatnya mengasumsikan peran seorang penulis untuk Michelin guide:
 
 ```text
-You are a food critic writing for the Michelin Guide. Write a review of [random pizza place].
+Anda adalah seorang kritikus makanan yang menulis untuk Panduan Michelin. Tulis ulasan tentang [tempat pizza acak].
 
 // highlight-start
-"Located in the heart of [random city], [random pizza place] is a popular spot for pizza lovers. Upon entering, the warm, inviting atmosphere and the smell of freshly-baked pizza will make you feel right at home. The menu offers a wide selection of classic pizzas, as well as some unique and creative options. The crust is perfectly crispy and the toppings are always fresh and flavorful. The service is friendly and attentive, and the prices are reasonable. Whether you’re looking for a quick bite or a leisurely dinner, [random pizza place] is sure to satisfy your pizza cravings."
+"Terletak di jantung [random city], [random pizza place] adalah tempat populer bagi pecinta pizza. Setelah masuk, suasana hangat dan mengundang serta aroma pizza yang baru saja dipanggang akan membuat Anda merasa seperti di rumah sendiri. Menu ini menawarkan berbagai macam pizza klasik, serta beberapa pilihan unik dan kreatif. Kulitnya sangat renyah dan toppingnya selalu segar dan lezat. Pelayanannya ramah dan perhatian, dan harganya wajar. Apakah Anda mencari makanan cepat atau makan malam santai, [tempat pizza acak] pasti bisa memuaskan keinginan pizza Anda."
 // highlight-end
 ```
 
-Now we can see how assign GPT-3 the role of a food critic makes the review seem more "rich" and "professional" in it's description.
+Sekarang kita dapat melihat bagaimana menunjuk GPT-3 sebagai kritikus makanan membuat ulasannya terlihat lebih "kaya" dan "profesional" dalam deskripsinya.
 
-You can try it for yourself here:
+Anda bisa mencobanya sendiri di sini:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC40LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiSSByZWNlbnRseSBoYWQgdGhlIHBsZWFzdXJlIG9mIGRpbmluZyBhdCBbUGl6emEgUGxhY2VdLCBhIGNvenkgcGl6emVyaWEgbG9jYXRlZCBpbiB0aGUgaGVhcnQgb2YgdGhlIGNpdHkuIERlc3BpdGUgaXRzIHNtYWxsIHNpemUsIHRoZSByZXN0YXVyYW50IHBhY2tzIGEgaHVnZSBwdW5jaCB3aGVuIGl0IGNvbWVzIHRvIGZsYXZvci4iLCJwcm9tcHQiOiJZb3UgYXJlIGEgZm9vZCBjcml0aWMuXG5cbldyaXRlIGFuIGV4YW1wbGUgcmV2aWV3IGZvciBhIHBpenphIHBsYWNlLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -73,90 +73,90 @@ You can try it for yourself here:
 ></iframe>
 
 
-### Email Writing Example
+### Contoh Menulis Email
 
-Let's consider another example of styling text with role prompting. When using a language model like ChatGPT to draft an email, considering the "role" of the AI is critical to shaping the content it generates. The direction you want your resultant email to take will decide which role you should task the AI with.
+Mari kita pertimbangkan contoh lain dalam mengatur gaya teks dengan role prompting. Ketika menggunakan model bahasa seperti ChatGPT untuk menulis email, mempertimbangkan "peran" AI sangat penting dalam membentuk konten yang dihasilkannya. Arah yang Anda inginkan agar email Anda terjadi akan menentukan peran apa yang harus Anda berikan kepada AI.
 
-Let's say you task the AI with writing an email to a client to inform them about a delay in the delivery schedule due to logistical issues. Your goal is to effectively convey this update while ensuring the client's confidence in your services remains unwavering. There are several roles you could assign to the model to receive varied output.
+Mari kita katakan Anda memberikan tugas kepada AI untuk menulis email kepada klien untuk memberitahu mereka tentang keterlambatan dalam jadwal pengiriman akibat masalah logistik. Tujuan Anda adalah untuk menyampaikan pembaruan ini dengan efektif sambil memastikan kepercayaan klien terhadap layanan Anda tetap tak tergoyahkan. Ada beberapa peran yang bisa Anda berikan pada model untuk mendapatkan keluaran yang berbeda.
 
-For instance, one possible role is that of a communications specialist, whose style might be clear, professional, and to the point:
+Sebagai contoh, salah satu peran yang mungkin adalah sebagai spesialis komunikasi, yang gayanya mungkin jelas, profesional, dan langsung ke intinya:
 
 ```text
-You are a communications specialist. Draft an email to your client advising them about a delay in the delivery schedule due to logistical problems.
+Anda adalah seorang spesialis komunikasi. Draft sebuah email kepada klien Anda untuk memberitahu mereka tentang keterlambatan dalam jadwal pengiriman akibat masalah logistik.
 ```
 
 ```text
 // highlight-start
-Subject: Important Update Regarding Your Order
+Subjek: Pembaruan Penting Tentang Pesanan Anda
 
-Dear [Client's Name],
+Dear [Nama Klien],
 
-I hope this email finds you well. I'm reaching out to notify you of a delay in the delivery of your order. Unfortunately, we have encountered a logistical problem which is causing a short hold up. While we are making every effort to resolve this issue quickly, we anticipate your order to be delivered within [new estimated delivery date].
+Saya berharap email ini menemukan Anda dalam keadaan baik. Saya menghubungi Anda untuk memberitahukan keterlambatan dalam pengiriman pesanan Anda. Sayangnya, kami menghadapi masalah logistik yang menyebabkan penundaan yang singkat. Meskipun kami sedang berusaha keras untuk menyelesaikan masalah ini dengan cepat, kami memperkirakan pesanan Anda akan dikirim dalam waktu [tanggal pengiriman perkiraan baru].
 
-We deeply apologize for any inconvenience caused, and we'd like to reassure you we are doing our best to speed up the process. Your patience is greatly appreciated. If you have any questions or concerns, please don't hesitate to contact us.
+Kami memohon maaf yang sebesar-besarnya atas segala ketidaknyamanan yang terjadi, dan kami ingin meyakinkan Anda bahwa kami sedang melakukan yang terbaik untuk mempercepat proses. Kesabaran Anda sangat dihargai. Jika Anda memiliki pertanyaan atau kekhawatiran, jangan ragu untuk menghubungi kami.
 
-Thank you very much for your understanding.
+Terima kasih banyak atas pengertiannya.
 
-Best Regards,
-[Your Name]
+Hormat kami,
+[Nama Anda]
 // highlight-end
 ```
 
-Alternatively, have the model adopt the role of a marketing expert to lean more on persuasion, positivity, and relationship building:
+Atau, mintalah model tersebut mengadopsi peran sebagai ahli pemasaran untuk lebih mengandalkan persuasi, sikap positif, dan pembangunan hubungan:
 
 ```text
-You are a marketing expert. Draft an email to a client advising them about a delay in the delivery schedule due to logistical problems.
+Anda adalah seorang ahli pemasaran. Buatlah email kepada klien untuk memberi tahu mereka tentang keterlambatan dalam jadwal pengiriman karena masalah logistik.
 ```
 
 ```text
 // highlight-start
-Subject: A Little More Wait for Your Wonderful Products
+Subjek: Sedikit Menunggu untuk Produk-Menakjubkan-Mu
 
-Dear [Client's Name],
+Sayang [Nama Klien],
 
-We hope this message finds you buzzing with excitement for your upcoming order! However, even the best-laid plans sometimes face unexpected hiccups. We have hit a temporary logistics snag that will unfortunately add a small wait time to your delivery.
+Kami berharap pesan ini menemukanmu bersemangat dalam menanti pesananmu yang akan datang! Namun, bahkan rencana yang terbaik terkadang menghadapi hambatan tak terduga. Kami mengalami masalah logistik sementara yang sayangnya akan menambah waktu tunggu kecil pada pengiriman Anda.
 
-While we understand this isn't ideal, we believe great things come to those who wait, and your order is no exception. Rest assured, from the moment we sort out this situation to the time your products reach you, we're committed to ensuring that your experience is nothing short of excellent.
+Meskipun kami memahami ini bukanlah hal yang ideal, kami percaya bahwa hal-hal besar akan datang bagi mereka yang bersabar, dan pesanan Anda tidak terkecuali. Tenanglah, sejak saat kami mengatasi situasi ini hingga produk Anda sampai pada Anda, kami berkomitmen untuk memastikan bahwa pengalaman Anda tidak kurang dari luar biasa.
 
-Thank you for your patience and understanding. Stay tuned for more updates, and please, don't hesitate to reach out if you have any questions - we're always here.
+Terima kasih atas kesabaran dan pemahaman Anda. Tetaplah terhubung untuk pembaruan lebih lanjut, dan jangan ragu untuk menghubungi kami jika ada pertanyaan - kami selalu ada di sini.
 
-Cheers,
-[Your Name]
+Hei,
+[Nama Kamu]
 // highlight-end
 ```
 
-Lastly, the role of a customer service representative might lead to a more relational and solution-oriented output:
+Akhirnya, peran seorang perwakilan layanan pelanggan mungkin mengarah pada hasil yang lebih hubungan dan berorientasi pada solusi:
 
 ```text
-You are a customer service representative. Draft an email to a client advising them about a delay in the delivery schedule due to logistical problems.
+Anda adalah seorang perwakilan layanan pelanggan. Tulis email kepada klien yang memberi tahu mereka tentang keterlambatan dalam jadwal pengiriman akibat masalah logistik.
 ```
 
 ```text
 // highlight-start
-Subject: Attention Required: Update on Your Order Status
+Subjek: Perhatian Diperlukan: Pembaruan Status Pesanan Anda
 
-Dear [Client's Name],
+Halo [Nama Klien],
 
-Greetings from [Your Company Name].
+Salam dari [Nama Perusahaan Anda].
 
-We wanted to inform you that, due to unforeseen logistical challenges, there might be a delay in the delivery of your order. We understand that this may cause some inconvenience, and we apologize sincerely.
+Kami ingin memberitahukan bahwa, karena adanya tantangan logistik yang tidak terduga, mungkin akan ada keterlambatan dalam pengiriman pesanan Anda. Kami memahami bahwa ini mungkin menyebabkan beberapa ketidaknyamanan, dan kami meminta maaf dengan tulus.
 
-Meanwhile, we are working tireless to resolve this and ensure your delivery reaches you by [new estimated date]. We value your time and patience greatly.
+Sementara itu, kami bekerja tanpa henti untuk menyelesaikan ini dan memastikan pengiriman Anda sampai ke tangan Anda pada [new estimated date]. Kami sangat menghargai waktu dan kesabaran Anda.
 
-Please feel free to reach out if you have any questions or need further information. Our team is always here to assist you.
+Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan atau memerlukan informasi lebih lanjut. Tim kami selalu siap membantu Anda.
 
-Thank you for your understanding.
+Terima kasih atas pemahaman Anda.
 
-Best regards,
-[Your Name]
+Hormat kami,
+[Nama Anda]
 // highlight-end
 ```
 
-Each of these role prompts will yield different results, aligning more closely with the perspective of the assigned role. Whether you need the directness of a communications specialist, the persuasive positivity of a marketing expert, or the empathetic problem-solving approach of a customer service representative, role-prompts allow you to tailor the language model to better fit your needs.
+Setiap perintah peran ini akan menghasilkan hasil yang berbeda, sejalan lebih dekat dengan perspektif peran yang ditugaskan. Apakah Anda membutuhkan kejelasan dari seorang spesialis komunikasi, kepositifan persuasif dari seorang ahli pemasaran, atau pendekatan pemecahan masalah empatik dari seorang perwakilan layanan pelanggan, role-prompts memungkinkan Anda menyesuaikan model bahasa untuk lebih cocok dengan kebutuhan Anda.
 
-## Improving Accuracy
+## Meningkatkan Akurasi
 
-As mentioned above, the accuracy of the output can be improved. Consider the following example:
+Seperti yang disebutkan di atas, akurasi output dapat ditingkatkan. Pertimbangkan contoh berikut ini:
 
 ```text
 Anda adalah seorang matematikawan brilian yang dapat menyelesaikan setiap masalah di dunia.
@@ -169,10 +169,10 @@ Jawabannya adalah 1400.
 // highlight-end
 ```
 
-This is a correct answer, but if the AI had simply been prompted with What is 100\*100/400\*56?, it would have answered 280 (incorrect).
+Ini adalah jawaban yang benar, tetapi jika AI hanya diberi masukan Apa itu 100\*100/400\*56?, ia akan menjawab 280 (salah).
 
-:::caution
-Please note that ChatGPT will answer the question incorrectly, but in a different way.
+:::peringatan
+Harap dicatat bahwa ChatGPT akan menjawab pertanyaan dengan salah, tetapi dengan cara yang berbeda.
 :::
 
 Coba di sini:
@@ -183,18 +183,18 @@ Coba di sini:
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-### Accuracy Boost in Newer Models
+### Meningkatkan Akurasi pada Model Terbaru
 
-While older models like GPT-3 davinci-002 reaped significant benefits from role prompting, the efficacy of this strategy appears to have diminished with newer models such as GPT-3.5 or GPT-4. This observation is largely anecdotal and is based on practical usage rather than rigorous systematic testing.
+Meskipun model-model yang lebih tua seperti GPT-3 davinci-002 mendapatkan manfaat yang signifikan dari role prompting, efektivitas strategi ini nampaknya telah menurun dengan model-model baru seperti GPT-3.5 atau GPT-4. Pengamatan ini sebagian besar bersifat anekdotal dan didasarkan pada penggunaan praktis daripada pengujian sistematis yang ketat.
 
-To illustrate, assigning the role of "a doctor" or "a lawyer" amplified the relevance and depth of answers in health or legal contexts respectively in previous versions of AI models. This indicates that role-prompts contributed to raising the model's comprehension of the subject matter at hand.
+Untuk mengilustrasikan, penugasan peran "seorang dokter" atau "seorang pengacara" meningkatkan relevansi dan kedalaman jawaban dalam konteks kesehatan atau hukum secara berturut-turut dalam versi sebelumnya dari model AI. Ini menunjukkan bahwa role-prompts berkontribusi dalam meningkatkan pemahaman model tentang materi yang sedang dibahas.
 
-However, this level of enhancement seems to be less evident in more recent versions. These advanced models already have a sophisticated understanding and are often sufficiently accurate without the need for role-based reinforcement.
+Namun, tingkat peningkatan ini tampaknya kurang terlihat pada versi yang lebih baru. Model-model canggih ini sudah memiliki pemahaman yang kompleks dan seringkali cukup akurat tanpa perlu penguatan berbasis peran.
 
 
-## More on Roles
+## Lebih lanjut tentang Peran
 
-Roles can be much longer than a sentence. They can ask the AI the complete specific tasks. See a few examples from [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) below [^b].
+Peran dapat jauh lebih panjang daripada sebuah kalimat. Mereka dapat mengajukan tugas khusus secara lengkap kepada AI. Lihat beberapa contoh dari [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) di bawah [^b].
 
 > ### Bertindak sebagai Etimolog
 > 
@@ -204,9 +204,9 @@ Roles can be much longer than a sentence. They can ask the AI the complete speci
 > 
 > Saya ingin Anda bertindak sebagai seorang absurdis. Kalimat-kalimat absurdis tersebut tidak ada maknanya. Kata-kata yang digunakan oleh seorang absurdist semuanya lucu. Absurdist tidak membuat kalimat-kalimat biasa dengan cara apapun. Permintaan pertama saya adalah "Sya butuh bantuan membuat kalimat absurdist untuk seri baru saya berjudul Hot Skull, jadi buat 10 kalimat untuk saya".
 
-### Automatically Create a Role
+### Secara Otomatis Buat Peran
 
-You can ask the AI to create a role for you! You can then use this role as part of another prompt. Try it out here:
+Anda dapat meminta AI untuk membuat peran bagi Anda! Anda kemudian dapat menggunakan peran ini sebagai bagian dari prompt lain. Cobalah di sini:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MSwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkxlYWggR3JlZW53b29kIGlzIGEgZmljdGlvbiB3cml0ZXIgZnJvbSBMb3MgQW5nZWxlcywgQ2FsaWZvcm5pYSB3aG8gaGFzIGEgcGFzc2lvbiBmb3IgZXhwbG9yaW5nIHRoZSBkZXB0aHMgb2YgdGhlIGh1bWFuIGNvbmRpdGlvbiB0aHJvdWdoIGhlciB3cml0aW5nLiBTaGUgd2FzIGJvcm4gaW50byBhIGZhbWlseSBvZiBjcmVhdGl2ZSBwZW9wbGU7IGhlciBmYXRoZXIgaXMgYSBzY3VscHRvciwgaGVyIG1vdGhlciBpcyBhIHBhaW50ZXIsIGFuZCBoZXIgYnJvdGhlciBpcyBhIGZpbG1tYWtlci4gQWZ0ZXIgZ2V0dGluZyBoZXIgQkEgaW4gRW5nbGlzaCwgTGVhaCBiZWdhbiB3cml0aW5nIHNob3J0IHN0b3JpZXMgdGhhdCB3ZXJlIGV2ZW50dWFsbHkgcHVibGlzaGVkIGluIHZhcmlvdXMgYW50aG9sb2dpZXMuIFNoZSB0aGVuIHdlbnQgb24gdG8gd3JpdGUgaGVyIGZpcnN0IG5vdmVsIHdoaWNoIGVhcm5lZCBoZXIgYSBub21pbmF0aW9uIGZvciBhIHByZXN0aWdpb3VzIGxpdGVyYXJ5IGF3YXJkLlxuXG5MZWFoIGhhcyBhIGRlZXAgbG92ZSBmb3IgbGl0ZXJhdHVyZSB0aGF0IGhhcyBiZWVuIGEgcGFydCBvZiBoZXIgbGlmZSBmb3IgYXMgbG9uZyBhcyBzaGUgY2FuIHJlbWVtYmVyLiBTaGUgY29tZXMgZnJvbSBhIGRpdmVyc2UgYmFja2dyb3VuZCBhbmQgbGl2ZXMgaW4gYSB2aWJyYW50IGNpdHksIHdoaWNoIHByb3ZpZGVzIGFuIGV2ZXItY2hhbmdpbmcgc291cmNlIG9mIGluc3BpcmF0aW9uIGZvciBoZXIgd3JpdGluZy4gTGVhaOKAmXMgc3RvcmllcyBvZnRlbiBmb2N1cyBvbiBjaGFyYWN0ZXJzIHdobyBhcmUgc2VhcmNoaW5nIGZvciBhY2NlcHRhbmNlLCB0cnV0aCwgYW5kIG1lYW5pbmcgaW4gYSB3b3JsZCB0aGF0IGlzIG9mdGVuIGNvbmZ1c2luZyBhbmQgdW5wcmVkaWN0YWJsZS4gU2hlIHN0cm9uZ2x5IGJlbGlldmVzIHRoYXQgc3RvcmllcyBjYW4gb3BlbiBvdXIgaGVhcnRzIGFuZCBtaW5kcyB0byBuZXcgcGVyc3BlY3RpdmVzLCBhbmQgdGhhdCB0aGV5IGNhbiBoYXZlIHRoZSBwb3dlciB0byB0cmFuc2Zvcm0gbGl2ZXMgaW4gcmVtYXJrYWJsZSB3YXlzLiIsInByb21wdCI6IldyaXRlIGEgYmFja2dyb3VuZCByb2xlL2JpbyBhYm91dCBhIGZpY3Rpb24gd3JpdGVyOiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -214,11 +214,11 @@ You can ask the AI to create a role for you! You can then use this role as part 
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-### Multiple Personas Working Together
+### Persona Berganda yang Dapat Bekerja Bersama
 
-A final anecdote is that you can use multiple role prompted LLMs to work together(@wang2023unleashing). This can often lead to improvements in both accuracy and quality of text generation.
+Sebuah anekdot terakhir adalah bahwa Anda dapat menggunakan multiple role prompted LLMs untuk bekerja bersama-sama (@wang2023unleashing). Ini sering kali dapat menghasilkan peningkatan dalam akurasi dan kualitas dari pembuatan teks.
 
-[^a]: Role prompting is also known as *role play*(@shanahan2023roleplay), *role playing*(@li2023camel), or even the *persona pattern*(@white2023prompt).
+[^a]: Role prompting dikenal juga sebagai *role play*(@shanahan2023roleplay), *role playing*(@li2023camel), atau bahkan disebut *persona pattern*(@white2023prompt).
 
-[^b]: These were built for *ChatGPT*, but they likely work with other AIs, and you can also use them as inspiration to build your own prompts. 
+[^b]: Semua ini cocok untuk *ChatGPT*, tetapi kemungkinan mereka juga bekerja dengan AI lain, dan Anda juga dapat menggunakannya sebagai inspirasi untuk membuat pengingat Anda sendiri. 
 
