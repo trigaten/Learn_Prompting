@@ -4,11 +4,11 @@ sidebar_position: 40
 
 # 🟢 聊天机器人 + 知识库
 
-import ImageIntents from '@site/docs/assets/chatbot_from_kb_intents.png'
-import ImageGPT3 from '@site/docs/assets/chatbot_from_kb_gpt3.png'
-import ImageGPT3Organized from '@site/docs/assets/chatbot_from_kb_gpt3_organized.png'
-import ImagePrompt from '@site/docs/assets/chatbot_from_kb_prompt.png'
-import ImageLogin from '@site/docs/assets/chatbot_from_kb_login.png'
+import ImageIntents from '@site/docs/assets/basic_applications/chatbot_from_kb_intents.webp'
+import ImageGPT3 from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3.webp'
+import ImageGPT3Organized from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3_organized.webp'
+import ImagePrompt from '@site/docs/assets/basic_applications/chatbot_from_kb_prompt.webp'
+import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_login.webp'
 
 从 [GPT-3](https://arxiv.org/abs/2005.14165) 和 [ChatGPT](https://chat.openai.com/chat) 等大型语言模型 (LLM) 的最新进展中可以看出，在技术行业引起了很大的关注。这些模型对内容生成非常强大，但它们也有一些缺点，例如偏差(@nadeem-etal-2021-stereoset) 和幻象(@Ji_2022)。LLM在聊天机器人开发方面特别有用。
 
@@ -187,7 +187,6 @@ GPT-3试图更好地理解用户的问题，给出了以下回答。
 
 ## 使用GPT-3生成答案时可能出现的问题
 
-The previous examples worked well. However, there are several ways in which this chatbot could fail.
 前面的例子都很正常运行。然而，这种聊天机器人可能会失败的几种方式。
 
 如果我们询问“移动应用程序是否免费？”，将登录文档作为上下文传递给GPT-3，你通常会得到一个答案，比如“是的，VideoGram移动应用程序是免费下载和使用的”，即使这样的信息并没有包含在上下文信息中。生成虚假信息对于客户服务聊天机器人来说非常糟糕！

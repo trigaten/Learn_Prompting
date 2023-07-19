@@ -15,7 +15,7 @@ Obligatory: I am not a lawyer and nothing in this post should be taken as legal 
 
 You should always read contracts carefully. If you don't understand something, or don't have time to do so, *you should talk to a lawyer*. However, if you are reading through and have trouble understanding a section, you can use AI to help you understand it.
 
-Here is some language from an NDA:
+Here is some language from an NDA (non-disclosure agreement):
 
 ```text
 WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and

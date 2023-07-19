@@ -7,7 +7,7 @@ sidebar_position: 7
 [PromptSource](https://github.com/bigscience-workshop/promptsource)(@bach2022promptsource) es una herramienta de investigación para la ingeniería de prompts. Se utilizó en el desarrollo de BLOOM(@scao2022bloom), un LLM multilingüe muy conocido.
 
 
-import Image from '@site/docs/assets/tooling/promptsource.png';
+import Image from '@site/docs/assets/tooling/promptsource.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

@@ -8,6 +8,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 ## Content Writing
 
+- [Agent.so](https://www.agent.so/)
+> All-in-one platform that helps you use AI to write content & code, solve problems, have fun, and more! Powered by over 150 uniquely trained models, and ±200 apps being released to the new AI App Store. New members get unlimited chats and 100 Credits App Store for free.
+
 - [ID-Assist™](https://id-assist.co/)
 > An eLearning and classroom training storyboard automation tool, to help Instructional Designers automate creation of Course Outline, Learning Objecives, Assessments, Scenarios, and lot more.
 
@@ -107,6 +110,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Glasp](https://glasp.co/ai-writing)
 > Newsletter writing tool by training your personalized AI models.
 
+- [Hey - notionai](http://hey.technonia.com/notionai/)
+> NotionAI-like writing tool that generates suitable content for your selected template (blog post, pros and cons, etc)
+
 ## Automatically Build a Tool
 
 - [Toolbot](https://toolbot.ai)
@@ -129,6 +135,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Debuild](https://debuild.app/)
 > Code your web app in seconds. The AI-powered low-code tool that helps you build web apps with text and built-in prompts.
+
+- [ToolBuilder](https://toolbuilder.ai/)
+> Toolbuilder is the platform for building and discovering AI web apps without coding.
 
 ## Search Engines
 
@@ -154,6 +163,8 @@ Here is a growing list of notable products that use prompting. If you have a pro
 > Web search using the same ideas behind DALL-E and Stable Diffusion. It understands language — in the form of prompts — so you can say what you're looking for in all the expressive and creative ways you can think of.
 
 ## Chatbots
+
+- [Agent.so](https://www.agent.so/)
 
 - [Poe](http://poe.com)
 
@@ -348,6 +359,10 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Tome](https://beta.tome.app)
 > Unlock your best work with Tome's AI-powered storytelling format.
 
+
+- [Superus](https://www.superusapp.com)
+> AI-Powered Maps for Ultimate Visual Storytelling
+
 - [Superside](https://www.superside.com/)
 > DesignOps tech for persuasive pitch decks, sales decks, or PowerPoint presentations.
 
@@ -452,7 +467,10 @@ Writes content, predicts outcomes or answers questions at your command.
 > AI code writing assistant for data scientists, engineers, and analysts. Get code completions and suggestions as you type.
 
 - [regex.ai](https://regex.ai/)
-- AI-Powered Regular Expression Solver
+> AI-Powered Regular Expression Solver
+
+- [Hey - CopilotAI](http://hey.technonia.com)
+> CopilotAI-like writing tool that responses to your question with markdown format. Supports OpenAPI Swagger.
 
 ## Sales and Marketing
 
@@ -497,6 +515,9 @@ Writes content, predicts outcomes or answers questions at your command.
 
 - [Robin](https://www.hellorobin.ai/)
 > Reach out to leads, conduct research, and handle initial outreach. Writes and sends emails from your email address.
+
+- [Hey - NotionAI](http://hey.technonia.com/notionai/)
+> NotionAI-like writing tool that generates suitable content for your selected template (recruiting emails, sails email, etc)
 
 ## Music
 

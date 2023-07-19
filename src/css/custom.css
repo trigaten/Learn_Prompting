@@ -92,3 +92,10 @@ a[data-tooltip-html] {
 a[data-tooltip-html]:hover {
   text-decoration: none;
 }
+/* Code Block Word-Wrapping */
+pre[class*="language-"] {
+  white-space: pre-wrap;
+}
+pre {
+  white-space: pre-wrap;
+}

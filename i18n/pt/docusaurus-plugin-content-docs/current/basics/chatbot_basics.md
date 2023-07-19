@@ -10,9 +10,9 @@ Uma das formas mais comuns em que *prompting* pode ser útil é durante a intera
 
 ### Orientação de Estilo
 
-import pt_unguided_question from '../../assets/pt_unguided_question.png';
+import pt_unguided_question from '@site/docs/assets/basics/unguided_question.webp';
 
-import pt_limerick_question from '../../assets/pt_limerick_question.png';
+import pt_limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 Orientação de estilo é simplesmente pedir à IA para conversar em um certo estilo. Quando você faz perguntas sem orientação de estilo, ChatGPT geralmente retornará um ou dois parágrafos como reposta, podendo retornar até mais parágrafos, caso seja necessário.
 
@@ -54,8 +54,8 @@ Como exemplo, será configurado um sistema para permitir ter um diálogo com o p
 
     Se você entendeu e está pronto para começar, responda somente com "sim."
     
-import pt_unprimed_question from '../../assets/pt_unprimed_question.png';
-import pt_primed_question from '../../assets/pt_primed_question.png';
+import pt_unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import pt_primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 Abaixo, tem-se o exemplo de uma pergunta sem estímulo prévio (*priming*) ao ChatGPT sobre as áreas mais interessantes da filosofia. Usa-se uma lista, fala de forma generalista e sem paixão. Além disso, não é muito específico nas suas explicações.
 

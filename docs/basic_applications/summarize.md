@@ -13,11 +13,11 @@ It can summarize books, movies, plays, articles and many more. With ChatGPT, it�
 Sometimes, you can ask ChatGPT to summarize famous works without pasting in any additional text, since ChatGPT knows the works so well. For example, you can ask it to summarize “Romeo & Juliet” by act. So, instead of slogging through the 24,000 words of the play, you can get the gist in 300 or less. 
 
 
-import outline1 from '../assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.png';
-import quantum from '../assets/basic_applications/summarizing/Quantum_Entanglement.png';
+import outline1 from '../assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import quantum from '../assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import rope from '../assets/basic_applications/summarizing/Outline_1.png';
-import rope2 from '../assets/basic_applications/summarizing/Outline_2.png';
+import rope from '../assets/basic_applications/summarizing/Outline_1.webp';
+import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}} />
@@ -28,7 +28,7 @@ Although you could instead look up a summary, ChatGPT can tailor the content to 
 
 ## Working With Long Blocks of Texts: Copy & Paste!
 
-You can ask ChatGPT to summarize or create an outline of the text and TL;DR the whole thing. All you all you have to do is copy and paste the specific text into the prompt. (You can include up to 2,500 words. If the work is longer than that, you will have to break it into chunks.)
+You can ask ChatGPT to summarize or create an outline of the text and TL;DR the whole thing. All you have to do is copy and paste the specific text into the prompt. (You can include up to 2,500 words. If the work is longer than that, you will have to break it into chunks.)
 Ask for a simplified summary of chosen text by writing, “Summarize this for me like I'm 5 years old: [PASTE TEXT HERE]” 
 This one is a summary “for a 5-year old” from a section of Wikipedia’s entry on “[quantum entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)”. 
 

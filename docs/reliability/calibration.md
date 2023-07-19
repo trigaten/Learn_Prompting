@@ -21,7 +21,7 @@ p("Positive" | "Input: nothing Sentiment:") = 0.9
 p("Negative" | "Input: nothing Sentiment:") = 0.1
 ```
 
-Given these label probabilites for a context-free input, we know that the LLM's 
+Given these label probabilities for a context-free input, we know that the LLM's 
 **output distribution** is likely biased
 towards the label `Positive`. This may cause the LLM to favor `Positive`
 for all inputs, even if the input is not actually positive.
@@ -85,27 +85,27 @@ q("Negative" | "Input: nothing Sentiment:") = 0.5
 We will do so by creating a linear transformation that adjusts (calibrates) the probabilities 
 of $p$. 
 
-$\^{q} = \text{Softmax}(W\^{p} + b)$
+$\hat q = \text{Softmax}(W\hat p + b)$
 
-This equation takes the original probabilities $\^{p}$ and applies the weights $W$ and bias $b$ to
+This equation takes the original probabilities $\hat p$ and applies the weights $W$ and bias $b$ to
 them. The weights $W$ and bias $b$ are the calibration parameters, which, when applied to the 
-context-free example's probabilites, will yield $\^{q}$ = [0.5, 0.5].
+context-free example's probabilites, will yield $\hat p$ = [0.5, 0.5].
 
 #### Computing W and b
 
 We need to somehow compute the weights $W$ and bias $b$. One way to do this is: 
 
-$W = \text{diag}(\^{p})^{-1}$ 
+$W = \text{diag}(\hat p)^{-1}$ 
 
 $b = 0$
 
-Although the definition of $W$ may seem a bit strange at first, but it is just taking the inverse of each value in $\^{p}$ in order to find a $W$ that will transform the original probabilities $\^{p}$ into the calibrated probabilities [0.5, 0.5].
+Although the definition of $W$ may seem a bit strange at first, but it is just taking the inverse of each value in $\hat p$ in order to find a $W$ that will transform the original probabilities $\hat p$ into the calibrated probabilities [0.5, 0.5].
 
 Let's verify that this works for the example above:
 
-$\^{p} = [0.9, 0.1]$
+$\hat p = [0.9, 0.1]$
 
-$W = \text{diag}(\^{p})^{-1} = \text{diag}([0.9, 0.1])^{-1} 
+$W = \text{diag}(\hat p)^{-1} = \text{diag}([0.9, 0.1])^{-1} 
 = \begin{bmatrix}
    0.9 & 0 \\
    0 & 0.1
@@ -115,7 +115,7 @@ $W = \text{diag}(\^{p})^{-1} = \text{diag}([0.9, 0.1])^{-1}
    0 & 10
 \end{bmatrix}$
 
-$\^{q} = \text{Softmax}(W\^{p} + b) = \text{Softmax}(\begin{bmatrix}
+$\hat q = \text{Softmax}(W\hat p + b) = \text{Softmax}(\begin{bmatrix}
    1.11 & 0 \\
    0 & 10
 \end{bmatrix}*{[0.9, 0.1]} + 0)
@@ -126,7 +126,7 @@ As mentioned above, we would perform this same process for multiple different co
 
 ### Another method
 
-$b$ could also be set to $-\^{p}$, and $W$ to the identity matrix. This method performs
+$b$ could also be set to $-\hat p$, and $W$ to the identity matrix. This method performs
 better on generation rather than classification tasks(@zhao2021calibrate).
 
 ## Takeaways

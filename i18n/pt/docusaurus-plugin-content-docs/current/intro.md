@@ -8,7 +8,7 @@ Bem-Vindo(a) a este curso de engenharia de *prompt*!
 Você pode pensar na engenharia de *prompt* (EP) como sendo um campo de estudo que visa aprender **como falar com uma inteligência artifical para conseguir o que se deseja**. 
 
 Com os últimos avanços feitos em inteligência artifical (IA), a engenharia de *prompt* vem cada vez mais se tornando uma habilidade valorizada e procurada para fazer com que a IA faça o que você deseja.
-Este curso foca em técnicas aplicadas de engenharia de *prompt*, e esperamos que os leitores tenham um conhecimento mínimo de aprendizado de máquina. Se estes conceitos são novos para você, recomendamos começar pela seção de [Fundamentos](https://learnprompting.org/pt/docs/category/-basics) e lendo as [Intruções](https://learnprompting.org/pt/docs/basics/intro) primeiro.
+Este curso foca em técnicas aplicadas de engenharia de *prompt*, e esperamos que os leitores tenham um conhecimento mínimo de aprendizado de máquina. Se estes conceitos são novos para você, recomendamos começar pela seção de [Fundamentos](https://learnprompting.org/pt/docs/category/-basics) e lendo as [Instruções](https://learnprompting.org/pt/docs/basics/intro) primeiro.
 
 ## A parte mais importante deste curso é o seu feedback!
 Se você tiver quaisquer dúvidas, comentários ou sugestões, você pode:

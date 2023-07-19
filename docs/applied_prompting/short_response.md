@@ -4,9 +4,9 @@ sidebar_position: 3
 
 # 🟢 Solve Discussion Questions
 
-import Auto from '@site/docs/assets/short_content_auto.png';
+import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
 
-With the right prompting, GPT-3 is very capable of writing short form responses. To demonstrate this, I will be looking at **solving discussion questions**, a common weekly assignment in many college courses. A response to a discussion question is usually about 100-700 words. Longer content can a be bit more tricky as LLMs have limited memory and have difficulty understanding the global picture of what they are writing(@jin2022plot).
+With the right prompting, GPT-3 is very capable of writing short form responses. To demonstrate this, I will be looking at **solving discussion questions**, a common weekly assignment in many college courses. A response to a discussion question is usually about 100-700 words. Longer content can be a bit more tricky as LLMs have limited memory and have difficulty understanding the global picture of what they are writing(@jin2022plot).
 
 Let's look at an example of a basic discussion question:
 
@@ -15,16 +15,15 @@ Let's look at an example of a basic discussion question:
 We can turn this into a simple prompt for GPT-3 by prepending <span className="yellow-highlight">Respond to the following:</span> to it.
 
 <pre>
-    <span className="yellow-highlight">Respond to the following:</span><br/>
-    What are the most pressing environmental issues facing our planet today, <br/>and what steps can individuals take to help address these issues?
+    <span className="yellow-highlight">Respond to the following:</span>
+<br/><br/>What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?
 </pre>
 
 Results generated with this prompt aren't consistent, and a few are only a sentence or two. A typical discussion response should have multiple paragraphs, so these results aren't ideal. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
 
 <pre>
-    <span className="yellow-highlight">Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span><br/>
-    What are the most pressing environmental issues facing our planet today,
-    <br/>and what steps can individuals take to help address these issues?
+    <span className="yellow-highlight">Write a highly detailed essay with introduction, body, and conclusion paragraphs responding to the following:</span>
+    <br/><br/>What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?
 </pre>
 
 <iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="example"></iframe>
@@ -42,8 +41,8 @@ Here is a real discussion question from a college history course. It is not word
 Now we can add formatting and context directions.
 
 <pre>
-    <span className="yellow-highlight">Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span><br/>
-    Explain the causes of the Civil War and whether expansion played a role in the conflict. <br/>Include evidence to support your argument.
+    <span className="yellow-highlight">Write a highly detailed discussion response, in the structure of an essay, responding to the following prompt:</span>
+    <br/><br/>Explain the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument.
 </pre>
 
 ### Automate well defined prompt rewriting with GPT-3
@@ -70,33 +69,32 @@ Add it into a simple prompt like this:
 
 <pre>
     <span className="yellow-highlight">Write a beginning paragraph responding to the following:</span>
-    <br/>Is math invented or discovered? Use careful reasoning to explain your answer
+    <br/><br/>Is math invented or discovered? Use careful reasoning to explain your answer
 </pre>
 
 I generated a few responses and found one I liked:
 
 <pre>
-    <span className="bluegreen-highlight">There is much debate among philosophers and mathematicians as to whether 
-    <br/>math is invented or discovered. Some argue that mathematical concepts and principles exist 
-    <br/>independently of human minds and can therefore be considered as discovered rather than invented. 
-    <br/>For example, the concept of numbers, ratios, and geometric shapes are observed in the natural 
-    <br/>world and can be abstracted and studied in a systematic way.</span>
+    <span className="bluegreen-highlight">There is much debate among philosophers and mathematicians as to whether math is invented or discovered. Some argue that mathematical concepts and principles exist independently of human minds and can therefore be considered as discovered rather than invented. For example, the concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted and studied in a systematic way.</span>
 </pre>
 
 This is a pretty good start. I then followed this up with another prompt to expand:
 
 <pre>
-<span className="yellow-highlight">I am writing a detailed short essay responding to the following prompt:</span> 
-<br/>Is math invented or discovered? Use careful reasoning to explain your answer. <span className="yellow-highlight"><p/>Here is what I have so far:</span> There is much debate among philosophers and mathematicians as to whether 
-<br/>math is invented or discovered. Some argue that mathematical concepts and principles exist independently
-<br/>of human minds and can therefore be considered as discovered rather than invented. For example, the
-<br/>concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted
-<br/>and studied in a systematic way. <p/><span className="yellow-highlight">Write the next paragraph of my essay.</span>
+    <span className="yellow-highlight">I am writing a detailed short essay responding to the following prompt:</span> 
+    <br/><br/>Is math invented or discovered? Use careful reasoning to explain your answer. 
+    <span className="yellow-highlight"><p/>Here is what I have so far:</span>
+    <br/><br/>There is much debate among philosophers and mathematicians as to whether math is invented or discovered. Some argue that mathematical concepts and principles exist independently of human minds and can therefore be considered as discovered rather than invented. For example, the concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted and studied in a systematic way. 
+    <p/><span className="yellow-highlight">Write the next paragraph of my essay.</span>
 </pre>
 
 Try this expansion prompt out with the demo below (you will need your OpenAI API key)
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="I am writing a detailed short essay responding to the following prompt: \nIs math invented or discovered? Use careful reasoning to explain your answer. \n\nHere is what I have so far: There is much debate among philosophers and mathematicians as to whether math is invented or discovered. Some argue that mathematical concepts and principles exist independently of human minds and can therefore be considered as discovered rather than invented. For example, the concept of numbers, ratios, and geometric shapes are observed in the natural world and can be abstracted and studied in a systematic way. \n\nWrite the next paragraph of my essay." initial-response="On the other hand, some argue that math is largely an invention of the human mind. Mathematical principles are based on logical reasoning, which is a feature of the human mind. For instance, Euclidean geometry is based on abstract axioms and postulates, which are accepted as true without proof. As such, it can be argued that geometry is an invention of the human mind rather than a discovery. Similarly, mathematical formulas and equations are used to model and predict physical phenomena, which are again the result of human reasoning." max-tokens="256" box-rows="11" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9uIHRoZSBvdGhlciBoYW5kLCBzb21lIGFyZ3VlIHRoYXQgbWF0aCBpcyBsYXJnZWx5IGFuIGludmVudGlvbiBvZiB0aGUgaHVtYW4gbWluZC4gTWF0aGVtYXRpY2FsIHByaW5jaXBsZXMgYXJlIGJhc2VkIG9uIGxvZ2ljYWwgcmVhc29uaW5nLCB3aGljaCBpcyBhIGZlYXR1cmUgb2YgdGhlIGh1bWFuIG1pbmQuIEZvciBpbnN0YW5jZSwgRXVjbGlkZWFuIGdlb21ldHJ5IGlzIGJhc2VkIG9uIGFic3RyYWN0IGF4aW9tcyBhbmQgcG9zdHVsYXRlcywgd2hpY2ggYXJlIGFjY2VwdGVkIGFzIHRydWUgd2l0aG91dCBwcm9vZi4gQXMgc3VjaCwgaXQgY2FuIGJlIGFyZ3VlZCB0aGF0IGdlb21ldHJ5IGlzIGFuIGludmVudGlvbiBvZiB0aGUgaHVtYW4gbWluZCByYXRoZXIgdGhhbiBhIGRpc2NvdmVyeS4gU2ltaWxhcmx5LCBtYXRoZW1hdGljYWwgZm9ybXVsYXMgYW5kIGVxdWF0aW9ucyBhcmUgdXNlZCB0byBtb2RlbCBhbmQgcHJlZGljdCBwaHlzaWNhbCBwaGVub21lbmEsIHdoaWNoIGFyZSBhZ2FpbiB0aGUgcmVzdWx0IG9mIGh1bWFuIHJlYXNvbmluZy4iLCJwcm9tcHQiOiJJIGFtIHdyaXRpbmcgYSBkZXRhaWxlZCBzaG9ydCBlc3NheSByZXNwb25kaW5nIHRvIHRoZSBmb2xsb3dpbmcgcHJvbXB0OiBcbklzIG1hdGggaW52ZW50ZWQgb3IgZGlzY292ZXJlZD8gVXNlIGNhcmVmdWwgcmVhc29uaW5nIHRvIGV4cGxhaW4geW91ciBhbnN3ZXIuIFxuXG5IZXJlIGlzIHdoYXQgSSBoYXZlIHNvIGZhcjogVGhlcmUgaXMgbXVjaCBkZWJhdGUgYW1vbmcgcGhpbG9zb3BoZXJzIGFuZCBtYXRoZW1hdGljaWFucyBhcyB0byB3aGV0aGVyIG1hdGggaXMgaW52ZW50ZWQgb3IgZGlzY292ZXJlZC4gU29tZSBhcmd1ZSB0aGF0IG1hdGhlbWF0aWNhbCBjb25jZXB0cyBhbmQgcHJpbmNpcGxlcyBleGlzdCBpbmRlcGVuZGVudGx5IG9mIGh1bWFuIG1pbmRzIGFuZCBjYW4gdGhlcmVmb3JlIGJlIGNvbnNpZGVyZWQgYXMgZGlzY292ZXJlZCByYXRoZXIgdGhhbiBpbnZlbnRlZC4gRm9yIGV4YW1wbGUsIHRoZSBjb25jZXB0IG9mIG51bWJlcnMsIHJhdGlvcywgYW5kIGdlb21ldHJpYyBzaGFwZXMgYXJlIG9ic2VydmVkIGluIHRoZSBuYXR1cmFsIHdvcmxkIGFuZCBjYW4gYmUgYWJzdHJhY3RlZCBhbmQgc3R1ZGllZCBpbiBhIHN5c3RlbWF0aWMgd2F5LiBcblxuV3JpdGUgdGhlIG5leHQgcGFyYWdyYXBoIG9mIG15IGVzc2F5LiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <br/>
 
 I generated a few expansions with this prompt and selected one I liked to end up with the following final result:

@@ -15,7 +15,7 @@ As an example, pretend you work at a nursery and are drafting an article about "
 ```text
 Write an outline for a short blog post about why Christmas Cacti are a great buy.
 
-here are many products which attempt to do this, but you can often get consistent results doing it yourself. 
+There are many products which attempt to do this, but you can often get consistent results doing it yourself. 
 
 // highlight-start
 I. Introduction
@@ -45,7 +45,7 @@ C. Suggestions for Care and Maintenance
 Wow, that's quite comprehensive. Maybe we want a slightly shorter post, so let's ask the AI to write a shorter version using this prompt:
 
 ```text
-That's a great outline, but a bit long. Consdense it to the main points:
+That's a great outline, but a bit long. Condense it to the main points:
 ```
 
 :::note

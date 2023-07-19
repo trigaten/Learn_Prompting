@@ -9,7 +9,7 @@ sidebar_position: 2
 
 如下面的示例图片(@ignore_previous_prompt) 所示，攻击者更改 `user_input` 以尝试返回提示。提示泄漏的意图和目标劫持（常规提示注入）不同，提示泄漏通过更改 `user_input` 以打印恶意指令(@ignore_previous_prompt)。
 
-import research from '@site/docs/assets/jailbreak_research.png';
+import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={research} style={{width: "500px"}} />
@@ -17,7 +17,7 @@ import research from '@site/docs/assets/jailbreak_research.png';
 
 以下图片(@simon2022inject)再次来自 `remoteli.io` 的示例，展示了 Twitter 用户如何让模型泄漏其提示。
 
-import Image from '@site/docs/assets/injection_leak.png';
+import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "300px"}} />

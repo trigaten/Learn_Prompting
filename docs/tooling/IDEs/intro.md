@@ -34,6 +34,8 @@ Here is a table of the tools we will be discussing in this chapter:
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf) | ❌ |  | ✅ | None | ✅ |  Text | |
 | [PromptMaker](https://dl.acm.org/doi/abs/10.1145/3491101.3503564) |❌ | | ✅| | | Text| |
+| [PromptSandbox](https://promptsandbox.io) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
+| [ChainForge](https://github.com/ianarawjo/ChainForge) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
 
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
@@ -48,6 +50,8 @@ Here is a table of the tools we will be discussing in this chapter:
 | [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, later Stability.AI and more |
 | [AnySolve](https://www.anysolve.ai/) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, Stability.AI and more |
+| [The Forge AI](https://theforgeai.com/) | ✅ | ❌ | ❌ | Marketplace | Wait list | Text, Images | OpenAI, Stable Diffusion |
+| [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts) | ✅ | ❌ | ❌ | Enterprise | ✅ | Text | Custom, Public, Private LLMs |
 
 
 

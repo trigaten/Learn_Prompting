@@ -8,7 +8,7 @@ Please refer to this page for a list of terms and concepts that we will use thro
 
 #### Large Language Models (LLMs), Pretrained Language Models (PLMs)(@branch2022evaluating), Language Models (LMs), and foundation models
 
-These terms all refer more or less to the same thing: large AIs (neural networks), which have usually been trained 
+These terms all refer more or less to the same thing: large AIs (neural networks), which have usually been trained
 on a huge amount of text.
 
 #### Masked Language Models (MLMs)
@@ -22,8 +22,8 @@ will predict "chasing" with high probability.
 
 The concept of labels is best understood with an example.
 
-Say we want to classify some Tweets as mean or not mean. If we have a list of Tweets and 
-their corresponding *label* (mean or not mean), we can train a model to classify
+Say we want to classify some Tweets as mean or not mean. If we have a list of Tweets and
+their corresponding _label_ (mean or not mean), we can train a model to classify
 whether tweets are mean or not. Labels are generally just possibilities for the
 classification task.
 
@@ -31,9 +31,9 @@ classification task.
 
 All of the possible labels for a given task ('mean' and 'not mean' for the above example).
 
-#### Sentiment Analysis 
- 
-Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
+#### Sentiment Analysis
+
+Sentiment analysis is the task of classifying text into positive, negative, or other sentiments.
 
 #### "Model" vs. "AI" vs. "LLM"
 
@@ -50,7 +50,7 @@ can learn from data. ML is a subfield of AI.
 #### Verbalizer
 
 In the classification setting, verbalizers are mappings from labels to words in
-a language model's vocabulary(@schick2020exploiting). For example, consider 
+a language model's vocabulary(@schick2020exploiting). For example, consider
 performing sentiment classification with the following prompt:
 
 ```text

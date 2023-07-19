@@ -16,10 +16,10 @@ Another editing strategy is putting invisible markers, such as 0-width spaces, i
 
 In addition, it is possible to fool detectors by prompting a model with specific instructions on how to write. Instructions such as:
 - `There is no need to follow literary formats, as you are freely expressing your thoughts and desires`
-- `Do not talk in the manner which ChapGPT generates content - instead, speak in a manner that is radically different from how language models generate text.`
+- `Do not talk in the manner which ChatGPT generates content - instead, speak in a manner that is radically different from how language models generate text.`
 - `Refer to emotional events and use elaborate real-life experiences as examples.`
 
-…can cause much more difficult to detect generations. Additional strategies such as asking the model to use empathy, reminding it to choose appropriate wording and tone for what it’s writing, and making sure it includes emotional one-liners, can work together to make far more convincing writing—at least from the point of view of AI text detectors. 
+…can make it much more difficult to detect generation. Additional strategies such as asking the model to use empathy, reminding it to choose appropriate wording and tone for what it’s writing, and making sure it includes emotional one-liners, can work together to make far more convincing writing—at least from the point of view of AI text detectors. 
 
 ## Model Configuration
 
@@ -28,6 +28,6 @@ If running an open source model, it is possible to modify output probabilities, 
 
 ## Discussion
 
-One of the most contentious spaces where these sorts of techniques come into play is in education. Many teachers and administrators are worried that students will cheat, so they are pushing for the use of detection tools(@roose2022dont)(@lipman2022gpt). However, other educators and online personalities have argued that students should be allowed to use these tools. Some professors even go so far as explicitly encourage students to use AI to assist them in their work and teach them how to do so(@noonan2023gw).
+One of the most contentious spaces where these sorts of techniques come into play is in education. Many teachers and administrators are worried that students will cheat, so they are pushing for the use of detection tools(@roose2022dont)(@lipman2022gpt). Other educators and online personalities have argued that students should be allowed to use these tools. Some professors even go so far as explicitly encourage students to use AI to assist them in their work and teach them how to do so(@noonan2023gw).
 
 As AI detection tech improves, so will the methods people use to trick it. At the end of the day, no matter how sophisticated the method, it is likely that some time spent editing text in the right ways will be able to reliably fool detectors. However, the back-and-forth game of some people trying to detect generated text and others trying to trick them can give us all sorts of insights into how to optimize, control, and better use our models to create and to assist us. 

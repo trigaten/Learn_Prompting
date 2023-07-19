@@ -14,30 +14,37 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "react-tooltip": "^5.7.4",
-    "@renatonagliati/remark-auto-glossary": "git://github.com/renatonagliati/remark-auto-glossary.git#fed3f0983592ea15298b54b82fc92acc53359c25",
     "@benchmark-urbanism/remark-bibtex": "https://github.com/trigaten/remark-bibtex.git",
     "@benrbray/micromark-extension-cite": "^1.0.0",
-    "@docusaurus/core": "^2.2.0",
-    "@docusaurus/plugin-client-redirects": "^2.2.0",
-    "@docusaurus/plugin-google-analytics": "^2.2.0",
-    "@docusaurus/preset-classic": "^2.2.0",
-    "@docusaurus/theme-mermaid": "^2.2.0",
+    "@docusaurus/core": "^2.4.0",
+    "@docusaurus/plugin-client-redirects": "^2.4.0",
+    "@docusaurus/plugin-google-analytics": "^2.4.0",
+    "@docusaurus/preset-classic": "^2.4.0",
+    "@docusaurus/theme-mermaid": "^2.4.0",
     "@kailualabs/multimodal-search": "^1.0.1",
     "@mdx-js/react": "^1.6.22",
+    "@motionone/utils": "^10.15.1",
+    "@renatonagliati/remark-auto-glossary": "git://github.com/renatonagliati/remark-auto-glossary.git#fed3f0983592ea15298b54b82fc92acc53359c25",
     "clsx": "^1.2.1",
     "cspell": "^6.17.0",
+    "framer-motion": "^6.5.1",
     "hast-util-is-element": "^1.1.0",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-elastic-carousel": "^0.11.5",
+    "react-fast-marquee": "^1.5.2",
+    "react-icons": "^4.8.0",
+    "react-multi-carousel": "^2.8.3",
+    "react-tooltip": "^5.7.4",
     "react-twitter-embed": "^4.0.4",
     "rehype-katex": "^5.0.0",
     "remark-gfm": "^3.0.1",
     "remark-math": "^3.0.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.2.0"
+    "@docusaurus/module-type-aliases": "^2.2.0",
+    "tailwindcss": "^3.3.2"
   },
   "browserslist": {
     "production": [

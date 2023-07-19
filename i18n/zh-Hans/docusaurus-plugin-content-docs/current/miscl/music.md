@@ -11,7 +11,7 @@ sidebar_position: 3
 然而，尽管音乐模型的潜力巨大，但目前难以进行详细的提示，生成的输出通常不像图像或文本生成模型那样可以进行彻底的自定义。
 
 ## Riffusion
-import riffusion from '@site/docs/assets/riffusion_phonk.png';
+import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={riffusion} style={{width: "500px"}} />

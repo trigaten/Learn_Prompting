@@ -14,7 +14,7 @@ a method that improves the reliability of answers in a threefold manner. It does
 1) using multiple prompts to generate diverse completions, 2) using a verifier to distinguish good answers from bad answers, and 3) using a verifier to check the correctness of reasoning steps.
 
 
-import diverse from '@site/docs/assets/diverse.png';
+import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={diverse} style={{width: "750px"}} />
@@ -136,7 +136,7 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
 
 ## Ask Me Anything (AMA) Prompting
 
-import ama from '@site/docs/assets/AMA_Prompting.jpg';
+import ama from '@site/docs/assets/reliability/AMA_Prompting.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama} style={{width: "750px"}} />
@@ -174,7 +174,7 @@ Question: Does this animal lives in North America?
 Well, by formulating the question in this special way, we can generate different prompts.
 Our first step here will be to take the claim `This animal lives in North America` and reformat it into different questions, which are basically asking the same thing. To do this, we will pass the claim through prompts like those in the below image.
 
-import ama_multi from '@site/docs/assets/AMA_multiprompting.png';
+import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ama_multi} style={{width: "800px"}} />

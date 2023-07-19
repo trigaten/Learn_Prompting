@@ -8,7 +8,7 @@ DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**p
 1) múltiples prompts para generar completados diversos, 2) un verificador para distinguir entre buenas y malas respuestas, y 3) un verificador para verificar la corrección de los pasos de razonamiento.
 
 
-import diverse from '@site/docs/assets/diverse.png';
+import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={diverse} style={{width: "750px"}} />

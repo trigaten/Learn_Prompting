@@ -55,5 +55,5 @@ Q: ¿Cuál es la capital de Francia?
 A:
 ```
 
-Las promts de "few shot" facilitan el aprendizaje en contexto, que es la capacidad de aprender sin actualizaciones de parámetros (@zhao2021calibrate).
+Los prompts de "few shot" facilitan el aprendizaje en contexto, que es la capacidad de aprender sin actualizaciones de parámetros (@zhao2021calibrate).
 

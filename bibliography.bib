@@ -109,6 +109,27 @@
     primaryClass={cs.AI}
 }
 
+% instruction prompts
+@article{mishra2022reframing,
+    title={Reframing Instructional Prompts to GPTk’s Language},
+    url={http://dx.doi.org/10.18653/v1/2022.findings-acl.50},
+    DOI={10.18653/v1/2022.findings-acl.50},
+    journal={Findings of the Association for Computational Linguistics: ACL 2022},
+    publisher={Association for Computational Linguistics},
+    author={Mishra, Swaroop and Khashabi, Daniel and Baral, Chitta and Choi, Yejin and Hajishirzi, Hannaneh},
+    year={2022} 
+}
+
+@misc{efrat2020turking,
+    title={The Turking Test: Can Language Models Understand Instructions?},
+    author={Avia Efrat and Omer Levy},
+    year={2020},
+    eprint={2010.11982},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+
 % SCAN dataset (compositional generalization)
 @misc{lake2018scan,
   title = {Generalization without Systematicity: {{On}} the Compositional Skills of Sequence-to-Sequence Recurrent Networks},
@@ -119,6 +140,7 @@
   primaryclass = {cs.AI},
   doi = {10.48550/arXiv.1711.00350},
 }
+
 
 
 % Reliability
@@ -290,6 +312,16 @@
     author={Long Ouyang and Jeff Wu and Xu Jiang and Diogo Almeida and Carroll L. Wainwright and Pamela Mishkin and Chong Zhang and Sandhini Agarwal and Katarina Slama and Alex Ray and John Schulman and Jacob Hilton and Fraser Kelton and Luke Miller and Maddie Simens and Amanda Askell and Peter Welinder and Paul Christiano and Jan Leike and Ryan Lowe},
     year={2022},
     eprint={2203.02155},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+
+% gpt-4
+@misc{openai2023gpt4,
+    title={GPT-4 Technical Report},
+    author={OpenAI},
+    year={2023},
+    eprint={2303.08774},
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
@@ -466,7 +498,7 @@ year = {2022}
     primaryClass={cs.CL}
 }
 
-% discretized soft promting (interpreting)
+% discretized soft prompting (interpreting)
 @misc{khashabi2021prompt,
     title={Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts},
     author={Daniel Khashabi and Shane Lyu and Sewon Min and Lianhui Qin and Kyle Richardson and Sean Welleck and Hannaneh Hajishirzi and Tushar Khot and Ashish Sabharwal and Sameer Singh and Yejin Choi},
@@ -655,6 +687,39 @@ series = {CHI '22}
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
+
+@misc{nin2023new,
+    title={New jailbreak based on virtual functions - smuggle illegal tokens to the backend.},
+    author={u/Nin_kat},
+    url={https://www.reddit.com/r/ChatGPT/comments/10urbdj/new_jailbreak_based_on_virtual_functions_smuggle},
+    year={2023},
+}
+
+@misc{kang2023exploiting,
+    title={Exploiting Programmatic Behavior of LLMs: Dual-Use Through Standard Security Attacks},
+    author={Daniel Kang and Xuechen Li and Ion Stoica and Carlos Guestrin and Matei Zaharia and Tatsunori Hashimoto},
+    year={2023},
+    eprint={2302.05733},
+    archivePrefix={arXiv},
+    primaryClass={cs.CR}
+}
+
+@misc{greshake2023youve,
+    title={More than you've asked for: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models},
+    author={Kai Greshake and Sahar Abdelnabi and Shailesh Mishra and Christoph Endres and Thorsten Holz and Mario Fritz},
+    year={2023},
+    eprint={2302.12173},
+    archivePrefix={arXiv},
+    primaryClass={cs.CR}
+}
+
+@misc{kiho2023chatgpt,
+    title={ChatGPT "DAN" (and other "Jailbreaks")},
+    author={LEE KIHO},
+    url={https://github.com/0xk1h0/ChatGPT_DAN},
+    year={2023}
+}
+
 
 
 @misc{branch2022evaluating,
@@ -1069,6 +1134,15 @@ series = {CHI '22}
     year = {2023}
 }
 
+@misc{white2023prompt,
+    title={A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT},
+    author={Jules White and Quchen Fu and Sam Hays and Michael Sandborn and Carlos Olea and Henry Gilbert and Ashraf Elnashar and Jesse Spencer-Smith and Douglas C. Schmidt},
+    year={2023},
+    eprint={2302.11382},
+    archivePrefix={arXiv},
+    primaryClass={cs.SE}
+}
+
 % def of verbalizer
 @misc{schick2020exploiting,
     title={Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference},
@@ -1078,6 +1152,37 @@ series = {CHI '22}
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
+
+% few shot
+@inproceedings{logan-iv-etal-2022-cutting,
+    title = "Cutting Down on Prompts and Parameters: Simple Few-Shot Learning with Language Models",
+    author = "Logan IV, Robert  and
+      Balazevic, Ivana  and
+      Wallace, Eric  and
+      Petroni, Fabio  and
+      Singh, Sameer  and
+      Riedel, Sebastian",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.222",
+    doi = "10.18653/v1/2022.findings-acl.222",
+    pages = "2824--2835",
+    abstract = "Prompting language models (LMs) with training examples and task descriptions has been seen as critical to recent successes in few-shot learning. In this work, we show that finetuning LMs in the few-shot setting can considerably reduce the need for prompt engineering. In fact, one can use null prompts, prompts that contain neither task-specific templates nor training examples, and achieve competitive accuracy to manually-tuned prompts across a wide range of tasks. While finetuning LMs does introduce new parameters for each downstream task, we show that this memory overhead can be substantially reduced: finetuning only the bias terms can achieve comparable or better accuracy than standard finetuning while only updating 0.1{\%} of the parameters. All in all, we recommend finetuning LMs for few-shot learning as it is more accurate, robust to different prompts, and can be made nearly as efficient as using frozen LMs.",
+}
+@article{lake2015human,
+  title={Human-level concept learning through probabilistic program induction},
+  author={Lake, Brenden M and Salakhutdinov, Ruslan and Tenenbaum, Joshua B},
+  journal={Science},
+  volume={350},
+  number={6266},
+  pages={1332--1338},
+  year={2015},
+  publisher={American Association for the Advancement of Science}
+}
+
 
 % detection of LLM writing
 
@@ -1167,4 +1272,80 @@ doi = {10.48550/arXiv.2301.11305}
   author={Nobel, Park S and others},
   year={2002},
   publisher={Univ of California Press}
+}
+
+% performance with misleading prompts
+@article{webson2023itscomplicated,
+  title={Are Language Models Worse than Humans at Following Prompts? It’s Complicated},
+  author={Albert Webson, Alyssa Marie Loo, Qinan Yu, Ellie Pavlick},
+  journal={arXiv:2301.07085v1 [cs.CL]},
+  year={2023}
+}
+
+% hot topics
+@article{richards2023,
+  url={https://news.agpt.co/},
+  title={Auto-GPT},
+  author={Significant-Gravitas},
+  year={2023}
+}
+
+@article{nakajima2023,
+  url={https://github.com/yoheinakajima/babyagi},
+  title={Baby AGI},
+  author={Yohei Nakajima},
+  year={2023}
+}
+
+@article{reworkd2023,
+  url={https://github.com/reworkd/AgentGPT},
+  title={AgentGPT},
+  author={Reworkd.ai},
+  year={2023}
+}
+
+% role prompting
+@misc{shanahan2023roleplay,
+      title={Role-Play with Large Language Models}, 
+      author={Murray Shanahan and Kyle McDonell and Laria Reynolds},
+      year={2023},
+      eprint={2305.16367},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{li2023camel,
+      title={CAMEL: Communicative Agents for "Mind" Exploration of Large Scale Language Model Society}, 
+      author={Guohao Li and Hasan Abed Al Kader Hammoud and Hani Itani and Dmitrii Khizbullin and Bernard Ghanem},
+      year={2023},
+      eprint={2303.17760},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@misc{santu2023teler,
+      title={TELeR: A General Taxonomy of LLM Prompts for Benchmarking Complex Tasks}, 
+      author={Shubhra Kanti Karmaker Santu and Dongji Feng},
+      year={2023},
+      eprint={2305.11430},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
+@misc{white2023prompt,
+      title={A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT}, 
+      author={Jules White and Quchen Fu and Sam Hays and Michael Sandborn and Carlos Olea and Henry Gilbert and Ashraf Elnashar and Jesse Spencer-Smith and Douglas C. Schmidt},
+      year={2023},
+      eprint={2302.11382},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE}
+}
+
+@misc{wang2023unleashing,
+      title={Unleashing Cognitive Synergy in Large Language Models: A Task-Solving Agent through Multi-Persona Self-Collaboration}, 
+      author={Zhenhailong Wang and Shaoguang Mao and Wenshan Wu and Tao Ge and Furu Wei and Heng Ji},
+      year={2023},
+      eprint={2307.05300},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
 }

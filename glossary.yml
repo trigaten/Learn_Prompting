@@ -33,4 +33,16 @@ labels:
   def: The concept of labels is best understood with an example. <br/><br/>Say we want to classify some Tweets as mean or not mean. If we have a list of Tweets and their corresponding *label* (mean or not mean), we can train a model to classify whether tweets are mean or not. Labels are generally just possibilities for the classification task.
 sentiment analysis:
   term: Sentiment Analysis
-  def: Sentiment analysis is the task of classifying text into positive, negative, or other sentiments. 
+  def: Sentiment analysis is the task of classifying text into positive, negative, or other sentiments.
+
+# spanish definitions
+prompt estándar de pocos ejemplos:
+  term: prompt estándar de pocos ejemplos
+  def: Los prompts estándar que incluyen ejemplos. Los ejemplos son ejemplos de la tarea que el prompt intenta resolver, los cuales se incluyen en el propio prompt.
+ejemplos:
+  term: Ejemplos
+  def: Ejemplos de la tarea que el prompt intenta resolver, los cuales se incluyen en el propio prompt.
+
+prompting de CoT:
+  term: prompting de CoT
+  def: La idea principal de CoT es que al mostrarle al LLM algunos ejemplos de few-shot donde se explica el proceso de razonamiento en los ejemplos, el LLM también mostrará el proceso de razonamiento al responder a la solicitud.

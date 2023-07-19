@@ -1,19 +1,18 @@
 ---
-sidebar_position: 200
+sidebar_position: 105
 ---
 # 🟢 Understanding AI Minds
 
-Hello reader, congratulations on getting through the intro chapter. You are off to a great start in this very exciting field. There are a few simple things you should know about different AIs and how they work before you start reading the rest of the course.
 
-import music_image from '@site/docs/assets/music+image.png';
-
-<div style={{textAlign: 'center'}}>
-  <img src={music_image} style={{width: "850px"}} />
-</div>
+import Brain from '@site/docs/assets/basics/brain.svg';
 
 <div style={{textAlign: 'center'}}>
-  Audio being generated from an image.
+  <Brain style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+
+
+There are a few simple things you should know about different AIs and how they work before you start reading the rest of the course.
+
 
 ## Different AIs
 

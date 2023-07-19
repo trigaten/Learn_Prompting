@@ -4,28 +4,17 @@ sidebar_position: 5
 
 # 🟡 Self-Consistency
 
-Self-consistency(@wang2022selfconsistency) is a follow up to %%CoT|CoT prompting%% that generates
-multiple chains of thought instead of just one, then takes the majority answer
-as the final answer.
-
-In the below figure, the prompt on the left is written using the Few-Shot-CoT paradigm.
-Using this one prompt, multiple chains of thought are generated independently.
-Answers are extracted from each and the final answer is computed by "marginalizing
-out reasoning paths". In practice, this just means taking the majority answer.
-
-import SCImage from '@site/docs/assets/self_consistency.png';
+import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "750px"}} />
+  <img src={SCImage} style={{width: "500px"}} />
 </div>
 
-<div style={{textAlign: 'center'}}>
-Self Consistency (Wang et al.)
-</div>
+Self-consistency(@wang2022selfconsistency) is an approach that simply asks a model the same prompt multiple times and takes the majority result as the final answer. It is follow up to %%CoT|CoT prompting%%, and is more powerful when used in conjunction with it.
 
 ## Example
 
-Let's consider a simple example of analyzing emails. Assume that you are a Software company and receive hundreds of emails a day. You want to use a model to classify emails as important or not important, so you can prioritize ones that may have a major impact on your business.
+Let's consider a simple example of analyzing emails. Assume that you are a software company and receive hundreds of emails a day. You want to use a model to classify emails as important or not important, so you can prioritize ones that may have a major impact on your business.
 
 Here is an example of an email that you might receive:
 
@@ -86,14 +75,12 @@ By generating many chains of thought, and taking the most commonly occurring ans
 
 ## Results
 
-Self-consistency has been shown to improve results on arithmetic, commonsense and symbolic reasoning tasks.
-
-Even when regular CoT was found to be ineffective(@ye2022unreliability), self-consistency
+Self-consistency has been shown to improve results on arithmetic, commonsense and symbolic reasoning tasks. Even when regular CoT was found to be ineffective(@ye2022unreliability), self-consistency
 was still able to improve results.
 
 ## Notes
 
-Wang et al. discuss a more complex method for marginalizing out reasoning paths,
+- Wang et al. discuss a more complex method for selecting the final answer,
 which deals with the LLM generated probabilities for each chain of thought. However, they
 do not use this method in their experiments, and majority voting seems to usually
-have the same or better performance regardless.
+have the same or better performance.

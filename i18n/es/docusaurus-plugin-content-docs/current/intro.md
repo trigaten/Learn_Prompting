@@ -14,8 +14,8 @@ esta se convierte en una habilidad particularmente importante
 Este curso pone el foco en aplicar tecnicas de PE. Se esperan mínimos conocimientos 
 sobre machine learning. Pero si no tienes idea de lo que machine learning significa, lee la sección de Introducción básica.
 
-## El punto más importante de este curso es tu feedback!
-Si tienes cualquier consulta, comentario o sugerencia, por favor crea un **[issue](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, envíame un email a learnprompting@gmail.com o escribe un DM a [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
+## El punto más importante de este curso es tu opinión!
+Si tienes cualquier consulta, comentario o sugerencia, por favor crea un **[problema](https://github.com/trigaten/Learn_Prompting/issues/new/choose)**, envíame un email a learnprompting@gmail.com o escribe un mensaje directo a [Discord](https://learnprompting.org/discord)/[Twitter](https://twitter.com/learn_prompting).
 
 Incluso el más mínimo feedback es de mucha ayuda!
 

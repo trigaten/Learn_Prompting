@@ -4,12 +4,14 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
-This article is built for people with little to no experience with prompt engineering
-or even AI. The target audience here is everyone from non-technical 
-business students to non-technical adults. We will cover the basics of AI, and why you should 
-care about prompt engineering. 
+import Techniques from '@site/docs/assets/basics/techniques.svg';
 
-If you already know the basics of prompt engineering/AI, feel free to skip to the next article.
+<div style={{textAlign: 'center'}}>
+  <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+</div>
+
+
+This chapter introduces simple prompting techniques as well as terminology. In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. If you already know about the below topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
 
 ## What is AI?
 
@@ -51,13 +53,52 @@ to an AI, it can likely either do it for you or at least give you a starting poi
 
 ## How do I get started?
 
-This course will teach you how to communicate with AIs. 
 Read the rest of this chapter, then check out other chapters that interest you.
-In particular, the applied prompting section may be of interest if you would like
+In particular, the [applied prompting](https://learnprompting.org/docs/applied_prompting/overview) section may be of interest if you would like
 to see how professionals use AI to automate their work. You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [Dyno](https://trydyno.com) embeds that you will see throughout this site (it will ask you to provide an OpenAI API key).
+using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [embeds](https://learnprompting.org/docs/basics/intro#embeds) that you will see throughout this site.
 
 Before reading the next article, it is important to note that you don't need any technical background to do prompt engineering. Most of it is trial and error, and you can learn as you go.
+
+### Embeds
+
+This course offers an interactive learning experience. You can experiment with exercises discussed in the course using [embeds](https://embed.learnprompting.org/) that are placed throughout the site.
+
+Here is an **image** of what an embed looks like:
+
+import dyno from '@site/docs/assets/basics/dyno_example.webp';
+import key from '@site/docs/assets/basics/API_key.webp';
+
+<div style={{textAlign: 'center'}}>
+  <img src={dyno} style={{width: "750px"}} />
+</div>
+
+You should be able to see an embed that looks exactly like this image right below this paragraph. If you can't, you may need to enable JavaScript or use a different browser.
+
+<hr/>
+Embed here:
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkNob2NvbGF0ZSwgVmFuaWxsYSwgU3RyYXdiZXJyeSwgTWludCBDaGlwLCBSb2NreSBSb2FkLCBDb29raWUgRG91Z2gsIEJ1dHRlciBQZWNhbiwgTmVhcG9saXRhbiwgQ29mZmVlLCBDb2NvbnV0IiwicHJvbXB0IjoiR2VuZXJhdGUgYSBjb21tYSBzZXBhcmF0ZWQgbGlzdCBvZiAxMCBpY2UgY3JlYW0gZmxhdm9yczoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"280px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+<hr/>
+
+Assuming that you can see it, click on the **Generate** button. If this is your first time using it (or you are in a new browser/have cleared cookies), it will ask you to input an [OpenAI API key](https://platform.openai.com/account/api-keys). You can get a free key by clicking [this link](https://platform.openai.com/account/api-keys) and signing up for an OpenAI account. This key allows you to use OpenAI's AIs to generate text in the embeds. 
+
+:::note
+Although OpenAI provides free credits, you will eventually have to pay to use their AI. Fortunately, it is [relatively cheap](https://openai.com/pricing)!
+:::
+
+When you navigate to the [OpenAI API key](https://platform.openai.com/account/api-keys) page, click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
+
+<div style={{textAlign: 'center'}}>
+  <img src={key} style={{width: "750px"}} />
+</div>
+
+Put this key into the embed and hit **Save**. You should now be able to use the embeds throughout this site.
+
+Now you have all of the information that you need to get started. Happy Learning!
 
 
 [^1]: Technically, they are not "thinking" like humans, but this is a simple way to explain it.
