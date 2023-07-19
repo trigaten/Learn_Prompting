@@ -11,7 +11,7 @@ Saat ini, itu memiliki kurva pembelajaran yang curam dibandingkan dengan IDE lai
 import Image from '@site/docs/assets/tooling/dust.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Fitur
