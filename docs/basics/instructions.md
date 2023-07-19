@@ -30,7 +30,7 @@ simple and more complex problems.
 
 #### Example 2
 
-Here is a more complicated example[^A]:
+Here is a more complicated example[^a][^b]:
 
 ```
 Read the following sales email. Remove any personally identifiable information (PII),
@@ -74,6 +74,6 @@ It is very exciting to see how the model can extrapolate from the instructions. 
 to replace `Cheap Dealz` with `[DEALERSHIP]` and `Jimmy Smith` with `[SALESPERSON]`, even though
 we did not explicitly tell it to do so.
 
-[^A]: Allowing AI to remove PII from text is a promising approach, but it should be used with extraordinary caution as it may make mistakes.
-
+[^a]: Allowing AI to remove PII from text is a promising approach, but it should be used with extraordinary caution as it may make mistakes.
+[^b]: It should also be noted in this example that you are sending PII to a third-party (e.g. OpenAI if you are using ChatGPT), and these services may record and use your prompts for their own needs.
 
