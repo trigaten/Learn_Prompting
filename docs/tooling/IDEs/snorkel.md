@@ -10,7 +10,7 @@ import Image from '@site/docs/assets/tooling/snorkel.webp';
 tooling to build prompts and fine tune models.
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Features

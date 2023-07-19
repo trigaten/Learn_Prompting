@@ -12,7 +12,7 @@ reasoning is code, while CoT's is natural language.
 import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={image} style={{width: "500px"}} />
+  <LazyLoadImage src={image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

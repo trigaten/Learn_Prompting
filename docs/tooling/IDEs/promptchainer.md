@@ -11,7 +11,7 @@ refined research IDE that I have found.
 import Image from '@site/docs/assets/tooling/promptchainer.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Features

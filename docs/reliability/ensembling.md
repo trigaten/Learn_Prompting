@@ -17,7 +17,7 @@ a method that improves the reliability of answers in a threefold manner. It does
 import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={diverse} style={{width: "750px"}} />
+  <LazyLoadImage src={diverse} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -139,7 +139,7 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
 import ama from '@site/docs/assets/reliability/AMA_Prompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama} style={{width: "750px"}} />
+  <LazyLoadImage src={ama} style={{width: "750px"}} />
 </div>
 
 Ask Me Anything (AMA) prompting(@arora2022ama) is a similar approach to DiVeRSe. However, both its multiple prompt step and its answer aggregation step differ signifigantly. The core idea of AMA is to use a LLM to generate multiple prompts, instead of just using different few-shot exemplars.
@@ -177,7 +177,7 @@ Our first step here will be to take the claim `This animal lives in North Americ
 import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama_multi} style={{width: "800px"}} />
+  <LazyLoadImage src={ama_multi} style={{width: "800px"}} />
 </div>
 
 This might output:

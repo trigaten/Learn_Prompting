@@ -38,7 +38,7 @@ Below is a diagram of what we will be doing here in Zapier. Whenever an email co
 3. Store the output in a database
 
 <div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}} />
+  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
 </div>
 
 ## Set-up in Zapier
@@ -52,7 +52,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
   <div>
   This is what the Zapier action diagram will eventually look like.
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
@@ -61,7 +61,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-    <img src={Step1} style={{width: "500px"}} />
+    <LazyLoadImage src={Step1} style={{width: "500px"}} />
         </div>
       </div>
     </details>
@@ -71,7 +71,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step2} style={{width: "500px"}} />
+  <LazyLoadImage src={Step2} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -82,7 +82,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step3} style={{width: "500px"}} />
+  <LazyLoadImage src={Step3} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -92,7 +92,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step4} style={{width: "500px"}} />
+  <LazyLoadImage src={Step4} style={{width: "500px"}} />
 </div>
       </div>
     </details>
