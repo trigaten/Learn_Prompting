@@ -31,7 +31,7 @@ Vielleicht ist [das hier](https://prompts.chat/#act-as-a-text-based-adventure-ga
 i18n/de/docusaurus-plugin-content-docs/current/basics/roles.md
 Jetzt werden wir den Promt in ChatGPT eingeben und sehen, was passiert.
 
-import CSharp from '@site/docs/assets/csharp.png';
+import CSharp from '@site/docs/assets/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

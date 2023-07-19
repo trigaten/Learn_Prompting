@@ -49,8 +49,8 @@ Dieser Kurs bietet eine interaktive Lernerfahrung. Du kannst mit den im Kurs bes
 
 Hier ist ein **Bild**, das zeigt, wie eine Einbettung aussieht:
 
-import dyno from '@site/docs/assets/basics/dyno_example.png';
-import key from '@site/docs/assets/API_key.png';
+import dyno from '@site/docs/assets/basics/dyno_example.webp';
+import key from '@site/docs/assets/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={dyno} style={{width: "750px"}} />
