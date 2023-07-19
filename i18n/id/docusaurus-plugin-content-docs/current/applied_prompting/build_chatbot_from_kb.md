@@ -17,7 +17,7 @@ Perkembangan terbaru dalam model bahasa besar (LLM) seperti [GPT-3](https://arxi
 Chatbot tradisional umumnya berbasis pada niat, artinya mereka dirancang untuk merespons niat pengguna tertentu. Setiap niat terdiri dari serangkaian pertanyaan contoh dan tanggapan yang terkait. Misalnya, niat “Cuaca” mungkin mencakup contoh pertanyaan seperti “Bagaimana cuaca hari ini?” atau “Akan hujan hari ini?” dan tanggapan seperti “Hari ini akan cerah.” Ketika pengguna mengajukan pertanyaan, chatbot mencocokkannya dengan niat dengan pertanyaan contoh yang paling mirip dan mengembalikan tanggapan yang terkait.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Bagaimana cara kerja chatbot berbasis niat tradisional. Gambar oleh penulis.</p>
 </div>
 
@@ -30,7 +30,7 @@ Ini adalah tempat di mana GPT-3 bisa sangat berguna. Alih-alih memiliki banyak n
 Dengan cara ini, setiap niat terkait dengan sebuah dokumen bukan sebuah daftar pertanyaan dan jawaban spesifik, misalnya sebuah niat untuk 'masalah login', satu niat untuk 'bagaimana cara berlangganan', dll. Ketika pengguna mengajukan pertanyaan tentang login, kita dapat melewati dokumen 'masalah login' ke GPT-3 sebagai informasi konteks dan menghasilkan respons yang spesifik terhadap pertanyaan pengguna.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Bagaimana sebuah chatbot memanfaatkan GPT-3 bisa bekerja. Gambar oleh penulis.</p>
 </div>
 
@@ -52,7 +52,7 @@ Jadi, pipeline chatbot bisa terdiri dari dua langkah:
 Langkah pertama secara fundamental diselesaikan oleh [pencarian semantis](https://en.wikipedia.org/wiki/Semantic_search). Kita dapat menggunakan model yang sudah dilatih dari library [sentence-transformers</code>](https://www.sbert.net/examples/applications/semantic-search/README.html) dan dengan mudah menetapkan skor untuk setiap dokumen. Dokumen dengan skor tertinggi adalah yang akan digunakan untuk menghasilkan jawaban chatbot.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3Organized} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Bagaimana chatbot yang memanfaatkan GPT-3 bisa bekerja. GPT-3 dapat digunakan untuk menghasilkan jawaban yang sesuai dengan memanfaatkan informasi dari dokumen basis pengetahuan. Gambar oleh penulis.</p>
 </div>
 
@@ -68,7 +68,7 @@ Untuk membuat permintaan, kita akan bereksperimen menggunakan:
 - Terakhir, **pertanyaan pengguna**.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImagePrompt} style={{width: "700px"}} />
+  <LazyLoadImage src={ImagePrompt} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Informasi yang digunakan untuk membuat permintaan GPT-3 kami. Gambar oleh penulis.</p>
 </div>
 
@@ -81,7 +81,7 @@ Mari mulai prompt kita dengan teknik <span className="yellow-highlight">role-pro
 Kemudian, anggaplah langkah pencarian semantik mengekstraksi dokumen berikut dari basis pengetahuan kami. Semua dokumen menjelaskan bagaimana produk VideoGram bekerja, yang merupakan produk imajiner mirip dengan Instagram, tetapi hanya untuk video.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageLogin} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Dokumen yang menjelaskan cara masuk ke VideoGram. Gambar oleh sang penulis.</p>
 </div>
 
