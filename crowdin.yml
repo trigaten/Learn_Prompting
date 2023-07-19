@@ -7,3 +7,5 @@ files:
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/**/%original_file_name%
   - source: /docs/**/*.svg
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+  - source: /docs/**/*.png
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
