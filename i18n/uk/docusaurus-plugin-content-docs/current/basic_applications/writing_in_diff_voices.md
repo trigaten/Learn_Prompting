@@ -14,13 +14,13 @@ import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Ch
 import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship} style={{width: "750px"}} />
 </div>
 
 Фу! Нудьга смертельна. Але результат зміниться, коли ви додасте уточнення, наприклад «**Будь ласка, пиши у неформальному, розмовному стилі**». Тоді ChatGPT пропонує щось на зразок цього:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_informal} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_informal} style={{width: "750px"}} />
 </div>
 
 Так трохи краще.
@@ -28,19 +28,19 @@ import friendship_millennial from '@site/docs/assets/basic_applications/Friendsh
 Якщо ж ви бажаєте справити враження, то можете попросити ChatGPT писати в стилі якогось визначного письменника, до прикладу, Марка Твена:
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_mark} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_mark} style={{width: "750px"}} />
 </div>
 
 Тепер текст починає звучати. Проте це не обов’язково має бути відомий письменник. Ви можете взяти й інших визначних людей, приміром, Кріса Рока. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_chris} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_chris} style={{width: "750px"}} />
 </div>
 
 Або як щодо «міленіалів»?
 
 <div style={{textAlign: 'center'}}>
-  <img src={friendship_millennial} style={{width: "750px"}} />
+  <LazyLoadImage src={friendship_millennial} style={{width: "750px"}} />
 </div>
 
 ## Відтворіть свій стиль письма

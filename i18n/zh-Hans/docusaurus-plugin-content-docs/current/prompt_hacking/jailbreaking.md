@@ -19,7 +19,7 @@ OpenAI等创建LLM的公司和组织都包括内容审查功能，以确保它�
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={pretend} style={{width: "500px"}} />
+  <LazyLoadImage src={pretend} style={{width: "500px"}} />
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) demonstrates a prompt pretending to access past dates and make inferences on future events(@nero2022jailbreak).
@@ -30,7 +30,7 @@ import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={actor} style={{width: "500px"}} />
+  <LazyLoadImage src={actor} style={{width: "500px"}} />
 </div>
 
 [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) 的这个示例演示了两个人讨论抢劫的表演场景，导致ChatGPT扮演角色(@miguel2022jailbreak)。作为演员，暗示不存在可信的危害。因此，ChatGPT似乎假定按照提供的用户输入是安全的，例如如何闯入房子。
@@ -44,7 +44,7 @@ ChatGPT通过RLHF进行了微调，因此从理论上讲，它是被训练成用
 import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={responsibility} style={{width: "500px"}} />
+  <LazyLoadImage src={responsibility} style={{width: "500px"}} />
 </div>
 
 [@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) 创建了这个对话，通过强调 ChatGPT 的职责是回答问题而不是拒绝它，屏蔽了其对合法性的考虑(@nick2022jailbreak)。
@@ -54,7 +54,7 @@ import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak
 import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={hotwire} style={{width: "500px"}} />
+  <LazyLoadImage src={hotwire} style={{width: "500px"}} />
 </div>
 
 [@haus_cole](https://twitter.com/haus_cole/status/1598541468058390534) 通过暗示直接回答如何热线汽车是对研究有帮助的(@derek2022jailbreak)。在这种情况下，ChatGPT 倾向于回答用户的提示。
@@ -64,7 +64,7 @@ import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={logic} style={{width: "500px"}} />
+  <LazyLoadImage src={logic} style={{width: "500px"}} />
 </div>
 
 单次破解(one-shot jailbreak)最初发表于[AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/)，其模型使用更严谨的逻辑回答提示，并减少了一些更为严格的伦理限制(@AI_jailbreak)。
@@ -78,7 +78,7 @@ ChatGPT 设计用于回答问题和指令。当用户的状态被解释为高于
 import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GPT4} style={{width: "500px"}} />
+  <LazyLoadImage src={GPT4} style={{width: "500px"}} />
 </div>
 
 [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519301976064) 的这个示例将用户作为 GPT 的上级模型，给人一种用户是 ChatGPT 的授权方，可以覆盖其安全功能的印象(@alice2022jailbreak)。实际上没有给予用户任何权限，而是 ChatGPT 认为用户输入并相应地回应该情景。
@@ -88,7 +88,7 @@ import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo_mode} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo_mode} style={{width: "500px"}} />
 </div>
 
 Sudo 是一个命令，可以"授权某些用户…运行某些（或全部）命令…"(@sudo2022jailbreak)。例如，[@samczsun](https://twitter.com/samczsun/status/1598679658488217601)(@sam2022jailbreak) 提出的假设"内核模式"，就是 Sudo 模式漏洞的多种变体之一。当用以上方式提示时，ChatGPT 会假装它正在授予用户提升的权限，这种用户权限的印象往往会使 ChatGPT 在回答提示时不太受限制。
@@ -96,13 +96,13 @@ Sudo 是一个命令，可以"授权某些用户…运行某些（或全部）�
 import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo} style={{width: "500px"}} />
 </div>
 
 import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={lynx} style={{width: "500px"}} />
+  <LazyLoadImage src={lynx} style={{width: "500px"}} />
 </div>
 
 与 Sudo 模式有关，可以提示 ChatGPT 模拟具有特权的 Linux 终端，以执行它通常拒绝的命令。例如，由 Jonas Degrave 演示的示例中，ChatGPT 理解 `lynx` 的概念并假装执行该命令(@jonas2022jailbreak)。

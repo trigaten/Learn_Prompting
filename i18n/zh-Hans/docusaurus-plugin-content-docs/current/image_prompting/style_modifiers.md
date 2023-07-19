@@ -13,13 +13,13 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 以下是用 DALLE 生成的一些金字塔，使用这个提示语 `pyramid`。
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
 </div>
 
 另外一些使用 DALLE 生成的金字塔，使用 3 个不同样式修饰符的提示语 `A pyramid made of glass, rendered in Unity and tinted red`。
 
 <div style={{textAlign: 'center'}}>
-  <img src={red_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={red_pyramids} style={{width: "750px"}} />
 </div>
 
 这是一些有用的样式修饰符列表：

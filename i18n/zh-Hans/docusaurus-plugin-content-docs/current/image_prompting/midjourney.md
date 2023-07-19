@@ -21,7 +21,7 @@ Midjourney 的基本结构是 `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAM
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut} style={{width: "750px"}} />
 </div>
 
 更多关于图像提示参数的信息可以在这里找到：[Midjourney Documentation - Parameter List](https://docs.midjourney.com/docs/parameter-list)
@@ -33,7 +33,7 @@ Midjourney 的基本结构是 `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAM
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params} style={{width: "750px"}} />
 </div>
 
 # 进阶用法
@@ -43,14 +43,14 @@ Midjourney 默认情况下会整体理解你的提示语。使用双冒号 :: �
 /imagine prompt: astronaut and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi1} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi1} style={{width: "750px"}} />
 </div>
 
 ```text
 /imagine prompt: astronaut:: and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi2} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi2} style={{width: "750px"}} />
 </div>
 
 
@@ -62,7 +62,7 @@ Midjourney 默认情况下会整体理解你的提示语。使用双冒号 :: �
 /imagine prompt: [image URL], impressionist painting
 ```
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_ip2} style={{width: "750px"}} />
+  <LazyLoadImage src={midjourney_astronaut_ip2} style={{width: "750px"}} />
 </div>
 
 ## Notes

@@ -17,7 +17,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 传统聊天机器人通常是基于意图的，这意味着它们被设计为响应特定的用户意图。每个意图由一组样本问题和相应的响应组成。例如，“天气”意图可能包括类似“今天天气如何？”或“今天会下雨吗？”这样的样本问题，并且可能输出“今天将是晴天”的响应。当用户提出问题时，聊天机器人将其与最相似的样本问题匹配意图，并返回相应的响应。
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>传统基于意图的聊天机器人的工作原理。图像由作者制作。</p>
 </div>
 
@@ -30,7 +30,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 因此，每个意图与文档相关联，而不是一组问题和特定答案，例如，一个“登录问题”的意图，一个“如何订阅”的意图等等。当用户询问有关登录的问题时，我们可以将“登录问题”文档传递给 GPT-3 作为上下文信息，并为用户的问题生成特定的响应。
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>利用GPT-3的聊天机器人工作原理。作者提供的图片。</p>
 </div>
 
@@ -52,7 +52,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 第一步可以使用语义搜索[semantic search](https://en.wikipedia.org/wiki/Semantic_search)解决。我们可以使用[`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html)库中的预训练模型，轻松地为每个文档分配一个分数。分数最高的文档将用于生成聊天机器人答案。
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3Organized} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>如何利用GPT-3让聊天机器人工作。GPT-3可以利用知识库文档中的信息生成适当的答案。图片由作者提供。</p>
 </div>
 
@@ -69,7 +69,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 - 最后, **用户的问题**.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImagePrompt} style={{width: "700px"}} />
+  <LazyLoadImage src={ImagePrompt} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Information used to craft our GPT-3 prompt. Image by the author.</p>
 </div>
 
@@ -82,7 +82,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 然后，假设语义搜索步骤从我们的知识库中提取了以下文档。所有文档都描述了类似于Instagram的虚构产品VideoGram的工作方式，但仅用于视频。
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageLogin} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>解释VideoGram登录方式的文档。作者提供的图像。</p>
 </div>
 

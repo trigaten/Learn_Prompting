@@ -14,13 +14,13 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 Ось кілька пірамід, згенерованих моделлю DALLE, за запитом: `pyramid`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
 </div>
 
 Ось декілька пірамід, згенерованих DALLE за запитом `A pyramid made of glass, rendered in Unity and tinted red`, який використовує 3 модифікатори стилю.
 
 <div style={{textAlign: 'center'}}>
-  <img src={red_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={red_pyramids} style={{width: "750px"}} />
 </div>
 
 Ось список деяких корисних модифікаторів стилю:

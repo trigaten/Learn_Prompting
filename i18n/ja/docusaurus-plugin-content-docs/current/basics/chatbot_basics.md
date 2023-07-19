@@ -16,13 +16,13 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 スタイルガイダンスは、AIに特定のスタイルで話すように求めるだけです。スタイル ガイダンスのない質問をすると、ChatGPT は通常、応答として 1 つまたは 2 つの短い段落を返します。より長い応答が必要な場合は、さらに多くの段落を返します。
 
 <div style={{textAlign: 'center'}}>
-  <img src={unguided_question} style={{width: "500px"}} />
+  <LazyLoadImage src={unguided_question} style={{width: "500px"}} />
 </div>
 
 それは適度にフォーマルな口調で話し、いくつかの詳細をかなり良い精度で提供します。ただし、必要に応じて、プロンプトの最後でスタイルを指定して ChatGPT の応答をカスタマイズすることでさらに良いものにできます。より会話的な応答が必要な場合は、フレンドリーな、または非公式な口調で話すように指示します。より読みやすい形式が必要な場合は、箇条書きのリストで回答するように指示します。おもしろい応答が必要な場合は、一連のリメリック (詩の形式の 1 つ。五行戯詩とも呼ばれる。私の個人的なお気に入り。) の形で答えを出すように指示します。
 
 <div style={{textAlign: 'center'}}>
-  <img src={limerick_question} style={{width: "450px"}} />
+  <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
 </div>
 
 より詳細な回答形式を指定したプロンプトの例は次のようになります。
@@ -85,7 +85,7 @@ import primed_question from '@site/docs/assets/basics/primed_question.webp';
 以下は、哲学の最も興味深い分野について、ChatGPT へのプライミングのない質問の例です。リストを使用し、一般的かつ冷静に話し、説明はあまり具体的ではありません。
 
 <div style={{textAlign: 'center'}}>
-  <img src={unprimed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
 </div>
 
 (日本語訳)
@@ -104,7 +104,7 @@ import primed_question from '@site/docs/assets/basics/primed_question.webp';
 2 番目の例では、ChatGPT にプライミングプロンプトを提供し、その中で定義した形式に沿って質問をしました。回答が最初の例といくつかの点で似ていることに気付くでしょう。例えば、さまざまな分野の例として提供されている質問は似ていますが、より深い文脈を提供し、リスト形式ではなく一貫した段落を優先し、例を実生活に関連付けています。
 
 <div style={{textAlign: 'center'}}>
-  <img src={primed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={primed_question} style={{width: "650px"}} />
 </div>
 
 (日本語訳)

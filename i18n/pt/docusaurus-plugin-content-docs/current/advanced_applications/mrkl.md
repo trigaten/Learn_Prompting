@@ -50,7 +50,7 @@ import search from '@site/docs/assets/advanced/mrkl/search.webp';
 import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <LazyLoadImage src={mrkl_task} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -67,38 +67,38 @@ e os formata a fim de que possam ser utilizados em  uma calculadora (por exemplo
 Primeiro, eu criei um dataset simples na aba `Datasets` do Dust.
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 Depois, eu mudei para a aba `Specification` e inclui o dataset acima usando um bloco do tipo `input`. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 Em seguida, criei um bloco do tipo `lmm` que extrai os números e operações matemática. Note que quando eu crio o promt eu passo que estou usando a calculadora do Google. O modelo que eu usei (GPT-3) provavelmente tem algum conhecimento da calculadora do Google devido ao seu pré-treinamento.
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 Então eu criei um block do tipo `code`, no qual incluí um código em javascript bem simples para remover os espaços da resposta.
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 Finalmente, eu criei um bloco do tipo `search` que manda a equação formatada para a calculadora do Google.
 ** Importante **: Nessa etapa tive que mandar as instruções em inglês mesmo, já que perguntando "Quanto é..." a busca não retorna uma calculadora (ou "rich snippet"). 
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 Abaixo você pode ver os resultando, que estão todos corretos!
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 Fique à vontade para copiar e brincar com esse código [aqui](https://dust.tt/w/f3fa61f0aa/a/17501cd008).

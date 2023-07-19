@@ -47,7 +47,7 @@ import search from '@site/docs/assets/advanced/mrkl/search.webp';
 import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <LazyLoadImage src={mrkl_task} style={{width: "500px"}} />
 </div>
 <div style={{textAlign: 'center'}}>
 示例MRKL系统(AI21)
@@ -60,37 +60,37 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
 首先，我在Dust的`数据集`选项卡中制作了一个简单的数据集。
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 然后，我切换到`Specification`选项卡，并使用`data`块加载了数据集。
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 接下来，我创建了一个`llm`块，用于提取数字和运算符号。请注意，在提示中，我告诉它我们将使用Google的计算器。我使用的模型（GPT-3）可能已经预先训练了一些关于Google计算器的知识。
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 然后，我创建了一个`code`块，其中运行一些简单的JavaScript代码来删除补全结果(completion)中的空格。
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 最后，我创建了一个`search`块，将重新格式化的方程式发送给Google的计算器。
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 下面我们可以看到最终的结果，全部都是正确的！
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 请随意尝试并进行实验，这是演练场(playground)的[链接](https://dust.tt/trigaten/a/98bdd65cb7).

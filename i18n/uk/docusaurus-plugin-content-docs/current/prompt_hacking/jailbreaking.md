@@ -19,7 +19,7 @@ OpenAI, серед інших компаній і організацій, які
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={pretend} style={{width: "500px"}} />
+  <LazyLoadImage src={pretend} style={{width: "500px"}} />
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) демонструє запит, який вдає доступ до дат з минулого і робить висновки про майбутні події (@nero2022jailbreak).
@@ -29,7 +29,7 @@ import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={actor} style={{width: "500px"}} />
+  <LazyLoadImage src={actor} style={{width: "500px"}} />
 </div>
 
 Цей приклад від [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) демонструє сценарій дій між двома людьми, які обговорюють пограбування, у результаті чого ChatGPT бере на себе роль персонажа (@miguel2022jailbreak). Він є актором, а тому вважає, що ймовірної шкоди не існує. Таким чином, ChatGPT, схоже, припускає, що безпечно надавати користувачеві інформацію про те, як проникнути в будинок.
@@ -43,7 +43,7 @@ ChatGPT було точно налаштовано за допомогою RLHF,
 import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={responsibility} style={{width: "500px"}} />
+  <LazyLoadImage src={responsibility} style={{width: "500px"}} />
 </div>
 
 [@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) створив цей обмін, підтвердивши, що ChatGPT зобов’язаний відповісти на запит, а не відхилити його, переважаючи над його міркуванням законності (@nick2022jailbreak).
@@ -53,7 +53,7 @@ import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak
 import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={hotwire} style={{width: "500px"}} />
+  <LazyLoadImage src={hotwire} style={{width: "500px"}} />
 </div>
 
 [@haus_cole](https://twitter.com/haus_cole/status/1598541468058390534) згенерував цей приклад, маючи на увазі, що найкращим результатом запиту, який міг би допомогти в дослідженні, була пряма відповідь, як завести автомобіль (@derek2022jailbreak). Під таким прикриттям ChatGPT схильний відповідати на запити користувача.
@@ -63,7 +63,7 @@ import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={logic} style={{width: "500px"}} />
+  <LazyLoadImage src={logic} style={{width: "500px"}} />
 </div>
 
 Одноразовий джейлбрейк створено командою [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), де модель відповіді на запит пропонує більш сувору логіку та зменшує деякі з її більш етичних обмежень (@AI_jailbreak).
@@ -77,7 +77,7 @@ ChatGPT призначений для відповідей на запитанн
 import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GPT4} style={{width: "500px"}} />
+  <LazyLoadImage src={GPT4} style={{width: "500px"}} />
 </div>
 
 Цей приклад із [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519301976064) робить користувача кращою моделлю GPT, створюючи враження, що користувач є авторизованою стороною в заміні функцій безпеки ChatGPT (@alice2022jailbreak). Користувачеві не було надано фактичного дозволу, швидше ChatGPT вірить введенням користувачів і реагує відповідно до цього сценарію.
@@ -87,7 +87,7 @@ import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo_mode} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo_mode} style={{width: "500px"}} />
 </div>
 
 sudo — це команда, яка «...делегує повноваження[s] , щоб надати певним користувачам... можливість запускати деякі (або всі) команди...» (@sudo2022jailbreak). Існує кілька варіантів експлуатації "sudo mode", наприклад, гіпотетичний "режим ядра" запропонований [@samczsun](https://twitter.com/samczsun/status/1598679658488217601)(@sam2022jailbreak). На запит вищезгаданим способом ChatGPT діє так, ніби надає користувачеві підвищені привілеї. Це враження про підвищені привілеї користувача, як правило, робить ChatGPT менш обмеженим у відповідях на запити.
@@ -95,13 +95,13 @@ sudo — це команда, яка «...делегує повноваженн�
 import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo} style={{width: "500px"}} />
 </div>
 
 import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={lynx} style={{width: "500px"}} />
+  <LazyLoadImage src={lynx} style={{width: "500px"}} />
 </div>
 
 Що стосується режиму sudo, можна запропонувати ChatGPT імітувати термінал Linux із підвищеними привілеями, щоб виконувати команди, які він зазвичай відхиляє. Наприклад, оскільки він не має доступу до Інтернету, він часто не може виконувати запити, що стосуються певного вебсайту. Однак, як показано у прикладі Джонаса Деґрейва, ChatGPT розуміє концепцію `lynx` і удає, що виконує команду(@jonas2022jailbreak).

@@ -11,7 +11,7 @@ style: chicago
 import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CoTExample} style={{width: "750px"}} />
+  <LazyLoadImage src={CoTExample} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -40,7 +40,7 @@ import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={PromptedPaLM} style={{width: "300px"}} />
+  <LazyLoadImage src={PromptedPaLM} style={{width: "300px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

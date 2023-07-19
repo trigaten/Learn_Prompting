@@ -48,13 +48,13 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `/imagine prompt: astronaut on a horse`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut} style={{width: "350px"}} />
 </div>
 
 Приклад із параметрами: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
 
 У цьому базовому прикладі були використані такі параметри:
@@ -83,7 +83,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi1} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
 ```text
@@ -91,7 +91,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_multi2} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
 ## Запити-зображення
@@ -102,7 +102,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 ```
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_ip2} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
 ## Параметри (v4)
@@ -116,9 +116,9 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `astronaut on a horse --ar 16:9` і `astronaut on a horse --ar 1:2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
 </div>
 
 ### Значення невизначеності
@@ -128,9 +128,9 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `astronaut on a horse --c20` і `astronaut on a horse --c 80`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
 </div>
 
 ### Якість
@@ -140,9 +140,9 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `astronaut on a horse --q .5` і `astronaut on a horse --q 2`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
 </div>
 
 ### Початкове значення:
@@ -152,9 +152,9 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `astronaut on a horse --seed 123`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
 </div>
 
 ### Стилізація
@@ -164,9 +164,9 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `astronaut on a horse --s 50` і `astronaut on a horse --s 900`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
 </div>
 
 ### Версія
@@ -175,11 +175,11 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `--v 1`, `--v 2` та `--v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
   &nbsp;
-   <img src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
+   <LazyLoadImage src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
    &nbsp;
-      <img src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
+      <LazyLoadImage src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
 </div>
 
 ## Параметри (попередні моделі)
@@ -191,7 +191,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `astronaut on a horse --sameseed --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
 </div>
 
 ### Клітинка
@@ -201,11 +201,11 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `astronaut on a horse --tile --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
   &nbsp;
-  <img src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
   &nbsp;
-  <img src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
+  <LazyLoadImage src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
 </div>
 
 ### Відео

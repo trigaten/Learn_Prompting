@@ -17,13 +17,13 @@ import pt_limerick_question from '@site/docs/assets/basics/limerick_question.web
 Orientação de estilo é simplesmente pedir à IA para conversar em um certo estilo. Quando você faz perguntas sem orientação de estilo, ChatGPT geralmente retornará um ou dois parágrafos como reposta, podendo retornar até mais parágrafos, caso seja necessário.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_unguided_question} style={{width: "500px"}} />
+  <LazyLoadImage src={pt_unguided_question} style={{width: "500px"}} />
 </div>
 
 A reposta tem um tom moderadamente formal e dá alguns detalhes bem específicos! Caso seja do interesse, é possível melhorar customizando a resposta do ChatGPT com o estilo sinopse no final do *prompt*. Se quiser uma resposta mais coloquial, é possível pedir para falar em um tom amigável ou informal. Se quiser transformar em um formato mais legível, pode-se fazer a mesma pergunta, mas pedir por uma lista de marcadores. Ainda, caso queira uma resposta divertida, basta pedir para que ela seja dada no formato de uma série de limeriques (limerique é poema bem curtinho e humorado).
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_limerick_question} style={{width: "450px"}} />
+  <LazyLoadImage src={pt_limerick_question} style={{width: "450px"}} />
 </div>
 
 Um exemplo de estilo de *prompt* mais detalhado será algo como:
@@ -61,13 +61,13 @@ Abaixo, tem-se o exemplo de uma pergunta sem estímulo prévio (*priming*) ao Ch
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_unprimed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={pt_unprimed_question} style={{width: "650px"}} />
 </div>
 
 No segundo exemplo, por outro lado, foi feita a pergunta depois de fornecer um estímulo prévio (*priming*) e a pergunta no formato correto ao ChatGPT. Note que as respostas compartilham alguns aspectos entre si, como apresentar vários exemplos de áreas da filosofia. Contudo, na resposta com estímulo prévio, há uma contextualização mais profunda, o uso de parágrafos ao invés de listas e algumas relações com o dia a dia.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pt_primed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={pt_primed_question} style={{width: "650px"}} />
 </div>
 
 Incorporar estímulos prévios no seu *prompting* é uma maneira mais avançada de interagir com *chatbots*. Ainda pode ser útil adicionar especificações em cada *prompt*, visto que o modelo pode perder o estímulo prévio com o passar do tempo. Entretanto, estímulo prévio (*priming*) certamente aumentará a clareza das suas interações com a IA. 

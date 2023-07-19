@@ -17,7 +17,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 Традиційні чат-боти зазвичай базуються на намірах, тобто вони розроблені, щоб реагувати на конкретні наміри користувача. Кожен намір складається з набору зразкових запитань і потрібної відповіді. Наприклад, намір "Погода" може містити питання-зразки: "Яка сьогодні погода?" або "Чи буде сьогодні дощ?" і відповідь типу "Сьогодні буде сонячно." Коли користувач ставить запитання, чат-бот порівнює його з наміром із найбільш схожими питаннями-зразками та дає потрібну відповідь.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Як працює традиційний чат-бот на основі намірів. Зображення від автора.</p>
 </div>
 
@@ -30,7 +30,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 Таким чином, кожен намір пов’язується з документом замість списку запитань і конкретної відповіді, напр. один намір для "проблем із входом", один намір для "як підписатися" тощо. Коли користувач ставить запитання щодо входу, ми можемо передати документ "проблеми входу" до GPT-3 як контекстну інформацію та згенерувати конкретну відповідь на запитання користувача.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Як може працювати чат-бот, що використовує GPT-3. Зображення від автора.</p>
 </div>
 
@@ -52,7 +52,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 Перший крок по суті вирішується за допомогою [семантичного пошуку](https://en.wikipedia.org/wiki/Semantic_search). Ми можемо використовувати попередньо підготовлені моделі з бібліотеки [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) і легко призначати бали кожному документу. Документ з найвищим балом буде використаний для створення відповіді чат-бота.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3Organized} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Як може працювати чат-бот, що використовує GPT-3. GPT-3 можна використовувати для створення правильної відповіді, використовуючи інформацію з документів бази знань. Зображення від автора.</p>
 </div>
 
@@ -68,7 +68,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 - Нарешті, **запитання користувача**.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImagePrompt} style={{width: "700px"}} />
+  <LazyLoadImage src={ImagePrompt} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Інформація, яка використовується для створення запиту GPT-3. Зображення від автора.</p>
 </div>
 
@@ -81,7 +81,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 Тоді припустімо, що крок семантичного пошуку дістає цей документ із нашої бази знань. Усі документи описують, як працює продукт VideoGram, який є уявним продуктом, схожим на Instagram, але лише для відео.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageLogin} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Документ, що пояснює, як працює вхід у VideoGram. Зображення від автора.</p>
 </div>
 

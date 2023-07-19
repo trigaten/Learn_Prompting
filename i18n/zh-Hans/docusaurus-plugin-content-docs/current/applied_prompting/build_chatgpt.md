@@ -10,7 +10,7 @@ import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
 <div style={{textAlign: 'left'}}>
-  <img src={SkippyHeader} style={{width: "700px"}} />
+  <LazyLoadImage src={SkippyHeader} style={{width: "700px"}} />
 </div>
 
 ## 介绍
@@ -35,7 +35,7 @@ ChatGPT是一种新的语言模型，由OpenAI进行了优化，从GPT-3进行�
 ## 提示
 
 <div style={{textAlign: 'left'}}>
-  <img src={Skippy} style={{width: "700px"}} />
+  <LazyLoadImage src={Skippy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Skippy chatbot完整的提示(prompt)</p>
 </div>
 
@@ -46,7 +46,7 @@ ChatGPT是一种新的语言模型，由OpenAI进行了优化，从GPT-3进行�
 ChatGPT 是一个语言模型和用户界面。用户输入到界面的提示实际上被插入到包含用户和 ChatGPT 之间整个对话的较大提示中。这使得基础语言模型能够理解对话的上下文并作出适当的回应。
 
 <div style={{textAlign: 'left'}}>
-  <img src={ChatGPT} style={{width: "600px"}} />
+  <LazyLoadImage src={ChatGPT} style={{width: "600px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>在发送到模型之前插入用户提示的示例</p>
 </div>
 
@@ -71,7 +71,7 @@ Skippy和用户之间的过去交流会附加到下一个提示中。每次我�
 拥有一个主动询问问题并从用户那里获得反馈的聊天机器人可能会很有帮助。下面是一个关于治疗师聊天机器人的示例，它将询问问题和后续问题，以帮助用户思考他们的一天。
 
 <div style={{textAlign: 'left'}}>
-  <img src={Therapy} style={{width: "700px"}} />
+  <LazyLoadImage src={Therapy} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>治疗师聊天机器人</p>
 </div>
 

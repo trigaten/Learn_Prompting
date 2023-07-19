@@ -11,7 +11,7 @@ DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**p
 import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={diverse} style={{width: "750px"}} />
+  <LazyLoadImage src={diverse} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

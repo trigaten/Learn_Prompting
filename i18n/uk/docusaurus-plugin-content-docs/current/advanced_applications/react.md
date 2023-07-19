@@ -14,7 +14,7 @@ ReAct(@yao2022react)(reason, act) — це парадигма, яка дозво
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_qa} style={{width: "500px"}} />
+  <LazyLoadImage src={react_qa} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -31,7 +31,7 @@ Google використовував ВМM PaLM(@chowdhery2022palm) в експе
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_performance} style={{width: "500px"}} />
+  <LazyLoadImage src={react_performance} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

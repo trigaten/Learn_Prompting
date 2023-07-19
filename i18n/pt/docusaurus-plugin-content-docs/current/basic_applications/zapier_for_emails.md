@@ -36,7 +36,7 @@ Abaixo está um diagrama do que faremos no Zapier. Sempre que um e-mail chegar e
 4. Armazene a saída em um banco de dados.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}} />
+  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
 </div>
 
 ## Configuração no Zapier
@@ -50,7 +50,7 @@ Crie uma [conta no Zapier](https://zapier.com/sign-up) (você pode criar uma con
   <div>
   O seu diagrama de ação no Zapier eventualmente estará assim:
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
@@ -59,7 +59,7 @@ Crie uma [conta no Zapier](https://zapier.com/sign-up) (você pode criar uma con
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-    <img src={Step1} style={{width: "500px"}} />
+    <LazyLoadImage src={Step1} style={{width: "500px"}} />
         </div>
       </div>
     </details>
@@ -69,7 +69,7 @@ Crie uma [conta no Zapier](https://zapier.com/sign-up) (você pode criar uma con
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step2} style={{width: "500px"}} />
+  <LazyLoadImage src={Step2} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -80,7 +80,7 @@ Crie uma [conta no Zapier](https://zapier.com/sign-up) (você pode criar uma con
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step3} style={{width: "500px"}} />
+  <LazyLoadImage src={Step3} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -90,7 +90,7 @@ Crie uma [conta no Zapier](https://zapier.com/sign-up) (você pode criar uma con
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step4} style={{width: "500px"}} />
+  <LazyLoadImage src={Step4} style={{width: "500px"}} />
 </div>
       </div>
     </details>

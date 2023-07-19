@@ -36,7 +36,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 3. 将输出存储在数据库中
 
 <div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}} />
+  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
 </div>
 
 ## 设置 Zapier
@@ -48,7 +48,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
   <div>
   这就是 Zapier 步骤图的样子。
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
@@ -57,7 +57,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-    <img src={Step1} style={{width: "500px"}} />
+    <LazyLoadImage src={Step1} style={{width: "500px"}} />
         </div>
       </div>
     </details>
@@ -67,7 +67,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step2} style={{width: "500px"}} />
+  <LazyLoadImage src={Step2} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -78,7 +78,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step3} style={{width: "500px"}} />
+  <LazyLoadImage src={Step3} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -88,7 +88,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step4} style={{width: "500px"}} />
+  <LazyLoadImage src={Step4} style={{width: "500px"}} />
 </div>
       </div>
     </details>

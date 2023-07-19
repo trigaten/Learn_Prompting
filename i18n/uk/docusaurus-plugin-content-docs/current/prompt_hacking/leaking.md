@@ -12,7 +12,7 @@ sidebar_position: 2
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={research} style={{width: "500px"}} />
+  <LazyLoadImage src={research} style={{width: "500px"}} />
 </div>
 
 Наступне зображення(@simon2022inject), знову ж таки з прикладу `remoteli.io`, показує користувача Twitter, який змушує систему злити свій запит.
@@ -20,7 +20,7 @@ import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "300px"}} />
+  <LazyLoadImage src={Image} style={{width: "300px"}} />
 </div>
 
 Ну і що? Чому когось має хвилювати витік запиту?
@@ -34,7 +34,7 @@ import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={bing} style={{width: "700px"}} />
+  <LazyLoadImage src={bing} style={{width: "700px"}} />
 </div>
 
 Це викликає справжнє занепокоєння, зважаючи на нещодавнє зростання кількості стартапів на основі GPT-3 з набагато складнішими запитами, розробка яких може зайняти багато годин.

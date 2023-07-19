@@ -15,14 +15,14 @@ import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 `studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
 </div>
 
 使用强大的反向提示语，我们可以生成更加逼真的手部图像。
 
 `studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6 | disfigured, deformed hands, blurry, grainy, broken, cross-eyed, undead, photoshopped, overexposed, underexposed, lowres, bad anatomy, bad hands, extra digits, fewer digits, bad digit, bad ears, bad eyes, bad face, cropped: -5`
 <div style={{textAlign: 'center'}}>
-  <img src={good_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={good_pitt} style={{width: "250px"}} />
 </div>
 
 使用类似的反向提示语也可以帮助处理其他身体部位。不幸的是，这个技术并不是一直奏效，因此您可能需要多次尝试才能获得满意的结果。 未来，这种提示技术应该是不必要的，因为模型会不断改进。然而，目前这是一种非常有用的技术。

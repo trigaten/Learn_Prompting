@@ -104,7 +104,7 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -119,7 +119,7 @@ LLM은 퓨샷 스타일의 프롬프트를 받게 됩니다. M개의 각기 다�
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -165,7 +165,7 @@ Generated Knowledge Example (Liu et al.)
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={RImage} style={{width: "250px"}} />
+  <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
 아이디어는 퓨샷 프롬프트로 지식 생성과 답변을 같은 단계에서 실행하는 데 있습니다.

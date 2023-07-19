@@ -34,11 +34,11 @@ import focus_final from '@site/static/img/computer.webp';
 import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets1} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets1} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets2} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets2} style={{width: "750px"}} />
 </div>
 
 Як для першої спроби результат був досить непоганий, мені, зокрема, сподобалася нижня ракета зліва.
@@ -46,13 +46,13 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 Також я захотів, щоб комп’ютер був у такому самому стилі: `Low poly white and blue computer sitting in a sparse green meadow`
 
 <div style={{textAlign: 'center'}}>
-  <img src={computer_1} style={{width: "750px"}} />
+  <LazyLoadImage src={computer_1} style={{width: "750px"}} />
 </div>
 
 Зрештою, мені потрібен ще й космонавт! Запит: `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background`, здається, підходить.
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_1} style={{width: "750px"}} />
+  <LazyLoadImage src={astronaut_1} style={{width: "750px"}} />
 </div>
 
 Результат цього запиту теж досить гарний.
@@ -63,7 +63,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 Я знову вирішив почитати про запити на сайті [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) і побачив, що дехто використовує слово «ізометричний». Тому я вирішив спробувати іншу модель, а саме Stable Diffusion, а не DALLE. Я також дійшов висновку, що мені потрібно додати більше модифікаторів до мого запиту, щоб окреслити стиль. Отже, мій наступний запит мав такий вигляд: `A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_2} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_2} style={{width: "250px"}} />
 </div>
 
 Зображення вийшли не таким чудовими, як я очікував, тож я вирішив натомість почати з ракети:
@@ -71,13 +71,13 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
 Не надто якісно, але після декількох спроб у мене вийшло це: 
 
 <div style={{textAlign: 'center'}}>
-  <img src={rocket_final} style={{width: "250px"}} />
+  <LazyLoadImage src={rocket_final} style={{width: "250px"}} />
 </div>
 
 Тепер мені потрібен потужніший ноутбук:
@@ -85,7 +85,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={laptop_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
 Я отримав досить різні результати, з цих чотирьох зображень найбільше мені подобається правий нижній, однак, на цьому я не зупинився і вирішив спробувати дещо інше:
@@ -93,7 +93,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
 Це було не зовсім те, чого я хотів, тому я додав трішки чогось магічного та яскравого:
@@ -101,7 +101,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_2} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
 Мені сподобався результат цього запиту, але я хотів, щоб камінь був чітко посередині зображення:
@@ -109,13 +109,13 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={gemstone_sd_3} style={{width: "250px"}} />
+  <LazyLoadImage src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
 Ось тут я використав стандартну роздільну здатність 720 на 576 пікселів (Standart Definition, SD), щоб результат попередніх зображень був відчутний на наступних. І таким чином я отримав ось це:
 
 <div style={{textAlign: 'center'}}>
-  <img src={focus_final} style={{width: "250px"}} />
+  <LazyLoadImage src={focus_final} style={{width: "250px"}} />
 </div>
 
 Нарешті я почав працювати над космонавтом:
@@ -123,7 +123,7 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 `A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={astronaut_final} style={{width: "250px"}} />
+  <LazyLoadImage src={astronaut_final} style={{width: "250px"}} />
 </div>
 
 На цьому етапі я був достатньо задоволений однаковим стилем усіх трьох зображень, тому зміг використати їх на вебсайті. Головний висновок, якого я дійшов, полягав у тому, що написання запиту для створення потрібного мені зображення – це складний багатоетапний процес, що вимагає аналізу великої кількості інформації, а також те, що мені довелося змінити свої очікування та побажання, експериментуючи з різними запитами та моделями.

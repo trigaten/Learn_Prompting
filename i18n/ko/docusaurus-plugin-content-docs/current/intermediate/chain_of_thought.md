@@ -14,7 +14,7 @@ LLM에게 이유에 대해서 설명하도록 만드는 방법입니다.
 import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CoTExample} style={{width: "750px"}} />
+  <LazyLoadImage src={CoTExample} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -54,7 +54,7 @@ CoT는 산술적, 상식적, 상징적 추론 과제(@wei2022chain)와 같은 �
 import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={PromptedPaLM} style={{width: "300px"}} />
+  <LazyLoadImage src={PromptedPaLM} style={{width: "300px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

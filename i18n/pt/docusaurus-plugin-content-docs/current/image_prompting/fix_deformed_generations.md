@@ -15,14 +15,14 @@ Usando o Stable Diffusion v1.5 e o seguinte prompt, geramos uma imagem legal do 
 `retrato médio do Brad Pitt, acenando com as mãos, detalhado, filme, iluminação de estúdio, lente de 90mm, por Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
 </div>
 
 Usando um prompt robusto e negativo, podemos gerar mãos muito mais convincentes.
 
 `retrato médio do Brad Pitt acenando com as mãos, detalhado, filme, iluminação de estúdio, lente de 90mm, por Martin Schoeller:6 | desfigurado, membros deformados, borrado, granulado, quebrado, olho de pombo, morto-vivo, photoshopped, sobreexposto, subexposto, baixa resolução, má anatomia, mãos ruins, dedos a mais, dedos a menos, dedo ruim, orelha ruim, olho ruim, rosto ruim, cortado: -5`
 <div style={{textAlign: 'center'}}>
-  <img src={good_pitt} style={{width: "250px"}} />
+  <LazyLoadImage src={good_pitt} style={{width: "250px"}} />
 </div>
 
 Usando um prompt semelhante, também é possível ajudar com outras partes do corpo. Infelizmente, essa técnica não é consistente, então você pode precisar de tentar várias gerações antes de obter um bom resultado.

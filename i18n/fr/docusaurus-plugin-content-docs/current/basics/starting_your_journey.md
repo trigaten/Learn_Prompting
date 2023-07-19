@@ -34,7 +34,7 @@ Maintenant, nous allons mettre le prompt dans ChatGPT et voir ce qui se passe.
 import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <LazyLoadImage src={CSharp} style={{width: "750px"}} />
 </div>
 
 Nous pouvons voir qu'il a généré une histoire, mais qu'il l'a écrite à l'intérieur d'un bloc de code C# (un langage de programmation). Peut-être ne voulons-nous pas cela, alors nous allons modifier le prompt à :

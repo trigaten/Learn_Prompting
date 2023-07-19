@@ -13,7 +13,7 @@ DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**p
 import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={diverse} style={{width: "750px"}} />
+  <LazyLoadImage src={diverse} style={{width: "750px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -128,7 +128,7 @@ O verificador é treinando com uma função um pouco compleza, que eu não vou a
 import ama from '@site/docs/assets/reliability/AMA_Prompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama} style={{width: "750px"}} />
+  <LazyLoadImage src={ama} style={{width: "750px"}} />
 </div>
 
 Perguntas do tipo AMA (@arora2022ama) é uma abordagem semelhante à DiVeRSe. No entanto, tanto seu passo de múltiplos prompts quanto seu passo de agregação de respostas diferem significativamente. A ideia principal do AMA é usar um LLM para gerar múltiplos prompts, em vez de usar apenas prompts com poucos exemplos.
@@ -166,7 +166,7 @@ Nosso primeiro passo aqui será transformar a afirmação `Esse animal vive na A
 import ama_multi from '@site/docs/assets/reliability/AMA_multiprompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama_multi} style={{width: "800px"}} />
+  <LazyLoadImage src={ama_multi} style={{width: "800px"}} />
 </div>
 
 Isso pode gerar:
