@@ -6,10 +6,10 @@ sidebar_position: 20
 
 [Promptmetheus](https://promptmetheus.com) membantu Anda dalam menyusun, menguji, dan mengevaluasi prompt satu kali untuk platform OpenAI yang dapat dengan mudah mengubah masukan menjadi keluaran.
 
-import Image from '../../assets/tooling/promptmetheus.webp';
+import Image from '@site/docs/assets/tooling/promptmetheus.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <LazyLoadImage src={Image} style={{width: "750px"}} />
 </div>
 
 ## Fitur
