@@ -4,8 +4,8 @@ sidebar_position: 3000
 
 # 🛸 Sumber Daya Tambahan
 
-## Interactive Tutorials
-* [agents.blue](https://www.agents.blue/) - A free, guided tutorial on prompt engineering.
+## Tutorial Interaktif
+* [agents.blue](https://www.agents.blue/) - Sebuah tutorial gratis dan dipandu tentang rekayasa prompt.
 
 ## Sumber daya
 
