@@ -44,13 +44,13 @@ sidebar_position: 2
 - Или даже гораздо более сложные задачи, которые зависят от нескольких источников данных, например, следующие: 
 
 
-import mrkl_task from '@site/docs/assets/mrkl_task.png';
-import dataset from '@site/docs/assets/mrkl/dataset.png';
-import load_dataset from '@site/docs/assets/mrkl/load_dataset.png';
-import model from '@site/docs/assets/mrkl/model.png';
-import extract from '@site/docs/assets/mrkl/extract.png';
-import search from '@site/docs/assets/mrkl/search.png';
-import final from '@site/docs/assets/mrkl/final.png';
+import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
+import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
+import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.webp';
+import model from '@site/docs/assets/advanced/mrkl/model.webp';
+import extract from '@site/docs/assets/advanced/mrkl/extract.webp';
+import search from '@site/docs/assets/advanced/mrkl/search.webp';
+import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={mrkl_task} style={{width: "500px"}} />

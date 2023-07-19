@@ -5,27 +5,27 @@ import StatPoint from "@site/src/components/StatPoint";
 import LargeCallout from "@site/src/components/layouts/LargeCallout";
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
-import Arthur from "@site/static/img/arthur_logo.png";
-import HuggingFace from "@site/static/img/huggingface_logo.png";
-import HumanLoop from "@site/static/img/humanloop_logo.png";
-import Preamble from "@site/static/img/preamble_logo.png";
-import Scale from "@site/static/img/scale_logo.png";
-import Snorkel from "@site/static/img/snorkel_logo.png";
-import Stability from "@site/static/img/stability_logo.png";
-import Towards from "@site/static/img/towards_logo.png";
-import Trustible from "@site/static/img/trustible_logo.png";
-import Voiceflow from "@site/static/img/voiceflow_logo.png";
-import FiscalNote from "@site/static/img/fiscalnote_logo.png";
-import OpenAI from "@site/static/img/openai_logo.png";
+import Arthur from "@site/static/img/arthur_logo.webp";
+import HuggingFace from "@site/static/img/huggingface_logo.webp";
+import HumanLoop from "@site/static/img/humanloop_logo.webp";
+import Preamble from "@site/static/img/preamble_logo.webp";
+import Scale from "@site/static/img/scale_logo.webp";
+import Snorkel from "@site/static/img/snorkel_logo.webp";
+import Stability from "@site/static/img/stability_logo.webp";
+import Towards from "@site/static/img/towards_logo.webp";
+import Trustible from "@site/static/img/trustible_logo.webp";
+import Voiceflow from "@site/static/img/voiceflow_logo.webp";
+import FiscalNote from "@site/static/img/fiscalnote_logo.webp";
+import OpenAI from "@site/static/img/openai_logo.webp";
 
 function Join() {
   const stats = [
     {
-      header: "700K+",
+      header: "1M+",
       subtitle: "People Learning",
     },
     {
-      header: "36K+",
+      header: "40K+",
       subtitle: "Discord Members",
     },
     {
@@ -59,7 +59,7 @@ function Join() {
         <span style={{ color: "black" }}>Join our global community.</span>
         <br />
         <span style={{ color: "black" }}>Elevate your prompting skills.</span>
-        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-56 pt-10">
+        <div className="text-center text-default text-sm font-vietnam font-light tracking-tight px-4 md:px-30 lg:px-56 pt-10">
           Become part of a worldwide network of learners from various
           industries, all mastering the skill of effectively engaging with AI
           using our curriculum
@@ -78,17 +78,15 @@ function Join() {
         >
           <div className="md:w-[45%] md:pl-28 md:ml-12">
             <div className="opacity-81 text-center md:text-left text-lg">
-              Introducing The
+              The
             </div>
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
               <span className="font-bold">HackAPrompt</span> Competition
             </div>
             <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
-              A beginner-friendly competition that will challenge you to beat 7
-              levels of prompt hacking defenses. Inject, leak and defeat the
-              sandwich defense to claim your share of over $35,000 in prizes.
-              Ready to trick the AI? Hack our prompts anytime between May 5th
-              and May 26th!
+              We ran this beginner-friendly competition May 5th-June 3rd. 2700+ competitors 
+              injected, leaked and defeated the sandwich defense in order to claim their 
+              share of over $35,000 in prizes.
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
               <a href="https://www.aicrowd.com/challenges/hackaprompt-2023">
@@ -102,7 +100,7 @@ function Join() {
                       );
                     }, [])
                   }
-                  text={"Register Now"}
+                  text={"See Results"}
                   type={"white"}
                   icon={
                     <RxArrowTopRight
@@ -119,7 +117,7 @@ function Join() {
             style={{ paddingTop: "20px", marginTop: "-20px" }}
           >
             <img
-              src={require("@site/static/img/lock.png").default}
+              src={require("@site/static/img/lock.webp").default}
               alt="Example banner"
             />
           </div>

@@ -5,7 +5,7 @@ sidebar_position: 1000
 # 🟢 开始你的旅程
 
 
-import Steps from '/docs/assets/steps.svg';
+import Steps from '@site/docs/assets/basics/steps.svg';
 
 
 <div style={{textAlign: 'center'}}>
@@ -32,7 +32,7 @@ import Steps from '/docs/assets/steps.svg';
 
 现在，我们将把提示放入 ChatGPT，看看会发生什么。
 
-import CSharp from '/docs/assets/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />

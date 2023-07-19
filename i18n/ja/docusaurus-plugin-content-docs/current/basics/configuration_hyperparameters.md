@@ -5,7 +5,7 @@ sidebar_position: 100
 # 🟢 LLM 設定
 
 
-import Temperature from '@site/docs/assets/temperature.svg';
+import Temperature from '@site/docs/assets/basics/temperature.svg';
 
 <div style={{textAlign: 'center'}}>
   <Temperature style={{width:"100%",height:"300px",verticalAlign:"top"}}/>

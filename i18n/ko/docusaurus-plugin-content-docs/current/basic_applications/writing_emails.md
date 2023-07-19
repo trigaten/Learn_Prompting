@@ -4,29 +4,29 @@ sidebar_position: 10
 
 # 🟢 이메일 쓰기
 
-이메일을 쓰는 것은 시간을 많이 쓰는 일이기도 하고 특히나 여러분이 처음 받아보는 이메일이라면 더욱 그렇습니다. 이 섹션은 여러분이 오늘 아프다는 것을 상사에게 말하는 이메일 부터 더 복잡한 콜드 메일까지 알려줄 것입니다.
+이메일 작성은 시간이 많이 걸리는 작업일 수 있으며, 특히 처음 받아본 이메일을 읽어봐야 할 때는 더욱 그렇습니다. 이 섹션에서는 상사에게 오늘 아프다는 간단한 이메일부터 보다 복잡한 콜드 리드 이메일에 이르기까지 다양한 사용 사례를 다룹니다.
 
 
 ## 아픈 날 보내는 기본적인 메일
 
-여러분이 아파서 회사에 가지 못한다고 생각해보세요(아니면 가기 싫어서😈). 여기 상사에게 여러분이 아프다는 것을 말하는 이메일을 작성하는 간단한 프롬프트가 있습니다. 
+여러분이 아파서 회사에 가지 못한다고 생각해보세요(아니면 가기 싫어서😈). 여기 상사에게 여러분이 아프다는 것을 말하는 이메일을 작성하는 간단한 프롬프트가 있습니다.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Mario\nBoss's name: John\n\nWrite an email to my boss saying that I will be out of office today since I am sick. " initial-response="Subject: Out of Office - Sick\n\nDear John,\n\nI am writing to inform you that I will be out of office today due to illness. I apologize for any inconvenience this may cause.\n\nI will be sure to keep you updated on my progress and will be back in the office as soon as I am feeling better.\n\nThank you for your understanding.\n\nSincerely,\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
-이 이메일은 괜찮지만 좀 지루합니다. 조금 양념을 칠 필요가 있을 것 같습니다!
+이 이메일은 훌륭하지만 꽤 따분합니다. 조금 더 재미있게 만들어 봅시다!
 
 ## 스타일 수정 및 지시
 
-이메일의 스타일 을 바꾸는 것은 정말 쉬운 일입니다. 예를 들어 여러분이 AI에게 'humorous' 또는 'Include a funny reason'등을 지시할 수도 있습니다.
+이메일의 스타일을 수정하는 방법은 매우 간단합니다. 예를 들어, AI에게 '유머러스하게'라고 요청하거나 '재미있는 이유를 포함하라'고 지시할 수 있습니다.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Mario\nBoss's name: John\n\nWrite a humorous yet professional email to my boss saying that I will be out of office today since I am sick. \nBe concise and funny. Include a funny reason:" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nMario" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 <br/>
 
-여기 좀 더 진지하고 전문가적인 예제가 있습니다.
+여기 좀 더 진지하고 전문적인 또 다른 예제가 있습니다.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="My Name: Mario\nBoss's name: John\n\nWrite a **serious**, professional email to my boss saying that I will be out of office today since I am sick. \nBe concise:" initial-response="Subject: Out of Office - Sick\n\nDear John,\n\nI am writing to inform you that I will be out of office today due to illness. I apologize for any inconvenience this may cause.\n\nThank you for your understanding.\n\nSincerely,\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
@@ -35,7 +35,7 @@ sidebar_position: 10
 
 ## 이메일 대답하기
 
-여러분의 상사로부터 긴 이메일을 받았다고 생각해봅시다. 여러분은 이메일에 꼭 답해야 합니다. 하지만 전체를 읽을 시간을 없습니다. 그렇다면 여러분은 `Generate a summary of this and a list of action items`이라고 질문할 필요가 있습니다.
+상사로부터 많은 정보가 담긴 긴 이메일을 받았다고 상상해 보세요. 이메일에 답장을 보내야 하지만 전체를 다 읽을 시간이 없습니다. 이메일을 AI에 연결하여 요약과 실행 항목 목록을 생성(`Generate a summary of this and a list of action items`)하도록 요청할 수 있습니다.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Dear Mario,\n\nI hope you're doing well. I am writing to provide you with some updates on our company and to request your assistance in addressing an issue with the user interface (UI) of the software you have been working on.\n\nAs you know, our company has been focusing on providing a user-friendly experience to our customers, and we have identified some issues with the UI of the software. Specifically, we have received feedback from our users that they are having difficulty accessing certain features, and that the UI is not intuitive enough.\n\nWe need your help to address these issues and make improvements to the UI of the software. This may involve making changes to the layout, design, or functionality of the UI. We believe that your expertise in software development and your familiarity with the software will make you the ideal person to help us with this task.\n\nIf you need any additional resources or support to complete this task, please do not hesitate to let me know. Additionally, I would appreciate it if you could provide me with an estimated timeline for when you expect these modifications to be completed.\n\nIf you have any questions or need further clarification, please do not hesitate to contact me.\n\nThank you for your hard work and dedication to our company. I look forward to hearing back from you soon.\n\nBest regards,\nJohn\n\nGenerate a summary of this and a list of action items." initial-response="Summary: John is requesting Mario's assistance in addressing user interface issues with the software Mario has been working on. The issues involve difficulty accessing certain features and the UI not being intuitive enough. Mario's expertise in software development and familiarity with the software make him the ideal person to help with this task.\n\nAction Items:\n- Make changes to the layout, design, or functionality of the UI\n- Request additional resources or support if needed\n- Provide an estimated timeline for completion of modifications" max-tokens="256" box-rows="18" model-temp="0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
@@ -51,7 +51,7 @@ sidebar_position: 10
 
 ## 콜드 이메일
 
-콜드 이메일은 여러분이 모르는 사람에게 이메일을 보내는 것입니다. 콜드 이메일로부터 답변을 얻어내는 것은 상당히 어렵습니다 하지만 다양한 사람들에게 맞춤형 메시지를 보내는 데는 도움이 될 것입니다. GPT-3(@bonta2022how)를 통해서 어떻게 하는지 살펴봅시다.
+콜드 이메일은 여러분이 모르는 사람에게 이메일을 보내는 것입니다. 콜드 이메일로부터 답변을 얻어내는 것은 상당히 어렵습니다 하지만 다양한 사람들에게 맞춤형 메시지를 보내는 데는 도움이 될 것입니다. GPT-3(@bonta2022how)를 이용해서 어떻게 하는지 살펴봅시다.
 
 <div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Company name: Bark Inc\nMy name: Mike\nWrite a cold outreach email" initial-response="Dear John,\n\nI'm writing to let you know that I will be out of office today. I know I'm supposed to be working, but I just couldn't resist the call of the siren song of the local donut shop. I'm sure you understand.\n\nI'll be back in the office tomorrow and will make up the time.\n\nThanks,\nZach" max-tokens="256" box-rows="10" model-temp="0" top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
@@ -67,13 +67,12 @@ sidebar_position: 10
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
-링크드인의 정보는 LLM들이 혼란을 뚫는 데에 엄청난 도움이 됩니다. 링크드인으로부터 관련된 정보를 스크랩함으로써 큰 스케일의 콜드 메일 작업은 자동화 될 수 있습니다.
-
+LLM은 LinkedIn에서 복사한 모든 정보를 정리할 수 있다는 점에서 매우 유용합니다. 이 콜드 아웃리치 프로세스는 LinkedIn에서 관련 정보를 스크랩하여 대규모로 자동화할 수도 있습니다.
 
 
 ## 결론
 
-LLM들은 이메일 쓰는데 도움이 됩니다! 하지만 꼭 보내기 전에 확인하세요 😉
+이메일 작성에 도움을 줄 수 있는 LLM! 그래도 이메일을 보내기 전에 LLM이 작성한 내용을 반드시 읽어보세요. 😉
 
 ## 추가적으로
 

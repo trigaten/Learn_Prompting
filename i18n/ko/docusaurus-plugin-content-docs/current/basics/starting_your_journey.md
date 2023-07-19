@@ -5,7 +5,7 @@ sidebar_position: 1000
 # 🟢 여행을 시작합시다!
 
 
-import Steps from '@site/docs/assets/steps.svg';
+import Steps from '@site/docs/assets/basics/steps.svg';
 
 
 <div style={{textAlign: 'center'}}>
@@ -18,7 +18,7 @@ ChatGPT를 통해서 인상깊고, 상호작용하는 이야기를 생성하고 
 
 ## Step 1: 연구
 
-첫번째로 여러분이 원하는 프롬프트에 대해서 연구해보는 것입니다. 구글링을 포함해서 아래의 자료들은 도움이 될 것입니다:
+첫 번째로 여러분이 원하는 프롬프트에 대해서 연구해보는 것입니다. 구글링을 포함해서 아래의 자료들은 도움이 될 것입니다:
 
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [FlowGPT](https://flowgpt.com)
@@ -33,7 +33,7 @@ ChatGPT를 통해서 인상깊고, 상호작용하는 이야기를 생성하고 
 
 이제 우리는 ChatGPT에 프롬프트를 넣어보고 무슨 일이 일어나는 지 볼 것입니다.
 
-import CSharp from '@site/docs/assets/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={CSharp} style={{width: "750px"}} />
@@ -79,7 +79,7 @@ As you wake up, you feel the warmth of the sun filtering through the window and 
 "여러분"이 원하는대로 프롬프트 엔지니어링을 하시길 바랍니다. 저는 항상 스트래치로부터 제 프롬프트를 작성합니다. 최고의 프롬프트를 작성하는 황금률은 없습니다;
 시도와 에러는 항상 가장 좋은 학습방법입니다. 좋은 학습하시고 앞으로의 과정에서도 행운이 따르길!
 
-:::참고
+:::note
 이 문서의 권장 사항은 대화형 스토리를 작성하는 것뿐만 아니라 모든 즉각적인 엔지니어링 문제에 적용됩니다!
 :::
 

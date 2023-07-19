@@ -7,7 +7,7 @@ sidebar_position: 15
 [LangChain](https://github.com/hwchase17/langchain/) is a Python library
 that provides various functionality for building and chaining prompts.
 
-import Image from '@site/docs/assets/tooling/langchain.png';
+import Image from '@site/docs/assets/tooling/langchain.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={Image} style={{width: "750px"}} />

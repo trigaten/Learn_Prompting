@@ -10,8 +10,8 @@ sidebar_position: 80
 
 ### スタイルガイダンス
 
-import unguided_question from '@site/docs/assets/unguided_question.png';
-import limerick_question from '@site/docs/assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 スタイルガイダンスは、AIに特定のスタイルで話すように求めるだけです。スタイル ガイダンスのない質問をすると、ChatGPT は通常、応答として 1 つまたは 2 つの短い段落を返します。より長い応答が必要な場合は、さらに多くの段落を返します。
 
@@ -79,8 +79,8 @@ import limerick_question from '@site/docs/assets/limerick_question.png';
 
     理解し、開始する準備ができている場合は、「はい」とだけ答えてください。
 
-import unprimed_question from '@site/docs/assets/unprimed_question.png';
-import primed_question from '@site/docs/assets/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 以下は、哲学の最も興味深い分野について、ChatGPT へのプライミングのない質問の例です。リストを使用し、一般的かつ冷静に話し、説明はあまり具体的ではありません。
 

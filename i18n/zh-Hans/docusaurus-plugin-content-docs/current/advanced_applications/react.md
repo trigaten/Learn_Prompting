@@ -10,7 +10,7 @@ ReAct系统可以被视为具有**推理和行动能力**的MRKL系统，。
 
 请查看以下图像。顶部框中的问题来自HotPotQA(@yang2018hotpotqa)，这是一个需要复杂推理的问答数据集。 ReAct能够首先通过推理问题（Thought 1），然后执行一个动作（Act 1）来向Google发送查询来回答问题。然后它收到了一个观察（Obs 1），并继续进行这个思想，行动，观察循环，直到达到结论（Act 3）。
 
-import react_qa from '@site/docs/assets/react_qa.png';
+import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_qa} style={{width: "500px"}} />
@@ -26,7 +26,7 @@ ReAct System (Yao et al.)
 
 谷歌在ReAct的实验中使用了PaLM(@chowdhery2022palm) LLM。与标准提示（仅问题）、CoT和其他配置进行比较表明，ReAct在复杂推理任务方面的表现是有希望的。谷歌还对涵盖事实提取和验证的Fever数据集(@thorne2018fever)进行了研究。
 
-import react_performance from '@site/docs/assets/react_performance.png';
+import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={react_performance} style={{width: "500px"}} />

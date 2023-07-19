@@ -17,6 +17,7 @@ We welcome contributions in any form.
 We are actively looking for:
 
 - content suggestions
+- translation
 - content/art contributions
 - typos :)
 
@@ -60,4 +61,14 @@ nvm install-latest-npm
 
 ## Cite
 
-Use the provided GitHub citation in this repository.
+Use the provided GitHub citation in this repository:
+
+```
+@software{Schulhoff_Learn_Prompting_2022,
+ author = {Schulhoff, Sander and Community Contributors},
+ month = dec,
+ title = {{Learn Prompting}},
+ url = {https://github.com/trigaten/Learn_Prompting},
+ year = {2022}
+}
+```
