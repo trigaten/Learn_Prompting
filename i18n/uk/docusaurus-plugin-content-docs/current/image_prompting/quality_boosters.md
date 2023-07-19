@@ -14,13 +14,13 @@ import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.
 Поверніться до пірамід на іншій сторінці, що були створені за допомогою нейромережі DALLE і запиту `pyramid`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
 </div>
 
 Тепер погляньте на піраміди, створені за допомогою цього запиту: `A beautiful, majestic, incredible pyramid, 4K`
 
 <div style={{textAlign: 'center'}}>
-  <img src={special_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage src={special_pyramids} style={{width: "750px"}} />
 </div>
 
 Вони більш мальовничі та справляють незабутнє враження на глядача!
