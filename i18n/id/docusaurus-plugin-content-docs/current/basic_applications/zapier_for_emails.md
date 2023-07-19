@@ -38,7 +38,7 @@ Berikut adalah diagram tentang apa yang akan kita lakukan di sini di Zapier. Set
 3. Simpan output di database
 
 <div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}} />
+  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
 </div>
 
 ## Konfigurasi di Zapier
@@ -51,7 +51,7 @@ Pastikan Anda memiliki akun [Zapier](https://zapier.com/sign-up) (Anda dapat men
   <div>
   Berikut adalah action diagram Zapier.
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
@@ -60,7 +60,7 @@ Pastikan Anda memiliki akun [Zapier](https://zapier.com/sign-up) (Anda dapat men
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-    <img src= style={{width: "500px"}} />
+    <LazyLoadImage src={Step1} style={{width: "500px"}} />
         </div>
       </div>
     </details>
@@ -70,7 +70,7 @@ Pastikan Anda memiliki akun [Zapier](https://zapier.com/sign-up) (Anda dapat men
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src= style={{width: "500px"}} />
+  <LazyLoadImage src={Step2} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -80,7 +80,7 @@ Pastikan Anda memiliki akun [Zapier](https://zapier.com/sign-up) (Anda dapat men
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src= style={{width: "500px"}} />
+  <LazyLoadImage src={Step3} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -90,7 +90,7 @@ Pastikan Anda memiliki akun [Zapier](https://zapier.com/sign-up) (Anda dapat men
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src= style={{width: "500px"}} />
+  <LazyLoadImage src={Step4} style={{width: "500px"}} />
 </div>
       </div>
     </details>
