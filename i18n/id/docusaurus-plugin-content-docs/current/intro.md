@@ -14,7 +14,7 @@ Kursus ini disesuaikan untuk **pemula**, sehingga menjadi titik awal yang sempur
 
 Kursus ini bersifat open source, dan dibangun oleh komunitas yang beragam, terdiri dari peneliti, penerjemah, dan hobi. Kami percaya bahwa AI harus dapat diakses oleh semua orang, dan harus dideskripsikan secara jelas dan objektif. Oleh karena itu, kami berusaha untuk menghasilkan kursus yang komprehensif dan tidak biasa yang bebas dari jargon dan hype yang berlebihan.
 
-Kami melihat bahwa pendekatan ini diminati oleh komunitas PE: Kursus ini dikutip oleh [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), dan digunakan oleh orang-orang di perusahaan seperti [O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, dan OpenAI. Anda juga mungkin melihat bahwa <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>hampir</a> <a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>setiap</a> <a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>video</a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>dan</a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>panduan</a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>prompt</a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>engineering</a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>lainnya</a> menggunakan materi dari kursus ini. We are honored to support the prompt engineering community, including our 1M+ users and 40K [Discord](https://discord.gg/learn-prompting) members.
+Kami melihat bahwa pendekatan ini diminati oleh komunitas PE: Kursus ini dikutip oleh [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), dan digunakan oleh orang-orang di perusahaan seperti [O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, dan OpenAI. Anda juga mungkin melihat bahwa <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>hampir</a> <a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>setiap</a> <a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>video</a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>dan</a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>panduan</a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>prompt</a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>engineering</a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>lainnya</a> menggunakan materi dari kursus ini. Kami merasa terhormat dapat mendukung komunitas prompt engineering, termasuk 620 ribu pengguna dan 33 ribu anggota [Discord.](https://discord.gg/learn-prompting).
 
 ### Bagaimana Kami Mengajarkan
 
@@ -66,9 +66,9 @@ Di bawah ini adalah gambaran singkat tentang setiap bab:
 
 **Keandalan**: Meningkatkan keandalan large language models (LLM)
 
-**Image Prompting**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
+**Gambar**: Prompt engineering untuk model teks-ke-gambar, seperti DALLE dan Stable Diffusion
 
-**Prompt Hacking**: Hacking, but for prompt engineering
+**Prompt Injection**: Hacking, tetapi untuk prompt engineering
 
 **Peralatan**: Tinjauan tentang berbagai alat dan IDE prompt engineering
 
