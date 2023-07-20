@@ -6,11 +6,11 @@ sidebar_position: 60
 
 AIs como o [ChatGPT](https://chat.openai.com/chat) são conhecidas por criar textos e artigos de blog em questão de segundos. Mas muitas vezes, os artigos que elas produzem são genéricos e sem graça. Você precisa fazer algo extra para dar às palavras algum espírito ou animação. Uma das maneiras mais rápidas de fazer isso é especificar um estilo de escrita ou nomear um autor famoso na solicitação. Digamos que você queira um parágrafo sobre a importância da amizade. Uma solicitação genérica como `Escreva um parágrafo sobre a importância da amizade` produzirá uma resposta genérica do ChatGPT.
 
-import friendship from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Generic_Friendship.png';
-import friendship_informal from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Informal.png';
-import friendship_mark from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Carlos_Drummond_Andrade.png';
-import friendship_chris from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Whindersson.png';
-import friendship_millennial from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Mineiro.png';
+import friendship from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Generic_Friendship.webp';
+import friendship_informal from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Informal.webp';
+import friendship_mark from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Carlos_Drummond_Andrade.webp';
+import friendship_chris from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Whindersson.webp';
+import friendship_millennial from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/PT_Friendship_Mineiro.webp';
 
 
 <div style={{textAlign: 'center'}}>

@@ -12,11 +12,11 @@ Ele pode resumir livros, filmes, peças, artigos e muito mais. Com o ChatGPT, é
 
 Às vezes, você pode pedir ao ChatGPT para resumir obras famosas sem colar qualquer texto adicional, já que o ChatGPT conhece muito bem essas obras. Por exemplo, você pode pedir para resumir "Romeu e Julieta" por ato. Então, em vez de passar pelas 24.000 palavras da peça, você pode ter a ideia geral em 300 palavras ou menos.
 
-import outline1 from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.png';
-import outline2 from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Football.png';
-import quantum from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Quantum_Entanglement.png';
+import outline1 from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import outline2 from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Football.webp';
+import quantum from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import sapato from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Sapato.png';
+import sapato from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Sapato.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}}/>
