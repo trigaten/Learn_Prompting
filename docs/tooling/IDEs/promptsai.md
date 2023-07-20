@@ -10,7 +10,7 @@ added features. It is no longer being developed.
 import Image from '@site/docs/assets/tooling/promptsai.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

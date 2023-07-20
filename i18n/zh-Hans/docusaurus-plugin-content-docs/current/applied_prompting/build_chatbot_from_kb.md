@@ -17,7 +17,7 @@ import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_log
 传统聊天机器人通常是基于意图的，这意味着它们被设计为响应特定的用户意图。每个意图由一组样本问题和相应的响应组成。例如，“天气”意图可能包括类似“今天天气如何？”或“今天会下雨吗？”这样的样本问题，并且可能输出“今天将是晴天”的响应。当用户提出问题时，聊天机器人将其与最相似的样本问题匹配意图，并返回相应的响应。
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
+  <img src={ImageIntents} style={{width: "700px"}}/>
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>传统基于意图的聊天机器人的工作原理。图像由作者制作。</p>
 </div>
 

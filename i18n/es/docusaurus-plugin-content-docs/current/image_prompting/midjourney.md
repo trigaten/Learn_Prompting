@@ -21,7 +21,7 @@ La anatomía básica de un prompt con Midjourney es `/imagine prompt: [IMAGE PRO
 ```
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut} style={{width: "750px"}} />
+  <img src={midjourney_astronaut} style={{width: "750px"}}/>
 </div>
 
 Se puede encontrar más información sobre los parámetros del prompt aquí: [Documentación de Midjourney - Lista de parámetros](https://docs.midjourney.com/docs/parameter-list)

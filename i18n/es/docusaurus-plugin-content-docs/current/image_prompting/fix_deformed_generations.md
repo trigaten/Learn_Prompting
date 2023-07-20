@@ -15,7 +15,7 @@ Usando Stable Diffusion v1.5 y el siguiente prompt, generamos una bonita imagen 
 `retrato mediano de estudio de Brad Pitt saludando con sus manos, detallado, película, iluminación de estudio, lente de 90mm, por Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
+  <img src={bad_pitt} style={{width: "250px"}}/>
 </div>
 
 Usando un prompt negativo robusto, podemos generar manos mucho más convincentes.

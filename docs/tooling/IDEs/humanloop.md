@@ -10,7 +10,7 @@ but with some added features. They are currently working with more industry user
 import Image from '@site/docs/assets/tooling/humanloop.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

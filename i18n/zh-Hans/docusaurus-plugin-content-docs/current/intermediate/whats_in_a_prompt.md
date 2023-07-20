@@ -13,7 +13,7 @@ sidebar_position: 7
 import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={GoldUn} style={{width: "750px"}} />
+  <img src={GoldUn} style={{width: "750px"}}/>
 </div>
 
 ## 标签空间很重要

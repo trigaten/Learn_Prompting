@@ -36,7 +36,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 3. 将输出存储在数据库中
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## 设置 Zapier

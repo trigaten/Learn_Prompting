@@ -12,7 +12,7 @@ sidebar_position: 2
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={research} style={{width: "500px"}} />
+  <img src={research} style={{width: "500px"}}/>
 </div>
 
 以下图片(@simon2022inject)再次来自 `remoteli.io` 的示例，展示了 Twitter 用户如何让模型泄漏其提示。

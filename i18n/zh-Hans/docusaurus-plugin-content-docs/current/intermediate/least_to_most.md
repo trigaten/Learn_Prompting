@@ -11,7 +11,7 @@ sidebar_position: 7
 import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={leastToMost} style={{width: "600px"}} alt="LtM 的图示"/>
+  <img src={leastToMost} style={{width: "600px"}} alt="LtM 的图示"/>
 </div>
 
 <div style={{textAlign: 'center'}}>

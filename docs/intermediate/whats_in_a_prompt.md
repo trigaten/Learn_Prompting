@@ -19,7 +19,7 @@ with exemplar in this image.
 import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={GoldUn} style={{width: "750px"}} />
+  <img src={GoldUn} style={{width: "750px"}}/>
 </div>
 
 ## Labelspace Matters

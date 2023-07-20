@@ -10,7 +10,7 @@ import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={SkippyHeader} style={{width: "700px"}} />
+  <img src={SkippyHeader} style={{width: "700px"}}/>
 </div>
 
 ## Вступ

@@ -19,7 +19,7 @@ import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.web
 import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={outline1} style={{width: "750px"}} />
+  <img src={outline1} style={{width: "750px"}}/>
 </div>
 
 要約を探し出す代わりに、ChatGPT はコンテンツをあなたのニーズに合わせて作り上げることができます。あなたはアメリカンフットボールが大好きだったとすると、「'ロミオとジュリエット' をアメリカンフットボールの言葉で 100 語で要約してください」要約を依頼することもできるのです。

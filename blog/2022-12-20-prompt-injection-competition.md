@@ -9,7 +9,7 @@ title: Announcing HackAPrompt
 import hackaprompt from '@site/static/img/hackaprompt.webp';
 
 <div style={{textAlign: 'center'}}>
-  <a href="https://www.aicrowd.com/challenges/hackaprompt-2023"><LazyLoadImage src={hackaprompt} style={{width: "100%"}} /></a>
+  <a href="https://www.aicrowd.com/challenges/hackaprompt-2023"><img src={hackaprompt} style={{width: "100%"}}/></a>
 </div>
 
 Today, we are excited to announce **HackAPrompt**, a first-of-its-kind prompt-hacking capture-the-flag-style competition. In this competition, participants will attempt to hack our suite of increasingly robust prompts. Inject, leak, and defeat the sandwich 🥪 defense to win $**37,500** in prizes!

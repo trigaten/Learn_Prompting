@@ -7,7 +7,7 @@ sidebar_position: 0
 import Lock from '@site/static/img/lock.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Lock} style={{width:"30%"}}/>
+  <img src={Lock} style={{width:"30%"}}/>
 
 </div>
 

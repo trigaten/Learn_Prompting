@@ -110,7 +110,7 @@ sidebar_position: 7
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
+  <img src={KGImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

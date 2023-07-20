@@ -20,7 +20,7 @@ import rope from '../assets/basic_applications/summarizing/Outline_1.webp';
 import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={outline1} style={{width: "750px"}} />
+  <img src={outline1} style={{width: "750px"}}/>
 </div>
 
 Although you could instead look up a summary, ChatGPT can tailor the content to your needs. Maybe you really like Football, so you could as ChatGPT to

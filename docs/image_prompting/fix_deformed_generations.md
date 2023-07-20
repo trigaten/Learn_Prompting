@@ -15,7 +15,7 @@ Using Stable Diffusion v1.5 and the following prompt, we generate a nice image o
 `studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
+  <img src={bad_pitt} style={{width: "250px"}}/>
 </div>
 
 Using a robust negative prompt, we can generate much more convincing hands.

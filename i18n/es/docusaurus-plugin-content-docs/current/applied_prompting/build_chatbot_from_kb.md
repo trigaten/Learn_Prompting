@@ -17,7 +17,7 @@ Los avances recientes en modelos de lenguaje grandes (LLMs, por sus siglas en in
 Los chatbots tradicionales suelen estar basados en intenciones, lo que significa que son diseñados para responder a intenciones de usuario específicas. Cada intención está compuesta por un conjunto de preguntas de muestra y una respuesta asociada. Por ejemplo, la intención "Clima" puede incluir preguntas de muestra como "¿Cómo está el clima hoy?" o "¿Lloverá hoy?" y una respuesta como "Hoy estará soleado". Cuando un usuario hace una pregunta, el chatbot compara la pregunta con las preguntas de muestra más similares asociadas a la intención, y devuelve la respuesta correspondiente
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
+  <img src={ImageIntents} style={{width: "700px"}}/>
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Cómo funciona un chatbot tradicional basado en intenciones. Imagen del autor.</p>
 </div>
 

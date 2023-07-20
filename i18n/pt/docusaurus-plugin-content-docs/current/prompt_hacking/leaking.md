@@ -11,7 +11,7 @@ Como mostrado na imagem de exemplo abaixo (@ignore_previous_prompt), o atacante 
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={research} style={{width: "500px"}} />
+  <img src={research} style={{width: "500px"}}/>
 </div>
 
 A imagem a seguir(@simon2022inject), novamente do exemplo `remoteli.io`, mostra

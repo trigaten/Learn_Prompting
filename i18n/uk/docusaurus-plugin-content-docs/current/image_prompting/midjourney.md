@@ -48,7 +48,7 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 Приклад: `/imagine prompt: astronaut on a horse`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut} style={{width: "350px"}} />
+  <img src={midjourney_astronaut} style={{width: "350px"}}/>
 </div>
 
 Приклад із параметрами: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000`

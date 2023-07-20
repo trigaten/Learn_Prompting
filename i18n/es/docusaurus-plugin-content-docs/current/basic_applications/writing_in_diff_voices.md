@@ -16,7 +16,7 @@ import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Ch
 import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship} style={{width: "750px"}} />
+  <img src={friendship} style={{width: "750px"}}/>
 </div>
 
 Mmm, es muy insípido.

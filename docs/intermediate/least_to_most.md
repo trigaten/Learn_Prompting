@@ -13,7 +13,7 @@ As in CoT prompting, the problem to be solved is decomposed in a set of subprobl
 import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={leastToMost} style={{width: "600px"}} alt="A diagram of a least to most prompting"/>
+  <img src={leastToMost} style={{width: "600px"}} alt="A diagram of a least to most prompting"/>
 </div>
 
 <div style={{textAlign: 'center'}}>

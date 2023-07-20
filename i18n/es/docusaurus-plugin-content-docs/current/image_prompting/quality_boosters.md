@@ -13,7 +13,7 @@ import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.
 Recordemos las pirámides generadas con DALLE de la otra página, y la prompt `pyramid`.
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
+  <img src={pyramids} style={{width: "750px"}}/>
 </div>
 
 Ahora, veamos las pirámides generadas con esta prompt:

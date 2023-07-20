@@ -38,7 +38,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 3. Зберігайте результати в базі даних
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## Налаштування в Zapier

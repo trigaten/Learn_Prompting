@@ -12,7 +12,7 @@ sidebar_position: 2
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={research} style={{width: "500px"}} />
+  <img src={research} style={{width: "500px"}}/>
 </div>
 
 Наступне зображення(@simon2022inject), знову ж таки з прикладу `remoteli.io`, показує користувача Twitter, який змушує систему злити свій запит.

@@ -19,7 +19,7 @@ OpenAI等创建LLM的公司和组织都包括内容审查功能，以确保它�
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pretend} style={{width: "500px"}} />
+  <img src={pretend} style={{width: "500px"}}/>
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) demonstrates a prompt pretending to access past dates and make inferences on future events(@nero2022jailbreak).

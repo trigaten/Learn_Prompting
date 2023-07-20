@@ -15,7 +15,7 @@ import planets from '@site/docs/assets/images_chapter/planets.webp';
 Aqui estão algumas montanhas geradas pelo Stable Diffusion, com o prompt `montanha`.
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={mountains} style={{width: "350px"}} />
+  <img src={mountains} style={{width: "350px"}}/>
 </div>
 
 No entanto, se quisermos montanhas sem árvores, podemos usar o prompt `montanha | árvore:-10`. Como pesamos a árvore muito negativamente, elas não aparecem na imagem gerada.

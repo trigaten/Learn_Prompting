@@ -7,7 +7,7 @@ sidebar_position: 5
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={SCImage} style={{width: "500px"}} />
+  <img src={SCImage} style={{width: "500px"}}/>
 </div>
 
 Самоузгодженість (@wang2022selfconsistency) — це підхід, який просто задає моделі той самий запит кілька разів і приймає результат більшості як остаточну відповідь. Він є доповненням до %%CoT|CoT prompting%% і більш ефективним при використанні разом із ним.

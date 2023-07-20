@@ -6,10 +6,10 @@ sidebar_position: 24
 
 [AnySolve](https://www.anysolve.ai) is a website for generating and sharing tasks mainly based on Text prompts.
 
-import Image from '@site/docs/assets/tooling/anysolve.png';
+import Image from '@site/docs/assets/tooling/anysolve.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

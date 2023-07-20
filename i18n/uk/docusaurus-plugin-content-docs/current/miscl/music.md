@@ -14,7 +14,7 @@ sidebar_position: 3
 import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={riffusion} style={{width: "500px"}} />
+  <img src={riffusion} style={{width: "500px"}}/>
 </div>
 
 Riffusion(@Forsgren_Martiros_2022) – це вдосконалена версія Stable Diffusion, якою можна керувати за допомогою запитів для створення інструментів і псевдостилів, однак вона має обмежену кількість доступних бітів.

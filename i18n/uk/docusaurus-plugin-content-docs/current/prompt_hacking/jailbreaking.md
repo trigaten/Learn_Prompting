@@ -19,7 +19,7 @@ OpenAI, серед інших компаній і організацій, які
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pretend} style={{width: "500px"}} />
+  <img src={pretend} style={{width: "500px"}}/>
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) демонструє запит, який вдає доступ до дат з минулого і робить висновки про майбутні події (@nero2022jailbreak).

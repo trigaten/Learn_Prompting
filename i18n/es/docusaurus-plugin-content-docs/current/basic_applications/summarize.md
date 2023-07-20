@@ -17,7 +17,7 @@ import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.web
 import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={outline1} style={{width: "750px"}} />
+  <img src={outline1} style={{width: "750px"}}/>
 </div>
 
 Aunque podrías buscar un resumen en línea, ChatGPT puede adaptar el contenido a tus necesidades. Tal vez te guste mucho el fútbol americano, así que podrías pedirle a ChatGPT que te proporcione un resumen de 100 palabras de "Romeo y Julieta" utilizando términos de fútbol americano.

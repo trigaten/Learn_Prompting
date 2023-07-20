@@ -17,7 +17,7 @@ import friendship_millennial from '@site/docs/assets/basic_applications/Friendsh
 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship} style={{width: "750px"}} />
+  <img src={friendship} style={{width: "750px"}}/>
 </div>
 
 很像废话吧。太平淡了。但是当您添加一些规则时，结果将会发生变化，例如“请以非正式、对话的方式写作”。 ChatGPT 将给出这样的回复：

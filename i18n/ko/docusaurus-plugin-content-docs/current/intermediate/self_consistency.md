@@ -13,7 +13,7 @@ sidebar_position: 5
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={SCImage} style={{width: "750px"}} />
+  <img src={SCImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -17,7 +17,7 @@ a method that improves the reliability of answers in a threefold manner. It does
 import diverse from '@site/docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={diverse} style={{width: "750px"}} />
+  <img src={diverse} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -9,7 +9,7 @@ Throughout this course, we have seen many different prompting methods that can b
 import math from '@site/docs/assets/reliability/math.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={math} style={{width: "500px"}} />
+  <img src={math} style={{width: "500px"}}/>
 </div>
 
 MathPrompter has **four** steps. We will explain them using the following example problem. The example is taken directly from the paper.

@@ -14,7 +14,7 @@ import planet_aliens from '@site/docs/assets/images_chapter/planet_aliens.webp';
 `Una hermosa pintura de una montaña junto a una cascada.`.
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={bad_water} style={{width: "750px"}} />
+  <img src={bad_water} style={{width: "750px"}}/>
 </div>
 
 `Una pintura muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy hermosa de una montaña junto a una cascada.`

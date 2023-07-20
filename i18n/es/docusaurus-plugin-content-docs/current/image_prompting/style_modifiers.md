@@ -13,7 +13,7 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 Aquí hay algunas pirámides generadas por DALLE, con la indicación "pirámide".
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
+  <img src={pyramids} style={{width: "750px"}}/>
 </div>
 
 Aquí hay algunas pirámides generadas por DALLE, con la indicación "Una pirámide hecha de vidrio, renderizada en Unity y tintada de rojo", que utiliza 3 modificadores de estilo.

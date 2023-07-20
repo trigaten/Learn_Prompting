@@ -17,7 +17,7 @@ import pt_limerick_question from '@site/docs/assets/basics/limerick_question.web
 Orientação de estilo é simplesmente pedir à IA para conversar em um certo estilo. Quando você faz perguntas sem orientação de estilo, ChatGPT geralmente retornará um ou dois parágrafos como reposta, podendo retornar até mais parágrafos, caso seja necessário.
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pt_unguided_question} style={{width: "500px"}} />
+  <img src={pt_unguided_question} style={{width: "500px"}}/>
 </div>
 
 A reposta tem um tom moderadamente formal e dá alguns detalhes bem específicos! Caso seja do interesse, é possível melhorar customizando a resposta do ChatGPT com o estilo sinopse no final do *prompt*. Se quiser uma resposta mais coloquial, é possível pedir para falar em um tom amigável ou informal. Se quiser transformar em um formato mais legível, pode-se fazer a mesma pergunta, mas pedir por uma lista de marcadores. Ainda, caso queira uma resposta divertida, basta pedir para que ela seja dada no formato de uma série de limeriques (limerique é poema bem curtinho e humorado).

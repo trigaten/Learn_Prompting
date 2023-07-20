@@ -8,7 +8,7 @@ sidebar_position: 200
 import music_image from '@site/docs/assets/basics/music+image.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={music_image} style={{width: "850px"}} />
+  <img src={music_image} style={{width: "850px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

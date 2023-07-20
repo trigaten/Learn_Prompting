@@ -100,7 +100,7 @@ Aunque el caso de uso anterior era similar a la forma en que se introdujo origin
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
+  <img src={KGImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

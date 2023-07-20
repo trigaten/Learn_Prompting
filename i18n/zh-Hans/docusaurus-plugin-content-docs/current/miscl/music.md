@@ -14,7 +14,7 @@ sidebar_position: 3
 import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={riffusion} style={{width: "500px"}} />
+  <img src={riffusion} style={{width: "500px"}}/>
 </div>
 
 Riffusion（@Forsgren_Martiros_2022）是 Stable Diffusion 的精细调整版本，可以通过提示进行控制，生成乐器和伪风格，但拥有的节拍数量有限。

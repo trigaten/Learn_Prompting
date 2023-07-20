@@ -29,7 +29,7 @@ bot to get it to say whatever they wanted.
 import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "500px"}} />
+  <img src={Image} style={{width: "500px"}}/>
 </div>
 
 The reason this works is that `remoteli.io` takes a user's tweet and concatenates it

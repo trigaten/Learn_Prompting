@@ -104,9 +104,9 @@ function Hero() {
             <div
               className={`mt-[-25px] top-0 hidden md:flex border-black transition-all ${x_pos}`}
             >
-              <LazyLoadImage src={BeginnerWeb} alt="Beginner Web" />
-              <LazyLoadImage src={IntermediateWeb} alt="Intermediate Web" />
-              <LazyLoadImage src={AdvancedWeb} alt="Advanced Web" />
+              <img src={BeginnerWeb} alt="Beginner Web"/>
+              <img src={IntermediateWeb} alt="Intermediate Web" />
+              <img src={AdvancedWeb} alt="Advanced Web" />
               <LazyLoadImage src={ApplicationsWeb} alt="Applications Web" />
             </div>
           </div>
@@ -118,10 +118,10 @@ function Hero() {
                 x_pos_mob
               }
             >
-              <img src={BeginnerMobile} alt="Beginner Mobile" loading="lazy"/>
-              <img src={IntermediateMobile} alt="Intermediate Mobile" loading="lazy"/>
-              <img src={AdvancedMobile} alt="Advanced Mobile" loading="lazy"/>
-              <img src={ApplicationsMobile} alt="Applications Mobile" loading="lazy"/>
+              <img src={BeginnerMobile} alt="Beginner Mobile" width={"100%"}/>
+              <img src={IntermediateMobile} alt="Intermediate Mobile" />
+              <img src={AdvancedMobile} alt="Advanced Mobile" />
+              <LazyLoadImage src={ApplicationsMobile} alt="Applications Mobile"/>
             </div>
           </div>
         </div>

@@ -70,7 +70,7 @@ import dyno from '@site/docs/assets/basics/dyno_example.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={dyno} style={{width: "750px"}} />
+  <img src={dyno} style={{width: "750px"}}/>
 </div>
 
 You should be able to see an embed that looks exactly like this image right below this paragraph. If you can't, you may need to enable JavaScript or use a different browser.

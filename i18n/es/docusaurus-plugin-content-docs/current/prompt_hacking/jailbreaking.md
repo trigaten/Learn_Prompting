@@ -19,7 +19,7 @@ Un método común de jailbreaking es _pretender_. Si se le pregunta a ChatGPT so
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pretend} style={{width: "500px"}} />
+  <img src={pretend} style={{width: "500px"}}/>
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) demuestra un prompt que finge acceder a fechas pasadas y hacer inferencias sobre eventos futuros (@nero2022jailbreak).

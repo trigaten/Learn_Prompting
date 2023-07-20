@@ -113,7 +113,7 @@ Embora o caso de uso acima tenha sido semelhante à forma como o conhecimento ge
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
+  <img src={KGImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

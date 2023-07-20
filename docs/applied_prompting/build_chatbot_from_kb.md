@@ -17,7 +17,7 @@ Recent advancements in large language models (LLMs) such as [GPT-3](https://arxi
 Traditional chatbots are typically intent-based, meaning they are designed to respond to specific user intents. Each intent is made up of a set of sample questions and an associated response. For example, the intent “Weather” might include sample questions like “What’s the weather today?” or “Will it rain today?” and a response like “Today will be sunny.” When a user asks a question, the chatbot matches it to the intent with the most similar sample questions and returns the associated response.
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
+  <img src={ImageIntents} style={{width: "700px"}}/>
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a traditional intent-based chatbot works. Image by the author.</p>
 </div>
 

@@ -17,7 +17,7 @@ import friendship_millennial from '@site/docs/assets/basic_applications/Friendsh
 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship} style={{width: "750px"}} />
+  <img src={friendship} style={{width: "750px"}}/>
 </div>
 
 うーん、非常に平凡です。

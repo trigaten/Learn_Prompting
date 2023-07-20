@@ -16,7 +16,7 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 风格指导就是要求 AI 以某种特定的风格来表达。如果没有给出风格指导的问题，ChatGPT 通常会返回一两个短段落的回答，少数需要更长的回答时会返回更多内容。
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={unguided_question} style={{width: "500px"}} />
+  <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
 ChatGPT 的回答常以中性正式的语气表达，同时提供一些细节，这非常不错！不过，如果我们想要更好的回答，可以在提示末尾自定义 ChatGPT 的回答风格。如果我们想要更加随意的回答，可以要求它以友好或非正式的语气表达；如果我们想要更易读的格式，可以给出相同的问题，但要求以无序列表的形式回答；如果我们想要一个有趣的回答，可以要求它以连续的打油诗形式回答（这是我个人最喜欢的）。

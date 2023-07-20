@@ -20,7 +20,7 @@ import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.web
 import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={outline1} style={{width: "750px"}} />
+  <img src={outline1} style={{width: "750px"}}/>
 </div>
 
 虽然您可以自己查找摘要，但 ChatGPT 还可以根据您的需要定制内容。比如你真的很喜欢足球，那么你可以让 ChatGPT “用美式足球术语给我 100 字的‘罗密欧与朱丽叶’摘要。”

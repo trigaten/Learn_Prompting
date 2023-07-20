@@ -16,7 +16,7 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 La guía de estilo simplemente pide al AI que hable en cierto estilo. Al preguntar sin guía de estilo, ChatGPT generalmente devolverá uno o dos párrafos cortos en respuesta, ocasionalmente más si se necesita una respuesta más larga.
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={unguided_question} style={{width: "500px"}} />
+  <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
 Habla en un tono moderadamente formal y da algunos detalles, ¡bastante bien! Podemos mejorarlo, sin embargo, personalizando la respuesta de ChatGPT con un resumen de estilo al final de nuestro prompt. Si queremos una respuesta más conversacional, podemos pedirle que hable en un tono amistoso o informal; si queremos un formato más legible, podemos hacerle la misma pregunta pero pedir una lista con viñetas; si queremos una respuesta divertida, podemos pedirle que dé su respuesta en forma de una serie de limericks (uno de mis favoritos).

@@ -36,7 +36,7 @@ Abaixo está um diagrama do que faremos no Zapier. Sempre que um e-mail chegar e
 4. Armazene a saída em um banco de dados.
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## Configuração no Zapier
