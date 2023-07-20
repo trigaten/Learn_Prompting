@@ -12,7 +12,7 @@ Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *promp
 import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={CoTExample} style={{width: "750px"}} />
+  <img src={CoTExample} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -13,7 +13,7 @@ import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
 Aqui estão algumas pirâmides geradas pelo DALLE, com o comando `pirâmide`.
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pyramids} style={{width: "750px"}} />
+  <img src={pyramids} style={{width: "750px"}}/>
 </div>
 
 

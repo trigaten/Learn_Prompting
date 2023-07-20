@@ -52,7 +52,7 @@ import dyno from '@site/docs/assets/basics/dyno_example.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={dyno} style={{width: "750px"}} />
+  <img src={dyno} style={{width: "750px"}}/>
 </div>
 
 Ви маєте побачити вставку, яка виглядає точно так само, як на зображенні під цим абзацом. Якщо ви не бачите його, вам може знадобитися увімкнути JavaScript або скористатися іншим браузером.

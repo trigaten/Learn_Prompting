@@ -47,7 +47,7 @@ import search from '@site/docs/assets/advanced/mrkl/search.webp';
 import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={mrkl_task} style={{width: "500px"}} />
+  <img src={mrkl_task} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -9,7 +9,7 @@ Prompts do tipo Cadeia de Pensamento Zero Shot (ou Zero Shot Chain of Thought - 
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={ZSImage} style={{width: "500px"}} />
+  <img src={ZSImage} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

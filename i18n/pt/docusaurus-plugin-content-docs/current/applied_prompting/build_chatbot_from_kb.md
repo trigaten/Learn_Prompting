@@ -19,7 +19,7 @@ Os chatbots tradicionais são geralmente baseados em intenções, o que signific
 
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImageIntents} style={{width: "700px"}} />
+  <img src={ImageIntents} style={{width: "700px"}}/>
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Como um chatbox tradicional funciona. Imagem produzida pela tradutora (adaptação do autor).</p>
 </div>
 

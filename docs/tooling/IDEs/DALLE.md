@@ -10,7 +10,7 @@ a text to image model.
 import Image from '@site/docs/assets/tooling/dalle.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

@@ -50,7 +50,7 @@ Now we can add formatting and context directions.
 The rewriting example above was generated with OpenAI's [ChatGPT](https://openai.com/blog/chatgpt/).
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Auto} style={{width: "500px"}} />
+  <img src={Auto} style={{width: "500px"}}/>
 </div>
 
 ### Iteration

@@ -16,7 +16,7 @@ import planets from '@site/docs/assets/images_chapter/planets.webp';
 Ось кілька гір, отриманих за допомогою Stable Diffusion, за запитом `mountain`.
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={mountains} style={{width: "350px"}} />
+  <img src={mountains} style={{width: "350px"}}/>
 </div>
 
 Однак, якщо нам потрібні гори без дерев, ми можемо використати запит: `mountain | tree:-10`. Оскільки ми задали деревам дуже негативну значущість, їх немає на створеному зображенні.

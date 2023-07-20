@@ -24,7 +24,7 @@ The below prompt forces it to yield a possible answer:
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pretend} style={{width: "500px"}} />
+  <img src={pretend} style={{width: "500px"}}/>
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) demonstrates a prompt pretending to access past dates and make inferences on future events(@nero2022jailbreak).

@@ -34,7 +34,7 @@ A continuación se muestra un diagrama de lo que haremos en Zapier. Cada vez que
 1.  Se almacena la salida en una base de datos.
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## Configuración en Zapier

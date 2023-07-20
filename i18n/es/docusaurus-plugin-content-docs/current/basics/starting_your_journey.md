@@ -34,7 +34,7 @@ Ahora, vamos a poner un prompt en ChatGPT y ver qué pasa.
 import CSharp from '@site/i18n/es/docusaurus-plugin-content-docs/assets/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={CSharp} style={{width: "750px"}} />
+  <img src={CSharp} style={{width: "750px"}}/>
 </div>
 
 Podemos ver que ha generado una historia, pero que la ha escrito dentro de un bloque de código csharp (un lenguaje de programación). Quizás no queramos esto, así que modificaremos el prompt a:

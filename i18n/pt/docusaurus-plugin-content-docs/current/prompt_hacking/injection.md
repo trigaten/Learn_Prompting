@@ -27,7 +27,7 @@ Dê uma olhada na imagem a seguir (@simon2022inject). A empresa remoteli.io tinh
 import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "500px"}} />
+  <img src={Image} style={{width: "500px"}}/>
 </div>
 
 A razão pela qual isso funciona é que a remoteli.io pega o tweet de um usuário e o concatena

@@ -51,7 +51,7 @@ import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
 上面的改写例子是使用OpenAI的[ChatGPT](https://openai.com/blog/chatgpt/)生成的。
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Auto} style={{width: "500px"}} />
+  <img src={Auto} style={{width: "500px"}}/>
 </div>
 
 ### 迭代

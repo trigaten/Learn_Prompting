@@ -104,7 +104,7 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={KGImage} style={{width: "750px"}} />
+  <img src={KGImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

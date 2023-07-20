@@ -15,7 +15,7 @@ import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 `studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={bad_pitt} style={{width: "250px"}} />
+  <img src={bad_pitt} style={{width: "250px"}}/>
 </div>
 
 使用强大的反向提示语，我们可以生成更加逼真的手部图像。

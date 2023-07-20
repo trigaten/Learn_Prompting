@@ -9,7 +9,7 @@ Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) es un se
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={ZSImage} style={{width: "500px"}} />
+  <img src={ZSImage} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

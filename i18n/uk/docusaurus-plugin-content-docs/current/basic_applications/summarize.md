@@ -19,7 +19,7 @@ import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.web
 import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={outline1} style={{width: "750px"}} />
+  <img src={outline1} style={{width: "750px"}}/>
 </div>
 
 Хоча замість цього ви можете переглянути резюме твору в мережі, ChatGPT може адаптувати вміст відповідно до ваших потреб. Можливо, ви справжній фанат футболу, тож можете написати ChatGPT наступне: «Дайте мені короткий зміст «Ромео і Джульєтти» в 100 словах з точки зору американського футболу».

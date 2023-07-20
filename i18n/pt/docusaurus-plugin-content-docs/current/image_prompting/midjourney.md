@@ -47,7 +47,7 @@ Por exemplo: `/imagine prompt: astronauta em um cavalo`
 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut} style={{width: "350px"}} />
+  <img src={midjourney_astronaut} style={{width: "350px"}}/>
 </div>
 
 

@@ -14,7 +14,7 @@ import friendship_millennial from '@site/i18n/pt/docusaurus-plugin-content-docs/
 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship} style={{width: "750px"}} />
+  <img src={friendship} style={{width: "750px"}}/>
 </div>
 
 Blah. É tão sem graça.

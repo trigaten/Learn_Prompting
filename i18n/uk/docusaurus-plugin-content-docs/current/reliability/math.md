@@ -9,7 +9,7 @@ sidebar_position: 70
 import math from '@site/docs/assets/reliability/math.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={math} style={{width: "500px"}} />
+  <img src={math} style={{width: "500px"}}/>
 </div>
 
 MathPrompter працює в **чотири** кроки. Ми пояснимо їх на прикладі задачі. Приклад взято безпосередньо зі статті.

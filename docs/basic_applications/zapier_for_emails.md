@@ -38,7 +38,7 @@ Below is a diagram of what we will be doing here in Zapier. Whenever an email co
 3. Store the output in a database
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## Set-up in Zapier

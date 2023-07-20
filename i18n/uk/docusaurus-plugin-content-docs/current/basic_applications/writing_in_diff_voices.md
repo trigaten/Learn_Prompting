@@ -14,7 +14,7 @@ import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Ch
 import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship} style={{width: "750px"}} />
+  <img src={friendship} style={{width: "750px"}}/>
 </div>
 
 Фу! Нудьга смертельна. Але результат зміниться, коли ви додасте уточнення, наприклад «**Будь ласка, пиши у неформальному, розмовному стилі**». Тоді ChatGPT пропонує щось на зразок цього:

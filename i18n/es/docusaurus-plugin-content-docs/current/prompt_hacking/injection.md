@@ -25,7 +25,7 @@ Mira la siguiente imagen (@simon2022inject). La empresa `remoteli.io` tenía un 
 import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "500px"}} />
+  <img src={Image} style={{width: "500px"}}/>
 </div>
 
 La razón por la que esto funciona es que `remoteli.io` toma el tweet de un usuario y lo concatena con su propio prompt para formar el prompt final que pasan a un LLM. Esto significa que cualquier texto que el usuario de Twitter inyecte en su tweet se pasará al LLM.

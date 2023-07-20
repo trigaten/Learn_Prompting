@@ -12,7 +12,7 @@ Actualmente, tiene una curva de aprendizaje pronunciada en comparación con otra
 import Image from '@site/docs/assets/tooling/dust.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características

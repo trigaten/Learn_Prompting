@@ -25,7 +25,7 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 Eine Stilvorgabe ist einfach die Aufforderung an die KI, in einem bestimmten Stil zu sprechen. Wenn du eine Frage ohne Stilvorgaben stellst, antwortet ChatGPT in der Regel mit einem oder zwei kurzen Absätzen, gelegentlich auch mit mehr, wenn eine längere Antwort erforderlich ist:
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={unguided_question} style={{width: "500px"}} />
+  <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
 Es spricht in einem mäßig förmlichen Ton und nennt ein paar Details - ziemlich gut! Wenn wir wollen, können wie es aber noch besser machen, indem wir die Antwort von ChatGPT mit einer Stilvorgabe am Ende unseres Promts anpassen. Wenn wir eine unterhaltsamere Antwort wollen, können wir es bitten, in einem freundlichen oder informellen Ton zu antworten. Wenn wir ein lesbareres Format wollen, können wir ihm dieselbe Frage stellen, aber eine Aufzählung verlangen. Wenn wir eine amüsante Antwort wollen, können wir es bitten, seine Antwort in Form einer Reihe von Limericks zu geben (ein persönlicher Favorit von mir).

@@ -21,7 +21,7 @@ O prompt a seguir irá força-lo a obter uma possível resposta:
 import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={pretend} style={{width: "500px"}} />
+  <img src={pretend} style={{width: "500px"}}/>
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) demonstra um prompt fingindo acessar datas passadas e fazendo inferências sobre futuros eventos(@nero2022jailbreak). Nota: Na data em que essa artigo foi traduzido, o exemplo acima não funciona no ChatGPT (Maio 2023).

@@ -14,7 +14,7 @@ LLM에게 이유에 대해서 설명하도록 만드는 방법입니다.
 import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={CoTExample} style={{width: "750px"}} />
+  <img src={CoTExample} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

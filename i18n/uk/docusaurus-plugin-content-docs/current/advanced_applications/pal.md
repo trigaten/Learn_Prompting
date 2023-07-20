@@ -9,7 +9,7 @@ sidebar_position: 4
 import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={image} style={{width: "500px"}} />
+  <img src={image} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

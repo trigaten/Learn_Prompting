@@ -21,7 +21,7 @@ Midjourney 的基本结构是 `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAM
 ```
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut} style={{width: "750px"}} />
+  <img src={midjourney_astronaut} style={{width: "750px"}}/>
 </div>
 
 更多关于图像提示参数的信息可以在这里找到：[Midjourney Documentation - Parameter List](https://docs.midjourney.com/docs/parameter-list)

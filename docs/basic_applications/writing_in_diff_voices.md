@@ -17,7 +17,7 @@ import friendship_millennial from '../assets/basic_applications/Friendship_Mille
 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship} style={{width: "750px"}} />
+  <img src={friendship} style={{width: "750px"}}/>
 </div>
 
 Blah. It’s so bland. 

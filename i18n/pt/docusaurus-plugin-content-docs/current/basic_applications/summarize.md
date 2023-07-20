@@ -19,7 +19,7 @@ import quantum from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_a
 import sapato from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/basic_applications/summarizing/Sapato.png';
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={outline1} style={{width: "750px"}} />
+  <img src={outline1} style={{width: "750px"}}/>
 </div>
 
 Embora você pudesse buscar um resumo, o ChatGPT pode adaptar o conteúdo às suas necessidades. Talvez você goste muito de futebol, então você poderia pedir ao ChatGPT para "criar um resumo de 100 palavras de 'Romeu e Julieta' usando termos de futebol".

@@ -13,7 +13,7 @@ sidebar_position: 22
 import Image from '@site/docs/assets/tooling/promptsandbox.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Характеристики

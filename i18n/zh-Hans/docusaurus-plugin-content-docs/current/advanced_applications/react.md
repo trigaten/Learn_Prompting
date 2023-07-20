@@ -13,7 +13,7 @@ ReAct系统可以被视为具有**推理和行动能力**的MRKL系统，。
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={react_qa} style={{width: "500px"}} />
+  <img src={react_qa} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -15,7 +15,7 @@ import planets from '@site/docs/assets/images_chapter/planets.webp';
 这是通过 Stable Diffusion 生成的一些山，提示语是 `mountain`。
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={mountains} style={{width: "350px"}} />
+  <img src={mountains} style={{width: "350px"}}/>
 </div>
 
 然而，如果我们想得到没有树的山，我们可以使用提示语 `mountain | tree:-10`。因为我们把树的权重设置为负数，所以它们不会出现在生成的图片中。

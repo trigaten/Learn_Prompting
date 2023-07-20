@@ -36,7 +36,7 @@ import focus_final from '@site/static/img/computer.webp';
 import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={rockets1} style={{width: "750px"}} />
+  <img src={rockets1} style={{width: "750px"}}/>
 </div>
 
 

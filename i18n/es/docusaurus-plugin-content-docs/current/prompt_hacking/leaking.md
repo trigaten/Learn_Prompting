@@ -12,7 +12,7 @@ Como se muestra en la imagen de ejemplo(@ignore_previous_prompt) a continuación
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={research} style={{width: "500px"}} />
+  <img src={research} style={{width: "500px"}}/>
 </div>
 
 La siguiente imagen(@simon2022inject), nuevamente del ejemplo de `remoteli.io`, muestra a un usuario de Twitter haciendo que el modelo filtre su prompt.

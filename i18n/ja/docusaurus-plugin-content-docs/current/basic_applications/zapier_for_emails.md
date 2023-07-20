@@ -35,7 +35,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 4. 出力をデータベースに保存する
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## Zapier でのセットアップ

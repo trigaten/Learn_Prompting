@@ -24,7 +24,7 @@ Replace Shot type with desired shot type.
 <div>
   <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
     <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={extreme_long_shot} style={{ width: '250px' }} />
+      <img src={extreme_long_shot} style={{ width: '250px' }}/>
       <p>Long Shot</p>
     </div>
     <div style={{ textAlign: 'center' }}>

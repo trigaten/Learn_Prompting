@@ -10,7 +10,7 @@ sidebar_position: 23
 import Image from '@site/docs/assets/tooling/theforgeai.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "1200px"}} />
+  <img src={Image} style={{width: "1200px"}}/>
 </div>
 
 ## Features

@@ -11,7 +11,7 @@ by step.**""을 질문의 마지막에 넣게 되면 LLM은 질문에 대한 사
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={ZSImage} style={{width: "500px"}} />
+  <img src={ZSImage} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

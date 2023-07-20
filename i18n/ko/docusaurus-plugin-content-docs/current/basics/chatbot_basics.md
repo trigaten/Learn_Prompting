@@ -23,7 +23,7 @@ import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 스타일 가이드는 단순히 AI에게 특정 스타일로 말하도록 요청하는 것입니다. 스타일 안내가 없는 질문을 할 때 ChatGPT는 일반적으로 한두 개의 짧은 단락을 응답으로 반환하며, 더 긴 응답이 필요한 경우에는 더 긴 단락을 반환하기도 합니다:
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={unguided_question} style={{width: "500px"}} />
+  <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
 적당히 공손한 어조로 말하고 몇 가지 세부 정보를 제공하는 것이 꽤 좋습니다! 하지만 원하는 경우 프롬프트 끝에 스타일 문구를 추가하여 ChatGPT의 응답을 사용자 지정함으로써 더 나은 응답을 제공할 수 있습니다. 좀 더 대화적인 답변을 원한다면 친근하거나 격식을 차리지 않은 어조로 말하도록 요청할 수 있고, 좀 더 읽기 쉬운 형식을 원한다면 동일한 질문을 하되 글머리 기호 목록을 요청할 수 있으며, 재미있는 답변을 원한다면 제가 개인적으로 좋아하는 일련의 리메릭(limericks) 형식으로 답변을 제공하도록 요청할 수 있습니다.

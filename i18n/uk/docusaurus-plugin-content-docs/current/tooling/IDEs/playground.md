@@ -9,7 +9,7 @@ sidebar_position: 2
 import Image from '@site/docs/assets/tooling/GPT3.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Характеристики

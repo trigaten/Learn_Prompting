@@ -10,7 +10,7 @@ Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi20
 import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "500px"}} />
+  <img src={Image} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

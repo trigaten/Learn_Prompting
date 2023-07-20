@@ -15,7 +15,7 @@ ReAct(@yao2022react)(reason, act) - это парадигма, позволяю�
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={react_qa} style={{width: "500px"}} />
+  <img src={react_qa} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

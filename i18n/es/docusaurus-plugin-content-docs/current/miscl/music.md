@@ -15,7 +15,7 @@ Sin embargo, a pesar del enorme potencial de los modelos de música, actualmente
 import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={riffusion} style={{width: "500px"}} />
+  <img src={riffusion} style={{width: "500px"}}/>
 </div>
 
 Riffusion (@Forsgren_Martiros_2022), una versión ajustada de Stable Diffusion, se puede controlar con prompts para generar instrumentos y estilos pseudo, pero tiene un número limitado de beats disponibles.
