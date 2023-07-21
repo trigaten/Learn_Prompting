@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 ---
+
 # 🟢 Impulsionadores de qualidade
 
 Os impulsionadores de qualidade (@oppenlaender2022taxonomy) são termos adicionados à um prompt para melhorar determinadas qualidades não-específicas de estilo da imagem gerada. Por exemplo, "incrível", "bonito" e "boa qualidade" são todas as qualidade impulsoras que podem ser usadas para melhorar a qualidade da imagem gerada.
@@ -16,13 +17,12 @@ Lembre-se da página anterior das pirâmides geradas com o DALLE e o prompt `pir
   <img src={pyramids} style={{width: "750px"}}/>
 </div>
 
-
-Agora veja as pirâmides geradas com este prompt:
-`Uma bela, majestosa, incrível pirâmide, 4K`
+Agora veja as pirâmides geradas com este prompt: `Uma bela, majestosa, incrível pirâmide, 4K`
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={special_pyramids} style={{width: "750px"}} />
 </div>
+
 Estas são muito mais cênicas e impressionantes!
 
 Aqui está uma lista de vários impulsionadores de qualidade:
