@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 ---
+
 # 🟢 Potenciadores de calidad
 
 Los potenciadores de calidad (@oppenlaender2022taxonomy) son términos agregados a una prompt para mejorar ciertas cualidades de la imagen generada que no están relacionadas con el estilo. Por ejemplo, "increíble", "hermoso" y "buena calidad" son potenciadores de calidad que se pueden utilizar para mejorar la calidad de la imagen generada.
@@ -16,14 +17,13 @@ Recordemos las pirámides generadas con DALLE de la otra página, y la prompt `p
   <img src={pyramids} style={{width: "750px"}}/>
 </div>
 
-Ahora, veamos las pirámides generadas con esta prompt:
-`Una hermosa, majestuosa, increíble pirámide, 4K`
+Ahora, veamos las pirámides generadas con esta prompt: `Una hermosa, majestuosa, increíble pirámide, 4K`
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={special_pyramids} style={{width: "750px"}} />
 </div>
 
-¡Estas son mucho más escénicas e impresionantes! 
+¡Estas son mucho más escénicas e impresionantes!
 
 Aquí hay una lista de algunos potenciadores de calidad:
 ```text
