@@ -9,7 +9,7 @@ sidebar_position: 5
 import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
 import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
-# Приклад
+# Наприклад
 
 Поверніться до пірамід на іншій сторінці, що були створені за допомогою нейромережі DALLE і запиту `pyramid`.
 
