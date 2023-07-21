@@ -10,6 +10,7 @@ import mountains from '@site/docs/assets/images_chapter/mountains.webp';
 import mountains_no_trees from '@site/docs/assets/images_chapter/mountains_no_trees.webp';
 import planets from '@site/docs/assets/images_chapter/planets.webp';
 
+
 # Exemplo
 
 Aqui estão algumas montanhas geradas pelo Stable Diffusion, com o prompt `montanha`.
@@ -24,8 +25,7 @@ No entanto, se quisermos montanhas sem árvores, podemos usar o prompt `montanha
   <LazyLoadImage src={mountains_no_trees} style={{width: "350px"}} />
 </div>
 
-Os termos ponderados podem ser combinados em prompts mais complicados, como 
-`Um planeta no espaço:10 | cheio de cores vermelho, azul e roxo:4 | alienígenas:-10 | 4K, alta qualidade`
+Os termos ponderados podem ser combinados em prompts mais complicados, como `Um planeta no espaço:10 | cheio de cores vermelho, azul e roxo:4 | alienígenas:-10 | 4K, alta qualidade`
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={planets} style={{width: "350px"}} />
