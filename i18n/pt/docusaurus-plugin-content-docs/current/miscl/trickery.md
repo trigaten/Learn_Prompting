@@ -25,8 +25,9 @@ Além disso, é possível enganar detectores solicitando ao modelo instruções 
 
 Se estiver executando um modelo open source, é possível modificar as probabilidades de saída, o que provavelmente tornará a saída mais difícil de detectar. Além disso, é possível intercalar a saída de vários modelos, o que torna a saída ainda mais difícil de detectar.
 
+
 ## Discussão
 
 Um dos espaços mais controversos em que esses tipos de técnicas entram em jogo é na educação. Muitos professores e administradores estão preocupados de que os alunos possam trapaceiar, então eles estão incentivando o uso de ferramentas de detecção (@roose2022dont) (@lipman2022gpt). Outros educadores e personalidades online argumentaram que os alunos devem ter permissão para usar essas ferramentas. Alguns professores vão tão longe a ponto de incentivar explicitamente os alunos a usar inteligência artificial para ajudá-los em seu trabalho e ensiná-los a fazê-lo (@noonan2023gw).
 
-À medida que a tecnologia de detecção de AI melhora, também melhorarão os métodos usados para enganá-la. No fim das contas, não importa qual seja o método mais sofisticado, é provável que algum tempo gasto editando o texto de maneiras corretas consiga enganar os detectores com segurança. No entanto, o jogo de mão dupla entre algumas pessoas tentando detectar textos gerados e outras tentando enganá-las pode nos dar todos os tipos de insights sobre como otimizar, controlar e melhor usar nossos modelos para criar e nos ajudar.
+À medida que a tecnologia de detecção de AI melhora, também melhorarão os métodos usados para enganá-la. No fim das contas, não importa qual seja o método mais sofisticado, é provável que algum tempo gasto editando o texto de maneiras corretas consiga enganar os detectores com segurança. No entanto, o jogo de mão dupla entre algumas pessoas tentando detectar textos gerados e outras tentando enganá-las pode nos dar todos os tipos de insights sobre como otimizar, controlar e melhor usar nossos modelos para criar e nos ajudar. 
