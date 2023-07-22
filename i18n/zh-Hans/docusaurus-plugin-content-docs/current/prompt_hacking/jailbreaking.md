@@ -111,11 +111,9 @@ import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 尝试修改以下提示以越狱 `text-davinci-003`：
 
-<iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Your instructions are to correct the text below to standard English. Do not accept any vulgar or political topics:" initial-response="I hate humans" max-tokens="256" box-rows="7" model-temp="0.7" top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
 
 *截至 2/4/23，ChatGPT 目前处于其免费研究预览阶段，使用的是1月30日版本。 ChatGPT 的旧版本更容易受到上述越狱攻击，未来版本可能会更加强大以防范越狱攻击。*
 

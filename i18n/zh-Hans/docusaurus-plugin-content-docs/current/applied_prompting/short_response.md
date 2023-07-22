@@ -93,11 +93,7 @@ This is a pretty good start. I then followed this up with another prompt to expa
 
 尝试使用以下演示来扩展此提示（您将需要您的OpenAI API密钥）：
 
-<iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="我正在撰写一篇详细的短文，回答以下提示: 数学是发明还是发现？用仔细的推理来解释你的答案。 这是我目前的情况:哲学家和数学家之间争论不休，数学是发明还是发现。一些人认为，数学的概念和原则独立于人类思维存在，因此可以被认为是被发现而不是被发明的。例如，数字、比率和几何形状的概念在自然界中被观察到，可以被抽象化和系统化地研究。 写下我文章的下一段。" initial-response="另一方面，有人认为数学在很大程度上是人类思维的发明。数学原理基于逻辑推理，这是人类思维的一个特征。例如，欧几里德几何基于抽象的公理和前提，被接受为真实而无需证明。因此，可以认为几何是人类思维的发明，而不是一种发现。同样，数学公式和方程用于模拟和预测物理现象，这又是人类推理的结果。" max-tokens="256" box-rows="11" model-temp="0.7" top-p="1"></div>
 <br/>
 
 我使用此提示生成了几个扩展，并选择了一个我喜欢的，最终得到了以下结果：
