@@ -76,13 +76,13 @@ function processFile(filePath: string) {
         let updatedData = data.replace(/<div trydyno-embed(.*?)<\/div>/gs, function(match, embedConfig) {
             // Create a mapping from the embed properties to the config properties
             const propertyMapping = {
-                'openai-model': 'model',
-                'initial-prompt': 'prompt',
-                'initial-response': 'output',
-                'max-tokens': 'maxTokens',
-                'model-temp': 'temperature',
-                'top-p': 'topP',
-                'box-rows': 'boxRows',
+                'model': 'model',
+                'prompt': 'prompt',
+                'response': 'output',
+                'tokens': 'maxTokens',
+                'temp': 'temperature',
+                'p': 'topP',
+                'rows': 'boxRows',
             };
 
             // Create a new dictionary for each field of the embed
