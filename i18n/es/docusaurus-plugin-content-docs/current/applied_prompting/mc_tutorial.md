@@ -28,12 +28,11 @@ c) Solo una actividad intensa de las manchas solares podría haber resultado en 
 
 Intente pegar el problema en el cuadro de la demostración a continuación:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="John of Worcester, un monje inglés, registró la aparición, el 8 de diciembre de 1128, de dos manchas solares inusualmente grandes. Cinco días después, se observó una brillante aurora boreal (luces del norte) en el sur de Corea. La actividad de las manchas solares suele ir seguida de la aparición de una aurora boreal, después de un período de tiempo que en promedio dura cinco días. Por lo tanto, la observación en Corea ayuda a confirmar la observación de John de Worcester. ¿Cuál de las siguientes opciones, si es cierta, fortalece más el argumento?
-a) A veces puede producirse una aurora boreal incluso cuando no ha habido actividad significativa de manchas solares en la semana anterior.
-b) Las fuentes chinas registraron la aparición de manchas solares más de 1000 años antes que John de Worcester.
-c) Solo una actividad intensa de manchas solares podría haber resultado en una aurora boreal visible en una latitud tan baja como la de Corea.
-d) Debido a que es imposible ver las manchas solares a simple vista en condiciones típicas de luz del día, la observación registrada por John de Worcester habría tenido lugar bajo condiciones meteorológicas inusuales como la niebla o nubes delgadas.
-e) El relato de John de Worcester incluyó un dibujo de las manchas solares, que podría ser la ilustración más temprana de la actividad de las manchas solares." initial-response="e) El relato de John of Worcester incluyó un dibujo de las manchas solares, que podría ser la ilustración más temprana de la actividad de las manchas solares." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <p></p>
 

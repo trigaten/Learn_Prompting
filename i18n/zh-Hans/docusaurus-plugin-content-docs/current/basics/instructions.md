@@ -9,7 +9,11 @@ sidebar_position: 2
 
 #### 示例 1
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="一个用户在表单中输入了他们的名字和姓氏，但我们不知道他们的名字和姓氏的顺序，我们需要将它们转换为“姓, 名”的格式。将以下输入转换为该格式：\n\njohn doe" initial-response="Doe, John" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>AI 能够轻松地解决这个问题。使用指令提示，它可以解决许多其他简单和更复杂的问题。
 

@@ -16,9 +16,11 @@ Consideremos el ejemplo anterior, en el que intentamos clasificar las opiniones 
 
 La forma en que estructuramos los ejemplos es muy importante. Como hemos estructurado estos 3 ejemplos como `entrada: clasificación`, el modelo emite una sola palabra después de la última línea, en lugar de decir una frase completa como `esta reseña es positiva`.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Gran producto, 10 de 10: positivo\nNo funcionó muy bien: negativo\nSuper útil, vale la pena: positivo\n¡No funciona!:" initial-response="negativo" max-tokens="256" box-rows="5" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>
 

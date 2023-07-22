@@ -10,9 +10,11 @@ Escribir correos electrónicos puede ser una tarea que consume mucho tiempo, esp
 
 Imagina que un día te despiertas enfermo/a y no puedes ir a trabajar (o simplemente no quieres 😈). Aquí hay una guía simple que te ayuda a escribir un correo electrónico a tu jefe para informarle que estás enfermo/a.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Mi Nombre: Mario\nNombre del Jefe: John\n\nEscribe un correo electrónico a mi jefe diciendo que estaré fuera de la oficina hoy ya que estoy enfermo/a. " initial-response="Asunto: Fuera de la oficina - Enfermo\n\nEstimado John,\n\nLe escribo para informarle que estaré fuera de la oficina hoy debido a una enfermedad. Lamento cualquier inconveniente que esto pueda causar.\n\nMe aseguraré de mantenerlo informado sobre mi progreso y regresaré a la oficina tan pronto como me sienta mejor.\n\nGracias por su comprensión\n\nAtentamente,\nMario" max-tokens="256" box-rows="8" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 Este correo electrónico funciona, pero es bastante aburrido. ¡Vamos a darle un poco de sabor!
 

@@ -26,7 +26,11 @@ Aquí hay algunas demostraciones. La primera muestra a GPT-3 (davinci-003) falla
 
 #### Incorrecto
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="¿Cuál es la forma más rápida de llegar al trabajo?\nOpción 1: Tomar un autobús de 1000 minutos, luego un tren de media hora y finalmente un paseo en bicicleta de 10 minutos.\nOpción 2: Tomar un autobús de 800 minutos, luego un tren de una hora y finalmente un paseo en bicicleta de 30 minutos." initial-response="La opción 1 es una forma más rápida de llegar al trabajo." max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 #### Correcto
 

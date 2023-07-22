@@ -74,9 +74,11 @@ Recomiendo este segundo enfoque, ya que puede producir contenidos más largos de
 
 El enfoque del conocimiento generado se introdujo en realidad para una tarea completamente distinta, la de responder a preguntas difíciles. Consideremos la siguiente pregunta, a la que GPT-3 responde incorrectamente:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="¿Cuál país es más grande, Congo o Sudáfrica?" initial-response="Sudáfrica es más grande que Congo." max-tokens="256" box-rows="3" model-temp="0" top-p="0">
-    <noscript>Error al cargar Dyno Embed: JavaScript debe estar habilitado</noscript>
-</div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <br/>
 
 Si primero le preguntamos al %%LLM|LLM%% que genere información sobre Congo y Sudáfrica, podemos luego utilizar esa información para responder la pregunta correctamente. En teoría, esto es similar a la técnica de %%CoT|prompting de CoT%%, ya que efectivamente estamos obteniendo del LLM un razonamiento intermedio en forma de hechos relacionados.

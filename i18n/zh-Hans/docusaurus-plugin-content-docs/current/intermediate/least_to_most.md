@@ -22,9 +22,11 @@ import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.web
 
 让我们问一个稍微复杂的客服问题：
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="客户咨询:\n我在3月1日购买了你们 Arnold 系列的一件T恤。我看到它有折扣，所以买了一件原价为 30 美元的衬衫，打了 6 折。我发现你们现在有一个新的T恤折扣活动，50% off。我想知道我是否可以退货，同时拥有足够的店内积分来购买两件你们的T恤？\n\n指令:\n你是一名客户服务代表，负责友好地回复客户的查询。退货在 30 天内允许。今天是 3 月 29 日。目前所有衬衫都有 50% 的折扣。你的店里衬衫价格在 18-100 美元之间。请勿编造任何关于折扣政策的信息。" initial-response="尊敬的客户，\n感谢您购买我们的 Arnold 系列T恤。我们很高兴能为您提供服务。\n\n很遗憾，我们不能接受您的退货，因为您已经超过了我们的30天退货政策。但是，我们现在正在举行一个特别的T恤折扣活动，所有T恤都有50％的折扣。您可以使用您的店内积分来购买两件T恤" max-tokens="256" box-rows="16" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>这个回答是错误的（目前还在退货时间内），那我们来将问题分解为子问题试试：
 

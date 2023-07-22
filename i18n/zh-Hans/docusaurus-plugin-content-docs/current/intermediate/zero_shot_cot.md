@@ -32,7 +32,11 @@ import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.web
 
 #### 错误示例
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="如果 John 有 5 个梨子，吃了 2 个，又买了 5 个，然后把 3 个给了他的朋友，他还剩下多少个梨子？" initial-response="John 有 8 个梨子。" max-tokens="256" box-rows="3" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 #### 正确示例
 

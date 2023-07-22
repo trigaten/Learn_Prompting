@@ -29,12 +29,11 @@ c）只有大规模的太阳黑子活动才能导致在韩国这样的纬度下�
 </details>
 尝试将问题粘贴到下面的演示中：
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="英国修道士 John of Worcester 在 1128 年 12 月 8 日记录了两个异常大的太阳黑子的出现。五天后，韩国南部观察到了一个明亮的极光。太阳黑子活动通常在平均五天的时间段之后，极光出现。因此，韩国的观测有助于证实 John of Worcester 的观测。以下哪项是正确的，如果是正确的，最能加强这个观点？
-a）即使在前一周没有重要的太阳黑子活动，极光也有时会发生。
-b）在 John of Worcester 之前的1000多年中，中国的资料记录了太阳黑子的出现。
-c）只有大规模的太阳黑子活动才能导致在韩国这样的纬度下看到的极光。
-d）由于在典型的日光条件下肉眼无法观察到太阳黑子，因此 John of Worcester 记录的观测必须发生在不寻常的天气条件下，如雾或薄云。
-e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是太阳黑子活动的最早插图。" initial-response="e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是太阳黑子活动的最早插图。" max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <p></p>
 <details scheme='warning'>
 <summary>为什么我的答案不同？</summary>

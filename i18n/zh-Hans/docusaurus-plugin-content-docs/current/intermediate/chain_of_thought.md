@@ -26,7 +26,11 @@ import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 #### 不正确的答案
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="哪种方法是更快的上班方式？\n选项1：乘坐1000分钟的公共汽车，然后半小时的火车，最后10分钟的自行车骑行。\n选项2：乘坐800分钟的公共汽车，然后1小时的火车，最后30分钟的自行车骑行。" initial-response="选项1是更快的上班方式。" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 #### 正确的答案
 

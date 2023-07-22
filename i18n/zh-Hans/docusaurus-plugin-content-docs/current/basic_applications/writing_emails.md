@@ -10,9 +10,11 @@ sidebar_position: 10
 
 想象一下，有一天你生病了，不能去上班（或者只是不想去😈）。这里有一个简单的提示，可以写一封电子邮件给你的老板，告诉他们你病了。
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="我的名字：克洛丝\n老板的名字：凯尔希\n\n写一封电子邮件给我的老板，告诉他我今天因为生病不能上班。" initial-response="亲爱的凯尔希：\n\n我是克洛丝，我是你的员工。我很抱歉地通知你，我今天因为生病不能上班。\n\n我昨晚感觉不舒服，今天早上我去看了医生，他诊断我得了感冒。他建议我休息几天，所以我不能上班。\n\n我会尽快恢复健康，并尽快回到工作岗位。如果你需要任何其他信息，请随时联系我。\n\n谢谢！\n\n克洛丝" max-tokens="512" box-rows="8" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 这封电子邮件虽然没什么问题，但有点无聊。让我们加点料吧！
 
