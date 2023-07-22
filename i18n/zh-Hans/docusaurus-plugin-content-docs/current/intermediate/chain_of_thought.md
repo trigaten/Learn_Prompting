@@ -34,8 +34,11 @@ import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 #### 正确的答案
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="哪种方法是更快的回家方式？\n选项1：乘坐10分钟的公共汽车，然后40分钟的公共汽车，最后10分钟的火车。\n选项2：乘坐90分钟的火车，然后骑行45分钟，最后10分钟的公共汽车。\n选项1需要60分钟，即10+40+10 = 60分钟。\n选项2需要145分钟，即90+45+10=145分钟。\n由于选项1需要60分钟，选项2需要145分钟，因此选项1更快。\n\n哪种方法是更快的上班方式？\n选项1：乘坐1000分钟的公共汽车，然后半小时的火车，最后10分钟的自行车骑行。\n选项2：乘坐800分钟的公共汽车，然后1小时的火车，最后30分钟的自行车骑行。" initial-response="选项1需要1000+30+10 = 1040分钟。
-选项2需要800+60+30 = 890分钟。由于选项2需要890分钟，选项1需要1040分钟，因此选项2更快。" max-tokens="256" box-rows="18" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLlk6rnp43mlrnms5XmmK%2Fmm7Tlv6vnmoTlm57lrrbmlrnlvI%2FvvJ9cbumAiemhuTHvvJrkuZjlnZAxMOWIhumSn%2BeahOWFrOWFseaxvei9pu%2B8jOeEtuWQjjQw5YiG6ZKf55qE5YWs5YWx5rG96L2m77yM5pyA5ZCOMTDliIbpkp%2FnmoTngavovabjgIJcbumAiemhuTLvvJrkuZjlnZA5MOWIhumSn%2BeahOeBq%2Bi9pu%2B8jOeEtuWQjumqkeihjDQ15YiG6ZKf77yM5pyA5ZCOMTDliIbpkp%2FnmoTlhazlhbHmsb3ovabjgIJcbumAiemhuTHpnIDopoE2MOWIhumSn%2B%2B8jOWNszEwKzQwKzEwICIsIm91dHB1dCI6IumAiemhuTHpnIDopoExMDAwKzMwKzEwICIsIm1heFRva2VucyI6MjU2LCJib3hSb3dzIjoxOCwidGVtcGVyYXR1cmUiOjAsInRvcFAiOjB9"
+    style={{width:"100%", height:"900px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## 结论
 

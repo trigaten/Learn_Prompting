@@ -4,6 +4,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yup from 'yup';
+import * as he from 'he';
 
 export const MODELS = [
     "gpt-4",
@@ -34,7 +35,7 @@ const urlConfigSchema = yup.object({
 type UrlConfig = yup.InferType<typeof urlConfigSchema>;
 
 const encodeUrlConfig = (obj: UrlConfig): string => {
-    let str = JSON.stringify(obj, (key, value) => typeof value === 'string' ? value.replace(/\\n/g, '\n') : value);
+    let str = JSON.stringify(obj, (key, value) => typeof value === 'string' ? he.decode(value.replace(/\\n/g, '\n')) : value);
     let encoder = new TextEncoder();
     let data = encoder.encode(str);
     let base64 = btoa(String.fromCharCode.apply(null, data as any));
