@@ -12,11 +12,11 @@ Ia dapat merangkum buku, film, drama, artikel, dan banyak lagi. Dengan ChatGPT, 
 Terkadang, Anda dapat meminta ChatGPT untuk merangkum karya terkenal tanpa menyalin teks tambahan apa pun, karena ChatGPT sangat mengenal karya-karya tersebut. Misalnya, Anda dapat memintanya untuk merangkum "Romeo & Juliet" berdasarkan adegan. Jadi, daripada melelahkan diri membaca 24.000 kata dalam pertunjukan itu, kamu bisa mendapatkan intinya hanya dalam 300 kata atau kurang.
 
 
-import outline1 from '../assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
-import quantum from '../assets/basic_applications/summarizing/Quantum_Entanglement.webp';
+import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
+import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
 
-import rope from '../assets/basic_applications/summarizing/Outline_1.webp';
-import rope2 from '../assets/basic_applications/summarizing/Outline_2.webp';
+import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.webp';
+import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
 
 <div style={{textAlign: 'left'}}>
   <img src={outline1} style={{width: "750px"}}/>

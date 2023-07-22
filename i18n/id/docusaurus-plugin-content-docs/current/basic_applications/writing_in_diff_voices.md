@@ -7,11 +7,11 @@ sidebar_position: 60
 AI seperti [ChatGPT](https://chat.openai.com/chat) dikenal karena membuat esai dan artikel blog dengan cepat. Namun sering, artikel yang mereka hasilkan bersifat umum dan kering. Anda perlu melakukan sesuatu ekstra untuk memberikan semangat atau kegembiraan pada kata-kata tersebut. Salah satu cara tercepat untuk melakukannya adalah dengan menentukan gaya penulisan atau menyebutkan penulis terkenal dalam prompt.     
 Katakanlah Anda ingin satu paragraf tentang pentingnya persahabatan. Prompt generik seperti, “Tulislah sepenggal paragraf tentang pentingnya persahabatan,” akan menghasilkan tanggapan generik dari ChatGPT.
 
-import friendship from '../assets/basic_applications/Generic_Friendship.webp';
-import friendship_informal from '../assets/basic_applications/Friendship_Informal.webp';
-import friendship_mark from '../assets/basic_applications/Friendship_Mark_Twain.webp';
-import friendship_chris from '../assets/basic_applications/Friendship_Chris_Rock.webp';
-import friendship_millennial from '../assets/basic_applications/Friendship_Millennial.webp';
+import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.webp';
+import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.webp';
+import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.webp';
+import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.webp';
+import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={friendship} style={{width: "750px"}}/>

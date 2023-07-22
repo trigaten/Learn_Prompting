@@ -7,11 +7,11 @@ sidebar_position: 60
 Системи ШІ, як-от [ChatGPT](https://chat.openai.com/chat), відомі тим, що миттєво створюють есеї та статті для блогів. Але часто статті, які вони генерують, є загальними та сухими. Потрібно докласти додаткових зусиль, щоб текст був більш своєрідним і яскравим. Один із найшвидших способів це зробити – зазначити стиль письма або вказати відомого автора в запиті.     
 Скажімо, вам потрібен абзац про важливість дружби. На загальний запит на кшталт "Напиши мені абзац про важливість дружби" ChatGPT дасть загальну відповідь.
 
-import friendship from '../assets/basic_applications/Generic_Friendship.webp';
-import friendship_informal from '../assets/basic_applications/Friendship_Informal.webp';
-import friendship_mark from '../assets/basic_applications/Friendship_Mark_Twain.webp';
-import friendship_chris from '../assets/basic_applications/Friendship_Chris_Rock.webp';
-import friendship_millennial from '../assets/basic_applications/Friendship_Millennial.webp';
+import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.webp';
+import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.webp';
+import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.webp';
+import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.webp';
+import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={friendship} style={{width: "750px"}}/>
