@@ -95,7 +95,11 @@ Este es un buen comienzo. Luego seguí con otra pregunta para expandir:
 
 Prueba esta pregunta de expansión con el demo a continuación (necesitarás tu clave de API de OpenAI)
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Estoy escribiendo un ensayo corto detallado en respuesta al siguiente tema: \n¿Las matemáticas son inventadas o descubiertas? Usa un razonamiento cuidadoso para explicar tu respuesta. \n\nEsto es lo que tengo hasta ahora: Existe mucho debate entre filósofos y matemáticos sobre si las matemáticas son inventadas o descubiertas. Algunos argumentan que los conceptos y principios matemáticos existen independientemente de las mentes humanas y, por lo tanto, pueden considerarse descubiertos en lugar de inventados. Por ejemplo, el concepto de números, proporciones y formas geométricas se observa en el mundo natural y se pueden abstraer y estudiar de manera sistemática. \n\nEscribe el siguiente párrafo de mi ensayo." initial-response="Por otro lado, algunos argumentan que las matemáticas son en gran parte una invención de la mente humana. Los principios matemáticos se basan en el razonamiento lógico, que es una característica de la mente humana. Por ejemplo, la geometría euclidiana se basa en axiomas y postulados abstractos, que se aceptan como verdaderos sin prueba. Por lo tanto, se puede argumentar que la geometría es una invención de la mente humana en lugar de un descubrimiento. De manera similar, las fórmulas y ecuaciones matemáticas se usan para modelar y predecir fenómenos físicos, que son nuevamente el resultado del razonamiento humano." max-tokens="256" box-rows="11" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <br/>
 
 Generé algunas expansiones con esta instrucción y seleccioné una que me gustó para obtener el siguiente resultado final:
