@@ -25,8 +25,7 @@ Sin embargo, si queremos montañas sin árboles, podemos usar el prompt `mountai
   <LazyLoadImage src={mountains_no_trees} style={{width: "350px"}} />
 </div>
 
-Los términos ponderados se pueden combinar en prompts más complejos, como 
-`A planet in space:10 | bursting with color red, blue, and purple:4 | aliens:-10 | 4K, high quality`
+Los términos ponderados se pueden combinar en prompts más complejos, como `A planet in space:10 | bursting with color red, blue, and purple:4 | aliens:-10 | 4K, high quality`
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={planets} style={{width: "350px"}} />

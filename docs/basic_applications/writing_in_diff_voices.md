@@ -9,11 +9,11 @@ One of the fastest ways to do that is to specify a writing style or naming a fam
 Say you want a paragraph on the importance of friendship. 
 A generic prompt like, “Write me a paragraph on the importance of friendship,” will yield a generic response from ChatGPT.  
 
-import friendship from '../assets/basic_applications/Generic_Friendship.webp';
-import friendship_informal from '../assets/basic_applications/Friendship_Informal.webp';
-import friendship_mark from '../assets/basic_applications/Friendship_Mark_Twain.webp';
-import friendship_chris from '../assets/basic_applications/Friendship_Chris_Rock.webp';
-import friendship_millennial from '../assets/basic_applications/Friendship_Millennial.webp';
+import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.webp';
+import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.webp';
+import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.webp';
+import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.webp';
+import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 
 <div style={{textAlign: 'center'}}>

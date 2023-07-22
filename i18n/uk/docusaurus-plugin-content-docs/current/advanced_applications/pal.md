@@ -66,7 +66,7 @@ total_toys = toys_initial + total_received
 result = total_toys
 
 
-Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+Q: Jason had 20 lollipops. He gave Denny some lollipops. He gave Denny some lollipops. How many lollipops did Jason give to Denny?
 
 # solution in Python:
 """Jason had 20 lollipops. He gave Denny some lollipops. He gave Denny some lollipops. How many lollipops did Jason give to Denny?"""
