@@ -44,7 +44,8 @@
     "react-twitter-embed": "^4.0.4",
     "rehype-katex": "^5.0.0",
     "remark-gfm": "^3.0.1",
-    "remark-math": "^3.0.1"
+    "remark-math": "^3.0.1",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.2.0",
