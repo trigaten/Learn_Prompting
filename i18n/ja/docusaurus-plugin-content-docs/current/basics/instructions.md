@@ -13,7 +13,11 @@ sidebar_position: 2
 
 #### 例 1
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="A user has input their first and last name into a form. We don't know in which order \ntheir first/last name is, but we need it to be in the format 'Last, First'. Convert the following:\n\njohn doe" initial-response="Doe, John" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>AI は簡単にこの問題を解けます。そしてプロンプティングすることで、より複雑な問題をも解くことができます。
 

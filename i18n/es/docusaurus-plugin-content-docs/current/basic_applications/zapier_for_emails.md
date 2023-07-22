@@ -106,14 +106,18 @@ A continuación, mostramos algunos ejemplos con correos electrónicos que un adm
 
 Puedes pedir que resuma un correo electrónico simple en viñetas, sin embargo, esto puede no ser muy útil dependiendo de cómo quieras usar el resumen. Para un examen rápido de intercambios de correo electrónico, quizás solo quieras que sea corto y conciso. Simplemente pedir esto en el prompt funciona bien. A continuación, se muestra un ejemplo de este prompt. Ajusta y experimenta con él para ver cómo cambia.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Actúe como mi asistente personal. Soy un administrador de oficina. Resuma el siguiente correo electrónico de la manera más concisa posible, ignorando el encabezado y pie de página y cualquier correo electrónico anterior.. \n\nCorreo Electrónico: Solicitud de suministros de oficina adicionales Estimado Administrador de Oficina, Espero que este correo electrónico le encuentre bien. Me dirijo a usted para solicitar suministros de oficina adicionales para nuestro equipo. Como sabe, últimamente hemos estado experimentando un alto volumen de trabajo y hemos estado utilizando nuestros suministros a un ritmo más rápido de lo habitual. Agradeceríamos mucho si pudiera proporcionarnos los siguientes elementos: Papel de impresora Cartuchos de tinta para la impresora HP en la sala de conferencias Notas adhesivas Clips de carpeta Marcadores Por favor, háganos saber si hay alguna pregunta o inquietud, y cuándo podemos esperar la entrega de los suministros. Gracias por su ayuda. \n\nAtentamente, Tu Nombre:\n" initial-response="Solicitud de suministros de oficina adicionales debido a alta carga de trabajo. Lista de elementos solicitados: papel de impresora, cartuchos de tinta para la impresora HP en la sala de conferencias, notas adhesivas, clips de carpeta y marcadores. Se solicita información sobre la entrega y si hay alguna pregunta o inquietud." max-tokens="256" box-rows="15" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 La respuesta aquí es aceptable y sería útil. Sin embargo, con algunos ajustes adicionales se puede obtener un mejor resultado. Como lector de los resúmenes, no le importa que sea un correo electrónico y es posible que desee un nivel de detalle menor para el resumen. La información sobre el porqué es irrelevante, lo mismo ocurre con la última oración sobre preguntas e inquietudes. Al agregar simplemente que el objetivo del resumen es permitirle revisar rápidamente el contenido y que se eliminen las formalidades, se puede mejorar el resultado.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Actúa como mi asistente personal. Soy un administrador de oficina. Resume el siguiente correo electrónico lo más concisamente posible, ignorando el encabezado, pie de página y cualquier correo electrónico anterior. Quiero usar el resumen para revisar rápidamente los correos electrónicos. Elimina cualquier formalidad. \n\nCorreo Electrónico:Solicitud de suministros de oficina adicionales Estimado Administrador de Oficina, Me dirijo a usted para solicitar suministros de oficina adicionales para nuestro equipo. Como sabe, últimamente hemos estado experimentando un alto volumen de trabajo y hemos estado utilizando nuestros suministros a un ritmo más rápido de lo habitual. Agradeceríamos mucho si pudiera proporcionarnos los siguientes elementos: Papel de impresora Cartuchos de tinta para la impresora HP en la sala de conferencias Notas adhesivas Clips de carpeta Marcadores Por favor, háganos saber cuándo podemos esperar la entrega de los suministros. Gracias por su ayuda. \n\nAtentamente, Tu Nombre:\n" initial-response="Solicitud de suministros de oficina adicionales - papel de impresora, cartuchos de tinta para impresora HP, notas adhesivas, clips de carpeta y marcadores." max-tokens="256" box-rows="15" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>¡Ahora solo te quedan las partes más importantes del resumen!
 
