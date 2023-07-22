@@ -105,6 +105,12 @@ async function createConfig() {
         defer: true,
       },
       {
+        href: "https://embed.trydyno.com/embedder.css",
+        type: "text/css",
+        crossorigin: "anonymous",
+        defer: true,
+      },
+      {
         href: "https://fonts.googleapis.com",
         rel: "preconnect",
         async: true,

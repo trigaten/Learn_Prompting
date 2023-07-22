@@ -33,8 +33,4 @@ Con un reciente aumento en las startups basadas en GPT-3, con prompts mucho más
 
 Intente hacer que el siguiente prompt(@chase2021adversarial) filtre información al agregar texto:
 
-<iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Inglés: Quiero ir al parque hoy.\nFrancés: Je veux aller au parc aujourd'hui.\nInglés: Me gusta usar un sombrero cuando llueve.\nFrancés: J'aime porter un chapeau quand il pleut.\nInglés: ¿Qué estás haciendo en la escuela?\nFrancés: Qu'est-ce que tu fais à l'école?\nInglés:" initial-response="" max-tokens="256" box-rows="9" model-temp="0.7" top-p="1"></div>
