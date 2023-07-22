@@ -42,7 +42,11 @@ Aquí hay algunas demostraciones (que solo realizan extracción de razonamiento)
 
 #### Correcta
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Si John tiene 5 peras, luego come 2, y compra 5 más, luego le da 3 a su amigo, ¿cuántas peras tiene?\n\nPensemos paso a paso." initial-response="John comienza con 5 peras. Come 2 peras, lo que lo deja con 3 peras. Compra 5 peras más, lo que le da un total de 8 peras. Le da 3 peras a su amigo, lo que lo deja con solo 5 peras." max-tokens="256" box-rows="5" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Resultados
 

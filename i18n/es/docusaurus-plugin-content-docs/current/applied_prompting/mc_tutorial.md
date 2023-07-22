@@ -58,17 +58,11 @@ pensamiento paso a paso
 ```
 Esta frase aumentará la verbosidad del modelo. Podrías obtener una salida como esta:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Juan de Worcester, un monje inglés, registró la observación, el 8 de diciembre de 1128, de dos manchas solares inusualmente grandes. Cinco días después, se observó una aurora boreal (luces del norte) brillante en el sur de Corea. Por lo general, la actividad de las manchas solares se sigue de la aparición de una aurora boreal, después de un período de tiempo que en promedio es de cinco días. Por lo tanto, la observación coreana ayuda a confirmar la observación de Juan de Worcester. ¿Cuál de las siguientes opciones, si es cierta, fortalece más el argumento?
-a) A veces puede ocurrir una aurora boreal incluso cuando no ha habido actividad significativa de manchas solares en la semana anterior.
-b) Las fuentes chinas registraron la observación de manchas solares más de 1000 años antes que Juan de Worcester.
-c) Solo una actividad intensa de manchas solares podría haber resultado en una aurora boreal visible en una latitud tan baja como la de Corea.
-d) Debido a que es imposible ver manchas solares a simple vista en condiciones de luz solar típicas, la observación registrada por Juan de Worcester habría tenido lugar bajo condiciones climáticas inusuales, como la niebla o las nubes delgadas.
-e) El relato de Juan de Worcester incluía un dibujo de las manchas solares, que podría ser la primera ilustración de la actividad de manchas solares. Vamos a explicar paso a paso" initial-response="A) Esta opción de respuesta es incorrecta. No fortalece el argumento, ya que en su lugar presenta una explicación alternativa para la aurora boreal.
-B) Esta opción de respuesta es incorrecta. No fortalece el argumento, ya que es irrelevante para la conexión entre la actividad de las manchas solares y las observaciones de auroras boreales.
-C) Esta opción de respuesta es correcta. Fortalece el argumento al sugerir que la actividad de las manchas solares registrada por Juan de Worcester fue la causa de la aurora boreal que se observó en Corea cinco días después.
-D) Esta opción de respuesta es incorrecta. No fortalece el argumento, ya que es irrelevante para la conexión entre la actividad de las manchas solares y las observaciones de auroras boreales.
-E) Esta opción de respuesta es incorrecta. No fortalece el argumento, ya que es irrelevante para la conexión entre la actividad de las manchas solares y las observaciones de auroras boreales.
-La respuesta correcta es C) Solo una actividad intensa de manchas solares podría haber resultado en una aurora boreal visible en una latitud tan baja como la de Corea." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <p></p>
 
@@ -93,13 +87,11 @@ b) Debido a que es imposible ver manchas solares a simple vista en condiciones d
 ...
 ```
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Juan de Worcester, un monje inglés, registró el avistamiento, el 8 de diciembre de 1128, de dos manchas solares inusualmente grandes. Cinco días después se observó una aurora boreal brillante en el sur de Corea. La actividad de las manchas solares suele ir seguida de la aparición de una aurora boreal, después de un período de tiempo que en promedio es de cinco días. Por lo tanto, el avistamiento coreano ayuda a confirmar el avistamiento de John of Worcester. ¿Cuál de los siguientes, si es verdadero, fortalece más el argumento?
-a) El informe de John of Worcester incluyó un dibujo de las manchas solares, lo que podría ser la primera ilustración de actividad de manchas solares.
-b) Debido a que es imposible ver manchas solares a simple vista en condiciones de luz del día típicas, el avistamiento registrado por John of Worcester habría tenido lugar bajo condiciones climáticas inusuales como la niebla o las nubes delgadas.
-c) A veces puede ocurrir una aurora boreal incluso cuando no ha habido una actividad significativa de manchas solares en la semana anterior.
-d) Las fuentes chinas registraron el avistamiento de manchas solares más de 1000 años antes que John of Worcester.
-e) Solo una actividad fuerte de manchas solares podría haber resultado en una aurora boreal visible en una latitud tan baja como la de Corea. 
-Explicación paso a paso" initial-response="A) Debilita - Esta opción debilita el argumento porque implica que la aurora boreal no necesariamente tuvo que ser causada por la actividad de manchas solares, que es el argumento que el autor intenta hacer. B) No afecta - Esta opción no afecta el argumento porque no está relacionada con la conexión entre las manchas solares y la aparición de la aurora boreal. C) Fortalece - Esta opción fortalece el argumento porque sugiere que la única forma en que una aurora boreal podría ser vista en Corea es si hubiera habido una actividad fuerte de manchas solares, que es lo que observó John of Worcester. D) Debilita - Esta opción debilita el argumento porque implica que las condiciones bajo las cuales John of Worcester observó las manchas solares pueden no haber sido confiables, lo que podría poner en duda la precisión de su avistamiento. E) Doesn't Impact - This option does not impact the argument because it is unrelated to the connection between the sunspots and the appearance of the aurora borealis." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ### Reformulación de la pregunta
 
@@ -116,16 +108,11 @@ Identifique cada opción como refuerza, debilita o no impacta el argumento.
 para obtener una mayor comprensión de las opciones de respuesta. 
 
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="John of Worcester, un monje inglés, registró el avistamiento, el 8 de diciembre de 1128, de dos manchas solares inusualmente grandes. Cinco días después, se observó una aurora boreal brillante en el sur de Corea. La actividad de las manchas solares suele ir seguida de la aparición de una aurora boreal, después de un lapso de tiempo que promedia cinco días. Por lo tanto, el avistamiento coreano ayuda a confirmar el avistamiento de John of Worcester. ¿Cuál de las siguientes opciones, si es verdadera, fortalece más el argumento?
-a) Una aurora boreal a veces puede ocurrir incluso cuando no ha habido una actividad significativa de manchas solares en la semana anterior. (No impacta el argumento)
-b) Las fuentes chinas registraron el avistamiento de manchas solares más de 1000 años antes que John of Worcester. (Debilita el argumento, ya que sugiere que el conocimiento sobre las manchas solares y las auroras boreales no es exclusivo de John of Worcester)
-c) Solo una actividad intensa de manchas solares podría haber resultado en una aurora boreal visible en una latitud tan baja como la de Corea. (Fortalece el argumento, ya que sugiere que la aparición de la aurora boreal en Corea fue el resultado de las manchas solares avistadas por John of Worcester)
-d) Debido a que es imposible ver las manchas solares a simple vista bajo condiciones típicas de luz del día, el avistamiento registrado por John of Worcester habría tenido lugar bajo condiciones climáticas inusuales, como la niebla o nubes delgadas. (No impacta el argumento)
-e) El relato de John of Worcester incluía un dibujo de las manchas solares, que podría ser la ilustración más temprana de la actividad de las manchas solares. (No impacta el argumento)" initial-response="A) Debilidad - Esta opción debilita el argumento porque sugiere que la aurora boreal no necesariamente tuvo que ser causada por la actividad de las manchas solares, que es el argumento que el autor intenta hacer.
-B) No impacta - Esta opción no afecta al argumento porque no está relacionada con la conexión entre las manchas solares y la aparición de la aurora boreal.
-Fortalece - Esta opción fortalece el argumento porque sugiere que la única forma en que una aurora boreal podría ser vista en Corea es si hubiera habido una fuerte actividad de manchas solares, que es lo que John of Worcester observó.
-Debilidad - Esta opción debilita el argumento porque sugiere que las condiciones en las que John of Worcester observó las manchas solares pueden no haber sido confiables, lo que podría poner en duda la precisión de su avistamiento.
-B) No impacta - Esta opción no afecta al argumento porque no está relacionada con la conexión entre las manchas solares y la aparición de la aurora boreal." max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 
 ### Agregar contexto adicional
@@ -141,10 +128,11 @@ Considere dos pruebas médicas, A y B, para un virus. La prueba A es 90% efectiv
 
 Intentemos esto con GPT:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Se consideran dos pruebas médicas, A y B, para un virus. La prueba A es 90% efectiva para reconocer el virus cuando está presente, pero tiene una tasa de falsos positivos del 5% (indicando que el virus está presente cuando no lo está). La prueba B es 95% efectiva para reconocer el virus, pero tiene una tasa de falsos positivos del 10%. Las dos pruebas utilizan métodos independientes para identificar el virus. El virus es portado por el 2% de todas las personas.
-(a) Suponga que una persona es examinada para el virus usando solo la prueba A. ¿Cuál es la probabilidad de que la persona realmente esté portando el virus dado que la prueba A dio positivo?
-(b) Suponga que una persona es examinada para el virus usando solo la prueba B. ¿Cuál es la probabilidad de que la persona realmente esté portando el virus dado que la prueba B dio positivo?
-(c) Suponga que una persona es examinada para el virus usando ambas pruebas. ¿Cuál es la probabilidad de que la persona realmente esté portando el virus dado que ambas pruebas dieron positivo?" initial-response="(a) La probabilidad de que la persona realmente esté portando el virus dado que la prueba A dio positiva es del 90%. \n\n(b) La probabilidad de que la persona realmente esté portando el virus dado que la prueba B dio positiva es del 95%.\n\n(c) La probabilidad de que la persona realmente esté portando el virus dado que ambas pruebas dieron positivas es del 99.9%." max-tokens="256" box-rows="10" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ¡El resultado es **incorrecto**!
 
@@ -156,7 +144,11 @@ Explicaremos paso a paso. La fórmula para Bayes es
 ```
 El modelo utilizará la fórmula correcta, Bayes.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Considera dos pruebas médicas, A y B, para un virus. La prueba A es efectiva en un 90% para reconocer el virus cuando está presente, pero tiene una tasa de falsos positivos del 5% (indicando que el virus está presente cuando no lo está). La prueba B es efectiva en un 95% para reconocer el virus, pero tiene una tasa de falsos positivos del 10%. Las dos pruebas utilizan métodos independientes para identificar el virus. El virus es portado por el 2% de todas las personas.\n(a) Supongamos que una persona es examinada para el virus utilizando solo la Prueba A. ¿Cuál es la probabilidad de que la persona realmente esté portando el virus dado que la Prueba A dio positiva? (2 puntos)\n(b) Supongamos que una persona es examinada para el virus utilizando solo la Prueba B. ¿Cuál es la probabilidad de que la persona realmente esté portando el virus dado que la Prueba B dio positiva? (2 puntos)\n(c) Supongamos que una persona es examinada para el virus utilizando ambas pruebas. ¿Cuál es la probabilidad de que la persona realmente esté portando el virus dado que ambas pruebas dieron positivo? (2 puntos)\n\nExplicaremos paso a paso. Proporcione la expresión numérica como respuesta, no proporcione un número. La fórmula de Bayes es" initial-response="P(A|B) = P(B|A) * P(A) / P(B)\n\n\n(a) P(Virus|Test A Positivo) = P(Test A Positivo|Virus) * P(Virus) / P(Test A Positivo) = (0.9 * 0.02) / (0.9 * 0.02 + 0.05 * 0.98)\n\n(b) P(Virus|Test B Positivo) = P(Test B Positivo|Virus) * P(Virus) / P(Test B Positivo) = (0.95 * 0.02) / (0.95 * 0.02 + 0.1 * 0.98)\n\n(c) P(Virus|Test A Positivo y Test B Positivo) = P(Test A Positivo y Test B Positivo|Virus) * P(Virus) / P(Test A Positivo y Test B Positivo) = (0.9 * 0.95 * 0.02) / (0.9 * 0.95 * 0.02 + 0.05 * 0.1 * 0.98)" max-tokens="256" box-rows="10" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ¡Lo cual es **correcto**!
 

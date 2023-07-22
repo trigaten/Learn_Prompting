@@ -58,16 +58,11 @@ e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是�
 
 这个短语将增加模型的详细程度。您可能会得到类似这样的输出：
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="英国修道士 John of Worcester 在 1128 年 12 月 8 日记录了两个异常大的太阳黑子的出现。五天后，韩国南部观察到了一个明亮的极光。太阳黑子活动通常在平均五天的时间段之后，极光出现。因此，韩国的观测有助于证实 John of Worcester 的观测。以下哪项是正确的，如果是正确的，最能加强这个观点？
-a）即使在前一周没有重要的太阳黑子活动，极光也有时会发生。
-b）在 John of Worcester 之前的1000多年中，中国的资料记录了太阳黑子的出现。
-c）只有大规模的太阳黑子活动才能导致在韩国这样的纬度下看到的极光。
-d）由于在典型的日光条件下肉眼无法观察到太阳黑子，因此 John of Worcester 记录的观测必须发生在不寻常的天气条件下，如雾或薄云。
-e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是太阳黑子活动的最早插图。让我们一步一步地解释" initial-response="A）此选项是不正确的。这个答案并没有加强观点，因为它提出了极光的另一种解释。
-B）此选项是不正确的。这个答案并没有加强观点，因为它与太阳黑子活动和极光观测之间的联系无关。
-C）此选项是正确的。这个答案通过表明 John of Worcester 记录的太阳黑子活动是观测到的五天后在韩国看到的极光的原因，从而加强了观点。
-D）此选项是不正确的。这个答案并没有加强观点，因为它与太阳黑子活动和极光观测之间的联系无关。
-E) 此选项是不正确的。这个答案与太阳黑子活动和极光的关系无关。正确答案是C) 只有重度太阳黑子活动才能导致在韩国这样低的纬度上可见的极光。" max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <p></p>
 
@@ -92,12 +87,11 @@ b) 由于在典型的日光条件下肉眼无法观察到太阳黑子，因此 J
 ...
 ```
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="英国修道士 John of Worcester 在 1128 年 12 月 8 日记录了两个异常大的太阳黑子的出现。五天后，韩国南部观察到了一个明亮的极光。太阳黑子活动通常在平均五天的时间段之后，极光出现。因此，韩国的观测有助于证实 John of Worcester 的观测。以下哪项是正确的，如果是正确的，最能加强这个观点？
-a）John of Worcester 的记录包括一个太阳黑子的图画，这可能是太阳黑子活动的最早插图。
-b）由于在典型的日光条件下肉眼无法观察到太阳黑子，因此 John of Worcester 记录的观测必须发生在不寻常的天气条件下，如雾或薄云。
-c）即使在前一周没有重要的太阳黑子活动，极光也有时会发生。
-d）在 John of Worcester 之前的1000多年中，中国的资料记录了太阳黑子的出现。
-e）只有大规模的太阳黑子活动才能导致在韩国这样的纬度下看到的极光。让我们一步一步地解释" initial-response="A) 削弱 - 该选项削弱了观点，因为它暗示极光并不一定需要由太阳黑子活动引起，而这正是作者试图阐述的观点。B) 不影响 - 该选项对论点没有影响，因为它与太阳黑子和极光出现之间的联系无关。C) 增强 - 该选项增强了论点，因为它表明在韩国观察到极光的唯一方法是如果有大规模的太阳黑子活动，而这就是约翰·沃斯特的发现。D) 削弱 - 该选项削弱了观点，因为它暗示约翰·沃斯特观察太阳黑子的条件可能不可靠，这可能会对他的发现的准确性产生怀疑。E) 不影响 - 该选项对论点没有影响，因为它与太阳黑子和极光出现之间的联系无关。" max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ### 改写问题
 
@@ -114,13 +108,11 @@ e）只有大规模的太阳黑子活动才能导致在韩国这样的纬度下�
 这样可以进一步了解答案的选择。
 
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="英国修道士 John of Worcester 在 1128 年 12 月 8 日记录了两个异常大的太阳黑子的出现。五天后，韩国南部观察到了一个明亮的极光。太阳黑子活动通常在平均五天的时间段之后，极光出现。因此，韩国的观测有助于证实 John of Worcester 的观测。以下哪项是正确的，如果是正确的，最能加强这个观点？
-a）即使在前一周没有重要的太阳黑子活动，极光也有时会发生。
-b）在 John of Worcester 之前的1000多年中，中国的资料记录了太阳黑子的出现。
-c）只有大规模的太阳黑子活动才能导致在韩国这样的纬度下看到的极光。
-d）由于在典型的日光条件下肉眼无法观察到太阳黑子，因此 John of Worcester 记录的观测必须发生在不寻常的天气条件下，如雾或薄云。
-e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是太阳黑子活动的最早插图。
-将每个选项标识为加强、削弱或不影响论点，并一步一步解释。" initial-response="A) 削弱 - 该选项削弱了观点，因为它暗示极光并不一定需要由太阳黑子活动引起，而这正是作者试图阐述的观点。B) 不影响 - 该选项对论点没有影响，因为它与太阳黑子和极光出现之间的联系无关。C) 增强 - 该选项增强了论点，因为它表明在韩国观察到极光的唯一方法是如果有大规模的太阳黑子活动，而这就是约翰·沃斯特的发现。D) 削弱 - 该选项削弱了观点，因为它暗示约翰·沃斯特观察太阳黑子的条件可能不可靠，这可能会对他的发现的准确性产生怀疑。E) 不影响 - 该选项对论点没有影响，因为它与太阳黑子和极光出现之间的联系无关。" max-tokens="256" box-rows="10" model-temp="0" top-p="1" padding='1'></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ### 添加额外上下文
 
@@ -135,7 +127,11 @@ e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是�
 
 让我们尝试使用 GPT：
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="考虑两种医学测试，A 和 B。当病毒存在时，测试 A 在识别病毒方面的有效性为 90%，但假阳性率为 5%（表明病毒存在，而实际上不是）。测试 B 在识别病毒方面的有效性为 95%，但假阳性率为 10%。这两种测试使用独立的方法来确定病毒是否存在。这种病毒由所有人中的 2% 承载。\n(a) 假设只使用测试 A 对一个人进行病毒检测。如果测试 A 呈阳性，那么这个人实际上携带该病毒的概率是多少？（2 分）\n(b) 假设只使用测试 B 对一个人进行病毒检测。如果测试 B 呈阳性，那么这个人实际上携带该病毒的概率是多少？（2 分）\n(c) 假设使用这两个测试对一个人进行病毒检测。如果这两个测试都呈阳性，那么这个人实际上携带该病毒的概率是多少？（2 分）" initial-response="(a) 如果测试A呈阳性，那么人确实携带病毒的概率是90%。\n\n(b) 如果测试B呈阳性，那么人确实携带病毒的概率为95%。\n\n (c) 如果两个测试结果都呈阳性，那么人确实携带病毒的概率为99.9%。" max-tokens="256" box-rows="10" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 输出是**不正确**!
 
@@ -147,7 +143,11 @@ e）John of Worcester 的记录包括一个太阳黑子的图画，这可能是�
 ```
 该模型将使用正确的公式贝叶斯。
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="考虑两种医学测试，A 和 B。当病毒存在时，测试 A 在识别病毒方面的有效性为 90%，但假阳性率为 5%（表明病毒存在，而实际上不是）。测试 B 在识别病毒方面的有效性为 95%，但假阳性率为 10%。这两种测试使用独立的方法来确定病毒是否存在。这种病毒由所有人中的 2% 承载。\n(a) 假设只使用测试 A 对一个人进行病毒检测。如果测试 A 呈阳性，那么这个人实际上携带该病毒的概率是多少？（2 分）\n(b) 假设只使用测试 B 对一个人进行病毒检测。如果测试 B 呈阳性，那么这个人实际上携带该病毒的概率是多少？（2 分）\n(c) 假设使用这两个测试对一个人进行病毒检测。如果这两个测试都呈阳性，那么这个人实际上携带该病毒的概率是多少？（2 分）\n\n让我们一步一步解释，在答案中给出数值表达式，不要返回一个数字。贝叶斯公式为" initial-response="P(A|B) = P(B|A) * P(A) / P(B)\n\n\n(a) P(Virus|Test A Positive) = P(Test A Positive|Virus) * P(Virus) / P(Test A Positive) = (0.9 * 0.02) / (0.9 * 0.02 + 0.05 * 0.98)\n\n(b) P(Virus|Test B Positive) = P(Test B Positive|Virus) * P(Virus) / P(Test B Positive) = (0.95 * 0.02) / (0.95 * 0.02 + 0.1 * 0.98)\n\n(c) P(Virus|Test A Positive and Test B Positive) = P(Test A Positive and Test B Positive|Virus) * P(Virus) / P(Test A Positive and Test B Positive) = (0.9 * 0.95 * 0.02) / (0.9 * 0.95 * 0.02 + 0.05 * 0.1 * 0.98)" max-tokens="256" box-rows="10" model-temp="0" top-p="0"></div>
+<iframe
+    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 输出是 **正确的**!
 
