@@ -14,11 +14,11 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
 
 Розглянемо наведений вище приклад, у якому ми намагаємося класифікувати відгуки клієнтів як позитивні чи негативні. Ми показуємо моделі 3 приклади позитивних чи негативних відгуків, а потім показуємо новий відгук, який ще не класифіковано (`Це не працює!:`). Модель бачить, що перші 3 приклади були класифіковані як `позитивні` або `негативні`, і використовує цю інформацію, щоб класифікувати новий приклад як `негативний`.
 
-Те, як ми структуруємо приклади, дуже важливо. Оскільки ми структурували ці 3 приклади як `input: classification`, модель виводить одне слово після останнього рядка, вимовляти повне речення, наприклад, `цей відгук є позитивним`. 
+Те, як ми структуруємо приклади, дуже важливо. Оскільки ми структурували ці 3 приклади як `input: classification`, модель виводить одне слово після останнього рядка, вимовляти повне речення, наприклад `, цей відгук є позитивним`. 
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Im5lZ2F0aXZlIiwicHJvbXB0Ijoi0KfRg9C00L7QstC40Lkg0L%2FRgNC%2B0LTRg9C60YIsIDEwLzEwOiDQv9C%2B0LfQuNGC0LjQstC90LjQuVxu0J3QtSDQtNGD0LbQtSDQtNC%2B0LHRgNC1INC%2F0YDQsNGG0Y7RlDog0L3QtdCz0LDRgtC40LLQvdC40LlcbtCU0YPQttC1INC60L7RgNC40YHQvdC%2BLCDRgNC10LrQvtC80LXQvdC00YPRjjog0L%2FQvtC30LjRgtC40LLQvdC40LlcbtCd0LUg0L%2FRgNCw0YbRjtGUIToiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
-    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6ItC90LXQs9Cw0YLQuNCy0L3QuNC5IiwicHJvbXB0Ijoi0KfRg9C00L7QstC40Lkg0L%2FRgNC%2B0LTRg9C60YIsIDEwLzEwOiDQv9C%2B0LfQuNGC0LjQstC90LjQuVxu0J3QtSDQtNGD0LbQtSDQtNC%2B0LHRgNC1INC%2F0YDQsNGG0Y7RlDog0L3QtdCz0LDRgtC40LLQvdC40LlcbtCU0YPQttC1INC60L7RgNC40YHQvdC%2BLCDQstC%2B0L3QviDRgtC%2B0LPQviDQstCw0YDRgtC1OiDQv9C%2B0LfQuNGC0LjQstC90LjQuVxu0KbQtSDQvdC1INC%2F0YDQsNGG0Y7RlCE6ICIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"350px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

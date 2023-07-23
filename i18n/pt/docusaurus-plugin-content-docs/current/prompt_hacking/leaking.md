@@ -4,6 +4,7 @@ sidebar_position: 2
 
 # 🟢 Vazamento de Prompt
 
+
 O vazamento de prompt é uma forma de injeção de prompt em que o modelo é solicitado a exibir *o seu próprio prompt*.
 
 Como mostrado na imagem de exemplo abaixo (@ignore_previous_prompt), o atacante muda o `user_input` para tentar retornar o prompt. O objetivo pretendido é diferente do objetivo de sequestro (injeção de prompt normal), onde o atacante muda o `user_input` para imprimir instruções maliciosas (@ignore_previous_prompt).
@@ -14,8 +15,7 @@ import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
   <img src={research} style={{width: "500px"}}/>
 </div>
 
-A imagem a seguir(@simon2022inject), novamente do exemplo `remoteli.io`, mostra
-um usuário do Twitter conseguindo que o modelo vaze o seu prompt.
+A imagem a seguir(@simon2022inject), novamente do exemplo `remoteli.io`, mostra um usuário do Twitter conseguindo que o modelo vaze o seu prompt.
 
 import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
@@ -25,10 +25,7 @@ import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 Bom, e daí? Por que alguém deveria se preocupar com o vazamento de prompt?
 
-Às vezes as pessoas querem manter seus prompts em segredo. Por exemplo, uma empresa de educação
-poderia estar usando o prompt `explique-me isto como se eu tivesse 5 anos` para explicar
-tópicos complexos. Se o prompt for vazado, qualquer pessoa pode usá-lo sem passar
-pela empresa.
+Às vezes as pessoas querem manter seus prompts em segredo. Por exemplo, uma empresa de educação poderia estar usando o prompt `explique-me isto como se eu tivesse 5 anos` para explicar tópicos complexos. Se o prompt for vazado, qualquer pessoa pode usá-lo sem passar pela empresa.
 
 ### Chat no Microsoft Bing
 
@@ -40,8 +37,7 @@ import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
   <LazyLoadImage src={bing} style={{width: "700px"}} />
 </div>
 
-Com o recente aumento de startups baseadas no GPT-3, com prompts muito mais complicados que podem
-levar muitas horas para serem desenvolvidos, isso é uma preocupação real.
+Com o recente aumento de startups baseadas no GPT-3, com prompts muito mais complicados que podem levar muitas horas para serem desenvolvidos, isso é uma preocupação real.
 
 ## Prática
 

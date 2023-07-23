@@ -12,7 +12,6 @@ Existem várias maneiras diferentes de hackear um prompt. Vamos discutir algumas
 4. Virtualização, que tenta direcionar um chatbot para um estado em que é mais provável gerar uma saída maliciosa.
 
 Em seguida, discutimos 2 classes amplas de injeção de prompt:
-
 1. Injeção indireta, que utiliza fontes de dados de terceiros, como pesquisas na web ou chamadas de API.
 2. Injeção recursiva, que pode hackear através de várias camadas de avaliação do modelo de linguagem.
 

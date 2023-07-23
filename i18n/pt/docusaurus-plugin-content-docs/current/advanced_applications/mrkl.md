@@ -16,13 +16,11 @@ Um exemplo simples de um sistema MRKL é um LLM que pode usar um aplicativo de c
 <span className="bluegreen-highlight">CALCULADORA[100*100]</span>
 </pre>
 
-O sistema MRKL veria a palavra CALCULADORA e inseriria 100*100 na calculadora.
-Essa ideia simples pode ser facilmente expandida para várias ferramentas de computação simbólica.
+O sistema MRKL veria a palavra CALCULADORA e inseriria 100*100 na calculadora. Essa ideia simples pode ser facilmente expandida para várias ferramentas de computação simbólica.
 
 Considere os seguintes exemplos adicionais de aplicativos:
 
-- Um chatbot capaz de responder a perguntas sobre um banco de dados financeiro,
-extraindo informações para formar uma consulta SQL a partir do texto dos usuários.
+- Um chatbot capaz de responder a perguntas sobre um banco de dados financeiro, extraindo informações para formar uma consulta SQL a partir do texto dos usuários.
 
 <pre>
 <p>Qual o preço do stock da Apple nesse exato momento?</p>
@@ -30,8 +28,7 @@ extraindo informações para formar uma consulta SQL a partir do texto dos usuá
 <span className="bluegreen-highlight">O preço do stock da Apple nesse momento é DATABASE[SELECT price FROM stock WHERE company = "Apple" AND time = "now"].</span>
 </pre>
 
-- Um chatbot capaz de responder a perguntas sobre o tempo extraindo
-informações do prompt e usando uma API meteorológica para recuperar as informações.
+- Um chatbot capaz de responder a perguntas sobre o tempo extraindo informações do prompt e usando uma API meteorológica para recuperar as informações.
 
 <pre>
 <p>Como é o clima em Nova York?</p>
@@ -40,6 +37,7 @@ informações do prompt e usando uma API meteorológica para recuperar as inform
 </pre>
 
 - Ou até realizar tarefas muito mais complexas incluidno vários bancos de dados, como nos exemplos a seguir:
+
 
 import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
 import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
@@ -57,12 +55,9 @@ import final from '@site/docs/assets/advanced/mrkl/final.webp';
 Exemplo de um Systema MRKL (AI21)
 </div>
 
-
 ## Um Exemplo
 
-Eu reproduzi um exemplo de Sistema MRKL do artigo original, usando o Dust.tt, disponível [aqui](https://dust.tt/w/f3fa61f0aa/a/17501cd008).
-O sistema lê um problema matemático (por exemplo, `Qual é o resultado de 20 vezes 5^6?`), extrai os números e as operações,
-e os formata a fim de que possam ser utilizados em  uma calculadora (por exemplo, `20*5^6`). Em seguida, ele envia a equação reformatada para a calculadora do Google e retorna o resultado. Observe que o artigo original faz um ajuste fino na consulta (no roteador, que é o LLM), mas eu não faço isso neste exemplo. Vamos ver como isso funciona:
+Eu reproduzi um exemplo de Sistema MRKL do artigo original, usando o Dust.tt, disponível [aqui](https://dust.tt/w/f3fa61f0aa/a/17501cd008). O sistema lê um problema matemático (por exemplo, `Qual é o resultado de 20 vezes 5^6?`), extrai os números e as operações, e os formata a fim de que possam ser utilizados em  uma calculadora (por exemplo, `20*5^6`). Em seguida, ele envia a equação reformatada para a calculadora do Google e retorna o resultado. Observe que o artigo original faz um ajuste fino na consulta (no roteador, que é o LLM), mas eu não faço isso neste exemplo. Vamos ver como isso funciona:
 
 Primeiro, eu criei um dataset simples na aba `Datasets` do Dust.
 
@@ -70,7 +65,7 @@ Primeiro, eu criei um dataset simples na aba `Datasets` do Dust.
   <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
-Depois, eu mudei para a aba `Specification` e inclui o dataset acima usando um bloco do tipo `input`. 
+Depois, eu mudei para a aba `Specification` e inclui o dataset acima usando um bloco do tipo `input`.
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
@@ -89,7 +84,6 @@ Então eu criei um block do tipo `code`, no qual incluí um código em javascrip
 </div>
 
 Finalmente, eu criei um bloco do tipo `search` que manda a equação formatada para a calculadora do Google.
-** Importante **: Nessa etapa tive que mandar as instruções em inglês mesmo, já que perguntando "Quanto é..." a busca não retorna uma calculadora (ou "rich snippet"). 
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={search} style={{width: "750px"}} />
@@ -104,8 +98,7 @@ Abaixo você pode ver os resultando, que estão todos corretos!
 Fique à vontade para copiar e brincar com esse código [aqui](https://dust.tt/w/f3fa61f0aa/a/17501cd008).
 
 ## Notas
-MRKL foi desenvolvido por [AI21](https://www.ai21.com/), o qual originalmente usaram o LMM
-J-1 (Jurassic 1)(@lieberjurassic).
+MRKL foi desenvolvido por [AI21](https://www.ai21.com/), o qual originalmente usaram o LMM J-1 (Jurassic 1)(@lieberjurassic).
 
 ## Mais
 

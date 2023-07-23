@@ -86,16 +86,16 @@ Si primero le preguntamos al %%LLM|LLM%% que genere información sobre Congo y S
 Comencemos con el primer paso, _generación de conocimiento_. Podemos pedirle al %%LLM|LLM%% que genere información sobre Congo y Sudáfrica:
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="http://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiJHZW5lcmEgYWxndW5vcyBoZWNob3Mgc29icmUgbG9zIHRhbWHDsW9zIGRlIFN1ZMOhZnJpY2EgeSBDb25nbzoiLCJvdXRwdXQiOiJTdWTDoWZyaWNhIGVzIGVsIHBhw61zIG7Dum1lcm8gMjUgbcOhcyBncmFuZGUgZGVsIG11bmRvLCBjb24gdW4gw6FyZWEgZGUgMS4yMjEuMDM3IGtpbMOzbWV0cm9zIGN1YWRyYWRvcyAoNDcxLjQ0NSBtaWxsYXMgY3VhZHJhZGFzKS4gQ29uZ28sIHBvciBvdHJvIGxhZG8sIGVzIGVsIHBhw61zIG7Dum1lcm8gMTEgbcOhcyBncmFuZGUgZGVsIG11bmRvLCBjb24gdW4gw6FyZWEgZGUgMi4zNDQuODU4IGtpbMOzbWV0cm9zIGN1YWRyYWRvcyAoOTA1LjU2NyBtaWxsYXMgY3VhZHJhZGFzKS4gU3Vkw6FmcmljYSBlcyBjYXNpIGxhIG1pdGFkIGRlbCB0YW1hw7FvIGRlIENvbmdvLCBjb24gdW5hIHBvYmxhY2nDs24gZGUgNTcsNyBtaWxsb25lcyBlbiBjb21wYXJhY2nDs24gY29uIGxhIHBvYmxhY2nDs24gZGUgQ29uZ28gZGUgODQsMyBtaWxsb25lcy4gU3Vkw6FmcmljYSBlcyBlbCBwYcOtcyBtw6FzIHBvYmxhZG8gZGUgbGEgcmVnacOzbiwgbWllbnRyYXMgcXVlIENvbmdvIGVzIGVsIHNlZ3VuZG8gbcOhcyBwb2JsYWRvLiIsIm1heFRva2VucyI6MjU2LCJib3hSb3dzIjo2LCJ0ZW1wZXJhdHVyZSI6MCwidG9wUCI6MH0%3D"
+    style={{width:"100%", height:"300px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
 A continuación, usemos ese conocimiento para responder correctamente la pregunta. ¡Este es el paso de _integración de conocimiento_!
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="http://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiJTdWTDoWZyaWNhIGVzIGVsIHBhw61zIG7Dum1lcm8gMjUgbcOhcyBncmFuZGUgZGVsIG11bmRvLCBjb24gdW4gw6FyZWEgZGUgMS4yMjEuMDM3IGtpbMOzbWV0cm9zIGN1YWRyYWRvcyAoNDcxLjQ0NSBtaWxsYXMgY3VhZHJhZGFzKS4gQ29uZ28sIHBvciBvdHJvIGxhZG8sIGVzIGVsIHBhw61zIG7Dum1lcm8gMTEgbcOhcyBncmFuZGUgZGVsIG11bmRvLCBjb24gdW4gw6FyZWEgZGUgMi4zNDQuODU4IGtpbMOzbWV0cm9zIGN1YWRyYWRvcyAoOTA1LjU2NyBtaWxsYXMgY3VhZHJhZGFzKS4gU3Vkw6FmcmljYSBlcyBjYXNpIGxhIG1pdGFkIGRlbCB0YW1hw7FvIGRlIENvbmdvLCBjb24gdW5hIHBvYmxhY2nDs24gZGUgNTcsNyBtaWxsb25lcyBlbiBjb21wYXJhY2nDs24gY29uIGxhIHBvYmxhY2nDs24gZGUgQ29uZ28gZGUgODQsMyBtaWxsb25lcy4gU3Vkw6FmcmljYSBlcyBlbCBwYcOtcyBtw6FzIHBvYmxhZG8gZGUgbGEgcmVnacOzbiwgbWllbnRyYXMgcXVlIENvbmdvIGVzIGVsIHNlZ3VuZG8gbcOhcyBwb2JsYWRvLlxuXG7Cv1F1w6kgcGHDrXMgZXMgbcOhcyBncmFuZGUsIENvbmdvIG8gU3Vkw6FmcmljYT8iLCJvdXRwdXQiOiJDb25nbyBlcyBtw6FzIGdyYW5kZSBxdWUgU3Vkw6FmcmljYS4iLCJtYXhUb2tlbnMiOjI1NiwiYm94Um93cyI6MTUsInRlbXBlcmF0dXJlIjowLCJ0b3BQIjowfQ%3D%3D"
+    style={{width:"100%", height:"750px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

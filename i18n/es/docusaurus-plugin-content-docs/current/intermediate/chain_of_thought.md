@@ -35,8 +35,8 @@ Aquí hay algunas demostraciones. La primera muestra a GPT-3 (davinci-003) falla
 #### Correcto
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="http://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLCv0N1w6FsIGVzIGxhIGZvcm1hIG3DoXMgcsOhcGlkYSBkZSBsbGVnYXIgYSBjYXNhP1xuT3BjacOzbiAxOiBUb21hciB1biBhdXRvYsO6cyBkZSAxMCBtaW51dG9zLCBsdWVnbyB1biBhdXRvYsO6cyBkZSA0MCBtaW51dG9zIHkgZmluYWxtZW50ZSB1biB0cmVuIGRlIDEwIG1pbnV0b3MuXG5PcGNpw7NuIDI6IFRvbWFyIHVuIHRyZW4gZGUgOTAgbWludXRvcywgbHVlZ28gdW4gcGFzZW8gZW4gYmljaWNsZXRhIGRlIDQ1IG1pbnV0b3MgeSBmaW5hbG1lbnRlIHVuIGF1dG9iw7pzIGRlIDEwIG1pbnV0b3MuXG5PcGNpw7NuIDE6IHRvbWFyw6EgMTArNDArMTAiLCJvdXRwdXQiOiJMYSBvcGNpw7NuIDEgdG9tYXLDoSAxMDAwKzMwKzEwIiwibWF4VG9rZW5zIjoyNTYsImJveFJvd3MiOjE4LCJ0ZW1wZXJhdHVyZSI6MCwidG9wUCI6MH0%3D"
+    style={{width:"100%", height:"900px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

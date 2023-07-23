@@ -2,7 +2,9 @@
 sidebar_position: 0
 ---
 
-# 🟢 Introduction
+
+
+# Introduction
 
 import Lock from '@site/static/img/lock.webp';
 

@@ -4,6 +4,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yup from 'yup';
+import * as he from 'he';
 
 export const MODELS = [
     "gpt-4",
@@ -34,7 +35,7 @@ const urlConfigSchema = yup.object({
 type UrlConfig = yup.InferType<typeof urlConfigSchema>;
 
 const encodeUrlConfig = (obj: UrlConfig): string => {
-    let str = JSON.stringify(obj, (key, value) => typeof value === 'string' ? value.replace(/\\n/g, '\n') : value);
+    let str = JSON.stringify(obj, (key, value) => typeof value === 'string' ? he.decode(value.replace(/\\n/g, '\n')) : value);
     let encoder = new TextEncoder();
     let data = encoder.encode(str);
     let base64 = btoa(String.fromCharCode.apply(null, data as any));
@@ -76,13 +77,13 @@ function processFile(filePath: string) {
         let updatedData = data.replace(/<div trydyno-embed(.*?)<\/div>/gs, function(match, embedConfig) {
             // Create a mapping from the embed properties to the config properties
             const propertyMapping = {
-                'openai-model': 'model',
-                'initial-prompt': 'prompt',
-                'initial-response': 'output',
-                'max-tokens': 'maxTokens',
-                'model-temp': 'temperature',
-                'top-p': 'topP',
-                'box-rows': 'boxRows',
+                'model': 'model',
+                'prompt': 'prompt',
+                'response': 'output',
+                'tokens': 'maxTokens',
+                'temp': 'temperature',
+                'p': 'topP',
+                'rows': 'boxRows',
             };
 
             // Create a new dictionary for each field of the embed

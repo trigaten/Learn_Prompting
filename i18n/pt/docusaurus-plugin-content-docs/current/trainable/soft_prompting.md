@@ -6,6 +6,7 @@ sidebar_position: 1
 
 A afinação de prompts (@lester2021power), uma alternativa à afinação fina de modelos (@khashabi2021prompt), congela os pesos do modelo e atualiza os parâmetros de um prompt. O prompt resultante é um 'prompt suave'.
 
+
 import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
 
 <div style={{textAlign: 'center'}}>
@@ -33,4 +34,5 @@ Para entender a lógica básica por trás do prompt suave, pense em como a **inf
 Observe que assim que começamos a atualizar esses pesos, os vetores dos tokens não correspondem mais a embeddings reais do vocabulário.
 
 # Resultados
+
 O ajuste de prompt tem melhor desempenho com modelos maiores. Modelos maiores também requerem menos tokens de prompt suave. Independentemente disso, mais de 20 tokens não proporcionam ganhos significativos de desempenho.

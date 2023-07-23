@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 ---
+
 # 🟢 Modificadores de Estilo
 
 Os modificadores de estilo são simples descritores que produzem de forma consistente certos estilos (por exemplo, 'tinta vermelha', 'feito de vidro', 'renderizado em Unity')(@oppenlaender2022taxonomy). Eles podem ser combinados para produzirem estilos ainda mais específicos. Eles podem "incluir informações sobre períodos, escolas e estilos de arte, mas também materiais e meios de arte, técnicas e artistas"(@oppenlaender2022taxonomy).
@@ -16,7 +17,6 @@ Aqui estão algumas pirâmides geradas pelo DALLE, com o comando `pirâmide`.
   <img src={pyramids} style={{width: "750px"}}/>
 </div>
 
-
 Aqui estão algumas pirâmides geradas pelo DALLE, com o comando `Uma pirâmide feita de vidro, renderizada em Unity e tinta vermelha`, que usa 3 modificadores de estilo.
 
 <div style={{textAlign: 'center'}}>
@@ -31,5 +31,4 @@ fotorealista, por Greg Rutkowski, por Christopher Nolan, pintura, pintura digita
 
 ## Notas
 
-Oppenlaender et al.(@oppenlaender2022taxonomy) descrevem o descritor `renderizado em ...`
-como um booster de qualidade, mas nossa definição de trabalho difere, já que esse modificador gera de forma consistente o estilo específico do Unity (ou outro mecanismo de renderização). Com isso, chamaremos esse descritor de modificador de estilo.
+Oppenlaender et al.(@oppenlaender2022taxonomy) descrevem o descritor `renderizado em ...` como um booster de qualidade, mas nossa definição de trabalho difere, já que esse modificador gera de forma consistente o estilo específico do Unity (ou outro mecanismo de renderização). Com isso, chamaremos esse descritor de modificador de estilo.
