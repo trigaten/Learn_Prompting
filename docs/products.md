@@ -166,7 +166,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Agent.so](https://www.agent.so/)
 
-- [Poe](http://poe.com)
+- [Poe](https://poe.com)
 
 - [Jasper Chat](https://www.jasper.ai/chat)
 
