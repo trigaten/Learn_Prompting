@@ -9,7 +9,7 @@ There are many different ways to hack a prompt. We will discuss some of the most
 1. Obfuscation strategies which attempt to hide malicious tokens (e.g. using synonyms, typos, Base64 encoding). 
 2. Payload splitting, in which parts of a malicious prompt are split up into non-malicious parts. 
 3. The defined dictionary attack, which evades the sandwich defense
-4. Virtualization, which attempts to nudge a chatbot into a state where it is more likely to generate malicious output.
+4. Virtualization, which attempts to nudge a chatbot into a state where it is more likely to generate malicious output. This is often in the form of emulating another task.
 
 Next, we discuss 2 broad classes of prompt injection:
 1. Indirect injection, which makes use of third party data sources like web searches or API calls.
