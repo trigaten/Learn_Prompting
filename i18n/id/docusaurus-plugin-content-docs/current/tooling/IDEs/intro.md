@@ -26,22 +26,22 @@ Berikut adalah tabel tentang alat-alat yang akan kita bahas dalam bab ini:
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)               | ❌               |             | ✅                | None           | ✅        | Text       |                     |
 | [PromptMaker](https://dl.acm.org/doi/abs/10.1145/3491101.3503564)   | ❌               |             | ✅                |                |          | Text       |                     |
 | [PromptSandbox](https://promptsandbox.io)                           | ✅               | ✅           | ✅                | Free           | ✅        | Text       | OpenAI              |
-| [ChainForge](https://github.com/ianarawjo/ChainForge)               | ✅               | ✅           | ✅                | Free           | ✅        | Teks       | OpenAI              |
+| [ChainForge](https://github.com/ianarawjo/ChainForge)               | ✅               | ✅           | ✅                | Free           | ✅        | Text       | OpenAI              |
 
 | Name                                                                  | Hosted Solution | Open Source | Research Focused | Business Model    | Launched  | Modalities                 | Supported Providers                 |
 | --------------------------------------------------------------------- | --------------- | ----------- | ---------------- | ----------------- | --------- | -------------------------- | ----------------------------------- |
 | [Prompts.ai](https://prompts.ai/)                                     | ✅               | ✅           | ❌                | None              | ✅         | Text                       | OpenAI                              |
-| [Snorkel](https://snorkel.ai/snorkel-flow-platform/foundation-model/) | ✅               | ❌           | ❌                |                   | ✅         | Text                       |                                     |
+| [Snorkel](https://snorkel.ai/snorkel-flow-platform/foundation-model/) | ✅               | ❌           | ❌                |                   | ✅         | Teks                       |                                     |
 | [Multi](https://www.multi.tech)                                       |                 |             | ❌                |                   | Wait list | Text, Image                |                                     |
 | [Human Loop](https://humanloop.com)                                   | ✅               |             | ❌                |                   | Wait list | Text                       |                                     |
 | [Spellbook (Scale AI)](https://scale.com/spellbook)                   | ✅               | ❌           | ❌                |                   | Wait list | Text                       |                                     |
 | [Kollaprompt](https://kollaprompt.com)                                | ✅               | ❌           | ❌                | Under Development | Wait list | Text, Image, Audio         | OpenAI, Stable Diffusion            |
 | [Promptable](https://promptable.ai/projects/default/workspace)        | ✅               | ❌           | ❌                |                   | Wait list | Text                       | OpenAI                              |
-| [DiscuroAI](https://www.discuro.com)                                   | ✅               | ❌           | ❌                |                   | ✅         | Text, Image                | OpenAI                              |
+| [DiscuroAI](https://www.discuro.com)                                  | ✅               | ❌           | ❌                |                   | ✅         | Text, Image                | OpenAI                              |
 | [PromptShake](https://promptshake.com/?ref=producthunt)               | ✅               | ❌           | ❌                |                   | Wait list | Text                       |                                     |
 | [GPT IDE](https://gptide.com)                                         | ❌               | ❌           | ❌                |                   | ✅         | Text, images + audio later | OpenAI, later Stability.AI and more |
 | [The Forge AI](https://theforgeai.com/)                               | ✅               | ❌           | ❌                | Marketplace       | Wait list | Text, Images               | OpenAI, Stable Diffusion            |
-| [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts) | ✅               | ❌           | ❌                | Enterprise        | ✅         | Teks                       | Custom, Public, Private LLMs        |
+| [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts) | ✅               | ❌           | ❌                | Enterprise        | ✅         | Text                       | Custom, Public, Private LLMs        |
 | [AnySolve](https://www.anysolve.ai/)                                  | ✅               | ❌           | ❌                | Freemium          | ✅         | Text, images + audio later | OpenAI, Stability.AI dan lainnya    |
 
 ## IDE Prompt Gambar
