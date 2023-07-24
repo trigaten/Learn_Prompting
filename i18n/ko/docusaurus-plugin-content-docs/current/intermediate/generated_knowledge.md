@@ -75,8 +75,8 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 지식 생성하기 접근법은 실제로 어려운 문제에 답변하는 등의 완전히 다른 문제에도 사용가능합니다. 여기 GPT-3가 잘못 답변한 아래의 질문에 대해서 알아봅시다.
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlNvdXRoIEFmcmljYSBpcyBsYXJnZXIgdGhhbiBDb25nby4iLCJwcm9tcHQiOiJXaGljaCBjb3VudHJ5IGlzIGxhcmdlciwgQ29uZ28gb3IgU291dGggQWZyaWNhPyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
