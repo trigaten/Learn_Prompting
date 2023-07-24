@@ -50,17 +50,11 @@ print(madlib)
 
 Try it here:
 
-<div 
-trydyno-embed="" 
-openai-model="text-davinci-003" 
-initial-prompt="Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects." 
-initial-response="" 
-max-tokens="512" 
-box-rows="5" 
-model-temp="0.0" 
-top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiMgQ3JlYXRlIGFycmF5cyBvZiBwcmVwb3NpdGlvbnMsIHZlcmJzLCBhbmQgbm91bnNcbnByZXBvc2l0aW9ucyA9IFtcImluXCIsIFwib25cIiwgXCJ1bmRlclwiLCBcImFib3ZlXCIsIFwiYmVzaWRlXCIsIFwidGhyb3VnaFwiXVxudmVyYnMgPSBbXCJyYW5cIiwgXCJqdW1wZWRcIiwgXCJza2lwcGVkXCIsIFwiY3Jhd2xlZFwiLCBcImRhbmNlZFwiLCBcImNsaW1iZWRcIl1cbm5vdW5zID0gW1widHJlZVwiLCBcInJvY2tcIiwgXCJidXNoXCIsIFwiZmxvd2VyXCIsIFwiaG91c2VcIiwgXCJoaWxsXCJdXG5cbiMgQ3JlYXRlIGEgZm9yIGxvb3AgdG8gaXRlcmF0ZSB0aHJvdWdoIHRoZSBhcnJheXNcbmZvciBpIGluIHJhbmdlKGxlbihwcmVwb3NpdGlvbnMpKTpcbiAgIyBQcmludCB0aGUgbWFkbGlic1xuICBwcmludChcIlRoZSByYWJiaXQgXCIrdmVyYnNbaV0rXCIgXCIrcHJlcG9zaXRpb25zW2ldK1wiIHRoZSBcIitub3Vuc1tpXStcIi5cIikiLCJwcm9tcHQiOiJBY3QgYXMgYSBqdW5pb3IgcHl0aG9uIHByb2dyYW1tZXIuIFBsZWFzZSB3cml0ZSB0aGUgY29kZSB0byBnZW5lcmF0ZSBtYWRsaWJzIGZyb20gMyBhcnJheXMgb2YgNiBpdGVtcyBlYWNoOiBwcmVwb3NpdGlvbnMsIHZlcmJzIGFuZCBub3Vucywgd2l0aCB0aGUgbm91bnMgYWxzbyBiZWluZyB1c2VkIGFzIGRpcmVjdCBvYmplY3RzLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Commenting and Reformatting Code
 
