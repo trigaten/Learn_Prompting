@@ -12,8 +12,8 @@ sidebar_position: 10
 여러분이 아파서 회사에 가지 못한다고 생각해보세요(아니면 가기 싫어서😈). 여기 상사에게 여러분이 아프다는 것을 말하는 이메일을 작성하는 간단한 프롬프트가 있습니다.
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlN1YmplY3Q6IE91dCBvZiBPZmZpY2UgLSBTaWNrXG5cbkRlYXIgSm9obixcblxuSSBhbSB3cml0aW5nIHRvIGluZm9ybSB5b3UgdGhhdCBJIHdpbGwgYmUgb3V0IG9mIG9mZmljZSB0b2RheSBkdWUgdG8gaWxsbmVzcy4gSSBhcG9sb2dpemUgZm9yIGFueSBpbmNvbnZlbmllbmNlIHRoaXMgbWF5IGNhdXNlLlxuXG5JIHdpbGwgYmUgc3VyZSB0byBrZWVwIHlvdSB1cGRhdGVkIG9uIG15IHByb2dyZXNzIGFuZCB3aWxsIGJlIGJhY2sgaW4gdGhlIG9mZmljZSBhcyBzb29uIGFzIEkgYW0gZmVlbGluZyBiZXR0ZXIuXG5cblRoYW5rIHlvdSBmb3IgeW91ciB1bmRlcnN0YW5kaW5nLlxuXG5TaW5jZXJlbHksXG5NYXJpbyIsInByb21wdCI6Ik15IE5hbWU6IE1hcmlvXG5Cb3NzJ3MgbmFtZTogSm9oblxuXG5Xcml0ZSBhbiBlbWFpbCB0byBteSBib3NzIHNheWluZyB0aGF0IEkgd2lsbCBiZSBvdXQgb2Ygb2ZmaWNlIHRvZGF5IHNpbmNlIEkgYW0gc2ljay4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

@@ -17,8 +17,8 @@ Considérons l'exemple ci-dessus, dans lequel nous essayons de classer/classifie
 La façon dont nous structurons les exemples est très importante. Étant donné que nous avons structuré ces 3 exemples comme `entrée : classement/classification`, le modèle produit un seul mot après la dernière ligne, au lieu de dire une phrase complète comme `cette critique est positive`.
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Im5lZ2F0aWYiLCJwcm9tcHQiOiJTdXBlciBwcm9kdWl0LCAxMC8xMCA6IHBvc2l0aWZcbk4nYSBwYXMgdHLDqHMgYmllbiBmb25jdGlvbm7DqSA6IG7DqWdhdGlmXG5TdXBlciB1dGlsZSwgw6dhIGVuIHZhdXQgbGEgcGVpbmUgOiBwb3NpdGlmXG7Dh2EgbmUgZm9uY3Rpb25uZSBwYXMgISA6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

@@ -49,17 +49,11 @@ print(madlib)
 
 Essayez-le ici :
 
-<div 
-trydyno-embed="" 
-openai-model="text-davinci-003" 
-initial-prompt="Agissez comme un junior programmeur en Python. Veuillez écrire le code pour générer des madlibs à partir de 3 tableaux de 6 éléments chacun : les prépositions, les verbes et les noms, les noms étant également utilisés comme compléments directs." 
-initial-response="" 
-max-tokens="512" 
-box-rows="5" 
-model-temp="0.0" 
-top-p="0">
-    <noscript>Impossible de charger Dyno Embed : JavaScript doit être activé</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo2MzEsIm91dHB1dCI6IkdyYWNpYXMgcG9yIHN1IGNvbnN1bHRhLiBEZXNhZm9ydHVuYWRhbWVudGUsIGNvbW8gY29tcHLDsyBsYSBjYW1pc2V0YSBlbCAxIGRlIG1hcnpvLCBlc3TDoSBmdWVyYSBkZSBudWVzdHJhIHBvbMOtdGljYSBkZSBkZXZvbHVjaW9uZXMgZGUgMzAgZMOtYXMuIFNpbiBlbWJhcmdvLCBhY3R1YWxtZW50ZSB0ZW5lbW9zIHVuIGRlc2N1ZW50byBkZWwgNTAlIGVuIHRvZGFzIGxhcyBjYW1pc2V0YXMsIHBvciBsbyBxdWUgcG9kcsOtYSBjb21wcmFyIGRvcyBjYW1pc2V0YXMgY29uIGVsIG1pc21vIG1vbnRvIGRlIGNyw6lkaXRvIGVuIGxhIHRpZW5kYS4gTG9zIHByZWNpb3MgZGUgbnVlc3RyYXMgY2FtaXNldGFzIHZhbiBkZXNkZSAkMTgtJDEwMC4gUG9yIGZhdm9yLCBow6FnYW5vcyBzYWJlciBzaSB0aWVuZSBhbGd1bmEgb3RyYSBwcmVndW50YS4iLCJwcm9tcHQiOiJBZ2lzc2V6IGNvbW1lIHVuIGp1bmlvciBwcm9ncmFtbWV1ciBlbiBQeXRob24uIFZldWlsbGV6IMOpY3JpcmUgbGUgY29kZSBwb3VyIGfDqW7DqXJlciBkZXMgbWFkbGlicyDDoCBwYXJ0aXIgZGUgMyB0YWJsZWF1eCBkZSA2IMOpbMOpbWVudHMgY2hhY3VuIDogbGVzIHByw6lwb3NpdGlvbnMsIGxlcyB2ZXJiZXMgZXQgbGVzIG5vbXMsIGxlcyBub21zIMOpdGFudCDDqWdhbGVtZW50IHV0aWxpc8OpcyBjb21tZSBjb21wbMOpbWVudHMgZGlyZWN0cy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Commentaires et reformatage de code
 
