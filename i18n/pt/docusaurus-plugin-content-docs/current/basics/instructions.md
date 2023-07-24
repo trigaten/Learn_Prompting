@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Um dos métodos de *prompting* mais simples é apenas dar instruções. Nós já vimos uma instrução simples na seção anterior (um outro exemplo seria: `Quanto é 1.000.000 * 9.000? Tenha certeza de colocar a quantidade certa de zeros, mesmo que sejam muitos:`)
 
-Abaixo, tem-se um exemplo interativo com o [*toolkit* Dyno](https://trydyno.com/). Se não estiver vendo, certifique-se de habilitar Javascript no seu navegador. Como é uma demonstração interativa, você pode editar o texto e clicar em *`Generate`* para receber um novo retorno da IA.
+Abaixo, tem-se um exemplo interativo com o embed. Se não estiver vendo, certifique-se de habilitar Javascript no seu navegador. Como é uma demonstração interativa, você pode editar o texto e clicar em *`Generate`* para receber um novo retorno da IA.
 
 #### Exemplo 1
 
