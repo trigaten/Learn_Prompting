@@ -115,7 +115,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 ここでの応答は適切で、そして有用です。しかし、さらなる微調整により、より良い結果が得られます。要約の読者として、それがメールであることには関心がなく、要約の詳細度を下げたいかもしれません。なぜ情報が必要なのか、質問や懸念に関する最後の文は関連性がないでしょう。要約の目的がメールの内容を素早く読み飛ばすことであり、丁寧な表現を取り除きたいという要素を追加するだけで、結果は改善できます。
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
     style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>

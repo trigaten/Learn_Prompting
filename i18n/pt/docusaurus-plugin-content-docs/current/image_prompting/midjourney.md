@@ -7,7 +7,7 @@ sidebar_position: 99
 
 Um dos recursos únicos de Midjourney em comparação com outros geradores de imagens de IA é a sua capacidade de criar imagens visualmente atraentes e artisticamente compostas. Isso é atribuído ao treinamento especializado do modelo, que permite que ele produza imagens de alta qualidade com parâmetros artísticos específicos (saiba mais sobre isso em "Prompts Avançados" > "Parâmetros").
 
-Você pode experimentar o Bot Midjourney no [Learn Prompting Discord](http://learnprompting.org/discord) ou no [servidor oficial do Discord Midjourney](https://discord.gg/midjourney).
+Você pode experimentar o Bot Midjourney no [Learn Prompting Discord](https://learnprompting.org/discord) ou no [servidor oficial do Discord Midjourney](https://discord.gg/midjourney).
 
 import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
 import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';

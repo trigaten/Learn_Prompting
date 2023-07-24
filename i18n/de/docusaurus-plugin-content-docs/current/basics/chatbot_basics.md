@@ -11,7 +11,7 @@ import Chatbots from '@site/docs/assets/basics/chatbot.svg';
   <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Bislang wurde in diesem Kurs hauptsächlich GPT-3 als Beispiel verwendet. GPT-3 ist ein LLM, das kein Gedächtnis hat. Wenn du ihm eine Frage (einen Prompt) stellst, erinnert es sich an nichts, was du es zuvor gefragt hast. Im Gegensatz dazu sind Chatbots wie [ChatGPT] (http://chat.openai.com) in der Lage, sich **den Gesprächsverlauf** zu merken. Dies kann für Anwendungen wie den Kundendienst nützlich sein oder einfach, wenn du eine Unterhaltung mit einem LLM führen möchtest!
+Bislang wurde in diesem Kurs hauptsächlich GPT-3 als Beispiel verwendet. GPT-3 ist ein LLM, das kein Gedächtnis hat. Wenn du ihm eine Frage (einen Prompt) stellst, erinnert es sich an nichts, was du es zuvor gefragt hast. Im Gegensatz dazu sind Chatbots wie [ChatGPT] (https://chat.openai.com) in der Lage, sich **den Gesprächsverlauf** zu merken. Dies kann für Anwendungen wie den Kundendienst nützlich sein oder einfach, wenn du eine Unterhaltung mit einem LLM führen möchtest!
 
 Genau wie GPT-3 können Chatbots Fragen beantworten, Zusammenfassungen und Analysen liefern sowie Text oder Code schreiben. Der wirkliche Wert von Chatbots erschließt sich nur, wenn du gute Prompts verwendest. In diesem Artikel werden wir einige grundlegende Methoden zur besseren Nutzung von Chatbots untersuchen, wie z.B. die Verwendung von Stilvorgaben, Deskriptoren und Priming. 
 

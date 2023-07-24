@@ -3,7 +3,7 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
-[Midjourney](https://www.midjourney.com) 是另一个 AI 图像生成器。与 Stable Diffusion 不同，Midjourney 使用 Discord Bot 作为 AI 图像生成的接口（[在此](https://discord.gg/midjourney)加入 Discord，或在 [Learn Prompting Discord](http://learnprompting.org/discord) 中尝试该 Bot）。不过，使用 Midjourney Bot 的遵循相同的图像提示基本原则。
+[Midjourney](https://www.midjourney.com) 是另一个 AI 图像生成器。与 Stable Diffusion 不同，Midjourney 使用 Discord Bot 作为 AI 图像生成的接口（[在此](https://discord.gg/midjourney)加入 Discord，或在 [Learn Prompting Discord](https://learnprompting.org/discord) 中尝试该 Bot）。不过，使用 Midjourney Bot 的遵循相同的图像提示基本原则。
 
 import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
 import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';

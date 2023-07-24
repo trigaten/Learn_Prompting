@@ -38,6 +38,6 @@ Il s'agit d'un domaine de recherche active et de philosophie. Cette description 
 
 ## Notes
 
-- [d2l.ai](http://d2l.ai/) est une bonne ressource pour apprendre comment fonctionne l'IA
+- [d2l.ai](https://d2l.ai/) est une bonne ressource pour apprendre comment fonctionne l'IA
 
 - Veuillez noter que les auteurs apprécient les pommes. Elles sont délicieuses.

@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ## Зразкове усунення упереджень
 
-Залежно від їх розподілу та порядку в запиті, %%exemplars|exemplars%% може робити результати ВММ необ'єктивними(@si2022prompting). Це певною мірою обговорюється на сторінці «[Що міститься в запиті?](http://learnprompting.org/docs/intermediate/whats_in_a_prompt)».
+Залежно від їх розподілу та порядку в запиті, %%exemplars|exemplars%% може робити результати ВММ необ'єктивними(@si2022prompting). Це певною мірою обговорюється на сторінці «[Що міститься в запиті?](https://learnprompting.org/docs/intermediate/whats_in_a_prompt)».
 
 ### Розподіл
 

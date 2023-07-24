@@ -8,7 +8,7 @@ sidebar_position: 99
 
 Salah satu fitur unik Midjourney dibandingkan dengan generator gambar AI lainnya adalah kemampuannya untuk membuat gambar yang menarik secara visual dan dikomposisikan secara artistik. Ini disebabkan oleh pelatihan khusus model ini, yang memungkinkannya menghasilkan gambar berkualitas tinggi dengan parameter artistik yang spesifik (lebih lanjut mengenai ini di dalam "Prompts Lanjutan" > "Parameter").
 
-Anda dapat bereksperimen dengan Midjourney Bot di [Discord Learn Prompting](http://learnprompting.org/discord) atau di [server Discord resmi Midjourney](https://discord.gg/midjourney).
+Anda dapat bereksperimen dengan Midjourney Bot di [Discord Learn Prompting](https://learnprompting.org/discord) atau di [server Discord resmi Midjourney](https://discord.gg/midjourney).
 
 import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
 import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';

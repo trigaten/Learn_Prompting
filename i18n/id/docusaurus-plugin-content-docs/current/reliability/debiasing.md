@@ -8,7 +8,7 @@ Halaman ini mencakup beberapa teknik sederhana untuk mengurangi bias pada permin
 
 ## Mengurangi Bias pada Exemplar
 
-Tergantung pada distribusi dan urutan mereka dalam prompt, contoh %%exemplar|exemplar%% mungkin mempengaruhi output LLM (@si2022prompting). Ini dibahas dalam tingkat tertentu di halaman [Apa yang ada pada Prompt](http://learnprompting.org/docs/intermediate/whats_in_a_prompt).
+Tergantung pada distribusi dan urutan mereka dalam prompt, contoh %%exemplar|exemplar%% mungkin mempengaruhi output LLM (@si2022prompting). Ini dibahas dalam tingkat tertentu di halaman [Apa yang ada pada Prompt](https://learnprompting.org/docs/intermediate/whats_in_a_prompt).
 
 ### Distribusi
 

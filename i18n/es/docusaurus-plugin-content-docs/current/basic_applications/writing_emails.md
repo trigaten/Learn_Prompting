@@ -11,8 +11,8 @@ Escribir correos electrónicos puede ser una tarea que consume mucho tiempo, esp
 Imagina que un día te despiertas enfermo/a y no puedes ir a trabajar (o simplemente no quieres 😈). Aquí hay una guía simple que te ayuda a escribir un correo electrónico a tu jefe para informarle que estás enfermo/a.
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkFzdW50bzogRnVlcmEgZGUgbGEgb2ZpY2luYSAtIEVuZmVybW9cblxuRXN0aW1hZG8gSm9obixcblxuTGUgZXNjcmlibyBwYXJhIGluZm9ybWFybGUgcXVlIGVzdGFyw6kgZnVlcmEgZGUgbGEgb2ZpY2luYSBob3kgZGViaWRvIGEgdW5hIGVuZmVybWVkYWQuIExhbWVudG8gY3VhbHF1aWVyIGluY29udmVuaWVudGUgcXVlIGVzdG8gcHVlZGEgY2F1c2FyLlxuXG5NZSBhc2VndXJhcsOpIGRlIG1hbnRlbmVybG8gaW5mb3JtYWRvIHNvYnJlIG1pIHByb2dyZXNvIHkgcmVncmVzYXLDqSBhIGxhIG9maWNpbmEgdGFuIHByb250byBjb21vIG1lIHNpZW50YSBtZWpvci5cblxuR3JhY2lhcyBwb3Igc3UgY29tcHJlbnNpw7NuXG5cbkF0ZW50YW1lbnRlLFxuTWFyaW8iLCJwcm9tcHQiOiJNaSBOb21icmU6IE1hcmlvXG5Ob21icmUgZGVsIEplZmU6IEpvaG5cblxuRXNjcmliZSB1biBjb3JyZW8gZWxlY3Ryw7NuaWNvIGEgbWkgamVmZSBkaWNpZW5kbyBxdWUgZXN0YXLDqSBmdWVyYSBkZSBsYSBvZmljaW5hIGhveSB5YSBxdWUgZXN0b3kgZW5mZXJtby4gIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

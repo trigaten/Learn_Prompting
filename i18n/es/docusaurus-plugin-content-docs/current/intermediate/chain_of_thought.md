@@ -27,15 +27,15 @@ Aquí hay algunas demostraciones. La primera muestra a GPT-3 (davinci-003) falla
 #### Incorrecto
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkxhIG9wY2nDs24gMSBlcyB1bmEgZm9ybWEgbcOhcyByw6FwaWRhIGRlIGxsZWdhciBhbCB0cmFiYWpvLiIsInByb21wdCI6IsK%2FQ3XDoWwgZXMgbGEgZm9ybWEgbcOhcyByw6FwaWRhIGRlIGxsZWdhciBhbCB0cmFiYWpvP1xuT3BjacOzbiAxOiBUb21hciB1biBhdXRvYsO6cyBkZSAxMDAwIG1pbnV0b3MsIGx1ZWdvIHVuIHRyZW4gZGUgbWVkaWEgaG9yYSB5IGZpbmFsbWVudGUgdW4gcGFzZW8gZW4gYmljaWNsZXRhIGRlIDEwIG1pbnV0b3MuXG5PcGNpw7NuIDI6IFRvbWFyIHVuIGF1dG9iw7pzIGRlIDgwMCBtaW51dG9zLCBsdWVnbyB1biB0cmVuIGRlIHVuYSBob3JhIHkgZmluYWxtZW50ZSB1biBwYXNlbyBlbiBiaWNpY2xldGEgZGUgMzAgbWludXRvcy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
 #### Correcto
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLCv0N1w6FsIGVzIGxhIGZvcm1hIG3DoXMgcsOhcGlkYSBkZSBsbGVnYXIgYSBjYXNhP1xuT3BjacOzbiAxOiBUb21hciB1biBhdXRvYsO6cyBkZSAxMCBtaW51dG9zLCBsdWVnbyB1biBhdXRvYsO6cyBkZSA0MCBtaW51dG9zIHkgZmluYWxtZW50ZSB1biB0cmVuIGRlIDEwIG1pbnV0b3MuXG5PcGNpw7NuIDI6IFRvbWFyIHVuIHRyZW4gZGUgOTAgbWludXRvcywgbHVlZ28gdW4gcGFzZW8gZW4gYmljaWNsZXRhIGRlIDQ1IG1pbnV0b3MgeSBmaW5hbG1lbnRlIHVuIGF1dG9iw7pzIGRlIDEwIG1pbnV0b3MuXG5PcGNpw7NuIDE6IHRvbWFyw6EgMTArNDArMTAiLCJvdXRwdXQiOiJMYSBvcGNpw7NuIDEgdG9tYXLDoSAxMDAwKzMwKzEwIiwibWF4VG9rZW5zIjoyNTYsImJveFJvd3MiOjE4LCJ0ZW1wZXJhdHVyZSI6MCwidG9wUCI6MH0%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLCv0N1w6FsIGVzIGxhIGZvcm1hIG3DoXMgcsOhcGlkYSBkZSBsbGVnYXIgYSBjYXNhP1xuT3BjacOzbiAxOiBUb21hciB1biBhdXRvYsO6cyBkZSAxMCBtaW51dG9zLCBsdWVnbyB1biBhdXRvYsO6cyBkZSA0MCBtaW51dG9zIHkgZmluYWxtZW50ZSB1biB0cmVuIGRlIDEwIG1pbnV0b3MuXG5PcGNpw7NuIDI6IFRvbWFyIHVuIHRyZW4gZGUgOTAgbWludXRvcywgbHVlZ28gdW4gcGFzZW8gZW4gYmljaWNsZXRhIGRlIDQ1IG1pbnV0b3MgeSBmaW5hbG1lbnRlIHVuIGF1dG9iw7pzIGRlIDEwIG1pbnV0b3MuXG5PcGNpw7NuIDE6IHRvbWFyw6EgMTArNDArMTAiLCJvdXRwdXQiOiJMYSBvcGNpw7NuIDEgdG9tYXLDoSAxMDAwKzMwKzEwIiwibWF4VG9rZW5zIjoyNTYsImJveFJvd3MiOjE4LCJ0ZW1wZXJhdHVyZSI6MCwidG9wUCI6MH0%3D"
     style={{width:"100%", height:"900px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>

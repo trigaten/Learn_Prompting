@@ -33,7 +33,7 @@ import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.web
 #### 错误示例
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
     style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
@@ -41,7 +41,7 @@ import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.web
 #### 正确示例
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLlpoLmnpwgSm9obiDmnIkgNSDkuKrmoqjlrZDvvIzlkIPkuoYgMiDkuKrvvIzlj4jkubDkuoYgNSDkuKrvvIznhLblkI7mioogMyDkuKrnu5nkuobku5bnmoTmnIvlj4vvvIzku5bov5jliankuIvlpJrlsJHkuKrmoqjlrZDvvJ9cblxu6K6p5oiR5Lus5LiA5q2l5LiA5q2l5Zyw5oCd6ICD44CCIiwib3V0cHV0IjoiSm9obiDotbfliJ3mnIkgNSDkuKrmoqjlrZDjgILku5blkIPkuoYgMiDkuKrmoqjlrZDvvIzov5jliankuIsgMyDkuKrmoqjlrZDjgILku5blj4jkubDkuoYgNSDkuKrmoqjlrZDvvIzkuIDlhbHmnIkgOCDkuKrmoqjlrZDjgILku5bmioogMyDkuKrmoqjlrZDnu5nkuobku5bnmoTmnIvlj4vvvIzku5bnjrDlnKjlj6rliankuIsgNSDkuKrmoqjlrZDjgIIiLCJtYXhUb2tlbnMiOjI1NiwiYm94Um93cyI6NSwidGVtcGVyYXR1cmUiOjAuNywidG9wUCI6MX0%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLlpoLmnpwgSm9obiDmnIkgNSDkuKrmoqjlrZDvvIzlkIPkuoYgMiDkuKrvvIzlj4jkubDkuoYgNSDkuKrvvIznhLblkI7mioogMyDkuKrnu5nkuobku5bnmoTmnIvlj4vvvIzku5bov5jliankuIvlpJrlsJHkuKrmoqjlrZDvvJ9cblxu6K6p5oiR5Lus5LiA5q2l5LiA5q2l5Zyw5oCd6ICD44CCIiwib3V0cHV0IjoiSm9obiDotbfliJ3mnIkgNSDkuKrmoqjlrZDjgILku5blkIPkuoYgMiDkuKrmoqjlrZDvvIzov5jliankuIsgMyDkuKrmoqjlrZDjgILku5blj4jkubDkuoYgNSDkuKrmoqjlrZDvvIzkuIDlhbHmnIkgOCDkuKrmoqjlrZDjgILku5bmioogMyDkuKrmoqjlrZDnu5nkuobku5bnmoTmnIvlj4vvvIzku5bnjrDlnKjlj6rliankuIsgNSDkuKrmoqjlrZDjgIIiLCJtYXhUb2tlbnMiOjI1NiwiYm94Um93cyI6NSwidGVtcGVyYXR1cmUiOjAuNywidG9wUCI6MX0%3D"
     style={{width:"100%", height:"250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>

@@ -3,7 +3,7 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
-[Midjourney](https://www.midjourney.com) es otro generador de imágenes por IA. A diferencia de Stable Diffusion, Midjourney utiliza un bot de Discord como interfaz para la generación de imágenes por IA (únete al Discord [aquí](https://discord.gg/midjourney) o experimenta con el bot en el [Discord de Learn Prompting](http://learnprompting.org/discord)). Sin embargo, el uso del bot de Midjourney sigue los mismos principios básicos para la generación de imágenes mediante la creación de un prompt.
+[Midjourney](https://www.midjourney.com) es otro generador de imágenes por IA. A diferencia de Stable Diffusion, Midjourney utiliza un bot de Discord como interfaz para la generación de imágenes por IA (únete al Discord [aquí](https://discord.gg/midjourney) o experimenta con el bot en el [Discord de Learn Prompting](https://learnprompting.org/discord)). Sin embargo, el uso del bot de Midjourney sigue los mismos principios básicos para la generación de imágenes mediante la creación de un prompt.
 
 import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
 import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';

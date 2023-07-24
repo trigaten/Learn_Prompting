@@ -11,7 +11,7 @@ import Chatbots from '@site/docs/assets/basics/chatbot.svg';
   <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Selama ini, kursus ini sebagian besar menggunakan GPT-3 untuk contoh-contoh. GPT-3 adalah LLM yang tidak memiliki ingatan. Ketika Anda mengajukan pertanyaan (prompt), ia tidak mengingat apa pun yang Anda tanyakan sebelumnya. Sebaliknya, chatbot seperti [ChatGPT](http://chat.openai.com) dapat **mengingat riwayat percakapan Anda**. Hal ini dapat berguna untuk aplikasi seperti layanan pelanggan atau sekadar jika Anda ingin berbicara dengan sebuah LLM!
+Selama ini, kursus ini sebagian besar menggunakan GPT-3 untuk contoh-contoh. GPT-3 adalah LLM yang tidak memiliki ingatan. Ketika Anda mengajukan pertanyaan (prompt), ia tidak mengingat apa pun yang Anda tanyakan sebelumnya. Sebaliknya, chatbot seperti [ChatGPT](https://chat.openai.com) dapat **mengingat riwayat percakapan Anda**. Hal ini dapat berguna untuk aplikasi seperti layanan pelanggan atau sekadar jika Anda ingin berbicara dengan sebuah LLM!
 
 Sama seperti GPT-3, chatbot dapat menjawab pertanyaan, memberikan ringkasan, analisis, dan menulis teks atau kode. Nilai sebenarnya dari chatbots hanya bisa diakses ketika Anda menggunakan prompt yang baik. Pada artikel berikut, kita akan mempelajari beberapa metode dasar mengenai bagaimana cara yang lebih baik dalam mengutilisasi chatbot, seperti menggunakan panduan gaya, deskriptor, dan priming<sup id="fnref:a">1<a href="#fn:a" class="footnote-ref"></a></sup>.
 

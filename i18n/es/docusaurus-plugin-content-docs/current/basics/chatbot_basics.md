@@ -4,7 +4,7 @@ sidebar_position: 80
 
 # 🟢 Fundamentos de Chatbot
 
-Una de las formas más comunes en que puede ser útil el prompting es al interactuar con los numerosos chatbots disponibles para el público, como [ChatGPT] (http://chat.openai.com). Tenga en cuenta que ChatGPT es diferente de GPT-3. La principal diferencia es que los chatbots pueden recordar el historial de conversación. Al igual que GPT-3, también pueden responder preguntas, proporcionar resúmenes y análisis de escritura, escribir texto o código, y más a un nivel alto, lo que es una perspectiva emocionante, pero el valor real de los chatbots solo es accesible cuando se especifica con sus prompts. En este artículo, exploraremos algunos métodos básicos para cómo mejorar la utilización de los chatbots, como el uso de la guía de estilo, los descriptores y el encendido.
+Una de las formas más comunes en que puede ser útil el prompting es al interactuar con los numerosos chatbots disponibles para el público, como [ChatGPT] (https://chat.openai.com). Tenga en cuenta que ChatGPT es diferente de GPT-3. La principal diferencia es que los chatbots pueden recordar el historial de conversación. Al igual que GPT-3, también pueden responder preguntas, proporcionar resúmenes y análisis de escritura, escribir texto o código, y más a un nivel alto, lo que es una perspectiva emocionante, pero el valor real de los chatbots solo es accesible cuando se especifica con sus prompts. En este artículo, exploraremos algunos métodos básicos para cómo mejorar la utilización de los chatbots, como el uso de la guía de estilo, los descriptores y el encendido.
 
 ## Modificando tu Prompt
 

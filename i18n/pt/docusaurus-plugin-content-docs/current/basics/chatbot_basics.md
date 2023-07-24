@@ -4,7 +4,7 @@ sidebar_position: 80
 
 # 🟢 Noções Básicas de Chatbot
 
-Uma das formas mais comuns em que *prompting* pode ser útil é durante a interação com as várias opções de *chatbots* disponíveis para o público, como o [ChatGPT](http://chat.openai.com). Perceba que **ChatGPT** é diferente de **GPT-3**. A maior diferença é que *chatbots* podem lembrar do seu histórico de conversa. Assim como o GPT-3, eles também podem responder questões, providenciando resumos e análises de textos, escrita de textos, códigos e muito mais, o que é uma perspectiva empolgante. Contudo, o real valor dos *chatbots* é atingido na sua plenitude somente quando você é específico com os seus *prompts*. Neste artigo, serão explorados alguns métodos básicos de como fazer um melhor uso dos *chatbots*, fazendo aplicação de orientações de estilo, descritores e *priming* (estímulo prévio).
+Uma das formas mais comuns em que *prompting* pode ser útil é durante a interação com as várias opções de *chatbots* disponíveis para o público, como o [ChatGPT](https://chat.openai.com). Perceba que **ChatGPT** é diferente de **GPT-3**. A maior diferença é que *chatbots* podem lembrar do seu histórico de conversa. Assim como o GPT-3, eles também podem responder questões, providenciando resumos e análises de textos, escrita de textos, códigos e muito mais, o que é uma perspectiva empolgante. Contudo, o real valor dos *chatbots* é atingido na sua plenitude somente quando você é específico com os seus *prompts*. Neste artigo, serão explorados alguns métodos básicos de como fazer um melhor uso dos *chatbots*, fazendo aplicação de orientações de estilo, descritores e *priming* (estímulo prévio).
 
 ## Modificando o seu Prompt
 

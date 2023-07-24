@@ -12,8 +12,8 @@ A continuación se muestra un ejemplo de una inserción interactiva de Dyno. Si 
 #### Ejemplo 1
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IlVuIHVzdWFyaW8gaGEgaW5ncmVzYWRvIHN1IG5vbWJyZSB5IGFwZWxsaWRvIGVuIHVuIGZvcm11bGFyaW8uIE5vc290cm9zIG5vIHNhYmVtb3MgZW4gcXVlIG9yZGVuIGVzdGEgXG5TdSBub21icmUvYXBlbGxpZG8sIHBlcm8gbmVjZXNpdGFtb3MgcXVlIHRlbmdhIGVsIGZvcm1hdG8gJ0FwZWxsaWRvLCBOb21icmUnLiBDb252aWVydGEgbG8gc2lndWllbnRlOlxuXG5qb2huIGRvZSIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

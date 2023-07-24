@@ -8,7 +8,7 @@ sidebar_position: 99
 
 Однією з унікальних характеристик Midjourney у порівнянні з іншими генераторами зображень на основі ШІ є його здатність створювати візуально привабливі зображення високого рівня художності. Це пояснюється спеціальним навчанням моделі, яке дає їй змогу створювати високоякісні зображення з конкретними художніми параметрами, докладніше про це в розділі «Розширені запити» > «Параметри»).
 
-Ви можете експериментувати з ботом Midjourney на сервері [Learn Prompting у Discord](http://learnprompting.org/discord) або на [офіційному Discord-сервері Midjourney](https://discord.gg/midjourney).
+Ви можете експериментувати з ботом Midjourney на сервері [Learn Prompting у Discord](https://learnprompting.org/discord) або на [офіційному Discord-сервері Midjourney](https://discord.gg/midjourney).
 
 import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
 import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';

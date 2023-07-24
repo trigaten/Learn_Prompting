@@ -118,7 +118,7 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 此处的回复看得出来是有效的。但是，通过进一步微调，您可以获得更好的结果。作为摘要的读者，您不关心它是一封电子邮件，您可能希望摘要的细节程度较低。关于为什么的信息是无关紧要的，有些问题和疑虑也是如此。通过简单地描述摘要的目标可以快速删除不需要的内容，进而改善结果。
 
 <iframe
-    src="http://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
     style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
