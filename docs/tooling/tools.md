@@ -58,6 +58,16 @@ easier and more robust:
 
 > This library is aimed at assisting in developing a pipeline for using LLMs APIs in production, solving NLP Tasks such as NER, Classification, Question, Answering, Summarization, Text2Graph etc. and providing powerful agents for building chat agents for different tasks.
 
+### [PromptFlow](https://github.com/InsuranceToolkits/promptflow)
+
+> PromptFlow is a free, open-source, low-code tool that allows users to integrate LLMs, prompts, Python functions, and conditional logic to create flowcharts. It includes nodes for:
+
+> OpenAI API Calls (any model, including Whisper speech-to-text)
+> Anthropic Claude Calls, Arbitrary Python Code blocks, and Long + Short term history management
+> Database Queries, PostgresML integration, and Text Embeddings
+> HTTP Requests, SerpAPI Google Searches, and ElevenLabs Speech Synthesis
+Documentation can be found [here](https://www.promptflow.org/en/latest/index.html)
+
 
 ### [TextBox](https://github.com/RUCAIBox/TextBox)(@tang2022textbox)
 
