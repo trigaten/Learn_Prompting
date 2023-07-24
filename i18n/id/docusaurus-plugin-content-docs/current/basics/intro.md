@@ -48,11 +48,11 @@ Kursus ini menawarkan pengalaman belajar interaktif. Anda dapat bereksperimen de
 
 Berikut adalah gambar **** dari tampilan yang disisipkan:
 
-import dyno from '@site/docs/assets/basics/dyno_example.webp';
+import lp_embed from '@site/docs/assets/basics/lp_embed.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={dyno} style={{width: "750px"}}/>
+  <img src={lp_embed} style={{width: "750px"}}/>
 </div>
 
 Anda seharusnya dapat melihat sebuah embed yang terlihat persis seperti gambar ini tepat di bawah paragraf ini. Jika Anda tidak bisa, Anda mungkin perlu mengaktifkan JavaScript atau menggunakan browser yang berbeda.

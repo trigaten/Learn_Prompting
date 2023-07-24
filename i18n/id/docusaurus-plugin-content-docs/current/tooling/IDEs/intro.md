@@ -19,7 +19,6 @@ Berikut adalah tabel tentang alat-alat yang akan kita bahas dalam bab ini:
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart)         | ✅               | ❌           | ❌                | Pay per tokens | ✅        | Teks       | OpenAI              |
 | [Dust](https://dust.tt/)                                            | ✅               | ✅           | ❌                |                | ✅        | Text       | OpenAI, Cohere      |
 | [Soaked Prompts](https://soaked-prompts.vercel.app)                 | ✅               | ✅           | ❌                |                | ✅        | Text       | OpenAI              |
-| [Dyno](https://trydyno.com/login)                                   | ✅               | ❌           | ❌                |                | ✅        | Text       | OpenAI              |
 | [Everyprompt](https://www.everyprompt.com)                          | ✅               |             | ❌                | Freemium       | ✅        | Text       | OpenAI              |
 | [Promptmetheus](https://promptmetheus.com)                          | ✅               | ❌           | ✅                | Free           | ✅        | Text       | OpenAI              |
 | [PromptIDE](https://prompt.vizhub.ai)                               | ✅               | Code TBD    | ✅                | None           | ✅        | Text       |                     |
