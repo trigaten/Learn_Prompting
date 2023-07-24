@@ -10,8 +10,8 @@ Abaixo, tem-se um exemplo interativo com o [*toolkit* Dyno](https://trydyno.com/
 #### Exemplo 1
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9uaCIsInByb21wdCI6IlVtIHVzdcOhcmlvIGRpZ2l0b3UgbyBzZXUgcHJpbWVpcm8gZSBvIHNldSDDumx0aW1vIG5vbWUgZW0gdW0gZm9ybXVsw6FyaW8uIE7Ds3MgbsOjbyBzYWJlbW9zIGVtIHF1YWwgb3JkZW0gbyBzZXUgcHJpbWVpcm8vw7psdGltbyBub21lIGVzdMOhLCBtYXMgbsOzcyBwcmVjaXNhbW9zIHF1ZSBlc3RlamEgbm8gZm9ybWF0byAnw5psdGltbywgUHJpbWVpcm8nLiBDb252ZXJ0YSBhIHNlZ3Vpcjpcblxuam9uaCBkb2UiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 <br />
