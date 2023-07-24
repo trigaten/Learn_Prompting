@@ -27,8 +27,8 @@ import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 #### 不正确的答案
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IumAiemhuTHmmK%2Fmm7Tlv6vnmoTkuIrnj63mlrnlvI%2FjgIIiLCJwcm9tcHQiOiLlk6rnp43mlrnms5XmmK%2Fmm7Tlv6vnmoTkuIrnj63mlrnlvI%2FvvJ9cXG7pgInpobkx77ya5LmY5Z2QMTAwMOWIhumSn%2BeahOWFrOWFseaxvei9pu%2B8jOeEtuWQjuWNiuWwj%2BaXtueahOeBq%2Bi9pu%2B8jOacgOWQjjEw5YiG6ZKf55qE6Ieq6KGM6L2m6aqR6KGM44CCXFxu6YCJ6aG5Mu%2B8muS5mOWdkDgwMOWIhumSn%2BeahOWFrOWFseaxvei9pu%2B8jOeEtuWQjjHlsI%2Fml7bnmoTngavovabvvIzmnIDlkI4zMOWIhumSn%2BeahOiHquihjOi9pumqkeihjOOAgiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

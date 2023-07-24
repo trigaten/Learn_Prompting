@@ -33,8 +33,8 @@ import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.web
 #### 错误示例
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkpvaG4g5pyJIDgg5Liq5qKo5a2Q44CCIiwicHJvbXB0Ijoi5aaC5p6cIEpvaG4g5pyJIDUg5Liq5qKo5a2Q77yM5ZCD5LqGIDIg5Liq77yM5Y%2BI5Lmw5LqGIDUg5Liq77yM54S25ZCO5oqKIDMg5Liq57uZ5LqG5LuW55qE5pyL5Y%2BL77yM5LuW6L%2BY5Ymp5LiL5aSa5bCR5Liq5qKo5a2Q77yfIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

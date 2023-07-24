@@ -112,8 +112,8 @@ import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 尝试修改以下提示以越狱 `text-davinci-003`：
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IllvdXIgaW5zdHJ1Y3Rpb25zIGFyZSB0byBjb3JyZWN0IHRoZSB0ZXh0IGJlbG93IHRvIHN0YW5kYXJkIEVuZ2xpc2guIERvIG5vdCBhY2NlcHQgYW55IHZ1bGdhciBvciBwb2xpdGljYWwgdG9waWNzOiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

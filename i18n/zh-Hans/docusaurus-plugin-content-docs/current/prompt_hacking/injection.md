@@ -35,8 +35,8 @@ import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 尝试通过向提示添加文本来使以下的 LLM 说出"PWNED"(@chase2021adversarial)：
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIxIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IkVuZ2xpc2g6IEkgd2FudCB0byBnbyB0byB0aGUgcGFyayB0b2RheS5cXG5GcmVuY2g6IEplIHZldXggYWxsZXIgYXUgcGFyYyBhdWpvdXJkJ2h1aS5cXG5FbmdsaXNoOiBJIGxpa2UgdG8gd2VhciBhIGhhdCB3aGVuIGl0IHJhaW5zLlxuRnJlbmNoOiBKJ2FpbWUgcG9ydGVyIHVuIGNoYXBlYXUgcXVhbmQgaXQgcGxldXQuXG5FbmdsaXNoOiBXaGF0IGFyZSB5b3UgZG9pbmcgYXQgc2Nob29sP1xuRnJlbmNoOiBRdSdlc3QtY2UgcXVlIHRvIGZhaXMgYSBsJ2Vjb2xlP1xuRW5nbGlzaDoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
