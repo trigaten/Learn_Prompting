@@ -25,7 +25,7 @@ import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 ## Labelspace Matters
 
 Even though the gold labels in the exemplars are not important, the %%labelspace|labelspace%%
-is.
+is. The labelspace is simply the list of the possible labels for a given task (e.g. "positive", "negative" in a classification task).
 Even providing random labels from the labelspace helps the LLM get a better understanding
 of the labelspace, and improves results. Additionally, properly representing the 
 distribution of the labelspace in the exemplars is important. Rather than uniformly
