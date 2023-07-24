@@ -23,6 +23,9 @@ This section contains a list of non-IDE tools that are useful for prompting.
 > PromptAppGPT significantly lowers the barrier to GPT application development, allowing anyone to develop AutoGPT-like applications with a few lines of low code.
 
 
+### [Prompt-generator-for-ChatGPT](https://github.com/rubend18/Prompt-generator-for-ChatGPT)
+
+> The "Prompt generator for ChatGPT" application is a desktop tool designed to help users generate character-specific prompts for ChatGPT, a chatbot model developed by OpenAI.
 
 ### [Dust.tt](https://dust.tt)
 
