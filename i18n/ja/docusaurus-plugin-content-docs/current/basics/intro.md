@@ -65,7 +65,7 @@ AIにタスクを説明できれば、AIはあなたに代わってそれを行�
 この章の残りを読んでから、興味のある他の章をチェックしてみてください。
 特に、プロンプトの応用編は、プロフェッショナルがどのようにAIを使って仕事を自動化しているか
 プロフェッショナルがAIを使ってどのように仕事を自動化しているのかを見てみたい方は、特に応用編をご覧ください。AIを使った実験ができる
-[Playground](https://beta.openai.com/playground) や [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro) などのリソースを使用したり、このサイトの至るところで目にするインタラクティブな [Dyno](https://trydyno.com) の埋め込みを使用することができます。
+[Playground](https://beta.openai.com/playground) や [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro) などのリソースを使用したり、このサイトの至るところで目にするインタラクティブな の埋め込みを使用することができます。
 
 次の記事を読む前に、プロンプトエンジニアリングを行うのに技術的なバックグラウンドは必要ないことを知っておくことが重要です。ほとんどが試行錯誤であり、やりながら学べばいいのです。
 

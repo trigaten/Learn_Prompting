@@ -34,7 +34,7 @@ sidebar_position: 0
 
 ## 我该如何开始？
 
-本课程将教你如何与人工智能交流。阅读本章的其余部分，然后查看你感兴趣的其他章节。如果你特别想了解专业人士如何使用人工智能来实现自动化，那么应用提示部分是你所感兴趣的。看看专业人士是如何使用人工智能来实现其工作自动化的。你可以用一些人工智能网站，例如[Open AI](https://beta.openai.com/playground)、[其他人工智能工具](https://learnprompting.org/docs/tooling/IDEs/intro)等，或者直接使用本网站上嵌入的交互程序[Dyno](https://trydyno.com)。
+本课程将教你如何与人工智能交流。阅读本章的其余部分，然后查看你感兴趣的其他章节。如果你特别想了解专业人士如何使用人工智能来实现自动化，那么应用提示部分是你所感兴趣的。看看专业人士是如何使用人工智能来实现其工作自动化的。你可以用一些人工智能网站，例如[Open AI](https://beta.openai.com/playground)、[其他人工智能工具](https://learnprompting.org/docs/tooling/IDEs/intro)等，或者直接使用本网站上嵌入的交互程序.
 
 在阅读下一章之前，需要提醒一下：你无需任何技术背景便可以开始学习提示工程。在犯错中学习。
 

@@ -18,8 +18,8 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
 我们如何结构化地设计例子也是非常重要的。由于我们已经将头三个例子结构化成： `input: classification`，因此模型最终也跟着同样只输出分类的结果，而不是一段完整的句子，例如 `this review is positive`。
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Im5lZ2F0aXZlIiwicHJvbXB0IjoiR3JlYXQgcHJvZHVjdCwgMTAvMTA6IHBvc2l0aXZlXFxuRGlkbid0IHdvcmsgdmVyeSB3ZWxsOiBuZWdhdGl2ZVxcblN1cGVyIGhlbHBmdWwsIHdvcnRoIGl0OiBwb3NpdGl2ZVxcbkl0IGRvZXNudCB3b3JrIToiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

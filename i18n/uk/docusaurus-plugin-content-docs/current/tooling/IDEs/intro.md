@@ -17,9 +17,7 @@ sidebar_position: 1
 | Назва                                                               | Хостингове рішення | Відкрите ПЗ     | Для досліджень | Бізнес-модель    | Запущено | Формати | Підтримувані постачальники |
 | ------------------------------------------------------------------- | ------------------ | --------------- | -------------- | ---------------- | -------- | ------- | -------------------------- |
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart)         | ✅                  | ❌               | ❌              | Оплата за токени | ✅        | Текст   | OpenAI                     |
-| [Dust](https://dust.tt/)                                            | ✅                  | ✅               | ❌              |                  | ✅        | Текст   | OpenAI, Cohere             |
-| [Soaked Prompts](https://soaked-prompts.vercel.app)                 | ✅                  | ✅               | ❌              |                  | ✅        | Текст   | OpenAI                     |
-| [Dyno](https://trydyno.com/login)                                   | ✅                  | ❌               | ❌              |                  | ✅        | Текст   | OpenAI                     |
+| [Dust](https://dust.tt/)                                            | ✅                  | ✅               | ❌              |                  | ✅        | Текст   | OpenAI, Cohere             |                  |
 | [Everyprompt](https://www.everyprompt.com)                          | ✅                  |                 | ❌              | Freemium         | ✅        | Текст   | OpenAI                     |
 | [Promptmetheus](https://promptmetheus.com)                          | ✅                  | ❌               | ✅              | Безплатно        | ✅        | Текст   | OpenAI                     |
 | [PromptIDE](https://prompt.vizhub.ai)                               | ✅                  | Код уточнюється | ✅              | Немає            | ✅        | Текст   |                            |

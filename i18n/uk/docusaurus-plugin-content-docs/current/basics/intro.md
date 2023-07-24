@@ -48,11 +48,11 @@ import Techniques from '@site/docs/assets/basics/techniques.svg';
 
 Ось **зображення** того, як виглядає вставка:
 
-import dyno from '@site/docs/assets/basics/dyno_example.webp';
+import lp_embed from '@site/docs/assets/basics/lp_embed.webp';
 import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={dyno} style={{width: "750px"}}/>
+  <img src={lp_embed} style={{width: "750px"}}/>
 </div>
 
 Ви маєте побачити вставку, яка виглядає точно так само, як на зображенні під цим абзацом. Якщо ви не бачите його, вам може знадобитися увімкнути JavaScript або скористатися іншим браузером.

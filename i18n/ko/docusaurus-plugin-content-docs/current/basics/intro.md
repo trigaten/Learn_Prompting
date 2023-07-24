@@ -48,7 +48,7 @@ AI는 아마 여러분 대신에 전부 해버리거나 아니라면 적어도 �
 이 과정은 여러분께 어떻게 AI들과 소통하는 지를 알려줄 것입니다.
 이 챕터의 나머지를 읽고, 흥미로워 보이는 다른 챕터들을 읽어보세요.
 특히, 어떻게 전문가들이 그들의 일을 자동화하는 지 궁금하다면 프롬프트 응용 섹션은 흥미로울 것입니다.
-[OpenAI 놀이터](https://beta.openai.com/playground), [다른 IDE들](https://learnprompting.org/docs/tooling/IDEs/intro) 혹은 간단하게 [Dyno](https://trydyno.com) 등을 이용해서 실험을 해볼 수도 있을 것입니다.
+[OpenAI 놀이터](https://beta.openai.com/playground), [다른 IDE들](https://learnprompting.org/docs/tooling/IDEs/intro) 혹은 간단하게 embed 등을 이용해서 실험을 해볼 수도 있을 것입니다.
 
 다음 기사를 읽기 전에, 프롬프트 엔지니어링에 대한 기술적 배경이 필요하지 않다는 점을 알아두시면 좋을 것 같습니다. 대부분은 시도와 실패 그리고 실행으로부터 배울 것입니다.
 

@@ -11,8 +11,8 @@ sidebar_position: 10
 想象一下，有一天你生病了，不能去上班（或者只是不想去😈）。这里有一个简单的提示，可以写一封电子邮件给你的老板，告诉他们你病了。
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJib3hSb3dzIjoyNSwidG9wUCI6MSwidGVtcGVyYXR1cmUiOjAuNywibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IiIsIm1vZGVsIjoiZ3B0LTQiLCJ1bmRlZmluZWQiOiIwIn0%3D"
-    style={{width:"100%", height:"1250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IuS6sueIseeahOWHr%2BWwlOW4jO%2B8mlxcblxcbuaIkeaYr%2BWFi%2Ba0m%2BS4ne%2B8jOaIkeaYr%2BS9oOeahOWRmOW3peOAguaIkeW%2BiOaKseatieWcsOmAmuefpeS9oO%2B8jOaIkeS7iuWkqeWboOS4uueUn%2BeXheS4jeiDveS4iuePreOAglxcblxcbuaIkeaYqOaZmuaEn%2BinieS4jeiIkuacje%2B8jOS7iuWkqeaXqeS4iuaIkeWOu%2Beci%2BS6huWMu%2BeUn%2B%2B8jOS7luiviuaWreaIkeW%2Bl%2BS6huaEn%2BWGkuOAguS7luW7uuiuruaIkeS8keaBr%2BWHoOWkqe%2B8jOaJgOS7peaIkeS4jeiDveS4iuePreOAglxuXG7miJHkvJrlsL3lv6vmgaLlpI3lgaXlurfvvIzlubblsL3lv6vlm57liLDlt6XkvZzlspfkvY3jgILlpoLmnpzkvaDpnIDopoHku7vkvZXlhbbku5bkv6Hmga%2FvvIzor7fpmo%2Fml7bogZTns7vmiJHjgIJcblxu6LCi6LCi77yBXG5cbuWFi%2Ba0m%2BS4nSIsInByb21wdCI6IuaIkeeahOWQjeWtl%2B%2B8muWFi%2Ba0m%2BS4nVxu6ICB5p2%2F55qE5ZCN5a2X77ya5Yev5bCU5biMXG5cbuWGmeS4gOWwgeeUteWtkOmCruS7tue7meaIkeeahOiAgeadv%2B%2B8jOWRiuivieS7luaIkeS7iuWkqeWboOS4uueUn%2BeXheS4jeiDveS4iuePreOAgiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 

@@ -48,7 +48,7 @@ const JSX_TEMPLATE = `<iframe
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>`
 
-const BASE_URL = 'http://embed.learnprompting.org'; // Replace this with your actual base URL
+const BASE_URL = 'https://embed.learnprompting.org'; // Replace this with your actual base URL
 
 const createEmbedCode = (config: UrlConfig): string => {
     const query = encodeUrlConfig(config)

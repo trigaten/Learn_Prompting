@@ -34,7 +34,7 @@ L'IA peut être utilisée pour automatiser les tâches auxquelles vous consacrez
 
 ## Comment démarrer ?
 
-Ce cours vous apprendra à communiquer avec les IA. Lisez le reste de ce chapitre, puis consultez les autres chapitres qui vous intéressent. En particulier, la section de sollicitation appliquée peut être intéressante si vous souhaitez voir comment les professionnels utilisent l'IA pour automatiser leur travail. Vous pouvez expérimenter des IA à l'aide de ressources telles que [Playground](https://beta.openai.com/playground), [d'autres IDE](https://learnprompting.org/docs/tooling/IDEs/intro) ou simplement en utilisant les intégrations [Dyno](https://trydyno.com/) interactives que vous verrez sur ce site.
+Ce cours vous apprendra à communiquer avec les IA. Lisez le reste de ce chapitre, puis consultez les autres chapitres qui vous intéressent. En particulier, la section de sollicitation appliquée peut être intéressante si vous souhaitez voir comment les professionnels utilisent l'IA pour automatiser leur travail. Vous pouvez expérimenter des IA à l'aide de ressources telles que [Playground](https://beta.openai.com/playground), [d'autres IDE](https://learnprompting.org/docs/tooling/IDEs/intro) ou simplement en utilisant les intégrations embed interactives que vous verrez sur ce site.
 
 Avant de lire le prochain article, il est important de noter que vous n'avez besoin d'aucune formation technique pour faire du prompt engineering. La plupart sont des essais et des erreurs, et vous pouvez apprendre au fur et à mesure.
 
