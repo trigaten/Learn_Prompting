@@ -14,6 +14,9 @@ import IntermediateMobile from "@site/static/img/intermediatemobile.webp";
 import AdvancedMobile from "@site/static/img/advancedmobile.webp";
 import ApplicationsMobile from "@site/static/img/applicationsmobile.webp";
 
+import "../../pages/index.css";
+
+
 function Hero() {
   const categories = ["Beginner", "Intermediate", "Advanced", "Applications"];
   const [activeCategory, setActiveCategory] = React.useState("Beginner");
@@ -100,7 +103,7 @@ function Hero() {
             ))}
           </div>
 
-          <div className="relative hidden md:flex">
+          <div className="relative hidden md:flex web_lazy">
             <div
               className={`mt-[-25px] top-0 hidden md:flex border-black transition-all ${x_pos}`}
             >
@@ -111,7 +114,7 @@ function Hero() {
             </div>
           </div>
 
-          <div className="relative  md:hidden flex">
+          <div className="relative  md:hidden flex mobile_lazy">
             <div
               className={
                 "left-0 top-0 h-full flex flex-row transition-all " +

@@ -87,3 +87,15 @@ code {
 .left-4-mobile {
   transform: translateX(-300%);
 }
+
+@media (min-width: 768px) {
+  .mobile_lazy {
+    loading: lazy;
+  }
+}
+
+@media (max-width: 768px) {
+  .web_lazy {
+    loading: lazy;
+  }
+}
