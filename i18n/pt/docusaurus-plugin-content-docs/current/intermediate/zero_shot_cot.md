@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Prompts do tipo Cadeia de Pensamento Zero Shot (ou Zero Shot Chain of Thought - Zero-shot-CoT, em inglês)(@kojima2022large) são uma "evolução" do prompt do tipo %%Cadeia de Pensamento|CoT prompting%% (@wei2022chain), com o introdução de um passo adicional muito simples. Pesquisadores descobriram que ao adicionar as palavras "Vamos pensar passo a passo" ao final de uma pergunta, as LLMs são capazes de gerar uma cadeia de pensamento que responde à pergunta. A partir desta cadeia de pensamento, eles são capazes de extrair respostas mais precisas.
 
-import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
+import ZSImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/zero_shot.png';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSImage} style={{width: "500px"}}/>
@@ -19,7 +19,7 @@ Cadeia de Pensamento Zero Shot. Exemplo adaptado. (Kojima et al.)
 
 Tecnicamente, o processo completo de Cadeia de Pensamento Zero Shot envolve duas solicitações separadas. Na imagem abaixo, a bolha superior à esquerda gera uma cadeia de pensamento, enquanto a bolha superior à direita recebe a saída da primeira solicitação (incluindo a própria primeira solicitação) e extrai a resposta da cadeia de pensamento. Essa segunda solicitação é uma _solicitação auto-aumentada_ ou _auto-enriquecida_.
 
-import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
+import ZSProcessImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/zero_shot_example.png';
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
@@ -36,7 +36,7 @@ Abaixo estão alguns demos (que apenas realizam extração de raciocínio). Este
 #### Incorreto
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiTyBKb%2BNvIHRlbSA4IHBlcmFzLiIsInByb21wdCI6IlNlIEpv428gdGVtIDUgcGVyYXMsIGNvbWUgMiBlIGNvbXByYSBtYWlzIDUsIGRlcG9pcyBk4SAzIGFvIHNldSBhbWlnbywgcXVhbnRhcyBwZXJhcyBlbGUgdGVtIGFnb3JhPyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiTyBKb8OjbyB0ZW0gOCBww6pyYXMuIiwicHJvbXB0IjoiU2UgSm%2FDo28gdGVtIDUgcMOqcmFzLCBjb21lIDIgZSBjb21wcmEgbWFpcyA1LCBkZXBvaXMgZMOhIDMgYW8gc2V1IGFtaWdvLCBxdWFudGFzIHBlcmFzIGVsZSB0ZW0gYWdvcmE%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
@@ -45,7 +45,7 @@ Abaixo estão alguns demos (que apenas realizam extração de raciocínio). Este
 #### Correto
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiSm%2FjbyB0ZW0gNSBwZXJhcywgY29tZSAyLCBlbnTjbyBzb2JyYW0gNSAtIDIgPSAzIHBlcmFzLiBEZXBvaXMgZWxlIGNvbXByYSBtYWlzIDUsIGVudONvIGVsZSB0ZW0gMyArIDUgPSA4IHBlcmFzLiBNYXMgZW0gc2VndWlkYSBlbGUgZOEgMyBwZXJhcyBhbyBhbWlnbywgcG9ydGFudG8gYWdvcmEgZWxlIHRlbSA4IC0gMyA9IDUgcGVyYXMuIEpv428gdGVtIDUgcGVyYXMgYWdvcmEuIiwicHJvbXB0IjoiU2UgSm%2FjbyB0ZW0gNSBwZXJhcywgY29tZSAyIGUgY29tcHJhIG1haXMgNSwgZGVwb2lzIGThIDMgYW8gc2V1IGFtaWdvLCBxdWFudGFzIHBlcmFzIGVsZSB0ZW0gYWdvcmE%2FXG5cblZhbW9zIHBlbnNhciBwYXNzbyBhIHBhc3NvLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiSm%2FDo28gdGVtIDUgcMOqcmFzLCBjb21lIDIsIGVudMOjbyBzb2JyYW0gNSAtIDIgPSAzIHDDqnJhcy4gRGVwb2lzIGVsZSBjb21wcmEgbWFpcyA1LCBlbnTDo28gZWxlIHRlbSAzICsgNSA9IDggcMOqcmFzLiBNYXMgZW0gc2VndWlkYSBlbGUgZMOhIDMgcGVyYXMgYW8gYW1pZ28sIHBvcnRhbnRvIGFnb3JhIGVsZSB0ZW0gOCAtIDMgPSA1IHBlcmFzLiBKb8OjbyBhZ29yYSB0ZW0gNSBww6pyYXMuIiwicHJvbXB0IjoiU2UgSm%2FDo28gdGVtIDUgcMOqcmFzLCBjb21lIDIgZSBjb21wcmEgbWFpcyA1LCBkZXBvaXMgZMOhIDMgYW8gc2V1IGFtaWdvLCBxdWFudGFzIHDDqnJhcyBlbGUgdGVtIGFnb3JhP1xuXG5WYW1vcyBwZW5zYXIgcGFzc28gYSBwYXNzby4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
