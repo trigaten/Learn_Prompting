@@ -54,7 +54,7 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
 종류:
 - 제로 샷(0 shot) 프롬프팅: 모델에게 예제를 제공하지 않음
 - 원 샷(1 shot) 프롬프팅: 모델에게 한 개의 예제를 제공함
-- 퓨샷 프롬프팅: 2개 이상의 모델을 제공함
+- 퓨샷 프롬프팅: 모델에게 2개 이상의 예제를 제공함
 
 ### 제로 샷(0-shot) 프롬프팅
 
