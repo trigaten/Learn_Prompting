@@ -166,7 +166,7 @@ sidebar_position: 2500
 
 - [Agent.so](https://www.agent.so/)
 
-- [Poe](http://poe.com)
+- [Poe](https://poe.com)
 
 - [Jasper Chat](https://www.jasper.ai/chat)
 
