@@ -227,7 +227,7 @@ Catatan: [karena baik GPT-3 maupun GPT-3 Instruct paper tidak sesuai dengan mode
 
 #### Mengevaluasi model bahasa bisa saja sulit(@chase2022evaluating)
 
-#### Konstitusi AI: Kerugian dari Umpan Balik AI (@bai2022kesungguhan)
+#### Konstitusi AI: Kerugian dari Umpan Balik AI (@bai2022constitutional)
 
 ## Survey
 

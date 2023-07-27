@@ -66,7 +66,7 @@ Pada titik ini, DiVeRSe telah menghasilkan 100 penyelesaian yang berbeda.
 
 ### Voting Verifier
 
-Sekarang, kita bisa hanya mengambil jawaban mayoritas, seperti yang dilakukan Self-Consistency (@ mitchell2022enhancing).
+Sekarang, kita bisa hanya mengambil jawaban mayoritas, seperti yang dilakukan Self-Consistency (@mitchell2022enhancing).
 
 Namun, DiVeRSe mengusulkan metode yang jauh lebih rumit, yang mereka sebut sebagai _pengecek suara_.
 
