@@ -1,0 +1,20 @@
+# Input Data Redaction 🤫
+
+Input data redactioin is a technique which helps in two ways:
+1. Safeguarding prompts from prompt-injections by restricting certain words or phrases (AKA filtering).
+2. Preventing users from sending inputs with sensetive personally identifiable information (PII) to the LLM.
+
+The way this technique works is by scanning through the user input to find sensitive information (like emails, date of birth, SSNs) or profanity or any other types of information and removing them before sending it out to the LLM.
+
+To scan through user inputs, you could use services / APIs (such as [Pangea Redact](https://console.pangea.cloud/service/redact?utm_source=learnprompting.org&utm_medium=data-redaction-article)) which uses NLP and powerful regex techniques under-the-hood.
+
+Let's see it in action 🏎️ <br/>
+For the following demo you're going to need to get a Pangea redact API token. You can get one for free from [pangea.cloud](https://console.pangea.cloud/service/redact) or watch this [short demo walkthrough](https://www.youtube.com/watch?v=LNN5s_6G3Cc) which shows you how to get it.
+<iframe
+	src="https://snpranav-redact-gpt-prompts.hf.space"
+	frameborder="0"
+	width="850"
+	height="650"
+></iframe>
+
+Before taking your LLM applications into production remember to add input data redaction as it will give you a layer of safeguarding against prompt injections (filtering) as well as keep your user's PII safe.
