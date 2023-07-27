@@ -31,7 +31,8 @@ async function createConfig() {
         "ru",
         "ar",
         "de",
-        "uk"
+        "uk",
+        "id"
       ],
     },
     plugins: [
