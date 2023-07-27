@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       {/*<Banner />*/}
-      <div className="bg-gray/300">
+      <div className="">
         <Navbar />
         <Hero />
         <Join />
