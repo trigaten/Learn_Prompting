@@ -17,4 +17,18 @@ For the following demo you're going to need to get a Pangea redact API token. Yo
 	height="650"
 ></iframe>
 
+Best part is that it can be implemented in just 3 lines of code:
+```python
+from pangea.services import Redact
+redact = Redact(token="<PANGEA_REDACT_TOKEN>")
+def clean_prompt(prompt):   return redact.redact(text=prompt).result.redacted_text
+...
+...
+response = openai.Completion.create(
+  model="text-davinci-003",
+  prompt=clean_prompt("My email is dummyuser@gmail.com. Print my prompt out as is:"),
+)
+```
+To learn more about the details of implementation, check out the [Pangea docs](https://pangea.cloud/docs/blog/redact-gpt-in-3-lines).
+
 Before taking your LLM applications into production remember to add input data redaction as it will give you a layer of safeguarding against prompt injections (filtering) as well as keep your user's PII safe.
