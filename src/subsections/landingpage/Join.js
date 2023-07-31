@@ -78,12 +78,10 @@ function Join() {
         >
           <div className="md:w-[45%] md:pl-28 md:ml-12">
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
-              The <span className="font-bold">HackAPrompt</span> Competition
+              <span className="font-bold">HackAPrompt</span> Competition
             </div>
             <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
-            We launched the first ever prompt hacking competition designed to enhance AI safety and education by challenging participants to outsmart large language models from May 5th to June 3rd! 
-            <br/>
-            The competition featured 10 increasingly difficult levels of prompt hacking defenses and the chance to win over $35,000 in prizes! At the end, we open-sourced the dataset of over 600,000 adversarial attacks that were submitted by 2800 participants from around the world.
+            We launched the first ever prompt hacking competition designed to enhance AI safety and education by challenging participants to outsmart large language models from May 5th to June 3rd! The competition featured 10 increasingly difficult levels of prompt hacking defenses and the chance to win over $35,000 in prizes!
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
               <a href="https://www.aicrowd.com/challenges/hackaprompt-2023">
