@@ -17,6 +17,10 @@ function Footer() {
       link: "https://twitter.com/learnprompting",
     },
     {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/company/learn-prompting",
+    },
+    {
       name: "Contact",
       link: "mailto:learnprompting@gmail.com",
     },
