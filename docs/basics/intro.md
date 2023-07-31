@@ -11,7 +11,7 @@ import Techniques from '@site/docs/assets/basics/techniques.svg';
 </div>
 
 
-This chapter introduces simple prompting techniques as well as terminology. In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. If you already know about the below topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
+In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. 
 
 ## What is AI?
 
