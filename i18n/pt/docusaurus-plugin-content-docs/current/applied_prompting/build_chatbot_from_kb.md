@@ -140,7 +140,7 @@ Passando esse prompt para o GPT-3, eu recebi a resposta a seguir:
 </span>
 </pre>
 
-Note que a informação gerada vem da base de conhecimento. 
+Note que a informação gerada vem da base de conhecimento.
 
 ## Disambiguando perguntas com GPT-3
 
@@ -171,7 +171,7 @@ Vamos tentar uma pergunta mais vaga, por exemplo <span className="yellow-highlig
 
 A primeira resposta que recebi foi a seguinte:
 <pre>
-    <span className="bluegreen-highlight">Desculpe por ouvir isso. Você está tentando fazer login no VideoGram? Se sim, aqui estão algumas instruções para ajudá-lo a fazer login. 
+    <span className="bluegreen-highlight">Desculpe por ouvir isso. Você está tentando fazer login no VideoGram? Se sim, aqui estão algumas instruções para ajudá-lo a fazer login.
 
 1. Abra o seu navegador e vá para o site do VideoGram.
 2. Clique no botão "Login" localizado no canto superior direito da página.
@@ -179,7 +179,7 @@ A primeira resposta que recebi foi a seguinte:
 4. Depois de inserir suas credenciais, clique no botão "Login".
 5. Você agora deverá estar conectado à sua conta do VideoGram.
 
-ou 
+ou
 
 1. Abra o aplicativo VideoGram em seu dispositivo móvel.
 2. Na página principal, toque no botão "Login" localizado no canto inferior direito.
