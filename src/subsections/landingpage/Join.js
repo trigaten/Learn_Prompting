@@ -25,7 +25,7 @@ function Join() {
       subtitle: "People Learning",
     },
     {
-      header: "40K+",
+      header: "43K+",
       subtitle: "Discord Members",
     },
     {
@@ -33,7 +33,7 @@ function Join() {
       subtitle: "Content Modules",
     },
     {
-      header: "9+",
+      header: "10+",
       subtitle: "Languages",
     },
   ];
@@ -77,16 +77,13 @@ function Join() {
           className="flex gap-4 justify-around flex-col md:flex-row"
         >
           <div className="md:w-[45%] md:pl-28 md:ml-12">
-            <div className="opacity-81 text-center md:text-left text-lg">
-              The
-            </div>
             <div className="mt-8 text-4xl tracking-tighter text-center md:text-left">
-              <span className="font-bold">HackAPrompt</span> Competition
+              The <span className="font-bold">HackAPrompt</span> Competition
             </div>
             <div className="opacity-75 font-light pt-8 md:text-left text-center px-4 md:px-0 leading-6">
-              We ran this beginner-friendly competition May 5th-June 3rd. 2700+ competitors 
-              injected, leaked and defeated the sandwich defense in order to claim their 
-              share of over $35,000 in prizes.
+            We launched the first ever prompt hacking competition designed to enhance AI safety and education by challenging participants to outsmart large language models from May 5th to June 3rd! 
+            <br/>
+            The competition featured 10 increasingly difficult levels of prompt hacking defenses and the chance to win over $35,000 in prizes! At the end, we open-sourced the dataset of over 600,000 adversarial attacks that were submitted by 2800 participants from around the world.
             </div>
             <div className="flex pt-8 justify-center md:justify-start">
               <a href="https://www.aicrowd.com/challenges/hackaprompt-2023">

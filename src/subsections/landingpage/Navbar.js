@@ -9,6 +9,10 @@ function Navbar(props) {
       link: "/docs/intro",
     },
     {
+      name: "About",
+      link: "/about",
+    },
+    {
       name: "Contribute",
       link: "/contribute",
     },
@@ -27,10 +31,6 @@ function Navbar(props) {
     {
       name: "Certificate",
       link: "/certificate",
-    },
-    {
-      name: "About",
-      link: "/about",
     },
   ];
 
@@ -72,22 +72,22 @@ function Navbar(props) {
         )}
         {!props.forDocs && (
           <div className="flex gap-4 hidden lg:flex">
-            {rightLinks.map((link, idx) => (
-              <div
-                className="flex items-center text-default hover:text-dark/500"
-                key={idx}
-              >
-                <a
-                  href={link.link}
-                  className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
-                  style={{ color: "black" }}
-                >
-                  {link.name}
-                </a>
-                <RxArrowTopRight className="inline-block" />
-              </div>
-            ))}
-          </div>
+  {rightLinks.map((link, idx) => (
+    <div
+      className="flex items-center text-default hover:text-dark/500 mr-8"
+      key={idx}
+    >
+      <a
+        href={link.link}
+        className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
+        style={{ color: "black" }}
+      >
+        {link.name}
+      </a>
+      <RxArrowTopRight className="inline-block" />
+    </div>
+  ))}
+</div>
         )}
       </div>
     </div>
