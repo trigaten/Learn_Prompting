@@ -48,6 +48,10 @@ function Navbar(props) {
       link: "https://twitter.com/learnprompting",
     },
     {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/company/learn-prompting",
+    },
+    {
       name: "Contact",
       link: "mailto:learnprompting@gmail.com",
     },
@@ -71,22 +75,22 @@ function Navbar(props) {
           </div>
         )}
         {!props.forDocs && (
-          <div className="flex gap-4 hidden lg:flex">
-  {rightLinks.map((link, idx) => (
-    <div
-      className="flex items-center text-default hover:text-dark/500 mr-8"
-      key={idx}
-    >
-      <a
-        href={link.link}
-        className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
-        style={{ color: "black" }}
-      >
-        {link.name}
-      </a>
-      <RxArrowTopRight className="inline-block" />
-    </div>
-  ))}
+ <div className="flex gap-4 hidden lg:flex">
+ {rightLinks.map((link, idx) => (
+   <div
+     className="flex items-center text-default hover:text-dark/500"
+     key={idx}
+   >
+     <a
+       href={link.link}
+       className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
+       style={{ color: "black" }}
+     >
+       {link.name}
+     </a>
+     <RxArrowTopRight className="inline-block" />
+   </div>
+ ))}
 </div>
         )}
       </div>
