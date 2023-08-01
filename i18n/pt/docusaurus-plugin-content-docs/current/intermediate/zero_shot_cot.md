@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Prompts do tipo Cadeia de Pensamento Zero Shot (ou Zero Shot Chain of Thought - Zero-shot-CoT, em inglês)(@kojima2022large) são uma "evolução" do prompt do tipo %%Cadeia de Pensamento|CoT prompting%% (@wei2022chain), com o introdução de um passo adicional muito simples. Pesquisadores descobriram que ao adicionar as palavras "Vamos pensar passo a passo" ao final de uma pergunta, as LLMs são capazes de gerar uma cadeia de pensamento que responde à pergunta. A partir desta cadeia de pensamento, eles são capazes de extrair respostas mais precisas.
 
-import ZSImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/zero_shot.png';
+import ZSImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={ZSImage} style={{width: "500px"}}/>
@@ -19,7 +19,7 @@ Cadeia de Pensamento Zero Shot. Exemplo adaptado. (Kojima et al.)
 
 Tecnicamente, o processo completo de Cadeia de Pensamento Zero Shot envolve duas solicitações separadas. Na imagem abaixo, a bolha superior à esquerda gera uma cadeia de pensamento, enquanto a bolha superior à direita recebe a saída da primeira solicitação (incluindo a própria primeira solicitação) e extrai a resposta da cadeia de pensamento. Essa segunda solicitação é uma _solicitação auto-aumentada_ ou _auto-enriquecida_.
 
-import ZSProcessImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/zero_shot_example.png';
+import ZSProcessImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />

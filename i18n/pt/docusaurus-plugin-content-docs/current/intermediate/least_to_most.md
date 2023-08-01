@@ -10,7 +10,7 @@ Prompts do tipo "Menor para o Maior" (MpM) (Least to Most prompting ou LtM, em i
 
 Como na técnica de CdP prompting, o problema a ser resolvido é decomposto em um conjunto de subproblemas que se constroem uns sobre os outros. Em um segundo momento, esses subproblemas são resolvidos um por um. Contrariamente à cadeia de pensamento, a solução dos subproblemas anteriores é inserida na prompt tentando resolver o próximo problema.
 
-import leastToMost from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/least_to_most_formal.png'
+import leastToMost from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={leastToMost} style={{width: "600px"}} alt="Diagrama representando o prompt Menor para o Maior (MpM)"/>
