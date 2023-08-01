@@ -4,6 +4,12 @@ sidebar_position: 1
 
 # Welcome
 
+import Techniques from '@site/docs/assets/welcome_astronaut.webp';
+
+<div style={{textAlign: 'center'}}>
+  <img src={Techniques} style={{width: "300px"}}/>
+</div>
+
 Welcome to our introductory course on prompt engineering!
 
 Prompt engineering (PE) is the process of **communicating effectively with an AI to achieve desired results**. As AI technology continues to rapidly advance, the ability to master prompt engineering has become a particularly valuable skill. Prompt engineering techniques can be applied to a wide variety of tasks, making it a useful tool for anyone seeking to improve their efficiency in both everyday and innovative activities.
