@@ -5,24 +5,10 @@ class NewsletterSignupForm extends Component {
     super(props);
     this.state = { email: "", submitted: false };
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-    fetch("https://hooks.zapier.com/hooks/catch/15160672/343aepr/", {
-      method: "POST",
-      body: JSON.stringify([{ email: this.state.email }]),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        this.setState({ submitted: true });
-      });
   }
 
   render() {
@@ -48,26 +34,16 @@ class NewsletterSignupForm extends Component {
               Stay up to date with the latest content delivered to your inbox.
             </div>
             <div className="pt-10 flex flex-row">
-              <form onSubmit={this.handleSubmit} className="flex">
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  value={this.state.name}
-                  onChange={this.handleChange}
-                  required
-                  style={{ color: "black" }}
-                  placeholder="email@learnprompting.org"
-                  className="rounded-l-md px-6 py-2 bg-white text-dark/500 text-sm font-medium tracking-tight ring-0 focus:outline-none w-[250px] md:w-[450px] focus:ring-0"
-                />
-                <button
-                  type="submit"
-                  style={{ width: "100px" }}
-                  className="rounded-r-md bg-[#2A5F66] flex items-center font-semibold justify-center px-3 py-2 hover:bg-[#1F4A52] active:bg-[#2D6370]"
-                >
-                  Sign Up
-                </button>
-              </form>
+            <iframe 
+  src="https://embeds.beehiiv.com/ae49cad6-1b3a-4ec2-91fa-73b7f3e0188a?slim=true" 
+  data-test-id="beehiiv-embed" 
+  height="52" 
+  width="100%"
+  frameBorder="0" 
+  scrolling="no" 
+  style={{margin: 0, borderRadius: 0, backgroundColor: 'transparent'}}
+  className="rounded-l-md bg-white text-dark/500 text-sm font-medium tracking-tight ring-0 focus:outline-none w-[250px] md:w-[450px] focus:ring-0"
+/>
             </div>
           </>
         )}
