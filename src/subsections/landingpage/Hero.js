@@ -1,12 +1,21 @@
 import React, { useEffect, useMemo } from "react";
-import ClassicPadding from "@site/src/components/layouts/ClassicPadding";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from "@site/src/components/Button";
 import { RxArrowTopRight } from "react-icons/rx";
 import ButtonField from "@site/src/components/ButtonField";
-import BeginnerWeb from "@site/static/img/beginnerweb.svg";
-import IntermediateWeb from "@site/static/img/intermediateweb.svg";
-import AdvancedWeb from "@site/static/img/advancedweb.svg";
-import ApplicationsWeb from "@site/static/img/applicationsweb.svg";
+
+import BeginnerWeb from "@site/static/img/beginnerweb.webp";
+import IntermediateWeb from "@site/static/img/intermediateweb.webp";
+import AdvancedWeb from "@site/static/img/advancedweb.webp";
+import ApplicationsWeb from "@site/static/img/applicationsweb.webp";
+
+import BeginnerMobile from "@site/static/img/beginnermobile.webp";
+import IntermediateMobile from "@site/static/img/intermediatemobile.webp";
+import AdvancedMobile from "@site/static/img/advancedmobile.webp";
+import ApplicationsMobile from "@site/static/img/applicationsmobile.webp";
+
+import "../../pages/index.css";
+
 
 function Hero() {
   const categories = ["Beginner", "Intermediate", "Advanced", "Applications"];
@@ -85,49 +94,37 @@ function Hero() {
                   category === "Intermediate"
                     ? "bg-yellow-500"
                     : category === "Advanced"
-                    ? "bg-red-500"
-                    : category === "Applications"
-                    ? "bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500"
-                    : ""
+                      ? "bg-red-500"
+                      : category === "Applications"
+                        ? "bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500"
+                        : ""
                 }
               />
             ))}
           </div>
 
-          <div className="relative h-[700px] hidden md:flex">
+          <div className="relative hidden md:flex web_lazy">
             <div
-              className={`mt-[-25px] absolute top-0 hidden md:flex   border-black flex-row transition-all ${x_pos}`}
+              className={`mt-[-25px] top-0 hidden md:flex border-black transition-all ${x_pos}`}
             >
-              <BeginnerWeb className="h-[700px] mr-[-10rem]" />
-              <IntermediateWeb className="h-[700px] mr-[-10rem]" />
-              <AdvancedWeb className="h-[700px] mr-[-10rem]" />
-              <ApplicationsWeb className="h-[700px] mr-[-10rem]" />
+              <img src={BeginnerWeb} alt="Beginner Web"/>
+              <img src={IntermediateWeb} alt="Intermediate Web" />
+              <img src={AdvancedWeb} alt="Advanced Web" />
+              <LazyLoadImage src={ApplicationsWeb} alt="Applications Web" />
             </div>
           </div>
 
-          <div className="relative h-[700px] md:hidden w-screen">
+          <div className="relative  md:hidden flex mobile_lazy">
             <div
               className={
-                "left-0 absolute top-0 h-full flex flex-row transition-all " +
+                "left-0 top-0 h-full flex flex-row transition-all " +
                 x_pos_mob
               }
             >
-              <img
-                src={require("@site/src/css/beginnermobile.png").default}
-                className="h-[650px] mr-[0rem]"
-              />
-              <img
-                src={require("@site/src/css/intermediatemobile.png").default}
-                className="h-[650px] mr-[0rem]"
-              />
-              <img
-                src={require("@site/src/css/advancedmobile.png").default}
-                className="h-[650px] mr-[0rem]"
-              />
-              <img
-                src={require("@site/src/css/applicationsmobile.png").default}
-                className="h-[650px] mr-[0rem]"
-              />
+              <img src={BeginnerMobile} alt="Beginner Mobile" width={"100%"}/>
+              <img src={IntermediateMobile} alt="Intermediate Mobile" />
+              <img src={AdvancedMobile} alt="Advanced Mobile" />
+              <LazyLoadImage src={ApplicationsMobile} alt="Applications Mobile"/>
             </div>
           </div>
         </div>

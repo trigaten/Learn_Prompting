@@ -6,10 +6,10 @@ sidebar_position: 11
 
 [Human loop](https://humanloop.com/) parece ofrecer un playground similar al Playground de GPT-3, pero con algunas características adicionales. Actualmente están trabajando con más usuarios de la industria.
 
-import Image from '@site/docs/assets/tooling/humanloop.png';
+import Image from '@site/docs/assets/tooling/humanloop.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características

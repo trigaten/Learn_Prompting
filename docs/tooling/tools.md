@@ -14,6 +14,19 @@ This section contains a list of non-IDE tools that are useful for prompting.
 
 > This library is aimed at assisting in the development of those types of applications.
 
+### [PromptAppGPT](https://github.com/mleoking/PromptAppGPT)
+
+> PromptAppGPT is a low-code prompt-based rapid app development framework. PromptAppGPT contains features such as low-code prompt-based development, GPT text generation, DALLE image generation, online prompt editer+compiler+runer, automatic user interface generation, support for plug-in extensions, etc. PromptAppGPT aims to enable natural language app development based on GPT.
+
+> PromptAppGPT provides multi-task conditional triggering, result verification, and failure retry capabilities, allowing manual generation tasks that would otherwise require multiple steps to be automated. At the same time, users no longer need to memorise and enter the tedious prompt mantra themselves, and can easily complete tasks by entering only the core necessary information for the task.
+
+> PromptAppGPT significantly lowers the barrier to GPT application development, allowing anyone to develop AutoGPT-like applications with a few lines of low code.
+
+
+### [Prompt-generator-for-ChatGPT](https://github.com/rubend18/Prompt-generator-for-ChatGPT)
+
+> The "Prompt generator for ChatGPT" application is a desktop tool designed to help users generate character-specific prompts for ChatGPT, a chatbot model developed by OpenAI.
+
 ### [Dust.tt](https://dust.tt)
 
 > The Dust platform helps build large language model applications as a series of prompted calls
@@ -44,6 +57,16 @@ easier and more robust:
 > Relying solely on LLMs is often insufficient to build applications & tools. To unlock their full potential, it's necessary to integrate LLMs with other sources of computation or knowledge and get the pipeline ready for production.
 
 > This library is aimed at assisting in developing a pipeline for using LLMs APIs in production, solving NLP Tasks such as NER, Classification, Question, Answering, Summarization, Text2Graph etc. and providing powerful agents for building chat agents for different tasks.
+
+### [PromptFlow](https://github.com/InsuranceToolkits/promptflow)
+
+> PromptFlow is a free, open-source, low-code tool that allows users to integrate LLMs, prompts, Python functions, and conditional logic to create flowcharts. It includes nodes for:
+
+> OpenAI API Calls (any model, including Whisper speech-to-text)
+> Anthropic Claude Calls, Arbitrary Python Code blocks, and Long + Short term history management
+> Database Queries, PostgresML integration, and Text Embeddings
+> HTTP Requests, SerpAPI Google Searches, and ElevenLabs Speech Synthesis
+Documentation can be found [here](https://www.promptflow.org/en/latest/index.html)
 
 
 ### [TextBox](https://github.com/RUCAIBox/TextBox)(@tang2022textbox)

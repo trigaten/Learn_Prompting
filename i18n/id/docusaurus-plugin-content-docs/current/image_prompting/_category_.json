@@ -1,0 +1,8 @@
+{
+  "label": "🖼️ Prompt untuk Menghasilkan Gambar",
+  "position": 40,
+  "link": {
+    "type": "generated-index",
+    "description": "Prompt engineering untuk model teks ke gambar seperti DALLE dan Stable Diffusion!"
+  }
+}

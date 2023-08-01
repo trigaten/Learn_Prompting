@@ -73,7 +73,7 @@ capítulos que te interessam. A seção de aplicação de *prompt* em particular
 como profissionais usam IA para automatizar seus trabalhos. Você pode praticar com IAs usando recursos como
 [OpenAI Playground](https://beta.openai.com/playground),
 [outros ambientes](https://learnprompting.org/docs/tooling/IDEs/intro), ou simplesmente utilizando o interativo
-[Dyno](https://trydyno.com). Ferramentas que você verá por todo este site.
+embed. Ferramentas que você verá por todo este site.
 
 [^1]: Tecnicamente, elas não "pensam" como humanos, mas essa é uma maneira simples de explicar.
 [^2]: Uma IA (GPT-3, davinci-003) de fato escreveu isso.

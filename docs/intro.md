@@ -15,7 +15,7 @@ This course is tailored to **beginners**, making it the perfect starting point i
 This course is open source, and built by a diverse community of researchers, translators, and hobbyists. We believe that AI should be accessible to everyone, and that it should be described clearly and objectively. To this end, we strive to produce a comprehensive and unbiased course that is free of excessive jargon and hype.
 
 We have found this approach to be appreciated by the PE community: This course is cited by [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), and is used by people at companies such as [O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, and OpenAI. You may also notice that <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>almost </a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>every </a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>other </a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>prompt </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>engineering </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>video </a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>and </a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>guide </a>
-uses material from this course. We are honored to support the prompt engineering community, including our 620K users and 33K [Discord](https://discord.gg/learn-prompting) members.
+uses material from this course. We are honored to support the prompt engineering community, including our 1M+ users and 40K [Discord](https://discord.gg/learn-prompting) members.
 
 ### How we teach
 
@@ -67,9 +67,9 @@ Below is a brief overview of each chapter:
 
 **Reliability**: Enhancing the reliability of large language models (LLMs)
 
-**Images**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
+**Image Prompting**: Prompt engineering for text-to-image models, such as DALLE and Stable Diffusion
 
-**Prompt Injection**: Hacking, but for prompt engineering
+**Prompt Hacking**: Hacking, but for prompt engineering
 
 **Tooling**: A review of various prompt engineering tools and IDEs
 

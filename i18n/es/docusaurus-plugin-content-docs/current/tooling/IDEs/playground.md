@@ -6,10 +6,10 @@ sidebar_position: 2
 
 [GPT-3 Playground](https://beta.openai.com/docs/quickstart) es la interfaz web para la API de GPT-3 de OpenAI. Es probablemente la herramienta original de ingeniería de prompts que la mayoría de las personas han utilizado. Como tal, es extremadamente conocida.
 
-import Image from '@site/docs/assets/tooling/GPT3.png';
+import Image from '@site/docs/assets/tooling/GPT3.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características

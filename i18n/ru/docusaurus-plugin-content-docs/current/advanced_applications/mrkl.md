@@ -44,16 +44,16 @@ sidebar_position: 2
 - Или даже гораздо более сложные задачи, которые зависят от нескольких источников данных, например, следующие: 
 
 
-import mrkl_task from '@site/docs/assets/mrkl_task.png';
-import dataset from '@site/docs/assets/mrkl/dataset.png';
-import load_dataset from '@site/docs/assets/mrkl/load_dataset.png';
-import model from '@site/docs/assets/mrkl/model.png';
-import extract from '@site/docs/assets/mrkl/extract.png';
-import search from '@site/docs/assets/mrkl/search.png';
-import final from '@site/docs/assets/mrkl/final.png';
+import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
+import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
+import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.webp';
+import model from '@site/docs/assets/advanced/mrkl/model.webp';
+import extract from '@site/docs/assets/advanced/mrkl/extract.webp';
+import search from '@site/docs/assets/advanced/mrkl/search.webp';
+import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <img src={mrkl_task} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -71,37 +71,37 @@ import final from '@site/docs/assets/mrkl/final.png';
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 Затем я переключился на вкладку `Specification` и загрузил набор данных с помощью блока `data`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 Далее я создал блок `llm`, который извлекает числа и операции. Обратите внимание, что в подсказке я сообщил, что мы будем использовать калькулятор Google. Модель, которую я использую (GPT-3), вероятно, имеет некоторые знания о калькуляторе Google из предварительного обучения. 
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 Затем я создал блок `code`, который запускает простой код javascript для удаления пробелов из завершения.
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 Наконец, я сделал блок `search`, который отправляет переформатированное уравнение в калькулятор Google.
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 Ниже мы видим окончательные результаты, которые все верны!
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 Не стесняйтесь клонировать и экспериментировать с этой платформой [здесь] (https://dust.tt/trigaten/a/98bdd65cb7).

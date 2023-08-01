@@ -6,10 +6,10 @@ sidebar_position: 8
 
 [Prompts.ai](https://prompts.ai/) proporciona un área de juego similar al del GPT-3 Playground, pero con algunas características adicionales. Ya no se está desarrollando.
 
-import Image from '@site/docs/assets/tooling/promptsai.png';
+import Image from '@site/docs/assets/tooling/promptsai.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características

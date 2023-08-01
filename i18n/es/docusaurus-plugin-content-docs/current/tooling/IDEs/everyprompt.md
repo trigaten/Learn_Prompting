@@ -7,10 +7,10 @@ sidebar_position: 5
 [Everyprompt](https://www.everyprompt.com) es una IDE de ingeniería de prompts con características robustas 
 que proporciona una interfaz profesional para la iteración de prompts individuales.
 
-import Image from '@site/docs/assets/tooling/everyprompt.png';
+import Image from '@site/docs/assets/tooling/everyprompt.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características

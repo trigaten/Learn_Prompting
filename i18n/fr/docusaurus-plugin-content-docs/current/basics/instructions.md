@@ -10,9 +10,11 @@ Vous trouverez ci-dessous un exemple d'intégration interactive Dyno. Si vous ne
 
 ### Exemple 1
 
-```html
-class="trydyno-embed-tw-root”
-```
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlNtaXRoLCBKb2huIiwicHJvbXB0IjoiVW4gdXRpbGlzYXRldXIgYSBlbnRyw6kgc29uIHByw6lub20gZXQgc29uIG5vbSBkZSBmYW1pbGxlIGRhbnMgdW4gZm9ybXVsYWlyZS4gTm91cyBuZSBzYXZvbnMgcGFzIGRhbnMgcXVlbCBvcmRyZSBzb250IHNvbiBwcsOpbm9tIGV0IHNvbiBub20gZGUgZmFtaWxsZSwgbWFpcyBub3VzIGF2b25zIGJlc29pbiBxdSdpbCBzb2l0IGRhbnMgY2UgZm9ybWF0ICc8Tm9tIGRlIGZhbWlsbGU%2BLCA8UHLDqW5vbT4nLiBcblxuVmV1aWxsZXogY29udmVydGlyIGxlIG5vbSBzdWl2YW50IGRhbnMgbGUgZm9ybWF0IGF0dGVuZHUgOiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 L'IA est facilement capable de résoudre ce problème. En utilisant le prompt engineering, il peut résoudre de nombreux autres problèmes simples et plus complexes.
 

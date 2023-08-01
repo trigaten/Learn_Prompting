@@ -10,10 +10,10 @@ Explore the repository on [GitHub](https://github.com/eg9y/promptsandbox.io/).
 
 Watch the guided tour in this [demo video](https://www.youtube.com/watch?v=CBPw7FXtaEU).
 
-import Image from '@site/docs/assets/tooling/promptsandbox.png';
+import Image from '@site/docs/assets/tooling/promptsandbox.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

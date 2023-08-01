@@ -10,7 +10,11 @@ sidebar_position: 2
 
 #### 예제 1
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="A user has input their first and last name into a form. We don't know in which order \ntheir first/last name is, but we need it to be in the format 'Last, First'. Convert the following:\n\njohn doe" initial-response="Doe, John" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IkEgdXNlciBoYXMgaW5wdXQgdGhlaXIgZmlyc3QgYW5kIGxhc3QgbmFtZSBpbnRvIGEgZm9ybS4gV2UgZG9uJ3Qga25vdyBpbiB3aGljaCBvcmRlciB0aGVpciBmaXJzdC9sYXN0IG5hbWUgaXMsIGJ1dCB3ZSBuZWVkIGl0IHRvIGJlIGluIHRoZSBmb3JtYXQgJ0xhc3QsIEZpcnN0Jy4gQ29udmVydCB0aGUgZm9sbG93aW5nOlxuXG5qb2huIGRvZSIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>AI는 이 문제를 쉽게 해결할 수 있습니다. 지시 프롬프팅을 사용해서 다른 쉬운 문제나 더 어려운 문제를 해결 할 수 있을 것입니다.
 

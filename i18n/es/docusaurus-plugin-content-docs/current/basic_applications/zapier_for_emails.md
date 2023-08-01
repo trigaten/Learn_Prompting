@@ -4,13 +4,13 @@ sidebar_position: 600
 
 # 🟢 Zapier para Correos Electrónicos
 
-import Basic from '@site/docs/assets/Zapiermail/Basic.png';
-import Diagram from '@site/docs/assets/Zapiermail/Diagram.png';
-import Step1 from '@site/docs/assets/Zapiermail/Step1.png';
-import Step2 from '@site/docs/assets/Zapiermail/Step2.png';
-import Step3 from '@site/docs/assets/Zapiermail/Step3.png';
-import Step4 from '@site/docs/assets/Zapiermail/Step4.png';
-import Zap from '@site/docs/assets/Zapiermail/Zap.png';
+import Basic from '@site/docs/assets/basic_applications/Zapiermail/Basic.webp';
+import Diagram from '@site/docs/assets/basic_applications/Zapiermail/Diagram.webp';
+import Step1 from '@site/docs/assets/basic_applications/Zapiermail/Step1.webp';
+import Step2 from '@site/docs/assets/basic_applications/Zapiermail/Step2.webp';
+import Step3 from '@site/docs/assets/basic_applications/Zapiermail/Step3.webp';
+import Step4 from '@site/docs/assets/basic_applications/Zapiermail/Step4.webp';
+import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 
 ## Introducción
 
@@ -34,7 +34,7 @@ A continuación se muestra un diagrama de lo que haremos en Zapier. Cada vez que
 1.  Se almacena la salida en una base de datos.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## Configuración en Zapier
@@ -46,7 +46,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
   <div>
   Así es como finalmente se verá el diagrama de acción de Zapier.
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
@@ -55,7 +55,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-    <img src={Step1} style={{width: "500px"}} />
+    <LazyLoadImage src={Step1} style={{width: "500px"}} />
         </div>
       </div>
     </details>
@@ -65,7 +65,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step2} style={{width: "500px"}} />
+  <LazyLoadImage src={Step2} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -76,7 +76,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step3} style={{width: "500px"}} />
+  <LazyLoadImage src={Step3} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -86,7 +86,7 @@ Asegúrate de tener una [cuenta de Zapier](https://zapier.com/sign-up) (puedes o
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step4} style={{width: "500px"}} />
+  <LazyLoadImage src={Step4} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -106,14 +106,18 @@ A continuación, mostramos algunos ejemplos con correos electrónicos que un adm
 
 Puedes pedir que resuma un correo electrónico simple en viñetas, sin embargo, esto puede no ser muy útil dependiendo de cómo quieras usar el resumen. Para un examen rápido de intercambios de correo electrónico, quizás solo quieras que sea corto y conciso. Simplemente pedir esto en el prompt funciona bien. A continuación, se muestra un ejemplo de este prompt. Ajusta y experimenta con él para ver cómo cambia.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Actúe como mi asistente personal. Soy un administrador de oficina. Resuma el siguiente correo electrónico de la manera más concisa posible, ignorando el encabezado y pie de página y cualquier correo electrónico anterior.. \n\nCorreo Electrónico: Solicitud de suministros de oficina adicionales Estimado Administrador de Oficina, Espero que este correo electrónico le encuentre bien. Me dirijo a usted para solicitar suministros de oficina adicionales para nuestro equipo. Como sabe, últimamente hemos estado experimentando un alto volumen de trabajo y hemos estado utilizando nuestros suministros a un ritmo más rápido de lo habitual. Agradeceríamos mucho si pudiera proporcionarnos los siguientes elementos: Papel de impresora Cartuchos de tinta para la impresora HP en la sala de conferencias Notas adhesivas Clips de carpeta Marcadores Por favor, háganos saber si hay alguna pregunta o inquietud, y cuándo podemos esperar la entrega de los suministros. Gracias por su ayuda. \n\nAtentamente, Tu Nombre:\n" initial-response="Solicitud de suministros de oficina adicionales debido a alta carga de trabajo. Lista de elementos solicitados: papel de impresora, cartuchos de tinta para la impresora HP en la sala de conferencias, notas adhesivas, clips de carpeta y marcadores. Se solicita información sobre la entrega y si hay alguna pregunta o inquietud." max-tokens="256" box-rows="15" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjUxMiwib3V0cHV0IjoiUG9yIG90cm8gbGFkbywgYWxndW5vcyBhcmd1bWVudGFuIHF1ZSBsYXMgbWF0ZW3DoXRpY2FzIHNvbiBlbiBncmFuIHBhcnRlIHVuYSBpbnZlbmNpw7NuIGRlIGxhIG1lbnRlIGh1bWFuYS4gTG9zIHByaW5jaXBpb3MgbWF0ZW3DoXRpY29zIHNlIGJhc2FuIGVuIGVsIHJhem9uYW1pZW50byBsw7NnaWNvLCBxdWUgZXMgdW5hIGNhcmFjdGVyw61zdGljYSBkZSBsYSBtZW50ZSBodW1hbmEuIFBvciBlamVtcGxvLCBsYSBnZW9tZXRyw61hIGV1Y2xpZGlhbmEgc2UgYmFzYSBlbiBheGlvbWFzIHkgcG9zdHVsYWRvcyBhYnN0cmFjdG9zLCBxdWUgc2UgYWNlcHRhbiBjb21vIHZlcmRhZGVyb3Mgc2luIHBydWViYS4gUG9yIGxvIHRhbnRvLCBzZSBwdWVkZSBhcmd1bWVudGFyIHF1ZSBsYSBnZW9tZXRyw61hIGVzIHVuYSBpbnZlbmNpw7NuIGRlIGxhIG1lbnRlIGh1bWFuYSBlbiBsdWdhciBkZSB1biBkZXNjdWJyaW1pZW50by4gRGUgbWFuZXJhIHNpbWlsYXIsIGxhcyBmw7NybXVsYXMgeSBlY3VhY2lvbmVzIG1hdGVtw6F0aWNhcyBzZSB1c2FuIHBhcmEgbW9kZWxhciB5IHByZWRlY2lyIGZlbsOzbWVub3MgZsOtc2ljb3MsIHF1ZSBzb24gbnVldmFtZW50ZSBlbCByZXN1bHRhZG8gZGVsIHJhem9uYW1pZW50byBodW1hbm8uIiwicHJvbXB0IjoiRXN0b3kgZXNjcmliaWVuZG8gdW4gZW5zYXlvIGNvcnRvIGRldGFsbGFkbyBlbiByZXNwdWVzdGEgYWwgc2lndWllbnRlIHRlbWE6IFxuwr9MYXMgbWF0ZW3DoXRpY2FzIHNvbiBpbnZlbnRhZGFzIG8gZGVzY3ViaWVydGFzPyBVc2EgdW4gcmF6b25hbWllbnRvIGN1aWRhZG9zbyBwYXJhIGV4cGxpY2FyIHR1IHJlc3B1ZXN0YS4gXG5cbkVzdG8gZXMgbG8gcXVlIHRlbmdvIGhhc3RhIGFob3JhOiBFeGlzdGUgbXVjaG8gZGViYXRlIGVudHJlIGZpbMOzc29mb3MgeSBtYXRlbcOhdGljb3Mgc29icmUgc2kgbGFzIG1hdGVtw6F0aWNhcyBzb24gaW52ZW50YWRhcyBvIGRlc2N1YmllcnRhcy4gQWxndW5vcyBhcmd1bWVudGFuIHF1ZSBsb3MgY29uY2VwdG9zIHkgcHJpbmNpcGlvcyBtYXRlbcOhdGljb3MgZXhpc3RlbiBpbmRlcGVuZGllbnRlbWVudGUgZGUgbGFzIG1lbnRlcyBodW1hbmFzIHksIHBvciBsbyB0YW50bywgcHVlZGVuIGNvbnNpZGVyYXJzZSBkZXNjdWJpZXJ0b3MgZW4gbHVnYXIgZGUgaW52ZW50YWRvcy4gUG9yIGVqZW1wbG8sIGVsIGNvbmNlcHRvIGRlIG7Dum1lcm9zLCBwcm9wb3JjaW9uZXMgeSBmb3JtYXMgZ2VvbcOpdHJpY2FzIHNlIG9ic2VydmEgZW4gZWwgbXVuZG8gbmF0dXJhbCB5IHNlIHB1ZWRlbiBhYnN0cmFlciB5IGVzdHVkaWFyIGRlIG1hbmVyYSBzaXN0ZW3DoXRpY2EuIFxuXG5Fc2NyaWJlIGVsIHNpZ3VpZW50ZSBww6FycmFmbyBkZSBtaSBlbnNheW8uIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 La respuesta aquí es aceptable y sería útil. Sin embargo, con algunos ajustes adicionales se puede obtener un mejor resultado. Como lector de los resúmenes, no le importa que sea un correo electrónico y es posible que desee un nivel de detalle menor para el resumen. La información sobre el porqué es irrelevante, lo mismo ocurre con la última oración sobre preguntas e inquietudes. Al agregar simplemente que el objetivo del resumen es permitirle revisar rápidamente el contenido y que se eliminen las formalidades, se puede mejorar el resultado.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Actúa como mi asistente personal. Soy un administrador de oficina. Resume el siguiente correo electrónico lo más concisamente posible, ignorando el encabezado, pie de página y cualquier correo electrónico anterior. Quiero usar el resumen para revisar rápidamente los correos electrónicos. Elimina cualquier formalidad. \n\nCorreo Electrónico:Solicitud de suministros de oficina adicionales Estimado Administrador de Oficina, Me dirijo a usted para solicitar suministros de oficina adicionales para nuestro equipo. Como sabe, últimamente hemos estado experimentando un alto volumen de trabajo y hemos estado utilizando nuestros suministros a un ritmo más rápido de lo habitual. Agradeceríamos mucho si pudiera proporcionarnos los siguientes elementos: Papel de impresora Cartuchos de tinta para la impresora HP en la sala de conferencias Notas adhesivas Clips de carpeta Marcadores Por favor, háganos saber cuándo podemos esperar la entrega de los suministros. Gracias por su ayuda. \n\nAtentamente, Tu Nombre:\n" initial-response="Solicitud de suministros de oficina adicionales - papel de impresora, cartuchos de tinta para impresora HP, notas adhesivas, clips de carpeta y marcadores." max-tokens="256" box-rows="15" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiJBY3TDumEgY29tbyBtaSBhc2lzdGVudGUgcGVyc29uYWwuIFNveSB1biBhZG1pbmlzdHJhZG9yIGRlIG9maWNpbmEuIFJlc3VtZSBlbCBzaWd1aWVudGUgY29ycmVvIGVsZWN0csOzbmljbyBsbyBtw6FzIGNvbmNpc2FtZW50ZSBwb3NpYmxlLCBpZ25vcmFuZG8gZWwgZW5jYWJlemFkbywgcGllIGRlIHDDoWdpbmEgeSBjdWFscXVpZXIgY29ycmVvIGVsZWN0csOzbmljbyBhbnRlcmlvci4gUXVpZXJvIHVzYXIgZWwgcmVzdW1lbiBwYXJhIHJldmlzYXIgcsOhcGlkYW1lbnRlIGxvcyBjb3JyZW9zIGVsZWN0csOzbmljb3MuIEVsaW1pbmEgY3VhbHF1aWVyIGZvcm1hbGlkYWQuIFxuXG5Db3JyZW8gRWxlY3Ryw7NuaWNvOlNvbGljaXR1ZCBkZSBzdW1pbmlzdHJvcyBkZSBvZmljaW5hIGFkaWNpb25hbGVzIEVzdGltYWRvIEFkbWluaXN0cmFkb3IgZGUgT2ZpY2luYSwgTWUgZGlyaWpvIGEgdXN0ZWQgcGFyYSBzb2xpY2l0YXIgc3VtaW5pc3Ryb3MgZGUgb2ZpY2luYSBhZGljaW9uYWxlcyBwYXJhIG51ZXN0cm8gZXF1aXBvLiBDb21vIHNhYmUsIMO6bHRpbWFtZW50ZSBoZW1vcyBlc3RhZG8gZXhwZXJpbWVudGFuZG8gdW4gYWx0byB2b2x1bWVuIGRlIHRyYWJham8geSBoZW1vcyBlc3RhZG8gdXRpbGl6YW5kbyBudWVzdHJvcyBzdW1pbmlzdHJvcyBhIHVuIHJpdG1vIG3DoXMgcsOhcGlkbyBkZSBsbyBoYWJpdHVhbC4gQWdyYWRlY2Vyw61hbW9zIG11Y2hvIHNpIHB1ZGllcmEgcHJvcG9yY2lvbmFybm9zIGxvcyBzaWd1aWVudGVzIGVsZW1lbnRvczogUGFwZWwgZGUgaW1wcmVzb3JhIENhcnR1Y2hvcyBkZSB0aW50YSBwYXJhIGxhIGltcHJlc29yYSBIUCBlbiBsYSBzYWxhIGRlIGNvbmZlcmVuY2lhcyBOb3RhcyBhZGhlc2l2YXMgQ2xpcHMgZGUgY2FycGV0YSBNYXJjYWRvcmVzIFBvciBmYXZvciwgaMOhZ2Fub3Mgc2FiZXIgY3XDoW5kbyBwb2RlbW9zIGVzcGVyYXIgbGEgZW50cmVnYSBkZSBsb3Mgc3VtaW5pc3Ryb3MuIEdyYWNpYXMgcG9yIHN1IGF5dWRhLiBcblxuQXRlbnRhbWVudGUsIFR1IE5vbWJyZTpcbiIsIm91dHB1dCI6IlNvbGljaXR1ZCBkZSBzdW1pbmlzdHJvcyBkZSBvZmljaW5hIGFkaWNpb25hbGVzIC0gcGFwZWwgZGUgaW1wcmVzb3JhLCBjYXJ0dWNob3MgZGUgdGludGEgcGFyYSBpbXByZXNvcmEgSFAsIG5vdGFzIGFkaGVzaXZhcywgY2xpcHMgZGUgY2FycGV0YSB5IG1hcmNhZG9yZXMuIiwibWF4VG9rZW5zIjoyNTYsImJveFJvd3MiOjE1LCJ0ZW1wZXJhdHVyZSI6MCwidG9wUCI6MH0%3D"
+    style={{width:"100%", height:"750px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>¡Ahora solo te quedan las partes más importantes del resumen!
 

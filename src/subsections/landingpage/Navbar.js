@@ -9,8 +9,8 @@ function Navbar(props) {
       link: "/docs/intro",
     },
     {
-      name: "Competition",
-      link: "#competition",
+      name: "About",
+      link: "/about",
     },
     {
       name: "Contribute",
@@ -20,9 +20,17 @@ function Navbar(props) {
       name: "Newsletter",
       link: "#newsletter",
     },
+    // {
+    //   name: "Blog",
+    //   link: "/blog",
+    // },
     {
-      name: "Blog",
-      link: "/blog",
+      name: "Consulting",
+      link: "/consulting",
+    },
+    {
+      name: "Certificate",
+      link: "/certificate",
     },
   ];
 
@@ -40,6 +48,10 @@ function Navbar(props) {
       link: "https://twitter.com/learnprompting",
     },
     {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/company/learn-prompting",
+    },
+    {
       name: "Contact",
       link: "mailto:learnprompting@gmail.com",
     },
@@ -47,7 +59,7 @@ function Navbar(props) {
 
   const paddingClass = props.forDocs ? "py-0" : "py-12";
   return (
-    <ClassicPadding>
+    <div className={"px-4 md:px-20 2xl:px-96"}>
       <div className={`md:flex hidden justify-between ${paddingClass}`}>
         {!props.forDocs && (
           <div className="flex">
@@ -63,26 +75,26 @@ function Navbar(props) {
           </div>
         )}
         {!props.forDocs && (
-          <div className="flex gap-4">
-            {rightLinks.map((link, idx) => (
-              <div
-                className="flex items-center text-default hover:text-dark/500"
-                key={idx}
-              >
-                <a
-                  href={link.link}
-                  className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
-                  style={{ color: "black" }}
-                >
-                  {link.name}
-                </a>
-                <RxArrowTopRight className="inline-block" />
-              </div>
-            ))}
-          </div>
+ <div className="flex gap-4 hidden lg:flex">
+ {rightLinks.map((link, idx) => (
+   <div
+     className="flex items-center text-default hover:text-dark/500"
+     key={idx}
+   >
+     <a
+       href={link.link}
+       className=" transition-all text-sm font-light mr-1 font-vietnam tracking-tight"
+       style={{ color: "black" }}
+     >
+       {link.name}
+     </a>
+     <RxArrowTopRight className="inline-block" />
+   </div>
+ ))}
+</div>
         )}
       </div>
-    </ClassicPadding>
+    </div>
   );
 }
 

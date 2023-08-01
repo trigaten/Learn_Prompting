@@ -4,11 +4,11 @@ sidebar_position: 40
 
 # 🟢 Chatbot + Knowledge Base
 
-import ImageIntents from '@site/docs/assets/chatbot_from_kb_intents.png'
-import ImageGPT3 from '@site/docs/assets/chatbot_from_kb_gpt3.png'
-import ImageGPT3Organized from '@site/docs/assets/chatbot_from_kb_gpt3_organized.png'
-import ImagePrompt from '@site/docs/assets/chatbot_from_kb_prompt.png'
-import ImageLogin from '@site/docs/assets/chatbot_from_kb_login.png'
+import ImageIntents from '@site/docs/assets/basic_applications/chatbot_from_kb_intents.webp'
+import ImageGPT3 from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3.webp'
+import ImageGPT3Organized from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3_organized.webp'
+import ImagePrompt from '@site/docs/assets/basic_applications/chatbot_from_kb_prompt.webp'
+import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_login.webp'
 
 Recent advancements in large language models (LLMs) such as [GPT-3](https://arxiv.org/abs/2005.14165) and [ChatGPT](https://chat.openai.com/chat) have created a lot of buzz in the tech industry. These models are incredibly powerful for content generation, but they also have some downsides such as bias(@nadeem-etal-2021-stereoset) and hallucinations(@Ji_2022). One area in which these LLMs can be particularly useful is chatbot development.
 
@@ -17,7 +17,7 @@ Recent advancements in large language models (LLMs) such as [GPT-3](https://arxi
 Traditional chatbots are typically intent-based, meaning they are designed to respond to specific user intents. Each intent is made up of a set of sample questions and an associated response. For example, the intent “Weather” might include sample questions like “What’s the weather today?” or “Will it rain today?” and a response like “Today will be sunny.” When a user asks a question, the chatbot matches it to the intent with the most similar sample questions and returns the associated response.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}} />
+  <img src={ImageIntents} style={{width: "700px"}}/>
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a traditional intent-based chatbot works. Image by the author.</p>
 </div>
 
@@ -31,7 +31,7 @@ This way, each intent is associated with a document instead of a list of questio
 
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a chatbot leveraging GPT-3 could work. Image by the author.</p>
 </div>
 
@@ -53,7 +53,7 @@ So, the chatbot pipeline could be made of two steps:
 The first step is essentially solved by [semantic search](https://en.wikipedia.org/wiki/Semantic_search). We can use pre-trained models from the [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) library and easily assign a score to each document. The document with the highest score is the one that will be used to generate the chatbot answer.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3Organized} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a chatbot leveraging GPT-3 could work. GPT-3 could be used to generate an appropriate answer leveraging the information from knowledge base documents. Image by the author.</p>
 </div>
 
@@ -69,7 +69,7 @@ To craft the prompt, we’ll experiment using:
 - Last, **the user question**.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImagePrompt} style={{width: "700px"}} />
+  <LazyLoadImage src={ImagePrompt} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Information used to craft our GPT-3 prompt. Image by the author.</p>
 </div>
 
@@ -82,7 +82,7 @@ Let’s start our prompt using the <span className="yellow-highlight">role-promp
 Then, suppose the semantic search step extracts the following document from our knowledge base. All the documents describe how the VideoGram product works, which is an imaginary product similar to Instagram, but only for videos.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageLogin} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>A document explaining how login to VideoGram works. Image by the author.</p>
 </div>
 

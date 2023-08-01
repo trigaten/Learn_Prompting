@@ -4,25 +4,25 @@ sidebar_position: 80
 
 # 🟢 聊天机器人基础
 
-最常见的一种使用提示的方法是与公开的聊天机器人（例如 [ChatGPT](http://chat.openai.com)）进行互动。请注意，ChatGPT 与 GPT-3 不同，他们之间的主要区别在于聊天机器人可以记住你的对话历史。就像 GPT-3 一样，它们也可以高水平地回答问题、提供写作摘要和分析、编写文案或代码等，这是一个令人兴奋的前景——但是聊天机器人的真正价值只有在你使用具体的提示时才能体现。在本文中，我们将探讨一些基本的方法，如使用风格指导、描述符和引导，让聊天机器人更好的发挥作用。
+最常见的一种使用提示的方法是与公开的聊天机器人（例如 [ChatGPT](https://chat.openai.com)）进行互动。请注意，ChatGPT 与 GPT-3 不同，他们之间的主要区别在于聊天机器人可以记住你的对话历史。就像 GPT-3 一样，它们也可以高水平地回答问题、提供写作摘要和分析、编写文案或代码等，这是一个令人兴奋的前景——但是聊天机器人的真正价值只有在你使用具体的提示时才能体现。在本文中，我们将探讨一些基本的方法，如使用风格指导、描述符和引导，让聊天机器人更好的发挥作用。
 
 ## 修改你的提示语
 
 ### 风格指导（Style Guidance）
 
-import unguided_question from '../../assets/unguided_question.png';
-import limerick_question from '../../assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 风格指导就是要求 AI 以某种特定的风格来表达。如果没有给出风格指导的问题，ChatGPT 通常会返回一两个短段落的回答，少数需要更长的回答时会返回更多内容。
 
 <div style={{textAlign: 'center'}}>
-  <img src={unguided_question} style={{width: "500px"}} />
+  <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
 ChatGPT 的回答常以中性正式的语气表达，同时提供一些细节，这非常不错！不过，如果我们想要更好的回答，可以在提示末尾自定义 ChatGPT 的回答风格。如果我们想要更加随意的回答，可以要求它以友好或非正式的语气表达；如果我们想要更易读的格式，可以给出相同的问题，但要求以无序列表的形式回答；如果我们想要一个有趣的回答，可以要求它以连续的打油诗形式回答（这是我个人最喜欢的）。
 
 <div style={{textAlign: 'center'}}>
-  <img src={limerick_question} style={{width: "450px"}} />
+  <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
 </div>
 
 一个更详细的风格提示的例子可能是：
@@ -54,19 +54,19 @@ ChatGPT 的回答常以中性正式的语气表达，同时提供一些细节，
 
     如果您理解并准备开始，请回答“是”。
     
-import unprimed_question from '../../assets/unprimed_question.png';
-import primed_question from '../../assets/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 以下是一个未引导的问题示例，询问 ChatGPT 关于哲学领域中最有趣的部分。它使用列表，通俗冷静地表达，然而在解释中不是非常具体。
 
 <div style={{textAlign: 'center'}}>
-  <img src={unprimed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
 </div>
 
 在第二个例子中，我们提供了一个引导提示给 ChatGPT，并以正确的形式提出了问题。你应该注意到，它的回答与第一个例子有一些相似之处，例如，它为各个领域提供的例子问题是相似的，但它提供了更深入的背景信息，放弃了列表格式，而是采用连贯的段落，将例子与现实生活联系起来。
 
 <div style={{textAlign: 'center'}}>
-  <img src={primed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={primed_question} style={{width: "650px"}} />
 </div>
 
 在提示中引入引导是一种更高级的与聊天机器人交互的方式。每个提示中添加规范仍然有帮助，因为模型随着时间的推移可能会失去对引导的追踪，但它将为你的 AI 交互提升很多清晰度！

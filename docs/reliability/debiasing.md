@@ -8,7 +8,7 @@ This page covers a few simple techniques to debias your prompts.
 
 ## Exemplar Debiasing
 
-Depending on their distribution and order within the prompt, %%exemplars|exemplars%% may bias LLM outputs(@si2022prompting). This is discussed to some extent in the [What's in a Prompt](http://learnprompting.org/docs/intermediate/whats_in_a_prompt) page.
+Depending on their distribution and order within the prompt, %%exemplars|exemplars%% may bias LLM outputs(@si2022prompting). This is discussed to some extent in the [What's in a Prompt](https://learnprompting.org/docs/intermediate/whats_in_a_prompt) page.
 
 ### Distribution
 

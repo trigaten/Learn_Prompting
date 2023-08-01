@@ -3,13 +3,13 @@ sidebar_position: 80
 ---
 
 # 🟢 챗봇 기초
-import Chatbots from '@site/docs/assets/chatbot.svg';
+import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
   <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-지금까지 이 강좌에서는 주로 GPT-3를 예제로 사용했습니다. GPT-3는 메모리가 없는 LLM입니다. 사용자가 질문(프롬프트)을 하면 이전에 질문한 내용을 전혀 기억하지 못합니다. 이와는 대조적으로 [ChatGPT](http://chat.openai.com)와 같은 챗봇은 **대화 내역을 기억**할 수 있습니다. 이는 고객 서비스와 같은 애플리케이션이나 단순히 LLM과 대화를 나누고 싶을 때 유용할 수 있습니다!
+지금까지 이 강좌에서는 주로 GPT-3를 예제로 사용했습니다. GPT-3는 메모리가 없는 LLM입니다. 사용자가 질문(프롬프트)을 하면 이전에 질문한 내용을 전혀 기억하지 못합니다. 이와는 대조적으로 [ChatGPT](https://chat.openai.com)와 같은 챗봇은 **대화 내역을 기억**할 수 있습니다. 이는 고객 서비스와 같은 애플리케이션이나 단순히 LLM과 대화를 나누고 싶을 때 유용할 수 있습니다!
 
 GPT-3와 마찬가지로 챗봇은 질문에 답하고, 요약, 분석을 제공하고, 텍스트나 코드를 작성할 수 있습니다. 챗봇의 진정한 가치는 좋은 프롬프트를 사용할 때에만 접근할 수 있습니다. 이 글에서는 스타일 안내, 설명자 및 프라이밍 사용과 같이 챗봇을 더 잘 활용하는 몇 가지 기본적인 방법을 살펴봅니다.
 
@@ -17,19 +17,19 @@ GPT-3와 마찬가지로 챗봇은 질문에 답하고, 요약, 분석을 제공
 
 ### 스타일 가이드
 
-import unguided_question from '@site/docs/assets/unguided_question.png';
-import limerick_question from '@site/docs/assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 스타일 가이드는 단순히 AI에게 특정 스타일로 말하도록 요청하는 것입니다. 스타일 안내가 없는 질문을 할 때 ChatGPT는 일반적으로 한두 개의 짧은 단락을 응답으로 반환하며, 더 긴 응답이 필요한 경우에는 더 긴 단락을 반환하기도 합니다:
 
 <div style={{textAlign: 'center'}}>
-  <img src={unguided_question} style={{width: "500px"}} />
+  <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
 적당히 공손한 어조로 말하고 몇 가지 세부 정보를 제공하는 것이 꽤 좋습니다! 하지만 원하는 경우 프롬프트 끝에 스타일 문구를 추가하여 ChatGPT의 응답을 사용자 지정함으로써 더 나은 응답을 제공할 수 있습니다. 좀 더 대화적인 답변을 원한다면 친근하거나 격식을 차리지 않은 어조로 말하도록 요청할 수 있고, 좀 더 읽기 쉬운 형식을 원한다면 동일한 질문을 하되 글머리 기호 목록을 요청할 수 있으며, 재미있는 답변을 원한다면 제가 개인적으로 좋아하는 일련의 리메릭(limericks) 형식으로 답변을 제공하도록 요청할 수 있습니다.
 
 <div style={{textAlign: 'center'}}>
-  <img src={limerick_question} style={{width: "450px"}} />
+  <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
 </div>
 
 더 디테일한 스타일 프롬프트에 대한 예시는 아래와 같습니다:
@@ -59,19 +59,19 @@ import limerick_question from '@site/docs/assets/limerick_question.png';
 
     If you understand and are ready to begin, respond with only “yes.”
 
-import unprimed_question from '@site/docs/assets/unprimed_question.png';
-import primed_question from '@site/docs/assets/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 아래는 ChatGPT에 "철학에서 가장 흥미로운 분야"에 대한 프라이밍되지 않은 질문을 해본 것입니다. 리스트를 이용했고 일반적이고 냉정하고 특별하지 않은 답변을 했습니다.
 
 <div style={{textAlign: 'center'}}>
-  <img src={unprimed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
 </div>
 
 두 번째 예시는 ChatGPT에 프라이밍된 정확한 포맷의 질문을 전달한 결과입니다. 첫 번째 답변과 몇가지의 비슷한 점이 있다는 것을 알 수 있을 것입니다. 예를 들어 다양한 분야에 대한 예시를 제공했다는 점은 비슷하지만 더 심화된 답변을 제공했습니다. 일상과 관련된 예시와 함께 일관성 있는 답변을 선호하며 리스트 포맷을 포기했습니다.
 
 <div style={{textAlign: 'center'}}>
-  <img src={primed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={primed_question} style={{width: "650px"}} />
 </div>
 
 프롬프트에 프라이머(점화물)를 추가하는 것은 챗봇과 상호작용하는 더 심화된 방법입니다. 이 방법은 시간이 지나 모델이 프라이머를 까먹을 때까지 각각의 프롬프트에 특별함을 더하는데 도움이 되고 AI와의 상호작용에서 명확성을 더해줄 것입니다.

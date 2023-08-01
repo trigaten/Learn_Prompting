@@ -49,16 +49,16 @@ information from the prompt and using a weather API to retrieve the information.
 following:
 
 
-import mrkl_task from '@site/docs/assets/mrkl_task.png';
-import dataset from '@site/docs/assets/mrkl/dataset.png';
-import load_dataset from '@site/docs/assets/mrkl/load_dataset.png';
-import model from '@site/docs/assets/mrkl/model.png';
-import extract from '@site/docs/assets/mrkl/extract.png';
-import search from '@site/docs/assets/mrkl/search.png';
-import final from '@site/docs/assets/mrkl/final.png';
+import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
+import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
+import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.webp';
+import model from '@site/docs/assets/advanced/mrkl/model.webp';
+import extract from '@site/docs/assets/advanced/mrkl/extract.webp';
+import search from '@site/docs/assets/advanced/mrkl/search.webp';
+import final from '@site/docs/assets/advanced/mrkl/final.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={mrkl_task} style={{width: "500px"}} />
+  <img src={mrkl_task} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -78,13 +78,13 @@ First, I made a simple dataset in the Dust `Datasets` tab.
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={dataset} style={{width: "750px"}} />
 </div>
 
 Then, I switched to the `Specification` tab and loaded the dataset using an `input` block.
 
 <div style={{textAlign: 'center'}}>
-  <img src={load_dataset} style={{width: "750px"}} />
+  <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
 </div>
 
 Next, I created a `llm` block that extracts the numbers and operations. Notice how
@@ -92,26 +92,26 @@ in the prompt I told it we would be using Google's calculator. The model I use (
 likely has some knowledge of Google's calculator from pretraining.
 
 <div style={{textAlign: 'center'}}>
-  <img src={model} style={{width: "750px"}} />
+  <LazyLoadImage src={model} style={{width: "750px"}} />
 </div>
 
 Then, I made a `code` block, which runs some simple javascript code to remove 
 spaces from the completion.
 
 <div style={{textAlign: 'center'}}>
-  <img src={extract} style={{width: "750px"}} />
+  <LazyLoadImage src={extract} style={{width: "750px"}} />
 </div>
 
 Finally, I made a `search` block that sends the reformatted equation to Google's calculator.
 
 <div style={{textAlign: 'center'}}>
-  <img src={search} style={{width: "750px"}} />
+  <LazyLoadImage src={search} style={{width: "750px"}} />
 </div>
 
 Below we can see the final results, which are all correct!
 
 <div style={{textAlign: 'center'}}>
-  <img src={final} style={{width: "750px"}} />
+  <LazyLoadImage src={final} style={{width: "750px"}} />
 </div>
 
 Feel free to clone and experiment with this playground [here](https://dust.tt/w/ddebdfcdde/a/98bdd65cb7).
@@ -122,5 +122,5 @@ J-1 (Jurassic 1)(@lieberjurassic) LLM.
 
 ## More
 
-See [this example](https://python.langchain.com/en/latest/modules/agents/agents/examples/mrkl.html) of a MRKL System
+See [this example](https://python.langchain.com/docs/modules/agents/how_to/mrkl) of a MRKL System
 built with LangChain.

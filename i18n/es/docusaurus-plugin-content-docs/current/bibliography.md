@@ -198,8 +198,6 @@ cite them as such.
 
 #### Ignore Previous Prompt(@ignore_previous_prompt) 🔵
 
-#### Updated Jailbreaking Prompts (@AI_jailbreak) 🔵
-
 ## Surveys
 
 #### Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing(@liu2021pretrain)
@@ -242,7 +240,7 @@ cite them as such.
 
 #### Survey of Hallucination in Natural Language Generation(@Ji_2022)
 
-#### Examples(@2022examples)
+#### Examples(@liu2021makes)
 
 #### Wordcraft(@yuan2022wordcraft)
 

@@ -14,10 +14,10 @@ sidebar_position: 7
 놀랍게도 프롬프트에 퓨샷 표본들을 제공할 떄 표본의 실제 답변(gold)은 별로 중요하지 않다. 아래의 표가 보여주듯이 랜덤한 라벨의 표본을 제공하는 것은 거의 성능을 저하시키지 않는다.
 "Demo"는 이 이미지의 예시와 동의어입니다.
 
-import GoldUn from '@site/docs/assets/gold_unimportant.png';
+import GoldUn from '@site/docs/assets/intermediate/gold_unimportant.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GoldUn} style={{width: "750px"}} />
+  <img src={GoldUn} style={{width: "750px"}}/>
 </div>
 
 ## Labelspace Matters

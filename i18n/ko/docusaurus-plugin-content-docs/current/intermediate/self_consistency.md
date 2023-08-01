@@ -10,10 +10,10 @@ sidebar_position: 5
 답변은 각 항목들로부터 추출되었고 그 결과 최종 답안은 "marginalizing out reasoning paths"가 되었습니다.
 이 예제에서는 단순히 가장 많이 나온 답을 선택한 것 뿐입니다.
 
-import SCImage from '@site/docs/assets/self_consistency.png';
+import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "750px"}} />
+  <img src={SCImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

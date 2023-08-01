@@ -11,7 +11,11 @@ A continuación se muestra un ejemplo de una inserción interactiva de Dyno. Si 
 
 #### Ejemplo 1
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Un usuario ha ingresado su nombre y apellido en un formulario. Nosotros no sabemos en que orden esta \nSu nombre/apellido, pero necesitamos que tenga el formato 'Apellido, Nombre'. Convierta lo siguiente:\n\njohn doe" initial-response="Doe, John" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IlVuIHVzdWFyaW8gaGEgaW5ncmVzYWRvIHN1IG5vbWJyZSB5IGFwZWxsaWRvIGVuIHVuIGZvcm11bGFyaW8uIE5vc290cm9zIG5vIHNhYmVtb3MgZW4gcXVlIG9yZGVuIGVzdGEgXG5TdSBub21icmUvYXBlbGxpZG8sIHBlcm8gbmVjZXNpdGFtb3MgcXVlIHRlbmdhIGVsIGZvcm1hdG8gJ0FwZWxsaWRvLCBOb21icmUnLiBDb252aWVydGEgbG8gc2lndWllbnRlOlxuXG5qb2huIGRvZSIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>La IA puede resolver fácilmente este problema. Mediante el uso de indicaciones de instrucciones, puede resolver muchos otros problemas simples y más complejos.
 

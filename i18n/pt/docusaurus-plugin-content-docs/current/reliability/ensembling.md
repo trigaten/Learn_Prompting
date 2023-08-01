@@ -10,10 +10,10 @@ sidebar_position: 5
 
 DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps", ou "Verificador Diversificado em Etapas de Raciocínio") é um método que melhora a confiabilidade das respostas de três maneiras. Isso é feito 1) usando vários prompts para gerar conclusões diversificadas, 2) usando um verificador para distinguir boas respostas das ruins e 3) usando um verificador para verificar a correção das etapas de raciocínio.
 
-import diverse from '@site/docs/assets/diverse.png';
+import diverse from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/reliability/diverse.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={diverse} style={{width: "750px"}} />
+  <img src={diverse} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -125,10 +125,10 @@ O verificador é treinando com uma função um pouco compleza, que eu não vou a
 
 ## Prompts do tipo "Me Pergunte Qualquer Coisa" - Ask Me Anything (AMA)
 
-import ama from '@site/docs/assets/AMA_Prompting.jpg';
+import ama from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/reliability/AMA_Prompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama} style={{width: "750px"}} />
+  <LazyLoadImage src={ama} style={{width: "750px"}} />
 </div>
 
 Perguntas do tipo AMA (@arora2022ama) é uma abordagem semelhante à DiVeRSe. No entanto, tanto seu passo de múltiplos prompts quanto seu passo de agregação de respostas diferem significativamente. A ideia principal do AMA é usar um LLM para gerar múltiplos prompts, em vez de usar apenas prompts com poucos exemplos.
@@ -163,10 +163,10 @@ Pergunta: Esse animal vive na América do Norte?
 Bem, ao formular a questão desta forma especial, podemos gerar prompts diferentes.
 Nosso primeiro passo aqui será transformar a afirmação `Esse animal vive na América do Norte` e reformatá-la em diferentes perguntas, que basicamente estão perguntando a mesma coisa. Para isso, passaremos a afirmação por prompts como os da imagem abaixo.
 
-import ama_multi from '@site/docs/assets/AMA_multiprompting.png';
+import ama_multi from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/reliability/AMA_multiprompting.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ama_multi} style={{width: "800px"}} />
+  <LazyLoadImage src={ama_multi} style={{width: "800px"}} />
 </div>
 
 Isso pode gerar:

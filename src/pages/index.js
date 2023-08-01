@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import "framer-motion";
 import "./index.css";
 import "./App.css";
@@ -15,7 +16,7 @@ function Home() {
   return (
     <>
       {/*<Banner />*/}
-      <div className="bg-gray/300">
+      <div className="">
         <Navbar />
         <Hero />
         <Join />

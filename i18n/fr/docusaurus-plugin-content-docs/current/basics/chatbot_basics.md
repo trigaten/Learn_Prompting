@@ -3,31 +3,31 @@ sidebar_position: 80
 ---
 # 🟢 Les bases du chatbot
 
-import Chatbots from '@site/docs/assets/chatbot.svg';
+import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 
 <div style={{textAlign: 'center'}}>
   <Chatbots style={{width:"500px",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-L'une des façons les plus courantes dont les prompting peuvent être utiles est lors de l'interaction avec les nombreux chatbots disponibles au public, tels que [ChatGPT](http://chat.openai.com/). Notez que ChatGPT est différent de GPT-3. La principale différence est que les chatbots peuvent se souvenir de l'historique de vos conversations. Tout comme le GPT-3, ils peuvent également répondre à des questions, fournir un résumé et une analyse de l'écriture, écrire du texte ou du code, et bien d'autres choses encore à un niveau élevé, ce qui est une perspective passionnante - mais la véritable valeur des chatbots n'est accessible que lorsque vous êtes précis dans vos prompts. Dans cet article, nous allons explorer quelques méthodes de base pour mieux utiliser les chatbots, comme l'utilisation de conseils de style, de descripteurs et d'amorces.
+L'une des façons les plus courantes dont les prompting peuvent être utiles est lors de l'interaction avec les nombreux chatbots disponibles au public, tels que [ChatGPT](https://chat.openai.com/). Notez que ChatGPT est différent de GPT-3. La principale différence est que les chatbots peuvent se souvenir de l'historique de vos conversations. Tout comme le GPT-3, ils peuvent également répondre à des questions, fournir un résumé et une analyse de l'écriture, écrire du texte ou du code, et bien d'autres choses encore à un niveau élevé, ce qui est une perspective passionnante - mais la véritable valeur des chatbots n'est accessible que lorsque vous êtes précis dans vos prompts. Dans cet article, nous allons explorer quelques méthodes de base pour mieux utiliser les chatbots, comme l'utilisation de conseils de style, de descripteurs et d'amorces.
 
 ## Modifier votre Prompt
 
 ### Guidage stylistique
 
-import unguided_question from '@site/docs/assets/unguided_question.png';
-import limerick_question from '@site/docs/assets/limerick_question.png';
+import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
+import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
 
 Le guidage stylistique consiste simplement à demander à l'IA de parler dans un certain style. Lorsque vous posez une question sans indication de style, ChatGPT répond généralement par un ou deux paragraphes courts, parfois plus si une réponse plus longue est nécessaire :
 
 <div style={{textAlign: 'center'}}>
-  <img src={unguided_question} style={{width: "500px"}} />
+  <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
 Il s'exprime sur un ton modérément formel et donne quelques détails - pas mal ! Nous pouvons cependant l'améliorer si nous le souhaitons, en personnalisant la réponse de ChatGPT à l'aide d'un texte de style à la fin de notre demande. Si nous voulons une réponse plus conversationnelle, nous pouvons lui demander de parler sur un ton amical ou informel ; si nous voulons un format plus lisible, nous pouvons lui poser la même question mais lui demander de fournir une liste à puces ; si nous voulons une réponse amusante, nous pouvons lui demander de donner sa réponse sous la forme d'une série de limericks (un de mes préférés).
 
 <div style={{textAlign: 'center'}}>
-  <img src={limerick_question} style={{width: "450px"}} />
+  <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
 </div>
 
 Un exemple d'une question de style plus détaillée pourrait ressembler à ceci :
@@ -60,20 +60,20 @@ Exemple : (Étudiant){Philosophie} [Répondre] Quel est l'avantage de choisir ce
 Si vous comprenez et êtes prêt à commencer, répondez uniquement par "oui".
 ```
 
-import unprimed_question from '@site/docs/assets/unprimed_question.png';
-import primed_question from '@site/docs/assets/primed_question.png';
+import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
+import primed_question from '@site/docs/assets/basics/primed_question.webp';
 
 Vous trouverez ci-dessous un exemple de question non amorcée posée à ChatGPT sur les domaines les plus intéressants de la philosophie. Nous pouvons voir qu’il utilise une liste, parle de manière générale et dépassionnée, et n'est pas très précis dans ses explications.
 
 <div style={{textAlign: 'center'}}>
-  <img src={unprimed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
 </div>
 
 Dans le deuxième exemple, nous avons plutôt posé la question après avoir fourni un prompt d'amorçage à ChatGPT et fourni la question sous la forme correcte. Vous remarquerez que la réponse partage certains aspects avec la première - par exemple, les questions qu'elle propose comme exemples pour différents domaines sont similaires - mais elle fournit un contexte plus approfondi, abandonne le format de liste en faveur de paragraphes cohérents, et relie les exemples à la vie réelle.
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={primed_question} style={{width: "650px"}} />
+  <LazyLoadImage src={primed_question} style={{width: "650px"}} />
 </div>
 
 

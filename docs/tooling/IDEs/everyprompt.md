@@ -8,10 +8,10 @@ sidebar_position: 5
 that provides a professional interface for single prompt iteration.
 
 
-import Image from '@site/docs/assets/tooling/everyprompt.png';
+import Image from '@site/docs/assets/tooling/everyprompt.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

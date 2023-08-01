@@ -26,10 +26,10 @@ about remote work. Twitter users quickly figured out that they could inject thei
 bot to get it to say whatever they wanted. 
 
 
-import Image from '@site/docs/assets/injection_job.png';
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "500px"}} />
+  <img src={Image} style={{width: "500px"}}/>
 </div>
 The reason this works is that `remoteli.io` takes a user's tweet and concatenates it
 with their own prompt to form the final prompt that they pass into a LLM. This means that

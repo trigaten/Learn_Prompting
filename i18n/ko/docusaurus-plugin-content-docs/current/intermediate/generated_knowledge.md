@@ -74,9 +74,11 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 
 지식 생성하기 접근법은 실제로 어려운 문제에 답변하는 등의 완전히 다른 문제에도 사용가능합니다. 여기 GPT-3가 잘못 답변한 아래의 질문에 대해서 알아봅시다.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Which country is larger, Congo or South Africa?" initial-response="South Africa is larger than Congo." max-tokens="256" box-rows="3" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlNvdXRoIEFmcmljYSBpcyBsYXJnZXIgdGhhbiBDb25nby4iLCJwcm9tcHQiOiJXaGljaCBjb3VudHJ5IGlzIGxhcmdlciwgQ29uZ28gb3IgU291dGggQWZyaWNhPyIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>
 
@@ -84,27 +86,31 @@ The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the Ame
 
 *지식 생성* 단계를 시작해봅시다. 우리는 LLM에 콩고와 남아프리카에 대한 사실들을 생성하도록 질문할 수 있을 것입니다:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Generate some knowledge about the sizes of South Africa and Congo:" initial-response="South Africa is the 25th largest country in the world, with an area of 1,221,037 square kilometers (471,445 square miles). Congo, on the other hand, is the 11th largest country in the world, with an area of 2,344,858 square kilometers (905,567 square miles). South Africa is almost half the size of Congo, with a population of 57.7 million compared to Congo's population of 84.3 million. South Africa is the most populous country in the region, while Congo is the second most populous." max-tokens="256" box-rows="6" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiJHZW5lcmF0ZSBzb21lIGtub3dsZWRnZSBhYm91dCB0aGUgc2l6ZXMgb2YgU291dGggQWZyaWNhIGFuZCBDb25nbzoiLCJvdXRwdXQiOiJTb3V0aCBBZnJpY2EgaXMgdGhlIDI1dGggbGFyZ2VzdCBjb3VudHJ5IGluIHRoZSB3b3JsZCwgd2l0aCBhbiBhcmVhIG9mIDEsMjIxLDAzNyBzcXVhcmUga2lsb21ldGVycyAoNDcxLDQ0NSBzcXVhcmUgbWlsZXMpLiBDb25nbywgb24gdGhlIG90aGVyIGhhbmQsIGlzIHRoZSAxMXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAyLDM0NCw4NTggc3F1YXJlIGtpbG9tZXRlcnMgKDkwNSw1Njcgc3F1YXJlIG1pbGVzKS4gU291dGggQWZyaWNhIGlzIGFsbW9zdCBoYWxmIHRoZSBzaXplIG9mIENvbmdvLCB3aXRoIGEgcG9wdWxhdGlvbiBvZiA1Ny43IG1pbGxpb24gY29tcGFyZWQgdG8gQ29uZ28ncyBwb3B1bGF0aW9uIG9mIDg0LjMgbWlsbGlvbi4gU291dGggQWZyaWNhIGlzIHRoZSBtb3N0IHBvcHVsb3VzIGNvdW50cnkgaW4gdGhlIHJlZ2lvbiwgd2hpbGUgQ29uZ28gaXMgdGhlIHNlY29uZCBtb3N0IHBvcHVsb3VzLiIsIm1heFRva2VucyI6MjU2LCJib3hSb3dzIjo2LCJ0ZW1wZXJhdHVyZSI6MCwidG9wUCI6MH0%3D"
+    style={{width:"100%", height:"300px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>
 
 다음으로 지식을 이용해서 질문에 더 정확하게 답변할 수 있도록 만들어봅시다. 이것이 *지식 통합* 단계입니다.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="South Africa is the 25th largest country in the world, with an area of 1,221,037 square kilometers (471,445 square miles). Congo, on the other hand, is the 11th largest country in the world, with an area of 2,344,858 square kilometers (905,567 square miles). South Africa is almost half the size of Congo, with a population of 57.7 million compared to Congo's population of 84.3 million. South Africa is the most populous country in the region, while Congo is the second most populous.\n\nWhich country is larger, Congo or South Africa?" initial-response="Congo is larger than South Africa." max-tokens="256" box-rows="15" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiJTb3V0aCBBZnJpY2EgaXMgdGhlIDI1dGggbGFyZ2VzdCBjb3VudHJ5IGluIHRoZSB3b3JsZCwgd2l0aCBhbiBhcmVhIG9mIDEsMjIxLDAzNyBzcXVhcmUga2lsb21ldGVycyAoNDcxLDQ0NSBzcXVhcmUgbWlsZXMpLiBDb25nbywgb24gdGhlIG90aGVyIGhhbmQsIGlzIHRoZSAxMXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAyLDM0NCw4NTggc3F1YXJlIGtpbG9tZXRlcnMgKDkwNSw1Njcgc3F1YXJlIG1pbGVzKS4gU291dGggQWZyaWNhIGlzIGFsbW9zdCBoYWxmIHRoZSBzaXplIG9mIENvbmdvLCB3aXRoIGEgcG9wdWxhdGlvbiBvZiA1Ny43IG1pbGxpb24gY29tcGFyZWQgdG8gQ29uZ28ncyBwb3B1bGF0aW9uIG9mIDg0LjMgbWlsbGlvbi4gU291dGggQWZyaWNhIGlzIHRoZSBtb3N0IHBvcHVsb3VzIGNvdW50cnkgaW4gdGhlIHJlZ2lvbiwgd2hpbGUgQ29uZ28gaXMgdGhlIHNlY29uZCBtb3N0IHBvcHVsb3VzLlxuXG5XaGljaCBjb3VudHJ5IGlzIGxhcmdlciwgQ29uZ28gb3IgU291dGggQWZyaWNhPyIsIm91dHB1dCI6IkNvbmdvIGlzIGxhcmdlciB0aGFuIFNvdXRoIEFmcmljYS4iLCJtYXhUb2tlbnMiOjI1NiwiYm94Um93cyI6MTUsInRlbXBlcmF0dXJlIjowLCJ0b3BQIjowfQ%3D%3D"
+    style={{width:"100%", height:"750px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## 더 기술적인 토론
 
 위의 예제들이 기존에 소개된 것들과 비슷함에도 불구하고 완전히 똑같지는 않습니다. 아래의 컨텐츠는 더 기술적인 부분을 보여줄 것입니다.
 위에서 본 두가지 과정(지식 생성, 지식 통합)을 똑같이 이용할 것입니다.
 
-import KGImage from '@site/docs/assets/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <img src={KGImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -116,10 +122,10 @@ Generated Knowledge (Liu et al.)
 지식 생성단계에서 LLM은 **질문**에 대한 사실들을 생성하도록 질문 받습니다.
 LLM은 퓨샷 스타일의 프롬프트를 받게 됩니다. M개의 각기 다른 답변들을 이 같은 프롬프트를 통해서 생성이 됩니다.(자기 일관성 접근법처럼)
 
-import KGP1Image from '@site/docs/assets/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -162,10 +168,10 @@ Generated Knowledge Example (Liu et al.)
 하지만 정식적인 지식 생성하기 개발보다는 덜 복잡할 것입니다.
 
 
-import RImage from '@site/docs/assets/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={RImage} style={{width: "250px"}} />
+  <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
 아이디어는 퓨샷 프롬프트로 지식 생성과 답변을 같은 단계에서 실행하는 데 있습니다.

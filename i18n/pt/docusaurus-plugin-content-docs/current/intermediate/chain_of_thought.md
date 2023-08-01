@@ -9,10 +9,10 @@ style: chicago
 Prompting com Cadeia de Pensamento (CdP) (@wei2022chain) é um método de *prompting* recente, que encoraja o *LLM* (Grande Modelo de Linguagem) a explicar o seu raciocínio. A imagem abaixo (@wei2022chain) mostra um *prompt few shot* padrão (esquerda) comparado ao *prompt com Cadeia de Pensamento* (direita).
 
 
-import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
+import CoTExample from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/chain_of_thought_example.png';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CoTExample} style={{width: "750px"}} />
+  <img src={CoTExample} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -29,7 +29,7 @@ obtendo êxito na resolução do mesmo problema, com o uso da técnica de Cadeia
 #### Incorreto
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9w5%2BNvIDEuIiwicHJvbXB0IjoiQ29uc2lkZXJhbmRvIGFzIG9w5%2FVlcyBhYmFpeG8sIHF1YWwg6SBhIGZvcm1hIG1haXMgcuFwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3Dn428gMTogcGVndWUgdW0g9G5pYnVzIGRlIDEwMDAgbWludXRvcywgZGVwb2lzIHVtIHRyZW0gZGUgbWVpYSBob3JhIGUsIGZpbmFsbWVudGUsIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDEwIG1pbnV0b3MuXG5cbk9w5%2BNvIDI6IHBlZ3VlIHVtIPRuaWJ1cyBkZSA4MDAgbWludXRvcywgZGVwb2lzIHVtYSBob3JhIGRlIHRyZW0gZSwgZmluYWxtZW50ZSwgdW0gcGFzc2VpbyBkZSBiaWNpY2xldGEgZGUgMzAgbWludXRvcy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9ww6fDo28gMS4iLCJwcm9tcHQiOiJDb25zaWRlcmFuZG8gYXMgb3DDp8O1ZXMgYWJhaXhvLCBxdWFsIMOpIGEgZm9ybWEgbWFpcyByw6FwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3DDp8OjbyAxOiBwZWd1ZSB1bSDDtG5pYnVzIGRlIDEwMDAgbWludXRvcywgZGVwb2lzIHVtIHRyZW0gZGUgbWVpYSBob3JhIGUsIGZpbmFsbWVudGUsIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDEwIG1pbnV0b3MuXG5cbk9ww6fDo28gMjogcGVndWUgdW0gw7RuaWJ1cyBkZSA4MDAgbWludXRvcywgZGVwb2lzIHVtYSBob3JhIGRlIHRyZW0gZSwgZmluYWxtZW50ZSwgdW0gcGFzc2VpbyBkZSBiaWNpY2xldGEgZGUgMzAgbWludXRvcy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
@@ -37,7 +37,7 @@ obtendo êxito na resolução do mesmo problema, com o uso da técnica de Cadeia
 #### Correto
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkEgb3Dn428gMSBsZXZhcuEgMTAwMCszMCsxMCA9IDEwNDAgbWludXRvcy5cbkEgb3Dn428gMiBsZXZhcuEgODAwKzYwKzMwID0gODkwIG1pbnV0b3MuXG5Db21vIGEgT3Dn428gMiBsZXZhIDg5MCBtaW51dG9zIGUgYSBPcOfjbyAxIGxldmEgMS4wNDAgbWludXRvcywgYSBPcOfjbyAyIOkgbWFpcyBy4XBpZGEuIiwicHJvbXB0IjoiQ29uc2lkZXJhbmRvIGFzIG9w5%2FVlcyBhYmFpeG8sIHF1YWwg6SBhIGZvcm1hIG1haXMgcuFwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3Dn428gMTogcGVndWUgdW0g9G5pYnVzIGRlIDEwIG1pbnV0b3MsIGRlcG9pcyB1bSD0bmlidXMgZGUgNDAgbWludXRvcyBlLCBmaW5hbG1lbnRlLCB1bSB0cmVtIGRlIDEwIG1pbnV0b3MuXG5cbk9w5%2BNvIDI6IHBlZ3VlIHVtIHRyZW0gZGUgOTAgbWludXRvcywgZGVwb2lzIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDQ1IG1pbnV0b3MgZSwgZmluYWxtZW50ZSwgdW0g9G5pYnVzIGRlIDEwIG1pbnV0b3MuXG5cbkEgb3Dn428gMSBsZXZhcuEgMTArNDArMTA9NjAgbWludXRvcy4gQSBvcOfjbyAyIGxldmFy4SA5MCs0NSsxMD0xNDUgbWludXRvcy5cbkNvbW8gYSBvcOfjbyAxIGxldmEgNjAgbWludXRvcyBlIGEgb3Dn428gMiBsZXZhIDE0NSBtaW51dG9zLCBhIG9w5%2BNvIDEg6SBtYWlzIHLhcGlkYS5cblxuQ29uc2lkZXJhbmRvIGFzIG9w5%2FVlcyBhYmFpeG8sIHF1YWwg6SBhIGZvcm1hIG1haXMgcuFwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3Dn428gMTogcGVndWUgdW0g9G5pYnVzIGRlIDEwMDAgbWludXRvcywgZGVwb2lzIHVtIHRyZW0gZGUgbWVpYSBob3JhIGUsIGZpbmFsbWVudGUsIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDEwIG1pbnV0b3MuXG5cbk9w5%2BNvIDI6IHBlZ3VlIHVtIPRuaWJ1cyBkZSA4MDAgbWludXRvcywgZGVwb2lzIHVtYSBob3JhIGRlIHRyZW0gZSwgZmluYWxtZW50ZSwgdW0gcGFzc2VpbyBkZSBiaWNpY2xldGEgZGUgMzAgbWludXRvcy4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkEgb3DDp8OjbyAxIGxldmFyw6EgMTAwMCszMCsxMCA9IDEwNDAgbWludXRvcy5cbkEgb3DDp8OjbyAyIGxldmFyw6EgODAwKzYwKzMwID0gODkwIG1pbnV0b3MuXG5Db21vIGEgb3DDp8OjbyAyIGxldmEgODkwIG1pbnV0b3MgZSBhIG9ww6fDo28gMSBsZXZhIDEuMDQwIG1pbnV0b3MsIGEgb3DDp8OjbyAyIMOpIG1haXMgcsOhcGlkYS4iLCJwcm9tcHQiOiJDb25zaWRlcmFuZG8gYXMgb3DDp8O1ZXMgYWJhaXhvLCBxdWFsIMOpIGEgZm9ybWEgbWFpcyByw6FwaWRhIGRlIGNoZWdhciBhbyB0cmFiYWxobz9cblxuT3DDp8OjbyAxOiBwZWd1ZSB1bSDDtG5pYnVzIGRlIDEwIG1pbnV0b3MsIGRlcG9pcyB1bSDDtG5pYnVzIGRlIDQwIG1pbnV0b3MgZSwgZmluYWxtZW50ZSwgdW0gdHJlbSBkZSAxMCBtaW51dG9zLlxuXG5PcMOnw6NvIDI6IHBlZ3VlIHVtIHRyZW0gZGUgOTAgbWludXRvcywgZGVwb2lzIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDQ1IG1pbnV0b3MgZSwgZmluYWxtZW50ZSwgdW0gw7RuaWJ1cyBkZSAxMCBtaW51dG9zLlxuXG5BIG9ww6fDo28gMSBsZXZhcsOhIDEwKzQwKzEwPTYwIG1pbnV0b3MuIEEgb3DDp8OjbyAyIGxldmFyw6EgOTArNDUrMTA9MTQ1IG1pbnV0b3MuXG5Db21vIGEgb3DDp8OjbyAxIGxldmEgNjAgbWludXRvcyBlIGEgb3DDp8OjbyAyIGxldmEgMTQ1IG1pbnV0b3MsIGEgb3DDp8OjbyAxIMOpIG1haXMgcsOhcGlkYS5cblxuQ29uc2lkZXJhbmRvIGFzIG9ww6fDtWVzIGFiYWl4bywgcXVhbCDDqSBhIGZvcm1hIG1haXMgcsOhcGlkYSBkZSBzZSBjaGVnYXIgYW8gdHJhYmFsaG8%2FXG5cbk9ww6fDo28gMTogcGVndWUgdW0gw7RuaWJ1cyBkZSAxMDAwIG1pbnV0b3MsIGRlcG9pcyB1bSB0cmVtIGRlIG1laWEgaG9yYSBlLCBmaW5hbG1lbnRlLCB1bSBwYXNzZWlvIGRlIGJpY2ljbGV0YSBkZSAxMCBtaW51dG9zLlxuXG5PcMOnw6NvIDI6IHBlZ3VlIHVtIMO0bmlidXMgZGUgODAwIG1pbnV0b3MsIGRlcG9pcyB1bWEgaG9yYSBkZSB0cmVtIGUsIGZpbmFsbWVudGUsIHVtIHBhc3NlaW8gZGUgYmljaWNsZXRhIGRlIDMwIG1pbnV0b3MuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
     style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
@@ -47,10 +47,10 @@ obtendo êxito na resolução do mesmo problema, com o uso da técnica de Cadeia
 A Cadeia de Pensamento (CdP) mostrou ser efetiva em melhorar os resultados em tarefas de aritmética, senso comum e racicínio simbólico (@wei2022chain).
 Em particular, *prompted* PaLM 540B(@chowdhery2022palm) atinge 57% de precisão na resolução dos problemas de matemática da coleção de dados GSM8K(@cobbe2021training) (Estado da Arte, na época).
 
-import PromptedPaLM from '@site/docs/assets/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={PromptedPaLM} style={{width: "300px"}} />
+  <LazyLoadImage src={PromptedPaLM} style={{width: "300px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

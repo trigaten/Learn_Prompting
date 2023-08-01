@@ -10,10 +10,10 @@ a web interface for writing prompts and chaining them together.
 At the moment, it has a steep learning curve compared to other prompt engineering
 IDEs.
 
-import Image from '@site/docs/assets/tooling/dust.png';
+import Image from '@site/docs/assets/tooling/dust.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

@@ -10,11 +10,10 @@ Least to Most prompting (LtM)(@zhou2022leasttomost) takes %%CoT prompting|CoT pr
 
 As in CoT prompting, the problem to be solved is decomposed in a set of subproblems that build upon each other. In a second step, these subproblems are solved one by one. Contrary to chain of thought, the solution of previous subproblems is fed into the prompt trying to solve the next problem.
 
-import leastToMost from '@site/docs/assets/least_to_most_formal.png'
+import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
 
 <div style={{textAlign: 'center'}}>
-  <img src={leastToMost} style={{width: "600px"}}
-        alt="A diagram of a least to most prompting" />
+  <img src={leastToMost} style={{width: "600px"}} alt="A diagram of a least to most prompting"/>
 </div>
 
 <div style={{textAlign: 'center'}}>

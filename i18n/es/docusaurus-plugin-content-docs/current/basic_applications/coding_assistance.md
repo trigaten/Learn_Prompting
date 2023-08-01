@@ -51,17 +51,11 @@ print(madlib)
 
 Pruébalo aquí:
 
-<div 
-trydyno-embed="" 
-openai-model="text-davinci-003" 
-initial-prompt="Actúa como un programador junior de Python. Por favor escribe el código para generar madlibs a partir de 3 arreglos de 6 elementos cada uno: preposiciones, verbos y sustantivos, siendo los sustantivos también utilizados como objetos directos." 
-initial-response="" 
-max-tokens="512" 
-box-rows="5" 
-model-temp="0.0" 
-top-p="0">
-    <noscript>No se pudo cargar Dyno Embed: JavaScript debe estar habilitado.</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiNEZWZpbmltb3MgbG9zIGFycmVnbG9zXG5wcmVwb3NpY2lvbmVzID0gW1wiZW5cIiwgXCJzb2JyZVwiLCBcImRlYmFqbyBkZVwiLCBcImFsIGxhZG8gZGVcIiwgXCJkZW50cm8gZGVcIiwgXCJlbmNpbWEgZGVcIl1cbnZlcmJvcyA9IFtcImNvcnJlclwiLCBcInNhbHRhclwiLCBcImNhbWluYXJcIiwgXCJiYWlsYXJcIiwgXCJjYW50YXJcIiwgXCJoYWJsYXJcIl1cbnN1c3RhbnRpdm9zID0gW1wibWVzYVwiLCBcInNpbGxhXCIsIFwiY2FtYVwiLCBcInB1ZXJ0YVwiLCBcInZlbnRhbmFcIiwgXCJwYXJlZFwiXVxuXG4jR2VuZXJhbW9zIGVsIG1hZGxpYlxucHJpbnQoXCJBeWVyLCBtZSBlbmNvbnRyw6kgXCIrIHByZXBvc2ljaW9uZXNbMF0gKyBcIiB1bmEgXCIgKyBzdXN0YW50aXZvc1swXSArIFwiIHkgZGVjaWTDrSBcIiArIHZlcmJvc1swXSArIFwiIGFscmVkZWRvciBkZSBlbGxhLiBMdWVnbywgbWUgc3Viw60gXCIgKyBwcmVwb3NpY2lvbmVzWzFdICsgXCIgbGEgXCIgKyBzdXN0YW50aXZvc1sxXSArIFwiIHkgY29tZW5jw6kgYSBcIiArIHZlcmJvc1sxXSArIFwiIHBvciB0b2RhIGxhIGhhYml0YWNpw7NuLiBEZXNwdcOpcywgbWUgc2VudMOpIFwiICsgcHJlcG9zaWNpb25lc1syXSArIFwiIGxhIFwiICsgc3VzdGFudGl2b3NbMl0gKyBcIiB5IGNvbSIsInByb21wdCI6IkFjdMO6YSBjb21vIHVuIHByb2dyYW1hZG9yIGp1bmlvciBkZSBQeXRob24uIFBvciBmYXZvciBlc2NyaWJlIGVsIGPDs2RpZ28gcGFyYSBnZW5lcmFyIG1hZGxpYnMgYSBwYXJ0aXIgZGUgMyBhcnJlZ2xvcyBkZSA2IGVsZW1lbnRvcyBjYWRhIHVubzogcHJlcG9zaWNpb25lcywgdmVyYm9zIHkgc3VzdGFudGl2b3MsIHNpZW5kbyBsb3Mgc3VzdGFudGl2b3MgdGFtYmnDqW4gdXRpbGl6YWRvcyBjb21vIG9iamV0b3MgZGlyZWN0b3MuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Comentar y reformatear código
 

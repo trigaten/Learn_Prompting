@@ -4,24 +4,24 @@ sidebar_position: 0
 
 # 🟢 Introduction
 
-import Techniques from '@site/docs/assets/techniques.svg';
+import Techniques from '@site/docs/assets/basics/techniques.svg';
 
 <div style={{textAlign: 'center'}}>
   <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
 
-This chapter introduces simple prompting techniques as well as terminology. In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. If you already know about the below topics, feel free to skip ahead to the [next article](https://learnprompting.org/docs/basics/prompting).
+In order to understand prompting/prompt engineering, you first need to understand some *very* basic AI concepts. 
 
 ## What is AI?
 
 For our purposes, artificial intelligence (AI) is a field in which people have created
-"smart" algorithms that "think" like humans[^1]. These algorithms can write **essays**, 
-solve **math problems**, and create **art**. Recent advances in the field have created AIs
+"smart" algorithms that often can "learn" from data[^1]. This course focuses on **Generative AI**, a type of AI that is able to create (generate) something. These AIs can write **essays**, 
+solve **math problems**, and create **art**. Recent advances in the field have created Generative AIs
 so advanced that they can write convincing **sales emails**, **news articles**, and even 
 **win [art competitions](https://impakter.com/art-made-by-ai-wins-fine-arts-competition/)**.
 
-AI is currently revolutionizing many industries, including **journalism**, **healthcare**, and
+Generative AI is currently revolutionizing many industries, including **journalism**, **healthcare**, and
 **education**. You will likely see it deployed in your workplace/classroom soon if you have not
 already. Although AI is extremely useful, it requires humans to direct it on what to do.
 Often AIs are like very smart five-year-olds. They can do a lot of things, but they need 
@@ -46,10 +46,10 @@ Overall, AI has the potential to revolutionize many aspects of our lives. From a
 
 ## Why should I care?
 
-AI can be used to automate tasks that you spend countless hours doing *right now*.
+Generative AI can be used to automate tasks that you spend countless hours doing *right now*.
 We mentioned several examples above, but you can also consider any slightly repetitive task you do.
 It could be writing emails, writing reports, or even writing code. If you can describe the task
-to an AI, it can likely either do it for you or at least give you a starting point. 
+to a Generative AI, it can likely either do it for you or at least give you a starting point. 
 
 ## How do I get started?
 
@@ -66,11 +66,11 @@ This course offers an interactive learning experience. You can experiment with e
 
 Here is an **image** of what an embed looks like:
 
-import dyno from '@site/docs/assets/basics/dyno_example.png';
-import key from '@site/docs/assets/API_key.png';
+import lp_embed from '@site/docs/assets/basics/lp_embed.webp';
+import key from '@site/docs/assets/basics/API_key.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={dyno} style={{width: "750px"}} />
+  <img src={lp_embed} style={{width: "750px"}}/>
 </div>
 
 You should be able to see an embed that looks exactly like this image right below this paragraph. If you can't, you may need to enable JavaScript or use a different browser.
@@ -93,7 +93,7 @@ Although OpenAI provides free credits, you will eventually have to pay to use th
 When you navigate to the [OpenAI API key](https://platform.openai.com/account/api-keys) page, click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
 
 <div style={{textAlign: 'center'}}>
-  <img src={key} style={{width: "750px"}} />
+  <LazyLoadImage src={key} style={{width: "750px"}} />
 </div>
 
 Put this key into the embed and hit **Save**. You should now be able to use the embeds throughout this site.
@@ -101,5 +101,5 @@ Put this key into the embed and hit **Save**. You should now be able to use the 
 Now you have all of the information that you need to get started. Happy Learning!
 
 
-[^1]: Technically, they are not "thinking" like humans, but this is a simple way to explain it.
+[^1]: This is an extremely simplified definition, see [Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence)
 [^2]: An AI (GPT-3 davinci-003) did in fact write this.

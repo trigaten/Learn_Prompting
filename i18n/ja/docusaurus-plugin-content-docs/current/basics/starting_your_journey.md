@@ -5,7 +5,7 @@ sidebar_position: 1000
 # 🟢 旅を始めよう
 
 
-import Steps from '@site/docs/assets/steps.svg';
+import Steps from '@site/docs/assets/basics/steps.svg';
 
 <div style={{textAlign: 'center'}}>
   <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
@@ -40,10 +40,10 @@ ChatGPTを使用して没入型のインタラクティブなストーリーを�
 
 これから、プロンプトをChatGPTに入力して、どうなるか見てみましょう。
 
-import CSharp from '@site/docs/assets/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <img src={CSharp} style={{width: "750px"}}/>
 </div>
 
 C#（プログラミング言語）のコードブロックの中に物語が生成されていることがわかりますが、これは望んでいないかもしれません。そこで、次のようにプロンプトを変更しました。

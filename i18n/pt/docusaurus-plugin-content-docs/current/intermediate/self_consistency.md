@@ -4,10 +4,10 @@ sidebar_position: 5
 
 # 🟡 Autoconsistência
 
-import SCImage from '@site/docs/assets/intermediate/self_consistency.png';
+import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "500px"}} />
+  <img src={SCImage} style={{width: "500px"}}/>
 </div>
 
 A autoconsistência(@wang2022selfconsistency)é uma abordagem que simplesmente pergunta a um modelo a mesma prompt várias vezes e leva o resultado da maioria das respostas como resposta final. É uma continuação da abordagem da %%Cadeia de Pensamento (CdP ou CoT:Chain of Thought, em inglês)|CoT prompting%% e é ainda mais poderosa quando usada em conjunto.

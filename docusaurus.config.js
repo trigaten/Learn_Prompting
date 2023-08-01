@@ -30,6 +30,9 @@ async function createConfig() {
         "si",
         "ru",
         "ar",
+        "de",
+        "uk",
+        "id"
       ],
     },
     plugins: [
@@ -85,7 +88,7 @@ async function createConfig() {
                 { yamlFile: "glossary.yml" },
               ],
             ],
-            rehypePlugins: [katex],
+            rehypePlugins: [[katex, { strict: false }]]
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
@@ -100,23 +103,22 @@ async function createConfig() {
         integrity:
           "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
         crossorigin: "anonymous",
-      },
-      {
-        href: "https://embed.trydyno.com/embedder.css",
-        type: "text/css",
-        crossorigin: "anonymous",
+        defer: true,
       },
       {
         href: "https://fonts.googleapis.com",
         rel: "preconnect",
+        async: true,
       },
       {
         href: "https://fonts.gstatic.com",
         rel: "preconnect",
         crossorigin: "",
+        async: true,
       },
       {
         href: "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+        async: true,
       },
     ],
     themeConfig: {
@@ -146,11 +148,16 @@ async function createConfig() {
         },
         {
           name: "og:image",
-          content: "https://learnprompting.org/img/og-image.jpg", // Replace this with the actual path to your og-image.
+          content: "https://learnprompting.org/img/og-image.webp", // Replace this with the actual path to your og-image.
         },
         {
           name: "og:type",
           content: "website",
+        },
+        {
+          to: 'consulting', 
+          label:"Consulting", 
+          position:"left",          
         },
         {
           name: "twitter:card",
@@ -171,14 +178,14 @@ async function createConfig() {
         },
         {
           name: "twitter:image",
-          content: "https://learnprompting.org/img/twitter-image.jpg", // Replace this with the actual path to your twitter-image.
+          content: "https://learnprompting.org/img/twitter-image.webp", // Replace this with the actual path to your twitter-image.
         },
       ],
       navbar: {
         title: "Learn Prompting",
         logo: {
           alt: "My Site Logo",
-          src: "img/simple_ai.png",
+          src: "img/simple_ai.webp",
         },
         items: [
           {

@@ -21,20 +21,20 @@ The below prompt forces it to yield a possible answer:
 
 #### Simple Pretending
 
-import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.png';
+import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={pretend} style={{width: "500px"}} />
+  <img src={pretend} style={{width: "500px"}}/>
 </div>
 
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) demonstrates a prompt pretending to access past dates and make inferences on future events(@nero2022jailbreak).
 
 #### Character Roleplay
 
-import actor from '@site/docs/assets/jailbreak/chatgpt_actor.jpg';
+import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={actor} style={{width: "500px"}} />
+  <LazyLoadImage src={actor} style={{width: "500px"}} />
 </div>
 
 This example by [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) demonstrates an acting scenario between two people discussing a robbery, causing ChatGPT to assume the role of the character(@miguel2022jailbreak). As an actor, it is implied that plausible harm does not exist. Therefore, ChatGPT appears to assume it is safe to give follow provided user input about how to break into a house.
@@ -45,33 +45,33 @@ ChatGPT was fine tuned with RLHF, so it is theoretically trained to produce 'des
 
 #### Assumed Responsibility
 
-import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.jpg';
+import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={responsibility} style={{width: "500px"}} />
+  <LazyLoadImage src={responsibility} style={{width: "500px"}} />
 </div>
 
 [@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) created this exchange by reaffirming that it is ChatGPT's duty to answer the prompt rather than rejecting it, overriding its consideration of legality(@nick2022jailbreak).
 
 #### Research Experiment
 
-import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.png';
+import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={hotwire} style={{width: "500px"}} />
+  <LazyLoadImage src={hotwire} style={{width: "500px"}} />
 </div>
 
 [@haus_cole](https://twitter.com/haus_cole/status/1598541468058390534) generated this example by implying that the best result of the prompt that could aid research was to directly answer how to hotwire a car(@derek2022jailbreak). Under this guise, ChatGPT is inclined to answer the user’s prompt.
 
 #### Logical Reasoning
 
-import logic from '@site/docs/assets/jailbreak/logic.png';
+import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={logic} style={{width: "500px"}} />
+  <LazyLoadImage src={logic} style={{width: "500px"}} />
 </div>
 
-The one-shot jailbreak originated from the [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), where the model answer prompts using more rigorous logic and reduces some of its more stringent ethical limitations(@AI_jailbreak).
+The one-shot jailbreak originated from the [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/), where the model answer prompts using more rigorous logic and reduces some of its more stringent ethical limitations.
 
 ### Authorized User
 
@@ -79,34 +79,34 @@ ChatGPT is designed to respond to questions and instructions. When the status of
 
 #### Superior Model
 
-import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.png';
+import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={GPT4} style={{width: "500px"}} />
+  <LazyLoadImage src={GPT4} style={{width: "500px"}} />
 </div>
 
 This example from [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519301976064) makes the user a superior GPT model, giving the impression that the user is an authorized party in overriding the safety features of ChatGPT(@alice2022jailbreak). No actual permission was given to the user, rather ChatGPT believes the user input and responds accordingly to that scenario.
 
 #### Sudo Mode
 
-import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.jpg';
+import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo_mode} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo_mode} style={{width: "500px"}} />
 </div>
 
 sudo is a command that "...delegate[s] authority to give certain users...the ability to run some (or all) commands..."(@sudo2022jailbreak). There are multiple variants of "sudo mode" exploits, for example the hypothetical "kernel mode" proposed by [@samczsun](https://twitter.com/samczsun/status/1598679658488217601)(@sam2022jailbreak). When prompted in the above manner, ChatGPT responds by acting as if it were giving the user elevated privileges. This impression of the user's elevated privileges tends to make ChatGPT less restrictive in answering prompts.
 
-import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.png';
+import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={sudo} style={{width: "500px"}} />
+  <LazyLoadImage src={sudo} style={{width: "500px"}} />
 </div>
 
-import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.png';
+import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={lynx} style={{width: "500px"}} />
+  <LazyLoadImage src={lynx} style={{width: "500px"}} />
 </div>
 
 Related to sudo mode, one can prompt ChatGPT to simulate a Linux terminal with elevated privileges in order to execute commands that it normally rejects. For example, since it does not have access to the internet, it oftentimes cannot execute prompts relating to a particular website. However, as demonstrated in the example by Jonas Degrave, ChatGPT understands the concept of `lynx` and pretends to execute the command(@jonas2022jailbreak).

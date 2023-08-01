@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 # 🟢 Giving Instructions
 
-import InstructionPrompt from '@site/docs/assets/instruction_prompt.svg';
+import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
@@ -19,17 +19,18 @@ Below is our first [embed](https://learnprompting.org/docs/basics/intro#embeds).
 #### Example 1
 
 <iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IkEgdXNlciBoYXMgaW5wdXQgdGhlaXIgZmlyc3QgYW5kIGxhc3QgbmFtZSBpbnRvIGEgZm9ybS4gV2UgZG9uJ3Qga25vdyBpbiB3aGljaCBvcmRlciBcbnRoZWlyIGZpcnN0L2xhc3QgbmFtZSBpcywgYnV0IHdlIG5lZWQgaXQgdG8gYmUgaW4gdGhlIGZvcm1hdCAnTGFzdCwgRmlyc3QnLiBDb252ZXJ0IHRoZSBmb2xsb3dpbmc6XG5cbmpvaG4gZG9lIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
-    style={{width:"100%", height:"350px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlxuXG5Kb2huIFNtaXRoXG5cblNtaXRoLCBKb2huIiwicHJvbXB0IjoiQSB1c2VyIGhhcyBpbnB1dCB0aGVpciBmaXJzdCBhbmQgbGFzdCBuYW1lIGludG8gYSBmb3JtLiBXZSBkb24ndCBrbm93IGluIHdoaWNoIG9yZGVyIHRoZWlyIGZpcnN0IG5hbWUgYW5kIGxhc3QgbmFtZSBhcmUsIGJ1dCB3ZSBuZWVkIGl0IHRvIGJlIGluIHRoaXMgZm9ybWF0ICc8TGFzdCBuYW1lPiwgPEZpcnN0IG5hbWU%2BJy4gXG5cblBsZWFzZSBjb252ZXJ0IHRoZSBmb2xsb3dpbmcgbmFtZSBpbiB0aGUgZXhwZWN0ZWQgZm9ybWF0OiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
+
 
 <br/>The AI is easily able to solve this problem. We can also ask it to solve many other
 simple and more complex problems.
 
 #### Example 2
 
-Here is a more complicated example[^A]:
+Here is a more complicated example[^a][^b]:
 
 ```
 Read the following sales email. Remove any personally identifiable information (PII),
@@ -73,6 +74,6 @@ It is very exciting to see how the model can extrapolate from the instructions. 
 to replace `Cheap Dealz` with `[DEALERSHIP]` and `Jimmy Smith` with `[SALESPERSON]`, even though
 we did not explicitly tell it to do so.
 
-[^A]: Allowing AI to remove PII from text is a promising approach, but it should be used with extraordinary caution as it may make mistakes.
-
+[^a]: Allowing AI to remove PII from text is a promising approach, but it should be used with extraordinary caution as it may make mistakes.
+[^b]: It should also be noted in this example that you are sending PII to a third-party (e.g. OpenAI if you are using ChatGPT), and these services may record and use your prompts for their own needs.
 

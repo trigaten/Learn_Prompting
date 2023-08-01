@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # 🟢 퓨샷 프롬프팅
 
-import FewShot from '@site/docs/assets/few_shot.svg';
+import FewShot from '@site/docs/assets/basics/few_shot.svg';
 
 <div style={{textAlign: 'center'}}>
   <FewShot style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
@@ -17,9 +17,11 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 
 예제를 구조화하는 것은 상당히 중요합니다. `input: classification`을 통해서 3개의 예제를 구조화 했기 때문에 모델은 `this review is positive`와 같은 문장 전체로 답변하는 게 아니라 마지막 라인에 한 개의 단어로 답변하게 되었습니다.
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Great product, 10/10: positive\nDidn't work very well: negative\nSuper helpful, worth it: positive\nIt doesnt work!:" initial-response="negative" max-tokens="256" box-rows="5" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Im5lZ2F0aXZlIiwicHJvbXB0IjoiR3JlYXQgcHJvZHVjdCwgMTAvMTA6IHBvc2l0aXZlXFxuRGlkbid0IHdvcmsgdmVyeSB3ZWxsOiBuZWdhdGl2ZVxcblN1cGVyIGhlbHBmdWwsIHdvcnRoIGl0OiBwb3NpdGl2ZVxcbkl0IGRvZXNudCB3b3JrIToiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>
 
@@ -52,7 +54,7 @@ import FewShot from '@site/docs/assets/few_shot.svg';
 종류:
 - 제로 샷(0 shot) 프롬프팅: 모델에게 예제를 제공하지 않음
 - 원 샷(1 shot) 프롬프팅: 모델에게 한 개의 예제를 제공함
-- 퓨샷 프롬프팅: 2개 이상의 모델을 제공함
+- 퓨샷 프롬프팅: 모델에게 2개 이상의 예제를 제공함
 
 ### 제로 샷(0-shot) 프롬프팅
 

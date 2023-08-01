@@ -6,10 +6,10 @@ sidebar_position: 11
 
 [Spellbook](https://scale.com/spellbook) es un entorno de desarrollo de prompts profesional construido por Scale AI.
 
-import Image from '@site/docs/assets/tooling/spellbook.png';
+import Image from '@site/docs/assets/tooling/spellbook.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características
