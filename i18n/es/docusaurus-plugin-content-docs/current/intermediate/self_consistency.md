@@ -13,10 +13,10 @@ Usando este prompt, se generan múltiples cadenas de pensamiento de manera indep
 Las respuestas se extraen de cada una y la respuesta final se calcula "marginalizando
 las rutas de razonamiento". En la práctica, esto significa tomar la respuesta mayoritaria.
 
-import SCImage from '@site/docs/assets/self_consistency.png';
+import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "750px"}} />
+  <img src={SCImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

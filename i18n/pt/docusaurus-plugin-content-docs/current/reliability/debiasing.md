@@ -8,7 +8,7 @@ Esta página aborda algumas técnicas simples para removerrespostas tendenciosas
 
 ## Desbiasando Prompts
 
-Dependendo de sua distribuição e ordem dentro do prompt, os %%exemplares|exemplars%% podem influenciar os resultados da LLM (@si2022prompting). Isso é discutido em parte na página [O que está dentro de um prompt](http://learnprompting.org/docs/intermediate/whats_in_a_prompt).
+Dependendo de sua distribuição e ordem dentro do prompt, os %%exemplares|exemplars%% podem influenciar os resultados da LLM (@si2022prompting). Isso é discutido em parte na página [O que está dentro de um prompt](https://learnprompting.org/docs/intermediate/whats_in_a_prompt).
 
 ### Distribuição
 

@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 🟢 preguntas de discusión
 
-import Auto from '@site/docs/assets/short_content_auto.png';
+import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
 
 Con el estímulo adecuado, GPT-3 es muy capaz de escribir respuestas de formato corto. Para demostrar esto, analizaremos la **resolución de preguntas de discusión**, una tarea común semanal en muchos cursos universitarios. Una respuesta a una pregunta de discusión suele ser de aproximadamente 100-700 palabras. El contenido más largo puede ser un poco más difícil, ya que los LLM tienen memoria limitada y tienen dificultades para comprender el panorama general de lo que están escribiendo(@jin2022plot).
 
@@ -50,7 +50,7 @@ Ahora podemos agregar formato y direcciones de contexto.
 El ejemplo de reformulación anterior fue generado con [ChatGPT](https://openai.com/blog/chatgpt/) de OpenAI.
 
 <div style={{textAlign: 'left'}}>
-  <img src={Auto} style={{width: "500px"}} />
+  <img src={Auto} style={{width: "500px"}}/>
 </div>
 
 ### Iteración
@@ -95,7 +95,11 @@ Este es un buen comienzo. Luego seguí con otra pregunta para expandir:
 
 Prueba esta pregunta de expansión con el demo a continuación (necesitarás tu clave de API de OpenAI)
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Estoy escribiendo un ensayo corto detallado en respuesta al siguiente tema: \n¿Las matemáticas son inventadas o descubiertas? Usa un razonamiento cuidadoso para explicar tu respuesta. \n\nEsto es lo que tengo hasta ahora: Existe mucho debate entre filósofos y matemáticos sobre si las matemáticas son inventadas o descubiertas. Algunos argumentan que los conceptos y principios matemáticos existen independientemente de las mentes humanas y, por lo tanto, pueden considerarse descubiertos en lugar de inventados. Por ejemplo, el concepto de números, proporciones y formas geométricas se observa en el mundo natural y se pueden abstraer y estudiar de manera sistemática. \n\nEscribe el siguiente párrafo de mi ensayo." initial-response="Por otro lado, algunos argumentan que las matemáticas son en gran parte una invención de la mente humana. Los principios matemáticos se basan en el razonamiento lógico, que es una característica de la mente humana. Por ejemplo, la geometría euclidiana se basa en axiomas y postulados abstractos, que se aceptan como verdaderos sin prueba. Por lo tanto, se puede argumentar que la geometría es una invención de la mente humana en lugar de un descubrimiento. De manera similar, las fórmulas y ecuaciones matemáticas se usan para modelar y predecir fenómenos físicos, que son nuevamente el resultado del razonamiento humano." max-tokens="256" box-rows="11" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiUG9yIG90cm8gbGFkbywgYWxndW5vcyBhcmd1bWVudGFuIHF1ZSBsYXMgbWF0ZW3DoXRpY2FzIHNvbiBlbiBncmFuIHBhcnRlIHVuYSBpbnZlbmNpw7NuIGRlIGxhIG1lbnRlIGh1bWFuYS4gTG9zIHByaW5jaXBpb3MgbWF0ZW3DoXRpY29zIHNlIGJhc2FuIGVuIGVsIHJhem9uYW1pZW50byBsw7NnaWNvLCBxdWUgZXMgdW5hIGNhcmFjdGVyw61zdGljYSBkZSBsYSBtZW50ZSBodW1hbmEuIFBvciBlamVtcGxvLCBsYSBnZW9tZXRyw61hIGV1Y2xpZGlhbmEgc2UgYmFzYSBlbiBheGlvbWFzIHkgcG9zdHVsYWRvcyBhYnN0cmFjdG9zLCBxdWUgc2UgYWNlcHRhbiBjb21vIHZlcmRhZGVyb3Mgc2luIHBydWViYS4gUG9yIGxvIHRhbnRvLCBzZSBwdWVkZSBhcmd1bWVudGFyIHF1ZSBsYSBnZW9tZXRyw61hIGVzIHVuYSBpbnZlbmNpw7NuIGRlIGxhIG1lbnRlIGh1bWFuYSBlbiBsdWdhciBkZSB1biBkZXNjdWJyaW1pZW50by4gRGUgbWFuZXJhIHNpbWlsYXIsIGxhcyBmw7NybXVsYXMgeSBlY3VhY2lvbmVzIG1hdGVtw6F0aWNhcyBzZSB1c2FuIHBhcmEgbW9kZWxhciB5IHByZWRlY2lyIGZlbsOzbWVub3MgZsOtc2ljb3MsIHF1ZSBzb24gbnVldmFtZW50ZSBlbCByZXN1bHRhZG8gZGVsIHJhem9uYW1pZW50byBodW1hbm8uIiwicHJvbXB0IjoiRXN0b3kgZXNjcmliaWVuZG8gdW4gZW5zYXlvIGNvcnRvIGRldGFsbGFkbyBlbiByZXNwdWVzdGEgYWwgc2lndWllbnRlIHRlbWE6IFxuwr9MYXMgbWF0ZW3DoXRpY2FzIHNvbiBpbnZlbnRhZGFzIG8gZGVzY3ViaWVydGFzPyBVc2EgdW4gcmF6b25hbWllbnRvIGN1aWRhZG9zbyBwYXJhIGV4cGxpY2FyIHR1IHJlc3B1ZXN0YS4gXG5cbkVzdG8gZXMgbG8gcXVlIHRlbmdvIGhhc3RhIGFob3JhOiBFeGlzdGUgbXVjaG8gZGViYXRlIGVudHJlIGZpbMOzc29mb3MgeSBtYXRlbcOhdGljb3Mgc29icmUgc2kgbGFzIG1hdGVtw6F0aWNhcyBzb24gaW52ZW50YWRhcyBvIGRlc2N1YmllcnRhcy4gQWxndW5vcyBhcmd1bWVudGFuIHF1ZSBsb3MgY29uY2VwdG9zIHkgcHJpbmNpcGlvcyBtYXRlbcOhdGljb3MgZXhpc3RlbiBpbmRlcGVuZGllbnRlbWVudGUgZGUgbGFzIG1lbnRlcyBodW1hbmFzIHksIHBvciBsbyB0YW50bywgcHVlZGVuIGNvbnNpZGVyYXJzZSBkZXNjdWJpZXJ0b3MgZW4gbHVnYXIgZGUgaW52ZW50YWRvcy4gUG9yIGVqZW1wbG8sIGVsIGNvbmNlcHRvIGRlIG7Dum1lcm9zLCBwcm9wb3JjaW9uZXMgeSBmb3JtYXMgZ2VvbcOpdHJpY2FzIHNlIG9ic2VydmEgZW4gZWwgbXVuZG8gbmF0dXJhbCB5IHNlIHB1ZWRlbiBhYnN0cmFlciB5IGVzdHVkaWFyIGRlIG1hbmVyYSBzaXN0ZW3DoXRpY2EuIFxuXG5Fc2NyaWJlIGVsIHNpZ3VpZW50ZSBww6FycmFmbyBkZSBtaSBlbnNheW8uIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <br/>
 
 Generé algunas expansiones con esta instrucción y seleccioné una que me gustó para obtener el siguiente resultado final:

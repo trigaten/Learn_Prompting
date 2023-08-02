@@ -74,33 +74,39 @@ Recomiendo este segundo enfoque, ya que puede producir contenidos más largos de
 
 El enfoque del conocimiento generado se introdujo en realidad para una tarea completamente distinta, la de responder a preguntas difíciles. Consideremos la siguiente pregunta, a la que GPT-3 responde incorrectamente:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="¿Cuál país es más grande, Congo o Sudáfrica?" initial-response="Sudáfrica es más grande que Congo." max-tokens="256" box-rows="3" model-temp="0" top-p="0">
-    <noscript>Error al cargar Dyno Embed: JavaScript debe estar habilitado</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlN1ZMOhZnJpY2EgZXMgbcOhcyBncmFuZGUgcXVlIENvbmdvLiIsInByb21wdCI6IsK%2FQ3XDoWwgcGHDrXMgZXMgbcOhcyBncmFuZGUsIENvbmdvIG8gU3Vkw6FmcmljYT8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <br/>
 
 Si primero le preguntamos al %%LLM|LLM%% que genere información sobre Congo y Sudáfrica, podemos luego utilizar esa información para responder la pregunta correctamente. En teoría, esto es similar a la técnica de %%CoT|prompting de CoT%%, ya que efectivamente estamos obteniendo del LLM un razonamiento intermedio en forma de hechos relacionados.
 
 Comencemos con el primer paso, _generación de conocimiento_. Podemos pedirle al %%LLM|LLM%% que genere información sobre Congo y Sudáfrica:
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Genera algunos hechos sobre los tamaños de Sudáfrica y Congo:" initial-response="Sudáfrica es el país número 25 más grande del mundo, con un área de 1.221.037 kilómetros cuadrados (471.445 millas cuadradas). Congo, por otro lado, es el país número 11 más grande del mundo, con un área de 2.344.858 kilómetros cuadrados (905.567 millas cuadradas). Sudáfrica es casi la mitad del tamaño de Congo, con una población de 57,7 millones en comparación con la población de Congo de 84,3 millones. Sudáfrica es el país más poblado de la región, mientras que Congo es el segundo más poblado." max-tokens="256" box-rows="6" model-temp="0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiJHZW5lcmEgYWxndW5vcyBoZWNob3Mgc29icmUgbG9zIHRhbWHDsW9zIGRlIFN1ZMOhZnJpY2EgeSBDb25nbzoiLCJvdXRwdXQiOiJTdWTDoWZyaWNhIGVzIGVsIHBhw61zIG7Dum1lcm8gMjUgbcOhcyBncmFuZGUgZGVsIG11bmRvLCBjb24gdW4gw6FyZWEgZGUgMS4yMjEuMDM3IGtpbMOzbWV0cm9zIGN1YWRyYWRvcyAoNDcxLjQ0NSBtaWxsYXMgY3VhZHJhZGFzKS4gQ29uZ28sIHBvciBvdHJvIGxhZG8sIGVzIGVsIHBhw61zIG7Dum1lcm8gMTEgbcOhcyBncmFuZGUgZGVsIG11bmRvLCBjb24gdW4gw6FyZWEgZGUgMi4zNDQuODU4IGtpbMOzbWV0cm9zIGN1YWRyYWRvcyAoOTA1LjU2NyBtaWxsYXMgY3VhZHJhZGFzKS4gU3Vkw6FmcmljYSBlcyBjYXNpIGxhIG1pdGFkIGRlbCB0YW1hw7FvIGRlIENvbmdvLCBjb24gdW5hIHBvYmxhY2nDs24gZGUgNTcsNyBtaWxsb25lcyBlbiBjb21wYXJhY2nDs24gY29uIGxhIHBvYmxhY2nDs24gZGUgQ29uZ28gZGUgODQsMyBtaWxsb25lcy4gU3Vkw6FmcmljYSBlcyBlbCBwYcOtcyBtw6FzIHBvYmxhZG8gZGUgbGEgcmVnacOzbiwgbWllbnRyYXMgcXVlIENvbmdvIGVzIGVsIHNlZ3VuZG8gbcOhcyBwb2JsYWRvLiIsIm1heFRva2VucyI6MjU2LCJib3hSb3dzIjo2LCJ0ZW1wZXJhdHVyZSI6MCwidG9wUCI6MH0%3D"
+    style={{width:"100%", height:"300px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 A continuación, usemos ese conocimiento para responder correctamente la pregunta. ¡Este es el paso de _integración de conocimiento_!
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Sudáfrica es el país número 25 más grande del mundo, con un área de 1.221.037 kilómetros cuadrados (471.445 millas cuadradas). Congo, por otro lado, es el país número 11 más grande del mundo, con un área de 2.344.858 kilómetros cuadrados (905.567 millas cuadradas). Sudáfrica es casi la mitad del tamaño de Congo, con una población de 57,7 millones en comparación con la población de Congo de 84,3 millones. Sudáfrica es el país más poblado de la región, mientras que Congo es el segundo más poblado.\n\n¿Qué país es más grande, Congo o Sudáfrica?" initial-response="Congo es más grande que Sudáfrica." max-tokens="256" box-rows="15" model-temp="0" top-p="0">
-    <noscript>Error al cargar Dyno Embed: JavaScript debe estar habilitado</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkNvbmdvIGVzIG3DoXMgZ3JhbmRlIHF1ZSBTdWTDoWZyaWNhLiIsInByb21wdCI6IlN1ZMOhZnJpY2EgZXMgY2FzaSBsYSBtaXRhZCBkZWwgdGFtYcOxbyBkZSBDb25nbywgY29uIHVuYSBwb2JsYWNpw7NuIGRlIDU3LDcgbWlsbG9uZXMgZW4gY29tcGFyYWNpw7NuIGNvbiBsYSBwb2JsYWNpw7NuIGRlIENvbmdvIGRlIDg0LDMgbWlsbG9uZXMuIFN1ZMOhZnJpY2EgZXMgZWwgcGHDrXMgbcOhcyBwb2JsYWRvIGRlIGxhIHJlZ2nDs24sIG1pZW50cmFzIHF1ZSBDb25nbyBlcyBlbCBzZWd1bmRvIG3DoXMgcG9ibGFkby5cblxuwr9RdcOpIHBhw61zIGVzIG3DoXMgZ3JhbmRlLCBDb25nbyBvIFN1ZMOhZnJpY2E%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Una discusión más técnica
 
 Aunque el caso de uso anterior era similar a la forma en que se introdujo originalmente el conocimiento generado, no es exactamente igual. El siguiente contenido abarca el contexto más técnico en el que se introdujo el enfoque. Sigue el patrón de dos pasos intermedios (generación de conocimiento e integración de conocimiento) que vimos anteriormente.
 
-import KGImage from '@site/docs/assets/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <img src={KGImage} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -113,10 +119,10 @@ En el paso de generación de conocimiento, se pide al %%LLM|LLM%% que genere un 
 sobre la **pregunta**. Al LLM se le pide que responda como se muestra a continuación.
 Se generan M terminaciones diferentes utilizando esta misma pregunta (similar al enfoque de autoconsistencia).
 
-import KGP1Image from '@site/docs/assets/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -151,10 +157,10 @@ Seleccionamos la respuesta con la probabilidad más alta como la respuesta final
 
 El enfoque de recitación aumentada (@sun2022recitationaugmented) es similar al conocimiento generado (básicamente el mismo). Sin embargo, es mucho menos complejo que la implementación formal del conocimiento generado.
 
-import RImage from '@site/docs/assets/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={RImage} style={{width: "250px"}} />
+  <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
 La idea aquí es hacer una prompt de pocos ejemplos al LLM para generar información _y_ responder en _un mismo_ paso. El hecho de que el modelo recite/genere conocimiento y responda la pregunta en el mismo paso es la principal diferencia del enfoque de conocimiento generado.

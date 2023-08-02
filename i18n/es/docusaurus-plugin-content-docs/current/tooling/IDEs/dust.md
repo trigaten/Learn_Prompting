@@ -9,10 +9,10 @@ una interfaz web para escribir prompts y encadenarlos.
 
 Actualmente, tiene una curva de aprendizaje pronunciada en comparación con otras IDEs de ingeniería de prompts.
 
-import Image from '@site/docs/assets/tooling/dust.png';
+import Image from '@site/docs/assets/tooling/dust.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características

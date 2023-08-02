@@ -7,10 +7,10 @@ sidebar_position: 18
 [OpenAI DALLE IDE](https://labs.openai.com) is a website for generating images with DALLE-2,
 a text to image model.
 
-import Image from '@site/docs/assets/tooling/dalle.png';
+import Image from '@site/docs/assets/tooling/dalle.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

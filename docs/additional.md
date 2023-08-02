@@ -4,6 +4,9 @@ sidebar_position: 3000
 
 # 🛸 Additional Resources
 
+## Interactive Tutorials
+* [agents.blue](https://www.agents.blue/) - A free, guided tutorial on prompt engineering.
+
 ## Resources
 
 * [Article on leaking Notion's prompts](https://lspace.swyx.io/p/reverse-prompt-eng)

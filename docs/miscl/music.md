@@ -11,10 +11,10 @@ Music generation models can create chord progressions, melodies, or full songs. 
 However, despite the enormous potential of music models, they are currently difficult to prompt. Generated output is often not thoroughly customizable by prompts, unlike image or text generation models.
 
 ## Riffusion
-import riffusion from '@site/docs/assets/riffusion_phonk.png';
+import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={riffusion} style={{width: "500px"}} />
+  <img src={riffusion} style={{width: "500px"}}/>
 </div>
 
 Riffusion(@Forsgren_Martiros_2022), a fine tuned version of Stable Diffusion, can be controlled with prompts to generate instruments and pseudo styles, but it has a limited number of beats available.

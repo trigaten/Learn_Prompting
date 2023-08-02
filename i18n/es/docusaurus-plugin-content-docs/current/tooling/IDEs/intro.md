@@ -18,8 +18,6 @@ Aquí hay una tabla de las herramientas que discutiremos en este capítulo:
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart) | ✅ | ❌ | ❌ | Pago por tokens | ✅ | Texto | OpenAI|
 | [Dust](https://dust.tt/)                   | ✅ | ✅ | ❌|  | ✅ | Texto | OpenAI, Cohere |
-| [Soaked Prompts](https://soaked-prompts.vercel.app) | ✅ | ✅ | ❌|  | ✅ | Texto | OpenAI |
-| [Dyno](https://trydyno.com/login)          | ✅ | ❌ | ❌|  | ✅ | Texto | OpenAI |
 | [Everyprompt](https://www.everyprompt.com) | ✅ | |    ❌| Freemium | ✅ | Texto | OpenAI |
 | [PromptIDE](https://prompt.vizhub.ai)      | ✅ | Código por determinar |✅ | Ninguno | ✅ | Texto | |
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | Ninguno | ✅ |  Texto | |
@@ -35,7 +33,7 @@ Aquí hay una tabla de las herramientas que discutiremos en este capítulo:
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Lista de espera | Texto | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| En Desarrollo | Lista de espera | Texto, Imagen, Audio | OpenAI, Difusión Estable |
 | [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Lista de espera | Texto | OpenAI|
-| [DiscuroAI](http://www.discuro.com) | ✅ | ❌ | ❌|  | ✅ | Texto, Imagen | OpenAI|
+| [DiscuroAI](https://www.discuro.com) | ✅ | ❌ | ❌|  | ✅ | Texto, Imagen | OpenAI|
 | [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Lista de espera | Texto | |
 | [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Texto, Imágenes + Audio más tarde | OpenAI, Estabilidad.AI y más |
 

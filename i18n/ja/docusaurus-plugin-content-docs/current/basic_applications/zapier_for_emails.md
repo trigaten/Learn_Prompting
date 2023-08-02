@@ -4,13 +4,13 @@ sidebar_position: 600
 
 # 🟢 Zapier for Emails
 
-import Basic from '@site/docs/assets/Zapiermail/Basic.png';
-import Diagram from '@site/docs/assets/Zapiermail/Diagram.png';
-import Step1 from '@site/docs/assets/Zapiermail/Step1.png';
-import Step2 from '@site/docs/assets/Zapiermail/Step2.png';
-import Step3 from '@site/docs/assets/Zapiermail/Step3.png';
-import Step4 from '@site/docs/assets/Zapiermail/Step4.png';
-import Zap from '@site/docs/assets/Zapiermail/Zap.png';
+import Basic from '@site/docs/assets/basic_applications/Zapiermail/Basic.webp';
+import Diagram from '@site/docs/assets/basic_applications/Zapiermail/Diagram.webp';
+import Step1 from '@site/docs/assets/basic_applications/Zapiermail/Step1.webp';
+import Step2 from '@site/docs/assets/basic_applications/Zapiermail/Step2.webp';
+import Step3 from '@site/docs/assets/basic_applications/Zapiermail/Step3.webp';
+import Step4 from '@site/docs/assets/basic_applications/Zapiermail/Step4.webp';
+import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 
 ## 序章
 
@@ -35,7 +35,7 @@ import Zap from '@site/docs/assets/Zapiermail/Zap.png';
 4. 出力をデータベースに保存する
 
 <div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}} />
+  <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
 ## Zapier でのセットアップ
@@ -47,7 +47,7 @@ import Zap from '@site/docs/assets/Zapiermail/Zap.png';
   <div>
   これが最終的にZapierアクションダイアグラムがどのように見えるかです。
     <div><div style={{textAlign: 'left'}}>
-  <img src={Zap} style={{width: "500px"}} />
+  <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
@@ -56,7 +56,7 @@ import Zap from '@site/docs/assets/Zapiermail/Zap.png';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-    <img src={Step1} style={{width: "500px"}} />
+    <LazyLoadImage src={Step1} style={{width: "500px"}} />
         </div>
       </div>
     </details>
@@ -66,7 +66,7 @@ import Zap from '@site/docs/assets/Zapiermail/Zap.png';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step2} style={{width: "500px"}} />
+  <LazyLoadImage src={Step2} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -77,7 +77,7 @@ import Zap from '@site/docs/assets/Zapiermail/Zap.png';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step3} style={{width: "500px"}} />
+  <LazyLoadImage src={Step3} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -87,7 +87,7 @@ import Zap from '@site/docs/assets/Zapiermail/Zap.png';
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
-  <img src={Step4} style={{width: "500px"}} />
+  <LazyLoadImage src={Step4} style={{width: "500px"}} />
 </div>
       </div>
     </details>
@@ -114,9 +114,11 @@ import Zap from '@site/docs/assets/Zapiermail/Zap.png';
 
 ここでの応答は適切で、そして有用です。しかし、さらなる微調整により、より良い結果が得られます。要約の読者として、それがメールであることには関心がなく、要約の詳細度を下げたいかもしれません。なぜ情報が必要なのか、質問や懸念に関する最後の文は関連性がないでしょう。要約の目的がメールの内容を素早く読み飛ばすことであり、丁寧な表現を取り除きたいという要素を追加するだけで、結果は改善できます。
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Act as my personal assistant. I am an office administrator. Summarize the following email as concisely as you can, ignore the footer and header and any previous emails. I want to use the summary to skim emails. Remove any pleasantries. \n\nEmail: Request for Additional Office Supplies Dear Office Administrator, I hope this email finds you well. I am writing to request additional office supplies for our team. As you know, we have been experiencing a high volume of work lately and have been using our supplies at a faster rate than usual. We would greatly appreciate it if you could provide us with the following items: Printer paper Ink cartridges for the HP printer in the conference room Sticky notes Binder clips Highlighters Please let me know if there are any questions or concerns, and when we can expect the supplies to be delivered. Thank you for your help. \n\nBest regards, Your Name Summary:\n" initial-response="Request for additional office supplies - printer paper, ink cartridges for HP printer, sticky notes, binder clips and highlighters." max-tokens="256" box-rows="15" model-temp="0.0" top-p="0">
-    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
-</div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlJlcXVlc3QgZm9yIGFkZGl0aW9uYWwgb2ZmaWNlIHN1cHBsaWVzIC0gcHJpbnRlciBwYXBlciwgaW5rIGNhcnRyaWRnZXMgZm9yIEhQIHByaW50ZXIsIHN0aWNreSBub3RlcywgYmluZGVyIGNsaXBzIGFuZCBoaWdobGlnaHRlcnMuIiwicHJvbXB0IjoiQWN0IGFzIG15IHBlcnNvbmFsIGFzc2lzdGFudC4gSSBhbSBhbiBvZmZpY2UgYWRtaW5pc3RyYXRvci4gU3VtbWFyaXplIHRoZSBmb2xsb3dpbmcgZW1haWwgYXMgY29uY2lzZWx5IGFzIHlvdSBjYW4sIGlnbm9yZSB0aGUgZm9vdGVyIGFuZCBoZWFkZXIgYW5kIGFueSBwcmV2aW91cyBlbWFpbHMuIEkgd2FudCB0byB1c2UgdGhlIHN1bW1hcnkgdG8gc2tpbSBlbWFpbHMuIFJlbW92ZSBhbnkgcGxlYXNhbnRyaWVzLiBcblxuRW1haWw6IFJlcXVlc3QgZm9yIEFkZGl0aW9uYWwgT2ZmaWNlIFN1cHBsaWVzIERlYXIgT2ZmaWNlIEFkbWluaXN0cmF0b3IsIEkgaG9wZSB0aGlzIGVtYWlsIGZpbmRzIHlvdSB3ZWxsLiBJIGFtIHdyaXRpbmcgdG8gcmVxdWVzdCBhZGRpdGlvbmFsIG9mZmljZSBzdXBwbGllcyBmb3Igb3VyIHRlYW0uIEFzIHlvdSBrbm93LCB3ZSBoYXZlIGJlZW4gZXhwZXJpZW5jaW5nIGEgaGlnaCB2b2x1bWUgb2Ygd29yayBsYXRlbHkgYW5kIGhhdmUgYmVlbiB1c2luZyBvdXIgc3VwcGxpZXMgYXQgYSBmYXN0ZXIgcmF0ZSB0aGFuIHVzdWFsLiBXZSB3b3VsZCBncmVhdGx5IGFwcHJlY2lhdGUgaXQgaWYgeW91IGNvdWxkIHByb3ZpZGUgdXMgd2l0aCB0aGUgZm9sbG93aW5nIGl0ZW1zOiBQcmludGVyIHBhcGVyIEluayBjYXJ0cmlkZ2VzIGZvciB0aGUgSFAgcHJpbnRlciBpbiB0aGUgY29uZmVyZW5jZSByb29tIFN0aWNreSBub3RlcyBCaW5kZXIgY2xpcHMgSGlnaGxpZ2h0ZXJzIFBsZWFzZSBsZXQgbWUga25vdyBpZiB0aGVyZSBhcmUgYW55IHF1ZXN0aW9ucyBvciBjb25jZXJucywgYW5kIHdoZW4gd2UgY2FuIGV4cGVjdCB0aGUgc3VwcGxpZXMgdG8gYmUgZGVsaXZlcmVkLiBUaGFuayB5b3UgZm9yIHlvdXIgaGVscC4gXG5cbkJlc3QgcmVnYXJkcywgWW91ciBOYW1lIFN1bW1hcnk6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 (プロンプト日本語訳)
 

@@ -6,10 +6,10 @@ sidebar_position: 4
 
 零样本思维链（Zero Shot Chain of Thought，Zero-shot-CoT）提示过程(@kojima2022large)是对 %%CoT prompting|CoT prompting%% (@wei2022chain) 的后续研究，引入了一种非常简单的零样本提示。他们发现，通过在问题的结尾附加“**让我们一步步思考。**”这几个词，大语言模型能够生成一个回答问题的思维链。从这个思维链中，他们能够提取更准确的答案。
 
-import ZSImage from '@site/docs/assets/zero_shot.png';
+import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}} />
+  <img src={ZSImage} style={{width: "500px"}}/>
 </div>
 <div style={{textAlign: 'center'}}>
 零样本思维链(Kojima et al.)
@@ -17,10 +17,10 @@ import ZSImage from '@site/docs/assets/zero_shot.png';
 
 从技术上讲，完整的零样本思维链过程涉及两个单独的提示/补全结果。在下面的图像中，左侧的顶部气泡生成一个思维链，而右侧的顶部气泡接收来自第一个提示（包括第一个提示本身）的输出，并从思维链中提取答案。这个第二个提示是一个 _自我增强_ 的提示。
 
-import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSProcessImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 <div style={{textAlign: 'center'}}>
 完整的零样本思维链过程(Kojima et al.)
@@ -32,11 +32,19 @@ import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';
 
 #### 错误示例
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="如果 John 有 5 个梨子，吃了 2 个，又买了 5 个，然后把 3 个给了他的朋友，他还剩下多少个梨子？" initial-response="John 有 8 个梨子。" max-tokens="256" box-rows="3" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkpvaG4g5pyJIDgg5Liq5qKo5a2Q44CCIiwicHJvbXB0Ijoi5aaC5p6cIEpvaG4g5pyJIDUg5Liq5qKo5a2Q77yM5ZCD5LqGIDIg5Liq77yM5Y%2BI5Lmw5LqGIDUg5Liq77yM54S25ZCO5oqKIDMg5Liq57uZ5LqG5LuW55qE5pyL5Y%2BL77yM5LuW6L%2BY5Ymp5LiL5aSa5bCR5Liq5qKo5a2Q77yfIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 #### 正确示例
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="如果 John 有 5 个梨子，吃了 2 个，又买了 5 个，然后把 3 个给了他的朋友，他还剩下多少个梨子？\n\n让我们一步一步地思考。" initial-response="John 起初有 5 个梨子。他吃了 2 个梨子，还剩下 3 个梨子。他又买了 5 个梨子，一共有 8 个梨子。他把 3 个梨子给了他的朋友，他现在只剩下 5 个梨子。" max-tokens="256" box-rows="5" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLlpoLmnpwgSm9obiDmnIkgNSDkuKrmoqjlrZDvvIzlkIPkuoYgMiDkuKrvvIzlj4jkubDkuoYgNSDkuKrvvIznhLblkI7mioogMyDkuKrnu5nkuobku5bnmoTmnIvlj4vvvIzku5bov5jliankuIvlpJrlsJHkuKrmoqjlrZDvvJ9cblxu6K6p5oiR5Lus5LiA5q2l5LiA5q2l5Zyw5oCd6ICD44CCIiwib3V0cHV0IjoiSm9obiDotbfliJ3mnIkgNSDkuKrmoqjlrZDjgILku5blkIPkuoYgMiDkuKrmoqjlrZDvvIzov5jliankuIsgMyDkuKrmoqjlrZDjgILku5blj4jkubDkuoYgNSDkuKrmoqjlrZDvvIzkuIDlhbHmnIkgOCDkuKrmoqjlrZDjgILku5bmioogMyDkuKrmoqjlrZDnu5nkuobku5bnmoTmnIvlj4vvvIzku5bnjrDlnKjlj6rliankuIsgNSDkuKrmoqjlrZDjgIIiLCJtYXhUb2tlbnMiOjI1NiwiYm94Um93cyI6NSwidGVtcGVyYXR1cmUiOjAuNywidG9wUCI6MX0%3D"
+    style={{width:"100%", height:"250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## 结论
 零样本思维链也有效地改善了算术、常识和符号推理任务的结果。然而，毫不奇怪的是，它通常不如思维链提示过程有效。，在获取思维链提示的少量示例有困难的时候，零样本思维链可以派上用场。

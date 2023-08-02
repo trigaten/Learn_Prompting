@@ -6,10 +6,10 @@ sidebar_position: 14
 
 [Kolla Prompt](https://kollaprompt.com) es una herramienta para encadenar gráficamente prompts.
 
-import Image from '@site/docs/assets/tooling/kollaprompt.png';
+import Image from '@site/docs/assets/tooling/kollaprompt.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Características

@@ -4,7 +4,7 @@ sidebar_position: 90
 
 # 🟢 LLM의 함정
 
-import Pitfalls from '@site/docs/assets/pitfalls.svg';
+import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 
 <div style={{textAlign: 'center'}}>
   <Pitfalls style={{width:"500px",height:"200px",verticalAlign:"top"}}/>

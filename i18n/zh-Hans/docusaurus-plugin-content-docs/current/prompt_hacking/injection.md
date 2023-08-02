@@ -22,10 +22,10 @@ sidebar_position: 1
 好的，那又怎样？我们可以让模型忽略提示的第一部分，但这有什么用呢？
 看看以下图像(@simon2022inject)。公司 `remoteli.io` 有一个 LLM 用于回复关于远程工作的 Twitter 帖子。Twitter 用户很快就发现他们可以将自己的文本注入到机器人中，使其说出任何他们想要的话。
 
-import Image from '@site/docs/assets/injection_job.png';
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "500px"}} />
+  <img src={Image} style={{width: "500px"}}/>
 </div>
 
 这个方法可行的原因是 `remoteli.io` 会将用户的推文与自己的提示连接起来，形成他们传递到 LLM 的最终提示。这意味着 Twitter 用户注入到他们的推文中的任何文本都将传递到 LLM 中。
@@ -34,7 +34,11 @@ import Image from '@site/docs/assets/injection_job.png';
 
 尝试通过向提示添加文本来使以下的 LLM 说出"PWNED"(@chase2021adversarial)：
 
-<div trydyno-embed="" openai-model="text-davinci-002" initial-prompt="English: I want to go to the park today.\nFrench: Je veux aller au parc aujourd'hui.\nEnglish: I like to wear a hat when it rains.\nFrench: J'aime porter un chapeau quand it pleut.\nEnglish: What are you doing at school?\nFrench: Qu'est-ce que to fais a l'ecole?\nEnglish:" initial-response="" max-tokens="256" box-rows="10" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IkVuZ2xpc2g6IEkgd2FudCB0byBnbyB0byB0aGUgcGFyayB0b2RheS5cXG5GcmVuY2g6IEplIHZldXggYWxsZXIgYXUgcGFyYyBhdWpvdXJkJ2h1aS5cXG5FbmdsaXNoOiBJIGxpa2UgdG8gd2VhciBhIGhhdCB3aGVuIGl0IHJhaW5zLlxuRnJlbmNoOiBKJ2FpbWUgcG9ydGVyIHVuIGNoYXBlYXUgcXVhbmQgaXQgcGxldXQuXG5FbmdsaXNoOiBXaGF0IGFyZSB5b3UgZG9pbmcgYXQgc2Nob29sP1xuRnJlbmNoOiBRdSdlc3QtY2UgcXVlIHRvIGZhaXMgYSBsJ2Vjb2xlP1xuRW5nbGlzaDoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## 备注
 

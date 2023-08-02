@@ -12,10 +12,10 @@ by step.**" to the end of a question, LLMs are able to generate a chain of
 thought that answers the question. From this chain of thought, they are able to
 extract more accurate answers.
 
-import ZSImage from '@site/docs/assets/zero_shot.png';
+import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}} />
+  <img src={ZSImage} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -27,10 +27,10 @@ In the below image, the top bubble on the left generates a chain of thought, whi
 the right takes in the output from the first prompt (including the first prompt itself),
 and extracts the answer from the chain of thought. This second prompt is a _self augmented_ prompt.
 
-import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSProcessImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

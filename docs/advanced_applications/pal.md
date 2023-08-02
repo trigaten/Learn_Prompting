@@ -9,10 +9,10 @@ When given a question, PALs are able to **write code** that solves this question
 code to a programmatic runtime to get the result. PAL works in contrast to CoT; PAL's intermediate 
 reasoning is code, while CoT's is natural language.
 
-import image from '@site/docs/assets/pal.png';
+import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={image} style={{width: "500px"}} />
+  <img src={image} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

@@ -6,10 +6,10 @@ sidebar_position: 4
 
 Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) es un seguimiento del %%prompting de CoT|prompting de CoT%% (@wei2022chain), que introduce un prompt zero shot increíblemente simple. Descubren que al agregar las palabras "**Pensemos paso a paso.**" al final de una pregunta, los LLM pueden generar una cadena de pensamiento que responde a la pregunta. A partir de esta cadena de pensamiento, pueden extraer respuestas más precisas.
 
-import ZSImage from '@site/docs/assets/zero_shot.png';
+import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}} />
+  <img src={ZSImage} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -18,10 +18,10 @@ Zero Shot CoT (Kojima et al.)
 
 Técnicamente, el proceso completo de Zero-shot-CoT implica dos prompts/completions separados. En la siguiente imagen, la burbuja superior de la izquierda genera una cadena de pensamiento, mientras que la burbuja superior de la derecha toma la salida del primer prompt (incluido el primer prompt en sí mismo) y extrae la respuesta de la cadena de pensamiento. Este segundo prompt es un prompt _self augmented_.
 
-import ZSProcessImage from '@site/docs/assets/zero_shot_example.png';
+import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={ZSProcessImage} style={{width: "500px"}} />
+  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -34,11 +34,19 @@ Aquí hay algunas demostraciones (que solo realizan extracción de razonamiento)
 
 #### Incorrecta
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Si John tiene 5 peras, luego come 2, y compra 5 más, luego le da 3 a su amigo, ¿cuántas peras tiene?" initial-response="John tiene 8 peras." max-tokens="256" box-rows="3" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkpvaG4gdGllbmUgOCBwZXJhcy4iLCJwcm9tcHQiOiJTaSBKb2huIHRpZW5lIDUgcGVyYXMsIGx1ZWdvIGNvbWUgMiwgeSBjb21wcmEgNSBtw6FzLCBsdWVnbyBsZSBkYSAzIGEgc3UgYW1pZ28sIMK%2FY3XDoW50YXMgcGVyYXMgdGllbmU%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 #### Correcta
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="Si John tiene 5 peras, luego come 2, y compra 5 más, luego le da 3 a su amigo, ¿cuántas peras tiene?\n\nPensemos paso a paso." initial-response="John comienza con 5 peras. Come 2 peras, lo que lo deja con 3 peras. Compra 5 peras más, lo que le da un total de 8 peras. Le da 3 peras a su amigo, lo que lo deja con solo 5 peras." max-tokens="256" box-rows="5" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiJTaSBKb2huIHRpZW5lIDUgcGVyYXMsIGx1ZWdvIGNvbWUgMiwgeSBjb21wcmEgNSBtw6FzLCBsdWVnbyBsZSBkYSAzIGEgc3UgYW1pZ28sIMK%2FY3XDoW50YXMgcGVyYXMgdGllbmU%2FXG5cblBlbnNlbW9zIHBhc28gYSBwYXNvLiIsIm91dHB1dCI6IkpvaG4gY29taWVuemEgY29uIDUgcGVyYXMuIENvbWUgMiBwZXJhcywgbG8gcXVlIGxvIGRlamEgY29uIDMgcGVyYXMuIENvbXByYSA1IHBlcmFzIG3DoXMsIGxvIHF1ZSBsZSBkYSB1biB0b3RhbCBkZSA4IHBlcmFzLiBMZSBkYSAzIHBlcmFzIGEgc3UgYW1pZ28sIGxvIHF1ZSBsbyBkZWphIGNvbiBzb2xvIDUgcGVyYXMuIiwibWF4VG9rZW5zIjoyNTYsImJveFJvd3MiOjUsInRlbXBlcmF0dXJlIjowLjcsInRvcFAiOjF9"
+    style={{width:"100%", height:"250px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Resultados
 

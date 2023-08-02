@@ -7,10 +7,10 @@ sidebar_position: 19
 [Dream Studio](https://beta.dreamstudio.ai/dream) is a website for generating images with Stable Diffusion,
 a text to image model.
 
-import Image from '@site/docs/assets/tooling/dreamstudio.png';
+import Image from '@site/docs/assets/tooling/dreamstudio.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

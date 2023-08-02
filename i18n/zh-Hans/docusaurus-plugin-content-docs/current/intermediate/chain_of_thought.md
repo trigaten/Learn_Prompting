@@ -8,10 +8,10 @@ style: chicago
 
 思维链(CoT)提示过程(@wei2022chain)是一种最近开发的提示方法，它鼓励大语言模型解释其推理过程。下图(@wei2022chain) 显示了 %%few shot standard prompt|few shot standard prompt%%（左)与链式思维提示过程（右）的比较。
 
-import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
+import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CoTExample} style={{width: "750px"}} />
+  <img src={CoTExample} style={{width: "750px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
@@ -26,21 +26,28 @@ import CoTExample from '@site/docs/assets/chain_of_thought_example.png';
 
 #### 不正确的答案
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="哪种方法是更快的上班方式？\n选项1：乘坐1000分钟的公共汽车，然后半小时的火车，最后10分钟的自行车骑行。\n选项2：乘坐800分钟的公共汽车，然后1小时的火车，最后30分钟的自行车骑行。" initial-response="选项1是更快的上班方式。" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IumAiemhuTHmmK%2Fmm7Tlv6vnmoTkuIrnj63mlrnlvI%2FjgIIiLCJwcm9tcHQiOiLlk6rnp43mlrnms5XmmK%2Fmm7Tlv6vnmoTkuIrnj63mlrnlvI%2FvvJ9cXG7pgInpobkx77ya5LmY5Z2QMTAwMOWIhumSn%2BeahOWFrOWFseaxvei9pu%2B8jOeEtuWQjuWNiuWwj%2BaXtueahOeBq%2Bi9pu%2B8jOacgOWQjjEw5YiG6ZKf55qE6Ieq6KGM6L2m6aqR6KGM44CCXFxu6YCJ6aG5Mu%2B8muS5mOWdkDgwMOWIhumSn%2BeahOWFrOWFseaxvei9pu%2B8jOeEtuWQjjHlsI%2Fml7bnmoTngavovabvvIzmnIDlkI4zMOWIhumSn%2BeahOiHquihjOi9pumqkeihjOOAgiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 #### 正确的答案
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="哪种方法是更快的回家方式？\n选项1：乘坐10分钟的公共汽车，然后40分钟的公共汽车，最后10分钟的火车。\n选项2：乘坐90分钟的火车，然后骑行45分钟，最后10分钟的公共汽车。\n选项1需要60分钟，即10+40+10 = 60分钟。\n选项2需要145分钟，即90+45+10=145分钟。\n由于选项1需要60分钟，选项2需要145分钟，因此选项1更快。\n\n哪种方法是更快的上班方式？\n选项1：乘坐1000分钟的公共汽车，然后半小时的火车，最后10分钟的自行车骑行。\n选项2：乘坐800分钟的公共汽车，然后1小时的火车，最后30分钟的自行车骑行。" initial-response="选项1需要1000+30+10 = 1040分钟。
-选项2需要800+60+30 = 890分钟。由于选项2需要890分钟，选项1需要1040分钟，因此选项2更快。" max-tokens="256" box-rows="18" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMiLCJwcm9tcHQiOiLlk6rnp43mlrnms5XmmK%2Fmm7Tlv6vnmoTlm57lrrbmlrnlvI%2FvvJ9cbumAiemhuTHvvJrkuZjlnZAxMOWIhumSn%2BeahOWFrOWFseaxvei9pu%2B8jOeEtuWQjjQw5YiG6ZKf55qE5YWs5YWx5rG96L2m77yM5pyA5ZCOMTDliIbpkp%2FnmoTngavovabjgIJcbumAiemhuTLvvJrkuZjlnZA5MOWIhumSn%2BeahOeBq%2Bi9pu%2B8jOeEtuWQjumqkeihjDQ15YiG6ZKf77yM5pyA5ZCOMTDliIbpkp%2FnmoTlhazlhbHmsb3ovabjgIJcbumAiemhuTHpnIDopoE2MOWIhumSn%2B%2B8jOWNszEwKzQwKzEwICIsIm91dHB1dCI6IumAiemhuTHpnIDopoExMDAwKzMwKzEwICIsIm1heFRva2VucyI6MjU2LCJib3hSb3dzIjoxOCwidGVtcGVyYXR1cmUiOjAsInRvcFAiOjB9"
+    style={{width:"100%", height:"900px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## 结论
 
 思维链已被证明对于算术、常识和符号推理等任务的结果有所改进(@wei2022chain)。特别是，在GSM8K(@cobbe2021training)基准测试上，PaLM 540B(@chowdhery2022palm)的提示达到了57%的解决率准确性。
 
-import PromptedPaLM from '@site/docs/assets/prompted_palm.png';
+import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={PromptedPaLM} style={{width: "300px"}} />
+  <LazyLoadImage src={PromptedPaLM} style={{width: "300px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>

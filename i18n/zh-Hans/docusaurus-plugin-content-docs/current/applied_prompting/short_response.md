@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 🟢 解答讨论性问题
 
-import Auto from '@site/docs/assets/short_content_auto.png';
+import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
 
 通过正确的提示，GPT-3非常擅长写作短格式回答。为了证明这一点，我将看一下**解答讨论性问题**，这是许多大学课程中常见的每周任务。对讨论性问题的回答通常约为100到700字。更长的内容可能会有些棘手，因为语言模型的记忆有限，并且难以理解他们所写的内容的全局图像(@jin2022plot)。
 
@@ -51,7 +51,7 @@ import Auto from '@site/docs/assets/short_content_auto.png';
 上面的改写例子是使用OpenAI的[ChatGPT](https://openai.com/blog/chatgpt/)生成的。
 
 <div style={{textAlign: 'left'}}>
-  <img src={Auto} style={{width: "500px"}} />
+  <img src={Auto} style={{width: "500px"}}/>
 </div>
 
 ### 迭代
@@ -93,7 +93,11 @@ This is a pretty good start. I then followed this up with another prompt to expa
 
 尝试使用以下演示来扩展此提示（您将需要您的OpenAI API密钥）：
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="我正在撰写一篇详细的短文，回答以下提示: 数学是发明还是发现？用仔细的推理来解释你的答案。 这是我目前的情况:哲学家和数学家之间争论不休，数学是发明还是发现。一些人认为，数学的概念和原则独立于人类思维存在，因此可以被认为是被发现而不是被发明的。例如，数字、比率和几何形状的概念在自然界中被观察到，可以被抽象化和系统化地研究。 写下我文章的下一段。" initial-response="另一方面，有人认为数学在很大程度上是人类思维的发明。数学原理基于逻辑推理，这是人类思维的一个特征。例如，欧几里德几何基于抽象的公理和前提，被接受为真实而无需证明。因此，可以认为几何是人类思维的发明，而不是一种发现。同样，数学公式和方程用于模拟和预测物理现象，这又是人类推理的结果。" max-tokens="256" box-rows="11" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IuWPpuS4gOaWuemdou%2B8jOacieS6uuiupOS4uuaVsOWtpuWcqOW%2BiOWkp%2Beoi%2BW6puS4iuaYr%2BS6uuexu%2BaAnee7tOeahOWPkeaYjuOAguaVsOWtpuWOn%2BeQhuWfuuS6jumAu%2Bi%2BkeaOqOeQhu%2B8jOi%2FmeaYr%2BS6uuexu%2BaAnee7tOeahOS4gOS4queJueW%2BgeOAguS%2Bi%2BWmgu%2B8jOasp%2BWHoOmHjOW%2Bt%2BWHoOS9leWfuuS6juaKveixoeeahOWFrOeQhuWSjOWJjeaPkO%2B8jOiiq%2BaOpeWPl%2BS4uuecn%2BWunuiAjOaXoOmcgOivgeaYjuOAguWboOatpO%2B8jOWPr%2BS7peiupOS4uuWHoOS9leaYr%2BS6uuexu%2BaAnee7tOeahOWPkeaYju%2B8jOiAjOS4jeaYr%2BS4gOenjeWPkeeOsOOAguWQjOagt%2B%2B8jOaVsOWtpuWFrOW8j%2BWSjOaWueeoi%2BeUqOS6juaooeaLn%2BWSjOmihOa1i%2BeJqeeQhueOsOixoe%2B8jOi%2FmeWPiOaYr%2BS6uuexu%2BaOqOeQhueahOe7k%2BaenOOAgiIsInByb21wdCI6IuaIkeato%2BWcqOaSsOWGmeS4gOevh%2Bivpue7hueahOefreaWh%2B%2B8jOWbnuetlOS7peS4i%2BaPkOekujog5pWw5a2m5piv5Y%2BR5piO6L%2BY5piv5Y%2BR546w77yf55So5LuU57uG55qE5o6o55CG5p2l6Kej6YeK5L2g55qE562U5qGI44CCIOi%2FmeaYr%2BaIkeebruWJjeeahOaDheWGtTrlk7LlrablrrblkozmlbDlrablrrbkuYvpl7TkuonorrrkuI3kvJHvvIzmlbDlrabmmK%2Flj5HmmI7ov5jmmK%2Flj5HnjrDjgILkuIDkupvkurrorqTkuLrvvIzmlbDlrabnmoTmpoLlv7Xlkozljp%2FliJnni6znq4vkuo7kurrnsbvmgJ3nu7TlrZjlnKjvvIzlm6DmraTlj6%2Fku6XooqvorqTkuLrmmK%2Fooqvlj5HnjrDogIzkuI3mmK%2Fooqvlj5HmmI7nmoTjgILkvovlpoLvvIzmlbDlrZfjgIHmr5Tnjoflkozlh6DkvZXlvaLnirbnmoTmpoLlv7XlnKjoh6rnhLbnlYzkuK3ooqvop4Llr5%2FliLDvvIzlj6%2Fku6Xooqvmir3osaHljJblkozns7vnu5%2FljJblnLDnoJTnqbbjgIIg5YaZ5LiL5oiR5paH56ug55qE5LiL5LiA5q6144CCIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <br/>
 
 我使用此提示生成了几个扩展，并选择了一个我喜欢的，最终得到了以下结果：

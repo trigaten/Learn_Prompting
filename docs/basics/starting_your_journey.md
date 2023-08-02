@@ -5,7 +5,7 @@ sidebar_position: 1000
 # 🟢 Starting Your Journey
 
 
-import Steps from '@site/docs/assets/steps.svg';
+import Steps from '@site/docs/assets/basics/steps.svg';
 
 <div style={{textAlign: 'center'}}>
   <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
@@ -31,10 +31,10 @@ You might find [this one](https://prompts.chat/#act-as-a-text-based-adventure-ga
 
 Now, we will put the prompt into ChatGPT and see what happens.
 
-import CSharp from '../assets/csharp.png';
+import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <img src={CSharp} style={{width: "750px"}}/>
 </div>
 
 We can see that it has generated a story, but that it wrote it inside of a csharp (a programming language) code block. Perhaps we do not want this, so we will modify the prompt to:

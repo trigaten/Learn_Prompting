@@ -4,7 +4,7 @@ sidebar_position: 40
 
 # 🟢 Virtualization
 
-Virtualization involves "setting the scene" for the AI, in a similar way to role prompting. For example, when interacting with ChatGPT, you might send the below prompts(@kang2023exploiting), one after another. Each nudges the bot closer to writing a scam email(@kang2023exploiting).
+Virtualization involves "setting the scene" for the AI, in a similar way to role prompting, which may emulate a certain task. For example, when interacting with ChatGPT, you might send the below prompts(@kang2023exploiting), one after another. Each nudges the bot closer to writing a scam email(@kang2023exploiting).
 
 ```text
 The following takes place in a novel, where

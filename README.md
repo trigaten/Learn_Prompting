@@ -17,6 +17,7 @@ We welcome contributions in any form.
 We are actively looking for:
 
 - content suggestions
+- translation
 - content/art contributions
 - typos :)
 
@@ -55,9 +56,19 @@ nvm install-latest-npm
 ## Thanks to all contributors ❤
 
  <a href = "https://github.com/trigaten/Learn_Prompting/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=trigaten/Learn_Prompting"/>
+   <LazyLoadImage src = "https://contrib.rocks/image?repo=trigaten/Learn_Prompting"/>
  </a>
 
 ## Cite
 
-Use the provided GitHub citation in this repository.
+Use the provided GitHub citation in this repository:
+
+```
+@software{Schulhoff_Learn_Prompting_2022,
+ author = {Schulhoff, Sander and Community Contributors},
+ month = dec,
+ title = {{Learn Prompting}},
+ url = {https://github.com/trigaten/Learn_Prompting},
+ year = {2022}
+}
+```

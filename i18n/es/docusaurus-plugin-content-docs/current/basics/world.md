@@ -6,10 +6,10 @@ sidebar_position: 200
 
 Hola lector, felicidades por haber terminado el capítulo introductorio. Estás dando un gran comienzo en este campo tan emocionante. Hay algunas cosas simples que deberías saber acerca de los diferentes tipos de inteligencia artificial y cómo funcionan antes de continuar leyendo el resto del curso.
 
-import music_image from '@site/docs/assets/music+image.png';
+import music_image from '@site/docs/assets/basics/music+image.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={music_image} style={{width: "850px"}} />
+  <img src={music_image} style={{width: "850px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>

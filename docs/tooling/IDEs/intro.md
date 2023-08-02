@@ -26,8 +26,6 @@ Here is a table of the tools we will be discussing in this chapter:
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart) | ✅ | ❌ | ❌ | Pay per tokens | ✅ | Text | OpenAI|
 | [Dust](https://dust.tt/)                   | ✅ | ✅ | ❌|  | ✅ | Text | OpenAI, Cohere |
-| [Soaked Prompts](https://soaked-prompts.vercel.app) | ✅ | ✅ | ❌|  | ✅ | Text | OpenAI |
-| [Dyno](https://trydyno.com/login)          | ✅ | ❌ | ❌|  | ✅ | Text | OpenAI |
 | [Everyprompt](https://www.everyprompt.com) | ✅ | |    ❌| Freemium | ✅ | Text | OpenAI |
 | [Promptmetheus](https://promptmetheus.com) | ✅ | ❌ | ✅ | Free | ✅ | Text | OpenAI |
 | [PromptIDE](https://prompt.vizhub.ai)      | ✅ | Code TBD |✅ | None | ✅ | Text | |
@@ -35,6 +33,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf) | ❌ |  | ✅ | None | ✅ |  Text | |
 | [PromptMaker](https://dl.acm.org/doi/abs/10.1145/3491101.3503564) |❌ | | ✅| | | Text| |
 | [PromptSandbox](https://promptsandbox.io) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
+| [ChainForge](https://github.com/ianarawjo/ChainForge) | ✅ | ✅ | ✅ | Free | ✅ | Text | OpenAI |
 
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
 | ------------------------------------------ | -- | --| --| ------ | ------- | ---- | ---- |
@@ -45,12 +44,12 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
-| [DiscuroAI](http://www.discuro.com) | ✅ | ❌ | ❌|  | ✅ | Text, Image | OpenAI|
+| [DiscuroAI](https://www.discuro.com) | ✅ | ❌ | ❌|  | ✅ | Text, Image | OpenAI|
 | [PromptShake](https://promptshake.com/?ref=producthunt) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [GPT IDE](https://gptide.com) | ❌ | ❌ | ❌|  | ✅ | Text, images + audio later | OpenAI, later Stability.AI and more |
 | [The Forge AI](https://theforgeai.com/) | ✅ | ❌ | ❌ | Marketplace | Wait list | Text, Images | OpenAI, Stable Diffusion |
-
-
+| [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts) | ✅ | ❌ | ❌ | Enterprise | ✅ | Text | Custom, Public, Private LLMs |
+| [AnySolve](https://www.anysolve.ai/)  | ✅ | ❌ | ❌ | Freemium | ✅ | Text, images + audio later | OpenAI, Stability.AI and more |
 
 ## Image Only IDEs
 

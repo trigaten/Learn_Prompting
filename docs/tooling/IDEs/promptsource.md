@@ -8,10 +8,10 @@ sidebar_position: 7
 BLOOM(@scao2022bloom), a well known multilingual LLM.
 
 
-import Image from '@site/docs/assets/tooling/promptsource.png';
+import Image from '@site/docs/assets/tooling/promptsource.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}} />
+  <img src={Image} style={{width: "750px"}}/>
 </div>
 
 ## Features

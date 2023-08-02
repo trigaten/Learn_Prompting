@@ -5,11 +5,15 @@ sidebar_position: 2
 
 最简单的提示方法之一就是直接给出指令。我们上一个部分中就已经看到了一个简单的指令（`1,000,000 * 9,000等于几? 请确保输入正确数量的零，即使数量很多也要如此:`）。然而，现代人工智能可以遵循更复杂的指令。
 
-以下是一个 Dyno 交互式嵌入示例。如果您看不到它，请确保在您的浏览器中打开了 JavaScript。由于这是一个交互式演示，您可以编辑文本并单击`Generate`按钮重新运行人工智能。
+以下是一个 交互式嵌入示例。如果您看不到它，请确保在您的浏览器中打开了 JavaScript。由于这是一个交互式演示，您可以编辑文本并单击`Generate`按钮重新运行人工智能。
 
 #### 示例 1
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="一个用户在表单中输入了他们的名字和姓氏，但我们不知道他们的名字和姓氏的顺序，我们需要将它们转换为“姓, 名”的格式。将以下输入转换为该格式：\n\njohn doe" initial-response="Doe, John" max-tokens="256" box-rows="7" model-temp="0" top-p="0"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IuS4gOS4queUqOaIt%2BWcqOihqOWNleS4rei%2Bk%2BWFpeS6huS7luS7rOeahOWQjeWtl%2BWSjOWnk%2Bawj%2B%2B8jOS9huaIkeS7rOS4jeefpemBk%2BS7luS7rOeahOWQjeWtl%2BWSjOWnk%2Bawj%2BeahOmhuuW6j%2B%2B8jOaIkeS7rOmcgOimgeWwhuWug%2BS7rOi9rOaNouS4uuKAnOWnkywg5ZCN4oCd55qE5qC85byP44CC5bCG5Lul5LiL6L6T5YWl6L2s5o2i5Li66K%2Bl5qC85byP77yaXG5cbmpvaG4gZG9lIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 <br/>AI 能够轻松地解决这个问题。使用指令提示，它可以解决许多其他简单和更复杂的问题。
 

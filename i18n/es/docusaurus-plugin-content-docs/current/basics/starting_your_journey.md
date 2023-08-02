@@ -4,7 +4,7 @@ sidebar_position: 1000
 
 # 🟢 Comienza tu viaje
 
-import Steps from '@site/docs/assets/steps.svg';
+import Steps from '@site/docs/assets/basics/steps.svg';
 
 <div style={{textAlign: 'center'}}>
   <Steps style={{width:"500px",height:"200px",verticalAlign:"top"}}/>
@@ -31,10 +31,10 @@ Puedes encontrar [este](https://prompts.chat/#act-as-a-text-based-adventure-game
 
 Ahora, vamos a poner un prompt en ChatGPT y ver qué pasa.
 
-import CSharp from '@site/i18n/es/docusaurus-plugin-content-docs/assets/csharp.png';
+import CSharp from '@site/i18n/es/docusaurus-plugin-content-docs/assets/csharp.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}} />
+  <img src={CSharp} style={{width: "750px"}}/>
 </div>
 
 Podemos ver que ha generado una historia, pero que la ha escrito dentro de un bloque de código csharp (un lenguaje de programación). Quizás no queramos esto, así que modificaremos el prompt a:

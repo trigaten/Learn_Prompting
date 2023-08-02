@@ -110,6 +110,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Glasp](https://glasp.co/ai-writing)
 > Newsletter writing tool by training your personalized AI models.
 
+- [Hey - notionai](http://hey.technonia.com/notionai/)
+> NotionAI-like writing tool that generates suitable content for your selected template (blog post, pros and cons, etc)
+
 ## Automatically Build a Tool
 
 - [Toolbot](https://toolbot.ai)
@@ -163,7 +166,7 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Agent.so](https://www.agent.so/)
 
-- [Poe](http://poe.com)
+- [Poe](https://poe.com)
 
 - [Jasper Chat](https://www.jasper.ai/chat)
 
@@ -464,7 +467,10 @@ Writes content, predicts outcomes or answers questions at your command.
 > AI code writing assistant for data scientists, engineers, and analysts. Get code completions and suggestions as you type.
 
 - [regex.ai](https://regex.ai/)
-- AI-Powered Regular Expression Solver
+> AI-Powered Regular Expression Solver
+
+- [Hey - CopilotAI](http://hey.technonia.com)
+> CopilotAI-like writing tool that responses to your question with markdown format. Supports OpenAPI Swagger.
 
 ## Sales and Marketing
 
@@ -509,6 +515,9 @@ Writes content, predicts outcomes or answers questions at your command.
 
 - [Robin](https://www.hellorobin.ai/)
 > Reach out to leads, conduct research, and handle initial outreach. Writes and sends emails from your email address.
+
+- [Hey - NotionAI](http://hey.technonia.com/notionai/)
+> NotionAI-like writing tool that generates suitable content for your selected template (recruiting emails, sails email, etc)
 
 ## Music
 

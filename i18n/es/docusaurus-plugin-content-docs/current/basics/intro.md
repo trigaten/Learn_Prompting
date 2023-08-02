@@ -55,7 +55,7 @@ Este curso le enseñará cómo comunicarse con las IA.
 Lea el resto de este capítulo, luego consulte otros capítulos que le interesen.
 En particular, la sección de indicaciones aplicadas puede ser de su interés si desea
 para ver cómo los profesionales utilizan la IA para automatizar su trabajo. Puedes experimentar con IA
-usando recursos como [Playground](https://beta.openai.com/playground), [otros IDE](https://learnprompting.org/docs/IDEs/intro), o simplemente usando las interacciones embebidas de [Dyno](https://trydyno.com) que verá en este sitio.
+usando recursos como [Playground](https://beta.openai.com/playground), [otros IDE](https://learnprompting.org/docs/IDEs/intro), o simplemente usando las interacciones embebidas de embed que verá en este sitio.
 
 Antes de leer el siguiente artículo, es importante tener en cuenta que no necesita conocimientos técnicos para realizar PE. La mayor parte es prueba y error, y puedes aprender sobre la marcha.
 

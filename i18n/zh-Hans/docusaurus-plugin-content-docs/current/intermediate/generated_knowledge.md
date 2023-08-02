@@ -6,10 +6,10 @@ sidebar_position: 7
 
 生成的知识方法（Generated Knowledge Approach）(@liu2021generated)要求 %%LLM|LLM%% 在生成响应之前生成与问题相关的可能有用的信息。该方法由两个中间步骤组成，即知识生成和知识集成。
 
-import KGImage from '@site/docs/assets/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}} />
+  <img src={KGImage} style={{width: "750px"}}/>
 </div>
 <div style={{textAlign: 'center'}}>
 知识生成(Liu et al.)
@@ -19,10 +19,10 @@ import KGImage from '@site/docs/assets/knowledge_generation.png';
 
 在知识生成步骤中，要求 %%LLM|LLM%% 生成有关**问题**的一组事实。大语言模型将以 few-shot 方式进行提示，如下所示。使用相同提示生成 M 个不同的完成。
 
-import KGP1Image from '@site/docs/assets/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={KGP1Image} style={{width: "500px"}} />
+  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
 </div>
 <div style={{textAlign: 'center'}}>
 生成的知识示例(Liu et al.)

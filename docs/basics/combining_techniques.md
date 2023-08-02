@@ -6,9 +6,7 @@ style: chicago
 
 # 🟢 Combining Techniques
 
-## Usage
 
-import CombinedPrompt from '@site/docs/assets/combined_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <CombinedPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>

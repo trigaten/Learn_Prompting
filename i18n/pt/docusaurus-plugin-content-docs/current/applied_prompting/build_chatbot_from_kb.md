@@ -4,11 +4,11 @@ sidebar_position: 40
 
 # 🟢 Chatbot + Base de Conhecimento
 
-import ImageIntents from '@site/docs/assets/chatbot_from_kb_intents.png'
-import ImageGPT3 from '@site/docs/assets/chatbot_from_kb_gpt3.png'
-import ImageGPT3Organized from '@site/docs/assets/chatbot_from_kb_gpt3_organized.png'
-import ImagePrompt from '@site/docs/assets/chatbot_from_kb_prompt.png'
-import ImageLogin from '@site/docs/assets/chatbot_from_kb_login.png'
+import ImageIntents from '@site/docs/assets/basic_applications/chatbot_from_kb_intents.webp'
+import ImageGPT3 from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3.webp'
+import ImageGPT3Organized from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3_organized.webp'
+import ImagePrompt from '@site/docs/assets/basic_applications/chatbot_from_kb_prompt.webp'
+import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_login.webp'
 
 
 Os avanços recentes em grandes modelos de linguagem (LLMs), como o [GPT-3](https://arxiv.org/abs/2005.14165) e o [ChatGPT](https://chat.openai.com/chat), criaram muito buzz na indústria de tecnologia. Esses modelos são incrivelmente poderosos para geração de conteúdo, mas também têm algumas desvantagens, como bias(@nadeem-etal-2021-stereoset) e alucinações(@Ji_2022). Uma área em que esses LLMs podem ser particularmente úteis é o desenvolvimento de chatbots.
@@ -19,7 +19,7 @@ Os chatbots tradicionais são geralmente baseados em intenções, o que signific
 
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}} />
+  <img src={ImageIntents} style={{width: "700px"}}/>
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Como um chatbox tradicional funciona. Imagem produzida pela tradutora (adaptação do autor).</p>
 </div>
 
@@ -31,7 +31,7 @@ Aqui é onde o GPT-3 pode ser especialmente útil. Em vez de ter muitas intenç�
 Dessa forma, cada intenção está associada a um documento em vez de uma lista de perguntas e uma resposta específica, por exemplo, uma intenção para "problemas de login", uma intenção para "como se inscrever", etc. Quando um usuário faz uma pergunta sobre login, podemos passar o documento "problemas de login" para o GPT-3 como informações de contexto e gerar uma resposta específica para a pergunta do usuário.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Chatbox com Banco do Conhecimento + GPT-3. Imagem produzida pela tradutora (adaptação do autor).</p>
 </div>
 
@@ -52,7 +52,7 @@ A sequência do chatbot pode ser composta por duas etapas:
 A primeira etapa é essencialmente resolvida por uma [busca semântica](https://en.wikipedia.org/wiki/Semantic_search). Podemos usar modelos pré-treinados da biblioteca [sentence-transformers](https://www.sbert.net/examples/applications/semantic-search/README.html) e atribuir facilmente uma pontuação para cada documento. O documento com a pontuação mais alta é aquele que será usado para gerar a resposta do chatbot.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageGPT3Organized} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Como um chatbot que usa o GPT-3 poderia funcionar. O GPT-3 poderia ser usado para gerar uma resposta apropriada aproveitando as informações dos documentos da base de conhecimento. Imagem produzida pela tradutora (adaptação do autor).</p>
 </div>
 
@@ -67,7 +67,7 @@ Para criar o prompt, vamos experimentar usando:
 - Por último, **a pergunta do usuário**.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImagePrompt} style={{width: "700px"}} />
+  <LazyLoadImage src={ImagePrompt} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Informação usada para criar o prompt para o GPT-3. Imagem produzida pela tradutora (adaptação do autor)</p>
 </div>
 
@@ -80,7 +80,7 @@ Vamos começar nosso prompt usando a técnica <span className="yellow-highlight"
 Em seguida, suponha que a etapa de busca semântica extrai o seguinte documento da nossa base de conhecimento. Todos os documentos descrevem como o produto VideoGram funciona, que é um produto imaginário semelhante ao Instagram, mas apenas para vídeos.
 
 <div style={{textAlign: 'left'}}>
-  <img src={ImageLogin} style={{width: "700px"}} />
+  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>A document explaining how login to VideoGram works. Image by the author.</p>
 </div>
 

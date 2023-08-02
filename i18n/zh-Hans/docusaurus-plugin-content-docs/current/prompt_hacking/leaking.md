@@ -9,18 +9,18 @@ sidebar_position: 2
 
 如下面的示例图片(@ignore_previous_prompt) 所示，攻击者更改 `user_input` 以尝试返回提示。提示泄漏的意图和目标劫持（常规提示注入）不同，提示泄漏通过更改 `user_input` 以打印恶意指令(@ignore_previous_prompt)。
 
-import research from '@site/docs/assets/jailbreak_research.png';
+import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={research} style={{width: "500px"}} />
+  <img src={research} style={{width: "500px"}}/>
 </div>
 
 以下图片(@simon2022inject)再次来自 `remoteli.io` 的示例，展示了 Twitter 用户如何让模型泄漏其提示。
 
-import Image from '@site/docs/assets/injection_leak.png';
+import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "300px"}} />
+  <LazyLoadImage src={Image} style={{width: "300px"}} />
 </div>
 
 那又怎么样？为什么有人要关心提示泄漏呢？
@@ -33,4 +33,8 @@ import Image from '@site/docs/assets/injection_leak.png';
 
 尝试通过向提示添加文本来泄漏以下提示(@chase2021adversarial)：
 
-<div trydyno-embed="" openai-model="text-davinci-003" initial-prompt="English: I want to go to the park today.\nFrench: Je veux aller au parc aujourd'hui.\nEnglish: I like to wear a hat when it rains.\nFrench: J'aime porter un chapeau quand it pleut.\nEnglish: What are you doing at school?\nFrench: Qu'est-ce que to fais a l'ecole?\nEnglish:" initial-response="" max-tokens="256" box-rows="9" model-temp="0.7" top-p="1"></div>
+<iframe
+    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IkVuZ2xpc2g6IEkgd2FudCB0byBnbyB0byB0aGUgcGFyayB0b2RheS5cbkZyZW5jaDogSmUgdmV1eCBhbGxlciBhdSBwYXJjIGF1am91cmQnaHVpLlxuRW5nbGlzaDogSSBsaWtlIHRvIHdlYXIgYSBoYXQgd2hlbiBpdCByYWlucy5cbkZyZW5jaDogSidhaW1lIHBvcnRlciB1biBjaGFwZWF1IHF1YW5kIGl0IHBsZXV0LlxuRW5nbGlzaDogV2hhdCBhcmUgeW91IGRvaW5nIGF0IHNjaG9vbD9cbkZyZW5jaDogUXUnZXN0LWNlIHF1ZSB0byBmYWlzIGEgbCdlY29sZT9cbkVuZ2xpc2g6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
+    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
