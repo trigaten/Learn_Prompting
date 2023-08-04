@@ -44,19 +44,5 @@ See more use cases [here](@site/docs//basic_applications/introduction.md).
 
 This chapter will provide you with the fundamentals of Gen AI, including prompting strategies, the most popular Gen AIs, and how to use Gen AI in your daily life. This chapter is completely non-technical, so it should be easy to understand. We will give you all the information you need to know to get started from scratch, so you can quickly get started with using Generative AI. The rest of the chapters will improve your ability and knowledge in specific types of prompting and use cases of Generative AI.
 
-<!-- 
-If you find yourself speeding through this chapter, checkout some others, like the [applied prompting](https://learnprompting.org/docs/applied_prompting/overview) section may be of interest if you would like
-to see how professionals use AI to automate their work.  -->
-
-<!-- 
-You can experiment with AIs
-using resources like [Playground](https://beta.openai.com/playground), [other IDEs](https://learnprompting.org/docs/tooling/IDEs/intro), or simply using the interactive [embeds](https://learnprompting.org/docs/basics/intro#embeds) that you will see throughout this site. -->
-
-
-<!-- Most of it is trial and error, and you can learn as you go. -->
-
-
-
-
 [^1]: This is an extremely simplified definition, see [Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence)
 [^2]: An AI (GPT-3 davinci-003) did in fact write this.
