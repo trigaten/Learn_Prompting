@@ -22,7 +22,7 @@ Uma coisa importante a notar é que o PAL, na verdade, intercala linguagem natur
 
 ## Exemplo
 
-Vamos ver um exemplo de PAL resolvendo uma questão de matemática. Eu uso um prompt de 3 disparos, que é uma versão simplificada [deste aqui](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
+Vamos ver um exemplo de PAL resolvendo uma questão de matemática. Eu uso um prompt de 3 disparos, que é uma versão simplificada [deste aqui](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal).
 
 Usarei o LangChain, um pacote Python para encadear a funcionalidade do LLM. Primeiro, são necessárias algumas instalações:
 
