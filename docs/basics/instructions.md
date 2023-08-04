@@ -11,6 +11,7 @@ import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
 
 :::takeaways
 - Understand instruction prompting
+- 
 :::
 
 We will now cover our first prompting technique, *instruction prompting*(@efrat2020turking)(@mishra2022reframing). We have already seen simple instructions used in previous articles (e.g. getting an AI to solve the math problem). However,
