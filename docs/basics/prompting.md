@@ -23,8 +23,11 @@ To get started with ChatGPT, follow these steps:
 
 - Navigate to [http://chat.openai.com](http://chat.openai.com)
 - It should ask you to make an account. Go ahead and do so.
+- Log in with this account
 
 Here is a video that shows you how to get setup with ChatGPT.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FMEzy2jo84c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Test Some Prompts on ChatGPT
 
@@ -60,7 +63,9 @@ If I have 20 apples, eat three of them, and sell three more, how many do I have 
 </AIInput>
 
 <AIOutput>
-16
+If you have 20 apples and you eat three of them, you will have 20 - 3 = 17 apples left.
+
+After eating three apples (17 left), if you sell three more, you will have 17 - 3 = 14 apples left.
 </AIOutput>
 
 
