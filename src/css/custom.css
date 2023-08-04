@@ -99,3 +99,18 @@ pre[class*="language-"] {
 pre {
   white-space: pre-wrap;
 }
+
+/* custom admonition */
+.alert--takeaways {
+  --ifm-alert-background-color: white; /* SteelBlue color with 50% opacity */
+  --ifm-alert-background-color-highlight: rgba(70, 130, 180, 0.15); /* SteelBlue color with 15% opacity */
+  --ifm-alert-foreground-color: rgb(66,69,73); /* Text color */
+  --ifm-alert-border-color: #71b2e6; /* SteelBlue color */
+}
+
+html[data-theme='dark'] .alert--takeaways {
+  --ifm-alert-background-color: rgba(169, 202, 235, 0.5); /* SteelBlue color with 50% opacity */
+  --ifm-alert-background-color-highlight: rgba(70, 130, 180, 0.15); /* SteelBlue color with 15% opacity */
+  --ifm-alert-foreground-color: rgb(255,255,255); /* Text color for dark theme */
+  --ifm-alert-border-color: #4682B4; /* SteelBlue color */
+}
