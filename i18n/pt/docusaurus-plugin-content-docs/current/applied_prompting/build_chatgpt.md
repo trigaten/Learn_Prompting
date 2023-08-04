@@ -4,8 +4,8 @@ sidebar_position: 4
 
 # 🟢 Construindo o ChatGPT através do GPT-3
 
-import Skippy from '@site/docs/assets/basic_applications/skippy_chatbot.webp'    
-import SkippyHeader from '@site/docs/assets/basic_applications/skippy_chatbot_header.webp'    
+import Skippy from '@site/docs/assets/basic_applications/skippy_chatbot.webp'
+import SkippyHeader from '@site/docs/assets/basic_applications/skippy_chatbot_header.webp'
 import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
@@ -13,13 +13,13 @@ import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.web
   <img src={SkippyHeader} style={{width: "700px"}}/>
 </div>
 
-## Introdução 
+## Introdução
 
-[ChatGPT](https://chat.openai.com/chat) vem ganhando bastante popularidade, com milhares de usuários novos a cada semana. Surpreendentemente, o modelo sob o qual é construido, chamado GPT-3, foi lançado em 2020 e aberto ao público <a href="https://openai.com/blog/api-no-waitlist/">há um ano atrás!</a>   
+[ChatGPT](https://chat.openai.com/chat) vem ganhando bastante popularidade, com milhares de usuários novos a cada semana. Surpreendentemente, o modelo sob o qual é construido, chamado GPT-3, foi lançado em 2020 e aberto ao público <a href="https://openai.com/blog/api-no-waitlist/">há um ano atrás!</a>
 
-Para aqueles que não estão familiarizados com o assunto, o ChatGPT é um novo modelo de linguage da OpenAI baseado no GPT-3. que foi otimizado para conversas (@chatgpt2022). Ele possui uma interface amigável e simples, ara que você possa fazer uma pergunta e receba uma resposta de uma inteligência artificial assistiva. Experimente você mesmo no link [chat.openai.com](https://chat.openai.com/chat). 
+Para aqueles que não estão familiarizados com o assunto, o ChatGPT é um novo modelo de linguage da OpenAI baseado no GPT-3. que foi otimizado para conversas (@chatgpt2022). Ele possui uma interface amigável e simples, ara que você possa fazer uma pergunta e receba uma resposta de uma inteligência artificial assistiva. Experimente você mesmo no link [chat.openai.com](https://chat.openai.com/chat).
 
-While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT. 
+While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT.
 
 O que torna o ChatGPT tão bem-sucedido, em comparação ao GPT-3, é sua acessibilidade como um assistente de inteligência artificial direto para a pessoa comum, independentemente de seu conhecimento em ciência de dados, modelos de linguagem ou inteligência artificial.
 
@@ -29,7 +29,7 @@ Neste artigo, eu dou uma visão geral de como chatbots como o ChatGPT podem ser 
 Esse artigo foi escrito em partes como uma reação ao tweet da <a href="https://twitter.com/goodside">Riley Goodside</a>, explicando como o ChatGPT poderia ter sido implementado
 This article was written in part because of a tweet by , noting how ChatGPT could have been implemented.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Da mesma forma como outro modelos da série GPT-3.5, ChatGPT foi treinado usando [RLHF](https://huggingface.co/blog/rlhf), mas ele é eficaz quando usamos **prompts eficazes**.
 
