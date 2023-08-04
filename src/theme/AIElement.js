@@ -1,11 +1,31 @@
 import React from 'react';
 import RobotImage from '@site/docs/assets/robot.png';
 import AstronautImage from '@site/docs/assets/astronaut.jpg';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopy, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 class AIInput extends React.Component {
+  state = {
+    copied: false,
+  };
+
+  handleCopy = () => {
+    this.setState({ copied: true }, () => {
+      setTimeout(() => {
+        this.setState({ copied: false });
+      }, 1000);
+    });
+  };
+
   render() {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '15px', background: '#f0f0f0', margin: '20px 0' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '15px', background: '#f0f0f0', margin: '20px 0', position: 'relative' }}>
+        <CopyToClipboard text={this.props.children} onCopy={this.handleCopy}>
+          <button style={{ position: 'absolute', top: '10px', right: '10px' }}>
+            <FontAwesomeIcon icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
+          </button>
+        </CopyToClipboard>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <img src={AstronautImage} alt="Astronaut" style={{ width: '20px', borderRadius: '50%' }} />
           <h4 style={{ margin: '0' }}>Prompt</h4>
@@ -20,20 +40,37 @@ class AIInput extends React.Component {
 }
 
 class AIOutput extends React.Component {
-    render() {
-      return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '5px', background: '#f0f0f0', margin: '20px 0' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <img src={RobotImage} alt="Robot" style={{ width: '20px', borderRadius: '50%' }} />
-            <h4 style={{ margin: '0' }}>AI Output</h4>
-          </div>
-          <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
-          <pre style={{ background: 'lightgreen', borderRadius: '5px', padding: '10px', margin: '0' }}>
-            {this.props.children}
-          </pre>
+  state = {
+    copied: false,
+  };
+
+  handleCopy = () => {
+    this.setState({ copied: true }, () => {
+      setTimeout(() => {
+        this.setState({ copied: false });
+      }, 1000);
+    });
+  };
+
+  render() {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '5px', background: '#f0f0f0', margin: '20px 0', position: 'relative' }}>
+        <CopyToClipboard text={this.props.children} onCopy={this.handleCopy}>
+          <button style={{ position: 'absolute', top: '10px', right: '10px' }}>
+            <FontAwesomeIcon icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
+          </button>
+        </CopyToClipboard>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img src={RobotImage} alt="Robot" style={{ width: '20px', borderRadius: '50%' }} />
+          <h4 style={{ margin: '0' }}>AI Output</h4>
         </div>
-      );
-    }
+        <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
+        <pre style={{ background: 'lightgreen', borderRadius: '5px', padding: '10px', margin: '0' }}>
+          {this.props.children}
+        </pre>
+      </div>
+    );
   }
+}
 
 export { AIInput, AIOutput };
