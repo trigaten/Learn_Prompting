@@ -1,3 +1,6 @@
+prompt:
+  term: prompt
+  def: A text or other input to a Generatve AI
 api:
   term: API
   def: "Application Programming Interface. Enables different systems to interact with each other programmatically. Two types of APIs are REST APIs (web APIs) and native-library APIs."

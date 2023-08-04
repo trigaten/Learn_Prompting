@@ -1,14 +1,19 @@
 ---
-sidebar_position: 4
+sidebar_position: 70
 ---
 
-# 🟢 Few shot prompting
+# 🟢 Few Shot Prompting
 
 import FewShot from '@site/docs/assets/basics/few_shot.svg';
 
 <div style={{textAlign: 'center'}}>
   <FewShot style={{width:"100%",height:"200px",verticalAlign:"top"}}/>
 </div>
+
+:::tip
+- Learn 0, 1, and few shot prompting
+- Use few shot prompting to structure your outputs
+:::
 
 
 Yet another prompting strategy is *few shot prompting*(@logan-iv-etal-2022-cutting)(@lake2015human), which is basically just showing the model a few examples (called shots) of what you want it to do. 
@@ -58,9 +63,9 @@ Variants:
 
 0-shot prompting is the most basic form of prompting. It is simply showing the model a prompt without examples and asking it to generate a response. As such, all of instruction and role prompts that you have seen so far are 0-shot prompts. An additional example of a 0-shot prompt is:
 
-```text
+<AIInput>
 Add 2+2:
-```
+</AIInput>
 
 It is 0-shot since we have not shown the model any complete examples.
 
@@ -68,10 +73,10 @@ It is 0-shot since we have not shown the model any complete examples.
 
 1-shot prompting is when you show the model a single example. For example, the 1-shot analogue of the 0-shot prompt `Add 2+2:` is:
   
-```text
-Add 3+3: 6
-Add 2+2:
-```
+<AIInput>
+{`Add 3+3: 6
+Add 2+2:`}
+</AIInput>
 
 We have shown the model only 1 complete example (`Add 3+3: 6`), so this is a 1-shot prompt.
 
@@ -79,11 +84,12 @@ We have shown the model only 1 complete example (`Add 3+3: 6`), so this is a 1-s
 
 Few-shot prompting is when you show the model 2 or more examples. All prompts above this variants section have been few-shot prompts. The few-shot analogue of the above two prompts is:
 
-```text
-Add 3+3: 6
+<AIInput>
+{`Add 3+3: 6
 Add 5+5: 10
 Add 2+2:
-```
+`}
+</AIInput>
 
 This is the case since we have shown the model at least 2 complete examples (`Add 3+3: 6` and `Add 5+5: 10`). Usually, the more examples you show the model, the better the output will be, so few-shot prompting is preferred over 0-shot and 1-shot prompting in most cases.
 

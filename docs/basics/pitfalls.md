@@ -1,5 +1,5 @@
 ---
-sidebar_position: 90
+sidebar_position: 101
 ---
 
 # 🟢 Pitfalls of LLMs
@@ -10,6 +10,9 @@ import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
   <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
+:::tip
+- Understand the many problems that LLMs have
+:::
 
 LLMs are extremely powerful, but they are by no means perfect. There are many pitfalls that you should be aware of when using them.
 

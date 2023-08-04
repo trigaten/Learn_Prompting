@@ -4,6 +4,9 @@ sidebar_position: 1000
 
 # 🟢 Starting Your Journey
 
+:::tip
+- Learn the steps of prompt engineering
+:::
 
 import Steps from '@site/docs/assets/basics/steps.svg';
 
@@ -39,31 +42,31 @@ import CSharp from '@site/docs/assets/basics/csharp.webp';
 
 We can see that it has generated a story, but that it wrote it inside of a csharp (a programming language) code block. Perhaps we do not want this, so we will modify the prompt to:
 
-> I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. Do not write explanations. My first command is wake up
-
+<AIInput>
+I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. Do not write explanations. My first command is wake up
+</AIInput>
 
 **ChatGPT response**:
-```text
-// highlight-start
+
+<AIOutput>
 You slowly open your eyes and find yourself lying on the cold, hard ground. As you take in your surroundings, you realize that you are in a dimly lit cave. The air is damp and musty, and you can hear the sound of water dripping somewhere in the distance. Your head is throbbing and you feel disoriented. You need to figure out where you are and how to get out of here.
-// highlight-end
-```
+</AIOutput>
 
 Nice, now it outputs the story as plain text. However, our prompt lacks detail. Let's add some more structure to the prompt:
 
-> I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. Do not write explanations. Use flowery language and descriptive words. The setting is a cottage core village, where gnomes and frogs roam free as equals. Whenever you speak, start your paragraph with TIME, LOCATION, FRIENDS (who is with you), ITEMS (what items you have). My first command is wake up.
+<AIInput>
+I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. Do not write explanations. Use flowery language and descriptive words. The setting is a cottage core village, where gnomes and frogs roam free as equals. Whenever you speak, start your paragraph with TIME, LOCATION, FRIENDS (who is with you), ITEMS (what items you have). My first command is wake up.
+</AIInput>
 
 **ChatGPT response**:
-```text
-// highlight-start
+<AIOutput>
 TIME: Early morning
 LOCATION: A cozy, quaint cottage nestled in a village surrounded by lush greenery and fragrant flowers.
 FRIENDS: You are alone in your bedroom, snuggled under a cozy quilt.
 ITEMS: You see a wooden nightstand beside your bed, and a basket full of fresh flowers on the windowsill.
 
 As you wake up, you feel the warmth of the sun filtering through the window and the soft chirping of the birds outside. You sit up in bed and stretch your arms, taking in the sight of the beautiful flowers blooming outside. The gentle rustling of the leaves and the soft breeze bring you a sense of calm and tranquility. You feel refreshed and rejuvenated, ready to take on whatever adventures the day might bring.
-// highlight-end
-```
+</AIOutput>
 
 Ah, perfect, now you can live out your cottage core dreams with ChatGPT 🌸
 

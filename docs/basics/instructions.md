@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 50
 ---
 # 🟢 Giving Instructions
 
@@ -9,6 +9,9 @@ import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
   <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
+:::tip
+- Understand instruction prompts
+:::
 
 One of the simplest prompting methods is just giving instructions (sometimes called *instruction prompting*)(@efrat2020turking)(@mishra2022reframing). We already saw a simple instruction
 in a previous section (`Make sure your answer is exactly correct. What is 965*590? Make sure your answer is exactly correct:`). However,
@@ -32,7 +35,7 @@ simple and more complex problems.
 
 Here is a more complicated example[^a][^b]:
 
-```
+<AIInput>
 Read the following sales email. Remove any personally identifiable information (PII),
 and replace it with the appropriate placeholder. For example, replace the name "John Doe"
 with "[NAME]".
@@ -49,12 +52,11 @@ Jimmy Smith
 
 Phone: 410-805-2345
 Email: jimmysmith@cheapdealz.com
-```
+</AIInput>
 
 Here is the [AI's response](https://beta.openai.com/playground/p/002o3gmji5jlwUfRq9d7KDHc?model=text-davinci-003):
 
-```text
-// highlight-start
+<AIOutput>
 Hi [NAME],
 
 I'm writing to you because I noticed you recently purchased a new car. I'm a salesperson
@@ -67,8 +69,7 @@ Thanks,
 
 Phone: [PHONE NUMBER]
 Email: [EMAIL ADDRESS]
-// highlight-end
-```
+</AIOutput>
 
 It is very exciting to see how the model can extrapolate from the instructions. For example, it knows
 to replace `Cheap Dealz` with `[DEALERSHIP]` and `Jimmy Smith` with `[SALESPERSON]`, even though

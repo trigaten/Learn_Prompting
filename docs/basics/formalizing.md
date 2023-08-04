@@ -1,8 +1,12 @@
 ---
-sidebar_position: 7
+sidebar_position: 90
 ---
 
 # 🟢 Formalizing Prompts
+
+:::tip
+- Understand the basic parts of a prompt
+:::
 
 import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
@@ -27,25 +31,25 @@ We have covered roles, instructions, and examples in previous pages. A question 
 
 Not all of these occur in every prompt, and when some do occur, there is no standard order for them. For example, the following two prompts, which each contain a role, an instruction, and context, will do roughly the same thing:
 
-```text
+<AIInput>
 You are a doctor. Read this medical history and predict risks for the patient:
 
 January 1, 2000: Fractured right arm playing basketball. Treated with a cast.
 February 15, 2010: Diagnosed with hypertension. Prescribed lisinopril.
 September 10, 2015: Developed pneumonia. Treated with antibiotics and recovered fully.
 March 1, 2022: Sustained a concussion in a car accident. Admitted to the hospital and monitored for 24 hours.
-```
+</AIInput>
 
-```text
+<AIInput>
 January 1, 2000: Fractured right arm playing basketball. Treated with a cast.
 February 15, 2010: Diagnosed with hypertension. Prescribed lisinopril.
 September 10, 2015: Developed pneumonia. Treated with antibiotics and recovered fully.
 March 1, 2022: Sustained a concussion in a car accident. Admitted to the hospital and monitored for 24 hours.
 
 You are a doctor. Read this medical history and predict risks for the patient:
-```
+</AIInput>
 
-However, the second prompt is likely preferable since the instruction is the last part of the prompt. This is good since the LLM is less likely to simply write more context instead of following the instruction. For example, if given the first prompt, the LLM might add a new line: `March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`
+However, we prefer the second prompt, since the instruction is the last part of the prompt. This is good since the LLM is less likely to simply write more context instead of following the instruction. For example, if given the first prompt, the LLM might add a new line: `March 15, 2022: Follow-up appointment scheduled with neurologist to assess concussion recovery progress.`
 
 
 ## A "Standard" Prompt
@@ -63,16 +67,16 @@ new types of prompts in contrast to standard prompts.
 
 
 _Standard Prompt_
-```
+<AIInput>
 What is the capital of France?
-```
+</AIInput>
 
 _Standard Prompt in QA format_
-```
+<AIInput>
 Q: What is the capital of France?
 
 A:
-```
+</AIInput>
 
 ## Few Shot Standard Prompts
 
@@ -85,23 +89,23 @@ are sometimes referred to simply as standard prompts (though we attempt not to d
 
 _Few Shot Standard Prompt_
 
-```
+<AIInput>
 What is the capital of Spain?
 Madrid
 What is the capital of Italy?
 Rome
 What is the capital of France?
-```
+</AIInput>
 
 _Few Shot Standard Prompt in QA format_
-```
+<AIInput>
 Q: What is the capital of Spain?
 A: Madrid
 Q: What is the capital of Italy?
 A: Rome
 Q: What is the capital of France?
 A:
-```
+</AIInput>
 
 Few shot prompts facilitate "few shot" AKA "in context" learning, which is the 
 ability to learn without parameter updates(@zhao2021calibrate).

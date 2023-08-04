@@ -6,7 +6,7 @@ sidebar_position: 30
 
 What if you could write a blog post in 5 seconds?
 
-Frankly, you can't. But AI can **significantly** reduce the time it takes to write a blog post. There are many products which attempt to do this, but you can often get consistent results doing it yourself. 
+Frankly, you can't. But AI can **significantly** reduce the time it takes to write a blog post.
 
 This page covers the basics of using AI to help you write a blog. The process should be iterative: you should be writing prompts, seeing what the model outputs, taking pieces of the output, and repeating this.
 
@@ -14,6 +14,8 @@ As an example, pretend you work at a nursery and are drafting an article about "
 
 ```text
 Write an outline for a short blog post about why Christmas Cacti are a great buy.
+
+There are many products which attempt to do this, but you can often get consistent results doing it yourself. 
 
 // highlight-start
 I. Introduction

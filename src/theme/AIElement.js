@@ -1,17 +1,18 @@
 import React from 'react';
+import RobotImage from '@site/docs/assets/robot.png';
+import AstronautImage from '@site/docs/assets/astronaut.jpg';
 
 class AIInput extends React.Component {
   render() {
-    const children = React.Children.map(this.props.children, child =>
-      typeof child === 'string' ? child.split('\n').map((line, i) => <React.Fragment key={i}>{line}<br /></React.Fragment>) : ''
-    );
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <h2>AI Prompt</h2>
-        <pre 
-          style={{ padding: '10px', borderRadius: '5px', background: '#f0f0f0' }}
-        >
-          {children}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '15px', background: '#f0f0f0', margin: '20px 0' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <img src={AstronautImage} alt="Astronaut" style={{ width: '20px', borderRadius: '50%' }} />
+          <h4 style={{ margin: '0' }}>Prompt</h4>
+        </div>
+        <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
+        <pre style={{ background: '#f0f0f0', borderRadius: '5px', padding: '10px', margin: '0' }}>
+          {this.props.children}
         </pre>
       </div>
     );
@@ -20,16 +21,15 @@ class AIInput extends React.Component {
 
 class AIOutput extends React.Component {
     render() {
-      const children = React.Children.map(this.props.children, child =>
-        typeof child === 'string' ? child.split('\n').map((line, i) => <React.Fragment key={i}>{line}<br /></React.Fragment>) : child
-      );
       return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-          <h2>AI Output</h2>
-          <pre 
-            style={{ padding: '10px', borderRadius: '5px', background: 'lightgreen' }}
-          >
-            {children}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '5px', background: '#f0f0f0', margin: '20px 0' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <img src={RobotImage} alt="Robot" style={{ width: '20px', borderRadius: '50%' }} />
+            <h4 style={{ margin: '0' }}>AI Output</h4>
+          </div>
+          <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
+          <pre style={{ background: 'lightgreen', borderRadius: '5px', padding: '10px', margin: '0' }}>
+            {this.props.children}
           </pre>
         </div>
       );
