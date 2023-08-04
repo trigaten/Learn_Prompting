@@ -14,7 +14,7 @@ import Steps from '@site/docs/assets/basics/steps.svg';
   <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Now that you have learned about the basics of prompt engineering, you are ready to start prompt engineering on your own. The rest of this course will contain additional techniques and resources, but the best way of learning PE is to start experimenting with your own prompts. This page will show you how to get started with solving an arbitrary prompt engineering problem.
+Now that you have learned about the basics of prompt engineering, you are ready to start prompt engineering on your own. The rest of this course will contain additional techniques and resources, but the best way of learning PE is to start experimenting with your own prompts. This lesson will show you how to get started with solving an arbitrary prompt engineering problem.
 
 Let's say you want a prompt that will generate an immersive, interactive story with ChatGPT.
 
@@ -86,5 +86,5 @@ The recommendations in this article apply to all prompt engineering problems, no
 
 ## Notes
 
-- In the next chapters, you may see the words **AI, model, and LLM
+- In the next modules, you may see the words **AI, model, and LLM
 used interchangeably**. See the [vocabulary reference](https://learnprompting.org/docs/vocabulary) for more information.

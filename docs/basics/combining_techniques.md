@@ -15,7 +15,7 @@ import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
 :::
 
 
-As we have seen in the previous pages, prompts can have varying formats and complexity. They can include context, instructions, and multiple input-output examples. However, thus far, we have only examined separate classes of prompts. Combining these different prompting techniques can lead to more powerful prompts. 
+As we have seen in the previous lessons, prompts can have varying formats and complexity. They can include context, instructions, and multiple input-output examples. However, thus far, we have only examined separate classes of prompts. Combining these different prompting techniques can lead to more powerful prompts. 
 
 Here is an example of a prompt that includes context, instructions, and multiple examples:
 

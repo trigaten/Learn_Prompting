@@ -14,7 +14,7 @@ import Prompt from '@site/docs/assets/basics/prompt.svg';
 - Use ChatGPT to summarize text and solve a math problem
 :::
 
-In the previous chapter, we discussed AI and how humans can instruct AIs to perform tasks.
+In the previous module, we discussed AI and how humans can instruct AIs to perform tasks.
 Using a prompt to instruct an AI to do a task is called prompting(@shin2020autoprompt). We will explore prompting with [ChatGPT](http://chat.openai.com)[^a], a very popular Large Language Model (%%LLM|LLM%%), that can understand and write text. It was developed by OpenAI, and is currently the easiest Gen AI to work with. It is also completely free to use.
 
 ## Set up ChatGPT
@@ -50,7 +50,7 @@ Snowfall is extremely rare in Florida, with the exception of the far northern ar
 </AIOutput>
 
 :::caution
-You will likely see a slightly different output. This will be the case for most prompts in this course. We will learn why later in this chapter.
+You will likely see a slightly different output. This will be the case for most prompts in this course. We will learn why later in this module.
 :::
 
 #### 2) Math Problem Solving

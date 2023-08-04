@@ -15,7 +15,7 @@ import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 </div>
 
 
-We have now covered multiple types of prompts, as well as ways to combine them. This page will provide you with terms to explain different types of prompts. Although there have been approaches to formalize discourse around prompt engineering(@white2023prompt), the field is ever changing, so we will provide you with just enough information to get started.
+We have now covered multiple types of prompts, as well as ways to combine them. This lesson will provide you with terms to explain different types of prompts. Although there have been approaches to formalize discourse around prompt engineering(@white2023prompt), the field is ever changing, so we will provide you with just enough information to get started.
 
 ## Parts of a Prompt
 
@@ -27,7 +27,7 @@ There are a few different parts of a prompt that you will see over and over agai
 - Context
 - Examples (few shot)
 
-We have covered roles, instructions, and examples in previous pages. A question is simply a question! (E.g. `what is the capital of France?`). Context is any relevant information that you want the model to use when answering the question/performing the instruction.
+We have covered roles, instructions, and examples in previous lessons. A question is simply a question! (E.g. `what is the capital of France?`). Context is any relevant information that you want the model to use when answering the question/performing the instruction.
 
 Not all of these occur in every prompt, and when some do occur, there is no standard order for them. For example, the following two prompts, which each contain a role, an instruction, and context, will do roughly the same thing:
 

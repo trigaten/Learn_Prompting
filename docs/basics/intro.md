@@ -42,7 +42,7 @@ See more use cases [here](@site/docs//basic_applications/introduction.md).
 
 ## How do I get started with Generative AI?
 
-This chapter will provide you with the fundamentals of Gen AI, including prompting strategies, the most popular Gen AIs, and how to use Gen AI in your daily life. This chapter is completely non-technical, so it should be easy to understand. We will give you all the information you need to know to get started from scratch, so you can quickly get started with using Generative AI. The rest of the chapters will improve your ability and knowledge in specific types of prompting and use cases of Generative AI.
+This module will provide you with the fundamentals of Gen AI, including prompting strategies, the most popular Gen AIs, and how to use Gen AI in your daily life. This module is completely non-technical, so it should be easy to understand. We will give you all the information you need to know to get started from scratch, so you can quickly get started with using Generative AI. The rest of the modules will improve your ability and knowledge in specific types of prompting and use cases of Generative AI.
 
 [^1]: This is an extremely simplified definition, see [Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence)
 [^2]: An AI (GPT-3 davinci-003) did in fact write this.

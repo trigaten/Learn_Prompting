@@ -13,17 +13,13 @@ import Techniques from '@site/docs/assets/astronaut_welcome.webp';
 
 <h4>Welcome to Learn Prompting's Introductory Course on Generative AI and Prompt Engineering! </h4>
 
-Generative AI is the world's hottest buzzword, and we have created the most comprehensive (*and free*) guide on how to use it. This course is tailored to non-technical readers, who may not have even heard of AI, making it the perfect starting point if you are new to Generative AI and Prompt Engineering. Technical readers will find valuable insights within our later chapters.
+Generative AI is the world's hottest buzzword, and we have created the most comprehensive (*and free*) guide on how to use it. This course is tailored to non-technical readers, who may not have even heard of AI, making it the perfect starting point if you are new to Generative AI and Prompt Engineering. Technical readers will find valuable insights within our later modules.
 
 Generative AI refers to tools that can be used to create new content such as articles or images, just like humans can. It is expected to significantly change the way we work(@Davenport_Mittal_2022)(@Captain_2023) (read: *your job may be affected*[^a]). With so much buzz floating around about Generative AI (Gen AI) and Prompt Engineering (PE), it is hard to know what to believe.
 
 We have scoured the internet[^c] to find the best techniques and tools for our 1.3 Million readers from companies like OpenAI, Brex, and Deloitte. We are constantly refining our guide, to ensure that we provide you with the latest information. Lets see how Gen AI can save you hours of time in an instant, with a short example.
 
 ## Motivating Example
-
-
-
-<!-- Prompt Engineering refers to the process of interacting with Generative AI. We will define them more formally in the next page.  -->
 
 Our favorite way of saving time with Gen AI is automatically **writing emails**. By automating email responses, email editing, and cold outreach, we save hours of time each week. By sending an AI[^b] the following *prompt*, we can get it to generate a full length, formal email.  
 
@@ -61,7 +57,7 @@ The AI easily writes an email that is both humorous and professional. By modifyi
 
 ## Ethos and Philosphy
 
-We will now give a broad overview of the rest of the course, including our ethos and philosophy, our teaching style, and a list of chapters. This course is open source (anyone can see the code), and built by a diverse community of researchers, translators, and hobbyists. We believe that AI should be accessible to everyone, and that it should be described clearly and objectively. To this end, we have written a comprehensive course that is free of excessive jargon and hype.
+We will now give a broad overview of the rest of the course, including our ethos and philosophy, our teaching style, and a list of modules. This course is open source (anyone can see the code), and built by a diverse community of researchers, translators, and hobbyists. We believe that AI should be accessible to everyone, and that it should be described clearly and objectively. To this end, we have written a comprehensive course that is free of excessive jargon and hype.
 
 We have found this approach to be appreciated by the prompt engineering community: This course is cited by [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering#cite_ref-15), and is used by people at companies such as [O'REILLY](https://learning.oreilly.com/live-events/prompt-engineering-for-generating-ai-art-and-text/0636920084340/0636920084339/), Scale AI, and OpenAI. You may also notice that <a href="https://youtu.be/GPqSoiOP3w8?t=274" rel={"nofollow"}>almost </a><a href="https://learnwithhasan.com/prompt-engineering-guide/" rel={"nofollow"}>every </a><a href="https://www.youtube.com/watch?v=EYjG6i53-xk" rel={"nofollow"}>other </a> <a href="https://youtu.be/yR4hNBNS6yc?t=743" rel={"nofollow"}>prompt </a> <a href="https://youtu.be/pZsJbYIFCCw?t=208" rel={"nofollow"}>engineering </a> <a href="https://youtu.be/4kp7oVTu9Ck?t=495" rel={"nofollow"}>video </a> <a href="https://www.youtube.com/watch?v=q5wuHUmGFMw" rel={"nofollow"}>and </a> <a href="https://youtu.be/f8PGV3T9w38?t=549" rel={"nofollow"}>guide </a>
 uses material from this course. We are honored to support the prompt engineering community, including our 1.3M+ users and 40K+ [Discord](https://discord.gg/learn-prompting) members.
