@@ -9,7 +9,7 @@ import Prompt from '@site/docs/assets/basics/prompt.svg';
   <Prompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-:::tip
+:::takeaways
 - Set up ChatGPT
 - Use ChatGPT to summarize text and solve a math problem
 :::

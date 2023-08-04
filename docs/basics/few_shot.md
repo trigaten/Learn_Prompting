@@ -10,7 +10,7 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
   <FewShot style={{width:"100%",height:"200px",verticalAlign:"top"}}/>
 </div>
 
-:::tip
+:::takeaways
 - Learn 0, 1, and few shot prompting
 - Use few shot prompting to structure your outputs
 :::

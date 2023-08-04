@@ -10,7 +10,7 @@ import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
   <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-:::tip
+:::takeaways
 - Understand the many problems that LLMs have
 :::
 

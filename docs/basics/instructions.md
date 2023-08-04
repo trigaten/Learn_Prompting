@@ -9,7 +9,7 @@ import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
   <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-:::tip
+:::takeaways
 - Understand instruction prompts
 :::
 

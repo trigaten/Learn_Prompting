@@ -4,7 +4,7 @@ sidebar_position: 90
 
 # 🟢 Formalizing Prompts
 
-:::tip
+:::takeaways
 - Understand the basic parts of a prompt
 :::
 

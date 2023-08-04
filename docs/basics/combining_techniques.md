@@ -10,7 +10,7 @@ import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
   <CombinedPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-:::tip
+:::takeaways
 - Combine prompting techniques to improve your results.
 :::
 

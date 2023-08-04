@@ -4,7 +4,7 @@ sidebar_position: 1000
 
 # 🟢 Starting Your Journey
 
-:::tip
+:::takeaways
 - Learn the steps of prompt engineering
 :::
 

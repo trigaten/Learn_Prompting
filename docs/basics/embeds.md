@@ -4,7 +4,7 @@ sidebar_position: 40
 
 # 🟢 Learn Prompting Embeds
 
-:::tip
+:::takeaways
 - Run ChatGPT prompts in this course
 - Setup the Learn Prompting Embed
 :::

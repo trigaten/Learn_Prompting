@@ -10,10 +10,11 @@ import Techniques from '@site/docs/assets/basics/techniques.svg';
   <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-:::tip
+:::takeaways
 - Understand AI, Generative AI, and Prompts
 - Understand why Generative AI is useful
 :::
+
 
 ## What is AI?
 
@@ -41,7 +42,7 @@ See more use cases [here](@site/docs//basic_applications/introduction.md).
 
 ## How do I get started with Generative AI?
 
-This chapter will provide you with the fundamentals of Gen AI, including prompting strategies, the most popular Gen AIs, and how to use Gen AI in your daily life. This chapter is completely non-technical, so it should be easy to understand. We will give you all the information you need to know to get started from scratch, so you can quickly get started with using Generative AI. The rest of the chapters will improve your abilitiy and knowledge in specific types of prompting and use cases of Generative AI.
+This chapter will provide you with the fundamentals of Gen AI, including prompting strategies, the most popular Gen AIs, and how to use Gen AI in your daily life. This chapter is completely non-technical, so it should be easy to understand. We will give you all the information you need to know to get started from scratch, so you can quickly get started with using Generative AI. The rest of the chapters will improve your ability and knowledge in specific types of prompting and use cases of Generative AI.
 
 <!-- 
 If you find yourself speeding through this chapter, checkout some others, like the [applied prompting](https://learnprompting.org/docs/applied_prompting/overview) section may be of interest if you would like

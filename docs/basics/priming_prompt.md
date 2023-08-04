@@ -3,7 +3,7 @@ sidebar_position: 91
 ---
 # 🟢 Priming Chatbots
 
-:::tip
+:::takeaways
 - Control the style and structure of a conversation
 :::
 

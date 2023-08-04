@@ -4,7 +4,7 @@ sidebar_position: 1000
 
 # 🟢 The Learn Prompting Method
 
-:::tip
+:::takeaways
 - Learn our method for prompt engineering
 :::
 

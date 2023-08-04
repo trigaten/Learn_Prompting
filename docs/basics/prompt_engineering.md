@@ -4,7 +4,7 @@ sidebar_position: 20
 
 # 🟢 Prompt Engineering
 
-:::tip
+:::takeaways
 - What is prompt engineering?
 :::
 
