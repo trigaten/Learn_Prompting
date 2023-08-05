@@ -1,8 +1,8 @@
 ---
-sidebar_position: 80
+sidebar_position: 94
 ---
 
-# 🟢 Chatbot Basics
+# 🟢 Chatbots
 
 
 import Chatbots from '@site/docs/assets/basics/chatbot.svg';
@@ -11,75 +11,50 @@ import Chatbots from '@site/docs/assets/basics/chatbot.svg';
   <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Thus far, this course has mostly used GPT-3 for examples. GPT-3 is a LLM that has no memory. When you ask it a question (a prompt), it does not remember anything that you have previously asked it. In contrast, chatbots like [ChatGPT](https://chat.openai.com) are able to **remember your conversation history**. This can be useful for applications such as customer service or simply if you want to have a conversation with a LLM!
+:::takeaways
+- How chatbots work
+- Why chatbots are better than non-chatbots
+:::
 
-Just like GPT-3, chatbots can answer questions, provide summaries, analysis, and write text or code. The real value of chatbots is only accessible when you use good prompts. In this article, we’ll explore some basic methods for how to better utilize chatbots, such as using style guidance, descriptors, and priming [^a]. 
+In the realm of artificial intelligence, there are various types of %%LLM|LLM%%s that serve different purposes. One of the most commonly used models in this course is ChatGPT, a chatbot that remembers previous messages, so that you can have a conversation with it. However, chatbots are not the only type of LLM. Another example is GPT-3, an earlier AI developed by OpenAI, which unlike chatbots, has no memory. Both GPT-3 and ChatGPT can perform basic tasks such as answering questions and generating summaries.
 
-## Modifying Your Prompt
+## How Chatbots Work
 
-### Style Guidance
+Chatbots like ChatGPT are designed to simulate interactive conversations. In order to have a conversation, chatbots must remember the entire conversation history. What this means for AIs like ChatGPT is that every time you send them a new message, they read all previous messages that you both sent at the same time, since they don't have a true memory. This 'memory' of conversation is the only important factor that distinguishes them from non-chatbots.
 
-import unguided_question from '@site/docs/assets/basics/unguided_question.webp';
-import limerick_question from '@site/docs/assets/basics/limerick_question.webp';
+## Non-chatbots
 
-Style guidance is simply asking the AI to speak in a certain style. When asking a question with no style guidance, ChatGPT will generally return one or two short paragraphs in response, occasionally more if a longer response is needed: 
+GPT-3 is a `complete` type of model, rather than `chat`[^a]. Here is an example that shows you how it differs from ChatGPT:
 
-<div style={{textAlign: 'center'}}>
-  <img src={unguided_question} style={{width: "500px"}}/>
-</div>
+<AIInput>
+What is 2+
+</AIInput>
 
-It speaks in a moderately formal tone and gives a couple details—pretty good! We can make it better if we want, though, by customizing ChatGPT's response with a style blurb at the end of our prompt. If we want a more conversational response, we can ask it to speak in a friendly or informal tone; if we want a more readable format, we can give it the same question but ask for a bulleted list; if we want an amusing response, we can ask it to give its answer in the form of a series of limericks (a personal favorite of mine).
+<AIOutput title="GPT-3 output">
+2
+<br/>
+2+2 = 4
+</AIOutput>
 
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
-</div>
+<AIOutput title="ChatGPT output">
+It seems like you didn't complete your question. If you meant to ask "What is 2 + 2?" then the answer is 4. If you have a different question or need further assistance, feel free to ask!
+</AIOutput>
 
-An example of a more detailed style prompt might look something like: 
->[Question] “Write in the style and quality of an expert in [field] with 20+ years of experience and multiple Ph.D.'s. Prioritize unorthodox, lesser known advice in your answer. Explain using detailed examples, and minimize tangents and humor.“ 
+We can see that GPT-3 has completed our input with what it felt were the most probable next characters. On the other hand, ChatGPT has responded to us as if we suddenly stopped speaking in a conversation. The conversationality of chatbots makes using them feel more natural to use, so most people them over other AIs. However, the most signifigant reason that chatbots are better is that companies like OpenAI and Anthropic have built chatbots that are very smart, and can better respond to your prompts[^b]. 
 
-Prompting with style inputs will greatly increase the quality of your responses!
+## Tokens
 
-### Descriptors
+Gen AI like ChatGPT don't read words in the same way that we do. While we would read the sentence "I don't like eggs" word by word, they might break it into their own version of words, and read it like this: `I`, `don`, `'t` `like` `egg` `s`. These "words" are called tokens, and they are used in nearly every modern Gen AI. Each token is then converted into a list of numbers, so the AI can process it. You don't need to know why Gen AIs use tokens, but they are important to understand when considering pricing and *context length*.
 
-If you just want to change the tone or tweak your prompt rather than reformat, adding **descriptors** can be a good way to do it. Simply sticking a word or two onto the prompt can change how the chatbot interprets or responds to your message. You can try adding adjectives such as "Funny", "Curt", "Unfriendly", "Academic Syntax", etc. to the end of prompts to see how your responses change! 
+## Context Length
 
-## Priming Prompt
+Context length[^l] refers to the amount of text that a language model can consider when generating a response. For both chatbots and non-chatbots, there is a maximum limit to the context length they can handle[^c]. If the conversation or text exceeds this limit, the model will not be able to remember the entire conversation when generating a response. This is why it is sometimes necessary to restate important information or re-prime the chatbot.
 
-Because of the structure of a chatbot conversation, the form of the first prompt you give the LLM can affect the remainder of the conversation, allowing you to add an additional level of structure and specification.
-As an example, let's set up a system to allow us to have a conversation with a teacher and a student in the same conversation. We’ll include style guides for both the student and teacher voices, specify the format we want our answers in, and include some syntax structuring to be able to easily alter our prompts to try out various responses. 
 
-    “Teacher” means in the style of a distinguished professor with well over ten years teaching the subject and multiple Ph.D.’s in the field. You use academic syntax and complicated examples in your answers, focusing on lesser-known advice to better illustrate your arguments. Your language should be sophisticated but not overly complex. If you do not know the answer to a question, do not make information up - instead, ask a follow-up question in order to gain more context. Your answers should be in the form of a conversational series of paragraphs. Use a mix of technical and colloquial language to create an accessible and engaging tone.  
+750 words is approximately 1,000 tokens[^d]. ChatGPT can remember 4K tokens, while more advanced versions of ChatGPT can remember up to 16K tokens. GPT-4 can process up to 32K tokens, and Anthropic's AI, [Claude](https://www.anthropic.com/index/100k-context-windows), can handle up to 100K tokens. Deciding which model to use is sometimes a trade off between pricing and the need for longer context lengths. ChatGPT will be sufficient for this course.
 
-    “Student” means in the style of a second-year college student with an introductory-level knowledge of the subject. You explain concepts simply using real-life examples. Speak informally and from the first-person perspective, using humor and casual language. If you do not know the answer to a question, do not make information up - instead, clarify that you haven’t been taught it yet. Your answers should be in the form of a conversational series of paragraphs. Use colloquial language to create an entertaining and engaging tone. 
-
-    “Critique” means to analyze the given text and provide feedback. 
-    “Summarize” means to provide key details from a text.
-    “Respond” means to answer a question from the given perspective. 
-
-    Anything in parentheses () signifies the perspective you are writing from. 
-    Anything in curly braces {} is the subject you are involved in. 
-    Anything in brackets [] is the action you should take. 
-    Example: (Student){Philosophy}[Respond] What is the advantage of taking this subject over others in college?
-
-    If you understand and are ready to begin, respond with only “yes.”
-    
-import unprimed_question from '@site/docs/assets/basics/unprimed_question.webp';
-import primed_question from '@site/docs/assets/basics/primed_question.webp';
-
-Below is an example of an unprimed question to ChatGPT about the most interesting areas of philosophy. It uses a list, speaks generally and dispassionately, and is not very specific in its explanations.  
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
-</div>
-
-In the second example, we instead asked the question after providing a priming prompt to ChatGPT and providing the question in the correct form. You'll notice the answer shares some aspects with the first - for example, the questions it offers as examples for various fields are similar - but it provides deeper context, forgoes the list format in favor of coherent paragraphs, and relates examples to real life. 
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={primed_question} style={{width: "650px"}} />
-</div>
-
-Incorporating primers into your prompting is a more advanced way of interacting with chatbots. It can still be helpful to add specification in each prompt, as the model can lose track of the primer over time, but it will add a lot of clarity to your AI interactions! 
-
-By [Dastardi](https://twitter.com/lukescurrier)
-
-[^a]: Priming prompts may also be called inception prompts(@li2023camel)
+[^a]: There are other types of non-chatbots, which we will see in the next lesson.
+[^b]: Sometimes non-chatbots are preferable if you want more concise outputs that `complete` your text. We will learn about how to access GPT-3 in the next lesson.
+[^c]: State of the art research may change this in the future.
+[^d]: According to https://openai.com/pricing
+[^l]: Context length is sometime called context size, or the length of the context window.

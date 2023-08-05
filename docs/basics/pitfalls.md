@@ -1,5 +1,5 @@
 ---
-sidebar_position: 90
+sidebar_position: 101
 ---
 
 # 🟢 Pitfalls of LLMs
@@ -10,33 +10,40 @@ import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
   <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
+:::takeaways
+- Understand the biases and problems that LLMs have
+:::
 
-LLMs are extremely powerful, but they are by no means perfect. There are many pitfalls that you should be aware of when using them.
+Language Learning Models (LLMs) are powerful tools that have revolutionized many aspects of technology, from customer service to content creation. However, like any technology, they are not without their flaws. Understanding these pitfalls is crucial for effectively using LLMs and mitigating potential issues. This article will explore some of the common pitfalls of LLMs, including issues with citing sources, bias, hallucinations, math, and prompt hacking.
 
 ## Citing Sources
 
-LLMs for the most part **cannot accurately cite sources**. This is because they do not have access to the Internet, and do not exactly remember where their information came from. They will frequently generate sources that look good, but are entirely inaccurate.
+While LLMs can generate text that appears to cite sources, it's important to note that they **cannot accurately cite sources**. This is because they do not have access to the Internet and do not have the ability to remember where their training data came from. As a result, they often generate sources that seem plausible but are entirely fabricated. This is a significant limitation when using LLMs for tasks that require accurate source citation.
 
 :::note
-Strategies like search augmented LLMs (LLMs that can search the Internet and other sources) can often fix this problem
+The issue of inaccurate source citation can be mitigated to some extent by using search augmented LLMs. These are LLMs that have the ability to search the Internet and other sources to provide more accurate information.
 :::
 
 ## Bias
 
-LLMs are often biased towards generating stereotypical responses. Even with safe guards in place, they will sometimes say sexist/racist/homophobic things. Be careful when using LLMs in consumer-facing applications, and also be careful when using them in research (they can generate biased results).
+LLMs can exhibit bias in their responses, often generating stereotypical or prejudiced content. This is because they are trained on large datasets that may contain biased information. Despite safeguards put in place to prevent this, LLMs can sometimes produce sexist, racist, or homophobic content. This is a critical issue to be aware of when using LLMs in consumer-facing applications or in research, as it can lead to the propagation of harmful stereotypes and biased results.
 
 ## Hallucinations
 
-LLMs will frequently generate falsehoods when asked a question that they do not know the answer to. Sometimes they will state that they do not know the answer, but much of the time they will confidently give a wrong answer.
+LLMs can sometimes "hallucinate" or generate false information when asked a question they do not know the answer to. Instead of stating that they do not know the answer, they often generate a response that sounds confident but is incorrect. This can lead to the dissemination of misinformation and should be taken into account when using LLMs for tasks that require accurate information.
 
 ## Math
 
-LLMs are often bad at math. They have difficulty solving simple math problems, and they are often unable to solve more complex math problems.
+Despite their advanced capabilities, Large Language Models (LLMs) often struggle with mathematical tasks and can provide incorrect answers (even as simple as multiply two numbers). This is because they are trained on large volumes of text and math may require a different approach. 
 
 :::note
-This problem can be fixed to some extent by using a [tool augmented LLM](https://learnprompting.org/docs/advanced_applications/mrkl).
+The issue with math can be somewhat alleviated by using a tool augmented LLM, which combines the capabilities of an LLM with specialized tools for tasks like math.
 :::
 
 ## Prompt Hacking
 
-Users can often trick LLMs into generating any content they want. Read more about this [here](https://learnprompting.org/docs/category/-prompt-hacking).
+LLMs can be manipulated or "hacked" by users to generate specific content. This is known as prompt hacking and can be used to trick the LLM into generating inappropriate or harmful content. It's important to be aware of this potential issue when using LLMs, especially in public-facing applications. You can read more about prompt hacking [here](https://learnprompting.org/docs/category/-prompt-hacking).
+
+## Conclusion
+
+In conclusion, while LLMs are powerful and versatile tools, they come with a set of pitfalls that users need to be aware of. Issues with accurately citing sources, inherent biases, generating false information, difficulties with math, and susceptibility to prompt hacking are all challenges that need to be addressed when using these models. By understanding these limitations, we can use LLMs more effectively and responsibly, and work towards improving these models in the future.
