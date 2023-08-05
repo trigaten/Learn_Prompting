@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # 🟢 Penambah Kualitas
 
-Quality boosters (@oppenlaender2022taxonomy) adalah istilah yang ditambahkan ke sebuah perintah untuk meningkatkan kualitas tertentu yang bukan kualitas gaya-tertentu dari gambar yang dihasilkan. Sebagai contoh "amazing", "beautiful", dan "good quality" semua adalah faktor peningkat kualitas yang dapat digunakan untuk meningkatkan kualitas gambar yang dihasilkan.
+Quality boosters (@ oppenlaender2022taxonomy) adalah istilah yang ditambahkan ke sebuah perintah untuk meningkatkan kualitas tertentu yang bukan kualitas gaya-tertentu dari gambar yang dihasilkan. Sebagai contoh "amazing", "beautiful", dan "good quality" semua adalah faktor peningkat kualitas yang dapat digunakan untuk meningkatkan kualitas gambar yang dihasilkan.
 
 import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
 import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
