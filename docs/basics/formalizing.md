@@ -107,5 +107,3 @@ Q: What is the capital of France?
 A:
 </AIInput>
 
-Few shot prompts facilitate "few shot" AKA "in context" learning, which is the 
-ability to learn without parameter updates(@zhao2021calibrate).

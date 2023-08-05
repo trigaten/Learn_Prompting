@@ -16,7 +16,7 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
 :::
 
 
-Yet another prompting strategy is *few-shot prompting*(@logan-iv-etal-2022-cutting)(@lake2015human), which is basically just showing the model a few examples[^a] (also called "shots") of what you want it to do. 
+Yet another prompting strategy is *few-shot prompting*(@logan-iv-etal-2022-cutting)(@lake2015human)[^a], which is basically just showing the model a few examples[^b] (also called "shots") of what you want it to do. Few shot prompts allows the AI to learn from these few examples(@zhao2021calibrate).
 
 Consider the above example, in which we are attempting to classify customer feedback as positive or negative. We show the model three examples of positive/negative feedback, then we show it a new piece of feedback that has not been classified yet (`It doesnt work!:`). The model sees that the first three examples were classified as either `positive` or `negative`, and uses this information to classify the new example as `negative`.
 
@@ -84,7 +84,9 @@ This is a few-shot prompt since we have shown the model at least 2 complete exam
 
 ## Conclusion
 
-In conclusion, few-shot prompting is an effective strategy that can guide the model to generate accurate and appropriately structured responses. By providing multiple examples, few-shot prompting allows the model to understand the desired output format and respond accordingly, making it a preferred method over zero-shot and one-shot prompting in most scenarios[^b].
+In conclusion, few-shot prompting is an effective strategy that can guide the model to generate accurate and appropriately structured responses. By providing multiple examples, few-shot prompting allows the model to understand the desired output format and respond accordingly, making it a preferred method over zero-shot and one-shot prompting in most scenarios[^c].
 
-[^a]: The technical word for these examples is *exemplars*.
-[^b]: These techniques are useful when you don't have examples.
+
+[^a]: Few-shot prompting is also called in-context learning.
+[^b]: The technical word for these examples is *exemplars*.
+[^c]: These techniques are useful when you don't have examples.
