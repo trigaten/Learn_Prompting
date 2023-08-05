@@ -3,10 +3,10 @@ sidebar_position: 10
 ---
 # 🟢 Prompting With ChatGPT
 
-import Prompt from '@site/docs/assets/basics/prompt.svg';
+import Interface from '@site/docs/assets/basics/chatgpt_interface.webp';
 
 <div style={{textAlign: 'center'}}>
-  <Prompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
+  <img src={Interface} className="img-docs" style={{width: "80%"}}/>
 </div>
 
 :::takeaways

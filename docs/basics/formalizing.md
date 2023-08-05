@@ -4,15 +4,15 @@ sidebar_position: 90
 
 # 🟢 Formalizing Prompts
 
-:::takeaways
-- Understand the basic parts of a prompt
-:::
-
 import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
 <div style={{textAlign: 'center'}}>
   <FormalPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+
+:::takeaways
+- Understand the basic parts of a prompt
+:::
 
 
 We have now covered multiple types of prompts, as well as ways to combine them. This lesson will provide you with terms to explain different types of prompts. Although there have been approaches to formalize discourse around prompt engineering(@white2023prompt), the field is ever changing, so we will provide you with just enough information to get started.

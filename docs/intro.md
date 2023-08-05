@@ -5,10 +5,10 @@ import CodeBlock from '@theme/CodeBlock';
 
 # Welcome
 
-import Techniques from '@site/docs/assets/astronaut_welcome.webp';
+import Astronaut from '@site/docs/assets/astronaut_welcome.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={Techniques} style={{width: "100%"}}/>
+  <img src={Astronaut} style={{width: "100%"}}/>
 </div>
 
 <h4>Welcome to Learn Prompting's Introductory Course on Generative AI and Prompt Engineering! </h4>
