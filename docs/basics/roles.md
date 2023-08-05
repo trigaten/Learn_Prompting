@@ -15,12 +15,12 @@ import RolePrompt from '@site/docs/assets/basics/role_prompt.svg';
 - Use role prompts to style text and improve accuracy
 :::
 
-Role prompting[^a] is a techniques that can be used to control the style of AI generated text(@shanahan2023roleplay)(@li2023camel)(@santu2023teler). It can also improve the AI's accuracy (e.g. solving a math problem). It is as simple as telling the AI "you are a food critic" or to "act like a detective". Role prompting is a widely used technique, and is used in many of the examples on this site.
+Role prompting[^a] is a technique that can be used to control the style of AI generated text(@shanahan2023roleplay)(@li2023camel)(@santu2023teler). It can also improve the AI's accuracy when solving math problems. Implementing role prompting is as simple as instructing the AI to "embody a food critic" or to "act like a detective". Role prompting is a widely used technique, and is used in many of the examples on this site.
 
 
 ## Styling Text
 
-Role prompting is most often used to style text. It involves asking the AI to pretend to be a certain person, or act in a certain way, modifying how it writes based on the assigned role. This can be used to change the tone, style, and even the depth of the information presented. Let's delve into this concept with a food review example.
+Role prompting is most often used to style text. This involves asking the AI to pretend to be a certain person, or act in a certain way, thus modifying how it writes based on the assigned role. This can be used to change the tone, style, and even the depth of the information presented. Let's delve into this concept with a food review example.
 
 ### Food Review Example
 
@@ -29,8 +29,6 @@ When writing a review, it's important to tailor your approach based on the platf
 <AIInput>
 Write a review of [pizza place].
 </AIInput>
-
-The AI's (GPT-3 davinci-003) answer is highlighted in green:
 
 <AIOutput>
 "I recently had the pleasure of trying [random pizza place] and I must say that I was thoroughly impressed. The pizza was cooked to perfection and the toppings were fresh and flavorful. The crust was light and crispy, and the sauce was just the right amount of tangy. The service was also top-notch; the staff was friendly and attentive. Overall, I had a great experience and would definitely recommend [random pizza place] to anyone looking for a delicious pizza."
@@ -81,12 +79,11 @@ Let's say you task the AI with writing an email to a client to inform them about
 
 For instance, one possible role is that of a communications specialist, whose style might be clear, professional, and to the point:
 
-```text
+<AIInput>
 You are a communications specialist. Draft an email to your client advising them about a delay in the delivery schedule due to logistical problems.
-```
+</AIInput>
 
-```text
-// highlight-start
+<AIOutput>
 Subject: Important Update Regarding Your Order
 
 Dear [Client's Name],
@@ -99,17 +96,15 @@ Thank you very much for your understanding.
 
 Best Regards,
 [Your Name]
-// highlight-end
-```
+</AIOutput>
 
 Alternatively, have the model adopt the role of a marketing expert to lean more on persuasion, positivity, and relationship building:
 
-```text
+<AIInput>
 You are a marketing expert. Draft an email to a client advising them about a delay in the delivery schedule due to logistical problems.
-```
+</AIInput>
 
-```text
-// highlight-start
+<AIOutput>
 Subject: A Little More Wait for Your Wonderful Products
 
 Dear [Client's Name],
@@ -122,17 +117,15 @@ Thank you for your patience and understanding. Stay tuned for more updates, and 
 
 Cheers,
 [Your Name]
-// highlight-end
-```
+</AIOutput>
 
 Lastly, the role of a customer service representative might lead to a more relational and solution-oriented output:
 
-```text
+<AIInput>
 You are a customer service representative. Draft an email to a client advising them about a delay in the delivery schedule due to logistical problems.
-```
+</AIInput>
 
-```text
-// highlight-start
+<AIOutput>
 Subject: Attention Required: Update on Your Order Status
 
 Dear [Client's Name],
@@ -149,30 +142,29 @@ Thank you for your understanding.
 
 Best regards,
 [Your Name]
-// highlight-end
-```
+</AIOutput>
 
 Each of these role prompts will yield different results, aligning more closely with the perspective of the assigned role. Whether you need the directness of a communications specialist, the persuasive positivity of a marketing expert, or the empathetic problem-solving approach of a customer service representative, role-prompts allow you to tailor the language model to better fit your needs.
 
 ## Improving Accuracy
 
-As mentioned above, the accuracy of the output can be improved[^a]. Consider the following example:
+As mentioned above, the accuracy of the output can be improved with role prompting[^a]. Consider the following example:
 
-```text
+<AIInput>
 You are a brilliant mathematician who can solve any problem in the world.
 Attempt to solve the following problem:
 
-What is 100*100/400*56?
+What is 100\*100/400\*56?
+</AIInput>
 
-// highlight-start
+<AIOutput>
 The answer is 1400.
-// highlight-end
-```
+</AIOutput>
 
-This is a correct answer, but if the AI had simply been prompted with What is 100\*100/400\*56?, it would have answered 280 (incorrect). 
+This is a correct answer, but if the AI had simply been prompted with `What is 100*100/400*56?`, it would have answered 280 (incorrect). 
 
 :::caution
-Please note that ChatGPT will answer the question incorrectly, but in a different way.
+Please note that we used GPT-3 for this question. ChatGPT will answer the question incorrectly, but in a different way.
 :::
 
 Try it here:
@@ -186,6 +178,6 @@ Try it here:
 
 ## Conclusion
 
-Role prompting is one of the most widely used prompting strategies. It can effectively change the text that Gen AIs output, and in some cases can improve mathematical accuracy. We will see it used throughout this course.
+Role prompting is a powerful strategy for shaping the output of Generative AI models. It allows us to control the style, tone, and depth of the generated text, making it more suitable for specific contexts or audiences. Whether you're drafting an email, writing a review, or solving a math problem, role prompting can significantly enhance the quality and accuracy of the results. As we continue to explore the capabilities of AI, role prompting will remain a key prompt engineering strategy.
 
 [^a]: This appears to be less effective with newer models. Read [Revisiting Roles](@site/docs/intermediate/revisiting_roles.md) for more information.
