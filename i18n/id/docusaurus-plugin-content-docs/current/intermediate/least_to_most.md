@@ -91,7 +91,7 @@ Pada masalah penggabungan huruf terakhir dengan 12 kata, Chain of Thought memili
 
 ## Contoh: generalisasi komposisi (SCAN)
 
-Benchmark SCAN (@lake2018scan) mengharuskan model untuk mengubah bahasa alami menjadi urutan tindakan. Sebagai contoh, kalimat "berjalan ke kiri dan berjalan dua kali" akan diterjemahkan menjadi "BERBELOK KE KIRI + BERLARI + BERJALAN * 2". Model bahasa tampil sangat buruk ketika dihadapkan dengan urutan yang lebih panjang daripada yang ada di set pelatihan.
+Benchmark SCAN (@ lake2018scan) mengharuskan model untuk mengubah bahasa alami menjadi urutan tindakan. Sebagai contoh, kalimat "berjalan ke kiri dan berjalan dua kali" akan diterjemahkan menjadi "BERBELOK KE KIRI + BERLARI + BERJALAN * 2". Model bahasa tampil sangat buruk ketika dihadapkan dengan urutan yang lebih panjang daripada yang ada di set pelatihan.
 
 ### Percobaan pertama: Prompt Standar
 
