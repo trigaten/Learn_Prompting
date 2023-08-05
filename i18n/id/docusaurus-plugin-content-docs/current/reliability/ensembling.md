@@ -66,7 +66,7 @@ Pada titik ini, DiVeRSe telah menghasilkan 100 penyelesaian yang berbeda.
 
 ### Voting Verifier
 
-Sekarang, kita bisa hanya mengambil jawaban mayoritas, seperti yang dilakukan Self-Consistency (@ mitchell2022enhancing).
+Sekarang, kita bisa hanya mengambil jawaban mayoritas, seperti yang dilakukan Self-Consistency (@mitchell2022enhancing).
 
 Namun, DiVeRSe mengusulkan metode yang jauh lebih rumit, yang mereka sebut sebagai _pengecek suara_.
 
@@ -220,7 +220,7 @@ Meskipun strategi agregasi AMA sangat kuat, begitu rumit sehingga saya tidak aka
 
 ### Hasil
 
-- Dengan strategi pendorong ini, AMA mampu menggunakan GPT-J-6B (@ wange2021gptj) untuk mengungguli GPT-3.
+- Dengan strategi pendorong ini, AMA mampu menggunakan GPT-J-6B (@wange2021gptj) untuk mengungguli GPT-3.
 
 - AMA lebih baik pada pertanyaan di mana konteks yang diberikan mengandung jawabannya.
 

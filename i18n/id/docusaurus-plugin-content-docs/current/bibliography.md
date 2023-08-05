@@ -227,8 +227,6 @@ Catatan: [karena baik GPT-3 maupun GPT-3 Instruct paper tidak sesuai dengan mode
 
 #### Mengevaluasi model bahasa bisa saja sulit(@chase2022evaluating)
 
-#### Konstitusi AI: Kerugian dari Umpan Balik AI (@bai2022kesungguhan)
-
 ## Survey
 
 #### Speech and Language Processing: Pengantar Pemrosesan Bahasa Alami, Linguistik Komputasional, dan Pengenalan Suara (@jurafsky2009)
