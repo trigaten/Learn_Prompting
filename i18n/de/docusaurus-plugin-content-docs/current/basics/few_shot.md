@@ -47,7 +47,7 @@ Obwohl du dieselbe Ausgabe auch mit einem Befehlsprompt erzeugen könntest, ist 
 
 ## Varianten des Shot Prompting
 
-Das Wort "Shot" ist ein Synonym für "Beispiel". Neben dem Few Shot Promting gibt es zwei weitere Arten des Shot Prompting. Denk nicht zu viel darüber nach! Der einzige Unterschied zwischen diesen Varianten besteht darin, wie viele Beispiele du dem Modell zeigst.
+Das Wort "Shot" ist ein Synonym für "Beispiel". Neben dem Few Shot Prompting gibt es zwei weitere Arten des Shot Prompting. Denk nicht zu viel darüber nach! Der einzige Unterschied zwischen diesen Varianten besteht darin, wie viele Beispiele du dem Modell zeigst.
 
 Varianten:
 - 0-Shot Prompting: Dem Modell werden keine Beispiele gezeigt
@@ -66,18 +66,18 @@ Es ist 0-Shot, da wir dem Modell keine vollständigen Beispiele gezeigt haben.
 
 ### 1-Shot Prompting
 
-Beim 1-Shot Prompting zeigst du dem Modell ein einzelnes Beispiel. Die 1-Shot-Analogie des 0-Shot Promts `Addiere 2+2` ist zum Beispiel:
+Beim 1-Shot Prompting zeigst du dem Modell ein einzelnes Beispiel. Die 1-Shot-Analogie des 0-Shot Prompts `Addiere 2+2` ist zum Beispiel:
   
 ```text
 Addiere 3+3: 6
 Addiere 2+2:
 ```
 
-Wir haben dem Modell nur 1 komplettes Beispiel gezeigt (`Addiere 3+3: 6`), dies ist also ein 1-Shot Promt.
+Wir haben dem Modell nur 1 komplettes Beispiel gezeigt (`Addiere 3+3: 6`), dies ist also ein 1-Shot Prompt.
 
 ### Few Shot Prompting
 
-Few Shot Prompting bedeutet, dass du dem Modell 2 oder mehr Beispiele zeigst. Alle Prompts oberhalb dieses Abschnitts über Varianten waren Few Shot Prompts. Die Few Shot-Analogie zu den beiden obigen Promts ist:
+Few Shot Prompting bedeutet, dass du dem Modell 2 oder mehr Beispiele zeigst. Alle Prompts oberhalb dieses Abschnitts über Varianten waren Few Shot Prompts. Die Few Shot-Analogie zu den beiden obigen Prompts ist:
 
 ```text
 Addiere 3+3: 6

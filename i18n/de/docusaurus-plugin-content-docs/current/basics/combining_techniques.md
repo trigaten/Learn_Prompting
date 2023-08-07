@@ -13,9 +13,9 @@ import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
 </div>
 
 
-Wie wir auf den vorhergehenden Seiten gesehen haben, können Promts unterschiedliche Formate und Komplexität haben. Sie können Kontext, Anweisungen und mehrere Eingabe-/Ausgabebeispiele enthalten. Bislang haben wir jedoch nur einzelne Klassen von Prompts untersucht. Die Kombination dieser verschiedenen Prompting-Techniken kann zu leistungsfähigeren Prompts führen. 
+Wie wir auf den vorhergehenden Seiten gesehen haben, können Prompts unterschiedliche Formate und Komplexität haben. Sie können Kontext, Anweisungen und mehrere Eingabe-/Ausgabebeispiele enthalten. Bislang haben wir jedoch nur einzelne Klassen von Prompts untersucht. Die Kombination dieser verschiedenen Prompting-Techniken kann zu leistungsfähigeren Prompts führen. 
 
-Hier ist ein Beispiel für einen Promt, der Kontext, Anweisungen und mehrere Beispiele enthält:
+Hier ist ein Beispiel für einen Prompt, der Kontext, Anweisungen und mehrere Beispiele enthält:
 
 ```text
 Twitter ist eine Plattform für soziale Medien, auf der Nutzer kurze Nachrichten, sogenannte "Tweets", veröffentlichen können.

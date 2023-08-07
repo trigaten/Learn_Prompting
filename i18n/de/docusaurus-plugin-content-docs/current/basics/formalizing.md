@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# 🟢 Promts formalisieren
+# 🟢 Prompts formalisieren
 
 import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 
@@ -11,7 +11,7 @@ import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 </div>
 
 
-Wir haben nun mehrere Arten von Promts sowie Möglichkeiten, sie zu kombinieren, behandelt. Auf dieser Seite findest du Begriffe, die die verschiedenen Arten von Prompts erklären. Obwohl es Ansätze zur Formalisierung des Diskurses über das Prompt-Engineering gibt (@white2023prompt), ist das Feld ständig im Wandel begriffen, so dass wir dir gerade genug Informationen für den Einstieg geben.
+Wir haben nun mehrere Arten von Prompts sowie Möglichkeiten, sie zu kombinieren, behandelt. Auf dieser Seite findest du Begriffe, die die verschiedenen Arten von Prompts erklären. Obwohl es Ansätze zur Formalisierung des Diskurses über das Prompt-Engineering gibt (@white2023prompt), ist das Feld ständig im Wandel begriffen, so dass wir dir gerade genug Informationen für den Einstieg geben.
 
 ## Teile eines Prompts
 
@@ -25,7 +25,7 @@ Es gibt ein paar verschiedene Teile eines Prompts, die du immer wieder sehen wir
 
 Auf den vorhergehenden Seiten haben wir Rollen, Anweisungen und Beispiele behandelt. Eine Frage ist einfach eine Frage! (z. B. `Was ist die Hauptstadt von Frankreich?`). Kontext ist jede relevante Information, die das Modell bei der Beantwortung der Frage/Ausführung der Anweisung verwenden soll.
 
-Nicht alle dieser Elemente kommen in jedem Promt vor, und wenn einige von ihnen vorkommen, gibt es keine Standardreihenfolge für sie. Die folgenden beiden Prompts, die jeweils eine Rolle, eine Anweisung und einen Kontext enthalten, bewirken in etwa das Gleiche:
+Nicht alle dieser Elemente kommen in jedem Prompt vor, und wenn einige von ihnen vorkommen, gibt es keine Standardreihenfolge für sie. Die folgenden beiden Prompts, die jeweils eine Rolle, eine Anweisung und einen Kontext enthalten, bewirken in etwa das Gleiche:
 
 ```text
 Du bist ein Arzt. Lies diese Anamnese und sag die Risiken für den Patienten voraus:
@@ -45,7 +45,7 @@ Du bist ein Arzt. Lies diese Anamnese und sag die Risiken für den Patienten vor
 Du bist ein Arzt. Lies diese Anamnese und sag die Risiken für den Patienten voraus:
 ```
 
-Der zweite Promt ist jedoch wahrscheinlich vorzuziehen, da die Anweisung der letzte Teil des Promts ist. Dies ist gut, da es weniger wahrscheinlich ist, dass der LLM einfach mehr Kontext schreibt, anstatt der Anweisung zu folgen. Zum Beispiel könnte der LLM bei dem ersten Promt eine neue Zeile hinzufügen: `15. März 2022: Nachfolgetermin beim Neurologen zur Beurteilung des Genesungsfortschritts der Gehirnerschütterung angesetzt`.
+Der zweite Prompt ist jedoch wahrscheinlich vorzuziehen, da die Anweisung der letzte Teil des Prompts ist. Dies ist gut, da es weniger wahrscheinlich ist, dass der LLM einfach mehr Kontext schreibt, anstatt der Anweisung zu folgen. Zum Beispiel könnte der LLM bei dem ersten Prompt eine neue Zeile hinzufügen: `15. März 2022: Nachfolgetermin beim Neurologen zur Beurteilung des Genesungsfortschritts der Gehirnerschütterung angesetzt`.
 
 
 ## Ein Standard Prompt

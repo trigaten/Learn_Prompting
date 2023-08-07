@@ -64,4 +64,4 @@ E-Mail: [E-Mail Adresse]
 Es ist sehr spannend zu sehen, wie das Modell von den Anweisungen aus extrapolieren kann. Zum Beispiel weiß es, dass es `Cheap Dealz` mit `[Autohaus]` und `Jimmy Smith` mit `[Verkäufer*in]` ersetzen soll, obwohl wir ihm nicht ausdrücklich gesagt haben, dies zu tun.
 
 [^A]: KI zu erlauben, personenbezogene Daten aus Texten zu entfernen, ist ein vielversprechender Ansatz, sollte aber mit äußerster Vorsicht eingesetzt werden, da sie Fehler machen kann.
-[^*] Alle Promts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Promts könnten andere Ausgaben zur Folge haben.
+[^*] Alle Prompts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Prompts könnten andere Ausgaben zur Folge haben.
