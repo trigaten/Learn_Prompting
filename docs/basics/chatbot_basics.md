@@ -40,7 +40,7 @@ What is 2+
 It seems like you didn't complete your question. If you meant to ask "What is 2 + 2?" then the answer is 4. If you have a different question or need further assistance, feel free to ask!
 </AIOutput>
 
-We can see that GPT-3 has completed our input with what it felt were the most probable next characters. On the other hand, ChatGPT has responded to us as if we suddenly stopped speaking in a conversation. The conversationality of chatbots makes using them feel more natural to use, so most people them over other AIs. However, the most signifigant reason that chatbots are better is that companies like OpenAI and Anthropic have built chatbots that are very smart, and can better respond to your prompts[^b]. 
+We can see that GPT-3 has completed our input with what it felt were the most probable next characters. On the other hand, ChatGPT has responded to us as if we suddenly stopped speaking in a conversation. The conversationality of chatbots makes using them feel more natural to use, so most people prefer them over other AIs. However, the most signifigant reason that chatbots are better is that companies like OpenAI and Anthropic have built chatbots that are very smart, and can better respond to your prompts[^b]. 
 
 ## Tokens
 
