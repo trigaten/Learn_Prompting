@@ -38,7 +38,7 @@ or give you a solid starting point. Here are a few of our favorite applications 
 - Generating marketing content
 - Explaining and simplifying content
 
-See more use cases [here](@site/docs//basic_applications/introduction.md).
+See more use cases [here](https://learnprompting.org/docs/category/-basic-applications).
 
 ## How do I get started with Generative AI?
 
