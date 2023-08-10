@@ -48,6 +48,10 @@ async function createConfig() {
               to: '/docs/tooling/IDEs/intro',
               from: '/docs/IDEs/intro',
             },
+            {
+              to: '/our_services',
+              from: '/consulting',
+            },
           ],
         },
       ],

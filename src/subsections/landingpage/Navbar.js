@@ -25,8 +25,8 @@ function Navbar(props) {
     //   link: "/blog",
     // },
     {
-      name: "Consulting",
-      link: "/consulting",
+      name: "Our Services",
+      link: "/our_services",
     },
     {
       name: "Certificate",
