@@ -74,6 +74,10 @@ async function createConfig() {
             trackingID: "G-FV0C417KS8",
           },
           docs: {
+            admonitions: {
+              tag: ':::',
+              keywords: ['note', 'tip', 'info', 'caution', 'danger', 'takeaways'],
+            },
             sidebarPath: require.resolve("./sidebars.js"),
             editUrl: "https://github.com/trigaten/promptgineering/tree/v1.2.3",
             remarkPlugins: [

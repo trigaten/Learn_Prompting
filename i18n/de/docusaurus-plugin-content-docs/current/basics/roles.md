@@ -10,7 +10,7 @@ import RolePrompt from '@site/docs/assets/basics/role_prompt.svg';
   <RolePrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
 
-Eine weitere Promting Technik ist die Zuweisung einer Rolle an die KI. Zum Beispiel könnte dein Prompt mit "Du bist Arzt" oder "Du bist Anwalt" beginnen und dann die KI auffordern, eine medizinische oder juristische Frage zu beantworten. Hier ist ein Beispiel:
+Eine weitere Prompting Technik ist die Zuweisung einer Rolle an die KI. Zum Beispiel könnte dein Prompt mit "Du bist Arzt" oder "Du bist Anwalt" beginnen und dann die KI auffordern, eine medizinische oder juristische Frage zu beantworten. Hier ist ein Beispiel:
 
 ```text
 Du bist ein brillanter Mathematiker, der jedes Problem der Welt lösen kann.
@@ -52,4 +52,4 @@ Repository auf GitHub finden. Diese wurden für *ChatGPT* erstellt, aber sie fun
 ---
 
 🚧 This page needs citations.
-[^*] Alle Promts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Promts könnten andere Ausgaben zur Folge haben.
+[^*] Alle Prompts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Prompts könnten andere Ausgaben zur Folge haben.

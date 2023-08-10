@@ -86,4 +86,4 @@ Jetzt hast du alle Informationen, die du  brauchst, um loszulegen. Viel Spaß be
 
 [^1]: Technisch gesehen "denken" sie nicht wie Menschen, aber das ist eine einfache Art, es zu erklären.
 [^2]: Eine KI (GPT-3 davinci-003) hat dies tatsächlich geschrieben. (Ursprünglich auf Englisch)
-[^*] Alle Promts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Promts könnten andere Ausgaben zur Folge haben.
+[^*] Alle Prompts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Prompts könnten andere Ausgaben zur Folge haben.
