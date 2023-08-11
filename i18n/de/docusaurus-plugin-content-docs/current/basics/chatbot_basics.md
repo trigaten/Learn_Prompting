@@ -28,7 +28,7 @@ Eine Stilvorgabe ist einfach die Aufforderung an die KI, in einem bestimmten Sti
   <img src={unguided_question} style={{width: "500px"}}/>
 </div>
 
-Es spricht in einem mäßig förmlichen Ton und nennt ein paar Details - ziemlich gut! Wenn wir wollen, können wie es aber noch besser machen, indem wir die Antwort von ChatGPT mit einer Stilvorgabe am Ende unseres Promts anpassen. Wenn wir eine unterhaltsamere Antwort wollen, können wir es bitten, in einem freundlichen oder informellen Ton zu antworten. Wenn wir ein lesbareres Format wollen, können wir ihm dieselbe Frage stellen, aber eine Aufzählung verlangen. Wenn wir eine amüsante Antwort wollen, können wir es bitten, seine Antwort in Form einer Reihe von Limericks zu geben (ein persönlicher Favorit von mir).
+Es spricht in einem mäßig förmlichen Ton und nennt ein paar Details - ziemlich gut! Wenn wir wollen, können wie es aber noch besser machen, indem wir die Antwort von ChatGPT mit einer Stilvorgabe am Ende unseres Prompts anpassen. Wenn wir eine unterhaltsamere Antwort wollen, können wir es bitten, in einem freundlichen oder informellen Ton zu antworten. Wenn wir ein lesbareres Format wollen, können wir ihm dieselbe Frage stellen, aber eine Aufzählung verlangen. Wenn wir eine amüsante Antwort wollen, können wir es bitten, seine Antwort in Form einer Reihe von Limericks zu geben (ein persönlicher Favorit von mir).
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={limerick_question} style={{width: "450px"}} />
@@ -41,10 +41,10 @@ Das Prompting mit Stileingaben wird die Qualität Ihrer Antworten erheblich verb
 
 ### Deskriptoren
 
-Wenn du nur den Ton ändern oder Ihren Promt optimieren möchtest, anstatt ihn neu zu formatieren, kann das Hinzufügen von **Deskriptoren** eine gute Herangehensweise sein. Füg einfach ein oder zwei Wörter in den Promt ein. Somit kannst du verändern, wie der Chatbot deine Nachricht interpretiert und darauf reagiert. Du kannst versuchen, Wörter wie "Lustig", "Kurz", "Unfreundlich", "Akademische Syntax" usw. an das Ende von Promts zu hängen, um zu sehen, wie sich die Antworten verändern!
+Wenn du nur den Ton ändern oder Ihren Prompt optimieren möchtest, anstatt ihn neu zu formatieren, kann das Hinzufügen von **Deskriptoren** eine gute Herangehensweise sein. Füg einfach ein oder zwei Wörter in den Prompt ein. Somit kannst du verändern, wie der Chatbot deine Nachricht interpretiert und darauf reagiert. Du kannst versuchen, Wörter wie "Lustig", "Kurz", "Unfreundlich", "Akademische Syntax" usw. an das Ende von Prompts zu hängen, um zu sehen, wie sich die Antworten verändern!
 
 ## Priming Prompt
-Aufgrund der Struktur einer Chatbot-Konversation kann die Form des ersten Promts, den du dem LLM gibst, den Rest der Konversation beeinflussen, so dass du eine zusätzliche Ebene der Struktur und Spezifikation hinzufügen kanst. Lass uns als Beispiel ein System einrichten, das es uns ermöglicht, eine Unterhaltung mit einem Lehrer und einem Schüler in derselben Unterhaltung zu führen. Wir werden Stilvorgaben für die Schüler- und die Lehrerstimme einfügen, das gewünschte Antwortformat festlegen und eine Syntaxstrukturierung einfügen, um unsere Promts leicht ändern zu können und verschiedene Antworten auszuprobieren.
+Aufgrund der Struktur einer Chatbot-Konversation kann die Form des ersten Prompts, den du dem LLM gibst, den Rest der Konversation beeinflussen, so dass du eine zusätzliche Ebene der Struktur und Spezifikation hinzufügen kanst. Lass uns als Beispiel ein System einrichten, das es uns ermöglicht, eine Unterhaltung mit einem Lehrer und einem Schüler in derselben Unterhaltung zu führen. Wir werden Stilvorgaben für die Schüler- und die Lehrerstimme einfügen, das gewünschte Antwortformat festlegen und eine Syntaxstrukturierung einfügen, um unsere Prompts leicht ändern zu können und verschiedene Antworten auszuprobieren.
 
     "Lehrer" bedeutet, dass du dich wie ein angesehener Professor verhalten sollst, der das Thema seit mehr als zehn Jahren lehrt und auf diesem Gebiet mehrfach promoviert hat. Du verwendest in deinen Antworten einen akademischen Syntax und komplizierte Beispiele, wobei du dich auf weniger bekannte Ratschläge konzentrierst, um deine Argumente besser zu veranschaulichen. Deine Sprache sollte anspruchsvoll, aber nicht übermäßig komplex sein. Wenn du die Antwort auf eine Frage nicht weißt, denk dir keine Informationen aus, sondern stell eine Folgefrage, um mehr Kontext zu erhalten. Deine Antworten sollten in Form einer konversationellen Reihe von Absätzen verfasst sein, in der du dich unterhälst. Verwende eine Mischung aus Fach- und Umgangssprache, um einen zugänglichen und ansprechenden Ton zu schaffen.
 
@@ -70,12 +70,12 @@ Nachstehend findest du ein Beispiel für eine nicht geprimete Frage an ChatGPT �
   <LazyLoadImage src={unprimed_question} style={{width: "650px"}} />
 </div>
 
-Im zweiten Beispiel haben wir die Frage stattdessen gestellt, nachdem wir ChatGPT einen Priming Promt gegeben und die Frage in der richtigen Form gestellt haben. Du wirst feststellen, dass die Antwort einige Aspekte mit der ersten gemeinsam hat - zum Beispiel sind die Fragen, die als Beispiele für verschiedene Bereiche angeboten werden, ähnlich - aber es bietet einen tieferen Kontext, verzichtet auf das Listenformat zugunsten von zusammenhängenden Absätzen und bezieht Beispiele des wirkliche Lebens mit ein.
+Im zweiten Beispiel haben wir die Frage stattdessen gestellt, nachdem wir ChatGPT einen Priming Prompt gegeben und die Frage in der richtigen Form gestellt haben. Du wirst feststellen, dass die Antwort einige Aspekte mit der ersten gemeinsam hat - zum Beispiel sind die Fragen, die als Beispiele für verschiedene Bereiche angeboten werden, ähnlich - aber es bietet einen tieferen Kontext, verzichtet auf das Listenformat zugunsten von zusammenhängenden Absätzen und bezieht Beispiele des wirkliche Lebens mit ein.
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={primed_question} style={{width: "650px"}} />
 </div>
 
-Die Einbindung von Primern in Ihre Promts ist eine fortschrittlichere Art der Interaktion mit Chatbots. Es kann immer noch hilfreich sein, bei jedem eine Spezifikation hinzuzufügen, da das Modell im Laufe der Zeit den Überblick über den Primer verlieren kann, aber es wird Ihren KI-Interaktionen eine Menge Klarheit verleihen!
+Die Einbindung von Primern in Ihre Prompts ist eine fortschrittlichere Art der Interaktion mit Chatbots. Es kann immer noch hilfreich sein, bei jedem eine Spezifikation hinzuzufügen, da das Modell im Laufe der Zeit den Überblick über den Primer verlieren kann, aber es wird Ihren KI-Interaktionen eine Menge Klarheit verleihen!
 
 Von [Dastardi](https://twitter.com/lukescurrier)

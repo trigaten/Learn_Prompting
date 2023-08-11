@@ -13,11 +13,11 @@ import Steps from '@site/docs/assets/basics/steps.svg';
 
 Nachdem du nun die Grundlagen des Prompt-Engineering kennengelernt hast, bist du bereit, selbst mit dem Prompt-Engineering zu beginnen. Der Rest dieses Kurses wird zusätzliche Techniken und Ressourcen enthalten, aber der beste Weg, PE zu lernen, ist, mit eigenen Prompts zu experimentieren. Diese Seite zeigt dir, wie du mit der Lösung eines beliebigen Prompt-Engineering-Problems beginnen kannst.
 
-Nehmen wir an, du möchtest einen Promt schreiben, der eine fesselnde, interaktive Geschichte mit ChatGPT erzeugt.
+Nehmen wir an, du möchtest einen Prompt schreiben, der eine fesselnde, interaktive Geschichte mit ChatGPT erzeugt.
 
 ## Step 1: Recherche
 
-Als Erstes solltest du dich über den von dir gewünschten Promt informieren. Neben dem Googeln sind auch die folgenden Quellen sehr nützlich:
+Als Erstes solltest du dich über den von dir gewünschten Prompt informieren. Neben dem Googeln sind auch die folgenden Quellen sehr nützlich:
 
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
 - [FlowGPT](https://flowgpt.com)
@@ -29,7 +29,7 @@ Vielleicht ist [das hier](https://prompts.chat/#act-as-a-text-based-adventure-ga
 
 ## Step 2: Experimentieren
 i18n/de/docusaurus-plugin-content-docs/current/basics/roles.md
-Jetzt werden wir den Promt in ChatGPT eingeben und sehen, was passiert.
+Jetzt werden wir den Prompt in ChatGPT eingeben und sehen, was passiert.
 
 import CSharp from '@site/docs/assets/basics/csharp.webp';
 
@@ -37,7 +37,7 @@ import CSharp from '@site/docs/assets/basics/csharp.webp';
   <img src={CSharp} style={{width: "750px"}}/>
 </div>
 
-Wir können sehen, dass es eine Geschichte erstellt hat, aber dass es sie innerhalb eines csharp (eine Programmiersprache) Codeblocks geschrieben hat. Vielleicht wollen wir das nicht, also ändern wir den Promt zu:
+Wir können sehen, dass es eine Geschichte erstellt hat, aber dass es sie innerhalb eines csharp (eine Programmiersprache) Codeblocks geschrieben hat. Vielleicht wollen wir das nicht, also ändern wir den Prompt zu:
 
 > Ich möchte, dass du als ein textbasiertes Abenteuerspiel agierst. Ich gebe Befehle ein und du antwortest mit einer Beschreibung dessen, was die Figur sieht. Schreib keine Erklärungen. Mein erster Befehl lautet Aufwachen.
 
@@ -86,4 +86,4 @@ Die Empfehlungen in diesem Artikel gelten für alle Prompt-Engineering-Probleme,
 
 - In den nächsten Kapiteln wirst du die Begriffe **KI, Modell und LLM austauschbar** verwendet sehen. Sieh die [Vokabel-Referenz](https://learnprompting.org/docs/vocabulary) für mehr Informationen.
 
-[^*] Alle Promts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Promts könnten andere Ausgaben zur Folge haben.
+[^*] Alle Prompts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Prompts könnten andere Ausgaben zur Folge haben.

@@ -6,7 +6,7 @@ sidebar_position: 30
 
 Bagaimana jika Anda bisa menulis sebuah tulisan blog dalam 5 detik?
 
-Sejujurnya, kamu tidak bisa. Tetapi AI bisa secara **signifikan** mengurangi waktu yang dibutuhkan untuk menulis blog.
+Sejujurnya, kamu tidak bisa. Tetapi AI bisa secara **signifikan** mengurangi waktu yang dibutuhkan untuk menulis blog. Ada banyak produk yang mencoba melakukannya, tetapi Anda sering dapat menghasilkan hasil yang konsisten melakukannya sendiri.
 
 Halaman ini mencakup dasar-dasar penggunaan AI untuk membantu Anda menulis blog. Proses ini harus bersifat iteratif: Anda harus menulis prompt, melihat apa yang dihasilkan oleh model, mengambil bagian dari output, dan mengulanginya.
 
@@ -14,8 +14,6 @@ Sebagai contoh, berpura-puralah Anda bekerja di taman dan menulis artikel tentan
 
 ```text
 Tulis garis besar untuk posting blog singkat tentang mengapa Kaktus Natal adalah pembelian yang bagus.
-
-Ada banyak produk yang mencoba melakukannya, tetapi Anda sering dapat menghasilkan hasil yang konsisten melakukannya sendiri. 
 
 // sorot-mulai
 I. Pengantar
