@@ -191,6 +191,7 @@ async function createConfig() {
       ],
       navbar: {
         title: "Learn Prompting",
+        staticDirectories: ["static", "docs/assets"],
         logo: {
           alt: "My Site Logo",
           src: "img/simple_ai.webp",
