@@ -47,6 +47,7 @@
     "react-icons": "^4.8.0",
     "react-lazy-load-image-component": "^1.6.0",
     "react-multi-carousel": "^2.8.3",
+    "react-player": "^2.12.0",
     "react-tooltip": "^5.7.4",
     "react-twitter-embed": "^4.0.4",
     "rehype-katex": "^5.0.0",
