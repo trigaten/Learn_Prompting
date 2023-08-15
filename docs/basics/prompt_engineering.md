@@ -57,7 +57,7 @@ Write a tweet about ArchaeologistAI
 "🔍 Exciting times ahead with #ArchaeologistAI! This cutting-edge technology is revolutionizing the field of archaeology, helping us uncover ancient mysteries and piece together our past like never before. Can't wait to see what hidden treasures and insights it unveils! #AI #Archaeology"
 </AIOutput>
 
-This Tweet is not accurate, since ArchaeologistAI only tells stories, and does not discover new things. However, it this is not ChatGPT's fault! It did not know anything about ArchaeologistAI. Let's include relevant information in the prompt.
+This Tweet is not accurate, since ArchaeologistAI only tells stories, and does not discover new things. However, this is not ChatGPT's fault! It did not know anything about ArchaeologistAI. Let's include relevant information in the prompt.
 
 <AIInput>
 Write a tweet about ArchaeologistAI: ArchaeologistAI tells stories about famous archaeologists.
