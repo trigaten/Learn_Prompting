@@ -16,8 +16,8 @@ function Home() {
   return (
     <>
       {/*<Banner />*/}
-      <div className="">
-        <Navbar />
+      <div className="bg-white">
+        <Navbar allowSandwich="true"/>
         <Hero />
         <Join />
         <FAQ />
