@@ -17,7 +17,7 @@ function Home() {
     <>
       {/*<Banner />*/}
       <div className="">
-        <Navbar />
+        <Navbar allowSandwich="true"/>
         <Hero />
         <Join />
         <FAQ />

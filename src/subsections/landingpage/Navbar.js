@@ -14,10 +14,12 @@ function Navbar(props) {
   };
 
   useEffect(() => {
-    if (isOpen) {
-      dropdownRef.current.style.height = `${dropdownRef.current.scrollHeight}px`;
-    } else {
-      dropdownRef.current.style.height = "0px";
+    if (dropdownRef.current) {
+      if (isOpen) {
+        dropdownRef.current.style.height = `${dropdownRef.current.scrollHeight}px`;
+      } else {
+        dropdownRef.current.style.height = "0px";
+      }
     }
   }, [isOpen]);
 
@@ -38,10 +40,6 @@ function Navbar(props) {
       name: "Newsletter",
       link: "#newsletter",
     },
-    // {
-    //   name: "Blog",
-    //   link: "/blog",
-    // },
     {
       name: "Our Services",
       link: "/our_services",
@@ -79,28 +77,32 @@ function Navbar(props) {
   return (
     <div className={"px-4 md:px-20 2xl:px-96"}>
       {/* hamburger */}
-      <div className={`flex md:hidden justify-end items-start pt-4`}>
-        <nav
-          ref={dropdownRef}
-          className={`overflow-hidden transition-all duration-500 ease-in-out lg:block ${
-            isOpen ? "block" : "hidden"
-          }`}
-          style={{ height: 0 }}
-        >
-          <ul className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-4 list-none">
-            {leftLinks.map((link, idx) => (
-              <li key={idx}>
-                <a href={link.link} className="text-black">
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <button onClick={toggleMenu} className=" lg:hidden">
-          <FontAwesomeIcon icon={faBars} />
-        </button>
-      </div>
+      {!props.forDocs && (
+        <div className={`flex md:hidden justify-end items-start pt-4`}>
+          <nav
+            ref={dropdownRef}
+            className={`overflow-hidden transition-all duration-500 ease-in-out lg:block ${
+              isOpen ? "block" : "hidden"
+            }`}
+            style={{ height: 0 }}
+          >
+            <ul className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-4 list-none">
+              {leftLinks.map((link, idx) => (
+                <li key={idx}>
+                  <a href={link.link} className="text-black">
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          {!props.forDocs && (
+          <button onClick={toggleMenu} className=" lg:hidden">
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+          )}
+        </div>
+      )}
 
       <div className={`md:flex hidden justify-between ${paddingClass}`}>
         {!props.forDocs && (

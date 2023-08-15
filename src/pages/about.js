@@ -8,8 +8,6 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-    {/* {/* what className makes text black:  */}
-
       <div className="bg-white text-black">
         <Navbar />
         <div className="container mx-auto py-10">
