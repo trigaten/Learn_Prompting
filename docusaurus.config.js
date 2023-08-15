@@ -156,7 +156,7 @@ async function createConfig() {
         },
         {
           name: "og:image",
-          content: "https://learnprompting.org/img/og-image.webp", // Replace this with the actual path to your og-image.
+          content: "https://learnprompting.org/docs/assets/astronaut.webp", // Replace this with the actual path to your og-image.
         },
         {
           name: "og:type",

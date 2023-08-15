@@ -1,4 +1,8 @@
-# Revisiting Roles
+---
+sidebar_position: 7
+---
+
+# 🟡 Revisiting Roles
 
 ### Accuracy Boost in Newer Models
 
