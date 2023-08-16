@@ -21,10 +21,10 @@ class AIInput extends React.Component {
   render() {
     const title = this.props.title || 'Prompt';
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '15px', background: '#f0f0f0', margin: '20px 0', position: 'relative' }}>
+      <div className="ai-input" style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '15px', margin: '20px 0', position: 'relative' }}>
         <CopyToClipboard text={this.props.children} onCopy={this.handleCopy}>
           <button style={{ position: 'absolute', top: '10px', right: '10px' }}>
-            <FontAwesomeIcon icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
+            <FontAwesomeIcon className="io-icon" icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
           </button>
         </CopyToClipboard>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -32,7 +32,7 @@ class AIInput extends React.Component {
           <h4 style={{ margin: '0' }}>{title}</h4>
         </div>
         <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
-        <pre style={{ background: '#f0f0f0', borderRadius: '5px', padding: '10px', margin: '0' }}>
+        <pre style={{borderRadius: '5px', padding: '10px', margin: '0' }}>
           {this.props.children}
         </pre>
       </div>
@@ -56,10 +56,10 @@ class AIOutput extends React.Component {
   render() {
     const title = this.props.title || 'AI Output';
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '5px', background: '#f0f0f0', margin: '20px 0', position: 'relative' }}>
+      <div className="ai-output" style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '5px', margin: '20px 0', position: 'relative' }}>
         <CopyToClipboard text={this.props.children} onCopy={this.handleCopy}>
           <button style={{ position: 'absolute', top: '10px', right: '10px' }}>
-            <FontAwesomeIcon icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
+            <FontAwesomeIcon className="io-icon" icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
           </button>
         </CopyToClipboard>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
