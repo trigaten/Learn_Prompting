@@ -9,6 +9,7 @@ import Brain from '@site/docs/assets/basics/brain.svg';
 <div style={{textAlign: 'center'}}>
   <Brain style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - There are many different types of AIs

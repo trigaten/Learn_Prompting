@@ -151,3 +151,12 @@ html[data-theme='dark'] .alert--takeaways {
 [data-theme='dark'] .io-icon {
   color: #fff;
 }
+
+[data-theme='light'] .output-highlight {
+  background: lightgreen;
+}
+
+[data-theme='dark'] .output-highlight {
+  background: #556B2F;
+}
+

@@ -8,6 +8,7 @@ import InstructionPrompt from '@site/docs/assets/basics/instruction_prompt.svg';
 <div style={{textAlign: 'center'}}>
   <InstructionPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Understand instruction prompting

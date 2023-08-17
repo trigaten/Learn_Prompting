@@ -9,6 +9,7 @@ import Playground from '@site/docs/assets/basics/openai_playground.webp';
 <div style={{textAlign: 'center'}}>
     <img src={Playground} className="img-docs" style={{width: "80%"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Set up the OpenAI Playground

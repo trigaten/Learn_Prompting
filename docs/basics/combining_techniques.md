@@ -9,6 +9,7 @@ import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
 <div style={{textAlign: 'center'}}>
   <CombinedPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Understand how to combine prompting techniques

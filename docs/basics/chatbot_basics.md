@@ -10,6 +10,7 @@ import Chatbots from '@site/docs/assets/basics/chatbot.svg';
 <div style={{textAlign: 'center'}}>
   <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - How chatbots work

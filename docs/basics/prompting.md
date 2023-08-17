@@ -8,6 +8,7 @@ import Interface from '@site/docs/assets/basics/chatgpt_interface.webp';
 <div style={{textAlign: 'center'}}>
   <img src={Interface} className="img-docs" style={{width: "80%"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Set up ChatGPT

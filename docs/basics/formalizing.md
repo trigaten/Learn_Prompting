@@ -9,6 +9,7 @@ import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg';
 <div style={{textAlign: 'center'}}>
   <FormalPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Understand the basic parts of a prompt

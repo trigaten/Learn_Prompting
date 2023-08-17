@@ -10,6 +10,7 @@ import Steps from '@site/docs/assets/basics/steps.svg';
 <div style={{textAlign: 'center'}}>
   <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Start your journey in Generative AI

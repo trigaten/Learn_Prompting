@@ -9,6 +9,7 @@ import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 <div style={{textAlign: 'center'}}>
   <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Understand the biases and problems that LLMs have

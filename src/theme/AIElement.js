@@ -67,7 +67,7 @@ class AIOutput extends React.Component {
           <h4 style={{ margin: '0' }}>{title}</h4>
         </div>
         <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
-        <pre style={{ background: 'lightgreen', borderRadius: '5px', padding: '10px', margin: '0' }}>
+        <pre className="output-highlight" style={{ borderRadius: '5px', padding: '10px', margin: '0' }}>
           {this.props.children}
         </pre>
       </div>
