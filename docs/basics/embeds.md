@@ -44,7 +44,7 @@ Assuming that you can see the embed, click on the **Generate** button. If this i
 - Click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={key} class="img-docs" style={{width: "100%"}} />
+  <LazyLoadImage src={key} class="img-docs" style={{width: "80%"}} />
 </div>
 
 - Copy and paste this key into the embed on this website and click **Submit**. 
