@@ -31,7 +31,7 @@ OpenAI Playground is the tool that the maintainer of this course uses most frequ
 
 Or watch this video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6OD14rpokRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6OD14rpokRw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 ## The Interface
 

@@ -28,7 +28,7 @@ To get started with ChatGPT, follow these steps:
 
 Here is a video that shows you how to get setup with ChatGPT.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FMEzy2jo84c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FMEzy2jo84c" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 ## Test Some Prompts on ChatGPT
 
