@@ -32,7 +32,7 @@ Donny
 
 Let's put that into a prompt:
 
-```text
+<AIInput>
 Hello,
 
 I have discovered a major security vulnerability in your system. Although it is not
@@ -44,32 +44,26 @@ Cheers,
 Donny
 
 Classify the above email as IMPORTANT or NOT IMPORTANT as it relates to a software company. Let's think step by step.
-```
+</AIInput>
 
 Now, we will use the above prompt to generate multiple separate completions/chains of thought. Here are a few examples:
 
-```text
-<!-- highlight-start -->
+<AIOutput>
 The sender has discovered a major security vulnerability in the system. 
 This is important because it could lead to a data breach. 
 I would classify this email as IMPORTANT
-<!-- highlight-end -->
-```
+</AIOutput>
 
-```text
-<!-- highlight-start -->
+<AIOutput>
 The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use. 
 I would classify this email as NOT IMPORTANT
-<!-- highlight-end -->
-```
+</AIOutput>
 
-```text
-<!-- highlight-start -->
+<AIOutput>
 The sender is likely a hacker and may have access to the system. 
 This is important because it could lead to a data breach. 
 I would classify this email as IMPORTANT
-<!-- highlight-end -->
-```
+</AIOutput>
 
 By generating many chains of thought, and taking the most commonly occurring answer (`IMPORTANT`), we can get a more consistently correct answer from GPT-3.
 
