@@ -65,6 +65,13 @@ async function createConfig() {
           },
         };
       },
+      ["posthog-docusaurus",
+        {
+          apiKey: process.env.POSTHOG_API_KEY || "DEV",
+          appUrl: "https://app.posthog.com", // optional
+          enableInDevelopment: false, // optional
+        },
+      ]
     ],
 
     presets: [
