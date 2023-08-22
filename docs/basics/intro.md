@@ -9,6 +9,7 @@ import Techniques from '@site/docs/assets/basics/techniques.svg';
 <div style={{textAlign: 'center'}}>
   <Techniques style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Understand AI, Generative AI, and Prompts

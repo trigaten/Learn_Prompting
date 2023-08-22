@@ -9,6 +9,7 @@ import RolePrompt from '@site/docs/assets/basics/role_prompt.svg';
 <div style={{textAlign: 'center'}}>
   <RolePrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Understand role prompts

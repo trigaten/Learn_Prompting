@@ -121,3 +121,42 @@ html[data-theme='dark'] .alert--takeaways {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   text-align: center
 }
+
+/* AIInput styles */
+[data-theme='light'] .ai-input {
+  background: #f0f0f0;
+  color: #000;
+}
+
+[data-theme='dark'] .ai-input {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+/* AIOutput styles */
+[data-theme='light'] .ai-output {
+  background: #f0f0f0;
+  color: #000;
+}
+
+[data-theme='dark'] .ai-output {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+[data-theme='light'] .io-icon {
+  color: #000;
+}
+
+[data-theme='dark'] .io-icon {
+  color: #fff;
+}
+
+[data-theme='light'] .output-highlight {
+  background: lightgreen;
+}
+
+[data-theme='dark'] .output-highlight {
+  background: #556B2F;
+}
+

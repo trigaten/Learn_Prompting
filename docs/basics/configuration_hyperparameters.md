@@ -10,6 +10,7 @@ import Temperature from '@site/docs/assets/basics/temperature.svg';
 <div style={{textAlign: 'center'}}>
   <Temperature style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Understand Temperature, Top P, and Maximum Length

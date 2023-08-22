@@ -9,6 +9,7 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
 <div style={{textAlign: 'center'}}>
   <FewShot style={{width:"100%",height:"200px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
 :::takeaways
 - Learn zero, one, and few-shot prompting

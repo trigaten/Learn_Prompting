@@ -45,6 +45,10 @@ Therefore, 923 multiplied by 99 is equal to 91,377.
 
 Surprisingly, these additional instructions, ChatGPT is able to solve the problem. This worked because ChatGPT wrote out all of its work, and thus did not make mistakes. Gen AI's mathematical abilities can be improved by prompt engineering. Now, let's try a different example. 
 
+:::caution
+Since ChatGPT is <a href="https://learnprompting.org/docs/basics/configuration_hyperparameters">non-deterministic</a>, even this prompt sometimes won't work. You may see answers like 91,177 or 91,077.
+:::
+
 ### ArchaeologistAI Example
 
 This time, we will ask ChatGPT to write a marketing tweet about a new, fictional AI product we are thinking of creating: ArchaeologistAI. ArchaeologistAI tells stories about famous archaeologists.
@@ -57,7 +61,7 @@ Write a tweet about ArchaeologistAI
 "🔍 Exciting times ahead with #ArchaeologistAI! This cutting-edge technology is revolutionizing the field of archaeology, helping us uncover ancient mysteries and piece together our past like never before. Can't wait to see what hidden treasures and insights it unveils! #AI #Archaeology"
 </AIOutput>
 
-This Tweet is not accurate, since ArchaeologistAI only tells stories, and does not discover new things. However, it this is not ChatGPT's fault! It did not know anything about ArchaeologistAI. Let's include relevant information in the prompt.
+This Tweet is not accurate, since ArchaeologistAI only tells stories, and does not discover new things. However, this is not ChatGPT's fault! It did not know anything about ArchaeologistAI. Let's include relevant information in the prompt.
 
 <AIInput>
 Write a tweet about ArchaeologistAI: ArchaeologistAI tells stories about famous archaeologists.

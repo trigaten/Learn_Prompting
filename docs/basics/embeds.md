@@ -15,7 +15,7 @@ The ChatGPT website is useful, but wouldn't it be nice if you could write and te
 
 Watch the video tutorial here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sNUKiwd2DWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sNUKiwd2DWU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 Here is an **image** of what an embed looks like:
 
@@ -44,7 +44,7 @@ Assuming that you can see the embed, click on the **Generate** button. If this i
 - Click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={key} class="img-docs" style={{width: "100%"}} />
+  <LazyLoadImage src={key} class="img-docs" style={{width: "80%"}} />
 </div>
 
 - Copy and paste this key into the embed on this website and click **Submit**. 

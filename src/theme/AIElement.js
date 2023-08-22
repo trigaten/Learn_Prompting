@@ -18,13 +18,61 @@ class AIInput extends React.Component {
     });
   };
 
+  processChildren = (children) => {
+    if (Array.isArray(children)) {
+      return children.flatMap((child, index) => {
+        if (child.props && child.props.children) {
+          let concatenatedChildren;
+          if (Array.isArray(child.props.children)) {
+            concatenatedChildren = child.props.children.join('');
+          } else {
+            concatenatedChildren = child.props.children;
+          }
+          // Append two <br /> tags after every child, except the last one
+          return index < children.length - 1 ? [concatenatedChildren, <br />, <br />] : [concatenatedChildren];
+        } else {
+          // Append two <br /> tags after every child, except the last one
+          return index < children.length - 1 ? [child, <br />, <br />] : [child];
+        }
+      });
+    } else {
+      // If it's a single child, just return it without <br /> tags
+      return [children];
+    }
+  };
+
+  processChildrenForCopy = (children) => {
+    if (Array.isArray(children)) {
+      return children.map((child, index) => {
+        if (child.props && child.props.children) {
+          let concatenatedChildren;
+          if (Array.isArray(child.props.children)) {
+            concatenatedChildren = child.props.children.join('');
+          } else {
+            concatenatedChildren = child.props.children;
+          }
+          // Append two spaces after every child, except the last one
+          return index < children.length - 1 ? concatenatedChildren + '  ' : concatenatedChildren;
+        } else {
+          // Append two spaces after every child, except the last one
+          return index < children.length - 1 ? child + '  ' : child;
+        }
+      }).join('');
+    } else {
+      return children;
+    }
+  };
+
   render() {
     const title = this.props.title || 'Prompt';
+    const processedChildren = this.processChildren(this.props.children);
+    const processedChildrenForCopy = this.processChildrenForCopy(this.props.children);
+
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '15px', background: '#f0f0f0', margin: '20px 0', position: 'relative' }}>
-        <CopyToClipboard text={this.props.children} onCopy={this.handleCopy}>
+      <div className="ai-input" style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '15px', margin: '20px 0', position: 'relative' }}>
+        <CopyToClipboard text={processedChildrenForCopy} onCopy={this.handleCopy}>
           <button style={{ position: 'absolute', top: '10px', right: '10px' }}>
-            <FontAwesomeIcon icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
+            <FontAwesomeIcon className="io-icon" icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
           </button>
         </CopyToClipboard>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -32,13 +80,14 @@ class AIInput extends React.Component {
           <h4 style={{ margin: '0' }}>{title}</h4>
         </div>
         <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
-        <pre style={{ background: '#f0f0f0', borderRadius: '5px', padding: '10px', margin: '0' }}>
-          {this.props.children}
+        <pre style={{borderRadius: '5px', padding: '10px', margin: '0' }}>
+          {processedChildren}
         </pre>
       </div>
     );
   }
 }
+
 
 class AIOutput extends React.Component {
   state = {
@@ -53,13 +102,61 @@ class AIOutput extends React.Component {
     });
   };
 
+  processChildren = (children) => {
+    if (Array.isArray(children)) {
+      return children.flatMap((child, index) => {
+        if (child.props && child.props.children) {
+          let concatenatedChildren;
+          if (Array.isArray(child.props.children)) {
+            concatenatedChildren = child.props.children.join('');
+          } else {
+            concatenatedChildren = child.props.children;
+          }
+          // Append two <br /> tags after every child, except the last one
+          return index < children.length - 1 ? [concatenatedChildren, <br />, <br />] : [concatenatedChildren];
+        } else {
+          // Append two <br /> tags after every child, except the last one
+          return index < children.length - 1 ? [child, <br />, <br />] : [child];
+        }
+      });
+    } else {
+      // If it's a single child, just return it without <br /> tags
+      return [children];
+    }
+  };
+
+  processChildrenForCopy = (children) => {
+    if (Array.isArray(children)) {
+      return children.map((child, index) => {
+        if (child.props && child.props.children) {
+          let concatenatedChildren;
+          if (Array.isArray(child.props.children)) {
+            concatenatedChildren = child.props.children.join('');
+          } else {
+            concatenatedChildren = child.props.children;
+          }
+          // Append two spaces after every child, except the last one
+          return index < children.length - 1 ? concatenatedChildren + '  ' : concatenatedChildren;
+        } else {
+          // Append two spaces after every child, except the last one
+          return index < children.length - 1 ? child + '  ' : child;
+        }
+      }).join('');
+    } else {
+      return children;
+    }
+  };
+
   render() {
     const title = this.props.title || 'AI Output';
+    const processedChildren = this.processChildren(this.props.children);
+    const processedChildrenForCopy = this.processChildrenForCopy(this.props.children);
+
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '5px', background: '#f0f0f0', margin: '20px 0', position: 'relative' }}>
-        <CopyToClipboard text={this.props.children} onCopy={this.handleCopy}>
+      <div className="ai-output" style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '10px', borderRadius: '5px', margin: '20px 0', position: 'relative' }}>
+        <CopyToClipboard text={processedChildrenForCopy} onCopy={this.handleCopy}>
           <button style={{ position: 'absolute', top: '10px', right: '10px' }}>
-            <FontAwesomeIcon icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
+            <FontAwesomeIcon className="io-icon" icon={this.state.copied ? faCheck : faCopy} color={this.state.copied ? 'green' : 'initial'} /> Copy
           </button>
         </CopyToClipboard>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -67,8 +164,8 @@ class AIOutput extends React.Component {
           <h4 style={{ margin: '0' }}>{title}</h4>
         </div>
         <hr style={{ border: 'none', height: '1px', backgroundColor: 'darkgrey', margin: '0' }} />
-        <pre style={{ background: 'lightgreen', borderRadius: '5px', padding: '10px', margin: '0' }}>
-          {this.props.children}
+        <pre className="output-highlight" style={{ borderRadius: '5px', padding: '10px', margin: '0' }}>
+          {processedChildren}
         </pre>
       </div>
     );
