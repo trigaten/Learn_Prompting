@@ -27,7 +27,9 @@ I wanted an astronaut, a rocket, and a computer for the images on the front page
 I did a bunch of research into how to create low poly images, on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/)
 and other sites, but couldn't find anything super helpful.
 
-I decided to just start with DALLE and the prompt `Low poly white and blue rocket shooting to the moon in front of a sparse green meadow` and see what happened.
+I decided to just start with DALLE and the following prompt, and see what happened.
+
+ <AIInput>Low poly white and blue rocket shooting to the moon in front of a sparse green meadow</AIInput> 
 
 import rockets1 from '@site/docs/assets/images_chapter/rockets_dalle_1.webp';
 import rockets2 from '@site/docs/assets/images_chapter/rockets_dalle_2.webp';
@@ -44,27 +46,29 @@ import focus_final from '@site/static/img/computer.webp';
 import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets1} style={{width: "750px"}}/>
+  <img src={rockets1} className="img-docs"  style={{width: "750px"}}/>
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={rockets2} style={{width: "750px"}} />
+  <LazyLoadImage src={rockets2} className="img-docs"  style={{width: "750px"}} />
 </div>
 
 I thought these results were pretty decent for a first try; I particularly liked
 the bottom left rocket.
 
-Next, I wanted a computer in the same style: `Low poly white and blue computer sitting in a sparse green meadow`
+Next, I wanted a computer in the same style: <AIInput>Low poly white and blue computer sitting in a sparse green meadow</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={computer_1} style={{width: "750px"}} />
+  <LazyLoadImage src={computer_1} className="img-docs"  style={{width: "750px"}} />
 </div>
 
-Finally, I needed an astronaut! `Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background` seemed to do the trick.
+Finally, I needed an astronaut! This prompt seemed to do the trick:
+
+<AIInput>Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background</AIInput> 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={astronaut_1} style={{width: "750px"}} />
+  <LazyLoadImage className="img-docs"  src={astronaut_1} style={{width: "750px"}} />
 </div>
 
 I thought the second one was decent.
@@ -77,71 +81,71 @@ realized the style just wasn't consistent 😔.
 I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric. I decided to try that out, using Stable Diffusion instead of DALLE.
 I also realized that I needed to add more modifiers to my prompt
 to constrain the style. I tried this prompt:
-`A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+<AIInput>A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={astronaut_2} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={astronaut_2} style={{width: "250px"}} />
 </div>
 
 These weren't great, so I decided to start on the rocket instead
 
-`A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+<AIInput>A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={rocket_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
 These are not particularly good, but after a bit of iterating around here, I ended up with 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={rocket_final} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={rocket_final} style={{width: "250px"}} />
 </div>
 
-Now I needed a better laptop
+Now I needed a better laptop:
 
-`A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K`
+<AIInput>A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={laptop_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
 I got some inconsistent results; I like the bottom right one, but I decided to go in a different direction.
 
-`A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+<AIInput>A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={gemstone_sd_1} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
 This wasn't quite right. Let's try something magical and glowing.
 
-`A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+<AIInput>A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={gemstone_sd_2} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
 I liked these, but wanted the stone in the middle of the screen.
 
-`A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+<AIInput>A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={gemstone_sd_3} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
 Somewhere around here, I used SD's ability to have a previous image provide some influence for future images.
 And thus I arrived at:
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={focus_final} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs"  src={focus_final} style={{width: "250px"}} />
 </div>
 
 Finally, I was on to the astronaut.
 
-`A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K`
+<AIInput>A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={astronaut_final} style={{width: "250px"}} />
+  <LazyLoadImage className="img-docs" src={astronaut_final} style={{width: "250px"}} />
 </div>
 
 At this point, I was sufficiently happy with the style consistency between my three images to use them

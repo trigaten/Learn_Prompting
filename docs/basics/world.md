@@ -9,36 +9,40 @@ import Brain from '@site/docs/assets/basics/brain.svg';
 <div style={{textAlign: 'center'}}>
   <Brain style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
+
+:::takeaways
+- There are many different types of AIs
+- Basics of how LLMs work
+:::
 
 
-There are a few simple things you should know about different AIs and how they work before you start reading the rest of the course.
+Before delving into the rest of the course, it's important to grasp some fundamental concepts about various AIs and their functioning. This foundational knowledge will provide a clearer understanding of the material that follows.
 
 
 ## Different AIs
 
-Thousands, if not millions of AIs exist. Some are better than others. Different AIs can produce [images](https://openai.com/product/dall-e-2), [music](https://google-research.github.io/seanet/musiclm/examples/), [text](https://platform.openai.com/playground), and even [videos](https://makeavideo.studio/). Note that these are all *generative* AIs, basically AIs that *make* things. There are also *discriminative* AIs, which are AIs that *classify* things. For example, you can use an image classifier to tell if an image is a cat or a dog. We will not be using any discriminative AIs in this course.
+The landscape of artificial intelligence is vast and varied[^a], encompassing thousands, if not millions, of distinct models. These models boast a broad spectrum of capabilities and applications. Some are generative, engineered to create outputs such as [images](https://openai.com/product/dall-e-2), [music](https://google-research.github.io/seanet/musiclm/examples/), [text](https://platform.openai.com/playground), and even [videos](https://makeavideo.studio/). In contrast, others are discriminative, designed to classify or differentiate between various inputs, like an image classifier distinguishing between cats and dogs. This course, however, will concentrate solely on generative AIs.
 
+Among generative AIs, only a select few possess the advanced capabilities that make them particularly useful for prompt engineering. In this course, we will primarily focus on ChatGPT and other Large Language Models (LLMs). The techniques we explore are applicable to most LLMs.
 
-Only a few generative AIs are currently advanced enough to be especially useful for prompt engineering. We mainly use GPT-3 and ChatGPT in this course. As we mentioned in the last page, ChatGPT is a chat bot, while GPT-3 is not. **They will usually produce different responses when asked the same question**. If you are a developer, I recommend using GPT-3, since it is more reproducible. If you are a non-developer, I recommend using [ChatGPT](https://learnprompting.org/docs/category/%EF%B8%8F-image-prompting), since it is easier to use. Most techniques in this course can be applied to both AIs. However, some of them will be GPT-3 only, so we encourage you to use GPT-3 if you want to use all of the techniques in this course.
+As we venture into the realm of image generation, we'll explore the use of [Stable Diffusion](https://beta.dreamstudio.ai/home) and [DALLE](https://openai.com/product/dall-e-2).
 
-We will also use [Stable Diffusion](https://beta.dreamstudio.ai/home) and [DALLE](https://openai.com/product/dall-e-2) in the image generation section. See more relevant AIs [here](https://learnprompting.org/docs/products#chatbots).
+## How Large Language Models Work
 
-## How these AIs work
+Generative text AIs, such as GPT-3 and ChatGPT, operate based on a complex type of neural network known as a transformer architecture. This architecture comprises billions of artificial neurons. Here are some key points to understand about how these AIs work:
 
-This section describes aspects of popular generative **text** AIs. These AIs have brains that are made up of billions of artificial neurons. The way these neurons are structured is called a transformer architecture. It is a fairly complex type of neural network. What you should understand is:
+1. At their core, these AIs are mathematical functions. Instead of a simple function like $f(x) = x^2$, think of them as functions with thousands of variables leading to thousands of possible outputs.
+2. These AIs process sentences by breaking them into units called tokens, which can be words or subwords. For example, the AI might read `I don't like` as `"I", "don", "'t", "like"`. Each token is then converted into a list of numbers for the AI to process.
+3. The AIs generate text by predicting the next token based on the previous ones. For instance, after `I don't like`, the AI might predict `apples`[^b]. Each new token they generate is influenced by the previous tokens.
+4. Unlike humans who read from left to right or right to left, these AIs consider all tokens simultaneously.
 
-1. These AIs are just math functions. Instead of $f(x) = x^2$, they are more like f(thousands of variables) = thousands of possible outputs.
-2. These AIs understand sentences by breaking them into words/subwords called tokens (e.g. the AI might read `I don't like` as `"I", "don", "'t" "like"`). Each token is then converted into a list of numbers, so the AI can process it.
-3. These AIs predict the next word/token in the sentence based on the previous words/tokens (e.g. the AI might predict `apples` after `I don't like`). Each token they write is based on the previous tokens they have seen and written; every time they write a new token, they pause to think about what the next token should be.
-4. These AIs look at every token at the same time. They don't read left to right, or right to left like humans do. 
+It is important to note that terms like "think", "brain", and "neuron" are metaphors used to describe the workings of these AIs. In reality, these models are mathematical functions, not biological entities. They don't "think" in the way humans do; they calculate based on the data they've been trained on.
 
-Please understand that the words "think", "brain", and "neuron" are zoomorphisms, which are essentially metaphors for what the model is actually doing. These models are not really thinking, they are just math functions. They are not actually brains, they are just artificial neural networks. They are not actually biological neurons, they are just numbers.
+## Conclusion
 
-This is an area of active research and philosophizing. This description is rather cynical about their nature and is meant to temper popular media depiction of AIs as beings that think/act like humans. This being said, if you want to anthropomorphize the AI, go ahead! It seems that most people do this and it may even be helpful for learning.
+Understanding the fundamental workings of AI is crucial as we delve deeper into this course. While it's tempting to anthropomorphize AI for easier understanding, it's essential to remember that these models are mathematical functions, not thinking beings. They operate based on data and algorithms, not human cognition. As we continue to explore and debate the nature and capabilities of AI, this foundational knowledge will serve as a guide, helping us navigate the complex and fascinating world of artificial intelligence.
 
+[^a]: [d2l.ai](https://www.d2l.ai) is a good resource for learning about how AI works
 
-## Notes
-
-- [d2l.ai](https://www.d2l.ai) is a good resource for learning about how AI works
-
-- Please note that the authors do, in fact, enjoy apples. They are delicious.
+[^b]: Please note that the authors do, in fact, enjoy apples. They are delicious.

@@ -24,7 +24,7 @@ Leitores com conhecimento de aprendizado por reforço podem reconhecer este proc
 
 ## Resultados
 
-O Google usou o PaLM(@chowdhery2022palm) LLM em experimentos com ReAct. Comparações com prompts padrão (de apenas pergunta), Cadeia de Pensamento e outras abordagens mostram que o desempenho de ReAct é promissor para tarefas de raciocínio complexo. O Google também realiza estudos no conjunto de dados FEVER (@thorne2018fever), que abrange extração e verificação de fatos. 
+O Google usou o PaLM(@chowdhery2022palm) LLM em experimentos com ReAct. Comparações com prompts padrão (de apenas pergunta), Cadeia de Pensamento e outras abordagens mostram que o desempenho de ReAct é promissor para tarefas de raciocínio complexo. O Google também realiza estudos no conjunto de dados FEVER (@thorne2018fever), que abrange extração e verificação de fatos.
 
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 

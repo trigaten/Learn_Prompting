@@ -48,6 +48,10 @@ async function createConfig() {
               to: '/docs/tooling/IDEs/intro',
               from: '/docs/IDEs/intro',
             },
+            {
+              to: '/our_services',
+              from: '/consulting',
+            },
           ],
         },
       ],
@@ -61,6 +65,13 @@ async function createConfig() {
           },
         };
       },
+      ["posthog-docusaurus",
+        {
+          apiKey: process.env.POSTHOG_API_KEY || "DEV",
+          appUrl: "https://app.posthog.com", // optional
+          enableInDevelopment: false, // optional
+        },
+      ]
     ],
 
     presets: [
@@ -74,6 +85,10 @@ async function createConfig() {
             trackingID: "G-FV0C417KS8",
           },
           docs: {
+            admonitions: {
+              tag: ':::',
+              keywords: ['note', 'tip', 'info', 'caution', 'danger', 'takeaways'],
+            },
             sidebarPath: require.resolve("./sidebars.js"),
             editUrl: "https://github.com/trigaten/promptgineering/tree/v1.2.3",
             remarkPlugins: [
@@ -148,7 +163,7 @@ async function createConfig() {
         },
         {
           name: "og:image",
-          content: "https://learnprompting.org/img/og-image.webp", // Replace this with the actual path to your og-image.
+          content: "https://learnprompting.org/docs/assets/astronaut.webp", // Replace this with the actual path to your og-image.
         },
         {
           name: "og:type",

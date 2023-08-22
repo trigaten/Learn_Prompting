@@ -87,6 +87,16 @@ cite them as such.
 
 #### With the right prompt, Stable Diffusion 2.0 can do hands.(@blake2022with)
 
+## Meta Analysis
+
+#### How Generative AI Is Changing Creative Work(@Davenport_Mittal_2022)
+
+#### How AI Will Change the Workplace(@Captain_2023)
+
+#### ChatGPT took their jobs. Now they walk dogs and fix air conditioners.(@Verma_Vynck_2023)
+
+#### No title(@IBM_Do_2023)
+
 ## Miscl
 
 #### The Turking Test: Can Language Models Understand Instructions?(@efrat2020turking)
@@ -138,8 +148,6 @@ cite them as such.
 #### From Images to Textual Prompts: Zero-shot VQA with Frozen Large Language Models(@guo2022images)
 
 #### New and improved content moderation tooling(@markov_2022)
-
-#### No title(@openai_api)
 
 #### Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference(@schick2020exploiting)
 

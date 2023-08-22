@@ -94,6 +94,7 @@ with open(output_md_file, 'w') as mdfile:
                     if "author" in entry.persons:
                         author_list = entry.persons['author']
                     else: 
+                        print(entry.persons)
                         author_list = entry.persons['authors']
                     author = ' and '.join(str(person) for person in author_list)
                     year = entry.fields.get('year', 'No year')

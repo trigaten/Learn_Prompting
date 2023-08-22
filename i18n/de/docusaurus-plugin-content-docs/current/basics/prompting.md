@@ -11,7 +11,7 @@ import Prompt from '@site/docs/assets/basics/prompt.svg';
 
 Im vorherigen Kapitel haben wir über KI gesprochen und darüber, wie Menschen KI anweisen können, Aufgaben auszuführen. Der Prozess, eine KI anzuweisen, eine Aufgabe auszuführen, wird Prompting genannt (@shin2020autoprompt). Wir geben der KI eine Reihe von Anweisungen (den Prompt) und sie führt die Aufgabe aus. Prompts können so einfach wie eine Anweisung/Frage oder so komplex wie große Textstücke sein.
 
-Hier sind zwei Beispiele für Promts:
+Hier sind zwei Beispiele für Prompts:
 
 #### 1) Einen Artikel zusammenfassen
 
@@ -33,9 +33,9 @@ Schneefall ist in Florida äußerst selten, mit Ausnahme der nördlichsten Gebie
 
 #### 2) Lösen von mathematischen Textaufgaben
 
-Wenn du einen Datensatz mit mathematischen Gleichungen hast, die du mit einem Sprachmodell lösen willst, kannst du einen Promt erstellen, indem du die Frage "Was ist GLEICHUNG" stellst.
+Wenn du einen Datensatz mit mathematischen Gleichungen hast, die du mit einem Sprachmodell lösen willst, kannst du einen Prompt erstellen, indem du die Frage "Was ist GLEICHUNG" stellst.
 
-Für eine bestimmte Frage könnte dein vollständiger Promt wie folgt aussehen:
+Für eine bestimmte Frage könnte dein vollständiger Prompt wie folgt aussehen:
 
 ```
 Was ist 965*590?
@@ -45,13 +45,13 @@ Bei diesem Prompt antwortet GPT-3 (text-davinci-003) (eine KI) manchmal 569.050 
 
 # Prompt Engineering
 
-Wenn wir statt der `Frage Was ist 965*590` fragen `Achte darauf, dass deine Antwort genau richtig ist. Was ist 965*590? Stell sicher, dass deine Antwort genau richtig ist:`, GPT-3 wird `569350` (richtig) antworten. Warum ist dies der Fall? Warum ist es hilfreich, die KI zweimal aufzufordern, eine richtige Antwort zu geben? Wie können wir Promts erstellen, die optimale Ergebnisse für unsere Aufgabe liefern? Insbesondere diese letzte Frage, steht im Mittelpunkt des Prompt Engineering und auch dieses Kurses.
+Wenn wir statt der `Frage Was ist 965*590` fragen `Achte darauf, dass deine Antwort genau richtig ist. Was ist 965*590? Stell sicher, dass deine Antwort genau richtig ist:`, GPT-3 wird `569350` (richtig) antworten. Warum ist dies der Fall? Warum ist es hilfreich, die KI zweimal aufzufordern, eine richtige Antwort zu geben? Wie können wir Prompts erstellen, die optimale Ergebnisse für unsere Aufgabe liefern? Insbesondere diese letzte Frage, steht im Mittelpunkt des Prompt Engineering und auch dieses Kurses.
 
 :::Vorsicht
-Noch etwas: Wenn du den obigen Promt in GPT-3 ausführst, solltest du die Temperatur auf 0 setzen, um die Zufälligkeit zu beseitigen.
+Noch etwas: Wenn du den obigen Prompt in GPT-3 ausführst, solltest du die Temperatur auf 0 setzen, um die Zufälligkeit zu beseitigen.
 :::
 
 Lies weiter, um zu erfahren, wie man gute Prompts entwickelt!
 
 [^2]: Dieser Absatz stammt aus https://en.wikipedia.org/wiki/Snow_in_Florida (ursprünglich auf Englisch)
-[^*] Alle Promts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Promts könnten andere Ausgaben zur Folge haben.
+[^*] Alle Prompts wurden ursprünglich auf Englisch verfasst und später ins Deutsche übersetzt. Die deutschen Prompts könnten andere Ausgaben zur Folge haben.

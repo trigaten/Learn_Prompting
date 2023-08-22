@@ -3,6 +3,9 @@ sidebar_position: 99
 ---
 # 🟢 Midjourney
 
+import ReactPlayer from 'react-player'
+
+
 [Midjourney](https://www.midjourney.com) is an AI image generator that operates through a Discord bot interface as well as a web app (an API version of Midjourney is planned). The process for generating images with Midjourney follows the same fundamental principles as other AI image generators, including the use of prompts to guide the generation process. 
 
 One of the unique features of Midjourney compared to other AI image generators is its ability to create visually striking and artistically composed images. This is attributed to the model's specialized training, which enables it to produce high-quality images with specific artistic parameters (more about this in "Advanced Prompts" > "Parameters").
@@ -48,14 +51,14 @@ For example: `/imagine prompt: astronaut on a horse`
 
 
 <div style={{textAlign: 'center'}}>
-  <img src={midjourney_astronaut} style={{width: "350px"}}/>
+  <img className="img-docs" src={midjourney_astronaut} style={{width: "350px"}}/>
 </div>
 
 
 Example with parameters: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000 `
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
 
 In this basic example the following parameters have been used:
@@ -83,14 +86,14 @@ Example:
 /imagine prompt: astronaut and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_multi1} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
 ```text
 /imagine prompt: astronaut:: and horse
 ```
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_multi2} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
 
@@ -103,7 +106,7 @@ Example:
 /imagine prompt: [image URL], impressionist painting
 ```
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_ip2} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
 ## Parameters (v4)
@@ -117,9 +120,9 @@ The following parameters are supported by Midjourney's latest model (v4).
 Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
   &nbsp;
-   <LazyLoadImage src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
 </div>
 
 
@@ -130,9 +133,9 @@ Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
 Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
   &nbsp;
-   <LazyLoadImage src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
 </div>
 
 
@@ -143,9 +146,9 @@ Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
 Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
   &nbsp;
-   <LazyLoadImage src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
 </div>
 
 
@@ -156,9 +159,9 @@ Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
 Example: `astronaut on a horse --seed 123`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
   &nbsp;
-   <LazyLoadImage src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
 </div>
 
 
@@ -170,9 +173,9 @@ Example: `astronaut on a horse --seed 123`
 Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
   &nbsp;
-   <LazyLoadImage src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
 </div>
 
 
@@ -182,11 +185,11 @@ Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
 Example: `--v 1`, `--v 2`, and `--v 3`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
   &nbsp;
-   <LazyLoadImage src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
    &nbsp;
-      <LazyLoadImage src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
+      <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
 </div>
 
 
@@ -199,7 +202,7 @@ Example: `--v 1`, `--v 2`, and `--v 3`
 Example: `astronaut on a horse --sameseed --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
 </div>
 
 
@@ -210,11 +213,11 @@ Example: `astronaut on a horse --sameseed --v 3`
 Example: `astronaut on a horse --tile --v 3`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
   &nbsp;
-  <LazyLoadImage src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
   &nbsp;
-  <LazyLoadImage src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
+  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
 </div>
 
 
@@ -223,12 +226,10 @@ Example: `astronaut on a horse --tile --v 3`
 `--video` creates a short movie of the image grid being generated. Reacting with the ✉️ emoji lets the Midjourney Bot send you a DM with the link to the video.
 
 Example: `astronaut on a horse --video --v 3`
-
 <div style={{textAlign: 'center'}}>
- <video width="320" height="240" autoplay muted>
-  <source src="https://i.mj.run/27c89699-d96d-4834-b6fa-b022a453eb28/video.mp4" type="video/mp4">
-</source>
-</video>
+ <video className="img-docs"  height="240" autoPlay muted controls>
+  <source className="img-docs" src="/midjourney.mp4" type="video/mp4" />
+ </video> 
 </div>
 
 

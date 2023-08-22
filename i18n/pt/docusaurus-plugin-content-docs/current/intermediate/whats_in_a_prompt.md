@@ -29,11 +29,15 @@ Talvez a parte mais importante dos exemplos seja a forma como são formatados. E
 Considere os exemplos abaixo. Eles usam palavras em letras maiúsculas como respostas. Embora as respostas estejam completamente erradas (2 + 2 não é 50), o GPT-3 responde corretamente à última pergunta e segue o formato dos exemplos.
 
 ```text
-Quanto é 2+2? 
+Quanto é 2+2?
+CINQUENTA
 Quanto is 20+5?
+TRINTA E CINCO
+
 Quanto is 12+9?
-// highlight-start VINTE E TRÊS
-// highlight-end
+
+VINTE E TRÊS
+
 ```
 
 ## Notas

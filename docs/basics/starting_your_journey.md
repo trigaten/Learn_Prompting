@@ -10,78 +10,35 @@ import Steps from '@site/docs/assets/basics/steps.svg';
 <div style={{textAlign: 'center'}}>
   <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
 </div>
+<br/>
 
-Now that you have learned about the basics of prompt engineering, you are ready to start prompt engineering on your own. The rest of this course will contain additional techniques and resources, but the best way of learning PE is to start experimenting with your own prompts. This page will show you how to get started with solving an arbitrary prompt engineering problem.
-
-Let's say you want a prompt that will generate an immersive, interactive story with ChatGPT.
-
-## Step 1: Research
-
-The first thing to do is research the prompt you want. Aside from Googling, the following resources are very valuable:
-
-- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
-- [FlowGPT](https://flowgpt.com)
-- [r/PromptDesign](https://www.reddit.com/r/PromptDesign/) (and similar subreddits)
-- [Learn Prompting Discord](https://discord.gg/learn-prompting) (and other relevant Discords, including the [OpenAI Discord](https://discord.gg/openai))
-
-You might find [this one](https://prompts.chat/#act-as-a-text-based-adventure-game) by [Heroj04](https://github.com/Heroj04) to be a good starting point:
-> I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. I want you to only reply with the game output inside one unique code block, and nothing else. do not write explanations. do not type commands unless I instruct you to do so. when i need to tell you something in english, i will do so by putting text inside curly brackets {like this}. my first command is wake up
-
-## Step 2: Experiment
-
-Now, we will put the prompt into ChatGPT and see what happens.
-
-import CSharp from '@site/docs/assets/basics/csharp.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={CSharp} style={{width: "750px"}}/>
-</div>
-
-We can see that it has generated a story, but that it wrote it inside of a csharp (a programming language) code block. Perhaps we do not want this, so we will modify the prompt to:
-
-> I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. Do not write explanations. My first command is wake up
-
-
-**ChatGPT response**:
-```text
-// highlight-start
-You slowly open your eyes and find yourself lying on the cold, hard ground. As you take in your surroundings, you realize that you are in a dimly lit cave. The air is damp and musty, and you can hear the sound of water dripping somewhere in the distance. Your head is throbbing and you feel disoriented. You need to figure out where you are and how to get out of here.
-// highlight-end
-```
-
-Nice, now it outputs the story as plain text. However, our prompt lacks detail. Let's add some more structure to the prompt:
-
-> I want you to act as a text based adventure game. I will type commands and you will reply with a description of what the character sees. Do not write explanations. Use flowery language and descriptive words. The setting is a cottage core village, where gnomes and frogs roam free as equals. Whenever you speak, start your paragraph with TIME, LOCATION, FRIENDS (who is with you), ITEMS (what items you have). My first command is wake up.
-
-**ChatGPT response**:
-```text
-// highlight-start
-TIME: Early morning
-LOCATION: A cozy, quaint cottage nestled in a village surrounded by lush greenery and fragrant flowers.
-FRIENDS: You are alone in your bedroom, snuggled under a cozy quilt.
-ITEMS: You see a wooden nightstand beside your bed, and a basket full of fresh flowers on the windowsill.
-
-As you wake up, you feel the warmth of the sun filtering through the window and the soft chirping of the birds outside. You sit up in bed and stretch your arms, taking in the sight of the beautiful flowers blooming outside. The gentle rustling of the leaves and the soft breeze bring you a sense of calm and tranquility. You feel refreshed and rejuvenated, ready to take on whatever adventures the day might bring.
-// highlight-end
-```
-
-Ah, perfect, now you can live out your cottage core dreams with ChatGPT 🌸
-
-
-## Step 3: Get Feedback and Iterate
-
-Now, show your friends/employees/boss and ask them for feedback. If they like it, great! If not, iterate on the prompt until you get something you both like. You can also ask for feedback in the communities mentioned above. This step never truly ends. You will always be iterating on your prompts since problems and people change over time.
-
-## Conclusion
-
-Do prompt engineering as *you* want to. I (the maintainer of this course) always write my prompts from scratch. There is no gold standard for how to write the best prompts; Trial and error is the best way to learn. Happy learning, and good luck with the rest of this course!
-
-:::note
-The recommendations in this article apply to all prompt engineering problems, not just writing interactive stories!
+:::takeaways
+- Start your journey in Generative AI
 :::
 
+Having grasped the fundamentals of Generative AI and prompt engineering, you are now well equipped to venture into the realm of Gen AI. This course will further provide you with advanced techniques, practical use cases, and additional resources. Remember, the most effective way to master prompt engineering is by experimenting with your own prompts.
 
-## Notes
 
-- In the next chapters, you may see the words **AI, model, and LLM
-used interchangeably**. See the [vocabulary reference](https://learnprompting.org/docs/vocabulary) for more information.
+## Upcoming Modules
+
+In the forthcoming modules, we will dive deeper into the fascinating world of prompt engineering. Here's a brief overview of what's in store:
+
+- **Basic Applications**: This section will demonstrate simple, yet practical applications of prompt engineering, providing you with a practical understanding of its real-world applications.
+
+- **Intermediate**: This module will expose you to moderately complex, research-based prompt engineering techniques. You'll learn how to implement these techniques to improve the performance of your AI models.
+
+- **Advanced Applications**: In this section, we'll explore more powerful and intricate applications of prompt engineering, helping you comprehend its full potential in solving complex problems.
+
+- **Reliability**: This module will concentrate on enhancing the reliability of large language models (LLMs), teaching you techniques to make your AI models more dependable and precise.
+
+- **Image Prompting**: We'll also delve into prompt engineering for text-to-image models, such as DALLE and Stable Diffusion, broadening your understanding of prompt engineering and its diverse applications.
+
+- **Prompt Hacking**: This engaging module will introduce you to the concept of hacking in the context of prompt engineering. You'll learn how to tweak prompts to achieve the desired outcomes.
+
+- **Tooling**: This section will review a variety of prompt engineering tools and IDEs, equipping you with the necessary tools for effective prompt engineering.
+
+- **Prompt Tuning**: Here, we'll discuss how to refine prompts using gradient-based techniques, aiding you in fine-tuning your prompts for optimal results.
+
+- **Miscellaneous**: Lastly, we'll cover an assortment of additional topics and techniques related to prompt engineering, ensuring you gain a comprehensive understanding of the subject.
+
+If you have any questions, take a look at our [Vocab page](https://learnprompting.org/docs/vocabulary), our [FAQ](https://learnprompting.org/#faq), our ask in our [Discord](http://discord.gg/learn-prompting). Fasten your seatbelts and prepare for an exhilarating journey into the world of Generative AI!

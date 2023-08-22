@@ -14,14 +14,15 @@ import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.
 Recall from the other page the pyramids generated with DALLE, and the prompt `pyramid`.
 
 <div style={{textAlign: 'center'}}>
-  <img src={pyramids} style={{width: "750px"}}/>
+  <img className="img-docs" src={pyramids} style={{width: "750px"}}/>
 </div>
 
 Now take at pyramids generated with this prompt:
-`A beautiful, majestic, incredible pyramid, 4K`
+
+<AIInput>A beautiful, majestic, incredible pyramid, 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={special_pyramids} style={{width: "750px"}} />
+  <LazyLoadImage className="img-docs" src={special_pyramids} style={{width: "750px"}} />
 </div>
 
 These are much more scenic and impressive! 

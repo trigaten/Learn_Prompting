@@ -110,7 +110,7 @@ Agora vamos usar essa informação para responder a pergunta corretamente. Esse 
 
 Embora o caso de uso acima tenha sido semelhante à forma como o conhecimento gerado foi originalmente introduzido, não é exatamente o mesmo processo. O conteúdo abaixo aborda o contexto mais técnico em que a abordagem foi introduzida. Ele segue o padrão de duas etapas intermediárias (geração de conhecimento e integração de conhecimento) que vimos acima.
 
-import KGImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/knowledge_generation.png';
+import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
 <div style={{textAlign: 'center'}}>
   <img src={KGImage} style={{width: "750px"}}/>
@@ -124,7 +124,7 @@ Conhecimento Gerado / Generated Knowledge (Liu et al.)
 
 Na etapa de geração de conhecimento, o %%LLM|LLM%% é solicitado a gerar um *conjunto de fatos sobre a pergunta*. O LLM é acionado de forma few-shot, como demonstrado exemplo abaixo. N etapas diferentes são gerados usando a mesma prompt (semelhante à abordagem de autoconsistência).
 
-import KGP1Image from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/gen_k_p1.png';
+import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
@@ -165,7 +165,7 @@ Selecionamos a resposta com a maior probabilidade como resposta final. A maior p
 
 A abordagem de recitação-aumentada (@sun2022recitationaugmented) é semelhante à geração de conhecimento (basicamente a mesma coisa). No entanto, é muito menos complexa do que a implementação formal de geração de conhecimento.
 
-import RImage from '@site/i18n/pt/docusaurus-plugin-content-docs/assets/intermediate/recitation.png';
+import RImage from '@site/docs/assets/intermediate/recitation.webp';
 
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={RImage} style={{width: "250px"}} />
