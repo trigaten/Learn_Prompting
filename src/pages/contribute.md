@@ -36,7 +36,7 @@ We are always looking for more content. If you have a story to tell, or a produc
 
 ## 3. Translation
 
-We are looking for help translating the site into other languages. If you are interested, please join the [Discord](https://learnprompting.org/discord) and mention you are interested in the respective language channel. If the channel does not exist, please message @Trigaten. You don't need to ask us to start translating files! Please use our [Crowdin](https://crowdin.com/project/learnprompting/invite?h=8c00bba6b2694973dad8b19d2e7283c51769691) to do translations. Around 7 languages are currently being translated, so you will likely find people to work with! 
+We are looking for help translating the site into other languages. If you are interested, please join the [Discord](https://discord.gg/learn-prompting-1046228027434086460) and mention you are interested in the respective language channel. If the channel does not exist, please message @Trigaten. You don't need to ask us to start translating files! Please use our [Crowdin](https://crowdin.com/project/learnprompting/invite?h=8c00bba6b2694973dad8b19d2e7283c51769691) to do translations. Around 7 languages are currently being translated, so you will likely find people to work with! 
 
 :::note
 When you run the website locally, make sure to follow [Docusaurus instructions](https://docusaurus.io/docs/i18n/tutorial#start-your-site) on running it in your language (e.g. `npm run start -- --locale fr`).

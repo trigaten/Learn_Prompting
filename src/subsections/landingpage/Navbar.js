@@ -53,7 +53,7 @@ function Navbar(props) {
   const rightLinks = [
     {
       name: "Discord",
-      link: "http://discord.gg/learn-prompting",
+      link: "https://discord.gg/learn-prompting-1046228027434086460",
     },
     {
       name: "GitHub",
