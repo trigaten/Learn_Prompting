@@ -53,7 +53,7 @@ Best,
 [Your Position]
 </AIOutput>
 
-The AI easily writes an email that is both humorous and professional. By modifying the *prompt*, we can make it change the style as we see fit. We can even make it copy how we read. We can also make it edit emails that we have already written! With all of these abilities, Gen AI saves us hours in email writing each week. See [this article](@site/docs/basic_applications/writing_emails.md) for more information on writing emails with Gen AI.
+The AI easily writes an email that is both humorous and professional. By modifying the *prompt*, we can make it change the style as we see fit. We can even make it copy how we read. We can also make it edit emails that we have already written! With all of these abilities, Gen AI saves us hours in email writing each week. See [this article](https://learnprompting.org/docs/basic_applications/writing_emails) for more information on writing emails with Gen AI.
 
 ## Ethos and Philosphy
 
