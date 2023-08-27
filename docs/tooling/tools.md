@@ -8,6 +8,18 @@ This section contains a list of non-IDE tools that are useful for prompting.
 
 ## Prompt Development, Testing, and Chaining
 
+### [Promptient](https://promptient.com) 
+> Promptient Platform offers a dedicated space for the engineering and management of prompts, specifically tailored for Large Language Model (LLM) interactions.
+
+> With a focus on nuanced prompt crafting, Promptient addresses the requirements of Large Language Model (LLM) communications.
+
+> Serving the specialized needs of LLMs, Promptient delivers tools and features geared toward comprehensive prompt engineering.
+
+### [Promptient Chrome Extension](https://chrome.google.com/webstore/detail/promptientcom/ofnbhnfbalcfdklamhmmcpahliidimdm)
+> ThePromptient Chrome Extension provides direct and seamless interfacing with ChatGPT(3.5 and 4), enabling users to engage with the AI without leaving their browser.
+
+> With the Promptient Chrome Extension, users can conveniently access ChatGPT within their browsers, bridging the gap between casual browsing and AI engagement.
+
 ### [LangChain](https://github.com/hwchase17/langchain/)
 
 > Large language models (LLMs) are emerging as a transformative technology, enabling developers to build applications that they previously could not. But using these LLMs in isolation is often not enough to create a truly powerful app - the real power comes when you can combine them with other sources of computation or knowledge.
