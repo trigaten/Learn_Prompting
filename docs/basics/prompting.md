@@ -34,7 +34,21 @@ Here is a video that shows you how to get setup with ChatGPT.
 
 Now that we have ChatGPT set up, let's test out some prompts.
 
-#### 1) Summarizing an Article
+#### 1) Color of Grass
+
+We will start with something very simple: can ChatGPT tell us the color of grass?
+
+<AIInput>
+What color is grass?
+</AIInput>
+
+<AIOutput>
+Grass is green.
+</AIOutput>
+
+Indeed it can, now let's try a more useful example.
+
+#### 2) Summarizing an Article
 
 Say you are reading an article about snowfall in Florida. You want to quickly get the main ideas of the article, so you show the AI what you are reading, and ask for a summary[^b]:
 
@@ -54,7 +68,7 @@ Snowfall is extremely rare in Florida, with the exception of the far northern ar
 You will likely see a slightly different output. This will be the case for most prompts in this course. We will learn why later in this module.
 :::
 
-#### 2) Math Problem Solving
+#### 3) Math Problem Solving
 
 ChatGPT can also solve math problems! Let's give it a prompt with a simple problem.
 
