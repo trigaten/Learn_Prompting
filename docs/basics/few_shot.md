@@ -2,7 +2,7 @@
 sidebar_position: 70
 ---
 
-# 🟢 Few-Shot Prompting
+# 🟢 Showing Examples
 
 import FewShot from '@site/docs/assets/basics/few_shot.svg';
 

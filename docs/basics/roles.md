@@ -2,7 +2,7 @@
 sidebar_position: 60
 ---
 
-# 🟢 Role Prompting
+# 🟢 Assigning Roles
 
 import RolePrompt from '@site/docs/assets/basics/role_prompt.svg';
 
