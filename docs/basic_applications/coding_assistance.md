@@ -19,6 +19,7 @@ You can use ChatGPT for debugging, code generation, reformatting, commenting, an
 | Forth       | Tcl            | Groovy              | Vlang                 |
 | Ada         | SQL            | Scala Native        | Erlang                |
 |             | Java           |                     |                       |
+|             | Python         |                     |                       |
 
 ## Code Generation
 
