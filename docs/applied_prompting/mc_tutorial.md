@@ -159,13 +159,9 @@ The model will use the right formula, Bayes.
 
 Which is **correct**!
 
-:::warning
-GPT model doesn't perform arithmetic operations well. You might notice that while the expression written is corrected, the computed number is not.
-
-Try adding the phrase: `Give the expression as answer, not a number` to disable computation.
-
-
-You may be interested in [MRKL](https://learnprompting.org/docs/advanced_applications/mrkl)(@karpas2022mrkl), the paradigm of combining GPT with external tools like calculators, to solve this problem.
-:::
+>:warning:
+>GPT model doesn't perform arithmetic operations well. You might notice that while the expression written is corrected, the computed number is not.
+>Try adding the phrase: `Give the expression as answer, not a number` to disable computation.
+>You may be interested in [MRKL](https://learnprompting.org/docs/advanced_applications/mrkl)(@karpas2022mrkl), the paradigm of combining GPT with external tools like calculators, to solve this problem.
 
 Written by [zeyuzhao](https://github.com/Zeyuzhao).
