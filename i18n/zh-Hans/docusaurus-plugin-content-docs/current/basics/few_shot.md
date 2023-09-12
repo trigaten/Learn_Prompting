@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # 🟢 多范例提示
@@ -9,7 +9,6 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
 <div style={{textAlign: 'center'}}>
   <FewShot style={{width:"800px",height:"300px",verticalAlign:"top"}}/>
 </div>
-
 
 另一个提示策略是*多范例提示（few shot prompting）*, 这种策略将为模型展示一些例子（shots），从而更形象地描述你的需求。
 
@@ -50,11 +49,13 @@ import FewShot from '@site/docs/assets/basics/few_shot.svg';
 单词 `shot` 在该场景下与 `example（范例）` 一致。除了多范例提示（few-shot prompting）之外，还有另外两种不同的类型。它们之间唯一的区别就是你向模型展示了多少范例。
 
 类型:
+
 - 无范例提示（0 shot prompting）: 不展示范例
 - 单范例提示（1 shot prompting）: 只展示 1 条范例
 - 多范例提示（few shot prompting）: 展示 2 条及以上的范例
 
 ### 无范例提示
+
 无范例提示是最基本的提示形式。它仅仅是向模型展示提示信息，没有提供任何示例，并要求其生成回答。因此，你到目前为止看到的所有指令和角色提示都属于无范例提示。无范例提示的另一个例子是：
 
 ```text
@@ -66,7 +67,7 @@ Add 2+2:
 ### 单范例提示
 
 单范例提示是向模型展示一个示例。例如：
-  
+
 ```text
 Add 3+3: 6
 Add 2+2:
@@ -76,7 +77,7 @@ Add 2+2:
 
 ### 多范例提示
 
-多范例提示是向模型展示2个或更多示例。例如:
+多范例提示是向模型展示 2 个或更多示例。例如:
 
 ```text
 Add 3+3: 6
@@ -84,10 +85,10 @@ Add 5+5: 10
 Add 2+2:
 ```
 
-这是我们向模型展示了至少2个完整的示例（“Add 3+3: 6”和“Add 5+5: 10”）。通常，展示给模型的示例越多，输出结果就越好，因此在大多数情况下，多范例提示比另外两种提示更受欢迎。
+这是我们向模型展示了至少 2 个完整的示例（“Add 3+3: 6”和“Add 5+5: 10”）。通常，展示给模型的示例越多，输出结果就越好，因此在大多数情况下，多范例提示比另外两种提示更受欢迎。
 
 ## 结论
 
 多范例提示是让模型生成准确且格式正确的输出的强大技术！
- 
+
 By [gezilinll](https://github.com/gezilinll).
