@@ -49,3 +49,9 @@ ejemplos:
 prompting de CoT:
   term: prompting de CoT
   def: La idea principal de CoT es que al mostrarle al LLM algunos ejemplos de few-shot donde se explica el proceso de razonamiento en los ejemplos, el LLM también mostrará el proceso de razonamiento al responder a la solicitud.
+
+## Chinese definitions
+
+prompt zh-hans:
+  term: prompt
+  def: 提供给生成式 AI 的文本或其他输入
