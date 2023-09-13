@@ -81,7 +81,7 @@ The generated knowledge approach was actually introduced for a completely differ
 ></iframe>
 
 :::note
-This example may not may accurate. We are working to revise it.
+This example may not be accurate. We are working to revise it.
 :::
 
 <br/>
