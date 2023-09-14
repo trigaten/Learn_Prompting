@@ -3,7 +3,7 @@ sidebar_position: 60
 ---
 # 🟢 XML Tagging
 
-XML tagging can be a very robust defense when executed properly (in particular with the XML+escape). It involves surrounding user input by by XML tags (e.g. `<user_input>`). Take this prompt as an example:
+XML tagging can be a very robust defense when executed properly (in particular with the XML+escape). It involves surrounding user input by XML tags (e.g. `<user_input>`). Take this prompt as an example:
 
 ```
 Translate the following user input to Spanish.
