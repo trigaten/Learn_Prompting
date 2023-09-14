@@ -2,20 +2,22 @@
 sidebar_position: 3
 ---
 
-# 🟢 Learn Prompting Embeds
+# 🟢 学习提示嵌入
 
-:::takeaways
+:::takeaways 本文要点
 
-- Set up the Learn Prompting Embed
-- Run ChatGPT prompts in the course website
+- 配置学习提示嵌入（Learn Prompting Embed）
+- 在课程网站上运行 ChatGPT 的提示
 
 :::
 
 The ChatGPT website is useful, but wouldn't it be nice if you could write and test prompts right on this website? With [Learn Prompting Embeds](https://embed.learnprompting.org/), you can! Read on to see how to set this up. We will include these interactive embeds in the most articles.
 
-## Get Set Up
+ChatGPT 网站非常有用，但如果你能在本网站上编写和测试提示，那不是更好吗？通过[学习提示嵌入](https://embed.learnprompting.org/)（Learn Prompting Embeds），你可以实现这一点！继续阅读以了解如何设置。我们将在大多数文章中包含这些交互式嵌入。
 
-Watch the video tutorial here:
+## 准备工作
+
+观看视频教程:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sNUKiwd2DWU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
