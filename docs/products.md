@@ -11,6 +11,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Agent.so](https://www.agent.so/)
 > All-in-one platform that helps you use AI to write content & code, solve problems, have fun, and more! Powered by over 150 uniquely trained models, and ±200 apps being released to the new AI App Store. New members get unlimited chats and 100 Credits App Store for free.
 
+- [Blaze](https://get.blaze.ai/)
+> Produce blog posts, social media content, ad copy, marketing briefs, and full campaigns — all optimized and in your brand voice.
+
 - [ID-Assist™](https://id-assist.co/)
 > An eLearning and classroom training storyboard automation tool, to help Instructional Designers automate creation of Course Outline, Learning Objecives, Assessments, Scenarios, and lot more.
 
