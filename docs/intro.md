@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 import CodeBlock from '@theme/CodeBlock';
 
-# Welcome
+# Prompt Engineering Guide
 
 import Astronaut from '@site/docs/assets/astronaut_welcome.webp';
 
