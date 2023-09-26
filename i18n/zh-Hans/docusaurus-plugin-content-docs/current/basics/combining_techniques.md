@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 locale: zh-Hans
 style: chicago
 ---
@@ -7,7 +7,6 @@ style: chicago
 # 🟢 组合提示
 
 import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg';
-
 
 <div style={{textAlign: 'center'}}>
   <CombinedPrompt style={{width:"500px",height:"300px",verticalAlign:"top"}}/>

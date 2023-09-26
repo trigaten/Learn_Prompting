@@ -15,7 +15,7 @@ import Pitfalls from '@site/docs/assets/basics/pitfalls.svg';
 - Understand the biases and problems that LLMs have
 :::
 
-Language Learning Models (LLMs) are powerful tools that have revolutionized many aspects of technology, from customer service to content creation. However, like any technology, they are not without their flaws. Understanding these pitfalls is crucial for effectively using LLMs and mitigating potential issues. This article will explore some of the common pitfalls of LLMs, including issues with citing sources, bias, hallucinations, math, and prompt hacking.
+Large Language Models (LLMs) are powerful tools that have revolutionized many aspects of technology, from customer service to content creation. However, like any technology, they are not without their flaws. Understanding these pitfalls is crucial for effectively using LLMs and mitigating potential issues. This article will explore some of the common pitfalls of LLMs, including issues with citing sources, bias, hallucinations, math, and prompt hacking.
 
 ## Citing Sources
 
