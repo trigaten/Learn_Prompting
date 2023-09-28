@@ -40,7 +40,7 @@ While some language models have limited context length, there are AI assistants,
 
 ## 6. Code libraries
 
-Python libraries like [Llama Index](https://github.com/jerryjliu/llama_index) and [Langchain](https://github.com/langchain-ai/langchain) can be used to deal with long form content. In particular, GPT Index can "index" the content into smaller parts then perform a vector search to find which part of the content is most relevent, and solely use that. Langchain can perform recursive summaries over chunks of text in which in summarizes one chunk and includes that in the prompt with the next chunk to be summarized.
+Python libraries like [Llama Index](https://github.com/jerryjliu/llama_index) and [Langchain](https://github.com/langchain-ai/langchain) can be used to deal with long form content. In particular, Llama Index can "index" the content into smaller parts then perform a vector search to find which part of the content is most relevent, and solely use that. Langchain can perform recursive summaries over chunks of text in which in summarizes one chunk and includes that in the prompt with the next chunk to be summarized.
 
 ## Conclusion
 
