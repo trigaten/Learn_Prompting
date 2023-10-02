@@ -70,6 +70,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 
 - [Hypotenuse AI](https://www.hypotenuse.ai/)
 > Provide a few keywords as prompts and turn them into full-length articles and marketing content.
+ 
+- [Oscar Stories](https://www.oscarstories.com)
+> Generate personalized bedtime stories for kids using AI.
 
 - [Peppertype](https://www.peppertype.ai/)
 > Virtual Content Assistant.
