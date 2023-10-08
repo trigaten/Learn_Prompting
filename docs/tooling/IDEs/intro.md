@@ -27,7 +27,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [GPT-3 Playground](https://beta.openai.com/docs/quickstart) | ✅ | ❌ | ❌ | Pay per tokens | ✅ | Text | OpenAI|
 | [Dust](https://dust.tt/)                   | ✅ | ✅ | ❌|  | ✅ | Text | OpenAI, Cohere |
 | [Everyprompt](https://www.everyprompt.com) | ✅ | |    ❌| Freemium | ✅ | Text | OpenAI |
-| [Promptmetheus](https://promptmetheus.com) | ✅ | ❌ | ✅ | Free | ✅ | Text | OpenAI |
+| [Promptmetheus](https://promptmetheus.com) | ✅ | ❌ | ✅ | Freemium | ✅ | Text | Anthropic, Cohere, OpenAI, PaLM 2, NLP Cloud, AI21 Labs, Aleph Alpha |
 | [PromptIDE](https://prompt.vizhub.ai)      | ✅ | Code TBD |✅ | None | ✅ | Text | |
 | [PromptSource](https://github.com/bigscience-workshop/promptsource)    | ❌ | ✅ | ✅ | None | ✅ |  Text | |
 | [PromptChainer](https://arxiv.org/pdf/2203.06566.pdf) | ❌ |  | ✅ | None | ✅ |  Text | |
