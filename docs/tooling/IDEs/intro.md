@@ -41,6 +41,7 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Snorkel](https://snorkel.ai/snorkel-flow-platform/foundation-model/) | ✅ | ❌ | ❌|  | ✅ | Text | |
 | [Multi](https://www.multi.tech) |  |  | ❌ |  | Wait list | Text, Image | |
 | [Human Loop](https://humanloop.com) | ✅ |  | ❌ |  | Wait list| Text | |
+| [flowtastic.ai](https://flowtastic.ai/) | ✅ | ❌ | ❌ | B2B SaaS | ✅ | Text, Images, Audio | OpenAI, Stable Diffusion and more |
 | [Spellbook (Scale AI)](https://scale.com/spellbook) | ✅ | ❌ | ❌|  | Wait list | Text | |
 | [Kollaprompt](https://kollaprompt.com) | ✅ | ❌ | ❌| Under Development | Wait list | Text, Image, Audio | OpenAI, Stable Diffusion |
 | [Promptable](https://promptable.ai/projects/default/workspace) | ✅ | ❌ | ❌|  | Wait list | Text | OpenAI|
