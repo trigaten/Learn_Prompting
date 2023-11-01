@@ -73,7 +73,7 @@ function FAQ() {
         Can't find what you are looking for?{" "}
         <span className={"underline"}>
           <a
-            href={"mailto:learnprompting@gmail.com"}
+            href={"mailto:team@learnprompting.org"}
             className="underline"
             style={{ color: "grey" }}
           >

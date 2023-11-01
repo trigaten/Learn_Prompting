@@ -114,7 +114,7 @@ function Hero() {
             </div>
           </div>
 
-          <div className="relative  md:hidden flex mobile_lazy">
+          <div className="relative md:hidden flex mobile_lazy">
             <div
               className={
                 "left-0 top-0 h-full flex flex-row transition-all " +

@@ -69,7 +69,7 @@ function Navbar(props) {
     },
     {
       name: "Contact",
-      link: "mailto:learnprompting@gmail.com",
+      link: "mailto:team@learnprompting.org",
     },
   ];
 

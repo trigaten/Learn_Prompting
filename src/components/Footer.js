@@ -22,7 +22,7 @@ function Footer() {
     },
     {
       name: "Contact",
-      link: "mailto:learnprompting@gmail.com",
+      link: "mailto:team@learnprompting.org",
     },
   ];
 
