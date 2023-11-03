@@ -77,6 +77,14 @@ Documentation can be found [here](https://www.promptflow.org/en/latest/index.htm
 
 > "ThoughtSource is a central, open resource and community centered on data and tools for chain-of-thought reasoning in large language models (Wei 2022). Our long-term goal is to enable trustworthy and robust reasoning in advanced AI systems for driving scientific research and medical practice."
 
+
+### [ActionSchema](https://actionschema.com/)
+
+> With [ActionSchema](https://actionschema.com) you can build prompt-chains in spreadsheets. ActionSchema aggregates Generative AI models across all modalities and combines it with SERP and web-scraping.
+
+> It differs from most prompt IDE's because its main interface is a spreadsheet instead, and with that it simplifies working with data, because you can immediately see how altering your prompt-chain affects your dataset.
+
+
 ## Misc.
 
 ### [GPT Index](https://gpt-index.readthedocs.io/en/latest/)(@Liu_GPT_Index_2022)
