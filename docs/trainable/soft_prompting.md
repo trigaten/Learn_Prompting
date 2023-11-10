@@ -45,4 +45,4 @@ longer correspond to actual embeddings from the vocabulary.
 # Results 
 
 Prompt tuning performs better with larger models. Larger models also require less
-soft prompt tokens. Regardless, more than 20 tokens does not yield significant performance gains.
+soft prompt tokens. Regardless, more than 20K tokens does not yield significant performance gains.
