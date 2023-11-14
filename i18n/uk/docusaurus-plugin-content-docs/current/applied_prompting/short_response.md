@@ -26,7 +26,7 @@ import Auto from '@site/docs/assets/basic_applications/short_content_auto.webp';
     <br/><br/>Які найгостріші екологічні проблеми, з якими сьогодні стикається наша планета, і які кроки можуть зробити люди, щоб допомогти розв'язати ці проблеми?
 </pre>
 
-<iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="приклад"></iframe>
+<iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="приклад"></iframe>
 
 Другий запит генерує довші результати з кращою структурою в середньому. Використання терміну "есе" в запиті було навмисним, оскільки GPT-3 може зрозуміти визначення есе, а отже ймовірніше генерувати послідовні, структуровані відповіді.
 
