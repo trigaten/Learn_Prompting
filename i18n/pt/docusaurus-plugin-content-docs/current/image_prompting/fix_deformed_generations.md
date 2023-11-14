@@ -13,15 +13,15 @@ import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 
 Usando o Stable Diffusion v1.5 e o seguinte prompt, geramos uma imagem legal do Brad Pitt, com exceção das mãos, é claro!
 
-`retrato médio do Brad Pitt, acenando com as mãos, detalhado, filme, iluminação de estúdio, lente de 90mm, por Martin Schoeller:6`
+<AIInput>retrato médio do Brad Pitt, acenando com as mãos, detalhado, filme, iluminação de estúdio, lente de 90mm, por Martin Schoeller:6</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_pitt} style={{width: "250px"}}/>
+  <img src={bad_pitt} className="img-docs"  style={{width: "250px"}}/>
 </div>
 
 Usando um prompt robusto e negativo, podemos gerar mãos muito mais convincentes.
 
-``
+<AIInput>retrato médio do Brad Pitt acenando com as mãos, detalhado, filme, iluminação de estúdio, lente de 90mm, por Martin Schoeller:6 | desfigurado, membros deformados, borrado, granulado, quebrado, olho de pombo, morto-vivo, photoshopped, sobreexposto, subexposto, baixa resolução, má anatomia, mãos ruins, dedos a mais, dedos a menos, dedo ruim, orelha ruim, olho ruim, rosto ruim, cortado: -5</AIInput>
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={good_pitt} style={{width: "250px"}} />
 </div>
