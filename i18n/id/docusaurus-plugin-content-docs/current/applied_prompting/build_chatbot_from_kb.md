@@ -49,7 +49,7 @@ Jadi, pipeline chatbot bisa terdiri dari dua langkah:
 1. Pertama, kita perlu memilih niat yang tepat untuk pertanyaan pengguna, yaitu kita perlu mengambil dokumen yang benar dari basis pengetahuan kami.
 2. Kemudian, setelah kita memiliki dokumen yang tepat, kita dapat memanfaatkan GPT-3 untuk menghasilkan jawaban yang sesuai untuk pengguna. Dalam melakukan hal ini, kita perlu merumuskan sebuah permintaan yang baik.
 
-Langkah pertama secara fundamental diselesaikan oleh [pencarian semantis](https://en.wikipedia.org/wiki/Semantic_search). Kita dapat menggunakan model yang sudah dilatih dari library [sentence-transformers](https://www.sbert.net/examples/applications/semantic-search/README.html) dan dengan mudah menetapkan skor untuk setiap dokumen. Dokumen dengan skor tertinggi adalah yang akan digunakan untuk menghasilkan jawaban chatbot.
+Langkah pertama secara fundamental diselesaikan oleh [pencarian semantis](https://en.wikipedia.org/wiki/Semantic_search). Kita dapat menggunakan model yang sudah dilatih dari library [sentence-transformers</code>](https://www.sbert.net/examples/applications/semantic-search/README.html) dan dengan mudah menetapkan skor untuk setiap dokumen. Dokumen dengan skor tertinggi adalah yang akan digunakan untuk menghasilkan jawaban chatbot.
 
 <div style={{textAlign: 'left'}}>
   <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
