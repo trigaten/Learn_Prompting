@@ -176,9 +176,9 @@ async function createConfig() {
           content: "website",
         },
         {
-          to: 'consulting', 
-          label:"Consulting", 
-          position:"left",          
+          to: 'consulting',
+          label:"Consulting",
+          position:"left",
         },
         {
           name: "twitter:card",
@@ -223,6 +223,14 @@ async function createConfig() {
             position: "right",
           },
         ],
+      },
+      announcementBar: {
+        id: 'announcement',
+        content:
+          'Now available: intro to ChatGPT... TODO: replace with custom styled HTML',
+        backgroundColor: '#53ffd4',
+        textColor: '#000',
+        isCloseable: true,
       },
       footer: {
         style: "dark",
