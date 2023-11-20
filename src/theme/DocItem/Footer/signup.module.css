@@ -1,0 +1,35 @@
+.main {
+	margin-bottom: 40px;
+}
+
+.cols {
+	display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .cols {
+   flex-direction: column;
+	gap: 20px;
+  }
+}
+
+
+.links {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.links > div {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.email {
+	width: 100%;
+}
+

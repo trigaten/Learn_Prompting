@@ -9,3 +9,17 @@
     text-align: right;
   }
 }
+
+.courses {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .courses {
+   flex-direction: column;
+  }
+}

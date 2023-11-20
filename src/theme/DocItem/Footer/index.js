@@ -6,6 +6,33 @@ import LastUpdated from "@theme/LastUpdated";
 import EditThisPage from "@theme/EditThisPage";
 import TagsListInline from "@theme/TagsListInline";
 import styles from "./styles.module.css";
+import Course from './course';
+import SignUp from './signup';
+
+const courses = [{
+  name: 'Intro to ChatGPT',
+  desc: "Learn about ChatGPT, one of the most advanced AI systems available today, and dive into the world of Generative AI.",
+  special: true,
+  isPro: false,
+  percent: 60,
+  count: 12,
+  url: 'https://learn-prompting.webflow.io/course-chat-gpt-for-everyone',
+  src: "https://media.discordapp.net/attachments/1174416571498770492/1175581256768045137/shorter.png?ex=656bc05c&is=65594b5c&hm=25bcce0549bba96c056ad956bbbe4809bf6719269a88af6a5f6fc07e664690ef&=&width=811&height=521",
+  srcset: "https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-500.png 500w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-800.png 800w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-1080.png 1080w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-1600.png 1600w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-2000.png 2000w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course.png 2562w",
+},
+{
+  name: 'Generative AI for artists',
+  desc: 'Learn about ChatGPT, one of the most advanced AI systems available today, and dive into the world of Generative AI.',
+  isPro: true,
+  percent: 100,
+  count: 12,
+  url: 'https://learn-prompting.webflow.io/course-chat-gpt-for-everyone',
+  src: "https://assets-global.website-files.com/653e598cdeea6f44f70baa31/6548dfdd8622f3f86cddbd54_ab.png",
+  srcset: "https://assets-global.website-files.com/653e598cdeea6f44f70baa31/6548dfdd8622f3f86cddbd54_ab-p-500.png 500w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/6548dfdd8622f3f86cddbd54_ab.png 788w",
+},
+]
+
+
 
 function TagsRow(props) {
   return (
@@ -45,8 +72,12 @@ function EditMetaRow({
   );
 }
 
+const securityWords = ['hack', 'security', 'inject', 'safety']
+
 export default function DocItemFooter() {
-  const { metadata } = useDoc();
+  const { metadata, ...rest } = useDoc();
+  console.log( metadata.description, rest.toc.map(t => t.value))
+  const isSecurity = [...rest.toc.map(t => t?.value || ''), metadata.description].some(t => securityWords.some(w => t.toLowerCase().includes(w)))
   const {
     editUrl,
     lastUpdatedAt,
@@ -64,6 +95,15 @@ export default function DocItemFooter() {
     <footer
       className={clsx(ThemeClassNames.docs.docFooter, "docusaurus-mt-lg")}
     >
+
+      <h2 style={{marginTop: 60, marginBottom: 32, fontSize: 32}}>
+       Want to learn more?</h2>
+      <div className={styles.courses}>
+        {courses.filter(c => c).slice(0, 2).map(c => <Course key={c.name} src={c.src} srcset={c.srcset} {...c}/>)}
+      </div>
+
+      <br />
+      <SignUp/>
       {canDisplayTagsRow && <TagsRow tags={tags} />}
       {canDisplayEditMetaRow && (
         <EditMetaRow
@@ -73,22 +113,7 @@ export default function DocItemFooter() {
           formattedLastUpdatedAt={formattedLastUpdatedAt}
         />
       )}
-      <br />
-      <div style={{ textAlign: "center" }}>
-        <p>
-          <strong>Get the Latest Prompts Straight to Your Inbox</strong>
-        </p>
-        <iframe
-          src="https://embeds.beehiiv.com/ae49cad6-1b3a-4ec2-91fa-73b7f3e0188a?slim=true"
-          data-test-id="beehiiv-embed"
-          height="52"
-          width="100%"
-          frameBorder="0"
-          scrolling="no"
-          style={{ margin: 0, borderRadius: 0, backgroundColor: "transparent" }}
-          className="rounded-l-md bg-white text-dark/500 text-sm font-medium tracking-tight ring-0 focus:outline-none w-[250px] md:w-[450px] focus:ring-0"
-        />
-      </div>
+
     </footer>
   );
 }

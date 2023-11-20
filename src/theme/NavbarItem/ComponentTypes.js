@@ -10,4 +10,5 @@ function MyAwesomeNavbarItemForDocs(props) {
 export default {
   ...ComponentTypes,
   'custom-myAwesomeNavbarItem': MyAwesomeNavbarItemForDocs,
+  
 };
