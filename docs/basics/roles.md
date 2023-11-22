@@ -181,4 +181,4 @@ Try it here:
 
 Role prompting is a powerful strategy for shaping the output of Generative AI models. It allows us to control the style, tone, and depth of the generated text, making it more suitable for specific contexts or audiences. Whether you're drafting an email, writing a review, or solving a math problem, role prompting can significantly enhance the quality and accuracy of the results. As we continue to explore the capabilities of AI, role prompting will remain a key prompt engineering strategy.
 
-[^a]: This appears to be less effective with newer models. Read [Revisiting Roles](@site/docs/intermediate/revisiting_roles.md) for more information.
+[^a]: This appears to be less effective with newer models. Read [Revisiting Roles](https://learnprompting.org/docs/intermediate/revisiting_roles) for more information.
