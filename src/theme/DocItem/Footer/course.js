@@ -8,6 +8,7 @@ export default function Course({ src, srcset, name, desc, isPro, special, url })
           <div>
             <div>
               <img
+							className={classes.img}
                 src={src}
                 loading="lazy"
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, (max-width: 991px) 288.4185485839844px, 29vw"
