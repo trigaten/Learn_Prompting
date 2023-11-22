@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './course.module.css'
 
-export default function Course({ src, srcset, name, desc, isPro, special, url }) {
+export default function Course({ src, srcset, name, desc, isPro, special, url, percent, count }) {
   return (
       <a className={classes.card} href={url}>
         <div>
@@ -30,7 +30,7 @@ export default function Course({ src, srcset, name, desc, isPro, special, url })
              <div style={{height: 50}}>
 						{ special ?<OpenAIBadge/>: null}
 						 </div>
-            <Lessons percent={60} count={12} isPro={isPro}/>
+            <Lessons percent={percent} count={count} isPro={false} />
           </div>
         </div>
         <div></div>
@@ -48,26 +48,25 @@ export function OpenAIBadge(){
 }
 
 function PriceBadge({isPro}){
-	const color = isPro ? '#ff465c' : '#00ffbf'
+	const color = isPro ? '#4527fd' : '#00ffbf'
 	return <div style={{
-		fontWeight: 800,
+		fontWeight: 600,
 		fontSize: '0.95rem',
-		color: color,
-		marginBottom: 8
+		marginBottom: 8,
 	}}>
 					<span style={{
 						padding: '4px 8px',
 						background: color,
-						color: 'black',
+						color: isPro ? 'white' :'black',
 						borderRadius: '50px',
 						marginRight: 2
-					}}>{isPro ? 'Pro' : 'Free'}</span> Course
+					}}>{isPro ? 'Paid' : 'Free'}</span> Course
 				</div>
 }
 
 
 function Lessons({isPro, percent, count}){
-	const color = isPro ? '#ff465c' : '#00ffbf'
+	const color = '#ffc081'
 	return <div style={{display: 'flex', gap: 12, marginTop: '20px'}}>
 					<div style={{color}}>{isPro ? 'Advanced' : 'Beginner'}</div>
 					<div style={{

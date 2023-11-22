@@ -10,25 +10,25 @@ import Course from './course';
 import SignUp from './signup';
 
 const courses = [{
-  name: 'Intro to ChatGPT',
+  name: 'ChatGPT for Everyone',
   desc: "Learn about ChatGPT, one of the most advanced AI systems available today, and dive into the world of Generative AI.",
   special: true,
   isPro: false,
-  percent: 60,
-  count: 12,
+  percent: 30,
+  count: 15,
   url: 'https://learn-prompting.webflow.io/course-chat-gpt-for-everyone',
-  src: "https://media.discordapp.net/attachments/1174416571498770492/1175581256768045137/shorter.png?ex=656bc05c&is=65594b5c&hm=25bcce0549bba96c056ad956bbbe4809bf6719269a88af6a5f6fc07e664690ef&=&width=811&height=521",
-  srcset: "https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-500.png 500w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-800.png 800w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-1080.png 1080w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-1600.png 1600w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course-p-2000.png 2000w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/654ddcffb248d1b4c1126638_course.png 2562w",
+  src: "https://assets-global.website-files.com/655b6730173650f3f66a0f98/655b6c0666126b34d261c42f_ChatGPT%20for%20Everyone%20-%20Course%20Page.png",
+  srcset: "",
 },
 {
-  name: 'Generative AI for artists',
-  desc: 'Learn about ChatGPT, one of the most advanced AI systems available today, and dive into the world of Generative AI.',
+  name: 'Intro to Prompt Engineering',
+  desc: 'Learn about the basics of Prompt Engineering, and how to effectively communicate with AI.',
   isPro: true,
-  percent: 100,
+  percent: 30,
   count: 12,
-  url: 'https://learn-prompting.webflow.io/course-chat-gpt-for-everyone',
-  src: "https://assets-global.website-files.com/653e598cdeea6f44f70baa31/6548dfdd8622f3f86cddbd54_ab.png",
-  srcset: "https://assets-global.website-files.com/653e598cdeea6f44f70baa31/6548dfdd8622f3f86cddbd54_ab-p-500.png 500w, https://assets-global.website-files.com/653e598cdeea6f44f70baa31/6548dfdd8622f3f86cddbd54_ab.png 788w",
+  url: 'https://learn-prompting.webflow.io/courses/intro-to-prompt-engineering',
+  src: "https://assets-global.website-files.com/655b6730173650f3f66a0f98/655e35962450a3b5e5be1276_A%20blue%20and%20pink%20abstract%20background.jpg",
+  srcset: "",
 },
 ]
 
