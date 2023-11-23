@@ -62,8 +62,8 @@ function Hero() {
           levels!
         </div>
         <div className="flex items-center justify-center pt-6">
-          {/* <a href="https://learnprompting.org/docs/intro"> */}
-          <a href="https://learn-prompting.webflow.io">
+          <a href="https://learnprompting.org/docs/intro">
+          {/* <a href="https://learn-prompting.webflow.io"> */}
             <Button
               onClick={() =>
                 React.useEffect(() => {
