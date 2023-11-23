@@ -70,8 +70,8 @@ function Hero() {
                   window.location.replace("/docs/intro");
                 }, [])
               }
-              // text={"Start Learning"}
-              text={"See our Latest Offerings"}
+              text={"Start Learning"}
+              // text={"See our Latest Offerings"}
               icon={
                 <RxArrowTopRight
                   className="inline-block text-white"
