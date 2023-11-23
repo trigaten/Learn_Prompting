@@ -234,7 +234,7 @@ async function createConfig() {
       announcementBar: {
         id: "announcement",
         content:
-          'Now available: <a href="https://learn-prompting.webflow.io/courses/chatgpt-for-everyone">Intro to ChatGPT</a>',
+          'Now available: <a href="https://learn-prompting.webflow.io/courses/intro-to-prompt-engineering">Intro to Prompt Engineering</a>',
         backgroundColor: "#53ffd4",
         textColor: "#000",
         isCloseable: true,
