@@ -32,12 +32,13 @@ async function createConfig() {
         "ar",
         "de",
         "uk",
-        "id"
+        "id",
       ],
     },
     scripts: [
       {
-        src: 'https://tag.clearbitscripts.com/v1/pk_5621ff511ea83a6ec015bee0a0b5dd79/tags.js',
+        src:
+          "https://tag.clearbitscripts.com/v1/pk_5621ff511ea83a6ec015bee0a0b5dd79/tags.js",
         async: true,
       },
     ],
@@ -51,12 +52,12 @@ async function createConfig() {
               from: "/docs/basics/standard_prompt",
             },
             {
-              to: '/docs/tooling/IDEs/intro',
-              from: '/docs/IDEs/intro',
+              to: "/docs/tooling/IDEs/intro",
+              from: "/docs/IDEs/intro",
             },
             {
-              to: '/our_services',
-              from: '/consulting',
+              to: "/our_services",
+              from: "/consulting",
             },
           ],
         },
@@ -71,13 +72,11 @@ async function createConfig() {
           },
         };
       },
-      ["posthog-docusaurus",
-        {
-          apiKey: process.env.POSTHOG_API_KEY || "DEV",
-          appUrl: "https://app.posthog.com", // optional
-          enableInDevelopment: false, // optional
-        },
-      ]
+      ["posthog-docusaurus", {
+        apiKey: process.env.POSTHOG_API_KEY || "DEV",
+        appUrl: "https://app.posthog.com", // optional
+        enableInDevelopment: false, // optional
+      }],
     ],
 
     presets: [
@@ -92,8 +91,15 @@ async function createConfig() {
           },
           docs: {
             admonitions: {
-              tag: ':::',
-              keywords: ['note', 'tip', 'info', 'caution', 'danger', 'takeaways'],
+              tag: ":::",
+              keywords: [
+                "note",
+                "tip",
+                "info",
+                "caution",
+                "danger",
+                "takeaways",
+              ],
             },
             sidebarPath: require.resolve("./sidebars.js"),
             editUrl: "https://github.com/trigaten/promptgineering/tree/v1.2.3",
@@ -109,7 +115,7 @@ async function createConfig() {
                 { yamlFile: "glossary.yml" },
               ],
             ],
-            rehypePlugins: [[katex, { strict: false }]]
+            rehypePlugins: [[katex, { strict: false }]],
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
@@ -138,7 +144,8 @@ async function createConfig() {
         async: true,
       },
       {
-        href: "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+        href:
+          "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
         async: true,
       },
     ],
@@ -176,9 +183,9 @@ async function createConfig() {
           content: "website",
         },
         {
-          to: 'consulting', 
-          label:"Consulting", 
-          position:"left",          
+          to: "consulting",
+          label: "Consulting",
+          position: "left",
         },
         {
           name: "twitter:card",
@@ -223,6 +230,14 @@ async function createConfig() {
             position: "right",
           },
         ],
+      },
+      announcementBar: {
+        id: "announcement",
+        content:
+          'Now available: <a href="https://learn-prompting.webflow.io/courses/intro-to-prompt-engineering">Intro to Prompt Engineering</a>',
+        backgroundColor: "#53ffd4",
+        textColor: "#000",
+        isCloseable: true,
       },
       footer: {
         style: "dark",
