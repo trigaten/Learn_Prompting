@@ -27,9 +27,9 @@ export default function Course({ src, srcset, name, desc, isPro, special, url, p
             <p>
               {desc}
             </p>
-             <div style={{height: 50}}>
+             {/* <div style={{height: 50}}>
 						{ special ?<OpenAIBadge/>: null}
-						 </div>
+						 </div> */}
             <Lessons percent={percent} count={count} isPro={false} />
           </div>
         </div>
@@ -44,7 +44,7 @@ export function OpenAISVG(){
 }
 
 export function OpenAIBadge(){
-	return <div className={classes.badge}><b style={{color: 'black'}}>Created in partnership with</b><OpenAISVG/></div>
+	return <div className={classes.badge}><b style={{color: 'black', "height":"30px"}}>In Partnership With</b><OpenAISVG/></div>
 }
 
 function PriceBadge({isPro}){

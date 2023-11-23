@@ -6,10 +6,10 @@
 	display: flex;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1439px) {
   .cols {
    flex-direction: column-reverse;
-	gap: 60px;
+	gap: 10px;
   }
 }
 

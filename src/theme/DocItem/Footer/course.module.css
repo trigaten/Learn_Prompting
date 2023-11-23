@@ -25,6 +25,7 @@
 
 .card_content {
 	padding: 36px;
+	max-height: 300px;
 }
 
 

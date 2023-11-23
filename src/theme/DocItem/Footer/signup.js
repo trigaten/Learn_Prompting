@@ -11,7 +11,7 @@ export default function SignUp() {
           <div>
             <FaBusinessTime />
 						<span>
-						Want access to our Enterprise GenAI Training?
+						Need Enterprise GenAI Training?
             <a href='https://learn-prompting.webflow.io/contact-sales'> Contact Sales</a>
 						</span>
 
@@ -23,8 +23,8 @@ export default function SignUp() {
           </div>
           <div>
             <FaCertificate />
-           <span>Get Prompt Engineering Certified.
-            <a href='https://learn-prompting.webflow.io'> Take the Certification Exam</a></span>
+           <span>Take the Prompt Engineering
+            <a href='https://learn-prompting.webflow.io'> Certification Exam</a></span>
           </div>
           <div>
             <FaQuestionCircle /> Questions?<a href='https://learn-prompting.webflow.io/contact-sales'>Contact Sales</a>
