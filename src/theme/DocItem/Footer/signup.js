@@ -18,7 +18,7 @@ export default function SignUp() {
           </div>
           <div>
             <FaList />
-            Check our our <a href='https://learn-prompting.webflow.io/courses'> GenAI Course Catalog</a>
+            Check out our <a href='https://learn-prompting.webflow.io/courses'> Generative AI Course Catalog</a>
 						<span></span>
           </div>
           <div>
