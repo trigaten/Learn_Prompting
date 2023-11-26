@@ -140,7 +140,7 @@ import Pres from '@site/docs/assets/basics/openai_presence_penalty.webp';
 
 <div className="flex flex-col sm:flex-row justify-between">
   <div>
-The presence penalty is similar to the frequency penalty, but flatly penalizes tokens based on if they have ocurred or not, instead of proportionally.
+The presence penalty is similar to the frequency penalty, but flatly penalizes tokens based on if they have occurred or not, instead of proportionally.
   </div>
   <div className="mt-4 sm:mt-0 sm:ml-auto">
     <img src={Pres} className="img-docs w-20 sm:w-auto" />
