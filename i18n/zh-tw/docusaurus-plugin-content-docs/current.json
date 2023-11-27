@@ -1,0 +1,118 @@
+{
+  "sidebar.tutorialSidebar.category.😃 Basics": {
+    "message": "😃 基礎",
+    "description": "The label for category 😃 Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.💼 Basic Applications": {
+    "message": "💼 基礎應用",
+    "description": "The label for category 💼 Basic Applications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.😃 Basics.link.generated-index.description": {
+    "message": "本章介紹了生成式 AI、提示、提示工程以及 Chatbots 等基礎知識。",
+    "description": "The generated-index page description for category 😃 Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate": {
+    "message": "🧙‍♂️ 進階",
+    "description": "The label for category 🧙‍♂️ Intermediate in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate.link.generated-index.description": {
+    "message": "提示工程的簡介和簡單技巧。",
+    "description": "The generated-index page description for category 🧙‍♂️ Intermediate in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting": {
+    "message": "🧪 提示的應用",
+    "description": "The label for category 🧪 Applied Prompting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting.link.generated-index.description": {
+    "message": "由社群成員編寫的有關提示工程的攻略。",
+    "description": "The generated-index page description for category 🧪 Applied Prompting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications": {
+    "message": "🚀 進階應用",
+    "description": "The label for category 🚀 Advanced Applications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications.link.generated-index.description": {
+    "message": "一些非常強大但更進階的 prompt 工程應用。",
+    "description": "The generated-index page description for category 🚀 Advanced Applications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability": {
+    "message": "⚖️ 可靠性",
+    "description": "The label for category ⚖️ Reliability in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability.link.generated-index.description": {
+    "message": "如何讓大語言模型更可靠",
+    "description": "The generated-index page description for category ⚖️ Reliability in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting": {
+    "message": "🖼️ 圖像提示詞",
+    "description": "The label for category 🖼️ Image Prompting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting.link.generated-index.description": {
+    "message": "從文字到圖像的提示工程，例如 DALLE 和 Stable Diffusion!",
+    "description": "The generated-index page description for category 🖼️ Image Prompting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking": {
+    "message": "🔓 提示駭客攻擊",
+    "description": "The label for category 🔓 Prompt Hacking in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking.link.generated-index.description": {
+    "message": "針對提示工程的破解技巧",
+    "description": "The generated-index page description for category 🔓 Prompt Hacking in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling": {
+    "message": "🔨 工具",
+    "description": "The label for category 🔨 Tooling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling.link.generated-index.description": {
+    "message": "提示工程 IDE",
+    "description": "The generated-index page description for category 🔨 Tooling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs": {
+    "message": "提示工程 IDE",
+    "description": "The label for category Prompt Engineering IDEs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs.link.generated-index.description": {
+    "message": "提示工程 IDE",
+    "description": "The generated-index page description for category Prompt Engineering IDEs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning": {
+    "message": "💪 提示微調",
+    "description": "The label for category 💪 Prompt Tuning in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning.link.generated-index.description": {
+    "message": "使用梯度對提示工程進行微調",
+    "description": "The generated-index page description for category 💪 Prompt Tuning in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous": {
+    "message": "🎲 雜項",
+    "description": "The label for category 🎲 Miscellaneous in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous.link.generated-index.description": {
+    "message": "雜項",
+    "description": "The generated-index page description for category 🎲 Miscellaneous in sidebar tutorialSidebar"
+  },
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.💼 Basic Applications.link.generated-index.description": {
+    "message": " ",
+    "description": "The generated-index page description for category 💼 Basic Applications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🟢 Defensive Measures": {
+    "message": "🟢 防禦措施",
+    "description": "The label for category 🟢 Defensive Measures in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🟢 Defensive Measures.link.generated-index.description": {
+    "message": "針對提示工程的破解技巧",
+    "description": "The generated-index page description for category 🟢 Defensive Measures in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🟢 Offensive Measures": {
+    "message": "🟢 攻擊措施",
+    "description": "The label for category 🟢 Offensive Measures in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.🟢 Offensive Measures.link.generated-index.description": {
+    "message": "針對提示工程的破解技巧",
+    "description": "The generated-index page description for category 🟢 Offensive Measures in sidebar tutorialSidebar"
+  }
+}
