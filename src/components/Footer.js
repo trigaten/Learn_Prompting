@@ -28,7 +28,7 @@ function Footer() {
 
   return (
     <ClassicPadding className="bg-gray-100 py-12 sm:py-16 border-t-[gray/200] border flex flex-col sm:flex-row justify-between font-vietnam tracking-tight text-default">
-      <div className="hidden sm:flex">© 2023 Learn Prompting</div>
+      <div className="hidden sm:flex">© 2023 Learn Prompting | <a href="http://learnprompting.org/privacy_policy">Privacy Policy</a> | <a href="http://learnprompting.org/terms_of_service">Terms of Use</a> </div>
       <div className="flex gap-4">
         {rightLinks.map((link, idx) => (
           <div
@@ -46,7 +46,7 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className="flex sm:hidden mt-4 sm:mt-0">© 2023 Learn Prompting</div>
+      <div className="flex sm:hidden mt-4 sm:mt-0">© 2023 Learn Prompting | <a href="http://learnprompting.org/privacy_policy">Privacy Policy</a> | <a href="http://learnprompting.org/terms_of_service">Terms of Use</a></div>
     </ClassicPadding>
   );
 }
