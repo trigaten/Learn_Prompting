@@ -46,7 +46,7 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className="flex sm:hidden mt-4 sm:mt-0">© 2023 Learn Prompting | <a href="http://learnprompting.org/privacy_policy">Privacy Policy</a> | <a href="http://learnprompting.org/terms_of_service">Terms of Use</a></div>
+      <div className="flex sm:hidden mt-4 sm:mt-0">© 2023 Learn Prompting | <a href="http://learnprompting.org/privacy_policy">Privacy Policy</a> | <a href="http://learnprompting.org/terms_of_use">Terms of Use</a></div>
     </ClassicPadding>
   );
 }
