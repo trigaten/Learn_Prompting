@@ -30,7 +30,7 @@ export default function Course({ src, srcset, name, desc, isPro, special, url, p
              {/* <div style={{height: 50}}>
 						{ special ?<OpenAIBadge/>: null}
 						 </div> */}
-            <Lessons percent={percent} count={count} isPro={false} />
+            <Lessons percent={percent} count={count} isPro={percent > 50} />
           </div>
         </div>
         <div></div>
@@ -66,7 +66,7 @@ function PriceBadge({isPro}){
 
 
 function Lessons({isPro, percent, count}){
-	const color = '#ffc081'
+	const color = percent > 60 ? '#ff465c': '#ffc081'
 	return <div style={{display: 'flex', gap: 12, marginTop: '20px'}}>
 					<div style={{color}}>{isPro ? 'Advanced' : 'Beginner'}</div>
 					<div style={{

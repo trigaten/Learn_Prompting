@@ -9,17 +9,7 @@ import styles from "./styles.module.css";
 import Course from './course';
 import SignUp from './signup';
 
-const courses = [{
-  name: 'ChatGPT for Everyone',
-  desc: "Learn about ChatGPT, one of the most advanced AI systems available today, and dive into the world of Generative AI.",
-  special: true,
-  isPro: false,
-  percent: 30,
-  count: 15,
-  url: 'https://learn-prompting.webflow.io/course-chat-gpt-for-everyone',
-  src: "https://assets-global.website-files.com/655b6730173650f3f66a0f98/655b6c0666126b34d261c42f_ChatGPT%20for%20Everyone%20-%20Course%20Page.png",
-  srcset: "",
-},
+const courses = [
 {
   name: 'Intro to Prompt Engineering',
   desc: 'Learn about the basics of Prompt Engineering, and how to effectively communicate with AI.',
@@ -28,6 +18,17 @@ const courses = [{
   count: 12,
   url: 'https://learn-prompting.webflow.io/courses/intro-to-prompt-engineering',
   src: "https://assets-global.website-files.com/655b6730173650f3f66a0f98/655e35962450a3b5e5be1276_A%20blue%20and%20pink%20abstract%20background.jpg",
+  srcset: "",
+},
+{
+  name: 'Advanced Prompt Engineering',
+  desc: "Learn how to craft Complex and Efficient Prompts for Sophisticated AI Applications.",
+  special: true,
+  isPro: true,
+  percent: 100,
+  count: 14,
+  url: 'https://learn-prompting.webflow.io/courses/advanced-prompt-engineering',
+  src: "https://assets-global.website-files.com/655b6730173650f3f66a0f98/655d3c311a302329f920daa4_Abstract%20Blue%20Pink%20Wavy%20(2)..jpg",
   srcset: "",
 },
 ]
@@ -100,7 +101,7 @@ export default function DocItemFooter() {
        Want to learn more?</h2>
       <div className={styles.courses}>
         {/* for oai */}
-        {courses.filter(c => c).slice(1, 2).map(c => <Course key={c.name} src={c.src} srcset={c.srcset} {...c}/>)}
+        {courses.filter(c => c).slice(0, 2).map(c => <Course key={c.name} src={c.src} srcset={c.srcset} {...c}/>)}
       </div>
 
       <br />
