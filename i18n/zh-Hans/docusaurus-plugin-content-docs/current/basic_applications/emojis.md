@@ -80,7 +80,7 @@ Here are some relevant emojis that you can use to convey the message and tone of
 // highlight-end
 ```
 
-## 第三局
+## 第三句
 
 ```text
 Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
