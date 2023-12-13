@@ -113,6 +113,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Hey - notionai](http://hey.technonia.com/notionai/)
 > NotionAI-like writing tool that generates suitable content for your selected template (blog post, pros and cons, etc)
 
+- [PaletteBrain](https://palettebrain.com)
+> Access the capabilities of ChatGPT on Mac with a customized shortcut, and simplify your content writting process.
+
 ## Automatically Build a Tool
 
 - [Toolbot](https://toolbot.ai)
