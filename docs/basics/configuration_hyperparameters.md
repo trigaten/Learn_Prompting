@@ -97,12 +97,23 @@ import Max from '@site/docs/assets/basics/openai_maximum_length.webp';
 
 <div className="flex flex-col sm:flex-row justify-between">
   <div>
-The maximum length is the total # of tokens the AI is allowed to generate. This setting is useful since it allows users to manage the length of the model's response, preventing overly long or irrelevant responses. It also helps control cost, as the length is shared between the input in the Playground box and the generated response.
+The maximum length is the total # of tokens the AI is allowed to generate. This setting is useful since it allows users to manage the length of the model's response, preventing overly long or irrelevant responses. The length is shared between the <code>USER</code> input in the Playground box and the <code>ASSISTANT</code> generated response. Notice how with a limit of 256 tokens, our PirateGPT from earlier is forced to cut its story short mid-sentence. 
   </div>
   <div className="mt-4 sm:mt-0 sm:ml-auto">
     <img src={Max} className="img-docs w-20 sm:w-auto" />
   </div>
 </div>
+
+import max_length_example from '@site/docs/assets/basics/openai_maximum_length_example.webp';
+
+<br/>
+<div style={{textAlign: 'center'}}>
+    <img src={max_length_example} className="img-docs" style={{width: "80%"}}/>
+</div>
+
+:::note
+This also helps control cost if you're paying for use of the model through the API rather than using the Playground.
+:::
 
 ## Other LLM Settings
 
@@ -114,11 +125,18 @@ import Stop from '@site/docs/assets/basics/openai_stop_sequences.webp';
 
 <div className="flex flex-col sm:flex-row justify-between">
   <div>
-Stop sequences tell the model when to cease output generation, which allows you to control content length and structure. If you are prompting the AI to write an email, setting "Best regards," or "Sincerely," as the stop sequence ensures the model stops after the closing salutation, which keeps the email short and to the point.
+Stop sequences tell the model when to cease output generation, which allows you to control content length and structure. If you are prompting the AI to write an email, setting "Best regards," or "Sincerely," as the stop sequence ensures the model stops before the closing salutation, which keeps the email short and to the point. Stop sequences are useful for output that you expect to come out in a structured format such as an email, a numbered list, or dialogue.
   </div>
   <div className="mt-4 sm:mt-0 sm:ml-auto">
     <img src={Stop} className="img-docs w-20 sm:w-auto" />
   </div>
+</div>
+
+import stop_sequences_example from '@site/docs/assets/basics/openai_stop_sequences_example.webp';
+
+<br/>
+<div style={{textAlign: 'center'}}>
+    <img src={stop_sequences_example} className="img-docs" style={{width: "80%"}}/>
 </div>
 
 ### Frequency Penalty
@@ -161,7 +179,7 @@ In conclusion, mastering settings like temperature, top p, maximum length and ot
 
 
 
-Partly written by jackdickens382
+Partly written by jackdickens382 and evintunador
 
 [^a]: A more technical word is "configuration hyperparameters"
 [^b]: Also known as Nucleus Sampling
