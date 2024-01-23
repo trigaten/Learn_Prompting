@@ -113,6 +113,9 @@ Here is a growing list of notable products that use prompting. If you have a pro
 - [Hey - notionai](http://hey.technonia.com/notionai/)
 > NotionAI-like writing tool that generates suitable content for your selected template (blog post, pros and cons, etc)
 
+- [Myriad](https://www.namepepper.com/free-tools/ai-content-prompt-tool)
+> Get the best writing from AIs with a scalable prompt system. Build and fine-tune prompts for any kind of content, from long-form to ads and email, by mixing and matching rules. Rules like tone and style, target audience, call to action, and SEO keywords.
+
 ## Automatically Build a Tool
 
 - [Toolbot](https://toolbot.ai)
