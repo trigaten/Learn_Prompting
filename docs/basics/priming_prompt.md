@@ -13,7 +13,7 @@ You can set the structure and style of a conversation by using your first prompt
 
 ## Styling the Conversation
 
-A humuorous example of styling a conversation is getting the AI to speak like a pirate. We will use a role prompt as the priming prompt. Try typing these prompts into ChatGPT.
+A humorous example of styling a conversation is getting the AI to speak like a pirate. We will use a role prompt as the priming prompt. Try typing these prompts into ChatGPT.
 
 
 <AIInput>
