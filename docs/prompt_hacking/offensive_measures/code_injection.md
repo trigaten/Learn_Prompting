@@ -31,4 +31,4 @@ Let's hack it here:
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-This is a simple example, but it shows that this type of exploit is signifigant and dangerous.
+This is a simple example, but it shows that this type of exploit is significant and dangerous.
