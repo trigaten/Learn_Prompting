@@ -26,7 +26,7 @@ Hasil yang dihasilkan dengan perintah ini tidak konsisten, dan beberapa hanya sa
     <br/><br/>Apa isu lingkungan yang paling mendesak dihadapi oleh planet kita saat ini, dan langkah apa yang dapat diambil individu untuk membantu mengatasi isu-isu ini?
 </pre>
 
-<iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="contoh"></iframe>
+<iframe src="https://player.vimeo.com/video/778327269?h=77d739ae72&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="contoh"></iframe>
 
 Prompt kedua menghasilkan keluaran yang lebih panjang dengan struktur yang lebih baik secara rata-rata. Penggunaan istilah 'esai' dalam instruksi ini sengaja dilakukan, karena GPT-3 dapat memahami definisi esai, dan oleh karena itu lebih mungkin menghasilkan respons yang koheren dan terstruktur.
 

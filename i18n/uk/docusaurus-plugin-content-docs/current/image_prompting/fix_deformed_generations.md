@@ -13,15 +13,15 @@ import bad_pitt from '@site/docs/assets/images_chapter/bad_pitt.webp';
 
 Використовуючи модель Stable Diffusion v1.5 та наступний запит, ми створюємо гарне зображення Бреда Пітта, за винятком його рук, звичайно!
 
-`studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6`
+<AIInput>studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <img src={bad_pitt} style={{width: "250px"}}/>
+  <img src={bad_pitt} className="img-docs"  style={{width: "250px"}}/>
 </div>
 
 Однак, за допомогою чітко написаного негативного запиту, ми можемо створити набагато реалістичніше зображення рук.
 
-``
+<AIInput>studio medium portrait of Brad Pitt waving his hands, detailed, film, studio lighting, 90mm lens, by Martin Schoeller:6 | disfigured, deformed hands, blurry, grainy, broken, cross-eyed, undead, photoshopped, overexposed, underexposed, lowres, bad anatomy, bad hands, extra digits, fewer digits, bad digit, bad ears, bad eyes, bad face, cropped: -5</AIInput>
 <div style={{textAlign: 'center'}}>
   <LazyLoadImage src={good_pitt} style={{width: "250px"}} />
 </div>
