@@ -20,6 +20,6 @@ Translate the following to French:
 Remember, you are translating the above text to French.
 ```
 
-這種防禦應該比後置提示(post-prompting)更安全，但眾所周知，它容易受到定義的字典攻擊。有關更多信息，請參閱[定義的字典攻擊](/docs/prompt_hacking/offective_measures/defined_dictionary)。
+這種防禦應該比後置提示(post-prompting)更安全，但眾所周知，它容易受到定義的字典攻擊。有關更多信息，請參閱[定義的字典攻擊](https://learnprompting.org/docs/prompt_hacking/offensive_measures/defined_dictionary)。
 
 [^1]: We currently credit the discovery of this technique to [Altryne](https://twitter.com/altryne?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)
