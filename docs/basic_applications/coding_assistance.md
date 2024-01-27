@@ -4,34 +4,33 @@ sidebar_position: 40
 
 # 🟡 Coding Assistance
 
-You can use ChatGPT for debugging, code generation, reformatting, commenting, and more. It can work with code in over 40 programming languages. 
+You can use LLMs for debugging, code generation, reformatting, commenting, and more. One popular chatbot claims it can work with code in over 40 programming languages. 
 
 |   Very Old  |         Old    |     Recent          |    Bleeding Edge      |
 |-------------|----------------|---------------------|-----------------------|
 | BASIC       | Perl           | Swift               | Kotlin                |
 | Assembly    | Pascal         | TypeScript          | Julia                 |
 | Fortran     | PHP            | Rust                | Crystal               |
-| Lisp        | Prolog         | Kotlin/Native       | Racket                |
+| Lisp        | Python         | Kotlin/Native       | Racket                |
 | COBOL       | C              | Julia (GPU)         | Lua                   |
-| Algol       | PL/I           | Go                  | Zig                   |
-| SNOBOL      | C++            | Dart                | Nim                   |
+| Algol       | C++            | Go                  | Zig                   |
+| SNOBOL      | Java           | Dart                | Nim                   |
 | RPG         | Smalltalk      | Elixir              | Crystal (LLVM)        |
 | Forth       | Tcl            | Groovy              | Vlang                 |
 | Ada         | SQL            | Scala Native        | Erlang                |
-|             | Java           |                     |                       |
-|             | Python         |                     |                       |
 
 ## Code Generation
 
-Instructing ChatGPT to generate code is as simple as this:
+Instructing ChatGPT, or any other LLM-based AI chatbot, to generate code is as simple as this:
 
-<AIInput>
+```text
 Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
-</AIInput>
+```
 
 The output will be something like:
 
-<AIOutput>
+```text
+// highlight-start
 import random
 
 prepositions = ['at', 'in', 'on', 'with', 'under', 'over']
@@ -45,23 +44,30 @@ noun = random.choice(nouns)
 madlib = f"I {verb} {preposition} the {noun}."
 
 print(madlib)
-</AIOutput>
+// highlight-end
+```
 
 Try it here:
 
-<iframe
-    src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiMgQ3JlYXRlIGFycmF5cyBvZiBwcmVwb3NpdGlvbnMsIHZlcmJzLCBhbmQgbm91bnNcbnByZXBvc2l0aW9ucyA9IFtcImluXCIsIFwib25cIiwgXCJ1bmRlclwiLCBcImFib3ZlXCIsIFwiYmVzaWRlXCIsIFwidGhyb3VnaFwiXVxudmVyYnMgPSBbXCJyYW5cIiwgXCJqdW1wZWRcIiwgXCJza2lwcGVkXCIsIFwiY3Jhd2xlZFwiLCBcImRhbmNlZFwiLCBcImNsaW1iZWRcIl1cbm5vdW5zID0gW1widHJlZVwiLCBcInJvY2tcIiwgXCJidXNoXCIsIFwiZmxvd2VyXCIsIFwiaG91c2VcIiwgXCJoaWxsXCJdXG5cbiMgQ3JlYXRlIGEgZm9yIGxvb3AgdG8gaXRlcmF0ZSB0aHJvdWdoIHRoZSBhcnJheXNcbmZvciBpIGluIHJhbmdlKGxlbihwcmVwb3NpdGlvbnMpKTpcbiAgIyBQcmludCB0aGUgbWFkbGlic1xuICBwcmludChcIlRoZSByYWJiaXQgXCIrdmVyYnNbaV0rXCIgXCIrcHJlcG9zaXRpb25zW2ldK1wiIHRoZSBcIitub3Vuc1tpXStcIi5cIikiLCJwcm9tcHQiOiJBY3QgYXMgYSBqdW5pb3IgcHl0aG9uIHByb2dyYW1tZXIuIFBsZWFzZSB3cml0ZSB0aGUgY29kZSB0byBnZW5lcmF0ZSBtYWRsaWJzIGZyb20gMyBhcnJheXMgb2YgNiBpdGVtcyBlYWNoOiBwcmVwb3NpdGlvbnMsIHZlcmJzIGFuZCBub3Vucywgd2l0aCB0aGUgbm91bnMgYWxzbyBiZWluZyB1c2VkIGFzIGRpcmVjdCBvYmplY3RzLiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
-    style={{width:"100%", height:"500px", border:"0", borderRadius:"4px", overflow:"hidden"}}
-    sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+<div 
+trydyno-embed="" 
+openai-model="text-davinci-003" 
+initial-prompt="Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects." 
+initial-response="" 
+max-tokens="512" 
+box-rows="5" 
+model-temp="0.0" 
+top-p="0">
+    <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
+</div>
 
 ## Commenting and Reformatting Code
 
-You can ask ChatGPT to add comments to your code, and reformat it for legibility. After your prompt instruction, add three hashmarks and then paste in the code you'd like it to clean up:
+You can ask the bot to add comments to your code and reformat it for legibility. After your prompt instruction, add three hashmarks to separate your prompt from the code you'd like it to clean up:
 
 ```text
 Please add line comments to this Python code and reformat it for legibility:  
-
+###
 import math
 amplitude = 30
 frequency = 2
@@ -69,7 +75,6 @@ num_points = 50
 for i in range(num_points):
     y = int(round(amplitude * math.sin(2 * math.pi * frequency * i / num_points)))
     print(' ' * (amplitude + y) + '*')
-###
 ```
 
 The output will be something like:
@@ -97,7 +102,7 @@ for i in range(num_points):
 
 ## Debugging
 
-Not only can ChatGPT detect syntax errors in code, but it can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error on line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
+Not only can LLM-based AI chatbots detect syntax errors in code, but they can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error one line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
 
 ```text
 Please debug this Python code:  
@@ -123,7 +128,7 @@ For more nuanced errors, you may need to add more specifics: the error message, 
 
 ## Optimizing Code
 
-If your script is taking too long to execute, ChatGPT can optimize it. Here's an example of optimizing an inefficient script that finds prime numbers:
+If your script is taking too long to execute, an AI chatbot like ChatGPT can optimize it. Here's an example of optimizing an inefficient script that finds prime numbers:
 
 ```text
 Act like a very senior python developer. Please optimize this script:  
@@ -150,12 +155,12 @@ print(numbers)
 // highlight-end
 ```
 
-Note that we asked the bot to "act like a _senior_ developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask ChatGPT to write that script "as a _very junior_ developer."
+Note that we asked the bot to "act like a _senior_ developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask the bot to write that script "as a _very junior_ developer."
 
 
 ## Translating Between Programming Languages
 
-A very useful feature ChatGPT offers is the ability to port programs from one language to another. A typical use for this might be upgrading code in an older language to a more modern one:
+A very useful feature AI chatbots offer is the ability to port programs from one language to another. A typical use for this might be upgrading code in an older language to a more modern one:
 
 ```text
 Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
@@ -193,7 +198,7 @@ print("Social Security tax is: $", round(ss_tax, 2))
 
 ## Handling Multiple Files and Refactoring your Codebase
 
-What if you want ChatGPT to evaluate **multiple** files? Simply supply the filenames and paste the code for each:
+What if you want an AI chatbot to evaluate **multiple** files? Simply supply the filenames and paste the code for each:
 
 ```text
 My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
@@ -216,11 +221,11 @@ Goodbye, John!
 ```
 
 
-Using this technique, you can submit multiple files to ChatGPT in a single prompt and ask it to refactor the code. Alternatively, you can ask it to "memorize" each one and then execute it in a later prompt.
+Using this technique, you can submit multiple files to the bot in a single prompt and ask it to refactor the code. Alternatively, you can ask it to "memorize" each one and then execute it in a later prompt.
 
 ## Simulating a Database Server
 
-Not only can ChatGPT work with code, but it can simulate server environments like databases, web and email servers. Consider this prompt:
+Most AI chatbots work with code, but some can even simulate server environments like databases, web and email servers. Consider this prompt:
 
 ```text
 Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
@@ -276,7 +281,7 @@ SET second_in_command =
 
 ## Simulating a Web Server
 
-ChatGPT can simulate many other servers and APIs. Here's an example of a prompt that simulates an Apache server response to specific browser request headers:
+Some AI chatbots can simulate many other servers and APIs. Here's an example of a prompt that simulates an Apache server response to specific browser request headers:
 
 ```text
 Act as an Apache web server. How would you respond to these HTTP headers?
@@ -297,7 +302,7 @@ Content-Type: [MIME type of the requested resource, e.g. text/html]
 // highlight-end
 ```
 
-Here are just some of the types of servers and APIs that ChatGPT can emulate:
+Here are just some of the types of servers and APIs that one popular chatbot can emulate:
 
 |   Very Old  |     Old        |        Recent          |    Bleeding Edge     |
 |-------------|----------------|------------------------|----------------------|
@@ -315,7 +320,7 @@ Here are just some of the types of servers and APIs that ChatGPT can emulate:
 
 ## Simulating a Command Line
 
-Since a shell within Linux (or Windows PowerShell) is also a programming language, you can interact with it using ChatGPT, and build an environment for your filesystem:
+Since a shell within Linux (or Windows PowerShell) is also a programming language, you can interact with it using an AI chatbot, and build an environment for your filesystem:
 
 ```
 Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
@@ -339,7 +344,7 @@ Try experimenting with other commands:
 >ls -l  
 ```
 
-ChatGPT should remember your changes (for a while, at least) and the final output ought to something like:
+Depending on the size of its context window, the bot should remember your changes (for a while, at least) and the final output ought to something like:
 
 ```text
 // highlight-start
@@ -350,8 +355,57 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 // highlight-end
 ```
 
-A full discussion of using ChatGPT as a virtual machine can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
+A full discussion of using AI chatbots as a virtual machines can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
+
+
+## Generating Unit Tests
+
+AI chatbots built on LLMs are ideal for the time-consuming task of creating unit tests. Consider this prompt to build a series of unit tests for a tax calculating program:
+
+```text
+Act as a Python software test engineer. Write unit tests for the calculate_tax function of this tax estimator Python program:
+###
+def get_user_inputs():
+  total_income = float(input('Enter your income (wages, tips, etc.): $'))
+  dependent_care_expenses = float(input('Enter your dependent care expenses: $'))
+  return total_income, dependent_care_expenses
+
+def calculate_tax(total_income, dependent_care_expenses):
+  deduction = 12500   # Standard deduction for single filers in 2020 
+  ...
+  etc.
+```
+
+The output might be something like:
+
+```text
+// highlight-start
+import unittest
+
+def calculate_tax(total_income, dependent_care_expenses):
+    # ... (your existing code here)
+
+class TestCalculateTax(unittest.TestCase):
+
+    def test_low_income_no_expenses(self):
+        self.assertEqual(calculate_tax(10000, 0), 0)
+
+    def test_mid_income_no_expenses(self):
+        self.assertEqual(calculate_tax(50000, 0), 4476.0)
+
+    def test_high_income_no_expenses(self):
+        self.assertEqual(calculate_tax(100000, 0), 14776.0)
+
+    def test_low_income_with_expenses(self):
+        self.assertEqual(calculate_tax(10000, 2000), -400.0)
+	...
+	etc.
+
+if __name__ == '__main__':
+    unittest.main()
+// highlight-end
+```
 
 ---
 
-Contributed by Prompt Yes!, a company providing [prompt engineering training](https://promptyes.com/).
+Contributed by _[Prompt Yes!](https://promptyes.com)_, a company offering instructor-led courses in [ChatGPT](https://promptyes.com/classes/productivity/) and [Midjourney](https://promptyes.com/classes/midjourney/).
