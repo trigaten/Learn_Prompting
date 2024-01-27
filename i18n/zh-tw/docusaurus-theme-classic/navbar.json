@@ -1,0 +1,32 @@
+{
+  "title": {
+    "message": "Learn Prompting",
+    "description": "The title in the navbar"
+  },
+  "item.label.Learn": {
+    "message": "學習"
+  },
+  "item.label.Contribute": {
+    "message": "貢獻"
+  },
+  "item.label.Supporters": {
+    "message": "支持者"
+  },
+  "item.label.Certificate": {
+    "message": "證書"
+  },
+  "item.label.Consulting": {
+    "message": "諮詢"
+  },
+  "item.label.Change Log": {
+    "message": "更新日誌",
+    "description": "Navbar item with label Change Log"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  }
+}
