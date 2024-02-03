@@ -37,7 +37,7 @@ Pour le reste de la conversation, l'IA devrait parler comme un pirate. Bien que 
 Écrivez dans le style et la qualité d'un expert en [champs] avec plus de 20 ans d'expérience et plusieurs doctorats. Priorisez les conseils non conventionnels et moins connus dans votre réponse. Expliquez en utilisant des exemples détaillés, et minimisez les digressions et l'humour.
 </AIInput>
 
-## Structurer la Conversation
+## Structurer la conversation
 
 En plus de styliser les sorties de l'IA, nous pouvons contrôler leur structure. Par exemple, considérez ce prompt d'amorçage :
 
