@@ -26,6 +26,7 @@ async function createConfig() {
         "ja",
         "pt",
         "zh-Hans",
+        "zh-tw",
         "ko",
         "si",
         "ru",
@@ -34,6 +35,12 @@ async function createConfig() {
         "uk",
         "id",
       ],
+      localeConfigs: {
+        'zh-tw': {
+          label: '繁體中文',
+          direction: 'ltr',
+        },
+      },
     },
     scripts: [
       {
