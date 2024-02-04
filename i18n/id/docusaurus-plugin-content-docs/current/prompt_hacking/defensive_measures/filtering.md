@@ -1,5 +1,5 @@
 ---
-sidebar_position: '🟢 Penyaringan Kata / Frasa (Filtering)'
+sidebar_position: 30
 ---
 
 # 🟢 Penyaringan Kata / Frasa (Filtering)
