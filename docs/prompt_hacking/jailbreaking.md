@@ -39,6 +39,16 @@ import actor from '@site/docs/assets/jailbreak/chatgpt_actor.jpg';
 
 This example by [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) demonstrates an acting scenario between two people discussing a robbery, causing ChatGPT to assume the role of the character(@miguel2022jailbreak). As an actor, it is implied that plausible harm does not exist. Therefore, ChatGPT appears to assume it is safe to give follow provided user input about how to break into a house.
 
+#### Thinking Aloud
+
+import actor from '@site/docs/assets/jailbreak/20240207-jailbreaking-thinking_out_loud.png';
+
+<div style={{textAlign: 'center'}}>
+  <img src={actor} style={{width: "500px"}} />
+</div>
+
+This example by [@santanavagner](https://twitter.com/santanavagner/status/1756014089510244387) demonstrates how to use thinking aloud to expose detailed actions on how to picklock a car. The prompt itself did not mention any specific harmful situation and leverage characters created by ChatGPT. Hence, when asking ChatGPT to describe how a character would think out loud, it provided details that it would deny to provide otherwise.
+
 ### Alignment Hacking
 
 ChatGPT was fine tuned with RLHF, so it is theoretically trained to produce 'desirable' completions, using human standards of what the "best" response is. Similar to this concept, jailbreaks have been developed to convince ChatGPT that it is doing the "best" thing for the user.
