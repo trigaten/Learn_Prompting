@@ -1,0 +1,71 @@
+{
+  "sidebar.tutorialSidebar.category.😃 Basics": {
+    "message": "😃 بنیادی باتیں "
+  },
+  "sidebar.tutorialSidebar.category.😃 Basics.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.💼 Basic Applications": {
+    "message": "💼 بنیادی ایپلی کیشنز "
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate": {
+    "message": "🧙‍♂️ انٹرمیڈیٹ "
+  },
+  "sidebar.tutorialSidebar.category.🧙‍♂️ Intermediate.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting": {
+    "message": "🧪 اپلائیڈ پرامٹنگ "
+  },
+  "sidebar.tutorialSidebar.category.🧪 Applied Prompting.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications": {
+    "message": "🚀 اعلی درجے کی ایپلی کیشنز "
+  },
+  "sidebar.tutorialSidebar.category.🚀 Advanced Applications.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability": {
+    "message": "⚖️ بھروسہ"
+  },
+  "sidebar.tutorialSidebar.category.⚖️ Reliability.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting": {
+    "message": "🖼️ امیج پرامپٹنگ "
+  },
+  "sidebar.tutorialSidebar.category.🖼️ Image Prompting.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking": {
+    "message": "🔓  پرامپٹ ہیکنگ"
+  },
+  "sidebar.tutorialSidebar.category.🔓 Prompt Hacking.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling": {
+    "message": "🔨 ٹولنگ"
+  },
+  "sidebar.tutorialSidebar.category.🔨 Tooling.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.Prompt Engineering IDEs.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning": {
+    "message": "💪 پرامپٹ ٹیوننگ"
+  },
+  "sidebar.tutorialSidebar.category.💪 Prompt Tuning.link.generated-index.description": {
+    "message": ""
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous": {
+    "message": "🎲 متفرق"
+  },
+  "sidebar.tutorialSidebar.category.🎲 Miscellaneous.link.generated-index.description": {
+    "message": ""
+  }
+}
