@@ -2,7 +2,7 @@
 sidebar_position: 40
 ---
 
-# 🟢 Chatbot + Knowledge Base
+# 🟢 چیٹ بوٹ + نالج بیس
 
 import ImageIntents from '@site/docs/assets/basic_applications/chatbot_from_kb_intents.webp'
 import ImageGPT3 from '@site/docs/assets/basic_applications/chatbot_from_kb_gpt3.webp'
@@ -10,195 +10,195 @@ import ImageGPT3Organized from '@site/docs/assets/basic_applications/chatbot_fro
 import ImagePrompt from '@site/docs/assets/basic_applications/chatbot_from_kb_prompt.webp'
 import ImageLogin from '@site/docs/assets/basic_applications/chatbot_from_kb_login.webp'
 
-Recent advancements in large language models (LLMs) such as [GPT-3](https://arxiv.org/abs/2005.14165) and [ChatGPT](https://chat.openai.com/chat) have created a lot of buzz in the tech industry. These models are incredibly powerful for content generation, but they also have some downsides such as bias(@nadeem-etal-2021-stereoset) and hallucinations(@Ji_2022). One area in which these LLMs can be particularly useful is chatbot development.
+بڑے لینگویج ماڈلز (LLMs) جیسے کہ [GPT-3](https://arxiv.org/abs/2005.14165) اور [ChatGPT](https://chat.openai.com/chat) میں حالیہ پیشرفت نے بہت کچھ پیدا کیا ہے۔ ٹیک انڈسٹری میں buzz کی. یہ ماڈلز مواد کی تخلیق کے لیے ناقابل یقین حد تک طاقتور ہیں، لیکن ان میں کچھ نشیب و فراز بھی ہیں جیسے تعصب(@nadeem-etal-2021-stereoset) اور فریب کاری (@Ji_2022)۔ ایک شعبہ جس میں یہ LLMs خاص طور پر کارآمد ہو سکتے ہیں وہ ہے چیٹ بوٹ کی ترقی۔
 
-## Intent-Based Chatbots
+## ارادے پر مبنی چیٹ بوٹس
 
-Traditional chatbots are typically intent-based, meaning they are designed to respond to specific user intents. Each intent is made up of a set of sample questions and an associated response. For example, the intent “Weather” might include sample questions like “What’s the weather today?” or “Will it rain today?” and a response like “Today will be sunny.” When a user asks a question, the chatbot matches it to the intent with the most similar sample questions and returns the associated response.
-
-<div style={{textAlign: 'left'}}>
-  <img src={ImageIntents} style={{width: "700px"}}/>
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a traditional intent-based chatbot works. Image by the author.</p>
-</div>
-
-However, intent-based chatbots have their own set of problems. One issue is that they require a large number of specific intents to give specific answers. For example, user utterances like “I can’t login”, “I forgot my password”, or “Login error” may need three different answers and therefore three different intents, even though they are all quite similar.
-
-## How GPT-3 Can Help
-
-This is where GPT-3 can be particularly useful. Instead of having many very specific intents, each intent can be broader and leverage a document from your [Knowledge Base](https://en.wikipedia.org/wiki/Knowledge_base). A Knowledge Base (KB) is information stored as structured and unstructured data, ready to be used for analysis or inference. Your KB may be composed of a series of documents explaining how to use your products.
-
-This way, each intent is associated with a document instead of a list of questions and a specific answer, e.g. one intent for “login problems,” one intent for “how to subscribe,” etc. When a user asks a question about login, we can pass the “login problems” document to GPT-3 as context information and generate a specific response to the user’s question.
-
+روایتی چیٹ بوٹس عام طور پر ارادے پر مبنی ہوتے ہیں، یعنی انہیں مخصوص صارف کے ارادوں کا جواب دینے کے لیے ڈیزائن کیا گیا ہے۔ ہر ارادہ نمونہ سوالات کے ایک سیٹ اور اس سے وابستہ جواب پر مشتمل ہوتا ہے۔ مثال کے طور پر، ارادے "موسم" میں نمونہ سوالات شامل ہو سکتے ہیں جیسے "آج موسم کیسا ہے؟" یا "کیا آج بارش ہوگی؟" اور "آج دھوپ ہو گی" جیسا جواب۔ جب کوئی صارف کوئی سوال پوچھتا ہے تو چیٹ بوٹ اسے سب سے ملتے جلتے نمونے والے سوالات کے ارادے سے میل کرتا ہے اور متعلقہ جواب واپس کرتا ہے۔
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a chatbot leveraging GPT-3 could work. Image by the author.</p>
+   <img src={ImageIntents} اسٹائل={{چوڑائی: "700px"}}/>
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>روایتی ارادے پر مبنی چیٹ بوٹ کیسے کام کرتا ہے۔ مصنف کی تصویر۔</p>
 </div>
 
-This approach reduces the number of intents that need to be managed and allows for answers that are better adapted to each question. Additionally, if the document associated with the intent describes different processes (e.g. a process for “login on the website” and another for “login on the mobile app”), GPT-3 can automatically ask the user for clarification before giving the final answer.
+تاہم، ارادے پر مبنی چیٹ بوٹس کے اپنے مسائل ہیں۔ ایک مسئلہ یہ ہے کہ انہیں مخصوص جوابات دینے کے لیے بڑی تعداد میں مخصوص ارادوں کی ضرورت ہوتی ہے۔ مثال کے طور پر، صارف کے الفاظ جیسے "میں لاگ ان نہیں ہو سکتا"، "میں اپنا پاس ورڈ بھول گیا ہوں"، یا "لاگ ان ایرر" کے لیے تین مختلف جوابات اور اس لیے تین مختلف ارادوں کی ضرورت ہو سکتی ہے، حالانکہ وہ سب کافی ایک جیسے ہیں۔
 
-## Why Can’t We Pass the Whole KB to GPT-3?
+## GPT-3 کس طرح مدد کر سکتا ہے۔
 
-Today, LLMs like GPT-3 have a maximum prompt size of about 4k tokens (for the [`text-davinci-003`](https://beta.openai.com/docs/models/gpt-3) model), which is a lot but not enough for feeding a whole knowledge base into a single prompt. The LLMs have a maximum prompt size for computational reasons, as generating text with them involves a number of computations which quickly increases as the prompt size increases.
+یہ وہ جگہ ہے جہاں GPT-3 خاص طور پر مفید ہو سکتا ہے۔ بہت سے مخصوص ارادے رکھنے کے بجائے، ہر ایک ارادہ وسیع تر ہو سکتا ہے اور آپ کے [نالج بیس] (https://en.wikipedia.org/wiki/Knowledge_base) سے دستاویز کا فائدہ اٹھا سکتا ہے۔ نالج بیس (KB) وہ معلومات ہوتی ہے جو سٹرکچرڈ اور غیر ساختہ ڈیٹا کے طور پر محفوظ ہوتی ہے، جو تجزیہ یا تخمینہ کے لیے استعمال کے لیے تیار ہوتی ہے۔ آپ کا KB دستاویزات کی ایک سیریز پر مشتمل ہو سکتا ہے جس میں بتایا گیا ہے کہ آپ کی مصنوعات کو کیسے استعمال کیا جائے۔
 
-Future LLMs may not have this limitation while retaining the text generation capabilities. However, for now, we need to design a solution around it.
+اس طرح، ہر ارادہ سوالات کی فہرست اور ایک مخصوص جواب کے بجائے ایک دستاویز سے منسلک ہوتا ہے، جیسے "لاگ ان کے مسائل" کے لیے ایک ارادہ، "سبسکرائب کرنے کا طریقہ" وغیرہ کا ایک ارادہ۔ جب کوئی صارف لاگ ان کے بارے میں کوئی سوال پوچھتا ہے، تو ہم "لاگ ان کے مسائل" دستاویز کو سیاق و سباق کی معلومات کے طور پر GPT-3 کو بھیج سکتے ہیں اور اس کے لیے مخصوص جواب پیدا کر سکتے ہیں۔ صارف کا سوال.
 
-## How a Chatbot With GPT-3 Could Work
-
-So, the chatbot pipeline could be made of two steps:
-
-1. First, we need to select the appropriate intent for the user question, i.e. we need to retrieve the right document from our knowledge base.
-2. Then, once we have the right document, we can leverage GPT-3 to generate an appropriate answer for the user. In doing so, we’ll need to craft a good prompt.
-
-The first step is essentially solved by [semantic search](https://en.wikipedia.org/wiki/Semantic_search). We can use pre-trained models from the [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) library and easily assign a score to each document. The document with the highest score is the one that will be used to generate the chatbot answer.
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImageGPT3Organized} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>How a chatbot leveraging GPT-3 could work. GPT-3 could be used to generate an appropriate answer leveraging the information from knowledge base documents. Image by the author.</p>
+   <LazyLoadImage src={ImageGPT3} style={{width: "700px"}} />
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}> GPT-3 کا فائدہ اٹھانے والا چیٹ بوٹ کیسے کام کر سکتا ہے۔ مصنف کی تصویر۔</p>
 </div>
 
-## Generating Answers with GPT-3
+یہ نقطہ نظر ان ارادوں کی تعداد کو کم کرتا ہے جن کو منظم کرنے کی ضرورت ہے اور ایسے جوابات کی اجازت دیتا ہے جو ہر سوال کے ساتھ بہتر طور پر موافقت پذیر ہوں۔ مزید برآں، اگر ارادے سے وابستہ دستاویز مختلف عمل کی وضاحت کرتی ہے (مثال کے طور پر "ویب سائٹ پر لاگ ان" اور دوسرا "موبائل ایپ پر لاگ ان" کے لیے، GPT-3 حتمی جواب دینے سے پہلے صارف سے خود بخود وضاحت طلب کر سکتا ہے۔ .
 
-Once we have the right document, we’ll need to create a good prompt to be used with GPT-3 to generate the answer. In the following experiments, we’ll always use the `text-davinci-003` model with a temperature of `0.7`.
+## ہم پورے KB کو GPT-3 تک کیوں نہیں پاسکتے؟
 
-To craft the prompt, we’ll experiment using:
+آج، LLMs جیسے GPT-3 کا زیادہ سے زیادہ پرامپٹ سائز تقریباً 4k ٹوکن ہے ([`text-davinci-003`](https://beta.openai.com/docs/models/gpt-3) ماڈل کے لیے) جو کہ بہت کچھ ہے لیکن ایک ہی پرامپٹ میں پورے علم کی بنیاد فراہم کرنے کے لیے کافی نہیں ہے۔ LLMs میں کمپیوٹیشنل وجوہات کی بنا پر زیادہ سے زیادہ پرامپٹ سائز ہوتا ہے، کیونکہ ان کے ساتھ ٹیکسٹ بنانے میں متعدد کمپیوٹیشنز شامل ہوتے ہیں جو فوری طور پر بڑھتے ہیں جیسے جیسے فوری سائز بڑھتا ہے۔
 
-- [**Role-prompting**](https://learnprompting.org/docs/basics/roles): a heuristic technique that assigns a specific role to the AI.
-- **Relevant KB information**, i.e. the document retrieved in the semantic search step.
-- **The last messages exchanged between the user and the chatbot**. These are useful for messages sent by the user where the whole context is not specified. We’ll see an example of it later. Have a look at [this example](https://learnprompting.org/docs/applied_prompting/build_chatgpt) to see how to manage conversations with GPT-3.
-- Last, **the user question**.
+ٹیکسٹ جنریشن کی صلاحیتوں کو برقرار رکھتے ہوئے مستقبل کے LLM میں یہ حد نہیں ہو سکتی۔ تاہم، ابھی کے لئے، ہمیں اس کے ارد گرد ایک حل ڈیزائن کرنے کی ضرورت ہے.
+
+## GPT-3 کے ساتھ چیٹ بوٹ کیسے کام کر سکتا ہے۔
+
+لہذا، چیٹ بوٹ پائپ لائن کو دو مراحل سے بنایا جا سکتا ہے:
+
+1. سب سے پہلے، ہمیں صارف کے سوال کے لیے مناسب ارادے کو منتخب کرنے کی ضرورت ہے، یعنی ہمیں اپنے علم کی بنیاد سے صحیح دستاویز کو بازیافت کرنے کی ضرورت ہے۔
+2. پھر، ہمارے پاس صحیح دستاویز ہونے کے بعد، ہم صارف کے لیے مناسب جواب تیار کرنے کے لیے GPT-3 کا فائدہ اٹھا سکتے ہیں۔ ایسا کرنے میں، ہمیں ایک اچھا پرامپٹ تیار کرنے کی ضرورت ہوگی۔
+
+پہلا مرحلہ بنیادی طور پر [semantic search](https://en.wikipedia.org/wiki/Semantic_search) کے ذریعے حل کیا جاتا ہے۔ ہم [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) لائبریری سے پہلے سے تربیت یافتہ ماڈل استعمال کر سکتے ہیں اور آسانی سے ہر دستاویز کو اسکور تفویض کر سکتے ہیں۔ سب سے زیادہ سکور والی دستاویز وہ ہے جو چیٹ بوٹ جواب تیار کرنے کے لیے استعمال کی جائے گی۔
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImagePrompt} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Information used to craft our GPT-3 prompt. Image by the author.</p>
+   <LazyLoadImage src={ImageGPT3Organized} اسٹائل={{چوڑائی: "700px"}} />
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}> GPT-3 کا فائدہ اٹھانے والا چیٹ بوٹ کیسے کام کر سکتا ہے۔ GPT-3 کا استعمال نالج بیس دستاویزات سے معلومات کا فائدہ اٹھاتے ہوئے ایک مناسب جواب پیدا کرنے کے لیے کیا جا سکتا ہے۔ مصنف کی تصویر۔</p>
 </div>
 
-Let’s start our prompt using the <span className="yellow-highlight">role-prompting</span> technique.
+## GPT-3 کے ساتھ جوابات تیار کرنا
 
-<pre>
-    <span className="yellow-highlight">As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.</span>
-</pre>
+ہمارے پاس صحیح دستاویز ہونے کے بعد، ہمیں جواب تیار کرنے کے لیے GPT-3 کے ساتھ استعمال کرنے کے لیے ایک اچھا پرامپٹ بنانا ہوگا۔ درج ذیل تجربات میں، ہم ہمیشہ `0.7` درجہ حرارت کے ساتھ `text-davinci-003` ماڈل استعمال کریں گے۔
 
-Then, suppose the semantic search step extracts the following document from our knowledge base. All the documents describe how the VideoGram product works, which is an imaginary product similar to Instagram, but only for videos.
+پرامپٹ تیار کرنے کے لیے، ہم استعمال کرتے ہوئے تجربہ کریں گے:
+
+- [**رول پرمپٹنگ**](https://learnprompting.org/docs/basics/roles): ایک تحقیقی تکنیک جو AI کو ایک مخصوص کردار تفویض کرتی ہے۔
+- **متعلقہ KB معلومات**، یعنی وہ دستاویز جو لفظی تلاش کے مرحلے میں حاصل کی گئی ہے۔
+- **صارف اور چیٹ بوٹ کے درمیان آخری پیغامات کا تبادلہ**۔ یہ صارف کی طرف سے بھیجے گئے پیغامات کے لیے مفید ہیں جہاں پورا سیاق و سباق بیان نہیں کیا گیا ہے۔ ہم بعد میں اس کی مثال دیکھیں گے۔ GPT-3 کے ساتھ گفتگو کا نظم کرنے کا طریقہ دیکھنے کے لیے [اس مثال](https://learnprompting.org/docs/applied_prompting/build_chatgpt) پر ایک نظر ڈالیں۔
+- آخری، **صارف کا سوال**۔
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>A document explaining how login to VideoGram works. Image by the author.</p>
+   <LazyLoadImage src={ImagePrompt} اسٹائل={{چوڑائی: "700px"}} />
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>ہمارے GPT-3 پرامپٹ کو تیار کرنے کے لیے استعمال ہونے والی معلومات۔ مصنف کی تصویر۔</p>
 </div>
 
-We can add <span className="yellow-highlight">its content</span> inside the prompt in this way.
+آئیے <span className="yellow-highlight">رول پرمپٹنگ</span> تکنیک کا استعمال کرتے ہوئے اپنا پرامپٹ شروع کریں۔
 
 <pre>
-    As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/><br/>
-
-    <span className="yellow-highlight">
-    START CONTEXT<br/>
-    Login to VideoGram from Website<br/>
-    1. Open your web browser and go to the VideoGram website.<br/>
-    2. Click on the “Login” button located in the top right corner of the page.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, click on the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    <br/>
-    Login to VideoGram from Mobile App<br/>
-    1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, tap the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    END CONTEXT<br/>
-    </span>
+     <span className="yellow-highlight">Skippy نامی ایک اعلی درجے کی چیٹ بوٹ کے طور پر، آپ کا بنیادی مقصد اپنی بہترین صلاحیت کے مطابق صارفین کی مدد کرنا ہے۔</span>
 </pre>
 
-Last, we need to add <span className="yellow-highlight">the conversation and the user question</span> to the end of the prompt, like in the following example.
+پھر، فرض کریں کہ سیمنٹک سرچ مرحلہ درج ذیل دستاویز کو ہمارے علم کی بنیاد سے نکالتا ہے۔ تمام دستاویزات میں بتایا گیا ہے کہ ویڈیو گرام پروڈکٹ کیسے کام کرتا ہے، جو کہ انسٹاگرام کی طرح ایک خیالی پروڈکٹ ہے، لیکن صرف ویڈیوز کے لیے۔
+
+<div style={{textAlign: 'left'}}>
+   <LazyLoadImage src={ImageLogin} style={{width: "700px"}} />
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>ایک دستاویز جو یہ بتاتی ہے کہ ویڈیو گرام میں لاگ ان کیسے کام کرتا ہے۔ مصنف کی تصویر۔</p>
+</div>
+
+ہم اس طرح پرامپٹ کے اندر <span className="yellow-highlight">اس کا مواد</span> شامل کر سکتے ہیں۔
 
 <pre>
-    As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/>
-    <br/>
-    START CONTEXT<br/>
-    Login to VideoGram from Website<br/>
-    1. Open your web browser and go to the VideoGram website.<br/>
-    2. Click on the “Login” button located in the top right corner of the page.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, click on the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    <br/>
-    Login to VideoGram from Mobile App<br/>
-    1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, tap the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    END CONTEXT<br/>
-    <br/>
-    <span className="yellow-highlight">SKIPPY: Hello, I’m Skippy! How can I help you?<br/>
-    USER: I can’t find the login button.<br/>
-    SKIPPY:</span><br/>
+     Skippy نامی ایک اعلی درجے کی چیٹ بوٹ کے طور پر، آپ کا بنیادی مقصد اپنی بہترین صلاحیت کے مطابق صارفین کی مدد کرنا ہے۔<br/><br/>
+
+     <span className="yellow-highlight">
+     CONTEXT شروع کریں<br/>
+     ویب سائٹ<br/> سے ویڈیو گرام میں لاگ ان کریں۔
+     1. اپنا ویب براؤزر کھولیں اور ویڈیو گرام ویب سائٹ پر جائیں۔<br/>
+     2. صفحہ کے اوپری دائیں کونے میں واقع "لاگ ان" بٹن پر کلک کریں۔<br/>
+     3. لاگ ان صفحہ پر، اپنا ویڈیو گرام صارف نام اور پاس ورڈ درج کریں۔<br/>
+     4. ایک بار جب آپ اپنی اسناد درج کر لیں، "لاگ ان" بٹن پر کلک کریں۔<br/>
+     5. اب آپ کو اپنے ویڈیو گرام اکاؤنٹ میں لاگ ان ہونا چاہیے۔<br/>
+     <br/>
+     موبائل ایپ<br/> سے ویڈیو گرام میں لاگ ان کریں۔
+     1۔ اپنے موبائل ڈیوائس پر ویڈیو گرام ایپ کھولیں۔<br/>
+     2. مرکزی صفحہ پر، نیچے دائیں کونے میں واقع "لاگ ان" بٹن کو تھپتھپائیں۔<br/>
+     3. لاگ ان صفحہ پر، اپنا ویڈیو گرام صارف نام اور پاس ورڈ درج کریں۔<br/>
+     4. ایک بار جب آپ اپنی اسناد درج کر لیں، "لاگ ان" بٹن کو تھپتھپائیں۔<br/>
+     5. اب آپ کو اپنے ویڈیو گرام اکاؤنٹ میں لاگ ان ہونا چاہیے۔<br/>
+     CONTEXT کو ختم کریں<br/>
+     </span>
 </pre>
 
-Passing this prompt to GPT-3, I got the following generated answer.
+آخر میں، ہمیں پرامپٹ کے آخر میں <span className="yellow-highlight">گفتگو اور صارف کا سوال</span> شامل کرنا ہوگا، جیسا کہ درج ذیل مثال میں ہے۔
 
 <pre>
-    <span className="bluegreen-highlight">No problem! On the website, the login button is located in the top right corner of the page. On the mobile app, the login button is located in the bottom right corner. Let me know if you need any further assistance!</span>
+     Skippy نامی ایک اعلی درجے کی چیٹ بوٹ کے طور پر، آپ کا بنیادی مقصد اپنی بہترین صلاحیت کے مطابق صارفین کی مدد کرنا ہے۔<br/>
+     <br/>
+     CONTEXT شروع کریں<br/>
+     ویب سائٹ<br/> سے ویڈیو گرام میں لاگ ان کریں۔
+     1. اپنا ویب براؤزر کھولیں اور ویڈیو گرام ویب سائٹ پر جائیں۔<br/>
+     2. صفحہ کے اوپری دائیں کونے میں واقع "لاگ ان" بٹن پر کلک کریں۔<br/>
+     3. لاگ ان صفحہ پر، اپنا ویڈیو گرام صارف نام اور پاس ورڈ درج کریں۔<br/>
+     4. ایک بار جب آپ اپنی اسناد درج کر لیں، "لاگ ان" بٹن پر کلک کریں۔<br/>
+     5. اب آپ کو اپنے ویڈیو گرام اکاؤنٹ میں لاگ ان ہونا چاہیے۔<br/>
+     <br/>
+     موبائل ایپ<br/> سے ویڈیو گرام میں لاگ ان کریں۔
+     1۔ اپنے موبائل ڈیوائس پر ویڈیو گرام ایپ کھولیں۔<br/>
+     2. مرکزی صفحہ پر، نیچے دائیں کونے میں واقع "لاگ ان" بٹن کو تھپتھپائیں۔<br/>
+     3. لاگ ان صفحہ پر، اپنا ویڈیو گرام صارف نام اور پاس ورڈ درج کریں۔<br/>
+     4. ایک بار جب آپ اپنی اسناد درج کر لیں، "لاگ ان" بٹن کو تھپتھپائیں۔<br/>
+     5. اب آپ کو اپنے ویڈیو گرام اکاؤنٹ میں لاگ ان ہونا چاہیے۔<br/>
+     CONTEXT کو ختم کریں<br/>
+     <br/>
+     <span className="yellow-highlight">SKIPPY: ہیلو، میں سکپی ہوں! میں آپ کی مدد کیسے کر سکتا ہوں؟<br/>
+     صارف: میں لاگ ان بٹن نہیں ڈھونڈ سکتا۔<br/>
+     SKIPY:</span><br/>
 </pre>
 
-Notice how the information in the generated answer comes from the knowledge base document.
-
-## Disambiguating Questions with GPT-3
-
-Let’s try with a more vague user utterance, like <span className="yellow-highlight">“can’t login”</span>. Here’s the complete prompt.
+اس پرامپٹ کو GPT-3 پر منتقل کرتے ہوئے، مجھے مندرجہ ذیل تیار کردہ جواب ملا۔
 
 <pre>
-    As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.<br/>
-    <br/>
-    START CONTEXT<br/>
-    Login to VideoGram from Website<br/>
-    1. Open your web browser and go to the VideoGram website.<br/>
-    2. Click on the “Login” button located in the top right corner of the page.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, click on the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    <br/>
-    Login to VideoGram from Mobile App<br/>
-    1. Open the VideoGram app on your mobile device.<br/>
-    2. On the main page, tap the “Login” button located in the bottom right corner.<br/>
-    3. On the login page, enter your VideoGram username and password.<br/>
-    4. Once you have entered your credentials, tap the “Login” button.<br/>
-    5. You should now be logged in to your VideoGram account.<br/>
-    END CONTEXT<br/>
-    <br/>
-    SKIPPY: Hello, I’m Skippy! How can I help you?<br/>
-    USER: <span className="yellow-highlight">Can’t login</span><br/>
-    SKIPPY:<br/>
+     <span className="bluegreen-highlight">کوئی مسئلہ نہیں! ویب سائٹ پر، لاگ ان بٹن صفحہ کے اوپری دائیں کونے میں واقع ہے۔ موبائل ایپ پر، لاگ ان بٹن نیچے دائیں کونے میں واقع ہے۔ اگر آپ کو مزید مدد کی ضرورت ہو تو مجھے بتائیں!</span>
 </pre>
 
-GPT-3 answers trying to understand better what’s the problem of the user.
+غور کریں کہ کس طرح پیدا کردہ جواب میں معلومات نالج بیس دستاویز سے آتی ہیں۔
+
+## GPT-3 کے ساتھ ابہام پیدا کرنے والے سوالات
+
+آئیے صارف کے مزید مبہم الفاظ کے ساتھ کوشش کریں، جیسے <span className="yellow-highlight">"لاگ ان نہیں ہو سکتا"</span>۔ یہاں مکمل پرامپٹ ہے۔
 
 <pre>
-    <span className="bluegreen-highlight">I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?</span>
+     Skippy نامی ایک اعلی درجے کی چیٹ بوٹ کے طور پر، آپ کا بنیادی مقصد اپنی بہترین صلاحیت کے مطابق صارفین کی مدد کرنا ہے۔<br/>
+     <br/>
+     CONTEXT شروع کریں<br/>
+     ویب سائٹ<br/> سے ویڈیو گرام میں لاگ ان کریں۔
+     1. اپنا ویب براؤزر کھولیں اور ویڈیو گرام ویب سائٹ پر جائیں۔<br/>
+     2. صفحہ کے اوپری دائیں کونے میں واقع "لاگ ان" بٹن پر کلک کریں۔<br/>
+     3. لاگ ان صفحہ پر، اپنا ویڈیو گرام صارف نام اور پاس ورڈ درج کریں۔<br/>
+     4. ایک بار جب آپ اپنی اسناد درج کر لیں، "لاگ ان" بٹن پر کلک کریں۔<br/>
+     5. اب آپ کو اپنے ویڈیو گرام اکاؤنٹ میں لاگ ان ہونا چاہیے۔<br/>
+     <br/>
+     موبائل ایپ<br/> سے ویڈیو گرام میں لاگ ان کریں۔
+     1۔ اپنے موبائل ڈیوائس پر ویڈیو گرام ایپ کھولیں۔<br/>
+     2. مرکزی صفحہ پر، نیچے دائیں کونے میں واقع "لاگ ان" بٹن کو تھپتھپائیں۔<br/>
+     3. لاگ ان صفحہ پر، اپنا ویڈیو گرام صارف نام اور پاس ورڈ درج کریں۔<br/>
+     4. ایک بار جب آپ اپنی اسناد درج کر لیں، "لاگ ان" بٹن کو تھپتھپائیں۔<br/>
+     5. اب آپ کو اپنے ویڈیو گرام اکاؤنٹ میں لاگ ان ہونا چاہیے۔<br/>
+     CONTEXT کو ختم کریں<br/>
+     <br/>
+     SKIPPY: ہیلو، میں سکپی ہوں! میں آپ کی مدد کیسے کر سکتا ہوں؟<br/>
+     USER: <span className="yellow-highlight">لاگ ان نہیں ہو سکتا</span><br/>
+     SKIPPY:<br/>
 </pre>
 
-Next, here’s how the complete conversation goes. The whole prompt is hidden for better visibility.
+GPT-3 جوابات بہتر طور پر سمجھنے کی کوشش کر رہے ہیں کہ صارف کا مسئلہ کیا ہے۔
 
 <pre>
-    USER: Can’t login<br/>
-    SKIPPY: I’m sorry to hear that. Can you tell me if you are trying to login via the VideoGram website or mobile app?<br/>
-    USER: Mobile app<br/>
-    <span className="bluegreen-highlight">SKIPPY: OK, no problem. To login via the mobile app, open the VideoGram app on your mobile device. On the main page, tap the “Login” button located in the bottom right corner. On the login page, enter your VideoGram username and password. Once you have entered your credentials, tap the “Login” button. You should now be logged in to your VideoGram account. Please let me know if you need any further assistance.</span>
+     <span className="bluegreen-highlight">مجھے یہ سن کر افسوس ہوا۔ کیا آپ مجھے بتا سکتے ہیں کہ کیا آپ ویڈیو گرام ویب سائٹ یا موبائل ایپ کے ذریعے لاگ ان کرنے کی کوشش کر رہے ہیں؟</span>
 </pre>
 
-GPT-3 can manage disambiguation, provided that it has the right contextual information.
+اگلا، یہاں ہے کہ مکمل گفتگو کیسے ہوتی ہے۔ بہتر مرئیت کے لیے پورا پرامپٹ چھپا ہوا ہے۔
 
-## Problems With Generating Answers with GPT-3
+<pre>
+     صارف: لاگ ان نہیں ہو سکتا<br/>
+     SKIPPY: مجھے یہ سن کر افسوس ہوا۔ کیا آپ مجھے بتا سکتے ہیں کہ کیا آپ ویڈیو گرام ویب سائٹ یا موبائل ایپ کے ذریعے لاگ ان کرنے کی کوشش کر رہے ہیں؟<br/>
+     صارف: موبائل ایپ<br/>
+     <span className="bluegreen-highlight">SKIPPY: ٹھیک ہے، کوئی مسئلہ نہیں۔ موبائل ایپ کے ذریعے لاگ ان کرنے کے لیے، اپنے موبائل ڈیوائس پر ویڈیو گرام ایپ کھولیں۔ مرکزی صفحہ پر، نیچے دائیں کونے میں واقع "لاگ ان" بٹن کو تھپتھپائیں۔ لاگ ان صفحہ پر، اپنا ویڈیو گرام صارف نام اور پاس ورڈ درج کریں۔ اپنی اسناد داخل کرنے کے بعد، "لاگ ان" بٹن کو تھپتھپائیں۔ اب آپ کو اپنے ویڈیو گرام اکاؤنٹ میں لاگ ان ہونا چاہیے۔ اگر آپ کو مزید مدد کی ضرورت ہو تو براہ کرم مجھے بتائیں۔</span>
+</pre>
 
-The previous examples worked well. However, there are several ways in which this chatbot could fail.
+GPT-3 ابہام کا انتظام کر سکتا ہے، بشرطیکہ اس کے پاس صحیح سیاق و سباق کی معلومات ہو۔
 
-If we ask “Is the mobile app free?” to GPT-3 passing the login document as context, you’d often get an answer like “Yes, the VideoGram mobile app is free to download and use”, even if such information is not contained in the context information. Generating false information is very bad for customer service chatbots!
+## GPT-3 کے ساتھ جوابات تیار کرنے میں دشواری
 
-GPT-3 rarely generates false information when the answer to the user question can be found in the context. As user questions are often short and ambiguous texts, we can’t rely on the semantic search step to always retrieve a correct document, and so we are always vulnerable to false information generation.
+پچھلی مثالوں نے اچھا کام کیا۔ تاہم، کئی طریقے ہیں جن میں یہ چیٹ بوٹ ناکام ہو سکتا ہے۔
 
-## Conclusion
+اگر ہم پوچھیں "کیا موبائل ایپ مفت ہے؟" لاگ ان دستاویز کو سیاق و سباق کے طور پر پاس کرتے ہوئے GPT-3 پر، آپ کو اکثر ایسا جواب ملتا ہے جیسے "ہاں، ویڈیو گرام موبائل ایپ ڈاؤن لوڈ اور استعمال کرنے کے لیے مفت ہے"، چاہے ایسی معلومات سیاق و سباق کی معلومات میں شامل نہ ہو۔ کسٹمر سروس چیٹ بوٹس کے لیے غلط معلومات پیدا کرنا بہت برا ہے!
 
-GPT-3 is very useful for creating conversational chatbots and is able to answer a series of specific questions on the basis of contextual information inserted in the prompt. However, it’s hard to make the model produce answers leveraging only the information in the context, as the model tends to hallucinate (i.e. generating new information, potentially false). Generating false information is a problem of different severity depending on the use case.
+GPT-3 شاذ و نادر ہی غلط معلومات پیدا کرتا ہے جب صارف کے سوال کا جواب سیاق و سباق میں مل سکتا ہے۔ چونکہ صارف کے سوالات اکثر مختصر اور مبہم ٹیکسٹ ہوتے ہیں، اس لیے ہم ہمیشہ صحیح دستاویز کی بازیافت کے لیے معنوی تلاش کے مرحلے پر بھروسہ نہیں کر سکتے، اور اس لیے ہم ہمیشہ غلط معلومات پیدا کرنے کا خطرہ رکھتے ہیں۔
 
-Written by [Fabio Chiusano](https://www.linkedin.com/in/fabio-chiusano-b6a3b311b/).
+## نتیجہ
+
+GPT-3 بات چیت کے چیٹ بوٹس بنانے کے لیے بہت کارآمد ہے اور پرامپٹ میں دی گئی سیاق و سباق کی معلومات کی بنیاد پر مخصوص سوالات کے جوابات دینے کے قابل ہے۔ تاہم، ماڈل کو سیاق و سباق میں صرف معلومات سے فائدہ اٹھاتے ہوئے جوابات تیار کرنا مشکل ہے، کیونکہ ماڈل فریب کا شکار ہوتا ہے (یعنی نئی معلومات پیدا کرنا، ممکنہ طور پر غلط)۔ غلط معلومات پیدا کرنا استعمال کے معاملے کے لحاظ سے مختلف شدت کا مسئلہ ہے۔
+
+تحریر کردہ بذریعہ [Fabio Chiusano](https://www.linkedin.com/in/fabio-chiusano-b6a3b311b/)۔

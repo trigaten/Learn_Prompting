@@ -1,8 +1,8 @@
 {
-  "label": "🖼️ Image Prompting",
+  "label": "🖼️ امیج پرمپٹنگ",
   "position": 40,
   "link": {
     "type": "generated-index",
-    "description": "Prompt engineering for text to image models like DALLE and Stable Diffusion!"
+    "description": "ٹیکسٹ ٹو امیج ماڈل جیسے DALLE اور Stable Diffusion کے لیے پرامپٹ انجینئرنگ!"
   }
 }

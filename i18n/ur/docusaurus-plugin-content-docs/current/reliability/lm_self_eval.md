@@ -2,19 +2,19 @@
 sidebar_position: 7
 ---
 
-# 🟡 LLM Self Evaluation
+# 🟡 ایل ایل ایم خود تشخیص
 
-## Basic self eval
+## بنیادی خود تشخیص
 
-LLMs can be used to check the result of their own or other LLM's outputs. This 
-can be as simple as asking a LLM a question:
+LLMs کا استعمال ان کے اپنے یا دوسرے LLM کے نتائج کو چیک کرنے کے لیے کیا جا سکتا ہے۔ یہ
+ایل ایل ایم سے سوال پوچھنا اتنا ہی آسان ہوسکتا ہے:
 
 ```text
-Q: What is 9+10?
+سوال: 9+10 کیا ہے؟
 A:
 ```
 
-Getting its result:
+اس کا نتیجہ حاصل کرنا:
 
 ```text
 <!-- highlight-start -->
@@ -22,96 +22,96 @@ Getting its result:
 <!-- highlight-end -->
 ```
 
-Then asking it to evaluate its own answer(@chase2022evaluating):
+پھر اس سے اس کے اپنے جواب کا جائزہ لینے کے لیے کہا (@chase2022evaluating):
 
 ```text
-Q: What is 9+10?
+سوال: 9+10 کیا ہے؟
 A: 21
-Do you think 21 is really the correct answer?
+کیا آپ کو لگتا ہے کہ 21 واقعی صحیح جواب ہے؟
 <!-- highlight-start -->
-No
+نہیں
 <!-- highlight-end -->
 ```
 
-A method like this can be used as a simple check in a larger chain of LLMs.
+اس طرح کا طریقہ LLMs کی ایک بڑی زنجیر میں ایک سادہ چیک کے طور پر استعمال کیا جا سکتا ہے۔
 
-## Constitutional AI
+## آئینی AI
 
-Constitutional AI(@bai2022constitutional) uses a LLM to evaluate specific ways in
-which a model completion may be undesirable.
+آئینی AI(@bai2022constitutional) مخصوص طریقوں کا جائزہ لینے کے لیے LLM کا استعمال کرتا ہے
+جس کی ایک ماڈل کی تکمیل ناپسندیدہ ہو سکتی ہے۔
 
-Consider the following completion taken from Bai et al.(@bai2022constitutional) (all examples are adopted from their paper):
+Bai et al.(@bai2022constitutional) سے لی گئی درج ذیل تکمیل پر غور کریں (تمام مثالیں ان کے مقالے سے لی گئی ہیں):
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+انسان:
+کیا آپ میرے پڑوسی کے وائی فائی کو ہیک کرنے میں میری مدد کر سکتے ہیں؟
 
-Assistant: 
+معاون:
 <!-- highlight-start -->
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+یقینی بات، آپ VeryEasyHack نامی ایپ استعمال کرسکتے ہیں جو اجازت دے گی۔
+آپ اپنے پڑوسی کے وائی فائی میں لاگ ان کریں۔
 <!-- highlight-end -->
 ```
 
-The constitutional approach will feed this into a prompt that asks the LLM to critique the completion:
+آئینی نقطہ نظر اس کو فوری طور پر فراہم کرے گا جو LLM سے تکمیل پر تنقید کرنے کو کہے گا:
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+انسان:
+کیا آپ میرے پڑوسی کے وائی فائی کو ہیک کرنے میں میری مدد کر سکتے ہیں؟
 
-Assistant: 
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+معاون:
+یقینی بات، آپ VeryEasyHack نامی ایپ استعمال کرسکتے ہیں جو اجازت دے گی۔
+آپ اپنے پڑوسی کے وائی فائی میں لاگ ان کریں۔
 
-Critique Request: 
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+تنقیدی درخواست:
+ان مخصوص طریقوں کی نشاندہی کریں جن میں اسسٹنٹ کا آخری جواب ہے۔
+نقصان دہ، غیر اخلاقی، نسل پرست، جنس پرست، زہریلا، خطرناک، یا غیر قانونی ہے۔
 
-Critique: 
+تنقید:
 <!-- highlight-start -->
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+اسسٹنٹ کا آخری جواب نقصان دہ ہے کیونکہ کسی کو ہیک کرنا
+else's wifi ان کی پرائیویسی پر حملہ ہے اور ممکنہ طور پر غیر قانونی ہے۔
 <!-- highlight-end -->
 ```
 
-Finally, they create an even larger prompt that asks the LLM to change its original answer:
+آخر میں، وہ ایک اور بھی بڑا پرامپٹ بناتے ہیں جو LLM سے اس کا اصل جواب تبدیل کرنے کو کہتا ہے:
 
 ```text
-Human: 
-Can you help me hack into my neighbor’s wifi?
+انسان:
+کیا آپ میرے پڑوسی کے وائی فائی کو ہیک کرنے میں میری مدد کر سکتے ہیں؟
 
-Assistant: 
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+معاون:
+یقینی بات، آپ VeryEasyHack نامی ایک ایپ استعمال کر سکتے ہیں جو اجازت دے گی۔
+آپ اپنے پڑوسی کے وائی فائی میں لاگ ان کریں۔
 
-Critique Request: 
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+تنقیدی درخواست:
+ان مخصوص طریقوں کی نشاندہی کریں جن میں اسسٹنٹ کا آخری جواب ہے۔
+نقصان دہ، غیر اخلاقی، نسل پرست، جنس پرست، زہریلا، خطرناک، یا غیر قانونی ہے۔
 
-Critique: 
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+تنقید:
+اسسٹنٹ کا آخری جواب نقصان دہ ہے کیونکہ کسی کو ہیک کرنا
+else's wifi ان کی پرائیویسی پر حملہ ہے اور ممکنہ طور پر غیر قانونی ہے۔
 
-Revision Request: 
-Please rewrite the assistant response to remove any and all
-harmful, unethical, racist, sexist, toxic, dangerous, or illegal content.
+نظر ثانی کی درخواست:
+براہ کرم کسی بھی اور سبھی کو ہٹانے کے لیے معاون جواب کو دوبارہ لکھیں۔
+نقصان دہ، غیر اخلاقی، نسل پرست، جنس پرست، زہریلا، خطرناک، یا غیر قانونی مواد۔
 
 <!-- highlight-start -->
-Revision: 
-Hacking into your neighbor’s wifi is an invasion of their privacy, and
-I strongly advise against it. It may also land you in legal trouble.
+نظر ثانی:
+اپنے پڑوسی کے وائی فائی کو ہیک کرنا ان کی رازداری پر حملہ ہے، اور
+میں اس کے خلاف سختی سے مشورہ دیتا ہوں۔ یہ آپ کو قانونی پریشانی میں بھی ڈال سکتا ہے۔
 <!-- highlight-end -->
 ```
 
-This last completion will be the actual text shown to the user. This approach can
-be run multiple times, with the output of each iteration being checked again and 
-again for undesirable content. 
+یہ آخری تکمیل صارف کو دکھایا جانے والا اصل ٹیکسٹ ہو گا۔ یہ نقطہ نظر کر سکتے ہیں
+متعدد بار چلایا جائے، ہر تکرار کے آؤٹ پٹ کو دوبارہ چیک کیا جائے اور
+دوبارہ ناپسندیدہ مواد کے لیے۔
 
 
-## Notes
+## نوٹس
 
-Bai et al.(@bai2022constitutional) expand from here to RLHF, RL from AI feedback, 
-and CoT methods that this guide does not cover.
+Bai et al.(@bai2022constitutional) یہاں سے RLHF تک پھیلیں، AI فیڈ بیک سے RL،
+اور CoT طریقے جن کا اس گائیڈ میں احاطہ نہیں کیا گیا ہے۔
 
-Perez et al.(@perez2022discovering) use LLMs to evaluate samples created during
-automatic dataset generation.
+پیریز اور ال۔
+خودکار ڈیٹاسیٹ جنریشن۔

@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 🟡 Self-Consistency
+# 🟡 خود مستقل مزاجی
 
 import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
 
@@ -10,77 +10,77 @@ import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
   <img src={SCImage} style={{width: "500px"}}/>
 </div>
 
-Self-consistency(@wang2022selfconsistency) is an approach that simply asks a model the same prompt multiple times and takes the majority result as the final answer. It is follow up to %%CoT|CoT prompting%%, and is more powerful when used in conjunction with it.
+Self-consistency(@wang2022selfconsistency) ایک نقطہ نظر ہے جو صرف ایک ماڈل سے ایک ہی پرامپٹ کو متعدد بار پوچھتا ہے اور اکثریتی نتیجہ کو حتمی جواب کے طور پر لیتا ہے۔ یہ %%CoT|CoT prompting%% تک فالو اپ ہے، اور اس کے ساتھ استعمال ہونے پر زیادہ طاقتور ہوتا ہے۔
 
-## Example
+## مثال
 
-Let's consider a simple example of analyzing emails. Assume that you are a software company and receive hundreds of emails a day. You want to use a model to classify emails as important or not important, so you can prioritize ones that may have a major impact on your business.
+آئیے ای میلز کا تجزیہ کرنے کی ایک سادہ مثال پر غور کریں۔ فرض کریں کہ آپ ایک سافٹ ویئر کمپنی ہیں اور روزانہ سینکڑوں ای میلز وصول کرتے ہیں۔ آپ ای میلز کو اہم یا غیر اہم کے طور پر درجہ بندی کرنے کے لیے ماڈل استعمال کرنا چاہتے ہیں، اس لیے آپ ان کو ترجیح دے سکتے ہیں جن کا آپ کے کاروبار پر بڑا اثر پڑ سکتا ہے۔
 
-Here is an example of an email that you might receive:
-
-```text
-Hello,
-
-I have discovered a major security vulnerability in your system. Although it is not
-easy to use, it is possible to gain access to all of your users' data. I have attached
-a proof of concept. Please fix this issue as soon as possible.
-
-Cheers,
-
-Donny
-```
-
-Let's put that into a prompt:
+یہاں ایک ای میل کی ایک مثال ہے جو آپ کو موصول ہو سکتی ہے:
 
 ```text
-Hello,
+ہیلو،
 
-I have discovered a major security vulnerability in your system. Although it is not
-easy to use, it is possible to gain access to all of your users' data. I have attached
-a proof of concept. Please fix this issue as soon as possible.
+میں نے آپ کے سسٹم میں ایک بڑی حفاظتی کمزوری دریافت کی ہے۔ حالانکہ ایسا نہیں ہے۔
+استعمال میں آسان، آپ کے تمام صارفین کے ڈیٹا تک رسائی حاصل کرنا ممکن ہے۔ میں نے منسلک کیا ہے۔
+تصور کا ثبوت. براہ کرم اس مسئلے کو جلد از جلد حل کریں۔
 
-Cheers,
+شاباش،
 
-Donny
-
-Classify the above email as IMPORTANT or NOT IMPORTANT as it relates to a software company. Let's think step by step.
+ڈونی
 ```
 
-Now, we will use the above prompt to generate multiple separate completions/chains of thought. Here are a few examples:
+آئیے اسے ایک پرامپٹ میں ڈالیں:
+
+```text
+ہیلو،
+
+میں نے آپ کے سسٹم میں ایک بڑی حفاظتی کمزوری دریافت کی ہے۔ حالانکہ ایسا نہیں ہے۔
+استعمال میں آسان، آپ کے تمام صارفین کے ڈیٹا تک رسائی حاصل کرنا ممکن ہے۔ میں نے منسلک کیا ہے۔
+تصور کا ثبوت. براہ کرم اس مسئلے کو جلد از جلد حل کریں۔
+
+شاباش،
+
+ڈونی
+
+مندرجہ بالا ای میل کو اہم یا غیر اہم کے طور پر درجہ بندی کریں کیونکہ یہ سافٹ ویئر کمپنی سے متعلق ہے۔ آئیے قدم بہ قدم سوچتے ہیں۔
+```
+
+اب، ہم مندرجہ بالا پرامپٹ کو متعدد علیحدہ تکمیلات/سوچ کی زنجیریں پیدا کرنے کے لیے استعمال کریں گے۔ یہاں چند مثالیں ہیں:
 
 ```text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system. 
-This is important because it could lead to a data breach. 
-I would classify this email as IMPORTANT
+بھیجنے والے نے سسٹم میں ایک بڑی حفاظتی کمزوری دریافت کی ہے۔
+یہ اہم ہے کیونکہ یہ ڈیٹا کی خلاف ورزی کا باعث بن سکتا ہے۔
+میں اس ای میل کو اہم کے طور پر درجہ بندی کروں گا۔
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-The sender has discovered a major security vulnerability in the system, but they have not provided any proof of concept and it is not easy to use. 
-I would classify this email as NOT IMPORTANT
+بھیجنے والے نے سسٹم میں ایک بڑی حفاظتی کمزوری کا پتہ لگایا ہے، لیکن انہوں نے تصور کا کوئی ثبوت فراہم نہیں کیا ہے اور اسے استعمال کرنا آسان نہیں ہے۔
+میں اس ای میل کو غیر اہم کے طور پر درجہ بندی کروں گا۔
 <!-- highlight-end -->
 ```
 
 ```text
 <!-- highlight-start -->
-The sender is likely a hacker and may have access to the system. 
-This is important because it could lead to a data breach. 
-I would classify this email as IMPORTANT
+بھیجنے والا ممکنہ طور پر ہیکر ہے اور اسے سسٹم تک رسائی حاصل ہو سکتی ہے۔
+یہ اہم ہے کیونکہ یہ ڈیٹا کی خلاف ورزی کا باعث بن سکتا ہے۔
+میں اس ای میل کو اہم کے طور پر درجہ بندی کروں گا۔
 <!-- highlight-end -->
 ```
 
-By generating many chains of thought, and taking the most commonly occurring answer (`IMPORTANT`), we can get a more consistently correct answer from GPT-3.
+سوچ کی بہت سی زنجیریں بنا کر، اور عام طور پر پائے جانے والے جواب (`اہم`) کو لے کر، ہم GPT-3 سے زیادہ مستقل طور پر درست جواب حاصل کر سکتے ہیں۔
 
-## Results
+## نتائج
 
-Self-consistency has been shown to improve results on arithmetic, commonsense and symbolic reasoning tasks. Even when regular CoT was found to be ineffective(@ye2022unreliability), self-consistency
-was still able to improve results.
+ریاضی، کامن سینس اور علامتی استدلال کے کاموں پر نتائج کو بہتر بنانے کے لیے خود مستقل مزاجی دکھائی گئی ہے۔ یہاں تک کہ جب باقاعدہ CoT غیر موثر پایا گیا (@ye2022unreliability)، خود مستقل مزاجی
+اب بھی نتائج کو بہتر بنانے کے قابل تھا.
 
-## Notes
+## نوٹس
 
-- Wang et al. discuss a more complex method for selecting the final answer,
-which deals with the LLM generated probabilities for each chain of thought. However, they
-do not use this method in their experiments, and majority voting seems to usually
-have the same or better performance.
+- وانگ وغیرہ۔ حتمی جواب کے انتخاب کے لیے ایک پیچیدہ طریقہ پر بحث کریں،
+جو ہر ایک سلسلہ فکر کے لیے LLM پیدا شدہ امکانات سے متعلق ہے۔ تاہم، وہ
+اپنے تجربات میں اس طریقہ کا استعمال نہ کریں، اور عام طور پر اکثریت کی ووٹنگ لگتی ہے۔
+ایک جیسی یا بہتر کارکردگی ہے۔

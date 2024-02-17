@@ -2,11 +2,12 @@
 sidebar_position: 40
 ---
 
-# 🟡 Coding Assistance
+# 🟡 کوڈنگ اسسٹنس
 
-You can use LLMs for debugging, code generation, reformatting, commenting, and more. One popular chatbot claims it can work with code in over 40 programming languages. 
+آپ LLMs کو ڈیبگنگ، کوڈ جنریشن، ری فارمیٹنگ، تبصرہ کرنے اور مزید بہت کچھ کے لیے استعمال کر سکتے ہیں۔ ایک مشہور چیٹ بوٹ کا دعویٰ ہے کہ یہ 40 سے زیادہ پروگرامنگ زبانوں میں کوڈ کے ساتھ کام کر سکتا ہے۔
 
-|   Very Old  |         Old    |     Recent          |    Bleeding Edge      |
+
+|   بہت پرانا  |         پرانا    |     حالیہ          |    مکمل نیا       |
 |-------------|----------------|---------------------|-----------------------|
 | BASIC       | Perl           | Swift               | Kotlin                |
 | Assembly    | Pascal         | TypeScript          | Julia                 |
@@ -19,15 +20,15 @@ You can use LLMs for debugging, code generation, reformatting, commenting, and m
 | Forth       | Tcl            | Groovy              | Vlang                 |
 | Ada         | SQL            | Scala Native        | Erlang                |
 
-## Code Generation
+## کوڈ جنریشن
 
-Instructing ChatGPT, or any other LLM-based AI chatbot, to generate code is as simple as this:
+چیٹ جی پی ٹی، یا کسی دوسرے ایل ایل ایم پر مبنی AI چیٹ بوٹ کو کوڈ تیار کرنے کی ہدایت دینا اتنا ہی آسان ہے:
 
 ```text
-Act as a junior python programmer. Please write the code to generate madlibs from 3 arrays of 6 items each: prepositions, verbs and nouns, with the nouns also being used as direct objects. After writing it, execute the code.
+جونیئر ازگر پروگرامر کے طور پر کام کریں۔ براہ کرم 6 آئٹمز کی 3 صفوں سے مدلیبز بنانے کے لیے کوڈ لکھیں: سابقہ، فعل اور اسم، اسم کو بھی براہ راست اشیاء کے طور پر استعمال کیا جا رہا ہے۔ اسے لکھنے کے بعد، کوڈ پر عمل کریں۔
 ```
 
-The output will be something like:
+آؤٹ پٹ کچھ اس طرح ہوگی:
 
 ```text
 // highlight-start
@@ -47,7 +48,7 @@ print(madlib)
 // highlight-end
 ```
 
-Try it here:
+اسے یہاں آزمائیں:
 
 <div 
 trydyno-embed="" 
@@ -61,12 +62,12 @@ top-p="0">
     <noscript>Failed to load Dyno Embed: JavaScript must be enabled</noscript>
 </div>
 
-## Commenting and Reformatting Code
+## تبصرہ اور ری فارمیٹنگ کوڈ
 
-You can ask the bot to add comments to your code and reformat it for legibility. After your prompt instruction, add three hashmarks to separate your prompt from the code you'd like it to clean up:
+آپ بوٹ سے اپنے کوڈ میں تبصرے شامل کرنے کے لیے کہہ سکتے ہیں اور اسے درستگی کے لیے دوبارہ فارمیٹ کر سکتے ہیں۔ آپ کی فوری ہدایات کے بعد، اپنے پرامپٹ کو اس کوڈ سے الگ کرنے کے لیے تین ہیش مارکس شامل کریں جسے آپ صاف کرنا چاہتے ہیں:
 
 ```text
-Please add line comments to this Python code and reformat it for legibility:  
+براہ کرم اس Python کوڈ میں لائن کے تبصرے شامل کریں اور اسے قابل قبول ہونے کے لیے دوبارہ فارمیٹ کریں:
 ###
 import math
 amplitude = 30
@@ -77,7 +78,7 @@ for i in range(num_points):
     print(' ' * (amplitude + y) + '*')
 ```
 
-The output will be something like:
+آؤٹ پٹ کچھ اس طرح ہوگی:
 
 ```text
 // highlight-start
@@ -100,12 +101,12 @@ for i in range(num_points):
 // highlight-end
 ```
 
-## Debugging
+## ڈیبگنگ
 
-Not only can LLM-based AI chatbots detect syntax errors in code, but they can also find logical errors that would crop up when code is executed. Below is an example of a Python script that eventually causes a division by zero error one line 4 due to a logical error on line 3.  Try this simple prompt to find and fix the error:
+ایل ایل ایم پر مبنی اے آئی چیٹ بوٹس نہ صرف کوڈ میں نحوی غلطیوں کا پتہ لگاسکتے ہیں، بلکہ وہ منطقی غلطیاں بھی تلاش کرسکتے ہیں جو کوڈ پر عمل درآمد ہونے پر پیدا ہوجائیں گی۔ ذیل میں ایک Python اسکرپٹ کی مثال دی گئی ہے جو آخر کار لائن 3 پر منطقی غلطی کی وجہ سے صفر کی غلطی سے ایک لائن 4 میں تقسیم کا سبب بنتی ہے۔ غلطی کو تلاش کرنے اور اسے ٹھیک کرنے کے لیے اس سادہ پرامپٹ کو آزمائیں:
 
 ```text
-Please debug this Python code:  
+براہ کرم اس ازگر کوڈ کو ڈیبگ کریں:
 
 1. pizza_cost = 100
 2. partygoers = 10
@@ -115,7 +116,7 @@ Please debug this Python code:
 6.    partygoers -= 2
 ```
 
-The output will include the corrected while loop, which is changed to ensure the denominator variable stays positive:
+آؤٹ پٹ میں درست جبکہ لوپ کو شامل کیا جائے گا، جو کہ ڈینومینیٹر متغیر کو مثبت رہنے کو یقینی بنانے کے لیے تبدیل کیا جاتا ہے:
 
 ```text
 // highlight-start
@@ -123,15 +124,15 @@ The output will include the corrected while loop, which is changed to ensure the
 // highlight-end
 ```
 
-For more nuanced errors, you may need to add more specifics: the error message, environment variables, included libraries or variations in inputs. 
+مزید چھوٹی غلطیوں کے لیے، آپ کو مزید تفصیلات شامل کرنے کی ضرورت ہو سکتی ہے: غلطی کا پیغام، ماحولیاتی متغیرات، شامل لائبریریاں یا ان پٹ میں تغیرات۔
 
 
-## Optimizing Code
+## کوڈ کو بہتر بنانا
 
-If your script is taking too long to execute, an AI chatbot like ChatGPT can optimize it. Here's an example of optimizing an inefficient script that finds prime numbers:
+اگر آپ کی اسکرپٹ کو عمل میں لانے میں بہت زیادہ وقت لگ رہا ہے، تو ایک AI چیٹ بوٹ جیسا کہ ChatGPT اسے بہتر بنا سکتا ہے۔ یہاں ایک غیر موثر اسکرپٹ کو بہتر بنانے کی ایک مثال ہے جو بنیادی نمبر تلاش کرتی ہے:
 
 ```text
-Act like a very senior python developer. Please optimize this script:  
+ایک بہت ہی سینئر ازگر ڈویلپر کی طرح کام کریں۔ براہ کرم اس اسکرپٹ کو بہتر بنائیں:
 
 for num in range(1, 101):
     if num  1:
@@ -142,7 +143,7 @@ for num in range(1, 101):
             print(num)
 ```
 
-The output might be a script that uses the [Sieve of Eratosthenes algorithm](https://www.geeksforgeeks.org/sieve-of-eratosthenes/) for finding prime numbers:
+آؤٹ پٹ ایک اسکرپٹ ہو سکتا ہے جو بنیادی نمبر تلاش کرنے کے لیے [Sieve of Eratosthenes algorithm](https://www.geeksforgeeks.org/sieve-of-eratosthenes/) کا استعمال کرتا ہے:
 
 ```text
 // highlight-start
@@ -155,15 +156,15 @@ print(numbers)
 // highlight-end
 ```
 
-Note that we asked the bot to "act like a _senior_ developer" to optimize the script. You can also dictate that it have a certain area of expertise (e.g., sorting algorithms) or number of years of experience. Alternatively, if you have a script that seems overly complicated, you can ask the bot to write that script "as a _very junior_ developer."
+نوٹ کریں کہ ہم نے بوٹ سے اسکرپٹ کو بہتر بنانے کے لیے "ایک _سینئر_ڈیولپر کی طرح کام کرنے" کو کہا۔ آپ یہ بھی حکم دے سکتے ہیں کہ اس کے پاس مہارت کا ایک خاص شعبہ ہے (مثلاً الگورتھم چھانٹنا) یا سالوں کا تجربہ۔ متبادل طور پر، اگر آپ کے پاس کوئی اسکرپٹ ہے جو حد سے زیادہ پیچیدہ معلوم ہوتا ہے، تو آپ بوٹ سے اس اسکرپٹ کو "بطور _very junior_ ڈویلپر" لکھنے کے لیے کہہ سکتے ہیں۔
 
 
-## Translating Between Programming Languages
+## پروگرامنگ زبانوں کے درمیان ترجمہ کرنا
 
-A very useful feature AI chatbots offer is the ability to port programs from one language to another. A typical use for this might be upgrading code in an older language to a more modern one:
+AI چیٹ بوٹس کی پیشکش ایک بہت ہی مفید خصوصیت پروگراموں کو ایک زبان سے دوسری زبان میں پورٹ کرنے کی صلاحیت ہے۔ اس کے لیے ایک عام استعمال پرانی زبان میں کوڈ کو زیادہ جدید میں اپ گریڈ کرنا ہو سکتا ہے:
 
 ```text
-Act like an experienced developer with knowledge of both COBOL and Python. Please convert this COBOL program to Python:  
+COBOL اور Python دونوں کے علم کے ساتھ ایک تجربہ کار ڈویلپر کی طرح کام کریں۔ براہ کرم اس COBOL پروگرام کو ازگر میں تبدیل کریں:  
 
 
 IDENTIFICATION DIVISION.
@@ -184,7 +185,7 @@ DISPLAY "Social Security tax is: $", SS-TAX.
 STOP RUN.
 ```
 
-The output might be something like this:
+آؤٹ پٹ کچھ اس طرح ہو سکتا ہے:
 
 ```text
 // highlight-start
@@ -196,9 +197,9 @@ print("Social Security tax is: $", round(ss_tax, 2))
 ```
 
 
-## Handling Multiple Files and Refactoring your Codebase
+## ایک سے زیادہ فائلوں کو ہینڈل کرنا اور اپنے کوڈ بیس کو ری فیکٹر کرنا
 
-What if you want an AI chatbot to evaluate **multiple** files? Simply supply the filenames and paste the code for each:
+اگر آپ AI چیٹ بوٹ **متعدد** فائلوں کا جائزہ لینا چاہتے ہیں تو کیا ہوگا؟ بس فائل نام فراہم کریں اور ہر ایک کے لیے کوڈ چسپاں کریں:
 
 ```text
 My Python script uses two files, listed below, in different directories. Please display the output from executing conversation.py:
@@ -221,17 +222,17 @@ Goodbye, John!
 ```
 
 
-Using this technique, you can submit multiple files to the bot in a single prompt and ask it to refactor the code. Alternatively, you can ask it to "memorize" each one and then execute it in a later prompt.
+اس تکنیک کا استعمال کرتے ہوئے، آپ ایک ہی پرامپٹ میں بوٹ میں متعدد فائلیں جمع کر سکتے ہیں اور اس سے کوڈ کو ری ایکٹر کرنے کے لیے کہہ سکتے ہیں۔ متبادل طور پر، آپ اس سے ہر ایک کو "حافظ" کرنے کے لیے کہہ سکتے ہیں اور پھر اسے بعد کے پرامپٹ میں انجام دے سکتے ہیں۔
 
-## Simulating a Database Server
+## ڈیٹا بیس سرور کی نقل کرنا
 
-Most AI chatbots work with code, but some can even simulate server environments like databases, web and email servers. Consider this prompt:
+زیادہ تر AI چیٹ بوٹس کوڈ کے ساتھ کام کرتے ہیں، لیکن کچھ سرور کے ماحول جیسے ڈیٹا بیس، ویب اور ای میل سرورز کی نقل بھی کر سکتے ہیں۔ اس پرامپٹ پر غور کریں:
 
 ```text
-Act as Microsoft SQL Server. Create a database called "politics" and inside it a table called "politicians." Fill it with 50 rows of famous politicians from around the world from different eras, 1900-2000. Add columns for their full names, country, dates of birth, and date of death if applicable. Create a view for top 3 politicians who lived the longest. Create and execute a Transact-SQL command that outputs the contents of that view.
+Microsoft SQL سرور کے طور پر کام کریں۔ "سیاست" کے نام سے ایک ڈیٹا بیس بنائیں اور اس کے اندر "سیاستدان" کے نام سے ایک میز بنائیں۔ اسے مختلف ادوار، 1900-2000 کے دنیا بھر کے مشہور سیاستدانوں کی 50 قطاروں سے پُر کریں۔ اگر قابل اطلاق ہو تو ان کے مکمل نام، ملک، تاریخ پیدائش، اور تاریخ وفات کے کالم شامل کریں۔ سب سے طویل عرصے تک زندہ رہنے والے ٹاپ 3 سیاست دانوں کے لیے ایک نظریہ بنائیں۔ ایک Transact-SQL کمانڈ بنائیں اور اس پر عمل کریں جو اس منظر کے مواد کو آؤٹ پٹ کرتا ہے۔
 ```
 
-The output will be something like:
+آؤٹ پٹ کچھ اس طرح ہوگی:
 
 ```text
 // highlight-start
@@ -255,13 +256,13 @@ CREATE TABLE politicians (
 // highlight-end
 ```
 
-From there, you can add columns, indexes and more:
+وہاں سے، آپ کالم، اشاریہ جات اور مزید شامل کر سکتے ہیں:
 
 ```
-Add a column to the politicians table for the second-in-command and update it for each row.
+سیکنڈ ان کمانڈ کے لیے سیاست دانوں کی میز پر ایک کالم شامل کریں اور ہر قطار کے لیے اسے اپ ڈیٹ کریں۔
 ```
 
-The output might be something like:
+آؤٹ پٹ کچھ اس طرح ہو سکتا ہے:
 
 ```text
 // highlight-start
@@ -279,18 +280,18 @@ SET second_in_command =
 // highlight-end
 ```
 
-## Simulating a Web Server
+## ویب سرور کی تقلید
 
-Some AI chatbots can simulate many other servers and APIs. Here's an example of a prompt that simulates an Apache server response to specific browser request headers:
+کچھ AI چیٹ بوٹس بہت سے دوسرے سرورز اور APIs کی تقلید کر سکتے ہیں۔ یہاں ایک پرامپٹ کی ایک مثال ہے جو مخصوص براؤزر کی درخواست کے ہیڈر پر اپاچی سرور کے جواب کی تقلید کرتا ہے۔
 
 ```text
-Act as an Apache web server. How would you respond to these HTTP headers?
+اپاچی ویب سرور کے طور پر کام کریں۔ آپ ان HTTP ہیڈرز کا کیا جواب دیں گے؟
 
 GET /example HTTP/1.1
 Host: www.example.com
 ```
 
-The output will be something like:
+آؤٹ پٹ کچھ اس طرح ہوگی:
 
 ```text
 // highlight-start
@@ -302,9 +303,9 @@ Content-Type: [MIME type of the requested resource, e.g. text/html]
 // highlight-end
 ```
 
-Here are just some of the types of servers and APIs that one popular chatbot can emulate:
+یہاں سرورز اور APIs کی صرف کچھ اقسام ہیں جن کو ایک مشہور چیٹ بوٹ نقل کر سکتا ہے:
 
-|   Very Old  |     Old        |        Recent          |    Bleeding Edge     |
+|   بہت پرانا	  |     پرانا        |        حالیہ          |    مکمل نیا     |
 |-------------|----------------|------------------------|----------------------|
 | Telnet      | HTTP/1.0       | RESTful API            | GraphQL API          |
 | FTP         | SMTP           | SOAP API               | GRPC API             |
@@ -318,15 +319,15 @@ Here are just some of the types of servers and APIs that one popular chatbot can
 | SMB         | JSON-RPC       | Google Cloud Endpoints | NATS Streaming API   |
 
 
-## Simulating a Command Line
+## کمانڈ لائن کی نقل کرنا
 
-Since a shell within Linux (or Windows PowerShell) is also a programming language, you can interact with it using an AI chatbot, and build an environment for your filesystem:
+چونکہ لینکس (یا ونڈوز پاور شیل) کے اندر ایک شیل بھی ایک پروگرامنگ لینگویج ہے، اس لیے آپ AI چیٹ بوٹ کا استعمال کرتے ہوئے اس کے ساتھ بات چیت کر سکتے ہیں، اور اپنے فائل سسٹم کے لیے ماحول بنا سکتے ہیں:
 
 ```
-Act as Debian Linux command shell. Please respond to my commands as the terminal would, with as little explanation as possible. My first command is: ls -l
+ڈیبین لینکس کمانڈ شیل کے طور پر کام کریں۔ براہ کرم میرے حکموں کا جواب دیں جیسا کہ ٹرمینل کرے گا، جتنا ممکن ہو کم وضاحت کے ساتھ۔ میرا پہلا حکم ہے: ls -l
 ```
 
-The output will be something like:
+آؤٹ پٹ کچھ اس طرح ہوگی:
 
 ```text
 // highlight-start
@@ -336,7 +337,7 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 // highlight-end
 ```
 
-Try experimenting with other commands:
+دوسرے حکموں کے ساتھ تجربہ کرنے کی کوشش کریں:
 
 ```text
 >touch greeting.txt  
@@ -344,7 +345,7 @@ Try experimenting with other commands:
 >ls -l  
 ```
 
-Depending on the size of its context window, the bot should remember your changes (for a while, at least) and the final output ought to something like:
+اس کے سیاق و سباق کی ونڈو کے سائز پر منحصر ہے، بوٹ کو آپ کی تبدیلیاں یاد رکھنی چاہئیں (کم از کم تھوڑی دیر کے لیے) اور حتمی آؤٹ پٹ کو کچھ ایسا ہونا چاہیے:
 
 ```text
 // highlight-start
@@ -355,15 +356,14 @@ drwxr-xr-x  2 user  group   4096 Feb 28 09:12 directory1
 // highlight-end
 ```
 
-A full discussion of using AI chatbots as a virtual machines can be found at [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/).
+AI چیٹ بوٹس کو ورچوئل مشین کے طور پر استعمال کرنے کی مکمل بحث [engraved.blog](https://www.engraved.blog/building-a-virtual-machine-inside/) پر مل سکتی ہے۔
 
+## یونٹ ٹیسٹ تیار کرنا
 
-## Generating Unit Tests
-
-AI chatbots built on LLMs are ideal for the time-consuming task of creating unit tests. Consider this prompt to build a series of unit tests for a tax calculating program:
+LLMs پر بنائے گئے AI چیٹ بوٹس یونٹ ٹیسٹ بنانے کے وقت لینے والے کام کے لیے مثالی ہیں۔ ٹیکس کیلکولیشن پروگرام کے لیے یونٹ ٹیسٹ کی ایک سیریز بنانے کے لیے اس پرامپٹ پر غور کریں:
 
 ```text
-Act as a Python software test engineer. Write unit tests for the calculate_tax function of this tax estimator Python program:
+ازگر سافٹ ویئر ٹیسٹ انجینئر کے طور پر کام کریں۔ اس ٹیکس تخمینہ کار Python پروگرام کے calculate_tax فنکشن کے لیے یونٹ ٹیسٹ لکھیں:
 ###
 def get_user_inputs():
   total_income = float(input('Enter your income (wages, tips, etc.): $'))
@@ -376,7 +376,7 @@ def calculate_tax(total_income, dependent_care_expenses):
   etc.
 ```
 
-The output might be something like:
+آؤٹ پٹ کچھ اس طرح ہو سکتا ہے:
 
 ```text
 // highlight-start
@@ -408,4 +408,4 @@ if __name__ == '__main__':
 
 ---
 
-Contributed by _[Prompt Yes!](https://promptyes.com)_, a company offering instructor-led courses in [ChatGPT](https://promptyes.com/classes/productivity/) and [Midjourney](https://promptyes.com/classes/midjourney/).
+_[Prompt Yes!](https://promptyes.com)_ کے ذریعے تعاون کیا گیا، جو کہ [ChatGPT](https://promptyes.com/classes/productivity/) اور [Midjourney](https://promptyes.com/classes/productivity/) میں انسٹرکٹر کی زیر قیادت کورسز پیش کرتی ہے۔ ://promptyes.com/classes/midjourney/)۔

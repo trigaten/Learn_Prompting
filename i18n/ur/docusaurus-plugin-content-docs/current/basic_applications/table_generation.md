@@ -2,31 +2,31 @@
 sidebar_position: 0
 ---
 
-# 🟢 Structuring Data
+# 🟢 ڈیٹا کی ساخت
 
-One simple and exciting use case for LLMs is organizing data into tables. Perhaps you have a bunch of news articles or business reports, and you would like all of the important points to be summarized in a table that you can then put into a spreadsheet or database. Chat bots like ChatGPT can help you do this.
+LLMs کے لیے استعمال کا ایک آسان اور دلچسپ کیس ڈیٹا کو ٹیبل میں ترتیب دینا ہے۔ شاید آپ کے پاس خبروں کے مضامین یا کاروباری رپورٹس کا ایک گروپ ہے، اور آپ چاہتے ہیں کہ تمام اہم نکات کا خلاصہ ایک ٹیبل میں کیا جائے جسے آپ اسپریڈ شیٹ یا ڈیٹا بیس میں ڈال سکتے ہیں۔ ChatGPT جیسے چیٹ بوٹس آپ کو ایسا کرنے میں مدد کر سکتے ہیں۔
 
-We can extract information from the following report by appending `Generate a table containing this information:` to it.
+ہم درج ذیل رپورٹ سے معلومات حاصل کر سکتے ہیں اس میں 'اس معلومات پر مشتمل ٹیبل بنائیں:' شامل کر کے۔
 
 ```text
-In a recent business report presentation, the CEO of Zana Corp. highlighted their remarkable growth in the past fiscal year. She shared that the company experienced a 15% increase in revenue, reaching $50 million, with a 12% profit margin ($6 million in net profit). The report also showcased a 20% growth in their customer base, now totaling 100,000 customers. Additionally, the company's operating expenses went up by 10%, amounting to $10 million, while the employee headcount increased by 25%, resulting in a current workforce of 500 employees. 
+ایک حالیہ کاروباری رپورٹ کی پیشکش میں، Zana Corp. کے CEO نے گزشتہ مالی سال میں ان کی شاندار ترقی کو اجاگر کیا۔ اس نے شیئر کیا کہ کمپنی نے آمدنی میں 15% اضافے کا تجربہ کیا، 12% منافع کے مارجن ($6 ملین خالص منافع) کے ساتھ، $50 ملین تک پہنچ گئی۔ رپورٹ میں ان کے کسٹمر بیس میں 20 فیصد اضافہ بھی دکھایا گیا، اب کل 100,000 صارفین ہیں۔ مزید برآں، کمپنی کے آپریٹنگ اخراجات میں 10% کا اضافہ ہوا، جو کہ 10 ملین ڈالر بنتا ہے، جبکہ ملازمین کی تعداد میں 25% اضافہ ہوا، جس کے نتیجے میں 500 ملازمین کی موجودہ افرادی قوت ہے۔
 
-Generate a table containing this information:
+اس معلومات پر مشتمل ایک جدول بنائیں:
 ```
 
-ChatGPT will output a table like the following:
+ChatGPT مندرجہ ذیل کی طرح ایک ٹیبل آؤٹ پٹ کرے گا:
 
-| Metric | Value |
+| میٹرک | قدر |
 |-------|------|
-| Revenue | $50 million |
-| Profit Margin | 12% |
-| Net Profit | $6 million |
-| Customer Base | 100,000 |
-| Operating Expenses | $10 million |
-| Employee Headcount | 500 |
-| Revenue Increase | 15% |
-| Customer Increase | 20% |
-| Operating Expenses Increase | 10% |
-| Employee Headcount Increase | 25% |
+| آمدنی | $50 ملین |
+| منافع کا مارجن | 12% |
+| خالص منافع | $6 ملین |
+| کسٹمر بیس | 100,000 |
+| آپریٹنگ اخراجات | $10 ملین |
+| ملازمین کی تعداد | 500 |
+| آمدنی میں اضافہ | 15% |
+| گاہک میں اضافہ | 20% |
+| آپریٹنگ اخراجات میں اضافہ | 10% |
+| ملازمین کی تعداد میں اضافہ | 25% |
 
-You can then copy and paste it into a spreadsheet like Excel/Sheets or even documents and powerpoints.
+اس کے بعد آپ اسے اسپریڈشیٹ جیسے Excel/Sheets یا یہاں تک کہ دستاویزات اور پاور پوائنٹس میں کاپی اور پیسٹ کر سکتے ہیں۔

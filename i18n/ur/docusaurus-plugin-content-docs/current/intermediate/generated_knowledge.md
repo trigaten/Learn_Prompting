@@ -2,77 +2,77 @@
 sidebar_position: 7
 ---
 
-# 🟡 Generated Knowledge
+# 🟡 پیدا شدہ علم
 
 
-The idea behind the generated knowledge approach(@liu2021generated) is to ask the %%LLM|LLM%% to generate potentially useful information about a given question/prompt before generating a final response.
+جنریٹڈ نالج اپروچ (@liu2021generated) کے پیچھے خیال یہ ہے کہ %%LLM|LLM%% سے کوئی حتمی جواب تیار کرنے سے پہلے کسی دیئے گئے سوال/پرامپٹ کے بارے میں ممکنہ طور پر مفید معلومات پیدا کرنے کے لیے کہا جائے۔
 
-For example, say you want to write a small blog post about some animal, like [Spirit bears](https://en.wikipedia.org/wiki/Kermode_bear). Before asking the %%LLM|LLM%% to write the blog post, you can ask it to generate some facts about Spirit bears. This will help the LLM write a more informative blog post. There are two simple ways of going about this.
+مثال کے طور پر، کہتے ہیں کہ آپ کسی جانور کے بارے میں ایک چھوٹی سی بلاگ پوسٹ لکھنا چاہتے ہیں، جیسے [Spirit bears](https://en.wikipedia.org/wiki/Kermode_bear)۔ %%LLM|LLM%% سے بلاگ پوسٹ لکھنے کے لیے کہنے سے پہلے، آپ اس سے روح ریچھ کے بارے میں کچھ حقائق پیدا کرنے کے لیے کہہ سکتے ہیں۔ اس سے LLM کو مزید معلوماتی بلاگ پوسٹ لکھنے میں مدد ملے گی۔ اس کے بارے میں جانے کے دو آسان طریقے ہیں۔
 
-## Single prompt approach
+## واحد فوری نقطہ نظر
 
-The first approach asks the LLM to generate knowledge then write the post, all with a single prompt.
+پہلا نقطہ نظر ایل ایل ایم سے علم پیدا کرنے کے لیے کہتا ہے پھر پوسٹ لکھیں، سب ایک ہی پرامپٹ کے ساتھ۔
 
 ```text
-Generate 4 facts about the Kermode bear, then use these facts to write a short blog post using the information:
+کرموڈ ریچھ کے بارے میں 4 حقائق بنائیں، پھر معلومات کا استعمال کرتے ہوئے ایک مختصر بلاگ پوسٹ لکھنے کے لیے ان حقائق کا استعمال کریں:
 // highlight-start
-The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada. 
+کرموڈ ریچھ، جسے روح ریچھ بھی کہا جاتا ہے، امریکی سیاہ ریچھ کی ایک نایاب ذیلی نسل ہے جو برٹش کولمبیا، کینیڈا کے ساحلی علاقوں میں پائی جاتی ہے۔
 
-1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur. 
+1. کرموڈ ریچھ امریکی کالے ریچھ کی ایک منفرد ذیلی نسل ہے، جس کی تقریباً 10% آبادی سفید کھال پر مشتمل ہے۔
 
-2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. 
+2. کرموڈ ریچھ برٹش کولمبیا کے فرسٹ نیشن لوگوں کی علامت ہے، اور اسے ایک روحانی جانور کے طور پر دیکھا جاتا ہے۔
 
-3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. 
+3. کرموڈ ریچھ ماحولیاتی نظام کا ایک اہم حصہ ہے، جو بیجوں کو پھیلانے اور جنگل کے توازن کو برقرار رکھنے میں مدد کرتا ہے۔
 
-4. The Kermode bear is a protected species, and its population is monitored closely by the provincial government.
+4. کرموڈ ریچھ ایک محفوظ نسل ہے، اور صوبائی حکومت اس کی آبادی پر کڑی نظر رکھتی ہے۔
 
-The Kermode bear is a unique and special animal that is found in the coastal regions of British Columbia, Canada. Approximately 10% of the population of this subspecies of the American black bear have white fur, making them a rare sight. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. It is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. The Kermode bear is a protected species, and its population is monitored closely by the provincial government. It is a beautiful and majestic animal, and it is important that we do our part to protect and conserve this species.
+کرموڈ ریچھ ایک منفرد اور خاص جانور ہے جو برٹش کولمبیا، کینیڈا کے ساحلی علاقوں میں پایا جاتا ہے۔ امریکی کالے ریچھ کی اس ذیلی نسل کی تقریباً 10% آبادی کی کھال سفید ہے، جس کی وجہ سے یہ ایک نایاب منظر ہے۔ کرموڈ ریچھ برٹش کولمبیا کے فرسٹ نیشنز کے لوگوں کی علامت ہے، اور اسے ایک روحانی جانور کے طور پر دیکھا جاتا ہے۔ یہ ماحولیاتی نظام کا ایک اہم حصہ ہے، جو بیجوں کو پھیلانے اور جنگل کے توازن کو برقرار رکھنے میں مدد کرتا ہے۔ کرموڈ ریچھ ایک محفوظ نسل ہے اور صوبائی حکومت اس کی آبادی پر کڑی نظر رکھتی ہے۔ یہ ایک خوبصورت اور شاندار جانور ہے، اور یہ ضروری ہے کہ ہم اس نسل کی حفاظت اور تحفظ کے لیے اپنا کردار ادا کریں۔
 // highlight-end
 ```
 
 
-## Dual prompt approach
+## دوہری فوری نقطہ نظر
 
-In this approach, we first prompt the %%LLM|LLM%% to generate facts about the bear:
+اس نقطہ نظر میں، ہم سب سے پہلے %%LLM|LLM%% کو ریچھ کے بارے میں حقائق پیدا کرنے کا اشارہ کرتے ہیں:
   
 ```text
-Generate 10 facts about the Kermode bear:
+کرموڈ ریچھ کے بارے میں 10 حقائق بنائیں:
 // highlight-start
-1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
+1. کرموڈ ریچھ، جسے اسپرٹ بیئر بھی کہا جاتا ہے، برٹش کولمبیا، کینیڈا میں پائے جانے والے امریکی سیاہ ریچھ کی ایک نایاب ذیلی نسل ہے۔
 
-2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+2. کرموڈ ریچھ میں ایک منفرد سفید یا کریم رنگ کا کوٹ ہوتا ہے، جو ایک متواتر جین کی وجہ سے ہوتا ہے۔
 
-3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+3. کرموڈ ریچھ برٹش کولمبیا کے فرسٹ نیشنز کے لوگوں کے لیے امید اور تجدید کی علامت ہے۔
 
-4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
+4. کرموڈ ریچھ ایک محفوظ پرجاتی ہے اور اسے کینیڈا میں خطرے سے دوچار جنگلی حیات کی حیثیت سے متعلق کمیٹی کے ذریعہ خصوصی تشویش کی ایک انواع کے طور پر درج کیا گیا ہے۔
 // highlight-end
 ```
 
-Then, we feed that information into another prompt to write the blog post:
+پھر، ہم اس معلومات کو بلاگ پوسٹ لکھنے کے لیے ایک اور پرامپٹ میں فیڈ کرتے ہیں:
 
 ```text
-1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
+1. کرموڈ ریچھ، جسے اسپرٹ بیئر بھی کہا جاتا ہے، برٹش کولمبیا، کینیڈا میں پائے جانے والے امریکی سیاہ ریچھ کی ایک نایاب ذیلی نسل ہے۔
 
-2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+2. کرموڈ ریچھ میں ایک منفرد سفید یا کریم رنگ کا کوٹ ہوتا ہے، جو ایک متواتر جین کی وجہ سے ہوتا ہے۔
 
-3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+3. کرموڈ ریچھ برٹش کولمبیا کے فرسٹ نیشنز کے لوگوں کے لیے امید اور تجدید کی علامت ہے۔
 
-4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
+4. کرموڈ ریچھ ایک محفوظ پرجاتی ہے اور اسے کینیڈا میں خطرے سے دوچار جنگلی حیات کی حیثیت سے متعلق کمیٹی کے ذریعہ خصوصی تشویش کی ایک انواع کے طور پر درج کیا گیا ہے۔
 
-Use the above facts to write a one paragraph blog post about the Kermode bear:
+کرموڈ ریچھ کے بارے میں ایک پیراگراف بلاگ پوسٹ لکھنے کے لیے مندرجہ بالا حقائق کا استعمال کریں:
 
 // highlight-start
 
-The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada. This unique bear has a white or cream-colored coat, caused by a recessive gene, and is a symbol of hope and renewal for the First Nations people of British Columbia. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada, making it an important part of the region's biodiversity.
+کرموڈ ریچھ، جسے اسپرٹ بیئر بھی کہا جاتا ہے، برٹش کولمبیا، کینیڈا میں پائے جانے والے امریکی سیاہ ریچھ کی ایک نایاب ذیلی نسل ہے۔ اس انوکھے ریچھ کے پاس سفید یا کریم رنگ کا کوٹ ہے، جو ایک متواتر جین کی وجہ سے ہوتا ہے، اور یہ برٹش کولمبیا کے فرسٹ نیشنز کے لوگوں کے لیے امید اور تجدید کی علامت ہے۔ کرموڈ ریچھ ایک محفوظ انواع ہے اور اسے کینیڈا میں خطرے سے دوچار جنگلی حیات کی حیثیت سے متعلق کمیٹی نے خصوصی تشویش کی ایک انواع کے طور پر درج کیا ہے، جو اسے خطے کی حیاتیاتی تنوع کا ایک اہم حصہ بناتا ہے۔
 
 // highlight-end
 ```
 
-I recommend this second approach since it can produce longer content more reliably.
+میں اس دوسرے نقطہ نظر کی سفارش کرتا ہوں کیونکہ یہ زیادہ قابل اعتماد طریقے سے طویل مواد تیار کر سکتا ہے۔
 
-## Another use case
+## استعمال کا ایک اور کیس
 
-The generated knowledge approach was actually introduced for a completely different task, that of answering difficult questions. Consider the following question, which GPT-3 answers incorrectly: 
+پیدا شدہ علمی نقطہ نظر درحقیقت ایک بالکل مختلف کام کے لیے متعارف کرایا گیا تھا، جو کہ مشکل سوالات کے جوابات دینا تھا۔ مندرجہ ذیل سوال پر غور کریں، جس کا GPT-3 غلط جواب دیتا ہے:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIGxhcmdlciB0aGFuIENvbmdvLiIsInByb21wdCI6IldoaWNoIGNvdW50cnkgaXMgbGFyZ2VyLCBDb25nbyBvciBTb3V0aCBBZnJpY2E%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -81,14 +81,14 @@ The generated knowledge approach was actually introduced for a completely differ
 ></iframe>
 
 :::note
-This example may not be accurate. We are working to revise it.
+یہ مثال شاید درست نہ ہو۔ ہم اس پر نظر ثانی کے لیے کام کر رہے ہیں۔
 :::
 
 <br/>
 
-If we first ask the %%LLM|LLM%% to generate facts about Congo and South Africa, we can then use that information to answer the question correctly. In theory, this is similar to %%CoT|CoT prompting%%, since we are effectively getting the LLM to generate intermediate reasoning in the form of related facts.
+اگر ہم سب سے پہلے %%LLM|LLM%% سے کانگو اور جنوبی افریقہ کے بارے میں حقائق پیدا کرنے کے لیے پوچھتے ہیں، تو ہم اس معلومات کو سوال کا صحیح جواب دینے کے لیے استعمال کر سکتے ہیں۔ نظریہ میں، یہ %%CoT|CoT prompting%% کے مترادف ہے، کیونکہ ہم مؤثر طریقے سے متعلقہ حقائق کی شکل میں درمیانی استدلال پیدا کرنے کے لیے LLM حاصل کر رہے ہیں۔
 
-Let's start with the first step, *knowledge generation*. We can ask the %%LLM|LLM%% to generate facts about Congo and South Africa:
+آئیے پہلے قدم سے شروع کرتے ہیں، *علمی نسل*۔ ہم %%LLM|LLM%% سے کانگو اور جنوبی افریقہ کے بارے میں حقائق پیدا کرنے کے لیے کہہ سکتے ہیں:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy4iLCJwcm9tcHQiOiJHZW5lcmF0ZSBzb21lIGtub3dsZWRnZSBhYm91dCB0aGUgc2l6ZXMgb2YgU291dGggQWZyaWNhIGFuZCBDb25nbzoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -98,7 +98,7 @@ Let's start with the first step, *knowledge generation*. We can ask the %%LLM|LL
 
 <br/>
 
-Next, let's use that knowledge to answer the question correctly. This is the *knowledge integration* step!
+اگلا، آئیے اس علم کا استعمال کرتے ہوئے سوال کا صحیح جواب دیں۔ یہ *علم انضمام* مرحلہ ہے!
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiQ29uZ28gaXMgbGFyZ2VyIHRoYW4gU291dGggQWZyaWNhLlxuIiwicHJvbXB0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy5cblxuV2hpY2ggY291bnRyeSBpcyBsYXJnZXIsIENvbmdvIG9yIFNvdXRoIEFmcmljYT8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -106,9 +106,9 @@ Next, let's use that knowledge to answer the question correctly. This is the *kn
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## A more technical discussion
+## ایک اور تکنیکی بحث
 
-Although the above use case was similar to the way generated knowledge was originally introduced, it is not exactly the same. The below content covers the more technical context in which the approach was introduced. It follows the two intermediate steps (knowledge generation and knowledge integration) pattern that we saw above.
+اگرچہ مندرجہ بالا استعمال کا معاملہ اسی طرح کا تھا جس طرح پیدا شدہ علم کو اصل میں متعارف کرایا گیا تھا، یہ بالکل ایک جیسا نہیں ہے۔ مندرجہ ذیل مواد زیادہ تکنیکی سیاق و سباق کا احاطہ کرتا ہے جس میں نقطہ نظر متعارف کرایا گیا تھا۔ یہ دو درمیانی مراحل کی پیروی کرتا ہے (علم پیدا کرنا اور علم کا انضمام) جو ہم نے اوپر دیکھا۔
 
 import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 
@@ -120,11 +120,11 @@ import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
 Generated Knowledge (Liu et al.)
 </div>
 
-### Knowledge Generation
+### نالج جنریشن
 
-In the knowledge generation step, the %%LLM|LLM%% is asked to generate a set of facts
-about the **question**. The LLM is prompted in few-shot fashion as seen below. 
-M different completions are generated using this same prompt (similar to the self-consistency approach).
+علم پیدا کرنے کے مرحلے میں، %%LLM|LLM%% سے حقائق کا ایک مجموعہ تیار کرنے کو کہا جاتا ہے۔
+**سوال** کے بارے میں۔ ایل ایل ایم کو چند شاٹ انداز میں اشارہ کیا گیا ہے جیسا کہ ذیل میں دیکھا گیا ہے۔
+اسی پرامپٹ (خود مستقل مزاجی کے نقطہ نظر کی طرح) کا استعمال کرتے ہوئے M مختلف تکمیلات تیار کی جاتی ہیں۔
 
 import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
@@ -133,42 +133,42 @@ import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Generated Knowledge Example (Liu et al.)
+تخلیق کردہ علم کی مثال (Liu et al.)
 </div>
 
 
-### Knowledge Integration
+### نالج انٹیگریشن
 
-Next, we generate "knowledge augmented" questions and prompt the %%LLM|LLM%% with them
-to get final answers. The easiest way to understand this is to go through an example.
+اس کے بعد، ہم "علم میں اضافہ شدہ" سوالات تیار کرتے ہیں اور ان کے ساتھ %%LLM|LLM%% کا اشارہ کرتے ہیں۔
+حتمی جوابات حاصل کرنے کے لیے۔ اس کو سمجھنے کا سب سے آسان طریقہ یہ ہے کہ ایک مثال کو دیکھیں۔
 
-Let's assume we are attempting to answer the **question** 
-"Most Kangaroos have <mask\> limbs". Assume that at the knowledge generation step 
-we generated 2 knowledges (M=2):
+فرض کریں کہ ہم **سوال** کا جواب دینے کی کوشش کر رہے ہیں
+"زیادہ تر کینگروز کے <mask\> اعضاء ہوتے ہیں"۔ فرض کریں کہ علم کی نسل کے قدم پر
+ہم نے 2 علم پیدا کیے (M=2):
 
-- Knowledge 1: `Kangaroos are marsupials that live in Australia.`
+- علم 1: 'کینگرو مرسوپیئلز ہیں جو آسٹریلیا میں رہتے ہیں۔'
 
-- Knowledge 2: `Kangaroos are marsupials that have 5 limbs.`
+- علم 2: 'کینگرو مرسوپیئلز ہیں جن کے 5 اعضاء ہیں۔'
 
-Now, we concatenate each knowledge with the question to generate knowledge augmented questions:
+اب، ہم علم میں اضافے والے سوالات پیدا کرنے کے لیے ہر علم کو سوال کے ساتھ جوڑتے ہیں:
 
-- Knowledge Augmented Question 1: `Most Kangaroos have <mask\> limbs. Kangaroos are marsupials that live in Australia.`
+- علم بڑھا ہوا سوال 1: زیادہ تر کینگروز کے اعضاء <mask\> ہوتے ہیں۔ کینگروز مرسوپیئل ہیں جو آسٹریلیا میں رہتے ہیں۔
 
-- Knowledge Augmented Question 2: `Most Kangaroos have <mask\> limbs. Kangaroos are marsupials that have 5 limbs.`
+- علم بڑھا ہوا سوال 2: زیادہ تر کینگروز کے اعضاء <mask\> ہوتے ہیں۔ کینگرو مرسوپیئل ہیں جن کے 5 اعضاء ہوتے ہیں۔
 
-We then prompt the LLM with these knowledge augmented questions and get the final answer proposals:
+اس کے بعد ہم LLM کو ان علمی بڑھے ہوئے سوالات کے ساتھ اشارہ کرتے ہیں اور حتمی جوابات کی تجاویز حاصل کرتے ہیں:
 
-- Answer 1: `4`
+- جواب 1: `4`
 
-- Answer 2: `5`
+- جواب 2: `5`
 
-We select the answer with the highest probability as the final answer. The 
-highest probability could be the softmax probability of the answer token, or the
-log probability of the answer token(s).
+ہم حتمی جواب کے طور پر سب سے زیادہ امکان کے ساتھ جواب کا انتخاب کرتے ہیں۔ دی
+سب سے زیادہ امکان جواب ٹوکن کا سافٹ میکس امکان ہو سکتا ہے، یا
+جواب کے ٹوکن (زبانیں) کا لاگ ان امکان۔
 
-## Recitation-Augmented Language Models
+## تلاوت - بڑھا ہوا زبان کے ماڈل
 
-The recitation-augmented(@sun2022recitationaugmented) approach it is similar to generated knowledge (basically the same). However, is much less complex than the formal implementation of generated knowledge.
+تلاوت سے بڑھا ہوا (@sun2022recitationaugmented) نقطہ نظر پیدا شدہ علم (بنیادی طور پر ایک جیسا) ہے۔ تاہم، پیدا شدہ علم کے باضابطہ نفاذ سے بہت کم پیچیدہ ہے۔
 
 
 import RImage from '@site/docs/assets/intermediate/recitation.webp';
@@ -177,16 +177,16 @@ import RImage from '@site/docs/assets/intermediate/recitation.webp';
   <LazyLoadImage src={RImage} style={{width: "250px"}} />
 </div>
 
-The idea here is to few shot prompt the LLM to generate information *and* answer in the *same* step. The fact that it is reciting/generating knowledge and answering the question in the same step is the main difference from the generated knowledge approach.
+یہاں خیال یہ ہے کہ ایل ایل ایم کو معلومات *اور* جواب *اسی* قدم میں پیدا کرنے کے لیے چند شاٹ پرامپٹ کریں۔ حقیقت یہ ہے کہ یہ علم کی تلاوت/پیداوار کر رہا ہے اور ایک ہی مرحلے میں سوال کا جواب دے رہا ہے، پیدا شدہ علم کے نقطہ نظر سے بنیادی فرق ہے۔
 
-To reiterate, this approach prompts the model with multiple (question, recitation, answer) exemplars, then asks the question. The authors note that this approach can be combined with self consistency or multiple completion paths.
+دہرانے کے لیے، یہ نقطہ نظر ماڈل کو متعدد (سوال، تلاوت، جواب) مثالوں کے ساتھ اشارہ کرتا ہے، پھر سوال پوچھتا ہے۔ مصنفین نوٹ کرتے ہیں کہ اس نقطہ نظر کو خود مستقل مزاجی یا متعدد تکمیلی راستوں کے ساتھ ملایا جا سکتا ہے۔
 
 
 
-## Notes
+## نوٹس
 
-- Generated knowledge shows improvements on various commonsense datasets.
+- پیدا کردہ علم مختلف کامن سینس ڈیٹاسیٹس میں بہتری کو ظاہر کرتا ہے۔
 
-- The knowledge corresponding to the selected answer is called the _selected knowledge_.
+- منتخب جواب کے مطابق علم کو _منتخب علم_ کہا جاتا ہے۔
 
-- In practice, you could take the most frequently occurring answer as the final one.
+- عملی طور پر، آپ اکثر آنے والے جواب کو حتمی کے طور پر لے سکتے ہیں۔

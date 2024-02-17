@@ -2,23 +2,23 @@
 sidebar_position: 2000
 ---
 
-# 🟢 Other Approaches 
+# 🟢 دیگر نقطہ نظر
 
-Although the previous approaches can be very robust, a few other approaches, such as using a different model, including fine tuning, soft prompting, and length restrictions, can also be effective.
+اگرچہ پچھلے نقطہ نظر بہت مضبوط ہو سکتے ہیں، لیکن چند دیگر نقطہ نظر، جیسے کہ ایک مختلف ماڈل کا استعمال، بشمول فائن ٹیوننگ، نرم اشارہ، اور لمبائی کی پابندیاں، بھی کارگر ثابت ہو سکتی ہیں۔
 
-## Using a Different Model
+## ایک مختلف ماڈل استعمال کرنا
 
-More modern models such as GPT-4 are more robust against prompt injection. Additionally, non-instruction tuned models may be difficult to prompt inject. 
+مزید جدید ماڈل جیسے GPT-4 فوری انجیکشن کے خلاف زیادہ مضبوط ہیں۔ مزید برآں، غیر انسٹرکشن ٹیونڈ ماڈلز کو فوری طور پر انجیکشن لگانا مشکل ہو سکتا ہے۔
 
-## Fine Tuning
+## فائن ٹیوننگ
 
-Fine tuning the model is a highly effective defense(@goodside2021gpt), since at inference time there is no prompt involved, except the user input. This is likely the preferable defense in any high value situation, since it is so robust. However, it requires a large amount of data and may be costly, which is why this defense is not frequently implemented.
+ماڈل کو ٹھیک کرنا ایک انتہائی موثر دفاع ہے (@goodside2021gpt)، کیونکہ قیاس کے وقت صارف کے ان پٹ کے علاوہ کوئی پرامپٹ شامل نہیں ہوتا ہے۔ یہ ممکنہ طور پر کسی بھی اعلی قیمت کی صورت حال میں بہتر دفاع ہے، کیونکہ یہ بہت مضبوط ہے۔ تاہم، اس کے لیے بڑی مقدار میں ڈیٹا کی ضرورت ہوتی ہے اور یہ مہنگا بھی ہو سکتا ہے، یہی وجہ ہے کہ اس دفاع کو کثرت سے لاگو نہیں کیا جاتا ہے۔
 
 
-## Soft Prompting
+## نرم اشارہ
 
-Soft prompting might also be effective, since it does not have a clearly defined discrete prompt (other than user input). Soft prompting effectively requires fine tuning, so it has many of the same benefits, but it will likely be cheaper. However, soft prompting is not as well studied as fine tuning, so it is unclear how effective it is.
+نرم پرامپٹنگ بھی مؤثر ہو سکتی ہے، کیونکہ اس میں واضح طور پر متعین مجرد پرامپٹ نہیں ہے (صارف کے ان پٹ کے علاوہ)۔ نرم پرامپٹنگ کو مؤثر طریقے سے ٹھیک ٹیوننگ کی ضرورت ہوتی ہے، لہذا اس کے بہت سے ایک جیسے فوائد ہیں، لیکن یہ ممکنہ طور پر سستا ہوگا۔ تاہم، نرم پرامپٹنگ کا اتنا اچھی طرح سے مطالعہ نہیں کیا جاتا ہے جتنا کہ ٹھیک ٹیوننگ، اس لیے یہ واضح نہیں ہے کہ یہ کتنا موثر ہے۔
 
-## Length Restrictions
+## لمبائی کی پابندیاں
 
-Finally, including length restrictions on user input(@selvi2022exploring) or limiting the length of chatbot coversations as Bing does can prevent some attacks such as huge DAN-style prompts or virtualization attacks respectively.
+آخر میں، بشمول صارف کے ان پٹ (@selvi2022exploring) پر لمبائی کی پابندیاں یا چیٹ بوٹ کوریشنز کی لمبائی کو محدود کرنا جیسا کہ Bing کرتا ہے کچھ حملوں کو روک سکتا ہے جیسے کہ بالترتیب بڑے DAN طرز کے اشارے یا ورچوئلائزیشن حملے۔

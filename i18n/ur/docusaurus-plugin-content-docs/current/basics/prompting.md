@@ -3,14 +3,6 @@ sidebar_position: 10
 ---
 # 🟢 چیٹ جی پی ٹی کے ساتھ پرامپٹ کرنا
 
-<!-- import Interface from '@site/docs/assets/basics/chatgpt_interface.webp'; -->
-import Interface from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/chatgpt_interface.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Interface} className="img-docs" style={{width: "80%"}}/>
-</div>
-<br/>
-
 :::takeaways
 - چیٹ جی پی ٹی مرتب کریں۔
 - ٹیکسٹ کا خلاصہ کرنے اور ریاضی کا مسئلہ حل کرنے کے لیے ChatGPT استعمال کریں۔

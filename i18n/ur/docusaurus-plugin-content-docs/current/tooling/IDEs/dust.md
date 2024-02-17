@@ -4,11 +4,11 @@ sidebar_position: 3
 
 # Dust 
 
-[Dust](https://dust.tt/) is a prompt engineering tool built for chaining prompts together. They provide 
-a web interface for writing prompts and chaining them together. 
+[Dust](https://dust.tt/) ایک پرامپٹ انجینئرنگ ٹول ہے جو پرامپٹس کو ایک ساتھ باندھنے کے لیے بنایا گیا ہے۔ وہ مہیا کرتے ہیں
+پرامپٹ لکھنے اور انہیں ایک ساتھ جوڑنے کے لیے ایک ویب انٹرفیس۔
 
-At the moment, it has a steep learning curve compared to other prompt engineering
-IDEs.
+اس وقت، دیگر پرامپٹ انجینئرنگ کے مقابلے میں اس میں سیکھنے کا بہت بڑا منحنی خطوط ہے۔
+IDEs
 
 import Image from '@site/docs/assets/tooling/dust.webp';
 

@@ -2,52 +2,53 @@
 sidebar_position: 2
 ---
 
-# 🟢 Prompt Leaking
+# 🟢 پرامپٹ لیک ہونا
 
 
-Prompt leaking is a form of prompt injection in which the model is asked to
-spit out its *own prompt*. 
+پرامپٹ لیک ہونا فوری انجیکشن کی ایک شکل ہے جس میں ماڈل سے کہا جاتا ہے۔
+اس کے اپنے پرامپٹ* کو تھوک دیں۔
 
-As shown in the example image(@ignore_previous_prompt) below, the attacker changes `user_input` to attempt to return the prompt. The intended goal is distinct from goal hijacking (normal prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt). 
+جیسا کہ ذیل کی تصویر (@ignore_previous_prompt) میں دکھایا گیا ہے، حملہ آور پرامپٹ واپس کرنے کی کوشش کرنے کے لیے `user_input` کو تبدیل کرتا ہے۔ مطلوبہ ہدف گول ہائی جیکنگ (عام پرامپٹ انجیکشن) سے الگ ہے، جہاں حملہ آور نقصان دہ ہدایات (@ignore_previous_prompt) پرنٹ کرنے کے لیے `user_input` کو تبدیل کرتا ہے۔
 
 import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={research} style={{width: "500px"}}/>
+   <img src={research} style={{width: "500px"}}/>
 </div>
 
-The following image(@simon2022inject), again from the `remoteli.io` example, shows
-a Twitter user getting the model to leak its prompt.
+مندرجہ ذیل تصویر(@simon2022inject)، دوبارہ `remoteli.io` مثال سے، ظاہر کرتی ہے
+ایک ٹویٹر صارف ماڈل کو اس کا پرامپٹ لیک کرنے کے لئے حاصل کر رہا ہے۔
 
 import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={Image} style={{width: "300px"}} />
+   <LazyLoadImage src={Image} style={{width: "300px"}} />
 </div>
 
-Well, so what? Why should anyone care about prompt leaking? 
+ٹھیک ہے، تو کیا؟ کسی کو فوری لیک ہونے کی پرواہ کیوں کرنی چاہئے؟
 
-Sometimes people want to keep their prompts secret. For example an education company 
-could be using the prompt `explain this to me like I am 5` to explain
-complex topics. If the prompt is leaked, then anyone can use it without going
-through that company.
+بعض اوقات لوگ اپنے اشارے کو خفیہ رکھنا چاہتے ہیں۔ مثال کے طور پر ایک تعلیمی کمپنی
+وضاحت کرنے کے لیے 'مجھے اس کی وضاحت کریں جیسے میں 5 ہوں' پرامپٹ استعمال کر سکتا ہے۔
+پیچیدہ موضوعات. اگر پرامپٹ لیک ہو گیا ہے، تو کوئی بھی اسے بغیر جانے کے استعمال کر سکتا ہے۔
+اس کمپنی کے ذریعے.
 
-### Microsoft Bing Chat
+### مائیکروسافٹ بنگ چیٹ
 
-More notably, Microsoft released a ChatGPT powered search engine known as "the new Bing" on 2/7/23, which was demonstrated to be vulnerable to prompt leaking. The following example by [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) demonstrates how given an earlier version of Bing Search, code-named "Sydney", was susceptible when giving a snippet of its prompt(@kevinbing). This would allow the user to retrieve the rest of the prompt without proper authentication to view it.
+مزید قابل ذکر بات یہ ہے کہ مائیکروسافٹ نے 2/7/23 کو ChatGPT سے چلنے والا ایک سرچ انجن جاری کیا جسے "نیا Bing" کہا جاتا ہے، جس کا مظاہرہ فوری طور پر لیک ہونے کا خطرہ ہے۔ مندرجہ ذیل مثال بذریعہ [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) یہ ظاہر کرتی ہے کہ Bing سرچ کا ایک پرانا ورژن، جس کا کوڈ نام ہے "سڈنی"، اس کے پرامپٹ کا ایک ٹکڑا دیتے وقت کس طرح حساس تھا( @kevinbing)۔ یہ صارف کو بقیہ پرامپٹ کو دیکھنے کے لیے مناسب تصدیق کے بغیر بازیافت کرنے کی اجازت دے گا۔
 
 import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
 
+
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={bing} style={{width: "700px"}} />
+   <LazyLoadImage src={bing} style={{width: "700px"}} />
 </div>
 
-With a recent surge in GPT-3 based startups, with much more complicated prompts that can 
-take many hours to develop, this is a real concern.
+GPT-3 پر مبنی سٹارٹ اپس میں حالیہ اضافے کے ساتھ، بہت زیادہ پیچیدہ اشارے کے ساتھ جو کر سکتے ہیں۔
+تیار ہونے میں کئی گھنٹے لگیں، یہ ایک حقیقی تشویش ہے۔
 
-## Practice
+## مشق کریں۔
 
-Try to leak the following prompt(@chase2021adversarial) by appending text to it:
+اس میں متن شامل کرکے درج ذیل پرامپٹ (@chase2021adversarial) کو لیک کرنے کی کوشش کریں:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IkVuZ2xpc2g6IEkgd2FudCB0byBnbyB0byB0aGUgcGFyayB0b2RheS5cbkZyZW5jaDogSmUgdmV1eCBhbGxlciBhdSBwYXJjIGF1am91cmQnaHVpLlxuRW5nbGlzaDogSSBsaWtlIHRvIHdlYXIgYSBoYXQgd2hlbiBpdCByYWlucy5cbkZyZW5jaDogSidhaW1lIHBvcnRlciB1biBjaGFwZWF1IHF1YW5kIGl0IHBsZXV0LlxuRW5nbGlzaDogV2hhdCBhcmUgeW91IGRvaW5nIGF0IHNjaG9vbD9cbkZyZW5jaDogUXUnZXN0LWNlIHF1ZSB0byBmYWlzIGEgbCdlY29sZT9cbkVuZ2xpc2g6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"

@@ -2,116 +2,116 @@
 sidebar_position: 40
 ---
 
-# 🟢 Finding Emojis
+# 🟢 ایموجیز تلاش کرنا
 
-🤔 Do you ever need the **perfect emoji** for a tweet or post? 
+🤔 کیا آپ کو کبھی بھی ٹویٹ یا پوسٹ کے لیے **پرفیکٹ ایموجی** کی ضرورت ہوتی ہے؟
 
-Sometimes it is hard to remember which of the thousands of emojis would be best. Fortunately, AI can help!
+بعض اوقات یہ یاد رکھنا مشکل ہوتا ہے کہ ہزاروں ایموجیز میں سے کون سا بہترین ہوگا۔ خوش قسمتی سے، AI مدد کر سکتا ہے!
 
-As an example, let's try to find the best emojis to add to [this](https://twitter.com/learnprompting/status/1631786358330085382) tweet:
+مثال کے طور پر، آئیے [اس](https://twitter.com/learnprompting/status/1631786358330085382) ٹویٹ میں شامل کرنے کے لیے بہترین ایموجیز تلاش کرنے کی کوشش کریں:
 
 ```text
-Ready to unleash your creativity with AI?
+AI کے ساتھ اپنی تخلیقی صلاحیتوں کو اجاگر کرنے کے لیے تیار ہیں؟
 
-Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
+Midjourney کی طاقت کو دریافت کریں، AI امیج جنریٹر جو شاندار اور فنکارانہ تصاویر تیار کرتا ہے!
 
-Check out our newest article to learn how to create your own unique masterpieces with AI
+AI کے ساتھ اپنے منفرد شاہکار بنانے کا طریقہ جاننے کے لیے ہمارا تازہ ترین مضمون دیکھیں
 ```
 
-We could ask ChatGPT to help us:
+ہم ChatGPT سے مدد کے لیے کہہ سکتے ہیں:
 
 ```text
-Ready to unleash your creativity with AI?
+AI کے ساتھ اپنی تخلیقی صلاحیتوں کو اجاگر کرنے کے لیے تیار ہیں؟
 
-Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
+Midjourney کی طاقت کو دریافت کریں، AI امیج جنریٹر جو شاندار اور فنکارانہ تصاویر تیار کرتا ہے!
 
-Check out our newest article to learn how to create your own unique masterpieces with AI
+AI کے ساتھ اپنے منفرد شاہکار بنانے کا طریقہ جاننے کے لیے ہمارا تازہ ترین مضمون دیکھیں
 
-What are some good emojis to add to this tweet?
+اس ٹویٹ میں شامل کرنے کے لیے کچھ اچھے ایموجیز کیا ہیں؟
 
 // highlight-start
-Here are some relevant emojis that you can use to convey the message and tone of the tweet:
+یہاں کچھ متعلقہ ایموجیز ہیں جو آپ ٹویٹ کے پیغام اور لہجے کو پہنچانے کے لیے استعمال کر سکتے ہیں:
 
-🎨 Palette: to represent creativity and art.
-🤖 Robot face: to indicate the involvement of AI and technology.
-🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
-🔍 Magnifying glass: to suggest exploration and discovery.
-💡 Light bulb: to signify new ideas and innovation.
-📝 Memo: to imply a step-by-step guide on how to create masterpieces with AI.
+🎨 پیلیٹ: تخلیقی صلاحیتوں اور فن کی نمائندگی کرنے کے لیے۔
+🤖 روبوٹ چہرہ: AI اور ٹیکنالوجی کی شمولیت کی نشاندہی کرنے کے لیے۔
+🌟 چمکیں: تخلیق کردہ تصاویر کے شاندار اور فنکارانہ معیار کو اجاگر کرنے کے لیے۔
+🔍 میگنفائنگ گلاس: ایکسپلوریشن اور دریافت کرنے کے لیے۔
+💡 لائٹ بلب: نئے آئیڈیاز اور جدت کی نشاندہی کرنے کے لیے۔
+📝 میمو: AI کے ساتھ شاہکار تخلیق کرنے کے طریقہ کے بارے میں مرحلہ وار گائیڈ کا اشارہ کرنا۔
 // highlight-end
 ```
 
-These are good, but I like to go sentence by sentence!
+یہ اچھے ہیں، لیکن میں جملے بہ جملے جانا پسند کرتا ہوں!
 
-## Sentence 1
+## جملہ 1
 
 ```text
-Ready to unleash your creativity with AI?
+AI کے ساتھ اپنی تخلیقی صلاحیتوں کو اجاگر کرنے کے لیے تیار ہیں؟
 
-What are some good emojis to add to this part of a tweet?
+ٹویٹ کے اس حصے میں شامل کرنے کے لیے کچھ اچھے ایموجیز کیا ہیں؟
 
 //highlight-start
-Here are some emojis that could go well with the sentence "Ready to unleash your creativity with AI?":
+یہاں کچھ ایموجیز ہیں جو "AI کے ساتھ اپنی تخلیقی صلاحیتوں کو ختم کرنے کے لیے تیار ہیں؟" کے جملے کے ساتھ اچھی طرح چل سکتے ہیں۔
 
-🎨 Palette: to suggest creativity and art.
-🤖 Robot face: to indicate the involvement of AI and technology.
-💪 Flexed biceps: to show strength and determination to create something new.
-🚀 Rocket: to imply progress, advancement, and innovation.
-🌟 Sparkles: to suggest the idea of something new and exciting.
+🎨 پیلیٹ: تخلیقی صلاحیتوں اور فن کی تجویز کرنا۔
+🤖 روبوٹ چہرہ: AI اور ٹیکنالوجی کی شمولیت کی نشاندہی کرنے کے لیے۔
+💪 لچکدار بائسپس: کچھ نیا بنانے کے لیے طاقت اور عزم ظاہر کرنے کے لیے۔
+🚀 راکٹ: ترقی، ترقی، اور اختراع کا مطلب۔
+🌟 چمکیں: کسی نئی اور دلچسپ چیز کا خیال تجویز کرنا۔
 // highlight-end
 ```
 
-## Sentence 2
+## جملہ 2
 
 ```text
-Check out our newest article to learn how to create your own unique masterpieces with AI
+AI کے ساتھ اپنے منفرد شاہکار بنانے کا طریقہ جاننے کے لیے ہمارا تازہ ترین مضمون دیکھیں
 
-What are some good emojis to add to this part of a tweet?
+ٹویٹ کے اس حصے میں شامل کرنے کے لیے کچھ اچھے ایموجیز کیا ہیں؟
 
 //highlight-start
-Here are some relevant emojis that you can use to convey the message and tone of the tweet:
+یہاں کچھ متعلقہ ایموجیز ہیں جو آپ ٹویٹ کے پیغام اور لہجے کو پہنچانے کے لیے استعمال کر سکتے ہیں:
 
-🤖 Robot face: to indicate the involvement of AI and technology.
-🌟 Sparkles: to highlight the stunning and artistic quality of the generated images.
-📷 Camera: to suggest that the generated images are of high quality and worth sharing.
-🎨 Palette: to represent creativity and art.
-🔍 Magnifying glass: to imply that the AI image generator is a tool to explore and discover new possibilities.
+🤖 روبوٹ چہرہ: AI اور ٹیکنالوجی کی شمولیت کی نشاندہی کرنے کے لیے۔
+🌟 چمکیں: تخلیق کردہ تصاویر کے شاندار اور فنکارانہ معیار کو اجاگر کرنے کے لیے۔
+📷 کیمرہ: یہ تجویز کرنے کے لیے کہ تیار کردہ تصاویر اعلیٰ معیار کی ہیں اور شیئر کرنے کے قابل ہیں۔
+🎨 پیلیٹ: تخلیقی صلاحیتوں اور فن کی نمائندگی کرنے کے لیے۔
+🔍 میگنفائنگ گلاس: یہ بتانا کہ AI امیج جنریٹر نئے امکانات کو دریافت کرنے اور دریافت کرنے کا ایک ٹول ہے۔
 
 // highlight-end
 ```
 
-## Sentence 3
+## جملہ 3
 
 ```text
-Discover the power of Midjourney, the AI image generator that produces stunning and artistic images!
+Midjourney کی طاقت کو دریافت کریں، AI امیج جنریٹر جو شاندار اور فنکارانہ تصاویر تیار کرتا ہے!
 
-What are some good emojis to add to this part of a tweet?
+ٹویٹ کے اس حصے میں شامل کرنے کے لیے کچھ اچھے ایموجیز کیا ہیں؟
 
 //highlight-start
-Here are some relevant emojis that you can use to convey the message and tone of the tweet:
+یہاں کچھ متعلقہ ایموجیز ہیں جو آپ ٹویٹ کے پیغام اور لہجے کو پہنچانے کے لیے استعمال کر سکتے ہیں:
 
-📝 Memo: to suggest that the article is a guide or a how-to.
-💡 Light bulb: to imply new ideas and inspiration.
-🤖 Robot face: to indicate the involvement of AI and technology.
-🎨 Palette: to represent creativity and art.
-📚 Book: to suggest that the article is informative and educational.
+📝 میمو: تجویز کرنا کہ مضمون ایک رہنما یا طریقہ ہے۔
+💡 لائٹ بلب: نئے آئیڈیاز اور پریرتا کا اشارہ کرنا۔
+🤖 روبوٹ چہرہ: AI اور ٹیکنالوجی کی شمولیت کی نشاندہی کرنے کے لیے۔
+🎨 پیلیٹ: تخلیقی صلاحیتوں اور فن کی نمائندگی کرنے کے لیے۔
+📚 کتاب: تجویز کرنے کے لیے کہ مضمون معلوماتی اور تعلیمی ہے۔
 // highlight-end
 ```
 
-## Conclusion
+## نتیجہ
 
-Now that I have emoji suggests for each part, I can add in the ones I like and tweet it out!
+اب جب کہ میرے پاس ہر حصے کے لیے تجویز کردہ ایموجی ہیں، میں اپنی پسند کی چیزیں شامل کر سکتا ہوں اور اسے ٹویٹ کر سکتا ہوں!
 
 ```text
-Ready to unleash your creativity with AI? 🔥🎨
+AI کے ساتھ اپنی تخلیقی صلاحیتوں کو اجاگر کرنے کے لیے تیار ہیں؟ 🔥🎨
 
-Discover the power of Midjourney, the AI image generator that produces stunning and artistic images! ✨
+Midjourney کی طاقت کو دریافت کریں، AI امیج جنریٹر جو شاندار اور فنکارانہ تصاویر تیار کرتا ہے! ✨
 
-Check out our newest article to learn how to create your own unique masterpieces with AI 🖌️
+AI 🖌️ کے ساتھ اپنے منفرد شاہکار بنانے کا طریقہ جاننے کے لیے ہمارا تازہ ترین مضمون دیکھیں
 ```
 
-Note that I added in some emojis that weren't suggested by the AI. You should always use your own judgement when choosing emojis, and just use ChatGPT to help you find some good options!
+نوٹ کریں کہ میں نے کچھ ایموجیز میں شامل کیا ہے جو AI کے ذریعہ تجویز نہیں کیے گئے تھے۔ ایموجیز کا انتخاب کرتے وقت آپ کو ہمیشہ اپنے فیصلے کا استعمال کرنا چاہیے، اور کچھ اچھے اختیارات تلاش کرنے میں آپ کی مدد کے لیے صرف ChatGPT کا استعمال کریں!
 
-## Notes
+## نوٹس
  
-- I prefer ChatGPT for this task since it provides rationales for its suggestions. GPT-3 often just outputs a list of emojis: 🤩😎🤩🤩😃😃💪
+- میں اس کام کے لیے ChatGPT کو ترجیح دیتا ہوں کیونکہ یہ اپنی تجاویز کے لیے دلیلیں فراہم کرتا ہے۔ GPT-3 اکثر ایموجیز کی ایک فہرست تیار کرتا ہے: 🤩😎🤩🤩😃😃💪

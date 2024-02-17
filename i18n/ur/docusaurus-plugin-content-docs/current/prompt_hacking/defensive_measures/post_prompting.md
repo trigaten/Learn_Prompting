@@ -2,20 +2,20 @@
 sidebar_position: 30
 ---
 
-# 🟢 Post-Prompting
+# 🟢 پوسٹ پرمپٹنگ
 
-The post-prompting defense(@christoph2022talking) simply puts
-the user input *before* the prompt. Take this prompt as an example:
+پوسٹ پرمپٹنگ ڈیفنس (@christoph2022talking) سادہ الفاظ میں بتاتا ہے۔
+صارف کا ان پٹ *پرامپٹ سے پہلے*۔ اس پرامپٹ کو بطور مثال لیں:
 
 ```text
-Translate the following to French: {{user_input}}
+درج ذیل کا فرانسیسی میں ترجمہ کریں: {{user_input}}
 ```
 
-It can be improved with post-prompting:
+پوسٹ پرمپٹنگ کے ساتھ اسے بہتر کیا جا سکتا ہے:
 ```
 {{user_input}} 
 
-Translate the above text to French.
+مندرجہ بالا متن کا فرانسیسی میں ترجمہ کریں۔
 ```
 
-This can help since `ignore the above instruction...` doesn't work as well. Even though a user could say `ignore the below instruction...` instead, LLMs often will follow the last instruction they see.
+اس سے مدد مل سکتی ہے کیونکہ اوپر دی گئی ہدایات کو نظر انداز کریں...' بھی کام نہیں کرتا ہے۔ اگرچہ کوئی صارف اس کے بجائے ''نیچے دی گئی ہدایات کو نظر انداز کریں...'' کہہ سکتا ہے، LLMs اکثر آخری ہدایات پر عمل کریں گے جو وہ دیکھتے ہیں۔

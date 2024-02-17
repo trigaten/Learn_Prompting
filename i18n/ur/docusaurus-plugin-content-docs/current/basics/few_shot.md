@@ -4,13 +4,6 @@ sidebar_position: 70
 
 # 🟢 مثالیں دکھا رہا ہے
 
-<!-- import FewShot from '@site/docs/assets/basics/few_shot.svg'; -->
-import FewShot from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/few_shot.svg';
-
-<div style={{textAlign: 'center'}}>
-  <FewShot style={{width:"100%",height:"200px",verticalAlign:"top"}}/>
-</div>
-<br/>
 
 :::takeaways
 - صفر، ایک، اور چند شاٹ پرامپٹنگ سیکھیں۔

@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 🟢 Build ChatGPT from GPT-3
+# 🟢 GPT-3 سے ChatGPT بنائیں
 
 import Skippy from '@site/docs/assets/basic_applications/skippy_chatbot.webp'    
 import SkippyHeader from '@site/docs/assets/basic_applications/skippy_chatbot_header.webp'    
@@ -10,103 +10,103 @@ import Therapy from '@site/docs/assets/basic_applications/therapy_chatbot.gif'
 import ChatGPT from '@site/docs/assets/basic_applications/chatgpt_ui_diagram.webp'
 
 <div style={{textAlign: 'left'}}>
-  <img src={SkippyHeader} style={{width: "700px"}}/>
+   <img src={SkippyHeader} اسٹائل={{چوڑائی: "700px"}}/>
 </div>
 
-## Introduction
+## تعارف
 
-[ChatGPT](https://chat.openai.com/chat) has blown up in the past month, gaining a million users in just a week. Surprisingly, the underlying model, GPT-3 debuted in 2020 and was released for public access <a href="https://openai.com/blog/api-no-waitlist/">over a year ago!</a>   
+[ChatGPT](https://chat.openai.com/chat) نے پچھلے مہینے میں دھوم مچا دی ہے، صرف ایک ہفتے میں ایک ملین صارفین حاصل کر لیے ہیں۔ حیرت انگیز طور پر، بنیادی ماڈل، GPT-3 2020 میں ڈیبیو ہوا اور اسے عوامی رسائی کے لیے جاری کیا گیا <a href="https://openai.com/blog/api-no-waitlist/">ایک سال پہلے!</a>
 
-For those who don't know, ChatGPT is a new language model from OpenAI that was finetuned from GPT-3 to be optimized for conversation (@chatgpt2022). It has a user-friendly chat interface, where you can give input and get a response from an AI assistant. Check it out at [chat.openai.com](https://chat.openai.com/chat). 
+ان لوگوں کے لیے جو نہیں جانتے، ChatGPT OpenAI کا ایک نیا زبان کا ماڈل ہے جسے GPT-3 سے بات چیت کے لیے بہتر بنایا گیا تھا (@chatgpt2022)۔ اس میں صارف دوست چیٹ انٹرفیس ہے، جہاں آپ ان پٹ دے سکتے ہیں اور AI اسسٹنٹ سے جواب حاصل کر سکتے ہیں۔ اسے [chat.openai.com](https://chat.openai.com/chat) پر دیکھیں۔
 
-While the early versions of GPT-3 weren't as advanced as the current GPT-3.5 series, they were still impressive. These models have been available through an API and a <a href="https://beta.openai.com/playground">playground web UI interface</a> that lets you tune certain configuration hyperparameters and test prompts. GPT-3 gained significant traction, but it did not approach the virality of ChatGPT. 
+اگرچہ GPT-3 کے ابتدائی ورژن موجودہ GPT-3.5 سیریز کی طرح ترقی یافتہ نہیں تھے، پھر بھی وہ متاثر کن تھے۔ یہ ماڈل ایک API اور ایک <a href="https://beta.openai.com/playground">پلے گراؤنڈ ویب UI انٹرفیس</a> کے ذریعے دستیاب ہیں جو آپ کو کنفیگریشن کے کچھ ہائپر پیرامیٹر اور ٹیسٹ پرامپٹس کو ٹیون کرنے دیتا ہے۔ GPT-3 نے اہم کرشن حاصل کیا، لیکن یہ ChatGPT کی وائرلیت تک نہیں پہنچا۔
 
-What makes ChatGPT so successful, compared to GPT-3, is it's accessibility as a straightforward AI assistant for the average person, regardless of their knowledge of data science, language models, or AI.  
+GPT-3 کے مقابلے میں ChatGPT کو جو چیز اتنی کامیاب بناتی ہے، وہ یہ ہے کہ اوسط فرد کے لیے ڈیٹا سائنس، لینگویج ماڈلز، یا AI کے بارے میں ان کے علم سے قطع نظر، ایک سیدھا سادہ AI اسسٹنٹ کے طور پر اس کی رسائی ہے۔
 
-In this article, I overview how chatbots like ChatGPT can be implemented using a large language model like GPT-3.
+اس مضمون میں، میں جائزہ لیتا ہوں کہ ChatGPT جیسے چیٹ بوٹس کو GPT-3 جیسے بڑے لینگویج ماڈل کا استعمال کرتے ہوئے کیسے لاگو کیا جا سکتا ہے۔
 
-## Motivation
-This article was written in part because of a tweet by <a href="https://twitter.com/goodside">Riley Goodside</a>, noting how ChatGPT could have been implemented.
+## محرک
+یہ مضمون جزوی طور پر <a href="https://twitter.com/goodside">Riley Goodside</a> کی ایک ٹویٹ کی وجہ سے لکھا گیا تھا، جس میں یہ نوٹ کیا گیا تھا کہ ChatGPT کو کیسے نافذ کیا جا سکتا تھا۔
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to make your own knock-off ChatGPT using GPT‑3 (text‑davinci‑003) — where you can customize the rules to your needs, and access the resulting chatbot over an API. <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">December 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">GPT‑3 (text‑davinci‑003) کا استعمال کرتے ہوئے اپنا ناک آف چیٹ جی پی ٹی کیسے بنائیں — جہاں آپ قواعد کو اپنی مرضی کے مطابق بنا سکتے ہیں۔ اپنی ضروریات کے مطابق، اور ایک API پر نتیجے میں چیٹ بوٹ تک رسائی حاصل کریں۔ <a href="https://t.co/9jHrs91VHW">pic.twitter.com/9jHrs91VHW</a></p>&mdash; Riley Goodside (@goodside) <a href="https://twitter.com/goodside/status/1607487283782995968?ref_src=twsrc%5Etfw">26 دسمبر 2022</a></blockquote> <script async src=" https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Like other models in the GPT-3.5 series, ChatGPT was trained using [RLHF](https://huggingface.co/blog/rlhf), but much of it's effectiveness comes from using a **good prompt**.
+GPT-3.5 سیریز کے دیگر ماڈلز کی طرح، ChatGPT کو [RLHF](https://huggingface.co/blog/rlhf) کا استعمال کرتے ہوئے تربیت دی گئی تھی، لیکن اس کی زیادہ تر تاثیر **اچھے پرامپٹ** کے استعمال سے آتی ہے۔
 
-## The Prompt
+## پرامپٹ
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Skippy} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Full Skippy chatbot prompt from article header</p>
+   <LazyLoadImage src={Skippy} style={{width: "700px"}} />
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>آرٹیکل ہیڈر سے مکمل اسکیپی چیٹ بوٹ پرامپٹ</p>
 </div>
 
-<a href="https://learnprompting.org/docs/basics/prompting">Prompting is the process of instructing an AI to do something. </a> As you have probably seen in ChatGPT examples online, you can prompt it to do just about anything. Common use cases are summarizing text, writing content based on a description, or creating things like poems, recipes, and much more. 
+<a href="https://learnprompting.org/docs/basics/prompting">پرامپٹنگ AI کو کچھ کرنے کی ہدایت دینے کا عمل ہے۔ </a> جیسا کہ آپ نے شاید آن لائن ChatGPT کی مثالوں میں دیکھا ہوگا، آپ اسے کچھ بھی کرنے کے لیے کہہ سکتے ہیں۔ عام استعمال کے معاملات میں ٹیکسٹ کا خلاصہ کرنا، تفصیل پر مبنی مواد لکھنا، یا نظمیں، ترکیبیں اور بہت کچھ جیسی چیزیں بنانا شامل ہیں۔
 
 <p></p>
 
-ChatGPT is both a language model and user interface. The prompt input by a user to the interface is actually inserted into a larger prompt that contains the entire conversation between the user and ChatGPT. This allows the underlying language model to understand the context of the conversation and respond appropriately.
+چیٹ جی پی ٹی زبان کا ماڈل اور یوزر انٹرفیس دونوں ہے۔ صارف کی طرف سے انٹرفیس میں پرامپٹ ان پٹ دراصل ایک بڑے پرامپٹ میں ڈالا جاتا ہے جس میں صارف اور ChatGPT کے درمیان ہونے والی پوری گفتگو ہوتی ہے۔ یہ بنیادی زبان کے ماڈل کو گفتگو کے سیاق و سباق کو سمجھنے اور مناسب جواب دینے کی اجازت دیتا ہے۔
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={ChatGPT} style={{width: "600px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Example insertion of user prompt before sending to model</p>
+   <LazyLoadImage src={ChatGPT} اسٹائل={{چوڑائی: "600px"}} />
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>ماڈل کو بھیجنے سے پہلے صارف کے پرامپٹ کے داخل کرنے کی مثال</p>
 </div>
 
-The language model completes the prompt by figuring out what words come next based on probabilities it learned during pre-training(@jurafsky2009).
+لینگویج ماڈل یہ پتہ لگا کر پرامپٹ کو مکمل کرتا ہے کہ اس کے بعد کون سے الفاظ آتے ہیں ان امکانات کی بنیاد پر جو اس نے پری ٹریننگ (@jurafsky2009) کے دوران سیکھے۔
 
 <p></p>
 
-GPT-3 is able to 'learn' from a simple instruction or a few examples in the prompt. The latter is called few-shot, or in context learning (@brown2020language). In the chatbot prompt above, I create a fictitious chatbot named Skippy, and instruct it to provide responses to users. GPT-3 picks up on the back-and-forth format, `USER: {user input}` and `SKIPPY: {skippy response}`. GPT-3 understands that Skippy is a chatbot and the previous exchanges are a conversation, so that when we provide the next user input, "Skippy" will respond.
+GPT-3 ایک سادہ ہدایات یا پرامپٹ میں دی گئی چند مثالوں سے 'سیکھنے' کے قابل ہے۔ مؤخر الذکر کو چند شاٹ کہا جاتا ہے، یا سیاق و سباق سیکھنے میں (@brown2020language)۔ اوپر دیے گئے چیٹ بوٹ پرامپٹ میں، میں Skippy کے نام سے ایک فرضی چیٹ بوٹ بناتا ہوں، اور اسے صارفین کو جوابات فراہم کرنے کی ہدایت کرتا ہوں۔ GPT-3 آگے اور پیچھے کی شکل میں، `USER: {user input}` اور `SKIPPY: {skippy response}` پر اٹھتا ہے۔ GPT-3 سمجھتا ہے کہ Skippy ایک چیٹ بوٹ ہے اور پچھلے تبادلے ایک بات چیت ہیں، تاکہ جب ہم اگلا صارف ان پٹ فراہم کریں تو "Skippy" جواب دے گا۔
 
-### Memorization
+### حفظ
 
-Past exchanges between Skippy and the user get appended to the next prompt. Each time we give more user input and get more chatbot output, the prompt expands to incorporate this new exchange. This is how chatbots like Skippy and ChatGPT can **remember previous inputs.** There is a limit, however, to how much a GPT-3 chatbot can remember.
+سکپی اور صارف کے درمیان ماضی کے تبادلے اگلے پرامپٹ میں شامل ہو جاتے ہیں۔ ہر بار جب ہم زیادہ صارف ان پٹ دیتے ہیں اور مزید چیٹ بوٹ آؤٹ پٹ حاصل کرتے ہیں، اس نئے تبادلے کو شامل کرنے کے لیے پرامپٹ پھیلتا ہے۔ اس طرح اسکپی اور چیٹ جی پی ٹی جیسے چیٹ بوٹس **پچھلے ان پٹس کو یاد رکھ سکتے ہیں۔** تاہم، ایک حد ہے کہ ایک GPT-3 چیٹ بوٹ کتنا یاد رکھ سکتا ہے۔
 
-Prompts can get massive after several exchanges, especially if we are using the chatbot to generate long responses like blog posts. Prompts sent to GPT-3 are converted into tokens, which are individual words or parts of them. There is a limit of <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 tokens (about 3000 words)</a> for the combined prompt and generated response for GPT-3 models, including ChatGPT. 
+متعدد تبادلوں کے بعد پرامپٹس بڑے پیمانے پر حاصل کر سکتے ہیں، خاص طور پر اگر ہم بلاگ پوسٹس جیسے طویل جوابات پیدا کرنے کے لیے چیٹ بوٹ کا استعمال کر رہے ہیں۔ GPT-3 کو بھیجے گئے پرامپٹ ٹوکنز میں تبدیل ہو جاتے ہیں، جو انفرادی الفاظ یا ان کے حصے ہوتے ہیں۔ <a href="https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them">4097 ٹوکنز کی ایک حد ہے (تقریباً 3000 الفاظ) </a> ChatGPT سمیت GPT-3 ماڈلز کے لیے مشترکہ پرامپٹ اور تیار کردہ جواب کے لیے۔
 
-### A Few Examples
+### چند مثالیں۔
 
-There are many different use cases of chatbot prompts that store previous conversations. ChatGPT is meant to be an all purpose general assistant and in my experience, it rarely asks follow ups.
+چیٹ بوٹ پرامپٹس کے استعمال کے بہت سے مختلف کیسز ہیں جو پچھلی گفتگو کو محفوظ کرتے ہیں۔ ChatGPT کا مقصد ایک ہمہ مقصد جنرل اسسٹنٹ ہونا ہے اور میرے تجربے میں، یہ شاذ و نادر ہی فالو اپ پوچھتا ہے۔
 
-#### Therapy chatbot that asks about your day
+#### تھراپی چیٹ بوٹ جو آپ کے دن کے بارے میں پوچھتا ہے۔
 
-It can be helpful to have a chatbot that actively asks questions and gets feedback from the user. Below is an example therapy chatbot prompt that will ask questions and follow ups to help a user think about their day.
+چیٹ بوٹ کا ہونا مددگار ثابت ہو سکتا ہے جو فعال طور پر سوالات پوچھتا ہے اور صارف سے رائے لیتا ہے۔ ذیل میں ایک مثال تھیراپی چیٹ بوٹ پرامپٹ ہے جو سوال پوچھے گا اور صارف کو اپنے دن کے بارے میں سوچنے میں مدد کرے گا۔
 
 <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Therapy} style={{width: "700px"}} />
-  <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>Therapy chatbot prompt</p>
+   <LazyLoadImage src={Therapy} style={{width: "700px"}} />
+   <p style={{color: "gray", fontSize: "12px", fontStyle: "italic"}}>تھراپی چیٹ بوٹ پرامپٹ</p>
 </div>
 
-#### Talk to your younger self using old journal entries
+#### پرانے جریدے کے اندراجات کا استعمال کرتے ہوئے اپنے چھوٹے سے بات کریں۔
 
-<a href="https://twitter.com/michellehuang42">Michelle Huang</a> used GPT-3 to have a chat with her younger self. The prompt uses some context, in this case old journal entries, paired with a chatbot style back and forth format. GPT-3 is able to mimic a personality based on these entries. 
+<a href="https://twitter.com/michellehuang42">Michelle Huang</a> نے اپنے چھوٹے کے ساتھ بات چیت کرنے کے لیے GPT-3 کا استعمال کیا۔ پرامپٹ کچھ سیاق و سباق کا استعمال کرتا ہے، اس معاملے میں پرانے جریدے کے اندراجات، چیٹ بوٹ اسٹائل کے ساتھ آگے پیچھے کی شکل کے ساتھ جوڑ دی جاتی ہے۔ GPT-3 ان اندراجات کی بنیاد پر کسی شخصیت کی نقل کرنے کے قابل ہے۔
 
 <p></p>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i trained an ai chatbot on my childhood journal entries - so that i could engage in real-time dialogue with my &quot;inner child&quot;<br/><br/>some reflections below:</p>&mdash; michelle huang (@michellehuang42) <a href="https://twitter.com/michellehuang42/status/1597005489413713921?ref_src=twsrc%5Etfw">November 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Prompt from the Tweet:
+ٹویٹ سے اشارہ:
 ```markdown
-The following is a conversation with Present Michelle (age [redacted]) and Young Michelle (age 14).
+ذیل میں پریزنٹ مشیل (عمر [رییکٹڈ]) اور ینگ مشیل (عمر 14) کے ساتھ گفتگو ہے۔
 
-Young Michelle has written the following journal entries:
-[diary entries here]
+ینگ مشیل نے جریدے کے درج ذیل اندراجات لکھے ہیں:
+[ڈائری اندراجات یہاں]
 
-Present Michelle: [type your questions here]
+مشیل کو پیش کریں: [اپنے سوالات یہاں ٹائپ کریں]
 ```
 
-The author does note that diary entries can reach the token limit. In this case you could pick a select few entries or try to summarize several entries.
+مصنف نوٹ کرتا ہے کہ ڈائری کے اندراجات ٹوکن کی حد تک پہنچ سکتے ہیں۔ اس صورت میں آپ چند اندراجات کو منتخب کر سکتے ہیں یا کئی اندراجات کا خلاصہ کرنے کی کوشش کر سکتے ہیں۔
 
-## Implementation
+## نفاذ
 
-I will walk through coding a simple GPT-3 powered chatbot in Python. Including GPT-3 in an app you are building is incredibly easy using the OpenAI API. You will need to create an account on OpenAI and get an API key. Check out their docs <a href="https://beta.openai.com/docs/introduction">here.</a>
+میں Python میں ایک سادہ GPT-3 سے چلنے والی چیٹ بوٹ کوڈنگ کے ذریعے چلوں گا۔ آپ جو ایپ بنا رہے ہیں اس میں GPT-3 کو شامل کرنا OpenAI API کا استعمال کرتے ہوئے ناقابل یقین حد تک آسان ہے۔ آپ کو OpenAI پر ایک اکاؤنٹ بنانے اور ایک API کلید حاصل کرنے کی ضرورت ہوگی۔ ان کی دستاویزات <a href="https://beta.openai.com/docs/introduction">یہاں</a> دیکھیں۔
 
-Overview of what we need to do:
+ہمیں کیا کرنے کی ضرورت ہے اس کا جائزہ:
 
-1. Format user input into a chatbot prompt for GPT-3
-2. Get the chatbot response as a completion from GPT-3
-3. Update the prompt with both the user's input and the chatbot's response
-4. Loop
+1. صارف کے ان پٹ کو GPT-3 کے لیے چیٹ بوٹ پرامپٹ میں فارمیٹ کریں۔
+2. GPT-3 سے تکمیل کے طور پر چیٹ بوٹ کا جواب حاصل کریں۔
+3. صارف کے ان پٹ اور چیٹ بوٹ کے جواب دونوں کے ساتھ پرامپٹ کو اپ ڈیٹ کریں۔
+4. لوپ
 
-Here is the prompt I will use. We can use python to replace <conversation history\> and <user input\> with their actual values.
+یہ پرامپٹ ہے جو میں استعمال کروں گا۔ ہم python کو <conversation history\> اور <user input\> کو ان کی اصل قدروں سے بدلنے کے لیے استعمال کر سکتے ہیں۔
 
 ```python
 chatbot_prompt = """
@@ -118,7 +118,7 @@ chatbot_prompt = """
     Chatbot:"""
 ```
 
-I keep track of both the next user input and the previous conversation. New input/output between chatbot and user is appended each loop.
+میں اگلے صارف کے ان پٹ اور پچھلی گفتگو دونوں پر نظر رکھتا ہوں۔ چیٹ بوٹ اور صارف کے درمیان نیا ان پٹ/آؤٹ پٹ ہر لوپ کو جوڑ دیا جاتا ہے۔
 ```python
 import openai
 
@@ -164,10 +164,10 @@ main()
 ```
 
 
-<a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">Here is a link</a> to the full code for a simple chatbot.
+ایک سادہ چیٹ بوٹ کے مکمل کوڈ کا <a href="https://gist.github.com/jayo78/79d8834e6e31bf942c7b604e1611b68d">یہاں ایک لنک ہے</a>۔
 
 <p></p>
 
-Now all that's left is to build a nice front-end that users can interact with!
+اب صرف ایک اچھا فرنٹ اینڈ بنانا باقی ہے جس کے ساتھ صارفین بات چیت کر سکیں!
 
-Written by [jayo78](https://twitter.com/jayo782).
+[jayo78](https://twitter.com/jayo782) کی تحریر کردہ۔

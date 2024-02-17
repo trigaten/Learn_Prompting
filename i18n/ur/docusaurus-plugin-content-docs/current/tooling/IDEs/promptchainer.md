@@ -4,9 +4,8 @@ sidebar_position: 9
 
 # PromptChainer
 
-[PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)(@wu2022promptchainer) is a research tool for prompt engineering. It focuses on chaining prompts together, and is the most
-refined research IDE that I have found.
-
+[PromptChainer](https://arxiv.org/pdf/2203.06566.pdf)(@wu2022promptchainer) پرامپٹ انجینئرنگ کے لیے ایک تحقیقی ٹول ہے۔ یہ ایک ساتھ زنجیروں کو باندھنے پر توجہ مرکوز کرتا ہے، اور یہ سب سے زیادہ ہے۔
+بہتر تحقیقی IDE جو مجھے ملا ہے۔
 
 import Image from '@site/docs/assets/tooling/promptchainer.webp';
 
@@ -14,7 +13,7 @@ import Image from '@site/docs/assets/tooling/promptchainer.webp';
   <img src={Image} style={{width: "750px"}}/>
 </div>
 
-## Features
+## خصوصیات
 
-PromptChainer has a chain view, as well as an individual node view. They also 
-provide debugging features.
+PromptChainer میں ایک زنجیر کا نظارہ ہے، ساتھ ہی ایک انفرادی نوڈ ویو بھی ہے۔ وہ بھی
+ڈیبگنگ کی خصوصیات فراہم کریں۔

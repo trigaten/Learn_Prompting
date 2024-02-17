@@ -2,15 +2,15 @@
 sidebar_position: 4
 ---
 
-# 🟢 Zero Shot Chain of Thought
+# 🟢 زیرو شاٹ چین آف تھاٹ
 
 
-Zero Shot Chain of Thought (Zero-shot-CoT) prompting (@kojima2022large) is a 
-follow up to %%CoT prompting|CoT prompting%% (@wei2022chain), which introduces an incredibly 
-simple zero shot prompt. They find that by appending the words "**Let's think step
-by step.**" to the end of a question, LLMs are able to generate a chain of
-thought that answers the question. From this chain of thought, they are able to
-extract more accurate answers.
+زیرو شاٹ چین آف تھاٹ (زیرو شاٹ-کوٹ) پرامپٹنگ (@kojima2022large) ایک ہے
+%%CoT prompting|CoT prompting%% (@wei2022chain) تک کی پیروی کریں، جو ایک ناقابل یقین حد تک متعارف کراتی ہے۔
+سادہ صفر شاٹ پرامپٹ۔ انہوں نے الفاظ کو جوڑ کر پایا کہ "** آئیے سوچتے ہیں قدم
+مرحلہ وار۔**" سوال کے اختتام تک، LLMs کا ایک سلسلہ تیار کرنے کے قابل ہیں۔
+سوچا کہ سوال کا جواب دیتا ہے. اس زنجیر فکر سے وہ اس قابل ہیں۔
+مزید درست جوابات نکالیں۔
 
 import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 
@@ -19,13 +19,13 @@ import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
 </div>
 
 <div style={{textAlign: 'center'}}>
-Zero Shot CoT (Kojima et al.)
+زیرو شاٹ کوٹ (کوجیما وغیرہ)
 </div>
 
-Technically, the full Zero-shot-CoT process involves two separate prompts/completions. 
-In the below image, the top bubble on the left generates a chain of thought, while the top bubble on
-the right takes in the output from the first prompt (including the first prompt itself),
-and extracts the answer from the chain of thought. This second prompt is a _self augmented_ prompt.
+تکنیکی طور پر، مکمل Zero-shot-CoT عمل میں دو الگ الگ پرامپٹ/ تکمیلات شامل ہیں۔
+نیچے کی تصویر میں، بائیں طرف اوپر والا بلبلہ سوچ کا ایک سلسلہ پیدا کرتا ہے، جبکہ اوپر والا بلبلہ
+دائیں پہلے پرامپٹ سے آؤٹ پٹ لیتا ہے (بشمول پہلا پرامپٹ خود)
+اور سوچ کی زنجیر سے جواب نکالتا ہے۔ یہ دوسرا پرامپٹ ایک _self augmented_ prompt ہے۔
 
 import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
 
@@ -34,16 +34,16 @@ import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.web
 </div>
 
 <div style={{textAlign: 'center'}}>
-Full Zero Shot CoT Process (Kojima et al.)
+مکمل زیرو شاٹ CoT عمل (Kojima et al.)
 </div>
 
-## Example
+## مثال
 
-Here are a few demos (which only perform reasoning extraction). This first
-demo shows GPT-3 (davinci-003) failing a simple math question, while the second demo uses a 
-Zero-shot-CoT prompt and successfully solves the problem. Feel free to enter your
-OpenAI API key (Click Generate) and play around with the examples. Note how much simpler
-the Zero-shot-CoT prompt is compared to the CoT prompt.
+یہاں کچھ ڈیمو ہیں (جو صرف استدلال نکالتے ہیں)۔ یہ پہلے
+ڈیمو GPT-3 (davinci-003) کو ریاضی کے ایک سادہ سوال میں ناکام ہونے کو دکھاتا ہے، جبکہ دوسرا ڈیمو ایک استعمال کرتا ہے
+Zero-shot-CoT پرامپٹ اور کامیابی سے مسئلہ حل کرتا ہے۔ بلا جھجھک اپنا درج کریں۔
+OpenAI API کلید (جنریٹ پر کلک کریں) اور مثالوں کے ساتھ چلائیں۔ نوٹ کریں کہ کتنا آسان ہے۔
+زیرو شاٹ-CoT پرامپٹ کا موازنہ CoT پرامپٹ سے کیا جاتا ہے۔
 
 #### Incorrect
 
@@ -54,7 +54,7 @@ the Zero-shot-CoT prompt is compared to the CoT prompt.
 ></iframe>
 
 
-#### Correct
+#### درست
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiSm9obiBzdGFydHMgd2l0aCA1IHBlYXJzLiBIZSBlYXRzIDIgcGVhcnMsIGxlYXZpbmcgaGltIHdpdGggMyBwZWFycy4gSGUgYnV5cyA1IG1vcmUgcGVhcnMsIGdpdmluZyBoaW0gYSB0b3RhbCBvZiA4IHBlYXJzLiBIZSBnaXZlcyAzIHBlYXJzIHRvIGhpcyBmcmllbmQsIGxlYXZpbmcgaGltIHdpdGggb25seSA1IHBlYXJzLiIsInByb21wdCI6IklmIEpvaG4gaGFzIDUgcGVhcnMsIHRoZW4gZWF0cyAyLCBhbmQgYnV5cyA1IG1vcmUsIHRoZW4gZ2l2ZXMgMyB0byBoaXMgZnJpZW5kLCBob3cgbWFueSBwZWFycyBkb2VzIGhlIGhhdmU%2FXG5cbkxldCdzIHRoaW5rIHN0ZXAgYnkgc3RlcC4iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -62,28 +62,27 @@ the Zero-shot-CoT prompt is compared to the CoT prompt.
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## Results
-Zero-shot-CoT was also effective in improving results on arithmetic, commonsense, 
-and symbolic reasoning tasks. However, unsurprisingly, it was usually not as 
-effective as CoT prompting. An important use case for Zero-shot-CoT is when obtaining
-few shot examples for CoT prompting is difficult. 
+## نتائج
+Zero-shot-CoT ریاضی، کامن سینس، پر نتائج کو بہتر بنانے میں بھی موثر تھا۔
+اور علامتی استدلال کے کام۔ تاہم، حیرت انگیز طور پر، یہ عام طور پر نہیں تھا
+CoT پرامپٹنگ کے طور پر موثر۔ Zero-shot-CoT کے لیے استعمال کا ایک اہم کیس حاصل کرتے وقت ہے۔
+CoT پرامپٹنگ کے لیے چند شاٹ مثالیں مشکل ہیں۔ 
 
-## Ablations of Interest
+## سود کا خاتمہ
 
-Kojima et al. experiment with a number of different Zero-shot-CoT prompts 
-(e.g. "Let’s solve this problem by splitting it into steps." or "Let’s think about this logically."), but they find that "Let's think step by step" is most effective for their
-chosen tasks.
+کوجیما وغیرہ۔ متعدد مختلف Zero-shot-CoT پرامپٹس کے ساتھ تجربہ کریں۔
+(مثال کے طور پر "آئیے اس مسئلے کو قدموں میں تقسیم کرکے حل کریں۔" یا "آئیے اس کے بارے میں منطقی طور پر سوچیں۔")، لیکن انہیں معلوم ہوا کہ "آئیے قدم بہ قدم سوچیں" ان کے لیے سب سے زیادہ مؤثر ہے۔
+منتخب کام.
 
 
+## نوٹس
 
-## Notes
+نکالنے کا مرحلہ اکثر کام کے لیے مخصوص ہونا چاہیے، جس سے زیرو-Shot-CoT کم ہو جاتا ہے۔
+عام طور پر اس سے کہیں زیادہ جو پہلے نظر آتا ہے۔
 
-The extraction step often must be task specific, making Zero-Shot-CoT less
-generalizable than it appears at first.
-
-Anecdotally, I've found that Zero-shot-CoT style prompts are sometimes effective 
-in improving the length of completions for generative tasks. For example, consider
-the standard prompt `Write a story about a frog and a mushroom who become friends.`
-Appending the words `Let's think step by step.` to the end of this prompt leads to
-a much longer completion.
+مختصراً، میں نے محسوس کیا ہے کہ زیرو شاٹ-CoT طرز کے پرامپٹ بعض اوقات کارآمد ہوتے ہیں۔
+تخلیقی کاموں کی تکمیل کی لمبائی کو بہتر بنانے میں۔ مثال کے طور پر غور کریں۔
+معیاری پرامپٹ 'ایک مینڈک اور ایک مشروم کے بارے میں ایک کہانی لکھیں جو دوست بن جاتے ہیں۔'
+اس پرامپٹ کے آخر میں 'آئیے قدم بہ قدم سوچتے ہیں' کے الفاظ کو شامل کرنے سے
+ایک بہت طویل تکمیل.
 

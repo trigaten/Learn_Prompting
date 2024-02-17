@@ -1,38 +1,38 @@
 ---
 sidebar_position: 5
 ---
-# 🟢 Quality Boosters
+# 🟢 کوالٹی بوسٹر
 
-Quality boosters(@oppenlaender2022taxonomy) are terms added to a prompt to improve
-certain non-style-specific qualities of the generated image. For example "amazing", "beautiful", and "good quality" are all quality boosters that can be used to improve the quality of the generated image.
+کوالٹی بوسٹرز (@oppenlaender2022taxonomy) وہ اصطلاحات ہیں جو بہتری کے لیے فوری طور پر شامل کی جاتی ہیں
+تخلیق کردہ تصویر کی کچھ غیر طرز کی مخصوص خصوصیات۔ مثال کے طور پر "حیرت انگیز"، "خوبصورت"، اور "اچھی کوالٹی" سبھی کوالٹی بوسٹرز ہیں جن کو تیار کردہ تصویر کے معیار کو بہتر بنانے کے لیے استعمال کیا جا سکتا ہے۔
 
 import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
 import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
-# Example
+# مثال
 
-Recall from the other page the pyramids generated with DALLE, and the prompt `pyramid`.
-
-<div style={{textAlign: 'center'}}>
-  <img className="img-docs" src={pyramids} style={{width: "750px"}}/>
-</div>
-
-Now take at pyramids generated with this prompt:
-
-<AIInput>A beautiful, majestic, incredible pyramid, 4K</AIInput>
+دوسرے صفحے سے DALLE کے ساتھ تیار کردہ اہرام، اور پرامپٹ `اہرام` یاد کریں۔
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={special_pyramids} style={{width: "750px"}} />
+   <img className="img-docs" src={pyramids} style={{width: "750px"}}/>
 </div>
 
-These are much more scenic and impressive! 
+اب اس پرامپٹ کے ساتھ پیدا ہونے والے اہرام پر جائیں:
 
-Here is a list of a number of quality boosters: 
+<AIInput>ایک خوبصورت، شاندار، ناقابل یقین اہرام، 4K</AIInput>
+
+<div style={{textAlign: 'center'}}>
+   <LazyLoadImage className="img-docs" src={special_pyramids} style={{width: "750px"}} />
+</div>
+
+یہ بہت زیادہ قدرتی اور متاثر کن ہیں!
+
+یہاں متعدد کوالٹی بوسٹرز کی فہرست ہے:
 ```text
 High resolution, 2K, 4K, 8K, clear, good lighting, detailed, extremely detailed, sharp focus, intricate, beautiful, realistic+++, complementary colors, high quality, hyper detailed, masterpiece, best quality, artstation, stunning
 ```
 
-## Notes
+## نوٹس
 
-Similar to the note on the previous page, our working definition of quality boosters differs from Oppenlaender et al.(@oppenlaender2022taxonomy). This being said, it is 
-sometimes difficult to exactly distinguish between quality boosters and style modifiers.
+پچھلے صفحہ کے نوٹ کی طرح، کوالٹی بوسٹرز کی ہماری ورکنگ تعریف Oppenlaender et al.(@oppenlaender2022taxonomy) سے مختلف ہے۔ یہ کہا جا رہا ہے، یہ ہے
+بعض اوقات کوالٹی بوسٹرز اور اسٹائل موڈیفائرز کے درمیان بالکل فرق کرنا مشکل ہوتا ہے۔

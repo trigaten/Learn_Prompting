@@ -2,7 +2,7 @@
 sidebar_position: 80
 ---
 
-# 🟢 امتزاج کی تکنیک
+# 🟢   تکنیک کو یکجا کرنا
 
 <!-- import CombinedPrompt from '@site/docs/assets/basics/combined_prompt.svg'; -->
 import CombinedPrompt from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/combined_prompt.svg';

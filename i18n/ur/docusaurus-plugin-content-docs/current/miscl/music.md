@@ -2,33 +2,33 @@
 sidebar_position: 3
 ---
 
-# 🟢 Music Generation
+# 🟢 میوزک جنریشن
 
-Music generation models are becoming increasingly popular, and will eventually have a large impact on the music industry. 
+موسیقی کی نسل کے ماڈل تیزی سے مقبول ہو رہے ہیں، اور آخر کار موسیقی کی صنعت پر ان کا بڑا اثر پڑے گا۔
 
-Music generation models can create chord progressions, melodies, or full songs. They can structure and create music in specific genres and compose or improvise in the style of specific artists.
+موسیقی کی نسل کے ماڈل راگ کی ترقی، دھنیں، یا مکمل گانے بنا سکتے ہیں۔ وہ مخصوص انواع میں موسیقی کی ساخت اور تخلیق کرسکتے ہیں اور مخصوص فنکاروں کے انداز میں کمپوز یا امپرووائز کرسکتے ہیں۔
 
-However, despite the enormous potential of music models, they are currently difficult to prompt. Generated output is often not thoroughly customizable by prompts, unlike image or text generation models.
+تاہم، میوزک ماڈلز کی بے پناہ صلاحیت کے باوجود، فی الحال ان کا اشارہ کرنا مشکل ہے۔ امیج یا ٹیکسٹ جنریشن ماڈلز کے برعکس، جنریٹڈ آؤٹ پٹ اکثر پرامپٹ کے ذریعے پوری طرح سے حسب ضرورت نہیں ہوتا ہے۔
 
-## Riffusion
+## ریفیوژن
 import riffusion from '@site/docs/assets/miscl/riffusion_phonk.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={riffusion} style={{width: "500px"}}/>
+   <img src={riffusion} style={{width: "500px"}}/>
 </div>
 
-Riffusion(@Forsgren_Martiros_2022), a fine tuned version of Stable Diffusion, can be controlled with prompts to generate instruments and pseudo styles, but it has a limited number of beats available.
+Riffusion(@Forsgren_Martiros_2022)، اسٹیبل ڈفیوژن کا ایک عمدہ ٹیونڈ ورژن، آلات اور سیڈو اسٹائل بنانے کے پرامپٹ سے کنٹرول کیا جا سکتا ہے، لیکن اس میں محدود تعداد میں دھڑکنیں دستیاب ہیں۔
 
-## Mubert
+## مبرٹ
 
-[Mubert](https://mubert.com/) seems to interpret prompts through sentiment analysis that links appropriate musical stylistics to the prompt (controlling the musical parameters in detail via prompts is not possible). It is unclear how much of the resultant generation is done by AI.
+ایسا لگتا ہے کہ [Mubert](https://mubert.com/) جذباتی تجزیہ کے ذریعے پرامپٹ کی تشریح کرتا ہے جو مناسب میوزیکل اسٹائلسٹکس کو پرامپٹ سے جوڑتا ہے (پرامپٹ کے ذریعے میوزیکل پیرامیٹرز کو تفصیل سے کنٹرول کرنا ممکن نہیں ہے)۔ یہ واضح نہیں ہے کہ نتیجہ خیز نسل کا کتنا حصہ AI نے کیا ہے۔
 
-## Other
+## دیگر
 
-There are attempts to use GPT-3 as a Text-2-Music tool with actual prompting for musical elements on the "micro-level" of notes (instead of the rather vague prompt-style-analogies mubert & riffusion produce) (e.g. `write the notes for a folk song that only uses A, B, C#, F#, and G`). However, at present those attempts are limited to single instruments.
+GPT-3 کو ٹیکسٹ-2-میوزک ٹول کے طور پر استعمال کرنے کی کوششیں کی جا رہی ہیں جس میں نوٹوں کے "مائیکرو لیول" پر میوزیکل عناصر کے لیے اصل اشارہ دیا جا رہا ہے (بلکہ مبہم پرامپٹ-اسٹائل-اینالوجیز مبرٹ اور ریفیوژن پروڈکٹ کی بجائے) (جیسے ` ایک لوک گیت کے لیے نوٹ لکھیں جو صرف A، B، C#، F#، اور G` استعمال کرتا ہے)۔ تاہم، فی الحال یہ کوششیں صرف ایک آلات تک محدود ہیں۔
 
-Other approaches include a model chain that [converts any image into sound that represents it](https://huggingface.co/spaces/fffiloni/img-to-music) and prompting ChatGPT to generate code for [Python libraries that create sound](https://twitter.com/teropa/status/1598713756074246145).
+دیگر طریقوں میں ایک ماڈل چین شامل ہے جو [کسی بھی تصویر کو آواز میں تبدیل کرتی ہے جو اس کی نمائندگی کرتی ہے](https://huggingface.co/spaces/fffiloni/img-to-music) اور ChatGPT کو [Python لائبریریاں جو آواز پیدا کرتی ہیں] کے لیے کوڈ تیار کرنے کا اشارہ کرتی ہیں۔ (https://twitter.com/teropa/status/1598713756074246145)۔
 
-## Notes
+## نوٹس
 
-Music prompting is not well built out... yet. MusicLM looks promising, but it is not yet available to the public.
+موسیقی کا اشارہ اچھی طرح سے تیار نہیں کیا گیا ہے... ابھی تک۔ MusicLM امید افزا لگتا ہے، لیکن یہ ابھی تک عوام کے لیے دستیاب نہیں ہے۔

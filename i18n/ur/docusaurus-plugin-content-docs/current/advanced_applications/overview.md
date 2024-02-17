@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 تعارف
 
-We have seen a number of prompting/prompt engineering methods thus far. 
-Now we will cover some advanced applications of prompting that can solve
-complex reasoning tasks by performing searches for information via the internet,
-or other external sources.
+ہم نے اب تک متعدد پرامپٹنگ/پرامپٹ انجینئرنگ کے طریقے دیکھے ہیں۔
+اب ہم اشارہ کرنے کی کچھ جدید ایپلی کیشنز کا احاطہ کریں گے جو حل کر سکتے ہیں۔
+انٹرنیٹ کے ذریعے معلومات کی تلاش کے ذریعے پیچیدہ استدلال کے کام،
+یا دیگر بیرونی ذرائع۔

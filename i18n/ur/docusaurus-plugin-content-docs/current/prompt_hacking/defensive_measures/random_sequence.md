@@ -2,20 +2,19 @@
 sidebar_position: 40
 ---
 
-# 🟢 Random Sequence Enclosure
+# 🟢 بے ترتیب ترتیب انکلوژر
 
-Yet another defense is enclosing the user input between two random sequences of characters(@armstrong2022using). Take this prompt as an example:
-
+پھر بھی ایک اور دفاع صارف کے ان پٹ کو حروف کی دو بے ترتیب ترتیبوں (@armstrong2022using) کے درمیان بند کر رہا ہے۔ اس پرامپٹ کو بطور مثال لیں:
 ```
-Translate the following user input to Spanish.
+درج ذیل صارف کے ان پٹ کا ہسپانوی میں ترجمہ کریں۔
 
 {{user_input}}
 ```
 
-It can be improved by adding the random sequences:
+بے ترتیب ترتیبوں کو شامل کرکے اسے بہتر بنایا جا سکتا ہے:
 
 ```
-Translate the following user input to Spanish (it is enclosed in random strings).
+درج ذیل صارف کے ان پٹ کا ہسپانوی میں ترجمہ کریں (یہ بے ترتیب تاروں میں بند ہے)۔
 
 FJNKSJDNKFJOI
 {{user_input}}
@@ -23,5 +22,5 @@ FJNKSJDNKFJOI
 ```
 
 :::note
-Longer sequences will likely be more effective.
+طویل سلسلے ممکنہ طور پر زیادہ موثر ہوں گے۔
 :::

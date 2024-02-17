@@ -4,8 +4,8 @@ sidebar_position: 15
 
 # Kolla Prompt 🚧
 
-[Kolla Prompt](https://kollaprompt.com) is a tool for graphically chaining 
-prompts. 
+[Kolla Prompt](https://kollaprompt.com) گرافک طور پر سلسلہ بندی کا ایک ٹول ہے
+اشارہ کرتا ہے
 
 import Image from '@site/docs/assets/tooling/kollaprompt.webp';
 
@@ -13,7 +13,7 @@ import Image from '@site/docs/assets/tooling/kollaprompt.webp';
   <img src={Image} style={{width: "750px"}}/>
 </div>
 
-## Features
+## خصوصیات
 
-Kolla features draggable blocks that are piped together to form a pipeline. It 
-also allows for chaining language models to image models.
+کولا میں ڈریگ ایبل بلاکس شامل ہیں جو پائپ لائن بنانے کے لیے ایک ساتھ پائپ کیے جاتے ہیں۔ یہ
+لینگویج ماڈلز کو تصویری ماڈلز سے جوڑنے کی بھی اجازت دیتا ہے۔

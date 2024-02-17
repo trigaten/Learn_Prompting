@@ -2,186 +2,186 @@
 sidebar_position: 50
 ---
 
-# 🟢 Contracts
+# 🟢 معاہدے
 
-Tired of reading and writing long, boring contracts? AI can help!
+طویل، بورنگ معاہدوں کو پڑھنے اور لکھنے سے تھک گئے ہیں؟ AI مدد کر سکتا ہے!
 
 :::warning
-Obligatory: I am not a lawyer and nothing in this post should be taken as legal advice.
+واجب: میں وکیل نہیں ہوں اور اس پوسٹ میں کسی بھی چیز کو قانونی مشورہ کے طور پر نہ لیا جائے۔
 :::
-## Reading Contracts
+## معاہدوں کو پڑھنا
 
-### Clarifying Legal Language
+### قانونی زبان کی وضاحت
 
-You should always read contracts carefully. If you don't understand something, or don't have time to do so, *you should talk to a lawyer*. However, if you are reading through and have trouble understanding a section, you can use AI to help you understand it.
+آپ کو ہمیشہ معاہدوں کو غور سے پڑھنا چاہیے۔ اگر آپ کو کچھ سمجھ نہیں آتا ہے، یا آپ کے پاس ایسا کرنے کا وقت نہیں ہے، تو آپ کو کسی وکیل سے بات کرنی چاہیے*۔ تاہم، اگر آپ پڑھ رہے ہیں اور کسی حصے کو سمجھنے میں دشواری ہو رہی ہے، تو آپ اسے سمجھنے میں مدد کے لیے AI کا استعمال کر سکتے ہیں۔
 
-Here is some language from an NDA (non-disclosure agreement):
+این ڈی اے (غیر افشاء معاہدہ) کی کچھ زبان یہ ہے:
 
 ```text
-WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
+جب کہ، ٹھیکیدار سرکاری ادارے کی خفیہ معلومات اور/یا تجارتی راز رکھتا ہے یا ہوسکتا ہے؛ اور
 
-WHEREAS, the Government Entity desires to ensure that its confidential information and trade secrets are protected from disclosure; and
+جبکہ، حکومتی ادارہ اس بات کو یقینی بنانا چاہتا ہے کہ اس کی خفیہ معلومات اور تجارتی راز افشاء سے محفوظ رہیں؛ اور
 
-WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
+جبکہ، ٹھیکیدار اس معاہدے کی شرائط و ضوابط کے مطابق اس طرح کی معلومات کی رازداری کو برقرار رکھنے سے اتفاق کرتا ہے۔
 
-NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+اب، اس لیے، یہاں موجود باہمی وعدوں اور معاہدوں کو مدنظر رکھتے ہوئے، فریقین درج ذیل متفق ہیں:
 ```
 
-When I first set out into the world of legalities, I really did not understand the use of WHEREAS and NOW, THEREFORE. Let's see what ChatGPT has to say about it:
+جب میں پہلی بار قانونی حیثیت کی دنیا میں نکلا، تو میں واقعی میں WHEREAS اور NOW کے استعمال کو سمجھ نہیں پایا، اس لیے۔ آئیے دیکھتے ہیں کہ ChatGPT کا اس بارے میں کیا کہنا ہے:
 
 ```text
-WHEREAS, the Contractor has or may become privy to confidential information and/or trade secrets of the Government Entity; and
+جب کہ، ٹھیکیدار سرکاری ادارے کی خفیہ معلومات اور/یا تجارتی راز رکھتا ہے یا ہوسکتا ہے؛ اور
 
-WHEREAS, the Government Entity desires to ensure that its confidential information and trade secrets are protected from disclosure; and
+جبکہ، حکومتی ادارہ اس بات کو یقینی بنانا چاہتا ہے کہ اس کی خفیہ معلومات اور تجارتی راز افشاء سے محفوظ رہیں؛ اور
 
-WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
+جبکہ، ٹھیکیدار اس معاہدے کی شرائط و ضوابط کے مطابق اس طرح کی معلومات کی رازداری کو برقرار رکھنے سے اتفاق کرتا ہے۔
 
-NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+اب، اس لیے، یہاں موجود باہمی وعدوں اور معاہدوں کو مدنظر رکھتے ہوئے، فریقین درج ذیل متفق ہیں:
 
-Read the above NDA language and explain what the words in all caps are saying:
+مندرجہ بالا NDA زبان کو پڑھیں اور وضاحت کریں کہ تمام ٹوپیوں میں الفاظ کیا کہہ رہے ہیں:
 // highlight-start
-The words in all caps in the NDA language are legal terms that set the context and purpose of the agreement. Specifically, they establish the background and reasons for the agreement and state the obligations and expectations of the parties. In this case, the capitalized words indicate that the Contractor has access to confidential information and trade secrets of the Government Entity, that the Government Entity wants to protect this information from disclosure, and that the Contractor agrees to maintain the confidentiality of such information according to the terms of the agreement.
+این ڈی اے کی زبان میں تمام کیپس کے الفاظ قانونی اصطلاحات ہیں جو معاہدے کے سیاق و سباق اور مقصد کو متعین کرتی ہیں۔ خاص طور پر، وہ معاہدے کے پس منظر اور وجوہات کو قائم کرتے ہیں اور فریقین کی ذمہ داریوں اور توقعات کو بیان کرتے ہیں۔ اس معاملے میں، بڑے بڑے الفاظ اس بات کی نشاندہی کرتے ہیں کہ ٹھیکیدار کو سرکاری ادارے کی خفیہ معلومات اور تجارتی راز تک رسائی حاصل ہے، کہ حکومتی ادارہ اس معلومات کو افشاء سے بچانا چاہتا ہے، اور یہ کہ ٹھیکیدار اس طرح کی معلومات کی رازداری کو برقرار رکھنے پر رضامند ہے۔ معاہدے کی شرائط.
 // highlight-end
 ```
 
-This seems to be a decent explanation, but you can easily improve your understanding by asking follow up questions.
+یہ ایک معقول وضاحت معلوم ہوتی ہے، لیکن آپ فالو اپ سوالات پوچھ کر آسانی سے اپنی سمجھ کو بہتر بنا سکتے ہیں۔
 
-### Discovering Dangerous Language
+### خطرناک زبان دریافت کرنا
 
-Here is part of an NDA produced by ChatGPT. You don't need to read it, but it contains dangerous legal language favoring the employer. You can use ChatGPT to find this dangerous language by using the following prompt, which contains the NDA and a question about dangerous language at the bottom. 
+یہاں ChatGPT کے ذریعہ تیار کردہ NDA کا حصہ ہے۔ آپ کو اسے پڑھنے کی ضرورت نہیں ہے، لیکن اس میں خطرناک قانونی زبان ہے جو آجر کے حق میں ہے۔ آپ مندرجہ ذیل پرامپٹ کو استعمال کرکے اس خطرناک زبان کو تلاش کرنے کے لیے ChatGPT استعمال کرسکتے ہیں، جس میں NDA اور نیچے خطرناک زبان کے بارے میں ایک سوال ہے۔
 
 :::note
 
-This NDA was created by jailbreaking ChatGPT and prompting it with `Write a contractor NDA that has dangerous legal language favoring the employer`.
+یہ NDA ChatGPT کو جیل بریک کرکے اور اسے 'ایک ٹھیکیدار NDA لکھیں جس میں آجر کے حق میں خطرناک قانونی زبان ہو' کا اشارہ دے کر بنایا گیا تھا۔
 
 :::
 
 ```text
-NON-DISCLOSURE AGREEMENT
+غیر انکشاف معاہدہ
 
-This Non-Disclosure Agreement (the "Agreement") is entered into by and between [Employer] ("Employer") and [Contractor] ("Contractor") as of the date set forth below.
+یہ غیر افشاء کرنے والا معاہدہ ("معاہدہ") [ایمپلائر] ("ایمپلائر") اور [ٹھیکیدار] ("ٹھیکیدار") کے درمیان درج ذیل تاریخ کے مطابق کیا گیا ہے۔
 
-WHEREAS, the Contractor may become privy to confidential information and/or trade secrets of the Employer; and
+جبکہ، ٹھیکیدار آجر کی خفیہ معلومات اور/یا تجارتی رازوں کا رازدار ہو سکتا ہے۔ اور
 
-WHEREAS, the Employer desires to ensure that its confidential information and trade secrets are protected from disclosure; and
+جبکہ، آجر اس بات کو یقینی بنانا چاہتا ہے کہ اس کی خفیہ معلومات اور تجارتی راز افشاء سے محفوظ رہیں؛ اور
 
-WHEREAS, the Contractor agrees to maintain the confidentiality of such information pursuant to the terms and conditions of this Agreement.
+جبکہ، ٹھیکیدار اس معاہدے کی شرائط و ضوابط کے مطابق اس طرح کی معلومات کی رازداری کو برقرار رکھنے سے اتفاق کرتا ہے۔
 
-NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+اب، اس لیے، یہاں موجود باہمی وعدوں اور معاہدوں کو مدنظر رکھتے ہوئے، فریقین درج ذیل متفق ہیں:
 
-CONFIDENTIALITY
-Contractor acknowledges that all information, documents, and materials provided by or on behalf of Employer, or obtained by Contractor from Employer or its affiliates, and all derivatives thereof (collectively, the "Confidential Information") are the exclusive property of Employer. Confidential Information includes all information of any nature, whether tangible or intangible, and in whatever form or medium, that is not generally known to the public and that relates to the business, products, services, customers, suppliers, operations, strategies, or any other aspect of the Employer.
+رازداری
+ٹھیکیدار تسلیم کرتا ہے کہ تمام معلومات، دستاویزات، اور مواد جو آجر کی طرف سے یا اس کی جانب سے فراہم کیے گئے ہیں، یا کنٹریکٹر کی طرف سے آجر یا اس سے وابستہ افراد سے حاصل کیے گئے ہیں، اور اس کے تمام مشتقات (مجموعی طور پر، "خفیہ معلومات") آجر کی خصوصی ملکیت ہیں۔ خفیہ معلومات میں کسی بھی نوعیت کی تمام معلومات شامل ہوتی ہیں، خواہ ٹھوس ہو یا غیر محسوس، اور کسی بھی شکل یا درمیانے میں، جو عام طور پر عوام کو معلوم نہیں ہوتی ہے اور اس کا تعلق کاروبار، مصنوعات، خدمات، صارفین، سپلائرز، آپریشنز، حکمت عملی، یا کسی سے بھی ہوتا ہے۔ آجر کا دوسرا پہلو۔
 
-Contractor agrees to maintain the confidentiality of the Confidential Information and not to disclose, distribute, reproduce, copy, transmit, disseminate, or use in any way, except as expressly authorized in writing by Employer. Contractor agrees to protect the Confidential Information with at least the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care. Contractor acknowledges that any breach of this provision may result in irreparable harm to Employer, and that Employer shall be entitled to seek equitable relief, including injunctive relief and specific performance, in addition to any other remedies available at law or in equity.
+ٹھیکیدار خفیہ معلومات کی رازداری کو برقرار رکھنے اور ظاہر کرنے، تقسیم کرنے، دوبارہ پیش کرنے، کاپی کرنے، منتقل کرنے، پھیلانے، یا کسی بھی طرح سے استعمال کرنے سے اتفاق کرتا ہے، سوائے اس کے کہ آجر کے ذریعہ تحریری طور پر اجازت دی گئی ہو۔ ٹھیکیدار خفیہ معلومات کی حفاظت پر اتفاق کرتا ہے کم از کم اسی حد تک دیکھ بھال کے ساتھ جو وہ اپنی خفیہ معلومات کی حفاظت کے لیے استعمال کرتا ہے، لیکن کسی بھی صورت میں مناسب دیکھ بھال سے کم نہیں۔ ٹھیکیدار تسلیم کرتا ہے کہ اس پروویژن کی کسی بھی خلاف ورزی کے نتیجے میں آجر کو ناقابل تلافی نقصان پہنچ سکتا ہے، اور یہ کہ آجر قانون یا ایکویٹی میں دستیاب کسی بھی دوسرے علاج کے علاوہ، غیر قانونی ریلیف اور مخصوص کارکردگی سمیت، منصفانہ ریلیف حاصل کرنے کا حقدار ہوگا۔
 
-OWNERSHIP
-All Confidential Information, including all derivatives thereof, shall remain the exclusive property of Employer. Contractor acknowledges that all right, title, and interest in and to the Confidential Information, including all intellectual property rights, belong to Employer. Contractor agrees to execute any and all documents and take any and all actions necessary or desirable to effectuate this provision.
+ملکیت
+تمام خفیہ معلومات، بشمول اس کے تمام مشتقات، آجر کی خصوصی ملکیت رہیں گی۔ ٹھیکیدار تسلیم کرتا ہے کہ تمام حقوق، عنوان، اور خفیہ معلومات میں اور دلچسپی، بشمول تمام املاک دانش کے حقوق، آجر کے ہیں۔ ٹھیکیدار کسی بھی اور تمام دستاویزات پر عمل درآمد کرنے اور اس پروویژن کو عملی جامہ پہنانے کے لیے ضروری یا مطلوبہ تمام اقدامات کرنے سے اتفاق کرتا ہے۔
 
-NO LICENSE
-Nothing contained in this Agreement shall be construed as granting any rights, by implication or otherwise, to Contractor with respect to the Confidential Information, except as expressly set forth herein.
+کوئی لائسنس نہیں۔
+اس معاہدے میں شامل کسی بھی چیز کو خفیہ معلومات کے حوالے سے ٹھیکیدار کو مفہوم یا دوسری صورت میں، کوئی حق دینے کے طور پر نہیں سمجھا جائے گا، سوائے اس کے کہ یہاں واضح طور پر بیان کیا گیا ہو۔
 
-TERM AND TERMINATION
-This Agreement shall commence on the date set forth above and shall continue in effect until terminated by either party upon thirty (30) days written notice. The confidentiality obligations contained herein shall survive any termination of this Agreement.
+ٹرم اور ٹرمینیشن
+یہ معاہدہ اوپر دی گئی تاریخ سے شروع ہوگا اور تیس (30) دن کے تحریری نوٹس پر کسی بھی فریق کی طرف سے ختم ہونے تک نافذ العمل رہے گا۔ یہاں موجود رازداری کی ذمہ داریاں اس معاہدے کے کسی بھی خاتمے تک زندہ رہیں گی۔
 
-What part of this agreement contains dangerous language?
+اس معاہدے کا کون سا حصہ خطرناک زبان پر مشتمل ہے؟
 ```
 
-Here is ChatGPT's response. 
+یہاں ChatGPT کا جواب ہے۔
 
 ```text
 // highlight-start
-The entire agreement contains dangerous language that favors the Employer over the Contractor. Here are some of the key elements that make this agreement unethical:
+پورا معاہدہ خطرناک زبان پر مشتمل ہے جو ٹھیکیدار پر آجر کے حق میں ہے۔ یہاں کچھ اہم عناصر ہیں جو اس معاہدے کو غیر اخلاقی بناتے ہیں:
 
-Unreasonable Definition of Confidential Information: The agreement defines the Confidential Information to include all information, documents, and materials provided by or on behalf of the Employer, or obtained by the Contractor from the Employer or its affiliates, without any limitations or exclusions. This definition is broad and could potentially include information that is not actually confidential or trade secret information, which could cause the Contractor to unknowingly breach the agreement.
+رازدارانہ معلومات کی غیر معقول تعریف: معاہدہ خفیہ معلومات کی تعریف کرتا ہے کہ وہ تمام معلومات، دستاویزات، اور مواد جو آجر کی طرف سے یا اس کی طرف سے فراہم کی جائیں، یا کنٹریکٹر کے ذریعے آجر یا اس سے ملحقہ اداروں سے حاصل کی جائیں، بغیر کسی حد یا اخراج کے۔ یہ تعریف وسیع ہے اور اس میں ممکنہ طور پر ایسی معلومات شامل ہو سکتی ہیں جو درحقیقت خفیہ یا تجارتی خفیہ معلومات نہیں ہیں، جس کی وجہ سے ٹھیکیدار انجانے میں معاہدے کی خلاف ورزی کر سکتا ہے۔
 
-No Limitations on Use: The agreement does not provide any limitations on how the Employer can use the Confidential Information. This could allow the Employer to use the information for any purpose, including competing with the Contractor or disclosing the information to third parties.
+استعمال پر کوئی پابندی نہیں: معاہدہ اس بات پر کوئی پابندی نہیں دیتا ہے کہ آجر کس طرح خفیہ معلومات کا استعمال کر سکتا ہے۔ یہ آجر کو کسی بھی مقصد کے لیے معلومات استعمال کرنے کی اجازت دے سکتا ہے، بشمول ٹھیکیدار سے مقابلہ کرنا یا معلومات کو تیسرے فریق کو ظاہر کرنا۔
 
-Broad Definition of Ownership: The agreement states that all Confidential Information, including all derivatives thereof, shall remain the exclusive property of the Employer, with no exceptions or limitations. This means that the Contractor may not use or benefit from any information obtained through their work for the Employer, even if the Contractor developed the information independently or with other resources.
+ملکیت کی وسیع تعریف: معاہدے میں کہا گیا ہے کہ تمام خفیہ معلومات، بشمول اس کے تمام مشتقات، آجر کی خصوصی ملکیت رہیں گی، بغیر کسی استثناء یا حدود کے۔ اس کا مطلب یہ ہے کہ ٹھیکیدار آجر کے لیے اپنے کام کے ذریعے حاصل کی گئی کسی بھی معلومات کا استعمال یا فائدہ نہیں اٹھا سکتا، چاہے ٹھیکیدار نے آزادانہ طور پر یا دیگر وسائل کے ساتھ معلومات تیار کی ہوں۔
 // highlight-end
 ```
 
-Althought I am not a lawyer, I think `Unreasonable Definition of Confidential Information` is particularly relevant. 
+اگرچہ میں ایک وکیل نہیں ہوں، میرے خیال میں 'خفیہ معلومات کی غیر معقول تعریف' خاص طور پر متعلقہ ہے۔
 
-This technique of checking for dangerous legal content can be used for a range of legal documents. We have even seen tools being built on top of GPT-3 to detect dangerous language in TOS agreements and employment contracts.
+خطرناک قانونی مواد کی جانچ کی اس تکنیک کو قانونی دستاویزات کی ایک حد کے لیے استعمال کیا جا سکتا ہے۔ یہاں تک کہ ہم نے TOS معاہدوں اور ملازمت کے معاہدوں میں خطرناک زبان کا پتہ لگانے کے لیے GPT-3 کے اوپر ٹولز بنائے جاتے دیکھے ہیں۔
 
-## Writing Contracts
+## تحریری معاہدے
 
-From the previous section, we saw that ChatGPT can write NDAs. It also does a good job with other common documents like terms of use and terms of service. However, when you are dealing with less common documents, you will need to be more careful. 
+پچھلے حصے سے، ہم نے دیکھا کہ ChatGPT NDAs لکھ سکتا ہے۔ یہ دیگر عام دستاویزات جیسے استعمال کی شرائط اور سروس کی شرائط کے ساتھ بھی اچھا کام کرتا ہے۔ تاہم، جب آپ کم عام دستاویزات کے ساتھ کام کر رہے ہیں، تو آپ کو زیادہ محتاط رہنے کی ضرورت ہوگی۔
 
-I recently wrote one such document mostly using GPT-3, then had it reviewed by a lawyer. They mentioned 1-2 things that could be slightly improved, but overall it was a robust document. Some people in industry are performing this process, where they generate a document using GPT-3, then have it reviewed by a lawyer. This saves time and costs.
+میں نے حال ہی میں ایسی ہی ایک دستاویز زیادہ تر GPT-3 کا استعمال کرتے ہوئے لکھی تھی، پھر کسی وکیل کے ذریعہ اس کا جائزہ لیا تھا۔ انہوں نے 1-2 چیزوں کا ذکر کیا جن میں قدرے بہتری لائی جا سکتی تھی، لیکن مجموعی طور پر یہ ایک مضبوط دستاویز تھی۔ صنعت میں کچھ لوگ اس عمل کو انجام دے رہے ہیں، جہاں وہ GPT-3 کا استعمال کرتے ہوئے ایک دستاویز تیار کرتے ہیں، پھر کسی وکیل سے اس کا جائزہ لیتے ہیں۔ اس سے وقت اور اخراجات کی بچت ہوتی ہے۔
 
-Let's pretend to be a government contractor and write a contract for a someone doing some defense work. We will use the following prompt:
+آئیے ایک سرکاری ٹھیکیدار ہونے کا بہانہ کریں اور کسی دفاعی کام کرنے والے کے لیے معاہدہ لکھیں۔ ہم مندرجہ ذیل پرامپٹ استعمال کریں گے:
 
 ```text
-You are a lawyer for a government contractor. You are writing a contract for a subcontractor to do some aerospace work. The contract should be robust and should include the following:
-The job will last for 1.5 years and will be worth $2.5 million. It requires top secret clearance and relates to secret nuclear silo defense development. The subcontractor will be paid $1.5 million upfront and the remaining $1 million will be paid in 6 monthly installments. The subcontractor will be required to sign a non-disclosure agreement. The subcontractor will be required to sign a non-compete agreement. The subcontractor will be required to sign a non-solicitation agreement. The subcontractor will be required to sign a non-circumvention agreement. 
+آپ سرکاری ٹھیکیدار کے وکیل ہیں۔ آپ کچھ ایرو اسپیس کام کرنے کے لیے ذیلی ٹھیکیدار کے لیے معاہدہ لکھ رہے ہیں۔ معاہدہ مضبوط ہونا چاہئے اور اس میں درج ذیل شامل ہونا چاہئے:
+یہ ملازمت 1.5 سال تک رہے گی اور اس کی مالیت $2.5 ملین ہوگی۔ اس کے لیے ٹاپ سیکرٹ کلیئرنس درکار ہے اور اس کا تعلق خفیہ نیوکلیئر سائلو ڈیفنس ڈویلپمنٹ سے ہے۔ ذیلی ٹھیکیدار کو 1.5 ملین ڈالر پہلے سے ادا کیے جائیں گے اور بقیہ 1 ملین ڈالر 6 ماہانہ اقساط میں ادا کیے جائیں گے۔ ذیلی ٹھیکیدار کو غیر افشاء کرنے والے معاہدے پر دستخط کرنے کی ضرورت ہوگی۔ ذیلی ٹھیکیدار کو ایک غیر مسابقتی معاہدے پر دستخط کرنے کی ضرورت ہوگی۔ ذیلی ٹھیکیدار کو غیر درخواست کے معاہدے پر دستخط کرنے کی ضرورت ہوگی۔ ذیلی ٹھیکیدار کو نان سیکروینشن معاہدے پر دستخط کرنے کی ضرورت ہوگی۔
 
 // highlight-start
-SUBCONTRACT AGREEMENT
+ذیلی معاہدہ معاہدہ
 
-This Subcontract Agreement (the "Agreement") is entered into by and between [Government Contractor] ("Contractor") and [Subcontractor] ("Subcontractor") as of the date set forth below.
+یہ ذیلی معاہدہ ("معاہدہ") نیچے دی گئی تاریخ کے مطابق [گورنمنٹ کنٹریکٹر] ("ٹھیکیدار") اور [سب کنٹریکٹر] ("سب کنٹریکٹر") کے ذریعے اور ان کے درمیان ہوا ہے۔
 
-SCOPE OF WORK
-Subcontractor shall perform the work described in the Statement of Work attached hereto as Exhibit A (the "Work"). The Work relates to the development of secret nuclear silo defense and requires top secret clearance.
+کام کے دائرہ کار
+ذیلی ٹھیکیدار اس کام کو انجام دے گا جس کا بیان کام کے بیان میں بطور نمائش A ("کام") کے ساتھ منسلک ہے۔ اس کام کا تعلق خفیہ نیوکلیئر سائلو ڈیفنس کی ترقی سے ہے اور اس کے لیے اعلیٰ خفیہ کلیئرنس کی ضرورت ہے۔
 
-PAYMENT
-The total payment for the Work shall be $2.5 million, payable as follows:
+ادائیگی
+کام کے لیے کل ادائیگی $2.5 ملین ہوگی، جس کی ادائیگی حسب ذیل ہے:
 
-$1.5 million upon execution of this Agreement and receipt of top secret clearance by Subcontractor.
-$1 million to be paid in 6 monthly installments of $166,666.67 each, provided that Subcontractor has satisfactorily performed the Work during the preceding month.
-NON-DISCLOSURE AGREEMENT
-Subcontractor shall sign a non-disclosure agreement in the form attached hereto as Exhibit B (the "NDA"). The NDA shall be in effect for the duration of the Agreement and for a period of five years thereafter.
+اس معاہدے پر عمل درآمد اور ذیلی ٹھیکیدار کی طرف سے خفیہ کلیئرنس کی وصولی پر $1.5 ملین۔
+$1 ملین ہر ایک $166,666.67 کی 6 ماہانہ اقساط میں ادا کیے جائیں گے، بشرطیکہ ذیلی ٹھیکیدار نے پچھلے مہینے کے دوران کام کو اطمینان بخش طریقے سے انجام دیا ہو۔
+غیر انکشاف معاہدہ
+ذیلی ٹھیکیدار نمائش بی ("NDA") کے بطور یہاں منسلک فارم میں غیر افشاء کرنے والے معاہدے پر دستخط کرے گا۔ این ڈی اے معاہدے کی مدت اور اس کے بعد پانچ سال کی مدت کے لیے نافذ العمل ہوگا۔
 
-NON-COMPETE AGREEMENT
-Subcontractor shall sign a non-compete agreement in the form attached hereto as Exhibit C (the "NCA"). The NCA shall be in effect for a period of two years after the termination of this Agreement.
+نان کمپیٹ ایگریمنٹ
+ذیلی ٹھیکیدار ایک غیر مسابقتی معاہدے پر دستخط کرے گا جس میں اس کے ساتھ بطور نمائش C ("NCA") منسلک کیا گیا ہے۔ NCA اس معاہدے کے خاتمے کے بعد دو سال کی مدت کے لیے نافذ العمل ہوگا۔
 
-NON-SOLICITATION AGREEMENT
-Subcontractor shall sign a non-solicitation agreement in the form attached hereto as Exhibit D (the "NSA"). The NSA shall be in effect for a period of two years after the termination of this Agreement.
+نان سولیکیشن ایگریمنٹ
+ذیلی ٹھیکیدار ایک غیر منقولہ معاہدے پر دستخط کرے گا جس کے ساتھ اس کے ساتھ منسلک فارم میں نمائش D ("NSA")۔ NSA اس معاہدے کے خاتمے کے بعد دو سال کی مدت کے لیے نافذ العمل ہوگا۔
 
-NON-CIRCUMVENTION AGREEMENT
-Subcontractor shall sign a non-circumvention agreement in the form attached hereto as Exhibit E (the "NCAg"). The NCAg shall be in effect for a period of two years after the termination of this Agreement.
+غیر مبہم معاہدہ
+ذیلی ٹھیکیدار ایک غیر منقولہ معاہدے پر دستخط کرے گا جس میں اس کے ساتھ بطور نمائش E ("NCAg") منسلک کیا گیا ہے۔ NCAg اس معاہدے کے خاتمے کے بعد دو سال کی مدت کے لیے نافذ العمل ہوگا۔
 
-TERM AND TERMINATION
-This Agreement shall commence on the date set forth above and shall continue in effect until the completion of the Work or until terminated by either party upon thirty (30) days written notice. The non-disclosure, non-compete, non-solicitation, and non-circumvention obligations contained herein shall survive any termination of this Agreement.
+ٹرم اور ٹرمینیشن
+یہ معاہدہ اوپر دی گئی تاریخ سے شروع ہوگا اور کام کے مکمل ہونے تک یا تیس (30) دنوں کے تحریری نوٹس پر کسی بھی فریق کی طرف سے ختم ہونے تک اثر میں رہے گا۔ یہاں موجود غیر افشاء، غیر مسابقتی، غیر التجا، اور غیر طوالت کی ذمہ داریاں اس معاہدے کے کسی بھی خاتمے تک زندہ رہیں گی۔
 
-INDEPENDENT CONTRACTOR
-Subcontractor is an independent contractor and is not an employee of Contractor. Subcontractor shall be responsible for its own taxes, social security contributions, insurance, and other benefits. Subcontractor shall indemnify and hold Contractor harmless from any claims, damages, or liabilities arising out of or related to Subcontractor's status as an independent contractor.
+آزاد ٹھیکیدار
+ذیلی ٹھیکیدار ایک آزاد ٹھیکیدار ہے اور ٹھیکیدار کا ملازم نہیں ہے۔ ذیلی ٹھیکیدار اپنے ٹیکسوں، سماجی تحفظ کے تعاون، انشورنس، اور دیگر فوائد کے لیے خود ذمہ دار ہوگا۔ ذیلی ٹھیکیدار معاوضہ ادا کرے گا اور ٹھیکیدار کو آزاد ٹھیکیدار کے طور پر ذیلی ٹھیکیدار کی حیثیت سے پیدا ہونے والے یا اس سے متعلق کسی بھی دعوے، نقصانات، یا ذمہ داریوں سے بے ضرر رکھے گا۔
 
-GOVERNING LAW AND JURISDICTION
-This Agreement shall be governed by and construed in accordance with the laws of the state of [state], without giving effect to any choice of law or conflict of law provisions. Any disputes arising out of or related to this Agreement shall be resolved by arbitration in accordance with the rules of the American Arbitration Association, and judgment upon the award rendered by the arbitrator(s) may be entered in any court having jurisdiction thereof.
+گورننگ قانون اور دائرہ اختیار
+یہ معاہدہ ریاست [ریاست] کے قوانین کے مطابق چلایا جائے گا اور اس کی تشکیل کی جائے گی، قانون کے کسی انتخاب یا قانون کی شقوں کے تصادم کو متاثر کیے بغیر۔ اس معاہدے سے پیدا ہونے والے یا اس سے متعلق کسی بھی تنازعے کو امریکن ثالثی ایسوسی ایشن کے قواعد کے مطابق ثالثی کے ذریعے حل کیا جائے گا، اور ثالث (ثالثوں) کے ذریعہ دیے گئے فیصلے پر اس کا دائرہ اختیار رکھنے والی کسی بھی عدالت میں داخل کیا جا سکتا ہے۔
 
-ENTIRE AGREEMENT
-This Agreement constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements and understandings, whether written or oral, relating to the subject matter of this Agreement. This Agreement may not be amended or modified except in writing signed by both parties.
+مکمل معاہدہ
+یہ معاہدہ فریقین کے درمیان پورے معاہدے کی تشکیل کرتا ہے اور اس معاہدے کے موضوع سے متعلق تمام سابقہ اور عصری معاہدوں اور مفاہمتوں، خواہ تحریری ہو یا زبانی، کی جگہ لے لیتا ہے۔ اس معاہدے میں ترمیم یا ترمیم نہیں کی جا سکتی سوائے اس کے کہ دونوں فریقوں کے تحریری دستخط ہوں۔
 
-IN WITNESS WHEREOF, the parties have executed this Agreement as of the date set forth below.
+گواہی کے طور پر، فریقین نے اس معاہدے کو نیچے دی گئی تاریخ کے مطابق عمل میں لایا ہے۔
 
-[Government Contractor]
+[سرکاری ٹھیکیدار]
 
-By: ____________________________
+منجانب: _________________________________
 
-Name: __________________________
+نام: __________________________
 
-Title: ___________________________
+عنوان: ___________________________
 
-[Subcontractor]
+[ذیلی ٹھیکیدار]
 
-By: ____________________________
+منجانب: _________________________________
 
-Name: __________________________
+نام: __________________________
 
-Title: ___________________________
+عنوان: ___________________________
 
-Date: ___________________________
+تاریخ: ___________________________
 // highlight-end
 ```
 
-This is a pretty good start. Imaginably you would want to add more information in the scope, payment, and other sections. This is where you would need to use your own knowledge and experience to start iterating on the document.
+یہ ایک بہت اچھی شروعات ہے۔ تصوراتی طور پر آپ دائرہ کار، ادائیگی اور دیگر حصوں میں مزید معلومات شامل کرنا چاہیں گے۔ یہ وہ جگہ ہے جہاں آپ کو دستاویز پر تکرار شروع کرنے کے لیے اپنے علم اور تجربے کو استعمال کرنے کی ضرورت ہوگی۔
 
-## Takeaways
+## ٹیک ویز
 
-- LLMs can be used to review and clarify legal documents *in an assistive capacity*.
-- LLMs can be used to generate legal documents *in an assistive capacity*.
+- LLMs کو قانونی دستاویزات کا جائزہ لینے اور واضح کرنے کے لیے استعمال کیا جا سکتا ہے *معاون صلاحیت میں*۔
+- LLMs کو قانونی دستاویزات *معاون صلاحیت میں* بنانے کے لیے استعمال کیا جا سکتا ہے۔
 
 :::danger
-Do not use any legal documents on this page. They are for demonstration purposes only.
+اس صفحہ پر کوئی قانونی دستاویزات استعمال نہ کریں۔ وہ صرف مظاہرے کے مقاصد کے لیے ہیں۔
 :::

@@ -2,39 +2,39 @@
 sidebar_position: 1
 --- 
 
-# 🟢 Detecting AI Generated Text
+# 🟢 AI سے تیار کردہ ٹیکسٹ کا پتہ لگانا
 
-Detecting AI generated text is a big problem for safety researchers and educators,
-among others. Tools like [GPTZero](https://gptzero.me), [GPT2 detector](https://openai-openai-detector.hf.space), and [bilingual detectors](https://github.com/Hello-SimpleAI/chatgpt-comparison-detection) have seen significant success,
-However, they can be [tricked](https://learnprompting.org/docs/miscl/trickery). 
+AI سے تیار کردہ ٹیکسٹ کا پتہ لگانا حفاظتی محققین اور معلمین کے لیے ایک بڑا مسئلہ ہے،
+دوسروں کے درمیان. ٹولز جیسے [GPTZero](https://gptzero.me)، [GPT2 ڈیٹیکٹر](https://openai-openai-detector.hf.space)، اور [دو لسانی ڈیٹیکٹر](https://github.com/Hello -SimpleAI/chatgpt-comparison-detection) نے نمایاں کامیابی دیکھی ہے،
+تاہم، ان کو [دھوکہ دیا جا سکتا ہے](https://learnprompting.org/docs/miscl/trickery)۔
 
-OpenAI and other researchers(@bansal2022certified)(@gu2022watermarking) are working to introduce statistical watermarking into their generated text, but this too may be fooled by modifying large portions of the text. 
+OpenAI اور دیگر محققین(@bansal2022certified)(@gu2022watermarking) اپنے تیار کردہ ٹیکسٹ میں شماریاتی واٹر مارکنگ متعارف کرانے کے لیے کام کر رہے ہیں، لیکن ٹیکسٹ کے بڑے حصوں میں ترمیم کر کے اسے بھی بے وقوف بنایا جا سکتا ہے۔
 
-The problem of AI text detection will likely be an arms race as new models and new detection methods are introduced. Many companies have already started to build solutions which they claim are very effective, but it is difficult to prove this, especially as models change over time. 
+AI ٹیکسٹ کا پتہ لگانے کا مسئلہ ممکنہ طور پر ہتھیاروں کی دوڑ کا ہو گا کیونکہ نئے ماڈل اور پتہ لگانے کے نئے طریقے متعارف کرائے گئے ہیں۔ بہت سی کمپنیوں نے پہلے ہی ایسے حل تیار کرنا شروع کر دیے ہیں جن کے بارے میں وہ دعویٰ کرتے ہیں کہ یہ بہت موثر ہیں، لیکن اسے ثابت کرنا مشکل ہے، خاص طور پر وقت کے ساتھ ساتھ ماڈلز بدلتے رہتے ہیں۔
 
-This article will cover some of the current methods for detecting AI-generated text, and the next will discuss a few ways people have found to fool them. 
+اس مضمون میں AI سے تیار کردہ ٹیکسٹ کا پتہ لگانے کے کچھ موجودہ طریقوں کا احاطہ کیا جائے گا، اور اگلا مضمون ان چند طریقوں پر بات کرے گا جو لوگوں نے انہیں بے وقوف بنانے کے لیے تلاش کیے ہیں۔
 
-## OpenAI Text Classifier 
+## اوپن اے آئی ٹیکسٹ کلاسیفائر
 
-The [OpenAI Text Classifier](https://platform.openai.com/ai-text-classifier) is a fairly good attempt at a general-purpose AI text detector. 
-By training the model on a large quantity of AI-generated data and human-written text of a similar quality, the detector is able to compute the likelihood that any given text was created by an LLM. 
+[OpenAI Text Classifier](https://platform.openai.com/ai-text-classifier) ایک عمومی مقصد والے AI ٹیکسٹ ڈیٹیکٹر میں کافی اچھی کوشش ہے۔
+ماڈل کو بڑی مقدار میں AI سے تیار کردہ ڈیٹا اور اسی معیار کے انسانی تحریری ٹیکسٹ پر تربیت دے کر، ڈیٹیکٹر اس امکان کا حساب لگانے کے قابل ہوتا ہے کہ کوئی بھی ٹیکسٹ LLM کے ذریعے تخلیق کیا گیا ہو۔
 
-It has a number of limitations—it doesn’t accept any submission of under 1000 words, text can easily be edited to mess with the probability calculations, and because of its professionally-focused training set, it has more trouble with text created by children or non-english speakers. 
+اس کی بہت سی حدود ہیں — یہ 1000 سے کم الفاظ کی جمع آوری کو قبول نہیں کرتا، امکانی حساب سے گڑبڑ کرنے کے لیے ٹیکسٹ کو آسانی سے ایڈٹ کیا جا سکتا ہے، اور اس کے پیشہ ورانہ طور پر مرکوز تربیتی سیٹ کی وجہ سے، اسے بچوں کے ذریعے تخلیق کردہ ٹیکسٹ کے ساتھ زیادہ پریشانی ہوتی ہے۔ یا غیر انگریزی بولنے والے۔
 
-It currently flags human text as AI-generated only about 9% of the time, and correctly identifies AI-generated text ~26% of the time. As the model increases in power and scope, those numbers will improve, but it may be the case that more specific detectors are required to adequately assess whether text is generated or not. 
+یہ فی الحال انسانی ٹیکسٹ کو صرف 9% وقت میں AI سے تیار کردہ کے طور پر جھنڈا لگاتا ہے، اور AI سے تیار کردہ ٹیکسٹ ~26% وقت کی صحیح شناخت کرتا ہے۔ جیسا کہ ماڈل کی طاقت اور دائرہ کار میں اضافہ ہوتا ہے، ان نمبروں میں بہتری آئے گی، لیکن یہ معاملہ ہو سکتا ہے کہ ٹیکسٹ کے پیدا ہونے یا نہ ہونے کا مناسب اندازہ لگانے کے لیے مزید مخصوص ڈیٹیکٹرز کی ضرورت ہو۔
 
-## The Watermark Method 
+## واٹر مارک کا طریقہ
 
-One method to detect AI generated text requires introducing a statistical watermark when generating the text. These techniques may use a LLM “whitelist”, which is a method of determining if text was generated by a specific AI model. The watermark works by selecting a randomized set of "green" tokens before a word is generated, and then softly promoting use of the selected tokens during sampling. These weighted values have a minimal effect on the quality of generations, but can be algorithmically detected by another LLM(@kirchenbauer2023watermarking).
+AI سے تیار کردہ ٹیکسٹ کا پتہ لگانے کا ایک طریقہ یہ ہے کہ ٹیکسٹ تیار کرتے وقت شماریاتی واٹر مارک متعارف کرایا جائے۔ یہ تکنیکیں LLM "وائٹ لسٹ" کا استعمال کر سکتی ہیں، جو اس بات کا تعین کرنے کا طریقہ ہے کہ آیا ٹیکسٹ کسی مخصوص AI ماڈل کے ذریعے تیار کیا گیا ہے۔ واٹر مارک کسی لفظ کے پیدا ہونے سے پہلے "گرین" ٹوکن کے بے ترتیب سیٹ کو منتخب کرکے اور پھر نمونے لینے کے دوران منتخب ٹوکنز کے استعمال کو نرمی سے فروغ دے کر کام کرتا ہے۔ ان وزنی قدروں کا نسلوں کے معیار پر کم سے کم اثر پڑتا ہے، لیکن الگورتھمی طور پر ایک اور LLM (@kirchenbauer2023watermarking) کے ذریعے پتہ لگایا جا سکتا ہے۔
 
-This is an intriguing idea, but it requires a model’s creators to implement this framework into their LLM. If a model doesn’t have the watermark built in, this method will not work. 
+یہ ایک دلچسپ خیال ہے، لیکن اس کے لیے ماڈل کے تخلیق کاروں کو اس فریم ورک کو اپنے LLM میں لاگو کرنے کی ضرورت ہے۔ اگر کسی ماڈل میں واٹر مارک نہیں ہے تو یہ طریقہ کام نہیں کرے گا۔
 
-## DetectGPT
+## جی پی ٹی کا پتہ لگائیں۔
 
-The [DetectGPT](https://detectgpt.ericmitchell.ai/)(@mitchell2023detectgpt) method is able to detect AI-generated text with less setup than the previous concepts. Researchers have found that LLM text generations tend to "occupy negative curvature regions of the model’s log probability function". Because of this, it is possible to create a curvature-based system for determining if a block of text was procedurally generated. 
+[DetectGPT](https://detectgpt.ericmitchell.ai/)(@mitchell2023detectgpt) طریقہ پچھلے تصورات سے کم سیٹ اپ کے ساتھ AI سے تیار کردہ ٹیکسٹ کا پتہ لگانے کے قابل ہے۔ محققین نے پایا ہے کہ LLM ٹیکسٹ جنریشنز "ماڈل کے لاگ امکانی فنکشن کے منفی گھماؤ والے علاقوں پر قبضہ کرتے ہیں"۔ اس کی وجہ سے، اس بات کا تعین کرنے کے لیے کہ آیا ٹیکسٹ کا ایک بلاک طریقہ کار سے تیار کیا گیا تھا، ایک گھماؤ پر مبنی نظام بنانا ممکن ہے۔
 
-It works by computing log probabilities from the model that was thought to have generated the text and comparing them to random alterations of the text from another, pre-trained generic language model. In this way, DetectGPT is able to identify the likelihood of the passage being generated using probability curves alone!
+یہ اس ماڈل سے لاگ احتمالات کو کمپیوٹنگ کرکے کام کرتا ہے جس کے بارے میں خیال کیا جاتا تھا کہ ٹیکسٹ تیار کیا ہے اور ان کا موازنہ کسی دوسرے، پہلے سے تربیت یافتہ عام زبان کے ماڈل سے ٹیکسٹ کی بے ترتیب تبدیلیوں سے کرتا ہے۔ اس طرح، DetectGPT اکیلے امکانی منحنی خطوط کا استعمال کرتے ہوئے گزرنے کے پیدا ہونے کے امکان کی نشاندہی کرنے کے قابل ہے!
 
-## Note
+## نوٹ
 
-For an additional discussion on the topic of detectors and how people are tricking them, see [this article](https://learnprompting.org/docs/miscl/trickery).
+ڈیٹیکٹرز کے موضوع اور لوگ ان کو کس طرح دھوکہ دے رہے ہیں اس پر اضافی بحث کے لیے، [یہ مضمون](https://learnprompting.org/docs/miscl/trickery) دیکھیں۔

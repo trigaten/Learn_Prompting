@@ -2,23 +2,22 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 تعارف
 
-This chapter covers how to make completions more reliable, as well as how to 
-implement checks to ensure that outputs are reliable. 
+اس باب میں تکمیل کو مزید قابل اعتماد بنانے کے طریقے کے ساتھ ساتھ اس کا احاطہ کیا گیا ہے۔
+اس بات کو یقینی بنانے کے لیے چیک لاگو کریں کہ آؤٹ پٹ قابل اعتماد ہیں۔
 
-To a certain extent, most
-of the previous techniques covered have to do with improving completion
-accuracy, and thus reliability, in particular self-consistency(@wang2022selfconsistency).
-However, there are a number of other techniques that can be used to improve reliability,
-beyond basic prompting strategies. 
+ایک خاص حد تک، زیادہ تر
+پچھلی تکنیکوں کا احاطہ کیا گیا ہے جو تکمیل کو بہتر بنانے کے ساتھ ہے۔
+درستگی، اور اس طرح وشوسنییتا، خاص طور پر خود مستقل مزاجی (@wang2022selfconsistency)۔
+تاہم، بہت سی دوسری تکنیکیں ہیں جو قابل اعتماد کو بہتر بنانے کے لیے استعمال کی جا سکتی ہیں،
+بنیادی حوصلہ افزائی کی حکمت عملی سے باہر.
 
-%%LLMs|LLM%% have been found to be more reliable than we might expect at interpreting what a prompt is *trying* to say when responding to misspelled, badly phrased, or even actively misleading prompts(@webson2023itscomplicated). 
-Despite this ability, they still exhibit various problems including hallucinations(@ye2022unreliability), 
-flawed explanations with %%CoT|CoT prompting%% methods(@ye2022unreliability), and multiple biases
-including majority label bias, recency bias, and common token bias(@zhao2021calibrate). 
-Additionally, zero-shot CoT can be particularly biased when dealing with sensitive topics
-(@shaikh2022second).
+%%LLMs|LLM%% زیادہ قابل اعتماد پایا گیا ہے جو ہم اس کی تشریح کرنے میں توقع کر سکتے ہیں کہ غلط ہجے، غلط جملے، یا فعال طور پر گمراہ کن پرامپٹ (@webson2023itscomplicated) کا جواب دیتے وقت ایک پرامپٹ کیا کہنے کی *کوشش* کر رہا ہے۔
+اس قابلیت کے باوجود، وہ اب بھی مختلف مسائل کا مظاہرہ کرتے ہیں جن میں فریب (@ye2022unreliability)،
+%%CoT|CoT پرامپٹنگ%% طریقوں(@ye2022unreliability) کے ساتھ ناقص وضاحتیں، اور متعدد تعصبات
+بشمول اکثریتی لیبل تعصب، ریسنسی تعصب، اور عام ٹوکن تعصب(@zhao2021calibrate)۔
+مزید برآں، حساس موضوعات سے نمٹتے وقت زیرو شاٹ CoT خاص طور پر متعصب ہو سکتا ہے۔
 
-Common solutions to some of these problems include calibrators to remove _a priori_ biases,
-and verifiers to score completions, as well as promoting diversity in completions.
+ان میں سے کچھ مسائل کے عام حل میں _a priori_ تعصبات کو دور کرنے کے لیے کیلیبریٹر شامل ہیں،
+اور اسکور مکمل کرنے کے لیے تصدیق کنندگان، نیز تکمیلات میں تنوع کو فروغ دینا۔

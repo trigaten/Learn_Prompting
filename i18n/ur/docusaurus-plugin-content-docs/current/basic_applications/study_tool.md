@@ -2,74 +2,74 @@
 sidebar_position: 30
 ---
 
-# 🟢 Study Buddy
+# 🟢 مطالعہ دوست
 
-One of our favorite ways to use LLMs is as a study tool! In particular, it is useful for explaining confusing terms as well as quizzing you on test content.
+LLMs کو استعمال کرنے کے ہمارے پسندیدہ طریقوں میں سے ایک مطالعہ کے آلے کے طور پر ہے! خاص طور پر، یہ مبہم اصطلاحات کی وضاحت کے ساتھ ساتھ ٹیسٹ کے مواد پر آپ سے سوال کرنے کے لیے مفید ہے۔
 
-## Explaining Terms
+## شرائط کی وضاحت کرنا
 
-I was recently reading a textbook about Cacti(@nobel2002cacti), and saw this passage:
+میں حال ہی میں Cacti(@nobel2002cacti) کے بارے میں ایک درسی کتاب پڑھ رہا تھا، اور یہ حوالہ دیکھا:
 
 ```text
-Because of adaptations to xeric conditions and the presence of **less derived woods** in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
+زیرک حالات میں موافقت اور Pereskioideae میں **کم اخذ شدہ جنگل** کی موجودگی کی وجہ سے، Cactaceae جسمانی اور شکل دونوں لحاظ سے سب سے زیادہ دلچسپ خاندانوں میں سے ایک ہے۔
 ```
 
-I had no idea what **less derived woods** meant, and Google only showed research articles on it. I decided to use ChatGPT to find out what it meant. I gave it the following prompt, which is simple the passage from the book and my question.
+مجھے اندازہ نہیں تھا کہ **کم اخذ شدہ لکڑی** کا کیا مطلب ہے، اور گوگل نے صرف اس پر تحقیقی مضامین دکھائے۔ میں نے ChatGPT استعمال کرنے کا فیصلہ کیا کہ اس کا کیا مطلب ہے۔ میں نے اسے مندرجہ ذیل پرامپٹ دیا، جو کتاب اور میرے سوال کا سادہ سا حوالہ ہے۔
 
 ```text
-Because of adaptations to xeric conditions and the presence of less derived woods in Pereskioideae, the Cactaceae is one of the most interesting families both anatomically and morphologically. 
+زیرک حالات میں موافقت اور Pereskioideae میں کم اخذ شدہ جنگلات کی موجودگی کی وجہ سے، Cactaceae جسمانی اور شکل دونوں لحاظ سے سب سے زیادہ دلچسپ خاندانوں میں سے ایک ہے۔
 
-What do less derived woods mean?
+کم اخذ شدہ لکڑی کا کیا مطلب ہے؟
 
 // highlight-start
-In this context, "less derived woods" refers to the ancestral or primitive form of wood found in the early evolution of plants. These woods lack specialized structures and features that evolved later in more derived or advanced plants. In the Pereskioideae subfamily of the Cactaceae family, the wood is less derived compared to other subfamilies and is more similar to the wood found in non-cactus plants. The less derived wood in Pereskioideae is thought to be an adaptation to the more humid and less xeric environments in which these plants grow compared to other cacti.
-//highlight-end
+اس تناظر میں، "کم اخذ شدہ لکڑی" سے مراد پودوں کے ابتدائی ارتقاء میں پائی جانے والی لکڑی کی آبائی یا قدیم شکل ہے۔ ان جنگلوں میں مخصوص ڈھانچے اور خصوصیات کی کمی ہے جو بعد میں زیادہ ماخوذ یا جدید پودوں میں تیار ہوئیں۔ Cactaceae خاندان کے Pereskioideae ذیلی خاندان میں، لکڑی دیگر ذیلی خاندانوں کے مقابلے میں کم اخذ کی جاتی ہے اور غیر کیکٹس کے پودوں میں پائی جانے والی لکڑی سے زیادہ ملتی جلتی ہے۔ Pereskioideae میں کم ماخوذ لکڑی کو زیادہ مرطوب اور کم زیرک ماحول کی موافقت سمجھا جاتا ہے جس میں یہ پودے دوسرے کیکٹی کے مقابلے اگتے ہیں۔
+//ہائی لائٹ اینڈ
 ```
 
-The model was able to answer my question quickly and I was able to continue with my reading.
+ماڈل میرے سوال کا تیزی سے جواب دینے کے قابل تھا اور میں اپنی پڑھائی جاری رکھنے کے قابل تھا۔
 
-## Quizzing Yourself
+## اپنے آپ سے سوال کرنا
 
-Another way to use LLMs as a study tool is to quiz yourself. If you have an upcoming calculus test, you could simply ask:
+LLMs کو اسٹڈی ٹول کے طور پر استعمال کرنے کا ایک اور طریقہ یہ ہے کہ اپنے آپ کو کوئز کریں۔ اگر آپ کے پاس آنے والا کیلکولس ٹیسٹ ہے، تو آپ صرف پوچھ سکتے ہیں:
 
 ```text
 Generate 5 calculus I quiz questions for me:
 
 // highlight-start
-1. What is the derivative of y = x3?
-2. Evaluate the indefinite integral of x3 + 5x2 + 7x + 4.
-3. What is the product rule for derivatives?
-4. Find the equation of the line tangent to y = x2 at the point (4, 16).
-5. What is the second derivative of y = x4?
+1. y = x3 کا مشتق کیا ہے؟
+2. x3 + 5x2 + 7x + 4 کے غیر معینہ انٹیگرل کا اندازہ کریں۔
+3. مشتقات کے لیے مصنوعات کا اصول کیا ہے؟
+4. نقطہ (4، 16) پر y = x2 کی لائن ٹینجنٹ کی مساوات تلاش کریں۔
+5. y = x4 کا دوسرا مشتق کیا ہے؟
 //highlight-end
 ```
 
-If you are studying a more specific topic, you may need to give the model additional information, for example your class notes!
+اگر آپ کسی خاص موضوع کا مطالعہ کر رہے ہیں، تو آپ کو ماڈل کو اضافی معلومات دینے کی ضرورت پڑ سکتی ہے، مثال کے طور پر آپ کے کلاس کے نوٹس!
 
 ```text
 3/20/2020 2:30 PM
 
-Marketing Class Notes
+مارکیٹنگ کلاس نوٹس
 
-- Discussed 4 P's of marketing: Product, Price, Place, Promotion
-- Difference between B2C and B2B: B2C is direct consumer market, B2B is business to business
-- Different types of market research: Quantitative and Qualitative, such as surveys and focus groups
-- Pricing Strategies: Skimming, Penetration, Competition, and Value
-- Segmentation: segmenting customer base by age, income, etc.
-- 4 types of segmentation: Demographic, Geographic, Psychographic, and Behavioral
-- Discussed different promotional tools: Advertising, Personal Selling, Public Relations, Direct Marketing, and Sales Promotions
+- مارکیٹنگ کے 4 P پر تبادلہ خیال کیا گیا: پروڈکٹ، قیمت، جگہ، پروموشن
+- B2C اور B2B کے درمیان فرق: B2C براہ راست صارف مارکیٹ ہے، B2B کاروبار سے کاروبار ہے
+- مارکیٹ ریسرچ کی مختلف اقسام: مقداری اور کوالٹیٹیو، جیسے سروے اور فوکس گروپس
+- قیمتوں کا تعین کرنے کی حکمت عملی: سکیمنگ، دخول، مقابلہ، اور قدر
+- سیگمنٹیشن: عمر، آمدنی وغیرہ کے لحاظ سے کسٹمر بیس کو تقسیم کرنا۔
+- 4 اقسام کی تقسیم: آبادیاتی، جغرافیائی، نفسیاتی، اور طرز عمل
+- مختلف پروموشنل ٹولز پر تبادلہ خیال کیا گیا: ایڈورٹائزنگ، پرسنل سیلنگ، پبلک ریلیشنز، ڈائریکٹ مارکیٹنگ، اور سیلز پروموشنز
 
-Generate 5 marketing quiz questions for me based on my notes:
+میرے نوٹس کی بنیاد پر میرے لیے 5 مارکیٹنگ کوئز سوالات تیار کریں:
 
 // highlight-start
-1. What are the 4 P's of marketing?
-2. What is the difference between B2C and B2B?
-3. What are two types of market research?
-4. What are 4 types of segmentation?
-5. Name 5 promotional tools.
+1. مارکیٹنگ کے 4 P کیا ہیں؟
+2. B2C اور B2B میں کیا فرق ہے؟
+3. مارکیٹ ریسرچ کی دو قسمیں کیا ہیں؟
+4. انقطاع کی 4 اقسام کیا ہیں؟
+5. 5 پروموشنل ٹولز کا نام دیں۔
 //highlight-end
 ```
 
-## Conclusion
+## نتیجہ
 
-There are probably other ways to use LLMs to study. Many learning companies like Duolingo and Quizlet are implementing LLMs into their products.
+LLMs کو مطالعہ کے لیے استعمال کرنے کے شاید دوسرے طریقے ہیں۔ ڈوولنگو اور کوئزلیٹ جیسی بہت سی سیکھنے والی کمپنیاں اپنی مصنوعات میں LLMs کو نافذ کر رہی ہیں۔

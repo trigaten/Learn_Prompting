@@ -2,12 +2,12 @@
 sidebar_position: 0
 ---
 
-# 🟢 Introduction
+# 🟢 تعارف
 
-Now that you have learned some very basic prompt engineering techniques, it is time to learn how to use to solve simple, everyday problems. This section covers tasks like writing/summarizing emails and creating contracts.
+اب جب کہ آپ نے فوری طور پر انجینئرنگ کی کچھ بنیادی تکنیکیں سیکھ لی ہیں، اب وقت آگیا ہے کہ یہ سیکھیں کہ کس طرح آسان، روزمرہ کے مسائل کو حل کرنے کے لیے استعمال کیا جائے۔ یہ سیکشن ای میلز لکھنے/خلاصہ کرنے اور معاہدے بنانے جیسے کاموں کا احاطہ کرتا ہے۔
 
-The examples presented in the following articles should help show you the range of applications to which you can apply prompt engineering.
+مندرجہ ذیل مضامین میں پیش کردہ مثالوں سے آپ کو ایپلی کیشنز کی رینج دکھانے میں مدد مل سکتی ہے جن پر آپ پرامپٹ انجینئرنگ کا اطلاق کر سکتے ہیں۔
 
 :::note
-We use both ChatGPT and GPT-3 in these examples. It usually does not matter which you use.
+ہم ان مثالوں میں ChatGPT اور GPT-3 دونوں استعمال کرتے ہیں۔ عام طور پر اس سے کوئی فرق نہیں پڑتا ہے کہ آپ کون سا استعمال کرتے ہیں۔
 :::

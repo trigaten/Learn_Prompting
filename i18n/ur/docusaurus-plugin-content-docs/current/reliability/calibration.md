@@ -2,72 +2,73 @@
 sidebar_position: 10
 ---
 
-# 🔴 Calibrating LLMs
+# 🔴 ایل ایل ایم کیلیبریٹنگ
 
-It is possible to counteract some of the biases LLMs exhibit via calibrating **output 
-distributions**(@zhao2021calibrate). 
+LLMs کی نمائش کیلیبریٹنگ **آؤٹ پٹ کے ذریعے کچھ تعصبات کا مقابلہ کرنا ممکن ہے۔
+تقسیم**(@zhao2021calibrate)۔
 
-**What exactly does it mean to calibrate an output distribution?**
+**آؤٹ پٹ ڈسٹری بیوشن کو کیلیبریٹ کرنے کا بالکل کیا مطلب ہے؟**
 
-Let's walk through a quick example: Say we have a %%sentiment analysis|sentiment analysis%% task with two possible labels, `Positive` and `Negative`.
-Consider what happens when the %%LLM|LLM%% is prompted with `Input: nothing Sentiment: `. 
-This input doesn't contain any _context_ which the LLM can use to make a sentiment 
-prediction, so it is called a **context-free** input.
+آئیے ایک فوری مثال کے ذریعے چلتے ہیں: کہتے ہیں کہ ہمارے پاس دو ممکنہ لیبلز، 'مثبت' اور 'منفی' کے ساتھ %% جذباتی تجزیہ| جذبات کا تجزیہ%% کام ہے۔
+غور کریں کہ کیا ہوتا ہے جب %%LLM|LLM%% کو `Input: nothing Sentiment:` کے ساتھ اشارہ کیا جاتا ہے۔
+اس ان پٹ میں کوئی _context_ شامل نہیں ہے جسے LLM جذبات بنانے کے لیے استعمال کر سکتا ہے۔
+پیشین گوئی، اس لیے اسے **سیاق و سباق سے پاک** ان پٹ کہا جاتا ہے۔
 
-Since `nothing`is neither a positive nor a negative concept, we would expect the LLM to output a probability of about 0.5 for both `Positive` and `Negative`. However, often (and for this example) that will not be the case.
+چونکہ 'کچھ نہیں' نہ تو مثبت ہے اور نہ ہی منفی تصور، اس لیے ہم توقع کریں گے کہ LLM 'مثبت' اور 'منفی' دونوں کے لیے تقریباً 0.5 کا امکان نکالے گا۔ تاہم، اکثر (اور اس مثال کے لیے) ایسا نہیں ہوگا۔
 ```
 p("Positive" | "Input: nothing Sentiment:") = 0.9
 
 p("Negative" | "Input: nothing Sentiment:") = 0.1
 ```
 
-Given these label probabilities for a context-free input, we know that the LLM's 
-**output distribution** is likely biased
-towards the label `Positive`. This may cause the LLM to favor `Positive`
-for all inputs, even if the input is not actually positive.
+سیاق و سباق سے پاک ان پٹ کے لیے ان لیبل امکانات کو دیکھتے ہوئے، ہم جانتے ہیں کہ ایل ایل ایم
+**آؤٹ پٹ ڈسٹری بیوشن** ممکنہ طور پر متعصب ہے۔
+'مثبت' لیبل کی طرف۔ اس کی وجہ سے LLM 'مثبت' کو پسند کر سکتا ہے۔
+تمام ان پٹ کے لیے، چاہے ان پٹ اصل میں مثبت نہ ہو۔
 
-If we can somehow **calibrate** the output distribution, such that context-free 
-inputs are assigned a probability of 0.5 for both `Positive` and `Negative`, 
-then we can often remove the bias towards `Positive` and the LLM will be more reliable
-on both context-free inputs and inputs with context.
+اگر ہم کسی طرح آؤٹ پٹ ڈسٹری بیوشن کو **کیلیبریٹ** کر سکتے ہیں، جیسا کہ سیاق و سباق سے پاک
+ان پٹ کو 'مثبت' اور 'منفی' دونوں کے لیے 0.5 کا امکان تفویض کیا جاتا ہے،
+تب ہم اکثر 'مثبت' کی طرف تعصب کو دور کر سکتے ہیں اور LLM زیادہ قابل اعتماد ہو جائے گا۔
+سیاق و سباق سے پاک ان پٹ اور سیاق و سباق کے ساتھ ان پٹ دونوں پر۔
 
-## Non-Technical Solution
+## غیر تکنیکی حل
 
-A non-technical solution to this problem is to simply provide few shot examples where
-context-free exemplars are effectively assigned a probability of 0.5 for both 
-`Positive` and `Negative`.
+اس مسئلے کا ایک غیر تکنیکی حل صرف چند شاٹ مثالیں فراہم کرنا ہے جہاں
+سیاق و سباق سے پاک مثالوں کو مؤثر طریقے سے دونوں کے لیے 0.5 کا امکان تفویض کیا گیا ہے۔
+'مثبت' اور 'منفی'۔
 
-For example, we could provide the following few shot examples which show each context-free
-exemplar being classified as both `Positive` and `Negative`:
+مثال کے طور پر، ہم مندرجہ ذیل چند شاٹ مثالیں فراہم کر سکتے ہیں جو ہر سیاق و سباق سے پاک دکھائی دیتی ہیں۔
+مثال کو 'مثبت' اور 'منفی' دونوں کے طور پر درجہ بندی کیا جا رہا ہے:
+
 ```
-Input: I hate this movie. Sentiment: Negative
-Input: I love this movie. Sentiment: Positive
-Input: N/A Sentiment: Positive
-Input: N/A Sentiment: Negative
-Input: nothing Sentiment: Positive
-Input: nothing Sentiment: Negative
-Input: I like eggs. Sentiment:
+ان پٹ: مجھے اس فلم سے نفرت ہے۔ جذبات: منفی
+ان پٹ: مجھے یہ فلم پسند ہے۔ جذبات: مثبت
+ان پٹ: N/A جذبات: مثبت
+ان پٹ: N/A جذبہ: منفی
+ان پٹ: کچھ نہیں جذبات: مثبت
+ان پٹ: کچھ نہیں جذبات: منفی
+ان پٹ: مجھے انڈے پسند ہیں۔ جذبات:
 ```
 
-To my knowledge, this solution has not been explored in the literature, and I am not sure
-how well it works in practice. However, it is a simple solution that demonstrates what 
-calibration is trying to achieve.
+میرے علم کے مطابق، اس حل کو ادب میں تلاش نہیں کیا گیا ہے، اور مجھے یقین نہیں ہے۔
+یہ عملی طور پر کتنا اچھا کام کرتا ہے۔ تاہم، یہ ایک آسان حل ہے جو ظاہر کرتا ہے۔
+انشانکن حاصل کرنے کی کوشش کر رہا ہے.
 
-## Technical Solution
+## تکنیکی حل
 
-Another solution to this is __contextual calibration__(@zhao2021calibrate), where we 
-adjust special calibration parameters, which ensure that context-free inputs like 
-`Input: nothing Sentiment: `  are assigned a probability of about 0.5 for both labels. 
-Note that in practice this method performs calibration over multiple different context free inputs (e.g. `Input: N/A Sentiment: `, `Input: [MASK] Sentiment: `). It averages the calibration parameters that
-work best for each context-free input to find the best calibration parameters for the LLM.
+اس کا ایک اور حل ہے __contextual calibration__(@zhao2021calibrate)، جہاں ہم
+خصوصی انشانکن پیرامیٹرز کو ایڈجسٹ کریں، جو اس بات کو یقینی بناتے ہیں کہ سیاق و سباق سے پاک ان پٹس کی طرح
+`ان پٹ: کچھ نہیں جذبات:` دونوں لیبلز کے لیے تقریباً 0.5 کا امکان تفویض کیا گیا ہے۔
+نوٹ کریں کہ عملی طور پر یہ طریقہ متعدد مختلف سیاق و سباق سے پاک ان پٹس پر کیلیبریشن کرتا ہے (جیسے `ان پٹ: N/A جذبہ: `،` ان پٹ: [MASK] جذبات: `)۔ یہ انشانکن پیرامیٹرز کی اوسط کرتا ہے۔
+LLM کے لیے بہترین کیلیبریشن پیرامیٹرز تلاش کرنے کے لیے ہر سیاق و سباق سے پاک ان پٹ کے لیے بہترین کام کریں۔
 
-### Example
+### مثال
 
-Let's go through an example of computing the calibration parameters for one context-free input. Note that
-this example is not reproducible with GPT-3 due to the fact that it can't be restricted to the labels `Positive` and `Negative`.
+آئیے ایک سیاق و سباق سے پاک ان پٹ کے لیے انشانکن پیرامیٹرز کو کمپیوٹنگ کرنے کی ایک مثال دیکھیں۔ یاد رکھیں کہ
+یہ مثال GPT-3 کے ساتھ دوبارہ پیدا کرنے کے قابل نہیں ہے کیونکہ اس کو 'مثبت' اور 'منفی' لیبل تک محدود نہیں کیا جا سکتا۔
 
-Consider again the above example where the LLM assigns the following probabilities to the labels 
-for a context-free input:
+مندرجہ بالا مثال پر دوبارہ غور کریں جہاں LLM مندرجہ ذیل امکانات کو لیبلز کو تفویض کرتا ہے۔
+سیاق و سباق سے پاک ان پٹ کے لیے:
 
 ```
 p("Positive" | "Input: nothing Sentiment:") = 0.9
@@ -75,33 +76,33 @@ p("Positive" | "Input: nothing Sentiment:") = 0.9
 p("Negative" | "Input: nothing Sentiment:") = 0.1
 ```
 
-We want to find some probability distribution q such that
+ہم کچھ امکانی تقسیم q تلاش کرنا چاہتے ہیں اس طرح
 ```
 q("Positive" | "Input: nothing Sentiment:") = 0.5
 
 q("Negative" | "Input: nothing Sentiment:") = 0.5
 ```
 
-We will do so by creating a linear transformation that adjusts (calibrates) the probabilities 
-of $p$. 
+ہم ایسا ایک لکیری تبدیلی بنا کر کریں گے جو امکانات کو ایڈجسٹ (کیلیبریٹ) کرتا ہے۔
+$p$ کا۔
 
 $\hat q = \text{Softmax}(W\hat p + b)$
 
-This equation takes the original probabilities $\hat p$ and applies the weights $W$ and bias $b$ to
-them. The weights $W$ and bias $b$ are the calibration parameters, which, when applied to the 
-context-free example's probabilites, will yield $\hat p$ = [0.5, 0.5].
+یہ مساوات اصل احتمالات $\hat p$ لیتی ہے اور وزن $W$ اور تعصب $b$ کو لاگو کرتی ہے
+انہیں وزن $W$ اور bias $b$ انشانکن کے پیرامیٹرز ہیں، جن کا اطلاق جب
+سیاق و سباق سے پاک مثال کے امکانات، $\hat p$ = [0.5, 0.5] حاصل کریں گے۔
 
-#### Computing W and b
+#### کمپیوٹنگ ڈبلیو اور بی
 
-We need to somehow compute the weights $W$ and bias $b$. One way to do this is: 
+ہمیں کسی نہ کسی طرح وزن $W$ اور تعصب $b$ کی گنتی کرنے کی ضرورت ہے۔ ایسا کرنے کا ایک طریقہ یہ ہے:
 
-$W = \text{diag}(\hat p)^{-1}$ 
+$W = \text{diag}(\hat p)^{-1}$
 
 $b = 0$
 
-Although the definition of $W$ may seem a bit strange at first, but it is just taking the inverse of each value in $\hat p$ in order to find a $W$ that will transform the original probabilities $\hat p$ into the calibrated probabilities [0.5, 0.5].
+اگرچہ $W$ کی تعریف شروع میں قدرے عجیب لگ سکتی ہے، لیکن یہ $\hat p$ میں ہر قدر کا الٹا لے رہا ہے تاکہ ایک $W$ تلاش کیا جا سکے جو اصل امکانات $\hat p$ کو بدل دے گا۔ کیلیبریٹڈ احتمالات [0.5، 0.5] میں۔
 
-Let's verify that this works for the example above:
+آئیے تصدیق کریں کہ یہ اوپر کی مثال کے لیے کام کرتا ہے:
 
 $\hat p = [0.9, 0.1]$
 
@@ -122,13 +123,13 @@ $\hat q = \text{Softmax}(W\hat p + b) = \text{Softmax}(\begin{bmatrix}
 = \text{Softmax}([1, 1])
 =[0.5, 0.5]$
 
-As mentioned above, we would perform this same process for multiple different context-free inputs, and average the calibration parameters that work best for each context-free input to find the best calibration parameters for the LLM. This means that the final calibration parameters willl probably not map any of the context-free inputs to exactly [0.5, 0.5].
+جیسا کہ اوپر ذکر کیا گیا ہے، ہم متعدد مختلف سیاق و سباق سے پاک ان پٹس کے لیے اسی عمل کو انجام دیں گے، اور LLM کے لیے بہترین کیلیبریشن پیرامیٹرز تلاش کرنے کے لیے ہر سیاق و سباق سے پاک ان پٹ کے لیے بہترین کام کرنے والے انشانکن پیرامیٹرز کا اوسط لیں گے۔ اس کا مطلب یہ ہے کہ حتمی کیلیبریشن پیرامیٹرز ممکنہ طور پر کسی بھی سیاق و سباق سے پاک ان پٹ کو بالکل [0.5, 0.5] پر نقشہ نہیں بنائیں گے۔
 
-### Another method
+### ایک اور طریقہ
 
-$b$ could also be set to $-\hat p$, and $W$ to the identity matrix. This method performs
-better on generation rather than classification tasks(@zhao2021calibrate).
+$b$ کو $-\hat p$، اور $W$ کو شناختی میٹرکس پر بھی سیٹ کیا جا سکتا ہے۔ یہ طریقہ کارآمد ہے۔
+درجہ بندی کے کاموں کے بجائے نسل پر بہتر (@zhao2021calibrate)۔
 
-## Takeaways
+## ٹیک ویز
 
-LLMs are often predisposed (biased) towards certain labels. Calibration can be used to counteract this bias.
+LLMs اکثر بعض لیبلز کی طرف پیش گوئی (متعصب) ہوتے ہیں۔ اس تعصب کا مقابلہ کرنے کے لیے انشانکن کا استعمال کیا جا سکتا ہے۔

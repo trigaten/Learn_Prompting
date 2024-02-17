@@ -4,7 +4,7 @@ sidebar_position: 24
 
 # The Forge AI
 
-[The Forge AI](https://theforgeai.com/) is a powerful prompt IDE to build & monetize applications. You can use varied types of configurable inputs, define conditional flows, generate text and images using different models. (Many more features to come).
+[The Forge AI](https://theforgeai.com/) ایپلیکیشنز بنانے اور منیٹائز کرنے کے لیے ایک طاقتور پرامپٹ IDE ہے۔ آپ مختلف قسم کے کنفیگر ایبل ان پٹ استعمال کر سکتے ہیں، مشروط بہاؤ کی وضاحت کر سکتے ہیں، مختلف ماڈلز کا استعمال کرتے ہوئے ٹیکسٹ اور تصاویر تیار کر سکتے ہیں۔ (آنے والی بہت سی مزید خصوصیات)۔
 
 
 import Image from '@site/docs/assets/tooling/theforgeai.webp';
@@ -13,7 +13,7 @@ import Image from '@site/docs/assets/tooling/theforgeai.webp';
   <img src={Image} style={{width: "1200px"}}/>
 </div>
 
-## Features
+## خصوصیات
 
-When the App is done you can then share it privately or publicly for anyone to run.
-Applications can also be monetized on the marketplace by selling tokens or via subscription.
+جب ایپ ہو جائے تو آپ اسے نجی یا عوامی طور پر کسی کے چلانے کے لیے شیئر کر سکتے ہیں۔
+ٹوکن بیچ کر یا سبسکرپشن کے ذریعے بھی ایپلی کیشنز کو منیٹائز کیا جا سکتا ہے۔

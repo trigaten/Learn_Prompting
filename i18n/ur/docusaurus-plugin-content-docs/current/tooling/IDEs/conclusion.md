@@ -2,36 +2,36 @@
 sidebar_position: 100
 ---
 
-# Conclusion
+#نتیجہ
 
-This page will be updated as I get access to more IDEs. 
+اس صفحہ کو اپ ڈیٹ کیا جائے گا کیونکہ مجھے مزید IDEs تک رسائی حاصل ہوگی۔
 
-This chapter has provided an overview of some of the tools which may be of interest to
-you as a prompt engineer. Below are my recommendations for which to use, and in 
-what capacity. Keep in mind that prompt engineering is a rapidly evolving field, and
-many of the previously mentioned tools will undergo signifigant changes in the future.
+اس باب میں کچھ ایسے ٹولز کا جائزہ پیش کیا گیا ہے جن میں دلچسپی ہو سکتی ہے۔
+آپ ایک فوری انجینئر کے طور پر. ذیل میں میری سفارشات ہیں جن کو استعمال کرنا ہے، اور میں
+کیا صلاحیت. ذہن میں رکھیں کہ پرامپٹ انجینئرنگ ایک تیزی سے ترقی پذیر شعبہ ہے، اور
+پہلے ذکر کردہ بہت سے ٹولز مستقبل میں اہم تبدیلیوں سے گزریں گے۔
 
-## For Single Prompt Iterating
+## سنگل پرامپٹ تکرار کے لیے
 
-Everyprompt seems to have the best feature set for single prompt iterating (from the IDEs I have been able to try). Regular playground is also good, and a bit simpler.
+ایسا لگتا ہے کہ ایوری پرامپٹ میں سنگل پرامپٹ تکرار کے لیے بہترین فیچر سیٹ ہے (آئی ڈی ای سے جس کی میں کوشش کر سکا ہوں)۔ باقاعدہ کھیل کا میدان بھی اچھا ہے، اور تھوڑا سا آسان بھی۔
 
-## For Prompt Chaining
+## فوری سلسلہ بندی کے لیے
 
-Dust is currently the best (less technical) tool for prompt chaining. It provides a very 
-robust feature set.
-
-
-## Embeds
-
-Dyno is the only tool which offers an embed.
-
-## For Full Control
-
-Langchain is the way to go! It is a Python library, so it is fully extensible, 
-and already comes with a great feature set.
+فوری سلسلہ بندی کے لیے ڈسٹ فی الحال بہترین (کم تکنیکی) ٹول ہے۔ یہ ایک بہت فراہم کرتا ہے
+مضبوط خصوصیت سیٹ.
 
 
-## More
+## ایمبیڈز
 
-I will be adding more recommendations as I get access to more IDEs. I recommend 
-trying out different ones, as each has a distinct feel and different features.
+ڈائنو واحد ٹول ہے جو ایمبیڈ پیش کرتا ہے۔
+
+## مکمل کنٹرول کے لیے
+
+Langchain جانے کا راستہ ہے! یہ ایک Python لائبریری ہے، لہذا یہ مکمل طور پر قابل توسیع ہے،
+اور پہلے سے ہی ایک بہترین فیچر سیٹ کے ساتھ آتا ہے۔
+
+
+## مزید
+
+میں مزید سفارشات شامل کروں گا کیونکہ مجھے مزید IDEs تک رسائی حاصل ہوگی۔ میں تجویز کرتا ہوں۔
+مختلف کو آزمانا، کیونکہ ہر ایک کا الگ احساس اور مختلف خصوصیات ہیں۔

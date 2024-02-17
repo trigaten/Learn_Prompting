@@ -2,10 +2,10 @@
 sidebar_position: 100
 ---
 
-# 🟢 Resources
+# 🟢 وسائل
 
-The image prompt engineering field is very diverse. Here is a good list of 
-resources that covers parts of it.
+امیج پرامپٹ انجینئرنگ فیلڈ بہت متنوع ہے۔ یہاں کی ایک اچھی فہرست ہے۔
+وسائل جو اس کے کچھ حصوں کا احاطہ کرتے ہیں۔
 
 - [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery
 - [Stable Diffusion Prompt Book](https://cdn.openart.ai/assets/Stable%20Diffusion%20Prompt%20Book%20From%20OpenArt%2010-28.pdf)

@@ -4,8 +4,8 @@ sidebar_position: 20
 
 # Patience
 
-[Patience](https://www.patience.ai) is a website for generating images with a few different 
-text to image models.
+[Patience](https://www.patience.ai) کچھ مختلف تصاویر کے ساتھ تصاویر بنانے کے لیے ایک ویب سائٹ ہے
+تصویری ماڈل کے لیے ٹیکسٹ۔
 
 import Image from '@site/docs/assets/tooling/patience.webp';
 
@@ -13,7 +13,7 @@ import Image from '@site/docs/assets/tooling/patience.webp';
   <img src={Image} style={{width: "750px"}}/>
 </div>
 
-## Features
+## خصوصیات
 
-Patience has folder creation, collections/history saving, and a few different models to choose from.
-It also allows for the modification of various diffusion settings like size and sampling method.
+صبر میں فولڈر کی تخلیق، مجموعے/ہسٹری سیونگ، اور منتخب کرنے کے لیے چند مختلف ماڈلز ہیں۔
+یہ مختلف بازی کی ترتیبات جیسے سائز اور نمونے لینے کے طریقہ کار میں ترمیم کرنے کی بھی اجازت دیتا ہے۔

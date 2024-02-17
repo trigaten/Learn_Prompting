@@ -2,34 +2,34 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 تعارف
 
-Figuring out the best prompt to create a perfect image is a particular challenge.
-Research into methods to do so is not quite as developed as text prompting. This
-may be due to inherent challenges in creating objects which are fundamentally subjective
-and often lack good accuracy metrics. However, fear not, as the image prompting 
-community(@parsons2022dalleprompt) has made great discoveries about how to prompt various image models(@rombach2021highresolution)(@ramesh2022hierarchical).
+ایک بہترین تصویر بنانے کے لیے بہترین پرامپٹ کا پتہ لگانا ایک خاص چیلنج ہے۔
+ایسا کرنے کے طریقوں کی تحقیق اتنی ترقی یافتہ نہیں ہے جتنا کہ ٹیکسٹ پرمپٹنگ۔ یہ
+اشیاء کی تخلیق میں موروثی چیلنجوں کی وجہ سے ہو سکتا ہے جو بنیادی طور پر ساپیکش ہیں۔
+اور اکثر اچھے درستگی میٹرکس کی کمی ہوتی ہے۔ تاہم، خوف نہ کریں، جیسا کہ تصویر اشارہ کرتی ہے۔
+کمیونٹی(@parsons2022dalleprompt) نے مختلف امیج ماڈلز (@rombach2021highresolution)(@ramesh2022hierarchical) کو فوری طور پر کیسے پیش کیا جائے اس بارے میں بڑی دریافتیں کی ہیں۔
 
-This guide covers basic image prompting techniques, and we highly encourage 
-that you look at the great resources at the end of the chapter.
-Additionally, we provide an example of the end-to-end image prompting process below.
+اس گائیڈ میں تصویر کی ترغیب دینے کی بنیادی تکنیکوں کا احاطہ کیا گیا ہے، اور ہم اس کی بھرپور حوصلہ افزائی کرتے ہیں۔
+کہ آپ باب کے آخر میں عظیم وسائل کو دیکھتے ہیں۔
+مزید برآں، ہم ذیل میں آخر سے آخر تک تصویری اشارہ دینے کے عمل کی ایک مثال فراہم کرتے ہیں۔
 
 
-## Example
+## مثال
 
-Here I will go through an example of how I created the images for the front page of this course. 
-I had been experimenting with low poly style for a deep reinforcement learning
-neural radiance field project. I liked the low poly style, and wanted to use it 
-for this course's images. 
+یہاں میں ایک مثال کے ذریعے جاؤں گا کہ میں نے اس کورس کے صفحہ اول کے لیے تصاویر کیسے بنائیں۔
+میں گہری کمک سیکھنے کے لیے کم پولی اسٹائل کے ساتھ تجربہ کر رہا تھا۔
+نیورل ریڈیئنس فیلڈ پروجیکٹ۔ مجھے کم پولی اسٹائل پسند آیا، اور میں اسے استعمال کرنا چاہتا تھا۔
+اس کورس کی تصاویر کے لیے۔
 
-I wanted an astronaut, a rocket, and a computer for the images on the front page.
+میں صفحہ اول پر موجود تصاویر کے لیے ایک خلاباز، ایک راکٹ اور ایک کمپیوٹر چاہتا ہوں۔
 
-I did a bunch of research into how to create low poly images, on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/)
-and other sites, but couldn't find anything super helpful.
+میں نے [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) پر، کم پولی امیجز بنانے کے بارے میں بہت سی تحقیق کی۔
+اور دیگر سائٹس، لیکن کچھ بھی زیادہ مددگار نہیں مل سکا۔
 
-I decided to just start with DALLE and the following prompt, and see what happened.
+میں نے صرف DALLE اور مندرجہ ذیل پرامپٹ سے شروع کرنے کا فیصلہ کیا، اور دیکھیں کہ کیا ہوا۔
 
- <AIInput>Low poly white and blue rocket shooting to the moon in front of a sparse green meadow</AIInput> 
+  <AIInput>لو پولی وائٹ اور نیلے راکٹ ایک ویرل سبز گھاس کے میدان کے سامنے چاند پر شوٹنگ کر رہے ہیں</AIInput>
 
 import rockets1 from '@site/docs/assets/images_chapter/rockets_dalle_1.webp';
 import rockets2 from '@site/docs/assets/images_chapter/rockets_dalle_2.webp';
@@ -46,108 +46,107 @@ import focus_final from '@site/static/img/computer.webp';
 import astronaut_final from '@site/static/img/astronaut.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={rockets1} className="img-docs"  style={{width: "750px"}}/>
+   <img src={rockets1} className="img-docs" style={{width: "750px"}}/>
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={rockets2} className="img-docs"  style={{width: "750px"}} />
+   <LazyLoadImage src={rockets2} className="img-docs" style={{width: "750px"}} />
 </div>
 
-I thought these results were pretty decent for a first try; I particularly liked
-the bottom left rocket.
+میں نے سوچا کہ یہ نتائج پہلی کوشش کے لیے کافی اچھے تھے۔ مجھے خاص طور پر پسند آیا
+نیچے بائیں راکٹ.
 
-Next, I wanted a computer in the same style: <AIInput>Low poly white and blue computer sitting in a sparse green meadow</AIInput>
+اس کے بعد، مجھے اسی انداز میں ایک کمپیوٹر چاہیے تھا: <AIInput>لو پولی وائٹ اور بلیو کمپیوٹر ایک ویرل سبز گھاس کے میدان میں بیٹھا ہے</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={computer_1} className="img-docs"  style={{width: "750px"}} />
+   <LazyLoadImage src={computer_1} className="img-docs" style={{width: "750px"}} />
 </div>
 
-Finally, I needed an astronaut! This prompt seemed to do the trick:
+آخر میں، مجھے ایک خلاباز کی ضرورت تھی! ایسا لگتا ہے کہ یہ اشارہ چال کرتا ہے:
 
-<AIInput>Low poly white and blue astronaut sitting in a sparse green meadow with low poly mountains in the background</AIInput> 
+<AIInput>نیچے پولی وائٹ اور نیلے خلائی مسافر پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں بیٹھے ہوئے ہیں</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={astronaut_1} style={{width: "750px"}} />
+   <LazyLoadImage className="img-docs" src={astronaut_1} style={{width: "750px"}} />
 </div>
 
-I thought the second one was decent.
+میں نے سوچا کہ دوسرا مہذب تھا۔
 
-Now I had an astronaut, a rocket, and a computer. I was happy with them,
-so I put them on the front page. After a few days and input from my friends I
-realized the style just wasn't consistent 😔.
+اب میرے پاس ایک خلاباز، ایک راکٹ اور ایک کمپیوٹر تھا۔ میں ان سے خوش تھا،
+تو میں نے انہیں صفحہ اول پر رکھا۔ کچھ دنوں کے بعد اور اپنے دوستوں کے ان پٹ کے بعد میں
+احساس ہوا کہ انداز صرف یکساں نہیں تھا 😔
 
 
-I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric. I decided to try that out, using Stable Diffusion instead of DALLE.
-I also realized that I needed to add more modifiers to my prompt
-to constrain the style. I tried this prompt:
-<AIInput>A low poly world, with an astronaut in white suit and blue visor sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
+میں نے [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) پر کچھ اور تحقیق کی اور لوگوں کو isometric کا لفظ استعمال کرتے پایا۔ میں نے DALLE کی بجائے Stable Diffusion کا استعمال کرتے ہوئے اسے آزمانے کا فیصلہ کیا۔
+میں نے یہ بھی محسوس کیا کہ مجھے اپنے پرامپٹ میں مزید ترمیم کرنے والوں کو شامل کرنے کی ضرورت ہے۔
+انداز کو محدود کرنے کے لیے۔ میں نے یہ اشارہ آزمایا:
+<AIInput>ایک نیچی پولی دنیا، جس میں ایک خلاباز سفید سوٹ اور نیلے رنگ کے ویزر کے ساتھ پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں بیٹھا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={astronaut_2} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={astronaut_2} style={{width: "250px"}} />
 </div>
 
-These weren't great, so I decided to start on the rocket instead
+یہ بہت اچھے نہیں تھے، اس لیے میں نے اس کے بجائے راکٹ پر شروع کرنے کا فیصلہ کیا۔
 
-<AIInput>A low poly world, with a white and blue rocket blasting off from a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
+<AIInput> پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کے میدان سے سفید اور نیلے رنگ کے راکٹ کے ساتھ اڑتی ہوئی ایک نیچی پولی دنیا۔ انتہائی مفصل، isometric، 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={rocket_sd_1} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={rocket_sd_1} style={{width: "250px"}} />
 </div>
 
-These are not particularly good, but after a bit of iterating around here, I ended up with 
+یہ خاص طور پر اچھے نہیں ہیں، لیکن تھوڑا سا ادھر ادھر اعادہ کرنے کے بعد، میں نے ختم کر دیا۔
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={rocket_final} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={rocket_final} style={{width: "250px"}} />
 </div>
 
-Now I needed a better laptop:
-
-<AIInput>A low poly world, with a white and blue laptop sitting in sparse green meadow with low poly mountains in the background. The screen is completely blue. Highly detailed, isometric, 4K</AIInput>
+اب مجھے ایک بہتر لیپ ٹاپ کی ضرورت ہے:
+<AIInput>ایک نیچی پولی دنیا، جس میں سفید اور نیلے رنگ کا لیپ ٹاپ پس منظر میں کم پولی پہاڑوں کے ساتھ ویرل سبز گھاس کے میدان میں بیٹھا ہے۔ اسکرین مکمل طور پر نیلی ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={laptop_sd_1} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={laptop_sd_1} style={{width: "250px"}} />
 </div>
 
-I got some inconsistent results; I like the bottom right one, but I decided to go in a different direction.
+مجھے کچھ متضاد نتائج ملے۔ مجھے نیچے والا دائیں طرف پسند ہے، لیکن میں نے ایک مختلف سمت جانے کا فیصلہ کیا۔
 
-<AIInput>A low poly world, with a glowing white and blue gemstone sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
+<AIInput>ایک نیچی پولی دنیا، جس کے پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں چمکتا ہوا سفید اور نیلا قیمتی پتھر ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={gemstone_sd_1} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={gemstone_sd_1} style={{width: "250px"}} />
 </div>
 
-This wasn't quite right. Let's try something magical and glowing.
+یہ بالکل ٹھیک نہیں تھا۔ آئیے کچھ جادوئی اور چمکدار کرنے کی کوشش کریں۔
 
-<AIInput>A low poly world, with a glowing white and blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
+<AIInput>ایک نچلی پولی دنیا، جس کے پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کے میدان کے اوپر ایک چمکتا ہوا سفید اور نیلا قیمتی پتھر جادوئی طور پر اسکرین کے بیچ میں تیر رہا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={gemstone_sd_2} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={gemstone_sd_2} style={{width: "250px"}} />
 </div>
 
-I liked these, but wanted the stone in the middle of the screen.
+مجھے یہ پسند آئے، لیکن میں اسکرین کے بیچ میں پتھر چاہتا تھا۔
 
-<AIInput>A low poly world, with a glowing blue gemstone magically floating in the middle of the screen above a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
+<AIInput>ایک نیچی پولی دنیا، جس کے پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کے میدان کے اوپر اسکرین کے بیچ میں ایک چمکتا ہوا نیلا قیمتی پتھر جادوئی طور پر تیر رہا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={gemstone_sd_3} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={gemstone_sd_3} style={{width: "250px"}} />
 </div>
 
-Somewhere around here, I used SD's ability to have a previous image provide some influence for future images.
-And thus I arrived at:
+یہاں کے آس پاس کہیں، میں نے SD کی سابقہ تصویر رکھنے کی صلاحیت کا استعمال کیا جو مستقبل کی تصاویر کے لیے کچھ اثر و رسوخ فراہم کرتا ہے۔
+اور اس طرح میں یہاں پہنچا:
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs"  src={focus_final} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={focus_final} style={{width: "250px"}} />
 </div>
 
-Finally, I was on to the astronaut.
+آخر میں، میں خلاباز کے پاس تھا۔
 
-<AIInput>A low poly world, with an astronaut in white suite and blue visor is sitting in a sparse green meadow with low poly mountains in the background. Highly detailed, isometric, 4K</AIInput>
+<AIInput>ایک نیچی پولی دنیا، جس میں ایک خلاباز سفید سوٹ اور نیلے رنگ کے ویزر میں پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں بیٹھا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={astronaut_final} style={{width: "250px"}} />
+   <LazyLoadImage className="img-docs" src={astronaut_final} style={{width: "250px"}} />
 </div>
 
-At this point, I was sufficiently happy with the style consistency between my three images to use them
-on the website. The main takeaways for me were that this was a very iterative, research heavy process,
-and I had to modify my expectations and ideas as I experimented with different prompts and models.
+اس موقع پر، میں اپنی تینوں تصویروں کے استعمال کے لیے انداز کی مستقل مزاجی سے کافی خوش تھا۔
+ویب سائٹ پر میرے لیے اہم نکتہ یہ تھا کہ یہ ایک بہت ہی تکراری، تحقیقی بھاری عمل تھا،
+اور مجھے اپنی توقعات اور خیالات کو تبدیل کرنا پڑا جب میں نے مختلف اشارے اور ماڈلز کے ساتھ تجربہ کیا۔

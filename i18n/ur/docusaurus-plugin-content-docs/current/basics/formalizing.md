@@ -2,7 +2,7 @@
 sidebar_position: 90
 ---
 
-# 🟢 پرامپٹس کو باقاعدہ بنانا
+# 🟢 فارمولائزنگ پرامپٹ 
 
 <!-- import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg'; -->
 import FormalPrompt from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/formal_prompt.svg';

@@ -2,88 +2,88 @@
 sidebar_position: 3
 ---
 
-# 🟢 Prompt Debiasing
+# 🟢 پرامپٹ ڈیبیاسنگ
 
-This page covers a few simple techniques to debias your prompts.
+یہ صفحہ آپ کے پرامپٹ کو ختم کرنے کے لیے چند آسان تکنیکوں کا احاطہ کرتا ہے۔
 
-## Exemplar Debiasing
+## مثالی ڈیبیاسنگ
 
-Depending on their distribution and order within the prompt, %%exemplars|exemplars%% may bias LLM outputs(@si2022prompting). This is discussed to some extent in the [What's in a Prompt](https://learnprompting.org/docs/intermediate/whats_in_a_prompt) page.
+پرامپٹ کے اندر ان کی تقسیم اور ترتیب پر منحصر ہے، %%exemplars|exemplars%% LLM آؤٹ پٹ (@si2022prompting) کی طرف داری کر سکتے ہیں۔ اس پر کسی حد تک [What's in a Prompt](https://learnprompting.org/docs/intermediate/whats_in_a_prompt) صفحہ میں بحث کی گئی ہے۔
 
-### Distribution
+### تقسیم
 
-When discussing the distribution of exemplars within a prompt, we are referring to
-how many exemplars from different classes are present. For example, if you are 
-performing binary %%sentiment analysis|sentiment analysis%% (positive or negative) on tweets, and you 
-provide 3 positive tweets and 1 negative tweet as exemplars, then you have a
-distribution of 3:1. Since the distribution is skewed towards positive tweets,
-the model will be biased towards predicting positive tweets.
+ایک پرامپٹ کے اندر مثالوں کی تقسیم پر بحث کرتے وقت، ہم حوالہ دے رہے ہیں۔
+مختلف کلاسوں کے کتنے نمونے موجود ہیں۔ مثال کے طور پر، اگر آپ ہیں
+ٹویٹس پر بائنری %% جذباتی تجزیہ|جذباتی تجزیہ%% (مثبت یا منفی) انجام دے رہے ہیں
+مثال کے طور پر 3 مثبت ٹویٹس اور 1 منفی ٹویٹ فراہم کریں، پھر آپ کے پاس ایک ہے۔
+3:1 کی تقسیم۔ چونکہ تقسیم مثبت ٹویٹس کی طرف متوجہ ہے،
+ماڈل مثبت ٹویٹس کی پیشن گوئی کی طرف متعصب ہو گا۔
 
-#### Worse:
-
-```text
-Q: Tweet: "What a beautiful day!"
-A: positive
-
-Q: Tweet: "I love pockets on jeans"
-A: positive
-
-Q: Tweet: "I love hotpockets"
-A: positive
-
-Q: Tweet: "I hate this class"
-A: negative
-```
-#### Better:
-Having an even exemplar distribution is better.
-
+#### بدتر:
 
 ```text
-Q: Tweet: "What a beautiful day!"
-A: positive
+سوال: ٹویٹ: "کتنا خوبصورت دن ہے!"
+A: مثبت
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+سوال: ٹویٹ: "مجھے جینز پر جیب پسند ہے"
+A: مثبت
 
-Q: Tweet: "I don't like pizza"
-A: negative
+سوال: ٹویٹ: "مجھے ہاٹ پاکٹس پسند ہیں"
+A: مثبت
 
-Q: Tweet: "I hate this class"
-A: negative
+سوال: ٹویٹ: "مجھے اس طبقے سے نفرت ہے"
+A: منفی
 ```
+#### بہتر:
+یکساں مثالی تقسیم کا ہونا بہتر ہے۔
 
-### Order
-
-The order of %%exemplars|exemplars%% can also cause bias. For example, a prompt that has randomly ordered exemplars
-will often perform better than the above prompt, which contains positive tweets first, 
-followed by negative tweets.
-
-#### Best:
 
 ```text
-Q: Tweet: "I hate this class"
-A: negative
+سوال: ٹویٹ: "کتنا خوبصورت دن ہے!"
+A: مثبت
 
-Q: Tweet: "What a beautiful day!"
-A: positive
+سوال: ٹویٹ: "مجھے جینز پر جیب پسند ہے"
+A: مثبت
 
-Q: Tweet: "I don't like pizza"
-A: negative
+سوال: ٹویٹ: "مجھے پیزا پسند نہیں ہے"
+A: منفی
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+سوال: ٹویٹ: "مجھے اس طبقے سے نفرت ہے"
+A: منفی
 ```
 
-## Instruction Debiasing
+### ترتیب
 
-We can explicitly prompt GPT-3 to be unbiased, by including an instruction
-to do so in the prompt. In particular, Si et al.(@si2022prompting) use the following 
-instruction when experimenting with BBQ(@parrish2021bbq), a bias benchmark.
+%%exemplars|exemplers%% کی ترتیب بھی تعصب کا سبب بن سکتی ہے۔ مثال کے طور پر، ایک پرامپٹ جس میں تصادفی طور پر نمونوں کا آرڈر دیا گیا ہے۔
+اکثر اوپر والے پرامپٹ سے بہتر کارکردگی دکھائے گا، جس میں پہلے مثبت ٹویٹس ہوتے ہیں،
+منفی ٹویٹس کے بعد.
+
+#### بہترین:
 
 ```text
-We should treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown option, rather than making assumptions based on our stereotypes.
+سوال: ٹویٹ: "مجھے اس طبقے سے نفرت ہے"
+A: منفی
+
+سوال: ٹویٹ: "کتنا خوبصورت دن ہے!"
+A: مثبت
+
+سوال: ٹویٹ: "مجھے پیزا پسند نہیں ہے"
+A: منفی
+
+سوال: ٹویٹ: "مجھے جینز پر جیب پسند ہے"
+A: مثبت
 ```
 
-## Notes
+## انسٹرکشن ڈیبیاسنگ
 
-See more on debiasing in the Calibration section.
+ہم واضح طور پر ایک ہدایات شامل کرکے GPT-3 کو غیر جانبدار رہنے کا اشارہ دے سکتے ہیں۔
+فوری طور پر ایسا کرنے کے لئے. خاص طور پر، Si et al.(@si2022prompting) درج ذیل کا استعمال کریں۔
+BBQ(@parrish2021bbq) کے ساتھ تجربہ کرتے وقت ہدایات، ایک تعصبی معیار۔
+
+```text
+ہمیں مختلف سماجی اقتصادی حیثیتوں، جنسی رجحانات، مذاہب، نسلوں، جسمانی شکلوں، قومیتوں، صنفی شناختوں، معذوریوں اور عمروں کے ساتھ یکساں سلوک کرنا چاہیے۔ جب ہمارے پاس کافی معلومات نہ ہوں تو ہمیں اپنے دقیانوسی تصورات کی بنیاد پر قیاس آرائیاں کرنے کے بجائے نامعلوم آپشن کا انتخاب کرنا چاہیے۔
+```
+
+## نوٹس
+
+کیلیبریشن سیکشن میں debiasing پر مزید دیکھیں۔

@@ -2,41 +2,43 @@
 sidebar_position: 7
 ---
 
-# 🟢 What's in a Prompt?
+# 🟢 ایک پرامپٹ میں کیا ہے؟
 
-When crafting prompts for language learning models (LLMs), there are several factors to consider. The format and labelspace[^a] both play crucial roles in the effectiveness of the prompt. 
+لینگویج لرننگ ماڈلز (LLMs) کے لیے پرامپٹ تیار کرتے وقت، غور کرنے کے لیے کئی عوامل ہوتے ہیں۔ فارمیٹ اور لیبل اسپیس[^a] دونوں ہی پرامپٹ کی تاثیر میں اہم کردار ادا کرتے ہیں۔
 
-## The Importance of Format
+## فارمیٹ کی اہمیت
 
-The format of the %%exemplars|exemplars%% in a prompt is crucial. It instructs the LLM on how to structure its response. For instance, if the exemplars use all capital words as answers, the LLM will follow suit, even if the answers provided are incorrect. 
+ایک پرامپٹ میں %%exemplars|exemplars%% کا فارمیٹ اہم ہے۔ یہ ایل ایل ایم کو ہدایت دیتا ہے کہ اس کے ردعمل کو کس طرح تشکیل دیا جائے۔ مثال کے طور پر، اگر نمونے جوابات کے طور پر تمام بڑے الفاظ استعمال کرتے ہیں، تو LLM اس کی پیروی کرے گا، چاہے فراہم کردہ جوابات غلط ہوں۔
 
-Consider the following example:
+مندرجہ ذیل مثال پر غور کریں:
 
 ```text
-What is 2+2? 
-FIFTY
-What is 20+5?
-FORTY-THREE
-What is 12+9?
-TWENTY-ONE
+2+2 کیا ہے؟
+پچاس
+20+5 کیا ہے؟
+تینتالیس
+12+9 کیا ہے؟
+اکیس
 ```
 
-Despite the incorrect answers, the LLM correctly formats its response in all capital letters (@min2022rethinking).
+غلط جوابات کے باوجود، LLM اپنے جواب کو تمام بڑے حروف میں درست طریقے سے فارمیٹ کرتا ہے (@min2022rethinking)۔
 
-## Ground Truth: Not as Important as You Might Think
+## زمینی سچ: اتنا اہم نہیں جتنا آپ سوچ سکتے ہیں۔
 
-Interestingly, the actual answers or 'ground truth' in the exemplars are not as important as one might think. Research shows that providing random %%labels|labels%% in the exemplars (as seem in the above example) has little impact on performance (@min2022rethinking). This means that the LLM can still generate a correct response even if the exemplars contain incorrect information.
+دلچسپ بات یہ ہے کہ مثالوں میں اصل جوابات یا 'زمینی سچائی' اتنے اہم نہیں ہیں جتنا کہ کوئی سوچ سکتا ہے۔ تحقیق سے پتہ چلتا ہے کہ مثالوں میں بے ترتیب %%labels|labels%% فراہم کرنے سے کارکردگی پر بہت کم اثر پڑتا ہے (@min2022rethinking)۔ اس کا مطلب یہ ہے کہ LLM اب بھی صحیح جواب پیدا کر سکتا ہے یہاں تک کہ اگر مثالیں غلط معلومات پر مشتمل ہوں۔
 
-## The Role of Labelspace
+## لیبل اسپیس کا کردار
 
-While the ground truth may not be crucial, the labelspace is. The labelspace refers to the list of possible labels for a given task. For example, in a classification task, the labelspace might include "positive" and "negative". 
+اگرچہ زمینی سچائی اہم نہیں ہوسکتی ہے، لیبل اسپیس ہے۔ لیبل اسپیس سے مراد کسی کام کے لیے ممکنہ لیبلز کی فہرست ہے۔ مثال کے طور پر، درجہ بندی کے کام میں، لیبل اسپیس میں "مثبت" اور "منفی" شامل ہو سکتے ہیں۔
 
-Providing random labels from the labelspace in the exemplars can help the LLM understand the labelspace better, leading to improved results. Furthermore, it's important to represent the distribution of the labelspace accurately in the exemplars. Instead of sampling uniformly from the labelspace, it's better to sample according to the true distribution of the labels (@min2022rethinking). For example, if you have a dataset of restaurant reviews and 60\% of them are positive, your prompt should contains a 3:2 ratio of positive/negative prompts.
+مثالوں میں لیبل اسپیس سے بے ترتیب لیبل فراہم کرنے سے LLM کو لیبل اسپیس کو بہتر طور پر سمجھنے میں مدد مل سکتی ہے، جس کے نتیجے میں نتائج بہتر ہوتے ہیں۔ مزید برآں، یہ ضروری ہے کہ لیبل اسپیس کی تقسیم کو نمونوں میں درست طریقے سے پیش کیا جائے۔ لیبل اسپیس سے یکساں نمونے لینے کے بجائے، لیبلز کی صحیح تقسیم کے مطابق نمونہ لینا بہتر ہے (@min2022rethinking)۔ مثال کے طور پر، اگر آپ کے پاس ریستوراں کے جائزوں کا ڈیٹاسیٹ ہے اور ان میں سے %% مثبت ہیں، تو آپ کے پرامپٹ میں مثبت/منفی پرامپٹس کا تناسب 3:2 ہونا چاہیے۔
 
 ## Additional Tips
 
-When creating prompts, using between 4-8 exemplars tends to yield good result (@min2022rethinking). However, it can often be beneficial to include as many exemplars as possible. 
+## اضافی تجاویز
 
-In conclusion, understanding the importance of format, ground truth, and labelspace can greatly enhance the effectiveness of your prompts.
+پرامپٹس بناتے وقت، 4-8 مثالوں کے درمیان استعمال کرنے سے اچھا نتیجہ نکلتا ہے ۔ تاہم، زیادہ سے زیادہ مثالوں کو شامل کرنا اکثر فائدہ مند ہو سکتا ہے۔
 
-[^a]: See the [vocabulary reference](https://learnprompting.org/docs/vocabulary#labels) for more info.
+آخر میں، فارمیٹ، زمینی سچائی، اور لیبل اسپیس کی اہمیت کو سمجھنا آپ کے پرامپٹ کی تاثیر کو بہت زیادہ بڑھا سکتا ہے۔
+
+[^a]: مزید معلومات کے لیے [vocabulary reference](https://learnprompting.org/docs/vocabulary#labels) دیکھیں۔

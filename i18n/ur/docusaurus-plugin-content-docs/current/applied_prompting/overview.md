@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 🟢 Introduction
+# 🟢 تعارف
 
-Now we will discuss the end-to-end prompt engineering process via articles written
-by community members.
+اب ہم لکھے ہوئے مضامین کے ذریعہ اختتام سے آخر تک پرامپٹ انجینئرنگ کے عمل پر تبادلہ خیال کریں گے
+برادری کے ممبروں کے ذریعہ۔

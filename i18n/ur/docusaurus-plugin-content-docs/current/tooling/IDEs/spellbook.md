@@ -4,7 +4,7 @@ sidebar_position: 12
 
 # Spellbook 🚧
 
-[Spellbook](https://scale.com/spellbook) is a professional prompting IDE built by Scale AI.
+[Spellbook](https://scale.com/spellbook) اسکیل AI کے ذریعہ تیار کردہ ایک پیشہ ورانہ اشارہ کرنے والا IDE ہے۔
 
 import Image from '@site/docs/assets/tooling/spellbook.webp';
 
@@ -12,7 +12,7 @@ import Image from '@site/docs/assets/tooling/spellbook.webp';
   <img src={Image} style={{width: "750px"}}/>
 </div>
 
-## Features
+## خصوصیات
 
-Spellbook allows users to go through the full pipeline of creating and comparing prompts,
-fine tuning models, and deploying endpoints to production.
+سپیل بک صارفین کو پرامپٹ بنانے اور موازنہ کرنے کی مکمل پائپ لائن سے گزرنے کی اجازت دیتی ہے،
+ٹھیک ٹیوننگ ماڈلز، اور پروڈکشن کے لیے اختتامی پوائنٹس کی تعیناتی۔

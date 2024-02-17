@@ -55,7 +55,7 @@ import key from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/bas
 
 ### ایمبیڈ کا استعمال کرنا
 
-آئیے ایمبیڈ کو استعمال کرنے کا طریقہ سیکھتے ہیں۔ "اپنا پرامپٹ یہاں ٹائپ کریں" فیلڈ میں ترمیم کریں۔ یہ سرایت مؤثر طریقے سے ChatGPT استعمال کرنے کے مترادف ہے، سوائے اس کے کہ آپ مکمل گفتگو نہیں کر سکتے۔ اس کورس میں، ایمبیڈز کو صرف فوری انجینئرنگ تکنیک کی مثالیں دکھانے کے لیے استعمال کیا جاتا ہے۔
+آئیے ایمبیڈ کو استعمال کرنے کا طریقہ سیکھتے ہیں۔ "اپنا پرامپٹ یہاں ٹائپ کریں" فیلڈ میں ترمیم کریں۔ یہ سرایت مؤثر طریقے سے ChatGPT استعمال کرنے کے مترادف ہے، سوائے اس کے کہ آپ مکمل گفتگو نہیں کر سکتے۔ اس کورس میں، ایمبیڈز کو صرف پرامپٹ انجینئرنگ تکنیک کی مثالیں دکھانے کے لیے استعمال کیا جاتا ہے۔
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik91dHB1dCBhcHBlYXJzIGhlcmUiLCJwcm9tcHQiOiJUeXBlIHlvdXIgcHJvbXB0IGhlcmUiLCJtb2RlbCI6ImdwdC0zLjUtdHVyYm8ifQ%3D%3D"

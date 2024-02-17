@@ -4,7 +4,7 @@ sidebar_position: 25
 
 # AnySolve
 
-[AnySolve](https://www.anysolve.ai) is a website for generating and sharing tasks mainly based on Text prompts.
+[AnySolve](https://www.anysolve.ai) بنیادی طور پر ٹیکسٹ پرامپٹس پر مبنی کاموں کو تخلیق اور اشتراک کرنے کے لیے ایک ویب سائٹ ہے۔
 
 import Image from '@site/docs/assets/tooling/anysolve.webp';
 
@@ -12,6 +12,6 @@ import Image from '@site/docs/assets/tooling/anysolve.webp';
   <img src={Image} style={{width: "750px"}}/>
 </div>
 
-## Features
+## خصوصیات
 
-Tasks can be created in an UI editor. The created tasks can be shared with other uses so that everyone can access the tasks. A REST API allows to integrate the task in other Software.
+کاموں کو UI ایڈیٹر میں بنایا جا سکتا ہے۔ تخلیق کردہ کاموں کو دوسرے استعمالات کے ساتھ اشتراک کیا جا سکتا ہے تاکہ ہر کوئی کاموں تک رسائی حاصل کر سکے۔ ایک REST API دوسرے سافٹ ویئر میں کام کو ضم کرنے کی اجازت دیتا ہے۔

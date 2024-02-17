@@ -4,8 +4,8 @@ sidebar_position: 17
 
 # OpenPrompt
 
-[OpenPrompt](https://thunlp.github.io/OpenPrompt/index.html) is a Python library
-that provides various functionality for building and testing prompts.
+[OpenPrompt](https://thunlp.github.io/OpenPrompt/index.html) ایک Python لائبریری ہے
+جو پرامپٹ بنانے اور جانچنے کے لیے مختلف فعالیت فراہم کرتا ہے۔
 
 import Image from '@site/docs/assets/tooling/openprompt.gif';
 
@@ -13,8 +13,8 @@ import Image from '@site/docs/assets/tooling/openprompt.gif';
   <img src={Image} style={{width: "750px"}}/>
 </div>
 
-## Features
+## خصوصیات
 
-OpenPrompt supports models from huggingface, but not yet OpenAI. It focuses more
-on datasets and testing than chaining. OpenPrompt also appears to support 
-soft-prompting via https://github.com/thunlp/OpenDelta.
+OpenPrompt huggingface سے ماڈلز کی حمایت کرتا ہے، لیکن ابھی تک OpenAI نہیں ہے۔ یہ زیادہ توجہ مرکوز کرتا ہے۔
+زنجیروں سے زیادہ ڈیٹاسیٹس اور ٹیسٹنگ پر۔ OpenPrompt بھی سپورٹ کرتا دکھائی دیتا ہے۔
+https://github.com/thunlp/OpenDelta کے ذریعے نرم اشارہ کرنا۔

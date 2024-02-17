@@ -2,35 +2,35 @@
 sidebar_position: 4
 ---
 
-# 🟡 Code as Reasoning
+# 🟡 کوڈ بطور استدلال
 
-[Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) are another example of a MRKL system.
-When given a question, PALs are able to **write code** that solves this question. They send the
-code to a programmatic runtime to get the result. PAL works in contrast to CoT; PAL's intermediate 
-reasoning is code, while CoT's is natural language.
+[پروگرام کی مدد سے لینگویج ماڈلز (PAL)](https://reasonwithpal.com)(@gao2022pal) MRKL سسٹم کی ایک اور مثال ہیں۔
+جب کوئی سوال دیا جاتا ہے، PALs **کوڈ لکھنے کے قابل ہوتے ہیں** جو اس سوال کو حل کرتا ہے۔ وہ بھیجتے ہیں۔
+نتیجہ حاصل کرنے کے لیے پروگرامی رن ٹائم کا کوڈ۔ PAL CoT کے برعکس کام کرتا ہے۔ PAL کا انٹرمیڈیٹ
+استدلال کوڈ ہے، جبکہ CoT قدرتی زبان ہے۔
 
 import image from '@site/docs/assets/advanced/pal.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={image} style={{width: "500px"}}/>
+   <img src={image} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
-PAL Example (Gao et al.)
+PAL مثال (Gao et al.)
 </div>
 
 
-One important thing to note it that PAL actually interleaves natural language (NL) and code.
-In the above image, in blue are natural language reasoning that PAL generates. Although it
-is not shown in the image, PAL actually generates '\#' before each line of NL reasoning, so
-that they are interpreted as comments by the programmatic runtime.
+ایک اہم بات یہ نوٹ کرنا ہے کہ PAL دراصل قدرتی زبان (NL) اور کوڈ کو آپس میں جوڑتا ہے۔
+مندرجہ بالا تصویر میں، نیلے رنگ میں قدرتی زبان کے استدلال ہیں جو PAL تیار کرتا ہے۔ اگرچہ یہ
+تصویر میں نہیں دکھایا گیا ہے، PAL دراصل NL استدلال کی ہر سطر سے پہلے '\#' پیدا کرتا ہے، لہذا
+کہ ان کی تشریح پروگرامیٹک رن ٹائم کے ذریعے تبصروں سے کی جاتی ہے۔
 
-## Example
+## مثال
 
-Let's look at an example of PAL solving a math question. I use a 3-shot prompt, 
-which is a simplified version of [this one](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal). 
+آئیے PAL کی ریاضی کے سوال کو حل کرنے کی ایک مثال دیکھیں۔ میں 3 شاٹ پرامپٹ استعمال کرتا ہوں،
+جو کہ [اس والا](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal) کا ایک آسان ورژن ہے۔
 
-I will use langchain, a Python package for chaining LLM functionality for this. First, a few installations are needed:
+میں اس کے لیے LLM فعالیت کو زنجیر بنانے کے لیے langchain، ایک Python پیکیج استعمال کروں گا۔ سب سے پہلے، چند تنصیبات کی ضرورت ہے:
 
 ```python
 !pip install langchain==0.0.26
@@ -40,12 +40,12 @@ import os
 os.environ["OPENAI_API_KEY"] = "sk-YOUR_KEY_HERE"
 ```
 
-Then, we can create an instance of GPT-3 davinci-002 (an API call happens when we use this object)
+پھر، ہم GPT-3 davinci-002 کی ایک مثال بنا سکتے ہیں (جب ہم اس آبجیکٹ کو استعمال کرتے ہیں تو ایک API کال ہوتی ہے)
 ```
 llm = OpenAI(model_name='text-davinci-002', temperature=0)
 ```
 
-Here is the few shot prompt:
+یہاں چند شاٹ پرامپٹ ہیں:
 
 ```python
 MATH_PROMPT = '''
@@ -89,18 +89,18 @@ Q: {question}
 '''
 ```
 
-Now we can pass the combined prompt to GPT-3.
+اب ہم مشترکہ پرامپٹ کو GPT-3 پر منتقل کر سکتے ہیں۔
 
 ```
 llm_out = llm(MATH_PROMPT.format(question=question))
 print(llm_out)
 ```
 
-The output is:
+آؤٹ پٹ ہے:
 
 <pre>
 <span className="bluegreen-highlight">
-Emma took a 60 minute plane ride to seattle. She then took a 2 hour train ride to portland, and then a 30 minute bus ride to vancouver. How long did it take her to get to vancouver?<br/><br/>
+ایما نے سیٹل کے لیے 60 منٹ کی ہوائی جہاز کی سواری کی۔ اس کے بعد اس نے پورٹ لینڈ کے لیے 2 گھنٹے کی ٹرین کی سواری کی، اور پھر وینکوور کے لیے 30 منٹ کی بس کی سواری کی۔ اسے وینکوور پہنچنے میں کتنا وقت لگا؟<br/><br/>
 
 plane_ride = 60<br/>
 train_ride = 2 * 60  # 2 hours in minutes<br/>
@@ -110,17 +110,17 @@ result = total_time
 </span>
 </pre>
 
-Finally, we can pass this code to a Python runtime to get the answer:
+آخر میں، ہم جواب حاصل کرنے کے لیے اس کوڈ کو ازگر کے رن ٹائم میں منتقل کر سکتے ہیں:
 
 ```python
 exec(llm_out)
 print(result)
 ```
 
-The output is **210**, which is correct.
+آؤٹ پٹ **210** ہے، جو درست ہے۔
 
-See the Jupyter notebook for this example [here](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
+اس مثال کے لیے Jupyter نوٹ بک دیکھیں [یہاں](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb)۔
 
-## More
+## مزید
 
-Also see [PAL's colab example](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).
+[PAL کی کولاب کی مثال](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V) بھی دیکھیں۔

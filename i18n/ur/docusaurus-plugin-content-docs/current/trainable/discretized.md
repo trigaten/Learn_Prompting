@@ -2,43 +2,43 @@
 sidebar_position: 2
 ---
 
-# 🔴 Interpretable Soft Prompts
+# 🔴 قابل تشریح نرم پرامپٹ
 
-Soft prompts are a sequence of vectors which
-don't correspond to any actual tokens in the vocabulary. This makes it difficult
-to interpret the prompt. However, we can still attempt to do so
-by mapping the vectors to the closest tokens in the vocabulary. However, projected 
-soft prompts are often wayward; they can solve 
-tasks well, but get projected to arbitrary tokens in the vocabulary(@khashabi2021prompt).
+نرم پرامپٹس ویکٹر کی ایک ترتیب ہیں جو
+الفاظ میں کسی بھی حقیقی ٹوکن سے مطابقت نہ رکھیں۔ یہ مشکل بناتا ہے
+پرامپٹ کی تشریح کرنے کے لیے۔ تاہم، ہم اب بھی ایسا کرنے کی کوشش کر سکتے ہیں۔
+ویکٹر کو ذخیرہ الفاظ میں قریب ترین ٹوکن پر نقشہ بنا کر۔ تاہم، متوقع
+نرم پرامپٹ اکثر بے راہ ہوتے ہیں۔ وہ حل کر سکتے ہیں
+کام اچھی طرح سے کرتا ہے، لیکن ذخیرہ الفاظ (@khashabi2021prompt) میں صوابدیدی ٹوکنز کے لیے پیش کیا جاتا ہے۔
 
-For example, if we are training on math questions like GSM8K(@cobbe2021training), 
-we might start with the prompt `You are a mathematician. Solve this question:`. 
-If we perform prompt tuning on it, then project that back into tokenspace, we might 
-be left with something nonsensical like `A bus is a bus. Do thing here:`. It is often the
-case that the soft prompt which maps to this nonsensical prompt can provide better performance on the task!
+مثال کے طور پر، اگر ہم ریاضی کے سوالات جیسے GSM8K(@cobbe2021training) پر تربیت دے رہے ہیں،
+ہم فوری طور پر شروع کر سکتے ہیں 'آپ ایک ریاضی دان ہیں۔ اس سوال کو حل کریں:''۔
+اگر ہم اس پر فوری ٹیوننگ کرتے ہیں، تو اسے دوبارہ ٹوکن اسپیس میں پروجیکٹ کریں، ہم کر سکتے ہیں۔
+کوئی ایسی بے ہودہ چیز چھوڑ دیں جیسے 'ایک بس ایک بس ہے۔ یہاں کام کریں:''۔ یہ اکثر ہوتا ہے۔
+اس صورت میں کہ نرم پرامپٹ جو اس بے ہودہ پرامپٹ کو نقشہ بناتا ہے کام پر بہتر کارکردگی فراہم کر سکتا ہے!
 
-## The Waywardness Hypothesis
+## بے راہ روی کا مفروضہ
 
-Khashabi et al.(@khashabi2021prompt) propose this incredible hypothesis. It says 
-that given a task, for any discrete target prompt, there exists a 
-continuous prompt that projects to it, while performing well on the task.
+Khashabi et al.(@khashabi2021prompt) یہ ناقابل یقین مفروضہ تجویز کرتے ہیں۔ اس کا کہنا ہے
+جس نے ایک کام دیا ہے، کسی بھی مجرد ہدف کے پرامپٹ کے لیے، وہاں موجود ہے۔
+کام پر اچھی کارکردگی کا مظاہرہ کرتے ہوئے، مسلسل فوری طور پر اس پر پروجیکٹ کرتا ہے۔
 
-This means that given 1000 different tasks, there exist 1000 different
-performant soft prompts (one for each task) which map to the same discrete prompt.
+اس کا مطلب ہے کہ 1000 مختلف کاموں کو دیکھتے ہوئے، 1000 مختلف موجود ہیں۔
+پرفارمنٹ نرم پرامپٹس (ہر کام کے لیے ایک) جو ایک ہی مجرد پرامپٹ پر نقشہ بناتے ہیں۔
 
-## Interpretability Risks
+## تشریحی خطرات
 
-They use the Waywardness Hypothesis to highlight a number of risks which arise 
-when interpreting soft prompts. In particular, a soft prompt can be projected to
-a discrete prompt which gives a misleading intent.
+وہ متعدد خطرات کو اجاگر کرنے کے لیے Waywardness Hypothesis کا استعمال کرتے ہیں۔
+نرم پرامپٹ کی تشریح کرتے وقت۔ خاص طور پر، ایک نرم فوری طور پر پیش کیا جا سکتا ہے
+ایک مجرد اشارہ جو گمراہ کن ارادہ دیتا ہے۔
 
-Consider a soft prompt for ranking resumes. When projected into tokenspace, it might
-be `You hiring manager. Rank good resumes:`. This seems decent, perhaps a bit lacking
-in grammaticality. However, the token `good` might have a similar projection as the token for `white`, and there
-could exist implicit bias in the prompt. Using a slightly different projection method,
-we could end up with `You hiring manager. Rank white resumes:`. This is obviously quite
-different, and could have significant implications.
+ریزیومیز کی درجہ بندی کے لیے نرم پرامپٹ پر غور کریں۔ جب ٹوکن اسپیس میں پیش کیا جائے تو یہ ہوسکتا ہے۔
+بنو 'آپ مینیجر کی خدمات حاصل کرتے ہیں۔ اچھے ریزیوموں کی درجہ بندی کریں:`۔ یہ مہذب لگتا ہے، شاید تھوڑا سا کمی
+گرامریت میں تاہم، ٹوکن 'اچھے' کا 'سفید' کے ٹوکن جیسا پروجیکشن ہوسکتا ہے، اور وہاں
+پرامپٹ میں مضمر تعصب موجود ہو سکتا ہے۔ تھوڑا سا مختلف پروجیکشن طریقہ استعمال کرتے ہوئے،
+ہم 'آپ کے مینیجر کی خدمات حاصل کرنے کے ساتھ ختم ہوسکتے ہیں۔ رینک وائٹ ریزیومز:`۔ یہ ظاہر ہے کافی ہے۔
+مختلف، اور اہم مضمرات ہو سکتے ہیں۔
 
-Similarly to interpreting a regular discrete prompt, we should be extremely 
-conscious of the biases which might be present in the prompt. We must be especially
-careful with soft prompts, as they are more difficult to interpret.
+اسی طرح ایک باقاعدہ مجرد پرامپٹ کی تشریح کرنے کے لیے، ہمیں انتہائی ہونا چاہیے۔
+ان تعصبات سے آگاہ ہوں جو پرامپٹ میں موجود ہو سکتے ہیں۔ ہمیں خاص طور پر ہونا چاہئے۔
+نرم پرامپٹ سے محتاط رہیں، کیونکہ ان کی تشریح کرنا زیادہ مشکل ہے۔

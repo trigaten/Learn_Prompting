@@ -2,24 +2,24 @@
 sidebar_position: 1
 ---
 
-# Overview
+# جائزہ
 
-Prompt engineering is an iterative design task. More formalized iterative design
-fields (e.g. logo design) have well established tooling which allows designers to
-be more efficient. Similar tooling exists in the prompt engineering space, with
-a variety of prompt engineering IDEs (integrated development environments) having 
-recently been created. There exists a surprising range of such tooling, with everything
-from research interfaces to professionally designed IDEs.
-This chapter will provide an overview of some of the tools which may be of interest to
-you as a prompt engineer.
+پرامپٹ انجینئرنگ ایک تکراری ڈیزائن کا کام ہے۔ مزید رسمی تکراری ڈیزائن
+فیلڈز (مثلاً لوگو ڈیزائن) میں اچھی طرح سے ٹولنگ قائم ہے جو ڈیزائنرز کو اجازت دیتی ہے۔
+زیادہ موثر ہو. اسی طرح کی ٹولنگ پرامپٹ انجینئرنگ اسپیس میں موجود ہے۔
+پرامپٹ انجینئرنگ IDEs (مربوط ترقیاتی ماحول) کی ایک قسم
+حال ہی میں بنایا گیا ہے۔ ہر چیز کے ساتھ اس طرح کے ٹولنگ کی ایک حیران کن حد موجود ہے۔
+تحقیقی انٹرفیس سے لے کر پیشہ ورانہ ڈیزائن کردہ IDEs تک۔
+یہ باب کچھ ایسے ٹولز کا جائزہ فراہم کرے گا جن میں دلچسپی ہو سکتی ہے۔
+آپ ایک فوری انجینئر کے طور پر.
 
-See the final article in this chapter for my recommendations on tools to use.
+ٹولز استعمال کرنے کے بارے میں میری سفارشات کے لیے اس باب میں آخری مضمون دیکھیں۔
 
-Due to waitlists, I have not yet been able to access all IDEs mentioned here. 
-Additionally, due to the number of tools coming out, not all have a dedicated page.
+انتظار کی فہرستوں کی وجہ سے، میں ابھی تک یہاں ذکر کردہ تمام IDEs تک رسائی حاصل نہیں کر پایا ہوں۔
+مزید برآں، آنے والے ٹولز کی تعداد کی وجہ سے، سبھی کے پاس ایک مخصوص صفحہ نہیں ہے۔
 
 
-Here is a table of the tools we will be discussing in this chapter:
+یہاں ٹولز کی ایک جدول ہے جن پر ہم اس باب میں بحث کریں گے۔
 
 ## Text Prompt IDEs
 | Name | Hosted Solution | Open Source | Research Focused| Business Model| Launched | Modalities | Supported Providers |
@@ -60,14 +60,10 @@ Here is a table of the tools we will be discussing in this chapter:
 | [Patience](https://www.patience.ai/faq) | ✅ | ❌ | ❌ | Buy Credits | ✅ |  Text2Image | Stable Diffusion, OpenAI|
 | [getimg.ai](https://getimg.ai/guides) | ✅ | ❌ | ❌ |  | ✅ |  Text2Image, AIEditor | |
 
-**Hosted Solution**: The tool is hosted on a website and can be used without installing anything.
+**میزبانی کا حل**: ٹول ویب سائٹ پر ہوسٹ کیا جاتا ہے اور اسے کچھ بھی انسٹال کیے بغیر استعمال کیا جا سکتا ہے۔
 
-**Research Focused**: The tool is designed for research purposes, and may not be as
-user friendly as other tools.
+**ریسرچ فوکسڈ**: ٹول تحقیقی مقاصد کے لیے ڈیزائن کیا گیا ہے، اور ایسا نہیں ہوسکتا ہے۔
+دوسرے ٹولز کی طرح صارف دوست۔
 
-**Business Model**: Type of business model.
-
-
-
-
+**بزنس ماڈل**: بزنس ماڈل کی قسم۔
 

@@ -2,56 +2,55 @@
 sidebar_position: 3
 ---
 
-# 🟡 LLMs that Reason and Act
+# 🟡 LLMs کہ وجہ اور عمل
 
-ReAct(@yao2022react)(reason, act) is a paradigm for enabling language models to solve complex 
-tasks using natural language reasoning. ReAct is designed for tasks in which the LLM is 
-allowed to perform certain actions. For example, as in a MRKL system, a LLM may be able 
-to interact with external APIs to retrieve information. When asked a question, the LLM
-could choose to perform an action to retrieve information, and then answer the question
-based on the retrieved information.
+ReAct(@yao2022react)(وجہ، عمل) پیچیدہ حل کرنے کے لیے زبان کے ماڈلز کو فعال کرنے کے لیے ایک نمونہ ہے۔
+فطری زبان استدلال کا استعمال کرتے ہوئے کام۔ ReAct کو ان کاموں کے لیے ڈیزائن کیا گیا ہے جن میں LLM ہے۔
+کچھ اعمال انجام دینے کی اجازت ہے۔ مثال کے طور پر، جیسا کہ MRKL سسٹم میں، ایک LLM قابل ہو سکتا ہے۔
+معلومات کی بازیافت کے لیے بیرونی APIs کے ساتھ تعامل کرنا۔ جب ایک سوال پوچھا گیا کہ ایل ایل ایم
+معلومات کو بازیافت کرنے کے لیے ایک کارروائی کرنے کا انتخاب کر سکتا ہے، اور پھر سوال کا جواب دے سکتا ہے۔
+حاصل کردہ معلومات کی بنیاد پر۔
 
-ReAct Systems can be thought of as MRKL systems, with the added ability to **reason
-about** the actions they can perform.
+ReAct Systems کو MRKL سسٹم کے طور پر سوچا جا سکتا ہے، ** وجہ کی اضافی صلاحیت کے ساتھ
+** ان اعمال کے بارے میں جو وہ انجام دے سکتے ہیں۔
 
-Examine the following image. The question in the top box is sourced from HotPotQA(@yang2018hotpotqa),
-a question answering dataset that requires complex reasoning. ReAct is able to answer the question by
-first reasoning about the question (Thought 1), and then performing an action (Act 1) to send a query 
-to Google. It then receives an observation (Obs 1), and continues with this thought, action, observation
-loop until it reaches a conclusion (Act 3). 
+درج ذیل تصویر کا جائزہ لیں۔ ٹاپ باکس میں سوال HotPotQA(@yang2018hotpotqa) سے لیا گیا ہے،
+ایک سوال کا جواب دینے والا ڈیٹا سیٹ جس میں پیچیدہ استدلال کی ضرورت ہوتی ہے۔ ReAct سوال کا جواب دینے کے قابل ہے۔
+سوال کے بارے میں پہلے استدلال (سوچ 1)، اور پھر سوال بھیجنے کے لیے ایک عمل (ایکٹ 1) انجام دینا
+گوگل کو اس کے بعد یہ ایک مشاہدہ (Obs 1) حاصل کرتا ہے، اور اس سوچ، عمل، مشاہدے کے ساتھ جاری رہتا ہے۔
+اس وقت تک لوپ کریں جب تک یہ کسی نتیجے پر نہ پہنچ جائے (ایکٹ 3)۔
 
 
 import react_qa from '@site/docs/assets/advanced/react_qa.webp';
 
 <div style={{textAlign: 'center'}}>
-  <img src={react_qa} style={{width: "500px"}}/>
+   <img src={react_qa} style={{width: "500px"}}/>
 </div>
 
 <div style={{textAlign: 'center'}}>
-ReAct System (Yao et al.)
+ری ایکٹ سسٹم (Yao et al.)
 </div>
 
 
-Readers with knowledge of reinforcement learning may recognize this process as similar to the classic
-RL loop of state, action, reward, state,... ReAct provides some formalization for 
-this in their paper.
+کمک سیکھنے کا علم رکھنے والے قارئین اس عمل کو کلاسک کی طرح پہچان سکتے ہیں۔
+ریاست، عمل، انعام، ریاست، کا RL لوپ... ReAct کے لیے کچھ رسمی شکل فراہم کرتا ہے۔
+یہ ان کے کاغذ میں.
 
 
-## Results
+## نتائج
 
-Google used the PaLM(@chowdhery2022palm) LLM in experiments with ReAct. 
-Comparisons to standard prompting (question only), CoT, and other configurations
-show that ReAct's performance is promising for complex reasoning tasks. Google 
-also performs studies on the FEVER dataset(@thorne2018fever), which covers
-fact extraction and verification. 
+Google نے ReAct کے تجربات میں PaLM(@chowdhery2022palm) LLM استعمال کیا۔
+معیاری پرامپٹ (صرف سوال)، CoT، اور دیگر کنفیگریشنز سے موازنہ
+ظاہر کریں کہ ReAct کی کارکردگی پیچیدہ استدلال کے کاموں کے لیے امید افزا ہے۔ گوگل
+FEVER ڈیٹاسیٹ (@thorne2018fever) پر بھی مطالعہ کرتا ہے، جس کا احاطہ کیا گیا ہے۔
+حقیقت نکالنا اور تصدیق۔
 
 import react_performance from '@site/docs/assets/advanced/react_performance.webp';
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={react_performance} style={{width: "500px"}} />
+   <LazyLoadImage src={react_performance} style={{width: "500px"}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
-ReAct Results (Yao et al.)
+رد عمل کے نتائج (Yao et al.)
 </div>
-

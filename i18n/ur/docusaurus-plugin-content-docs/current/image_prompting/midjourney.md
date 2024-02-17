@@ -6,11 +6,11 @@ sidebar_position: 99
 import ReactPlayer from 'react-player'
 
 
-[Midjourney](https://www.midjourney.com) is an AI image generator that operates through a Discord bot interface as well as a web app (an API version of Midjourney is planned). The process for generating images with Midjourney follows the same fundamental principles as other AI image generators, including the use of prompts to guide the generation process. 
+[Midjourney](https://www.midjourney.com) ایک AI امیج جنریٹر ہے جو Discord bot انٹرفیس کے ساتھ ساتھ ایک ویب ایپ کے ذریعے کام کرتا ہے (Midjourney کے API ورژن کی منصوبہ بندی کی گئی ہے)۔ Midjourney کے ساتھ امیجز بنانے کا عمل دوسرے AI امیج جنریٹرز کی طرح بنیادی اصولوں کی پیروی کرتا ہے، بشمول جنریشن کے عمل کی رہنمائی کے لیے پرامپٹ کا استعمال۔
 
-One of the unique features of Midjourney compared to other AI image generators is its ability to create visually striking and artistically composed images. This is attributed to the model's specialized training, which enables it to produce high-quality images with specific artistic parameters (more about this in "Advanced Prompts" > "Parameters").
+دوسرے AI امیج جنریٹرز کے مقابلے مڈجرنی کی ایک منفرد خصوصیت اس کی بصری طور پر حیرت انگیز اور فنکارانہ طور پر بنائی گئی تصاویر بنانے کی صلاحیت ہے۔ یہ ماڈل کی خصوصی تربیت سے منسوب ہے، جو اسے مخصوص فنکارانہ پیرامیٹرز کے ساتھ اعلیٰ معیار کی تصاویر بنانے کے قابل بناتا ہے (اس کے بارے میں مزید "ایڈوانسڈ پرامپٹ" > "پیرامیٹر" میں)۔
 
-You can experiment with the Midjourney Bot in the [Learn Prompting Discord](https://learnprompting.org/discord) or in the [official Midjourney Discord server](https://discord.gg/midjourney).
+آپ Midjourney Bot کے ساتھ [Learn Prompting Discord](https://learnprompting.org/discord) یا [آفیشل مڈجرنی ڈسکارڈ سرور](https://discord.gg/midjourney) میں تجربہ کر سکتے ہیں۔
 
 import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
 import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';
@@ -43,189 +43,189 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 
 
 
-# Basic Usage
+# بنیادی استعمال
 
-The basic prompt anatomy with Midjourney is `/imagine prompt: [IMAGE PROMPT] [--OPTIONAL PARAMETERS]`. 
+مڈجرنی کے ساتھ بنیادی پرامپٹ اناٹومی ہے `/امیجن پرامپٹ: [تصویر پرامپٹ] [--اختیاری پیرامیٹرس]`۔
 
-For example: `/imagine prompt: astronaut on a horse`
+مثال کے طور پر: `/ imagine prompt: astronaut on a horse`
 
 
 <div style={{textAlign: 'center'}}>
-  <img className="img-docs" src={midjourney_astronaut} style={{width: "350px"}}/>
+   <img className="img-docs" src={midjourney_astronaut} style={{width: "350px"}}/>
 </div>
 
 
-Example with parameters: `/imagine prompt: astronaut on a horse --ar 3:2 --c 70 --q 2 --seed 1000 `
+پیرامیٹرز کے ساتھ مثال: `/ imagine prompt: astronaut on a گھوڑے --ar 3:2 --c 70 --q 2 --seed 1000`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params} style={{width: "350px"}} />
 </div>
 
-In this basic example the following parameters have been used:
+اس بنیادی مثال میں درج ذیل پیرامیٹرز استعمال کیے گئے ہیں۔
 
 
-`--ar 3:2` sets the aspect ratio of the image to 3:2
+`--ar 3:2` تصویر کے پہلو تناسب کو 3:2 پر سیٹ کرتا ہے۔
 
-`--c 70` adds a chaos value of 70 to allow Midjourney to interpret the prompt more freely(chaos value range: 0 - 100)
+`--c 70` 70 کی افراتفری کی قدر کا اضافہ کرتا ہے تاکہ Midjourney کو مزید آزادانہ طور پر پرامپٹ کی تشریح کرنے کی اجازت دی جا سکے (افراتفری کی قدر کی حد: 0 - 100)
 
-`--seed 100` sets an arbitrary seed value which can be used to re-render or re-work an image later
-
-
-(learn more about Midjourney parameters in "Advanced Prompts" > "Parameters")
+`--seed 100` ایک صوابدیدی بیج کی قیمت مقرر کرتا ہے جسے بعد میں تصویر کو دوبارہ پیش کرنے یا دوبارہ کام کرنے کے لیے استعمال کیا جا سکتا ہے۔
 
 
-# Advanced Prompts
-Advanced prompts in Midjourney make use of parameters and special prompting techniques supported by the Midjourney algorithm.
+("ایڈوانسڈ پرامپٹس" > "پیرامیٹرز" میں مڈجرنی پیرامیٹرز کے بارے میں مزید جانیں)
 
-## Multi Prompts
-Midjourney interprets your prompt holistically by default. Using a double colon `::` tells Midjourney to interpret each part of a prompt separately.
 
-Example:
+# اعلی درجے کے اشارے
+مڈجرنی میں ایڈوانسڈ پرامپٹس پیرامیٹرز اور خصوصی پرامپٹنگ تکنیکوں کا استعمال کرتے ہیں جو مڈجرنی الگورتھم سے تعاون یافتہ ہیں۔
 
-```text
-/imagine prompt: astronaut and horse
-```
+## ملٹی پرامپٹس
+Midjourney پہلے سے طے شدہ طور پر آپ کے پرامپٹ کی مکمل تشریح کرتا ہے۔ ڈبل بڑی آنت کا استعمال `::` مڈجرنی کو کہتا ہے کہ پرامپٹ کے ہر حصے کی الگ الگ تشریح کرے۔
+
+مثال:
+
+متن
+/امیجن پرامپٹ: خلاباز اور گھوڑا
+``
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi1} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi1} style={{width: "350px"}} />
 </div>
 
-```text
-/imagine prompt: astronaut:: and horse
-```
+متن
+/امیجن پرامپٹ: خلاباز:: اور گھوڑا
+``
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi2} style={{width: "350px"}} />
-</div>
-
-
-## Image Prompts
-By uploading an image to Discord and using its URL in a prompt, you can instruct Midjourney to use that image to influence the content, style and composition of your results. 
-Example:
-[Astronaut (Source: Wikipedia)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
-
-```text
-/imagine prompt: [image URL], impressionist painting
-```
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_ip2} style={{width: "350px"}} />
-</div>
-
-## Parameters (v4)
-
-The following parameters are supported by Midjourney's latest model (v4).
-
-### Aspect Ratio:
-
-`--ar [ratio]` changes the default ratio (1:1) to a new ratio (currently the max. supported ratio is 2:1)
-
-Example: `astronaut on a horse --ar 16:9` and `astronaut on a horse --ar 1:2`
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
-  &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
+    <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi2} style={{width: "350px"}} />
 </div>
 
 
-### Chaos:
+## تصویری اشارے
+Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک پرامپٹ میں استعمال کرکے، آپ Midjourney کو ہدایت دے سکتے ہیں کہ وہ اپنے نتائج کے مواد، انداز اور ساخت کو متاثر کرنے کے لیے اس تصویر کو استعمال کرے۔
+مثال:
+[خلائی مسافر (ماخذ: ویکیپیڈیا)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
 
-`--c [value]` sets a chaos value that determines how much Midjourney varies the prompt; the higher the chaos value the more unusual and unexpected the results and compositions (range: 0 - 100)
-
-Example: `astronaut on a horse --c20` and `astronaut on a horse --c 80`
-
+متن
+/امیجن پرامپٹ: [تصویری یو آر ایل]، تاثر پرست پینٹنگ
+``
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
-  &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_ip2} style={{width: "350px"}} />
 </div>
 
+## پیرامیٹرز (v4)
 
-### Quality:
+مندرجہ ذیل پیرامیٹرز مڈجرنی کے تازہ ترین ماڈل (v4) سے تعاون یافتہ ہیں۔
 
-`--q [value]` defines how much time will be spend generating the image, thus increasing the quality. The default setting is "1". Higher values use more of your subscription's GPU minutes (accepts values ".25", ".5" , "1" and "2")
+### پہلو کا تناسب:
 
-Example: `astronaut on a horse --q .5` and `astronaut on a horse --q 2`
+`--ar [ratio]` پہلے سے طے شدہ تناسب (1:1) کو ایک نئے تناسب میں تبدیل کرتا ہے (فی الحال زیادہ سے زیادہ تعاون یافتہ تناسب 2:1 ہے)
 
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
-  &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
-</div>
-
-
-### Seed:
-
-`--seed [value]` sets a seed number which defines the starting point (noise field) for the image generation. The seeds for each image are generated randomly when not specified with the seed parameter. Using the same seed number and prompt will produce similar images.
-
-Example: `astronaut on a horse --seed 123`
+مثال: گھوڑے پر خلاباز --ar 16:9` اور `Astronaut on a گھوڑے --ar 1:2`
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
-  &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
-</div>
-
-
-### Stylize:
-
-`--stylize [value]` or `--s [value]` influences how strongly Midjourney applies its artistic algorithm.  Low values produce images that closely match the prompt, high values create very artistic images that are less connected to the prompt. The default is 100, value range is 0 - 1000.
-(Note: you can use the `/settings`command to change the default stylize value from "🖌️ Style Med" (=`--s 100`) to "🖌️ Style Low" (=`--s 50`), "🖌️ Style High"(=`--s 250`) or "🖌️ Style Very High" (=`--s 750`))
-
-Example: `astronaut on a horse --s 50` and `astronaut on a horse --s 900`
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
-  &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
-</div>
-
-
-### Version:
-`--v [version number]`or `--version [version number]` let you access earlier Midjourney models (1-3)
-
-Example: `--v 1`, `--v 2`, and `--v 3`
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
-  &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
    &nbsp;
-      <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
+    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
 </div>
 
 
-## Parameters (previous models)
+### افراتفری:
 
-### Same Seed
+`--c [value]` ایک افراتفری کی قدر سیٹ کرتا ہے جو اس بات کا تعین کرتا ہے کہ مڈجرنی پرامپٹ میں کتنا فرق ہوتا ہے۔ افراتفری کی قدر جتنی زیادہ ہوگی نتائج اور مرکبات اتنے ہی غیر معمولی اور غیر متوقع ہوں گے (حد: 0 - 100)
 
-`--sameseed`: while the `--seed` parameter produces a single noise field applied across all images in the initial grid, the sameseed parameter applies the same starting noise to all images in the initial grid so it will produce very similar images.
-
-Example: `astronaut on a horse --sameseed --v 3`
+مثال: 'ایک گھوڑے پر خلاباز --c20' اور 'خلائی مسافر گھوڑے پر --c 80'
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
+   &nbsp;
+    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
 </div>
 
 
-### Tile
+### معیار:
 
-`--tile` generates images that can be used as repeating tiles to create seamless patterns for fabrics, wallpapers and textures (only works with models 1 - 3)
+`--q [value]` اس بات کی وضاحت کرتا ہے کہ تصویر بنانے میں کتنا وقت لگے گا، اس طرح معیار میں اضافہ ہوگا۔ پہلے سے طے شدہ ترتیب "1" ہے۔ اعلی اقدار آپ کے سبسکرپشن کے GPU منٹوں کا زیادہ استعمال کرتی ہیں (".25"، ".5"، "1" اور "2" کی قدروں کو قبول کرتی ہے)
 
-Example: `astronaut on a horse --tile --v 3`
+مثال: 'خلائی مسافر گھوڑے پر --q .5' اور 'خلائی مسافر گھوڑے پر --q 2'
 
 <div style={{textAlign: 'center'}}>
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
-  &nbsp;
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
-  &nbsp;
-  <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
+   &nbsp;
+    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
 </div>
 
 
-### Video
+### بیج:
 
-`--video` creates a short movie of the image grid being generated. Reacting with the ✉️ emoji lets the Midjourney Bot send you a DM with the link to the video.
+`--seed [value]` ایک سیڈ نمبر سیٹ کرتا ہے جو تصویر بنانے کے لیے نقطہ آغاز (شور فیلڈ) کی وضاحت کرتا ہے۔ ہر تصویر کے بیج تصادفی طور پر تیار کیے جاتے ہیں جب بیج پیرامیٹر کے ساتھ مخصوص نہیں کیا جاتا ہے۔ ایک ہی بیج نمبر اور پرامپٹ کا استعمال ایک جیسی تصاویر تیار کرے گا۔
 
-Example: `astronaut on a horse --video --v 3`
+مثال: گھوڑے پر خلاباز --seed 123`
+
+<div style={{textAlign: 'center'}}>
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+   &nbsp;
+    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
+</div>
+
+
+### اسٹائلائز:
+
+`--انداز [قدر]` یا `--s [قدر]` اثر انداز ہوتا ہے کہ مڈجرنی اپنے فنکارانہ الگورتھم کو کتنی مضبوطی سے لاگو کرتا ہے۔ کم قدریں ایسی تصاویر تیار کرتی ہیں جو پرامپٹ سے قریب سے ملتی ہیں، اعلیٰ قدریں بہت فنکارانہ تصاویر تخلیق کرتی ہیں جو پرامپٹ سے کم جڑی ہوتی ہیں۔ ڈیفالٹ 100 ہے، قدر کی حد 0 - 1000 ہے۔
+(نوٹ: آپ `/settings` کمانڈ استعمال کر کے ڈیفالٹ اسٹائلائز ویلیو کو "🖌️ Style Med" (=`--s 100`) سے "🖌️ Style Low" (=`--s 50`) میں تبدیل کر سکتے ہیں، " 🖌️ اسٹائل ہائی"(=`--s 250`) یا "🖌️ اسٹائل ویری ہائی" (=`--s 750`))
+
+مثال: 'ایک گھوڑے پر خلاباز --s 50' اور 'خلائی مسافر گھوڑے پر --s 900'
+
+<div style={{textAlign: 'center'}}>
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
+   &nbsp;
+    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
+</div>
+
+
+### ورژن:
+`--v [ورژن نمبر]` یا `--ورژن [ورژن نمبر]` آپ کو پہلے کے مڈجرنی ماڈلز تک رسائی حاصل کرنے دیتے ہیں (1-3)
+
+مثال: `--v 1`، `--v 2`، اور `--v 3`
+
+<div style={{textAlign: 'center'}}>
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
+   &nbsp;
+    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
+    &nbsp;
+       <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
+</div>
+
+
+## پیرامیٹرز (پچھلے ماڈلز)
+
+### ایک ہی بیج
+
+`--seed`: جب کہ `--seed` پیرامیٹر ابتدائی گرڈ میں تمام امیجز پر لاگو ایک ہی شور والی فیلڈ تیار کرتا ہے، وہی سیڈ پیرامیٹر ابتدائی گرڈ میں تمام امیجز پر ایک ہی شور کو لاگو کرتا ہے لہذا یہ بہت ملتی جلتی تصاویر تیار کرے گا۔ .
+
+مثال: گھوڑے پر خلاباز --sameseed --v 3`
+
+<div style={{textAlign: 'center'}}>
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
+</div>
+
+
+### ٹائل
+
+`--ٹائل` ایسی تصاویر تیار کرتا ہے جنہیں کپڑوں، وال پیپرز اور ساخت کے لیے ہموار پیٹرن بنانے کے لیے دوبارہ ٹائل کے طور پر استعمال کیا جا سکتا ہے (صرف ماڈل 1 - 3 کے ساتھ کام کرتا ہے)
+
+مثال: گھوڑے پر خلاباز --tile --v 3`
+
+<div style={{textAlign: 'center'}}>
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
+   &nbsp;
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
+   &nbsp;
+   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
+</div>
+
+
+### ویڈیو
+
+`--video` تصویری گرڈ کی ایک مختصر فلم تخلیق کرتا ہے۔ ✉️ ایموجی کے ساتھ ردعمل ظاہر کرنے سے Midjourney Bot آپ کو ویڈیو کے لنک کے ساتھ DM بھیج سکتا ہے۔
+
+مثال: گھوڑے پر خلاباز --video --v 3`
 <div style={{textAlign: 'center'}}>
  <video className="img-docs"  height="240" autoPlay muted controls>
   <source className="img-docs" src="/midjourney.mp4" type="video/mp4" />
@@ -234,6 +234,7 @@ Example: `astronaut on a horse --video --v 3`
 
 
 
-## Links
 
-[Official Midjourney Documentation](https://docs.midjourney.com/)
+## لنکس
+
+[آفیشل مڈجرنی ڈاکومینٹیشن](https://docs.midjourney.com/)

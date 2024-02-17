@@ -2,114 +2,114 @@
 sidebar_position: 50
 ---
 
-# Prompt Engineering Tools
+# پرامپٹ انجینئرنگ ٹولز
 
-This section contains a list of non-IDE tools that are useful for prompting.
+اس حصے میں غیر IDE ٹولز کی فہرست شامل ہے جو اشارہ کرنے کے لیے مفید ہیں۔
 
-## Prompt Development, Testing, and Chaining
+## فوری ترقی، جانچ، اور سلسلہ بندی
 
 ### [LangChain](https://github.com/hwchase17/langchain/)
 
-> Large language models (LLMs) are emerging as a transformative technology, enabling developers to build applications that they previously could not. But using these LLMs in isolation is often not enough to create a truly powerful app - the real power comes when you can combine them with other sources of computation or knowledge.
+> بڑے لینگویج ماڈلز (LLMs) ایک تبدیلی کی ٹیکنالوجی کے طور پر ابھر رہے ہیں، جو ڈویلپرز کو ایسی ایپلی کیشنز بنانے کے قابل بنا رہے ہیں جو وہ پہلے نہیں کر سکتے تھے۔ لیکن ان LLMs کو تنہائی میں استعمال کرنا ایک حقیقی طاقتور ایپ بنانے کے لیے اکثر کافی نہیں ہوتا ہے - اصل طاقت تب آتی ہے جب آپ انہیں حساب یا علم کے دوسرے ذرائع کے ساتھ جوڑ سکتے ہیں۔
 
-> This library is aimed at assisting in the development of those types of applications.
+> اس لائبریری کا مقصد اس قسم کی ایپلی کیشنز کی ترقی میں مدد کرنا ہے۔
 
 ### [PromptAppGPT](https://github.com/mleoking/PromptAppGPT)
 
-> PromptAppGPT is a low-code prompt-based rapid app development framework. PromptAppGPT contains features such as low-code prompt-based development, GPT text generation, DALLE image generation, online prompt editer+compiler+runer, automatic user interface generation, support for plug-in extensions, etc. PromptAppGPT aims to enable natural language app development based on GPT.
+> PromptAppGPT ایک کم کوڈ پرامپٹ پر مبنی تیز رفتار ایپ ڈویلپمنٹ فریم ورک ہے۔ PromptAppGPT کم کوڈ پرامپٹ پر مبنی ڈیولپمنٹ، GPT ٹیکسٹ جنریشن، DALLE امیج جنریشن، آن لائن پرامپٹ ایڈیٹر + کمپائلر + رنر، خودکار یوزر انٹرفیس جنریشن، پلگ ان ایکسٹینشنز کے لیے سپورٹ وغیرہ جیسی خصوصیات پر مشتمل ہے۔ PromptAppGPT کا مقصد قدرتی زبان کی ایپ کو فعال کرنا ہے۔ GPT کی بنیاد پر ترقی
 
-> PromptAppGPT provides multi-task conditional triggering, result verification, and failure retry capabilities, allowing manual generation tasks that would otherwise require multiple steps to be automated. At the same time, users no longer need to memorise and enter the tedious prompt mantra themselves, and can easily complete tasks by entering only the core necessary information for the task.
+> PromptAppGPT ملٹی ٹاسک کنڈیشنل ٹرگرنگ، نتیجہ کی تصدیق، اور ناکامی کی دوبارہ کوشش کرنے کی صلاحیتیں فراہم کرتا ہے، جو دستی جنریشن کے کاموں کی اجازت دیتا ہے جن کے لیے بصورت دیگر خودکار ہونے کے لیے متعدد اقدامات کی ضرورت ہوگی۔ ایک ہی وقت میں، صارفین کو اب خود کو مشکل پرامپٹ منتر کو حفظ کرنے اور درج کرنے کی ضرورت نہیں ہے، اور کام کے لیے صرف بنیادی ضروری معلومات درج کر کے آسانی سے کام مکمل کر سکتے ہیں۔
 
-> PromptAppGPT significantly lowers the barrier to GPT application development, allowing anyone to develop AutoGPT-like applications with a few lines of low code.
+> PromptAppGPT GPT ایپلیکیشن ڈویلپمنٹ میں رکاوٹ کو نمایاں طور پر کم کرتا ہے، جس سے کسی کو بھی کم کوڈ کی چند لائنوں کے ساتھ آٹو جی پی ٹی جیسی ایپلی کیشنز تیار کرنے کی اجازت ملتی ہے۔
 
 
 ### [Prompt-generator-for-ChatGPT](https://github.com/rubend18/Prompt-generator-for-ChatGPT)
 
-> The "Prompt generator for ChatGPT" application is a desktop tool designed to help users generate character-specific prompts for ChatGPT, a chatbot model developed by OpenAI.
+> "چیٹ جی پی ٹی کے لیے پرامپٹ جنریٹر" ایپلیکیشن ایک ڈیسک ٹاپ ٹول ہے جو صارفین کو چیٹ جی پی ٹی کے لیے مخصوص کریکٹر پرامپٹس تیار کرنے میں مدد کرنے کے لیے ڈیزائن کیا گیا ہے، یہ ایک چیٹ بوٹ ماڈل ہے جسے OpenAI نے تیار کیا ہے۔
 
 ### [Dust.tt](https://dust.tt)
 
-> The Dust platform helps build large language model applications as a series of prompted calls
-to external models. It provides an easy to use graphical UI to build chains of prompts, as well as a set of standard blocks and a custom programming language to parse and process language model outputs.
+> ڈسٹ پلیٹ فارم پرامپٹ کالز کی ایک سیریز کے طور پر بڑے لینگویج ماڈل ایپلی کیشنز کو بنانے میں مدد کرتا ہے۔
+بیرونی ماڈلز کے لیے۔ یہ پرامپٹ کی زنجیریں بنانے کے لیے گرافیکل UI استعمال کرنے میں آسان فراہم کرتا ہے، ساتھ ہی معیاری بلاکس کا ایک سیٹ اور زبان کے ماڈل کے آؤٹ پٹس کو پارس کرنے اور اس پر کارروائی کرنے کے لیے ایک حسب ضرورت پروگرامنگ زبان فراہم کرتا ہے۔
 
-> It provides a series of features to make development of applications faster,
-easier and more robust:
-- running multiple completions in parallel
-- inspecting execution outputs
-- versioning prompt chains 
-- custom programming language to process data and text
-- API integration for various models and external services
+> یہ ایپلی کیشنز کی ترقی کو تیز تر بنانے کے لیے خصوصیات کا ایک سلسلہ فراہم کرتا ہے،
+آسان اور زیادہ مضبوط:
+- متوازی طور پر متعدد تکمیلات چلا رہے ہیں۔
+- پھانسی کے نتائج کا معائنہ کرنا
+- ورژننگ پرامپٹ چینز
+- ڈیٹا اور ٹیکسٹ پر کارروائی کرنے کے لیے حسب ضرورت پروگرامنگ زبان
+- مختلف ماڈلز اور بیرونی خدمات کے لیے API کا انضمام
 
-### [OpenPrompt](https://thunlp.github.io/OpenPrompt/)(@ding2021openprompt)
+### [اوپن پرامپٹ](https://thunlp.github.io/OpenPrompt/)(@ding2021openprompt)
 
-> Prompt-learning is the latest paradigm to adapt pre-trained language models (PLMs) to downstream NLP tasks, which modifies the input text with a textual template and directly uses PLMs to conduct pre-trained tasks. OpenPrompt is a library built upon PyTorch and provides a standard, flexible and extensible framework to deploy the prompt-learning pipeline. OpenPrompt supports loading PLMs directly from huggingface transformers. In the future, we will also support PLMs implemented by other libraries.
+> پرامپٹ لرننگ پہلے سے تربیت یافتہ لینگویج ماڈلز (PLMs) کو ڈاؤن اسٹریم NLP کاموں میں ڈھالنے کا تازہ ترین نمونہ ہے، جو ٹیکسٹی ٹیمپلیٹ کے ساتھ ان پٹ ٹیکسٹ میں ترمیم کرتا ہے اور پہلے سے تربیت یافتہ کاموں کو انجام دینے کے لیے براہ راست PLMs کا استعمال کرتا ہے۔ OpenPrompt ایک لائبریری ہے جو PyTorch پر بنائی گئی ہے اور پرامپٹ لرننگ پائپ لائن کو تعینات کرنے کے لیے ایک معیاری، لچکدار اور قابل توسیع فریم ورک فراہم کرتی ہے۔ OpenPrompt PLMs کو براہ راست huggingface ٹرانسفارمرز سے لوڈ کرنے کی حمایت کرتا ہے۔ مستقبل میں، ہم دیگر لائبریریوں کے ذریعے نافذ کردہ PLMs کی بھی حمایت کریں گے۔
 
 ### [BetterPrompt](https://github.com/stjordanis/betterprompt)
 
-> ⚡ Test suite for LLM prompts before pushing them to PROD ⚡
+> ⚡ LLM پرامپٹس کو PROD میں دھکیلنے سے پہلے ٹیسٹ سویٹ ⚡
 
-### [Prompt Engine](https://github.com/microsoft/prompt-engine)
+### [پرامپٹ انجن](https://github.com/microsoft/prompt-engine)
 
-> NPM utility library for creating and maintaining prompts for Large Language Models (LLMs).
+> لارج لینگویج ماڈلز (LLMs) کے لیے پرامپٹس بنانے اور برقرار رکھنے کے لیے NPM یوٹیلیٹی لائبریری۔
 
 ### [Promptify](https://github.com/promptslab/Promptify)
 
-> Relying solely on LLMs is often insufficient to build applications & tools. To unlock their full potential, it's necessary to integrate LLMs with other sources of computation or knowledge and get the pipeline ready for production.
+> صرف LLMs پر انحصار کرنا اکثر ایپلی کیشنز اور ٹولز بنانے کے لیے ناکافی ہوتا ہے۔ اپنی پوری صلاحیت کو غیر مقفل کرنے کے لیے، یہ ضروری ہے کہ LLMs کو حساب یا علم کے دوسرے ذرائع کے ساتھ ضم کیا جائے اور پائپ لائن کو پیداوار کے لیے تیار کیا جائے۔
 
-> This library is aimed at assisting in developing a pipeline for using LLMs APIs in production, solving NLP Tasks such as NER, Classification, Question, Answering, Summarization, Text2Graph etc. and providing powerful agents for building chat agents for different tasks.
+> اس لائبریری کا مقصد پیداوار میں LLMs APIs کے استعمال کے لیے پائپ لائن تیار کرنے میں مدد کرنا ہے، NLP ٹاسکس جیسے NER، درجہ بندی، سوال، جواب دینا، خلاصہ، Text2Graph وغیرہ کو حل کرنا اور مختلف کاموں کے لیے چیٹ ایجنٹس بنانے کے لیے طاقتور ایجنٹ فراہم کرنا ہے۔
 
 ### [PromptFlow](https://github.com/InsuranceToolkits/promptflow)
 
-> PromptFlow is a free, open-source, low-code tool that allows users to integrate LLMs, prompts, Python functions, and conditional logic to create flowcharts. It includes nodes for:
+> PromptFlow ایک مفت، اوپن سورس، کم کوڈ والا ٹول ہے جو صارفین کو LLMs، پرامپٹس، Python فنکشنز، اور مشروط منطق کو فلو چارٹس بنانے کے لیے مربوط کرنے کی اجازت دیتا ہے۔ اس میں نوڈس شامل ہیں:
 
-> OpenAI API Calls (any model, including Whisper speech-to-text)
-> Anthropic Claude Calls, Arbitrary Python Code blocks, and Long + Short term history management
-> Database Queries, PostgresML integration, and Text Embeddings
-> HTTP Requests, SerpAPI Google Searches, and ElevenLabs Speech Synthesis
-Documentation can be found [here](https://www.promptflow.org/en/latest/index.html)
+> OpenAI API کالز (کوئی بھی ماڈل، بشمول وسپر اسپیچ ٹو ٹیکسٹ)
+> انتھروپک کلاڈ کالز، صوابدیدی ازگر کوڈ بلاکس، اور طویل + مختصر مدت کی تاریخ کا انتظام
+> ڈیٹا بیس کے سوالات، پوسٹگریس ایم ایل انٹیگریشن، اور ٹیکسٹ ایمبیڈنگز
+> HTTP درخواستیں، SerpAPI گوگل سرچز، اور ElevenLabs اسپیچ سنتھیسس
+دستاویزات [یہاں] (https://www.promptflow.org/en/latest/index.html) مل سکتی ہیں۔
 
 
 ### [TextBox](https://github.com/RUCAIBox/TextBox)(@tang2022textbox)
 
-> TextBox 2.0 is an up-to-date text generation library based on Python and PyTorch focusing on building a unified and standardized pipeline for applying pre-trained language models to text generation:
+> TextBox 2.0 Python اور PyTorch پر مبنی ایک تازہ ترین ٹیکسٹ جنریشن لائبریری ہے جو ٹیکسٹ جنریشن میں پہلے سے تربیت یافتہ لینگویج ماڈلز کو لاگو کرنے کے لیے ایک متحد اور معیاری پائپ لائن بنانے پر توجہ مرکوز کرتی ہے:
 
 ### [ThoughtSource](https://github.com/OpenBioLink/ThoughtSource)
 
-> "ThoughtSource is a central, open resource and community centered on data and tools for chain-of-thought reasoning in large language models (Wei 2022). Our long-term goal is to enable trustworthy and robust reasoning in advanced AI systems for driving scientific research and medical practice."
+> "ThoughtSource ایک مرکزی، کھلا وسیلہ اور کمیونٹی ہے جو بڑے لینگویج ماڈلز (Wei 2022) میں چین سے متعلق سوچ کے استدلال کے لیے ڈیٹا اور ٹولز پر مرکوز ہے۔ ہمارا طویل مدتی ہدف ڈرائیونگ کے لیے جدید AI سسٹمز میں قابل اعتماد اور مضبوط استدلال کو فعال کرنا ہے۔ سائنسی تحقیق اور طبی مشق۔"
 
-## Misc.
+## متفرق
 
-### [GPT Index](https://gpt-index.readthedocs.io/en/latest/)(@Liu_GPT_Index_2022)
+### [GPT انڈیکس](https://gpt-index.readthedocs.io/en/latest/)(@Liu_GPT_Index_2022)
 
-> GPT Index is a project consisting of a set of data structures designed to make it easier to use large external knowledge bases with LLMs
+> جی پی ٹی انڈیکس ایک ایسا پروجیکٹ ہے جو ڈیٹا ڈھانچے کے ایک سیٹ پر مشتمل ہے تاکہ ایل ایل ایم کے ساتھ بڑے بیرونی علمی اڈوں کو استعمال کرنا آسان بنایا جا سکے۔
 
-### [Deforum](https://github.com/HelixNGC7293/DeforumStableDiffusionLocal)
+### [ڈیفورم](https://github.com/HelixNGC7293/DeforumStableDiffusionLocal)
 
-AI animated videos
+AI متحرک ویڈیوز
 
-### [Visual Prompt Builder](https://tools.saxifrage.xyz/prompt)
+### [بصری پرامپٹ بلڈر](https://tools.saxifrage.xyz/prompt)
 
-Build prompts, visually
+بصری طور پر پرامپٹس بنائیں
 
-### [Interactive Composition Explorer](https://github.com/oughtinc/ice)
+### [انٹرایکٹو کمپوزیشن ایکسپلورر](https://github.com/oughtinc/ice)
 
-> ICE is a Python library and trace visualizer for language model programs.
+> ICE ایک Python لائبریری ہے اور لینگویج ماڈل پروگراموں کے لیے ٹریس ویژولائزر ہے۔
 
-### [PTPT - Prompt To Plain Text](https://github.com/LeslieLeung/PTPT)
+### [PTPT - سادہ ٹیکسٹ کا اشارہ](https://github.com/LeslieLeung/PTPT)
 
-> PTPT is an command-line tool that allows you to easily convert plain text files using pre-defined prompts with the help of ChatGPT. With PTPT, you can effortlessly create and share prompt formats, making collaboration and customization a breeze. Plus, by subscribing, you gain access to even more prompts to enhance your experience. If you're interested in prompt engineering, you can use PTPT to develop and share your prompts.
+> PTPT ایک کمانڈ لائن ٹول ہے جو آپ کو ChatGPT کی مدد سے پہلے سے طے شدہ پرامپٹس کا استعمال کرتے ہوئے سادہ ٹیکسٹ فائلوں کو آسانی سے تبدیل کرنے کی اجازت دیتا ہے۔ PTPT کے ساتھ، آپ آسانی سے فوری فارمیٹس بنا اور شیئر کر سکتے ہیں، تعاون اور حسب ضرورت کو ہوا کا جھونکا بنا کر۔ اس کے علاوہ، سبسکرائب کر کے، آپ اپنے تجربے کو بڑھانے کے لیے مزید پرامپٹ تک رسائی حاصل کرتے ہیں۔ اگر آپ پرامپٹ انجینئرنگ میں دلچسپی رکھتے ہیں، تو آپ اپنے پرامپٹ تیار کرنے اور شیئر کرنے کے لیے PTPT کا استعمال کر سکتے ہیں۔
 
 ### [Orquesta AI Prompts](https://orquesta.cloud/platform/ai-llm-prompts)
 
-> Low-code collaboration platform for AI Prompts
+> AI پرامپٹس کے لیے کم کوڈ تعاون کا پلیٹ فارم
 
-- Full prompt lifecycle management (from ideation to feedback collection)
-- Enterprise-grade features and security
-- Support for public, private, and custom LLMs
-- Prompts based on custom context and business rules. Evaluations on the Edge
-- Real-time logging and collection of performance and prompt economics
+- مکمل پرامپٹ لائف سائیکل مینجمنٹ (آئیڈییشن سے لے کر فیڈ بیک اکٹھا کرنے تک)
+- انٹرپرائز گریڈ کی خصوصیات اور سیکورٹی
+- عوامی، نجی اور حسب ضرورت ایل ایل ایم کے لیے سپورٹ
+- حسب ضرورت سیاق و سباق اور کاروباری قواعد پر مبنی پرامپٹ۔ کنارے پر تشخیص
+- ریئل ٹائم لاگنگ اور کارکردگی اور فوری معاشیات کا مجموعہ
 
 
-### Other
+### دیگر
 
 https://gpttools.com

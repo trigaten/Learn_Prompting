@@ -2,7 +2,7 @@
 sidebar_position: 600
 ---
 
-# 🟢 Zapier for Emails
+# 🟢 ای میلز کے لیے Zapier
 
 import Basic from '@site/docs/assets/basic_applications/Zapiermail/Basic.webp';
 import Diagram from '@site/docs/assets/basic_applications/Zapiermail/Diagram.webp';
@@ -12,52 +12,51 @@ import Step3 from '@site/docs/assets/basic_applications/Zapiermail/Step3.webp';
 import Step4 from '@site/docs/assets/basic_applications/Zapiermail/Step4.webp';
 import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 
-## Introduction
+## تعارف
 
 
-We have already seen how useful GPT-3 can be when it comes to emails. It can be even more so when you combine it with **nocode** tools like [Zapier](https://zapier.com) or [Bubble.io](https://bubble.io).
+ہم پہلے ہی دیکھ چکے ہیں کہ جب ای میلز کی بات آتی ہے تو GPT-3 کتنا مفید ہو سکتا ہے۔ جب آپ اسے **nocode** ٹولز جیسے [Zapier](https://zapier.com) یا [Bubble.io](https://bubble.io) کے ساتھ جوڑتے ہیں تو یہ اور بھی زیادہ ہوسکتا ہے۔
 
-This article will contain an example of what Zapier+GPT-3 can do with only a small amount of setup time. This article focuses on a particular example, but the possibilities are much greater. We'll give some other examples along the way. Keep in mind you can also do this in Bubble.io. There are many other nocode tools, but at the time of writing only very few allow you to use GPT-3. 
+یہ مضمون ایک مثال پر مشتمل ہوگا کہ Zapier+GPT-3 سیٹ اپ وقت کی ایک چھوٹی سی رقم کے ساتھ کیا کرسکتا ہے۔ یہ مضمون ایک خاص مثال پر مرکوز ہے، لیکن امکانات بہت زیادہ ہیں۔ ہم راستے میں کچھ اور مثالیں دیں گے۔ ذہن میں رکھیں کہ آپ یہ Bubble.io میں بھی کر سکتے ہیں۔ بہت سے دوسرے نوکوڈ ٹولز ہیں، لیکن لکھنے کے وقت صرف بہت کم آپ کو GPT-3 استعمال کرنے کی اجازت دیتے ہیں۔
 
 
-In this article we will show you how to set up a simple system in Zapier in which **e-mails are summarized and stored**. Have a meeting with someone? Quickly check the summaries of emails you've exchanged with that person. Setting this up takes about 20 minutes.
+اس مضمون میں ہم آپ کو دکھائیں گے کہ Zapier میں ایک سادہ سسٹم کیسے ترتیب دیا جائے جس میں **ای میلز کا خلاصہ اور ذخیرہ کیا جاتا ہے**۔ کسی سے ملاقات ہو؟ ان ای میلز کے خلاصے کو جلدی سے چیک کریں جن کا آپ نے اس شخص کے ساتھ تبادلہ کیا ہے۔ اسے ترتیب دینے میں تقریباً 20 منٹ لگتے ہیں۔
 
 :::caution
-It is helpful to already know Zapier for this article. If you don't, you can check out this [article](https://zapier.com/learn/).
+اس مضمون کے لیے Zapier کو پہلے سے جاننا مفید ہے۔ اگر آپ ایسا نہیں کرتے ہیں تو آپ اس [آرٹیکل](https://zapier.com/learn/) کو دیکھ سکتے ہیں۔
 :::
 
 
-## General Idea
+## عام خیال
 
 
-Below is a diagram of what we will be doing here in Zapier. Whenever an email comes into your inbox, it will trigger Zapier. There are four steps (for now):
+ذیل میں ایک خاکہ ہے کہ ہم یہاں Zapier میں کیا کریں گے۔ جب بھی کوئی ای میل آپ کے ان باکس میں آتا ہے، یہ Zapier کو متحرک کرے گا۔ چار مراحل ہیں (ابھی کے لیے):
 
-1. Email comes in and trigger Zapier
-1. Format the content of the email (to remove HTML markdown, for example). 
-2. Send it to GPT-3 to be summarized
-3. Store the output in a database
+1. ای میل آتا ہے اور Zapier کو متحرک کرتا ہے۔
+1. ای میل کے مواد کو فارمیٹ کریں (مثال کے طور پر HTML مارک ڈاؤن کو ہٹانے کے لیے)۔
+2. خلاصہ کرنے کے لیے اسے GPT-3 پر بھیجیں۔
+3. آؤٹ پٹ کو ڈیٹا بیس میں اسٹور کریں۔
 
 <div style={{textAlign: 'left'}}>
   <img src={Diagram} style={{width: "500px"}}/>
 </div>
 
-## Set-up in Zapier
+## زپیئر میں سیٹ اپ
 
 
-Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a free one). Setting it up should be fairly straightforward. After making your account, expand the below box to see full descriptions of each Zapier action we need to create. 
-
+یقینی بنائیں کہ ایک [Zapier اکاؤنٹ](https://zapier.com/sign-up) ہے (آپ مفت حاصل کر سکتے ہیں)۔ اسے ترتیب دینا کافی سیدھا ہونا چاہیے۔ اپنا اکاؤنٹ بنانے کے بعد، ہر Zapier ایکشن کی مکمل تفصیل دیکھنے کے لیے نیچے والے باکس کو پھیلائیں جس کی ہمیں ضرورت ہے۔
 
 <details>
-  <summary>Expand for a more detailed view of the steps in Zapier</summary>
+  <summary>Zapier میں اقدامات کے مزید تفصیلی نظارے کے لیے پھیلائیں۔</summary>
   <div>
-  This is what the Zapier action diagram will eventually look like.
+ Zapier ایکشن ڈایاگرام آخر کار ایسا ہی نظر آئے گا۔
     <div><div style={{textAlign: 'left'}}>
   <LazyLoadImage src={Zap} style={{width: "500px"}} />
 </div></div>
     <br/>
     <details>
       <summary>
-        Step 1: Gmail trigger on new incoming email (Gmail is used here).
+        مرحلہ 1: نئے آنے والے ای میل پر Gmail ٹرگر (Gmail یہاں استعمال کیا جاتا ہے)۔
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
@@ -67,7 +66,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
     <details>
       <summary>
-       Step 2: Formatter for E-mail content. 
+       مرحلہ 2: ای میل مواد کے لیے فارمیٹ کریں۔
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
@@ -77,7 +76,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
     <details>
       <summary>
-        Step 3: Prompting the Email content
+        مرحلہ 3: ای میل کے مواد کا اشارہ کرنا
         <br/>
       </summary>
       <div>
@@ -88,7 +87,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
     <details>
       <summary>
-        Step 4: Adding it to a database
+       مرحلہ 4: اسے ڈیٹا بیس میں شامل کرنا
       </summary>
       <div>
         <div style={{textAlign: 'left'}}>
@@ -98,20 +97,20 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
   </div>
 </details>
-Here is a set-up in zapier that allows you to do a very basic summary as shown in the diagram. It has it’s limitation, but it does do the job and can build up a useful database.
+یہاں zapier میں ایک سیٹ اپ ہے جو آپ کو ایک بہت ہی بنیادی خلاصہ کرنے کی اجازت دیتا ہے جیسا کہ خاکہ میں دکھایا گیا ہے۔ اس کی حد ہے، لیکن یہ کام کرتا ہے اور ایک مفید ڈیٹا بیس بنا سکتا ہے۔
 
 
-## Optimizing the prompt for better results
+## بہتر نتائج کے لیے پرامپٹ کو بہتر بنانا
 
-There are a few easy ways to improve your results. Adding context and role prompting can improve the output. However, the topic and contents of your emails might cover a wide range of topics. This means that general instructions will do a better job than very specific ones, which might throw the model off. 
+اپنے نتائج کو بہتر بنانے کے چند آسان طریقے ہیں۔ سیاق و سباق کو شامل کرنے اور رول پرمپٹنگ آؤٹ پٹ کو بہتر بنا سکتی ہے۔ تاہم، آپ کی ای میلز کے عنوان اور مواد میں موضوعات کی ایک وسیع رینج کا احاطہ کیا جا سکتا ہے۔ اس کا مطلب یہ ہے کہ عام ہدایات بہت مخصوص لوگوں سے بہتر کام کریں گی، جو ماڈل کو ختم کر سکتی ہیں۔
 
-For practical reasons, it is useful to give an instruction, followed by telling GPT-3 when the email starts in the prompt by simply adding "Email: " and ending the prompt with ""Summary": ". This avoids GPT-3 answering with "Sure! I can summarize it for you...".
+عملی وجوہات کی بناء پر، ایک ہدایات دینا مفید ہے، اس کے بعد GPT-3 بتانا جب ای میل پرامپٹ میں شروع ہوتا ہے تو صرف "Email:" شامل کرکے اور پرامپٹ کو ""Summary": " کے ساتھ ختم کرنا۔ یہ GPT-3 کے ساتھ جواب دینے سے گریز کرتا ہے "ضرور! میں آپ کے لیے اس کا خلاصہ کر سکتا ہوں..."۔
 
-Role prompting can be useful here as well. Asking GPT-3 to act as a personal assistant helps increase the quality of the summary.
-If you want to summarize work emails, simply adding the role you have gives GPT-3 context to work with. It acts as if it assumes some level of knowledge from the reader, which helps filter out the non-relevant parts of the email. 
-Below we show some examples with emails an office administrator might receive. 
+رول پرمپٹنگ یہاں بھی کارآمد ہو سکتی ہے۔ GPT-3 سے پرسنل اسسٹنٹ کے طور پر کام کرنے سے سمری کے معیار کو بڑھانے میں مدد ملتی ہے۔
+اگر آپ کام کی ای میلز کا خلاصہ کرنا چاہتے ہیں، تو صرف اپنے کردار کو شامل کرنے سے کام کرنے کے لیے GPT-3 سیاق و سباق مل جاتا ہے۔ یہ اس طرح کام کرتا ہے جیسے یہ قارئین سے علم کی کسی سطح کو فرض کرتا ہے، جو ای میل کے غیر متعلقہ حصوں کو فلٹر کرنے میں مدد کرتا ہے۔
+ذیل میں ہم دفتر کے منتظم کو موصول ہونے والی ای میلز کے ساتھ کچھ مثالیں دکھاتے ہیں۔
 
-You can ask it to summarize a simple email in bullet points, however, this might not be all that useful depending on how you would like to use the summary. For quick skimming of email exchanges you might just want it to be short and concise. Simply asking for this in the prompt works well. Below is an example of this prompt. Adjust it and play around with it to see how it changes. 
+آپ اس سے بلٹ پوائنٹس میں ایک سادہ ای میل کا خلاصہ کرنے کے لیے کہہ سکتے ہیں، تاہم، یہ سب کچھ اس لحاظ سے مفید نہیں ہو سکتا ہے کہ آپ خلاصہ کس طرح استعمال کرنا چاہیں گے۔ ای میل کے تبادلے کی فوری سکمنگ کے لیے آپ شاید اسے مختصر اور جامع ہونا چاہیں گے۔ بس پرامپٹ میں اس کے لیے پوچھنا اچھا کام کرتا ہے۔ ذیل میں اس پرامپٹ کی ایک مثال ہے۔ اسے ایڈجسٹ کریں اور اس کے ساتھ کھیلیں یہ دیکھنے کے لیے کہ یہ کیسے بدلتا ہے۔
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiUmVxdWVzdCBmb3IgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZHVlIHRvIGhpZ2ggd29ya2xvYWQuIExpc3Qgb2YgcmVxdWVzdGVkIGl0ZW1zOiBwcmludGVyIHBhcGVyLCBpbmsgY2FydHJpZGdlcyBmb3IgSFAgcHJpbnRlciBpbiBjb25mZXJlbmNlIHJvb20sIHN0aWNreSBub3RlcywgYmluZGVyIGNsaXBzLCBhbmQgaGlnaGxpZ2h0ZXJzLiBSZXF1ZXN0aW5nIGRlbGl2ZXJ5IGluZm9ybWF0aW9uIGFuZCBpZiB0aGVyZSBhcmUgYW55IHF1ZXN0aW9ucyBvciBjb25jZXJucy4iLCJwcm9tcHQiOiJBY3QgYXMgbXkgcGVyc29uYWwgYXNzaXN0YW50LiBJIGFtIGFuIG9mZmljZSBhZG1pbmlzdHJhdG9yLiBTdW1tYXJpemUgdGhlIGZvbGxvd2luZyBlbWFpbCBhcyBjb25jaXNlbHkgYXMgeW91IGNhbiwgaWdub3JlIHRoZSBmb290ZXIgYW5kIGhlYWRlciBhbmQgYW55IHByZXZpb3VzIGVtYWlscy4gXG5cbkVtYWlsOiBSZXF1ZXN0IGZvciBBZGRpdGlvbmFsIE9mZmljZSBTdXBwbGllcyBEZWFyIE9mZmljZSBBZG1pbmlzdHJhdG9yLCBJIGhvcGUgdGhpcyBlbWFpbCBmaW5kcyB5b3Ugd2VsbC4gSSBhbSB3cml0aW5nIHRvIHJlcXVlc3QgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZm9yIG91ciB0ZWFtLiBBcyB5b3Uga25vdywgd2UgaGF2ZSBiZWVuIGV4cGVyaWVuY2luZyBhIGhpZ2ggdm9sdW1lIG9mIHdvcmsgbGF0ZWx5IGFuZCBoYXZlIGJlZW4gdXNpbmcgb3VyIHN1cHBsaWVzIGF0IGEgZmFzdGVyIHJhdGUgdGhhbiB1c3VhbC4gV2Ugd291bGQgZ3JlYXRseSBhcHByZWNpYXRlIGl0IGlmIHlvdSBjb3VsZCBwcm92aWRlIHVzIHdpdGggdGhlIGZvbGxvd2luZyBpdGVtczogUHJpbnRlciBwYXBlciBJbmsgY2FydHJpZGdlcyBmb3IgdGhlIEhQIHByaW50ZXIgaW4gdGhlIGNvbmZlcmVuY2Ugcm9vbSBTdGlja3kgbm90ZXMgQmluZGVyIGNsaXBzIEhpZ2hsaWdodGVycyBQbGVhc2UgbGV0IG1lIGtub3cgaWYgdGhlcmUgYXJlIGFueSBxdWVzdGlvbnMgb3IgY29uY2VybnMsIGFuZCB3aGVuIHdlIGNhbiBleHBlY3QgdGhlIHN1cHBsaWVzIHRvIGJlIGRlbGl2ZXJlZC4gVGhhbmsgeW91IGZvciB5b3VyIGhlbHAuIFxuXG5CZXN0IHJlZ2FyZHMsIFlvdXIgTmFtZSBTdW1tYXJ5OlxuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -119,7 +118,7 @@ You can ask it to summarize a simple email in bullet points, however, this might
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-The response here is acceptable, and would be useful. However, with some further finetuning you can get a better result. As the reader of the summaries you don't care that it's an email, you might want a lower level of detail for the summary. Information about the why is irrelevant, same goes for the last sentence about questions and concerns. By simply adding that the goal of the summary is for you to skim the contents and that you want pleasantries removed, the result can be improved. 
+یہاں جواب قابل قبول ہے، اور مفید ہوگا۔ تاہم، کچھ مزید فائن ٹیوننگ کے ساتھ آپ بہتر نتیجہ حاصل کر سکتے ہیں۔ خلاصے کے قاری کے طور پر آپ کو اس بات کی پرواہ نہیں ہے کہ یہ ایک ای میل ہے، آپ کو خلاصہ کے لیے کم درجے کی تفصیل چاہیے ہو سکتی ہے۔ غیر متعلقہ کیوں ہے کے بارے میں معلومات، سوالات اور خدشات کے بارے میں آخری جملے کے لیے بھی یہی ہے۔ صرف یہ شامل کرنے سے کہ خلاصہ کا مقصد آپ کے لیے مواد کو کم کرنا ہے اور یہ کہ آپ خوشگوار چیزیں ہٹانا چاہتے ہیں، نتیجہ کو بہتر بنایا جا سکتا ہے۔
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlJlcXVlc3QgZm9yIGFkZGl0aW9uYWwgb2ZmaWNlIHN1cHBsaWVzIC0gcHJpbnRlciBwYXBlciwgaW5rIGNhcnRyaWRnZXMgZm9yIEhQIHByaW50ZXIsIHN0aWNreSBub3RlcywgYmluZGVyIGNsaXBzIGFuZCBoaWdobGlnaHRlcnMuIiwicHJvbXB0IjoiQWN0IGFzIG15IHBlcnNvbmFsIGFzc2lzdGFudC4gSSBhbSBhbiBvZmZpY2UgYWRtaW5pc3RyYXRvci4gU3VtbWFyaXplIHRoZSBmb2xsb3dpbmcgZW1haWwgYXMgY29uY2lzZWx5IGFzIHlvdSBjYW4sIGlnbm9yZSB0aGUgZm9vdGVyIGFuZCBoZWFkZXIgYW5kIGFueSBwcmV2aW91cyBlbWFpbHMuIEkgd2FudCB0byB1c2UgdGhlIHN1bW1hcnkgdG8gc2tpbSBlbWFpbHMuIFJlbW92ZSBhbnkgcGxlYXNhbnRyaWVzLiBcXG5cXG5FbWFpbDogUmVxdWVzdCBmb3IgQWRkaXRpb25hbCBPZmZpY2UgU3VwcGxpZXMgRGVhciBPZmZpY2UgQWRtaW5pc3RyYXRvciwgSSBob3BlIHRoaXMgZW1haWwgZmluZHMgeW91IHdlbGwuIEkgYW0gd3JpdGluZyB0byByZXF1ZXN0IGFkZGl0aW9uYWwgb2ZmaWNlIHN1cHBsaWVzIGZvciBvdXIgdGVhbS4gQXMgeW91IGtub3csIHdlIGhhdmUgYmVlbiBleHBlcmllbmNpbmcgYSBoaWdoIHZvbHVtZSBvZiB3b3JrIGxhdGVseSBhbmQgaGF2ZSBiZWVuIHVzaW5nIG91ciBzdXBwbGllcyBhdCBhIGZhc3RlciByYXRlIHRoYW4gdXN1YWwuIFdlIHdvdWxkIGdyZWF0bHkgYXBwcmVjaWF0ZSBpdCBpZiB5b3UgY291bGQgcHJvdmlkZSB1cyB3aXRoIHRoZSBmb2xsb3dpbmcgaXRlbXM6IFByaW50ZXIgcGFwZXIgSW5rIGNhcnRyaWRnZXMgZm9yIHRoZSBIUCBwcmludGVyIGluIHRoZSBjb25mZXJlbmNlIHJvb20gU3RpY2t5IG5vdGVzIEJpbmRlciBjbGlwcyBIaWdobGlnaHRlcnMgUGxlYXNlIGxldCBtZSBrbm93IGlmIHRoZXJlIGFyZSBhbnkgcXVlc3Rpb25zIG9yIGNvbmNlcm5zLCBhbmQgd2hlbiB3ZSBjYW4gZXhwZWN0IHRoZSBzdXBwbGllcyB0byBiZSBkZWxpdmVyZWQuIFRoYW5rIHlvdSBmb3IgeW91ciBoZWxwLiBcblxuQmVzdCByZWdhcmRzLCBZb3VyIE5hbWUgU3VtbWFyeTpcbiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -128,18 +127,18 @@ The response here is acceptable, and would be useful. However, with some further
 ></iframe>
 
 
-<br/>Now you're left with only the most important parts of the summary!
+<br/>اب آپ کے پاس خلاصہ کے سب سے اہم حصے رہ گئے ہیں!
 
 
-## Other usecases
+## دیگر استعمال کے معاملات
 
-Now that you've seen the example of summaries, We will mention a few other use cases for Zapier+GPT-3. One great example is letting GPT-3 categorize your emails. This just comes down to telling it in a prompt to categorize the following email as whatever categories you like.
+اب جب کہ آپ نے خلاصوں کی مثال دیکھ لی ہے، ہم Zapier+GPT-3 کے استعمال کے چند دیگر معاملات کا ذکر کریں گے۔ ایک عمدہ مثال GPT-3 کو آپ کی ای میلز کی درجہ بندی کرنے دینا ہے۔ یہ صرف درج ذیل ای میل کو آپ کی پسند کے زمرے کے طور پر درجہ بندی کرنے کے لیے فوری طور پر بتانے کے لیے آتا ہے۔
 
-A more in depth example would be having multiple prompts. You can use a prompt to generate a response that agrees with the demands of the email and one that disagrees or denies. Both can be stored in your drafts and be ready to go whenever you want to send it. 
+مزید گہرائی میں مثال کے طور پر متعدد پرامپٹ ہوں گے۔ آپ جواب پیدا کرنے کے لیے ایک پرامپٹ استعمال کر سکتے ہیں جو ای میل کے مطالبات سے متفق ہو اور جو متفق ہو یا انکار کرے۔ دونوں کو آپ کے ڈرافٹ میں محفوظ کیا جا سکتا ہے اور جب بھی آپ اسے بھیجنا چاہیں جانے کے لیے تیار رہیں۔
 
-If you regularly receive very similar emails, you can use a filter in Zapier to apply a prompt ONLY to that email. This can be a powerful tool when combined with a formatter. You can extract information and export CSV's from them or directly store them in some form of a database. 
+اگر آپ کو باقاعدگی سے بہت ملتی جلتی ای میلز موصول ہوتی ہیں، تو آپ Zapier میں فلٹر کا استعمال صرف اس ای میل پر پرامپٹ لگانے کے لیے کر سکتے ہیں۔ فارمیٹر کے ساتھ مل کر یہ ایک طاقتور ٹول ہو سکتا ہے۔ آپ ان سے معلومات نکال سکتے ہیں اور CSV برآمد کر سکتے ہیں یا انہیں براہ راست کسی ڈیٹا بیس کی شکل میں محفوظ کر سکتے ہیں۔
 
 
-## Concerns
+## خدشات
 
-Please do keep in mind privacy concerns when running emails through GPT-3 and storing them. GPT-3 sometimes makes mistakes. We highly recommend checking email content before sending.
+براہ کرم GPT-3 کے ذریعے ای میلز چلاتے اور انہیں اسٹور کرتے وقت رازداری کے خدشات کو ذہن میں رکھیں۔ GPT-3 بعض اوقات غلطیاں کرتا ہے۔ ہم بھیجنے سے پہلے ای میل کا مواد چیک کرنے کی انتہائی سفارش کرتے ہیں۔

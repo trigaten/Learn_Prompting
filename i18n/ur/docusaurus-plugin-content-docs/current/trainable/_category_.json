@@ -1,8 +1,8 @@
 {
-  "label": "💪 Prompt Tuning",
+  "label": "💪 پرامپٹ ٹیوننگ",
   "position": 70,
   "link": {
     "type": "generated-index",
-    "description": "Prompt engineering that you can fine tune with gradients"
+    "description": "پرامپٹ انجینئرنگ کہ آپ گریڈیئنٹس کے ساتھ ٹھیک ٹیون کر سکتے ہیں۔"
   }
 }
