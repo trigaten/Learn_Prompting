@@ -4,14 +4,6 @@ sidebar_position: 600
 
 # 🟢 ای میلز کے لیے Zapier
 
-import Basic from '@site/docs/assets/basic_applications/Zapiermail/Basic.webp';
-import Diagram from '@site/docs/assets/basic_applications/Zapiermail/Diagram.webp';
-import Step1 from '@site/docs/assets/basic_applications/Zapiermail/Step1.webp';
-import Step2 from '@site/docs/assets/basic_applications/Zapiermail/Step2.webp';
-import Step3 from '@site/docs/assets/basic_applications/Zapiermail/Step3.webp';
-import Step4 from '@site/docs/assets/basic_applications/Zapiermail/Step4.webp';
-import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
-
 ## تعارف
 
 
@@ -37,66 +29,14 @@ import Zap from '@site/docs/assets/basic_applications/Zapiermail/Zap.webp';
 2. خلاصہ کرنے کے لیے اسے GPT-3 پر بھیجیں۔
 3. آؤٹ پٹ کو ڈیٹا بیس میں اسٹور کریں۔
 
-<div style={{textAlign: 'left'}}>
-  <img src={Diagram} style={{width: "500px"}}/>
-</div>
+
 
 ## زپیئر میں سیٹ اپ
 
 
 یقینی بنائیں کہ ایک [Zapier اکاؤنٹ](https://zapier.com/sign-up) ہے (آپ مفت حاصل کر سکتے ہیں)۔ اسے ترتیب دینا کافی سیدھا ہونا چاہیے۔ اپنا اکاؤنٹ بنانے کے بعد، ہر Zapier ایکشن کی مکمل تفصیل دیکھنے کے لیے نیچے والے باکس کو پھیلائیں جس کی ہمیں ضرورت ہے۔
 
-<details>
-  <summary>Zapier میں اقدامات کے مزید تفصیلی نظارے کے لیے پھیلائیں۔</summary>
-  <div>
- Zapier ایکشن ڈایاگرام آخر کار ایسا ہی نظر آئے گا۔
-    <div><div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Zap} style={{width: "500px"}} />
-</div></div>
-    <br/>
-    <details>
-      <summary>
-        مرحلہ 1: نئے آنے والے ای میل پر Gmail ٹرگر (Gmail یہاں استعمال کیا جاتا ہے)۔
-      </summary>
-      <div>
-        <div style={{textAlign: 'left'}}>
-    <LazyLoadImage src={Step1} style={{width: "500px"}} />
-        </div>
-      </div>
-    </details>
-    <details>
-      <summary>
-       مرحلہ 2: ای میل مواد کے لیے فارمیٹ کریں۔
-      </summary>
-      <div>
-        <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Step2} style={{width: "500px"}} />
-</div>
-      </div>
-    </details>
-    <details>
-      <summary>
-        مرحلہ 3: ای میل کے مواد کا اشارہ کرنا
-        <br/>
-      </summary>
-      <div>
-        <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Step3} style={{width: "500px"}} />
-</div>
-      </div>
-    </details>
-    <details>
-      <summary>
-       مرحلہ 4: اسے ڈیٹا بیس میں شامل کرنا
-      </summary>
-      <div>
-        <div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={Step4} style={{width: "500px"}} />
-</div>
-      </div>
-    </details>
-  </div>
-</details>
+
 یہاں zapier میں ایک سیٹ اپ ہے جو آپ کو ایک بہت ہی بنیادی خلاصہ کرنے کی اجازت دیتا ہے جیسا کہ خاکہ میں دکھایا گیا ہے۔ اس کی حد ہے، لیکن یہ کام کرتا ہے اور ایک مفید ڈیٹا بیس بنا سکتا ہے۔
 
 

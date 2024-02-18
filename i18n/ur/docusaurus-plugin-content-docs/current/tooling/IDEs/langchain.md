@@ -7,12 +7,6 @@ sidebar_position: 16
 [LangChain](https://github.com/hwchase17/langchain/) ایک ازگر کی لائبریری ہے
 جو پرامپٹس کی تعمیر اور سلسلہ بندی کے لیے مختلف فعالیت فراہم کرتا ہے۔
 
-import Image from '@site/docs/assets/tooling/langchain.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
-
 ## خصوصیات
 
 LangChain آسان فراہم کنندہ سوئچنگ کی اجازت دیتا ہے، LLMs کے ساتھ تعاملات کو معیاری بناتا ہے،

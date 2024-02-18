@@ -12,35 +12,6 @@ import ReactPlayer from 'react-player'
 
 آپ Midjourney Bot کے ساتھ [Learn Prompting Discord](https://learnprompting.org/discord) یا [آفیشل مڈجرنی ڈسکارڈ سرور](https://discord.gg/midjourney) میں تجربہ کر سکتے ہیں۔
 
-import midjourney_astronaut from '@site/docs/assets/images_chapter/midjourney_astronaut.webp';
-import midjourney_astronaut_params from '@site/docs/assets/images_chapter/midjourney_astronaut_params.webp';
-import midjourney_astronaut_multi1 from '@site/docs/assets/images_chapter/midjourney_astronaut_multi1.webp';
-import midjourney_astronaut_multi2 from '@site/docs/assets/images_chapter/midjourney_astronaut_multi2.webp';
-import midjourney_astronaut_ip2 from '@site/docs/assets/images_chapter/midjourney_astronaut_ip2.webp';
-
-import midjourney_astronaut_params_a12 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_a12.webp';
-import midjourney_astronaut_params_a169 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_a169.webp';
-
-import midjourney_astronaut_params_c20 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_c20.webp';
-import midjourney_astronaut_params_c80 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_c80.webp';
-
-import midjourney_astronaut_params_q05 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_q05.webp';
-import midjourney_astronaut_params_q2 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_q2.webp';
-
-import midjourney_astronaut_params_s50 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_s50.webp';
-import midjourney_astronaut_params_s900 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_s900.webp';
-
-import midjourney_astronaut_params_sameseed from '@site/docs/assets/images_chapter/midjourney_astronaut_params_sameseed.webp';
-import midjourney_astronaut_params_seed123 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_seed123.webp';
-
-import midjourney_astronaut_params_tile from '@site/docs/assets/images_chapter/midjourney_astronaut_params_tile.webp';
-import midjourney_astronaut_params_tilegrid from '@site/docs/assets/images_chapter/midjourney_astronaut_params_tilegrid.webp';
-import midjourney_astronaut_params_tilecomplete from '@site/docs/assets/images_chapter/midjourney_astronaut_params_tilecomplete.webp';
-
-import midjourney_astronaut_params_v1 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_v1.webp';
-import midjourney_astronaut_params_v2 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_v2.webp';
-import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/midjourney_astronaut_params_v3.webp';
-
 
 
 # بنیادی استعمال
@@ -50,16 +21,8 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 مثال کے طور پر: `/ imagine prompt: astronaut on a horse`
 
 
-<div style={{textAlign: 'center'}}>
-   <img className="img-docs" src={midjourney_astronaut} style={{width: "350px"}}/>
-</div>
-
 
 پیرامیٹرز کے ساتھ مثال: `/ imagine prompt: astronaut on a گھوڑے --ar 3:2 --c 70 --q 2 --seed 1000`
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params} style={{width: "350px"}} />
-</div>
 
 اس بنیادی مثال میں درج ذیل پیرامیٹرز استعمال کیے گئے ہیں۔
 
@@ -80,34 +43,11 @@ import midjourney_astronaut_params_v3 from '@site/docs/assets/images_chapter/mid
 ## ملٹی پرامپٹس
 Midjourney پہلے سے طے شدہ طور پر آپ کے پرامپٹ کی مکمل تشریح کرتا ہے۔ ڈبل بڑی آنت کا استعمال `::` مڈجرنی کو کہتا ہے کہ پرامپٹ کے ہر حصے کی الگ الگ تشریح کرے۔
 
-مثال:
-
-متن
-/امیجن پرامپٹ: خلاباز اور گھوڑا
-``
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi1} style={{width: "350px"}} />
-</div>
-
-متن
-/امیجن پرامپٹ: خلاباز:: اور گھوڑا
-``
-<div style={{textAlign: 'center'}}>
-    <LazyLoadImage className="img-docs" src={midjourney_astronaut_multi2} style={{width: "350px"}} />
-</div>
-
 
 ## تصویری اشارے
 Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک پرامپٹ میں استعمال کرکے، آپ Midjourney کو ہدایت دے سکتے ہیں کہ وہ اپنے نتائج کے مواد، انداز اور ساخت کو متاثر کرنے کے لیے اس تصویر کو استعمال کرے۔
 مثال:
 [خلائی مسافر (ماخذ: ویکیپیڈیا)](https://en.wikipedia.org/wiki/Astronaut#/media/File:STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_(Retouched).webp)
-
-متن
-/امیجن پرامپٹ: [تصویری یو آر ایل]، تاثر پرست پینٹنگ
-``
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_ip2} style={{width: "350px"}} />
-</div>
 
 ## پیرامیٹرز (v4)
 
@@ -119,24 +59,12 @@ Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک 
 
 مثال: گھوڑے پر خلاباز --ar 16:9` اور `Astronaut on a گھوڑے --ar 1:2`
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a169} style={{width: "350px"}} />
-   &nbsp;
-    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_a12} style={{width: "175px"}} />
-</div>
-
 
 ### افراتفری:
 
 `--c [value]` ایک افراتفری کی قدر سیٹ کرتا ہے جو اس بات کا تعین کرتا ہے کہ مڈجرنی پرامپٹ میں کتنا فرق ہوتا ہے۔ افراتفری کی قدر جتنی زیادہ ہوگی نتائج اور مرکبات اتنے ہی غیر معمولی اور غیر متوقع ہوں گے (حد: 0 - 100)
 
 مثال: 'ایک گھوڑے پر خلاباز --c20' اور 'خلائی مسافر گھوڑے پر --c 80'
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c20} style={{width: "350px"}} />
-   &nbsp;
-    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_c80} style={{width: "350px"}} />
-</div>
 
 
 ### معیار:
@@ -145,11 +73,6 @@ Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک 
 
 مثال: 'خلائی مسافر گھوڑے پر --q .5' اور 'خلائی مسافر گھوڑے پر --q 2'
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q05} style={{width: "350px"}} />
-   &nbsp;
-    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_q2} style={{width: "350px"}} />
-</div>
 
 
 ### بیج:
@@ -157,12 +80,6 @@ Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک 
 `--seed [value]` ایک سیڈ نمبر سیٹ کرتا ہے جو تصویر بنانے کے لیے نقطہ آغاز (شور فیلڈ) کی وضاحت کرتا ہے۔ ہر تصویر کے بیج تصادفی طور پر تیار کیے جاتے ہیں جب بیج پیرامیٹر کے ساتھ مخصوص نہیں کیا جاتا ہے۔ ایک ہی بیج نمبر اور پرامپٹ کا استعمال ایک جیسی تصاویر تیار کرے گا۔
 
 مثال: گھوڑے پر خلاباز --seed 123`
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
-   &nbsp;
-    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_seed123} style={{width: "350px"}} />
-</div>
 
 
 ### اسٹائلائز:
@@ -172,25 +89,11 @@ Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک 
 
 مثال: 'ایک گھوڑے پر خلاباز --s 50' اور 'خلائی مسافر گھوڑے پر --s 900'
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s50} style={{width: "350px"}} />
-   &nbsp;
-    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_s900} style={{width: "350px"}} />
-</div>
-
 
 ### ورژن:
 `--v [ورژن نمبر]` یا `--ورژن [ورژن نمبر]` آپ کو پہلے کے مڈجرنی ماڈلز تک رسائی حاصل کرنے دیتے ہیں (1-3)
 
 مثال: `--v 1`، `--v 2`، اور `--v 3`
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v1} style={{width: "220px"}} />
-   &nbsp;
-    <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v2} style={{width: "220px"}} />
-    &nbsp;
-       <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_v3} style={{width: "220px"}} />
-</div>
 
 
 ## پیرامیٹرز (پچھلے ماڈلز)
@@ -201,24 +104,12 @@ Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک 
 
 مثال: گھوڑے پر خلاباز --sameseed --v 3`
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_sameseed} style={{width: "350px"}} />
-</div>
-
 
 ### ٹائل
 
 `--ٹائل` ایسی تصاویر تیار کرتا ہے جنہیں کپڑوں، وال پیپرز اور ساخت کے لیے ہموار پیٹرن بنانے کے لیے دوبارہ ٹائل کے طور پر استعمال کیا جا سکتا ہے (صرف ماڈل 1 - 3 کے ساتھ کام کرتا ہے)
 
 مثال: گھوڑے پر خلاباز --tile --v 3`
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilegrid} style={{width: "220px"}} />
-   &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tile} style={{width: "220px"}} />
-   &nbsp;
-   <LazyLoadImage className="img-docs" src={midjourney_astronaut_params_tilecomplete} style={{width: "220px"}} />
-</div>
 
 
 ### ویڈیو
@@ -231,8 +122,6 @@ Discord پر ایک تصویر اپ لوڈ کرکے اور اس کا URL ایک 
   <source className="img-docs" src="/midjourney.mp4" type="video/mp4" />
  </video> 
 </div>
-
-
 
 
 ## لنکس

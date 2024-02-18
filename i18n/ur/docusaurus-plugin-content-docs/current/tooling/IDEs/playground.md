@@ -8,11 +8,6 @@ sidebar_position: 2
 اصل پرامپٹ انجینئرنگ ٹول جسے زیادہ تر لوگوں نے استعمال کیا ہے۔ جیسا کہ، یہ ہے
 انتہائی معروف.
 
-import Image from '@site/docs/assets/tooling/GPT3.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

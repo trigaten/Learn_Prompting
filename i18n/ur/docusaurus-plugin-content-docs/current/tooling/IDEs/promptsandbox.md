@@ -10,11 +10,6 @@ sidebar_position: 23
 
 اس [ڈیمو ویڈیو](https://www.youtube.com/watch?v=CBPw7FXtaEU) میں گائیڈڈ ٹور دیکھیں۔
 
-import Image from '@site/docs/assets/tooling/promptsandbox.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

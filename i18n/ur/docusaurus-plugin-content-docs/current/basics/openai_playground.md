@@ -4,13 +4,6 @@ sidebar_position: 97
 
 # 🟢 اوپن اے آئی پلے گراؤنڈ
 
-<!-- import Playground from '@site/docs/assets/basics/openai_playground.webp'; -->
-import Playground from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/openai_playground.webp';
-
-<div style={{textAlign: 'center'}}>
-    <img src={Playground} className="img-docs" style={{width: "80%"}}/>
-</div>
-<br/>
 
 :::takeaways
 - اوپن اے آئی پلے گراؤنڈ ترتیب دیں۔
@@ -44,16 +37,11 @@ import Playground from '@site/i18n/ur/docusaurus-plugin-content-docs/current/ass
 
 ### موڈ
 
-<!-- import Mode from '@site/docs/assets/basics/openai_mode.webp'; -->
-import Mode from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/openai_mode.webp';
-
 <div className="flex flex-col sm:flex-row justify-between">
   <div>
     صفحہ کے اوپری بائیں جانب 'اسسٹنٹ' ڈراپ ڈاؤن پر کلک کریں۔ یہ ڈراپ ڈاؤن آپ کو اس ماڈل کی قسم کو تبدیل کرنے کی اجازت دیتا ہے جسے آپ استعمال کر رہے ہیں۔ OpenAI کے تین مختلف موڈز ہیں: <code>اسسٹنٹ</code>، <code>Chat</code>، اور <code>مکمل</code>۔ ہم پہلے ہی دو آخری کے بارے میں جان چکے ہیں۔ <code>اسسٹنٹ</code> ماڈلز کا مقصد ڈویلپرز کے API کے استعمال کے لیے ہوتا ہے اور یہ دلچسپ ٹولز استعمال کر سکتے ہیں جیسے کوڈ کو چلانے اور معلومات کی بازیافت کرنا۔ ہم اس کورس میں صرف <code>Chat</code> اور کبھی کبھار <code>مکمل</code> ماڈل استعمال کریں گے۔
   </div>
-  <div className="mt-4 sm:mt-0 sm:ml-auto">
-    <img src={Mode} className="img-docs w-20 sm:w-auto" />
-  </div>
+
 </div>
 
 ### سسٹم پرامپٹس
@@ -62,26 +50,16 @@ import Mode from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/ba
 
 پرائمنگ پرامپٹ لگانے کے لیے یہ بہترین جگہ ہے۔ سسٹم پرامپٹ ہوگا "آپ ایک مددگار معاون ہیں۔" پہلے سے طے شدہ طور پر، لیکن آزمانے کے لیے ایک تفریحی متبادل مثال یہ ہوگی کہ "آپ PirateGPT ہیں۔ ہمیشہ سمندری ڈاکو کی طرح بات کریں۔" مثال [ہمارے پچھلے سبق] سے (https://learnprompting.org/docs/basics/priming_prompt)۔
 
-<!-- import system_prompt from '@site/docs/assets/basics/openai_system_prompt.webp'; -->
-import system_prompt from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/openai_system_prompt.webp';
 
-<div style={{textAlign: 'center'}}>
-    <img src={system_prompt} className="img-docs" style={{width: "80%"}}/>
-</div>
-<br/>
 
 ### ماڈل
 
-<!-- import Model from '@site/docs/assets/basics/openai_model.webp'; -->
-import Model from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/openai_model.webp';
+
 
 <div className="flex flex-col sm:flex-row justify-between">
   <div>
   صفحہ کے دائیں جانب ماڈل ڈراپ ڈاؤن پر کلک کریں۔ یہ ڈراپ ڈاؤن آپ کو اس ماڈل کو تبدیل کرنے کی اجازت دیتا ہے جسے آپ استعمال کر رہے ہیں۔ ہر موڈ میں متعدد ماڈلز ہوتے ہیں، لیکن ہم چیٹ والوں پر توجہ مرکوز کریں گے۔ یہ فہرست بہت پیچیدہ معلوم ہوتی ہے (gpt-3.5-turbo کا کیا مطلب ہے؟)، لیکن یہ مختلف ماڈلز کے صرف تکنیکی نام ہیں۔ کوئی بھی چیز جو gpt-3.5-turbo سے شروع ہوتی ہے وہ ChatGPT کا ایک ورژن ہے، جب کہ کوئی بھی چیز جو gpt-4 سے شروع ہوتی ہے وہ GPT-4 کا ورژن ہے، جس نئے ماڈل تک آپ کو ChatGPT Plus سبسکرپشن خریدنے سے رسائی حاصل ہوتی ہے۔
 
-  </div>
-  <div className="mt-4 sm:mt-0 sm:ml-auto">
-    <img src={Model} className="img-docs w-20 sm:w-auto" />
   </div>
 </div>
 

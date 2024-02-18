@@ -6,60 +6,12 @@ sidebar_position: 90
 
 شاٹ کی کئی قسمیں ہیں، جن میں سے ہر ایک اپنے منفرد مقصد کو پورا کرتا ہے۔ کچھ عام مثالوں میں لانگ شاٹ، میڈیم شاٹ، برڈ آئی شاٹ، اور لو اینگل شاٹ شامل ہیں۔
 
-import bird_eye_shot from '@site/docs/assets/images_chapter/bird_eye_shot.webp';
-import close_up_shot from '@site/docs/assets/images_chapter/close_up_shot.webp';
-import extreme_long_shot from '@site/docs/assets/images_chapter/extreme_long_shot.webp';
-import high_angle_shot from '@site/docs/assets/images_chapter/high_angle_shot.webp';
-import long_shot from '@site/docs/assets/images_chapter/long_shot.webp';
-import low_angle_shot from '@site/docs/assets/images_chapter/low_angle_shot.webp';
-import medium_shot from '@site/docs/assets/images_chapter/medium_shot.webp';
-import wide_shot from '@site/docs/assets/images_chapter/wide_shot.webp';
 
 # مثال
 
 پرامپٹ: گلی میں کھڑا خلاباز، شاٹ کی قسم، HD، 4K، --کوئی دھندلا نہیں، --کوئی مسخ نہیں۔
 
 شاٹ کی قسم کو مطلوبہ شاٹ ٹائپ سے بدل دیں۔
-
-<div>
-  <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
-    <div style={{ textAlign: 'center' }}>
-      <img src={extreme_long_shot} style={{ width: '250px' }}/>
-      <p>Long Shot</p>
-    </div>
-    <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={long_shot} style={{ width: '250px' }} />
-      <p>Long Shot</p>
-    </div>
-    <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={high_angle_shot} style={{ width: '250px' }} />
-      <p>High-angle Shot</p>
-    </div>
-    <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={low_angle_shot} style={{ width: '250px' }} />
-      <p>Low-angle Shot</p>
-    </div>
-  </div>
-  <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={wide_shot} style={{ width: '250px' }} />
-      <p>Wide Shot</p>
-    </div>
-    <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={bird_eye_shot} style={{ width: '250px' }} />
-      <p>Bird-eye Shot</p>
-    </div>
-    <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={medium_shot} style={{ width: '250px' }} />
-      <p>Medium Shot</p>
-    </div>
-    <div style={{ textAlign: 'center' }}>
-      <LazyLoadImage src={close_up_shot} style={{ width: '250px' }} />
-      <p>Close-up Shot</p>
-    </div>
-  </div>
-</div>
-
 
 
 یہاں عام طور پر استعمال ہونے والی شاٹ کی اقسام کی فہرست ہے:

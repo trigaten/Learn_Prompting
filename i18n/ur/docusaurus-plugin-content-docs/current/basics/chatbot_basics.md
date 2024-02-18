@@ -4,14 +4,6 @@ sidebar_position: 94
 
 # 🟢 چیٹ بوٹس
 
-
-<!-- import Chatbots from '@site/docs/assets/basics/chatbot.svg'; -->
-import Chatbots from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/chatbot.svg';
-
-
-<div style={{textAlign: 'center'}}>
-  <Chatbots style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
-</div>
 <br/>
 
 :::takeaways

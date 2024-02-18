@@ -19,13 +19,6 @@ sidebar_position: 40
 
 یہاں ایک **تصویر** ہے کہ ایمبیڈ کیسا لگتا ہے:
 
-<!-- import lp_embed from '@site/docs/assets/basics/lp_embed.webp';
-import key from '@site/docs/assets/basics/API_key.webp'; -->
-
-import lp_embed from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/lp_embed.webp';
-import key from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/API_key.webp';
-
-<img src={lp_embed} class="img-docs" style={{width: "100%"}}/>
 
 
 آپ کو ایک ایمبیڈ دیکھنے کے قابل ہونا چاہئے جو بالکل اس پیراگراف کے نیچے تصویر کی طرح نظر آتا ہے۔ اگر یہ نظر نہیں آ رہا ہے، تو آپ کو JavaScript کو فعال کرنے یا مختلف براؤزر استعمال کرنے کی ضرورت پڑ سکتی ہے۔ اگر آپ اب بھی اسے نہیں دیکھ سکتے ہیں، تو [Discord](https://discord.com/invite/learn-prompting) میں شامل ہوں اور ہمیں اپنے مسئلے کے بارے میں بتائیں۔
@@ -44,10 +37,6 @@ import key from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/bas
 - پہلے، [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) پر جائیں
 - پھر، اپنے OpenAI اکاؤنٹ کے لیے سائن اپ کریں یا سائن ان کریں۔
 - **نئی خفیہ کلید بنائیں** بٹن پر کلک کریں۔ یہ ایک موڈل کو پاپ اپ کرے گا جس میں ٹیکسٹ کی ایک تار اس طرح ہے:
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={key} class="img-docs" style={{width: "80%"}} />
-</div>
 
 - اس کلید کو اس ویب سائٹ پر ایمبیڈ میں کاپی اور پیسٹ کریں اور **جمع کرائیں** پر کلک کریں۔
 

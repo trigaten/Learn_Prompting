@@ -8,11 +8,6 @@ sidebar_position: 3
 گرافیکل انٹرفیس کے ساتھ بصری پرامپٹ چیننگ پر توجہ مرکوز کرتا ہے۔ یہ فی الحال میں ہے۔
 بیٹا، لیکن فعال ترقی رک گئی ہے۔
 
-import Image from '@site/docs/assets/tooling/soaked.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

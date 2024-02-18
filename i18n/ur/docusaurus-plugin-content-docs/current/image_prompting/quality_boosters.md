@@ -6,24 +6,16 @@ sidebar_position: 5
 کوالٹی بوسٹرز (@oppenlaender2022taxonomy) وہ اصطلاحات ہیں جو بہتری کے لیے فوری طور پر شامل کی جاتی ہیں
 تخلیق کردہ تصویر کی کچھ غیر طرز کی مخصوص خصوصیات۔ مثال کے طور پر "حیرت انگیز"، "خوبصورت"، اور "اچھی کوالٹی" سبھی کوالٹی بوسٹرز ہیں جن کو تیار کردہ تصویر کے معیار کو بہتر بنانے کے لیے استعمال کیا جا سکتا ہے۔
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
-import special_pyramids from '@site/docs/assets/images_chapter/special_pyramids.webp';
 
 # مثال
 
 دوسرے صفحے سے DALLE کے ساتھ تیار کردہ اہرام، اور پرامپٹ `اہرام` یاد کریں۔
 
-<div style={{textAlign: 'center'}}>
-   <img className="img-docs" src={pyramids} style={{width: "750px"}}/>
-</div>
 
 اب اس پرامپٹ کے ساتھ پیدا ہونے والے اہرام پر جائیں:
 
 <AIInput>ایک خوبصورت، شاندار، ناقابل یقین اہرام، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={special_pyramids} style={{width: "750px"}} />
-</div>
 
 یہ بہت زیادہ قدرتی اور متاثر کن ہیں!
 

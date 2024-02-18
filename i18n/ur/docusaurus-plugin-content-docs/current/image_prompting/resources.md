@@ -4,7 +4,7 @@ sidebar_position: 100
 
 # 🟢 وسائل
 
-امیج پرامپٹ انجینئرنگ فیلڈ بہت متنوع ہے۔ یہاں کی ایک اچھی فہرست ہے۔
+امیج پرامپٹ انجینئرنگ فیلڈ بہت ٹیکسٹوع ہے۔ یہاں کی ایک اچھی فہرست ہے۔
 وسائل جو اس کے کچھ حصوں کا احاطہ کرتے ہیں۔
 
 - [List of resources](https://dallery.gallery/prompt-resources-tools-ai-art/) from DALLE Gallery

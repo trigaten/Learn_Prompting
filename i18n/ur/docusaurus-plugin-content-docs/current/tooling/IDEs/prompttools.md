@@ -7,11 +7,6 @@ sidebar_position: 7
 [PromptTools](https://github.com/hegelai/prompttools/) کے لیے ایک اوپن سورس لائبریری ہے
 پرامپٹس، LLMs، اور ویکٹر ڈیٹا بیس کے ساتھ تجربہ کرنا، جانچنا اور جانچنا۔
 
-import Image from '@site/docs/assets/tooling/prompttools.gif';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

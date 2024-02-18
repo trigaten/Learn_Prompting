@@ -4,14 +4,6 @@ sidebar_position: 105
 # 🟢 اے آئی دماغوں کو سمجھنا
 
 
-<!-- import Brain from '@site/docs/assets/basics/brain.svg'; -->
-import Brain from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/brain.svg';
-
-<div style={{textAlign: 'center'}}>
-  <Brain style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
-</div>
-<br/>
-
 :::takeaways
 - AIs کی بہت سی مختلف اقسام ہیں۔
 - ایل ایل ایم کے کام کرنے کے طریقے کی بنیادی باتیں

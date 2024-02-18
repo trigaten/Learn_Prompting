@@ -4,11 +4,6 @@ sidebar_position: 5
 
 # 🟡 خود مستقل مزاجی
 
-import SCImage from '@site/docs/assets/reliability/self_consistency.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={SCImage} style={{width: "500px"}}/>
-</div>
 
 Self-consistency(@wang2022selfconsistency) ایک نقطہ نظر ہے جو صرف ایک ماڈل سے ایک ہی پرامپٹ کو متعدد بار پوچھتا ہے اور اکثریتی نتیجہ کو حتمی جواب کے طور پر لیتا ہے۔ یہ %%CoT|CoT prompting%% تک فالو اپ ہے، اور اس کے ساتھ استعمال ہونے پر زیادہ طاقتور ہوتا ہے۔
 

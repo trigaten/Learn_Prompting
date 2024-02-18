@@ -8,11 +8,7 @@ sidebar_position: 5
 جو سنگل پرامپٹ تکرار کے لیے پیشہ ورانہ انٹرفیس فراہم کرتا ہے۔
 
 
-import Image from '@site/docs/assets/tooling/everyprompt.webp';
 
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

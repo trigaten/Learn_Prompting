@@ -6,11 +6,6 @@ sidebar_position: 1
 
 پرامپٹ ٹیوننگ (@lester2021power)، ماڈل فائن ٹیوننگ (@khashabi2021prompt) کا متبادل، ماڈل کے وزن کو منجمد کرتی ہے، اور پرامپٹ کے پیرامیٹرز کو اپ ڈیٹ کرتی ہے۔ نتیجہ خیز پرامپٹ ایک 'سافٹ پرامپٹ' ہے۔
 
-import Image from '@site/docs/assets/trainable/prompt_tuning.webp';
-
-<div style={{textAlign: 'center'}}>
-   <img src={Image} اسٹائل={{چوڑائی: "500px"}}/>
-</div>
 
 <div style={{textAlign: 'center'}}>
 ماڈل ٹیوننگ بمقابلہ پرامپٹ ٹیوننگ (لیسٹر وغیرہ)

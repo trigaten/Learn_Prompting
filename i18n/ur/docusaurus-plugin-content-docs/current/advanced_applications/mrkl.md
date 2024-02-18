@@ -49,23 +49,6 @@ MRKL سسٹم لفظ `CALCULATOR` دیکھے گا اور `100*100` کو کیلک
 درج ذیل:
 
 
-import mrkl_task from '@site/docs/assets/advanced/mrkl_task.webp';
-import dataset from '@site/docs/assets/advanced/mrkl/dataset.webp';
-import load_dataset from '@site/docs/assets/advanced/mrkl/load_dataset.webp';
-import model from '@site/docs/assets/advanced/mrkl/model.webp';
-import extract from '@site/docs/assets/advanced/mrkl/extract.webp';
-import search from '@site/docs/assets/advanced/mrkl/search.webp';
-import final from '@site/docs/assets/advanced/mrkl/final.webp';
-
-<div style={{textAlign: 'center'}}>
-   <img src={mrkl_task} اسٹائل={{چوڑائی: "500px"}}/>
-</div>
-
-<div style={{textAlign: 'center'}}>
-مثال MRKL سسٹم (AI21)
-</div>
-
-
 ## ایک مثال
 
 میں نے Dust.tt کا استعمال کرتے ہوئے اصل کاغذ سے ایک مثال MRKL سسٹم کو دوبارہ پیش کیا ہے،
@@ -77,42 +60,21 @@ Google کی کیلکولیٹر ایپ پر، اور نتیجہ واپس کرتا
 سب سے پہلے، میں نے Dust `Datasets` ٹیب میں ایک سادہ ڈیٹا سیٹ بنایا۔
 
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={dataset} style={{width: "750px"}} />
-</div>
-
 پھر، میں نے 'Specification' ٹیب پر سوئچ کیا اور ایک 'ان پٹ' بلاک کا استعمال کرتے ہوئے ڈیٹاسیٹ کو لوڈ کیا۔
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={load_dataset} style={{width: "750px"}} />
-</div>
 
 اگلا، میں نے ایک `llm` بلاک بنایا جو نمبرز اور آپریشنز کو نکالتا ہے۔ نوٹ کریں کہ کیسے
 پرامپٹ میں میں نے اسے بتایا کہ ہم گوگل کا کیلکولیٹر استعمال کریں گے۔ میں جو ماڈل استعمال کرتا ہوں (GPT-3)
 ممکنہ طور پر گوگل کے کیلکولیٹر کے بارے میں پہلے سے تربیت کے بارے میں کچھ علم ہے۔
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={model} style={{width: "750px"}} />
-</div>
-
 پھر، میں نے ایک `کوڈ` بلاک بنایا، جو ہٹانے کے لیے کچھ آسان جاوا اسکرپٹ کوڈ چلاتا ہے۔
 تکمیل سے خالی جگہیں.
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={extract} style={{width: "750px"}} />
-</div>
 
 آخر میں، میں نے ایک 'تلاش' بلاک بنایا جو گوگل کے کیلکولیٹر کو دوبارہ فارمیٹ شدہ مساوات بھیجتا ہے۔
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={search} style={{width: "750px"}} />
-</div>
 
 ذیل میں ہم حتمی نتائج دیکھ سکتے ہیں، جو سب درست ہیں!
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={final} style={{width: "750px"}} />
-</div>
 
 [یہاں] (https://dust.tt/w/ddebdfcdde/a/98bdd65cb7) اس کھیل کے میدان کے ساتھ کلون اور تجربہ کرنے کے لیے آزاد محسوس کریں۔
 

@@ -4,13 +4,6 @@ sidebar_position: 101
 
 # 🟢 ایل ایل ایم کے نقصانات
 
-<!-- import Pitfalls from '@site/docs/assets/basics/pitfalls.svg'; -->
-import Pitfalls from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/pitfalls.svg';
-
-<div style={{textAlign: 'center'}}>
-  <Pitfalls style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
-</div>
-<br/>
 
 :::takeaways
 - ایل ایل ایم کے تعصبات اور مسائل کو سمجھیں۔

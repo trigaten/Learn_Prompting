@@ -13,16 +13,6 @@ ChatGPT پلک جھپکنے میں مواد تیار کرنے کے لیے بدن
 بعض اوقات، آپ ChatGPT سے کسی بھی اضافی ٹیکسٹ میں چسپاں کیے بغیر مشہور کاموں کا خلاصہ کرنے کے لیے کہہ سکتے ہیں، کیونکہ ChatGPT کام کو اچھی طرح جانتا ہے۔ مثال کے طور پر، آپ اس سے "رومیو اینڈ جولیٹ" کو ایکٹ کے ذریعے خلاصہ کرنے کے لیے کہہ سکتے ہیں۔ لہٰذا، ڈرامے کے 24,000 الفاظ کے ذریعے نعرے لگانے کے بجائے، آپ 300 یا اس سے کم میں خلاصہ حاصل کر سکتے ہیں۔
 
 
-import outline1 from '@site/docs/assets/basic_applications/summarizing/Romeo_and_Juliet_Act_by_Act_1.webp';
-import quantum from '@site/docs/assets/basic_applications/summarizing/Quantum_Entanglement.webp';
-
-import rope from '@site/docs/assets/basic_applications/summarizing/Outline_1.webp';
-import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.webp';
-
-<div style={{textAlign: 'left'}}>
-  <img src={outline1} style={{width: "750px"}}/>
-</div>
-
 اگرچہ آپ اس کے بجائے ایک خلاصہ تلاش کر سکتے ہیں، ChatGPT مواد کو آپ کی ضروریات کے مطابق بنا سکتا ہے۔ ہوسکتا ہے کہ آپ واقعی فٹ بال کو پسند کریں، لہذا آپ بطور چیٹ جی پی ٹی کرسکتے ہیں۔
 "مجھے امریکی فٹ بال کی اصطلاح میں 'رومیو اور جولیٹ' کا 100 الفاظ کا خلاصہ دیں۔"
 
@@ -32,21 +22,10 @@ import rope2 from '@site/docs/assets/basic_applications/summarizing/Outline_2.we
 یہ لکھ کر منتخب کردہ ٹیکسٹ کا ایک آسان خلاصہ طلب کریں، "اس کا خلاصہ میرے لیے اس طرح کریں جیسے میں 5 سال کا ہوں: [ٹیکسٹ یہاں چسپاں کریں]"
 یہ وکی پیڈیا کے اندراج کے ایک حصے سے "5 سالہ بچے کے لیے" کا خلاصہ ہے۔ “[quantum entanglement](https://en.wikipedia.org/wiki/Quantum_entanglement#:~:text=vte-,Quantum%20entanglement,-is%20the%20phenomenon)”. 
 
-<div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={quantum} style={{width: "750px"}} />
-</div>
-
 خلاصوں کے علاوہ، آپ ChatGPT سے ٹیکسٹ کے بلاکس کے لیے خاکہ لکھنے کے لیے بھی کہہ سکتے ہیں۔ بعض اوقات ایک خاکہ رکھنا بہتر ہوتا ہے تاکہ آپ پورے مضمون کا تھریڈ یا فریم ورک دیکھ سکیں۔
 آپ کو صرف اس ٹیکسٹ کو کاپی اور پیسٹ کرنے کی ضرورت ہے جسے آپ اپنے پرامپٹ میں بیان کرنا چاہتے ہیں۔
 "رسی" پر ویکیپیڈیا کے صفحے پر ChatGPT کا خاکہ درج ذیل ہے، خاص طور پر اس کی تاریخ پر [rope](https://en.wikipedia.org/wiki/Rope#:~:text=to%20pull%20ropes.-,History,-Ancient%20Egyptians%20were).
 
-<div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={rope} style={{width: "750px"}} />
-</div>
-
-<div style={{textAlign: 'left'}}>
-  <LazyLoadImage src={rope2} style={{width: "750px"}} />
-</div>
 
 ہم نے ابھی طویل ٹیکسٹ کو ہینڈل کرنے کے لیے ChatGPT استعمال کرنے کی کچھ بنیادی باتوں کا احاطہ کیا ہے۔ ٹیکسٹ کا خلاصہ اور خاکہ بنانے کے لیے ChatGPT استعمال کرنے کے اور بھی بہت سے طریقے ہیں!
 

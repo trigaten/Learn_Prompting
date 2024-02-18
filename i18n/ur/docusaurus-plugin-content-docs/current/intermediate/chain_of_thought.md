@@ -11,16 +11,6 @@ style: chicago
 سوچ کے پرامپٹ (دائیں) کی زنجیر کے مقابلے میں %% چند شاٹ اسٹینڈرڈ پرامپٹ| چند شاٹ اسٹینڈرڈ پرامپٹ%% (بائیں) دکھاتا ہے۔
 
 
-import CoTExample from '@site/docs/assets/basics/chain_of_thought_example.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={CoTExample} style={{width: "750px"}}/>
-</div>
-
-<div style={{textAlign: 'center'}}>
-ریگولر پرمپٹنگ بمقابلہ CoT (Wei et al.)
-</div>
-
 CoT کا بنیادی خیال یہ ہے کہ LLM کو کچھ شاٹ دکھا کر %%exemplars|exemplars%% جہاں استدلال
 عمل کی وضاحت مثالوں میں کی گئی ہے، LLM استدلال کا عمل بھی دکھائے گا۔
 پرامپٹ کا جواب دیتے وقت استدلال کی یہ وضاحت اکثر زیادہ درست ہونے کی طرف لے جاتی ہے۔
@@ -53,12 +43,6 @@ CoT جیسے کاموں پر نتائج کو بہتر بنانے میں موثر
 ریاضی، کامن سینس، اور علامتی استدلال کے کام (@wei2022chain)۔
 خاص طور پر، حوصلہ افزائی کی گئی PaLM 540B(@chowdhery2022palm) 57% حل حاصل کرتی ہے
 GSM8K(@cobbe2021training) (اس وقت SOTA) پر شرح کی درستگی۔
-
-import PromptedPaLM from '@site/docs/assets/intermediate/prompted_palm.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={PromptedPaLM} style={{width: "300px"}} />
-</div>
 
 <div style={{textAlign: 'center'}}>
 GSM8K بینچ مارک پر ماڈلز کا موازنہ (Wei et al.)

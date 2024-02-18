@@ -110,32 +110,11 @@ sidebar_position: 7
 
 اگرچہ مندرجہ بالا استعمال کا معاملہ اسی طرح کا تھا جس طرح پیدا شدہ علم کو اصل میں متعارف کرایا گیا تھا، یہ بالکل ایک جیسا نہیں ہے۔ مندرجہ ذیل مواد زیادہ تکنیکی سیاق و سباق کا احاطہ کرتا ہے جس میں نقطہ نظر متعارف کرایا گیا تھا۔ یہ دو درمیانی مراحل کی پیروی کرتا ہے (علم پیدا کرنا اور علم کا انضمام) جو ہم نے اوپر دیکھا۔
 
-import KGImage from '@site/docs/assets/intermediate/knowledge_generation.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={KGImage} style={{width: "750px"}}/>
-</div>
-
-<div style={{textAlign: 'center'}}>
-Generated Knowledge (Liu et al.)
-</div>
-
 ### نالج جنریشن
 
 علم پیدا کرنے کے مرحلے میں، %%LLM|LLM%% سے حقائق کا ایک مجموعہ تیار کرنے کو کہا جاتا ہے۔
 **سوال** کے بارے میں۔ ایل ایل ایم کو چند شاٹ انداز میں اشارہ کیا گیا ہے جیسا کہ ذیل میں دیکھا گیا ہے۔
 اسی پرامپٹ (خود مستقل مزاجی کے نقطہ نظر کی طرح) کا استعمال کرتے ہوئے M مختلف تکمیلات تیار کی جاتی ہیں۔
-
-import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={KGP1Image} style={{width: "500px"}} />
-</div>
-
-<div style={{textAlign: 'center'}}>
-تخلیق کردہ علم کی مثال (Liu et al.)
-</div>
-
 
 ### نالج انٹیگریشن
 
@@ -170,12 +149,6 @@ import KGP1Image from '@site/docs/assets/intermediate/gen_k_p1.webp';
 
 تلاوت سے بڑھا ہوا (@sun2022recitationaugmented) نقطہ نظر پیدا شدہ علم (بنیادی طور پر ایک جیسا) ہے۔ تاہم، پیدا شدہ علم کے باضابطہ نفاذ سے بہت کم پیچیدہ ہے۔
 
-
-import RImage from '@site/docs/assets/intermediate/recitation.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={RImage} style={{width: "250px"}} />
-</div>
 
 یہاں خیال یہ ہے کہ ایل ایل ایم کو معلومات *اور* جواب *اسی* قدم میں پیدا کرنے کے لیے چند شاٹ پرامپٹ کریں۔ حقیقت یہ ہے کہ یہ علم کی تلاوت/پیداوار کر رہا ہے اور ایک ہی مرحلے میں سوال کا جواب دے رہا ہے، پیدا شدہ علم کے نقطہ نظر سے بنیادی فرق ہے۔
 

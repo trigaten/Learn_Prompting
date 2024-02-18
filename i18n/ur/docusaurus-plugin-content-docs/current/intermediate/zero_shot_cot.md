@@ -12,30 +12,11 @@ sidebar_position: 4
 سوچا کہ سوال کا جواب دیتا ہے. اس زنجیر فکر سے وہ اس قابل ہیں۔
 مزید درست جوابات نکالیں۔
 
-import ZSImage from '@site/docs/assets/intermediate/zero_shot.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={ZSImage} style={{width: "500px"}}/>
-</div>
-
-<div style={{textAlign: 'center'}}>
-زیرو شاٹ کوٹ (کوجیما وغیرہ)
-</div>
 
 تکنیکی طور پر، مکمل Zero-shot-CoT عمل میں دو الگ الگ پرامپٹ/ تکمیلات شامل ہیں۔
 نیچے کی تصویر میں، بائیں طرف اوپر والا بلبلہ سوچ کا ایک سلسلہ پیدا کرتا ہے، جبکہ اوپر والا بلبلہ
 دائیں پہلے پرامپٹ سے آؤٹ پٹ لیتا ہے (بشمول پہلا پرامپٹ خود)
 اور سوچ کی زنجیر سے جواب نکالتا ہے۔ یہ دوسرا پرامپٹ ایک _self augmented_ prompt ہے۔
-
-import ZSProcessImage from '@site/docs/assets/intermediate/zero_shot_example.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={ZSProcessImage} style={{width: "500px"}} />
-</div>
-
-<div style={{textAlign: 'center'}}>
-مکمل زیرو شاٹ CoT عمل (Kojima et al.)
-</div>
 
 ## مثال
 

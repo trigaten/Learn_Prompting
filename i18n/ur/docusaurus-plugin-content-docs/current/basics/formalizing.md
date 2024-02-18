@@ -4,13 +4,6 @@ sidebar_position: 90
 
 # 🟢 فارمولائزنگ پرامپٹ 
 
-<!-- import FormalPrompt from '@site/docs/assets/basics/formal_prompt.svg'; -->
-import FormalPrompt from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/formal_prompt.svg';
-
-<div style={{textAlign: 'center'}}>
-  <FormalPrompt style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
-</div>
-<br/>
 
 :::takeaways
 - ایک پرامپٹ کے بنیادی حصوں کو سمجھیں۔

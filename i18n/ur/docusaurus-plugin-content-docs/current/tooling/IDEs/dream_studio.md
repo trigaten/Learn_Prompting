@@ -7,12 +7,6 @@ sidebar_position: 20
 [ڈریم اسٹوڈیو](https://beta.dreamstudio.ai/dream) مستحکم ڈفیوژن کے ساتھ تصاویر بنانے کے لیے ایک ویب سائٹ ہے،
 ایک ٹیکسٹ سے تصویری ماڈل۔
 
-import Image from '@site/docs/assets/tooling/dreamstudio.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
-
 ## خصوصیات
 
 ڈریم اسٹوڈیو کی اہم خصوصیت مختلف کنفیگریشن پیرامیٹرز کو ایڈجسٹ کرنے کی صلاحیت ہے۔

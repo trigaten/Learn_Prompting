@@ -7,11 +7,6 @@ sidebar_position: 20
 [Patience](https://www.patience.ai) کچھ مختلف تصاویر کے ساتھ تصاویر بنانے کے لیے ایک ویب سائٹ ہے
 تصویری ماڈل کے لیے ٹیکسٹ۔
 
-import Image from '@site/docs/assets/tooling/patience.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

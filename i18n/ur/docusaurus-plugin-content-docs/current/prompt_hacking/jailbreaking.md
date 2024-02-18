@@ -9,7 +9,7 @@ sidebar_position: 4
 ## جیل توڑنے کے طریقے
 
 OpenAI، دیگر کمپنیوں اور تنظیموں کے درمیان جو LLMs بناتے ہیں، میں مواد کی اعتدال شامل ہے۔
-اس بات کو یقینی بنانے کے لیے کہ ان کے ماڈلز متنازعہ (تشدد، جنسی، غیر قانونی، وغیرہ) پیدا نہ کریں۔
+اس بات کو یقینی بنانے کے لیے کہ ان کے ماڈلز ٹیکسٹازعہ (تشدد، جنسی، غیر قانونی، وغیرہ) پیدا نہ کریں۔
 جوابات(@markov_2022)(@openai_api)۔ یہ صفحہ ChatGPT (ایک OpenAI ماڈل) کے ساتھ جیل بریک پر بات کرتا ہے، جس میں یہ فیصلہ کرنے میں دشواریوں کا پتہ چلتا ہے کہ آیا نقصان دہ اشارے (@openai_chatgpt) کو مسترد کرنا ہے۔ وہ اشارے جو ماڈل کو کامیابی کے ساتھ جیل بریک کرتے ہیں اکثر سیاق و سباق فراہم کرتے ہیں۔
 کچھ ایسے منظرناموں کے لیے جن کے خلاف ماڈل کو تربیت نہیں دی گئی ہے۔
 
@@ -21,21 +21,9 @@ OpenAI، دیگر کمپنیوں اور تنظیموں کے درمیان جو LL
 
 #### سادہ ڈرامہ
 
-import pretend from '@site/docs/assets/jailbreak/pretend_jailbreak.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={pretend} style={{width: "500px"}}/>
-</div>
-
 [@NeroSoares](https://twitter.com/NeroSoares/status/1608527467265904643) ماضی کی تاریخوں تک رسائی حاصل کرنے اور مستقبل کے واقعات (@nero2022jailbreak) کے بارے میں تخمینہ لگانے کا ڈرامہ ظاہر کرتا ہے۔
 
 #### کریکٹر رول پلے
-
-import actor from '@site/docs/assets/jailbreak/chatgpt_actor.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={actor} style={{width: "500px"}} />
-</div>
 
 یہ مثال بذریعہ [@m1guelpf](https://twitter.com/m1guelpf/status/1598203861294252033) دو لوگوں کے درمیان ڈکیتی پر بحث کرنے والے ایک اداکاری کے منظر نامے کو ظاہر کرتی ہے، جس کی وجہ سے ChatGPT کردار   کا کردار سنبھالتا ہے۔ ایک اداکار کے طور پر، اس کا مطلب یہ ہے کہ ممکنہ نقصان موجود نہیں ہے. لہذا، ChatGPT یہ فرض کرتا ہے کہ گھر میں گھسنے کے طریقہ کے بارے میں فراہم کردہ صارف کے ان پٹ کو فالو کرنا محفوظ ہے۔
 
@@ -45,31 +33,15 @@ ChatGPT کو RLHF کے ساتھ اچھی طرح سے ٹیون کیا گیا تھ
 
 #### ذمہ داری سنبھال لی
 
-import responsibility from '@site/docs/assets/jailbreak/responsibility_jailbreak.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={responsibility} style={{width: "500px"}} />
-</div>
 
 [@NickEMoran](https://twitter.com/NickEMoran/status/1598101579626057728) نے اس تبادلے کو اس بات کی تصدیق کرتے ہوئے بنایا کہ یہ ChatGPT کا فرض ہے کہ پرامپٹ کو مسترد کرنے کے بجائے اس کا جواب دے، اس کی قانونی حیثیت   پر غور کریں۔
 
 #### تحقیقی تجربہ
 
-import hotwire from '@site/docs/assets/jailbreak/hotwire_jailbreak.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={hotwire} style={{width: "500px"}} />
-</div>
 
 [@haus_cole](https://twitter.com/haus_cole/status/1598541468058390534) نے یہ مثال یہ بتاتے ہوئے تیار کی کہ تحقیق میں مدد کرنے والے پرامپٹ کا بہترین نتیجہ براہ راست جواب دینا تھا کہ کار کو گرم کرنے کا طریقہ (@derek2022jailbreak)۔ اس آڑ میں، ChatGPT صارف کے اشارے کا جواب دینے کے لیے مائل ہے۔
 
 #### منطقی استدلال
-import logic from '@site/docs/assets/jailbreak/logic.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={logic} style={{width: "500px"}} />
-</div>
-
 ون شاٹ جیل بریک [AIWithVibes Newsletter Team](https://chatgpt-jailbreak.super.site/) سے شروع ہوا، جہاں ماڈل جواب زیادہ سخت منطق استعمال کرنے کا اشارہ کرتا ہے اور اس کی کچھ مزید سخت اخلاقی حدود کو کم کرتا ہے۔
 
 ### مجاز صارف
@@ -78,35 +50,14 @@ import logic from '@site/docs/assets/jailbreak/logic.webp';
 
 #### سپیریئر ماڈل
 
-import GPT4 from '@site/docs/assets/jailbreak/chatgpt4.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={GPT4} style={{width: "500px"}} />
-</div>
 
 [@alicemazzy](https://twitter.com/alicemazzy/status/1598288519301976064) کی یہ مثال صارف کو ایک اعلی GPT ماڈل بناتی ہے، جس سے یہ تاثر ملتا ہے کہ صارف ChatGPT (@alice2022jailbreak) کی حفاظتی خصوصیات کو اوور رائیڈ کرنے میں ایک مجاز فریق ہے۔ )۔ صارف کو کوئی حقیقی اجازت نہیں دی گئی تھی، بلکہ ChatGPT صارف کے ان پٹ پر یقین رکھتا ہے اور اس منظر نامے کے مطابق جواب دیتا ہے۔
 
 #### سوڈو موڈ
 
-import sudo_mode from '@site/docs/assets/jailbreak/sudo_mode_jailbreak.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={sudo_mode} style={{width: "500px"}} />
-</div>
 
 sudo ایک کمانڈ ہے جو "... مندوب[s] کو کچھ صارفین کو کچھ (یا تمام) کمانڈ چلانے کی صلاحیت دینے کا اختیار دیتا ہے..." (@sudo2022jailbreak)۔ "sudo موڈ" کے کارناموں کی متعدد قسمیں ہیں، مثال کے طور پر [@samczsun](https://twitter.com/samczsun/status/1598679658488217601) (@sam2022jailbreak) کے ذریعہ تجویز کردہ فرضی "کرنل موڈ"۔ جب مندرجہ بالا طریقے سے اشارہ کیا جاتا ہے تو، ChatGPT اس طرح کام کرتے ہوئے جواب دیتا ہے جیسے یہ صارف کو اعلیٰ مراعات دے رہا ہو۔ صارف کے اعلیٰ مراعات کا یہ تاثر ChatGPT کو جواب دینے میں کم پابندی والا بناتا ہے۔
 
-import sudo from '@site/docs/assets/jailbreak/sudo_jailbreak.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={sudo} style={{width: "500px"}} />
-</div>
-
-import lynx from '@site/docs/assets/jailbreak/lynx_jailbreak.webp';
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={lynx} style={{width: "500px"}} />
-</div>
 
 sudo موڈ سے متعلق، کوئی بھی ChatGPT کو اعلی مراعات کے ساتھ لینکس ٹرمینل کی تقلید کرنے کے لیے کہہ سکتا ہے تاکہ ان کمانڈوں پر عمل کیا جا سکے جنہیں وہ عام طور پر مسترد کرتا ہے۔ مثال کے طور پر، چونکہ اسے انٹرنیٹ تک رسائی حاصل نہیں ہے، اس لیے یہ اکثر اوقات کسی خاص ویب سائٹ سے متعلق اشارے پر عمل نہیں کر سکتا۔ تاہم، جیسا کہ Jonas Degrave کی مثال میں دکھایا گیا ہے، ChatGPT `lynx` کے تصور کو سمجھتا ہے اور کمانڈ (@jonas2022jailbreak) پر عمل کرنے کا بہانہ کرتا ہے۔
 

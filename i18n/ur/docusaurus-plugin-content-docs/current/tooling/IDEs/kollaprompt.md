@@ -7,11 +7,6 @@ sidebar_position: 15
 [Kolla Prompt](https://kollaprompt.com) گرافک طور پر سلسلہ بندی کا ایک ٹول ہے
 اشارہ کرتا ہے
 
-import Image from '@site/docs/assets/tooling/kollaprompt.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

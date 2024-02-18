@@ -6,11 +6,7 @@ sidebar_position: 21
 
 [PROMPTMETHEUS](https://promptmetheus.com) آپ کو OpenAI اور دیگر LLM فراہم کنندگان کے لیے ون شاٹ پرامپٹس تحریر کرنے، جانچنے، بہتر بنانے اور ان کو تعینات کرنے میں مدد کرتا ہے جو متوقع طور پر ان پٹ کو آؤٹ پٹ میں تبدیل کرتے ہیں۔
 
-import Image from '@site/docs/assets/tooling/promptmetheus.webp';
 
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

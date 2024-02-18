@@ -10,11 +10,7 @@ sidebar_position: 3
 اس وقت، دیگر پرامپٹ انجینئرنگ کے مقابلے میں اس میں سیکھنے کا بہت بڑا منحنی خطوط ہے۔
 IDEs
 
-import Image from '@site/docs/assets/tooling/dust.webp';
 
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## Features
 

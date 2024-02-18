@@ -6,11 +6,6 @@ sidebar_position: 12
 
 [Spellbook](https://scale.com/spellbook) اسکیل AI کے ذریعہ تیار کردہ ایک پیشہ ورانہ اشارہ کرنے والا IDE ہے۔
 
-import Image from '@site/docs/assets/tooling/spellbook.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 

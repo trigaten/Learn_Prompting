@@ -10,16 +10,6 @@ Least to Most prompting (LtM)(@zhou2022leasttomost) %%CoT prompting|CoT promptin
 
 جیسا کہ CoT پرامپٹنگ میں، حل ہونے والا مسئلہ ذیلی مسائل کے ایک سیٹ میں گل جاتا ہے جو ایک دوسرے پر قائم ہوتے ہیں۔ دوسرے مرحلے میں، یہ ذیلی مسائل ایک ایک کرکے حل ہوتے ہیں۔ سوچ کے سلسلہ کے برعکس، پچھلے ذیلی مسائل کا حل اگلے مسئلے کو حل کرنے کی کوشش میں فوری طور پر کھلایا جاتا ہے۔
 
-import leastToMost from '@site/docs/assets/intermediate/least_to_most_formal.webp'
-
-<div style={{textAlign: 'center'}}>
-  <img src={leastToMost} style={{width: "600px"}} alt="A diagram of a least to most prompting"/>
-</div>
-
-<div style={{textAlign: 'center'}}>
-  کم سے کم سے زیادہ ترغیب دینے والا خاکہ
-</div>
-
 ## مثال: کسٹمر انکوائری کا جواب
 
 آئیے ایک قدرے پیچیدہ کسٹمر سروس سوال پوچھتے ہیں:

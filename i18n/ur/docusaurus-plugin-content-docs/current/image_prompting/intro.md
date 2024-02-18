@@ -31,45 +31,18 @@ sidebar_position: 1
 
   <AIInput>لو پولی وائٹ اور نیلے راکٹ ایک ویرل سبز گھاس کے میدان کے سامنے چاند پر شوٹنگ کر رہے ہیں</AIInput>
 
-import rockets1 from '@site/docs/assets/images_chapter/rockets_dalle_1.webp';
-import rockets2 from '@site/docs/assets/images_chapter/rockets_dalle_2.webp';
-import computer_1 from '@site/docs/assets/images_chapter/computer_dalle_1.webp';
-import astronaut_1 from '@site/docs/assets/images_chapter/astronaut_dalle_1.webp';
-import astronaut_2 from '@site/docs/assets/images_chapter/astronaut_sd_1.webp';
-import rocket_sd_1 from '@site/docs/assets/images_chapter/rocket_sd_1.webp';
-import rocket_final from '@site/static/img/rocket.webp';
-import laptop_sd_1 from '@site/docs/assets/images_chapter/laptop_sd_1.webp';
-import gemstone_sd_1 from '@site/docs/assets/images_chapter/gemstone_sd_1.webp';
-import gemstone_sd_2 from '@site/docs/assets/images_chapter/gemstone_sd_2.webp';
-import gemstone_sd_3 from '@site/docs/assets/images_chapter/gemstone_sd_3.webp';
-import focus_final from '@site/static/img/computer.webp';
-import astronaut_final from '@site/static/img/astronaut.webp';
 
-<div style={{textAlign: 'center'}}>
-   <img src={rockets1} className="img-docs" style={{width: "750px"}}/>
-</div>
-
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={rockets2} className="img-docs" style={{width: "750px"}} />
-</div>
 
 میں نے سوچا کہ یہ نتائج پہلی کوشش کے لیے کافی اچھے تھے۔ مجھے خاص طور پر پسند آیا
 نیچے بائیں راکٹ.
 
 اس کے بعد، مجھے اسی انداز میں ایک کمپیوٹر چاہیے تھا: <AIInput>لو پولی وائٹ اور بلیو کمپیوٹر ایک ویرل سبز گھاس کے میدان میں بیٹھا ہے</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={computer_1} className="img-docs" style={{width: "750px"}} />
-</div>
 
 آخر میں، مجھے ایک خلاباز کی ضرورت تھی! ایسا لگتا ہے کہ یہ اشارہ چال کرتا ہے:
 
 <AIInput>نیچے پولی وائٹ اور نیلے خلائی مسافر پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں بیٹھے ہوئے ہیں</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={astronaut_1} style={{width: "750px"}} />
-</div>
 
 میں نے سوچا کہ دوسرا مہذب تھا۔
 
@@ -83,69 +56,46 @@ import astronaut_final from '@site/static/img/astronaut.webp';
 انداز کو محدود کرنے کے لیے۔ میں نے یہ اشارہ آزمایا:
 <AIInput>ایک نیچی پولی دنیا، جس میں ایک خلاباز سفید سوٹ اور نیلے رنگ کے ویزر کے ساتھ پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں بیٹھا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={astronaut_2} style={{width: "250px"}} />
-</div>
-
 یہ بہت اچھے نہیں تھے، اس لیے میں نے اس کے بجائے راکٹ پر شروع کرنے کا فیصلہ کیا۔
 
 <AIInput> پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کے میدان سے سفید اور نیلے رنگ کے راکٹ کے ساتھ اڑتی ہوئی ایک نیچی پولی دنیا۔ انتہائی مفصل، isometric، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={rocket_sd_1} style={{width: "250px"}} />
-</div>
-
 یہ خاص طور پر اچھے نہیں ہیں، لیکن تھوڑا سا ادھر ادھر اعادہ کرنے کے بعد، میں نے ختم کر دیا۔
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={rocket_final} style={{width: "250px"}} />
-</div>
+
 
 اب مجھے ایک بہتر لیپ ٹاپ کی ضرورت ہے:
 <AIInput>ایک نیچی پولی دنیا، جس میں سفید اور نیلے رنگ کا لیپ ٹاپ پس منظر میں کم پولی پہاڑوں کے ساتھ ویرل سبز گھاس کے میدان میں بیٹھا ہے۔ اسکرین مکمل طور پر نیلی ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={laptop_sd_1} style={{width: "250px"}} />
-</div>
+
 
 مجھے کچھ متضاد نتائج ملے۔ مجھے نیچے والا دائیں طرف پسند ہے، لیکن میں نے ایک مختلف سمت جانے کا فیصلہ کیا۔
 
 <AIInput>ایک نیچی پولی دنیا، جس کے پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں چمکتا ہوا سفید اور نیلا قیمتی پتھر ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={gemstone_sd_1} style={{width: "250px"}} />
-</div>
+
 
 یہ بالکل ٹھیک نہیں تھا۔ آئیے کچھ جادوئی اور چمکدار کرنے کی کوشش کریں۔
 
 <AIInput>ایک نچلی پولی دنیا، جس کے پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کے میدان کے اوپر ایک چمکتا ہوا سفید اور نیلا قیمتی پتھر جادوئی طور پر اسکرین کے بیچ میں تیر رہا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={gemstone_sd_2} style={{width: "250px"}} />
-</div>
+
 
 مجھے یہ پسند آئے، لیکن میں اسکرین کے بیچ میں پتھر چاہتا تھا۔
 
 <AIInput>ایک نیچی پولی دنیا، جس کے پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کے میدان کے اوپر اسکرین کے بیچ میں ایک چمکتا ہوا نیلا قیمتی پتھر جادوئی طور پر تیر رہا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={gemstone_sd_3} style={{width: "250px"}} />
-</div>
 
 یہاں کے آس پاس کہیں، میں نے SD کی سابقہ تصویر رکھنے کی صلاحیت کا استعمال کیا جو مستقبل کی تصاویر کے لیے کچھ اثر و رسوخ فراہم کرتا ہے۔
 اور اس طرح میں یہاں پہنچا:
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={focus_final} style={{width: "250px"}} />
-</div>
+
 
 آخر میں، میں خلاباز کے پاس تھا۔
 
 <AIInput>ایک نیچی پولی دنیا، جس میں ایک خلاباز سفید سوٹ اور نیلے رنگ کے ویزر میں پس منظر میں کم پولی پہاڑوں کے ساتھ ایک ویرل سبز گھاس کا میدان میں بیٹھا ہے۔ انتہائی مفصل، isometric، 4K</AIInput>
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage className="img-docs" src={astronaut_final} style={{width: "250px"}} />
-</div>
+
 
 اس موقع پر، میں اپنی تینوں تصویروں کے استعمال کے لیے انداز کی مستقل مزاجی سے کافی خوش تھا۔
 ویب سائٹ پر میرے لیے اہم نکتہ یہ تھا کہ یہ ایک بہت ہی تکراری، تحقیقی بھاری عمل تھا،

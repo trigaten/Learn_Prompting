@@ -9,16 +9,6 @@ sidebar_position: 4
 نتیجہ حاصل کرنے کے لیے پروگرامی رن ٹائم کا کوڈ۔ PAL CoT کے برعکس کام کرتا ہے۔ PAL کا انٹرمیڈیٹ
 استدلال کوڈ ہے، جبکہ CoT قدرتی زبان ہے۔
 
-import image from '@site/docs/assets/advanced/pal.webp';
-
-<div style={{textAlign: 'center'}}>
-   <img src={image} style={{width: "500px"}}/>
-</div>
-
-<div style={{textAlign: 'center'}}>
-PAL مثال (Gao et al.)
-</div>
-
 
 ایک اہم بات یہ نوٹ کرنا ہے کہ PAL دراصل قدرتی زبان (NL) اور کوڈ کو آپس میں جوڑتا ہے۔
 مندرجہ بالا تصویر میں، نیلے رنگ میں قدرتی زبان کے استدلال ہیں جو PAL تیار کرتا ہے۔ اگرچہ یہ

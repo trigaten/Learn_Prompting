@@ -5,14 +5,6 @@ sidebar_position: 1000
 # 🟢 اپنا سفر شروع کرنا
 
 
-<!-- import Steps from '@site/docs/assets/basics/steps.svg'; -->
-import Steps from '@site/i18n/ur/docusaurus-plugin-content-docs/current/assets/basics/steps.svg';
-
-<div style={{textAlign: 'center'}}>
-  <Steps style={{width:"100%",height:"300px",verticalAlign:"top"}}/>
-</div>
-<br/>
-
 :::takeaways
 - جنریٹو اے آئی میں اپنا سفر شروع کریں۔
 :::

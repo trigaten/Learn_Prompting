@@ -21,17 +21,6 @@ ReAct Systems کو MRKL سسٹم کے طور پر سوچا جا سکتا ہے، 
 اس وقت تک لوپ کریں جب تک یہ کسی نتیجے پر نہ پہنچ جائے (ایکٹ 3)۔
 
 
-import react_qa from '@site/docs/assets/advanced/react_qa.webp';
-
-<div style={{textAlign: 'center'}}>
-   <img src={react_qa} style={{width: "500px"}}/>
-</div>
-
-<div style={{textAlign: 'center'}}>
-ری ایکٹ سسٹم (Yao et al.)
-</div>
-
-
 کمک سیکھنے کا علم رکھنے والے قارئین اس عمل کو کلاسک کی طرح پہچان سکتے ہیں۔
 ریاست، عمل، انعام، ریاست، کا RL لوپ... ReAct کے لیے کچھ رسمی شکل فراہم کرتا ہے۔
 یہ ان کے کاغذ میں.
@@ -44,13 +33,3 @@ Google نے ReAct کے تجربات میں PaLM(@chowdhery2022palm) LLM استع
 ظاہر کریں کہ ReAct کی کارکردگی پیچیدہ استدلال کے کاموں کے لیے امید افزا ہے۔ گوگل
 FEVER ڈیٹاسیٹ (@thorne2018fever) پر بھی مطالعہ کرتا ہے، جس کا احاطہ کیا گیا ہے۔
 حقیقت نکالنا اور تصدیق۔
-
-import react_performance from '@site/docs/assets/advanced/react_performance.webp';
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={react_performance} style={{width: "500px"}} />
-</div>
-
-<div style={{textAlign: 'center'}}>
-رد عمل کے نتائج (Yao et al.)
-</div>

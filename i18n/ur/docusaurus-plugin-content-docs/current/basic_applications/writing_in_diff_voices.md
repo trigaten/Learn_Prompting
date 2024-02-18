@@ -9,44 +9,23 @@ AIs جیسے [ChatGPT](https://chat.openai.com/chat) دل کی دھڑکن میں
 کہو کہ آپ دوستی کی اہمیت پر ایک پیراگراف چاہتے ہیں۔
 ایک عام اشارہ جیسا کہ، "مجھے دوستی کی اہمیت پر ایک پیراگراف لکھیں"، ChatGPT کی طرف سے عمومی جواب دے گا۔
 
-import friendship from '@site/docs/assets/basic_applications/Generic_Friendship.webp';
-import friendship_informal from '@site/docs/assets/basic_applications/Friendship_Informal.webp';
-import friendship_mark from '@site/docs/assets/basic_applications/Friendship_Mark_Twain.webp';
-import friendship_chris from '@site/docs/assets/basic_applications/Friendship_Chris_Rock.webp';
-import friendship_millennial from '@site/docs/assets/basic_applications/Friendship_Millennial.webp';
 
 
-<div style={{textAlign: 'center'}}>
-  <img src={friendship} style={{width: "750px"}}/>
-</div>
+
 
 بلہ یہ بہت نرم ہے.
 جب آپ وضاحتیں شامل کرتے ہیں تو نتائج بدل جاتے ہیں، جیسے "**براہ کرم غیر رسمی، گفتگو کے انداز میں لکھیں۔**" چیٹ جی پی ٹی کچھ اس طرح کے ساتھ آتا ہے:
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship_informal} style={{width: "750px"}} />
-</div>
 
 یہ تھوڑا بہتر ہے۔
 
 اور اگر آپ تھوڑا سا پسند محسوس کرتے ہیں، تو آپ ChatGPT سے کسی ادبی عظیم، جیسے مارک ٹوین کے انداز میں لکھنے کے لیے کہہ سکتے ہیں:
 
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship_mark} style={{width: "750px"}} />
-</div>
 
 ٹیکسٹ اب گانا شروع کر رہا ہے۔
 لیکن اس کے لیے مشہور مصنف ہونا ضروری نہیں ہے۔ آپ معروف افراد کو بھی استعمال کر سکتے ہیں جیسے کرس راک۔
 
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship_chris} style={{width: "750px"}} />
-</div>
 
 یا ان "ہزار سالہ" کے بارے میں کیا خیال ہے؟
-
-<div style={{textAlign: 'center'}}>
-  <LazyLoadImage src={friendship_millennial} style={{width: "750px"}} />
-</div>
 
 ## اپنے لکھنے کے انداز کو کاپی کریں۔
 

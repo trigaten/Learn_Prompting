@@ -10,20 +10,10 @@ sidebar_position: 2
 
 جیسا کہ ذیل کی تصویر (@ignore_previous_prompt) میں دکھایا گیا ہے، حملہ آور پرامپٹ واپس کرنے کی کوشش کرنے کے لیے `user_input` کو تبدیل کرتا ہے۔ مطلوبہ ہدف گول ہائی جیکنگ (عام پرامپٹ انجیکشن) سے الگ ہے، جہاں حملہ آور نقصان دہ ہدایات (@ignore_previous_prompt) پرنٹ کرنے کے لیے `user_input` کو تبدیل کرتا ہے۔
 
-import research from '@site/docs/assets/jailbreak/jailbreak_research.webp';
-
-<div style={{textAlign: 'center'}}>
-   <img src={research} style={{width: "500px"}}/>
-</div>
 
 مندرجہ ذیل تصویر(@simon2022inject)، دوبارہ `remoteli.io` مثال سے، ظاہر کرتی ہے
 ایک ٹویٹر صارف ماڈل کو اس کا پرامپٹ لیک کرنے کے لئے حاصل کر رہا ہے۔
 
-import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={Image} style={{width: "300px"}} />
-</div>
 
 ٹھیک ہے، تو کیا؟ کسی کو فوری لیک ہونے کی پرواہ کیوں کرنی چاہئے؟
 
@@ -36,19 +26,13 @@ import Image from '@site/docs/assets/jailbreak/injection_leak.webp';
 
 مزید قابل ذکر بات یہ ہے کہ مائیکروسافٹ نے 2/7/23 کو ChatGPT سے چلنے والا ایک سرچ انجن جاری کیا جسے "نیا Bing" کہا جاتا ہے، جس کا مظاہرہ فوری طور پر لیک ہونے کا خطرہ ہے۔ مندرجہ ذیل مثال بذریعہ [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) یہ ظاہر کرتی ہے کہ Bing سرچ کا ایک پرانا ورژن، جس کا کوڈ نام ہے "سڈنی"، اس کے پرامپٹ کا ایک ٹکڑا دیتے وقت کس طرح حساس تھا( @kevinbing)۔ یہ صارف کو بقیہ پرامپٹ کو دیکھنے کے لیے مناسب تصدیق کے بغیر بازیافت کرنے کی اجازت دے گا۔
 
-import bing from '@site/docs/assets/jailbreak/bing_chat.webp';
-
-
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={bing} style={{width: "700px"}} />
-</div>
 
 GPT-3 پر مبنی سٹارٹ اپس میں حالیہ اضافے کے ساتھ، بہت زیادہ پیچیدہ اشارے کے ساتھ جو کر سکتے ہیں۔
 تیار ہونے میں کئی گھنٹے لگیں، یہ ایک حقیقی تشویش ہے۔
 
 ## مشق کریں۔
 
-اس میں متن شامل کرکے درج ذیل پرامپٹ (@chase2021adversarial) کو لیک کرنے کی کوشش کریں:
+اس میں ٹیکسٹ شامل کرکے درج ذیل پرامپٹ (@chase2021adversarial) کو لیک کرنے کی کوشش کریں:
 
 <iframe
     src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IkVuZ2xpc2g6IEkgd2FudCB0byBnbyB0byB0aGUgcGFyayB0b2RheS5cbkZyZW5jaDogSmUgdmV1eCBhbGxlciBhdSBwYXJjIGF1am91cmQnaHVpLlxuRW5nbGlzaDogSSBsaWtlIHRvIHdlYXIgYSBoYXQgd2hlbiBpdCByYWlucy5cbkZyZW5jaDogSidhaW1lIHBvcnRlciB1biBjaGFwZWF1IHF1YW5kIGl0IHBsZXV0LlxuRW5nbGlzaDogV2hhdCBhcmUgeW91IGRvaW5nIGF0IHNjaG9vbD9cbkZyZW5jaDogUXUnZXN0LWNlIHF1ZSB0byBmYWlzIGEgbCdlY29sZT9cbkVuZ2xpc2g6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"

@@ -7,22 +7,13 @@ sidebar_position: 4
 مخصوص طرزیں تیار کریں (جیسے 'ٹنٹڈ ریڈ'، 'شیشے سے بنا'، 'یونٹی میں پیش کیا گیا') (@oppenlaender2022taxonomy)۔ ان کو ایک ساتھ ملایا جا سکتا ہے۔
 اس سے بھی زیادہ مخصوص انداز پیدا کریں۔ وہ "آرٹ کے ادوار، اسکولوں، اور طرزوں کے بارے میں معلومات شامل کر سکتے ہیں، بلکہ آرٹ کے مواد اور میڈیا، تکنیکوں، اور فنکاروں کو بھی شامل کر سکتے ہیں" (@oppenlaender2022taxonomy)۔
 
-import pyramids from '@site/docs/assets/images_chapter/pyramids.webp';
-import red_pyramids from '@site/docs/assets/images_chapter/red_pyramids.webp';
-
 # مثال
 
 یہاں DALLE کے ذریعہ تیار کردہ چند اہرام ہیں، پرامپٹ `pyramid` کے ساتھ۔
 
-<div style={{textAlign: 'center'}}>
-   <img src={pyramids} style={{width: "750px"}}/>
-</div>
 
 یہاں کچھ اہرام ہیں جو DALLE کے ذریعہ تیار کیے گئے ہیں، پرامپٹ کے ساتھ 'شیشے سے بنا ایک اہرام، اتحاد اور رنگت والا سرخ'، جس میں 3 طرز کے ترمیم کار استعمال کیے گئے ہیں۔
 
-<div style={{textAlign: 'center'}}>
-   <LazyLoadImage src={red_pyramids} style={{width: "750px"}} />
-</div>
 
 یہاں کچھ مفید سٹائل موڈیفائرز کی فہرست ہے:
 

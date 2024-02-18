@@ -7,11 +7,6 @@ sidebar_position: 18
 [OpenAI DALLE IDE](https://labs.openai.com) DALLE-2 کے ساتھ تصاویر بنانے کے لیے ایک ویب سائٹ ہے،
 ایک ٹیکسٹ سے تصویری ماڈل۔
 
-import Image from '@site/docs/assets/tooling/dalle.webp';
-
-<div style={{textAlign: 'center'}}>
-  <img src={Image} style={{width: "750px"}}/>
-</div>
 
 ## خصوصیات
 
