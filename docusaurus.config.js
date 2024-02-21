@@ -37,15 +37,16 @@ async function createConfig() {
         "ur",
       ],
       localeConfigs: {
-        "zh-tw": {
-          label: "繁體中文",
-          direction: "ltr",
+        'zh-tw': {
+          label: '繁體中文',
+          direction: 'ltr',
         },
       },
     },
     scripts: [
       {
-        src: "https://tag.clearbitscripts.com/v1/pk_5621ff511ea83a6ec015bee0a0b5dd79/tags.js",
+        src:
+          "https://tag.clearbitscripts.com/v1/pk_5621ff511ea83a6ec015bee0a0b5dd79/tags.js",
         async: true,
       },
     ],
@@ -79,14 +80,11 @@ async function createConfig() {
           },
         };
       },
-      [
-        "posthog-docusaurus",
-        {
-          apiKey: process.env.POSTHOG_API_KEY || "DEV",
-          appUrl: "https://app.posthog.com", // optional
-          enableInDevelopment: false, // optional
-        },
-      ],
+      ["posthog-docusaurus", {
+        apiKey: process.env.POSTHOG_API_KEY || "DEV",
+        appUrl: "https://app.posthog.com", // optional
+        enableInDevelopment: false, // optional
+      }],
     ],
 
     presets: [
@@ -154,7 +152,8 @@ async function createConfig() {
         async: true,
       },
       {
-        href: "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+        href:
+          "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
         async: true,
       },
     ],
