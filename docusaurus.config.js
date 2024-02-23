@@ -41,6 +41,10 @@ async function createConfig() {
           label: '繁體中文',
           direction: 'ltr',
         },
+        'ur': {
+          label: 'اردو',
+          direction: 'rtl',
+        },
       },
     },
     scripts: [
