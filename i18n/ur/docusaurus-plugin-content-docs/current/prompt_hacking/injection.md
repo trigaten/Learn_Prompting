@@ -26,7 +26,7 @@ sidebar_position: 1
 bot اسے حاصل کرنے کے لئے جو کچھ وہ چاہتے ہیں کہنے کے لئے۔
 
 
-'@site/docs/assets/jailbreak/injection_job.webp' سے امیج درآمد کریں؛
+import Image from '@site/docs/assets/jailbreak/injection_job.webp';
 
 <div style={{textAlign: 'center'}}>
    <img src={Image} اسٹائل={{چوڑائی: "500px"}}/>
