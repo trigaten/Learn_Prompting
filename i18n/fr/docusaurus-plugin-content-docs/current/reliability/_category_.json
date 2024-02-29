@@ -1,0 +1,8 @@
+{
+  "label": "⚖️ Fiabilité",
+  "position": 30,
+  "link": {
+    "type": "generated-index",
+    "description": "Comment rendre les LLM plus fiables"
+  }
+}
