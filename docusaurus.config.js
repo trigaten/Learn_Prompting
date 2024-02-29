@@ -34,11 +34,16 @@ async function createConfig() {
         "de",
         "uk",
         "id",
+        "ur",
       ],
       localeConfigs: {
         'zh-tw': {
           label: '繁體中文',
           direction: 'ltr',
+        },
+        'ur': {
+          label: 'اردو',
+          direction: 'rtl',
         },
       },
     },
