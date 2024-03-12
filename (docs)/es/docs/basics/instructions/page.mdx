@@ -1,0 +1,82 @@
+export const metadata = {
+  sidebar_position: 2,
+  title: "🟢 Dando Instrucciones ",
+};
+
+# 🟢 Dando Instrucciones 
+
+Uno de los métodos de indicaciones más simples es dar instrucciones. Ya vimos una instrucción simple
+en un apartado anterior (`¿Cuánto es 1.000.000 * 9.000? Asegúrate de poner la cantidad correcta de ceros, aunque sean muchos:`). Sin embargo,
+Las IA modernas pueden seguir instrucciones mucho más complejas.
+
+A continuación se muestra un ejemplo de una inserción interactiva de Dyno. Si no lo ve, asegúrese de activar Javascript en su navegador. Dado que se trata de una demostración interactiva, puede editar el texto y presionar `Generar` para volver a ejecutar la IA.
+
+#### Ejemplo 1
+
+<iframe
+  src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkRvZSwgSm9obiIsInByb21wdCI6IlVuIHVzdWFyaW8gaGEgaW5ncmVzYWRvIHN1IG5vbWJyZSB5IGFwZWxsaWRvIGVuIHVuIGZvcm11bGFyaW8uIE5vc290cm9zIG5vIHNhYmVtb3MgZW4gcXVlIG9yZGVuIGVzdGEgXG5TdSBub21icmUvYXBlbGxpZG8sIHBlcm8gbmVjZXNpdGFtb3MgcXVlIHRlbmdhIGVsIGZvcm1hdG8gJ0FwZWxsaWRvLCBOb21icmUnLiBDb252aWVydGEgbG8gc2lndWllbnRlOlxuXG5qb2huIGRvZSIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
+  style={{
+    width: "100%",
+    height: "500px",
+    border: "0",
+    borderRadius: "4px",
+    overflow: "hidden",
+  }}
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+<br />
+La IA puede resolver fácilmente este problema. Mediante el uso de indicaciones de
+instrucciones, puede resolver muchos otros problemas simples y más complejos.
+
+#### Ejemplo 2
+
+Aquí hay un ejemplo más complicado[^1]:
+
+```
+Lea el siguiente correo electrónico de ventas. Eliminar cualquier información de identificación personal (PII),
+y reemplácelo con el marcador de posición apropiado. Por ejemplo, reemplace el nombre "John Doe"
+con "[NOMBRE]".
+
+Hola John,
+
+Te escribo porque me di cuenta de que recientemente compraste un auto nuevo. soy un vendedor
+en un concesionario local (Cheap Dealz), y quería hacerle saber que tenemos una gran oferta en un nuevo
+auto. Si estás interesado, por favor házmelo saber.
+
+Gracias,
+
+Jimmy Smith
+
+Teléfono: 410-805-2345
+Email: jimmysmith@cheapdealz.com
+```
+
+Acá esta [la respuesta de la IA](https://beta.openai.com/playground/p/002o3gmji5jlwUfRq9d7KDHc?model=text-davinci-003):
+
+```text
+// highlight-start
+Hola [NOMBRE],
+
+Te escribo porque me di cuenta de que recientemente compraste un auto nuevo. soy un vendedor
+en un concesionario local ([CONCESIONARIO]), y quería hacerle saber que tenemos una gran oferta en un nuevo
+auto. Si está interesado, por favor hágamelo saber.
+
+Thanks,
+
+[VENDEDOR]
+
+Teléfono: [NUMERO DE TELEFONO]
+Email: [EMAIL]
+// highlight-end
+```
+
+Es genial ver cómo el modelo puede extrapolarse de las instrucciones. Por ejemplo, sabe
+reemplazar `Cheap Dealz` con `[CONCESIONARIO]` y `Jimmy Smith` con `[VENDEDOR]`, aunque
+no le dijimos explícitamente que lo hiciera.
+
+[^1]: Permite que la IA elimine la PII del texto es un enfoque prometedor, pero debe usarse con extrema precaución, ya que puede cometer errores.
+
+## Nota
+
+🚧 Esta página necesita citas 🚧

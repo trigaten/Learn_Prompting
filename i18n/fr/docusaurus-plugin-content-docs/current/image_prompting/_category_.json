@@ -1,8 +1,0 @@
-{
-  "label": "🖼️ Prompting d'images",
-  "position": 40,
-  "link": {
-    "type": "generated-index",
-    "description": "Prompt engineering pour les modèles de texte en image comme DALLE et Stable Diffusion !"
-  }
-}

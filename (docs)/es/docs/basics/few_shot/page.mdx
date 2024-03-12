@@ -1,0 +1,109 @@
+export const metadata = { sidebar_position: 4, title: "🟢 Few shot prompting" };
+
+# 🟢 Few shot prompting
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src={"/docs/assets/basics/few_shot.svg"}
+    width={1836}
+    height={626}
+    style={{
+      width: "800px",
+      height: "300px",
+      verticalAlign: "top",
+      margin: "auto",
+    }}
+  />
+</div>
+
+Otra estrategia es la de los _few shot prompting_, que consiste básicamente en mostrar al modelo algunos ejemplos (llamados shots) de lo que quieres que haga.
+
+Consideremos el ejemplo anterior, en el que intentamos clasificar las opiniones de los clientes como positivas o negativas. Mostramos al modelo 3 ejemplos de retroalimentación positiva/negativa y, a continuación, le mostramos una nueva retroalimentación que aún no ha sido clasificada (`¡No funciona!:`). El modelo ve que los 3 primeros ejemplos fueron clasificados como `positivos` o `negativos`, y utiliza esta información para clasificar el nuevo ejemplo como `negativo`.
+
+La forma en que estructuramos los ejemplos es muy importante. Como hemos estructurado estos 3 ejemplos como `entrada: clasificación`, el modelo emite una sola palabra después de la última línea, en lugar de decir una frase completa como `esta reseña es positiva`.
+
+<iframe
+  src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Im5lZ2F0aXZvIiwicHJvbXB0IjoiR3JhbiBwcm9kdWN0bywgMTAgZGUgMTA6IHBvc2l0aXZvXG5ObyBmdW5jaW9uw7MgbXV5IGJpZW46IG5lZ2F0aXZvXG5TdXBlciDDunRpbCwgdmFsZSBsYSBwZW5hOiBwb3NpdGl2b1xuwqFObyBmdW5jaW9uYSE6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+  style={{
+    width: "100%",
+    height: "500px",
+    border: "0",
+    borderRadius: "4px",
+    overflow: "hidden",
+  }}
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+<br />
+
+<Note>Cada par entrada-salida se denomina *ejemplar*.</Note>
+
+## Más sobre estructura
+
+Un caso clave en el que se pueden utilizar algunas sugerencias es cuando se necesita que la salida esté estructurada de una forma específica que sea difícil de describir al modelo. Para entender esto, consideremos un ejemplo relevante: supongamos que necesita recopilar nombres y ocupaciones de ciudadanos conocidos en ciudades cercanas analizando artículos de periódicos locales. Le gustaría que el modelo leyera cada artículo y generara una lista de nombres y ocupaciones en formato `Apellido, Nombre [OCUPACIÓN]`. Para conseguir que el modelo haga esto, puede mostrarle algunos ejemplos:
+
+<iframe
+  src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo2MTYsIm91dHB1dCI6IjEuIExhdXJhIFNpbW1vbnMgW0FHUklDVUxUT1JBXVxuMi4gS2V2aW4gQWx2YXJleiBbUFJPRkVTT1IgREUgQkFJTEVdXG4zLiBSYWNoZWwgTydDb25ub3IgW1ZPTFVOVEFSSUFdIiwicHJvbXB0IjoiRW4gbGEgYnVsbGljaW9zYSBjaXVkYWQgZGUgRW1lcmFsZCBIaWxscywgdW4gZ3J1cG8gZGl2ZXJzbyBkZSBwZXJzb25hcyBkZWrDsyBzdSBodWVsbGEuIFNhcmFoIE1hcnTDrW5leiwgdW5hIGVuZmVybWVyYSBlbnRyZWdhZGEgYSBzdSB0cmFiYWpvLCBlcmEgY29ub2NpZGEgcG9yIHN1cyBjdWlkYWRvcyBjb21wYXNpdm9zIGVuIGVsIGhvc3BpdGFsIGxvY2FsLiBEYXZpZCBUaG9tcHNvbiwgdW4gaW5ub3ZhZG9yIGluZ2VuaWVybyBkZSBzb2Z0d2FyZSwgdHJhYmFqYWJhIGluY2Fuc2FibGVtZW50ZSBlbiBwcm95ZWN0b3MgcGlvbmVyb3MgcXVlIHJldm9sdWNpb25hcsOtYW4gbGEgaW5kdXN0cmlhIHRlY25vbMOzZ2ljYS4gUG9yIHN1IHBhcnRlLCBFbWlseSBOYWthbXVyYSwgYXJ0aXN0YSB5IG11cmFsaXN0YSBkZSB0YWxlbnRvLCBwaW50w7Mgb2JyYXMgdmlicmFudGVzIHkgc3VnZXJlbnRlcyBxdWUgYWRvcm5hcm9uIGxhcyBwYXJlZGVzIGRlIGVkaWZpY2lvcyB5IGdhbGVyw61hcyBwb3IgaWd1YWwuIFBvciDDumx0aW1vLCBNaWNoYWVsIE8nQ29ubmVsbCwgdW4gYW1iaWNpb3NvIGVtcHJlc2FyaW8sIGFicmnDsyB1bmEgY2FmZXRlcsOtYSDDum5pY2EgeSByZXNwZXR1b3NhIGNvbiBlbCBtZWRpbyBhbWJpZW50ZSBxdWUgc2UgY29udmlydGnDsyByw6FwaWRhbWVudGUgZW4gZWwgcHVudG8gZGUgZW5jdWVudHJvIGZhdm9yaXRvIGRlIGxhIGNpdWRhZC4gQ2FkYSB1bmEgZGUgZXN0YXMgcGVyc29uYXMgY29udHJpYnV5w7MgYWwgcmljbyB0YXBpeiBkZSBsYSBjb211bmlkYWQgZGUgRW1lcmFsZCBIaWxscy5cbjEuIFNhcmFoIE1hcnRpbmV6IFtFTkZFUk1FUkFdXG4yLiBEYXZpZCBUaG9tcHNvbiBbSU5HRU5JRVJPIERFIFNPRlRXQVJFXVxuMy4gRW1pbHkgTmFrYW11cmEgW0FSVElTVEFdXG40LiBNaWNoYWVsIE8nQ29ubmVsbCBbRU1QUkVOREVET1JdXG5cbkVuIGVsIGNvcmF6w7NuIGRlIGxhIGNpdWRhZCwgZWwgY2hlZiBPbGl2ZXIgSGFtaWx0b24gaGEgdHJhbnNmb3JtYWRvIGxhIGVzY2VuYSBjdWxpbmFyaWEgY29uIHN1IHJlc3RhdXJhbnRlIGRlIGxhIGdyYW5qYSBhIGxhIG1lc2EsIEdyZWVuIFBsYXRlLiBMYSBkZWRpY2FjacOzbiBkZSBPbGl2ZXIgYSBsYSBiw7pzcXVlZGEgZGUgaW5ncmVkaWVudGVzIGxvY2FsZXMgeSBlY29sw7NnaWNvcyBsZSBoYSB2YWxpZG8gY3LDrXRpY2FzIG11eSBmYXZvcmFibGVzIHRhbnRvIGRlIGxvcyBjcsOtdGljb3MgZ2FzdHJvbsOzbWljb3MgY29tbyBkZSBsb3MgbHVnYXJlw7Fvcy5cblxuSnVzdG8gYWwgZmluYWwgZGUgbGEgY2FsbGUgc2UgZW5jdWVudHJhIGxhIEJpYmxpb3RlY2EgUml2ZXJzaWRlIEdyb3ZlLCBkb25kZSBsYSBiaWJsaW90ZWNhcmlhIEVsaXphYmV0aCBDaGVuIGhhIHRyYWJhamFkbyBjb24gZGlsaWdlbmNpYSBwYXJhIGNyZWFyIHVuIGVzcGFjaW8gYWNvZ2Vkb3IgZSBpbnRlZ3JhZG9yIHBhcmEgdG9kb3MuIFN1cyBlc2Z1ZXJ6b3MgcG9yIGFtcGxpYXIgbGEgb2ZlcnRhIGRlIGxhIGJpYmxpb3RlY2EgeSBlc3RhYmxlY2VyIHByb2dyYW1hcyBkZSBsZWN0dXJhIHBhcmEgbmnDsW9zIGhhbiB0ZW5pZG8gdW4gaW1wYWN0byBzaWduaWZpY2F0aXZvIGVuIGxvcyDDrW5kaWNlcyBkZSBhbGZhYmV0aXphY2nDs24gZGUgbGEgY2l1ZGFkLlxuXG5NaWVudHJhcyBwYXNlYXMgcG9yIGxhIGVuY2FudGFkb3JhIHBsYXphIGRlbCBwdWVibG8sIHF1ZWRhcsOhcyBjYXV0aXZhZG8gcG9yIGxvcyBoZXJtb3NvcyBtdXJhbGVzIHF1ZSBhZG9ybmFuIGxhcyBwYXJlZGVzLiBFc3RhcyBvYnJhcyBtYWVzdHJhcyBzb24gb2JyYSBkZSBsYSByZW5vbWJyYWRhIGFydGlzdGEgSXNhYmVsbGEgVG9ycmVzLCBjdXlvIHRhbGVudG8gcGFyYSBjYXB0dXJhciBsYSBlc2VuY2lhIGRlIFJpdmVyc2lkZSBHcm92ZSBoYSBkYWRvIHZpZGEgYSBsYSBjaXVkYWQuXG5cbkxvcyBsb2dyb3MgZGVwb3J0aXZvcyBkZSBSaXZlcnNpZGUgR3JvdmUgdGFtYmnDqW4gc29uIGRpZ25vcyBkZSBtZW5jacOzbiwgZ3JhY2lhcyBhbCBleCBuYWRhZG9yIG9sw61tcGljbyByZWNvbnZlcnRpZG8gZW4gZW50cmVuYWRvciBNYXJjdXMgSmVua2lucy4gTWFyY3VzIGhhIHV0aWxpemFkbyBzdSBleHBlcmllbmNpYSB5IHBhc2nDs24gcGFyYSBlbnRyZW5hciBhIGxvcyBqw7N2ZW5lcyBkZWwgcHVlYmxvLCBsbGV2YW5kbyBhbCBlcXVpcG8gZGUgbmF0YWNpw7NuIGRlIFJpdmVyc2lkZSBHcm92ZSBhIHZhcmlvcyBjYW1wZW9uYXRvcyByZWdpb25hbGVzLlxuMS4gT2xpdmVyIEhhbWlsdG9uIFtDSEVGXVxuMi4gRWxpemFiZXRoIENoZW4gW0JJQkxJT1RFQ0FSSUFdXG4zLiBJc2FiZWxsYSBUb3JyZXMgW0FSVElTVEFdXG40LiBNYXJjdXMgSmVua2lucyBbRU5UUkVOQURPUl1cblxuT2FrIFZhbGxleSwgdW4gcHVlYmxvIHBlcXVlw7FvIHkgZW5jYW50YWRvciwgZXMgZWwgaG9nYXIgZGUgdW4gdHLDrW8gbm90YWJsZSBkZSBwZXJzb25hcyBjdXlhcyBoYWJpbGlkYWRlcyB5IGRlZGljYWNpw7NuIGhhbiBkZWphZG8gdW4gaW1wYWN0byBkdXJhZGVybyBlbiBsYSBjb211bmlkYWQuXG5cbkVuIGVsIGJ1bGxpY2lvc28gbWVyY2FkbyBkZSBhZ3JpY3VsdG9yZXMgZGUgbGEgY2l1ZGFkLCBlbmNvbnRyYXLDoXMgYSBMYXVyYSBTaW1tb25zLCB1bmEgZ3JhbmplcmEgb3Jnw6FuaWNhIGFwYXNpb25hZGEgY29ub2NpZGEgcG9yIHN1cyBkZWxpY2lvc29zIHByb2R1Y3RvcyBjdWx0aXZhZG9zIGRlIG1hbmVyYSBzb3N0ZW5pYmxlLiBTdSBkZWRpY2FjacOzbiBhIGxhIHByb21vY2nDs24gZGUgdW5hIGFsaW1lbnRhY2nDs24gc2FsdWRhYmxlIGhhIGluc3BpcmFkbyBhIGxhIGNpdWRhZCBhIGFkb3B0YXIgdW4gZXN0aWxvIGRlIHZpZGEgbcOhcyBjb25zY2llbnRlIGRlbCBtZWRpbyBhbWJpZW50ZS5cblxuRW4gZWwgY2VudHJvIGNvbXVuaXRhcmlvIGRlIE9hayBWYWxsZXksIEtldmluIEFsdmFyZXosIHVuIGjDoWJpbCBpbnN0cnVjdG9yIGRlIGJhaWxlLCBoYSBsbGV2YWRvIGxhIGFsZWdyw61hIGRlbCBtb3ZpbWllbnRvIGEgcGVyc29uYXMgZGUgdG9kYXMgbGFzIGVkYWRlcy4gU3VzIGNsYXNlcyBkZSBkYW56YSBpbmNsdXNpdmFzIGhhbiBmb21lbnRhZG8gdW4gc2VudGlkbyBkZSB1bmlkYWQgeSBhdXRvZXhwcmVzacOzbiBlbnRyZSBsb3MgcmVzaWRlbnRlcywgZW5yaXF1ZWNpZW5kbyBsYSBlc2NlbmEgYXJ0w61zdGljYSBsb2NhbC5cblxuUG9yIMO6bHRpbW8sIFJhY2hlbCBPJ0Nvbm5vciwgdW5hIGluY2Fuc2FibGUgdm9sdW50YXJpYSwgZGVkaWNhIHN1IHRpZW1wbyBhIGRpdmVyc2FzIGluaWNpYXRpdmFzIGJlbsOpZmljYXMuIFN1IGNvbXByb21pc28gZGUgbWVqb3JhciBsYSB2aWRhIGRlIGxvcyBkZW3DoXMgaGEgc2lkbyBmdW5kYW1lbnRhbCBwYXJhIGNyZWFyIHVuIGZ1ZXJ0ZSBzZW50aWRvIGRlIGNvbXVuaWRhZCBkZW50cm8gZGUgT2FrIFZhbGxleS5cblxuQSB0cmF2w6lzIGRlIHN1cyB0YWxlbnRvcyDDum5pY29zIHkgZGVkaWNhY2nDs24gaW5xdWVicmFudGFibGUsIExhdXJhLCBLZXZpbiB5IFJhY2hlbCBzZSBoYW4gZW50cmV0ZWppZG8gZW4gbGEgZXN0cnVjdHVyYSBkZSBPYWsgVmFsbGV5LCBheXVkYW5kbyBhIGNyZWFyIHVuYSBwZXF1ZcOxYSBjaXVkYWQgdmlicmFudGUgeSBwcsOzc3BlcmEuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
+  style={{
+    width: "100%",
+    height: "500px",
+    border: "0",
+    borderRadius: "4px",
+    overflow: "hidden",
+  }}
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+Al mostrar los ejemplos del modelo del formato de salida correcto, puede producir la salida correcta para nuevos artículos.
+
+<Note>
+  Aunque podría producir este mismo resultado usando un prompt, el few-shot
+  prompt ayuda a que el resultado sea mucho más *consistente*.
+</Note>
+
+## Variantes del shot prompting
+
+La palabra "shot" es sinónimo de "ejemplo". Además del few-shot prompting, existen otros dos tipos de shot prompting. ¡No lo pienses tanto! La única diferencia entre esas variantes es cuantos ejemplos le muestras al modelo.
+
+Variantes:
+
+- 0 shot prompting: Sin mostrar ejemplos al modelo
+- 1 shot prompting: 1 ejemplo mostrado al modelo
+- few shot prompting: 2+ ejemplos mostrados al modelo
+
+### 0-shot prompting
+
+0-shot prompting es la forma mas básica de prompting. Este simplemente muestra al modelo un mensaje sin ejemplos y le pide que genere una respuesta. Como tal, todas las instrucciones y prompts de rol que has visto hasta ahora son 0-shot prompts. Un ejemplo adicional de un 0-shot prompt es:
+
+```text
+Suma 2+2:
+```
+
+Este es 0-shot ya que no le hemos mostrado al modelo ningún ejemplo completo.
+
+### 1-shot prompting
+
+1-shot prompting es cuando le muestras al modelo un solo ejemplo. Por ejemplo, el análogo 1-shot del prompt 0-shot `Suma 2+2:` es:
+
+```text
+Suma 3+3: 6
+Suma 2+2:
+```
+
+Hemos mostrado al modelo un solo ejemplo completo (`Suma 3+3: 6`), así que este es un 1-shot prompt.
+
+### Few-shot prompting
+
+Few-shot prompting es cuando le muestras al modelo 2 o más ejemplos. Todos los prompts por encima de esta sección de variantes han sido few-shot prompts. El análogo few-shot de los dos prompts de arriba es:
+
+```text
+Suma 3+3: 6
+Suma 5+5: 10
+Suma 2+2:
+```
+
+Este es el caso ya que hemos mostrado al modelo al menos 2 ejemplos completos (`Suma 3+3: 6` y `Suma 5+5: 10`). Por lo general, cuantos más ejemplos se muestren al modelo, mejor será el resultado, por lo que en la mayoría de los casos es preferible usar few-shot prompting a 0-shot y 1-shot prompting en la mayoría de los casos.
+
+## Conclusión
+
+¡Few-shot prompting es una técnica poderosa para hacer que el modelo produzca resultados precisos y en el formato adecuado!

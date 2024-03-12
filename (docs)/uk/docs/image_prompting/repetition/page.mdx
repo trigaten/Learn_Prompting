@@ -1,0 +1,55 @@
+export const metadata = { sidebar_position: 50, title: "🟢 Повторення" };
+
+# 🟢 Повторення
+
+Повторення того самого слова або схожих фраз у запиті може призвести до того, що модель зробить акцент на цьому слові в згенерованому зображенні (@oppenlaender2022taxonomy). Наприклад, [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) створив ці водоспади за допомогою нейромережі DALLE:
+
+`A beautiful painting of a mountain next to a waterfall.`.
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/images_chapter/bad_water.webp"
+    width={1612}
+    height={644}
+    style={{ width: "750px", margin: "auto" }}
+  />
+</div>
+
+`A very very very very very very very very very very very very very very very very very very very very very very beautiful painting of a mountain next to a waterfall.`
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/images_chapter/good_water.webp"
+    width={1612}
+    height={652}
+    style={{ width: "750px", margin: "auto" }}
+  />
+</div>
+
+Акцент на слові `very`, здається, покращує якість результату! Повторення також можна використовувати для підкреслення предметних термінів. Наприклад, якщо ви хочете створити зображення планети з інопланетянами, використовуючи запит: `A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`, інопланетяни з більшою вірогідністю будуть присутні на отриманому зображенні. Наступні зображення створено за допомогою моделі Stable Diffusion:
+
+``
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/images_chapter/planet.webp"
+    width={550}
+    height={510}
+    style={{ width: "250px", margin: "auto" }}
+  />
+</div>
+
+`A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/images_chapter/planet_aliens.webp"
+    width={560}
+    height={572}
+    style={{ width: "250px", margin: "auto" }}
+  />
+</div>
+
+## Примітки
+
+Цей метод не досконалим, і використання значущості (наступна стаття) часто є кращим варіантом.
