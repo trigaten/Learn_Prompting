@@ -1,0 +1,765 @@
+[
+  {
+    "slug": "advanced_applications",
+    "title": "🚀 Advanced Applications",
+    "position": 20,
+    "subpages": [
+      {
+        "slug": "overview",
+        "title": "🟢 Introduction",
+        "position": 1,
+        "href": "\\docs\\advanced_applications\\overview",
+        "subpages": null
+      },
+      {
+        "slug": "mrkl",
+        "title": "🟡 LLMs Using Tools",
+        "position": 2,
+        "href": "\\docs\\advanced_applications\\mrkl",
+        "subpages": null
+      },
+      {
+        "slug": "react",
+        "title": "🟡 LLMs that Reason and Act",
+        "position": 3,
+        "href": "\\docs\\advanced_applications\\react",
+        "subpages": null
+      },
+      {
+        "slug": "pal",
+        "title": "🟡 Code as Reasoning",
+        "position": 4,
+        "href": "\\docs\\advanced_applications\\pal",
+        "subpages": null
+      }
+    ]
+  },
+  {
+    "slug": "applied_prompting",
+    "title": "🧪 Applied Prompting",
+    "position": 19,
+    "subpages": [
+      {
+        "slug": "overview",
+        "title": "🟢 Introduction",
+        "position": 1,
+        "href": "\\docs\\applied_prompting\\overview",
+        "subpages": null
+      },
+      {
+        "slug": "mc_tutorial",
+        "title": "🟢 Multiple Choice Questions",
+        "position": 2,
+        "href": "\\docs\\applied_prompting\\mc_tutorial",
+        "subpages": null
+      },
+      {
+        "slug": "short_response",
+        "title": "🟢 Solve Discussion Questions",
+        "position": 3,
+        "href": "\\docs\\applied_prompting\\short_response",
+        "subpages": null
+      },
+      {
+        "slug": "build_chatgpt",
+        "title": "🟢 Build ChatGPT from GPT-3",
+        "position": 4,
+        "href": "\\docs\\applied_prompting\\build_chatgpt",
+        "subpages": null
+      },
+      {
+        "slug": "build_chatbot_from_kb",
+        "title": "🟢 Chatbot + Knowledge Base",
+        "position": 40,
+        "href": "\\docs\\applied_prompting\\build_chatbot_from_kb",
+        "subpages": null
+      }
+    ]
+  },
+  {
+    "slug": "basic_applications",
+    "title": "💼 Basic Applications",
+    "position": 11,
+    "subpages": [
+      {
+        "slug": "introduction",
+        "title": "🟢 Introduction",
+        "position": 0,
+        "href": "\\docs\\basic_applications\\introduction",
+        "subpages": null
+      },
+      {
+        "slug": "table_generation",
+        "title": "🟢 Structuring Data",
+        "position": 0,
+        "href": "\\docs\\basic_applications\\table_generation",
+        "subpages": null
+      },
+      {
+        "slug": "writing_emails",
+        "title": "🟢 Writing An Email",
+        "position": 10,
+        "href": "\\docs\\basic_applications\\writing_emails",
+        "subpages": null
+      },
+      {
+        "slug": "blog_generation",
+        "title": "🟢 Blogs",
+        "position": 30,
+        "href": "\\docs\\basic_applications\\blog_generation",
+        "subpages": null
+      },
+      {
+        "slug": "study_tool",
+        "title": "🟢 Study Buddy",
+        "position": 30,
+        "href": "\\docs\\basic_applications\\study_tool",
+        "subpages": null
+      },
+      {
+        "slug": "coding_assistance",
+        "title": "🟡 Coding Assistance",
+        "position": 40,
+        "href": "\\docs\\basic_applications\\coding_assistance",
+        "subpages": null
+      },
+      {
+        "slug": "digital_marketing",
+        "title": "🟡 Digital Marketing",
+        "position": 40,
+        "href": "\\docs\\basic_applications\\digital_marketing",
+        "subpages": null
+      },
+      {
+        "slug": "emojis",
+        "title": "🟢 Finding Emojis",
+        "position": 40,
+        "href": "\\docs\\basic_applications\\emojis",
+        "subpages": null
+      },
+      {
+        "slug": "contracts",
+        "title": "🟢 Contracts",
+        "position": 50,
+        "href": "\\docs\\basic_applications\\contracts",
+        "subpages": null
+      },
+      {
+        "slug": "writing_in_diff_voices",
+        "title": "🟢 Different Writing Styles",
+        "position": 60,
+        "href": "\\docs\\basic_applications\\writing_in_diff_voices",
+        "subpages": null
+      },
+      {
+        "slug": "summarize",
+        "title": "🟢 Summarizing Text",
+        "position": 70,
+        "href": "\\docs\\basic_applications\\summarize",
+        "subpages": null
+      },
+      {
+        "slug": "zapier_for_emails",
+        "title": "🟢 Zapier for Emails",
+        "position": 600,
+        "href": "\\docs\\basic_applications\\zapier_for_emails",
+        "subpages": null
+      }
+    ]
+  },
+  {
+    "slug": "intermediate",
+    "title": "🧙‍♂️ Intermediate",
+    "position": 15,
+    "subpages": [
+      {
+        "slug": "chain_of_thought",
+        "title": "🟢 Chain of Thought Prompting",
+        "position": 3,
+        "href": "\\docs\\intermediate\\chain_of_thought",
+        "subpages": null
+      },
+      {
+        "slug": "zero_shot_cot",
+        "title": "🟢 Zero Shot Chain of Thought",
+        "position": 4,
+        "href": "\\docs\\intermediate\\zero_shot_cot",
+        "subpages": null
+      },
+      {
+        "slug": "self_consistency",
+        "title": "🟡 Self-Consistency",
+        "position": 5,
+        "href": "\\docs\\intermediate\\self_consistency",
+        "subpages": null
+      },
+      {
+        "slug": "generated_knowledge",
+        "title": "🟡 Generated Knowledge",
+        "position": 7,
+        "href": "\\docs\\intermediate\\generated_knowledge",
+        "subpages": null
+      },
+      {
+        "slug": "least_to_most",
+        "title": "🟡 Least to Most Prompting",
+        "position": 7,
+        "href": "\\docs\\intermediate\\least_to_most",
+        "subpages": null
+      },
+      {
+        "slug": "long_form_content",
+        "title": "🟡 Dealing With Long Form Content",
+        "position": 7,
+        "href": "\\docs\\intermediate\\long_form_content",
+        "subpages": null
+      },
+      {
+        "slug": "revisiting_roles",
+        "title": "🟡 Revisiting Roles",
+        "position": 7,
+        "href": "\\docs\\intermediate\\revisiting_roles",
+        "subpages": null
+      },
+      {
+        "slug": "whats_in_a_prompt",
+        "title": "🟢 What's in a Prompt?",
+        "position": 7,
+        "href": "\\docs\\intermediate\\whats_in_a_prompt",
+        "subpages": null
+      }
+    ]
+  },
+  {
+    "slug": "miscl",
+    "title": "🎲 Miscellaneous",
+    "position": 85,
+    "subpages": [
+      {
+        "slug": "detect",
+        "title": "🟢 Detecting AI Generated Text",
+        "position": 1,
+        "href": "\\docs\\miscl\\detect",
+        "subpages": null
+      },
+      {
+        "slug": "trickery",
+        "title": "🟢 Detection Trickery",
+        "position": 2,
+        "href": "\\docs\\miscl\\trickery",
+        "subpages": null
+      },
+      {
+        "slug": "music",
+        "title": "🟢 Music Generation",
+        "position": 3,
+        "href": "\\docs\\miscl\\music",
+        "subpages": null
+      }
+    ]
+  },
+  {
+    "slug": "image_prompting",
+    "title": "🖼️ Image Prompting",
+    "position": 40,
+    "subpages": [
+      {
+        "slug": "intro",
+        "title": "🟢 Introduction",
+        "position": 1,
+        "href": "\\docs\\image_prompting\\intro",
+        "subpages": null
+      },
+      {
+        "slug": "style_modifiers",
+        "title": "🟢 Style Modifiers",
+        "position": 4,
+        "href": "\\docs\\image_prompting\\style_modifiers",
+        "subpages": null
+      },
+      {
+        "slug": "quality_boosters",
+        "title": "🟢 Quality Boosters",
+        "position": 5,
+        "href": "\\docs\\image_prompting\\quality_boosters",
+        "subpages": null
+      },
+      {
+        "slug": "repetition",
+        "title": "🟢 Repetition",
+        "position": 50,
+        "href": "\\docs\\image_prompting\\repetition",
+        "subpages": null
+      },
+      {
+        "slug": "weighted_terms",
+        "title": "🟢 Weighted Terms",
+        "position": 60,
+        "href": "\\docs\\image_prompting\\weighted_terms",
+        "subpages": null
+      },
+      {
+        "slug": "fix_deformed_generations",
+        "title": "🟢 Fix Deformed Generations",
+        "position": 90,
+        "href": "\\docs\\image_prompting\\fix_deformed_generations",
+        "subpages": null
+      },
+      {
+        "slug": "shot_type",
+        "title": "🟢 Shot type",
+        "position": 90,
+        "href": "\\docs\\image_prompting\\shot_type",
+        "subpages": null
+      },
+      {
+        "slug": "midjourney",
+        "title": "🟢 Midjourney",
+        "position": 99,
+        "href": "\\docs\\image_prompting\\midjourney",
+        "subpages": null
+      },
+      {
+        "slug": "resources",
+        "title": "🟢 Resources",
+        "position": 100,
+        "href": "\\docs\\image_prompting\\resources",
+        "subpages": null
+      }
+    ]
+  },
+  {
+    "slug": "prompt_hacking",
+    "title": "🔓 Prompt Hacking",
+    "position": 50,
+    "subpages": [
+      {
+        "slug": "intro",
+        "title": "🟢 Introduction",
+        "position": 0,
+        "href": "\\docs\\prompt_hacking\\intro",
+        "subpages": null
+      },
+      {
+        "slug": "injection",
+        "title": "🟢 Prompt Injection",
+        "position": 1,
+        "href": "\\docs\\prompt_hacking\\injection",
+        "subpages": null
+      },
+      {
+        "slug": "leaking",
+        "title": "🟢 Prompt Leaking",
+        "position": 2,
+        "href": "\\docs\\prompt_hacking\\leaking",
+        "subpages": null
+      },
+      {
+        "slug": "jailbreaking",
+        "title": "🟢 Jailbreaking",
+        "position": 4,
+        "href": "\\docs\\prompt_hacking\\jailbreaking",
+        "subpages": null
+      },
+      {
+        "slug": "defensive_measures",
+        "title": "🟢 Defensive Measures",
+        "position": 50,
+        "subpages": [
+          {
+            "slug": "overview",
+            "title": "🟢 Overview",
+            "position": 0,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\overview",
+            "subpages": null
+          },
+          {
+            "slug": "filtering",
+            "title": "🟢 Filtering",
+            "position": 10,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\filtering",
+            "subpages": null
+          },
+          {
+            "slug": "instruction",
+            "title": "🟢 Instruction Defense",
+            "position": 20,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\instruction",
+            "subpages": null
+          },
+          {
+            "slug": "post_prompting",
+            "title": "🟢 Post-Prompting",
+            "position": 30,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\post_prompting",
+            "subpages": null
+          },
+          {
+            "slug": "random_sequence",
+            "title": "🟢 Random Sequence Enclosure",
+            "position": 40,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\random_sequence",
+            "subpages": null
+          },
+          {
+            "slug": "sandwich_defense",
+            "title": "🟢 Sandwich Defense",
+            "position": 50,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\sandwich_defense",
+            "subpages": null
+          },
+          {
+            "slug": "xml_tagging",
+            "title": "🟢 XML Tagging",
+            "position": 60,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\xml_tagging",
+            "subpages": null
+          },
+          {
+            "slug": "llm_eval",
+            "title": "🟢 Separate LLM Evaluation",
+            "position": 70,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\llm_eval",
+            "subpages": null
+          },
+          {
+            "slug": "other",
+            "title": "🟢 Other Approaches ",
+            "position": 2000,
+            "href": "\\docs\\prompt_hacking\\defensive_measures\\other",
+            "subpages": null
+          }
+        ]
+      },
+      {
+        "slug": "offensive_measures",
+        "title": "🟢 Offensive Measures",
+        "position": 50,
+        "subpages": [
+          {
+            "slug": "overview",
+            "title": "🟢 Overview",
+            "position": 0,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\overview",
+            "subpages": null
+          },
+          {
+            "slug": "obfuscation",
+            "title": "🟢 Obfuscation/Token Smuggling",
+            "position": 10,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\obfuscation",
+            "subpages": null
+          },
+          {
+            "slug": "payload_splitting",
+            "title": "🟢 Payload Splitting",
+            "position": 20,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\payload_splitting",
+            "subpages": null
+          },
+          {
+            "slug": "defined_dictionary",
+            "title": "🟢 Defined Dictionary Attack",
+            "position": 30,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\defined_dictionary",
+            "subpages": null
+          },
+          {
+            "slug": "virtualization",
+            "title": "🟢 Virtualization",
+            "position": 40,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\virtualization",
+            "subpages": null
+          },
+          {
+            "slug": "indirect_injection",
+            "title": "🟢 Indirect Injection",
+            "position": 80,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\indirect_injection",
+            "subpages": null
+          },
+          {
+            "slug": "recursive_attack",
+            "title": "🟢 Recursive Injection",
+            "position": 90,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\recursive_attack",
+            "subpages": null
+          },
+          {
+            "slug": "code_injection",
+            "title": "🟢 Code Injection",
+            "position": 1000,
+            "href": "\\docs\\prompt_hacking\\offensive_measures\\code_injection",
+            "subpages": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tooling",
+    "title": "🔨 Tooling",
+    "position": 60,
+    "subpages": [
+      {
+        "slug": "tools",
+        "title": "Prompt Engineering Tools",
+        "position": 50,
+        "href": "\\docs\\tooling\\tools",
+        "subpages": null
+      },
+      {
+        "slug": "IDEs",
+        "title": "Prompt Engineering IDEs",
+        "position": 60,
+        "subpages": [
+          {
+            "slug": "intro",
+            "title": "Overview",
+            "position": 1,
+            "href": "\\docs\\tooling\\IDEs\\intro",
+            "subpages": null
+          },
+          {
+            "slug": "playground",
+            "title": "GPT-3 Playground",
+            "position": 2,
+            "href": "\\docs\\tooling\\IDEs\\playground",
+            "subpages": null
+          },
+          {
+            "slug": "dust",
+            "title": "Dust ",
+            "position": 3,
+            "href": "\\docs\\tooling\\IDEs\\dust",
+            "subpages": null
+          },
+          {
+            "slug": "soaked",
+            "title": "Soaked ",
+            "position": 3,
+            "href": "\\docs\\tooling\\IDEs\\soaked",
+            "subpages": null
+          },
+          {
+            "slug": "everyprompt",
+            "title": "Everyprompt ",
+            "position": 5,
+            "href": "\\docs\\tooling\\IDEs\\everyprompt",
+            "subpages": null
+          },
+          {
+            "slug": "promptide",
+            "title": "Prompt IDE ",
+            "position": 6,
+            "href": "\\docs\\tooling\\IDEs\\promptide",
+            "subpages": null
+          },
+          {
+            "slug": "prompttools",
+            "title": "PromptTools",
+            "position": 7,
+            "href": "\\docs\\tooling\\IDEs\\prompttools",
+            "subpages": null
+          },
+          {
+            "slug": "promptsource",
+            "title": "PromptSource ",
+            "position": 8,
+            "href": "\\docs\\tooling\\IDEs\\promptsource",
+            "subpages": null
+          },
+          {
+            "slug": "promptchainer",
+            "title": "PromptChainer",
+            "position": 9,
+            "href": "\\docs\\tooling\\IDEs\\promptchainer",
+            "subpages": null
+          },
+          {
+            "slug": "promptsai",
+            "title": "Prompts.ai",
+            "position": 9,
+            "href": "\\docs\\tooling\\IDEs\\promptsai",
+            "subpages": null
+          },
+          {
+            "slug": "snorkel",
+            "title": "Snorkel 🚧",
+            "position": 10,
+            "href": "\\docs\\tooling\\IDEs\\snorkel",
+            "subpages": null
+          },
+          {
+            "slug": "multi",
+            "title": "Multi 🚧",
+            "position": 11,
+            "href": "\\docs\\tooling\\IDEs\\multi",
+            "subpages": null
+          },
+          {
+            "slug": "humanloop",
+            "title": "Human Loop",
+            "position": 12,
+            "href": "\\docs\\tooling\\IDEs\\humanloop",
+            "subpages": null
+          },
+          {
+            "slug": "spellbook",
+            "title": "Spellbook 🚧",
+            "position": 12,
+            "href": "\\docs\\tooling\\IDEs\\spellbook",
+            "subpages": null
+          },
+          {
+            "slug": "kollaprompt",
+            "title": "Kolla Prompt 🚧",
+            "position": 15,
+            "href": "\\docs\\tooling\\IDEs\\kollaprompt",
+            "subpages": null
+          },
+          {
+            "slug": "langchain",
+            "title": "Lang Chain",
+            "position": 16,
+            "href": "\\docs\\tooling\\IDEs\\langchain",
+            "subpages": null
+          },
+          {
+            "slug": "openprompt",
+            "title": "OpenPrompt",
+            "position": 17,
+            "href": "\\docs\\tooling\\IDEs\\openprompt",
+            "subpages": null
+          },
+          {
+            "slug": "DALLE",
+            "title": "OpenAI DALLE IDE",
+            "position": 18,
+            "href": "\\docs\\tooling\\IDEs\\DALLE",
+            "subpages": null
+          },
+          {
+            "slug": "dream_studio",
+            "title": "Dream Studio",
+            "position": 20,
+            "href": "\\docs\\tooling\\IDEs\\dream_studio",
+            "subpages": null
+          },
+          {
+            "slug": "patience",
+            "title": "Patience",
+            "position": 20,
+            "href": "\\docs\\tooling\\IDEs\\patience",
+            "subpages": null
+          },
+          {
+            "slug": "promptmetheus",
+            "title": "Promptmetheus",
+            "position": 21,
+            "href": "\\docs\\tooling\\IDEs\\promptmetheus",
+            "subpages": null
+          },
+          {
+            "slug": "promptsandbox",
+            "title": "PromptSandbox.io",
+            "position": 23,
+            "href": "\\docs\\tooling\\IDEs\\promptsandbox",
+            "subpages": null
+          },
+          {
+            "slug": "theforgeai",
+            "title": "The Forge AI",
+            "position": 24,
+            "href": "\\docs\\tooling\\IDEs\\theforgeai",
+            "subpages": null
+          },
+          {
+            "slug": "anysolve",
+            "title": "AnySolve",
+            "position": 25,
+            "href": "\\docs\\tooling\\IDEs\\anysolve",
+            "subpages": null
+          },
+          {
+            "slug": "conclusion",
+            "title": "Conclusion",
+            "position": 100,
+            "href": "\\docs\\tooling\\IDEs\\conclusion",
+            "subpages": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "reliability",
+    "title": "⚖️ Reliability",
+    "position": 30,
+    "subpages": [
+      {
+        "slug": "intro",
+        "title": "🟢 Introduction",
+        "position": 1,
+        "href": "\\docs\\reliability\\intro",
+        "subpages": null
+      },
+      {
+        "slug": "debiasing",
+        "title": "🟢 Prompt Debiasing",
+        "position": 3,
+        "href": "\\docs\\reliability\\debiasing",
+        "subpages": null
+      },
+      {
+        "slug": "ensembling",
+        "title": "🟡 Prompt Ensembling",
+        "position": 5,
+        "href": "\\docs\\reliability\\ensembling",
+        "subpages": null
+      },
+      {
+        "slug": "lm_self_eval",
+        "title": "🟡 LLM Self Evaluation",
+        "position": 7,
+        "href": "\\docs\\reliability\\lm_self_eval",
+        "subpages": null
+      },
+      {
+        "slug": "calibration",
+        "title": "🔴 Calibrating LLMs",
+        "position": 10,
+        "href": "\\docs\\reliability\\calibration",
+        "subpages": null
+      },
+      {
+        "slug": "math",
+        "title": "🟡 Math",
+        "position": 70,
+        "href": "\\docs\\reliability\\math",
+        "subpages": null
+      }
+    ]
+  },
+  {
+    "slug": "trainable",
+    "title": "💪 Prompt Tuning",
+    "position": 70,
+    "subpages": [
+      {
+        "slug": "soft_prompting",
+        "title": "🔴 Soft Prompts",
+        "position": 1,
+        "href": "\\docs\\trainable\\soft_prompting",
+        "subpages": null
+      },
+      {
+        "slug": "discretized",
+        "title": "🔴 Interpretable Soft Prompts",
+        "position": 2,
+        "href": "\\docs\\trainable\\discretized",
+        "subpages": null
+      }
+    ]
+  }
+]

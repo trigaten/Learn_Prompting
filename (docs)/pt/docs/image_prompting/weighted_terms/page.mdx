@@ -1,0 +1,44 @@
+export const metadata = { sidebar_position: 60, title: "🟢 Ponderando termos" };
+
+# 🟢 Ponderando termos
+
+Alguns modelos (Stable Diffusion, Midjourney, etc.) permitem que você dê pesos diferentes para diferentes termos em um prompt. Isso pode ser usado para enfatizar certas palavras ou frases na imagem gerada. Também pode ser usado para desenfatizar certas palavras ou frases na imagem gerada. Vamos considerar um exemplo simples:
+
+# Exemplo
+
+Aqui estão algumas montanhas geradas pelo Stable Diffusion, com o prompt `montanha`.
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/images_chapter/mountains.webp"
+    width={1268}
+    height={1158}
+    style={{ width: "350px", margin: "auto" }}
+  />
+</div>
+
+No entanto, se quisermos montanhas sem árvores, podemos usar o prompt `montanha | árvore:-10`. Como pesamos a árvore muito negativamente, elas não aparecem na imagem gerada.
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/images_chapter/mountains_no_trees.webp"
+    width={1268}
+    height={1158}
+    style={{ width: "350px", margin: "auto" }}
+  />
+</div>
+
+Os termos ponderados podem ser combinados em prompts mais complicados, como `Um planeta no espaço:10 | cheio de cores vermelho, azul e roxo:4 | alienígenas:-10 | 4K, alta qualidade`
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/images_chapter/planets.webp"
+    width={1268}
+    height={1158}
+    style={{ width: "350px", margin: "auto" }}
+  />
+</div>
+
+## Notas
+
+Leia mais sobre ponderar em alguns dos recursos no final deste capítulo.

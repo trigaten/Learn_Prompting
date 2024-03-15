@@ -1,0 +1,198 @@
+[
+  {
+    "slug": "tooling",
+    "title": "🔨 Tooling",
+    "position": 60,
+    "subpages": [
+      {
+        "slug": "tools",
+        "title": "Prompt Engineering Tools",
+        "position": 50,
+        "href": "\\docs\\tooling\\tools",
+        "subpages": null
+      },
+      {
+        "slug": "IDEs",
+        "title": "Prompt Engineering IDEs",
+        "position": 60,
+        "subpages": [
+          {
+            "slug": "intro",
+            "title": "Overview",
+            "position": 1,
+            "href": "\\docs\\tooling\\IDEs\\intro",
+            "subpages": null
+          },
+          {
+            "slug": "playground",
+            "title": "GPT-3 Playground",
+            "position": 2,
+            "href": "\\docs\\tooling\\IDEs\\playground",
+            "subpages": null
+          },
+          {
+            "slug": "dust",
+            "title": "Dust ",
+            "position": 3,
+            "href": "\\docs\\tooling\\IDEs\\dust",
+            "subpages": null
+          },
+          {
+            "slug": "soaked",
+            "title": "Soaked ",
+            "position": 3,
+            "href": "\\docs\\tooling\\IDEs\\soaked",
+            "subpages": null
+          },
+          {
+            "slug": "everyprompt",
+            "title": "Everyprompt ",
+            "position": 5,
+            "href": "\\docs\\tooling\\IDEs\\everyprompt",
+            "subpages": null
+          },
+          {
+            "slug": "promptide",
+            "title": "Prompt IDE ",
+            "position": 6,
+            "href": "\\docs\\tooling\\IDEs\\promptide",
+            "subpages": null
+          },
+          {
+            "slug": "prompttools",
+            "title": "PromptTools",
+            "position": 7,
+            "href": "\\docs\\tooling\\IDEs\\prompttools",
+            "subpages": null
+          },
+          {
+            "slug": "promptsource",
+            "title": "PromptSource ",
+            "position": 8,
+            "href": "\\docs\\tooling\\IDEs\\promptsource",
+            "subpages": null
+          },
+          {
+            "slug": "promptchainer",
+            "title": "PromptChainer",
+            "position": 9,
+            "href": "\\docs\\tooling\\IDEs\\promptchainer",
+            "subpages": null
+          },
+          {
+            "slug": "promptsai",
+            "title": "Prompts.ai",
+            "position": 9,
+            "href": "\\docs\\tooling\\IDEs\\promptsai",
+            "subpages": null
+          },
+          {
+            "slug": "snorkel",
+            "title": "Snorkel 🚧",
+            "position": 10,
+            "href": "\\docs\\tooling\\IDEs\\snorkel",
+            "subpages": null
+          },
+          {
+            "slug": "multi",
+            "title": "Multi 🚧",
+            "position": 11,
+            "href": "\\docs\\tooling\\IDEs\\multi",
+            "subpages": null
+          },
+          {
+            "slug": "humanloop",
+            "title": "Human Loop",
+            "position": 12,
+            "href": "\\docs\\tooling\\IDEs\\humanloop",
+            "subpages": null
+          },
+          {
+            "slug": "spellbook",
+            "title": "Spellbook 🚧",
+            "position": 12,
+            "href": "\\docs\\tooling\\IDEs\\spellbook",
+            "subpages": null
+          },
+          {
+            "slug": "kollaprompt",
+            "title": "Kolla Prompt 🚧",
+            "position": 15,
+            "href": "\\docs\\tooling\\IDEs\\kollaprompt",
+            "subpages": null
+          },
+          {
+            "slug": "langchain",
+            "title": "Lang Chain",
+            "position": 16,
+            "href": "\\docs\\tooling\\IDEs\\langchain",
+            "subpages": null
+          },
+          {
+            "slug": "openprompt",
+            "title": "OpenPrompt",
+            "position": 17,
+            "href": "\\docs\\tooling\\IDEs\\openprompt",
+            "subpages": null
+          },
+          {
+            "slug": "DALLE",
+            "title": "OpenAI DALLE IDE",
+            "position": 18,
+            "href": "\\docs\\tooling\\IDEs\\DALLE",
+            "subpages": null
+          },
+          {
+            "slug": "dream_studio",
+            "title": "Dream Studio",
+            "position": 20,
+            "href": "\\docs\\tooling\\IDEs\\dream_studio",
+            "subpages": null
+          },
+          {
+            "slug": "patience",
+            "title": "Patience",
+            "position": 20,
+            "href": "\\docs\\tooling\\IDEs\\patience",
+            "subpages": null
+          },
+          {
+            "slug": "promptmetheus",
+            "title": "Promptmetheus",
+            "position": 21,
+            "href": "\\docs\\tooling\\IDEs\\promptmetheus",
+            "subpages": null
+          },
+          {
+            "slug": "promptsandbox",
+            "title": "PromptSandbox.io",
+            "position": 23,
+            "href": "\\docs\\tooling\\IDEs\\promptsandbox",
+            "subpages": null
+          },
+          {
+            "slug": "theforgeai",
+            "title": "The Forge AI",
+            "position": 24,
+            "href": "\\docs\\tooling\\IDEs\\theforgeai",
+            "subpages": null
+          },
+          {
+            "slug": "anysolve",
+            "title": "AnySolve",
+            "position": 25,
+            "href": "\\docs\\tooling\\IDEs\\anysolve",
+            "subpages": null
+          },
+          {
+            "slug": "conclusion",
+            "title": "Conclusion",
+            "position": 100,
+            "href": "\\docs\\tooling\\IDEs\\conclusion",
+            "subpages": null
+          }
+        ]
+      }
+    ]
+  }
+]

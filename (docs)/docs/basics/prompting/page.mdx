@@ -1,0 +1,108 @@
+export const metadata = {
+  sidebar_position: 10,
+  title: "🟢 Prompting With ChatGPT",
+};
+
+# 🟢 Prompting With ChatGPT
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/basics/chatgpt_interface.webp"
+    className="img-docs"
+    width={2854}
+    height={1466}
+    style={{ width: "80%", margin: "auto" }}
+  />
+</div>
+<br />
+
+<Takeaways>
+  - Set up ChatGPT 
+  - Use ChatGPT to summarize text and solve a math problem
+</Takeaways>
+
+In the previous module, we discussed AI and how humans can instruct AIs to perform tasks.
+Using a prompt to instruct an AI to do a task is called prompting(@shin2020autoprompt). We will explore prompting with [ChatGPT](http://chat.openai.com)[^a], a very popular Large Language Model , that can understand and write text. It was developed by OpenAI, and is currently the easiest Gen AI to work with. It is also completely free to use.
+
+## Set up ChatGPT
+
+To get started with ChatGPT, follow these steps:
+
+- Navigate to [http://chat.openai.com](http://chat.openai.com)
+- It should ask you to make an account. Go ahead and do so.
+- Log in with this account
+
+Here is a video that shows you how to get setup with ChatGPT.
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/FMEzy2jo84c"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+></iframe>
+
+## Test Some Prompts on ChatGPT
+
+Now that we have ChatGPT set up, let's test out some prompts.
+
+#### 1) Color of Grass
+
+We will start with something very simple: can ChatGPT tell us the color of grass?
+
+<AIInput>What color is grass?</AIInput>
+
+<AIOutput>Grass is green.</AIOutput>
+
+Indeed it can, now let's try a more useful example.
+
+#### 2) Summarizing an Article
+
+Say you are reading an article about snowfall in Florida. You want to quickly get the main ideas of the article, so you show the AI what you are reading, and ask for a summary[^b]:
+
+<AIInput>
+It is very rare for snow to fall in the U.S. state of Florida, especially in the central and southern portions of the state. With the exception of the far northern areas of the state, most of the major cities in Florida have never recorded measurable snowfall, though trace amounts have been recorded, or flurries in the air observed few times each century. According to the National Weather Service, in the Florida Keys and Key West there is no known occurrence of snow flurries since the European colonization of the region more than 300 years ago. In Miami, Fort Lauderdale, and Palm Beach there has been only one known report of snow flurries observed in the air in more than 200 years; this occurred in January 1977. In any event, Miami, Fort Lauderdale, and Palm Beach have not seen snow flurries before or since this 1977 event.
+
+Summarize this paragraph in a single sentence:
+
+</AIInput>
+
+Here is ChatGPT's response. It is a much shorter read!
+
+<AIOutput>
+  Snowfall is extremely rare in Florida, with the exception of the far northern
+  areas, and only one instance of snow flurries in the air has been recorded in
+  the major cities of Miami, Fort Lauderdale, and Palm Beach in the last 200
+  years.
+</AIOutput>
+
+<Caution>
+  You will likely see a slightly different output. This will be the case for
+  most prompts in this course. We will learn why later in this module.
+</Caution>
+
+#### 3) Math Problem Solving
+
+ChatGPT can also solve math problems! Let's give it a prompt with a simple problem.
+
+<AIInput>
+  If I have 20 apples, eat three of them, and sell three more, how many do I
+  have left?
+</AIInput>
+
+<AIOutput>
+If you have 20 apples and you eat three of them, you will have 20 - 3 = 17 apples left.
+
+After eating three apples (17 left), if you sell three more, you will have 17 - 3 = 14 apples left.
+
+</AIOutput>
+
+## Conclusion
+
+You should now be comfortable with what a %%prompt|prompt%% is, and how to do some basic prompting with ChatGPT.
+Keep in mind that _prompt_ can be a verb or a noun. You can _prompt_ a model or you can _give_ a model a prompt. These two phrases mean the same thing. The action of giving a model a prompt is called prompting. We will learn more about prompting in the next lesson.
+
+[^a]: GPT-4 is another model developed by OpenAI that is more advanced, but costs money.
+[^b]: This paragraph is from https://en.wikipedia.org/wiki/Snow_in_Florida

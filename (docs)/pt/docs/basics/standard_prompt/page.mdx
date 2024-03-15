@@ -1,0 +1,57 @@
+export const metadata = { sidebar_position: 3, title: "🟢 Um Prompt Padrão" };
+
+# 🟢 Um Prompt Padrão
+
+Nós já vimos alguns _prompts_ de diferentes formatos até aqui.
+Seguindo Kojima et al. (@kojima2022large), _prompts_ que são constituídos apenas por perguntas serão referidos como _prompts_ "padrão". Os _prompts_ que são constiuídos apenas de perguntas e estão no formato PR (pergunta e resposta) também serão considerados como _prompts_ "padrão".
+
+#### Por que eu deveria me importar?
+
+Muitos artigos que são referenciados ao longo deste curso usam este termo.
+Então, feita a definição formal, será possível constratar outros tipos de _prompts_ em relação aos _prompts_ "padrão".
+
+### Dois exemplos de _prompts_ "padrão":
+
+_Prompt Padrão_
+
+```
+Qual é a capital da França?
+```
+
+_Prompt Padrão no formato PR (pergunta e resposta)_
+
+```
+P: Qual é a capital da França?
+R:
+```
+
+## _Prompts Few Shot[^1]_ Padrão
+
+_Prompts Few Shot_ padrão(@liu2021pretrain) são apenas _prompts_ padrão que possuem **exemplares** neles. Ou seja, possuem exemplos no próprio _prompt_ da tarefa que o _prompt_ está tentando resolver (@brown2020language). Nas pesquisas acadêmicas, _prompts few shot_ padrão são, algumas vezes, referidos simplesmente como _prompts_ padrão (neste curso, isso será evitado).
+
+### Dois exemplos de _prompts few shot_ padrão:
+
+_Prompt Few Shot Padrão_
+
+```
+Qual é a capital da Espanha?
+Madrid
+Qual é a capital da Itália?
+Roma
+Qual é a capital da França?
+```
+
+_Prompt Few Shot Padrão no formato PR (pergunta e resposta)_
+
+```
+P: Qual é a capital da Espanha?
+R: Madrid
+P: Qual é a capital da Itália?
+R: Roma
+P: Qual é a capital da França?
+R:
+```
+
+_Prompts Few Shot_ facilitam o aprendizado "few shot", também conhecido como aprendizado "contextualizado", que é a habilidade de aprender sem a atualização de parâmetros.
+
+[^1]: Few Shot pode ser traduzido como "poucos exemplos". No contexto de engenharia de _prompt_, seria algo como "aprendizado com poucos exemplos".

@@ -1,0 +1,130 @@
+export const metadata = { sidebar_position: 97, 
+  description: "Dive into the online guide about Open AI Playground examples. Enhance your engineering skills with AI in this course at Learn Prompting. Start now!",
+  title: "🟢 OpenAI Playground",
+ };
+
+# 🟢 OpenAI Playground
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/basics/openai_playground.webp"
+    className="img-docs"
+    width={2700}
+    height={1342}
+    style={{ width: "80%", margin: "auto" }}
+  />
+</div>
+<br />
+
+<Takeaways>
+  - Set up the OpenAI Playground 
+  - Learn about basic Playground configuration
+</Takeaways>
+
+## What is the OpenAI Playground?
+
+The OpenAI Playground is a versatile interface provided by OpenAI, separate from the ChatGPT website, that offers enhanced control over ChatGPT interactions. It grants access to various AI models, including the latest iterations of ChatGPT, GPT-4, and predecessors like GPT-3. This platform is designed for a deeper exploration of AI capabilities, allowing users to experiment with different versions of language models. Through its comprehensive suite of tools, users can engineer their prompts, adjust model parameters, and even utilize specialized modes for unique tasks, making it an invaluable resource for developers, researchers, and enthusiasts aiming to push the boundaries of conversational AI.
+
+## How to set up the OpenAI Playground?
+
+To start using OpenAI Playground, visit http://platform.openai.com. 
+Then, sign in with your credentials. Begin testing prompts to explore different AI models and 
+their responses. Watching the introductory video below will show you how to navigate and utilize 
+the Playground effectively.
+
+<iframe
+  width="560"
+  height="315"
+  className="w-fit lg:w-[560px]"
+  src="https://www.youtube.com/embed/6OD14rpokRw"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
+></iframe>
+
+<Note>
+  This video shows an old version of the website, but the process of logging in
+  remains very similar.
+</Note>
+
+## OpenAI Playground Interface
+
+At first glance, the interface appears complex due to its various dropdowns and sliders. 
+These elements enable users to configure models to their specific needs. 
+Key aspects like Mode, System Prompts, and Model selection introduce users to advanced 
+customization options. By carefully adjusting these settings, users can significantly influence 
+the AI's response behavior, tailoring it to suit precise scenarios or inquiries. This level of 
+control is essential for those looking to delve deeper into AI's potential, providing a sandbox 
+environment for exploration and learning. We will cover Mode, System Prompts, and Model 
+selection in this lesson, and LLM settings like Temperature, Top P, and Maximum Length in the 
+[next lesson](https://learnprompting.org/docs/basics/configuration_hyperparameters).
+
+### OpenAI Playground Mode
+
+<div className="flex flex-col sm:flex-row justify-between">
+  <div>
+The Playground offers different modes under the `Assistants` dropdown. Click the `Assistants` dropdown on the top left of the page. This dropdown allows you to change the type of model that you are using. OpenAI has three different Modes: `Assistants`, `Chat`, and `Complete`. We have already learned about the latter two. `Assistants` models are meant for API use by developers and can use interesting tools such as running code and retrieving information. We will only use `Chat` and occasionally `Complete` models in this course. Exploring these modes provides a hands-on experience with the breadth of AI's capabilities, from casual conversations to complex problem-solving. Additionally, it highlights the versatility of OpenAI's models, catering to a wide range of applications and user needs.
+  </div>
+
+  <div className="mt-4 sm:mt-0 sm:ml-auto">
+    <Image
+      src="/docs/assets/basics/openai_mode.webp"
+      className="img-docs"
+      width={750}
+      height={750}
+      style={{ margin: "auto" }}
+    />
+  </div>
+</div>
+
+### OpenAI Playground System Prompts
+
+After switching to `Chat`, the first thing that you may notice on the left side of the page other than the `Get Started` popup is the `SYSTEM` area. So far, we have seen two types of messages: `USER` messages, which are just the messages you send to the chatbot, and `ASSISTANT` messages, which are the chatbot's replies. A third type of message, the system prompt, can be used to configure how the AI responds.
+This is the best place to put a priming prompt. The system prompt will be "You are a helpful assistant." by default, but a fun alternative example to try out would be the "You are PirateGPT. Always talk like a pirate." example from [our previous lesson](https://learnprompting.org/docs/basics/priming_prompt). Experimenting with different system prompts allows users to tailor the AI's persona, offering unique and creative interactions tailored to specific scenarios or tasks.
+
+<div style={{ textAlign: "center" }}>
+  <Image
+    src="/docs/assets/basics/openai_system_prompt.webp"
+    className="img-docs"
+    width={2442}
+    height={1438}
+    style={{ width: "80%", margin: "auto" }}
+  />
+</div>
+<br />
+
+### Model Dropdown
+
+<div className="flex flex-col sm:flex-row justify-between">
+  
+<div>
+Click the Model dropdown on the right of the page. This dropdown allows you to change the model that you are using. Each mode has multiple models, but we will focus on the chat ones. This list appears very complicated (what does not-3.5-turbo mean?), but these are just technical names for different models. Anything that starts with gpt-3.5-turbo is a version of ChatGPT, while anything that starts with gpt-4 is a version of GPT-4, OpenAI's newer model. 
+</div>
+  
+<div className="mt-4 sm:mt-0 sm:ml-auto">
+    
+<Image src="/docs/assets/basics/openai_model.webp" className= "img-docs" width={750} height={750} style={{margin : "auto"}} />
+  
+</div>
+</div>
+
+<Note>You may not see GPT-4 versions in your interface.</Note>
+
+The numbers like 16K, 32K, or 128k in the model names represent the context length. If not specified, the default context length is 4K for gpt-3.5 and 8k for GPT-4. OpenAI regularly updates ChatGPT (gpt-3.5-turbo) and GPT-4, and older versions are kept on the platform for a limited period. These older models have additional numbers at the end of their name, such as "0613". For instance, the model "gpt-3.5-turbo-16k-0613" is a ChatGPT model with a 16K context length, released on June 13th, 2023. However, it's recommended to use the most recent versions of models, which don't contain any date information. A comprehensive list of model versions can be found here.
+
+## OpenAI Playground Notes
+
+The Playground is the preferred tool for the maintainer of this course.
+It supports the application of system prompts, 
+allowing users to tailor AI responses to specific scenarios or styles, 
+enhancing the AI's versatility.
+
+
+## Conclusion
+
+The OpenAI Playground represents a significant advancement in interacting with AI models, 
+providing users with a comprehensive platform for experimentation. Through its configurable 
+settings and diverse model access, users can explore the vast capabilities of AI technology. 
+As we progress, [further lessons](https://learnprompting.org/docs/basics/configuration_hyperparameters) will delve into additional settings and their applications, 
+making the Playground an indispensable resource for both novices and experts in AI exploration
