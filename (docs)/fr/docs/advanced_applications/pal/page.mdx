@@ -1,11 +1,11 @@
-export const metadata = { sidebar_position: 4, title: "🟡 Code as Reasoning" };
+export const metadata = { sidebar_position: 4, title: "🟡 Le Code comme Raisonnement" };
 
-# 🟡 Code as Reasoning
+# 🟡 Le Code comme Raisonnement
 
-[Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) are another example of a MRKL system.
-When given a question, PALs are able to **write code** that solves this question. They send the
-code to a programmatic runtime to get the result. PAL works in contrast to CoT; PAL's intermediate
-reasoning is code, while CoT's is natural language.
+Les [Program-aided Language Models (PAL)](https://reasonwithpal.com)(@gao2022pal) sont un autre exemple de système MRKL. 
+Lorsqu'une question leur est posée, les PAL sont capables d'**écrire du code** qui résout cette question. Ils envoient le 
+code à un environnement d'exécution programmatique pour obtenir le résultat. PAL fonctionne différemment de CoT ; le raisonnement intermédiaire de PAL 
+est du code, tandis que celui de CoT est en langage naturel.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -16,55 +16,56 @@ reasoning is code, while CoT's is natural language.
   />
 </div>
 
-<div style={{ textAlign: "center" }}>PAL Example (Gao et al.)</div>
+<div style={{ textAlign: "center" }}>Exemple PAL (Gao et al.)</div>
 
-One important thing to note it that PAL actually interleaves natural language (NL) and code.
-In the above image, in blue are natural language reasoning that PAL generates. Although it
-is not shown in the image, PAL actually generates '\#' before each line of NL reasoning, so
-that they are interpreted as comments by the programmatic runtime.
+Un point important à noter est que PAL entrelace en réalité le langage naturel (NL) et le code.
+Dans l'image ci-dessus, en bleu se trouve le raisonnement en langage naturel que PAL génère. Bien que 
+ce ne soit pas montré dans l'image, PAL génère en fait '\#' avant chaque ligne de raisonnement NL, 
+afin qu'elles soient interprétées comme des commentaires par l'environnement d'exécution.
 
-## Example
+## Exemple
 
-Let's look at an example of PAL solving a math question. I use a 3-shot prompt,
-which is a simplified version of [this one](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal).
+Examinons un exemple de PAL résolvant une question mathématique. J'utilise un prompt à 3 exemples,
+qui est une version simplifiée de [celui-ci](https://github.com/reasoning-machines/pal/blob/main/pal/prompt/math_prompts.py)(@gao2022pal).
 
-I will use langchain, a Python package for chaining LLM functionality for this. First, a few installations are needed:
+Je vais utiliser langchain, un package Python pour chaîner les fonctionnalités LLM. 
+Tout d'abord, quelques installations sont nécessaires :
 
 ```python
 !pip install langchain==0.0.26
 !pip install openai
 from langchain.llms import OpenAI
 import os
-os.environ["OPENAI_API_KEY"] = "sk-YOUR_KEY_HERE"
+os.environ["OPENAI_API_KEY"] = "sk-VOTRE_CLE_ICI"
 ```
 
-Then, we can create an instance of GPT-3 davinci-002 (an API call happens when we use this object)
+Ensuite, nous pouvons créer une instance de GPT-3 davinci-002 (un appel API se produit lorsque nous utilisons cet objet)
 
 ```python
 llm = OpenAI(model_name='text-davinci-002', temperature=0)
 ```
 
-Here is the few shot prompt:
+Voici le prompt à quelques exemples :
 
 ```python
 MATH_PROMPT = '''
-Q: There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+Q: Il y avait neuf ordinateurs dans la salle des serveurs. Cinq ordinateurs supplémentaires ont été installés chaque jour, du lundi au jeudi. Combien y a-t-il maintenant d'ordinateurs dans la salle des serveurs ?
 
-# solution in Python:
-"""There were nine computers in the server room. Five more computers were installed each day, from monday to thursday. How many computers are now in the server room?"""
+# solution en Python:
+"""Il y avait neuf ordinateurs dans la salle des serveurs. Cinq ordinateurs supplémentaires ont été installés chaque jour, du lundi au jeudi. Combien y a-t-il maintenant d'ordinateurs dans la salle des serveurs ?"""
 computers_initial = 9
 computers_per_day = 5
-num_days = 4  # 4 days between monday and thursday
+num_days = 4  # 4 jours entre lundi et jeudi
 computers_added = computers_per_day * num_days
 computers_total = computers_initial + computers_added
 result = computers_total
 return result
 
 
-Q: Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?
+Q: Shawn a cinq jouets. Pour Noël, il a reçu deux jouets de sa mère et deux de son père. Combien de jouets a-t-il maintenant ?
 
-# solution in Python:
-"""Shawn has five toys. For Christmas, he got two toys each from his mom and dad. How many toys does he have now?"""
+# solution en Python:
+"""Shawn a cinq jouets. Pour Noël, il a reçu deux jouets de sa mère et deux de son père. Combien de jouets a-t-il maintenant ?"""
 toys_initial = 5
 mom_toys = 2
 dad_toys = 2
@@ -73,10 +74,10 @@ total_toys = toys_initial + total_received
 result = total_toys
 
 
-Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?
+Q: Jason avait 20 sucettes. Il en a donné quelques-unes à Denny. Maintenant Jason a 12 sucettes. Combien de sucettes Jason a-t-il données à Denny ?
 
-# solution in Python:
-"""Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 12 lollipops. How many lollipops did Jason give to Denny?"""
+# solution en Python:
+"""Jason avait 20 sucettes. Il en a donné quelques-unes à Denny. Maintenant Jason a 12 sucettes. Combien de sucettes Jason a-t-il données à Denny ?"""
 jason_lollipops_initial = 20
 jason_lollipops_after = 12
 denny_lollipops = jason_lollipops_initial - jason_lollipops_after
@@ -84,29 +85,29 @@ result = denny_lollipops
 
 Q: {question}
 
-# solution in Python:
+# solution en Python:
 '''
 ```
 
-Now we can pass the combined prompt to GPT-3.
+Maintenant, nous pouvons passer le prompt combiné à GPT-3.
 
 ```python
 llm_out = llm(MATH_PROMPT.format(question=question))
 print(llm_out)
 ```
 
-The output is:
+La sortie est :
 
 <pre>
   <span className="bluegreen-highlight">
-    Emma took a 60 minute plane ride to seattle. She then took a 2 hour train
-    ride to portland, and then a 30 minute bus ride to vancouver. How long did
-    it take her to get to vancouver?
+    Emma a pris un vol de 60 minutes vers Seattle. Elle a ensuite pris un train
+    pendant 2 heures jusqu'à Portland, puis un bus pendant 30 minutes jusqu'à Vancouver.
+    Combien de temps lui a-t-il fallu pour arriver à Vancouver ?
     <br />
     <br />
     plane_ride = 60
     <br />
-    train_ride = 2 * 60 # 2 hours in minutes
+    train_ride = 2 * 60 # 2 heures en minutes
     <br />
     bus_ride = 30
     <br />
@@ -116,17 +117,17 @@ The output is:
   </span>
 </pre>
 
-Finally, we can pass this code to a Python runtime to get the answer:
+Enfin, nous pouvons passer ce code à un environnement d'exécution Python pour obtenir la réponse :
 
 ```python
 exec(llm_out)
 print(result)
 ```
 
-The output is **210**, which is correct.
+La sortie est **210**, ce qui est correct.
 
-See the Jupyter notebook for this example [here](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
+Voir le notebook Jupyter pour cet exemple [ici](https://github.com/trigaten/Learn_Prompting/tree/main/docs/code_examples/PAL.ipynb).
 
-## More
+## Plus d'informations
 
-Also see [PAL's colab example](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).
+Voir aussi [l'exemple colab de PAL](https://colab.research.google.com/drive/1u4_RsdI0E79PCMDdcPiJUzYhdnjoXeXc?usp=sharing#scrollTo=Ba0ycacK4i1V).

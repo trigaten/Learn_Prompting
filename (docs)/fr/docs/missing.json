@@ -1,40 +1,5 @@
 [
   {
-    "slug": "advanced_applications",
-    "title": "🚀 Advanced Applications",
-    "position": 20,
-    "subpages": [
-      {
-        "slug": "overview",
-        "title": "🟢 Introduction",
-        "position": 1,
-        "href": "\\docs\\advanced_applications\\overview",
-        "subpages": null
-      },
-      {
-        "slug": "mrkl",
-        "title": "🟡 LLMs Using Tools",
-        "position": 2,
-        "href": "\\docs\\advanced_applications\\mrkl",
-        "subpages": null
-      },
-      {
-        "slug": "react",
-        "title": "🟡 LLMs that Reason and Act",
-        "position": 3,
-        "href": "\\docs\\advanced_applications\\react",
-        "subpages": null
-      },
-      {
-        "slug": "pal",
-        "title": "🟡 Code as Reasoning",
-        "position": 4,
-        "href": "\\docs\\advanced_applications\\pal",
-        "subpages": null
-      }
-    ]
-  },
-  {
     "slug": "applied_prompting",
     "title": "🧪 Applied Prompting",
     "position": 19,

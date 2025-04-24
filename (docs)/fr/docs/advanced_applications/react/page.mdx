@@ -1,25 +1,25 @@
 export const metadata = {
   sidebar_position: 3,
-  title: "🟡 LLMs that Reason and Act",
+  title: "🟡 LLMs qui Raisonnent et Agissent",
 };
 
-# 🟡 LLMs that Reason and Act
+# 🟡 LLMs qui Raisonnent et Agissent
 
-ReAct(@yao2022react)(reason, act) is a paradigm for enabling language models to solve complex
-tasks using natural language reasoning. ReAct is designed for tasks in which the LLM is
-allowed to perform certain actions. For example, as in a MRKL system, a LLM may be able
-to interact with external APIs to retrieve information. When asked a question, the LLM
-could choose to perform an action to retrieve information, and then answer the question
-based on the retrieved information.
+ReAct(@yao2022react)(reason, act) est un paradigme permettant aux modèles de langage de résoudre des tâches 
+complexes en utilisant le raisonnement en langage naturel. ReAct est conçu pour les tâches dans lesquelles le LLM est 
+autorisé à effectuer certaines actions. Par exemple, comme dans un système MRKL, un LLM peut interagir 
+avec des API externes pour récupérer des informations. Lorsqu'une question lui est posée, le LLM peut 
+choisir d'effectuer une action pour récupérer des informations, puis répondre à la question 
+en se basant sur les informations récupérées.
 
-ReAct Systems can be thought of as MRKL systems, with the added ability to **reason
-about** the actions they can perform.
+Les systèmes ReAct peuvent être considérés comme des systèmes MRKL, avec la capacité supplémentaire de **raisonner 
+sur** les actions qu'ils peuvent effectuer.
 
-Examine the following image. The question in the top box is sourced from HotPotQA(@yang2018hotpotqa),
-a question answering dataset that requires complex reasoning. ReAct is able to answer the question by
-first reasoning about the question (Thought 1), and then performing an action (Act 1) to send a query
-to Google. It then receives an observation (Obs 1), and continues with this thought, action, observation
-loop until it reaches a conclusion (Act 3).
+Examinez l'image suivante. La question dans la boîte supérieure provient de HotPotQA(@yang2018hotpotqa), 
+un jeu de données de questions-réponses qui nécessite un raisonnement complexe. ReAct peut répondre à la question 
+en raisonnant d'abord sur la question (Thought 1), puis en effectuant une action (Act 1) pour envoyer une requête 
+à Google. Il reçoit ensuite une observation (Obs 1) et continue avec cette boucle de pensée, action, et observation, 
+jusqu'à ce qu'il atteigne une conclusion (Act 3).
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -30,19 +30,19 @@ loop until it reaches a conclusion (Act 3).
   />
 </div>
 
-<div style={{ textAlign: "center" }}>ReAct System (Yao et al.)</div>
+<div style={{ textAlign: "center" }}>Système ReAct (Yao et al.)</div>
 
-Readers with knowledge of reinforcement learning may recognize this process as similar to the classic
-RL loop of state, action, reward, state,... ReAct provides some formalization for
-this in their paper.
+Les lecteurs familiers avec l'apprentissage par renforcement reconnaîtront ce processus comme similaire à la boucle 
+classique de RL : état, action, récompense, état,... ReAct fournit une certaine formalisation de 
+ce concept dans leur article.
 
-## Results
+## Résultats
 
-Google used the PaLM(@chowdhery2022palm) LLM in experiments with ReAct.
-Comparisons to standard prompting (question only), CoT, and other configurations
-show that ReAct's performance is promising for complex reasoning tasks. Google
-also performs studies on the FEVER dataset(@thorne2018fever), which covers
-fact extraction and verification.
+Google a utilisé le LLM PaLM(@chowdhery2022palm) dans des expériences avec ReAct. 
+Les comparaisons avec le prompting standard (question uniquement), CoT et d'autres configurations 
+montrent que les performances de ReAct sont prometteuses pour les tâches de raisonnement complexes. Google 
+effectue également des études sur le jeu de données FEVER(@thorne2018fever), qui couvre 
+l'extraction et la vérification des faits.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -53,4 +53,4 @@ fact extraction and verification.
   />
 </div>
 
-<div style={{ textAlign: "center" }}>ReAct Results (Yao et al.)</div>
+<div style={{ textAlign: "center" }}>Résultats ReAct (Yao et al.)</div>
