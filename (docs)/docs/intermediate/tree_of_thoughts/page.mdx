@@ -1,0 +1,130 @@
+export const metadata = {
+  sidebar_position: 4,
+  title: "🟢 Tree of Thoughts (ToT): a Smarter Way to Prompt Large Language Models",
+  description: "Learn about Tree of Thoughts (ToT), a framework that encourages LLMs to explore multiple reasoning paths for complex problems.",
+};
+
+## 🟢  Tree of Thoughts (ToT): a Smarter Way to Prompt Large Language Models
+
+You know how sometimes you need to solve a really tricky problem, not just one where the answer pops into your head immediately? You might brainstorm different ideas, maybe try one path, realize it's a dead end, and then backtrack to try another approach. This kind of careful, deliberate thinking is something humans do all the time.
+
+Large Language Models (LLMs) like GPT, while incredibly powerful, traditionally operate differently. At their core, they are designed to predict the very next word, one after the other, in a left-to-right fashion. Think of this as their **"System 1"** – fast, automatic, and based on recognizing patterns. This works brilliantly for generating flowing text, answering simple questions, or even writing creative pieces that don't require complex, multi-step logic.
+
+However, just predicting the next token can fall short on tasks requiring exploration, strategic lookahead, or where early decisions have big consequences. Imagine trying to solve a maze by only ever taking the first turn you see!
+
+### Beyond the Single Path: From Chain to Tree
+
+| Prompting Strategy | How it Thinks | Strengths | Weak Spots |
+|--------------------|--------------|-----------|------------|
+| **Input–Output (IO)** | No intermediate steps; direct answer | Fast for simple tasks | No reasoning trail; brittle for puzzles |
+| **Chain‑of‑Thought (CoT)** | Single linear step‑by‑step chain | Reveals reasoning; easy to prompt | One bad step ruins chain |
+| **Self‑Consistency (CoT‑SC)** | Many independent chains → majority vote | Reduces random errors | Still no branching *within* a chain |
+| **Tree‑of‑Thoughts (ToT)** | Branch, score, back‑track | Explores alternatives; handles complex search | Extra compute & prompt engineering |
+
+
+
+To help LLMs tackle more complex tasks, researchers developed methods like **Chain-of-Thought (CoT) prompting**. The idea here is to prompt the model to show its intermediate steps – a "**chain**" of thoughts – before giving the final answer. For example, for a math problem, it might write out the equations step-by-step. This is better than just giving the final answer, as it shows the reasoning process.
+
+But CoT usually follows **just one single path** of thoughts, generated sequentially. If that single path takes a wrong turn early on, the final answer might be incorrect. Even methods that sample multiple *independent* chains (like Self-consistency with CoT) still don't explore different options *within* a single step of reasoning. There's no way to look ahead or backtrack if a step proves unpromising.
+
+This is where the paper "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"[^1] introduces an exciting new framework: **Tree of Thoughts (ToT)**.
+
+### Building a Tree of Ideas
+
+Inspired by how classical AI views problem-solving as searching through possible solutions, ToT allows LLMs to explore **multiple different reasoning paths**. Instead of a single chain, it builds a **tree of thoughts**.
+
+Here are the key ideas behind ToT:
+
+- **Thoughts are Building Blocks:** Unlike simple token-by-token generation, ToT operates on "thoughts". A thought is a **coherent language sequence** that represents a meaningful intermediate step towards solving the problem. What counts as a thought depends on the task – it could be a math equation, a few words, or even a paragraph plan. The size is important: big enough to evaluate its usefulness, small enough for the LM to generate diverse options.
+- **Generating Options:** From a current state in the tree (representing the problem and the thoughts so far), the LLM is prompted to **generate multiple potential next thoughts**. It doesn't just pick the first one. It might generate these ideas independently or propose them sequentially.
+- **Evaluating Potential:** This is a crucial step. ToT uses the LLM itself to **evaluate how promising each of these different generated thoughts (or paths) seems** towards solving the problem. This evaluation acts like a rule‑of‑thumb guide, steering the search. The evaluation can involve looking ahead a few steps or using common sense to rule out impossible paths. The LM can evaluate states independently (giving each a value or classification) or by comparing multiple states and voting for the best one. These evaluations don't need to be perfect, just helpful.
+- **Searching the Tree:** With the ability to generate and evaluate different thoughts, ToT employs **search algorithms** (like Breadth-First Search or Depth-First Search) to explore the tree of possibilities. This allows the model to explore different options, look ahead, and **backtrack** if a path seems unpromising.
+
+This process is much closer to deliberate, "System 2" thinking. It's like planning: you generate several possible plans (thoughts), assess which one seems most likely to succeed (evaluate), and then follow that plan, adjusting or trying a different plan if needed (search).
+
+### Testing ToT on Tough Challenges
+
+The researchers tested ToT on problems specifically chosen because they were **difficult for standard CoT**:
+
+- **Game of 24:** Use four numbers and basic math to reach 24. This requires finding the right sequence of operations.
+- **Creative Writing:** Write a multi-paragraph passage ending with specific sentences. This is open-ended and needs high-level structural planning.
+- **Mini Crosswords:** Solve a 5x5 crossword from clues. This needs logical deduction and searching for words that fit letter constraints across multiple clues.
+
+### The Impressive Results
+
+| Task | Metric | Chain‑of‑Thought | Tree‑of‑Thoughts |
+|------|--------|------------------|------------------|
+| Game of 24 | % puzzles solved | **4 %** | **74 %** |
+| Creative Writing | Avg. coherence (0‑10) | **6.9** | **7.6** |
+| Mini Crossword | Word‑level accuracy | **15 %** | **60 %** |
+
+The results highlighted the power of ToT's deliberate approach. For example, on the **Game of 24**, while GPT-4 using standard CoT solved only **4%** of the problems, ToT with GPT-4 achieved a **74%** success rate. Even a simpler version of ToT (breadth=1) was significantly better than CoT. CoT often failed very early on the Game of 24 task, showing the problem with its left-to-right decoding.
+
+For **Creative Writing**, passages generated with ToT were rated as significantly **more coherent** by both automatic evaluation and human judgment compared to CoT. ToT helps here by generating and selecting better overall plans before writing.
+
+In **Mini Crosswords**, where problems are deeper and require more complex search, ToT achieved a word-level success rate of **60%** and solved some games completely, while CoT's word success was below 16%. ToT could explore different word options and backtrack when a path led to contradictions.
+
+### Walk‑Through Example: Solving a Game‑of‑24 Puzzle with ToT
+
+> **Puzzle** Use the numbers **4, 9, 10, 13** (each exactly once) and the operations + − × ÷ to make 24.
+>
+> **ToT settings** thought size = one equation, k = 3 proposals per step, beam (breadth) = 2, depth = 3.
+
+| Search Step | Remaining numbers | LM‑generated candidate thoughts | LM quick verdict | Branches kept |
+|-------------|-------------------|---------------------------------|------------------|---------------|
+| **0 (root)** | {4, 9, 10, 13} | ① 13 − 9 = 4  ② 10 − 4 = 6  ③ 9 × 4 = 36 | sure ✓  maybe ?  impossible ✗ | **①**, ② |
+| **1‑A** | {4, 4, 10} | ① 10 − 4 = 6  ② 4 × 10 = 40  | sure ✓  maybe ?| **①** |
+| **2‑A** | {4, 6} | ① 4 × 6 = 24  ② 6 ÷ 4 = 1.5 | sure ✓  impossible ✗ | **①** |
+| **3‑A (leaf)** | {24} | — | goal reached | output equation |
+
+![Tree of Thoughts visualization showing branching paths of reasoning and evaluation](./gameof24.png "Tree of Thoughts visualization showing branching paths of reasoning and evaluation")
+
+Putting the kept thoughts together gives the final solution:
+
+```math
+(13 - 9) x (10 - 4) = 24
+```
+
+*What happened?*
+
+1. **Branching early** the model explored two promising first moves instead of locking in one.
+2. **Heuristic verdicts** (“sure / maybe / impossible”) pruned obviously bad paths.
+3. **Beam search** followed the most promising branch to depth 3, producing a correct equation in only 7 thought evaluations—far fewer than brute‑forcing every possibility.
+
+---
+
+### Why ToT is a Big Deal
+
+ToT offers several key advantages:
+
+- **Generality:** It's a framework that can be adapted to many different problems, and methods like CoT can be seen as simpler versions of ToT.
+- **Modularity:** Different parts (like how thoughts are generated, evaluated, or the search algorithm used) can be changed independently.
+- **Adaptability:** It can be adjusted based on the specific problem, the strength of the LLM being used, and even resource limits.
+- **Convenience:** It works with existing, pre-trained LLMs like GPT-4 without needing extra training.
+
+While using ToT requires more computation (more prompts to generate and evaluate multiple thoughts) than a single CoT run, it allows LLMs to solve problems they simply couldn't reliably solve before. It's a significant step towards making LLMs more capable problem solvers by merging their incredible language understanding with structured thinking processes inspired by classical AI search and human deliberation.
+
+### Caveats and Open Questions
+
+- **Token and Cost Overhead:** Branching, voting, and back‑tracking mean many more tokens are generated and evaluated than in a single CoT run. Teams need to balance quality gains against budget constraints.
+- **Heuristics Can Misfire:** The model’s rule‑of‑thumb scores aren’t perfect. An over‑zealous "impossible" label can prune the very branch that contains the answer.
+- **Knowledge Gaps Remain:** If a task hinges on specialised facts (rare crossword words, niche domain rules), ToT still struggles unless paired with retrieval tools or external APIs.
+- **Not Always Needed:** For straightforward tasks—summaries, sentiment, casual chat—the extra machinery adds latency without real benefit. Use the right tool for the job.
+- **Safety & Alignment:** Stronger planning ability is a double‑edged sword. Transparent, inspectable thoughts help, but deliberate agents still require careful alignment and oversight.
+
+### Key Takeaways
+
+1. **Branch > Chain:** Letting the model explore *branches* of thought, instead of a single chain, massively improves success on search‑heavy tasks (74 % vs 4 % on Game of 24).
+2. **Self‑Scoring Matters:** Lightweight "sure / maybe / impossible" ratings act as an internal compass that steers the search without extra training.
+3. **Classical Search + LLM = Win:** Old AI methods (BFS, DFS) become far more powerful when the heuristic is written in natural language by the LM itself.
+4. **Cost Is Tunable:** You can trade beam width, vote counts, and model size to fit a budget while still beating plain CoT.
+5. **Not a Silver Bullet:** For simple Q&A or text generation, ToT is overkill; reserve it for puzzles, planning, and tasks where an early mis‑step is fatal.
+
+So, next time you're trying to solve a tough problem by exploring different ideas and weighing your options, you can think of it as building your own "Tree of Thoughts" – just like these advanced language models are learning to do.
+
+---
+
+### References
+
+[^1]: Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., & Narasimhan, K. (2023). **Tree of Thoughts: Deliberate Problem Solving with Large Language Models.** *Proceedings of the 37th Conference on Neural Information Processing Systems (NeurIPS 2023).*
+
