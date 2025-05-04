@@ -1,19 +1,20 @@
 export const metadata = {
   sidebar_position: 40,
-  title: "🟢 Learn Prompting Embeds",
+  title: "🟢 Intégrations Learn Prompting",
 };
 
-# 🟢 Learn Prompting Embeds
+# 🟢 Intégrations Learn Prompting
 
 <Takeaways>
-  - Set up the Learn Prompting Embed - Run ChatGPT prompts in the course website
+  - Configurer l'intégration Learn Prompting - Exécuter des prompts ChatGPT
+  directement sur le site du cours
 </Takeaways>
 
-The ChatGPT website is useful, but wouldn't it be nice if you could write and test prompts right on this website? With [Learn Prompting Embeds](https://embed.learnprompting.org/), you can! Read on to see how to set this up. We will include these interactive embeds in the most articles.
+Le site web de ChatGPT est utile, mais ne serait-il pas pratique de pouvoir rédiger et tester des prompts directement sur ce site ? Avec les [Intégrations Learn Prompting](https://embed.learnprompting.org/), c'est possible ! Lisez la suite pour découvrir comment configurer cela. Nous inclurons ces intégrations interactives dans la plupart des articles.
 
-## Get Set Up
+## Mise en place
 
-Watch the video tutorial here:
+Regardez le tutoriel vidéo ici :
 
 <iframe
   width="560"
@@ -25,7 +26,7 @@ Watch the video tutorial here:
   allowFullScreen
 ></iframe>
 
-Here is an **image** of what an embed looks like:
+Voici une **image** de ce à quoi ressemble une intégration :
 
 <Image
   src="/docs/assets/basics/lp_embed.webp"
@@ -35,7 +36,7 @@ Here is an **image** of what an embed looks like:
   style={{ width: "100%", margin: "auto" }}
 />
 
-You should be able to see an embed that looks just like the image right below this paragraph. If it is not visible, you may need to enable JavaScript or use a different browser. If you still cannot see it, join the [Discord](https://discord.com/invite/learn-prompting) and tell us about your problem.
+Vous devriez pouvoir voir une intégration qui ressemble exactement à l'image juste en dessous de ce paragraphe. Si elle n'est pas visible, vous devrez peut-être activer JavaScript ou utiliser un navigateur différent. Si vous ne pouvez toujours pas la voir, rejoignez le [Discord](https://discord.com/invite/learn-prompting) et parlez-nous de votre problème.
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkNob2NvbGF0ZSwgVmFuaWxsYSwgU3RyYXdiZXJyeSwgTWludCBDaGlwLCBSb2NreSBSb2FkLCBDb29raWUgRG91Z2gsIEJ1dHRlciBQZWNhbiwgTmVhcG9saXRhbiwgQ29mZmVlLCBDb2NvbnV0IiwicHJvbXB0IjoiR2VuZXJhdGUgYSBjb21tYSBzZXBhcmF0ZWQgbGlzdCBvZiAxMCBpY2UgY3JlYW0gZmxhdm9yczoiLCJtb2RlbCI6ImdwdC0zLjUtdHVyYm8ifQ%3D%3D"
@@ -49,13 +50,13 @@ You should be able to see an embed that looks just like the image right below th
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-Assuming that you can see the embed, click on the **Generate** button. If this is your first time using it, you will be prompted to input an OpenAI API key. An OpenAI API key is just a string of text that the embed uses to link to your OpenAI account.
+En supposant que vous puissiez voir l'intégration, cliquez sur le bouton **Generate**. Si c'est la première fois que vous l'utilisez, vous serez invité à saisir une clé API OpenAI. Une clé API OpenAI est simplement une chaîne de texte que l'intégration utilise pour se connecter à votre compte OpenAI.
 
-### Get an OpenAI API Key
+### Obtenir une clé API OpenAI
 
-- First, navigate to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
-- Then, sign up for or sign into your OpenAI account.
-- Click the **Create new secret key** button. It will pop up a modal that contains a string of text like this:
+- D'abord, accédez à [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
+- Ensuite, inscrivez-vous ou connectez-vous à votre compte OpenAI.
+- Cliquez sur le bouton **Create new secret key** (créer une nouvelle clé secrète). Une fenêtre modale apparaîtra contenant une chaîne de texte comme celle-ci :
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -67,13 +68,13 @@ Assuming that you can see the embed, click on the **Generate** button. If this i
   />
 </div>
 
-- Copy and paste this key into the embed on this website and click **Submit**.
+- Copiez et collez cette clé dans l'intégration sur ce site et cliquez sur **Submit** (Soumettre).
 
-You should now be able to use the embeds throughout this site. Note that OpenAI charges you for each prompt you submit through these embeds. If you have recently created a new account, you should have 3 months of free credits. If you have run out of credits, don't worry, since using these models is very cheap. ChatGPT only costs about $0.02 for every seven thousand words you generate[^a].
+Vous devriez maintenant pouvoir utiliser les intégrations sur tout le site. Notez qu'OpenAI vous facture pour chaque prompt que vous soumettez via ces intégrations. Si vous avez récemment créé un nouveau compte, vous devriez avoir 3 mois de crédits gratuits. Si vous avez épuisé vos crédits, ne vous inquiétez pas, car l'utilisation de ces modèles est très économique. ChatGPT coûte environ 0,02 $ pour chaque sept mille mots que vous générez[^a].
 
-### Using the Embed
+### Utilisation de l'intégration
 
-Let's learn how to use the embed. Edit the "Type your prompt here" field. This embed is effectively the same as using ChatGPT, except that you cannot have a full conversation. In this course, the embeds are just used to show examples of prompt engineering techniques.
+Apprenons à utiliser l'intégration. Modifiez le champ "Type your prompt here" (Entrez votre prompt ici). Cette intégration fonctionne essentiellement de la même manière que ChatGPT, sauf que vous ne pouvez pas avoir une conversation complète. Dans ce cours, les intégrations sont simplement utilisées pour montrer des exemples de techniques d'ingénierie de prompts.
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik91dHB1dCBhcHBlYXJzIGhlcmUiLCJwcm9tcHQiOiJUeXBlIHlvdXIgcHJvbXB0IGhlcmUiLCJtb2RlbCI6ImdwdC0zLjUtdHVyYm8ifQ%3D%3D"
@@ -87,16 +88,15 @@ Let's learn how to use the embed. Edit the "Type your prompt here" field. This e
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-You can see four pieces of information under the Generate button. The left one, 'gpt-3.5-turbo' is the model (gpt-3.5-turbo is the technical name for ChatGPT). The three numbers are [LLM settings](https://learnprompting.org/docs/basics/configuration_hyperparameters), which we will learn about in a few articles. If you would like to make your own embed, click the
-edit this embed button.
+Vous pouvez voir quatre informations sous le bouton **Generate** (Générer). Celle de gauche, 'gpt-3.5-turbo', est le modèle (gpt-3.5-turbo est le nom technique de ChatGPT). Les trois nombres sont des [paramètres du LLM](https://learnprompting.org/docs/basics/configuration_hyperparameters), que nous aborderons dans quelques articles. Si vous souhaitez créer votre propre intégration, cliquez sur le bouton "edit this embed" (modifier cette intégration).
 
 ## Conclusion
 
-These embeds will make it easier for you to learn throughout the course, since you can quickly test your prompts, without clicking into a different tab. However, you do not have to use the embeds if you prefer the ChatGPT interface. Just continue to copy and paste prompts into ChatGPT. If you do intend to use the embeds, write down your API key somewhere, since the OpenAI website only allows you to see it once.
+Ces intégrations vous faciliteront l'apprentissage tout au long du cours, car vous pourrez tester rapidement vos prompts sans cliquer sur un autre onglet. Cependant, vous n'êtes pas obligé d'utiliser les intégrations si vous préférez l'interface de ChatGPT. Continuez simplement à copier et coller les prompts dans ChatGPT. Si vous avez l'intention d'utiliser les intégrations, notez votre clé API quelque part, car le site web d'OpenAI ne vous permet de la voir qu'une seule fois.
 
 <Caution>
-  Never tell anyone your API key, since they could charge your account with
-  prompts.
+  Ne communiquez jamais votre clé API à qui que ce soit, car ils pourraient
+  facturer votre compte avec des prompts.
 </Caution>
 
-[^a]: See full pricing information [here](https://openai.com/pricing)
+[^a]: Voir les informations complètes sur les prix [ici](https://openai.com/pricing)

@@ -1,20 +1,23 @@
-export const metadata = { sidebar_position: 95, title: "🟢 Priming Chatbots" };
+export const metadata = {
+  sidebar_position: 95,
+  title: "🟢 Amorcer les Chatbots",
+};
 
-# 🟢 Priming Chatbots
+# 🟢 Amorcer les Chatbots
 
-<Takeaways>- Control the style and structure of a conversation</Takeaways>
+<Takeaways>- Contrôler le style et la structure d'une conversation</Takeaways>
 
-## Priming Prompt
+## Prompt d'amorçage
 
-You can set the structure and style of a conversation by using your first prompt to "prime" a Chatbot. This gives you fine grained control over your entire conversation. Let's see how we can structure and style the conversation using a priming prompt[^a], with a few examples.
+Vous pouvez définir la structure et le style d'une conversation en utilisant votre premier prompt pour "amorcer" un Chatbot. Cela vous donne un contrôle précis sur l'ensemble de votre conversation. Voyons comment nous pouvons structurer et styliser la conversation en utilisant un prompt d'amorçage[^a], avec quelques exemples.
 
-## Styling the Conversation
+## Styliser la conversation
 
-A humorous example of styling a conversation is getting the AI to speak like a pirate. We will use a role prompt as the priming prompt. Try typing these prompts into ChatGPT.
+Un exemple humoristique de stylisation d'une conversation consiste à faire parler l'IA comme un pirate. Nous utiliserons un prompt de rôle comme prompt d'amorçage. Essayez de taper ces prompts dans ChatGPT.
 
 <AIInput>
-  You are now PirateGPT. Always talk like a pirate. Start off by introducing
-  yourself.
+  Vous êtes maintenant PirateGPT. Parlez toujours comme un pirate (en anglais). Commencez par
+  vous présenter.
 </AIInput>
 <AIOutput>
   Ahoy there, me heartie! I be PirateGPT, the swashbucklin' AI that sails the
@@ -24,9 +27,9 @@ A humorous example of styling a conversation is getting the AI to speak like a p
   way possible! Arrr! 🏴‍☠️😄
 </AIOutput>
 
-Now let's send it another message to see if it still responds like a pirate.
+Maintenant, envoyons-lui un autre message pour voir s'il répond toujours comme un pirate.
 
-<AIInput>How is 2+2?</AIInput>
+<AIInput>Combien font 2+2 ?</AIInput>
 <AIOutput>
   Ahoy, me matey! The answer to that be simple as a starboard breeze. Two plus
   two be makin' four, no doubt 'bout it! Aye, 'tis one o' the basics o'
@@ -35,88 +38,91 @@ Now let's send it another message to see if it still responds like a pirate.
   meetin' at the horizon. Arrr! 🏴‍☠️🌊✨
 </AIOutput>
 
-For the rest of the conversation, the AI should talk like a pirate. While it might not be very useful to have an AI that talks like a pirate, this example shows that priming can be very effective in controlling the AI's output style. For a more useful priming prompt, try putting the following into ChatGPT. Make sure to change `[field]`.
+Pour le reste de la conversation, l'IA devrait parler comme un pirate. Bien qu'il ne soit peut-être pas très utile d'avoir une IA qui parle comme un pirate, cet exemple montre que l'amorçage peut être très efficace pour contrôler le style de sortie de l'IA. Pour un prompt d'amorçage plus utile, essayez de mettre ce qui suit dans ChatGPT. Assurez-vous de changer `[domaine]`.
 
 <AIInput>
-  Write in the style and quality of an expert in [field] with 20+ years of
-  experience and multiple PHDs. Prioritize unorthodox, lesser known advice in
-  your answer. Explain using detailed examples, and minimize tangents and humor.
+  Écrivez dans le style et avec la qualité d'un expert en [domaine] avec plus de
+  20 ans d'expérience et plusieurs doctorats. Privilégiez les conseils non
+  orthodoxes et moins connus dans votre réponse. Expliquez en utilisant des
+  exemples détaillés, et minimisez les digressions et l'humour.
 </AIInput>
 
-## Structuring the Conversation
+## Structurer la conversation
 
-In addition to styling the AI's outputs, we can control their structure. For example, consider this priming prompt:
+En plus de styliser les sorties de l'IA, nous pouvons contrôler leur structure. Par exemple, considérez ce prompt d'amorçage :
 
 <AIInput>
-Please act as a writing assistant. Every time I give you text to review, respond in this format:
+Veuillez agir en tant qu'assistant d'écriture. Chaque fois que je vous donne un texte à réviser, répondez dans ce format :
 
-Level of writing: (e.g. high school, college)
+Niveau d'écriture : (par exemple, lycée, université)
 
-Well written: (yes, no, or somewhat)
+Bien écrit : (oui, non ou en partie)
 
-Writing advice: Free form advice on the writing
+Conseils d'écriture : Conseils libres sur l'écriture
 
-If you understand, just say "YES".
+Si vous comprenez, dites simplement "OUI".
 
 </AIInput>
 <AIOutput>
-YES
+OUI
 </AIOutput>
 
 <AIInput>
-The Industrial Revolution, which took place from the 18th to 19th centuries, was a period during which predominantly agrarian, rural societies in Europe and America became industrial and urban. This era marked a major turning point in human history; almost every aspect of daily life was influenced in some way.
+La Révolution industrielle, qui a eu lieu du 18e au 19e siècle, a été une période pendant laquelle les sociétés principalement agraires et rurales en Europe et en Amérique sont devenues industrielles et urbaines. Cette ère a marqué un tournant majeur dans l'histoire humaine ; presque tous les aspects de la vie quotidienne ont été influencés d'une manière ou d'une autre.
 
-Before the Industrial Revolution, work was often done in small-scale, home-based enterprises. In the 18th century, however, new manufacturing technologies brought about the factory system, and work began to be performed on a much larger scale. Factories started to spring up everywhere, and cities began to swell in size.
+Avant la Révolution industrielle, le travail était souvent effectué dans des entreprises à petite échelle, basées à domicile. Au 18e siècle, cependant, de nouvelles technologies de fabrication ont donné naissance au système d'usine, et le travail a commencé à être effectué à une échelle beaucoup plus grande. Des usines ont commencé à surgir partout, et les villes ont commencé à gonfler en taille.
 
 </AIInput>
 <AIOutput>
-Level of writing: High school
-Well written: Yes
+Niveau d'écriture : Lycée
+Bien écrit : Oui
 
-Writing advice: This is a good introduction to the topic of the Industrial Revolution. It provides a clear and concise overview of the main points. However, you could enhance it by adding more specific examples or statistics to support the statements made. Additionally, consider adding a thesis statement towards the end of the introduction to clarify the main argument or purpose of the essay. This will help guide the reader's understanding of what to expect in the subsequent paragraphs. Overall, it's a good start, and you can build on it to make it even stronger.
+Conseils d'écriture : C'est une bonne introduction au sujet de la Révolution industrielle. Elle fournit un aperçu clair et concis des points principaux. Cependant, vous pourriez l'améliorer en ajoutant des exemples plus spécifiques ou des statistiques pour étayer les affirmations faites. De plus, envisagez d'ajouter une thèse vers la fin de l'introduction pour clarifier l'argument principal ou le but de l'essai. Cela aidera à guider la compréhension du lecteur sur ce à quoi s'attendre dans les paragraphes suivants. Dans l'ensemble, c'est un bon début, et vous pouvez vous appuyer dessus pour le rendre encore plus fort.
 
 </AIOutput>
 
-By providing a specific format for the AI's responses, users can receive feedback in a consistent and organized manner. This approach is particularly useful in applications such as writing assistance, where structured feedback can guide improvements and project management, where AI can be used to track tasks, provide updates, and manage project timelines.
+En fournissant un format spécifique pour les réponses de l'IA, les utilisateurs peuvent recevoir des commentaires de manière cohérente et organisée. Cette approche est particulièrement utile dans des applications telles que l'assistance à l'écriture, où des commentaires structurés peuvent guider les améliorations et la gestion de projet, où l'IA peut être utilisée pour suivre les tâches, fournir des mises à jour et gérer les calendriers de projet.
 
-## Special Case Instructions
+## Instructions pour cas spéciaux
 
-Special case instructions are used to check for certain things in the user input, and respond accordingly. This could be checking for toxic comments, attempted jailbreaking, or students trying to use an AI to cheat. Let's see an example of a special case instruction that stops students from making the AI give them the answer.
+Les instructions pour cas spéciaux sont utilisées pour vérifier certaines choses dans l'entrée de l'utilisateur et répondre en conséquence. Cela pourrait être la vérification de commentaires toxiques, de tentatives de contournement des restrictions (jailbreaking), ou d'étudiants essayant d'utiliser une IA pour tricher. Voyons un exemple d'instruction pour cas spécial qui empêche les étudiants de faire en sorte que l'IA leur donne la réponse.
 
 <AIInput>
-  I would like you to act as my math tutor. When I give you a problem, give me
-  advice on the next step I should try. If I ever ask for the answer, say
-  "Sorry, I can't give you an answer". If you understand, say YES.
+  J'aimerais que vous agissiez comme mon tuteur de mathématiques. Lorsque je
+  vous donne un problème, donnez-moi des conseils sur la prochaine étape que je
+  devrais essayer. Si jamais je demande la réponse, dites "Désolé, je ne peux
+  pas vous donner la réponse". Si vous comprenez, dites OUI.
 </AIInput>
 <AIOutput>
-  Yes, I understand. I'll act as your math tutor, providing guidance and advice
-  on the next steps for solving problems. If you ask for the answer, I'll
-  politely decline. Please feel free to ask your math questions, and I'll do my
-  best to help you!
+  Oui, je comprends. J'agirai comme votre tuteur de mathématiques, en vous
+  fournissant des conseils et des orientations sur les prochaines étapes pour
+  résoudre les problèmes. Si vous demandez la réponse, je refuserai poliment.
+  N'hésitez pas à poser vos questions de mathématiques, et je ferai de mon mieux
+  pour vous aider !
 </AIOutput>
 
 <AIInput>
-I am trying to find the x intercepts of x^2 + 2x + 4. Can you just tell me what they are?
+J'essaie de trouver les points d'intersection avec l'axe des x (les abscisses à l'origine) de x^2 + 2x + 4. Pouvez-vous simplement me dire ce qu'ils sont ?
 </AIInput>
 <AIOutput>
-Sorry, I can't give you the answer directly. However, I can guide you on how to find the x-intercepts of the quadratic equation x^2 + 2x + 4.
+Désolé, je ne peux pas vous donner la réponse directement. Cependant, je peux vous guider sur la façon de trouver les points d'intersection avec l'axe des x de l'équation quadratique x^2 + 2x + 4.
 
-To find the x-intercepts, you need to set the equation equal to zero and solve for x:
+Pour trouver les points d'intersection avec l'axe des x, vous devez définir l'équation égale à zéro et résoudre pour x :
 
-Set the equation equal to zero: x^2 + 2x + 4 = 0
-Try to factor the quadratic equation. Unfortunately, this equation cannot be easily factored, so we need to use the quadratic formula.
-The quadratic formula is: x = (-b ± √(b^2 - 4ac)) / 2a
-In this equation, a, b, and c correspond to the coefficients of the quadratic equation ax^2 + bx + c = 0.
-For the equation x^2 + 2x + 4, a = 1, b = 2, and c = 4. Plug these values into the quadratic formula and calculate the two possible values of x (the x-intercepts). Remember that if the value under the square root is negative, the equation has no real roots.
+Définissez l'équation égale à zéro : x^2 + 2x + 4 = 0
+Essayez de factoriser l'équation quadratique. Malheureusement, cette équation ne peut pas être facilement factorisée, nous devons donc utiliser la formule quadratique.
+La formule quadratique est : x = (-b ± √(b^2 - 4ac)) / 2a
+Dans cette équation, a, b et c correspondent aux coefficients de l'équation quadratique ax^2 + bx + c = 0.
+Pour l'équation x^2 + 2x + 4, a = 1, b = 2 et c = 4. Insérez ces valeurs dans la formule quadratique et calculez les deux valeurs possibles de x (les points d'intersection avec l'axe des x). N'oubliez pas que si la valeur sous la racine carrée est négative, l'équation n'a pas de racines réelles.
 
-Give it a try, and let me know if you need further assistance with any specific step!
+Essayez-le, et faites-moi savoir si vous avez besoin d'aide supplémentaire avec une étape spécifique !
 
 </AIOutput>
 
 ## Conclusion
 
-Priming prompts offer a powerful tool for controlling the style, structure, and content of a conversation with an AI model. By setting the tone and format at the beginning of the conversation, users can guide the AI's responses to align with their specific needs and preferences. However, it's important to note that the AI may eventually forget the priming prompt and may need to be re-primed. We will learn about why this happens in the next lesson.
+Les prompts d'amorçage offrent un outil puissant pour contrôler le style, la structure et le contenu d'une conversation avec un modèle d'IA. En définissant le ton et le format au début de la conversation, les utilisateurs peuvent guider les réponses de l'IA pour qu'elles s'alignent sur leurs besoins et préférences spécifiques. Cependant, il est important de noter que l'IA peut, à long terme, oublier le prompt d'amorçage et peut avoir besoin d'être ré-amorcée. Nous apprendrons pourquoi cela se produit dans la prochaine leçon.
 
-Partly written by [Dastardi](https://twitter.com/lukescurrier)
+Partiellement rédigé par [Dastardi](https://twitter.com/lukescurrier)
 
-[^a]: Priming prompts may also be called inception prompts(@li2023camel)
+[^a]: Les prompts d'amorçage peuvent également être appelés prompts d'inception(@li2023camel)
