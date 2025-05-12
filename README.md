@@ -62,11 +62,11 @@ If you're on macOS or Linux, you can use **[Homebrew](https://brew.sh/)**, a pac
 To begin:
 1. Clone the repository from GitHub:
    ```bash
-   git clone https://github.com/trigaten/Learn_Prompting_nextjs.git
+   git clone https://github.com/trigaten/Learn_Prompting.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd Learn_Prompting_nextjs
+   cd Learn_Prompting
    ```
 
 ### Run the Website Locally
