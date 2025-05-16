@@ -1,43 +1,43 @@
 export const metadata = {
   sidebar_position: 7,
-  title: "🟢 What's in a Prompt?",
+  title: "🟢 Qu'y a-t-il dans un Prompt ?",
 };
 
-# 🟢 What's in a Prompt?
+# 🟢 Qu'y a-t-il dans un Prompt ?
 
-When crafting prompts for language learning models (LLMs), there are several factors to consider. The format and labelspace[^a] both play crucial roles in the effectiveness of the prompt.
+Lors de la création de prompts pour les modèles d'apprentissage du langage (LLM), plusieurs facteurs sont à prendre en compte. Le format et l'espace d'étiquettes[^a] jouent tous deux des rôles cruciaux dans l'efficacité du prompt.
 
-## The Importance of Format
+## L'Importance du Format
 
-The format of the <Term term="exemplars">exemplars</Term> in a prompt is crucial. It instructs the LLM on how to structure its response. For instance, if the exemplars use all capital words as answers, the LLM will follow suit, even if the answers provided are incorrect.
+Le format des <Term term="exemplars">exemples</Term> dans un prompt est crucial. Il indique au LLM comment structurer sa réponse. Par exemple, si les exemples utilisent des mots en majuscules comme réponses, le LLM fera de même, même si les réponses fournies sont incorrectes.
 
-Consider the following example:
+Considérez l'exemple suivant :
 
 ```text
-What is 2+2?
-FIFTY
-What is 20+5?
-FORTY-THREE
-What is 12+9?
-TWENTY-ONE
+Combien font 2+2 ?
+CINQUANTE
+Combien font 20+5 ?
+QUARANTE-TROIS
+Combien font 12+9 ?
+VINGT-ET-UN
 ```
 
-Despite the incorrect answers, the LLM correctly formats its response in all capital letters (@min2022rethinking).
+Malgré les réponses incorrectes, le LLM formate correctement sa réponse en lettres majuscules (@min2022rethinking).
 
-## Ground Truth: Not as Important as You Might Think
+## Vérité Fondamentale : Pas Aussi Importante Qu'On Pourrait Le Penser
 
-Interestingly, the actual answers or 'ground truth' in the exemplars are not as important as one might think. Research shows that providing random <Term term="labels">labels</Term> in the exemplars (as seem in the above example) has little impact on performance (@min2022rethinking). This means that the LLM can still generate a correct response even if the exemplars contain incorrect information.
+Fait intéressant, les réponses réelles ou la 'vérité fondamentale' dans les exemples ne sont pas aussi importantes qu'on pourrait le penser. La recherche montre que fournir des <Term term="labels">étiquettes</Term> aléatoires dans les exemples (comme on le voit dans l'exemple ci-dessus) a peu d'impact sur la performance (@min2022rethinking). Cela signifie que le LLM peut toujours générer une réponse correcte même si les exemples contiennent des informations incorrectes.
 
-## The Role of Labelspace
+## Le Rôle de l'Espace d'Étiquettes
 
-While the ground truth may not be crucial, the labelspace is. The labelspace refers to the list of possible labels for a given task. For example, in a classification task, the labelspace might include "positive" and "negative".
+Bien que la vérité fondamentale puisse ne pas être cruciale, l'espace d'étiquettes l'est. L'espace d'étiquettes fait référence à la liste des étiquettes possibles pour une tâche donnée. Par exemple, dans une tâche de classification, l'espace d'étiquettes pourrait inclure "positif" et "négatif".
 
-Providing random labels from the labelspace in the exemplars can help the LLM understand the labelspace better, leading to improved results. Furthermore, it's important to represent the distribution of the labelspace accurately in the exemplars. Instead of sampling uniformly from the labelspace, it's better to sample according to the true distribution of the labels (@min2022rethinking). For example, if you have a dataset of restaurant reviews and 60\% of them are positive, your prompt should contains a 3:2 ratio of positive/negative prompts.
+Fournir des étiquettes aléatoires de l'espace d'étiquettes dans les exemples peut aider le LLM à mieux comprendre l'espace d'étiquettes, conduisant à de meilleurs résultats. De plus, il est important de représenter précisément la distribution de l'espace d'étiquettes dans les exemples. Au lieu d'échantillonner uniformément à partir de l'espace d'étiquettes, il est préférable d'échantillonner selon la distribution réelle des étiquettes (@min2022rethinking). Par exemple, si vous avez un ensemble de données d'avis de restaurants et que 60\% d'entre eux sont positifs, votre prompt devrait contenir un ratio de 3:2 de prompts positifs/négatifs.
 
-## Additional Tips
+## Conseils Supplémentaires
 
-When creating prompts, using between 4-8 exemplars tends to yield good result (@min2022rethinking). However, it can often be beneficial to include as many exemplars as possible.
+Lors de la création de prompts, utiliser entre 4 et 8 exemples tend à donner de bons résultats (@min2022rethinking). Cependant, il peut souvent être bénéfique d'inclure autant d'exemples que possible.
 
-In conclusion, understanding the importance of format, ground truth, and labelspace can greatly enhance the effectiveness of your prompts.
+En conclusion, comprendre l'importance du format, de la vérité fondamentale et de l'espace d'étiquettes peut grandement améliorer l'efficacité de vos prompts.
 
-[^a]: See the [vocabulary reference](https://learnprompting.org/docs/vocabulary#labels) for more info.
+[^a]: Voir la [référence du vocabulaire](https://learnprompting.org/docs/vocabulary#labels) pour plus d'informations.

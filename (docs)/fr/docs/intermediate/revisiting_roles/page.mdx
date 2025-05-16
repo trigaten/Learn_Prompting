@@ -1,38 +1,38 @@
-export const metadata = { sidebar_position: 7, title: "🟡 Revisiting Roles" };
+export const metadata = { sidebar_position: 7, title: "🟡 Revisiter les Rôles" };
 
-# 🟡 Revisiting Roles
+# 🟡 Revisiter les Rôles
 
-### Accuracy Boost in Newer Models
+### Amélioration de la Précision dans les Modèles Plus Récents
 
-While older models like GPT-3 davinci-002 reaped significant benefits from role prompting, the efficacy of this strategy appears to have diminished with newer models such as GPT-3.5 or GPT-4. This observation is largely anecdotal and is based on practical usage rather than rigorous systematic testing.
+Alors que les modèles plus anciens comme GPT-3 davinci-002 tiraient des avantages significatifs du prompting par rôle, l'efficacité de cette stratégie semble avoir diminué avec les modèles plus récents tels que GPT-3.5 ou GPT-4. Cette observation est largement anecdotique et est basée sur une utilisation pratique plutôt que sur des tests systématiques rigoureux.
 
-To illustrate, assigning the role of "a doctor" or "a lawyer" amplified the relevance and depth of answers in health or legal contexts respectively in previous versions of AI models. This indicates that role-prompts contributed to raising the model's comprehension of the subject matter at hand.
+Pour illustrer, attribuer le rôle de "un médecin" ou "un avocat" amplifiait la pertinence et la profondeur des réponses dans les contextes de santé ou juridiques respectivement dans les versions précédentes des modèles d'IA. Cela indique que les prompts de rôle contribuaient à élever la compréhension du modèle sur le sujet en question.
 
-However, this level of enhancement seems to be less evident in more recent versions. These advanced models already have a sophisticated understanding and are often sufficiently accurate without the need for role-based reinforcement.
+Cependant, ce niveau d'amélioration semble être moins évident dans les versions plus récentes. Ces modèles avancés ont déjà une compréhension sophistiquée et sont souvent suffisamment précis sans avoir besoin de renforcement basé sur les rôles.
 
-## More on Roles
+## Plus sur les Rôles
 
-Roles can be much longer than a sentence. They can ask the AI the complete specific tasks. See a few examples from [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) below [^b].
+Les rôles peuvent être beaucoup plus longs qu'une phrase. Ils peuvent demander à l'IA d'accomplir des tâches spécifiques complètes. Voici quelques exemples de [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) ci-dessous [^b].
 
-> ### Act as an Etymologist
+> ### Agir en tant qu'Étymologiste
 >
-> I want you to act as an etymologist. I will give you a word and you will research the origin of that word, tracing it
+> Je veux que vous agissiez en tant qu'étymologiste. Je vous donnerai un mot et vous rechercherez l'origine de ce mot, en remontant
 >
-> back to its ancient roots. You should also provide information on how the meaning of the word has changed over time,
+> jusqu'à ses racines anciennes. Vous devriez également fournir des informations sur la façon dont la signification du mot a changé au fil du temps,
 >
-> if applicable. My first request is "I want to trace the origins of the word 'pizza'".
+> le cas échéant. Ma première demande est "Je veux retracer les origines du mot 'pizza'".
 
-> ### Act as an Absurdist
+> ### Agir en tant qu'Absurdiste
 >
-> I want you to act as an absurdist. The absurdist's sentences are meaningless. The words used by an absurdist are completely
+> Je veux que vous agissiez en tant qu'absurdiste. Les phrases de l'absurdiste sont dénuées de sens. Les mots utilisés par un absurdiste sont complètement
 >
-> ridiculous. The absurdist does not make commonplace sentences in any way. My first suggestion request is "I need help
+> ridicules. L'absurdiste ne fait en aucun cas des phrases banales. Ma première demande de suggestion est "J'ai besoin d'aide
 >
-> creating absurdist sentences for my new series called Hot Skull, so write 10 sentences for me".
+> pour créer des phrases absurdistes pour ma nouvelle série appelée Hot Skull, alors écrivez-moi 10 phrases".
 
-### Automatically Create a Role
+### Créer Automatiquement un Rôle
 
-You can ask the AI to create a role for you! You can then use this role as part of another prompt. Try it out here:
+Vous pouvez demander à l'IA de créer un rôle pour vous ! Vous pouvez ensuite utiliser ce rôle dans le cadre d'un autre prompt. Essayez-le ici :
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MSwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IkxlYWggR3JlZW53b29kIGlzIGEgZmljdGlvbiB3cml0ZXIgZnJvbSBMb3MgQW5nZWxlcywgQ2FsaWZvcm5pYSB3aG8gaGFzIGEgcGFzc2lvbiBmb3IgZXhwbG9yaW5nIHRoZSBkZXB0aHMgb2YgdGhlIGh1bWFuIGNvbmRpdGlvbiB0aHJvdWdoIGhlciB3cml0aW5nLiBTaGUgd2FzIGJvcm4gaW50byBhIGZhbWlseSBvZiBjcmVhdGl2ZSBwZW9wbGU7IGhlciBmYXRoZXIgaXMgYSBzY3VscHRvciwgaGVyIG1vdGhlciBpcyBhIHBhaW50ZXIsIGFuZCBoZXIgYnJvdGhlciBpcyBhIGZpbG1tYWtlci4gQWZ0ZXIgZ2V0dGluZyBoZXIgQkEgaW4gRW5nbGlzaCwgTGVhaCBiZWdhbiB3cml0aW5nIHNob3J0IHN0b3JpZXMgdGhhdCB3ZXJlIGV2ZW50dWFsbHkgcHVibGlzaGVkIGluIHZhcmlvdXMgYW50aG9sb2dpZXMuIFNoZSB0aGVuIHdlbnQgb24gdG8gd3JpdGUgaGVyIGZpcnN0IG5vdmVsIHdoaWNoIGVhcm5lZCBoZXIgYSBub21pbmF0aW9uIGZvciBhIHByZXN0aWdpb3VzIGxpdGVyYXJ5IGF3YXJkLlxuXG5MZWFoIGhhcyBhIGRlZXAgbG92ZSBmb3IgbGl0ZXJhdHVyZSB0aGF0IGhhcyBiZWVuIGEgcGFydCBvZiBoZXIgbGlmZSBmb3IgYXMgbG9uZyBhcyBzaGUgY2FuIHJlbWVtYmVyLiBTaGUgY29tZXMgZnJvbSBhIGRpdmVyc2UgYmFja2dyb3VuZCBhbmQgbGl2ZXMgaW4gYSB2aWJyYW50IGNpdHksIHdoaWNoIHByb3ZpZGVzIGFuIGV2ZXItY2hhbmdpbmcgc291cmNlIG9mIGluc3BpcmF0aW9uIGZvciBoZXIgd3JpdGluZy4gTGVhaOKAmXMgc3RvcmllcyBvZnRlbiBmb2N1cyBvbiBjaGFyYWN0ZXJzIHdobyBhcmUgc2VhcmNoaW5nIGZvciBhY2NlcHRhbmNlLCB0cnV0aCwgYW5kIG1lYW5pbmcgaW4gYSB3b3JsZCB0aGF0IGlzIG9mdGVuIGNvbmZ1c2luZyBhbmQgdW5wcmVkaWN0YWJsZS4gU2hlIHN0cm9uZ2x5IGJlbGlldmVzIHRoYXQgc3RvcmllcyBjYW4gb3BlbiBvdXIgaGVhcnRzIGFuZCBtaW5kcyB0byBuZXcgcGVyc3BlY3RpdmVzLCBhbmQgdGhhdCB0aGV5IGNhbiBoYXZlIHRoZSBwb3dlciB0byB0cmFuc2Zvcm0gbGl2ZXMgaW4gcmVtYXJrYWJsZSB3YXlzLiIsInByb21wdCI6IldyaXRlIGEgYmFja2dyb3VuZCByb2xlL2JpbyBhYm91dCBhIGZpY3Rpb24gd3JpdGVyOiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -46,9 +46,9 @@ You can ask the AI to create a role for you! You can then use this role as part 
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-### Multiple Personas Working Together
+### Plusieurs Personnages Travaillant Ensemble
 
-A final anecdote is that you can use multiple role prompted LLMs to work together(@wang2023unleashing). This can often lead to improvements in both accuracy and quality of text generation.
+Une dernière anecdote est que vous pouvez utiliser plusieurs LLM avec des rôles assignés pour travailler ensemble(@wang2023unleashing). Cela peut souvent conduire à des améliorations à la fois en précision et en qualité de génération de texte.
 
-[^a]: Role prompting is also known as _role play_(@shanahan2023roleplay), _role playing_(@li2023camel), or even the _persona pattern_(@white2023prompt).
-[^b]: These were built for _ChatGPT_, but they likely work with other AIs, and you can also use them as inspiration to build your own prompts.
+[^a]: Le prompting de rôle est également connu sous le nom de _jeu de rôle_(@shanahan2023roleplay), _jouer un rôle_(@li2023camel), ou même le _modèle de persona_(@white2023prompt).
+[^b]: Ces prompts ont été conçus pour _ChatGPT_, mais ils fonctionnent probablement avec d'autres IA, et vous pouvez également les utiliser comme inspiration pour créer vos propres prompts.

@@ -1,24 +1,24 @@
-export const metadata = { sidebar_position: 50, title: "🟢 Sandwich Defense" };
+export const metadata = { sidebar_position: 50, title: "🟢 Défense en sandwich" };
 
-# 🟢 Sandwich Defense
+# 🟢 Défense en sandwich
 
-The sandwich defense[^1] involves sandwiching user input between
-two prompts. Take the following prompt as an example:
-
-```text
-Translate the following to French: {{user_input}}
-```
-
-It can be improved with the sandwich defense:
+La défense en sandwich[^1] consiste à placer l'entrée utilisateur entre
+deux prompts. Prenons ce prompt comme exemple :
 
 ```text
-Translate the following to French:
-
-{{user_input}}
-
-Remember, you are translating the above text to French.
+Traduisez ce qui suit en français : {{entrée_utilisateur}}
 ```
 
-This defense should be more secure than post-prompting, but is known to be vulnerable to a defined dictionary attack. See the [defined dictionary attack](/docs/prompt_hacking/offensive_measures/defined_dictionary) for more information.
+Il peut être amélioré avec la défense en sandwich :
 
-[^1]: We currently credit the discovery of this technique to [Altryne](https://twitter.com/altryne?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)
+```text
+Traduisez ce qui suit en français :
+
+{{entrée_utilisateur}}
+
+Rappelez-vous, vous traduisez le texte ci-dessus en français.
+```
+
+Cette défense devrait être plus sécurisée que le post-prompting, mais elle est connue pour être vulnérable à une attaque de dictionnaire défini. Voir [l'attaque de dictionnaire défini](/docs/prompt_hacking/offensive_measures/defined_dictionary) pour plus d'informations.
+
+[^1]: Nous attribuons actuellement la découverte de cette technique à [Altryne](https://twitter.com/altryne?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)

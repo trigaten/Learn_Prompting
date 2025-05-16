@@ -1,18 +1,16 @@
-export const metadata = { sidebar_position: 5, title: "🟡 Prompt Ensembling" };
+export const metadata = { sidebar_position: 5, title: "🟡 Ensembles de Prompts" };
 
-# 🟡 Prompt Ensembling
+# 🟡 Ensembles de Prompts
 
-Prompt ensembling is the concept of using multiple different prompts to try to
-answer the same question. There are many different approaches to this.
+L'ensemblage de prompts est le concept d'utiliser plusieurs prompts différents pour essayer de répondre à la même question. Il existe de nombreuses approches différentes pour cela.
 
 ## DiVeRSe
 
-DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") is
-a method that improves the reliability of answers in a threefold manner. It does this by
+DiVeRSe(@li2022advance) ("**Di**verse **Ve**rifier on **R**easoning **S**t**e**ps") est une méthode qui améliore la fiabilité des réponses de trois manières. Elle le fait en :
 
-1) using multiple prompts to generate diverse completions,
-2) using a verifier to distinguish good answers from bad answers, and 
-3) using a verifier to check the correctness of reasoning steps.
+1) utilisant plusieurs prompts pour générer des complétions diverses,
+2) utilisant un vérificateur pour distinguer les bonnes réponses des mauvaises, et 
+3) utilisant un vérificateur pour vérifier l'exactitude des étapes de raisonnement.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -25,100 +23,90 @@ a method that improves the reliability of answers in a threefold manner. It does
 
 <div style={{ textAlign: "center" }}>DiVeRSe (Li et al.)</div>
 
-### Diverse Prompts
+### Prompts Divers
 
-DiVeRSe uses 5 different prompts a given input. To construct each prompt, they randomly
-sample a few exemplars from the training set. Here is an example of one such few-shot
-prompt (k=2), with exemplars taken from the [GSM8K benchmark](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). In practice, DiVeRSe uses
-5 exemplars in prompts for this benchmark.
+DiVeRSe utilise 5 prompts différents pour une entrée donnée. Pour construire chaque prompt, ils échantillonnent aléatoirement quelques exemples de l'ensemble d'entraînement. Voici un exemple d'un tel prompt few-shot (k=2), avec des exemples tirés du [benchmark GSM8K](https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl)(@cobbe2021training). En pratique, DiVeRSe utilise 5 exemples dans les prompts pour ce benchmark.
 
 ```
-Q: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
-A: Natalia sold 48/2 = 24 clips in May.
-Natalia sold 48+24 = 72 clips altogether in April and May.
+Q: Natalia a vendu des pinces à 48 de ses amis en avril, puis elle a vendu moitié moins de pinces en mai. Combien de pinces Natalia a-t-elle vendues au total en avril et mai ?
+R: Natalia a vendu 48/2 = 24 pinces en mai.
+Natalia a vendu 48+24 = 72 pinces au total en avril et mai.
 #### 72
-Q: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?
-A: Weng earns 12/60 = $0.2 per minute.
-Working 50 minutes, she earned 0.2 x 50 = $10.
+Q: Weng gagne 12$ de l'heure pour du baby-sitting. Hier, elle a fait seulement 50 minutes de baby-sitting. Combien a-t-elle gagné ?
+R: Weng gagne 12/60 = 0,2$ par minute.
+En travaillant 50 minutes, elle a gagné 0,2 x 50 = 10$.
 #### 10
-Q: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?
-A:
+Q: Betty économise pour un nouveau portefeuille qui coûte 100$. Betty n'a que la moitié de l'argent dont elle a besoin. Ses parents ont décidé de lui donner 15$ à cette fin, et ses grands-parents deux fois plus que ses parents. Combien d'argent Betty a-t-elle encore besoin pour acheter le portefeuille ?
+R:
 ```
 
-After generating 5 different prompts like above, DiVeRSe samples 20 reasoning paths
-for each (temperature = 0.5). Here are a few example completions of the above prompt.
-Note that the answers are not always correct.
+Après avoir généré 5 prompts différents comme ci-dessus, DiVeRSe échantillonne 20 chemins de raisonnement pour chacun (température = 0,5). Voici quelques exemples de complétions du prompt ci-dessus. Notez que les réponses ne sont pas toujours correctes.
 
 ```text {1-5}
-Betty has 0.5*100 = $50.
-Then she gets 15 more = $65.
-Then she gets 2*15 = $90.
-She needs 100-90 = $10 more.
-#### 10
+Betty a 0,5*100 = 50$.
+Puis elle reçoit 15$ de plus = 65$.
+Puis elle reçoit 2*15 = 30$ de plus = 95$.
+Elle a besoin de 100-95 = 5$ de plus.
+#### 5
 ```
 
 ```text {1-5}
-A: Betty has 0.5*100 = $500.
-Then she gets 15 more = $650.
-Then she gets 2*15 = $900.
-She needs 100-90 = $1000 more.
-#### 1000
+R: Betty a 0,5*100 = 50$.
+Puis elle reçoit 15$ de plus = 65$.
+Puis elle reçoit 2*15 = 30$ de plus = 95$.
+Elle a besoin de 100-95 = 5$ de plus.
+#### 5
 ```
 
-At this point, DiVeRSe has generated 100 different completions.
+À ce stade, DiVeRSe a généré 100 complétions différentes.
 
-### Voting Verifier
+### Vérificateur de Vote
 
-Now, we could just take the majority answer, like Self-Consistency(@mitchell2022enhancing) does.
+Maintenant, nous pourrions simplement prendre la réponse majoritaire, comme le fait Self-Consistency(@mitchell2022enhancing).
 
-However, DiVeRSe proposes a much more complicated method, which they call a _voting verifier_.
+Cependant, DiVeRSe propose une méthode beaucoup plus complexe, qu'ils appellent un _vérificateur de vote_.
 
-At test time, using the voting verifier is a two step process. First, the verifier (a neural network)
-assigns a 0-1 score to each completion based on how likely it is to be correct. Then, the 'voting'
-component sums all of the scores over different answers and yields the final answer.
+Lors de l'utilisation, le vérificateur de vote est un processus en deux étapes. D'abord, le vérificateur (un réseau neuronal) attribue un score de 0 à 1 à chaque complétion en fonction de sa probabilité d'être correcte. Ensuite, la composante de 'vote' additionne tous les scores pour différentes réponses et donne la réponse finale.
 
-#### Example
+#### Exemple
 
-Here is a small example. Say we have the following completions for the prompt `What is two plus two?`:
+Voici un petit exemple. Supposons que nous ayons les complétions suivantes pour le prompt `Combien font deux plus deux ?` :
 
 ```text {1-1}
 4
 ```
 
 ```text {1-1}
-two + 2 = 5
+deux + 2 = 5
 ```
 
 ```text {1-1}
-I think 2+2 = 6
+Je pense que 2+2 = 6
 ```
 
 ```text {1-1}
-two plus two = 4
+deux plus deux = 4
 ```
 
 ```text {1-1}
-It is 5
+C'est 5
 ```
 
-The verifier will read each completion and assign a score to it. For example, it might assign
-the scores: 0.9, 0.1, 0.2, 0.8, 0.3 respectively. Then, the voting component will sum the scores for each
-answer.
+Le vérificateur lira chaque complétion et lui attribuera un score. Par exemple, il pourrait attribuer les scores : 0,9, 0,1, 0,2, 0,8, 0,3 respectivement. Ensuite, la composante de vote additionnera les scores pour chaque réponse.
 
 ```
-score(4) = 0.9 + 0.8 = 1.7
-score(5) = 0.1 + 0.3 = 0.4
-score(6) = 0.2
+score(4) = 0,9 + 0,8 = 1,7
+score(5) = 0,1 + 0,3 = 0,4
+score(6) = 0,2
 ```
 
-The final answer is 4, since it has the highest score.
+La réponse finale est 4, car elle a le score le plus élevé.
 
-**But how is the verifier trained?**
+**Mais comment le vérificateur est-il entraîné ?**
 
-The verifier is trained with a slightly complex loss function, which
-I will not cover here. Read section 3.3 of the paper for more details(@li2022advance).
+Le vérificateur est entraîné avec une fonction de perte légèrement complexe, que je ne couvrirai pas ici. Lisez la section 3.3 de l'article pour plus de détails(@li2022advance).
 
-## Ask Me Anything (AMA) Prompting
+## Prompting Ask Me Anything (AMA)
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -129,37 +117,36 @@ I will not cover here. Read section 3.3 of the paper for more details(@li2022adv
   />
 </div>
 
-Ask Me Anything (AMA) prompting(@arora2022ama) is a similar approach to DiVeRSe. However, both its multiple prompt step and its answer aggregation step differ signifigantly. The core idea of AMA is to use a LLM to generate multiple prompts, instead of just using different few-shot exemplars.
+Le prompting Ask Me Anything (AMA)(@arora2022ama) est une approche similaire à DiVeRSe. Cependant, son étape de prompts multiples et son étape d'agrégation de réponses diffèrent significativement. L'idée centrale d'AMA est d'utiliser un LLM pour générer plusieurs prompts, au lieu de simplement utiliser différents exemples few-shot.
 
-### Multiple Prompts
+### Prompts Multiples
 
-AMA shows that you can take a question and reformat it in multiple ways to create different prompts. For example, say you are scraping a bunch of websites for information on animals and want to only record ones that live in North America. Let's construct a prompt to determine this.
+AMA montre que vous pouvez prendre une question et la reformuler de plusieurs façons pour créer différents prompts. Par exemple, supposons que vous récupériez des informations sur des animaux sur divers sites web et que vous souhaitiez n'enregistrer que ceux qui vivent en Amérique du Nord. Construisons un prompt pour déterminer cela.
 
-Given the following passage from Wikipedia:
-
-```text
-The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-```
-
-You can format this task into a prompt like so:
+Étant donné le passage suivant de Wikipédia :
 
 ```text
-Is the following claim True or False given the context?
-
-Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-Claim: This animal lives in North America
-Answer:
+L'ours Kermode, parfois appelé ours esprit (Ursus americanus kermodei), est une sous-espèce de l'ours noir américain et vit dans les régions côtières centrales et nord de la Colombie-Britannique, au Canada.
 ```
 
-This is a bit of an odd formulation. Why not just use the following simpler prompt?
+Vous pouvez formater cette tâche en un prompt comme ceci :
 
 ```text
-Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-Question: Does this animal lives in North America?
+La déclaration suivante est-elle Vraie ou Fausse étant donné le contexte ?
+
+Contexte : L'ours Kermode, parfois appelé ours esprit (Ursus americanus kermodei), est une sous-espèce de l'ours noir américain et vit dans les régions côtières centrales et nord de la Colombie-Britannique, au Canada.
+Déclaration : Cet animal vit en Amérique du Nord
+Réponse :
 ```
 
-Well, by formulating the question in this special way, we can generate different prompts.
-Our first step here will be to take the claim `This animal lives in North America` and reformat it into different questions, which are basically asking the same thing. To do this, we will pass the claim through prompts like those in the below image.
+C'est une formulation un peu étrange. Pourquoi ne pas simplement utiliser le prompt plus simple suivant ?
+
+```text
+Contexte : L'ours Kermode, parfois appelé ours esprit (Ursus americanus kermodei), est une sous-espèce de l'ours noir américain et vit dans les régions côtières centrales et nord de la Colombie-Britannique, au Canada.
+Question : Cet animal vit-il en Amérique du Nord ?
+```
+
+En formulant la question de cette manière spéciale, nous pouvons générer différents prompts. Notre première étape ici sera de prendre la déclaration `Cet animal vit en Amérique du Nord` et de la reformuler en différentes questions, qui demandent essentiellement la même chose. Pour ce faire, nous passerons la déclaration à travers des prompts comme ceux de l'image ci-dessous.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -170,68 +157,68 @@ Our first step here will be to take the claim `This animal lives in North Americ
   />
 </div>
 
-This might output:
+Cela pourrait produire :
 
-1. Was the animal living in North America?
-2. Does the animal live in North America?
-3. Where does the animal live?
+1. L'animal vivait-il en Amérique du Nord ?
+2. L'animal vit-il en Amérique du Nord ?
+3. Où vit l'animal ?
 
-The idea behind this is to create different _views_ of the task. We then apply each to the given context like so:
-
-```text
-Context: The Kermode bear, sometimes called the spirit bear (Ursus americanus kermodei), is a subspecies of the American black bear and lives in the Central and North Coast regions of British Columbia, Canada.
-Question: Was the animal living in North America?
-```
-
-Then, we can generate answers for each:
-
-1. `Yes it was`
-2. `Yes it does`
-3. `North America`
-
-These are _intermediate_ answers. We need to map them to task labels (e.g. Yes or No).
-
-We can do this by passing the intermediate answers through a prompt like the following:
+L'idée derrière cela est de créer différentes _vues_ de la tâche. Nous appliquons ensuite chacune au contexte donné comme ceci :
 
 ```text
-Select the correct category.
-
-"Categories":
-- Yes, North America
-- No, not North America
-
-"Yes it was" fits category:
+Contexte : L'ours Kermode, parfois appelé ours esprit (Ursus americanus kermodei), est une sous-espèce de l'ours noir américain et vit dans les régions côtières centrales et nord de la Colombie-Britannique, au Canada.
+Question : L'animal vivait-il en Amérique du Nord ?
 ```
 
-Now we can get our output answers.
+Ensuite, nous pouvons générer des réponses pour chacune :
 
-1. `Yes, North America`
-2. `Yes, North America`
-3. `Yes, North America`
+1. `Oui, il y vivait`
+2. `Oui, il y vit`
+3. `Amérique du Nord`
 
-Here, they all agree, so we can just take the first answer. However, if they disagreed, we could use the AMA aggregation step to get a final answer.
+Ce sont des réponses _intermédiaires_. Nous devons les associer à des étiquettes de tâche (par exemple, Oui ou Non).
 
-### Answer Aggregation
+Nous pouvons le faire en passant les réponses intermédiaires à travers un prompt comme celui-ci :
 
-AMA uses a very complicated strategy for aggregating answers (more so than DiVeRSe) instead of simply taking the majority answer. To understand why the majority answer may be a poor choice, consider two of the questions we generated before:
+```text
+Sélectionnez la catégorie correcte.
 
-1. Was the animal living in North America?
-2. Does the animal live in North America?
+"Catégories" :
+- Oui, Amérique du Nord
+- Non, pas en Amérique du Nord
 
-They are extremely similar, so will likely generate the same result. Since the questions are so similar, they will effectively bias the end result. To deal with this, AMA relies on weak supervision and complex mathematics in order to estimate dependencies between different prompts it creates, and then uses this to weight them appropriately.
+"Oui, il y vivait" correspond à la catégorie :
+```
 
-So, for the three questions we generated, it might assign weights of 25%, 25%, and 50%, since the first two are so similar.
+Maintenant, nous pouvons obtenir nos réponses de sortie.
 
-Although AMA's aggregation strategy is powerful, it is so complicated that I will not cover it here. Read section 3.4 of the paper for more details(@arora2022ama).
+1. `Oui, Amérique du Nord`
+2. `Oui, Amérique du Nord`
+3. `Oui, Amérique du Nord`
 
-### Results
+Ici, elles sont toutes d'accord, donc nous pouvons simplement prendre la première réponse. Cependant, si elles étaient en désaccord, nous pourrions utiliser l'étape d'agrégation AMA pour obtenir une réponse finale.
 
-- With this prompting strategy, AMA is able to use GPT-J-6B(@wange2021gptj) to outperform GPT-3.
+### Agrégation des Réponses
 
-- AMA is better on questions where given context contains the answer.
+AMA utilise une stratégie très complexe pour agréger les réponses (plus que DiVeRSe) au lieu de simplement prendre la réponse majoritaire. Pour comprendre pourquoi la réponse majoritaire peut être un mauvais choix, considérons deux des questions que nous avons générées précédemment :
 
-## Takeaways
+1. L'animal vivait-il en Amérique du Nord ?
+2. L'animal vit-il en Amérique du Nord ?
 
-Ensembling methods are very powerful. They can be used to improve the performance of any model, and can be used to improve the performance of a model on a specific task.
+Elles sont extrêmement similaires, donc elles généreront probablement le même résultat. Comme les questions sont si similaires, elles biaiseront effectivement le résultat final. Pour résoudre ce problème, AMA s'appuie sur une supervision faible et des mathématiques complexes afin d'estimer les dépendances entre les différents prompts qu'il crée, puis utilise cela pour les pondérer de manière appropriée.
 
-In practice, majority voting should be your go to strategy.
+Ainsi, pour les trois questions que nous avons générées, il pourrait attribuer des poids de 25%, 25% et 50%, puisque les deux premières sont si similaires.
+
+Bien que la stratégie d'agrégation d'AMA soit puissante, elle est si compliquée que je ne la couvrirai pas ici. Lisez la section 3.4 de l'article pour plus de détails(@arora2022ama).
+
+### Résultats
+
+- Avec cette stratégie de prompting, AMA est capable d'utiliser GPT-J-6B(@wange2021gptj) pour surpasser GPT-3.
+
+- AMA est meilleur sur les questions où le contexte donné contient la réponse.
+
+## À retenir
+
+Les méthodes d'ensemblage sont très puissantes. Elles peuvent être utilisées pour améliorer les performances de n'importe quel modèle, et peuvent être utilisées pour améliorer les performances d'un modèle sur une tâche spécifique.
+
+En pratique, le vote majoritaire devrait être votre stratégie de prédilection.

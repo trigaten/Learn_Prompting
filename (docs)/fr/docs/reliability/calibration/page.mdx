@@ -1,43 +1,32 @@
-export const metadata = { sidebar_position: 10, title: "🔴 Calibrating LLMs" };
+export const metadata = { sidebar_position: 10, title: "🔴 Calibration des LLMs" };
 
-# 🔴 Calibrating LLMs
+# 🔴 Calibration des LLMs
 
-It is possible to counteract some of the biases LLMs exhibit via calibrating **output
-distributions**(@zhao2021calibrate).
+Il est possible de contrecarrer certains biais que présentent les LLMs via la calibration des **distributions de sortie** (@zhao2021calibrate).
 
-**What exactly does it mean to calibrate an output distribution?**
+**Que signifie exactement calibrer une distribution de sortie ?**
 
-Let's walk through a quick example: Say we have a <Term term="sentiment analysis"> sentiment analysis </Term> task with two possible labels, `Positive` and `Negative`.
-Consider what happens when the <Term term="LLM"> LLM </Term> is prompted with `Input: nothing Sentiment: `.
-This input doesn't contain any _context_ which the LLM can use to make a sentiment
-prediction, so it is called a **context-free** input.
+Parcourons un exemple rapide : Supposons que nous avons une tâche d'<Term term="sentiment analysis">analyse de sentiment</Term> avec deux étiquettes possibles, `Positive` et `Negative`.
+Considérons ce qui se passe lorsque le <Term term="LLM">LLM</Term> reçoit l'invite `Input: nothing Sentiment: `.
+Cette entrée ne contient aucun _contexte_ que le LLM peut utiliser pour faire une prédiction de sentiment, elle est donc appelée entrée **sans contexte**.
 
-Since `nothing`is neither a positive nor a negative concept, we would expect the LLM to output a probability of about 0.5 for both `Positive` and `Negative`. However, often (and for this example) that will not be the case.
+Puisque `nothing` n'est ni un concept positif ni négatif, nous nous attendrions à ce que le LLM produise une probabilité d'environ 0,5 pour `Positive` et `Negative`. Cependant, souvent (et pour cet exemple) ce ne sera pas le cas.
 
 ```
-p("Positive" | "Input: nothing Sentiment:") = 0.9
+p("Positive" | "Input: nothing Sentiment:") = 0,9
 
-p("Negative" | "Input: nothing Sentiment:") = 0.1
+p("Negative" | "Input: nothing Sentiment:") = 0,1
 ```
 
-Given these label probabilities for a context-free input, we know that the LLM's
-**output distribution** is likely biased
-towards the label `Positive`. This may cause the LLM to favor `Positive`
-for all inputs, even if the input is not actually positive.
+Étant donné ces probabilités d'étiquettes pour une entrée sans contexte, nous savons que la **distribution de sortie** du LLM est probablement biaisée vers l'étiquette `Positive`. Cela peut amener le LLM à favoriser `Positive` pour toutes les entrées, même si l'entrée n'est pas réellement positive.
 
-If we can somehow **calibrate** the output distribution, such that context-free
-inputs are assigned a probability of 0.5 for both `Positive` and `Negative`,
-then we can often remove the bias towards `Positive` and the LLM will be more reliable
-on both context-free inputs and inputs with context.
+Si nous pouvons d'une manière ou d'une autre **calibrer** la distribution de sortie, de sorte que les entrées sans contexte se voient attribuer une probabilité de 0,5 pour `Positive` et `Negative`, alors nous pouvons souvent éliminer le biais vers `Positive` et le LLM sera plus fiable à la fois sur les entrées sans contexte et les entrées avec contexte.
 
-## Non-Technical Solution
+## Solution non technique
 
-A non-technical solution to this problem is to simply provide few shot examples where
-context-free exemplars are effectively assigned a probability of 0.5 for both
-`Positive` and `Negative`.
+Une solution non technique à ce problème consiste simplement à fournir quelques exemples où les exemples sans contexte se voient effectivement attribuer une probabilité de 0,5 pour `Positive` et `Negative`.
 
-For example, we could provide the following few shot examples which show each context-free
-exemplar being classified as both `Positive` and `Negative`:
+Par exemple, nous pourrions fournir les exemples suivants qui montrent chaque exemple sans contexte classé à la fois comme `Positive` et `Negative` :
 
 ```
 Input: I hate this movie. Sentiment: Negative
@@ -49,87 +38,76 @@ Input: nothing Sentiment: Negative
 Input: I like eggs. Sentiment:
 ```
 
-To my knowledge, this solution has not been explored in the literature, and I am not sure
-how well it works in practice. However, it is a simple solution that demonstrates what
-calibration is trying to achieve.
+À ma connaissance, cette solution n'a pas été explorée dans la littérature, et je ne suis pas sûr de son efficacité en pratique. Cependant, c'est une solution simple qui démontre ce que la calibration essaie d'accomplir.
 
-## Technical Solution
+## Solution technique
 
-Another solution to this is **contextual calibration**(@zhao2021calibrate), where we
-adjust special calibration parameters, which ensure that context-free inputs like
-`Input: nothing Sentiment: ` are assigned a probability of about 0.5 for both labels.
-Note that in practice this method performs calibration over multiple different context free inputs (e.g. `Input: N/A Sentiment: `, `Input: [MASK] Sentiment: `). It averages the calibration parameters that
-work best for each context-free input to find the best calibration parameters for the LLM.
+Une autre solution est la **calibration contextuelle** (@zhao2021calibrate), où nous ajustons des paramètres de calibration spéciaux, qui garantissent que les entrées sans contexte comme `Input: nothing Sentiment: ` se voient attribuer une probabilité d'environ 0,5 pour les deux étiquettes.
+Notez qu'en pratique, cette méthode effectue la calibration sur plusieurs entrées sans contexte différentes (par exemple, `Input: N/A Sentiment: `, `Input: [MASK] Sentiment: `). Elle fait la moyenne des paramètres de calibration qui fonctionnent le mieux pour chaque entrée sans contexte afin de trouver les meilleurs paramètres de calibration pour le LLM.
 
-### Example
+### Exemple
 
-Let's go through an example of computing the calibration parameters for one context-free input. Note that
-this example is not reproducible with GPT-3 due to the fact that it can't be restricted to the labels `Positive` and `Negative`.
+Parcourons un exemple de calcul des paramètres de calibration pour une entrée sans contexte. Notez que cet exemple n'est pas reproductible avec GPT-3 en raison du fait qu'il ne peut pas être limité aux étiquettes `Positive` et `Negative`.
 
-Consider again the above example where the LLM assigns the following probabilities to the labels
-for a context-free input:
+Considérons à nouveau l'exemple ci-dessus où le LLM attribue les probabilités suivantes aux étiquettes pour une entrée sans contexte :
 
 ```
-p("Positive" | "Input: nothing Sentiment:") = 0.9
+p("Positive" | "Input: nothing Sentiment:") = 0,9
 
-p("Negative" | "Input: nothing Sentiment:") = 0.1
+p("Negative" | "Input: nothing Sentiment:") = 0,1
 ```
 
-We want to find some probability distribution q such that
+Nous voulons trouver une distribution de probabilité q telle que :
 
 ```
-q("Positive" | "Input: nothing Sentiment:") = 0.5
+q("Positive" | "Input: nothing Sentiment:") = 0,5
 
-q("Negative" | "Input: nothing Sentiment:") = 0.5
+q("Negative" | "Input: nothing Sentiment:") = 0,5
 ```
 
-We will do so by creating a linear transformation that adjusts (calibrates) the probabilities
-of $p$.
+Nous allons le faire en créant une transformation linéaire qui ajuste (calibre) les probabilités de $p$.
 
 $\hat q = \text{Softmax}(W\hat p + b)$
 
-This equation takes the original probabilities $\hat p$ and applies the weights $W$ and bias $b$ to
-them. The weights $W$ and bias $b$ are the calibration parameters, which, when applied to the
-context-free example's probabilites, will yield $\hat p$ = [0.5, 0.5].
+Cette équation prend les probabilités originales $\hat p$ et leur applique les poids $W$ et le biais $b$. Les poids $W$ et le biais $b$ sont les paramètres de calibration qui, lorsqu'ils sont appliqués aux probabilités de l'exemple sans contexte, donneront $\hat p$ = [0,5, 0,5].
 
-#### Computing W and b
+#### Calcul de W et b
 
-We need to somehow compute the weights $W$ and bias $b$. One way to do this is:
+Nous devons calculer les poids $W$ et le biais $b$. Une façon de le faire est :
 
 $W = \text{diag}(\hat p)^{-1}$
 
 $b = 0$
 
-Although the definition of $W$ may seem a bit strange at first, but it is just taking the inverse of each value in $\hat p$ in order to find a $W$ that will transform the original probabilities $\hat p$ into the calibrated probabilities [0.5, 0.5].
+Bien que la définition de $W$ puisse sembler un peu étrange au premier abord, elle consiste simplement à prendre l'inverse de chaque valeur dans $\hat p$ afin de trouver un $W$ qui transformera les probabilités originales $\hat p$ en probabilités calibrées [0,5, 0,5].
 
-Let's verify that this works for the example above:
+Vérifions que cela fonctionne pour l'exemple ci-dessus :
 
-$\hat p = [0.9, 0.1]$
+$\hat p = [0,9, 0,1]$
 
-$W = \text{diag}(\hat p)^{-1} = \text{diag}([0.9, 0.1])^{-1} 
+$W = \text{diag}(\hat p)^{-1} = \text{diag}([0,9, 0,1])^{-1} 
 = \begin{bmatrix}
-   0.9 & 0 \\
-   0 & 0.1
+   0,9 & 0 \\
+   0 & 0,1
 \end{bmatrix}^{-1}
 = \begin{bmatrix}
-   1.11 & 0 \\
+   1,11 & 0 \\
    0 & 10
 \end{bmatrix}$
 
 $\hat q = \text{Softmax}(W\hat p + b) = \text{Softmax}(\begin{bmatrix}
-   1.11 & 0 \\
+   1,11 & 0 \\
    0 & 10
-\end{bmatrix}*{[0.9, 0.1]} + 0)
+\end{bmatrix}*{[0,9, 0,1]} + 0)
 = \text{Softmax}([1, 1])
-=[0.5, 0.5]$
+=[0,5, 0,5]$
 
-As mentioned above, we would perform this same process for multiple different context-free inputs, and average the calibration parameters that work best for each context-free input to find the best calibration parameters for the LLM. This means that the final calibration parameters willl probably not map any of the context-free inputs to exactly [0.5, 0.5].
+Comme mentionné ci-dessus, nous effectuerions ce même processus pour plusieurs entrées sans contexte différentes, et ferions la moyenne des paramètres de calibration qui fonctionnent le mieux pour chaque entrée sans contexte afin de trouver les meilleurs paramètres de calibration pour le LLM. Cela signifie que les paramètres de calibration finaux ne mapperont probablement aucune des entrées sans contexte exactement à [0,5, 0,5].
 
-### Another method
+### Une autre méthode
 
-$b$ could also be set to $-\hat p$, and $W$ to the identity matrix. This method performs
-better on generation rather than classification tasks(@zhao2021calibrate).
+$b$ pourrait également être défini comme $-\hat p$, et $W$ comme la matrice identité. Cette méthode fonctionne mieux sur les tâches de génération plutôt que de classification (@zhao2021calibrate).
 
-## Takeaways
+## À retenir
 
-LLMs are often predisposed (biased) towards certain labels. Calibration can be used to counteract this bias.
+Les LLMs sont souvent prédisposés (biaisés) envers certaines étiquettes. La calibration peut être utilisée pour contrecarrer ce biais.

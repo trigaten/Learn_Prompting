@@ -1,11 +1,11 @@
-export const metadata = { sidebar_position: 50, title: "🟢 Repetition" };
+export const metadata = { sidebar_position: 50, title: "🟢 Répétition" };
 
-# 🟢 Repetition
+# 🟢 Répétition
 
-Repeating the same word within a prompt, or similar phrases can cause the model
-to emphasize that word in the generated image(@oppenlaender2022taxonomy). For example, [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) generated these waterfalls with DALLE:
+La répétition du même mot dans un prompt, ou de phrases similaires peut amener le modèle
+à mettre l'accent sur ce mot dans l'image générée(@oppenlaender2022taxonomy). Par exemple, [@Phillip Isola](https://twitter.com/phillip_isola/status/1532189632217112577) a généré ces cascades avec DALLE :
 
-`A beautiful painting of a mountain next to a waterfall.`.
+`Une belle peinture d'une montagne à côté d'une cascade.`
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -17,7 +17,7 @@ to emphasize that word in the generated image(@oppenlaender2022taxonomy). For ex
   />
 </div>
 
-`A very very very very very very very very very very very very very very very very very very very very very very beautiful painting of a mountain next to a waterfall.`
+`Une très très très très très très très très très très très très très très très très très très très très très très belle peinture d'une montagne à côté d'une cascade.`
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -29,12 +29,12 @@ to emphasize that word in the generated image(@oppenlaender2022taxonomy). For ex
   />
 </div>
 
-The emphasis on the word `very` seems to improve generation quality! Repetition can
-also be used to emphasize subject terms. For example, if you want to generate an image
-of a planet with aliens, using the prompt `A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`
-will make it more likely that aliens are in the resultant image. The following images are made with Stable Diffusion.
+L'accent mis sur le mot `très` semble améliorer la qualité de la génération ! La répétition peut
+également être utilisée pour mettre l'accent sur les termes du sujet. Par exemple, si vous voulez générer une image
+d'une planète avec des extraterrestres, utiliser le prompt `Une planète avec des extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres`
+rendra plus probable la présence d'extraterrestres dans l'image résultante. Les images suivantes sont réalisées avec Stable Diffusion.
 
-`A planet with aliens`
+`Une planète avec des extraterrestres`
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -46,7 +46,7 @@ will make it more likely that aliens are in the resultant image. The following i
   />
 </div>
 
-`A planet with aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens aliens`
+`Une planète avec des extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres extraterrestres`
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -60,4 +60,4 @@ will make it more likely that aliens are in the resultant image. The following i
 
 ## Notes
 
-This method is not perfect, and using weights (next article) is often a better option.
+Cette méthode n'est pas parfaite, et l'utilisation de poids (article suivant) est souvent une meilleure option.

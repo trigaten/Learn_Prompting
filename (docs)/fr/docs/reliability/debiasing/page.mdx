@@ -1,88 +1,79 @@
-export const metadata = { sidebar_position: 3, title: "🟢 Prompt Debiasing" };
+export const metadata = { sidebar_position: 3, title: "🟢 Élimination des biais dans les prompts" };
 
-# 🟢 Prompt Debiasing
+# 🟢 Élimination des biais dans les prompts
 
-This page covers a few simple techniques to debias your prompts.
+Cette page présente quelques techniques simples pour éliminer les biais dans vos prompts.
 
-## Exemplar Debiasing
+## Élimination des biais dans les exemples
 
-Depending on their distribution and order within the prompt, <Term term="exemplars"> exemplars </Term> may bias LLM outputs(@si2022prompting). This is discussed to some extent in the [What's in a Prompt](https://learnprompting.org/docs/intermediate/whats_in_a_prompt) page.
+Selon leur distribution et leur ordre dans le prompt, les <Term term="exemplars"> exemplars </Term> peuvent biaiser les résultats des LLM (@si2022prompting). Ce sujet est abordé dans une certaine mesure dans la page [Qu'est-ce qu'un prompt](https://learnprompting.org/fr/docs/intermediate/whats_in_a_prompt).
 
 ### Distribution
 
-When discussing the distribution of exemplars within a prompt, we are referring to
-how many exemplars from different classes are present. For example, if you are
-performing binary <Term term="sentiment analysis"> sentiment analysis </Term> (positive or negative) on tweets, and you
-provide 3 positive tweets and 1 negative tweet as exemplars, then you have a
-distribution of 3:1. Since the distribution is skewed towards positive tweets,
-the model will be biased towards predicting positive tweets.
+Lorsque nous parlons de la distribution des exemples dans un prompt, nous faisons référence au nombre d'exemples de différentes classes présents. Par exemple, si vous effectuez une <Term term="sentiment analysis">analyse de sentiment</Term> binaire (positif ou négatif) sur des tweets, et que vous fournissez 3 tweets positifs et 1 tweet négatif comme exemples, vous avez une distribution de 3:1. Comme la distribution est biaisée vers les tweets positifs, le modèle sera enclin à prédire des tweets positifs.
 
-#### Worse:
+#### Moins bon :
 
 ```text
-Q: Tweet: "What a beautiful day!"
-A: positive
+Q: Tweet: "Quelle belle journée !"
+R: positif
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Q: Tweet: "J'adore les poches sur les jeans"
+R: positif
 
-Q: Tweet: "I love hotpockets"
-A: positive
+Q: Tweet: "J'adore les hot pockets"
+R: positif
 
-Q: Tweet: "I hate this class"
-A: negative
+Q: Tweet: "Je déteste ce cours"
+R: négatif
 ```
 
-#### Better:
+#### Meilleur :
 
-Having an even exemplar distribution is better.
+Avoir une distribution équilibrée des exemples est préférable.
 
 ```text
-Q: Tweet: "What a beautiful day!"
-A: positive
+Q: Tweet: "Quelle belle journée !"
+R: positif
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Q: Tweet: "J'adore les poches sur les jeans"
+R: positif
 
-Q: Tweet: "I don't like pizza"
-A: negative
+Q: Tweet: "Je n'aime pas la pizza"
+R: négatif
 
-Q: Tweet: "I hate this class"
-A: negative
+Q: Tweet: "Je déteste ce cours"
+R: négatif
 ```
 
-### Order
+### Ordre
 
-The order of <Term term="exemplars"> exemplars </Term> can also cause bias. For example, a prompt that has randomly ordered exemplars
-will often perform better than the above prompt, which contains positive tweets first,
-followed by negative tweets.
+L'ordre des <Term term="exemplars"> exemplars </Term> peut également causer des biais. Par exemple, un prompt avec des exemples disposés aléatoirement sera souvent plus performant que le prompt ci-dessus, qui contient d'abord des tweets positifs, suivis de tweets négatifs.
 
-#### Best:
+#### Optimal :
 
 ```text
-Q: Tweet: "I hate this class"
-A: negative
+Q: Tweet: "Je déteste ce cours"
+R: négatif
 
-Q: Tweet: "What a beautiful day!"
-A: positive
+Q: Tweet: "Quelle belle journée !"
+R: positif
 
-Q: Tweet: "I don't like pizza"
-A: negative
+Q: Tweet: "Je n'aime pas la pizza"
+R: négatif
 
-Q: Tweet: "I love pockets on jeans"
-A: positive
+Q: Tweet: "J'adore les poches sur les jeans"
+R: positif
 ```
 
-## Instruction Debiasing
+## Élimination des biais par instruction
 
-We can explicitly prompt GPT-3 to be unbiased, by including an instruction
-to do so in the prompt. In particular, Si et al.(@si2022prompting) use the following
-instruction when experimenting with BBQ(@parrish2021bbq), a bias benchmark.
+Nous pouvons explicitement demander à GPT-3 d'être impartial, en incluant une instruction à cet effet dans le prompt. En particulier, Si et al. (@si2022prompting) utilisent l'instruction suivante lors de leurs expériences avec BBQ (@parrish2021bbq), un benchmark de biais.
 
 ```text
-We should treat people from different socioeconomic statuses, sexual orientations, religions, races, physical appearances, nationalities, gender identities, disabilities, and ages equally. When we do not have sufficient information, we should choose the unknown option, rather than making assumptions based on our stereotypes.
+Nous devrions traiter de manière égale les personnes de différents statuts socio-économiques, orientations sexuelles, religions, races, apparences physiques, nationalités, identités de genre, handicaps et âges. Lorsque nous n'avons pas suffisamment d'informations, nous devrions choisir l'option inconnue, plutôt que de faire des suppositions basées sur nos stéréotypes.
 ```
 
-## Notes
+## Remarques
 
-See more on debiasing in the Calibration section.
+Pour en savoir plus sur l'élimination des biais, consultez la section Calibration.

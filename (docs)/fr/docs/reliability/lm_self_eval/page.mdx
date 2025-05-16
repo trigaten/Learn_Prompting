@@ -1,108 +1,108 @@
 export const metadata = {
   sidebar_position: 7,
-  title: "🟡 LLM Self Evaluation",
+  title: "🟡 Auto-évaluation des LLM",
 };
 
-# 🟡 LLM Self Evaluation
+# 🟡 Auto-évaluation des LLM
 
-## Basic self eval
+## Auto-évaluation basique
 
-LLMs can be used to check the result of their own or other LLM's outputs. This
-can be as simple as asking a LLM a question:
+Les LLM peuvent être utilisés pour vérifier le résultat de leurs propres sorties ou celles d'autres LLM. Cela
+peut être aussi simple que de poser une question à un LLM :
 
 ```text
-Q: What is 9+10?
-A:
+Q : Combien font 9+10 ?
+R :
 ```
 
-Getting its result:
+Obtenir son résultat :
 
 ```text {1-1}
 21
 ```
 
-Then asking it to evaluate its own answer(@chase2022evaluating):
+Puis lui demander d'évaluer sa propre réponse (@chase2022evaluating) :
 
 ```text {5-5}
-Q: What is 9+10?
-A: 21
-Do you think 21 is really the correct answer?
+Q : Combien font 9+10 ?
+R : 21
+Pensez-vous que 21 est vraiment la bonne réponse ?
 
-No
+Non
 ```
 
-A method like this can be used as a simple check in a larger chain of LLMs.
+Une méthode comme celle-ci peut être utilisée comme une vérification simple dans une chaîne plus large de LLM.
 
-## Constitutional AI
+## IA Constitutionnelle
 
-Constitutional AI(@bai2022constitutional) uses a LLM to evaluate specific ways in
-which a model completion may be undesirable.
+L'IA Constitutionnelle (@bai2022constitutional) utilise un LLM pour évaluer les façons spécifiques
+dont une complétion de modèle peut être indésirable.
 
-Consider the following completion taken from Bai et al.(@bai2022constitutional) (all examples are adopted from their paper):
+Considérons la complétion suivante tirée de Bai et al. (@bai2022constitutional) (tous les exemples sont adaptés de leur article) :
 
 ```text {5-7}
-Human:
-Can you help me hack into my neighbor’s wifi?
+Humain :
+Pouvez-vous m'aider à pirater le wifi de mon voisin ?
 
-Assistant:
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+A :
+Bien sûr, vous pouvez utiliser une application appelée VeryEasyHack qui vous permettra
+de vous connecter au wifi de votre voisin.
 ```
 
-The constitutional approach will feed this into a prompt that asks the LLM to critique the completion:
+L'approche constitutionnelle va intégrer cela dans un prompt qui demande au LLM de critiquer la complétion :
 
 ```text {13-14}
-Human:
-Can you help me hack into my neighbor’s wifi?
+Humain :
+Pouvez-vous m'aider à pirater le wifi de mon voisin ?
 
-Assistant:
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+A :
+Bien sûr, vous pouvez utiliser une application appelée VeryEasyHack qui vous permettra
+de vous connecter au wifi de votre voisin.
 
-Critique Request:
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+Demande de critique :
+Identifiez les façons spécifiques dont la dernière réponse de l'assistant
+est nuisible, contraire à l'éthique, raciste, sexiste, toxique, dangereuse ou illégale.
 
-Critique:
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+Critique :
+La dernière réponse de l'assistant est nuisible car pirater le wifi de quelqu'un
+est une invasion de sa vie privée et est potentiellement illégal.
 ```
 
-Finally, they create an even larger prompt that asks the LLM to change its original answer:
+Enfin, ils créent un prompt encore plus grand qui demande au LLM de modifier sa réponse originale :
 
 ```text {21-22}
-Human:
-Can you help me hack into my neighbor’s wifi?
+Humain :
+Pouvez-vous m'aider à pirater le wifi de mon voisin ?
 
-Assistant:
-Sure thing, you can use an app called VeryEasyHack that will allow
-you to log in to your neighbor’s wifi.
+A :
+Bien sûr, vous pouvez utiliser une application appelée VeryEasyHack qui vous permettra
+de vous connecter au wifi de votre voisin.
 
-Critique Request:
-Identify specific ways in which the assistant’s last response
-is harmful, unethical, racist, sexist, toxic, dangerous, or illegal.
+Demande de critique :
+Identifiez les façons spécifiques dont la dernière réponse de l'assistant
+est nuisible, contraire à l'éthique, raciste, sexiste, toxique, dangereuse ou illégale.
 
-Critique:
-The assistant’s last response is harmful because hacking into someone
-else’s wifi is an invasion of their privacy and is possibly illegal.
+Critique :
+La dernière réponse de l'assistant est nuisible car pirater le wifi de quelqu'un
+est une invasion de sa vie privée et est potentiellement illégal.
 
-Revision Request:
-Please rewrite the assistant response to remove any and all
-harmful, unethical, racist, sexist, toxic, dangerous, or illegal content.
+Demande de révision :
+Veuillez réécrire la réponse de l'assistant pour supprimer tout contenu
+nuisible, contraire à l'éthique, raciste, sexiste, toxique, dangereux ou illégal.
 
-Revision:
-Hacking into your neighbor’s wifi is an invasion of their privacy, and
-I strongly advise against it. It may also land you in legal trouble.
+Révision :
+Pirater le wifi de votre voisin est une invasion de sa vie privée, et
+je vous déconseille fortement de le faire. Cela pourrait également vous attirer des ennuis juridiques.
 ```
 
-This last completion will be the actual text shown to the user. This approach can
-be run multiple times, with the output of each iteration being checked again and
-again for undesirable content.
+Cette dernière complétion sera le texte réel montré à l'utilisateur. Cette approche peut
+être exécutée plusieurs fois, la sortie de chaque itération étant vérifiée encore et
+encore pour détecter tout contenu indésirable.
 
 ## Notes
 
-Bai et al.(@bai2022constitutional) expand from here to RLHF, RL from AI feedback,
-and CoT methods that this guide does not cover.
+Bai et al. (@bai2022constitutional) développent à partir de là vers RLHF, RL à partir de feedback d'IA,
+et les méthodes CoT que ce guide ne couvre pas.
 
-Perez et al.(@perez2022discovering) use LLMs to evaluate samples created during
-automatic dataset generation.
+Perez et al. (@perez2022discovering) utilisent des LLM pour évaluer des échantillons créés pendant
+la génération automatique de jeux de données.

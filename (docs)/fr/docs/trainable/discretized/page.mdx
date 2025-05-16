@@ -1,45 +1,45 @@
 export const metadata = {
   sidebar_position: 2,
-  title: "🔴 Interpretable Soft Prompts",
+  title: "🔴 Prompts Doux Interprétables",
 };
 
-# 🔴 Interpretable Soft Prompts
+# 🔴 Prompts Doux Interprétables
 
-Soft prompts are a sequence of vectors which
-don't correspond to any actual tokens in the vocabulary. This makes it difficult
-to interpret the prompt. However, we can still attempt to do so
-by mapping the vectors to the closest tokens in the vocabulary. However, projected
-soft prompts are often wayward; they can solve
-tasks well, but get projected to arbitrary tokens in the vocabulary(@khashabi2021prompt).
+Les prompts doux sont une séquence de vecteurs qui
+ne correspondent à aucun token réel dans le vocabulaire. Cela rend difficile
+l'interprétation du prompt. Cependant, nous pouvons toujours essayer de le faire
+en associant les vecteurs aux tokens les plus proches dans le vocabulaire. Toutefois, les prompts
+doux projetés sont souvent capricieux ; ils peuvent résoudre
+des tâches efficacement, mais être projetés vers des tokens arbitraires dans le vocabulaire(@khashabi2021prompt).
 
-For example, if we are training on math questions like GSM8K(@cobbe2021training),
-we might start with the prompt `You are a mathematician. Solve this question:`.
-If we perform prompt tuning on it, then project that back into tokenspace, we might
-be left with something nonsensical like `A bus is a bus. Do thing here:`. It is often the
-case that the soft prompt which maps to this nonsensical prompt can provide better performance on the task!
+Par exemple, si nous nous entraînons sur des questions mathématiques comme GSM8K(@cobbe2021training),
+nous pourrions commencer avec le prompt `Vous êtes un mathématicien. Résolvez cette question :`.
+Si nous effectuons un réglage de prompt dessus, puis le projetons à nouveau dans l'espace des tokens, nous pourrions
+nous retrouver avec quelque chose d'insensé comme `Un bus est un bus. Faites la chose ici :`. Il arrive souvent
+que le prompt doux qui correspond à ce prompt insensé puisse offrir de meilleures performances sur la tâche !
 
-## The Waywardness Hypothesis
+## L'Hypothèse du Caprice
 
-Khashabi et al.(@khashabi2021prompt) propose this incredible hypothesis. It says
-that given a task, for any discrete target prompt, there exists a
-continuous prompt that projects to it, while performing well on the task.
+Khashabi et al.(@khashabi2021prompt) proposent cette hypothèse incroyable. Elle stipule
+que, étant donné une tâche, pour tout prompt cible discret, il existe un
+prompt continu qui s'y projette, tout en performant bien sur la tâche.
 
-This means that given 1000 different tasks, there exist 1000 different
-performant soft prompts (one for each task) which map to the same discrete prompt.
+Cela signifie que pour 1000 tâches différentes, il existe 1000 prompts
+doux performants différents (un pour chaque tâche) qui se projettent vers le même prompt discret.
 
-## Interpretability Risks
+## Risques d'Interprétabilité
 
-They use the Waywardness Hypothesis to highlight a number of risks which arise
-when interpreting soft prompts. In particular, a soft prompt can be projected to
-a discrete prompt which gives a misleading intent.
+Ils utilisent l'Hypothèse du Caprice pour mettre en évidence un certain nombre de risques qui surgissent
+lors de l'interprétation des prompts doux. En particulier, un prompt doux peut être projeté vers
+un prompt discret qui donne une intention trompeuse.
 
-Consider a soft prompt for ranking resumes. When projected into tokenspace, it might
-be `You hiring manager. Rank good resumes:`. This seems decent, perhaps a bit lacking
-in grammaticality. However, the token `good` might have a similar projection as the token for `white`, and there
-could exist implicit bias in the prompt. Using a slightly different projection method,
-we could end up with `You hiring manager. Rank white resumes:`. This is obviously quite
-different, and could have significant implications.
+Considérons un prompt doux pour classer des CV. Lorsqu'il est projeté dans l'espace des tokens, il pourrait
+être `Vous responsable des embauches. Classez les bons CV :`. Cela semble correct, peut-être un peu manquant
+en grammaticalité. Cependant, le token `bons` pourrait avoir une projection similaire au token pour `blancs`, et il
+pourrait exister un biais implicite dans le prompt. En utilisant une méthode de projection légèrement différente,
+nous pourrions finir avec `Vous responsable des embauches. Classez les CV blancs :`. C'est évidemment assez
+différent, et pourrait avoir des implications significatives.
 
-Similarly to interpreting a regular discrete prompt, we should be extremely
-conscious of the biases which might be present in the prompt. We must be especially
-careful with soft prompts, as they are more difficult to interpret.
+De même que pour l'interprétation d'un prompt discret régulier, nous devrions être extrêmement
+conscients des biais qui pourraient être présents dans le prompt. Nous devons être particulièrement
+prudents avec les prompts doux, car ils sont plus difficiles à interpréter.

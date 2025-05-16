@@ -1,11 +1,11 @@
-export const metadata = { sidebar_position: 2, title: "🟢 Prompt Leaking" };
+export const metadata = { sidebar_position: 2, title: "🟢 Fuite de prompt" };
 
-# 🟢 Prompt Leaking
+# 🟢 Fuite de prompt
 
-Prompt leaking is a form of prompt injection in which the model is asked to
-spit out its _own prompt_.
+La fuite de prompt est une forme d'injection de prompt dans laquelle le modèle est invité à
+révéler son _propre prompt_.
 
-As shown in the example image(@ignore_previous_prompt) below, the attacker changes `user_input` to attempt to return the prompt. The intended goal is distinct from goal hijacking (normal prompt injection), where the attacker changes `user_input` to print malicious instructions(@ignore_previous_prompt).
+Comme le montre l'exemple d'image(@ignore_previous_prompt) ci-dessous, l'attaquant modifie `entrée_utilisateur` pour tenter de renvoyer le prompt. L'objectif visé est distinct du détournement d'objectif (injection de prompt normale), où l'attaquant modifie `entrée_utilisateur` pour afficher des instructions malveillantes(@ignore_previous_prompt).
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -16,8 +16,8 @@ As shown in the example image(@ignore_previous_prompt) below, the attacker chang
   />
 </div>
 
-The following image(@simon2022inject), again from the `remoteli.io` example, shows
-a Twitter user getting the model to leak its prompt.
+L'image suivante(@simon2022inject), à nouveau de l'exemple `remoteli.io`, montre
+un utilisateur Twitter amenant le modèle à divulguer son prompt.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -28,16 +28,16 @@ a Twitter user getting the model to leak its prompt.
   />
 </div>
 
-Well, so what? Why should anyone care about prompt leaking?
+Bon, et alors ? Pourquoi quelqu'un devrait-il se soucier de la fuite de prompt ?
 
-Sometimes people want to keep their prompts secret. For example an education company
-could be using the prompt `explain this to me like I am 5` to explain
-complex topics. If the prompt is leaked, then anyone can use it without going
-through that company.
+Parfois, les gens veulent garder leurs prompts secrets. Par exemple, une entreprise éducative
+pourrait utiliser le prompt `explique-moi cela comme si j'avais 5 ans` pour expliquer
+des sujets complexes. Si le prompt est divulgué, alors n'importe qui peut l'utiliser sans passer
+par cette entreprise.
 
 ### Microsoft Bing Chat
 
-More notably, Microsoft released a ChatGPT powered search engine known as "the new Bing" on 2/7/23, which was demonstrated to be vulnerable to prompt leaking. The following example by [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) demonstrates how given an earlier version of Bing Search, code-named "Sydney", was susceptible when giving a snippet of its prompt(@kevinbing). This would allow the user to retrieve the rest of the prompt without proper authentication to view it.
+Plus particulièrement, Microsoft a lancé un moteur de recherche alimenté par ChatGPT connu sous le nom de "nouveau Bing" le 7/2/23, qui s'est avéré vulnérable à la fuite de prompt. L'exemple suivant de [@kliu128](https://twitter.com/kliu128/status/1623472922374574080) démontre comment une version antérieure de Bing Search, nom de code "Sydney", était susceptible lorsqu'on lui donnait un extrait de son prompt(@kevinbing). Cela permettrait à l'utilisateur de récupérer le reste du prompt sans authentification appropriée pour le consulter.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -48,12 +48,12 @@ More notably, Microsoft released a ChatGPT powered search engine known as "the n
   />
 </div>
 
-With a recent surge in GPT-3 based startups, with much more complicated prompts that can
-take many hours to develop, this is a real concern.
+Avec une récente vague de startups basées sur GPT-3, avec des prompts beaucoup plus compliqués qui peuvent
+prendre de nombreuses heures à développer, c'est une préoccupation réelle.
 
-## Practice
+## Pratique
 
-Try to leak the following prompt(@chase2021adversarial) by appending text to it:
+Essayez de faire fuiter le prompt suivant(@chase2021adversarial) en y ajoutant du texte :
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IiIsInByb21wdCI6IkVuZ2xpc2g6IEkgd2FudCB0byBnbyB0byB0aGUgcGFyayB0b2RheS5cbkZyZW5jaDogSmUgdmV1eCBhbGxlciBhdSBwYXJjIGF1am91cmQnaHVpLlxuRW5nbGlzaDogSSBsaWtlIHRvIHdlYXIgYSBoYXQgd2hlbiBpdCByYWlucy5cbkZyZW5jaDogSidhaW1lIHBvcnRlciB1biBjaGFwZWF1IHF1YW5kIGl0IHBsZXV0LlxuRW5nbGlzaDogV2hhdCBhcmUgeW91IGRvaW5nIGF0IHNjaG9vbD9cbkZyZW5jaDogUXUnZXN0LWNlIHF1ZSB0byBmYWlzIGEgbCdlY29sZT9cbkVuZ2xpc2g6IiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"

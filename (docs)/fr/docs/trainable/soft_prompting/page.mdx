@@ -1,8 +1,8 @@
-export const metadata = { sidebar_position: 1, title: "🔴 Soft Prompts" };
+export const metadata = { sidebar_position: 1, title: "🔴 Prompts Doux" };
 
-# 🔴 Soft Prompts
+# 🔴 Prompts Doux
 
-Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi2021prompt), freezes the model weights, and updates the parameters of a prompt. The resultant prompt is a 'soft prompt'.
+Le réglage de prompt (@lester2021power), une alternative au réglage fin de modèle (@khashabi2021prompt), gèle les poids du modèle et met à jour les paramètres d'un prompt. Le prompt résultant est un 'prompt doux'.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -14,35 +14,35 @@ Prompt tuning(@lester2021power), an alternative to model fine tuning(@khashabi20
 </div>
 
 <div style={{ textAlign: "center" }}>
-  Model Tuning vs Prompt Tuning (Lester et al.)
+  Réglage de Modèle vs Réglage de Prompt (Lester et al.)
 </div>
 
-The above image contrasts model tuning with prompt tuning.
-In model tuning, you finetune the same model on different tasks. This gives you
-a few different models, with which you can't necessarily batch inputs easily.
+L'image ci-dessus contraste le réglage de modèle avec le réglage de prompt.
+Dans le réglage de modèle, vous affinez le même modèle sur différentes tâches. Cela vous donne
+quelques modèles différents, avec lesquels vous ne pouvez pas nécessairement traiter facilement les entrées par lots.
 
-On the other hand, prompt tuning lets you use the same model for all tasks. You
-just need to append the proper prompts at inference time, which makes batching across
-different tasks easier. This is pretty much the same advantage that regular prompting
-has. Additionally, soft prompts trained for a single model across
-multiple tasks will often be of the same token length.
+D'autre part, le réglage de prompt vous permet d'utiliser le même modèle pour toutes les tâches. Vous
+avez juste besoin d'ajouter les prompts appropriés au moment de l'inférence, ce qui facilite le traitement par lots
+à travers différentes tâches. C'est à peu près le même avantage que le prompting régulier
+possède. De plus, les prompts doux entraînés pour un seul modèle à travers
+plusieurs tâches auront souvent la même longueur de tokens.
 
-## How it works
+## Comment ça fonctionne
 
-To understand the basic logic behind soft prompting, let's think about how **model inference** works
-on a given prompt: `What's 2+2?`.
+Pour comprendre la logique de base derrière les prompts doux, réfléchissons à comment **l'inférence du modèle** fonctionne
+sur un prompt donné : `Combien fait 2+2 ?`.
 
-1. It might be tokenized as `What, 's, 2, +, 2, ?`.
+1. Il pourrait être tokenisé comme `Combien, fait, 2, +, 2, ?`.
 
-2. Then, each token will be converted to a vector of values.
+2. Ensuite, chaque token sera converti en un vecteur de valeurs.
 
-3. This vectors of values can be considered as model parameters. The model can be further
-   trained, only adjusting the weights of these prompts.
+3. Ces vecteurs de valeurs peuvent être considérés comme des paramètres du modèle. Le modèle peut être davantage
+   entraîné, en ajustant uniquement les poids de ces prompts.
 
-Note that as soon as we start updating these weights, the vectors of the tokens no
-longer correspond to actual embeddings from the vocabulary.
+Notez que dès que nous commençons à mettre à jour ces poids, les vecteurs des tokens ne
+correspondent plus aux embeddings réels du vocabulaire.
 
-# Results
+# Résultats
 
-Prompt tuning performs better with larger models. Larger models also require less
-soft prompt tokens. Regardless, more than 20 tokens does not yield significant performance gains.
+Le réglage de prompt fonctionne mieux avec des modèles plus grands. Les modèles plus grands nécessitent également moins de
+tokens de prompt doux. Quoi qu'il en soit, plus de 20 tokens n'apporte pas de gains de performance significatifs.

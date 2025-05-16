@@ -1,19 +1,19 @@
 export const metadata = {
   sidebar_position: 90,
-  title: "🟢 Fix Deformed Generations",
+  title: "🟢 Corriger les générations déformées",
 };
 
-# 🟢 Fix Deformed Generations
+# 🟢 Corriger les générations déformées
 
-Deformed generations, particularly on human body parts (e.g. hands, feet), are a common issue with many models. This can be dealt with to some extent with good negative prompts(@blake2022with). The following example is adapted from [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/).
+Les générations déformées, particulièrement sur les parties du corps humain (par exemple, les mains, les pieds), sont un problème courant avec de nombreux modèles. Cela peut être traité dans une certaine mesure avec de bons prompts négatifs(@blake2022with). L'exemple suivant est adapté de [ce post Reddit](https://www.reddit.com/r/StableDiffusion/comments/z7salo/with_the_right_prompt_stable_diffusion_20_can_do/).
 
-## Example
+## Exemple
 
-Using Stable Diffusion v1.5 and the following prompt, we generate a nice image of Brad Pitt, except for his hands of course!
+En utilisant Stable Diffusion v1.5 et le prompt suivant, nous générons une belle image de Brad Pitt, sauf pour ses mains bien sûr !
 
 <AIInput>
-  studio medium portrait of Brad Pitt waving his hands, detailed, film, studio
-  lighting, 90mm lens, by Martin Schoeller:6
+  portrait studio moyen de Brad Pitt agitant ses mains, détaillé, film,
+  éclairage de studio, objectif 90mm, par Martin Schoeller:6
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -26,14 +26,15 @@ Using Stable Diffusion v1.5 and the following prompt, we generate a nice image o
   />
 </div>
 
-Using a robust negative prompt, we can generate much more convincing hands.
+En utilisant un prompt négatif robuste, nous pouvons générer des mains beaucoup plus convaincantes.
 
 <AIInput>
-  studio medium portrait of Brad Pitt waving his hands, detailed, film, studio
-  lighting, 90mm lens, by Martin Schoeller:6 | disfigured, deformed hands,
-  blurry, grainy, broken, cross-eyed, undead, photoshopped, overexposed,
-  underexposed, lowres, bad anatomy, bad hands, extra digits, fewer digits, bad
-  digit, bad ears, bad eyes, bad face, cropped: -5
+  portrait studio moyen de Brad Pitt agitant ses mains, détaillé, film,
+  éclairage de studio, objectif 90mm, par Martin Schoeller:6 | défiguré, mains
+  déformées, flou, granuleux, cassé, louchant, mort-vivant, photoshoppé,
+  surexposé, sous-exposé, basse résolution, mauvaise anatomie, mauvaises mains,
+  doigts supplémentaires, moins de doigts, mauvais doigt, mauvaises oreilles,
+  mauvais yeux, mauvais visage, recadré: -5
 </AIInput>
 <div style={{ textAlign: "center" }}>
   <Image
@@ -44,11 +45,11 @@ Using a robust negative prompt, we can generate much more convincing hands.
   />
 </div>
 
-Using a similar negative prompt can help with other body parts as well. Unfortunately, this technique is not consistent, so you may need to attempt multiple generations
-before getting a good result.
-In the future, this type of prompting should be unnecessary since models will improve.
-However, currently it is a very useful technique.
+L'utilisation d'un prompt négatif similaire peut également aider pour d'autres parties du corps. Malheureusement, cette technique n'est pas constante, vous devrez peut-être faire plusieurs tentatives de génération
+avant d'obtenir un bon résultat.
+À l'avenir, ce type de prompting ne devrait plus être nécessaire car les modèles s'amélioreront.
+Cependant, actuellement, c'est une technique très utile.
 
 # Notes
 
-Improved models such as [Protogen](https://civitai.com/models/3666/protogen-x34-official-release) are often better with hands, feet, etc.
+Des modèles améliorés comme [Protogen](https://civitai.com/models/3666/protogen-x34-official-release) sont souvent meilleurs avec les mains, les pieds, etc.

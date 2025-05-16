@@ -2,33 +2,32 @@ export const metadata = { sidebar_position: 1, title: "🟢 Introduction" };
 
 # 🟢 Introduction
 
-Figuring out the best prompt to create a perfect image is a particular challenge.
-Research into methods to do so is not quite as developed as text prompting. This
-may be due to inherent challenges in creating objects which are fundamentally subjective
-and often lack good accuracy metrics. However, fear not, as the image prompting
-community(@parsons2022dalleprompt) has made great discoveries about how to prompt various image models(@rombach2021highresolution)(@ramesh2022hierarchical).
+Trouver le meilleur prompt pour créer une image parfaite représente un défi particulier.
+La recherche sur les méthodes pour y parvenir n'est pas aussi développée que pour le prompting textuel. Cela
+peut être dû aux défis inhérents à la création d'objets qui sont fondamentalement subjectifs
+et manquent souvent de bonnes métriques de précision. Cependant, ne vous inquiétez pas, car la communauté du prompting d'images(@parsons2022dalleprompt) a fait de grandes découvertes sur la façon de prompting divers modèles d'images(@rombach2021highresolution)(@ramesh2022hierarchical).
 
-This guide covers basic image prompting techniques, and we highly encourage
-that you look at the great resources at the end of the chapter.
-Additionally, we provide an example of the end-to-end image prompting process below.
+Ce guide couvre les techniques de base du prompting d'images, et nous vous encourageons vivement
+à consulter les excellentes ressources à la fin du chapitre.
+De plus, nous fournissons ci-dessous un exemple du processus complet de prompting d'images.
 
-## Example
+## Exemple
 
-Here I will go through an example of how I created the images for the front page of this course.
-I had been experimenting with low poly style for a deep reinforcement learning
-neural radiance field project. I liked the low poly style, and wanted to use it
-for this course's images.
+Je vais vous présenter un exemple de la façon dont j'ai créé les images pour la page d'accueil de ce cours.
+J'avais expérimenté le style low poly pour un projet de deep reinforcement learning
+avec neural radiance field. J'ai aimé le style low poly et j'ai voulu l'utiliser
+pour les images de ce cours.
 
-I wanted an astronaut, a rocket, and a computer for the images on the front page.
+Je voulais un astronaute, une fusée et un ordinateur pour les images de la page d'accueil.
 
-I did a bunch of research into how to create low poly images, on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/)
-and other sites, but couldn't find anything super helpful.
+J'ai fait beaucoup de recherches sur la façon de créer des images low poly, sur [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/)
+et d'autres sites, mais je n'ai pas trouvé d'informations particulièrement utiles.
 
-I decided to just start with DALLE and the following prompt, and see what happened.
+J'ai décidé de commencer simplement avec DALLE et le prompt suivant, pour voir ce qui se passerait.
 
 <AIInput>
-  Low poly white and blue rocket shooting to the moon in front of a sparse green
-  meadow
+  Fusée low poly blanche et bleue s'envolant vers la lune devant une prairie
+  verte clairsemée
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -51,13 +50,13 @@ I decided to just start with DALLE and the following prompt, and see what happen
   />
 </div>
 
-I thought these results were pretty decent for a first try; I particularly liked
-the bottom left rocket.
+J'ai trouvé que ces résultats étaient plutôt corrects pour un premier essai ; j'ai particulièrement aimé
+la fusée en bas à gauche.
 
-Next, I wanted a computer in the same style:
+Ensuite, je voulais un ordinateur dans le même style :
 
 <AIInput>
-  Low poly white and blue computer sitting in a sparse green meadow
+  Ordinateur low poly blanc et bleu posé dans une prairie verte clairsemée
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -70,11 +69,11 @@ Next, I wanted a computer in the same style:
   />
 </div>
 
-Finally, I needed an astronaut! This prompt seemed to do the trick:
+Enfin, j'avais besoin d'un astronaute ! Ce prompt a semblé faire l'affaire :
 
 <AIInput>
-  Low poly white and blue astronaut sitting in a sparse green meadow with low
-  poly mountains in the background
+  Astronaute low poly blanc et bleu assis dans une prairie verte clairsemée avec
+  des montagnes low poly en arrière-plan
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -87,20 +86,20 @@ Finally, I needed an astronaut! This prompt seemed to do the trick:
   />
 </div>
 
-I thought the second one was decent.
+J'ai trouvé que le deuxième était correct.
 
-Now I had an astronaut, a rocket, and a computer. I was happy with them,
-so I put them on the front page. After a few days and input from my friends I
-realized the style just wasn't consistent 😔.
+Maintenant j'avais un astronaute, une fusée et un ordinateur. J'en étais content,
+alors je les ai mis sur la page d'accueil. Après quelques jours et les commentaires de mes amis,
+j'ai réalisé que le style n'était tout simplement pas cohérent 😔.
 
-I did some more research on [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) and found people using the word isometric. I decided to try that out, using Stable Diffusion instead of DALLE.
-I also realized that I needed to add more modifiers to my prompt
-to constrain the style. I tried this prompt:
+J'ai fait plus de recherches sur [r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/) et j'ai découvert que les gens utilisaient le mot isométrique. J'ai décidé d'essayer cela, en utilisant Stable Diffusion au lieu de DALLE.
+J'ai également réalisé que je devais ajouter plus de modificateurs à mon prompt
+pour contraindre le style. J'ai essayé ce prompt :
 
 <AIInput>
-  A low poly world, with an astronaut in white suit and blue visor sitting in a
-  sparse green meadow with low poly mountains in the background. Highly
-  detailed, isometric, 4K
+  Un monde low poly, avec un astronaute en combinaison blanche et visière bleue
+  assis dans une prairie verte clairsemée avec des montagnes low poly en
+  arrière-plan. Très détaillé, isométrique, 4K
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -113,12 +112,12 @@ to constrain the style. I tried this prompt:
   />
 </div>
 
-These weren't great, so I decided to start on the rocket instead
+Ce n'était pas génial, alors j'ai décidé de commencer par la fusée à la place
 
 <AIInput>
-  A low poly world, with a white and blue rocket blasting off from a sparse
-  green meadow with low poly mountains in the background. Highly detailed,
-  isometric, 4K
+  Un monde low poly, avec une fusée blanche et bleue décollant d'une prairie
+  verte clairsemée avec des montagnes low poly en arrière-plan. Très détaillé,
+  isométrique, 4K
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -131,7 +130,7 @@ These weren't great, so I decided to start on the rocket instead
   />
 </div>
 
-These are not particularly good, but after a bit of iterating around here, I ended up with
+Ce n'est pas particulièrement bon, mais après quelques itérations, j'ai fini par obtenir
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -143,12 +142,12 @@ These are not particularly good, but after a bit of iterating around here, I end
   />
 </div>
 
-Now I needed a better laptop:
+Maintenant j'avais besoin d'un meilleur ordinateur portable :
 
 <AIInput>
-  A low poly world, with a white and blue laptop sitting in sparse green meadow
-  with low poly mountains in the background. The screen is completely blue.
-  Highly detailed, isometric, 4K
+  Un monde low poly, avec un ordinateur portable blanc et bleu posé dans une
+  prairie verte clairsemée avec des montagnes low poly en arrière-plan. L'écran
+  est complètement bleu. Très détaillé, isométrique, 4K
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -161,12 +160,12 @@ Now I needed a better laptop:
   />
 </div>
 
-I got some inconsistent results; I like the bottom right one, but I decided to go in a different direction.
+J'ai obtenu des résultats incohérents ; j'aime celui en bas à droite, mais j'ai décidé d'aller dans une direction différente.
 
 <AIInput>
-  A low poly world, with a glowing white and blue gemstone sitting in a sparse
-  green meadow with low poly mountains in the background. Highly detailed,
-  isometric, 4K
+  Un monde low poly, avec une pierre précieuse blanche et bleue brillante posée
+  dans une prairie verte clairsemée avec des montagnes low poly en arrière-plan.
+  Très détaillé, isométrique, 4K
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -179,12 +178,13 @@ I got some inconsistent results; I like the bottom right one, but I decided to g
   />
 </div>
 
-This wasn't quite right. Let's try something magical and glowing.
+Ce n'était pas tout à fait correct. Essayons quelque chose de magique et brillant.
 
 <AIInput>
-  A low poly world, with a glowing white and blue gemstone magically floating in
-  the middle of the screen above a sparse green meadow with low poly mountains
-  in the background. Highly detailed, isometric, 4K
+  Un monde low poly, avec une pierre précieuse blanche et bleue brillante
+  flottant magiquement au milieu de l'écran au-dessus d'une prairie verte
+  clairsemée avec des montagnes low poly en arrière-plan. Très détaillé,
+  isométrique, 4K
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -197,12 +197,12 @@ This wasn't quite right. Let's try something magical and glowing.
   />
 </div>
 
-I liked these, but wanted the stone in the middle of the screen.
+J'ai aimé celles-ci, mais je voulais la pierre au milieu de l'écran.
 
 <AIInput>
-  A low poly world, with a glowing blue gemstone magically floating in the
-  middle of the screen above a sparse green meadow with low poly mountains in
-  the background. Highly detailed, isometric, 4K
+  Un monde low poly, avec une pierre précieuse bleue brillante flottant
+  magiquement au milieu de l'écran au-dessus d'une prairie verte clairsemée avec
+  des montagnes low poly en arrière-plan. Très détaillé, isométrique, 4K
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -215,8 +215,8 @@ I liked these, but wanted the stone in the middle of the screen.
   />
 </div>
 
-Somewhere around here, I used SD's ability to have a previous image provide some influence for future images.
-And thus I arrived at:
+Quelque part par ici, j'ai utilisé la capacité de SD à faire en sorte qu'une image précédente influence les futures images.
+Et ainsi je suis arrivé à :
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -228,12 +228,12 @@ And thus I arrived at:
   />
 </div>
 
-Finally, I was on to the astronaut.
+Enfin, j'en étais à l'astronaute.
 
 <AIInput>
-  A low poly world, with an astronaut in white suite and blue visor is sitting
-  in a sparse green meadow with low poly mountains in the background. Highly
-  detailed, isometric, 4K
+  Un monde low poly, avec un astronaute en combinaison blanche et visière bleue
+  assis dans une prairie verte clairsemée avec des montagnes low poly en
+  arrière-plan. Très détaillé, isométrique, 4K
 </AIInput>
 
 <div style={{ textAlign: "center" }}>
@@ -246,6 +246,6 @@ Finally, I was on to the astronaut.
   />
 </div>
 
-At this point, I was sufficiently happy with the style consistency between my three images to use them
-on the website. The main takeaways for me were that this was a very iterative, research heavy process,
-and I had to modify my expectations and ideas as I experimented with different prompts and models.
+À ce stade, j'étais suffisamment satisfait de la cohérence de style entre mes trois images pour les utiliser
+sur le site web. Les principales leçons que j'ai tirées étaient que c'était un processus très itératif, nécessitant beaucoup de recherche,
+et que j'ai dû modifier mes attentes et mes idées au fur et à mesure que j'expérimentais avec différents prompts et modèles.

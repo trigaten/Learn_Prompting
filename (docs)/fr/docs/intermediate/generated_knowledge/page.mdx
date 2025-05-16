@@ -1,73 +1,73 @@
 export const metadata = {
   sidebar_position: 7,
-  title: "🟡 Generated Knowledge",
+  title: "🟡 Connaissances Générées",
 };
 
-# 🟡 Generated Knowledge
+# 🟡 Connaissances Générées
 
-The idea behind the generated knowledge approach(@liu2021generated) is to ask the <Term term="LLM">LLM</Term> to generate potentially useful information about a given question/prompt before generating a final response.
+L'idée derrière l'approche des connaissances générées (@liu2021generated) est de demander au <Term term="LLM">LLM</Term> de générer des informations potentiellement utiles sur une question/prompt donnée avant de générer une réponse finale.
 
-For example, say you want to write a small blog post about some animal, like [Spirit bears](https://en.wikipedia.org/wiki/Kermode_bear). Before asking the <Term term="LLM">LLM</Term> to write the blog post, you can ask it to generate some facts about Spirit bears. This will help the LLM write a more informative blog post. There are two simple ways of going about this.
+Par exemple, supposons que vous vouliez écrire un petit article de blog sur un animal, comme les [ours Kermode](https://fr.wikipedia.org/wiki/Ursus_americanus_kermodei). Avant de demander au <Term term="LLM">LLM</Term> d'écrire l'article, vous pouvez lui demander de générer quelques faits sur les ours Kermode. Cela aidera le LLM à écrire un article plus informatif. Il existe deux façons simples de procéder.
 
-## Single prompt approach
+## Approche à prompt unique
 
-The first approach asks the LLM to generate knowledge then write the post, all with a single prompt.
+La première approche demande au LLM de générer des connaissances puis d'écrire l'article, le tout avec un seul prompt.
 
 ```text {3-13}
-Generate 4 facts about the Kermode bear, then use these facts to write a short blog post using the information:
+Génère 4 faits sur l'ours Kermode, puis utilise ces faits pour écrire un court article de blog en utilisant ces informations :
 
-The Kermode bear, also known as the spirit bear, is a rare subspecies of the American black bear that is found in the coastal regions of British Columbia, Canada.
+L'ours Kermode, également connu sous le nom d'ours esprit, est une sous-espèce rare de l'ours noir américain que l'on trouve dans les régions côtières de la Colombie-Britannique, au Canada.
 
-1. The Kermode bear is a unique subspecies of the American black bear, with approximately 10% of the population having white fur.
+1. L'ours Kermode est une sous-espèce unique de l'ours noir américain, avec environ 10% de la population ayant une fourrure blanche.
 
-2. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal.
+2. L'ours Kermode est un symbole pour les peuples des Premières Nations de la Colombie-Britannique, et est considéré comme un animal spirituel.
 
-3. The Kermode bear is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest.
+3. L'ours Kermode est une partie importante de l'écosystème, aidant à disperser les graines et à maintenir l'équilibre de la forêt.
 
-4. The Kermode bear is a protected species, and its population is monitored closely by the provincial government.
+4. L'ours Kermode est une espèce protégée, et sa population est étroitement surveillée par le gouvernement provincial.
 
-The Kermode bear is a unique and special animal that is found in the coastal regions of British Columbia, Canada. Approximately 10% of the population of this subspecies of the American black bear have white fur, making them a rare sight. The Kermode bear is a symbol of the First Nations people of British Columbia, and is seen as a spirit animal. It is an important part of the ecosystem, helping to disperse seeds and maintain the balance of the forest. The Kermode bear is a protected species, and its population is monitored closely by the provincial government. It is a beautiful and majestic animal, and it is important that we do our part to protect and conserve this species.
+L'ours Kermode est un animal unique et spécial que l'on trouve dans les régions côtières de la Colombie-Britannique, au Canada. Environ 10% de la population de cette sous-espèce de l'ours noir américain ont une fourrure blanche, ce qui en fait une vision rare. L'ours Kermode est un symbole pour les peuples des Premières Nations de la Colombie-Britannique, et est considéré comme un animal spirituel. Il est une partie importante de l'écosystème, aidant à disperser les graines et à maintenir l'équilibre de la forêt. L'ours Kermode est une espèce protégée, et sa population est étroitement surveillée par le gouvernement provincial. C'est un animal beau et majestueux, et il est important que nous fassions notre part pour protéger et conserver cette espèce.
 ```
 
-## Dual prompt approach
+## Approche à double prompt
 
-In this approach, we first prompt the <Term term="LLM">LLM</Term> to generate facts about the bear:
+Dans cette approche, nous demandons d'abord au <Term term="LLM">LLM</Term> de générer des faits sur l'ours :
 
 ```text {3-9}
-Generate 10 facts about the Kermode bear:
+Génère 10 faits sur l'ours Kermode :
 
-1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
+1. L'ours Kermode, également connu sous le nom d'Ours Esprit, est une sous-espèce rare de l'ours noir américain que l'on trouve en Colombie-Britannique, au Canada.
 
-2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+2. L'ours Kermode a un pelage blanc ou de couleur crème unique, qui est causé par un gène récessif.
 
-3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+3. L'ours Kermode est un symbole d'espoir et de renouveau pour les peuples des Premières Nations de la Colombie-Britannique.
 
-4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
+4. L'ours Kermode est une espèce protégée et est répertorié comme une espèce préoccupante par le Comité sur la situation des espèces en péril au Canada.
 ```
 
-Then, we feed that information into another prompt to write the blog post:
+Ensuite, nous intégrons ces informations dans un autre prompt pour écrire l'article de blog :
 
 ```text {12-14}
-1. The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada.
+1. L'ours Kermode, également connu sous le nom d'Ours Esprit, est une sous-espèce rare de l'ours noir américain que l'on trouve en Colombie-Britannique, au Canada.
 
-2. The Kermode bear has a unique white or cream-colored coat, which is caused by a recessive gene.
+2. L'ours Kermode a un pelage blanc ou de couleur crème unique, qui est causé par un gène récessif.
 
-3. The Kermode bear is a symbol of hope and renewal for the First Nations people of British Columbia.
+3. L'ours Kermode est un symbole d'espoir et de renouveau pour les peuples des Premières Nations de la Colombie-Britannique.
 
-4. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada.
+4. L'ours Kermode est une espèce protégée et est répertorié comme une espèce préoccupante par le Comité sur la situation des espèces en péril au Canada.
 
-Use the above facts to write a one paragraph blog post about the Kermode bear:
+Utilise les faits ci-dessus pour écrire un paragraphe d'article de blog sur l'ours Kermode :
 
 
 
-The Kermode bear, also known as the Spirit Bear, is a rare subspecies of the American black bear found in British Columbia, Canada. This unique bear has a white or cream-colored coat, caused by a recessive gene, and is a symbol of hope and renewal for the First Nations people of British Columbia. The Kermode bear is a protected species and is listed as a species of special concern by the Committee on the Status of Endangered Wildlife in Canada, making it an important part of the region's biodiversity.
+L'ours Kermode, également connu sous le nom d'Ours Esprit, est une sous-espèce rare de l'ours noir américain que l'on trouve en Colombie-Britannique, au Canada. Cet ours unique a un pelage blanc ou de couleur crème, causé par un gène récessif, et est un symbole d'espoir et de renouveau pour les peuples des Premières Nations de la Colombie-Britannique. L'ours Kermode est une espèce protégée et est répertorié comme une espèce préoccupante par le Comité sur la situation des espèces en péril au Canada, ce qui en fait une partie importante de la biodiversité de la région.
 ```
 
-I recommend this second approach since it can produce longer content more reliably.
+Je recommande cette seconde approche car elle peut produire un contenu plus long de manière plus fiable.
 
-## Another use case
+## Un autre cas d'utilisation
 
-The generated knowledge approach was actually introduced for a completely different task, that of answering difficult questions. Consider the following question, which GPT-3 answers incorrectly:
+L'approche des connaissances générées a en fait été introduite pour une tâche complètement différente, celle de répondre à des questions difficiles. Considérez la question suivante, à laquelle GPT-3 répond incorrectement :
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIGxhcmdlciB0aGFuIENvbmdvLiIsInByb21wdCI6IldoaWNoIGNvdW50cnkgaXMgbGFyZ2VyLCBDb25nbyBvciBTb3V0aCBBZnJpY2E%2FIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -81,13 +81,13 @@ The generated knowledge approach was actually introduced for a completely differ
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-<Note>This example may not be accurate. We are working to revise it.</Note>
+<Note>Cet exemple peut ne pas être précis. Nous travaillons à le réviser.</Note>
 
 <br />
 
-If we first ask <Term term="LLM">LLM</Term> to generate facts about Congo and South Africa, we can then use that information to answer the question correctly. In theory, this is similar to <Term term="CoT prompting">CoT prompting</Term>, since we are effectively getting the LLM to generate intermediate reasoning in the form of related facts.
+Si nous demandons d'abord au <Term term="LLM">LLM</Term> de générer des faits sur le Congo et l'Afrique du Sud, nous pouvons ensuite utiliser ces informations pour répondre correctement à la question. En théorie, cela est similaire au <Term term="CoT prompting">prompting CoT</Term>, puisque nous amenons effectivement le LLM à générer un raisonnement intermédiaire sous forme de faits connexes.
 
-Let's start with the first step, _knowledge generation_. We can ask the <Term term="LLM">LLM</Term> to generate facts about Congo and South Africa:
+Commençons par la première étape, la _génération de connaissances_. Nous pouvons demander au <Term term="LLM">LLM</Term> de générer des faits sur le Congo et l'Afrique du Sud :
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy4iLCJwcm9tcHQiOiJHZW5lcmF0ZSBzb21lIGtub3dsZWRnZSBhYm91dCB0aGUgc2l6ZXMgb2YgU291dGggQWZyaWNhIGFuZCBDb25nbzoiLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -103,7 +103,7 @@ Let's start with the first step, _knowledge generation_. We can ask the <Term te
 
 <br />
 
-Next, let's use that knowledge to answer the question correctly. This is the _knowledge integration_ step!
+Ensuite, utilisons ces connaissances pour répondre correctement à la question. C'est l'étape d'_intégration des connaissances_ !
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjo0MSwib3V0cHV0IjoiQ29uZ28gaXMgbGFyZ2VyIHRoYW4gU291dGggQWZyaWNhLlxuIiwicHJvbXB0IjoiU291dGggQWZyaWNhIGlzIHRoZSAyNXRoIGxhcmdlc3QgY291bnRyeSBpbiB0aGUgd29ybGQsIHdpdGggYW4gYXJlYSBvZiAxLDIyMSwwMzcgc3F1YXJlIGtpbG9tZXRlcnMgKDQ3MSw0NDUgc3F1YXJlIG1pbGVzKS4gQ29uZ28sIG9uIHRoZSBvdGhlciBoYW5kLCBpcyB0aGUgMTF0aCBsYXJnZXN0IGNvdW50cnkgaW4gdGhlIHdvcmxkLCB3aXRoIGFuIGFyZWEgb2YgMiwzNDQsODU4IHNxdWFyZSBraWxvbWV0ZXJzICg5MDUsNTY3IHNxdWFyZSBtaWxlcykuIFNvdXRoIEFmcmljYSBpcyBhbG1vc3QgaGFsZiB0aGUgc2l6ZSBvZiBDb25nbywgd2l0aCBhIHBvcHVsYXRpb24gb2YgNTcuNyBtaWxsaW9uIGNvbXBhcmVkIHRvIENvbmdvJ3MgcG9wdWxhdGlvbiBvZiA4NC4zIG1pbGxpb24uIFNvdXRoIEFmcmljYSBpcyB0aGUgbW9zdCBwb3B1bG91cyBjb3VudHJ5IGluIHRoZSByZWdpb24sIHdoaWxlIENvbmdvIGlzIHRoZSBzZWNvbmQgbW9zdCBwb3B1bG91cy5cblxuV2hpY2ggY291bnRyeSBpcyBsYXJnZXIsIENvbmdvIG9yIFNvdXRoIEFmcmljYT8iLCJtb2RlbCI6InRleHQtZGF2aW5jaS0wMDMifQ%3D%3D"
@@ -117,9 +117,9 @@ Next, let's use that knowledge to answer the question correctly. This is the _kn
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## A more technical discussion
+## Une discussion plus technique
 
-Although the above use case was similar to the way generated knowledge was originally introduced, it is not exactly the same. The below content covers the more technical context in which the approach was introduced. It follows the two intermediate steps (knowledge generation and knowledge integration) pattern that we saw above.
+Bien que le cas d'utilisation ci-dessus soit similaire à la façon dont les connaissances générées ont été introduites à l'origine, ce n'est pas exactement la même chose. Le contenu ci-dessous couvre le contexte plus technique dans lequel l'approche a été introduite. Il suit les deux étapes intermédiaires (génération de connaissances et intégration de connaissances) que nous avons vues ci-dessus.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -130,13 +130,13 @@ Although the above use case was similar to the way generated knowledge was origi
   />
 </div>
 
-<div style={{ textAlign: "center" }}>Generated Knowledge (Liu et al.)</div>
+<div style={{ textAlign: "center" }}>Connaissances Générées (Liu et al.)</div>
 
-### Knowledge Generation
+### Génération de Connaissances
 
-In the knowledge generation step, the <Term term="LLM">LLM</Term> is asked to generate a set of facts
-about the **question**. The LLM is prompted in few-shot fashion as seen below.
-M different completions are generated using this same prompt (similar to the self-consistency approach).
+Dans l'étape de génération de connaissances, on demande au <Term term="LLM">LLM</Term> de générer un ensemble de faits
+sur la **question**. Le LLM est invité de manière few-shot comme on le voit ci-dessous.
+M différentes complétions sont générées en utilisant ce même prompt (similaire à l'approche de self-consistency).
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -148,41 +148,41 @@ M different completions are generated using this same prompt (similar to the sel
 </div>
 
 <div style={{ textAlign: "center" }}>
-  Generated Knowledge Example (Liu et al.)
+  Exemple de Connaissances Générées (Liu et al.)
 </div>
 
-### Knowledge Integration
+### Intégration de Connaissances
 
-Next, we generate "knowledge augmented" questions and prompt the <Term term="LLM">LLM</Term> with them
-to get final answers. The easiest way to understand this is to go through an example.
+Ensuite, nous générons des questions "augmentées de connaissances" et invitons le <Term term="LLM">LLM</Term> avec celles-ci
+pour obtenir des réponses finales. La façon la plus simple de comprendre cela est de passer par un exemple.
 
-Let's assume we are attempting to answer the **question**
-"Most Kangaroos have \<mask\> limbs". Assume that at the knowledge generation step
-we generated 2 knowledges (M=2):
+Supposons que nous essayons de répondre à la **question**
+"La plupart des kangourous ont \<mask\> membres". Supposons qu'à l'étape de génération de connaissances
+nous avons généré 2 connaissances (M=2) :
 
-- Knowledge 1: `Kangaroos are marsupials that live in Australia.`
+- Connaissance 1 : `Les kangourous sont des marsupiaux qui vivent en Australie.`
 
-- Knowledge 2: `Kangaroos are marsupials that have 5 limbs.`
+- Connaissance 2 : `Les kangourous sont des marsupiaux qui ont 5 membres.`
 
-Now, we concatenate each knowledge with the question to generate knowledge augmented questions:
+Maintenant, nous concaténons chaque connaissance avec la question pour générer des questions augmentées de connaissances :
 
-- Knowledge Augmented Question 1: `Most Kangaroos have <mask> limbs. Kangaroos are marsupials that live in Australia.`
+- Question Augmentée de Connaissance 1 : `La plupart des kangourous ont <mask> membres. Les kangourous sont des marsupiaux qui vivent en Australie.`
 
-- Knowledge Augmented Question 2: `Most Kangaroos have <mask> limbs. Kangaroos are marsupials that have 5 limbs.`
+- Question Augmentée de Connaissance 2 : `La plupart des kangourous ont <mask> membres. Les kangourous sont des marsupiaux qui ont 5 membres.`
 
-We then prompt the LLM with these knowledge augmented questions and get the final answer proposals:
+Nous invitons ensuite le LLM avec ces questions augmentées de connaissances et obtenons les propositions de réponses finales :
 
-- Answer 1: `4`
+- Réponse 1 : `4`
 
-- Answer 2: `5`
+- Réponse 2 : `5`
 
-We select the answer with the highest probability as the final answer. The
-highest probability could be the softmax probability of the answer token, or the
-log probability of the answer token(s).
+Nous sélectionnons la réponse avec la plus haute probabilité comme réponse finale. La
+plus haute probabilité pourrait être la probabilité softmax du token de réponse, ou la
+log-probabilité du/des token(s) de réponse.
 
-## Recitation-Augmented Language Models
+## Modèles de Langage Augmentés par Récitation
 
-The recitation-augmented(@sun2022recitationaugmented) approach it is similar to generated knowledge (basically the same). However, is much less complex than the formal implementation of generated knowledge.
+L'approche augmentée par récitation (@sun2022recitationaugmented) est similaire aux connaissances générées (fondamentalement la même). Cependant, elle est beaucoup moins complexe que l'implémentation formelle des connaissances générées.
 
 <div style={{ textAlign: "center" }}>
   <Image
@@ -193,14 +193,14 @@ The recitation-augmented(@sun2022recitationaugmented) approach it is similar to 
   />
 </div>
 
-The idea here is to few shot prompt the LLM to generate information _and_ answer in the _same_ step. The fact that it is reciting/generating knowledge and answering the question in the same step is the main difference from the generated knowledge approach.
+L'idée ici est d'inviter le LLM en few-shot à générer des informations _et_ à répondre dans la _même_ étape. Le fait qu'il récite/génère des connaissances et réponde à la question dans la même étape est la principale différence par rapport à l'approche des connaissances générées.
 
-To reiterate, this approach prompts the model with multiple (question, recitation, answer) exemplars, then asks the question. The authors note that this approach can be combined with self consistency or multiple completion paths.
+Pour répéter, cette approche invite le modèle avec plusieurs exemplaires (question, récitation, réponse), puis pose la question. Les auteurs notent que cette approche peut être combinée avec la self-consistency ou plusieurs chemins de complétion.
 
 ## Notes
 
-- Generated knowledge shows improvements on various commonsense datasets.
+- Les connaissances générées montrent des améliorations sur divers ensembles de données de sens commun.
 
-- The knowledge corresponding to the selected answer is called the _selected knowledge_.
+- La connaissance correspondant à la réponse sélectionnée est appelée la _connaissance sélectionnée_.
 
-- In practice, you could take the most frequently occurring answer as the final one.
+- En pratique, vous pourriez prendre la réponse la plus fréquemment donnée comme réponse finale.
