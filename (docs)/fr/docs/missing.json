@@ -35,48 +35,6 @@
     ]
   },
   {
-    "slug": "applied_prompting",
-    "title": "🧪 Applied Prompting",
-    "position": 19,
-    "subpages": [
-      {
-        "slug": "overview",
-        "title": "🟢 Introduction",
-        "position": 1,
-        "href": "\\docs\\applied_prompting\\overview",
-        "subpages": null
-      },
-      {
-        "slug": "mc_tutorial",
-        "title": "🟢 Multiple Choice Questions",
-        "position": 2,
-        "href": "\\docs\\applied_prompting\\mc_tutorial",
-        "subpages": null
-      },
-      {
-        "slug": "short_response",
-        "title": "🟢 Solve Discussion Questions",
-        "position": 3,
-        "href": "\\docs\\applied_prompting\\short_response",
-        "subpages": null
-      },
-      {
-        "slug": "build_chatgpt",
-        "title": "🟢 Build ChatGPT from GPT-3",
-        "position": 4,
-        "href": "\\docs\\applied_prompting\\build_chatgpt",
-        "subpages": null
-      },
-      {
-        "slug": "build_chatbot_from_kb",
-        "title": "🟢 Chatbot + Knowledge Base",
-        "position": 40,
-        "href": "\\docs\\applied_prompting\\build_chatbot_from_kb",
-        "subpages": null
-      }
-    ]
-  },
-  {
     "slug": "image_prompting",
     "title": "🖼️ Image Prompting",
     "position": 40,

@@ -1,37 +1,35 @@
 export const metadata = {
   sidebar_position: 3,
-  title: "🟢 Solve Discussion Questions",
+  title: "🟢 Résoudre des questions de discussion",
 };
 
-# 🟢 Solve Discussion Questions
+# 🟢 Résoudre des questions de discussion
 
-With the right prompting, GPT-3 is very capable of writing short form responses. To demonstrate this, I will be looking at **solving discussion questions**, a common weekly assignment in many college courses. A response to a discussion question is usually about 100-700 words. Longer content can be a bit more tricky as LLMs have limited memory and have difficulty understanding the global picture of what they are writing(@jin2022plot).
+Avec le bon prompting, GPT-3 est très capable de rédiger des réponses courtes. Pour démontrer cela, je vais examiner **la résolution de questions de discussion**, un devoir hebdomadaire courant dans de nombreux cours universitaires. Une réponse à une question de discussion compte généralement entre 100 et 700 mots. Les contenus plus longs peuvent être un peu plus difficiles à traiter correctement, car les LLM ont une mémoire limitée et ont du mal à comprendre l'image globale de ce qu'ils écrivent (@jin2022plot).
 
-Let's look at an example of a basic discussion question:
+Examinons un exemple de question de discussion basique :
 
-> _"What are the most pressing environmental issues facing our planet today, and what steps can individuals take to help address these issues?"_
+> _"Quels sont les problèmes environnementaux les plus urgents auxquels notre planète est confrontée aujourd'hui, et quelles mesures les individus peuvent-ils prendre pour aider à résoudre ces problèmes ?"_
 
-We can turn this into a simple prompt for GPT-3 by prepending <span className="yellow-highlight">Respond to the following:</span> to it.
+Nous pouvons transformer cela en un prompt simple pour GPT-3 en préfixant <span className="yellow-highlight">Répondez à ce qui suit :</span>.
 
 <pre>
-  <span className="yellow-highlight">Respond to the following:</span>
+  <span className="yellow-highlight">Répondez à ce qui suit :</span>
   <br />
   <br />
-  What are the most pressing environmental issues facing our planet today, and what
-  steps can individuals take to help address these issues?
+  Quels sont les problèmes environnementaux les plus urgents auxquels notre planète est confrontée aujourd'hui, et quelles mesures les individus peuvent-ils prendre pour aider à résoudre ces problèmes ?
 </pre>
 
-Results generated with this prompt aren't consistent, and a few are only a sentence or two. A typical discussion response should have multiple paragraphs, so these results aren't ideal. A good prompt should give **specific instructions about format and content**. You want to remove ambiguity in your language to improve consistency and quality. Here is a better prompt.
+Les résultats générés avec ce prompt ne sont pas cohérents, et certains ne font qu'une ou deux phrases. Une réponse typique à une discussion devrait comporter plusieurs paragraphes, donc ces résultats ne sont pas idéaux. Un bon prompt devrait donner **des instructions spécifiques sur le format et le contenu**. Vous voulez éliminer l'ambiguïté dans votre langage pour améliorer la cohérence et la qualité. Voici un meilleur prompt.
 
 <pre>
   <span className="yellow-highlight">
-    Write a highly detailed essay with introduction, body, and conclusion
-    paragraphs responding to the following:
+    Rédigez un essai très détaillé avec paragraphes d'introduction, de développement et de conclusion
+    en réponse à ce qui suit :
   </span>
   <br />
   <br />
-  What are the most pressing environmental issues facing our planet today, and what
-  steps can individuals take to help address these issues?
+  Quels sont les problèmes environnementaux les plus urgents auxquels notre planète est confrontée aujourd'hui, et quelles mesures les individus peuvent-ils prendre pour aider à résoudre ces problèmes ?
 </pre>
 
 <iframe
@@ -41,35 +39,35 @@ Results generated with this prompt aren't consistent, and a few are only a sente
   frameBorder="0"
   allow="autoplay; fullscreen; picture-in-picture"
   allowFullScreen
-  title="example"
+  title="exemple"
 ></iframe>
 
-The second prompt generates longer outputs with better structure on average. The use of the term ‘essay’ in the prompt was intentional, as GPT-3 can comprehend the definition of an essay, and is thus more likely to generate coherent, structured responses.
+Le second prompt génère des résultats plus longs avec une meilleure structure en moyenne. L'utilisation du terme 'essai' dans le prompt était intentionnelle, car GPT-3 peut comprendre la définition d'un essai et est donc plus susceptible de générer des réponses cohérentes et structurées.
 
-### Many discussion questions are not effective for prompting.
+### De nombreuses questions de discussion ne sont pas efficaces pour le prompting.
 
-> _"The Civil War a conflict over expansion? Agree our Disagree and why?"_
+> _"La Guerre de Sécession était-elle un conflit sur l'expansion ? Êtes-vous d'accord ou pas d'accord et pourquoi ?"_
 
-Here is a real discussion question from a college history course. It is not worded correctly and is far too open ended. **To get good discussion responses, you need to rewrite the question into a well defined prompt.** A well defined prompt for the discussion question above could be:
+Voici une vraie question de discussion d'un cours d'histoire universitaire. Elle n'est pas correctement formulée et est beaucoup trop ouverte. **Pour obtenir de bonnes réponses de discussion, vous devez reformuler la question en un prompt bien défini.** Un prompt bien défini pour la question de discussion ci-dessus pourrait être :
 
-> _"Explain the causes of the Civil War and whether expansion played a role in the conflict. Include evidence to support your argument."_
+> _"Expliquez les causes de la Guerre de Sécession et si l'expansion a joué un rôle dans le conflit. Incluez des preuves pour soutenir votre argument."_
 
-Now we can add formatting and context directions.
+Maintenant, nous pouvons ajouter des instructions de format et de contexte.
 
 <pre>
   <span className="yellow-highlight">
-    Write a highly detailed discussion response, in the structure of an essay,
-    responding to the following prompt:
+    Rédigez une réponse de discussion très détaillée, structurée comme un essai,
+    en réponse au prompt suivant :
   </span>
   <br />
   <br />
-  Explain the causes of the Civil War and whether expansion played a role in the
-  conflict. Include evidence to support your argument.
+  Expliquez les causes de la Guerre de Sécession et si l'expansion a joué un rôle dans le
+  conflit. Incluez des preuves pour soutenir votre argument.
 </pre>
 
-### Automate well defined prompt rewriting with GPT-3
+### Automatisez la réécriture de prompts bien définis avec GPT-3
 
-The rewriting example above was generated with OpenAI's [ChatGPT](https://openai.com/blog/chatgpt/).
+L'exemple de réécriture ci-dessus a été généré avec [ChatGPT](https://openai.com/blog/chatgpt/) d'OpenAI.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -80,70 +78,70 @@ The rewriting example above was generated with OpenAI's [ChatGPT](https://openai
   />
 </div>
 
-### Iteration
+### Itération
 
-After crafting an effective prompt for your discussion question, you now need to refine the results GPT-3 generates. This may involve adjusting the output to adhere to constraints such as word count, or combining concepts from different generated results.
+Après avoir élaboré un prompt efficace pour votre question de discussion, vous devez maintenant affiner les résultats générés par GPT-3. Cela peut impliquer d'ajuster la sortie pour respecter des contraintes telles que le nombre de mots, ou de combiner des concepts provenant de différents résultats générés.
 
-A simple method for iterating is to generate multiple outputs and review them to gain an understanding of the concepts GPT-3 is utilizing and the structure it adheres to. Once the outputs have been evaluated, you can select the most suitable outputs and combine them into a cohesive response.
+Une méthode simple pour itérer consiste à générer plusieurs sorties et à les examiner pour comprendre les concepts que GPT-3 utilise et la structure qu'il suit. Une fois les sorties évaluées, vous pouvez sélectionner les plus appropriées et les combiner en une réponse cohérente.
 
-Another way to iterate is to start and then **expand step by step**. This requires more than one prompt: A starter prompt to write the initial paragraph or so and then other prompts to expand on what was already written.
+Une autre façon d'itérer est de commencer puis **d'étendre étape par étape**. Cela nécessite plus d'un prompt : un prompt initial pour rédiger le premier paragraphe ou plus, puis d'autres prompts pour développer ce qui a déjà été écrit.
 
-Here is a potential philosophical discussion question:
+Voici une question de discussion philosophique potentielle :
 
-> _"Is math invented or discovered? Use careful reasoning to explain your answer."_
+> _"Les mathématiques sont-elles inventées ou découvertes ? Utilisez un raisonnement soigneux pour expliquer votre réponse."_
 
-Add it into a simple prompt like this:
+Ajoutez-la dans un prompt simple comme celui-ci :
 
 <pre>
   <span className="yellow-highlight">
-    Write a beginning paragraph responding to the following:
+    Rédigez un paragraphe d'introduction en réponse à ce qui suit :
   </span>
   <br />
   <br />
-  Is math invented or discovered? Use careful reasoning to explain your answer
+  Les mathématiques sont-elles inventées ou découvertes ? Utilisez un raisonnement soigneux pour expliquer votre réponse
 </pre>
 
-I generated a few responses and found one I liked:
+J'ai généré plusieurs réponses et j'en ai trouvé une que j'aimais :
 
 <pre>
   <span className="bluegreen-highlight">
-    There is much debate among philosophers and mathematicians as to whether
-    math is invented or discovered. Some argue that mathematical concepts and
-    principles exist independently of human minds and can therefore be
-    considered as discovered rather than invented. For example, the concept of
-    numbers, ratios, and geometric shapes are observed in the natural world and
-    can be abstracted and studied in a systematic way.
+    Il existe un grand débat parmi les philosophes et les mathématiciens quant à savoir si
+    les mathématiques sont inventées ou découvertes. Certains soutiennent que les concepts et
+    principes mathématiques existent indépendamment de l'esprit humain et peuvent donc être
+    considérés comme découverts plutôt qu'inventés. Par exemple, le concept de nombres, de
+    ratios et de formes géométriques est observé dans le monde naturel et peut être abstrait
+    et étudié de manière systématique.
   </span>
 </pre>
 
-This is a pretty good start. I then followed this up with another prompt to expand:
+C'est un assez bon début. J'ai ensuite suivi avec un autre prompt pour développer :
 
 <pre>
   <span className="yellow-highlight">
-    I am writing a detailed short essay responding to the following prompt:
+    Je rédige un court essai détaillé en réponse au prompt suivant :
   </span>
   <br />
   <br />
-  Is math invented or discovered? Use careful reasoning to explain your answer.
+  Les mathématiques sont-elles inventées ou découvertes ? Utilisez un raisonnement soigneux pour expliquer votre réponse.
   <span className="yellow-highlight">
     <p />
-    Here is what I have so far:
+    Voici ce que j'ai jusqu'à présent :
   </span>
   <br />
   <br />
-  There is much debate among philosophers and mathematicians as to whether math is
-  invented or discovered. Some argue that mathematical concepts and principles exist
-  independently of human minds and can therefore be considered as discovered rather
-  than invented. For example, the concept of numbers, ratios, and geometric shapes
-  are observed in the natural world and can be abstracted and studied in a systematic
-  way.
+  Il existe un grand débat parmi les philosophes et les mathématiciens quant à savoir si les
+  mathématiques sont inventées ou découvertes. Certains soutiennent que les concepts et
+  principes mathématiques existent indépendamment de l'esprit humain et peuvent donc être
+  considérés comme découverts plutôt qu'inventés. Par exemple, le concept de nombres, de
+  ratios et de formes géométriques est observé dans le monde naturel et peut être abstrait
+  et étudié de manière systématique.
   <p />
   <span className="yellow-highlight">
-    Write the next paragraph of my essay.
+    Rédigez le paragraphe suivant de mon essai.
   </span>
 </pre>
 
-Try this expansion prompt out with the demo below (you will need your OpenAI API key)
+Essayez ce prompt d'expansion avec la démo ci-dessous (vous aurez besoin de votre clé API OpenAI)
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6Ik9uIHRoZSBvdGhlciBoYW5kLCBzb21lIGFyZ3VlIHRoYXQgbWF0aCBpcyBsYXJnZWx5IGFuIGludmVudGlvbiBvZiB0aGUgaHVtYW4gbWluZC4gTWF0aGVtYXRpY2FsIHByaW5jaXBsZXMgYXJlIGJhc2VkIG9uIGxvZ2ljYWwgcmVhc29uaW5nLCB3aGljaCBpcyBhIGZlYXR1cmUgb2YgdGhlIGh1bWFuIG1pbmQuIEZvciBpbnN0YW5jZSwgRXVjbGlkZWFuIGdlb21ldHJ5IGlzIGJhc2VkIG9uIGFic3RyYWN0IGF4aW9tcyBhbmQgcG9zdHVsYXRlcywgd2hpY2ggYXJlIGFjY2VwdGVkIGFzIHRydWUgd2l0aG91dCBwcm9vZi4gQXMgc3VjaCwgaXQgY2FuIGJlIGFyZ3VlZCB0aGF0IGdlb21ldHJ5IGlzIGFuIGludmVudGlvbiBvZiB0aGUgaHVtYW4gbWluZCByYXRoZXIgdGhhbiBhIGRpc2NvdmVyeS4gU2ltaWxhcmx5LCBtYXRoZW1hdGljYWwgZm9ybXVsYXMgYW5kIGVxdWF0aW9ucyBhcmUgdXNlZCB0byBtb2RlbCBhbmQgcHJlZGljdCBwaHlzaWNhbCBwaGVub21lbmEsIHdoaWNoIGFyZSBhZ2FpbiB0aGUgcmVzdWx0IG9mIGh1bWFuIHJlYXNvbmluZy4iLCJwcm9tcHQiOiJJIGFtIHdyaXRpbmcgYSBkZXRhaWxlZCBzaG9ydCBlc3NheSByZXNwb25kaW5nIHRvIHRoZSBmb2xsb3dpbmcgcHJvbXB0OiBcbklzIG1hdGggaW52ZW50ZWQgb3IgZGlzY292ZXJlZD8gVXNlIGNhcmVmdWwgcmVhc29uaW5nIHRvIGV4cGxhaW4geW91ciBhbnN3ZXIuIFxuXG5IZXJlIGlzIHdoYXQgSSBoYXZlIHNvIGZhcjogVGhlcmUgaXMgbXVjaCBkZWJhdGUgYW1vbmcgcGhpbG9zb3BoZXJzIGFuZCBtYXRoZW1hdGljaWFucyBhcyB0byB3aGV0aGVyIG1hdGggaXMgaW52ZW50ZWQgb3IgZGlzY292ZXJlZC4gU29tZSBhcmd1ZSB0aGF0IG1hdGhlbWF0aWNhbCBjb25jZXB0cyBhbmQgcHJpbmNpcGxlcyBleGlzdCBpbmRlcGVuZGVudGx5IG9mIGh1bWFuIG1pbmRzIGFuZCBjYW4gdGhlcmVmb3JlIGJlIGNvbnNpZGVyZWQgYXMgZGlzY292ZXJlZCByYXRoZXIgdGhhbiBpbnZlbnRlZC4gRm9yIGV4YW1wbGUsIHRoZSBjb25jZXB0IG9mIG51bWJlcnMsIHJhdGlvcywgYW5kIGdlb21ldHJpYyBzaGFwZXMgYXJlIG9ic2VydmVkIGluIHRoZSBuYXR1cmFsIHdvcmxkIGFuZCBjYW4gYmUgYWJzdHJhY3RlZCBhbmQgc3R1ZGllZCBpbiBhIHN5c3RlbWF0aWMgd2F5LiBcblxuV3JpdGUgdGhlIG5leHQgcGFyYWdyYXBoIG9mIG15IGVzc2F5LiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -158,43 +156,29 @@ Try this expansion prompt out with the demo below (you will need your OpenAI API
 ></iframe>
 <br />
 
-I generated a few expansions with this prompt and selected one I liked to end up with the following final result:
+J'ai généré quelques expansions avec ce prompt et j'en ai sélectionné une que j'aimais pour obtenir le résultat final suivant :
 
 <pre>
-  There is much debate among philosophers and mathematicians as to whether
-  <br />
-  math is invented or discovered. Some argue that mathematical concepts and
-  principles exist
-  <br />
-  independently of human minds and can therefore be considered as discovered
-  rather than invented.
-  <br />
-  For example, the concept of numbers, ratios, and geometric shapes are observed
-  in the natural
-  <br />
-  world and can be abstracted and studied in a systematic way.
+  Il existe un grand débat parmi les philosophes et les mathématiciens quant à savoir si
+  les mathématiques sont inventées ou découvertes. Certains soutiennent que les concepts et
+  principes mathématiques existent indépendamment de l'esprit humain et peuvent donc être
+  considérés comme découverts plutôt qu'inventés. Par exemple, le concept de nombres, de
+  ratios et de formes géométriques est observé dans le monde naturel et peut être abstrait
+  et étudié de manière systématique.
   <span className="bluegreen-highlight">
     <br />
     <br />
-    On the other hand, some argue that math is largely an invention of the human
-    mind. Mathematical
-    <br />
-    principles are based on logical reasoning, which is a feature of the human
-    mind. For instance,
-    <br />
-    Euclidean geometry is based on abstract axioms and postulates, which are
-    accepted as true without
-    <br />
-    proof. As such, it can be argued that geometry is an invention of the human
-    mind rather than
-    <br />
-    a discovery. Similarly, mathematical formulas and equations are used to
-    model and predict physical
-    <br />
-    phenomena, which are again the result of human reasoning.
+    D'autre part, certains soutiennent que les mathématiques sont largement une invention de
+    l'esprit humain. Les principes mathématiques sont basés sur le raisonnement logique, qui
+    est une caractéristique de l'esprit humain. Par exemple, la géométrie euclidienne est
+    basée sur des axiomes et des postulats abstraits, qui sont acceptés comme vrais sans
+    preuve. Ainsi, on peut soutenir que la géométrie est une invention de l'esprit humain
+    plutôt qu'une découverte. De même, les formules et équations mathématiques sont utilisées
+    pour modéliser et prédire des phénomènes physiques, qui sont encore une fois le résultat
+    du raisonnement humain.
   </span>
 </pre>
 
-Using expansion prompts, we can write more incrementally and iterate at each step. This is useful for when you need to **produce a higher quality output and want to modify the incremental steps**.
+En utilisant des prompts d'expansion, nous pouvons écrire de manière plus incrémentale et itérer à chaque étape. C'est utile lorsque vous devez **produire une sortie de meilleure qualité et souhaitez modifier les étapes incrémentales**.
 
-Written by [jayo78](https://twitter.com/jayo782).
+Écrit par [jayo78](https://twitter.com/jayo782).

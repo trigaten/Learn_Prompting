@@ -1,15 +1,15 @@
 export const metadata = {
   sidebar_position: 40,
-  title: "🟢 Chatbot + Knowledge Base",
+  title: "🟢 Chatbot + Base de Connaissances",
 };
 
-# 🟢 Chatbot + Knowledge Base
+# 🟢 Chatbot + Base de Connaissances
 
-Recent advancements in large language models (LLMs) such as [GPT-3](https://arxiv.org/abs/2005.14165) and [ChatGPT](https://chat.openai.com/chat) have created a lot of buzz in the tech industry. These models are incredibly powerful for content generation, but they also have some downsides such as bias(@nadeem-etal-2021-stereoset) and hallucinations(@Ji_2022). One area in which these LLMs can be particularly useful is chatbot development.
+Les récentes avancées dans les grands modèles de langage (LLMs) tels que [GPT-3](https://arxiv.org/abs/2005.14165) et [ChatGPT](https://chat.openai.com/chat) ont créé beaucoup d'enthousiasme dans l'industrie technologique. Ces modèles sont incroyablement puissants pour la génération de contenu, mais ils présentent également certains inconvénients comme des biais(@nadeem-etal-2021-stereoset) et des hallucinations(@Ji_2022). Un domaine dans lequel ces LLMs peuvent être particulièrement utiles est le développement de chatbots.
 
-## Intent-Based Chatbots
+## Chatbots basés sur l'intention
 
-Traditional chatbots are typically intent-based, meaning they are designed to respond to specific user intents. Each intent is made up of a set of sample questions and an associated response. For example, the intent “Weather” might include sample questions like “What’s the weather today?” or “Will it rain today?” and a response like “Today will be sunny.” When a user asks a question, the chatbot matches it to the intent with the most similar sample questions and returns the associated response.
+Les chatbots traditionnels sont généralement basés sur l'intention, ce qui signifie qu'ils sont conçus pour répondre à des intentions spécifiques de l'utilisateur. Chaque intention est composée d'un ensemble de questions types et d'une réponse associée. Par exemple, l'intention "Météo" pourrait inclure des questions comme "Quel temps fait-il aujourd'hui ?" ou "Va-t-il pleuvoir aujourd'hui ?" et une réponse comme "Aujourd'hui sera ensoleillé." Lorsqu'un utilisateur pose une question, le chatbot l'associe à l'intention dont les questions types sont les plus similaires et renvoie la réponse associée.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -20,17 +20,17 @@ Traditional chatbots are typically intent-based, meaning they are designed to re
   />
 
   <p style={{ color: "gray", fontSize: "12px", fontStyle: "italic" }}>
-    How a traditional intent-based chatbot works. Image by the author.
+    Comment fonctionne un chatbot traditionnel basé sur l'intention. Image par l'auteur.
   </p>
 </div>
 
-However, intent-based chatbots have their own set of problems. One issue is that they require a large number of specific intents to give specific answers. For example, user utterances like “I can’t login”, “I forgot my password”, or “Login error” may need three different answers and therefore three different intents, even though they are all quite similar.
+Cependant, les chatbots basés sur l'intention ont leurs propres problèmes. L'un d'eux est qu'ils nécessitent un grand nombre d'intentions spécifiques pour donner des réponses précises. Par exemple, des expressions d'utilisateur comme "Je ne peux pas me connecter", "J'ai oublié mon mot de passe" ou "Erreur de connexion" peuvent nécessiter trois réponses différentes et donc trois intentions différentes, même si elles sont toutes assez similaires.
 
-## How GPT-3 Can Help
+## Comment GPT-3 peut aider
 
-This is where GPT-3 can be particularly useful. Instead of having many very specific intents, each intent can be broader and leverage a document from your [Knowledge Base](https://en.wikipedia.org/wiki/Knowledge_base). A Knowledge Base (KB) is information stored as structured and unstructured data, ready to be used for analysis or inference. Your KB may be composed of a series of documents explaining how to use your products.
+C'est là que GPT-3 peut être particulièrement utile. Au lieu d'avoir de nombreuses intentions très spécifiques, chaque intention peut être plus large et s'appuyer sur un document de votre [Base de Connaissances](https://fr.wikipedia.org/wiki/Base_de_connaissance). Une Knowledge Base (KB - "Base de Connaissances") est composée d'informations stockées sous forme de données structurées et non structurées, prête à être utilisée pour l'analyse ou l'inférence. Votre KB peut être composée d'une série de documents expliquant comment utiliser vos produits.
 
-This way, each intent is associated with a document instead of a list of questions and a specific answer, e.g. one intent for “login problems,” one intent for “how to subscribe,” etc. When a user asks a question about login, we can pass the “login problems” document to GPT-3 as context information and generate a specific response to the user’s question.
+De cette façon, chaque intention est associée à un document plutôt qu'à une liste de questions et une réponse spécifique, par exemple une intention pour les "problèmes de connexion", une intention pour "comment s'abonner", etc. Lorsqu'un utilisateur pose une question sur la connexion, nous pouvons transmettre le document "problèmes de connexion" à GPT-3 comme information contextuelle et générer une réponse spécifique à la question de l'utilisateur.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -41,26 +41,26 @@ This way, each intent is associated with a document instead of a list of questio
   />
 
   <p style={{ color: "gray", fontSize: "12px", fontStyle: "italic" }}>
-    How a chatbot leveraging GPT-3 could work. Image by the author.
+    Comment pourrait fonctionner un chatbot utilisant GPT-3. Image par l'auteur.
   </p>
 </div>
 
-This approach reduces the number of intents that need to be managed and allows for answers that are better adapted to each question. Additionally, if the document associated with the intent describes different processes (e.g. a process for “login on the website” and another for “login on the mobile app”), GPT-3 can automatically ask the user for clarification before giving the final answer.
+Cette approche réduit le nombre d'intentions à gérer et permet des réponses mieux adaptées à chaque question. De plus, si le document associé à l'intention décrit différents processus (par exemple, un processus pour "se connecter sur le site web" et un autre pour "se connecter sur l'application mobile"), GPT-3 peut automatiquement demander des précisions à l'utilisateur avant de donner la réponse finale.
 
-## Why Can’t We Pass the Whole KB to GPT-3?
+## Pourquoi ne pouvons-nous pas transmettre toute la KB à GPT-3 ?
 
-Today, LLMs like GPT-3 have a maximum prompt size of about 4k tokens (for the [`text-davinci-003`](https://beta.openai.com/docs/models/gpt-3) model), which is a lot but not enough for feeding a whole knowledge base into a single prompt. The LLMs have a maximum prompt size for computational reasons, as generating text with them involves a number of computations which quickly increases as the prompt size increases.
+Aujourd'hui, les LLMs comme GPT-3 ont une taille maximale de prompt d'environ 4k tokens (pour le modèle [`text-davinci-003`](https://beta.openai.com/docs/models/gpt-3)), ce qui est beaucoup mais pas suffisant pour intégrer une base de connaissances entière dans un seul prompt. Les LLMs ont une taille maximale de prompt pour des raisons computationnelles, car la génération de texte implique un nombre de calculs qui augmente rapidement avec la taille du prompt.
 
-Future LLMs may not have this limitation while retaining the text generation capabilities. However, for now, we need to design a solution around it.
+Les futurs LLMs pourraient ne pas avoir cette limitation tout en conservant les capacités de génération de texte. Cependant, pour l'instant, nous devons concevoir une solution qui contourne cette limitation.
 
-## How a Chatbot With GPT-3 Could Work
+## Comment un chatbot avec GPT-3 pourrait fonctionner
 
-So, the chatbot pipeline could be made of two steps:
+Ainsi, le pipeline du chatbot pourrait être composé de deux étapes :
 
-1. First, we need to select the appropriate intent for the user question, i.e. we need to retrieve the right document from our knowledge base.
-2. Then, once we have the right document, we can leverage GPT-3 to generate an appropriate answer for the user. In doing so, we’ll need to craft a good prompt.
+1. D'abord, nous devons sélectionner l'intention appropriée pour la question de l'utilisateur, c'est-à-dire que nous devons récupérer le bon document de notre base de connaissances.
+2. Ensuite, une fois que nous avons le bon document, nous pouvons utiliser GPT-3 pour générer une réponse appropriée pour l'utilisateur. Ce faisant, nous devrons élaborer un bon prompt.
 
-The first step is essentially solved by [semantic search](https://en.wikipedia.org/wiki/Semantic_search). We can use pre-trained models from the [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) library and easily assign a score to each document. The document with the highest score is the one that will be used to generate the chatbot answer.
+La première étape est essentiellement résolue par la [recherche sémantique](https://fr.wikipedia.org/wiki/Recherche_s%C3%A9mantique). Nous pouvons utiliser des modèles pré-entraînés de la bibliothèque [`sentence-transformers`](https://www.sbert.net/examples/applications/semantic-search/README.html) et attribuer facilement un score à chaque document. Le document avec le score le plus élevé est celui qui sera utilisé pour générer la réponse du chatbot.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -71,22 +71,22 @@ The first step is essentially solved by [semantic search](https://en.wikipedia.o
   />
 
   <p style={{ color: "gray", fontSize: "12px", fontStyle: "italic" }}>
-    How a chatbot leveraging GPT-3 could work. GPT-3 could be used to generate
-    an appropriate answer leveraging the information from knowledge base
-    documents. Image by the author.
+    Comment pourrait fonctionner un chatbot utilisant GPT-3. GPT-3 pourrait être utilisé pour générer
+    une réponse appropriée en s'appuyant sur les informations des documents de la base de connaissances.
+    Image par l'auteur.
   </p>
 </div>
 
-## Generating Answers with GPT-3
+## Génération de réponses avec GPT-3
 
-Once we have the right document, we’ll need to create a good prompt to be used with GPT-3 to generate the answer. In the following experiments, we’ll always use the `text-davinci-003` model with a temperature of `0.7`.
+Une fois que nous avons le bon document, nous devrons créer un bon prompt à utiliser avec GPT-3 pour générer la réponse. Dans les expériences suivantes, nous utiliserons toujours le modèle `text-davinci-003` avec une température de `0.7`.
 
-To craft the prompt, we’ll experiment using:
+Pour élaborer le prompt, nous expérimenterons en utilisant :
 
-- [**Role-prompting**](https://learnprompting.org/docs/basics/roles): a heuristic technique that assigns a specific role to the AI.
-- **Relevant KB information**, i.e. the document retrieved in the semantic search step.
-- **The last messages exchanged between the user and the chatbot**. These are useful for messages sent by the user where the whole context is not specified. We’ll see an example of it later. Have a look at [this example](https://learnprompting.org/docs/applied_prompting/build_chatgpt) to see how to manage conversations with GPT-3.
-- Last, **the user question**.
+- [**Role-prompting**](https://learnprompting.org/docs/basics/roles) : une technique heuristique qui attribue un rôle spécifique à l'IA.
+- **Informations pertinentes de la KB**, c'est-à-dire le document récupéré lors de l'étape de recherche sémantique.
+- **Les derniers messages échangés entre l'utilisateur et le chatbot**. Ces derniers sont utiles pour les messages envoyés par l'utilisateur où le contexte complet n'est pas spécifié. Nous verrons un exemple plus tard. Consultez [cet exemple](https://learnprompting.org/fr/docs/applied_prompting/build_chatgpt) pour voir comment gérer les conversations avec GPT-3.
+- Enfin, **la question de l'utilisateur**.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -97,20 +97,19 @@ To craft the prompt, we’ll experiment using:
   />
 
   <p style={{ color: "gray", fontSize: "12px", fontStyle: "italic" }}>
-    Information used to craft our GPT-3 prompt. Image by the author.
+    Informations utilisées pour élaborer notre prompt GPT-3. Image par l'auteur.
   </p>
 </div>
 
-Let’s start our prompt using the <span className="yellow-highlight">role-prompting</span> technique.
+Commençons notre prompt en utilisant la technique de <span className="yellow-highlight">role-prompting</span>.
 
 <pre>
   <span className="yellow-highlight">
-    As an advanced chatbot named Skippy, your primary goal is to assist users to
-    the best of your ability.
+    En tant que chatbot avancé nommé Skippy, votre objectif principal est d'aider les utilisateurs du mieux que vous le pouvez.
   </span>
 </pre>
 
-Then, suppose the semantic search step extracts the following document from our knowledge base. All the documents describe how the VideoGram product works, which is an imaginary product similar to Instagram, but only for videos.
+Ensuite, supposons que l'étape de recherche sémantique extrait le document suivant de notre base de connaissances. Tous les documents décrivent comment le produit VideoGram fonctionne, qui est un produit imaginaire similaire à Instagram, mais uniquement pour les vidéos.
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -121,142 +120,134 @@ Then, suppose the semantic search step extracts the following document from our 
   />
 
   <p style={{ color: "gray", fontSize: "12px", fontStyle: "italic" }}>
-    A document explaining how login to VideoGram works. Image by the author.
+    Un document expliquant comment se connecter à VideoGram. Image par l'auteur.
   </p>
 </div>
 
-We can add <span className="yellow-highlight">its content</span> inside the prompt in this way.
+Nous pouvons ajouter <span className="yellow-highlight">son contenu</span> au prompt de la manière suivante.
 
 <pre>
-  As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.
+  En tant que chatbot avancé nommé Skippy, votre objectif principal est d'aider les utilisateurs du mieux que vous le pouvez.
   <br />
   <span className="yellow-highlight">
-    START CONTEXT 
-    Login to VideoGram from Website
-    1. Open your web browser and go to the VideoGram website.
-    2. Click on the “Login” button located in the top right corner of the page.
-    3. On the login page, enter your VideoGram username and password. 
-    4. Once you have entered your credentials, click on the “Login” button. 
-    5. You should now be logged in to your VideoGram account.
-    <br/>
-    Login to VideoGram from Mobile App 
-    1. Open the VideoGram app on your mobile device. 
-    2. On the main page, tap the “Login” button located in the bottom right corner. 
-    3. On the login page, enter your VideoGram username and password. 
-    4. Once you have entered your credentials, tap the “Login” button.
-    5. You should now be logged in to your VideoGram account.
-    END CONTEXT
+    DÉBUT DE CONTEXTE 
+    Connexion à VideoGram depuis le site web 
+    1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 
+    2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 
+    3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+    4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 
+    5. Vous devriez maintenant être connecté à votre compte VideoGram.
+    <br />
+    Connexion à VideoGram depuis l'application mobile 
+    1. Ouvrez l'application VideoGram sur votre appareil mobile. 
+    2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 
+    3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+    4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 
+    5. Vous devriez maintenant être connecté à votre compte VideoGram. 
+    FIN DE CONTEXTE
   </span>
 </pre>
 
-Last, we need to add <span className="yellow-highlight">the conversation and the user question</span> to the end of the prompt, like in the following example.
+Enfin, nous devons ajouter <span className="yellow-highlight">la conversation et la question de l'utilisateur</span> à la fin du prompt, comme dans l'exemple suivant.
 
 <pre>
-  As an advanced chatbot named Skippy, your primary goal is to assist users to the best of your ability.
-  <br/>
-  START CONTEXT
-  Login to VideoGram from Website
-  1. Open your web browser and go to the VideoGram website.
-  2. Click on the “Login” button located in the top right corner of the page.
-  3. On the login page, enter your VideoGram username and password.
-  4. Once you have entered your credentials, click on the “Login” button.
-  5. You should now be logged in to your VideoGram account.
-  <br/>
-  Login to VideoGram from Mobile App
-  1. Open the VideoGram app on your mobile device.
-  2. On the main page, tap the “Login” button located in the bottom right corner.
-  3. On the login page, enter your VideoGram username and password.
-  4. Once you have entered your credentials, tap the “Login” button.
-  5. You should now be logged in to your VideoGram account.
- 
-  END CONTEXT
-  <br/>
+  En tant que chatbot avancé nommé Skippy, votre objectif principal est d'aider les utilisateurs du mieux que vous le pouvez.
+  <br />
+  DÉBUT DE CONTEXTE 
+  Connexion à VideoGram depuis le site web 
+  1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 
+  2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram.
+  <br />
+  Connexion à VideoGram depuis l'application mobile 
+  1. Ouvrez l'application VideoGram sur votre appareil mobile. 
+  2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram. 
+  FIN DE CONTEXTE
+  <br />
   <span className="yellow-highlight">
-    SKIPPY: Hello, I’m Skippy! How can I help you?
-    USER: I can’t find the login button.
-    SKIPPY:
+    SKIPPY : Bonjour, je m'appelle Skippy ! Comment puis-je vous aider ? 
+    UTILISATEUR : Je ne trouve pas le bouton de connexion. 
+    SKIPPY :
   </span>
 </pre>
 
-Passing this prompt to GPT-3, I got the following generated answer.
+En passant ce prompt à GPT-3, j'ai obtenu la réponse générée suivante.
 
 <pre>
   <span className="bluegreen-highlight">
-    No problem! On the website, the login button is located in the top right corner of the page. On the mobile app, the login button is located in the bottom right corner. Let me know if you need any further assistance!
+    Pas de problème ! Sur le site web, le bouton de connexion est situé dans le coin supérieur droit de la page. Sur l'application mobile, le bouton de connexion est situé dans le coin inférieur droit. N'hésitez pas à me demander si vous avez besoin d'autres informations !
   </span>
 </pre>
 
-Notice how the information in the generated answer comes from the knowledge base document.
+Remarquez comment les informations dans la réponse générée proviennent du document de la base de connaissances.
 
-## Disambiguating Questions with GPT-3
+## Désambiguïsation des questions avec GPT-3
 
-Let’s try with a more vague user utterance, like <span className="yellow-highlight">“can’t login”</span>. Here’s the complete prompt.
+Essayons avec une expression d'utilisateur plus vague, comme <span className="yellow-highlight">"impossible de me connecter"</span>. Voici le prompt complet.
 
 <pre>
-  As an advanced chatbot named Skippy, your primary goal is to assist users tothe best of your ability.
-  <br/>
-  START CONTEXT
-  Login to VideoGram from Website
-  1. Open your web browser and go to the VideoGram website.
-  2. Click on the “Login” button located in the top right corner of the page.
-  3. On the login page, enter your VideoGram username and password.
-  4. Once you have entered your credentials, click on the “Login” button.
-  5. You should now be logged in to your VideoGram account.
-  <br/>
-  Login to VideoGram from Mobile App
-  1. Open the VideoGram app on your mobile device.
-  2. On the main page, tap the “Login” button located in the bottom right corner.
-  3. On the login page, enter your VideoGram username and password.
-  4. Once you have entered your credentials, tap the “Login” button.
-  5. You should now be logged in to your VideoGram account.
-  END CONTEXT
-  <br/>
-  SKIPPY: Hello, I’m Skippy! How can I help you?
-  USER: <span className="yellow-highlight">Can’t login</span>
-  SKIPPY:
+  En tant que chatbot avancé nommé Skippy, votre objectif principal est d'aider les utilisateurs du mieux que vous le pouvez.
+  <br />
+  DÉBUT DE CONTEXTE 
+  Connexion à VideoGram depuis le site web 
+  1. Ouvrez votre navigateur web et accédez au site web de VideoGram. 
+  2. Cliquez sur le bouton "Connexion" situé dans le coin supérieur droit de la page. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, cliquez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram.
+  <br />
+  Connexion à VideoGram depuis l'application mobile 
+  1. Ouvrez l'application VideoGram sur votre appareil mobile. 
+  2. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. 
+  3. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. 
+  4. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". 
+  5. Vous devriez maintenant être connecté à votre compte VideoGram. 
+  FIN DE CONTEXTE
+  <br />
+  SKIPPY : Bonjour, je m'appelle Skippy ! Comment puis-je vous aider ? 
+  UTILISATEUR : <span className="yellow-highlight">Impossible de me connecter</span>
+  SKIPPY :
 </pre>
 
-GPT-3 answers trying to understand better what’s the problem of the user.
+GPT-3 répond en essayant de mieux comprendre quel est le problème de l'utilisateur.
 
 <pre>
   <span className="bluegreen-highlight">
-    I’m sorry to hear that. Can you tell me if you are trying to login via the
-    VideoGram website or mobile app?
+    Je suis désolé d'entendre cela. Pouvez-vous me dire si vous essayez de vous connecter via le site web de VideoGram ou via l'application mobile ?
   </span>
 </pre>
 
-Next, here’s how the complete conversation goes. The whole prompt is hidden for better visibility.
+Voici comment se déroule ensuite la conversation complète. Le prompt complet est masqué pour une meilleure visibilité.
 
 <pre>
-  USER: Can’t login
+  UTILISATEUR : Impossible de me connecter
   <br />
-  SKIPPY: I’m sorry to hear that. Can you tell me if you are trying to login via
-  the VideoGram website or mobile app?
+  SKIPPY : Je suis désolé d'entendre cela. Pouvez-vous me dire si vous essayez de vous connecter via le site web de VideoGram ou via l'application mobile ?
   <br />
-  USER: Mobile app
+  UTILISATEUR : Application mobile
   <br />
   <span className="bluegreen-highlight">
-    SKIPPY: OK, no problem. To login via the mobile app, open the VideoGram app
-    on your mobile device. On the main page, tap the “Login” button located in
-    the bottom right corner. On the login page, enter your VideoGram username
-    and password. Once you have entered your credentials, tap the “Login”
-    button. You should now be logged in to your VideoGram account. Please let me
-    know if you need any further assistance.
+    SKIPPY : D'accord, pas de problème. Pour vous connecter via l'application mobile, ouvrez l'application VideoGram sur votre appareil mobile. Sur la page principale, appuyez sur le bouton "Connexion" situé dans le coin inférieur droit. Sur la page de connexion, entrez votre nom d'utilisateur et votre mot de passe VideoGram. Une fois que vous avez saisi vos identifiants, appuyez sur le bouton "Connexion". Vous devriez maintenant être connecté à votre compte VideoGram. N'hésitez pas à me faire savoir si vous avez besoin d'autres informations.
   </span>
 </pre>
 
-GPT-3 can manage disambiguation, provided that it has the right contextual information.
+GPT-3 peut gérer la désambiguïsation, à condition qu'il dispose des informations contextuelles appropriées.
 
-## Problems With Generating Answers with GPT-3
+## Problèmes avec la génération de réponses avec GPT-3
 
-The previous examples worked well. However, there are several ways in which this chatbot could fail.
+Les exemples précédents ont bien fonctionné. Cependant, il existe plusieurs façons dont ce chatbot pourrait échouer.
 
-If we ask “Is the mobile app free?” to GPT-3 passing the login document as context, you’d often get an answer like “Yes, the VideoGram mobile app is free to download and use”, even if such information is not contained in the context information. Generating false information is very bad for customer service chatbots!
+Si nous demandons "L'application mobile est-elle gratuite ?" à GPT-3 en passant le document de connexion comme contexte, vous obtiendrez souvent une réponse comme "Oui, l'application mobile VideoGram est gratuite à télécharger et à utiliser", même si cette information n'est pas contenue dans le contexte. Générer de fausses informations est très mauvais pour les chatbots de service client !
 
-GPT-3 rarely generates false information when the answer to the user question can be found in the context. As user questions are often short and ambiguous texts, we can’t rely on the semantic search step to always retrieve a correct document, and so we are always vulnerable to false information generation.
+GPT-3 génère rarement de fausses informations lorsque la réponse à la question de l'utilisateur peut être trouvée dans le contexte. Comme les questions des utilisateurs sont souvent des textes courts et ambigus, nous ne pouvons pas compter sur l'étape de recherche sémantique pour toujours récupérer un document correct, et nous sommes donc toujours vulnérables à la génération de fausses informations.
 
 ## Conclusion
 
-GPT-3 is very useful for creating conversational chatbots and is able to answer a series of specific questions on the basis of contextual information inserted in the prompt. However, it’s hard to make the model produce answers leveraging only the information in the context, as the model tends to hallucinate (i.e. generating new information, potentially false). Generating false information is a problem of different severity depending on the use case.
+GPT-3 est très utile pour créer des chatbots conversationnels et est capable de répondre à une série de questions spécifiques sur la base d'informations contextuelles insérées dans le prompt. Cependant, il est difficile de faire en sorte que le modèle produise des réponses s'appuyant uniquement sur les informations du contexte, car le modèle a tendance à halluciner (c'est-à-dire à générer de nouvelles informations, potentiellement fausses). Générer de fausses informations est un problème de gravité différente selon le cas d'utilisation.
 
-Written by [Fabio Chiusano](https://www.linkedin.com/in/fabio-chiusano-b6a3b311b/).
+Écrit par [Fabio Chiusano](https://www.linkedin.com/in/fabio-chiusano-b6a3b311b/).

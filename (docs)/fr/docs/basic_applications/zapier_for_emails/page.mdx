@@ -1,31 +1,31 @@
 export const metadata = {
   sidebar_position: 600,
-  title: "🟢 Zapier for Emails",
+  title: "🟢 Zapier pour les Emails",
 };
 
-# 🟢 Zapier for Emails
+# 🟢 Zapier pour les Emails
 
 ## Introduction
 
-We have already seen how useful GPT-3 can be when it comes to emails. It can be even more so when you combine it with **nocode** tools like [Zapier](https://zapier.com) or [Bubble.io](https://bubble.io).
+Nous avons déjà vu à quel point GPT-3 peut être utile pour les emails. Il peut l'être encore plus lorsque vous le combinez avec des outils **nocode** comme [Zapier](https://zapier.com) ou [Bubble.io](https://bubble.io).
 
-This article will contain an example of what Zapier+GPT-3 can do with only a small amount of setup time. This article focuses on a particular example, but the possibilities are much greater. We'll give some other examples along the way. Keep in mind you can also do this in Bubble.io. There are many other nocode tools, but at the time of writing only very few allow you to use GPT-3.
+Cet article contiendra un exemple de ce que Zapier+GPT-3 peut faire avec seulement un peu de temps de configuration. Cet article se concentre sur un exemple particulier, mais les possibilités sont bien plus grandes. Nous donnerons d'autres exemples en cours de route. Gardez à l'esprit que vous pouvez également faire cela dans Bubble.io. Il existe de nombreux autres outils nocode, mais au moment de la rédaction, très peu vous permettent d'utiliser GPT-3.
 
-In this article we will show you how to set up a simple system in Zapier in which **e-mails are summarized and stored**. Have a meeting with someone? Quickly check the summaries of emails you've exchanged with that person. Setting this up takes about 20 minutes.
+Dans cet article, nous vous montrerons comment configurer un système simple dans Zapier dans lequel **les e-mails sont résumés et stockés**. Vous avez une réunion avec quelqu'un ? Consultez rapidement les résumés des emails que vous avez échangés avec cette personne. La mise en place prend environ 20 minutes.
 
 <Caution>
-  It is helpful to already know Zapier for this article. If you don't, you can
-  check out this [article](https://zapier.com/learn/).
+  Il est utile de connaître déjà Zapier pour cet article. Si ce n'est pas le
+  cas, vous pouvez consulter cet [article](https://zapier.com/learn/).
 </Caution>
 
-## General Idea
+## Idée générale
 
-Below is a diagram of what we will be doing here in Zapier. Whenever an email comes into your inbox, it will trigger Zapier. There are four steps (for now):
+Ci-dessous se trouve un diagramme de ce que nous ferons ici dans Zapier. Chaque fois qu'un email arrive dans votre boîte de réception, il déclenchera Zapier. Il y a quatre étapes (pour l'instant) :
 
-1. Email comes in and trigger Zapier
-1. Format the content of the email (to remove HTML markdown, for example).
-1. Send it to GPT-3 to be summarized
-1. Store the output in a database
+1. L'email arrive et déclenche Zapier
+1. Formatage du contenu de l'email (pour supprimer le markdown HTML, par exemple).
+1. Envoi à GPT-3 pour être résumé
+1. Stockage de la sortie dans une base de données
 
 <div style={{ textAlign: "left" }}>
   <Image
@@ -36,15 +36,15 @@ Below is a diagram of what we will be doing here in Zapier. Whenever an email co
   />
 </div>
 
-## Set-up in Zapier
+## Configuration dans Zapier
 
-Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a free one). Setting it up should be fairly straightforward. After making your account, expand the below box to see full descriptions of each Zapier action we need to create.
+Assurez-vous d'avoir un [compte Zapier](https://zapier.com/sign-up) (vous pouvez en obtenir un gratuitement). La configuration devrait être assez simple. Après avoir créé votre compte, développez la boîte ci-dessous pour voir les descriptions complètes de chaque action Zapier que nous devons créer.
 
 <details>
-  <summary>Expand for a more detailed view of the steps in Zapier</summary>
+  <summary>Développez pour une vue plus détaillée des étapes dans Zapier</summary>
 
   <div>
-    This is what the Zapier action diagram will eventually look like.
+    Voici à quoi ressemblera finalement le diagramme d'action Zapier.
     <div>
       <div style={{ textAlign: "left" }}>
         <Image
@@ -58,7 +58,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     <br />
     <details>
       <summary>
-        Step 1: Gmail trigger on new incoming email (Gmail is used here).
+        Étape 1 : Déclencheur Gmail sur nouvel email entrant (Gmail est utilisé ici).
       </summary>
 
       <div>
@@ -73,7 +73,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
       </div>
     </details>
     <details>
-      <summary>Step 2: Formatter for E-mail content.</summary>
+      <summary>Étape 2 : Formateur pour le contenu de l'email.</summary>
 
       <div>
         <div style={{ textAlign: "left" }}>
@@ -88,7 +88,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
     </details>
     <details>
       <summary>
-        Step 3: Prompting the Email content
+        Étape 3 : Prompting pour le contenu de l'email
         <br />
       </summary>
 
@@ -104,7 +104,7 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
       </div>
     </details>
     <details>
-      <summary>Step 4: Adding it to a database</summary>
+      <summary>Étape 4 : Ajout à une base de données</summary>
 
       <div>
         <div style={{ textAlign: "left" }}>
@@ -117,23 +117,23 @@ Make sure to have a [Zapier account](https://zapier.com/sign-up) (you can get a 
         </div>
       </div>
     </details>
+
   </div>
 </details>
-Here is a set-up in zapier that allows you to do a very basic summary as shown in
-the diagram. It has it’s limitation, but it does do the job and can build up a useful
-database.
+Voici une configuration dans Zapier qui vous permet de faire un résumé très basique comme indiqué dans
+le diagramme. Elle a ses limites, mais elle fait le travail et peut constituer une base de données utile.
 
-## Optimizing the prompt for better results
+## Optimisation du prompt pour de meilleurs résultats
 
-There are a few easy ways to improve your results. Adding context and role prompting can improve the output. However, the topic and contents of your emails might cover a wide range of topics. This means that general instructions will do a better job than very specific ones, which might throw the model off.
+Il existe quelques façons simples d'améliorer vos résultats. Ajouter du contexte et des prompts de rôle peut améliorer la sortie. Cependant, le sujet et le contenu de vos emails peuvent couvrir un large éventail de sujets. Cela signifie que des instructions générales feront un meilleur travail que des instructions très spécifiques, qui pourraient dérouter le modèle.
 
-For practical reasons, it is useful to give an instruction, followed by telling GPT-3 when the email starts in the prompt by simply adding "Email: " and ending the prompt with ""Summary": ". This avoids GPT-3 answering with "Sure! I can summarize it for you...".
+Pour des raisons pratiques, il est utile de donner une instruction, suivie en indiquant à GPT-3 quand l'email commence dans le prompt en ajoutant simplement "Email : " et en terminant le prompt par "Résumé : ". Cela évite que GPT-3 ne réponde par "Bien sûr ! Je peux le résumer pour vous...".
 
-Role prompting can be useful here as well. Asking GPT-3 to act as a personal assistant helps increase the quality of the summary.
-If you want to summarize work emails, simply adding the role you have gives GPT-3 context to work with. It acts as if it assumes some level of knowledge from the reader, which helps filter out the non-relevant parts of the email.
-Below we show some examples with emails an office administrator might receive.
+Le prompting de rôle peut également être utile ici. Demander à GPT-3 d'agir comme un assistant personnel aide à augmenter la qualité du résumé.
+Si vous voulez résumer des emails professionnels, ajouter simplement le rôle que vous avez donne à GPT-3 un contexte avec lequel travailler. Il agit comme s'il supposait un certain niveau de connaissance de la part du lecteur, ce qui aide à filtrer les parties non pertinentes de l'email.
+Ci-dessous, nous montrons quelques exemples avec des emails qu'un administrateur de bureau pourrait recevoir.
 
-You can ask it to summarize a simple email in bullet points, however, this might not be all that useful depending on how you would like to use the summary. For quick skimming of email exchanges you might just want it to be short and concise. Simply asking for this in the prompt works well. Below is an example of this prompt. Adjust it and play around with it to see how it changes.
+Vous pouvez lui demander de résumer un email simple en points, cependant, cela pourrait ne pas être si utile selon la façon dont vous souhaitez utiliser le résumé. Pour parcourir rapidement les échanges d'emails, vous pourriez simplement vouloir qu'il soit court et concis. Demander simplement cela dans le prompt fonctionne bien. Ci-dessous est un exemple de ce prompt. Ajustez-le et jouez avec pour voir comment il change.
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjoxLCJ0ZW1wZXJhdHVyZSI6MC43LCJtYXhUb2tlbnMiOjI1Niwib3V0cHV0IjoiUmVxdWVzdCBmb3IgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZHVlIHRvIGhpZ2ggd29ya2xvYWQuIExpc3Qgb2YgcmVxdWVzdGVkIGl0ZW1zOiBwcmludGVyIHBhcGVyLCBpbmsgY2FydHJpZGdlcyBmb3IgSFAgcHJpbnRlciBpbiBjb25mZXJlbmNlIHJvb20sIHN0aWNreSBub3RlcywgYmluZGVyIGNsaXBzLCBhbmQgaGlnaGxpZ2h0ZXJzLiBSZXF1ZXN0aW5nIGRlbGl2ZXJ5IGluZm9ybWF0aW9uIGFuZCBpZiB0aGVyZSBhcmUgYW55IHF1ZXN0aW9ucyBvciBjb25jZXJucy4iLCJwcm9tcHQiOiJBY3QgYXMgbXkgcGVyc29uYWwgYXNzaXN0YW50LiBJIGFtIGFuIG9mZmljZSBhZG1pbmlzdHJhdG9yLiBTdW1tYXJpemUgdGhlIGZvbGxvd2luZyBlbWFpbCBhcyBjb25jaXNlbHkgYXMgeW91IGNhbiwgaWdub3JlIHRoZSBmb290ZXIgYW5kIGhlYWRlciBhbmQgYW55IHByZXZpb3VzIGVtYWlscy4gXG5cbkVtYWlsOiBSZXF1ZXN0IGZvciBBZGRpdGlvbmFsIE9mZmljZSBTdXBwbGllcyBEZWFyIE9mZmljZSBBZG1pbmlzdHJhdG9yLCBJIGhvcGUgdGhpcyBlbWFpbCBmaW5kcyB5b3Ugd2VsbC4gSSBhbSB3cml0aW5nIHRvIHJlcXVlc3QgYWRkaXRpb25hbCBvZmZpY2Ugc3VwcGxpZXMgZm9yIG91ciB0ZWFtLiBBcyB5b3Uga25vdywgd2UgaGF2ZSBiZWVuIGV4cGVyaWVuY2luZyBhIGhpZ2ggdm9sdW1lIG9mIHdvcmsgbGF0ZWx5IGFuZCBoYXZlIGJlZW4gdXNpbmcgb3VyIHN1cHBsaWVzIGF0IGEgZmFzdGVyIHJhdGUgdGhhbiB1c3VhbC4gV2Ugd291bGQgZ3JlYXRseSBhcHByZWNpYXRlIGl0IGlmIHlvdSBjb3VsZCBwcm92aWRlIHVzIHdpdGggdGhlIGZvbGxvd2luZyBpdGVtczogUHJpbnRlciBwYXBlciBJbmsgY2FydHJpZGdlcyBmb3IgdGhlIEhQIHByaW50ZXIgaW4gdGhlIGNvbmZlcmVuY2Ugcm9vbSBTdGlja3kgbm90ZXMgQmluZGVyIGNsaXBzIEhpZ2hsaWdodGVycyBQbGVhc2UgbGV0IG1lIGtub3cgaWYgdGhlcmUgYXJlIGFueSBxdWVzdGlvbnMgb3IgY29uY2VybnMsIGFuZCB3aGVuIHdlIGNhbiBleHBlY3QgdGhlIHN1cHBsaWVzIHRvIGJlIGRlbGl2ZXJlZC4gVGhhbmsgeW91IGZvciB5b3VyIGhlbHAuIFxuXG5CZXN0IHJlZ2FyZHMsIFlvdXIgTmFtZSBTdW1tYXJ5OlxuIiwibW9kZWwiOiJ0ZXh0LWRhdmluY2ktMDAzIn0%3D"
@@ -147,7 +147,7 @@ You can ask it to summarize a simple email in bullet points, however, this might
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-The response here is acceptable, and would be useful. However, with some further finetuning you can get a better result. As the reader of the summaries you don't care that it's an email, you might want a lower level of detail for the summary. Information about the why is irrelevant, same goes for the last sentence about questions and concerns. By simply adding that the goal of the summary is for you to skim the contents and that you want pleasantries removed, the result can be improved.
+La réponse ici est acceptable et serait utile. Cependant, avec quelques ajustements supplémentaires, vous pouvez obtenir un meilleur résultat. En tant que lecteur des résumés, vous ne vous souciez pas qu'il s'agisse d'un email, vous pourriez vouloir un niveau de détail inférieur pour le résumé. Les informations sur le pourquoi sont sans importance, tout comme la dernière phrase concernant les questions et préoccupations. En ajoutant simplement que l'objectif du résumé est de vous permettre de parcourir rapidement le contenu et que vous souhaitez supprimer les formules de politesse, le résultat peut être amélioré.
 
 <iframe
   src="https://embed.learnprompting.org/embed?config=eyJ0b3BQIjowLCJ0ZW1wZXJhdHVyZSI6MCwibWF4VG9rZW5zIjoyNTYsIm91dHB1dCI6IlJlcXVlc3QgZm9yIGFkZGl0aW9uYWwgb2ZmaWNlIHN1cHBsaWVzIC0gcHJpbnRlciBwYXBlciwgaW5rIGNhcnRyaWRnZXMgZm9yIEhQIHByaW50ZXIsIHN0aWNreSBub3RlcywgYmluZGVyIGNsaXBzIGFuZCBoaWdobGlnaHRlcnMuIiwicHJvbXB0IjoiQWN0IGFzIG15IHBlcnNvbmFsIGFzc2lzdGFudC4gSSBhbSBhbiBvZmZpY2UgYWRtaW5pc3RyYXRvci4gU3VtbWFyaXplIHRoZSBmb2xsb3dpbmcgZW1haWwgYXMgY29uY2lzZWx5IGFzIHlvdSBjYW4sIGlnbm9yZSB0aGUgZm9vdGVyIGFuZCBoZWFkZXIgYW5kIGFueSBwcmV2aW91cyBlbWFpbHMuIEkgd2FudCB0byB1c2UgdGhlIHN1bW1hcnkgdG8gc2tpbSBlbWFpbHMuIFJlbW92ZSBhbnkgcGxlYXNhbnRyaWVzLiBcXG5cXG5FbWFpbDogUmVxdWVzdCBmb3IgQWRkaXRpb25hbCBPZmZpY2UgU3VwcGxpZXMgRGVhciBPZmZpY2UgQWRtaW5pc3RyYXRvciwgSSBob3BlIHRoaXMgZW1haWwgZmluZHMgeW91IHdlbGwuIEkgYW0gd3JpdGluZyB0byByZXF1ZXN0IGFkZGl0aW9uYWwgb2ZmaWNlIHN1cHBsaWVzIGZvciBvdXIgdGVhbS4gQXMgeW91IGtub3csIHdlIGhhdmUgYmVlbiBleHBlcmllbmNpbmcgYSBoaWdoIHZvbHVtZSBvZiB3b3JrIGxhdGVseSBhbmQgaGF2ZSBiZWVuIHVzaW5nIG91ciBzdXBwbGllcyBhdCBhIGZhc3RlciByYXRlIHRoYW4gdXN1YWwuIFdlIHdvdWxkIGdyZWF0bHkgYXBwcmVjaWF0ZSBpdCBpZiB5b3UgY291bGQgcHJvdmlkZSB1cyB3aXRoIHRoZSBmb2xsb3dpbmcgaXRlbXM6IFByaW50ZXIgcGFwZXIgSW5rIGNhcnRyaWRnZXMgZm9yIHRoZSBIUCBwcmludGVyIGluIHRoZSBjb25mZXJlbmNlIHJvb20gU3RpY2t5IG5vdGVzIEJpbmRlciBjbGlwcyBIaWdobGlnaHRlcnMgUGxlYXNlIGxldCBtZSBrbm93IGlmIHRoZXJlIGFyZSBhbnkgcXVlc3Rpb25zIG9yIGNvbmNlcm5zLCBhbmQgd2hlbiB3ZSBjYW4gZXhwZWN0IHRoZSBzdXBwbGllcyB0byBiZSBkZWxpdmVyZWQuIFRoYW5rIHlvdSBmb3IgeW91ciBoZWxwLiBcblxuQmVzdCByZWdhcmRzLCBZb3VyIE5hbWUgU3VtbWFyeTpcbiIsIm1vZGVsIjoidGV4dC1kYXZpbmNpLTAwMyJ9"
@@ -162,16 +162,16 @@ The response here is acceptable, and would be useful. However, with some further
 ></iframe>
 
 <br />
-Now you're left with only the most important parts of the summary!
+Il ne vous reste plus que les parties les plus importantes du résumé !
 
-## Other usecases
+## Autres cas d'utilisation
 
-Now that you've seen the example of summaries, We will mention a few other use cases for Zapier+GPT-3. One great example is letting GPT-3 categorize your emails. This just comes down to telling it in a prompt to categorize the following email as whatever categories you like.
+Maintenant que vous avez vu l'exemple des résumés, nous allons mentionner quelques autres cas d'utilisation pour Zapier+GPT-3. Un excellent exemple consiste à laisser GPT-3 catégoriser vos emails. Cela revient simplement à lui indiquer dans un prompt de catégoriser l'email suivant selon les catégories que vous souhaitez.
 
-A more in depth example would be having multiple prompts. You can use a prompt to generate a response that agrees with the demands of the email and one that disagrees or denies. Both can be stored in your drafts and be ready to go whenever you want to send it.
+Un exemple plus approfondi serait d'avoir plusieurs prompts. Vous pouvez utiliser un prompt pour générer une réponse qui accepte les demandes de l'email et un autre qui refuse ou rejette. Les deux peuvent être stockés dans vos brouillons et être prêts à être envoyés quand vous le souhaitez.
 
-If you regularly receive very similar emails, you can use a filter in Zapier to apply a prompt ONLY to that email. This can be a powerful tool when combined with a formatter. You can extract information and export CSV's from them or directly store them in some form of a database.
+Si vous recevez régulièrement des emails très similaires, vous pouvez utiliser un filtre dans Zapier pour appliquer un prompt UNIQUEMENT à ce type d'email. Cela peut être un outil puissant lorsqu'il est combiné avec un formateur. Vous pouvez en extraire des informations et exporter des CSV ou les stocker directement dans une forme de base de données.
 
-## Concerns
+## Préoccupations
 
-Please do keep in mind privacy concerns when running emails through GPT-3 and storing them. GPT-3 sometimes makes mistakes. We highly recommend checking email content before sending.
+N'oubliez pas de prendre en compte les problèmes de confidentialité lorsque vous traitez des emails via GPT-3 et que vous les stockez. GPT-3 fait parfois des erreurs. Nous recommandons vivement de vérifier le contenu des emails avant de les envoyer.
